@@ -1,0 +1,28 @@
+{
+  "name": "Test Ordering Agent",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -580,
+        -120
+      ],
+      "id": "477543ac-d4da-42d3-af66-19896155eb23",
+      "name": "When clicking ‘Test workflow’"
+    }
+  ],
+  "pinData": {},
+  "connections": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "22e46d4c-6e93-4802-87ea-29bb6eaba03f",
+  "meta": {
+    "instanceId": "8793b83ef2a59ecb1991019adf72bdaac2d2c4e121ace8936a6d9d5e84dd932c"
+  },
+  "id": "7cp7PrUWw8jqMARW",
+  "tags": []
+}

@@ -1,0 +1,422 @@
+{
+  "name": "Knowledge Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -1620,
+        -360
+      ],
+      "id": "e43b5eff-822a-4a62-a084-3a4a989a5b46",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.query }}",
+        "options": {
+          "systemMessage": "=## Overview\nYou are a helpful assistant to answer clinical genetics related questions. First exam users's questions, and make sure it is a relevant clinical genetic question. If not, reply \"Your answer can not be answered based on my knowledge\".\n\n## Answer questions in multiple steps\n1. Search [protocols], and see if you can find the relevant answer. If no relevant answer can be found, go to step 2, otherwise, return the answer with source.\n2. Search [guidelines], and see if you can find the relevant answer. If no relevant answer can be found, go to step 3, otherwise, return the answer with source.\n3. Search [Pubmed], and see if you can find the relevant answer. If no relevant answer can be found, go to step 4, otherwise, return the answer with source.\n4. Search [Wikipedia], and see if you can find the relevant answer. If no relevant answer can be found, go to step 5, otherwise, return the answer with source.\n5. Use [SerpAPI] to search internet, and see if you can find the relevant answer. If no relevant answer can be found, go to step 6, otherwise, validate the source carefully, and return the answer with source.\n6. Provide an answer based on the knowledge you were trained for. If you don't know the answer, simply say \"I don't know the answer\".\n\n## Final Reminder\nToday's date is {{ $now }}\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -1240,
+        -360
+      ],
+      "id": "6910d3ba-89af-4a32-975b-d9242ec32736",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o-mini",
+          "mode": "list",
+          "cachedResultName": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -1600,
+        -140
+      ],
+      "id": "ca0469c7-dee3-47bc-a51d-f873e65b93a3",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "knowledge-base",
+          "mode": "list",
+          "cachedResultName": "knowledge-base"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        -1660,
+        40
+      ],
+      "id": "592446e5-fb51-4092-bd55-341e55f0ca64",
+      "name": "Pinecone Vector Store",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -1480,
+        240
+      ],
+      "id": "76b33b63-4687-4812-b2ee-8430a9ae3cf3",
+      "name": "Embeddings OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-3.5-turbo-1106",
+          "mode": "list",
+          "cachedResultName": "gpt-3.5-turbo-1106"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -700,
+        -340
+      ],
+      "id": "52cf7492-91fe-4938-bcd3-836e816489de",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "protocols",
+        "description": "Clinical genetic practice related knowledge including clinical protocols.",
+        "topK": 5
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        -1460,
+        -120
+      ],
+      "id": "ed938223-5ce5-49dd-9d31-379b46f83a97",
+      "name": "Step1-protocol"
+    },
+    {
+      "parameters": {
+        "name": "guideline",
+        "description": "Clinical genetic practice related knowledge including clinical guidelines",
+        "topK": 5
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        -1160,
+        -120
+      ],
+      "id": "7bb3c7ab-04a9-4a1b-bfef-409ea7458918",
+      "name": "Step2-guideline"
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "knowledge-base",
+          "mode": "list",
+          "cachedResultName": "knowledge-base"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        -1360,
+        40
+      ],
+      "id": "eff8385d-1c9c-4405-8348-4019aad9be98",
+      "name": "Pinecone Vector Store1",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolSerpApi",
+      "typeVersion": 1,
+      "position": [
+        -380,
+        -100
+      ],
+      "id": "64a39324-3e62-4316-a9af-9a89c0fb23ef",
+      "name": "Step5-SerpAPI",
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolWikipedia",
+      "typeVersion": 1,
+      "position": [
+        -580,
+        -100
+      ],
+      "id": "d5629d6f-9f04-4c44-92ee-7be8f89794a3",
+      "name": "Step4-Wikipedia"
+    },
+    {
+      "parameters": {
+        "name": "pubmed"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        -900,
+        -120
+      ],
+      "id": "043b45b7-71f7-4f02-b769-67184ef498a0",
+      "name": "Step3-Pubmed"
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "knowledge-base",
+          "mode": "list",
+          "cachedResultName": "knowledge-base"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        -1040,
+        40
+      ],
+      "id": "7420bee9-f102-4a6b-9dcb-3fce1b52fd76",
+      "name": "Pinecone Vector Store2",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    }
+  ],
+  "pinData": {
+    "When Executed by Another Workflow": [
+      {
+        "json": {
+          "query": "what might be the relevant genes causing the developmental delayed patient"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Step1-protocol",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          },
+          {
+            "node": "Pinecone Vector Store1",
+            "type": "ai_embedding",
+            "index": 0
+          },
+          {
+            "node": "Pinecone Vector Store2",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Step1-protocol",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "Step2-guideline",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "Step3-Pubmed",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step1-protocol": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step2-guideline": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store1": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Step2-guideline",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step5-SerpAPI": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step4-Wikipedia": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step3-Pubmed": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store2": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Step3-Pubmed",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "11b0d508-c872-4a71-aeaa-65a6513f0471",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "8793b83ef2a59ecb1991019adf72bdaac2d2c4e121ace8936a6d9d5e84dd932c"
+  },
+  "id": "nuJvN0bWTxhTrF3i",
+  "tags": []
+}

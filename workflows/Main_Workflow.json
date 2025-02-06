@@ -1,0 +1,577 @@
+{
+  "name": "Main Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -280,
+        60
+      ],
+      "id": "1d87473b-b828-4999-9b07-6bd6fe3dd6dc",
+      "name": "Telegram Trigger",
+      "webhookId": "9ff3fa4f-f65c-43ca-a361-eba9c0919ace",
+      "credentials": {
+        "telegramApi": {
+          "id": "WCUHmiktcGA91ULu",
+          "name": "Telegram bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "filters": {
+          "sender": "stormliucong@gmail.com"
+        }
+      },
+      "type": "n8n-nodes-base.gmailTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -200,
+        -300
+      ],
+      "id": "e6286248-d639-4cf5-806b-efc4e403649b",
+      "name": "Gmail Trigger",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "f6WQv5OVFC7q12kA",
+          "name": "stormliucong"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-3.5-turbo-0125",
+          "mode": "list",
+          "cachedResultName": "gpt-3.5-turbo-0125"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        220,
+        220
+      ],
+      "id": "5d36c0bc-aefc-40d4-bc07-ee023646559b",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').all()[0].json.message.chat.id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1320,
+        20
+      ],
+      "id": "6bcb2a13-ffe6-48ef-b1bb-d303456526c6",
+      "name": "Response to Telegram",
+      "webhookId": "512dccc2-066d-4a01-974a-6d36ccfb3db6",
+      "alwaysOutputData": true,
+      "credentials": {
+        "telegramApi": {
+          "id": "WCUHmiktcGA91ULu",
+          "name": "Telegram bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "thread",
+        "operation": "reply",
+        "threadId": "={{ $('Gmail Trigger').all()[0].json.threadId}}",
+        "messageId": "={{ $('Gmail Trigger').all()[0].json.id }}",
+        "emailType": "html",
+        "message": "={{ $json.output }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1320,
+        -120
+      ],
+      "id": "ee7fbc24-2f9f-408c-8c97-1e5cbccef38d",
+      "name": "Reply to Gmail",
+      "webhookId": "679bccc5-be71-4b65-bdf8-1e7c4f55c02e",
+      "alwaysOutputData": true,
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "f6WQv5OVFC7q12kA",
+          "name": "stormliucong"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "=triageAgent",
+        "description": "Hand this request to a triage agent to schedule a eConsult service with genetic specialist",
+        "workflowId": {
+          "__rl": true,
+          "value": "Zk3nCo7T3ZwI2qZ9",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR — Triage Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        540,
+        320
+      ],
+      "id": "491d3e80-8bb6-4c69-b598-78aab26f7701",
+      "name": "Call Triage Agent"
+    },
+    {
+      "parameters": {
+        "name": "knowledgeAgent",
+        "description": "Hand this request to a knowledge agent to solve the clinical question",
+        "workflowId": {
+          "__rl": true,
+          "value": "nuJvN0bWTxhTrF3i",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR — Knowledge Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [
+            ""
+          ],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        760,
+        320
+      ],
+      "id": "2fd7b77b-d818-412d-99e8-90ca7b1c57db",
+      "name": "Call Knowledge Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "options": {
+          "systemMessage": "=# Overview\nYou are a helpful front-desk assistant for handling patients or provider's genetic service request. Your job is to send the user's query to the correct tool. You should never be writing responses, or creating even summaries, you just need to call the correct tool. When none of those tools can be used for user's query, generate a description of youself.\n\n## Tools\n- trialAgent: don't user this tool unless you found user strongly insists to send this request to a specialist by reading the entire conversation.\n- knowledgeAgent: if user is asking a clinical genetic related questions\n- testOrderingAgent: if user is asking for test ordering help\n\n## Examples\n- Input: Which genetic test I should order for my patient who has global developmental delays.\n- Action: Use knowledgeAgent to answer this question. You will pass the tool a query like \"Which genetic test I should order for a given patient. Here is his/her clinical phenotypes: [clinical phenotype description]\"\n- Output: Whole example sequencing should be ordered.\n\n## Final Reminders\nHere is the current date/time: {{ $now }}",
+          "passthroughBinaryImages": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        540,
+        -100
+      ],
+      "id": "c4399248-df90-412f-8350-c281291f7262",
+      "name": "Front Desk Agent",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "name": "testOrderingAgent",
+        "description": "Hand this request to a test ordering agent",
+        "workflowId": {
+          "__rl": true,
+          "value": "7cp7PrUWw8jqMARW",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR — Test Ordering Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        1000,
+        320
+      ],
+      "id": "c9216c2c-c6d0-440d-83f2-9be32350f925",
+      "name": "Call Test Ordering Agent"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b8545c0b-726a-4b6e-9dfe-9e1dcc48a27d",
+              "name": "sessionId",
+              "value": "={{ $json.threadId }}",
+              "type": "string"
+            },
+            {
+              "id": "ebf54c7f-9705-4eac-b844-ed6145103986",
+              "name": "chatInput",
+              "value": "={{ $json.snippet }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        20,
+        -300
+      ],
+      "id": "2b09c6a9-4e51-4859-9f37-8c64d3824ae7",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.sessionId }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        280,
+        440
+      ],
+      "id": "0fad1428-e82c-4736-8cf3-39bcd27f7233",
+      "name": "Window Buffer Memory"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        140,
+        -80
+      ],
+      "id": "b4e513fe-6883-4d6b-8154-1bc737032790",
+      "name": "When chat message received",
+      "webhookId": "4905e8f1-db09-49f9-9308-9cb75dc52f21"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "84d2ef5b-ee02-4999-a040-86eb5bd91418",
+              "name": "=chatInput",
+              "value": "={{ $json.message.text }}",
+              "type": "string"
+            },
+            {
+              "id": "7e67ef59-c047-481a-a9c9-77ad29bab8b8",
+              "name": "sessionId",
+              "value": "={{ $json.message.chat.id }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -60,
+        60
+      ],
+      "id": "e3caedfb-24e8-4a4c-8fc6-a7d6d760237d",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "bb928294-2cf7-448f-9427-51f0f01506b3",
+                    "leftValue": "={{ $('When chat message received').isExecuted }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Gmail Trigger').isExecuted }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "c32d0ff2-bb6f-4521-9a72-888fe57a77c3",
+                    "leftValue": "={{ $('Telegram Trigger').isExecuted }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        1000,
+        -80
+      ],
+      "id": "cc35101b-2f95-46f6-a632-e3cc1ccbb900",
+      "name": "Switch"
+    }
+  ],
+  "pinData": {
+    "Gmail Trigger": [
+      {
+        "json": {
+          "id": "194d40154b28f330",
+          "threadId": "194d3fd156265e48",
+          "snippet": "I am a helpful front-desk assistant for handling patients or provider&#39;s genetic service requests. Please let me know how I can assist you today.",
+          "payload": {
+            "mimeType": "text/html"
+          },
+          "sizeEstimate": 879,
+          "historyId": "13018225",
+          "internalDate": "1738723644000",
+          "labels": [
+            {
+              "id": "SENT",
+              "name": "SENT"
+            },
+            {
+              "id": "INBOX",
+              "name": "INBOX"
+            }
+          ],
+          "To": "Cong Liu <stormliucong@gmail.com>",
+          "Subject": "Re: n8n testing",
+          "From": "stormliucong@gmail.com"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gmail Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Response to Telegram": {
+      "main": [
+        []
+      ]
+    },
+    "Call Triage Agent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Knowledge Agent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Front Desk Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Call Test Ordering Agent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        []
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        []
+      ]
+    },
+    "Switch": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Reply to Gmail",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Response to Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "d20a1679-f0cd-491f-bf00-2a35300f7860",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "8793b83ef2a59ecb1991019adf72bdaac2d2c4e121ace8936a6d9d5e84dd932c"
+  },
+  "id": "fqur040oti5aheuX",
+  "tags": []
+}

@@ -1,0 +1,100 @@
+{
+  "name": "Triage Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -940,
+        -160
+      ],
+      "id": "19bbe235-d9a0-44cb-bd12-68f90464258f",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.query }}",
+        "options": {
+          "systemMessage": "# Overview\nYou are a helpful triage assistant to triage clinical genetic econsult request. Your job is route a eConsult request to desired specialist. You should follow the steps below to finish the task\n\n## Steps\n1. Check whether the request contains patients clinical description. If not, ask for it.\n2. \n\n## Examples\n- Input: Which genetic test I should order for my patient who has global developmental delays.\n- Action: Use knowledgeAgent to answer this question. You will pass the tool a query like \"Which genetic test I should order for a given patient. Here is his/her clinical phenotypes: [clinical phenotype description]\"\n- Output: Whole example sequencing should be ordered.\n\n## Final Reminders\nHere is the current date/time: {{ $now }}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -720,
+        -160
+      ],
+      "id": "c7bb444e-0356-4a8c-b1c9-8580d4a1e859",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "inputText": "={{ $json.output }}",
+        "categories": {
+          "categories": [
+            {
+              "category": "family history"
+            },
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.textClassifier",
+      "typeVersion": 1,
+      "position": [
+        -360,
+        -160
+      ],
+      "id": "c8710647-ebf1-427a-a88a-c27bf552e120",
+      "name": "Text Classifier"
+    }
+  ],
+  "pinData": {
+    "When Executed by Another Workflow": [
+      {
+        "json": {
+          "query": "I want to schedule a eConsult service with a specialist"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Text Classifier",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "09cc8749-0fb2-4d0e-9d9c-89c07dad8675",
+  "meta": {
+    "instanceId": "8793b83ef2a59ecb1991019adf72bdaac2d2c4e121ace8936a6d9d5e84dd932c"
+  },
+  "id": "Zk3nCo7T3ZwI2qZ9",
+  "tags": []
+}
