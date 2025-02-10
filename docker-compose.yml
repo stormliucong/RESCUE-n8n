@@ -6,6 +6,8 @@ services:
     ports:
       - "8100:8100"
       - "8103:8103"
+    networks:
+      - internal-network
 
   workflow:
     image: docker.n8n.io/n8nio/n8n
@@ -15,6 +17,12 @@ services:
       - ./n8n_data:/home/node/.n8n
     environment:
       - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY}      
+    networks:
+      - internal-network
 
 volumes:
   n8n_data:
+
+networks:
+  internal-network:
+    driver: bridge
