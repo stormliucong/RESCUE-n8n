@@ -9,6 +9,9 @@ This is a repo for storing the replicable self-hosted n8n workflow
 
 ### Setup encryption
 - created ${N8N_ENCRYPTION_KEY} to setup all credential from beginning
+- bonfhir credential
+    - Username: admin@example.com
+    - Password: medplum_admin
 
 ### Import workflows to n8n
 
