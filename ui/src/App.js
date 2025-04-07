@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Box, Container, TextField, Button, Typography, Paper, Avatar } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import config from '../config';
-import Redis from 'ioredis';
-import axios from 'axios';
+import config from './config';
+import apiService from './services/apiService';
 
 const ChatContainer = styled(Paper)(({ theme }) => ({
   height: '80vh',
@@ -40,48 +39,25 @@ const SystemMessage = styled(Typography)(({ theme }) => ({
 function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
-  const [currentAgent, setCurrentAgent] = useState(null);
+  const [currentAgent, setCurrentAgent] = useState('frontdesk');
   const messagesEndRef = useRef(null);
-  const redisRef = useRef(null);
 
   useEffect(() => {
-    // Initialize Redis connection
-    redisRef.current = new Redis({
-      host: config.redis.host,
-      port: config.redis.port,
+    // Set initial system message
+    setMessages([{
+      type: 'system',
+      content: `Now talking to ${config.agents.frontdesk.name}`,
+      timestamp: new Date().toISOString()
+    }]);
+
+    // Subscribe to message stream (either mock or real)
+    const unsubscribe = apiService.subscribe((message) => {
+      handleNewMessage(message);
     });
 
-    // Subscribe to Redis stream
-    const subscribeToStream = async () => {
-      try {
-        while (true) {
-          const results = await redisRef.current.xread(
-            'BLOCK',
-            0,
-            'STREAMS',
-            config.redis.streamKey,
-            '$'
-          );
-
-          if (results) {
-            const [, messages] = results[0];
-            for (const [id, fields] of messages) {
-              const message = JSON.parse(fields[1]);
-              handleNewMessage(message);
-            }
-          }
-        }
-      } catch (error) {
-        console.error('Redis stream error:', error);
-      }
-    };
-
-    subscribeToStream();
-
     return () => {
-      if (redisRef.current) {
-        redisRef.current.quit();
-      }
+      unsubscribe();
+      apiService.cleanup();
     };
   }, []);
 
@@ -89,16 +65,19 @@ function App() {
     setMessages((prev) => [...prev, message]);
     
     // If the agent has changed, add a system message
-    if (currentAgent && message.agent !== currentAgent) {
+    if (currentAgent && message.agent && message.agent !== currentAgent) {
       setMessages((prev) => [
         ...prev,
         {
           type: 'system',
           content: `Now talking to ${config.agents[message.agent].name}`,
+          timestamp: new Date().toISOString()
         },
       ]);
     }
-    setCurrentAgent(message.agent);
+    if (message.agent) {
+      setCurrentAgent(message.agent);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -115,13 +94,8 @@ function App() {
     setInput('');
 
     try {
-      // Send message to the current agent's endpoint
-      const response = await axios.post(
-        config.agents[currentAgent].endpoint,
-        { message: input }
-      );
-      
-      // The response will be handled by the Redis stream listener
+      // Send message using the API service (mock or real)
+      await apiService.sendMessage(currentAgent, input);
     } catch (error) {
       console.error('Error sending message:', error);
     }
@@ -173,7 +147,7 @@ function App() {
               type="submit"
               variant="contained"
               color="primary"
-              disabled={!input.trim() || !currentAgent}
+              disabled={!input.trim()}
             >
               Send
             </Button>

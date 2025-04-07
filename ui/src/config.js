@@ -5,11 +5,11 @@ const config = {
     responseDelay: 1000, // milliseconds
   },
   
-  // WebSocket Configuration
-  websocket: {
-    host: process.env.REACT_APP_WS_HOST || 'localhost',
-    port: process.env.REACT_APP_WS_PORT || '8080',
-    path: '/ws',
+  // Redis Configuration
+  redis: {
+    host: process.env.REACT_APP_REDIS_HOST || 'localhost',
+    port: process.env.REACT_APP_REDIS_PORT || 6379,
+    streamKey: process.env.REACT_APP_REDIS_STREAM_KEY || 'chat_messages',
   },
   
   // API Endpoints
