@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Box, Container, TextField, Button, Typography, Paper, Avatar } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import PersonIcon from '@mui/icons-material/Person';
+import SchoolIcon from '@mui/icons-material/School';
 import config from './config';
 import apiService from './services/apiService';
 
@@ -23,11 +25,27 @@ const Message = styled(Box)(({ theme, isUser }) => ({
   marginBottom: theme.spacing(1),
 }));
 
+const MessageAvatar = styled(Avatar)(({ theme, color }) => ({
+  backgroundColor: color,
+  marginRight: theme.spacing(1),
+  marginLeft: theme.spacing(1),
+}));
+
+const MessageWrapper = styled(Box)(({ theme, isUser }) => ({
+  display: 'flex',
+  alignItems: 'flex-start',
+  justifyContent: isUser ? 'flex-end' : 'flex-start',
+  marginBottom: theme.spacing(1),
+  width: '100%',
+}));
+
 const MessageContent = styled(Paper)(({ theme, isUser }) => ({
   padding: theme.spacing(1, 2),
   maxWidth: '70%',
   backgroundColor: isUser ? theme.palette.primary.main : theme.palette.grey[100],
   color: isUser ? theme.palette.primary.contrastText : theme.palette.text.primary,
+  display: 'flex',
+  flexDirection: 'column',
 }));
 
 const SystemMessage = styled(Typography)(({ theme }) => ({
@@ -105,6 +123,26 @@ function App() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
+  const getAgentAvatar = (agent) => {
+    if (!agent) return null;
+    const agentConfig = config.agents[agent];
+    if (!agentConfig?.avatar) return null;
+
+    const { type, value, color } = agentConfig.avatar;
+    
+    if (type === 'icon') {
+      return (
+        <MessageAvatar sx={{ bgcolor: color }}>
+          {value === 'person' ? <PersonIcon /> : <SchoolIcon />}
+        </MessageAvatar>
+      );
+    }
+    
+    return (
+      <MessageAvatar src={value} alt={agentConfig.name} sx={{ bgcolor: color }} />
+    );
+  };
+
   return (
     <Container maxWidth="md">
       <Typography variant="h4" component="h1" gutterBottom align="center">
@@ -119,7 +157,8 @@ function App() {
                   {message.content}
                 </SystemMessage>
               ) : (
-                <Message isUser={message.type === 'user'}>
+                <MessageWrapper isUser={message.type === 'user'}>
+                  {message.type !== 'user' && getAgentAvatar(message.agent)}
                   <MessageContent isUser={message.type === 'user'}>
                     <Typography variant="body1">{message.content}</Typography>
                     {message.type !== 'user' && (
@@ -128,7 +167,7 @@ function App() {
                       </Typography>
                     )}
                   </MessageContent>
-                </Message>
+                </MessageWrapper>
               )}
             </React.Fragment>
           ))}
