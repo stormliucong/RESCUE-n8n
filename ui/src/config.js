@@ -26,10 +26,20 @@ const config = {
     frontdesk: {
       name: 'Front Desk Agent',
       endpoint: process.env.REACT_APP_FRONTDESK_ENDPOINT || 'http://localhost:3001/api/frontdesk',
+      avatar: {
+        type: 'icon',
+        value: 'person',
+        color: '#1976d2', // Blue color for frontdesk
+      },
     },
     education: {
       name: 'Education Agent',
       endpoint: process.env.REACT_APP_EDUCATION_ENDPOINT || 'http://localhost:3001/api/education',
+      avatar: {
+        type: 'icon',
+        value: 'school',
+        color: '#2e7d32', // Green color for education
+      },
     },
   },
 };
