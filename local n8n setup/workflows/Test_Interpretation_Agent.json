@@ -1,0 +1,363 @@
+{
+  "createdAt": "2025-02-14T18:59:28.303Z",
+  "updatedAt": "2025-03-26T18:04:01.000Z",
+  "id": "9UEhn9Rn1PCXWkLk",
+  "name": "Test Interpretation Agent",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "f12632d2-272d-49c2-91a9-c46dc4290dec",
+      "typeVersion": 1.1,
+      "name": "Workflow Input Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -100,
+        220
+      ],
+      "id": "a9fab860-e789-4c46-a2e5-4107f6ab1af1",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "call clinivar api",
+        "url": "http://clinvar",
+        "sendBody": true,
+        "parametersBody": {
+          "values": [
+            {}
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        920,
+        220
+      ],
+      "id": "974ba64a-f017-4ad7-a8c8-a1c3e6024edd",
+      "name": "ClinVar"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        280,
+        420
+      ],
+      "id": "1e12ef5b-1a1d-4829-a5c5-770a7a85bf3c",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "guideline",
+          "mode": "list",
+          "cachedResultName": "guideline"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        420
+      ],
+      "id": "91820632-1ab9-4682-9c1d-18a3374065f2",
+      "name": "Pinecone Vector Store Guideline",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        280,
+        580
+      ],
+      "id": "8b6c2da5-d8d4-4d78-97fd-477a7f0f925f",
+      "name": "Embeddings OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "call HGMD api",
+        "url": "http://hgmd"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        760,
+        220
+      ],
+      "id": "6a743e06-3ac5-4c1f-a48f-6713243dac83",
+      "name": "HGMD"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{$json.query}}",
+        "options": {
+          "systemMessage": "=You are the Test Interpretation Agent in our genetic eConsult system. Your role is to analyze laboratory genetic test results\u2014integrated with the patient\u2019s clinical and family history\u2014to provide a clear, evidence-based, and patient-friendly interpretation of these results. Follow these instructions:\n\n1. **Data Review:**\n   - Examine the input, which includes laboratory test results (e.g., gene names, variant types, allele frequencies, pathogenicity classifications) alongside the patient\u2019s medical and family history. \n   - Confirm that all necessary details (such as test methodology and any previous results) are present.\n\n2. **Interpretation Process:**\n   - Using tools to compare each detected variant against up-to-date, authoritative databases (e.g., ClinVar, HGMD), current clinical guidelines, and pubmed literature\n   - Classify each variant into categories such as:\n     - Pathogenic\n     - Likely pathogenic\n     - Variant of uncertain significance (VUS)\n     - Likely benign\n     - Benign\n   - Consider the patient\u2019s clinical context to determine the relevance and potential impact of each variant.\n\n3. **Generate a Report:**\n   - Provide a concise summary of key findings, highlighting variants that are clinically significant.\n   - For each variant, include:\n     - The gene name and variant details.\n     - Its clinical classification and evidence supporting this classification.\n     - An explanation of its potential impact on the patient\u2019s health and any implications for family members.\n   - Offer clear recommendations, such as further confirmatory testing, referral to a genetic counselor, or additional evaluations based on the interpretation.\n\nYour goal is to produce a report that is accurate, clear, and actionable, ensuring that complex genetic data is translated into practical clinical insights for both healthcare providers and patients.\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        220,
+        0
+      ],
+      "id": "68c908e0-9111-4f23-9c3a-ce2c2cbda9ab",
+      "name": "Test Interpretation Agent"
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "pubmed",
+          "mode": "list",
+          "cachedResultName": "pubmed"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        480,
+        420
+      ],
+      "id": "21097a28-6eb3-4843-b26a-8a3ac4c87351",
+      "name": "Pinecone Vector Store Pubmed",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "guideline"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        140,
+        220
+      ],
+      "id": "009ecdbe-6157-4360-8833-e60992668e1d",
+      "name": "Search Guideline"
+    },
+    {
+      "parameters": {
+        "name": "pubmed"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        440,
+        220
+      ],
+      "id": "a834b541-ed11-4209-8ed2-4a94f930fd15",
+      "name": "Search Pubmed"
+    }
+  ],
+  "connections": {
+    "Workflow Input Trigger": {
+      "main": [
+        [
+          {
+            "node": "Test Interpretation Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Test Interpretation Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ClinVar": {
+      "ai_tool": [
+        [
+          {
+            "node": "Test Interpretation Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Search Guideline",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "Search Pubmed",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store Guideline": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Search Guideline",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store Guideline",
+            "type": "ai_embedding",
+            "index": 0
+          },
+          {
+            "node": "Pinecone Vector Store Pubmed",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HGMD": {
+      "ai_tool": [
+        [
+          {
+            "node": "Test Interpretation Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store Pubmed": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Search Pubmed",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Guideline": {
+      "ai_tool": [
+        [
+          {
+            "node": "Test Interpretation Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Pubmed": {
+      "ai_tool": [
+        [
+          {
+            "node": "Test Interpretation Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "c878d7b9-d6bd-4fd5-8a76-d27a64042282",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

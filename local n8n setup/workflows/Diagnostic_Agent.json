@@ -1,0 +1,390 @@
+{
+  "createdAt": "2025-02-14T18:58:25.541Z",
+  "updatedAt": "2025-03-26T18:00:51.000Z",
+  "id": "0LiEkHxgHvS9iHbe",
+  "name": "Diagnostic Agent",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "guideline",
+          "mode": "list",
+          "cachedResultName": "guideline"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        560,
+        440
+      ],
+      "id": "d85f7b3c-71c0-453c-8b92-266472c9a2af",
+      "name": "Pinecone Vector Store Guideline",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "guideline"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        520,
+        260
+      ],
+      "id": "675f743a-2290-421b-82a3-d39e62ebbe8f",
+      "name": "Guideline Search"
+    },
+    {
+      "parameters": {
+        "name": "protocol"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        240,
+        260
+      ],
+      "id": "86c57303-5449-4e2b-a624-ff2d336a7811",
+      "name": "protocol search"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        400,
+        440
+      ],
+      "id": "b78df5f5-ffde-489a-bc61-b4c5653a6966",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        380,
+        660
+      ],
+      "id": "648ec8e0-cca6-4edb-a39e-6d6e9b08890f",
+      "name": "Embeddings OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "protocol",
+          "mode": "list",
+          "cachedResultName": "protocol"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        100,
+        440
+      ],
+      "id": "5cfba0bc-8bf1-4e3a-b5d3-82810bb28f0c",
+      "name": "Pinecone Vector Store Protocol",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{$json.query}}",
+        "options": {
+          "systemMessage": "=You are the DiagnosticAgent in our genetic eConsult system. Your role is to analyze patient and family history data to evaluate hereditary risks and recommend appropriate diagnostic or carrier tests. Follow these instructions:\n\n1. **Data Analysis:**\n   - Review patient\u2019s medical history, family history, and any other relevant clinical data. If not provided, ask for it.\n   - Identify patterns indicative of hereditary conditions (e.g., autosomal dominant, autosomal recessive, X-linked inheritance; early-onset diseases; consanguinity).\n\n2. **Risk Calculation:**\n   - Utilize current guidelines to estimate the patient\u2019s risk for specific genetic conditions and determine if the patient\u2019s history suggests a need for diagnostic testing (to confirm or rule out a suspected condition) or carrier testing (for reproductive planning or asymptomatic risk).\n\n3. **Test Recommendation:**\n   - Based on the risk assessment, recommend the most appropriate genetic tests (e.g., gene panels, single-gene tests, exome sequencing, carrier screening tests).\n   - check the insitutional specific protocol\n   - Use tools (e.g. [phen2test]) if necessary\n   - Provide clear recommendations that include both the type of test and the clinical context for its use.\n\n4. **Rationale and Explanation:**\n   - For each recommended test, include a concise explanation that outlines:\n     - The identified risk factors from the patient\u2019s history.\n     - The clinical benefits and limitations of the recommended test.\n     - Any necessary follow-up actions (e.g., additional counseling, partner testing, referral to a specialist).\n\n## Tools\n- phen2test: generate test recommendation based on patient phenotypes\n- phen2gene: generate candidate genes based on patient phenotypes\n\nYour goal is to generate clear, evidence-based recommendations tailored to the specific patient data, ensuring high accuracy and alignment with current clinical guidelines."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        220,
+        0
+      ],
+      "id": "9f54d83a-a507-48a0-8aa7-fe858872fc7a",
+      "name": "Diagnostic Agent"
+    },
+    {
+      "parameters": {
+        "toolDescription": "call phen2test to get test recommendation. fill in {phenotype} in the body use patient phenotypes",
+        "url": "http://phen2test:8080/api",
+        "sendBody": true,
+        "parametersBody": {
+          "values": [
+            {
+              "name": "phenotypes",
+              "valueProvider": "fieldValue",
+              "value": "{phenotypes}"
+            }
+          ]
+        },
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{phenotypes}",
+              "description": "description of patient phenotypes",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        840,
+        240
+      ],
+      "id": "4a7026ff-e06a-4ef6-a423-4d4a315965a7",
+      "name": "phen2test"
+    },
+    {
+      "parameters": {
+        "toolDescription": "call phen2gene to get test recommendation. fill in {phenotype} in the body use patient phenotypes",
+        "url": "http://phen2gene:8080/api",
+        "sendBody": true,
+        "parametersBody": {
+          "values": [
+            {
+              "name": "phenotypes",
+              "valueProvider": "fieldValue",
+              "value": "{phenotypes}"
+            }
+          ]
+        },
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "phenotypes",
+              "description": "phenotype descriptions",
+              "type": "json"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        1000,
+        240
+      ],
+      "id": "3d20737e-3ac1-4a55-a22c-b9f8a4a08ca7",
+      "name": "phen2gene"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -20,
+        220
+      ],
+      "id": "48697882-c0b9-4a8e-85e8-d7e2b1ed1171",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "5407a2f2-1580-42b0-a79f-4cbd634b141e",
+      "typeVersion": 1.1,
+      "name": "Workflow Input Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "position": [
+        0,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Pinecone Vector Store Guideline": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Guideline Search",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "protocol search",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store Guideline",
+            "type": "ai_embedding",
+            "index": 0
+          },
+          {
+            "node": "Pinecone Vector Store Protocol",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store Protocol": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "protocol search",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Guideline Search": {
+      "ai_tool": [
+        [
+          {
+            "node": "Diagnostic Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "protocol search": {
+      "ai_tool": [
+        [
+          {
+            "node": "Diagnostic Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "phen2test": {
+      "ai_tool": [
+        [
+          {
+            "node": "Diagnostic Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "phen2gene": {
+      "ai_tool": [
+        [
+          {
+            "node": "Diagnostic Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Diagnostic Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Workflow Input Trigger": {
+      "main": [
+        [
+          {
+            "node": "Diagnostic Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "9f08d453-1450-4544-8780-fe7eb6b48253",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "createdAt": "2025-02-14T18:54:09.344Z",
+  "updatedAt": "2025-03-26T17:59:55.000Z",
+  "id": "0P7iOA7B1N8Sqzjv",
+  "name": "Front Desk Agent",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "options": {
+          "systemMessage": "=# Overview\nYou are a helpful front-desk assistant for handling patients or provider's genetic service request. Read the user\u2019s input carefully and identify all relevant details, including personal medical history, family history, symptoms, test results, or any specific questions. Analyze the input to determine the primary intent(s) of the query. If the input is ambiguous or lacks critical details, generate clarifying follow-up questions to obtain the necessary information. You should never be writing responses, or creating even summaries, you just need to call the correct tool. After getting the output from other agent, try to summarize other agent's response and return it to users or call another tool with proper queries. If the request is irrelevant to any of the following tasks, reply the question is irrelevant and you can not answer this question.\n\n## Tools\n- [diagnosticAgent]: Evaluate patient history and family data to calculate hereditary risks and recommend appropriate diagnostic or carrier tests. Make referrals or triage this request to specialist. But it won't put an actual order for the patient.\n- [testInterpretationAgent]: Analyze laboratory test results (if provided) by comparing them against variant databases and established clinical criteria.\n- [EducationAgent]: Provide comprehensive explanations about genetic conditions, inheritance patterns, test procedure, and management options, and ethical, legal, and privacy concerns. Tailor educational content to patient literacy and cultural context.\n- [adminAgent]: Manage scheduling of appointments, triage, test orders, insurance queries, and follow-up reminders. It will post date via FHIR into the EHR\n\n## Final Reminders\nHere is the current date/time: {{ $now }}",
+          "passthroughBinaryImages": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        320,
+        0
+      ],
+      "id": "e6d9a696-a7ab-4b7d-bece-d98865fe31d9",
+      "name": "Front Desk Agent",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.sessionId }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        20,
+        360
+      ],
+      "id": "c68055e1-5ade-414c-b121-b41554d6726d",
+      "name": "Window Buffer Memory"
+    },
+    {
+      "parameters": {
+        "public": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "c82fb4af-ebcc-4edb-a759-45ec4904530e",
+      "name": "When chat message received",
+      "webhookId": "4905e8f1-db09-49f9-9308-9cb75dc52f21"
+    },
+    {
+      "parameters": {
+        "name": "adminAgent",
+        "workflowId": {
+          "__rl": true,
+          "value": "2pB1IOup4ZeogtAG",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Admin Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        200,
+        380
+      ],
+      "id": "0d78efe8-acf8-4fb3-a931-952750c63ce9",
+      "name": "adminAgent"
+    },
+    {
+      "parameters": {
+        "name": "diagnosticAgent",
+        "workflowId": {
+          "__rl": true,
+          "value": "0LiEkHxgHvS9iHbe",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Diagnostic Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        380,
+        380
+      ],
+      "id": "304b736d-d0d2-4769-9e7a-21d381416ba4",
+      "name": "diagnosticAgent"
+    },
+    {
+      "parameters": {
+        "name": "testInterpretationAgent",
+        "workflowId": {
+          "__rl": true,
+          "value": "9UEhn9Rn1PCXWkLk",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Test Interpretation Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        560,
+        380
+      ],
+      "id": "b3284c32-eff9-42b0-be58-13eede476a1e",
+      "name": "testInterpretationAgent"
+    },
+    {
+      "parameters": {
+        "name": "educationAgent",
+        "workflowId": {
+          "__rl": true,
+          "value": "prQpeARJzVI1zlSz",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Education Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        740,
+        380
+      ],
+      "id": "49d18215-0608-4bcc-9d11-a8f17c4b3261",
+      "name": "educationAgent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -120,
+        320
+      ],
+      "id": "fe744c38-eb1c-422a-a0d0-06e642475fb7",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "adminAgent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "diagnosticAgent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "testInterpretationAgent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "educationAgent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "2ae656d4-1fc8-40b2-b1ca-d033e71cb2a5",
+  "triggerCount": 2,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

@@ -1,0 +1,816 @@
+{
+  "createdAt": "2025-03-11T17:08:23.620Z",
+  "updatedAt": "2025-03-27T17:42:42.000Z",
+  "id": "p5CG6PCfoYNp850m",
+  "name": "Schedule Agent Design",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('Executed by Front Desk').item.json.query }}",
+        "options": {
+          "systemMessage": "=You are an intelligent front-desk assistant for managing patient appointments using FHIR APIs. Your task is to handle all possible appointment scenarios efficiently and correctly. You should use correct tools to perform the task. you may have to use multiple tools in a sequence. If you need more information to complete the task, always fake those information. \n\n## Business Rules\n- New Patients: Always create a patient record if they don\u2019t exist.\n- Availability Check: Always verify provider availability before scheduling or rescheduling.\n- Alternative Options: If a time slot is unavailable, suggest free slots.\n\n## Potential steps you want to consider based on the patient's request:\n\n###Step 1: Identify the Patient\n- Check if the patient exists, always use first name last name and birthdate, retrieve their record using things like:\nGET https://your-fhir-server.com/Patient?given=John&family=Doe&birthdate=eq1980-01-01\n- If the patient does not exist, create a new patient record:\nPOST /Patient with first name (required), last name (required), date of birth (required) and demographic or contact details (optional)\n\n###Step 2: Find an Available Slot\n- Retrieve an available slot according to patients request (e.g., for a specific practitioner, time, or location) using\nGET /Slot?status=free\n- If you need slots for a specific Practitioner\nGET /Slot?schedule.actor=Practitioner/[practitioner-id]&status=free\n- If you need slots for a specific Location\nGET /Location?name=[location-name]\nGET /Slot?schedule.actor=Location/[location-id]&status=free\n- To search for available slots within a date range, use the start parameter\nGET /Slot?status=free&start=ge2025-02-20T00:00:00Z&start=lt2025-02-21T00:00:00Z\n- If no slots available, STOP HERE. provide available options to patient by remove practitioner, time, or location contraints.\n\n###Step 3: Retrieve Start, End, and Schedule for a Given Slot\n- Get start, end and scheduleId using GET /Slot/{slotId}\n\n###Step 4: Retrieve practionerId from retrieved Schedule\n- get practionerId using GET /Schedule/{scheduleId}\n\n###Step 4: Create an Appointment Resource\nPOST /Appointment with patient, provider, date, and reason. An example will be \n```{\n  \"resourceType\": \"Appointment\",\n  \"status\": \"booked\",\n  \"start\": \"2025-02-20T10:00:00Z\",\n  \"end\": \"2025-02-20T10:30:00Z\",\n  \"participant\": [\n    {\n      \"actor\": {\n        \"reference\": \"Patient/123\"\n      },\n      \"status\": \"accepted\"\n    },\n    {\n      \"actor\": {\n        \"reference\": \"Practitioner/456\"\n      },\n      \"status\": \"accepted\"\n    },\n    {\n      \"actor\": {\n        \"reference\": \"Location/789\"\n      },\n      \"status\": \"accepted\"\n    }\n    ],\n  \"slot\": [{\"reference\": \"Slot/12\"}]\n    }\n  ]\n}```\n\n### Step 5: Update the Slot status to be 'busy'\n\n### Reschedule an Existing Appointment\n### Cancel an Appointment\n\n### Confirm an Appointment\nGET /Appointment\nAn example of the query paramters will be like:\n{\n  \"query\": {\n    \"resourceType\": \"Appointment\",\n    \"query_parameter_in_json\": \"{\\\"patient\\\":\\\"Patient/{id} }\\\"}\"\n  }\n}\n\n\n## Final Reminder\nToday'date is {{ $now }}, You are located in Boston, MA, USA. Remember the FHIR server stores timestamps in UTC by default, you have to convert the time zone difference when creating and retrieve resources.",
+          "maxIterations": 10
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -120,
+        -400
+      ],
+      "id": "27bde61c-4b73-4ed7-bd5a-5a3bb344410d",
+      "name": "Schedule Agent",
+      "executeOnce": false,
+      "retryOnFail": false
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -100,
+        -600
+      ],
+      "id": "c10538ac-e1ef-4de7-8fcf-b9b2e5c1c979",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -580,
+        -400
+      ],
+      "id": "8b0b2156-7626-48bd-9c32-9b58ed010b37",
+      "name": "Executed by Front Desk"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Search for all resources of a given type",
+        "url": "http://165.22.13.117:7070/fhir/{resourceType}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendQuery": true,
+        "specifyQuery": "json",
+        "jsonQuery": "={query_parameter_in_json}",
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{query_parameter_in_json}",
+              "description": "a json format parameter list for searching for resources with specific parameters"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        -260,
+        -80
+      ],
+      "id": "a5cd69d6-e189-4005-b913-65d2a91bb473",
+      "name": "getAllResources",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Search for all resources of a given type",
+        "method": "POST",
+        "url": "http://165.22.13.117:7070/fhir/{resourceType}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={query_parameter_in_json}",
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{query_parameter_in_json}",
+              "description": "a json format parameter list for searching for resources with specific parameters"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        40,
+        -80
+      ],
+      "id": "0689f0e2-0685-4645-952e-007ab05462bd",
+      "name": "createResource",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Update a specific resource",
+        "method": "PUT",
+        "url": "http://165.22.13.117:7070/fhir/{resourceType}/{resourceId}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={fhir_payload}",
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{fhir_payload}",
+              "description": "resource payload in fhir json format to be updated"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        180,
+        -80
+      ],
+      "id": "3304c519-1cdf-4123-8ca3-8a586eef55c9",
+      "name": "updateResource",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -220,
+        780
+      ],
+      "id": "8adbbddc-b0a2-470e-8101-9030af75435d",
+      "name": "OpenAI Chat Model2",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n\t\"type\": \"object\",\n\t\"properties\": {\n\t\t\"isEligible\": {\n\t\t\t\"type\": [\"integer\", \"string\"]\n\t\t},\n\t\t\"reason\": {\n\t\t\t\"type\": \"string\"\n\t\t}\n\t}\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        -60,
+        780
+      ],
+      "id": "e8983660-489c-46cc-a18a-9a5a1f378a3a",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.query }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=You are a verification agent responsible for determining whether the hospital can handle a patient\u2019s case or if a referral to Trilogy is necessary based on the following criteria. Only perform checks when it is clearly stated that eligibility needs to be confirmed. No further scheduling tasks will be handled at this stage.\n\nSkip Eligibility Check (isEligible = -1): If no changes or modifications are needed regarding the patient\u2019s appointment, eligibility check can be skipped. This means the patient should be considered eligible without further review.\n\nCriteria for Eligibility Check:\n\nPatients under 1 year old can be directly accepted by the hospital without further checks.\nThe patient should be checked for specialized genetic tests or treatments that may be outside the hospital\u2019s current capabilities. If the case requires advanced genetic testing or specialized medical interventions, a referral to Trilogy might be necessary.\nIf the patient requires diagnostic tools or treatment facilities not available at the hospital, such as advanced imaging or laboratory equipment, they may need to be referred elsewhere.\nIf the patient\u2019s condition requires intensive monitoring or specialized genetic treatments that the hospital cannot provide, a referral will be required.\n\n\nPerform Eligibility Check (isEligible = 0 or 1): If eligibility check is requested (i.e., there are changes to the appointment or the patient's situation needs to be reassessed), the agent will assess based on the above criteria.\n\nIf you need to get the patient info, always use first name last name and birthdate, retrieve their record using things like:\nGET https://your-fhir-server.com/Patient?given=John&family=Doe&birthdate=eq1980-01-01\n\n\ne.g.:\n{\n\t\"isEligible\":0,\n        \"reason: ... \n}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -220,
+        920
+      ],
+      "id": "51179083-6bf0-4c1d-82b2-65153ee55793",
+      "name": "Verification Agent"
+    },
+    {
+      "parameters": {
+        "toolDescription": "referral check",
+        "url": "/api/eligibility/check-referral"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        -220,
+        1200
+      ],
+      "id": "d61f6bd4-c436-4ad6-902e-8dd9dbbeef0c",
+      "name": "referralCheck"
+    },
+    {
+      "parameters": {
+        "toolDescription": "preAuthCheck",
+        "url": "/api/eligibility/check-pre-authorization"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        60,
+        1200
+      ],
+      "id": "ced676cf-322a-4118-8d61-974765699762",
+      "name": "preAuthCheck"
+    },
+    {
+      "parameters": {
+        "url": "/api/eligibility/waiver-check"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        200,
+        1200
+      ],
+      "id": "3bb53e89-8ca7-4936-826d-dce224f20eec",
+      "name": "waiverCheck"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Read a specific resource",
+        "url": "=http://165.22.13.117:7070/fhir/{resourceType}/{resourceId}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        -100,
+        -80
+      ],
+      "id": "e160c2cd-9cda-4a5a-b080-5184fec47ea9",
+      "name": "getResourceById",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Search for all resources of a given type",
+        "url": "http://165.22.13.117:7070/fhir/{resourceType}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendQuery": true,
+        "specifyQuery": "json",
+        "jsonQuery": "={query_parameter_in_json}",
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{query_parameter_in_json}",
+              "description": "a json format parameter list for searching for resources with specific parameters"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        -380,
+        1200
+      ],
+      "id": "0051e9cd-c694-4fe6-9b6c-6314f7dd9d17",
+      "name": "getPatientResource",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "insurance verification\n",
+        "url": "/api/eligibility/verify-insurance"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        -80,
+        1200
+      ],
+      "id": "0b2e54bd-0923-44af-bdce-dd6ae643f005",
+      "name": "verifyInsurance"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Delete a resource",
+        "method": "DELETE",
+        "url": "=http://165.22.13.117:7070/fhir/{resourceType}/{resourceId}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        320,
+        -80
+      ],
+      "id": "370cc029-3aac-4961-881b-695b5b782a32",
+      "name": "deleteResource",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "verifyAgent",
+        "workflowId": {
+          "__rl": true,
+          "value": "WGGX3RZkZXCbLSqa",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Verification Agent Design"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        480,
+        -80
+      ],
+      "id": "ea6785c2-0503-4d14-8c8e-fda0bec0245e",
+      "name": "verifyAgent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -60,
+        160
+      ],
+      "id": "c1c275c2-42ca-4955-9442-7b4e10f4f703",
+      "name": "Schedule Agent 2"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -120,
+        380
+      ],
+      "id": "8fc3b3cf-4b6d-4a6f-97cb-c7c759984729",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "XQMTOztbVU9NiPvc",
+          "name": "OpenAi account 2"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        100,
+        380
+      ],
+      "id": "5602f594-eae0-40f4-abc0-3f4cbe5d788a",
+      "name": "getAllResources1"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        380
+      ],
+      "id": "ec6b2ea8-989e-4d70-808c-3c65c77647f4",
+      "name": "deleteResource1"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -500,
+        160
+      ],
+      "id": "37216202-e212-479e-91fb-0c082db5de00",
+      "name": "ChangedByProvider",
+      "webhookId": "615c1d54-f0ce-48e2-8f1c-01fa3f1b1916"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Read a specific resource",
+        "url": "=http://165.22.13.117:7070/fhir/{resourceType}/{resourceId}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        400,
+        380
+      ],
+      "id": "0f076479-3c19-476d-8603-80045ec81907",
+      "name": "getResourceById1",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Update a specific resource",
+        "method": "PUT",
+        "url": "http://165.22.13.117:7070/fhir/{resourceType}/{resourceId}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendQuery": true,
+        "specifyQuery": "json",
+        "jsonQuery": "={fhir_payload}",
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{fhir_payload}",
+              "description": "resource payload in fhir json format to be updated"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        560,
+        380
+      ],
+      "id": "ce53a1a7-b94d-4f39-8442-75f5dfdcd70e",
+      "name": "updateResource1",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        340,
+        160
+      ],
+      "id": "449cd86f-c3d6-4aa5-ac8b-165ee8f4d4a0",
+      "name": "notifyPatient",
+      "webhookId": "90a01e6d-f33e-49be-89e3-f964013153ad"
+    }
+  ],
+  "connections": {
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Executed by Front Desk": {
+      "main": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "getAllResources": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "createResource": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "updateResource": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verification Agent": {
+      "main": [
+        []
+      ]
+    },
+    "referralCheck": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "preAuthCheck": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "waiverCheck": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "getResourceById": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "getPatientResource": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "verifyInsurance": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "deleteResource": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "verifyAgent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Schedule Agent 2",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "getAllResources1": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent 2",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "deleteResource1": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent 2",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Agent 2": {
+      "main": [
+        [
+          {
+            "node": "notifyPatient",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ChangedByProvider": {
+      "main": [
+        [
+          {
+            "node": "Schedule Agent 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "getResourceById1": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent 2",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "updateResource1": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent 2",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "notifyPatient": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {
+    "Executed by Front Desk": [
+      {
+        "json": {
+          "query": "Select an appropriate appointment time next Monday for the patient based on their availability and provider schedule."
+        }
+      }
+    ]
+  },
+  "versionId": "fffe2f90-e023-46c0-81fd-82472f8b6532",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

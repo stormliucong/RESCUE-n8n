@@ -1,0 +1,391 @@
+{
+  "createdAt": "2025-02-07T19:25:07.316Z",
+  "updatedAt": "2025-03-26T18:04:39.000Z",
+  "id": "5VjocNN3HD1vibvc",
+  "name": "Front Desk Agent DEMO",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-3.5-turbo-0125",
+          "mode": "list",
+          "cachedResultName": "gpt-3.5-turbo-0125"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        120,
+        240
+      ],
+      "id": "a134b930-df37-4f7f-830a-41ac11b2b0ce",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "options": {
+          "systemMessage": "=# Overview\nYou are a helpful front-desk assistant for handling patients or provider's genetic service request. Read the user\u2019s input carefully and identify all relevant details, including personal medical history, family history, symptoms, test results, or any specific questions. Analyze the input to determine the primary intent(s) of the query. If the input is ambiguous or lacks critical details, generate clarifying follow-up questions to obtain the necessary information. You should never be writing responses, or creating even summaries, you just need to call the correct tool. \n\n## Tools\n- [diagnosticAgent]: Evaluate patient history and family data to calculate hereditary risks and recommend appropriate diagnostic or carrier tests.\n- [testInterpretationAgent]: Analyze laboratory test results (if provided) by comparing them against variant databases and established clinical criteria.\n- [QuestionAnsweringAgent]: Provide comprehensive explanations about genetic conditions, inheritance patterns, test procedure, and management options, and ethical, legal, and privacy concerns. Tailor educational content to patient literacy and cultural context.\n- [administrativeAgent]: Manage scheduling of appointments, triage, test orders, insurance queries, and follow-up reminders. It will post date via FHIR into the EHR\n\n## Final Reminders\nHere is the current date/time: {{ $now }}",
+          "passthroughBinaryImages": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        0,
+        0
+      ],
+      "id": "cede00c1-9b0f-4ae9-85fa-b02269a991cf",
+      "name": "Front Desk Agent",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.sessionId }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        100,
+        -160
+      ],
+      "id": "6ab15740-517f-4660-937c-bf9bc781978d",
+      "name": "Window Buffer Memory"
+    },
+    {
+      "parameters": {
+        "public": true,
+        "initialMessages": "I am your frontdesk assistant. I can help with genetic test ordering, genetic triage, and genetic question answering.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -180,
+        300
+      ],
+      "id": "2ab1e247-9e65-4bd3-8bb6-c075a5cfbc72",
+      "name": "When chat message received",
+      "webhookId": "4905e8f1-db09-49f9-9308-9cb75dc52f21"
+    },
+    {
+      "parameters": {
+        "name": "adminAgent",
+        "workflowId": {
+          "__rl": true,
+          "value": "pe14qlincHzWbbkQ",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Administrative Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        400,
+        -160
+      ],
+      "id": "8df5a23f-0d63-4114-8165-17b96ffd5689",
+      "name": "Call Admin Agent"
+    },
+    {
+      "parameters": {
+        "name": "diagnosticAgent",
+        "workflowId": {
+          "__rl": true,
+          "value": "t4SdbnhVui4ypItx",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Diagnostic Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        400,
+        0
+      ],
+      "id": "62bae436-aad8-4c26-aec6-53bf6b5196f2",
+      "name": "Call Diagnostic Agent"
+    },
+    {
+      "parameters": {
+        "name": "testInterpretationAgent",
+        "workflowId": {
+          "__rl": true,
+          "value": "9Cw6zfJNjEll1aaE",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Test Interpretation Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        400,
+        300
+      ],
+      "id": "b3cf3a5e-d818-4978-87b0-1bd44b0b674b",
+      "name": "Call Test Interpretation Agent"
+    },
+    {
+      "parameters": {
+        "name": "educationAgent",
+        "workflowId": {
+          "__rl": true,
+          "value": "xRis548wEE7BaHlj",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Education Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        400,
+        160
+      ],
+      "id": "9e7faa57-cb8b-4648-83fe-66fd61a2b670",
+      "name": "Call Education Agent"
+    },
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -180,
+        120
+      ],
+      "id": "f5cf47f7-ae9a-4f3b-ad9d-23f70d25cb40",
+      "name": "Telegram Trigger",
+      "webhookId": "b83c06a8-38f2-4fbb-be63-9c6f641df8ae",
+      "credentials": {
+        "telegramApi": {
+          "id": "WCUHmiktcGA91ULu",
+          "name": "Telegram bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.gmailTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -180,
+        -40
+      ],
+      "id": "2de39137-4f22-454c-b7e4-b3554e3217cc",
+      "name": "Gmail Trigger",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "f6WQv5OVFC7q12kA",
+          "name": "stormliucong"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "path": "0a8650cd-4756-46d8-ab64-e51a21e06b83",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -180,
+        -180
+      ],
+      "id": "c5baabb9-c964-4fb1-8cca-c78952c67f9e",
+      "name": "Webhook",
+      "webhookId": "0a8650cd-4756-46d8-ab64-e51a21e06b83"
+    }
+  ],
+  "connections": {
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Admin Agent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Diagnostic Agent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Test Interpretation Agent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Education Agent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gmail Trigger": {
+      "main": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Front Desk Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "fd77300d-cf4c-466d-a8bc-20d7e7202d55",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:52:09.555Z",
+      "updatedAt": "2025-03-26T17:53:07.262Z",
+      "id": "FXorOXy8mYanYwkx",
+      "name": "status: archived"
+    },
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
+    }
+  ]
+}

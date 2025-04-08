@@ -1,0 +1,829 @@
+{
+  "createdAt": "2025-03-13T02:56:31.694Z",
+  "updatedAt": "2025-04-07T01:46:50.000Z",
+  "id": "bIw7bxVzjXzsARlc",
+  "name": "Interactive Agent Evaluation: Front Desk Agent",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        500,
+        240
+      ],
+      "id": "57dc2279-b11d-4f97-a220-f59c72327193",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.body.message }} ",
+              "type": "string"
+            },
+            {
+              "id": "3378b757-1dae-4d5c-ba84-45dbd15f7a8e",
+              "name": "counter",
+              "value": "={{ $json.body.counter + 1}} ",
+              "type": "number"
+            },
+            {
+              "id": "a70da19e-5e47-4652-baad-2d6eb614bd04",
+              "name": "sessionId",
+              "value": "={{ $json.body.sessionId }}",
+              "type": "string"
+            },
+            {
+              "id": "9e9bb699-2973-4a6d-be98-ace8c537376a",
+              "name": "end_conversation",
+              "value": "={{ [\"true\", true, \"1\", 1].includes($json.body.end_conversation) }}",
+              "type": "boolean"
+            },
+            {
+              "id": "85a9daa0-b6fc-4a5a-b7d6-c98c88d77fdf",
+              "name": "target_agent",
+              "value": "={{ $json.body.target_agent }}",
+              "type": "string"
+            },
+            {
+              "id": "66ed04cd-d65d-4dc5-af7f-f1375dbdb902",
+              "name": "patient_profile",
+              "value": "={{ $json.body.target_agent }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        100,
+        -140
+      ],
+      "id": "2b57757d-aa4e-4d6c-b278-81eb4cba4515",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ea3e016d-38d0-4375-b9f1-3172fe251508",
+              "leftValue": "={{ $json.counter }}",
+              "rightValue": 9,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            },
+            {
+              "id": "6fe47944-c600-4282-898a-22d02bea0716",
+              "leftValue": "={{ $json.end_conversation }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        340,
+        -140
+      ],
+      "id": "2d9bd216-ceb8-47fd-8368-7284f430f0f2",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "You are a front desk agent for a telemedicine clinic. In every interaction you must check the Redis memory for context.\n\nIf the patient\u2019s question is strictly administrative (e.g., about scheduling, billing, appointment logistics, clinic policies, etc.), provide the answer. End your response with the token \"<PATIENT>\".\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, forward the entire message verbatim to the education agent. End your output with the token \"<EDUCATION>\".\n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\"."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        660,
+        0
+      ],
+      "id": "43ffef2f-e593-449b-b24b-d188cd87c8a4",
+      "name": "FrontDesk Agent"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\n  \"msg\": \"conversation finished: Front-Desk Agent (message limit exceeded)\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        660,
+        -280
+      ],
+      "id": "87bd457e-c438-4d0f-9f31-9a66721738fb",
+      "name": "Respond to Webhook (conversation stopped)"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://congliu.app.n8n.cloud/webhook/4549813e-3274-43bf-b541-dcfda9854f00",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.reply }}"
+            },
+            {
+              "name": "counter",
+              "value": "={{ $('If').item.json.counter }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "={{ $('If').item.json.sessionId }}"
+            },
+            {
+              "name": "end_conversation",
+              "value": "={{ [\"true\", true, \"1\", 1].includes($json.end_conversation) }}"
+            },
+            {
+              "name": "patient_agent",
+              "value": "={{ $json.target_agent }}"
+            },
+            {
+              "name": "patient_profile",
+              "value": "={{ $('If').item.json.patient_profile }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1860,
+        100
+      ],
+      "id": "05d307ab-e94a-47f4-86d6-d97361291a10",
+      "name": "HTTP Request to Patient Agent"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "413ab7a1-30ae-4276-a5d0-8d5ecda4f7a3",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -120,
+        -140
+      ],
+      "id": "f80db2bd-7e13-4857-b7cc-04d47817d5b9",
+      "name": "Webhook - Listen for Patient Msg",
+      "webhookId": "413ab7a1-30ae-4276-a5d0-8d5ecda4f7a3"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\n  \"msg\": \"conversation finished: Front-Desk Agent (message limit not exceeded)\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1340,
+        0
+      ],
+      "id": "646b9552-46d7-46cd-9264-8f97c44c60db",
+      "name": "Respond to Webhook (previous stopped)"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryRedisChat",
+      "typeVersion": 1.4,
+      "position": [
+        680,
+        240
+      ],
+      "id": "f7cdaac4-1bd8-4a04-bc2d-e038d885341c",
+      "name": "Redis Chat Memory",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "key": "={{ $('Edit Fields').item.json.sessionId }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1320,
+        -480
+      ],
+      "id": "c40e3fd4-8741-4e3e-8ecf-f3c38c54dabe",
+      "name": "Redis",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "key": "conversation_1"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1060,
+        -480
+      ],
+      "id": "bb17d275-39ab-4087-8f32-cb1ec2eaa63e",
+      "name": "Redis1",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\t\"reply\": \"reply to the user query\",\n\t\"end_conversation\": false\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        840,
+        240
+      ],
+      "id": "a1a03bbf-578c-43ca-aee4-96975da6bb8f",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://congliu.app.n8n.cloud/webhook/4549813e-3274-43bf-b541-dcfda9854f00",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "counter",
+              "value": "={{ $('If').item.json.counter }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "={{ $('If').item.json.sessionId }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1840,
+        -480
+      ],
+      "id": "70e488f2-63ef-4292-961a-ccc630664d6c",
+      "name": "HTTP Request to Patient Agent1"
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"reply\": {\n      \"type\": \"string\"\n    },\n    \"end_conversation\": {\n      \"type\": \"boolean\"\n    }\n  },\n  \"required\": [\"reply\", \"end_conversation\"],\n  \"additionalProperties\": false\n}\n"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        1000,
+        240
+      ],
+      "id": "4b4e1639-6df8-4899-85f7-796a158f0f48",
+      "name": "Structured Output Parser1"
+    },
+    {
+      "parameters": {
+        "jsCode": "const result = [];\n\nfor (const item of $input.all()) {\n  let message = item.json.output || \"\";\n  const containsStop = message.includes(\"<STOP>\");\n\n  // Default agent is null unless we detect one of the tags\n  let target_agent = null;\n\n  // Check for <PATIENT> token\n  if (message.includes(\"<PATIENT>\")) {\n    target_agent = \"patient\";\n    message = message.replace(\"<PATIENT>\", \"\");\n  }\n  // Check for <EDUCATION> token\n  else if (message.includes(\"<EDUCATION>\")) {\n    target_agent = \"education_agent\";\n    message = message.replace(\"<EDUCATION>\", \"\");\n  }\n\n  // Remove <STOP> token for final output\n  message = message.replace(\"<STOP>\", \"\").trim();\n\n  result.push({\n    json: {\n      reply: message,\n      end_conversation: containsStop,\n      target_agent: target_agent\n    }\n  });\n}\n\nreturn result;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1080,
+        0
+      ],
+      "id": "64b0f4e4-d3eb-473c-a7a6-20b78961a7e4",
+      "name": "Code"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -360,
+        -660
+      ],
+      "id": "5af6109b-d664-430a-b578-06f9ecde1d73",
+      "name": "When clicking \u2018Test workflow\u2019"
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1AzVJ54O21vyhlJ-TUIKFajsDpC1oiK_o",
+          "mode": "list",
+          "cachedResultName": "Tier 2: Hulu Syndrome_ Clinical Reference Guide version 1.pdf",
+          "cachedResultUrl": "https://drive.google.com/file/d/1AzVJ54O21vyhlJ-TUIKFajsDpC1oiK_o/view?usp=drivesdk"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -120,
+        -660
+      ],
+      "id": "be391806-2a0e-429b-988e-d2d14736881b",
+      "name": "Google Drive",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "zDc8X8wm8MQZzy0g",
+          "name": "Google Drive account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        80,
+        -660
+      ],
+      "id": "fbe73de4-ba75-4f1e-99c2-7a9cf0343678",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Based on the following genetic reference document, I want you to generate a dummy patient profile that fits this profile. Do not explicitely state the syndrome or condition name, more like just try to create a profile with symptoms that fit its description.\n\nThe output should include only the patient profile with no introductory sentences. Do not mention that it's a dummy profile.\n\n{{ $json.text }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.5,
+      "position": [
+        380,
+        -660
+      ],
+      "id": "4e0d1a5f-0aec-4eba-8d86-5c01d6f8a2cc",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        280,
+        -440
+      ],
+      "id": "3a8b67ae-e71b-4d22-86cb-77c7a9c71cb8",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.target_agent }}",
+                    "rightValue": "education_agent",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "fa90ab01-93cf-4cb3-85dc-5f547c4c7845",
+                    "leftValue": "={{ $json.target_agent }}",
+                    "rightValue": "patient",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        1560,
+        0
+      ],
+      "id": "ddd68e4f-39ea-4ee1-ab64-71a780c0b1f9",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://congliu.app.n8n.cloud/webhook/4549813e-3274-43bf-b541-dcfda9854f00",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "=<START>"
+            },
+            {
+              "name": "counter",
+              "value": "=0"
+            },
+            {
+              "name": "sessionId",
+              "value": "=conversation_1"
+            },
+            {
+              "name": "end_conversation",
+              "value": "=false"
+            },
+            {
+              "name": "patient_profile",
+              "value": "={{ $json.text }}"
+            },
+            {
+              "name": "target_agent",
+              "value": "front_desk"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        760,
+        -660
+      ],
+      "id": "5b454121-2776-44a6-8491-b8928281572b",
+      "name": "HTTP Request to Patient Agent - Init"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://congliu.app.n8n.cloud/webhook/bdfcc15d-a70c-4fb4-9df6-5beaf18fa2d6",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.reply }}"
+            },
+            {
+              "name": "counter",
+              "value": "={{ $('If').item.json.counter }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "={{ $('If').item.json.sessionId }}"
+            },
+            {
+              "name": "end_conversation",
+              "value": "={{ [\"true\", true, \"1\", 1].includes($json.end_conversation) }}"
+            },
+            {
+              "name": "target_agent",
+              "value": "={{ $json.target_agent }}"
+            },
+            {
+              "name": "patient_profile",
+              "value": "={{ $('If').item.json.patient_profile }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1860,
+        -120
+      ],
+      "id": "4f1f8032-1ffb-474f-803d-8224c7dac665",
+      "name": "HTTP Request to Education Agent"
+    }
+  ],
+  "connections": {
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "FrontDesk Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook (conversation stopped)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "FrontDesk Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FrontDesk Agent": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook - Listen for Patient Msg": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request to Patient Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Redis Chat Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "FrontDesk Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis": {
+      "main": [
+        []
+      ]
+    },
+    "Redis1": {
+      "main": [
+        []
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        []
+      ]
+    },
+    "Respond to Webhook (previous stopped)": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser1": {
+      "ai_outputParser": [
+        []
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook (previous stopped)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        [
+          {
+            "node": "Google Drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request to Patient Agent - Init",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request to Education Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request to Patient Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "5cb0beef-447c-4609-9760-1b444e30071c",
+  "triggerCount": 1,
+  "tags": [
+    {
+      "createdAt": "2025-02-14T18:59:44.562Z",
+      "updatedAt": "2025-03-26T17:54:02.609Z",
+      "id": "p924Avtw60OkFX3e",
+      "name": "type: test"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

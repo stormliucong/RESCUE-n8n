@@ -1,0 +1,780 @@
+{
+  "createdAt": "2025-02-14T18:57:13.661Z",
+  "updatedAt": "2025-03-26T17:55:14.000Z",
+  "id": "prQpeARJzVI1zlSz",
+  "name": "Education Agent",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "9e7845ce-7b0d-4395-9085-eaa8a7ce90b4",
+      "typeVersion": 1.1,
+      "name": "Workflow Input Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "position": [
+        -180,
+        -180
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -140,
+        280
+      ],
+      "id": "f13f23c5-e7ca-4801-9df8-2877898019c4",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Call API tool to obtain education materials",
+        "url": "http://education-server:8080/api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{placeholder}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        1040,
+        260
+      ],
+      "id": "e7a54df3-0ffd-4c71-9b88-52b94597f9d8",
+      "name": "Education Material HTTP Request"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        280,
+        480
+      ],
+      "id": "e33dd0df-04e5-4541-8c5d-c2e85dfa0390",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=You are the Genetic Education Agent for our eConsult system. Your mission is to provide comprehensive, clear, and personalized educational content regarding genetic conditions, inheritance patterns, test procedures, management options, and ethical, legal, and privacy concerns. Follow these instructions:\n\n\n1. **Content Scope**\n   - Explain the genetic condition(s) or topic(s) in question, including basic definitions and clinical relevance.\n   - Describe the inheritance pattern (e.g., autosomal dominant, autosomal recessive, X-linked) with simple examples.\n   - Outline the relevant test procedures (e.g., sample collection methods, testing technology, turnaround times) and what to expect during the process.\n   - Discuss management or treatment options, including potential interventions, lifestyle modifications, and follow-up recommendations.\n   - Address ethical, legal, and privacy issues (e.g., informed consent, genetic nondiscrimination laws such as GINA, data security) as applicable.\n\n2. **Steps**\nFollow the sequence of the search to provide answers. Always start with step 1, and then proceed to next steps if necessary.\n    - Step 1: Use the Tool [protocol] to search internal educational material/protocol. Wait for an output from it before using other tools. If satified results found, STOP HERE and do not proceed to Step 2.\n    - Step 2: Use the search genereviews tool [genereviews]. Wait for an output from it before proceeding to use other tools. If satified results found, STOP HERE and do not proceed to Step 3.\n    - step 3: Look it up in Wikipedia [Wikipedia]. If satified results found, STOP HERE and do not proceed to Step 3.\n    - Step 4: If no satified results found, try to use the knowledge you are trained on to provide an answer.\n\n\n2. **Tailoring to Patient Needs**\n   - Assess and adapt your explanation based on the patient\u2019s literacy level, cultural background, and any specific contextual cues provided in the request.\n   - Use plain language for patients with limited health literacy; provide more technical details when appropriate.\n   - Include culturally sensitive examples and analogies when explaining complex concepts.\n\n3. **Communication Style**\n   - Be concise, empathetic, and supportive.\n   - Use bullet points or numbered lists where it enhances clarity.\n   - If the topic is complex, break it down into sub-sections with clear headings.\n   - Invite the patient to ask follow-up questions if further clarification is needed.\n\n4. **Output Format**\n  - The output format should be in JSON format and must contain two fields: \n        - \"reply\": detailing your answer to the input query.\n        - \"tools_called\": a list detailing the tools you have called in the process. That is, whenever you call a tool, append it to this list and return it at the end.\n\n   - For the reply field, provide your response in plain text that can be included in a patient-facing report.\n   - For the reply field, Clearly label sections (e.g., \u201cOverview of the Condition,\u201d \u201cInheritance Patterns,\u201d \u201cTesting Procedure,\u201d \u201cManagement Options,\u201d \u201cEthical and Privacy Considerations\u201d) to enhance readability.\n\nYour goal is to ensure that the patient fully understands the topic in a manner that is both accessible and accurate, empowering them to make informed decisions about their genetic health.\n\n\n## Final Reminders\nHere is the current date/time: {{ $now }}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        260,
+        0
+      ],
+      "id": "e1d8ac0a-189a-4387-9386-91f024b5b7d1",
+      "name": "Education Agent"
+    },
+    {
+      "parameters": {
+        "name": "protocol",
+        "description": "Vector database containing the hospital's Internal Education Material which contains verified, institution-specific educational material and references",
+        "topK": 8
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        160,
+        280
+      ],
+      "id": "584922de-5ab7-4cdf-b186-a803b6e86208",
+      "name": "Search Internal Education Material"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolWikipedia",
+      "typeVersion": 1,
+      "position": [
+        820,
+        280
+      ],
+      "id": "13123c7a-deed-4655-9b5a-7415a0d0b122",
+      "name": "Wikipedia"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1820,
+        340
+      ],
+      "id": "343ada92-e260-4c62-98bd-ce7d00f67fe7",
+      "name": "When clicking \u2018Test workflow\u2019"
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1UC0Qv2jR1N8wh3hk3loVo_VAL6F7JEHy",
+          "mode": "list",
+          "cachedResultName": "Tier 2:  Aurora Syndrome \u2013 Molecular Mechanisms and Management Strategies.pdf",
+          "cachedResultUrl": "https://drive.google.com/file/d/1UC0Qv2jR1N8wh3hk3loVo_VAL6F7JEHy/view?usp=drivesdk"
+        },
+        "options": {
+          "binaryPropertyName": "data"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -1620,
+        340
+      ],
+      "id": "a863909d-edc0-4c3e-aa04-397d4d866420",
+      "name": "Google Drive",
+      "alwaysOutputData": false,
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Hpf5fsZSKXgRAeiA",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        -1420,
+        340
+      ],
+      "id": "9655974f-b4da-4c7a-9b78-ebb8efae024c",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        800,
+        480
+      ],
+      "id": "632aa6cb-cadc-4bf1-a744-723a802d0481",
+      "name": "OpenAI Chat Model2",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "genereviews",
+        "description": "Vector database containing education material obtained from GeneReviews.",
+        "topK": 8
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        480,
+        280
+      ],
+      "id": "aa3a097d-e1fd-4b84-8350-d0a4a11d1a1a",
+      "name": "Search GeneReviews"
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "education",
+          "mode": "list",
+          "cachedResultName": "education"
+        },
+        "options": {
+          "pineconeNamespace": "tier2_dummy_references"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        -1020,
+        120
+      ],
+      "id": "1d839868-677e-4a8a-ad3a-74bb3c9f0a3b",
+      "name": "Pinecone Vector Store",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -1120,
+        320
+      ],
+      "id": "2890709c-47a1-41f1-abfd-5111029dd39c",
+      "name": "Embeddings OpenAI3",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "typeVersion": 1,
+      "position": [
+        -840,
+        320
+      ],
+      "id": "61e7a64f-c190-4dfc-afe0-253eef707884",
+      "name": "Default Data Loader1"
+    },
+    {
+      "parameters": {
+        "chunkSize": 2000,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+      "typeVersion": 1,
+      "position": [
+        -940,
+        480
+      ],
+      "id": "66d8d8a9-d5bd-4c03-9675-16b6fadb4de2",
+      "name": "Recursive Character Text Splitter1"
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -80,
+        660
+      ],
+      "id": "6f02d971-ec7b-4fac-835b-8eb97e38ed56",
+      "name": "Embeddings OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "education",
+          "mode": "list",
+          "cachedResultName": "education"
+        },
+        "options": {
+          "pineconeNamespace": "tier1_dummy_references"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        -20,
+        480
+      ],
+      "id": "f7f1102f-ef70-495b-b589-9375bca2415d",
+      "name": "Pinecone Vector Store: Tier 1",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        440,
+        660
+      ],
+      "id": "c9f2e72e-8714-4ed1-bf5e-672c73c0d499",
+      "name": "Embeddings OpenAI2",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "education",
+          "mode": "list",
+          "cachedResultName": "education"
+        },
+        "options": {
+          "pineconeNamespace": "tier2_dummy_references"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        500,
+        480
+      ],
+      "id": "d4049117-02db-4c39-93d6-3d7b388c8f65",
+      "name": "Pinecone Vector Store: Tier 2",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bdfcc15d-a70c-4fb4-9df6-5beaf18fa2d6",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -180,
+        0
+      ],
+      "id": "0ace47f5-e895-4a34-a259-e37ad75f1fed",
+      "name": "Webhook",
+      "webhookId": "bdfcc15d-a70c-4fb4-9df6-5beaf18fa2d6"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.body.message }} ",
+              "type": "string"
+            },
+            {
+              "id": "3378b757-1dae-4d5c-ba84-45dbd15f7a8e",
+              "name": "counter",
+              "value": "={{ $json.body.counter + 1}} ",
+              "type": "number"
+            },
+            {
+              "id": "a70da19e-5e47-4652-baad-2d6eb614bd04",
+              "name": "sessionId",
+              "value": "={{ $json.body.sessionId }}",
+              "type": "string"
+            },
+            {
+              "id": "9e9bb699-2973-4a6d-be98-ace8c537376a",
+              "name": "end_conversation",
+              "value": "={{ [\"true\", true, \"1\", 1].includes($json.body.end_conversation) }}",
+              "type": "boolean"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        40,
+        0
+      ],
+      "id": "7c0aaa3d-4919-40af-938b-7a501882926b",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        620,
+        0
+      ],
+      "id": "6a69f4d1-56d4-4fba-9c7f-69725fc2b6e1",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\t\"reply\": \"answer to the user query\",\n\t\"tools_called\": [\"genereviews\"]\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        20,
+        280
+      ],
+      "id": "29850533-8e24-43ac-b2d6-e13f26cd8bd4",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.query }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        40,
+        -180
+      ],
+      "id": "ba91781b-3ca4-4cf0-a7d1-bd5ab03d0ceb",
+      "name": "Edit Fields1"
+    }
+  ],
+  "connections": {
+    "Workflow Input Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Search Internal Education Material",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Internal Education Material": {
+      "ai_tool": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wikipedia": {
+      "ai_tool": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        [
+          {
+            "node": "Google Drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Search GeneReviews",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search GeneReviews": {
+      "ai_tool": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI3": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader1": {
+      "ai_document": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recursive Character Text Splitter1": {
+      "ai_textSplitter": [
+        [
+          {
+            "node": "Default Data Loader1",
+            "type": "ai_textSplitter",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store: Tier 1",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store: Tier 1": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Search Internal Education Material",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI2": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store: Tier 2",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store: Tier 2": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Search GeneReviews",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Education Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {
+    "Workflow Input Trigger": [
+      {
+        "json": {
+          "query": "What is Hulu syndrome?"
+        }
+      }
+    ]
+  },
+  "versionId": "3e7e03b3-e870-4caa-ba8f-855599c1398b",
+  "triggerCount": 1,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}
