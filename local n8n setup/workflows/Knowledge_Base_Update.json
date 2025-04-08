@@ -1,0 +1,756 @@
+{
+  "createdAt": "2025-02-05T02:57:43.056Z",
+  "updatedAt": "2025-03-26T18:03:45.000Z",
+  "id": "Hz7Kec49HnONA7qL",
+  "name": "Knowledge Base Update",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "triggerOn": "specificFolder",
+        "folderToWatch": {
+          "__rl": true,
+          "value": "15OxSLsLD1RnuxO9sFWny6hwg1c4MbuhF",
+          "mode": "list",
+          "cachedResultName": "RESCUE-n8n",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/15OxSLsLD1RnuxO9sFWny6hwg1c4MbuhF"
+        },
+        "event": "fileCreated",
+        "options": {
+          "fileType": "all"
+        }
+      },
+      "type": "n8n-nodes-base.googleDriveTrigger",
+      "typeVersion": 1,
+      "position": [
+        -420,
+        -60
+      ],
+      "id": "245bc646-ff07-4c89-8791-e16458b642bc",
+      "name": "Google Drive Trigger",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Hpf5fsZSKXgRAeiA",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "triggerOn": "specificFolder",
+        "folderToWatch": {
+          "__rl": true,
+          "value": "15OxSLsLD1RnuxO9sFWny6hwg1c4MbuhF",
+          "mode": "list",
+          "cachedResultName": "RESCUE-n8n",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/15OxSLsLD1RnuxO9sFWny6hwg1c4MbuhF"
+        },
+        "event": "fileUpdated",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDriveTrigger",
+      "typeVersion": 1,
+      "position": [
+        -420,
+        160
+      ],
+      "id": "af51a6d2-57ae-4393-8588-19fe866f6e4f",
+      "name": "Google Drive Trigger1",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Hpf5fsZSKXgRAeiA",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "knowledge-base",
+          "mode": "list",
+          "cachedResultName": "knowledge-base"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        500,
+        80
+      ],
+      "id": "117c47dc-dda1-468d-a383-cb11e9ad65e2",
+      "name": "Pinecone Vector Store",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        500,
+        380
+      ],
+      "id": "87574da2-4d16-47e7-845c-e22af7d3b958",
+      "name": "Embeddings OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonMode": "expressionData",
+        "jsonData": "={{ $json.text || $json.data }}",
+        "options": {
+          "splitPages": true,
+          "metadata": {
+            "metadataValues": [
+              {
+                "name": "=md5Checksum",
+                "value": "={{ $('Google Drive Trigger').item.json.md5Checksum }}"
+              },
+              {
+                "name": "mimeType",
+                "value": "={{ $('Google Drive Trigger').item.json.mimeType }}"
+              },
+              {
+                "name": "fileId",
+                "value": "={{ $('Google Drive Trigger').item.json.id }}"
+              },
+              {
+                "name": "createdTime",
+                "value": "={{ $('Google Drive Trigger').item.json.createdTime }}"
+              },
+              {
+                "name": "modifiedTime",
+                "value": "={{ $('Google Drive Trigger').item.json.modifiedTime }}"
+              },
+              {
+                "name": "version",
+                "value": "={{ $('Google Drive Trigger').item.json.version }}"
+              },
+              {
+                "name": "originalfilename",
+                "value": "={{ $('Google Drive Trigger').item.json.originalFilename }}"
+              }
+            ]
+          }
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "typeVersion": 1,
+      "position": [
+        720,
+        320
+      ],
+      "id": "68071b58-82ca-47dc-9b7c-6aaf7d31e0d4",
+      "name": "Default Data Loader"
+    },
+    {
+      "parameters": {
+        "chunkSize": 500,
+        "chunkOverlap": 200,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+      "typeVersion": 1,
+      "position": [
+        740,
+        520
+      ],
+      "id": "4820c4c0-5b92-483f-b9ed-10e747f0fbe2",
+      "name": "Recursive Character Text Splitter"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8800d6df-7a49-47d1-b310-59be57044574",
+              "name": "fileID",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            },
+            {
+              "id": "c9e5623a-cf76-43ce-ad59-7b016bf75133",
+              "name": "fileType",
+              "value": "={{ $json.mimeType }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -240,
+        60
+      ],
+      "id": "94aabd0a-98e2-4425-af8c-5d1da860f24f",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $('Edit Fields').item.json.fileID}}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -40,
+        60
+      ],
+      "id": "c9cdb968-2824-445b-b22f-3f1ed1be8bbb",
+      "name": "Google Drive",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Hpf5fsZSKXgRAeiA",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.fileType }}",
+                    "rightValue": "application/pdf",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "d628c221-3192-4a7c-a5ba-fbb44f2097d3",
+                    "leftValue": "={{ $json.fileType }}",
+                    "rightValue": "application/rtf",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "08df7372-aa18-4d93-94f9-0578c21ce0b2",
+                    "leftValue": "{{ $json.fileType }}",
+                    "rightValue": "text/html",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -20,
+        320
+      ],
+      "id": "e1a1e623-3f01-41f7-95e1-85d46d04d20a",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        200,
+        140
+      ],
+      "id": "8861792c-cdb5-4774-bfdf-078db8d10d07",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "operation": "rtf",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        200,
+        320
+      ],
+      "id": "b832dc5e-5220-4079-8d3a-f9a3107bf0ba",
+      "name": "Extract from File1"
+    },
+    {
+      "parameters": {
+        "operation": "html",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        200,
+        480
+      ],
+      "id": "41c75055-b1f2-4167-8992-0c1d7d892083",
+      "name": "Extract from File2"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -780,
+        420
+      ],
+      "id": "290235b3-4af7-492d-95ce-60de15bdedc6",
+      "name": "When clicking \u2018Test workflow\u2019"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -820,
+        800
+      ],
+      "id": "7ead3425-23b4-44ad-b838-469db669eadc",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -540,
+        820
+      ],
+      "id": "4968fe04-0bf9-433b-84d3-838ab52a62cc",
+      "name": "Pubmed Update Workflow",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "url": "https://ftp.ncbi.nlm.nih.gov/pub/litarch/ca/84/gene_NBK1116.tar.gz",
+        "options": {
+          "allowUnauthorizedCerts": false,
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -620,
+        560
+      ],
+      "id": "e6dad614-da6c-4f46-9838-1b788ce47b30",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.compression",
+      "typeVersion": 1.1,
+      "position": [
+        -420,
+        660
+      ],
+      "id": "91c8151a-8f64-4eee-b73c-db85cced34bc",
+      "name": "Compression"
+    }
+  ],
+  "connections": {
+    "Google Drive Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader": {
+      "ai_document": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recursive Character Text Splitter": {
+      "ai_textSplitter": [
+        [
+          {
+            "node": "Default Data Loader",
+            "type": "ai_textSplitter",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Google Drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract from File1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract from File2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File1": {
+      "main": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File2": {
+      "main": [
+        []
+      ]
+    },
+    "Google Drive Trigger1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Pubmed Update Workflow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pubmed Update Workflow": {
+      "main": [
+        []
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Compression",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {
+    "Google Drive Trigger": [
+      {
+        "json": {
+          "kind": "drive#file",
+          "fileExtension": "pdf",
+          "copyRequiresWriterPermission": false,
+          "md5Checksum": "79f5ec12ba7f1771dd4aca23ddcd5540",
+          "writersCanShare": true,
+          "viewedByMe": true,
+          "mimeType": "application/pdf",
+          "parents": [
+            "15OxSLsLD1RnuxO9sFWny6hwg1c4MbuhF"
+          ],
+          "thumbnailLink": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOzCnMvSWKW5V1GPYO7Lg2rHWYmrZFJNF3azgwIGGM6_gWX5nlg2BniE1mtEVHZIWpcJ_WyL_1jYdl-wEpVVD6CHZiyxCE71dQli75D1Jiz_KI=s220",
+          "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/pdf",
+          "shared": false,
+          "lastModifyingUser": {
+            "displayName": "Cong Liu (sixoneone)",
+            "kind": "drive#user",
+            "me": true,
+            "permissionId": "11874686621610881759",
+            "emailAddress": "stormliucong@gmail.com",
+            "photoLink": "https://lh3.googleusercontent.com/a/ACg8ocJsOstiGK5KchRgYgij4lix4-RtQ4gwHldiGbQzC6SzJD70mffr2Q=s64"
+          },
+          "owners": [
+            {
+              "displayName": "Cong Liu (sixoneone)",
+              "kind": "drive#user",
+              "me": true,
+              "permissionId": "11874686621610881759",
+              "emailAddress": "stormliucong@gmail.com",
+              "photoLink": "https://lh3.googleusercontent.com/a/ACg8ocJsOstiGK5KchRgYgij4lix4-RtQ4gwHldiGbQzC6SzJD70mffr2Q=s64"
+            }
+          ],
+          "headRevisionId": "0BwW3Ozl_c_XAL3pCRFV6ZXpsN2lURVBUdkRmMy83Ty83ck4wPQ",
+          "webViewLink": "https://drive.google.com/file/d/1iZ3kPw4P3uASVp72qlBFRY4dFMAu4v6l/view?usp=drivesdk",
+          "webContentLink": "https://drive.google.com/uc?id=1iZ3kPw4P3uASVp72qlBFRY4dFMAu4v6l&export=download",
+          "size": "1241387",
+          "viewersCanCopyContent": true,
+          "permissions": [
+            {
+              "id": "11874686621610881759",
+              "displayName": "Cong Liu (sixoneone)",
+              "type": "user",
+              "kind": "drive#permission",
+              "photoLink": "https://lh3.googleusercontent.com/a/ACg8ocJsOstiGK5KchRgYgij4lix4-RtQ4gwHldiGbQzC6SzJD70mffr2Q=s64",
+              "emailAddress": "stormliucong@gmail.com",
+              "role": "owner",
+              "deleted": false,
+              "pendingOwner": false
+            }
+          ],
+          "hasThumbnail": true,
+          "spaces": [
+            "drive"
+          ],
+          "id": "1iZ3kPw4P3uASVp72qlBFRY4dFMAu4v6l",
+          "name": "uk-practice-guidelines-for-variant-classification-v1-2023.pdf",
+          "starred": false,
+          "trashed": false,
+          "explicitlyTrashed": false,
+          "createdTime": "2025-02-05T03:44:36.175Z",
+          "modifiedTime": "2025-02-05T03:44:08.000Z",
+          "modifiedByMeTime": "2025-02-05T03:44:08.000Z",
+          "viewedByMeTime": "2025-02-05T03:44:36.175Z",
+          "quotaBytesUsed": "1241387",
+          "version": "3",
+          "originalFilename": "uk-practice-guidelines-for-variant-classification-v1-2023.pdf",
+          "ownedByMe": true,
+          "fullFileExtension": "pdf",
+          "isAppAuthorized": false,
+          "capabilities": {
+            "canChangeViewersCanCopyContent": true,
+            "canEdit": true,
+            "canCopy": true,
+            "canComment": true,
+            "canAddChildren": false,
+            "canDelete": true,
+            "canDownload": true,
+            "canListChildren": false,
+            "canRemoveChildren": false,
+            "canRename": true,
+            "canTrash": true,
+            "canReadRevisions": true,
+            "canChangeCopyRequiresWriterPermission": true,
+            "canMoveItemIntoTeamDrive": true,
+            "canUntrash": true,
+            "canModifyContent": true,
+            "canMoveItemOutOfDrive": true,
+            "canAddMyDriveParent": false,
+            "canRemoveMyDriveParent": true,
+            "canMoveItemWithinDrive": true,
+            "canShare": true,
+            "canMoveChildrenWithinDrive": false,
+            "canModifyContentRestriction": true,
+            "canChangeSecurityUpdateEnabled": false,
+            "canAcceptOwnership": false,
+            "canReadLabels": false,
+            "canModifyLabels": false,
+            "canModifyEditorContentRestriction": true,
+            "canModifyOwnerContentRestriction": true,
+            "canRemoveContentRestriction": false
+          },
+          "thumbnailVersion": "1",
+          "modifiedByMe": true,
+          "permissionIds": [
+            "11874686621610881759"
+          ],
+          "linkShareMetadata": {
+            "securityUpdateEligible": false,
+            "securityUpdateEnabled": true
+          },
+          "sha1Checksum": "43ee1e46e27991128a7bd5c46e6f93ad8bcc0518",
+          "sha256Checksum": "27adfd97b87495bd1a95af7f792ca40b06837d148e76146d5cdfa408673780d6"
+        }
+      }
+    ]
+  },
+  "versionId": "37ddf8e0-441a-429d-ba29-5145455f5644",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:52:09.555Z",
+      "updatedAt": "2025-03-26T17:53:07.262Z",
+      "id": "FXorOXy8mYanYwkx",
+      "name": "status: archived"
+    },
+    {
+      "createdAt": "2025-03-26T17:51:45.906Z",
+      "updatedAt": "2025-03-26T17:53:45.806Z",
+      "id": "POlmHLQiFgAzyfd2",
+      "name": "type: secondary"
+    }
+  ]
+}

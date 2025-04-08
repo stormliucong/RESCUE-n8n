@@ -1,0 +1,320 @@
+{
+  "createdAt": "2025-02-14T18:59:14.455Z",
+  "updatedAt": "2025-03-26T18:04:52.000Z",
+  "id": "8gTgjm3hnonn1Qc8",
+  "name": "Knowledge Base Update: PubMed",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "64de8e53-8f1e-41ae-8005-b8c6ffb4b48e",
+      "name": "When clicking \u2018Test workflow\u2019"
+    },
+    {
+      "parameters": {
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "db",
+              "value": "pubmed"
+            },
+            {
+              "name": "term",
+              "value": "genetics in medicine[journal]"
+            },
+            {
+              "name": "retmode",
+              "value": "json"
+            },
+            {
+              "name": "retmax",
+              "value": "5000"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        0
+      ],
+      "id": "6a49005d-9989-42fe-ba8e-5346727bdecb",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Assume the response from the previous HTTP Request is in items[0]\nconst response = items[0].json;\nconst idList = response.esearchresult.idlist; // array of PMIDs\n// Create a new item for each PMID so we can process them one at a time.\nreturn idList.map(pmid => {\n  return { json: { pmid } };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ],
+      "id": "9f31f0cf-48e5-483c-9e18-51aeb4eaedbf",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        660,
+        0
+      ],
+      "id": "69715115-51d8-4c3f-b6bf-63ea947c993e",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "db",
+              "value": "pubmed"
+            },
+            {
+              "name": "id",
+              "value": "={{$json[\"pmid\"]}}"
+            },
+            {
+              "name": "retmode",
+              "value": "xml"
+            },
+            {
+              "name": "rettype",
+              "value": "full"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true,
+          "response": {
+            "response": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1000,
+        120
+      ],
+      "id": "282c3b69-4bd0-41c0-81dd-8fddbd61508f",
+      "name": "HTTP Request1",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.xml",
+      "typeVersion": 1,
+      "position": [
+        1220,
+        120
+      ],
+      "id": "4beb40ca-bdfb-48f0-b84e-884e544268f7",
+      "name": "XML"
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "pubmed",
+          "mode": "list",
+          "cachedResultName": "pubmed"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        1500,
+        120
+      ],
+      "id": "f6b1661e-00ca-41fb-99f1-f5c7d67dcdda",
+      "name": "Pinecone Vector Store"
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1420,
+        420
+      ],
+      "id": "9e2ea7c3-5720-4ee9-abc3-da226082c12f",
+      "name": "Embeddings OpenAI"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "typeVersion": 1,
+      "position": [
+        1600,
+        360
+      ],
+      "id": "f4b471eb-c9b4-4272-9f16-a0092ccabacd",
+      "name": "Default Data Loader"
+    },
+    {
+      "parameters": {
+        "chunkSize": 2000,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+      "typeVersion": 1,
+      "position": [
+        1780,
+        580
+      ],
+      "id": "f4f39970-1646-4088-adfe-0ee8ec8ac91c",
+      "name": "Recursive Character Text Splitter"
+    }
+  ],
+  "connections": {
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "XML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "XML": {
+      "main": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader": {
+      "ai_document": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recursive Character Text Splitter": {
+      "ai_textSplitter": [
+        [
+          {
+            "node": "Default Data Loader",
+            "type": "ai_textSplitter",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": null,
+  "pinData": {},
+  "versionId": "4d97d11d-6d2d-4c16-9404-baa87d3fc555",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:45.906Z",
+      "updatedAt": "2025-03-26T17:53:45.806Z",
+      "id": "POlmHLQiFgAzyfd2",
+      "name": "type: secondary"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

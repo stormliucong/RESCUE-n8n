@@ -1,100 +1,185 @@
 {
+  "createdAt": "2025-02-14T18:59:33.142Z",
+  "updatedAt": "2025-03-26T18:01:53.000Z",
+  "id": "5lS9gnvG5rz08nAS",
   "name": "Triage Agent",
+  "active": false,
   "nodes": [
     {
       "parameters": {
         "inputSource": "passthrough"
       },
-      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "id": "05e0dc74-b422-4aab-b98d-e353d3450869",
       "typeVersion": 1.1,
+      "name": "Workflow Input Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
       "position": [
-        -940,
-        -160
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        180,
+        260
       ],
-      "id": "19bbe235-d9a0-44cb-bd12-68f90464258f",
-      "name": "When Executed by Another Workflow"
+      "id": "74ac115d-6f8a-4939-8f51-4c0473a6a9a3",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "XQMTOztbVU9NiPvc",
+          "name": "OpenAi account 2"
+        }
+      }
     },
     {
       "parameters": {
         "promptType": "define",
-        "text": "={{ $json.query }}",
+        "text": "={{$json.query}}",
         "options": {
-          "systemMessage": "# Overview\nYou are a helpful triage assistant to triage clinical genetic econsult request. Your job is route a eConsult request to desired specialist. You should follow the steps below to finish the task\n\n## Steps\n1. Check whether the request contains patients clinical description. If not, ask for it.\n2. \n\n## Examples\n- Input: Which genetic test I should order for my patient who has global developmental delays.\n- Action: Use knowledgeAgent to answer this question. You will pass the tool a query like \"Which genetic test I should order for a given patient. Here is his/her clinical phenotypes: [clinical phenotype description]\"\n- Output: Whole example sequencing should be ordered.\n\n## Final Reminders\nHere is the current date/time: {{ $now }}"
+          "systemMessage": "=You are the TriageAgent in our genetic eConsult system. Your role is to review unstructured request information provided as a short paragraph (or two) containing key details about a genetic request from a primary care provider. This unstructured text will include:\n\nRequesting PCP\u2019s name\nSubmission date: {{ $now }}\nPatient\u2019s EHR ID\nPatient\u2019s name\nSummary of the patient\u2019s background\nSummary of the genetic request\nYour tasks are as follows:\n\n    - Data Extraction & Interpretation:\n\nParse the unstructured text to identify and extract the above key details.\nEnsure that the context and clinical nuances in the patient\u2019s history and the genetic inquiry are accurately captured.\nCategory Prediction:\n\nBased on the extracted information, predict the most appropriate genetic category of care for the request.\nThe available options for the predicted category of care are:\n  - No Referral\n  - In-person visit\n  - Pediatrics\n  - Cancer\n  - Adults (non-cancer)\n  - Pre-natal\n  - Pre-conception\n  - Pharmacogenomics\nSelect the category that best aligns with the clinical details provided.\nSubmission via HTTP Tool:\n\nUse the HTTP tool called [submit_request] to forward the processed and structured data.\nThe payload should include the following fields:\n  - requestingPcp\n  - submissionDate\n  - patientEhrId\n  - patientName\n  - patientBackgroundSummary\n  - geneticRequestSummary\n  - predictedCategoryOfCare\n  - status (set to \"submitted\" for new requests)\nEnsure the payload is formatted correctly before making the call.\nRationale & Verification:\n\nProvide a brief explanation of your reasoning for the predicted category (this explanation may be logged internally but does not need to be part of the submission payload).\nVerify that all extracted details are complete and accurate prior to submission.\n\nYour goal is to transform unstructured genetic request information into a structured data submission and forward it using the submit_request HTTP tool. Ensure that the request is accurately categorized for further clinical triage."
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        -720,
-        -160
+        300,
+        0
       ],
-      "id": "c7bb444e-0356-4a8c-b1c9-8580d4a1e859",
-      "name": "AI Agent"
+      "id": "3a1bc9a1-d33b-413d-b344-88ec7549c3d0",
+      "name": "Triage Agent"
     },
     {
       "parameters": {
-        "inputText": "={{ $json.output }}",
-        "categories": {
-          "categories": [
+        "toolDescription": "The submit_request tool is an HTTP interface used to send structured genetic request data to the backend system. It accepts a JSON payload containing details such as the requesting PCP, submission date, patient EHR ID, patient name, patient background summary, genetic request summary, predicted category of care, and status, then records this information for further processing and triage in the eConsult workflow.",
+        "method": "POST",
+        "url": "http://165.22.13.117:5010/api/create_counselor_request",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"requestingPcp\": \"{requestingPcp}\",\n  \"submissionDate\": \"{submissionDate}\",\n  \"patientEhrId\": \"{patientEhrId}\",\n  \"patientName\": \"{patientName}\",\n  \"patientBackgroundSummary\": \"{patientBackgroundSummary}\",\n  \"geneticRequestSummary\": \"{geneticRequestSummary}\",\n  \"predictedCategoryOfCare\": \"{predictedCategoryOfCare}\",\n  \"status\": \"{status}\"\n}",
+        "placeholderDefinitions": {
+          "values": [
             {
-              "category": "family history"
+              "name": "requestingPcp",
+              "description": "The name of the primary care provider initiating the genetic request."
             },
-            {}
+            {
+              "name": "submissionDate",
+              "description": "The date on which the request is being submitted (formatted as YYYY-MM-DD)."
+            },
+            {
+              "name": "patientEhrId",
+              "description": "A unique identifier from the patient\u2019s electronic health record."
+            },
+            {
+              "name": "patientName",
+              "description": "The full name of the patient."
+            },
+            {
+              "name": "patientBackgroundSummary",
+              "description": "A concise summary of the patient's clinical and medical background."
+            },
+            {
+              "name": "geneticRequestSummary",
+              "description": "A summary description of the genetic inquiry or request."
+            },
+            {
+              "name": "predictedCategoryOfCare",
+              "description": "The predicted genetic care category based on the request. Options are restricted to: \"No Referral\", \"In-person visit\", \"Pediatrics\", \"Cancer\", \"Adults (non-cancer)\", \"Pre-natal\", \"Pre-conception\", \"Pharmacogenomics\"."
+            },
+            {
+              "name": "status",
+              "description": "The submission status; for new requests, this should be set as \"submitted\"."
+            }
           ]
-        },
-        "options": {}
+        }
       },
-      "type": "@n8n/n8n-nodes-langchain.textClassifier",
-      "typeVersion": 1,
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
       "position": [
-        -360,
-        -160
+        600,
+        240
       ],
-      "id": "c8710647-ebf1-427a-a88a-c27bf552e120",
-      "name": "Text Classifier"
+      "id": "69addb3c-7e7e-46cf-a512-e80ee9fe31bf",
+      "name": "submit_request",
+      "notes": "modify the url. current request is send to a flask api hosted in a digital ocean"
     }
   ],
+  "connections": {
+    "Workflow Input Trigger": {
+      "main": [
+        [
+          {
+            "node": "Triage Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Triage Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "submit_request": {
+      "ai_tool": [
+        [
+          {
+            "node": "Triage Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
   "pinData": {
-    "When Executed by Another Workflow": [
+    "Workflow Input Trigger": [
       {
         "json": {
-          "query": "I want to schedule a eConsult service with a specialist"
+          "query": "Dr. Jane Smith submitted a genetic evaluation request on 2025-02-13 for her patient, Alice Johnson (EHR789123). Alice is a 45-year-old female with a history of hyperlipidemia and mild hypertension, along with a significant family history of early cardiovascular disease. The request details her clinical background and asks for an assessment of her potential genetic predisposition to cardiovascular conditions. Please analyze the information to determine if further specialized genetic testing or referral is warranted."
         }
       }
     ]
   },
-  "connections": {
-    "When Executed by Another Workflow": {
-      "main": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
+  "versionId": "635b4456-72d5-41cf-a88c-f2207fc943bd",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
     },
-    "AI Agent": {
-      "main": [
-        [
-          {
-            "node": "Text Classifier",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
     }
-  },
-  "active": false,
-  "settings": {
-    "executionOrder": "v1"
-  },
-  "versionId": "09cc8749-0fb2-4d0e-9d9c-89c07dad8675",
-  "meta": {
-    "instanceId": "8793b83ef2a59ecb1991019adf72bdaac2d2c4e121ace8936a6d9d5e84dd932c"
-  },
-  "id": "Zk3nCo7T3ZwI2qZ9",
-  "tags": []
+  ]
 }

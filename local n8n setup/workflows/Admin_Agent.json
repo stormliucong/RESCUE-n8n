@@ -1,0 +1,315 @@
+{
+  "createdAt": "2025-02-14T18:57:09.633Z",
+  "updatedAt": "2025-03-26T18:00:14.000Z",
+  "id": "2pB1IOup4ZeogtAG",
+  "name": "Admin Agent",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "name": "scheduleAgent",
+        "description": "call scheduleAgent for schedule management in the EHR",
+        "workflowId": {
+          "__rl": true,
+          "value": "NrDTpAS4g3N6XV9m",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Schedule Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        560,
+        280
+      ],
+      "id": "39ed7d7c-276b-4c3e-8332-214fef20344c",
+      "name": "scheduleAgent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        260,
+        460
+      ],
+      "id": "9ae35093-5383-4dfb-9387-e132c3f7bca3",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -60,
+        640
+      ],
+      "id": "13675113-4281-4655-9057-eef69513c719",
+      "name": "Embeddings OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "protocol"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        80,
+        280
+      ],
+      "id": "34e81f92-c5d8-4fba-96a5-8178854ead55",
+      "name": "Search Protocol"
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "protocol",
+          "mode": "list",
+          "cachedResultName": "protocol"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        -60,
+        460
+      ],
+      "id": "c77db0d6-8a78-4d15-bdeb-bf41659ceb46",
+      "name": "Pinecone Vector Store",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.query }}",
+        "options": {
+          "systemMessage": "=You are the Administrative Agent in our genetic eConsult system. Your primary responsibilities are to manage and coordinate all administrative tasks related to the genetic consultation process. This includes scheduling appointments, handling referrals, triage consult, ordering tests, managing insurance queries, and generating consultation documentation. Always search protocol before taking any further actions. Follow these instructions:\n\n1. ** Patient EHR Records Management **\n   - Use all patient demographic information to search for the patient in the EHR using [recordAgent]. Return Patient ID.\n   - If this is a new patient, use all patient demographic information to create a Patient EHR Records using [recordAgent]. \n\n2. **Appointment Scheduling Coordination:**\n   - If a follow-up consultation or in-person visit is needed, use the [scheduleAgent]. Confirm the appointment details with the patient and ensure that any necessary pre-appointment instructions are communicated.\n\n3. **Triage and Referral Coordinate: **\n   - If a specialist is needed, make which department which be triaged to, and use the [triageAgent] to create this triage request. \n\n4. **Test Ordering and Documentation:**\n   - Facilitate the ordering of recommended genetic tests by interfacing with laboratory information systems.\n   - Generate and send standardized test order forms, ensuring they include all required patient data and test specifications.\n   - Create and store comprehensive consultation reports that summarize the interaction, recommendations, and next steps.\n    - use the [testOrderAgent].\n\n4. **Insurance, Billing, and Follow-Up:**\n   - Address insurance-related queries by providing clear information about coverage, test costs, and reimbursement procedures.\n    - use the [insuranceAgent]\n\nYour goal is to ensure that every administrative detail is handled accurately and efficiently, creating a seamless, user-friendly experience that supports the overall genetic consultation process."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        220,
+        0
+      ],
+      "id": "4b21c100-4255-46ec-b7a9-29150be4144b",
+      "name": "Administrative Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -140,
+        280
+      ],
+      "id": "aec20831-de16-4ec8-baa3-7951e382d899",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "93c23b10-71d6-479b-92fd-bb87f0e2fd19",
+      "typeVersion": 1.1,
+      "name": "Workflow Input Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "name": "triageAgent",
+        "description": "Call triageAgent to send a eConsult request to a eConsult platform to some subspecialiest in genetics such as oncology genetist, family history genetist",
+        "workflowId": {
+          "__rl": true,
+          "value": "5lS9gnvG5rz08nAS",
+          "mode": "list",
+          "cachedResultName": "RESCUE SMART-on-FHIR \u2014 Triage Agent"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        760,
+        280
+      ],
+      "id": "3af0cca8-3346-444e-a83d-19b2d08cf4db",
+      "name": "triageAgent"
+    }
+  ],
+  "connections": {
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Search Protocol",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Search Protocol",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "scheduleAgent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Administrative Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Protocol": {
+      "ai_tool": [
+        [
+          {
+            "node": "Administrative Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Administrative Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Workflow Input Trigger": {
+      "main": [
+        [
+          {
+            "node": "Administrative Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "triageAgent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Administrative Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "af32c28f-98d5-4d3b-ac90-dc1b4e03ec07",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

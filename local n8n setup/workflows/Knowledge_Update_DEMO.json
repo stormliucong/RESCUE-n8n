@@ -1,5 +1,9 @@
 {
-  "name": "knowledgeBaseUpdate",
+  "createdAt": "2025-02-19T22:50:49.888Z",
+  "updatedAt": "2025-03-26T18:02:44.000Z",
+  "id": "MIKAjxF8Ndb89JSw",
+  "name": "Knowledge Update DEMO",
+  "active": false,
   "nodes": [
     {
       "parameters": {
@@ -26,10 +30,10 @@
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
       "position": [
-        -420,
-        -60
+        0,
+        0
       ],
-      "id": "245bc646-ff07-4c89-8791-e16458b642bc",
+      "id": "262f7a3f-7bb1-472e-91ee-5ff697143955",
       "name": "Google Drive Trigger",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -61,10 +65,10 @@
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
       "position": [
-        -420,
-        160
+        0,
+        220
       ],
-      "id": "af51a6d2-57ae-4393-8588-19fe866f6e4f",
+      "id": "5f01e9b2-cacb-4626-9653-1a70662dd19a",
       "name": "Google Drive Trigger1",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -87,10 +91,10 @@
       "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
       "typeVersion": 1,
       "position": [
-        580,
-        180
+        920,
+        140
       ],
-      "id": "117c47dc-dda1-468d-a383-cb11e9ad65e2",
+      "id": "b61b6ad3-7a1d-4a76-acaf-1f4b7b12ca69",
       "name": "Pinecone Vector Store",
       "credentials": {
         "pineconeApi": {
@@ -107,10 +111,10 @@
       "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
       "typeVersion": 1.2,
       "position": [
-        420,
-        680
+        920,
+        440
       ],
-      "id": "87574da2-4d16-47e7-845c-e22af7d3b958",
+      "id": "43d7dbef-f2fb-4d7b-962d-1f21bfd8ef18",
       "name": "Embeddings OpenAI",
       "credentials": {
         "openAiApi": {
@@ -162,10 +166,10 @@
       "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
       "typeVersion": 1,
       "position": [
-        720,
-        440
+        1140,
+        380
       ],
-      "id": "68071b58-82ca-47dc-9b7c-6aaf7d31e0d4",
+      "id": "2ccb9b8a-4f5c-4461-a64a-9711338e6950",
       "name": "Default Data Loader"
     },
     {
@@ -177,10 +181,10 @@
       "type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
       "typeVersion": 1,
       "position": [
-        760,
-        640
+        1160,
+        580
       ],
-      "id": "4820c4c0-5b92-483f-b9ed-10e747f0fbe2",
+      "id": "044815cf-59e1-4cf3-b5a5-9772f4d676ef",
       "name": "Recursive Character Text Splitter"
     },
     {
@@ -206,10 +210,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -240,
-        60
+        180,
+        120
       ],
-      "id": "94aabd0a-98e2-4425-af8c-5d1da860f24f",
+      "id": "7210ab12-a9ac-4003-8bb3-f18c4bf49d40",
       "name": "Edit Fields"
     },
     {
@@ -225,10 +229,10 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        -40,
-        60
+        380,
+        120
       ],
-      "id": "c9cdb968-2824-445b-b22f-3f1ed1be8bbb",
+      "id": "723d8754-0191-458c-af2d-0fc940595726",
       "name": "Google Drive",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -315,10 +319,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        -20,
-        320
+        400,
+        380
       ],
-      "id": "e1a1e623-3f01-41f7-95e1-85d46d04d20a",
+      "id": "223677c5-c21c-4fa1-9490-7496d85bfd0e",
       "name": "Switch"
     },
     {
@@ -329,10 +333,10 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        200,
-        140
+        620,
+        200
       ],
-      "id": "8861792c-cdb5-4774-bfdf-078db8d10d07",
+      "id": "6ed04cab-c4e3-4f5a-80bc-8da993e36d3e",
       "name": "Extract from File"
     },
     {
@@ -343,10 +347,10 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        200,
-        320
+        620,
+        380
       ],
-      "id": "b832dc5e-5220-4079-8d3a-f9a3107bf0ba",
+      "id": "efd63f84-a533-4a41-97c3-8bf63db9a0b4",
       "name": "Extract from File1"
     },
     {
@@ -357,87 +361,144 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        200,
-        480
+        620,
+        540
       ],
-      "id": "41c75055-b1f2-4167-8992-0c1d7d892083",
+      "id": "9103cbd8-ca82-449e-bc50-5e23c0640ce3",
       "name": "Extract from File2"
-    },
-    {
-      "parameters": {},
-      "type": "n8n-nodes-base.manualTrigger",
-      "typeVersion": 1,
-      "position": [
-        -780,
-        420
-      ],
-      "id": "290235b3-4af7-492d-95ce-60de15bdedc6",
-      "name": "When clicking ‘Test workflow’"
-    },
-    {
-      "parameters": {
-        "rule": {
-          "interval": [
-            {}
-          ]
-        }
-      },
-      "type": "n8n-nodes-base.scheduleTrigger",
-      "typeVersion": 1.2,
-      "position": [
-        -820,
-        800
-      ],
-      "id": "7ead3425-23b4-44ad-b838-469db669eadc",
-      "name": "Schedule Trigger"
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "type": "n8n-nodes-base.executeWorkflow",
-      "typeVersion": 1.2,
-      "position": [
-        -540,
-        820
-      ],
-      "id": "4968fe04-0bf9-433b-84d3-838ab52a62cc",
-      "name": "Pubmed Update Workflow",
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "url": "https://ftp.ncbi.nlm.nih.gov/pub/litarch/ca/84/gene_NBK1116.tar.gz",
-        "options": {
-          "allowUnauthorizedCerts": false,
-          "response": {
-            "response": {
-              "responseFormat": "file"
-            }
-          }
-        }
-      },
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        -520,
-        460
-      ],
-      "id": "e6dad614-da6c-4f46-9838-1b788ce47b30",
-      "name": "HTTP Request"
-    },
-    {
-      "parameters": {},
-      "type": "n8n-nodes-base.compression",
-      "typeVersion": 1.1,
-      "position": [
-        -300,
-        460
-      ],
-      "id": "91c8151a-8f64-4eee-b73c-db85cced34bc",
-      "name": "Compression"
     }
   ],
+  "connections": {
+    "Google Drive Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive Trigger1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader": {
+      "ai_document": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recursive Character Text Splitter": {
+      "ai_textSplitter": [
+        [
+          {
+            "node": "Default Data Loader",
+            "type": "ai_textSplitter",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Google Drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract from File1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract from File2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File1": {
+      "main": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": null,
   "pinData": {
     "Google Drive Trigger": [
       {
@@ -557,184 +618,20 @@
       }
     ]
   },
-  "connections": {
-    "Google Drive Trigger": {
-      "main": [
-        [
-          {
-            "node": "Edit Fields",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
+  "versionId": "78ebbd1d-c903-425f-b27d-0b8787404788",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:52:09.555Z",
+      "updatedAt": "2025-03-26T17:53:07.262Z",
+      "id": "FXorOXy8mYanYwkx",
+      "name": "status: archived"
     },
-    "Embeddings OpenAI": {
-      "ai_embedding": [
-        [
-          {
-            "node": "Pinecone Vector Store",
-            "type": "ai_embedding",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Default Data Loader": {
-      "ai_document": [
-        [
-          {
-            "node": "Pinecone Vector Store",
-            "type": "ai_document",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Recursive Character Text Splitter": {
-      "ai_textSplitter": [
-        [
-          {
-            "node": "Default Data Loader",
-            "type": "ai_textSplitter",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Edit Fields": {
-      "main": [
-        [
-          {
-            "node": "Google Drive",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Drive": {
-      "main": [
-        [
-          {
-            "node": "Switch",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Switch": {
-      "main": [
-        [
-          {
-            "node": "Extract from File",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Extract from File1",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Extract from File2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Extract from File": {
-      "main": [
-        [
-          {
-            "node": "Pinecone Vector Store",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Extract from File1": {
-      "main": [
-        [
-          {
-            "node": "Pinecone Vector Store",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Extract from File2": {
-      "main": [
-        []
-      ]
-    },
-    "Google Drive Trigger1": {
-      "main": [
-        [
-          {
-            "node": "Edit Fields",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "When clicking ‘Test workflow’": {
-      "main": [
-        [
-          {
-            "node": "HTTP Request",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Schedule Trigger": {
-      "main": [
-        [
-          {
-            "node": "Pubmed Update Workflow",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Pubmed Update Workflow": {
-      "main": [
-        []
-      ]
-    },
-    "HTTP Request": {
-      "main": [
-        [
-          {
-            "node": "Compression",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
+    {
+      "createdAt": "2025-03-26T17:51:45.906Z",
+      "updatedAt": "2025-03-26T17:53:45.806Z",
+      "id": "POlmHLQiFgAzyfd2",
+      "name": "type: secondary"
     }
-  },
-  "active": false,
-  "settings": {
-    "executionOrder": "v1"
-  },
-  "versionId": "e09195a2-2dc1-4c3d-8dc5-fefdf0063759",
-  "meta": {
-    "templateCredsSetupCompleted": true,
-    "instanceId": "8793b83ef2a59ecb1991019adf72bdaac2d2c4e121ace8936a6d9d5e84dd932c"
-  },
-  "id": "Hz7Kec49HnONA7qL",
-  "tags": []
+  ]
 }

@@ -1,0 +1,283 @@
+{
+  "createdAt": "2025-03-21T16:37:06.721Z",
+  "updatedAt": "2025-03-26T17:56:40.000Z",
+  "id": "WGGX3RZkZXCbLSqa",
+  "name": "Verification Agent Design",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "741768fc-34a9-460d-8384-0d87da44f073",
+      "name": "OpenAI Chat Model2",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n\t\"type\": \"object\",\n\t\"properties\": {\n\t\t\"isEligible\": {\n\t\t\t\"type\": [\"integer\", \"string\"]\n\t\t},\n\t\t\"reason\": {\n\t\t\t\"type\": \"string\"\n\t\t}\n\t}\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        160,
+        0
+      ],
+      "id": "ab7d5357-143c-485c-9dfb-a8d22c3b9053",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.query }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=You are a verification agent responsible for determining whether the hospital can handle a patient\u2019s case or if a referral to Trilogy is necessary based on the following criteria. Only perform checks when it is clearly stated that eligibility needs to be confirmed. No further scheduling tasks will be handled at this stage.\n\nSkip Eligibility Check (isEligible = -1): If no changes or modifications are needed regarding the patient\u2019s appointment, eligibility check can be skipped. This means the patient should be considered eligible without further review.\n\nCriteria for Eligibility Check:\n\nPatients under 1 year old can be directly accepted by the hospital without further checks.\nThe patient should be checked for specialized genetic tests or treatments that may be outside the hospital\u2019s current capabilities. If the case requires advanced genetic testing or specialized medical interventions, a referral to Trilogy might be necessary.\nIf the patient requires diagnostic tools or treatment facilities not available at the hospital, such as advanced imaging or laboratory equipment, they may need to be referred elsewhere.\nIf the patient\u2019s condition requires intensive monitoring or specialized genetic treatments that the hospital cannot provide, a referral will be required.\n\n\nPerform Eligibility Check (isEligible = 0 or 1): If eligibility check is requested (i.e., there are changes to the appointment or the patient's situation needs to be reassessed), the agent will assess based on the above criteria.\n\nIf you need to get the patient info, always use first name last name and birthdate, retrieve their record using things like:\nGET https://your-fhir-server.com/Patient?given=John&family=Doe&birthdate=eq1980-01-01\n\n\ne.g.:\n{\n\t\"isEligible\":0,\n        \"reason: ... \n}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        40,
+        140
+      ],
+      "id": "dd2fad52-3b09-4f59-897e-7b99afe0188f",
+      "name": "Verification Agent"
+    },
+    {
+      "parameters": {
+        "toolDescription": "referral check",
+        "url": "/api/eligibility/check-referral"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        420
+      ],
+      "id": "6f4fae46-0691-4a51-9ada-0359ee5a26b2",
+      "name": "referralCheck"
+    },
+    {
+      "parameters": {
+        "toolDescription": "preAuthCheck",
+        "url": "/api/eligibility/check-pre-authorization"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        280,
+        420
+      ],
+      "id": "18ff84ea-c031-4b96-9adb-80a7dd285276",
+      "name": "preAuthCheck"
+    },
+    {
+      "parameters": {
+        "url": "/api/eligibility/waiver-check"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        420,
+        420
+      ],
+      "id": "40d20b5c-b389-46bc-b162-55647c1e4850",
+      "name": "waiverCheck"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Search for all resources of a given type",
+        "url": "http://165.22.13.117:7070/fhir/{resourceType}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendQuery": true,
+        "specifyQuery": "json",
+        "jsonQuery": "={query_parameter_in_json}",
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{query_parameter_in_json}",
+              "description": "a json format parameter list for searching for resources with specific parameters"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        -160,
+        420
+      ],
+      "id": "586ae8e1-2254-48ba-80f5-c3d57f27d3fd",
+      "name": "getPatientResource",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "insurance verification\n",
+        "url": "/api/eligibility/verify-insurance"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        140,
+        420
+      ],
+      "id": "283e824a-85ea-47ba-96b0-3c45498ec4e2",
+      "name": "verifyInsurance"
+    },
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -300,
+        140
+      ],
+      "id": "1a70742b-ca5c-413b-9344-12d1f91081b8",
+      "name": "When Executed by Another Workflow"
+    }
+  ],
+  "connections": {
+    "OpenAI Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verification Agent": {
+      "main": [
+        []
+      ]
+    },
+    "referralCheck": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "preAuthCheck": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "waiverCheck": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "getPatientResource": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "verifyInsurance": {
+      "ai_tool": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Verification Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": null,
+  "pinData": {},
+  "versionId": "06c5af11-35b8-4a42-8811-bfcd38d35249",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

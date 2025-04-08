@@ -1,0 +1,107 @@
+{
+  "createdAt": "2025-03-31T21:26:35.591Z",
+  "updatedAt": "2025-04-01T17:58:33.000Z",
+  "id": "huhEmpdmqrmx4npo",
+  "name": "Workflows Import",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "filters": {},
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [
+        -260,
+        -80
+      ],
+      "id": "d2a36ddc-011e-4b5f-8dd5-715bbb10af51",
+      "name": "n8n",
+      "credentials": {
+        "n8nApi": {
+          "id": "wUZ6h8bonj6zrvGr",
+          "name": "n8n account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "path": "26b664d3-4b93-4e13-b75b-0759c697c058",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -460,
+        -80
+      ],
+      "id": "2c0b939c-213e-44ee-b010-05b2ccf4c55e",
+      "name": "Webhook",
+      "webhookId": "26b664d3-4b93-4e13-b75b-0759c697c058"
+    },
+    {
+      "parameters": {
+        "respondWith": "allIncomingItems",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -60,
+        -80
+      ],
+      "id": "85f869f5-a652-48f1-a75e-3b75e68cae6a",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "connections": {
+    "n8n": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "n8n",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "86ea8d39-24c1-4027-96ac-57190d63a041",
+  "triggerCount": 1,
+  "tags": [
+    {
+      "createdAt": "2025-02-03T20:04:43.955Z",
+      "updatedAt": "2025-03-26T17:53:54.426Z",
+      "id": "HrM6YwZGkAgTkFAf",
+      "name": "status: temp"
+    },
+    {
+      "createdAt": "2025-02-14T18:59:44.562Z",
+      "updatedAt": "2025-03-26T17:54:02.609Z",
+      "id": "p924Avtw60OkFX3e",
+      "name": "type: test"
+    }
+  ]
+}

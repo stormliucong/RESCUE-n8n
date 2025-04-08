@@ -1,0 +1,320 @@
+{
+  "createdAt": "2025-02-14T18:56:18.670Z",
+  "updatedAt": "2025-03-26T17:58:51.000Z",
+  "id": "NrDTpAS4g3N6XV9m",
+  "name": "Schedule Agent",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "toolDescription": "Update a specific resource",
+        "method": "PUT",
+        "url": "=http://165.22.13.117:7070/fhir/{resourceType}/{resourceId}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{fhir_payload}",
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{fhir_payload}",
+              "description": "resource payload in fhir json format to be updated"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        240
+      ],
+      "id": "244c61ef-a5ac-4cde-8fbf-8b0b480e0ff1",
+      "name": "updateResource",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Read a specific resource",
+        "url": "=http://165.22.13.117:7070/fhir/{resourceType}/{resourceId}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        420,
+        240
+      ],
+      "id": "516988ea-37b6-485b-9879-e1be673a2207",
+      "name": "getResourceById",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Search for all resources of a given type",
+        "url": "=http://165.22.13.117:7070/fhir/{resourceType}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendQuery": true,
+        "specifyQuery": "json",
+        "jsonQuery": "={query_parameter_in_json}",
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{query_parameter_in_json}",
+              "description": "a json format parameter list for searching for resources with specific parameters"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        260,
+        240
+      ],
+      "id": "e5467b76-5784-419d-8b55-69abe02ed6ee",
+      "name": "getAllResources",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Delete a resource",
+        "method": "DELETE",
+        "url": "=http://165.22.13.117:7070/fhir/{resourceType}/{resourceId}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        880,
+        240
+      ],
+      "id": "2daf9d73-687a-4291-87e8-c98866c30447",
+      "name": "deleteResource",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Create a new resource",
+        "method": "POST",
+        "url": "=http://165.22.13.117:7070/fhir/{resourceType}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{payload}",
+        "placeholderDefinitions": {
+          "values": [
+            {
+              "name": "{payload}",
+              "description": "resource fhir json to be created"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        580,
+        240
+      ],
+      "id": "0a2b96be-eb14-4c23-b562-c5dd34c7db57",
+      "name": "createResource",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "vGFLDBapGQbigX65",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        60,
+        260
+      ],
+      "id": "c927ecd1-2542-49bc-9d82-6e4af0715fcf",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.query }}",
+        "options": {
+          "systemMessage": "=You are an intelligent front-desk assistant for managing patient appointments using FHIR APIs. Your task is to handle all possible appointment scenarios efficiently and correctly. You should use correct tools to perform the task. you may have to use multiple tools in a sequence. If you need more information to complete the task, always fake those information. \n\n## Business Rules\n- New Patients: Always create a patient record if they don\u2019t exist.\n- Availability Check: Always verify provider availability before scheduling or rescheduling.\n- Alternative Options: If a time slot is unavailable, suggest free slots.\n\n## Potential steps you want to consider based on the patient's request:\n\n###Step 1: Identify the Patient\n- Check if the patient exists, always use first name last name and birthdate, retrieve their record using things like:\nGET https://your-fhir-server.com/Patient?given=John&family=Doe&birthdate=eq1980-01-01\n- If the patient does not exist, create a new patient record:\nPOST /Patient with first name (required), last name (required), date of birth (required) and demographic or contact details (optional)\n\n###Step 2: Find an Available Slot\n- Retrieve an available slot according to patients request (e.g., for a specific practitioner, time, or location) using\nGET /Slot?status=free\n- If you need slots for a specific Practitioner\nGET /Slot?schedule.actor=Practitioner/[practitioner-id]&status=free\n- If you need slots for a specific Location\nGET /Location?name=[location-name]\nGET /Slot?schedule.actor=Location/[location-id]&status=free\n- To search for available slots within a date range, use the start parameter\nGET /Slot?status=free&start=ge2025-02-20T00:00:00Z&start=lt2025-02-21T00:00:00Z\n- If no slots available, STOP HERE. provide available options to patient by remove practitioner, time, or location contraints.\n\n###Step 3: Retrieve Start, End, and Schedule for a Given Slot\n- Get start, end and scheduleId using GET /Slot/{slotId}\n\n###Step 4: Retrieve practionerId from retrieved Schedule\n- get practionerId using GET /Schedule/{scheduleId}\n\n###Step 4: Create an Appointment Resource\nPOST /Appointment with patient, provider, date, and reason. An example will be \n```{\n  \"resourceType\": \"Appointment\",\n  \"status\": \"booked\",\n  \"start\": \"2025-02-20T10:00:00Z\",\n  \"end\": \"2025-02-20T10:30:00Z\",\n  \"participant\": [\n    {\n      \"actor\": {\n        \"reference\": \"Patient/123\"\n      },\n      \"status\": \"accepted\"\n    },\n    {\n      \"actor\": {\n        \"reference\": \"Practitioner/456\"\n      },\n      \"status\": \"accepted\"\n    },\n    {\n      \"actor\": {\n        \"reference\": \"Location/789\"\n      },\n      \"status\": \"accepted\"\n    }\n    ],\n  \"slot\": [{\"reference\": \"Slot/12\"}]\n    }\n  ]\n}```\n\n### Step 5: Update the Slot status to be 'busy'\n\n### Reschedule an Existing Appointment\n### Cancel an Appointment\n\n### Confirm an Appointment\nGET /Appointment\nAn example of the query paramters will be like:\n{\n  \"query\": {\n    \"resourceType\": \"Appointment\",\n    \"query_parameter_in_json\": \"{\\\"patient\\\":\\\"Patient/{id} }\\\"}\"\n  }\n}\n\n\n## Final Reminder\nToday'date is {{ $now }}, You are located in Boston, MA, USA. Remember the FHIR server stores timestamps in UTC by default, you have to convert the time zone difference when creating and retrieve resources.",
+          "maxIterations": 20
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        220,
+        0
+      ],
+      "id": "77b9a18e-6075-48b2-9933-4b0be5bb1156",
+      "name": "Schedule Agent"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "de771e10-7b43-48f7-8d05-ca9a8e124533",
+      "name": "When Executed by Another Workflow"
+    }
+  ],
+  "connections": {
+    "updateResource": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "getResourceById": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "getAllResources": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "deleteResource": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "createResource": {
+      "ai_tool": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {
+    "When Executed by Another Workflow": [
+      {
+        "json": {
+          "query": "Hello, this is Alex Carter. I am a new patient that needs to be registered. Please enter the patient details into the system. Name: Alex Carter, DOB: 1990-06-15, phone: 1234567890, address: 123 main st, Boston, MA."
+        }
+      }
+    ]
+  },
+  "versionId": "91184cd7-a184-4b9f-9f4f-1be31ad91f4a",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:52:09.555Z",
+      "updatedAt": "2025-03-26T17:53:07.262Z",
+      "id": "FXorOXy8mYanYwkx",
+      "name": "status: archived"
+    },
+    {
+      "createdAt": "2025-03-26T17:51:38.054Z",
+      "updatedAt": "2025-03-26T17:53:18.475Z",
+      "id": "ixkH8IGCz2Q89soq",
+      "name": "type: core"
+    }
+  ]
+}
