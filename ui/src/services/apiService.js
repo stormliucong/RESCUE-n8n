@@ -1,30 +1,93 @@
 import config from '../config';
 import mockApiService from '../mock/services/mockApiService';
 import axios from 'axios';
-import redisService from './redisService';
 
 class ApiService {
   constructor() {
+    this.ws = null;
     this.subscribers = new Set();
-    this.setupRedisSubscription();
+    this.sessionId = this.generateSessionId();
+    this.messageCounter = 0;
+    this.reconnectAttempts = 0;
+    this.maxReconnectAttempts = 5;
+    this.reconnectDelay = 1000; // 1 second
   }
 
-  setupRedisSubscription() {
-    // Subscribe to Redis service
-    this.redisUnsubscribe = redisService.subscribe((message) => {
-      console.log('ApiService received message from Redis:', message);
-      this.notifySubscribers(message);
-    });
+  generateSessionId() {
+    return 'session_' + Math.random().toString(36).substr(2, 9);
   }
 
-  async sendMessage(agent, content) {
-    console.log('ApiService sending message:', { agent, content });
+  async initialize() {
+    if (config.mock.enabled) {
+      return; // No initialization needed for mock mode
+    }
+
+    this.connectWebSocket();
+  }
+
+  connectWebSocket() {
+    const wsUrl = `ws://${config.websocket.host}:${config.websocket.port}?session=${this.sessionId}`;
+    this.ws = new WebSocket(wsUrl);
     
+    this.ws.onopen = () => {
+      console.log('WebSocket connection established');
+      this.reconnectAttempts = 0;
+    };
+    
+    this.ws.onmessage = (event) => {
+      const message = JSON.parse(event.data);
+      if (message.type !== 'user') {
+        this.messageCounter++;
+        this.notifySubscribers(message);
+      }
+    };
+
+    this.ws.onerror = (error) => {
+      console.error('WebSocket error:', error);
+    };
+
+    this.ws.onclose = () => {
+      console.log('WebSocket connection closed');
+      this.handleReconnect();
+    };
+  }
+
+  handleReconnect() {
+    if (this.reconnectAttempts < this.maxReconnectAttempts) {
+      this.reconnectAttempts++;
+      console.log(`Attempting to reconnect (${this.reconnectAttempts}/${this.maxReconnectAttempts})...`);
+      setTimeout(() => this.connectWebSocket(), this.reconnectDelay * this.reconnectAttempts);
+    } else {
+      console.error('Max reconnection attempts reached');
+      this.notifySubscribers({
+        type: 'system',
+        content: 'Connection lost. Please refresh the page.',
+        timestamp: new Date().toISOString()
+      });
+    }
+  }
+
+  async sendMessage(agent, message) {
+    if (config.mock.enabled) {
+      await new Promise(resolve => setTimeout(resolve, config.mock.responseDelay));
+      return { status: 'received', message: 'Message received and being processed' };
+    }
+
     try {
-      // Send message through Redis service
-      const response = await redisService.sendMessage(agent, content);
-      console.log('Message sent successfully:', response);
-      return response;
+      const response = await axios.post(
+        config.agents[agent].endpoint,
+        { 
+          sessionId: this.sessionId,
+          message: message,
+          counter: this.messageCounter
+        }
+      );
+      
+      return { 
+        status: 'received', 
+        message: 'Message received and being processed',
+        ...response.data 
+      };
     } catch (error) {
       console.error('Error sending message:', error);
       throw error;
@@ -32,34 +95,34 @@ class ApiService {
   }
 
   subscribe(callback) {
-    console.log('Adding new subscriber to ApiService');
+    if (config.mock.enabled) {
+      return mockApiService.subscribe(callback);
+    }
+
     this.subscribers.add(callback);
-    return () => {
-      console.log('Removing subscriber from ApiService');
-      this.subscribers.delete(callback);
-    };
+    return () => this.subscribers.delete(callback);
   }
 
   notifySubscribers(message) {
-    console.log('ApiService notifying', this.subscribers.size, 'subscribers');
-    this.subscribers.forEach(callback => {
-      try {
-        callback(message);
-      } catch (error) {
-        console.error('Error in subscriber callback:', error);
-      }
-    });
+    this.subscribers.forEach(callback => callback(message));
   }
 
   cleanup() {
-    console.log('Cleaning up ApiService');
-    this.subscribers.clear();
-    if (this.redisUnsubscribe) {
-      this.redisUnsubscribe();
+    if (!config.mock.enabled && this.ws) {
+      this.ws.close();
     }
+  }
+
+  getSessionInfo() {
+    return {
+      sessionId: this.sessionId,
+      messageCount: this.messageCounter
+    };
   }
 }
 
-// Export a singleton instance
+// Create and initialize the service
 const apiService = new ApiService();
+apiService.initialize();
+
 export default apiService; 

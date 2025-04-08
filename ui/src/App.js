@@ -58,6 +58,7 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [currentAgent, setCurrentAgent] = useState('frontdesk');
+  const [isSending, setIsSending] = useState(false);
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
@@ -100,7 +101,7 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!input.trim()) return;
+    if (!input.trim() || isSending) return;
 
     const userMessage = {
       type: 'user',
@@ -110,12 +111,25 @@ function App() {
 
     setMessages((prev) => [...prev, userMessage]);
     setInput('');
+    setIsSending(true);
 
     try {
-      // Send message using the API service (mock or real)
-      await apiService.sendMessage(currentAgent, input);
+      // Send message and wait for receipt confirmation
+      const response = await apiService.sendMessage(currentAgent, input);
+      console.log('Message receipt:', response);
     } catch (error) {
       console.error('Error sending message:', error);
+      // Optionally show error message to user
+      setMessages((prev) => [
+        ...prev,
+        {
+          type: 'system',
+          content: 'Error sending message. Please try again.',
+          timestamp: new Date().toISOString()
+        },
+      ]);
+    } finally {
+      setIsSending(false);
     }
   };
 
