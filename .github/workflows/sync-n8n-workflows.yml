@@ -1,0 +1,89 @@
+name: Sync n8n Workflows
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # Runs every day at 8 PM UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Allow pushing changes back to the repo
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Fetch workflows and keep folder in sync
+        shell: python
+        run: |
+          import os
+          import json
+          import requests
+
+          # Adjusted folder path to "local n8n setup/workflows"
+          WORKFLOWS_FOLDER = "local n8n setup/workflows"
+
+          # 1) Make sure this folder exists
+          os.makedirs(WORKFLOWS_FOLDER, exist_ok=True)
+
+          # 2) Fetch all workflows from your n8n endpoint
+          url = "https://congliu.app.n8n.cloud/webhook/26b664d3-4b93-4e13-b75b-0759c697c058"
+          response = requests.get(url)
+          workflows = response.json()
+
+          print(f"DEBUG: {len(workflows)} workflows returned from n8n.")
+          print("DEBUG: First 200 chars of raw response text:", response.text[:200])
+
+          # 3) Gather existing .json files in the target folder
+          existing_files = set(
+              f for f in os.listdir(WORKFLOWS_FOLDER) if f.endswith(".json")
+          )
+          print("DEBUG: Existing JSON files:", existing_files)
+
+          # 4) Keep track of newly created or updated filenames
+          new_files = set()
+
+          # 5) Write each workflow to a .json file
+          for wf in workflows:
+              if not isinstance(wf, dict):
+                  print("WARNING: Found a non-dict item in the list:", wf)
+                  continue
+
+              name = wf.get("name", "unnamed-workflow")
+              filename = name.replace(" ", "_").replace("/", "_").replace("\\", "_")
+              filepath = os.path.join(WORKFLOWS_FOLDER, f"{filename}.json")
+
+              with open(filepath, "w") as f:
+                  json.dump(wf, f, indent=2)
+
+              new_files.add(f"{filename}.json")
+
+          # 6) Delete any local JSONs that are NOT in n8n anymore
+          deleted_files = existing_files - new_files
+          print("DEBUG: Files to delete because they're no longer in n8n:", deleted_files)
+
+          for stale_file in deleted_files:
+              os.remove(os.path.join(WORKFLOWS_FOLDER, stale_file))
+              print(f"DEBUG: Deleted stale file: {stale_file}")
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+
+          now=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          # Use quotes around the folder path with spaces
+          git add -A "local n8n setup/workflows/"
+          git diff --cached --quiet || git commit -m "🔄 Nightly n8n workflow sync on $now"
+          git push

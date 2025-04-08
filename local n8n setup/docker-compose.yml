@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  n8n-service:                    # The SERVICE name
+    container_name: n8n-container # The actual CONTAINER name
+    image: n8nio/n8n:latest
+    ports:
+      - "5678:5678"
+    volumes:
+      # Named volume for persistent .n8n data (holds database & credentials)
+      - n8n_data:/home/node/.n8n
+      # Bind mount the local "workflows" folder so we can import JSON files
+      - ./workflows:/home/node/workflows
+    environment:
+      # Example: Turn on basic auth for n8n UI
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=some_password
+
+volumes:
+  n8n_data:
