@@ -1,58 +1,46 @@
-import conversations from '../data/conversations.json';
+import mockRedisService from './mockRedisService';
 
 class MockApiService {
   constructor() {
-    this.conversations = conversations.conversations;
-    this.currentConversation = this.conversations[0];
-    this.messageIndex = 0;
     this.subscribers = new Set();
   }
 
-  // Simulate sending a message to an agent
   async sendMessage(agent, message) {
-    // In a real implementation, this would send to the actual backend
-    console.log(`Sending message to ${agent}:`, message);
+    // Simulate message receipt confirmation
+    await new Promise(resolve => setTimeout(resolve, 500));
     
-    // Simulate response delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Forward the message to mock Redis service
+    await mockRedisService.receiveUserMessage(message);
     
-    // Find the next message from the mock data
-    const nextMessage = this.getNextMessage();
-    if (nextMessage) {
-      this.notifySubscribers(nextMessage);
-    }
-    
-    return { success: true };
+    return { 
+      status: 'received', 
+      message: 'Message received and being processed',
+      agent: agent
+    };
   }
 
-  // Get the next message from the mock conversation
-  getNextMessage() {
-    if (this.messageIndex < this.currentConversation.messages.length) {
-      const message = this.currentConversation.messages[this.messageIndex];
-      this.messageIndex++;
-      return message;
-    }
-    return null;
-  }
-
-  // Simulate Redis stream subscription
   subscribe(callback) {
+    // Subscribe to both this service and mock Redis service
+    const unsubscribeRedis = mockRedisService.subscribe(callback);
     this.subscribers.add(callback);
-    return () => this.subscribers.delete(callback);
+    
+    return () => {
+      unsubscribeRedis();
+      this.subscribers.delete(callback);
+    };
   }
 
-  // Notify all subscribers of a new message
   notifySubscribers(message) {
     this.subscribers.forEach(callback => callback(message));
   }
 
-  // Reset the conversation (for demo purposes)
-  resetConversation() {
-    this.messageIndex = 0;
+  cleanup() {
+    // Reset the mock Redis service for next test
+    mockRedisService.reset();
   }
 }
 
-export const mockApiService = new MockApiService();
+// Create the service
+const mockApiService = new MockApiService();
 
-// Export the service as a singleton
 export default mockApiService; 
