@@ -2,12 +2,8 @@
 
 import requests
 import random
-import json
 from faker import Faker
-from tqdm import tqdm
 import logging
-# from datetime import datetime, timedelta
-# import pytz
 
 
 # Set a global seed
@@ -19,15 +15,13 @@ random.seed(SEED)
 # Set the seed for Faker
 faker = Faker()
 
-
-MELD_BUNDLE = "./meld-data/sandbox-export.json"
 FHIR_SERVER_URL = "http://165.22.13.117:7070/fhir"
 HEADERS = {
     "Content-Type": "application/fhir+json",
     "Accept": "application/fhir+json"
     }
 
-RESOURCE_TYPES = ["Appointment", "Slot",  "Schedule", "Patient", "Practitioner", "Location"]
+RESOURCE_TYPES =  ["Patient", "Condition", "Procedure", "Coverage", "Practitioner", "Organization", "RelatedPerson", "Consent", "DocumentReference", "Slot", "Schedule", "Appointment"]
 
 def get_resource_ids(resource_type):
     """Fetches all resource IDs for the given resource type."""
@@ -52,7 +46,7 @@ def delete_resource(resource_type, resource_id):
     if response.status_code in [200, 204]:
         print(f"Deleted {resource_type}/{resource_id}")
     else:
-        print(f"Failed to delete {resource_type}/{resource_id}: {response.status_code}")
+        print(f"Failed to delete {resource_type}/{resource_id}: {response.text}")
 
 def delete_all_resources():
     """Deletes all resources of the specified types."""
@@ -68,82 +62,223 @@ def delete_all_resources():
         for resource_id in resource_ids:
             delete_resource(resource_type, resource_id)
 
-def load_resources_from_bundle(file_path):
+def create_patient():
     """
-    Reads a FHIR bundle from a file and posts each resource to the FHIR server.
+    Creates a Patient resource with fake data.
     """
-    with open(file_path, "r") as file:
-        fhir_bundle = json.load(file)
-
-    if fhir_bundle.get("resourceType") != "Bundle":
-        raise ValueError("Invalid FHIR bundle: resourceType is not 'Bundle'")
-
-    url = FHIR_SERVER_URL
-    headers = {
-        "Content-Type": "application/fhir+json",
-        "Accept": "application/fhir+json"
+    return {
+        "resourceType": "Patient",
+        "id": "PAT001",
+        "name": [{"use": "official", "family": "Doe", "given": ["John"]}],
+        "birthDate": "1990-06-15",
+        "telecom": [{"system": "phone", "value": "123-456-7890"}],
+        "address": [{"line": ["123 Main St"], "city": "Boston", "state": "MA"}]
     }
-    entries = fhir_bundle.get('entry', [])
-    
-    priority_order = ["Organization", "Patient"]
 
-    # 排序函数
-    def sort_key(entry):
-        resource_type = entry['resource']['resourceType']
-        if resource_type in priority_order:
-            return priority_order.index(resource_type)
-        return len(priority_order)
+def create_condition(patient_id):
+    """
+    Creates a Condition resource associated with a patient.
+    """
+    return {
+        "resourceType": "Condition",
+        "id": "COND001",
+        "code": {"text": "Hypertension"},
+        "subject": {"reference": f"Patient/{patient_id}"}
+    }
 
-    # 对 entries 进行排序
-    entries = sorted(entries, key=sort_key)
-    success_count = 0
-    error_count = 0
-    exist_count = 0
-    for entry in tqdm(entries, desc="Processing entries"):
-        # 创建一个新的 fhir_bundle，只包含当前的 entry
-        single_entry_bundle = {
-            "resourceType": "Bundle",
-            "type": "transaction",
-            "entry": [entry]
+def create_procedure(patient_id):
+    """
+    Creates a Procedure resource associated with a patient.
+    """
+    return {
+        "resourceType": "Procedure",
+        "id": "PROC001",
+        "status": "in-progress",
+        "subject": {"reference": f"Patient/{patient_id}"},
+        "code": {"text": "Appendectomy"}
+    }
+
+def create_coverage(patient_id):
+    """
+    Creates a Coverage resource associated with a patient.
+    """
+    return {
+        "resourceType": "Coverage",
+        "id": "COV001",
+        "status": "active",
+        "kind": "insurance",
+        "subscriber": {"reference": f"Patient/{patient_id}"},
+        "beneficiary": {"reference": f"Patient/{patient_id}"},
+        "insurer": {"reference": "Organization/ORG123"}
+    }
+
+def create_practitioner():
+    """
+    Creates a Practitioner resource with fake data.
+    """
+    return {
+        "resourceType": "Practitioner",
+        "id": "PRACT001",
+        "name": [{"family": "Smith", "given": ["Jane"]}],
+    }
+
+def create_organization():
+    """
+    Creates an Organization resource.
+    """
+    return {
+        "resourceType": "Organization",
+        "id": "ORG001",
+        "name": "XYZ Insurance"
+    }
+
+def create_related_person(patient_id):
+    """
+    Creates a RelatedPerson resource associated with a patient.
+    """
+    return {
+        "resourceType": "RelatedPerson",
+        "id": "REL001",
+        "patient": {"reference": f"Patient/{patient_id}"},
+        "relationship": [{"text": "Mother"}],
+        "name": [{"use": "official", "family": "Doe", "given": ["Alice"]}],
+        "gender": "female",
+        "birthDate": "1960-03-01"
+    }
+
+def create_consent(patient_id):
+    """
+    Creates a Consent resource associated with a patient.
+    """
+    return {
+        "resourceType": "Consent",
+        "id": "CONSENT001",
+        "status": "active",
+        "subject": {"reference": f"Patient/{patient_id}"},
+        "date": "2025-01-01",
+        "controller": [{"reference": "Organization/ORG001"}],
+        "sourceAttachment": [{"title": "Consent form"}],
+        "policyText": {"reference": "DocumentReference/DOC123"}
+    }
+
+
+def create_document_reference(patient_id):
+    """
+    Creates a DocumentReference resource associated with a patient.
+    """
+    return {
+        "resourceType": "DocumentReference",
+        "id": "DOC123",
+        "status": "current",
+        "type": {
+            "coding": [
+                {
+                    "system": "http://loinc.org",
+                    "code": "34108-1",
+                    "display": "Outpatient Note"
+                }
+            ]
+        },
+        "subject": {
+            "reference": f"Patient/{patient_id}"
+        },
+        "date": "2025-01-01",
+        "author": [
+            {
+                "reference": "Practitioner/PRACT001"
+            }
+        ],
+        "content": [
+            {
+                "attachment": {
+                    "contentType": "application/pdf",
+                    "url": f"http://example.com/documents/{faker.uuid4()}.pdf",
+                    "size": random.randint(1000, 5000),
+                    "hash": faker.md5(),
+                    "title": "Patient Outpatient Note",
+                    "creation": "2025-01-01"
+                }
+            }
+        ]
+    }
+
+
+def create_slot():
+    """
+    Creates a Slot resource.
+    """
+    return {
+        "resourceType": "Slot",
+        "id": "SLOT001",
+        "serviceCategory": [{
+            "text": "General Practice"
+        }],
+        "serviceType": [{
+            "text": "Immunization"
+        }],
+        "specialty": [{
+            "text": "Clinical immunology"
+        }],
+        "appointmentType": [{
+            "text": "Walk-in"
+        }],
+        "schedule": {
+            "reference": "Schedule/SCH001"
+        },
+        "status": "free",
+        "start":  "2025-04-25T09:15:00Z",
+        "end": "2025-04-25T09:30:00Z"
+    }
+
+def create_schedule():
+    """
+    Creates a Schedule resource.
+    """
+    return {
+        "resourceType": "Schedule",
+        "id": "SCH001",
+        "active": True,
+        "serviceCategory": [{
+            "text": "General Practice"
+        }],
+        "serviceType": [{
+            "text": "Immunization"
+        }],
+        "specialty": [{
+            "text": "Clinical immunology"
+        }],
+        "name": "John Smith - Immunization",
+        "planningHorizon": {
+            "start": "2025-04-25T08:00:00Z",
+            "end": "2025-04-25T12:00:00Z"
         }
+    }
 
-        resource = entry['resource']
-        resource_type = resource['resourceType']
-        resource_id = resource['id']
-        
-        # 检查资源是否已经存在
-        check_url = f"{url}/{resource_type}/{resource_id}"
-        check_response = requests.get(check_url, headers=headers)
-        
-        if check_response.status_code in [200, 201]:
-            exist_count += 1
-            continue
-        
-        # 打印 single_entry_bundle 以检查其内容
-        # print("Single Entry Bundle:", json.dumps(single_entry_bundle, indent=2))
-        
-        # 将 single_entry_bundle 转换为 JSON 字符串
-        single_entry_bundle_str = json.dumps(single_entry_bundle)
-        
-        response = requests.post(url, data=single_entry_bundle_str, headers=headers)
-        if response.status_code in [200, 201]:
-            success_count += 1
-        else:
-            error_count += 1
-            print(f"Failed to create {resource_type}/{resource_id}: {response.text}")
-    # response = requests.post(url, json=fhir_bundle, headers=headers)
-    # if response.status_code in [200, 201]:
-    #     return response.json().get("id")
-    # else:
-    #     print(response.text)
-    total_requests = success_count + error_count
-    if total_requests > 0:
-        error_percentage = (error_count / total_requests) * 100
-        print(f"Total Error Percentage: {error_percentage:.2f}% in {total_requests} requests.")
-        logging.info(f"Total Error Percentage: {error_percentage:.2f}% in {total_requests} requests.")
-    else:
-        print("No requests were made.")
-
+def create_appointment(patient_id, practitioner_id):
+    """
+    Creates an Appointment resource associated with a patient and practitioner.
+    """
+    return {
+        "resourceType": "Appointment",
+        "id": "APPT001",
+        "status": "booked",
+        "start": "2025-04-25T09:15:00Z",
+        "end": "2025-04-25T09:30:00Z",
+        "participant": [
+            {
+                "actor": {
+                    "reference": f"Patient/{patient_id}"
+                },
+                "status": "accepted"
+            },
+            {
+                "actor": {
+                    "reference": f"Practitioner/{practitioner_id}"
+                },
+                "status": "accepted"
+            }
+        ]
+    }
 
 def post_to_fhir(resource):
     """
@@ -161,10 +296,76 @@ def post_to_fhir(resource):
     else:
         raise ValueError(f"Failed to create {resource['resourceType']}: {response.text}")
 
+def upsert_to_fhir(resource):
+    """
+    Creates or updates a FHIR resource on the FHIR server with a specified ID.
+    """
+    url = f"{FHIR_SERVER_URL}/{resource['resourceType']}/{resource['id']}"
+    headers = {
+        "Content-Type": "application/fhir+json",
+        "Accept": "application/fhir+json"
+    }
+    response = requests.put(url, json=resource, headers=headers)
+    
+    if response.status_code in [200, 201]:
+        logging.info(f"Successfully upserted {resource['resourceType']} with ID {resource['id']}")
+    else:
+        logging.error(f"Failed to upsert {resource['resourceType']} with ID {resource['id']}: {response.status_code} {response.text}")
 
 def populate_fhir():
-    # delete_all_resources()
-    load_resources_from_bundle(MELD_BUNDLE)
+    """
+    Populates the FHIR server with sample resources.
+    """
+    # Delete existing resources
+    delete_all_resources()
+
+    # Create and post Organization
+    organization = create_organization()
+    upsert_to_fhir(organization)
+
+    # Create and post Practitioner
+    practitioner = create_practitioner()
+    upsert_to_fhir(practitioner)
+
+    # Create and post Patient
+    patient = create_patient()
+    upsert_to_fhir(patient)
+
+    # # Create and post RelatedPerson
+    related_person = create_related_person(patient['id'])
+    upsert_to_fhir(related_person)
+
+    # Create and post Schedule
+    schedule = create_schedule()
+    upsert_to_fhir(schedule)
+
+    # Create and post Slot
+    slot = create_slot()
+    upsert_to_fhir(slot)
+
+    # Create and post Appointment
+    appointment = create_appointment(patient['id'], practitioner['id'])
+    upsert_to_fhir(appointment)
+
+    # Create and post Condition
+    condition = create_condition(patient['id'])
+    upsert_to_fhir(condition)
+
+    # Create and post Procedure
+    procedure = create_procedure(patient['id'])
+    upsert_to_fhir(procedure)
+
+    # Create and post Coverage
+    coverage = create_coverage(patient['id'])
+    upsert_to_fhir(coverage)
+
+    # Create and post Consent
+    consent = create_consent(patient['id'])
+    upsert_to_fhir(consent)
+
+    # Create and post DocumentReference
+    document_reference = create_document_reference(patient['id'])
+    upsert_to_fhir(document_reference)
     
 
 if __name__ == "__main__":
