@@ -146,20 +146,27 @@ def create_related_person(patient_id):
         "birthDate": "1960-03-01"
     }
 
-def create_consent(patient_id):
+def create_consent(patient_id, document_id="DOC001"):
     """
     Creates a Consent resource associated with a patient.
     """
-    return {
-        "resourceType": "Consent",
-        "id": "CONSENT001",
-        "status": "active",
-        "subject": {"reference": f"Patient/{patient_id}"},
-        "date": "2025-01-01",
-        "controller": [{"reference": "Organization/ORG001"}],
-        "sourceAttachment": [{"title": "Consent form"}],
-        "policyText": {"reference": "DocumentReference/DOC123"}
-    }
+    return  {
+        "resourceType" : "Consent",
+        "id" : "CONSENT001",
+        "status" : "active",
+        "subject" : {
+            "reference" : f"Patient/{patient_id}",
+        },
+        "date" : "2025-03-24",
+        "controller" : [{
+            "reference" : "Organization/ORG001"
+        }],
+        "sourceAttachment" : [{
+            "title" : "The terms of the consent."
+        }],
+        "sourceReference": {
+        "reference": f"DocumentReference/DOC001"} #TODO: failed to add policy text
+        }
 
 
 def create_document_reference(patient_id):
@@ -168,7 +175,7 @@ def create_document_reference(patient_id):
     """
     return {
         "resourceType": "DocumentReference",
-        "id": "DOC123",
+        "id": "DOC001",
         "status": "current",
         "type": {
             "coding": [
