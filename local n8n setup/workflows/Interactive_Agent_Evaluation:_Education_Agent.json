@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-26T19:28:56.868Z",
-  "updatedAt": "2025-04-07T01:46:47.000Z",
+  "updatedAt": "2025-04-09T17:01:50.000Z",
   "id": "zOSJ4AMpO5cMILRN",
   "name": "Interactive Agent Evaluation: Education Agent",
   "active": true,
@@ -385,7 +385,7 @@
       "typeVersion": 4.2,
       "position": [
         1580,
-        40
+        60
       ],
       "id": "6af3acef-126e-45e1-b27d-8e4464283a0f",
       "name": "HTTP Request to Customized Patient Agent"
@@ -409,7 +409,7 @@
             {
               "id": "acaa3e0d-ead3-4019-bc81-02071201fa0f",
               "name": "sessionId",
-              "value": "={{ $json.body.sessionId }}",
+              "value": "={{ $json.body.user_id }}",
               "type": "string"
             },
             {
@@ -520,7 +520,7 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        1280,
+        1400,
         180
       ],
       "id": "589e104e-66e5-4e46-8558-7b0d82de337f",
@@ -582,6 +582,34 @@
       ],
       "id": "5b838747-c37a-4c56-8b4e-719630500d12",
       "name": "Code"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://3eee-130-44-104-62.ngrok-free.app/receive_reply",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "reply",
+              "value": "={{ $json.reply }}"
+            },
+            {
+              "name": "user_id",
+              "value": "={{ $('Edit Fields').item.json.sessionId }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1580,
+        -120
+      ],
+      "id": "883461aa-6d79-47f1-b369-0a296bfcdf5c",
+      "name": "HTTP Request"
     }
   ],
   "connections": {
@@ -753,7 +781,7 @@
       "main": [
         [
           {
-            "node": "Switch",
+            "node": "HTTP Request",
             "type": "main",
             "index": 0
           }
@@ -799,6 +827,11 @@
           }
         ]
       ]
+    },
+    "HTTP Request to Customized Patient Agent": {
+      "main": [
+        []
+      ]
     }
   },
   "settings": {
@@ -817,7 +850,7 @@
       }
     ]
   },
-  "versionId": "c13ec700-5f69-43e2-aac0-ffe9fe8f99a3",
+  "versionId": "b988ec1e-f858-48e7-8cc8-d9c2cc913dc4",
   "triggerCount": 1,
   "tags": [
     {
