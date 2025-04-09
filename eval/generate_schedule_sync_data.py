@@ -164,7 +164,7 @@ def create_consent(patient_id, document_id="DOC001"):
         "sourceAttachment" : [{
             "title" : "The terms of the consent."
         }],
-        "sourceReference": {
+        "policyText": {
         "reference": f"DocumentReference/DOC001"} #TODO: failed to add policy text
         }
 

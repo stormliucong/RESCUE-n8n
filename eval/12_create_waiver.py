@@ -80,7 +80,7 @@ consent_data={
   "sourceAttachment" : [{
     "title" : "The terms of the consent."
   }],
-  "sourceReference": {
+  "policyText": {
   "reference": f"DocumentReference/{document_id}"} #TODO: failed to add policy text
 }
 
