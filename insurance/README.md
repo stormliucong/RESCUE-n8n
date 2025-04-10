@@ -10,15 +10,6 @@ To organize and evaluate insurance policies across 161 providers, specifically f
 
 ---
 
-## 📂 Contents
+## 📄 PDF Documents
 
-- ✅ `insurance_data.csv`: Manually searched metadata on 587 insurance policies
-- 📘 `workflow_example.json`: Example n8n agent workflow
-- 📄 PDF documents from insurance provider websites (see below)
-
----
-
-## 📄 PDF Documents (Coming Soon)
-
-All documents are saved in the [`insurance-pdfs/`](./insurance-pdfs) folder.  
-They contain prior authorization rules, coverage decisions, and policy restrictions.
+This project includes 587 manually collected insurance policy documents from 161 providers, located in the [`insurance_policy/`](./insurance-policy) folder.
