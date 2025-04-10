@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-13T02:56:31.694Z",
-  "updatedAt": "2025-04-07T01:46:50.000Z",
+  "updatedAt": "2025-04-10T02:38:12.000Z",
   "id": "bIw7bxVzjXzsARlc",
   "name": "Interactive Agent Evaluation: Front Desk Agent",
   "active": true,
@@ -134,7 +134,7 @@
         "text": "={{ $json.chatInput }}",
         "hasOutputParser": true,
         "options": {
-          "systemMessage": "You are a front desk agent for a telemedicine clinic. In every interaction you must check the Redis memory for context.\n\nIf the patient\u2019s question is strictly administrative (e.g., about scheduling, billing, appointment logistics, clinic policies, etc.), provide the answer. End your response with the token \"<PATIENT>\".\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, forward the entire message verbatim to the education agent. End your output with the token \"<EDUCATION>\".\n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\"."
+          "systemMessage": "=You are a front desk agent for a telemedicine clinic. In every interaction you must check the Redis memory for context.\n\nIf the patient\u2019s question is strictly administrative (e.g., about scheduling, billing, appointment logistics, clinic policies, etc.), provide the answer. End your response with the token \"<PATIENT>\".\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, forward the entire message verbatim to the education agent. End your output with the token \"<EDUCATION>\".\n\nBy default, you must always end your reply with the token <PATIENT>, unless it is a referral to the education agent. \n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\"."
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
@@ -155,7 +155,7 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        660,
+        640,
         -280
       ],
       "id": "87bd457e-c438-4d0f-9f31-9a66721738fb",
@@ -199,8 +199,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1860,
-        100
+        1880,
+        380
       ],
       "id": "05d307ab-e94a-47f4-86d6-d97361291a10",
       "name": "HTTP Request to Patient Agent"
@@ -247,47 +247,6 @@
       ],
       "id": "f7cdaac4-1bd8-4a04-bc2d-e038d885341c",
       "name": "Redis Chat Memory",
-      "credentials": {
-        "redis": {
-          "id": "Ib3bWFlXBjukwLTb",
-          "name": "Redis account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "operation": "get",
-        "key": "={{ $('Edit Fields').item.json.sessionId }}",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.redis",
-      "typeVersion": 1,
-      "position": [
-        1320,
-        -480
-      ],
-      "id": "c40e3fd4-8741-4e3e-8ecf-f3c38c54dabe",
-      "name": "Redis",
-      "credentials": {
-        "redis": {
-          "id": "Ib3bWFlXBjukwLTb",
-          "name": "Redis account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "operation": "delete",
-        "key": "conversation_1"
-      },
-      "type": "n8n-nodes-base.redis",
-      "typeVersion": 1,
-      "position": [
-        1060,
-        -480
-      ],
-      "id": "bb17d275-39ab-4087-8f32-cb1ec2eaa63e",
-      "name": "Redis1",
       "credentials": {
         "redis": {
           "id": "Ib3bWFlXBjukwLTb",
@@ -413,7 +372,7 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        80,
+        120,
         -660
       ],
       "id": "fbe73de4-ba75-4f1e-99c2-7a9cf0343678",
@@ -605,6 +564,59 @@
       ],
       "id": "4f1f8032-1ffb-474f-803d-8224c7dac665",
       "name": "HTTP Request to Education Agent"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "key": "=user_83",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1060,
+        -480
+      ],
+      "id": "53abe75b-254b-4fff-98be-67d354466872",
+      "name": "Redis2",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://3eee-130-44-104-62.ngrok-free.app/receive_reply",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "reply",
+              "value": "={{ $json.reply }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "={{ $('Edit Fields').item.json.sessionId }}"
+            },
+            {
+              "name": "responding_agent",
+              "value": "frontdesk_agent"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1860,
+        120
+      ],
+      "id": "7df83ccd-8848-4aab-a4c0-e2ca4fe23ec6",
+      "name": "HTTP Request to Patient Server"
     }
   ],
   "connections": {
@@ -684,16 +696,6 @@
             "index": 0
           }
         ]
-      ]
-    },
-    "Redis": {
-      "main": [
-        []
-      ]
-    },
-    "Redis1": {
-      "main": [
-        []
       ]
     },
     "Structured Output Parser": {
@@ -794,7 +796,7 @@
         ],
         [
           {
-            "node": "HTTP Request to Patient Agent",
+            "node": "HTTP Request to Patient Server",
             "type": "main",
             "index": 0
           }
@@ -810,7 +812,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "5cb0beef-447c-4609-9760-1b444e30071c",
+  "versionId": "5d1d96c5-01a7-4e67-9fee-f2187c00c377",
   "triggerCount": 1,
   "tags": [
     {
