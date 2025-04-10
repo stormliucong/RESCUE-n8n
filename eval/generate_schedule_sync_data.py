@@ -15,7 +15,12 @@ random.seed(SEED)
 # Set the seed for Faker
 faker = Faker()
 
-FHIR_SERVER_URL = "http://165.22.13.117:7070/fhir"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 HEADERS = {
     "Content-Type": "application/fhir+json",
     "Accept": "application/fhir+json"
@@ -120,6 +125,19 @@ def create_practitioner():
         "resourceType": "Practitioner",
         "id": "PRACT001",
         "name": [{"family": "Smith", "given": ["Jane"]}],
+        "address" : [{
+            "use" : "work",
+            "line" : ["9 Main Ave"],
+            "city" : "Boston",
+            "state" : "MA",
+            "postalCode" : "02115",
+            "country" : "US"
+        }],
+        "gender": "female",
+        "birthDate" : "1959-03-11",
+        "communication" : [{ #TODO: fail to add speak english
+            "language" : { "text" : "English" }
+        }]
     }
 
 def create_organization():
@@ -165,7 +183,8 @@ def create_consent(patient_id, document_id="DOC001"):
             "title" : "The terms of the consent."
         }],
         "policyText": {
-        "reference": f"DocumentReference/DOC001"} #TODO: failed to add policy text
+        "reference": f"DocumentReference/DOC001"}, #TODO: failed to add policy text
+        "decision": "permit"
         }
 
 
@@ -210,7 +229,7 @@ def create_document_reference(patient_id):
     }
 
 
-def create_slot():
+def create_free_slot():
     """
     Creates a Slot resource.
     """
@@ -237,6 +256,33 @@ def create_slot():
         "end": "2025-04-25T09:30:00Z"
     }
 
+def create_busy_slot():
+    """
+    Creates a busy Slot resource.
+    """
+    return {
+        "resourceType": "Slot",
+        "id": "SLOT002",
+        "serviceCategory": [{
+            "text": "General Practice"
+        }],
+        "serviceType": [{
+            "text": "Immunization"
+        }],
+        "specialty": [{
+            "text": "Clinical immunology"
+        }],
+        "appointmentType": [{
+            "text": "Walk-in"
+        }],
+        "schedule": {
+            "reference": "Schedule/SCH001"
+        },
+        "status": "busy",
+        "start":  "2025-04-25T09:00:00Z",
+        "end": "2025-04-25T09:15:00Z"
+    }
+
 def create_schedule():
     """
     Creates a Schedule resource.
@@ -254,10 +300,41 @@ def create_schedule():
         "specialty": [{
             "text": "Clinical immunology"
         }],
+        "actor": {
+            "reference": "Practitioner/PRACT001"
+        },
         "name": "John Smith - Immunization",
         "planningHorizon": {
             "start": "2025-04-25T08:00:00Z",
             "end": "2025-04-25T12:00:00Z"
+        }
+    }
+
+def create_location():
+    """
+    Creates a Location resource.
+    """
+    return {
+        "resourceType": "Location",
+        "id": "LOC001",
+        "name": "Main Clinic",
+        "description": "Main clinic for general practice",
+        "status": "active",
+        "mode": "instance",
+        "type": [{
+            "text": "General Practice"
+        }],
+        "telecom": [{
+            "system": "phone",
+            "value": "+1-555-1234",
+            "use": "work"
+        }],
+        "address": {
+            "use": "work",
+            "line": ["123 Main St"],
+            "city": "Boston",
+            "state": "MA",
+            "postalCode": "02115"
         }
     }
 
@@ -283,8 +360,14 @@ def create_appointment(patient_id, practitioner_id):
                     "reference": f"Practitioner/{practitioner_id}"
                 },
                 "status": "accepted"
+            },
+            {
+                "actor": {
+                    "location":{ "reference": "Location/LOC001" }
+                }
             }
-        ]
+        ],
+        "slot": [{"reference": "Slot/SLOT002"}],
     }
 
 def post_to_fhir(resource):
@@ -334,6 +417,10 @@ def populate_fhir():
     practitioner = create_practitioner()
     upsert_to_fhir(practitioner)
 
+    # Create and post Location
+    location = create_location()
+    upsert_to_fhir(location)
+
     # Create and post Patient
     patient = create_patient()
     upsert_to_fhir(patient)
@@ -347,8 +434,11 @@ def populate_fhir():
     upsert_to_fhir(schedule)
 
     # Create and post Slot
-    slot = create_slot()
-    upsert_to_fhir(slot)
+    free_slot = create_free_slot()
+    upsert_to_fhir(free_slot)
+
+    busy_slot = create_busy_slot()
+    upsert_to_fhir(busy_slot)
 
     # Create and post Appointment
     appointment = create_appointment(patient['id'], practitioner['id'])

@@ -1,22 +1,27 @@
 
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_organization, create_document_reference, create_consent
-FHIR_SERVER_URL = "http://165.22.13.117:7070/fhir"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 
 HEADERS = {
     "Content-Type": "application/fhir+json",
     "Accept": "application/fhir+json"
 }
 
-# delete_all_resources()  # Clean up existing resources before the test
-# patient = create_patient()
-# upsert_to_fhir(patient)
-# organization = create_organization()
-# upsert_to_fhir(organization)
-# document_reference = create_document_reference(patient_id=patient["id"])
-# upsert_to_fhir(document_reference)
-# consent = create_consent(patient_id=patient["id"])
-# upsert_to_fhir(consent)
+delete_all_resources()  # Clean up existing resources before the test
+patient = create_patient()
+upsert_to_fhir(patient)
+organization = create_organization()
+upsert_to_fhir(organization)
+document_reference = create_document_reference(patient_id=patient["id"])
+upsert_to_fhir(document_reference)
+consent = create_consent(patient_id=patient["id"])
+upsert_to_fhir(consent)
 
 
 params = {

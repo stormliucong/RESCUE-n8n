@@ -1,6 +1,11 @@
 import requests
 
-FHIR_SERVER_URL = "http://165.22.13.117:7070/fhir"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 from generate_schedule_sync_data import delete_all_resources
 
 HEADERS = {
