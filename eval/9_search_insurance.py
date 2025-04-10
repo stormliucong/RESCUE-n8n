@@ -1,7 +1,12 @@
 
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_coverage
-FHIR_SERVER_URL = "http://165.22.13.117:7070/fhir"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 
 HEADERS = {
     "Content-Type": "application/fhir+json",
