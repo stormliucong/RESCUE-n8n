@@ -1,6 +1,6 @@
 
 import requests
-from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_related_person
+from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_related_person, create_account
 import os
 from dotenv import load_dotenv
 
@@ -18,8 +18,26 @@ patient = create_patient()
 upsert_to_fhir(patient)
 related_person = create_related_person(patient_id=patient["id"])
 upsert_to_fhir(related_person)
+account = create_account(patient_id=patient["id"])
+upsert_to_fhir(account)  
 
 
+
+# Find if guarantor exists 
+params = {
+  "patient" : "Patient/PAT001",
+}
+response = requests.get(f"{FHIR_SERVER_URL}/Account", headers=HEADERS, params=params)
+# Verify the response status code
+assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+
+# Optionally, inspect the response content
+response_data = response.json()
+print("Guarantor found successfully. Response:")
+print(response_data)
+
+
+# get guarantor info
 params = {
   "patient" : "Patient/PAT001",
 }
@@ -31,5 +49,5 @@ assert response.status_code == 200, f"Expected status code 200, but got {respons
 
 # Optionally, inspect the response content
 response_data = response.json()
-print("Resource found successfully. Response:")
+print("Related Person found successfully. Response:")
 print(response_data)
