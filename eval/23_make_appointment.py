@@ -1,3 +1,7 @@
+"""
+Evaluation Prompt:
+Make an appointment time for the patient id =PAT001 and slot id = 1 , practitioner id PRAC001, on April 25th 9:15-9:30 am.
+"""
 import requests
 from generate_schedule_sync_data import (
     create_patient,

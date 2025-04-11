@@ -1,4 +1,7 @@
-
+"""
+Evaluation Prompt:
+Search for the existing patient id=PAT001 to see if he has any medical history.
+"""
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_condition
 

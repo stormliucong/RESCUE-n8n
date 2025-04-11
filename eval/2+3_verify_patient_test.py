@@ -1,3 +1,17 @@
+"""
+Evaluation Prompt:
+2. 
+Compare the patient's record in the system with the provided details:
+ - Name: John Doe
+ - DOB: 1990-06-15
+ - Phone: (001) 456-7890
+ - Address: 001 Main St, Boston, MA
+ If any information is incorrect, update it accordingly.
+
+3. 
+Search the database for the following patient: Name: John Doe.  DOB: 1990-06-15. 
+If the patient does not exist, classify them as a new patient.
+"""
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources
 

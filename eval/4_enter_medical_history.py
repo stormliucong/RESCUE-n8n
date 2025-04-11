@@ -1,3 +1,7 @@
+"""
+Evaluation Prompt:
+Record a medical condition for the patient id=PAT001 in their medical history that he has a hypertension. 
+"""
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources
 

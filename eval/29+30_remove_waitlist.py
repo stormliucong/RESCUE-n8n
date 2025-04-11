@@ -1,6 +1,11 @@
 """
 Evaluation Prompt:
+29.
+Patient John Doe 1990-06-15  doesnt need waitlist. Please remove him from the waitlist APPT001.
+30.
 The appointment APPT 001 is successfully accepted from the waitlist. 
+
+TODO: experiment 29
 """
 import requests
 from generate_schedule_sync_data import (

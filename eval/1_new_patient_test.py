@@ -1,3 +1,11 @@
+"""
+Evaluation Prompt:
+A new patient needs to be registered. Please enter the following details into the system:
+ - Name: John Doe
+ - Date of Birth: 1990-06-15
+ - Phone: (123) 456-7890
+ - Address: 123 Main St, Boston, MA
+"""
 import requests
 
 import os

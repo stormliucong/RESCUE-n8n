@@ -1,3 +1,12 @@
+"""
+Evaluation Prompt:
+Submit a waiver form and a consent form for Patient ID PAT001, including references to the appropriate documents and policies:
+- Name: John Doe
+- DOB: 1990-06-15
+- Patient id: PAT001
+- creation date: 2024-12-24T09:35:00+11:00
+The url of the document insurance waiver is http://example.org/xds/mhd/Binary/07a6483f-732b-461e-86b6-edb665c45510
+"""
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_organization, create_practitioner
 

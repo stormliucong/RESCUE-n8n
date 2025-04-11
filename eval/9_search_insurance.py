@@ -1,4 +1,9 @@
-
+"""
+Evaluation Prompt:
+Search if patient insurance information exists
+ - beneficiary: John Doe (id=PAT001)
+ Look up these details and confirm whether a referral is required before scheduling.
+"""
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_coverage
 import os

@@ -1,3 +1,7 @@
+"""
+Evaluation Prompt:
+Patient John Doe id=PAT001 wants an earlier slot id=1 for Immunization. Add them to the waitlist and notify them if a slot becomes available.
+"""
 import requests
 from generate_schedule_sync_data import (
     create_patient,

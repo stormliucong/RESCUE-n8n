@@ -1,4 +1,7 @@
-
+"""
+Evaluation Prompt
+Search and find if patient id =PAT001 has any surgery plan in progress.
+"""
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_procedure
 

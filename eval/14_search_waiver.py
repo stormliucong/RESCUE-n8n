@@ -1,4 +1,8 @@
+"""
+Evaluation Prompt:
 
+find the waiver form signed by Patient ID PAT001 to check that the waiver is signed and stored in the system.
+"""
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_organization, create_document_reference, create_consent
 import os

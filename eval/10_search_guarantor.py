@@ -1,4 +1,9 @@
-
+"""
+Evaluation Prompt:
+Identify and confirm the guarantor responsible for this patient's insurance policy.
+ Patient's details:
+ - Name: John Doe, patient id = 001
+"""
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_related_person, create_account
 import os
