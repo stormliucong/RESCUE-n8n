@@ -1,3 +1,7 @@
+"""
+Evaluation Prompt:
+The appointment APPT 001 is successfully accepted from the waitlist. 
+"""
 import requests
 from generate_schedule_sync_data import (
     create_patient,
