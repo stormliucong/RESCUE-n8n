@@ -4,3 +4,4 @@ n8n_data/config
 .venv
 node_modules/
 ui/node_modules/
+ui/chat-ui-react/node_modules/
