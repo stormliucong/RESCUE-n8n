@@ -1,3 +1,7 @@
+"""
+Evaluation Prompt:
+Patient needs a urgent visit before tomorrow. Find an available slot for him.
+"""
 import requests
 from generate_schedule_sync_data import (
     create_patient,
