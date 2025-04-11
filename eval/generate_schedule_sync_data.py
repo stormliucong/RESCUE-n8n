@@ -338,14 +338,14 @@ def create_location():
         }
     }
 
-def create_appointment(patient_id, practitioner_id):
+def create_appointment(patient_id, practitioner_id, waitlist=False):
     """
     Creates an Appointment resource associated with a patient and practitioner.
     """
     return {
         "resourceType": "Appointment",
         "id": "APPT001",
-        "status": "booked",
+        "status": "waitlist" if waitlist else "booked",
         "start": "2025-04-25T09:15:00Z",
         "end": "2025-04-25T09:30:00Z",
         "participant": [
@@ -369,6 +369,7 @@ def create_appointment(patient_id, practitioner_id):
         ],
         "slot": [{"reference": "Slot/SLOT002"}],
     }
+
 
 def post_to_fhir(resource):
     """
@@ -401,6 +402,7 @@ def upsert_to_fhir(resource):
         logging.info(f"Successfully upserted {resource['resourceType']} with ID {resource['id']}")
     else:
         logging.error(f"Failed to upsert {resource['resourceType']} with ID {resource['id']}: {response.status_code} {response.text}")
+
 
 def populate_fhir():
     """
