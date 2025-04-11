@@ -1,3 +1,12 @@
+"""
+Evaluation Prompt:
+Add the guarantor responsible for this patient's insurance policy.
+ Patient's details:
+ - Name: John Doe (id=PAT001)
+ - Guarantor: Alice Doe
+ - Relationship: Mother
+- DOB: 1960-03-01
+"""
 import requests
 from generate_schedule_sync_data import (
     create_patient,

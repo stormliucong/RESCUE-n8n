@@ -1,3 +1,13 @@
+"""
+Evaluation Prompt:
+Add the following insurance details for the patient: 
+- Insurer XYZ Insurance (id=ORG001) 
+- Subscriber: John Doe (id=PAT001), 
+- Beneficiary: John Doe (id=PAT001)
+start: 2024-05-23,
+end: 2025-05-23
+"""
+
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources, create_organization
 

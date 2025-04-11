@@ -164,6 +164,29 @@ def create_related_person(patient_id):
         "birthDate": "1960-03-01"
     }
 
+def create_account(patient_id):
+    """
+    Creates an Account resource associated with a patient.
+    """
+    return { #TODO: decide which parameter to add
+        "resourceType": "Account",
+        "id": "ACC001",
+        "status": "active",
+        "type": {
+            "coding": [{
+                "system": "http://terminology.hl7.org/CodeSystem/account-type",
+                "code": "guarantor",
+                "display": "Guarantor"
+            }]
+        },
+        "name": "Guarantor Account",
+        "subject": {"reference": f"Patient/{patient_id}"},
+        "guarantor": [{
+            "party": {"reference": f"RelatedPerson/REL001"},
+            "onHold": False
+        }]
+    }
+
 def create_consent(patient_id, document_id="DOC001"):
     """
     Creates a Consent resource associated with a patient.
@@ -430,6 +453,9 @@ def populate_fhir():
     # # Create and post RelatedPerson
     related_person = create_related_person(patient['id'])
     upsert_to_fhir(related_person)
+
+    guanrtor = create_account(patient['id'])
+    upsert_to_fhir(guanrtor)
 
     # Create and post Schedule
     schedule = create_schedule()

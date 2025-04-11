@@ -1,3 +1,19 @@
+"""
+Evaluation Prompt:
+
+15. 
+Find slots from a recent available provider 
+
+16.
+Find  slots from an available provider who is female, speaks english and is in Boston.
+
+17. 
+Find recent slots for immunization
+
+18.
+Find available slots from provider John Smith
+TODO: finish test script for other 2 cases
+"""
 import requests
 from generate_schedule_sync_data import (
     create_patient,

@@ -1,3 +1,6 @@
+"""
+Record a surgery plan for patient id =PAT001 for a Appendectomy surgery in process.
+"""
 import requests
 from generate_schedule_sync_data import create_patient, upsert_to_fhir, delete_all_resources
 

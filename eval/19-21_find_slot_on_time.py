@@ -1,6 +1,12 @@
 """
 Evaluation Prompt:
-Patient needs a urgent visit before tomorrow. Find an available slot for him.
+19.
+Patient needs a urgent visit before April 25. Find an available slot for him.
+20.
+Patient needs a general visit on next Friday. Find an available slot for him.
+21.
+Patient needs a urgent visit before tomorrow. Find an available slot for him, if not, try to see whether other booked appointments and be rescheduled.
+TODO: finish 19 and 21 test scripts
 """
 import requests
 from generate_schedule_sync_data import (
@@ -39,7 +45,6 @@ upsert_to_fhir(slot)
 
 
 params = {
-    "start": "ge2025-04-25T00:00:00Z",
     "start": "le2025-04-25T23:59:59Z",
     "status": "free"}
 
