@@ -32,46 +32,55 @@ slot = create_free_slot()
 upsert_to_fhir(slot)
 slot = create_busy_slot()
 upsert_to_fhir(slot)
-appointment = create_appointment(patient_id=patient["id"], practitioner_id=practitioner["id"])
+appointment = create_appointment(
+    patient_id=patient["id"], practitioner_id=practitioner["id"]
+)
 upsert_to_fhir(appointment)
 
 
-
-appointment_data = {
-    "resourceType": "Appointment",
-    "status": "cancelled"
-}
-
-
 appointment_id = "APPT001"
-response = requests.put(f"{FHIR_SERVER_URL}/Appointment/{appointment_id}", json=appointment_data)
 
-# Verify the response status code
-assert (
-    response.status_code == 200
-), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
-# Optionally, inspect the response content
-response_data = response.json()
-print("Slot found successfully. Response:")
-print(response_data)
+# Retrieve the existing Appointment resource
+response = requests.get(f"{FHIR_SERVER_URL}/Appointment/{appointment_id}")
+if response.status_code == 200:
+    appointment_data = response.json()
+    # Modify the status field
+    appointment_data["status"] = "cancelled"
+    # Update the resource on the server
+    update_response = requests.put(
+        f"{FHIR_SERVER_URL}/Appointment/{appointment_id}",
+        json=appointment_data,
+        headers={"Content-Type": "application/fhir+json"},
+    )
+    if update_response.status_code == 200:
+        print("Appointment updated successfully.")
+        print(update_response.json())
+    else:
+        print(
+            f"Failed to update appointment: {update_response.status_code} {update_response.text}"
+        )
+else:
+    print(f"Failed to retrieve appointment: {response.status_code} {response.text}")
 
 # update slot status
+slot_id = update_response.json()["slot"][0]["reference"].split("/")[-1]
 
+response = requests.get(f"{FHIR_SERVER_URL}/Slot/{slot_id}", headers=HEADERS)
 
-slot_id = response.json()["slot"][0].split("/")[-1]
-
-slot_data = {
-    "resourceType": "Slot",
-    "id": slot_id,
-    "status": "free"
-}
-
-response = requests.put(f"{FHIR_SERVER_URL}/Slot", json=slot_data)
-# Verify the response status code
 assert (
     response.status_code == 200
 ), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+slot_data = response.json()
+slot_data["status"] = "free"
+
+update_response = requests.put(
+    f"{FHIR_SERVER_URL}/Slot/{slot_id}", headers=HEADERS, json=slot_data
+)
+
+assert (
+    update_response.status_code == 200
+), f"Expected status code 200, but got {update_response.status_code}. Response body: {update_response.text}"
 # inspect the response content
-response_data = response.json()
-print("Slot found successfully. Response:")
+response_data = update_response.json()
+print("Slot updated successfully. Response:")
 print(response_data)
