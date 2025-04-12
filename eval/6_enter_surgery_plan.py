@@ -21,7 +21,6 @@ patient = create_patient()
 upsert_to_fhir(patient)
 
 surgery_plan = {
-    # TODO:　With date and period
   "resourceType" : "Procedure",
   "status": "in-progress",
   "subject" : {
