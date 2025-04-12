@@ -156,7 +156,7 @@ def create_practitioner():
         "gender": "female",
         "birthDate": "1959-03-11",
         "communication": [
-            {"language": {"text": "English"}}  # TODO: fail to add speak english
+            {"language": {"text": "English"}}
         ],
     }
 
