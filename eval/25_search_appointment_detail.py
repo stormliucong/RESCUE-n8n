@@ -58,12 +58,11 @@ print(response_data)
 
 
 # Empty cases
-example_params = {
+params = {
     "patient": "PAT002",
 }
 response = requests.get(f"{FHIR_SERVER_URL}/Appointment", headers=HEADERS, params=params)
-
-# verify if the response is empty
+ 
 assert (
     response.status_code == 200
 ), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
