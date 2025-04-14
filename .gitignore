@@ -4,3 +4,8 @@ n8n_data/config
 .venv
 node_modules/
 ui/node_modules/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
