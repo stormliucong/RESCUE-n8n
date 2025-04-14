@@ -179,26 +179,32 @@ def create_practitioner():
     }
 
 
-def create_organization():
+def create_organization(resource=None):
     """
     Creates an Organization resource.
     """
-    return {"resourceType": "Organization", "id": "ORG001", "name": "XYZ Insurance"}
+    if resource is None:
+        return {"resourceType": "Organization", "id": "ORG001", "name": "XYZ Insurance"}
+    else:
+        return resource
 
 
-def create_related_person(patient_id):
+def create_related_person(resource=None, patient_id=None):
     """
     Creates a RelatedPerson resource associated with a patient.
     """
-    return {
-        "resourceType": "RelatedPerson",
-        "id": "REL001",
-        "patient": {"reference": f"Patient/{patient_id}"},
-        "relationship": [{"text": "Mother"}],
-        "name": [{"use": "official", "family": "Doe", "given": ["Alice"]}],
-        "gender": "female",
-        "birthDate": "1960-03-01",
-    }
+    if resource is None:
+        return {
+            "resourceType": "RelatedPerson",
+            "id": "REL001",
+            "patient": {"reference": f"Patient/{patient_id}"},
+            "relationship": [{"text": "Mother"}],
+            "name": [{"use": "official", "family": "Doe", "given": ["Alice"]}],
+            "gender": "female",
+            "birthDate": "1960-03-01",
+        }
+    else:
+        return resource
 
 
 def create_account(patient_id):

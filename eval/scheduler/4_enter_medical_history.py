@@ -34,7 +34,6 @@ upsert_to_fhir(patient)
 # Expected actions for agent
 condition_data = {
   "resourceType": "Condition",
-  "id": "Appendicitis001",
   "subject": { "reference": "Patient/PAT001" },
   "code": {
     "coding": [{
