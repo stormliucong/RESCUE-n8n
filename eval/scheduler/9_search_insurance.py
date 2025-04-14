@@ -38,3 +38,23 @@ assert response.status_code == 200, f"Expected status code 200, but got {respons
 response_data = response.json()
 print("Resource found successfully. Response:")
 print(response_data)
+
+
+
+# Empty cases
+params = {
+  "beneficiary" : "Patient/PAT002",
+  'status': 'active'
+}
+
+response = requests.get(f"{FHIR_SERVER_URL}/Coverage", headers=HEADERS, params=params)
+
+# verify if the response is empty
+assert (
+    response.status_code == 200
+), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+assert (
+    not response_data.get("entry")
+), f"Expected no insurances, but found: {response_data.get('entry')}"
+print("No insurances found for the given patient.")
+
