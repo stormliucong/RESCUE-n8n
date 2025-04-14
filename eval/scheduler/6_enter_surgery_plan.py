@@ -33,7 +33,6 @@ upsert_to_fhir(patient)
 # 6. Expected actions for agent
 service_request = {
   "resourceType": "ServiceRequest",
-  "id": "APPENDECTOMY-REQUEST-001",
   "status": "active",
   "intent": "order",
   "code": {
