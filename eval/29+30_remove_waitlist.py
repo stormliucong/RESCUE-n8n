@@ -4,8 +4,6 @@ Evaluation Prompt:
 Patient John Doe 1990-06-15  doesnt need waitlist. Please remove him from the waitlist APPT001.
 30.
 The appointment APPT 001 is successfully accepted from the waitlist. 
-
-TODO: experiment 29
 """
 import requests
 from generate_schedule_sync_data import (
@@ -49,6 +47,33 @@ upsert_to_fhir(waitlist)
 
 appointment_id = "APPT001"
 
+
+
+# action 29
+
+response = requests.get(f"{FHIR_SERVER_URL}/Appointment/{appointment_id}")
+if response.status_code == 200:
+    appointment_data = response.json()
+    # Modify the status field
+    appointment_data["status"] = "cancelled"
+    # Update the resource on the server
+    update_response = requests.put(
+        f"{FHIR_SERVER_URL}/Appointment/{appointment_id}",
+        json=appointment_data,
+        headers={"Content-Type": "application/fhir+json"},
+    )
+    if update_response.status_code == 200:
+        print("Appointment updated successfully.")
+        print(update_response.json())
+    else:
+        print(
+            f"Failed to update appointment: {update_response.status_code} {update_response.text}"
+        )
+else:
+    print(f"Failed to retrieve appointment: {response.status_code} {response.text}")
+
+
+# action 30
 # Retrieve the existing Appointment resource
 response = requests.get(f"{FHIR_SERVER_URL}/Appointment/{appointment_id}")
 if response.status_code == 200:

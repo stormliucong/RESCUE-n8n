@@ -45,3 +45,25 @@ assert search_response.status_code == 200, f"Expected status code 200, but got {
 response_data = search_response.json()
 print("Resource found successfully. Response:")
 print(response_data)
+
+
+
+
+# Empty cases
+search_params = {
+    "family": "Doe",
+    "given": "Alice",
+    "birthdate": "1960-06-15"
+}
+response = requests.get(f"{FHIR_SERVER_URL}/Patient", headers=HEADERS, params=search_params)
+
+# verify if the response is empty
+assert (
+    response.status_code == 200
+), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+assert (
+    not response_data.get("entry")
+), f"Expected no patient, but found: {response_data.get('entry')}"
+print("No patient found for the given patient.")
+
+

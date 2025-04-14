@@ -54,3 +54,19 @@ assert (
 response_data = response.json()
 print("Slot found successfully. Response:")
 print(response_data)
+
+
+
+# Empty cases
+params = {
+    "patient": "PAT002",
+}
+response = requests.get(f"{FHIR_SERVER_URL}/Appointment", headers=HEADERS, params=params)
+ 
+assert (
+    response.status_code == 200
+), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+assert (
+    not response_data.get("entry")
+), f"Expected no appointments, but found: {response_data.get('entry')}"
+print("No appointments found for the given patient.")
