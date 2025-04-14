@@ -16,11 +16,14 @@ load_dotenv()
 FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 from generate_schedule_sync_data import delete_all_resources
 
+
+
 HEADERS = {
     "Content-Type": "application/fhir+json",
     "Accept": "application/fhir+json"
 }
 
+# Expected actions for agent
 payload = {
     "resourceType": "Patient",
     "name": [
