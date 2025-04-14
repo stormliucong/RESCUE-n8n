@@ -34,7 +34,6 @@ patient_resource = {
 }
 patient = create_patient(patient_resource)
 upsert_to_fhir(patient)
-print(f"patient: {patient}")    
 
 # Expected actions for agent
 # 2a

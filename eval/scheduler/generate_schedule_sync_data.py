@@ -96,16 +96,19 @@ def create_patient(resource=None):
     else:
         return resource
 
-def create_condition(patient_id):
+def create_condition(condition_resource=None, patient_id=None):
     """
     Creates a Condition resource associated with a patient.
     """
-    return {
-        "resourceType": "Condition",
-        "id": "COND001",
-        "code": {"text": "Hypertension"},
-        "subject": {"reference": f"Patient/{patient_id}"},
-    }
+    if condition_resource is None:
+        return {
+            "resourceType": "Condition",
+            "id": "COND001",
+            "code": {"text": "Hypertension"},
+            "subject": {"reference": f"Patient/{patient_id}"},
+        }
+    else:
+        return condition_resource
 
 
 def create_procedure(patient_id):
