@@ -56,3 +56,22 @@ assert response.status_code == 200, f"Expected status code 200, but got {respons
 response_data = response.json()
 print("Related Person found successfully. Response:")
 print(response_data)
+
+
+
+
+# Empty cases
+params = {
+  "patient" : "Patient/PAT002",
+}
+
+response = requests.get(f"{FHIR_SERVER_URL}/RelatedPerson", headers=HEADERS, params=params)
+
+# verify if the response is empty
+assert (
+    response.status_code == 200
+), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+assert (
+    not response_data.get("entry")
+), f"Expected no guarantors, but found: {response_data.get('entry')}"
+print("No guarantors found for the given patient.")
