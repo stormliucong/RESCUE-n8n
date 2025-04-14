@@ -110,6 +110,20 @@ def create_condition(condition_resource=None, patient_id=None):
     else:
         return condition_resource
 
+def create_service_request(service_request_resource=None, patient_id=None):
+    """
+    Creates a ServiceRequest resource associated with a patient.
+    """
+    if service_request_resource is None:
+        return {
+            "resourceType": "ServiceRequest",
+            "id": "SERVICE-REQUEST-001",
+            "status": "active",
+            "intent": "order",
+            "subject": {"reference": f"Patient/{patient_id}"},
+        }
+    else:
+        return service_request_resource
 
 def create_procedure(patient_id):
     """
