@@ -67,18 +67,21 @@ def delete_all_resources():
         for resource_id in resource_ids:
             delete_resource(resource_type, resource_id)
 
-def create_patient():
+def create_patient(resource=None):
     """
     Creates a Patient resource with fake data.
     """
-    return {
-        "resourceType": "Patient",
-        "id": "PAT001",
+    if resource is None:
+        return {
+            "resourceType": "Patient",
+            "id": "PAT001",
         "name": [{"use": "official", "family": "Doe", "given": ["John"]}],
         "birthDate": "1990-06-15",
         "telecom": [{"system": "phone", "value": "123-456-7890"}],
-        "address": [{"line": ["123 Main St"], "city": "Boston", "state": "MA"}]
-    }
+            "address": [{"line": ["123 Main St"], "city": "Boston", "state": "MA"}]
+        }
+    else:
+        return resource
 
 def create_condition(patient_id):
     """
@@ -426,6 +429,21 @@ def upsert_to_fhir(resource):
     else:
         logging.error(f"Failed to upsert {resource['resourceType']} with ID {resource['id']}: {response.status_code} {response.text}")
 
+def create_care_plan(patient_id):
+    """
+    Creates a CarePlan resource for surgeryassociated with a patient.
+    """
+    return {
+        "resourceType": "CarePlan",
+        "status": "active",
+        "intent": "plan",
+        "subject": {
+            "reference": f"Patient/{patient_id}"
+        },
+        "encounter": {
+            "reference": f"Encounter/{encounter_id}"    
+        }
+    }
 
 def populate_fhir():
     """
@@ -476,9 +494,9 @@ def populate_fhir():
     condition = create_condition(patient['id'])
     upsert_to_fhir(condition)
 
-    # Create and post Procedure
-    procedure = create_procedure(patient['id'])
-    upsert_to_fhir(procedure)
+    # Create and post CarePlan
+    carePlan = create_care_plan(patient['id'])
+    upsert_to_fhir(carePlan)
 
     # Create and post Coverage
     coverage = create_coverage(patient['id'])

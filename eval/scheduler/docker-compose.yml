@@ -1,0 +1,6 @@
+version: '3.7'
+services:
+  web:
+    image: "hapiproject/hapi:latest"
+    ports:
+      - "7070:8080"
