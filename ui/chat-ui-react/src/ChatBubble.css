@@ -1,0 +1,32 @@
+.typing-indicator {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  /* Each dot: a circle that bounces up and down */
+  .typing-indicator .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: currentColor; /* Uses text color */
+    animation: bounce 0.8s infinite ease-in-out alternate;
+  }
+  
+  /* Slight delays so they bounce in sequence */
+  .typing-indicator .dot2 {
+    animation-delay: 0.15s;
+  }
+  .typing-indicator .dot3 {
+    animation-delay: 0.3s;
+  }
+  
+  /* The bounce keyframe */
+  @keyframes bounce {
+    to {
+      transform: translateY(-6px);
+      opacity: 0.3;
+    }
+  }
+  
