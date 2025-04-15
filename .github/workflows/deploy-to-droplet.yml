@@ -1,0 +1,31 @@
+name: Deploy Chat UI to Droplet
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup SSH key
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.DROPLET_SSH_KEY }}
+
+      - name: Deploy to Droplet
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }} << 'EOF'
+            cd ${{ secrets.DROPLET_PATH }}
+            git fetch origin
+            git checkout main
+            git pull origin main
+            docker compose down
+            docker compose up --build -d
+          EOF
