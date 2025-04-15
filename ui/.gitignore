@@ -9,7 +9,7 @@ chat-ui-react/dist/
 *.pyo
 *.pyd
 __pycache__/
-.env           # Store your environment variables here
+.env     
 instance/
 
 # VS Code settings

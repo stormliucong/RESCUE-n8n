@@ -24,7 +24,8 @@ AGENT_WEBHOOKS = {
 def index():
     # If you still want to serve your old index.html (non-React),
     # keep this as is, or remove if you no longer use it.
-    return render_template('index.html')
+    #return render_template('index.html')
+    return "Server is running"
 
 
 @app.route('/route_message', methods=['POST'])
