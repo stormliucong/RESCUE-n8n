@@ -26,6 +26,10 @@ jobs:
             git fetch origin
             git checkout main
             git pull origin main
-            docker compose down
+            docker compose down -v
+            cd chat-ui-react
+            npm install
+            npm run build
+            cd ..
             docker compose up --build -d
           EOF
