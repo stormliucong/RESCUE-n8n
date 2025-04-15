@@ -1,0 +1,37 @@
+version: '3.9'
+
+services:
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flask_server
+    ports:
+      - "8000:8000"
+    restart: always
+    volumes:
+      - ./server.py:/app/server.py
+      - ./requirements.txt:/app/requirements.txt
+    depends_on:
+      - react
+
+  react:
+    build:
+      context: ./chat-ui-react
+      dockerfile: Dockerfile
+    container_name: react_builder
+    command: ["npm", "run", "build"]
+    volumes:
+      - ./chat-ui-react/dist:/app/dist  # Output the React build to host
+    restart: "no"
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx_proxy
+    ports:
+      - "8080:80"  # host:container
+    depends_on:
+      - flask
+    volumes:
+      - ./chat-ui-react/dist:/usr/share/nginx/html  # Serve built frontend
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf  # Custom proxy config

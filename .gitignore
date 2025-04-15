@@ -1,6 +1,6 @@
 .env
 n8n_data/config
-
+.DS_Store
 .venv
 node_modules/
 ui/node_modules/
