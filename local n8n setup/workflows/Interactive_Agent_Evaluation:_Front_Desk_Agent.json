@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-13T02:56:31.694Z",
-  "updatedAt": "2025-04-10T02:38:12.000Z",
+  "updatedAt": "2025-04-15T20:04:07.000Z",
   "id": "bIw7bxVzjXzsARlc",
   "name": "Interactive Agent Evaluation: Front Desk Agent",
   "active": true,
@@ -589,7 +589,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://3eee-130-44-104-62.ngrok-free.app/receive_reply",
+        "url": "http://165.22.13.117:8080/receive_reply",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -812,7 +812,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "5d1d96c5-01a7-4e67-9fee-f2187c00c377",
+  "versionId": "ef461133-4e6e-47b4-b5bb-60efc8e678ef",
   "triggerCount": 1,
   "tags": [
     {
