@@ -5,7 +5,10 @@ import ChatBubble from './ChatBubble';
 
 // Connect to your Flask server's Socket.IO endpoint.
 // IMPORTANT: Make sure this URL matches your Flask server domain/port (or ngrok URL if used)
-const socket = io('http://localhost:8000', { transports: ['websocket'] });
+const socket = io('/', {
+  path: '/socket.io',
+  transports: ['websocket'],
+});
 
 function ChatWindow({ sessionId }) {
   const [messages, setMessages] = useState([]);
@@ -64,7 +67,7 @@ function ChatWindow({ sessionId }) {
     setInput('');
 
     try {
-      await fetch('http://localhost:8000/route_message', {
+      await fetch('/route_message', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
