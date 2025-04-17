@@ -4,6 +4,9 @@ Evaluation Prompt:
 Create a related person resource for the patient if not already present
 
 8b.
+The patient has a Acme Health Insurance policy. Please find the organization resource for Acme Health Insurance.
+
+8c.
 Add the following insurance details for the patient PAT001.
 The insurance is provided by Acme Health Insurance (ORG-INSURER001)
 The policy is active from January 1, 2024 to December 31, 2025.
@@ -75,6 +78,17 @@ print(response_data)
 father_id = response_data['id']
 
 # 8b.
+# FHIR does not support fuzzy matching, so we need to find the exact match
+params = {"name":"Acme Health Insurance"}
+response = requests.get(f"{FHIR_SERVER_URL}/Organization", headers=HEADERS, params=params)
+# Verify the response status code
+assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+assert 'total' in response.json(), f"Expected to find total in the response"
+assert response.json()['total'] >= 1, f"Expected 1 insurance, but got {response.json()['total']}"   
+assert 'entry' in response.json(), f"Expected to find entry in the response"
+assert len(response.json()['entry']) >= 1, f"Expected 1 insurance, but got {len(response.json()['entry'])}"
+
+# 8c.
 payload = { 'resourceType': 'Coverage', 
 'status': 'active', 
 'kind': {'coding': [{'system': 'http://hl7.org/fhir/coverage-kind', 'code': 'insurance'}]},
