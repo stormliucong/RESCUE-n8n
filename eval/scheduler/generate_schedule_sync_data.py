@@ -4,6 +4,7 @@ import requests
 import random
 from faker import Faker
 import logging
+import time
 
 
 # Set a global seed
@@ -56,7 +57,38 @@ def get_resource_ids(resource_type):
 
 
 def delete_resource(resource_type, resource_id):
-    """Deletes a specific resource by ID."""
+    """Deletes a specific resource by ID, removing any references to it first."""
+    # First, find and remove any references to this resource
+    search_url = f"{FHIR_SERVER_URL}/{resource_type}/_search"
+    search_params = {
+        "_query": "has-reference",
+        "reference": f"{resource_type}/{resource_id}"
+    }
+    response = requests.post(search_url, params=search_params, headers=HEADERS)
+    
+    if response.status_code == 200:
+        search_results = response.json()
+        if 'entry' in search_results:
+            for entry in search_results['entry']:
+                referencing_resource = entry['resource']
+                # Remove the reference from the resource
+                for field in referencing_resource:
+                    if isinstance(referencing_resource[field], dict) and 'reference' in referencing_resource[field]:
+                        if referencing_resource[field]['reference'] == f"{resource_type}/{resource_id}":
+                            referencing_resource[field] = None
+                    elif isinstance(referencing_resource[field], list):
+                        for item in referencing_resource[field]:
+                            if isinstance(item, dict) and 'reference' in item:
+                                if item['reference'] == f"{resource_type}/{resource_id}":
+                                    item['reference'] = None
+                
+                # Update the referencing resource
+                update_url = f"{FHIR_SERVER_URL}/{referencing_resource['resourceType']}/{referencing_resource['id']}"
+                update_response = requests.put(update_url, json=referencing_resource, headers=HEADERS)
+                if update_response.status_code not in [200, 201]:
+                    print(f"Failed to update referencing resource {referencing_resource['resourceType']}/{referencing_resource['id']}: {update_response.text}")
+    
+    # Now delete the resource
     url = f"{FHIR_SERVER_URL}/{resource_type}/{resource_id}"
     response = requests.delete(url, headers=HEADERS)
 
@@ -67,9 +99,30 @@ def delete_resource(resource_type, resource_id):
 
 
 def delete_all_resources():
-    """Deletes all resources of the specified types."""
-    for resource_type in RESOURCE_TYPES:
-        print(f"Fetching {resource_type} resources...")
+    """Deletes all resources of the specified types in the correct order to handle dependencies."""
+    # Define the order of deletion based on dependencies
+    # Resources that depend on others should be deleted first
+    deletion_order = [
+        "Appointment",      # Depends on Patient, Practitioner, Location, Slot
+        "Slot",            # Depends on Schedule
+        "Schedule",        # Depends on Practitioner
+        "DocumentReference", # Depends on Patient, Practitioner
+        "Consent",         # Depends on Patient, Organization, DocumentReference
+        "Account",         # Depends on Patient, RelatedPerson
+        "RelatedPerson",   # Depends on Patient
+        "Coverage",        # Depends on Patient, Organization
+        "Procedure",       # Depends on Patient
+        "Condition",       # Depends on Patient
+        "ServiceRequest",  # Depends on Patient
+        "CarePlan",        # Depends on Patient, Encounter
+        "Location",        # No dependencies
+        "Practitioner",    # No dependencies
+        "Organization",    # No dependencies
+        "Patient",         # No dependencies
+    ]
+
+    for resource_type in deletion_order:
+        print(f"\nProcessing {resource_type} resources...")
         resource_ids = get_resource_ids(resource_type)
 
         if not resource_ids:
@@ -79,6 +132,8 @@ def delete_all_resources():
         print(f"Deleting {len(resource_ids)} {resource_type} resources...")
         for resource_id in resource_ids:
             delete_resource(resource_type, resource_id)
+            # Add a small delay to prevent overwhelming the server
+            time.sleep(0.1)
 
 def create_patient(resource=None):
     """
@@ -138,19 +193,22 @@ def create_procedure(patient_id):
     }
 
 
-def create_coverage(patient_id):
+def create_coverage(coverage_resource=None, patient_id=None):
     """
     Creates a Coverage resource associated with a patient.
     """
-    return {
-        "resourceType": "Coverage",
-        "id": "COV001",
-        "status": "active",
-        "kind": "insurance",
-        "subscriber": {"reference": f"Patient/{patient_id}"},
-        "beneficiary": {"reference": f"Patient/{patient_id}"},
-        "insurer": {"reference": "Organization/ORG123"},
-    }
+    if coverage_resource is None:
+        return {
+            "resourceType": "Coverage",
+            "id": "COV001",
+            "status": "active",
+            "kind": "insurance",
+            "subscriber": {"reference": f"Patient/{patient_id}"},
+            "beneficiary": {"reference": f"Patient/{patient_id}"},
+            "insurer": {"reference": "Organization/ORG123"},
+        }
+    else:
+        return coverage_resource  
 
 
 def create_practitioner():
