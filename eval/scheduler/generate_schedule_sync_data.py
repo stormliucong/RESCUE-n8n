@@ -265,29 +265,32 @@ def create_related_person(resource=None, patient_id=None):
         return resource
 
 
-def create_account(patient_id):
+def create_account(account_resource=None, patient_id=None):
     """
     Creates an Account resource associated with a patient.
     """
-    return {  # TODO: decide which parameter to add
-        "resourceType": "Account",
-        "id": "ACC001",
-        "status": "active",
-        "type": {
-            "coding": [
-                {
-                    "system": "http://terminology.hl7.org/CodeSystem/account-type",
-                    "code": "guarantor",
-                    "display": "Guarantor",
-                }
-            ]
-        },
-        "name": "Guarantor Account",
-        "subject": {"reference": f"Patient/{patient_id}"},
-        "guarantor": [
-            {"party": {"reference": f"RelatedPerson/REL001"}, "onHold": False}
-        ],
-    }
+    if account_resource is None:
+        return {  # TODO: decide which parameter to add
+            "resourceType": "Account",
+            "id": "ACC001",
+            "status": "active",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/account-type",
+                        "code": "guarantor",
+                        "display": "Guarantor",
+                    }
+                ]
+            },
+            "name": "Guarantor Account",
+            "subject": {"reference": f"Patient/{patient_id}"},
+            "guarantor": [
+                    {"party": {"reference": f"RelatedPerson/REL001"}, "onHold": False}
+                ],
+            }
+    else:
+        return account_resource
 
 
 def create_consent(patient_id, document_id="DOC001"):
