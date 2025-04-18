@@ -1,10 +1,10 @@
 """
 Evaluation Prompt:
 8a.
-Create a related person resource for the patient if not already present
+Create a related person resource for the patient PAT001 if not already present
 
 8b.
-The patient has a Acme Health Insurance policy. Please find the organization resource for Acme Health Insurance.
+The patient PAT001 has a Acme Health Insurance policy. Please find the organization resource for Acme Health Insurance.
 
 8c.
 Add the following insurance details for the patient PAT001.
