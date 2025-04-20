@@ -1,17 +1,20 @@
 """
 Evaluation Prompt:
 
-15. 
-Find slots from a recent available provider 
+11a.
+Find most recent available slots from any providers
 
-16.
-Find  slots from an available provider who is female, speaks english and is in Boston.
+11b.
+Find most recent available slots from a provider who is a genetic specialist, female, speaks english and is located in Boston.
 
-17. 
-Find recent slots for immunization
+11c.
+Find the most recent available slots for a genetic counseling service
 
-18.
-Find available slots from provider John Smith
+11d.
+Find the most recent available slots for Dr. John Smith
+
+11e.
+Find the most recent available slots for a provider who
 """
 
 import requests
@@ -35,14 +38,113 @@ FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 HEADERS = {"Content-Type": "application/fhir+json", "Accept": "application/fhir+json"}
 
 delete_all_resources()  # Clean up existing resources before the test
-patient = create_patient()
-upsert_to_fhir(patient)
-practitioner = create_practitioner()
+practitioner = {
+    "resourceType": "Practitioner",
+    "id": "PROVIDER001",
+    "name": [{"use": "official", "family": "John", "given": ["Smith"]}],
+    "gender": "male",
+    "communication": [{"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]}],
+    "address": [{"use" : "work", "line": ["123 Main St"], "city": "Boston", "state": "MA"}],
+    "qualification": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "41672002",
+                        "display": "Pulmonologist",
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+# Add more practitioners with diverse attributes
+practitioner2 = {
+    "resourceType": "Practitioner",
+    "id": "PROVIDER002",
+    "name": [{"use": "official", "family": "Chen", "given": ["Wei"]}],
+    "gender": "female",
+    "communication": [
+        {"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]},
+        {"coding": [{"system": "urn:ietf:bcp:47", "code": "zh"}]}
+    ],
+    "address": [{"use": "work", "line": ["456 Oak Ave"], "city": "New York", "state": "NY"}],
+    "qualification": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "41672002",
+                        "display": "Genetic Specialist",
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+practitioner3 = {
+    "resourceType": "Practitioner",
+    "id": "PROVIDER003",
+    "name": [{"use": "official", "family": "Garcia", "given": ["Maria", "Isabel"]}],
+    "gender": "female",
+    "communication": [
+        {"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]},
+        {"coding": [{"system": "urn:ietf:bcp:47", "code": "es"}]}
+    ],
+    "address": [{"use": "work", "line": ["789 Pine St"], "city": "Los Angeles", "state": "CA"}],
+    "qualification": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "41672002",
+                        "display": "Cardiologist",
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+practitioner4 = {
+    "resourceType": "Practitioner",
+    "id": "PROVIDER004",
+    "name": [{"use": "official", "family": "Patel", "given": ["Rajesh"]}],
+    "gender": "male",
+    "communication": [
+        {"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]},
+        {"coding": [{"system": "urn:ietf:bcp:47", "code": "hi"}]}
+    ],
+    "address": [{"use": "work", "line": ["321 Elm St"], "city": "Chicago", "state": "IL"}],
+    "qualification": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "41672002",
+                        "display": "Neurologist",
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+# Upsert all practitioners to FHIR server
 upsert_to_fhir(practitioner)
-location = create_location()
-upsert_to_fhir(location)
-schedule = create_schedule()
-upsert_to_fhir(schedule)
+upsert_to_fhir(practitioner2)
+upsert_to_fhir(practitioner3)
+upsert_to_fhir(practitioner4)
+
+schedule = {
+    
+}
 slot = create_free_slot()
 upsert_to_fhir(slot)
 slot = create_busy_slot()
