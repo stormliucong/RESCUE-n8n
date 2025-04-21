@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-26T18:39:17.454Z",
-  "updatedAt": "2025-04-07T01:46:52.000Z",
+  "updatedAt": "2025-04-21T02:09:46.000Z",
   "id": "yU1RuRjV2spllnCo",
   "name": "Interactive Agent Evaluation: Customizable Patient Agent",
   "active": true,
@@ -144,6 +144,7 @@
       ],
       "id": "71dc60f8-374a-42c5-9c06-11f70812b89a",
       "name": "Redis Chat Memory",
+      "notesInFlow": false,
       "credentials": {
         "redis": {
           "id": "Ib3bWFlXBjukwLTb",
@@ -160,7 +161,7 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        -160,
+        -400,
         120
       ],
       "id": "eb625318-c69e-4d1a-be21-762358b6cc98",
@@ -180,7 +181,7 @@
       "type": "n8n-nodes-base.redis",
       "typeVersion": 1,
       "position": [
-        100,
+        260,
         120
       ],
       "id": "d0012a7a-d1c0-46c8-a691-2cf5bde5fd31",
@@ -411,6 +412,20 @@
       ],
       "id": "8cc57d19-0afe-45c0-ab4f-c24cbb1a9c41",
       "name": "HTTP Request to Education Agent"
+    },
+    {
+      "parameters": {
+        "operation": "toJson",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        -180,
+        120
+      ],
+      "id": "cf8c554c-208a-4be6-b9ba-3b8074f72f4c",
+      "name": "Convert to File"
     }
   ],
   "connections": {
@@ -511,7 +526,13 @@
     },
     "Redis": {
       "main": [
-        []
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     },
     "Switch": {
@@ -541,7 +562,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "789a89f0-a310-4c6c-a808-1de6bc4733eb",
+  "versionId": "42597664-4f0f-4d1c-92a6-f7a2dcd54196",
   "triggerCount": 1,
   "tags": [
     {
