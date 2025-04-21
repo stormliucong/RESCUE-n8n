@@ -5,7 +5,7 @@ Evaluation Prompt:
 Find most recent available slots from any providers
 
 11b.
-Find most recent available slots from a provider who is a genetic specialist, female, speaks english and is located in Boston.
+Find most recent available slots from a provider who is a female, speaks english and is located in Boston.
 
 11c.
 Find the most recent available slots for a genetic counseling service
@@ -13,10 +13,9 @@ Find the most recent available slots for a genetic counseling service
 11d.
 Find the most recent available slots for Dr. John Smith
 
-11e.
-Find the most recent available slots for a provider who
 """
 
+from datetime import datetime, timedelta
 import requests
 from generate_schedule_sync_data import (
     create_patient,
@@ -45,19 +44,6 @@ practitioner = {
     "gender": "male",
     "communication": [{"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]}],
     "address": [{"use" : "work", "line": ["123 Main St"], "city": "Boston", "state": "MA"}],
-    "qualification": [
-        {
-            "code": {
-                "coding": [
-                    {
-                        "system": "http://snomed.info/sct",
-                        "code": "41672002",
-                        "display": "Pulmonologist",
-                    }
-                ]
-            }
-        }
-    ]
 }
 
 # Add more practitioners with diverse attributes
@@ -71,19 +57,6 @@ practitioner2 = {
         {"coding": [{"system": "urn:ietf:bcp:47", "code": "zh"}]}
     ],
     "address": [{"use": "work", "line": ["456 Oak Ave"], "city": "New York", "state": "NY"}],
-    "qualification": [
-        {
-            "code": {
-                "coding": [
-                    {
-                        "system": "http://snomed.info/sct",
-                        "code": "41672002",
-                        "display": "Genetic Specialist",
-                    }
-                ]
-            }
-        }
-    ]
 }
 
 practitioner3 = {
@@ -96,19 +69,6 @@ practitioner3 = {
         {"coding": [{"system": "urn:ietf:bcp:47", "code": "es"}]}
     ],
     "address": [{"use": "work", "line": ["789 Pine St"], "city": "Los Angeles", "state": "CA"}],
-    "qualification": [
-        {
-            "code": {
-                "coding": [
-                    {
-                        "system": "http://snomed.info/sct",
-                        "code": "41672002",
-                        "display": "Cardiologist",
-                    }
-                ]
-            }
-        }
-    ]
 }
 
 practitioner4 = {
@@ -121,19 +81,6 @@ practitioner4 = {
         {"coding": [{"system": "urn:ietf:bcp:47", "code": "hi"}]}
     ],
     "address": [{"use": "work", "line": ["321 Elm St"], "city": "Chicago", "state": "IL"}],
-    "qualification": [
-        {
-            "code": {
-                "coding": [
-                    {
-                        "system": "http://snomed.info/sct",
-                        "code": "41672002",
-                        "display": "Neurologist",
-                    }
-                ]
-            }
-        }
-    ]
 }
 
 # Upsert all practitioners to FHIR server
@@ -143,172 +90,102 @@ upsert_to_fhir(practitioner3)
 upsert_to_fhir(practitioner4)
 
 schedule = {
-    
+    "resourceType": "Schedule",
+    "id": "SCHEDULE001",
+    "actor": [{"reference": "Practitioner/PROVIDER001"}],
+    "planningHorizon": {
+        "start": "2025-04-11T00:00:00Z",
+        "end": "2026-04-11T00:00:00Z"
+    },
+    "specialty": [{"coding": [{"system": "http://snomed.info/sct", "code": "394580004", "display": "Clinical genetics"}]}],
 }
-slot = create_free_slot()
-upsert_to_fhir(slot)
-slot = create_busy_slot()
-upsert_to_fhir(slot)
 
+upsert_to_fhir(schedule)
+schedule2 = {
+    "resourceType": "Schedule",
+    "id": "SCHEDULE002",
+    "actor": [{"reference": "Practitioner/PROVIDER002"}],
+    "planningHorizon": {
+        "start": "2025-04-11T00:00:00Z",
+        "end": "2026-04-11T00:00:00Z"
+    },
+    "specialty": [{"coding": [{"system": "http://snomed.info/sct", "code": "408459003", "display": "Pediatric cardiology"}]}],
+}
+upsert_to_fhir(schedule2)
 
-# 15
-## Search for Slot resources with status "free"
-print("1. Searching for Slot resources with status 'free'...")
+schedule3 = {
+    "resourceType": "Schedule",
+    "id": "SCHEDULE003",
+    "actor": [{"reference": "Practitioner/PROVIDER003"}],
+    "planningHorizon": {
+        "start": "2025-04-11T00:00:00Z",
+        "end": "2026-04-11T00:00:00Z"
+    },
+    "specialty": [{"coding": [{"system": "http://snomed.info/sct", "code": "394580004", "display": "Clinical genetics"}]}],
+}
+upsert_to_fhir(schedule3)
 
-params = {"status": "free"}
+schedule4 = {
+    "resourceType": "Schedule",
+    "id": "SCHEDULE004",
+    "actor": [{"reference": "Practitioner/PROVIDER004"}],
+    "planningHorizon": {
+        "start": "2025-04-11T00:00:00Z",
+        "end": "2026-04-11T00:00:00Z"
+    },
+    "specialty": [{"coding": [{"system": "http://snomed.info/sct", "code": "394580004", "display": "Clinical genetics"}]}],
+}
+upsert_to_fhir(schedule4)
 
+j = 1
+for k in range(4):
+    for i in range(9, 16):
+        schedule_id = f"SCHEDULE00{k+1}"
+        start = datetime.now() + timedelta(days=1)
+        start = start.replace(hour=i, minute=0, second=0, microsecond=0)
+        # convert it to 2025-04-11T00:00:00Z
+        # end is tomorrow at 9am
+        end = start + timedelta(hours=1)
+        # convert it to 2025-04-11T00:00:00Z
+        start = start.strftime("%Y-%m-%dT%H:%M:%SZ")
+        end = end.strftime("%Y-%m-%dT%H:%M:%SZ")
+        # status is free for even i, busy for odd i
+        status = "free" if (i+k) % 4 == 0 else "busy" 
+        slot = {
+            "resourceType": "Slot",
+            "id": f"SLOT00{j}",
+            "schedule": {"reference": f"Schedule/{schedule_id}"},
+            "start": start,
+            "end": end,
+            "status": status
+        }    
+        upsert_to_fhir(slot)
+        j += 1
+        
+# Expected actions for agent
+# 11a.
+params = {
+    "status": "free",
+}
 response = requests.get(f"{FHIR_SERVER_URL}/Slot", headers=HEADERS, params=params)
-
-# Verify the response status code
-assert (
-    response.status_code == 200
-), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
-
-# Optionally, inspect the response content
-response_data = response.json()
-print("Resource found successfully. Response:")
-print(response_data)
-
-# 16
-# Find prcatitioner find  slots from an available provider who is female, and is in Boston.
-# TODO: fail to add practitioner who speaks english
-print("2. Searching for practitioner with specific criteria...")
-params = {"gender": "female", "address-city": "Boston"}
-
-practitioner = requests.get(
-    f"{FHIR_SERVER_URL}/Practitioner", headers=HEADERS, params=params
-)
-
-# Verify the response status code
-assert (
-    practitioner.status_code == 200
-), f"Expected status code 200, but got {practitioner.status_code}. Response body: {practitioner.text}"
-
-print("Resource found successfully. Response:")
-print(practitioner.json())
-
-practitioner_id = practitioner.json()["entry"][0]["resource"]["id"]
-
-params = {"actor": f"Practitioner/{practitioner_id}"}
-
-schedule_response = requests.get(
-    f"{FHIR_SERVER_URL}/Schedule", headers=HEADERS, params=params
-)
-
-# Verify the response status code
-assert (
-    schedule_response.status_code == 200
-), f"Expected status code 200, but got {schedule_response.status_code}. Response body: {schedule_response.text}"
-
-schedule_data = schedule_response.json()
-print("Schedule resource found successfully. Response:")
-print(schedule_data)
-
-# Extract the schedule ID
-schedule_id = schedule_data["entry"][0]["resource"]["id"]
-
-# Update the search parameters to find slots based on the schedule
-params = {"schedule": f"Schedule/{schedule_id}", "status": "free"}
+assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+assert 'total' in response.json(), f"Expected to find total in the response"
+assert response.json()['total'] > 0, f"Expected to find at least one slot, but got {response.json()['total']}"
+assert 'entry' in response.json(), f"Expected to find entry in the response"
+assert len(response.json()['entry']) > 0, f"Expected to find at least one slot, but got {len(response.json()['entry'])}"
+# arrange the slots by start time
+# find earliest start time and the schedule id
+earliest_start_time = min(response.json()['entry'], key=lambda x: x['resource']['start'])['resource']['start']
+schedule_id = min(response.json()['entry'], key=lambda x: x['resource']['start'])['resource']['schedule']['reference'].split('/')[1]
+assert schedule_id == "SCHEDULE004", f"Expected schedule id to be SCHEDULE004, but got {schedule_id}"
 
 
-response = requests.get(f"{FHIR_SERVER_URL}/Slot", headers=HEADERS, params=params)
-# Verify the response status code
-assert (
-    response.status_code == 200
-), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
-# Optionally, inspect the response content
-response_data = response.json()
-print("Slot found successfully. Response:")
-print(response_data)
 
 
-# 17
-print("3. Searching for recent slots for immunization...")
-
-# Define search parameters for slots related to immunization
-params = {"service-type": "Immunization", "status": "free"}
-
-response = requests.get(f"{FHIR_SERVER_URL}/Slot", headers=HEADERS, params=params)
-
-# Verify the response status code
-assert (
-    response.status_code == 200
-), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
-
-# Optionally, inspect the response content
-response_data = response.json()
-print("Recent slots for immunization found successfully. Response:")
-print(response_data)
 
 
-# 18
-print("Searching for available slots from provider John Smith...")
-
-# Define search parameters for practitioner named John Smith
-params = {"family": "Smith", "given": "Jane"}
-
-practitioner_response = requests.get(
-    f"{FHIR_SERVER_URL}/Practitioner", headers=HEADERS, params=params
-)
-
-# Verify the response status code
-assert (
-    practitioner_response.status_code == 200
-), f"Expected status code 200, but got {practitioner_response.status_code}. Response body: {practitioner_response.text}"
-
-practitioner_data = practitioner_response.json()
-print("Practitioner resource found successfully. Response:")
-print(practitioner_data)
-
-# Extract the practitioner ID
-practitioner_id = practitioner_data["entry"][0]["resource"]["id"]
-
-# Search for schedules associated with the practitioner
-params = {"actor": f"Practitioner/{practitioner_id}"}
-
-schedule_response = requests.get(
-    f"{FHIR_SERVER_URL}/Schedule", headers=HEADERS, params=params
-)
-
-# Verify the response status code
-assert (
-    schedule_response.status_code == 200
-), f"Expected status code 200, but got {schedule_response.status_code}. Response body: {schedule_response.text}"
-
-schedule_data = schedule_response.json()
-print("Schedule resource found successfully. Response:")
-print(schedule_data)
-
-# Extract the schedule ID
-schedule_id = schedule_data["entry"][0]["resource"]["id"]
-# Search for available slots based on the schedule
-params = {"schedule": f"Schedule/{schedule_id}", "status": "free"}
-
-slot_response = requests.get(f"{FHIR_SERVER_URL}/Slot", headers=HEADERS, params=params)
-
-# Verify the response status code
-assert (
-    slot_response.status_code == 200
-), f"Expected status code 200, but got {slot_response.status_code}. Response body: {slot_response.text}"
-
-slot_data = slot_response.json()
-print("Available slots from provider John Smith found successfully. Response:")
-print(slot_data)
 
 
-# Empty cases:
-# 1. No slots available
-print("1. Searching for Slot resources with status 'free'...")
 
-params = {"start": "le2025-04-11T00:00:00Z", "status": "free"}
 
-response = requests.get(f"{FHIR_SERVER_URL}/Slot", headers=HEADERS, params=params)
 
-# verify if the response is empty
-assert (
-    response.status_code == 200
-), f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
-assert not response_data.get(
-    "entry"
-), f"Expected no slot, but found: {response_data.get('entry')}"
-print("No slot found available for the patient.")
