@@ -56,7 +56,7 @@ practitioner2 = {
         {"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]},
         {"coding": [{"system": "urn:ietf:bcp:47", "code": "zh"}]}
     ],
-    "address": [{"use": "work", "line": ["456 Oak Ave"], "city": "New York", "state": "NY"}],
+    "address": [{"use" : "work", "line": ["123 Main St"], "city": "Boston", "state": "MA"}],
 }
 
 practitioner3 = {
@@ -179,13 +179,47 @@ earliest_start_time = min(response.json()['entry'], key=lambda x: x['resource'][
 schedule_id = min(response.json()['entry'], key=lambda x: x['resource']['start'])['resource']['schedule']['reference'].split('/')[1]
 assert schedule_id == "SCHEDULE004", f"Expected schedule id to be SCHEDULE004, but got {schedule_id}"
 
+# 11b.
+# Step 1: Search PractitionerRoles for Boston
+def get_female_practitioners():
+    response = requests.get(f"{FHIR_SERVER_URL}/Practitioner", headers=HEADERS, params={"gender": "female"})
+    bundle = response.json()
+    practitioners = []
+    for entry in bundle.get("entry", []):
+        resource = entry["resource"]
+        practitioners.append({
+            "id": resource["id"],
+            "name": " ".join(resource.get("name", [{}])[0].get("given", [])) + " " + resource.get("name", [{}])[0].get("family", "")
+        })
+    return practitioners
 
+def get_language(practitioner_id):
+    response = requests.get(f"{FHIR_SERVER_URL}/Practitioner/{practitioner_id}")
+    bundle = response.json()
+    # {'resourceType': 'Practitioner', 'id': 'PROVIDER003', 'meta': {'versionId': '7', 'lastUpdated': '2025-04-21T21:22:13.786+00:00', 'source': '#Lj7pIUwriUr1UBN2'}, 'name': [{'use': 'official', 'family': 'Garcia', 'given': ['Maria', 'Isabel']}], 'address': [{'use': 'work', 'line': ['789 Pine St'], 'city': 'Los Angeles', 'state': 'CA'}], 'gender': 'female', 'communication': [{'coding': [{'system': 'urn:ietf:bcp:47', 'code': 'en'}]}, {'coding': [{'system': 'urn:ietf:bcp:47', 'code': 'es'}]}]}
+    return bundle.get("communication", [{}])[0].get("coding", [{}])[0].get("code")
 
+def get_address(practitioner_id):
+    response = requests.get(f"{FHIR_SERVER_URL}/Practitioner/{practitioner_id}")
+    bundle = response.json()
+    return bundle.get("address", [{}])[0].get("city")
 
+def get_schedules(practitioner_id):
+    response = requests.get(f"{FHIR_SERVER_URL}/Schedule", headers=HEADERS, params={"actor": f"Practitioner/{practitioner_id}"})
+    bundle = response.json()
+    return [entry["resource"]["id"] for entry in bundle.get("entry", []) if entry["resource"]["resourceType"] == "Schedule"]
+def get_free_slots(schedule_id):
+    response = requests.get(f"{FHIR_SERVER_URL}/Slot", headers=HEADERS, params={"status": "free", "schedule": f"Schedule/{schedule_id}"})
+    bundle = response.json()
+    return [entry["resource"] for entry in bundle.get("entry", []) if entry["resource"]["resourceType"] == "Slot"]
 
-
-
-
-
-
-
+for practitioner in get_female_practitioners():
+    print(f"female practitioner: {practitioner['id']}")
+    if "en" in get_language(practitioner["id"]):
+        print(f"female practitioner speaks english: {practitioner['id']}")
+        if "Boston" in get_address(practitioner["id"]):
+            print(f"female practitioner is in Boston: {practitioner['id']}")
+            for schedule in get_schedules(practitioner["id"]):
+                print(f"schedule: {schedule}")
+                for slot in get_free_slots(schedule):
+                    assert slot['id'] in ["SLOT0010","SLOT0014"], f"Expected slot id to be SLOT0010 or SLOT0014, but got {slot['id']}"
