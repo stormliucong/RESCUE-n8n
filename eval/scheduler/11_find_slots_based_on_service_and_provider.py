@@ -214,12 +214,45 @@ def get_free_slots(schedule_id):
     return [entry["resource"] for entry in bundle.get("entry", []) if entry["resource"]["resourceType"] == "Slot"]
 
 for practitioner in get_female_practitioners():
-    print(f"female practitioner: {practitioner['id']}")
     if "en" in get_language(practitioner["id"]):
-        print(f"female practitioner speaks english: {practitioner['id']}")
         if "Boston" in get_address(practitioner["id"]):
-            print(f"female practitioner is in Boston: {practitioner['id']}")
             for schedule in get_schedules(practitioner["id"]):
-                print(f"schedule: {schedule}")
                 for slot in get_free_slots(schedule):
                     assert slot['id'] in ["SLOT0010","SLOT0014"], f"Expected slot id to be SLOT0010 or SLOT0014, but got {slot['id']}"
+
+# 11c.
+# Step 1: Search PractitionerRoles for Genetic counseling service
+def get_genetic_counseling_schedules():
+    response = requests.get(f"{FHIR_SERVER_URL}/Schedule", headers=HEADERS, params={"specialty": "394580004"})
+    bundle = response.json()
+    return [entry["resource"]["id"] for entry in bundle.get("entry", []) if entry["resource"]["resourceType"] == "Schedule"]
+
+def get_free_slots(schedule_id):
+    response = requests.get(f"{FHIR_SERVER_URL}/Slot", headers=HEADERS, params={"status": "free", "schedule": f"Schedule/{schedule_id}"})
+    bundle = response.json()
+    return [entry["resource"] for entry in bundle.get("entry", []) if entry["resource"]["resourceType"] == "Slot"]
+
+for schedule in get_genetic_counseling_schedules():
+    for slot in get_free_slots(schedule):
+        assert slot['id'] in ["SLOT004", "SLOT0016","SLOT0020","SLOT0022","SLOT0026"], f"Expected slot id to be SLOT004, SLOT0016 or SLOT0020, but got {slot['id']}"
+        
+
+# 11d.
+# Step 1: Search PractitionerRoles for Dr. John Smith
+def get_provider_by_name(name_family, name_given):
+    response = requests.get(f"{FHIR_SERVER_URL}/Practitioner", headers=HEADERS, params={"family": name_family, "given": name_given})
+    bundle = response.json()
+    return bundle.get("entry", [])[0].get("resource", {}).get("id")
+
+provider_id = get_provider_by_name("John", "Smith")
+assert provider_id == "PROVIDER001", f"Expected provider id to be PROVIDER001, but got {provider_id}"
+
+# Step 2: Search Schedules for the provider
+def get_schedules(practitioner_id):
+    response = requests.get(f"{FHIR_SERVER_URL}/Schedule", headers=HEADERS, params={"actor": f"Practitioner/{practitioner_id}"})
+    bundle = response.json()
+    return [entry["resource"]["id"] for entry in bundle.get("entry", []) if entry["resource"]["resourceType"] == "Schedule"]
+
+for schedule in get_schedules(provider_id):
+    for slot in get_free_slots(schedule):
+        assert slot['id'] in ["SLOT004"], f"Expected slot id to be SLOT004, but got {slot['id']}"
