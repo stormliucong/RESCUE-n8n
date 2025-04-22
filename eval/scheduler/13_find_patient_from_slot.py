@@ -88,7 +88,8 @@ practitioner2 = {
     "name": [{"use": "official", "family": "John", "given": ["Smith"]}],
 }
 upsert_to_fhir(practitioner2)   
-
+start = datetime.now()
+end = start + timedelta(days=365)
 schedule2 = {
     "resourceType": "Schedule",
     "id": "SCHEDULE002",
@@ -120,7 +121,6 @@ slot2 = {
     "schedule": {"reference": "Schedule/SCHEDULE002"},
 }
 upsert_to_fhir(slot2)
-
 appointment2 = {
     "resourceType": "Appointment",
     "id": "APPOINTMENT002",
