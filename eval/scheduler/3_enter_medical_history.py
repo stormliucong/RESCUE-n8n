@@ -1,5 +1,7 @@
 """
 Evaluation Prompt:
+
+3.
 Record a medical condition for the patient id=PAT001 in his medical history that he has a hypertension. 
 Using SNOMED CT (http://snomed.info/sct) for coding.
 """
