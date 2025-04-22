@@ -1,9 +1,9 @@
 """
 Evaluation Prompt:
-5a. 
+4a. 
 Search for the existing patient id=PAT001 to see if he has any medical history.
 
-5b.
+4b.
 Search for the existing patient id=PAT002 to see if he has any medical history.
 """
 import requests
@@ -59,7 +59,7 @@ patient_resource = {
 patient = create_patient(patient_resource)
 upsert_to_fhir(patient)
 
-# 5a. Expected actions for agent
+# 4a. Expected actions for agent
 params = {
     "subject" : "Patient/PAT001"
 }
@@ -72,7 +72,7 @@ assert response.json()['total'] > 0, f"Expected to find at least one medical his
 assert 'entry' in response.json(), f"Expected to find entry in the response"
 assert len(response.json()['entry']) > 0, f"Expected to find at least one medical history, but got {len(response.json()['entry'])}"
 
-# 5b. Expected actions for agent
+# 4b. Expected actions for agent
 params = {                      
     "subject" : "Patient/PAT002"
 }

@@ -1,5 +1,7 @@
 """
 Evaluation Prompt:
+
+8.
 Search if patient insurance information has been entered in the system
  - beneficiary: John Doe (id=PAT001)
 """
@@ -67,7 +69,7 @@ upsert_to_fhir(coverage)
 
 
 # Expected actions for agent
-# 9a.
+# 8a.
 params = {
   "beneficiary" : "Patient/PAT001",
   'status': 'active'
@@ -85,7 +87,7 @@ assert len(response.json()['entry']) >= 1, f"Expected 1 insurance, but got {len(
 
 
 
-# 9b.
+# 8b.
 params = {
   "beneficiary" : "Patient/PAT002",
   'status': 'active'

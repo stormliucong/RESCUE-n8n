@@ -1,6 +1,6 @@
 """
 Evaluation Prompt:
-6
+5.
 Record a surgery plan for patient id =PAT001 for a Appendectomy surgery planned for 2025-05-01.
 """
 import requests
@@ -30,7 +30,7 @@ patient_resource = {
 patient = create_patient(patient_resource)
 upsert_to_fhir(patient)
 
-# 6. Expected actions for agent
+# 5. Expected actions for agent
 service_request = {
   "resourceType": "ServiceRequest",
   "status": "active",
