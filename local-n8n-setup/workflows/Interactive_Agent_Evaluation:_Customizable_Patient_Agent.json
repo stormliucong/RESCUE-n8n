@@ -1,9 +1,9 @@
 {
   "createdAt": "2025-03-26T18:39:17.454Z",
-  "updatedAt": "2025-04-21T02:09:46.000Z",
+  "updatedAt": "2025-04-22T01:22:06.000Z",
   "id": "yU1RuRjV2spllnCo",
   "name": "Interactive Agent Evaluation: Customizable Patient Agent",
-  "active": true,
+  "active": false,
   "nodes": [
     {
       "parameters": {
