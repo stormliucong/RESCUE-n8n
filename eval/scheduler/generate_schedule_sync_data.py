@@ -41,19 +41,29 @@ RESOURCE_TYPES = [
 
 
 def get_resource_ids(resource_type):
-    """Fetches all resource IDs for the given resource type."""
-    url = f"{FHIR_SERVER_URL}/{resource_type}?_count=100"
-    response = requests.get(url, headers=HEADERS)
+    """Fetches all resource IDs for the given resource type, handling pagination."""
+    url = f"{FHIR_SERVER_URL}/{resource_type}?_count=1000"
+    resource_ids = []
+    while url:
+        response = requests.get(url, headers=HEADERS)
+        if response.status_code != 200:
+            print(f"Failed to fetch {resource_type}: {response.status_code}")
+            break
+        
+        data = response.json()
+        if "entry" in data:
+            resource_ids.extend([entry["resource"]["id"] for entry in data["entry"]])
 
-    if response.status_code != 200:
-        print(f"Failed to fetch {resource_type}: {response.status_code}")
-        return []
+        # Find the next page URL
+        next_url = None
+        if "link" in data:
+            for link in data["link"]:
+                if link["relation"] == "next":
+                    next_url = link["url"]
+                    break
 
-    data = response.json()
-    if "entry" not in data:
-        return []
-
-    return [entry["resource"]["id"] for entry in data["entry"]]
+        url = next_url  # continue if next page exists, else break the loop
+    return resource_ids
 
 
 def delete_resource(resource_type, resource_id):
