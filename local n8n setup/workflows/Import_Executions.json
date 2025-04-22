@@ -1,0 +1,111 @@
+{
+  "createdAt": "2025-04-22T01:14:50.890Z",
+  "updatedAt": "2025-04-22T02:52:10.000Z",
+  "id": "lcDa6RjRjPcDdWxc",
+  "name": "Import Executions",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "path": "9e17d9af-78a5-46df-bb0f-76376c1eba3e",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "701fd24a-17a3-4dc4-873d-3cb423d70971",
+      "name": "Webhook",
+      "webhookId": "9e17d9af-78a5-46df-bb0f-76376c1eba3e"
+    },
+    {
+      "parameters": {
+        "resource": "execution",
+        "operation": "get",
+        "executionId": "={{ $json.query.executionId }}",
+        "options": {
+          "activeWorkflows": true
+        },
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [
+        220,
+        0
+      ],
+      "id": "38d97dc1-c8e5-492d-b39f-f9171b82695e",
+      "name": "n8n",
+      "credentials": {
+        "n8nApi": {
+          "id": "wUZ6h8bonj6zrvGr",
+          "name": "n8n account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        440,
+        0
+      ],
+      "id": "f00bb347-2e11-47bf-a7fb-b58400da94b3",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "n8n",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "n8n": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "4af9a12b-8b75-4fd1-99d6-336aaf962bbb",
+  "triggerCount": 1,
+  "tags": [
+    {
+      "createdAt": "2025-02-03T20:04:43.955Z",
+      "updatedAt": "2025-03-26T17:53:54.426Z",
+      "id": "HrM6YwZGkAgTkFAf",
+      "name": "status: temp"
+    },
+    {
+      "createdAt": "2025-03-26T17:51:52.394Z",
+      "updatedAt": "2025-03-26T17:53:37.550Z",
+      "id": "f1eRCMwsFVB12Daf",
+      "name": "type: eval"
+    }
+  ]
+}

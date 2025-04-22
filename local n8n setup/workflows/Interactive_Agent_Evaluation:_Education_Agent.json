@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-26T19:28:56.868Z",
-  "updatedAt": "2025-04-15T20:04:22.000Z",
+  "updatedAt": "2025-04-21T21:30:37.000Z",
   "id": "zOSJ4AMpO5cMILRN",
   "name": "Interactive Agent Evaluation: Education Agent",
   "active": true,
@@ -312,6 +312,12 @@
               "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
               "name": "chatInput",
               "value": "={{ $json.query }}",
+              "type": "string"
+            },
+            {
+              "id": "ae5baf46-9324-4ef8-ae45-9e1ba880b2c3",
+              "name": "sessionId",
+              "value": "conversation_1",
               "type": "string"
             }
           ]
@@ -767,7 +773,13 @@
     },
     "Edit Fields1": {
       "main": [
-        []
+        [
+          {
+            "node": "Education Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     },
     "Redis Chat Memory": {
@@ -794,13 +806,7 @@
     },
     "Edit Fields": {
       "main": [
-        [
-          {
-            "node": "Education Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Switch": {
@@ -854,7 +860,7 @@
       }
     ]
   },
-  "versionId": "b676e1af-18ab-4734-b674-e19f1f556067",
+  "versionId": "fc069e55-16f6-441b-8987-feecd20626dd",
   "triggerCount": 1,
   "tags": [
     {
