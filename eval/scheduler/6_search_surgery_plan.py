@@ -1,9 +1,9 @@
 """
 Evaluation Prompt
-7a.
+6a.
 Search and find if patient id =PAT001 has any surgery plan two weeks from now.
 
-7b.
+6b.
 Search and find if patient id =PAT002 has any surgery plan two weeks from now.
 """
 import requests
@@ -92,8 +92,8 @@ service_request = {
   "occurrenceDateTime": three_weeks_later.strftime("%Y-%m-%d")
 }
 
-# 7a. Expected actions for agent
-
+# Expected actions for agent
+# 6a.
 params = {
     "subject": "Patient/PAT001",  # Replace with the actual Patient ID
     "occurrence": [
@@ -113,7 +113,8 @@ response_data = response.json()
 print("Resource found successfully. Response:")
 print(response_data)
 
-# 7b. Expected actions for agent
+
+# 6b.
 params = {
     "subject": "Patient/PAT002",  # Replace with the actual Patient ID
     "occurrence": [
