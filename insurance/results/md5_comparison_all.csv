@@ -1,0 +1,16 @@
+Provider,Filename,MD5,Status
+United Healthcare,carrier-testing-for-genetic-diseases.pdf,e4ba24bf5062d995a93a2ef155437c1b,MATCHED
+United Healthcare,genetic-molecular-lab.pdf,7c870b34dfc6d32475c9feba2d412801,LLM_ONLY
+United Healthcare,genetic-testing-for-hereditary-cancer.pdf,20d674f42eec0fb750b124f181ea6795,LLM_ONLY
+United Healthcare,co-medicaid-prior-auth-genetic-test-prostate-cancer.pdf,56e57047a30bce01adbfb45f29919f35,LLM_ONLY
+United Healthcare,changes-genetic-molecular-testing-coverage-pa-requirements.pdf,487d612f336021d0cf0281e85dff0eaa,LLM_ONLY
+United Healthcare,nicu-genetic-testing-program.pdf,d22e55599ce9ccac97a726f83a5a2ba8,LLM_ONLY
+United Healthcare,prior-auth-requirement-update-genetic-molecular-codes.pdf,465347b2d92af2af83b5cc6cb7fe3e91,LLM_ONLY
+United Healthcare,prior-auth-non-invasive-prenatal.pdf,1139f6295c94d9444cd8f55b6db92ed6,LLM_ONLY
+Cigna,genetic-testing-and-counseling-program.pdf,9acb39fa24b2a986e5e0a108da0d6b2a,LLM_ONLY
+Cigna,webpage.pdf,d0512b91132e17b2af34f11d141ff904,LLM_ONLY
+Cigna,molecularLaboratory.pdf,1ad35f272ded72eda6499093e882fd1d,LLM_ONLY
+Cigna,genetics.pdf,9d156e8d7deda9861ab071fd5235c27a,LLM_ONLY
+Aetna,0140.pdf,561a8914caf418b01a1199298f0134c4,LLM_ONLY
+Aetna,0227.pdf,b063a86ae2055dd9fd4bd6486f1dffc6,LLM_ONLY
+Aetna,0715.pdf,e3153e583596d408ca473ef344495bf9,LLM_ONLY
