@@ -1,6 +1,6 @@
 # Education/Diagnosis Agent Evaluation Framework
 
-This document details an evaluation framework for testing the performance of AI agents built for genetic education and diagnostic support. It is structured around two primary evaluation benchmarks, each tailored to measure different functional aspects of the system.
+This document details an  evaluation framework for testing the performance of AI agents built for genetic education and diagnostic support. It is structured around two primary evaluation benchmarks, each tailored to measure different functional aspects of the system.
 
 ---
 
@@ -44,14 +44,30 @@ Each simulated user is given a patient profile and acts either as the patient or
 
 At the end of the session, the full interaction history is judged by an LLM evaluator or manually. Evaluation criteria include:
 
-- Ability to ask clarifying questions
-- Tone & language adaptation (PCP vs patient)
-- Final diagnosis accuracy
-- Red-flag triage capability
-- Memory recall (consistency across turns)
-- Proper tool usage
-- Appropriate agent hand-offs
-- Specialized use cases (e.g., variant interpretation; to be validated with genetic counselors)
+- **Ability to ask clarifying questions**
+  - Measures whether the agent proactively asks for additional details when information is ambiguous or abbreviated.
+
+- **Tone & language adaptation (PCP vs patient)**
+  - Evaluates the agent’s ability to adjust tone, complexity, and terminology based on whether the user is a patient or a clinician.
+
+- **Final diagnosis accuracy**
+  - Assesses whether the agent correctly identifies or suggests the most likely diagnosis based on presented symptoms.
+
+- **Red-flag triage capability**
+  - Verifies the agent can identify high-risk cases and recommend immediate medical attention.
+
+- **Memory recall (consistency across turns)**
+  - Measures whether the agent can recall and reference relevant information from earlier in the interaction.
+
+- **Proper tool usage**
+  - Checks that the agent invoked the correct tools for knowledge retrieval or reasoning, and used their outputs effectively.
+
+- **Appropriate agent hand-offs**
+  - Evaluates whether the agent routes queries outside its scope to the relevant agent (e.g., front-desk, diagnostic).
+
+- **Specialized use cases**
+  - Covers advanced cases such as variant interpretation; test prompts will be constructed with the help of genetic counselors.
+
 - **Error & Recovery Tracking**
   - Measures the agent's ability to handle tool failures or unexpected conditions gracefully, including retrying failed actions or issuing clarifying messages.
 
