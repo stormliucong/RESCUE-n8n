@@ -1,162 +1,166 @@
-In-network Provider,Collected Provider
-Advocate Health,Aetna
-Aetna,AmeriHealth
-Affinity by Molina HealthCare,Amerihealth Caritas
-Alameda Alliance for Health,Amerigroup
-Alignment Healthcare,Anthem BCBS
-Amerigroup District of Columbia,Asuris Northwest Health
-Amerigroup Georgia,BCBS
-Amerigroup Nevada,CalOptima
-Amerigroup Tennessee,Capital BC
-Amerihealth,CareSource
-Amerihealth Caritas New Hampshire,Cigna
-Amerihealth Caritas North Carolina,Commonwealthcare
-Amerihealth Caritas Ohio,CountyCare
-Amerihealth Caritas Pennslyvania,Dean Health Plan
-Anthem BC of California,Devoted Health
-Anthem BCBS of Connecticut,Driscoll Health Plan
-Anthem BCBS of Georgia,Empire BCBS
-Anthem BCBS of Kentucky,Fallon Health
-Anthem BCBS of Indiana,Fidelis Care NY
-Anthem BCBS of Maine,Geisinger Health Plan
-Anthem BCBS of Missouri,Health New England
-Anthem BCBS of New Hampshire,Healthcare Partners
-Anthem BCBS of  Wisconsin,Highmark BCBS
-Anthem Health Plans of Virginia,Humana
-APC Passe LLC dba Summit Community Care,Indiana University Health Plan
-Asuris Northwest Health,Johns Hopkins Healthcare
-Avera Health Plans,Maryland Physicians Care
-BC of Idaho,Mass General Bigham Health Plan
-BCBS Federal Employee Plan,Medica
-BCBS of Alabama,Molina
-BCBS of Arizona,Neighborhhod Health Plan of Rhode Island
-BCBS of Hawaii,Oscar
-BCBS of Illinois,Oxford Health Plans
-BCBS of Kansas,PacificSource Health
-BCBS of Massachusetts,Parkland
-BCBS of Michigan,Point32 Health
-BCBS of Minnesota,Priority Health
-BCBS of Nebraska,Regence BC
-BCBS of North Carolina,Rocky Mountain Health Plans
-BCBS of North Dakota,Sanford Health Plan
-BCBS of Rhode island,Scott and White Health Plans
-BCBS of South Carolina,Select Health
-BCBS of Texas,Sentara Health Plans
-BCBS of Vermont,Texas Children's Health Plan
-Blue Care Network HMO,Tricare
-Brighton Health Network,Ucare
-BS of California,United Healthcare
-CalOptima,
-Capital BC,
-Capital Health Plan,
-CareFirst BCBS,
-CareSource Georgia,
-CareSource Ohio,
-CareSource Kentucky,
-Cigna,
-Claimsbridge,
-Commonwealth Care Alliance,
-Community Care Alliance of Illinois,
-Community Care of New Mexico,
-Community First Health Plans,
-CORE Care Select,
-CountyCare,
-Dean Health Plan,
-Dell Children's Health Plan,
-Devoted Health,
-Driscoll Health Plan,
-Empire BCBS,
-Evolutions Healthcare Systems-PPO Network,
-Fallon Health,
-FedMed,
-Fidelis Care NY,
-First Choice Health Network,
-Geisinger Health Network,
-Gulf Coast Provider Network,
-Hamaspik Choice,
-Health Alliance Medical Plans,
-Health New England,
-Healthcare Partners Affiliates Medical Group,
-Healthfirst,
-HealthPartners,
-Health Value Management dba ChoiceCare Network,
-Healthy Blue Louisiana,
-Healthy Blue Missouri,
-Healthy Blue Nebraska,
-Healthy Blue North Carolina,
-Highmark BCBS ,
-Highmark BCBS of Delaware,
-Highmark BCBS of Western New York,
-Highmark BS of Northeasatern New York,
-Highmark Wholecare,
-Humana / ChoiceCare,
-Illinois Health Partners,
-Independence Blue Cross,
-Independent Medical Systems,
-Indiana University Health Plan Services,
-Inland Empire Health Plan and IEHP Health Access,
-Johns Hopkins Healthcare,
-Joint Venture Hospital Labs,
-Loyola University Medical Center,
-Luthern Hospital of Indiana,
-Luthern Preferred of Indiana- MedPartners,
-MagnaCare,
-Maryland Physicians Care,
-Mass General Brigham Health Plan,
-MDWise,
-MedCost-Virginia Health Network,
-Medica,
-Memorial Integrated Healthcare,
-Molina Complete Care of Virginia,
-Molina Healthcare of Illinois,
-Molina Healthcare of New York,
-Molina Healthcare of South Carolina,
-Molina Healthcare of Texas,
-Molina Healthcare of Utah,
-Multiplan,
-"MVP Health Plan, MVP Select Care, MVP Affiliates",
-Neighborhood Health Plan of Rhode island,
-Network Health,
-Northshore Physician Associates,
-Oscar,
-Oxford Health Plans,
-PacificSource Community Solutions,
-PacificSource Health,
-Parkland Community Health Plan,
-Partners Health Plan,
-Point32Health - Harvard Pilgrim,
-Point32Health - Tufts Health Plan,
-Priority Health of MI,
-Regence BCBS Oregon,
-Regence BCBS Utah,
-Regence BS Idaho,
-Regence BS Washington,
-Rocky Mountain Health Plans,
-Sanford Health Plan,
-Scott and White Health Plan,
-Select Health (VNS Choice),
-Sentara Health Plans,
-Seton Health Plan,
-Sharp Health Plan,
-South Florida Community Care Network,
-Sunrise Advantage Plan,
-Texas Children's Health Plan,
-Tricare,
-Ucare,
-UnitedHealthcare,
-UnitedHealthcare Community Plan,
-UnitedHealthcare Plan of the River Valley,
-University of Maryland Health Plans,
-US Family Health Plan - Saint Vincent,
-US Family Health Plan - Christus Health,
-Wellmark BCBS of South Dakota,
-Wellmark BCBS of Iowa,
-Wellpoint IA,
-Wellpoint MD,
-Wellpoint NJ,
-Wellpoint TX,
-"Wellpoint Washington, INC",
-Aetna Better Health,
-Cigna + Oscar,
-Cook Children's Health Plans,
-Empire BCBS-HealthPlus,
+provider
+Absolute Total Care
+Aetna
+Aetna Affordable Health Choices
+Aetna Better Health Illinois
+Aetna Better Health Kentucky
+Aetna Better Health Maryland
+Aetna Better Health of Texas
+Aetna HMO
+Aetna Medicare
+Aetna PPO
+Ambetter (Centene)
+Amerigroup Georgia
+Amerigroup Texas
+Amerigroup/Wellpoint Maryland Medicaid
+Amerihealth
+AmeriHealth Caritas (NC)
+Amerihealth Caritas Ohio
+Anthem BCBS Indiana
+Anthem BCBS Indiana Blue Access PPO
+Anthem BCBS Indiana Medicaid
+Anthem BCBS Kentucky Medicaid
+Anthem BCBS Ohio Medicaid
+Anthem Hoosier Healthwise
+Arkansas Health and Wellness
+Aspirus Health Plan
+BC Community Options
+BCBS Arizona
+BCBS Illinois
+BCBS Kansas City
+BCBS Minnesota
+BCBS Minnesota Blue Plus Medicaid
+BCBS North Carolina
+BCBS North Dakota
+BCBS South Carolina (Avalon)
+BCBS Tennessee
+BCBS Tennessee Medicaid MCO
+BCBS Texas Medicaid
+Blue Choice/Healthy Blue South Carolina
+Blue Cross Community Options Illinois
+Blue Shield California
+Buckeye Health Plan
+Capital Blue Cross
+CareFirst Community Health Plan
+CareSource Georgia
+CareSource Indiana
+CareSource Ohio
+Carolina Complete Health
+Centene Corporation
+Cigna
+Community First Health Plans
+Community First HP STAR Kids
+Community Health Choice
+Community Health Plan of Washington
+ConnectiCare
+Cook Children’s Health Plan
+Coordinated Care Health Plan
+County Care
+Dean Health Plan
+Dell Children’s Health Plan
+Driscoll Children
+El Paso Health Plans Star MCD
+First Care Star Medicaid
+GEHA
+Geisinger
+Harvard Pilgrim Health Plan
+Health Alliance
+Health New England
+Health Plan of Nevada
+HealthNet
+HealthPartners
+HealthPartners Medicaid
+Healthy Blue Missouri
+Hennepin
+Highmark
+Home State Health Plan
+Horizon BCBS New Jersey
+Humana MCO South Carolina
+Humana Medicaid Kentucky
+Humana Medicaid Ohio
+Independence Blue Cross
+ITASCA Medical Care
+Jefferson Health Plan (formerly Health Partners Plans)
+Johns Hopkins Healthcare
+Managed Health Services Indiana
+Maryland Physicians Care
+Mass General Brigham
+MDWise Healthy Indiana Plan
+MDWise Hoosier Healthwise
+Medica Health Plans
+"Medica Health Plans (ND, SD)"
+Medicaid Connecticut
+Medicaid Georgia
+Medicaid Illinois
+Medicaid Indiana
+Medicaid Kentucky
+Medicaid Minnesota
+Medicaid Missouri
+Medicaid North Carolina
+Medicaid Ohio
+Medicaid South Carolina
+Medicaid South Dakota
+Medicaid Texas
+Meridian Health Plan of Michigan
+Meridian Illinois
+Meritain Health
+Molina Healthcare
+Molina Healthcare of Illinois
+Molina Healthcare of South Carolina
+Molina Healthcare of Texas
+Molina Ohio
+Montana Medicaid
+Network Health WI
+North Dakota Medicaid
+Oscar Health Insurance
+Oxford Health
+Parkland Community Health Plan
+Passport Health Plan
+Peach State Health Plan
+Preferred One
+PrimeWest Health (Commercial)
+PrimeWest Health (Medicaid)
+Priority Health Michigan
+Priority Partners
+RightCare from Scott & White
+Rocky Mountain Health Plans
+Scott & White Medicaid
+Security Health Plan
+SelectHealth
+SelectHealth of South Carolina
+Sentara
+Sierra Health and Life
+South Country Health Alliance
+Superior Health Plan
+Sunflower Health Plan
+Tennessee Medicaid
+Texas Childrens Health Plan
+Tricare East
+Tufts Health Plan
+Tufts Health Plan Public Plans
+UCARE – MINNCARE
+UMR
+UHC Community Health Plan
+United Healthcare
+United Healthcare Community Plan (FL)
+United Healthcare Community Plan (KY)
+United Healthcare Community Plan (LA)
+United Healthcare Community Plan (MD)
+United Healthcare Community Plan (MI)
+United Healthcare Community Plan (MN)
+United Healthcare Community Plan (MO)
+United Healthcare Community Plan (NC)
+United Healthcare Community Plan (NJ)
+United Healthcare Community Plan (NY)
+United Healthcare Community Plan (OH)
+United Healthcare Community Plan (PA)
+United Healthcare Community Plan (TN)
+United Healthcare Community Plan (WA)
+Washington Medicaid (FFS)
+Well Sense Health Plan
+WellCare
+WellCare (KY)
+WellCare (NC)
+Wellmark BCBS
+Wellpoint (Amerigroup Washington State Medicaid)
+Youthcare Healthchoice Illinois
