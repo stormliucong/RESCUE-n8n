@@ -1,6 +1,6 @@
 # Education/Diagnosis Agent Evaluation Framework
 
-This repository documents the evaluation framework for testing the performance of AI agents built for genetic education and diagnostic support. It is structured around two primary evaluation benchmarks, each tailored to measure different functional aspects of the system.
+This document details an evaluation framework for testing the performance of AI agents built for genetic education and diagnostic support. It is structured around two primary evaluation benchmarks, each tailored to measure different functional aspects of the system.
 
 ---
 
