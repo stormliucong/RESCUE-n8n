@@ -1,0 +1,4 @@
+prompt_name,Precision (%)_mean,Precision (%)_std,Recall (%)_mean,Recall (%)_std,ground_truth_count_mean,ground_truth_count_std,llm_returned_count_mean,llm_returned_count_std,common_count_mean,common_count_std,missing_count_mean,missing_count_std,extra_count_mean,extra_count_std
+baseline,32.12,0.0,17.1,0.0,311.0,0.0,165.0,0.0,53.0,0.0,257.0,0.0,112.0,0.0
+counted_311,32.12,0.0,17.1,0.0,311.0,0.0,165.0,0.0,53.0,0.0,257.0,0.0,112.0,0.0
+explicit_source,50.53,31.89,27.74,18.43,311.0,0.0,168.0,5.2,86.0,57.16,224.0,57.16,82.0,51.96
