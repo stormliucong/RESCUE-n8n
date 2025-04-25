@@ -18,13 +18,12 @@ openai_api_key = os.getenv("OPEN_AI_API_KEY")
 perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
 client = OpenAI(api_key=openai_api_key)
 
-BASE_RESULT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance/results/policy_retrieval"
-os.makedirs(BASE_RESULT_DIR, exist_ok=True)
+ROOT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance"
+BASE_RESULT_DIR = os.path.join(ROOT_DIR, "results/policy_retrieval")
 BASE_LLM_FOLDER = os.path.join(BASE_RESULT_DIR, "llm_searched")
-os.makedirs(BASE_LLM_FOLDER, exist_ok=True)
-manual_folder = "/home/cptaswadu/RESCUE-n8n/insurance/insurance_policy"
+manual_folder = os.path.join(ROOT_DIR, "insurance_policy")
 
-def get_next_iteration_folder(prompt_name, trial, root="insurance/results/llm_searched"):
+def get_next_iteration_folder(prompt_name, trial, root=BASE_LLM_FOLDER):
     folder_name = f"{prompt_name}_trial{trial}"
     full_path = os.path.join(root, folder_name)
     os.makedirs(full_path, exist_ok=True)
@@ -330,7 +329,7 @@ def run_retrieval_trials(providers, prompt_fns, num_trials=3, base_output_path="
         all_prompt_trials = []
 
         for trial in range(1, num_trials + 1):
-            iteration_folder = get_next_iteration_folder(prompt_name, trial, root=os.path.join(base_output_path, "llm_searched"))
+            iteration_folder = get_next_iteration_folder(prompt_name, trial)
 
             trial_output_path = os.path.join(retrieval_dir, f"{prompt_name}_trial{trial}.csv")
             df = summarize_policy_retrieval(providers, prompt_fn, output_csv_path=trial_output_path, iteration_folder=iteration_folder)

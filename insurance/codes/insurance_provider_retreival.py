@@ -13,8 +13,10 @@ openai_api_key = os.getenv("OPEN_AI_API_KEY")
 perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
 client = OpenAI(api_key=openai_api_key)
 
+ROOT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance"
+PROVIDERS_EVAL_DIR = os.path.join(ROOT_DIR, "results/providers_generation_eval_results")
 
-df = pd.read_csv('/home/cptaswadu/RESCUE-n8n/insurance/Providers_Network_update.csv')
+df = pd.read_csv('/home/cptaswadu/RESCUE-n8n/insurance/In-Network_providers.csv')
 real_list = df["In-network Provider"].dropna().str.strip().tolist()
 
 def normalize_provider(name): #add annotation
@@ -38,7 +40,7 @@ def normalize_provider(name): #add annotation
 
     return name
 
-def evaluate_llm_provider_performance(messages, ground_truth_list, prompt_name=None, experiment_id=None, output_dir="results/providers_generation_eval_results"):
+def evaluate_llm_provider_performance(messages, ground_truth_list, prompt_name=None, experiment_id=None, output_dir=PROVIDERS_EVAL_DIR):
     """
     Evaluate the LLM-generated list of in-network providers against a ground truth list.
     Saves evaluation results and handles error cases such as invalid JSON responses.
@@ -224,7 +226,7 @@ prompt_bank = {
     "explicit_source": provider_task_prompt_explicit_source,
 }
 
-def summarize_eval_results(evaluation_df, output_path="results/providers_generation_eval_results/summary_stats.csv"):
+def summarize_eval_results(evaluation_df, output_path=os.path.join(PROVIDERS_EVAL_DIR, "summary_stats.csv")):
     if evaluation_df.empty:
         print("⚠️ No data to summarize.")
         return
@@ -244,7 +246,7 @@ def summarize_eval_results(evaluation_df, output_path="results/providers_generat
     return summary
 
 ### just in case making multiple runs
-def run_all_prompt_evaluations(real_list, prompt_bank, num_experiments=1, output_dir="results/providers_generation_eval_results"):
+def run_all_prompt_evaluations(real_list, prompt_bank, num_experiments=1, output_dir=PROVIDERS_EVAL_DIR):
     """
     Executes LLM evaluations for all prompts and multiple experiment runs.
 
