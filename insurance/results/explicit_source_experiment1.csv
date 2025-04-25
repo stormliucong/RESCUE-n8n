@@ -1,0 +1,2 @@
+prompt_name,experiment_id,real_list_count,chatgpt_list_count,common_count,missing_from_chatgpt_count,extra_in_chatgpt_count,Precision (%),Recall (%)
+explicit_source,1,311,169,150,160,19,88.76,48.39

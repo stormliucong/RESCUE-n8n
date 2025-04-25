@@ -1,0 +1,176 @@
+{
+  "createdAt": "2025-04-24T01:59:50.600Z",
+  "updatedAt": "2025-04-24T02:41:26.000Z",
+  "id": "mA7ZUmOMecNgOM2j",
+  "name": "Workflows Documentation Generator",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -420,
+        -160
+      ],
+      "id": "534619e8-57fe-4904-bd55-15c4137b3e21",
+      "name": "When clicking \u2018Test workflow\u2019"
+    },
+    {
+      "parameters": {
+        "filters": {},
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [
+        -200,
+        -160
+      ],
+      "id": "b499b389-f4f0-4c75-90ab-f0022846f287",
+      "name": "n8n",
+      "credentials": {
+        "n8nApi": {
+          "id": "wUZ6h8bonj6zrvGr",
+          "name": "n8n account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {
+          "reset": false
+        }
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        20,
+        -160
+      ],
+      "id": "9a9ba68f-16c8-4157-a5ad-aa3bd8542837",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are a documentation assistant for an AI workflow platform. Given a JSON representation of an n8n workflow, generate concise, structured documentation covering the following points:\n\nTitle: The name of the workflow.\n\nTags: A list of tags (if any).\n\nPurpose: A one-sentence summary of what this workflow is intended to do.\n\nTrigger: Describe how the workflow is triggered. If it's a webhook, include the endpoint URL.\n\nOutput: Explain what this workflow outputs and how the result is returned to the user (e.g., via HTTP response, webhook, database write, etc.).\n\nActivation Status: State whether the workflow is currently active.\n\nWebhook Link: If active and triggered by webhook, provide the full webhook URL.\n\nFormat your response as follows:\n\n## [Title]\n\n- **Tags**: [tag1], [tag2], ...\n- **Purpose**: [Purpose of the workflow]\n- **Trigger**: [Trigger type and relevant endpoint if webhook]\n- **Output**: [What is returned and how]\n- **Status**: Active / Inactive\n- **Webhook URL**: [Full webhook link if applicable]\n\nOnly use the information found in the JSON input. Be concise, clear, and accurate.\n\nThe workflow JSON is this:\n{{ JSON.stringify($json, null, 2) }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.5,
+      "position": [
+        280,
+        -80
+      ],
+      "id": "a2df2830-0f00-4b6b-aa28-35308c66aab3",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        260,
+        140
+      ],
+      "id": "79b411a3-d9b7-40bf-8b0a-7d95996b88ba",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        [
+          {
+            "node": "n8n",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "n8n": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "b5834742-d3c9-4dab-8e72-36e1217266e1",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-02-14T18:59:44.562Z",
+      "updatedAt": "2025-03-26T17:54:02.609Z",
+      "id": "p924Avtw60OkFX3e",
+      "name": "type: test"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}
