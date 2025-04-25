@@ -60,21 +60,39 @@ class TaskInterface(ABC):
         return resource_ids
         
     def delete_resource(self, resource_type, resource_id):
-        """Deletes a specific resource by ID, removing any references to it first."""
-           
-        # Now delete the resource
+        """Deletes a specific resource by ID, removing any references to it first.
+        recursively delete all resources that reference the resource_id
+        """
+        # Find any resources that reference this one
         url = f"{self.FHIR_SERVER_URL}/{resource_type}/{resource_id}"
-        response = requests.delete(url, headers=self.HEADERS)
-
-        if response.status_code in [200, 204]:
-            print(f"Deleted {resource_type}/{resource_id}")
-        else:
-            print(f"Failed to delete {resource_type}/{resource_id}: {response.text}")
+        rev_url = f"{self.FHIR_SERVER_URL}/{resource_type}?_id={resource_id}&_revinclude:iterate=*"
+        response = requests.get(rev_url, headers=self.HEADERS)
+        if response.status_code != 200:
+            print(response.json())
+            print(f"Failed to revinclude for {url}")
+            return
+        bundle = response.json()
+        entries = bundle.get("entry", [])
+        for entry in entries:
+            child = entry["resource"]
+            child_type = child["resourceType"]
+            child_id = child["id"]
+            if f"{child_type}/{child_id}" != f"{resource_type}/{resource_id}":  # avoid self-reference
+                self.delete_resource(child_type, child_id)
+        
+        # Now delete the resource itself
+        print(f"Deleting {url}...")
+        del_response = requests.delete(url, headers=self.HEADERS)
+        print(f"DELETE {url}: {del_response.status_code}")
+        time.sleep(0.1)  # avoid overwhelming the server
+        
         
     def delete_all_resources(self):
         """Deletes all resources of the specified types in the correct order to handle dependencies."""
         # Define the order of deletion based on dependencies
         # Resources that depend on others should be deleted first
+        # Not necessary b/c delete_resource handles dependencies
+        # But it is more efficient to delete in this order.
         deletion_order = [
             "Appointment",      # Depends on Patient, Practitioner, Location, Slot
             "Slot",            # Depends on Schedule
@@ -89,9 +107,9 @@ class TaskInterface(ABC):
             "ServiceRequest",  # Depends on Patient
             "CarePlan",        # Depends on Patient, Encounter
             "Location",        # No dependencies
-            "Practitioner",    # No dependencies
             "Organization",    # No dependencies
             "Patient",         # No dependencies
+            "Practitioner",    # No dependencies
         ]
 
         for resource_type in deletion_order:
@@ -189,3 +207,4 @@ class TaskInterface(ABC):
     def validate_response(self, response_data: Any) -> TaskResult:
         """Validate the response using assertions"""
         pass
+
