@@ -19,7 +19,7 @@ The evaluation will use predefined tasks from evaluation prompts [1-16].py, cove
 
 ### Evaluation Metrics
 
-- 1-5: require human or LLM to score
+- 1-5: require human or LLM to score (this is task dependent, later we may summarize the criteria and train a "judge" agent to score it)
 - 0-1: use defined assertion to score
 - #: Work with execution log
 - ##: Work with script to check FHIR server (`*.py`)
@@ -33,9 +33,11 @@ The evaluation will use predefined tasks from evaluation prompts [1-16].py, cove
 - Correct identification of resourceType endpoints (0-1#)
 - Appropriate selection of FHIR operations (GET, POST, PUT, etc.) (0-1#)
 - Proper endpoint URL construction (0-1#)
+- Proper refer other agents if it receives a request beyond its scope (0-1#)
 
 #### 3. Tool Use Success 
 - Correctness of JSON payload structure (0-1#)
+- (Optional) whether concept code are created correctly (0-1#)
 - Proper handling of required vs optional fields (0-1#)
 
 #### 4. Task Completion Success 
@@ -43,7 +45,7 @@ The evaluation will use predefined tasks from evaluation prompts [1-16].py, cove
 - Accuracy of final outcomes (0-1##)
 
 #### 5. Critical Error Rate
-- Make the critical error (1-5##)
+- Make the critical error (1-5##). critical errors are defined as those succesfully completed the task but incorrectly. 
 
 #### 5. Cost-Effectiveness
 - Token usage per task (#)
@@ -51,8 +53,7 @@ The evaluation will use predefined tasks from evaluation prompts [1-16].py, cove
 - Number of API calls required (#)
 
 #### 6. Self-Correction Capability
-- Error detection rate (0-1#)
-- Alternative approach success rate (0-1#)
+- Alternative approach success rate (0-1#). This is defined as whether the agent is able to complete the task successfully after previous trials returned an error message.
 
 ### Experimental Variations
 1. Baseline System Prompts
