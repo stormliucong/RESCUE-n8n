@@ -22,7 +22,7 @@ All workflows aim to reduce administrative burden and improve access to coverage
 - **Description**: Contains all scripts and notebooks for LLM-based provider and policy retrieval tasks.
 - - `insurance_provider_retrieval.py`, `insurance_provider_retrieval.ipynb`: Scripts for retrieving GeneDx in-network providers using LLM agents.
 - - `perplexity_insurance.ipynb`: Implementation using Perplexity AI for document search.
-- - `policy_retrieval.py`, `LLM_policy_retrieval_modulized.ipynb': Main driver script for running policy retrieval experiments across providers and prompts.
+- - `policy_retrieval.py`, `LLM_policy_retrieval_modulized.ipynb`: Main driver script for running policy retrieval experiments across providers and prompts.
 
 ---
 
