@@ -1,0 +1,10 @@
+Prompt,Trial,Match_Count,LLM_Only_Count
+baseline,1,1,12
+baseline,2,1,10
+baseline,3,0,9
+keyword,1,0,6
+keyword,2,0,6
+keyword,3,0,8
+strict,1,0,6
+strict,2,0,7
+strict,3,1,6

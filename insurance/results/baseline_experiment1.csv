@@ -1,2 +1,0 @@
-prompt_name,experiment_id,real_list_count,chatgpt_list_count,common_count,missing_from_chatgpt_count,extra_in_chatgpt_count,Precision (%),Recall (%)
-baseline,1,311,165,53,257,112,32.12,17.1
