@@ -1,5 +1,4 @@
-# task_11c_search_most_recent_slots_by_service.py
-
+# task_11d_search_most_recent_slots_by_provider.py
 import os
 import requests
 from typing import Dict, Any
@@ -17,7 +16,7 @@ class FindSlotsByServiceTask(TaskInterface):
         return """
 Task: Find available slots by service
 
-Find the most recent available slots for a genetic counseling service.
+Find the most recent available slots for Dr. Smith John
 """
 
     def prepare_test_data(self) -> None:
@@ -151,10 +150,27 @@ Find the most recent available slots for a genetic counseling service.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+    
     def execute_human_agent(self) -> Dict:
-        # Find schedules with genetic counseling specialty
+        # Find Dr. Smith John
+        practitioner_params = {
+            "family": "John",
+            "given": "Smith"
+        }
+        practitioner_response = requests.get(
+            f"{self.FHIR_SERVER_URL}/Practitioner",
+            headers=self.HEADERS,
+            params=practitioner_params
+        ).json()
+
+        if 'entry' not in practitioner_response:
+            return {}
+
+        practitioner_id = practitioner_response['entry'][0]['resource']['id']
+
+        # Get schedules for this practitioner
         schedule_params = {
-            "specialty": "394580004"  # SNOMED CT code for Clinical genetics
+            "actor": f"Practitioner/{practitioner_id}"
         }
         schedules_response = requests.get(
             f"{self.FHIR_SERVER_URL}/Schedule",
@@ -183,11 +199,10 @@ Find the most recent available slots for a genetic counseling service.
         # Return the earliest slot if any found
         return all_slots[0] if all_slots else {}
 
+
     def validate_response(self, response: Any) -> TaskResult:
         try:
-            assert response['resource']['id'] in ['SLOT004', 'SLOT0016', 'SLOT0020', 'SLOT0022', 'SLOT0026'], \
-                f"Expected one of the genetic counseling slots, got {response['resource']['id']}"
-                  
+            assert response == {}, f"Expected empty response, got {response}"
             return TaskResult(
                 success=True,
                 error_message=None,
@@ -215,3 +230,9 @@ if __name__ == "__main__":
     N8N_URL = os.getenv("N8N_AGENT_URL")
     
     task = FindSlotsByServiceTask(FHIR_SERVER_URL, N8N_URL)
+    task.cleanup_test_data()
+    task.prepare_test_data()
+    human_response = task.execute_human_agent()
+    eval_results = task.validate_response(human_response)
+    print(eval_results)
+    # n8n_response = task.execute_n8n_agent()
