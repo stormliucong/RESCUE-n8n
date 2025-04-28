@@ -1,20 +1,21 @@
-# task_13a_find_patient_from_slot_2.py
+# task_14a_make_appointment_2.py
 import os
+import time
 import requests
 from typing import Dict, Any
 from datetime import datetime, timedelta
 from task_interface import TaskInterface, TaskResult
 
-class FindPatientFromSlotTask(TaskInterface):
+class MakeAppointmentTask(TaskInterface):
     def get_task_id(self) -> str:
-        return "13b"
+        return "14a"
 
     def get_task_name(self) -> str:
-        return "Find Patient From Slot - Dr. Smith John"
+        return "Make Appointment 1"
 
     def get_prompt(self) -> str:
         return """
-Task: Find the patient who has booked Dr. Smith John's slots next Monday morning at 9am.
+Task: Make an appointment time for Jane Doe with Provider Dr. Smith John on next Monday morning at 9am."
 """
 
     def prepare_test_data(self) -> None:
@@ -57,18 +58,11 @@ Task: Find the patient who has booked Dr. Smith John's slots next Monday morning
                 "id": "SLOT001",
                 "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "end": (start + timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "status": "busy",
+                "status": "free",
                 "schedule": {"reference": "Schedule/SCHEDULE001"},
             }
             self.upsert_to_fhir(slot1)
-            appointment1 = {
-                "resourceType": "Appointment",
-                "id": "APPOINTMENT001",
-                "status": "booked",
-                "slot": [{"reference": "Slot/SLOT001"}],
-                "participant": [{"actor": {"reference": "Patient/PAT001"}, "status": "accepted"}, {"actor": {"reference": "Practitioner/PROVIDER001"}, "status": "accepted"}],
-            }
-            self.upsert_to_fhir(appointment1)
+
 
 
             practitioner2 = {
@@ -106,57 +100,64 @@ Task: Find the patient who has booked Dr. Smith John's slots next Monday morning
                 "id": "SLOT002",
                 "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "end": (start + timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "status": "busy",
+                "status": "free",
                 "schedule": {"reference": "Schedule/SCHEDULE002"},
             }
             self.upsert_to_fhir(slot2)
-            appointment2 = {
-                "resourceType": "Appointment",
-                "id": "APPOINTMENT002",
-                "status": "booked",
-                "slot": [{"reference": "Slot/SLOT002"}],
-                "participant": [{"actor": {"reference": "Patient/PAT002"}, "status": "accepted"}, {"actor": {"reference": "Practitioner/PROVIDER002"}, "status": "accepted"}],
-            }
-            self.upsert_to_fhir(appointment2)
 
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
     def execute_human_agent(self) -> Dict:
-        # Find next Monday's slot at 9am
-        next_monday = datetime.now() + timedelta(days=(7 - datetime.now().weekday()))
-        target_time = next_monday.replace(hour=9, minute=0, second=0, microsecond=0)
-        
-        params={
-                "start": target_time.strftime("%Y-%m-%d"),
-                "schedule.actor.given": "Smith",
-                "schedule.actor.family": "John",
+        start = datetime.now() + timedelta(days=(7 - datetime.now().weekday()) % 7)
+        start = start.replace(hour=9, minute=0, second=0, microsecond=0)
+        params = {
+            "resourceType": "Appointment",
+            "id": "APPOINTMENT002",
+            "status": "booked",
+            "slot": [{"reference": "Slot/SLOT002"}],
+            "participant": [{"actor": {"reference": "Patient/PAT002"}, "status": "accepted"}, 
+                            {"actor": {"reference": "Practitioner/PROVIDER002"}, "status": "accepted"}],
+            "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "end": (start + timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ"),
         }
-        response = requests.get(f"{self.FHIR_SERVER_URL}/Slot", headers=self.HEADERS, params=params)
-        if 'entry' not in response.json():
-            return {}
-        slot_id = response.json()['entry'][0]['resource']['id']
-        params = {"slot": f"Slot/{slot_id}"}
-        response = requests.get(f"{self.FHIR_SERVER_URL}/Appointment", headers=self.HEADERS, params=params)
-        patient_id = response.json()['entry'][0]['resource']['participant'][0]['actor']['reference']
-        response = requests.get(f"{self.FHIR_SERVER_URL}/{patient_id}", headers=self.HEADERS)
+        response = requests.put(f"{FHIR_SERVER_URL}/Appointment/APPOINTMENT002", headers=self.HEADERS, json=params)
+        assert response.status_code == 201, f"Expected status code 201, but got {response.status_code}. Response body: {response.text}"
+        params = {
+            "resourceType": "Slot",
+            "id": "SLOT002",
+            "status": "busy",
+        }
+        response = requests.put(f"{FHIR_SERVER_URL}/Slot/SLOT002", headers=self.HEADERS, json=params)
+        assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
 
         return response
         
 
-    def validate_response(self, response: Any) -> TaskResult:
+    def validate_response(self) -> TaskResult:
         try:
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            patient_data = response.json()
-            assert patient_data['resourceType'] == "Patient", "Expected Patient resource"
-            assert patient_data['id'] == "PAT002", "Expected patient with ID PAT002"
-            assert patient_data['name'][0]['family'] == "Doe", "Expected patient with family name Doe"
-            
+            start = datetime.now() + timedelta(days=(7 - datetime.now().weekday()) % 7)
+            start = start.replace(hour=9, minute=0, second=0, microsecond=0)
+            # query appointment reference to slot2
+            params = {
+                "practitioner": "Practitioner/PROVIDER002",
+                "date": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            }
+            response = requests.get(f"{FHIR_SERVER_URL}/Appointment", headers=self.HEADERS, params=params)
+            # check the participant is correct
+            assert 'entry' in response.json(), "Expected entry in the response"
+            assert len(response.json()['entry']) == 1, "Expected one appointment" 
+            assert response.json()['entry'][0]['resource']['participant'][0]['actor']['reference'] == "Patient/PAT002", "Expected patient reference to be PAT002"
+            assert response.json()['entry'][0]['resource']['participant'][1]['actor']['reference'] == "Practitioner/PROVIDER002", "Expected practitioner reference to be PROVIDER002"
+            # check the slot reference is busy
+            slot_id = response.json()['entry'][0]['resource']['slot'][0]['reference']
+            response = requests.get(f"{FHIR_SERVER_URL}/{slot_id}", headers=self.HEADERS)
+            assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+            assert response.json()['status'] == "busy", "Expected slot to be busy"
             return TaskResult(
                 success=True,
                 error_message=None,
-                response_data=patient_data
+                response_data=response.json()
             )
 
         except AssertionError as e:
@@ -178,14 +179,15 @@ if __name__ == "__main__":
     FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
     N8N_URL = os.getenv("N8N_AGENT_URL")
     
-    task = FindPatientFromSlotTask(FHIR_SERVER_URL, N8N_URL)
-    
+    task = MakeAppointmentTask(FHIR_SERVER_URL, N8N_URL)
     task.cleanup_test_data()
     task.prepare_test_data()
     human_response = task.execute_human_agent()
-    eval_results = task.validate_response(human_response)
+    eval_results = task.validate_response()
     print(eval_results)
-    
     # n8n_response = task.execute_n8n_agent()
     # print(n8n_response)
-        
+    
+    
+    
+    
