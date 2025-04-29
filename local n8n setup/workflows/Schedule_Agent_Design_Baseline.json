@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-11T17:08:23.620Z",
-  "updatedAt": "2025-04-24T19:59:45.000Z",
+  "updatedAt": "2025-04-29T20:02:51.000Z",
   "id": "p5CG6PCfoYNp850m",
   "name": "Schedule Agent Design Baseline",
   "active": true,
@@ -387,7 +387,16 @@
     {
       "parameters": {
         "respondWith": "allIncomingItems",
-        "options": {}
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "execution_id",
+                "value": "={{ $execution.id }}"
+              }
+            ]
+          }
+        }
       },
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
@@ -584,7 +593,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "87003411-3fde-4ae9-afc0-cc9dcfd7f61f",
+  "versionId": "d8b31a16-afed-47eb-8c6a-e9822509651c",
   "triggerCount": 1,
   "tags": [
     {
