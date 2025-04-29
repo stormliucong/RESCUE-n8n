@@ -3,7 +3,7 @@
 import os
 import requests
 from typing import Dict, Any
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult
 
 class SearchExistingPatientTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -42,7 +42,7 @@ class SearchExistingPatientTask(TaskInterface):
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         search_params = {
             "family": "Doe",
             "given": "John",
@@ -55,10 +55,23 @@ class SearchExistingPatientTask(TaskInterface):
             params=search_params
         )
         
-        return response
+        response_msg = None
+        if response.status_code == 200:
+            response_msg = f'Successfully fetch patient: {response.json()}'
+        else:
+            response_msg = f'Failed to fetech patient: {response.status_code} {response.text}'
+        
+        execution_result = ExecutionResult(
+            execution_success=response.status_code == 200,
+            response_msg=response_msg,
+        )
+        return execution_result
 
-    def validate_response(self, response: Any) -> TaskResult:
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
+            response_msg = execution_result.response_msg
+            response_json = self.
+            
             assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
             
             response_json = response.json()
