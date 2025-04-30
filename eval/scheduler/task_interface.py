@@ -3,8 +3,9 @@ import time
 from typing import Dict, Any, Optional
 import requests # type: ignore
 from dataclasses import dataclass
-from fetch_and_parse_n8n_execution_logs import fetch_and_parse_n8n_execution_log
+from fetch_and_parse_n8n_execution_log import fetch_and_parse_n8n_execution_log
 import json
+
 
 @dataclass
 class ExecutionResult:
@@ -12,16 +13,17 @@ class ExecutionResult:
     response_msg: Optional[str] = None
     execution_id: Optional[str] = None
     workflow_name: Optional[str] = None
-    #raw_log: Optional[Dict[str, Any]] = None
+    raw_log: Optional[Dict[str, Any]] = None
     final_out: Optional[str] = None
-    tools_used: Optional[list] = None
     token_total: Optional[int] = None
-    tool_outputs: Optional[Dict[str, Any]] = None
     input_query: Optional[str] = None
     total_exec_ms: Optional[float] = None
+    tool_order: Optional[list[str]] = None
     tool_exec_ms: Optional[Dict[str, float]] = None
-    tool_order: Optional[list] = None
+    tool_calls: Optional[Dict[str, list[Dict[str, Any]]]] = None
+    tool_call_counts: Optional[Dict[str, int]] = None
     
+
 @dataclass
 class TaskResult:
     task_success: bool = False
@@ -31,8 +33,6 @@ class TaskResult:
     execution_result: Optional[ExecutionResult] = None
 
 
-
-    
 
 
 class TaskInterface(ABC):
@@ -255,12 +255,15 @@ class TaskInterface(ABC):
 
         return execution_result
             
-        
+    
+
     @abstractmethod
     def execute_human_agent(self) -> ExecutionResult:
         """Execute the expected actions that a human should perform"""
         pass
     
+
+
     def get_details_by_execution_id(self, execution_result: ExecutionResult) -> ExecutionResult:
         """Get the details of the execution by ID"""
         try:
@@ -280,32 +283,34 @@ class TaskInterface(ABC):
             print(f"Error fetching execution log: {e}")
             result = {
                 "workflow_name": None,
-                #"raw_log": None,
+                "raw_log": None,
                 "final_out": None,
-                "tools_used": None,
                 "token_total": None,
-                "tool_outputs": None,
                 "input_query": None,
                 "total_exec_ms": None,
                 "tool_exec_ms": None,
-                "tool_order": None
+                "tool_order": None,
+                "tool_calls": None,
+                "tool_call_counts": None,
             }
+
         return ExecutionResult(
             execution_success=execution_result.execution_success,
             response_msg=execution_result.response_msg,
             execution_id=execution_result.execution_id,
             workflow_name=result["workflow_name"],
-            #raw_log=result["raw_log"],
+            raw_log=result["raw_log"],
             final_out=result["final_out"],
-            tools_used=result["tools_used"],
             token_total=result["token_total"],
-            tool_outputs=result["tool_outputs"],
             input_query=result["input_query"],
             total_exec_ms=result["total_exec_ms"],
             tool_exec_ms=result["tool_exec_ms"],
-            tool_order=result["tool_order"]
+            tool_order=result["tool_order"],
+            tool_calls = result["tool_calls"],
         )
         
+
+
     def get_json_from_response_msg(self, response_msg: str) -> Optional[Dict[str, Any]]:
         """Parse the JSON part in the string"""
         try:
@@ -322,7 +327,6 @@ class TaskInterface(ABC):
             return None
        
             
-    
     
     
     @abstractmethod

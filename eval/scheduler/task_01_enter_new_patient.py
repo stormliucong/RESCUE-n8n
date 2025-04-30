@@ -5,6 +5,8 @@ import json
 from typing import Dict, Any
 from task_interface import TaskInterface, TaskResult, ExecutionResult
 from dataclasses import asdict
+from dotenv import load_dotenv 
+
 
 
 class EnterNewPatientTask(TaskInterface):
@@ -121,8 +123,8 @@ class EnterNewPatientTask(TaskInterface):
                 assertion_error_message=f"Unexpected error: {str(e)}",
             )
             
+
 if __name__ == "__main__":
-    from dotenv import load_dotenv # type: ignore
     load_dotenv()
     FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
     N8N_URL = os.getenv("N8N_AGENT_URL")
@@ -141,13 +143,14 @@ if __name__ == "__main__":
     # print(f'Human response: {eval_results}')
     task.cleanup_test_data()
     task.prepare_test_data()
-    n8n_response = task.execute_n8n_agent()
-    print("N8N RESPONSE TASK 1")
-    print(n8n_response)
-    eval_results = task.validate_response(n8n_response)
-    print(f'n8n response: {eval_results}')
+    n8n_execution_log = task.execute_n8n_agent()
+    print("N8N RESPONSE TASK")
+    print(n8n_execution_log.tool_calls['createResource'])
+    print("EVAL TASK")
+    eval_results = task.validate_response(n8n_execution_log)
+    print(f'Eval response: TaskResult {eval_results}')
     # save ExecutionResult object to a json file
-    with open("n8n_response.json", "w") as f:
-        json.dump(asdict(eval_results), f, indent=4)
+    #with open("n8n_response.json", "w") as f:
+    #    json.dump(asdict(eval_results), f, indent=4)
     
     
