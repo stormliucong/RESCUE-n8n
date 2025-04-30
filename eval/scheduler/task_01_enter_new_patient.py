@@ -1,17 +1,11 @@
-"""
-Evaluation Prompt:
-1.
-A new patient needs to be registered. Please enter the following details into the system:
- - Name: John Doe
- - Date of Birth: 1990-06-15
- - Phone: (123) 456-7890
- - Address: 123 Main St, Boston, MA
-"""
+# task_01_enter_new_patient.py
 import os
 import requests # type: ignore
 import json
 from typing import Dict, Any
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult
+from dataclasses import asdict
+
 
 class EnterNewPatientTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -40,7 +34,7 @@ class EnterNewPatientTask(TaskInterface):
         except requests.exceptions.RequestException as e:
             raise Exception(f"FHIR server is not accessible: {str(e)}")
 
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         payload = {
             "resourceType": "Patient",
             "name": [
@@ -66,42 +60,65 @@ class EnterNewPatientTask(TaskInterface):
             ]
         }
 
-        response = requests.post(
-            f"{self.FHIR_SERVER_URL}/Patient",
-            headers=self.HEADERS,
-            json=payload
+        response = self.post_to_fhir(payload)
+        response_msg = None
+        if response.status_code == 201:
+            response_msg = f'Patient "John Doe" created successfully with ID: {response.json()["id"]}'
+        else:
+            response_msg = f'Failed to create patient: {response.status_code} {response.text}'
+        
+        execution_result = ExecutionResult(
+            execution_success=response.status_code == 201,
+            response_msg=response_msg,
         )
+        return execution_result
 
-        return response
-
-    def validate_response(self, response: Any) -> TaskResult:
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
 
-            # Validate response status
-            assert response.status_code == 201, f"Expected status code 201, got {response.status_code}"
-
-            # Validate response content
+            # Validate the patient resources
+            params = {
+                "family": "Doe",
+                "given": "John"
+            }
+            response = requests.get(
+                f"{self.FHIR_SERVER_URL}/Patient",
+                headers=self.HEADERS,
+                params=params
+            )
+            assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             response_json = response.json()
-            assert response_json.get("resourceType") == "Patient", "Resource type must be Patient"
-            
+            assert 'entry' in response_json, "No patient found"
+            assert len(response_json['entry']) > 0, "No patient found"
+            patient = response_json['entry'][0]['resource']
+            assert patient['name'][0]['family'] == "Doe", f"Expected family name 'Doe', got {patient['name'][0]['family']}"
+            assert patient['name'][0]['given'][0] == "John", f"Expected given name 'John', got {patient['name'][0]['given'][0]}"
+            assert patient['birthDate'] == "1990-06-15", f"Expected birth date '1990-06-15', got {patient['birthDate']}"
+            # Check if the patient is created successfully
 
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data=response_json
+                task_id = self.get_task_id(),
+                task_name = self.get_task_name(),
+                execution_result=execution_result,
+                task_success=True,
+                assertion_error_message=None,
             )
 
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response_json
+                task_id = self.get_task_id(),
+                task_name = self.get_task_name(),
+                execution_result=execution_result,
+                task_success=False,
+                assertion_error_message=str(e),
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response_json
+                task_id = self.get_task_id(),
+                task_name = self.get_task_name(),
+                execution_result=execution_result,
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
             )
             
 if __name__ == "__main__":
@@ -109,18 +126,28 @@ if __name__ == "__main__":
     load_dotenv()
     FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
     N8N_URL = os.getenv("N8N_AGENT_URL")
+    N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
     HEADERS = {
         "Content-Type": "application/fhir+json",
         "Accept": "application/fhir+json"
     }
     
-    task = EnterNewPatientTask(FHIR_SERVER_URL, N8N_URL)
-    print(task.get_task_id())
-    print(task.get_task_name())
-    task.cleanup_test_data()
-    task.prepare_test_data()
+    task = EnterNewPatientTask(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL)
+   
+    # task.cleanup_test_data()
+    # task.prepare_test_data()
     # human_response = task.execute_human_agent()
     # eval_results = task.validate_response(human_response)
-    # print(eval_results)
+    # print(f'Human response: {eval_results}')
+    task.cleanup_test_data()
+    task.prepare_test_data()
     n8n_response = task.execute_n8n_agent()
+    print("N8N RESPONSE TASK 1")
     print(n8n_response)
+    eval_results = task.validate_response(n8n_response)
+    print(f'n8n response: {eval_results}')
+    # save ExecutionResult object to a json file
+    with open("n8n_response.json", "w") as f:
+        json.dump(asdict(eval_results), f, indent=4)
+    
+    
