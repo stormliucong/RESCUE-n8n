@@ -5,6 +5,9 @@ import requests # type: ignore
 from dataclasses import dataclass
 from fetch_and_parse_n8n_execution_log import fetch_and_parse_n8n_execution_log
 import json
+import logging
+
+logging.basicConfig(level=logging.INFO, filename='task_interface.log', filemode='w')
 
 
 @dataclass
@@ -13,8 +16,7 @@ class ExecutionResult:
     response_msg: Optional[str] = None
     execution_id: Optional[str] = None
     workflow_name: Optional[str] = None
-    raw_log: Optional[Dict[str, Any]] = None
-    final_out: Optional[str] = None
+    #raw_log: Optional[Dict[str, Any]] = None
     token_total: Optional[int] = None
     input_query: Optional[str] = None
     total_exec_ms: Optional[float] = None
@@ -37,8 +39,7 @@ class TaskFailureMode:
     incorrect_tool_selection: Optional[bool] = False
     incorrect_tool_order: Optional[bool] = False
     incorrect_resource_type: Optional[bool] = False
-    error_codes: Optional[List[str]] = None
-    critical_error: Optional[bool] = False
+    error_codes: Optional[List[str]] = None # https://build.fhir.org/codesystem-assert-response-code-types.html
 
 class TaskInterface(ABC):
     def __init__(self, fhir_server_url, n8n_url, n8n_execution_url):
@@ -118,9 +119,9 @@ class TaskInterface(ABC):
                 self.delete_resource(child_type, child_id)
         
         # Now delete the resource itself
-        print(f"Deleting {url}...")
+        # print(f"Deleting {url}...")
         del_response = requests.delete(url, headers=self.HEADERS)
-        print(f"DELETE {url}: {del_response.status_code}")
+        # print(f"DELETE {url}: {del_response.status_code}")
         time.sleep(0.1)  # avoid overwhelming the server
         
         
@@ -150,14 +151,14 @@ class TaskInterface(ABC):
         ]
 
         for resource_type in deletion_order:
-            print(f"\nProcessing {resource_type} resources...")
+            # print(f"\nProcessing {resource_type} resources...")
             resource_ids = self.get_resource_ids(resource_type)
 
             if not resource_ids:
-                print(f"No {resource_type} resources found.")
+                # print(f"No {resource_type} resources found.")
                 continue
 
-            print(f"Deleting {len(resource_ids)} {resource_type} resources...")
+            # print(f"Deleting {len(resource_ids)} {resource_type} resources...")
             for resource_id in resource_ids:
                 self.delete_resource(resource_type, resource_id)
                 # Add a small delay to prevent overwhelming the server
@@ -194,13 +195,15 @@ class TaskInterface(ABC):
         response = requests.put(url, json=resource, headers=headers)
 
         if response.status_code in [200, 201]:
-            print(
-                f"Successfully upserted {resource['resourceType']} with ID {resource['id']}"
-            )
+            # print(
+            #     f"Successfully upserted {resource['resourceType']} with ID {resource['id']}"
+            # )
+            return None
         else:
             print(
                 f"Failed to upsert {resource['resourceType']} with ID {resource['id']}: {response.status_code} {response.text}"
             )
+            return response
             
     @abstractmethod
     def get_task_id(self) -> str:
@@ -288,7 +291,7 @@ class TaskInterface(ABC):
             print(f"Error fetching execution log: {e}")
             result = {
                 "workflow_name": None,
-                "raw_log": None,
+                #"raw_log": None,
                 "final_out": None,
                 "token_total": None,
                 "input_query": None,
@@ -304,8 +307,7 @@ class TaskInterface(ABC):
             response_msg=execution_result.response_msg,
             execution_id=execution_result.execution_id,
             workflow_name=result["workflow_name"],
-            raw_log=result["raw_log"],
-            final_out=result["final_out"],
+            #raw_log=result["raw_log"],
             token_total=result["token_total"],
             input_query=result["input_query"],
             total_exec_ms=result["total_exec_ms"],
