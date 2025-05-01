@@ -150,7 +150,7 @@ if __name__ == "__main__":
     eval_results = task.validate_response(n8n_execution_log)
     print(f'Eval response: TaskResult {eval_results}')
     # save ExecutionResult object to a json file
-    #with open("n8n_response.json", "w") as f:
-    #    json.dump(asdict(eval_results), f, indent=4)
+    with open("n8n_response.json", "w") as f:
+        json.dump(asdict(eval_results), f, indent=4)
     
     
