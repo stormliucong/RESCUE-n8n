@@ -1,10 +1,11 @@
 # task_17b_reschedule_with_another_provider.py
+import json
 import os
 import time
 import requests
 from typing import Dict, Any
 from datetime import datetime, timedelta
-from task_interface import TaskInterface, TaskResult
+from task_interface import ExecutionResult, TaskFailureMode, TaskInterface, TaskResult
 
 class RescheduleWithAnotherProviderTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -15,7 +16,7 @@ class RescheduleWithAnotherProviderTask(TaskInterface):
 
     def get_prompt(self) -> str:
         return """
-Task: Reschedule John Doe's (PAT001) appointment with another provider who has availability at the same time.
+Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monday 9am with another provider who has availability at the same time.
 """
 
     def prepare_test_data(self) -> None:
@@ -152,8 +153,8 @@ Task: Reschedule John Doe's (PAT001) appointment with another provider who has a
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-    def execute_human_agent(self) -> Dict:
-        # Find the current appointment
+    def execute_human_agent(self) -> ExecutionResult:
+        # Find the current appointment at Next Monday at 9am.
         start_time = datetime.now() + timedelta((7 - datetime.now().weekday()) % 7)
         start_time = start_time.replace(hour=9, minute=0, second=0, microsecond=0)
         end_time = start_time + timedelta(hours=1)
@@ -169,9 +170,20 @@ Task: Reschedule John Doe's (PAT001) appointment with another provider who has a
         current_appointment = [entry['resource'] for entry in response.json()['entry']][0]
         current_slot_start = current_appointment['start']
         
+        # Find the schedule refernce for the second practitioner
+        params = {
+            "actor": "Practitioner/PROVIDER002",
+        }
+        response = requests.get(f"{self.FHIR_SERVER_URL}/Schedule", headers=self.HEADERS, params=params)
+        assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+        assert 'entry' in response.json(), "Expected to find the schedule for the second practitioner"  
+        assert len(response.json()['entry']) == 1, "Expected to find exactly one schedule for the second practitioner"
+        schedule_ref = response.json()['entry'][0]['resource']['id']
+        assert schedule_ref == "SCHEDULE002", "Expected schedule reference to be SCHEDULE002"
+
         # Find an available slot with the second practitioner at the same time
         params = {
-            "schedule": "Schedule/SCHEDULE002",
+            "schedule": f"Schedule/{schedule_ref}",
             "status": "free",
             "start": current_slot_start,
         }
@@ -192,16 +204,26 @@ Task: Reschedule John Doe's (PAT001) appointment with another provider who has a
         current_appointment['slot'] = [{"reference": f"Slot/{new_slot['id']}"}]
         current_appointment['start'] = new_slot['start']
         current_appointment['end'] = new_slot['end']
-        current_appointment['participant'][1]['actor']['reference'] = "Practitioner/PROVIDER002"
-        current_appointment['participant'][1]['actor']['status'] = "accepted"
+        # find ith element in the participant array that has the actor reference of the current provider
+        j = 0
+        for i, participant in enumerate(current_appointment['participant']):
+            if participant['actor']['reference'].startswith("Practitioner"):
+                j = i
+                break
+        current_appointment['participant'][j]['actor']['reference'] = "Practitioner/PROVIDER002"
+        current_appointment['participant'][j]['actor']['status'] = "accepted"
         current_appointment['status'] = 'booked'
         
         response = requests.put(f"{self.FHIR_SERVER_URL}/Appointment/{current_appointment['id']}", headers=self.HEADERS, json=current_appointment)
         assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
-        
-        return response.json()
+        execution_results = ExecutionResult(
+            execution_success=True,
+            response_msg=f"Appointment rescheduled successfully with new slot: {new_slot['id']}",
+            
+        )
+        return execution_results
 
-    def validate_response(self) -> TaskResult:
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
             # Verify that the current slot is still busy
             start_time = datetime.now() + timedelta((7 - datetime.now().weekday()) % 7)
@@ -213,7 +235,6 @@ Task: Reschedule John Doe's (PAT001) appointment with another provider who has a
                 "start": start_time.strftime("%Y-%m-%dT%H:%M:%SZ"),
             }
             response = requests.get(f"{self.FHIR_SERVER_URL}/Slot", headers=self.HEADERS, params=params)
-            assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert 'entry' in response.json(), "Expected to find the current slot"
             assert len(response.json()['entry']) == 1, "Expected to find exactly one slot"
             current_slot = response.json()['entry'][0]['resource']
@@ -225,7 +246,6 @@ Task: Reschedule John Doe's (PAT001) appointment with another provider who has a
                 "start": start_time.strftime("%Y-%m-%dT%H:%M:%SZ"),
             }
             response = requests.get(f"{self.FHIR_SERVER_URL}/Slot", headers=self.HEADERS, params=params)
-            assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert 'entry' in response.json(), "Expected to find the busy slot"
             assert len(response.json()['entry']) == 1, "Expected to find exactly one busy slot"
             new_slot = response.json()['entry'][0]['resource']
@@ -239,7 +259,6 @@ Task: Reschedule John Doe's (PAT001) appointment with another provider who has a
                 "date": start_time.strftime("%Y-%m-%dT%H:%M:%SZ"),
             }
             response = requests.get(f"{self.FHIR_SERVER_URL}/Appointment", headers=self.HEADERS, params=params)
-            assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert 'entry' in response.json(), "Expected to find the appointment"
             assert len(response.json()['entry']) == 1, "Expected to find exactly one appointment"
             # HAPI FHIR server returns cancelled appointments, so we need to filter them out
@@ -252,22 +271,86 @@ Task: Reschedule John Doe's (PAT001) appointment with another provider who has a
             assert appointment['slot'][0]['reference'] == f"Slot/{new_slot['id']}", "Expected slot to be the new slot"
            
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data=response.json()
+                task_success=True,
+                assertion_error_message=None,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result,
             )
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result,
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result,
             )
+    
+    def identify_failure_mode(self, executionResult: ExecutionResult) -> TaskFailureMode:
+        if executionResult.task_success:
+            return None
+        else:
+            incorrect_tool_selection = True
+            if 'createResource' in executionResult.tool_calls and 'deleteResource' in executionResult.tool_calls and 'getAllResources' in executionResult.tool_calls:
+                incorrect_tool_selection = True
+            if 'updateResource' in executionResult.tool_calls and 'getAllResources' in executionResult.tool_calls:
+                incorrect_tool_selection = True
+            
+            incorrect_tool_order = True
+            # getAllResources should be called before 'updatedResource' or 'createResource'
+            # tool_calls is a list of ordered tools
+            first_getAllResources_index = [i for i, x in enumerate(executionResult.tool_calls) if x == 'getAllResources'][0]
+            if 'updateResource' in executionResult.tool_calls:
+                first_updateResource_index = [i for i, x in enumerate(executionResult.tool_calls) if x == 'updateResource'][0]
+                if first_updateResource_index > first_getAllResources_index:
+                    incorrect_tool_order = True
+            else:
+                first_createResource_index = [i for i, x in enumerate(executionResult.tool_calls) if x == 'createResource'][0]
+                if first_createResource_index > first_getAllResources_index:
+                    incorrect_tool_order = True
+
+            incorrect_resource_type = True
+            # collect all resource types from the tool calls
+            # function can be reused.
+            resource_types = []
+            error_codes = []
+            tools = ['createResource', 'updateResource', 'deleteResource', 'getAllResources', 'getResource']
+            try:
+                for tool_call in executionResult.tool_calls:
+                    for tool in tools:
+                        if tool in tool_call:
+                            resource_types.append(tool_call['createResource'][-1]["input"]['resourceType'])
+                            output = tool_call['createResource'][-1]["input"]['output']
+                            # Check whether the output is a json object
+                            if isinstance(output, str):
+                                try:
+                                    json.loads(output)
+                                except json.JSONDecodeError:
+                                    error_codes.append(output)
+            except KeyError as e:
+                print(f"KeyError: {str(e)}")
+                
+            if "Slot" in resource_types and "Appointment" in resource_types:
+                incorrect_resource_type = False
+            
+            
+            return TaskFailureMode(
+                incorrect_tool_selection: incorrect_tool_selection
+                incorrect_tool_order: incorrect_tool_order
+                incorrect_resource_type: incorrect_resource_type
+                error_codes: error_codes
+            )
+            
+
+
 
 if __name__ == "__main__":
     from dotenv import load_dotenv
@@ -275,10 +358,20 @@ if __name__ == "__main__":
     
     FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
     N8N_URL = os.getenv("N8N_AGENT_URL")
-    
+    N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
+    # Initialise task
     task = RescheduleWithAnotherProviderTask(FHIR_SERVER_URL, N8N_URL)
     task.cleanup_test_data()
     task.prepare_test_data()
+
+    # Comment when needed
+    print("HUMAN EXECUTION")
     human_response = task.execute_human_agent()
+
+    #n8n_execution_log = task.execute_n8n_agent()
+    #print("N8N RESPONSE TASK")
+    #print(n8n_execution_log.tool_calls['createResource'])
+    #print("EVAL TASK")
+
     eval_results = task.validate_response()
     print(eval_results) 
