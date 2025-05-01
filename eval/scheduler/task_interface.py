@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 import time
-from typing import Dict, Any, Optional
+from typing import Dict, Any, List, Optional
 import requests # type: ignore
 from dataclasses import dataclass
 from fetch_and_parse_n8n_execution_log import fetch_and_parse_n8n_execution_log
@@ -31,9 +31,14 @@ class TaskResult:
     task_id: Optional[str] = None
     task_name: Optional[str] = None
     execution_result: Optional[ExecutionResult] = None
-
-
-
+    
+@dataclass
+class TaskFailureMode:
+    incorrect_tool_selection: Optional[bool] = False
+    incorrect_tool_order: Optional[bool] = False
+    incorrect_resource_type: Optional[bool] = False
+    error_codes: Optional[List[str]] = None
+    critical_error: Optional[bool] = False
 
 class TaskInterface(ABC):
     def __init__(self, fhir_server_url, n8n_url, n8n_execution_url):
@@ -333,5 +338,10 @@ class TaskInterface(ABC):
     @abstractmethod
     def validate_response(self, executionResult: ExecutionResult) -> TaskResult:
         """Validate the response using assertions"""
+        pass
+    
+    @abstractmethod
+    def identify_failure_mode(self, executionResult: ExecutionResult) -> TaskFailureMode:
+        """Identify the failure mode of the execution"""
         pass
 
