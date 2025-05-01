@@ -124,6 +124,12 @@ class EnterNewPatientTask(TaskInterface):
             )
             
 
+    def identify_failure_mode(self, executionResult: ExecutionResult) -> str:
+        if executionResult.task_success:
+            return "No failure mode"
+        else:
+            return "Failed to create patient"
+
 if __name__ == "__main__":
     load_dotenv()
     FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
