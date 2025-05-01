@@ -307,6 +307,7 @@ class TaskInterface(ABC):
             tool_exec_ms=result["tool_exec_ms"],
             tool_order=result["tool_order"],
             tool_calls = result["tool_calls"],
+            tool_call_counts=result["tool_call_counts"]
         )
         
 
