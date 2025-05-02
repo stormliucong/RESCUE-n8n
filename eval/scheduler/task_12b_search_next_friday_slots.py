@@ -3,7 +3,7 @@ import os
 import requests
 from typing import Dict, Any
 from datetime import datetime, timedelta
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
 class SearchNextFridaySlotsTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -65,8 +65,7 @@ Patient needs a general visit on next Friday. Find all available slots.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         start = datetime.now() + timedelta(days=7)
         next_friday = start + timedelta(days=(4 - start.weekday()) % 7)
         next_friday = next_friday.replace(hour=9, minute=0, second=0, microsecond=0)
@@ -86,15 +85,42 @@ Patient needs a general visit on next Friday. Find all available slots.
             params=params
         )
         
-        return response
+        if response.status_code != 200:
+            return ExecutionResult(
+                execution_success=False,
+                response_msg=f"Failed to search slots: {response.text}"
+            )
 
-    def validate_response(self, response: Any) -> TaskResult:
-        try:
+        response_json = response.json()
+        slots_found = response_json.get('total', 0)
         
+        return ExecutionResult(
+            execution_success=True,
+            response_msg=f"Found {slots_found} available slots for next Friday"
+        )
+
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
+        try:
+            start = datetime.now() + timedelta(days=7)
+            next_friday = start + timedelta(days=(4 - start.weekday()) % 7)
+            next_friday = next_friday.replace(hour=9, minute=0, second=0, microsecond=0)
+            end = next_friday.replace(hour=17, minute=0, second=0, microsecond=0)
+            
+            params = {
+                "start": [
+                    f'ge{next_friday.strftime("%Y-%m-%dT%H:%M:%SZ")}',
+                    f'le{end.strftime("%Y-%m-%dT%H:%M:%SZ")}'
+                ],
+                "status": "free"
+            }
+            
+            response = requests.get(
+                f"{self.FHIR_SERVER_URL}/Slot",
+                headers=self.HEADERS,
+                params=params
+            )
+            
             assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            next_friday = datetime.now() + timedelta(days=7)
-            next_friday = next_friday + timedelta(days=(4 - next_friday.weekday()) % 7)
-            print(f"Next friday: {next_friday}")
             response_json = response.json()
             assert 'total' in response_json, "Expected to find total in the response"
             assert response_json['total'] > 0, "Expected to find at least one slot"
@@ -105,40 +131,34 @@ Patient needs a general visit on next Friday. Find all available slots.
                 assert entry['resource']['status'] == "free", "Expected to find free slot"
             
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data={
-                    "slots_found": response_json['total'],
-                    "slots": [entry['resource'] for entry in response_json['entry']]
-                }
+                task_success=True,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response.json() if hasattr(response, 'json') else response
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response.json() if hasattr(response, 'json') else response
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
-        
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    
-    task = SearchNextFridaySlotsTask(FHIR_SERVER_URL, N8N_URL)
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response(human_response)
-    print(eval_results)
-    # n8n_response = task.execute_n8n_agent()
-    # print(n8n_response)
-    
+
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )

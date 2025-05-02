@@ -5,7 +5,7 @@ import time
 import requests
 from typing import Dict, Any
 from datetime import datetime, timedelta
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
 class CancelAppointmentTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -101,7 +101,7 @@ Task: Cancel Patient John Doe's next coming appointment.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         # Find the next appointment for John Doe
         params = {
             "patient": "Patient/PAT001",
@@ -154,9 +154,12 @@ Task: Cancel Patient John Doe's next coming appointment.
         response = requests.put(f"{self.FHIR_SERVER_URL}/Slot/{slot_id}", headers=self.HEADERS, json=params)
         assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
 
-        return response
+        return ExecutionResult(
+            execution_success=True,
+            response_msg=f"Successfully cancelled appointment {appointment_id} and freed slot {slot_id}"
+        )
 
-    def validate_response(self) -> TaskResult:
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
             # Verify that the earliest appointment is cancelled
             params = {
@@ -175,33 +178,33 @@ Task: Cancel Patient John Doe's next coming appointment.
             assert response.json()['status'] == "free", "Expected slot to be free after cancellation"
 
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data=response.json()
+                task_success=True,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    
-    task = CancelAppointmentTask(FHIR_SERVER_URL, N8N_URL)
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response()
-    print(eval_results) 
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )

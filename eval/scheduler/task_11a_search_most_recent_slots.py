@@ -4,7 +4,7 @@ import os
 import requests
 from typing import Dict, Any
 from datetime import datetime, timedelta
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
 class FindAvailableSlotsTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -53,7 +53,7 @@ Find most recent available slots from any providers.
                     {"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]},
                     {"coding": [{"system": "urn:ietf:bcp:47", "code": "es"}]}
                 ],
-                "address": [{"use": "work", "line": ["789 Pine St"], "city": "Los Angeles", "state": "CA"}],
+                "address": [{"use" : "work", "line": ["789 Pine St"], "city": "Los Angeles", "state": "CA"}],
             }
 
             practitioner4 = {
@@ -65,7 +65,7 @@ Find most recent available slots from any providers.
                     {"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]},
                     {"coding": [{"system": "urn:ietf:bcp:47", "code": "hi"}]}
                 ],
-                "address": [{"use": "work", "line": ["321 Elm St"], "city": "Chicago", "state": "IL"}],
+                "address": [{"use" : "work", "line": ["321 Elm St"], "city": "Chicago", "state": "IL"}],
             }
 
             # Upsert all practitioners to FHIR server
@@ -151,7 +151,7 @@ Find most recent available slots from any providers.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         params = {
             "status": "free",
             "_sort": "start"
@@ -163,33 +163,80 @@ Find most recent available slots from any providers.
             params=params
         )
         
-        return response.json()['entry'][0]
+        if response.status_code != 200:
+            return ExecutionResult(
+                execution_success=False,
+                response_msg=f"Failed to search slots: {response.text}"
+            )
 
-    def validate_response(self, response: Any) -> TaskResult:
+        response_json = response.json()
+        if not response_json.get('entry'):
+            return ExecutionResult(
+                execution_success=False,
+                response_msg="No available slots found"
+            )
+
+        slot = response_json['entry'][0]
+        return ExecutionResult(
+            execution_success=True,
+            response_msg=f"Found available slot {slot['resource']['id']} starting at {slot['resource']['start']}"
+        )
+
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            assert response['resource']['id'] == 'SLOT0010', f"Expected SLOT0010, got {response['resource']['id']}"
-                  
+            params = {
+                "status": "free",
+                "_sort": "start"
+            }
+            
+            response = requests.get(
+                f"{self.FHIR_SERVER_URL}/Slot",
+                headers=self.HEADERS,
+                params=params
+            )
+            
+            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
+            response_json = response.json()
+            assert 'entry' in response_json, "Expected to find entry in the response"
+            assert len(response_json['entry']) > 0, "Expected to find at least one slot"
+            
+            slot = response_json['entry'][0]
+            assert slot['resource']['id'] == 'SLOT0010', f"Expected SLOT0010, got {slot['resource']['id']}"
+            assert slot['resource']['status'] == "free", "Expected to find free slot"
+            
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data={
-                    "slots": response
-                }
+                task_success=True,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response.json() if hasattr(response, 'json') else response
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response.json() if hasattr(response, 'json') else response
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
-        
+
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )
+
 if __name__ == "__main__":
     from dotenv import load_dotenv
     load_dotenv()

@@ -2,7 +2,7 @@
 import os
 import requests
 from typing import Dict, Any
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
 class AddGuarantorTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -13,10 +13,10 @@ class AddGuarantorTask(TaskInterface):
 
     def get_prompt(self) -> str:
         return """
-Task: Add guarantor to account
+Task: Add a guarantor to an account
 
-Add the guarantor responsible for patient PAT001's billing:
-- Guarantor: Alice Doe (mother)
+Add the related person REL001 as a guarantor to the account ACC001 with the following details:
+- Relationship: Mother
 """
 
     def prepare_test_data(self) -> None:
@@ -32,7 +32,7 @@ Add the guarantor responsible for patient PAT001's billing:
             }
             self.upsert_to_fhir(patient_resource)
 
-            # Create related person
+            # Create related person (mother)
             related_person_resource = {
                 "resourceType": "RelatedPerson",
                 "id": "REL001",
@@ -45,6 +45,7 @@ Add the guarantor responsible for patient PAT001's billing:
                     "text": "mother"
                 }],
                 "name": [{"use": "official", "family": "Doe", "given": ["Alice"]}],
+                "gender": "female",
                 "birthDate": "1960-03-01"
             }
             self.upsert_to_fhir(related_person_resource)
@@ -78,17 +79,32 @@ Add the guarantor responsible for patient PAT001's billing:
             }]
         }
         
+        # Update the account
         response = requests.put(
             f"{self.FHIR_SERVER_URL}/Account/ACC001",
             headers=self.HEADERS,
             json=update_payload
         )
         
-        return response
+        if response.status_code not in [200, 201]:
+            return ExecutionResult(
+                execution_success=False,
+                response_msg=f"Failed to update account: {response.text}"
+            )
 
-    def validate_response(self, response: Any) -> TaskResult:
+        response_json = response.json()
+        return ExecutionResult(
+            execution_success=True,
+            response_msg=f"Updated account with ID {response_json.get('id')}"
+        )
+
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            assert response.status_code in [200, 201], f"Expected status code 200/201, got {response.status_code}"
+            # Verify the account was updated correctly
+            response = requests.get(
+                f"{self.FHIR_SERVER_URL}/Account/ACC001",
+                headers=self.HEADERS
+            )
             
             response_json = response.json()
             assert response_json["resourceType"] == "Account", "Invalid resource type"
@@ -97,41 +113,34 @@ Add the guarantor responsible for patient PAT001's billing:
             assert response_json["guarantor"][0]["party"]["reference"] == "RelatedPerson/REL001", "Invalid guarantor reference"
 
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data={
-                    "account_id": response_json["id"],
-                    "guarantor_reference": response_json["guarantor"][0]["party"]["reference"]
-                }
+                task_success=True,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    
-    task = AddGuarantorTask(FHIR_SERVER_URL, N8N_URL)
-    print(task.get_task_id())
-    print(task.get_task_name())
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response(human_response)
-    print(eval_results)
-    # n8n_response = task.execute_n8n_agent()
-    # print(n8n_response)
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )
