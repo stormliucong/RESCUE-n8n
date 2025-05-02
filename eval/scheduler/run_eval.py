@@ -36,13 +36,23 @@ for task_class in class_list:
     #print("EVAL TASK")
 
     task_result = task.validate_response(exec_result)
+    print("TASK RESULT")
+    print(task_result.task_success)
+
+    print('RESULT TOOL ORDER')
+    print(task_result.execution_result.tool_order)
+
     # save ExecutionResult object to a json file
     file_name = f"task_{task_result.task_id}_n8n_response.json"
     with open(file_name, "w") as f:
         json.dump(asdict(task_result),f)
-    
+        
+    print('TASK FAILURE MODE')
     task_failure_mode = task.identify_failure_mode(task_result)
-    if task_failure_mode is not None:
-        file_name = f"task_{task_result.task_id}_failure_mode.json"
-        with open(file_name, "w") as f:
-            json.dump(asdict(task_failure_mode),f)
+
+    print('task failure mode: ', task_failure_mode)
+
+    # if task_failure_mode is not None:
+    #     file_name = f"task_{task_result.task_id}_failure_mode.json"
+    #     with open(file_name, "w") as f:
+    #         json.dump(asdict(task_failure_mode),f)

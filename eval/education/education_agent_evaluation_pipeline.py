@@ -9,6 +9,6 @@ result = fetch_and_parse_n8n_execution_log(
 # print(result["final_out"])
 print(result["workflow_name"])
 print("Tools used:", result["tool_calls"]['createResource'][1])
-print("Token total:", result["token_total"])
+print("Token total:", result["tool_order"])
 
 

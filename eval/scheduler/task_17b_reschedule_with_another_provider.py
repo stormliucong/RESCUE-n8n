@@ -153,6 +153,8 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         # Find the current appointment at Next Monday at 9am.
         start_time = datetime.now() + timedelta((7 - datetime.now().weekday()) % 7)
@@ -222,6 +224,8 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
             
         )
         return execution_results
+
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -294,13 +298,17 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
                 execution_result=execution_result,
             )
     
+
+
     def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+
+        print("Running: IDENTIFY FAILURE MODE")
         
-        required_tool_calls = [['createResource','getAllResources', 'deleteResource'], ['updateResource', 'getAllResources']]
-        required_tool_order = [['getAllResources', 'updateResource'], ['getAllResources', 'createResource']]
+        # Sequences of ordered tools (set manually)
+        required_tool_call_sets = [{'createResource':1,'getAllResources':0, 'deleteResource':None}, {'updateResource':1, 'getAllResources':0}] # OR relationship
         required_resource_types = ["Slot", "Appointment"]
         
-        task_failure_mode = self.check_tool_calls(task_result, required_tool_calls, required_tool_order, required_resource_types)
+        task_failure_mode = self.check_tool_calls(task_result, required_tool_call_sets, required_resource_types)
         if task_failure_mode is None:
             task_failure_mode = TaskFailureMode(
                 incorrect_tool_selection=False,
@@ -308,5 +316,6 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
                 incorrect_resource_type=False,
                 error_codes=None
             )
+            
         return task_failure_mode
         
