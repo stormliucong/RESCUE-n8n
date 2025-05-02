@@ -4,7 +4,7 @@ import requests
 from typing import Dict, Any
 from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
-class SearchExistingMedicalHistoryTask(TaskInterface):
+class SearchNonemptyMedicalHistoryTask(TaskInterface):
     def get_task_id(self) -> str:
         return "4a"
 

@@ -6,7 +6,8 @@ from task_17b_reschedule_with_another_provider import RescheduleWithAnotherProvi
 import os
 import json
 import logging
-
+import yaml
+import importlib
 logging.config.fileConfig('logging.ini')
 logger = logging.getLogger(__name__)
 
@@ -19,9 +20,25 @@ HEADERS = {
     "Accept": "application/fhir+json"
 }
 
-class_list = [RescheduleWithAnotherProviderTask]
-for task_class in class_list:
+def load_tasks_from_config(config_path):
+    with open(config_path, 'r') as f:
+        config = yaml.safe_load(f)
 
+    task_classes = []
+    for task in config.get('tasks', []):
+        module_name = task['module']
+        class_name = task['class']
+
+        module = importlib.import_module(module_name)
+        cls = getattr(module, class_name)
+        task_classes.append(cls)
+
+    return task_classes
+class_list = load_tasks_from_config("run_eval.yaml")
+logger.info(f"Running eval with {len(class_list)} tasks")
+agent = "n8n"
+logger.info(f"Running eval with agent: {agent}")
+for task_class in class_list:
     # Initialise task
     logger.info(f"Initialising task: {task_class.__name__}")
     task = task_class(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL)
@@ -33,33 +50,33 @@ for task_class in class_list:
     task.prepare_test_data()
 
     # Comment when needed
-    # logger.info(f"Executing task on human agent: {task_class.__name__}")
-    # exec_result = task.execute_human_agent()
+    if agent == "human":
+        logger.info(f"Executing task on human agent: {task_class.__name__}")
+        exec_result = task.execute_human_agent()
+        logger.debug(f"Human response:")
+        logger.debug(exec_result)
+    if agent == "n8n":
+        logger.info(f"Executing task on N8N: {task_class.__name__}")
+        exec_result = task.execute_n8n_agent()
+        logger.debug(f"N8N response:")
+        logger.debug(exec_result)
     
-    logger.info(f"Executing task on N8N: {task_class.__name__}")
-    exec_result = task.execute_n8n_agent()
-    logger.debug(f"N8N response:")
-    logger.debug(exec_result.tool_calls['createResource'])
-    #logger.info("EVAL TASK")
-
+    logger.info(f"Validating response for task: {task_class.__name__}")
     task_result = task.validate_response(exec_result)
-    logger.debug("N8N TASK RESULT")
-    logger.debug(task_result.task_success)
-
-    logger.debug('RESULT TOOL ORDER')
-    logger.debug(task_result.execution_result.tool_order)
+    logger.debug(f"Task result:")
 
     # save ExecutionResult object to a json file
-    file_name = f"task_{task_result.task_id}_n8n_response.json"
+    file_name = f"task_{task_result.task_id}_{agent}_task_result.json"
     with open(file_name, "w") as f:
-        logger.info(f"Saving N8N task result to {file_name}")
+        logger.info(f"Saving task result to {file_name}")
         json.dump(asdict(task_result),f)
-        
-    logger.info(f"Identifying failure mode for task: {task_class.__name__}")
-    task_failure_mode = task.identify_failure_mode(task_result)
+    
+    if agent == "n8n":
+        logger.info(f"Identifying failure mode for task: {task_class.__name__}")
+        task_failure_mode = task.identify_failure_mode(task_result)
 
     if task_failure_mode is not None:
-        file_name = f"task_{task_result.task_id}_failure_mode.json"
+        file_name = f"task_{task_result.task_id}_{agent}_failure_mode.json"
         with open(file_name, "w") as f:
             logger.info(f"Saving failure mode to {file_name}")
             json.dump(asdict(task_failure_mode),f)

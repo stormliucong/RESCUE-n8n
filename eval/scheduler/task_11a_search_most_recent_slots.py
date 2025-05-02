@@ -236,21 +236,3 @@ Find most recent available slots from any providers.
             incorrect_resource_type=False,
             error_codes=None
         )
-
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    
-    task = FindAvailableSlotsTask(FHIR_SERVER_URL, N8N_URL)
-    print(task.get_task_id())
-    print(task.get_task_name())
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response(human_response)
-    print(eval_results)
-    # n8n_response = task.execute_n8n_agent()
-    # print(n8n_response)
