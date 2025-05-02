@@ -40,3 +40,9 @@ for task_class in class_list:
     file_name = f"task_{task_result.task_id}_n8n_response.json"
     with open(file_name, "w") as f:
         json.dump(asdict(task_result),f)
+    
+    task_failure_mode = task.identify_failure_mode(task_result)
+    if task_failure_mode is not None:
+        file_name = f"task_{task_result.task_id}_failure_mode.json"
+        with open(file_name, "w") as f:
+            json.dump(asdict(task_failure_mode),f)
