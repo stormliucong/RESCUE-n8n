@@ -1,6 +1,10 @@
+from dataclasses import asdict
 from dotenv import load_dotenv # type: ignore
 from task_01_enter_new_patient import EnterNewPatientTask
+from task_17b_reschedule_with_another_provider import RescheduleWithAnotherProviderTask
 import os
+import json
+
 load_dotenv()
 FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 N8N_URL = os.getenv("N8N_AGENT_URL")
@@ -9,13 +13,36 @@ HEADERS = {
     "Accept": "application/fhir+json"
 }
 
-class_list = [EnterNewPatientTask]
+load_dotenv()
+FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
+N8N_URL = os.getenv("N8N_AGENT_URL")
+N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
+
+class_list = [RescheduleWithAnotherProviderTask]
 for task_class in class_list:
-    task = task_class(FHIR_SERVER_URL, N8N_URL)
+    print(f"Running task: {task_class.__name__}")
+
+    # Initialise task
+    task = task_class(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL)
     task.cleanup_test_data()
     task.prepare_test_data()
-    # human_response = task.execute_human_agent()
-    # eval_results = task.validate_response(human_response)
-    # print(eval_results)
-    n8n_response = task.execute_n8n_agent()
-    print(n8n_response)
+
+    # Comment when needed
+    # print("HUMAN EXECUTION")
+    # task_result = task.execute_human_agent()
+    print("N8N RESPONSE TASK")
+    exec_result = task.execute_n8n_agent()
+    #print(exec_result.tool_calls['createResource'])
+    #print("EVAL TASK")
+
+    task_result = task.validate_response(exec_result)
+    # save ExecutionResult object to a json file
+    file_name = f"task_{task_result.task_id}_n8n_response.json"
+    with open(file_name, "w") as f:
+        json.dump(asdict(task_result),f)
+    
+    task_failure_mode = task.identify_failure_mode(task_result)
+    if task_failure_mode is not None:
+        file_name = f"task_{task_result.task_id}_failure_mode.json"
+        with open(file_name, "w") as f:
+            json.dump(asdict(task_failure_mode),f)
