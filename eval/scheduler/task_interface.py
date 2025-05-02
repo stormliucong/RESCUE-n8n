@@ -1,10 +1,13 @@
 from abc import ABC, abstractmethod
 import time
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple 
 import requests # type: ignore
 from dataclasses import dataclass
 from fetch_and_parse_n8n_execution_log import fetch_and_parse_n8n_execution_log
 import json
+import logging
+
+logging.basicConfig(level=logging.INFO, filename='task_interface.log', filemode='w')
 
 
 @dataclass
@@ -13,8 +16,7 @@ class ExecutionResult:
     response_msg: Optional[str] = None
     execution_id: Optional[str] = None
     workflow_name: Optional[str] = None
-    raw_log: Optional[Dict[str, Any]] = None
-    final_out: Optional[str] = None
+    #raw_log: Optional[Dict[str, Any]] = None
     token_total: Optional[int] = None
     input_query: Optional[str] = None
     total_exec_ms: Optional[float] = None
@@ -40,8 +42,7 @@ class TaskFailureMode:
     incorrect_tool_selection: Optional[bool] = False
     incorrect_tool_order: Optional[bool] = False
     incorrect_resource_type: Optional[bool] = False
-    error_codes: Optional[List[str]] = None
-    critical_error: Optional[bool] = False
+    error_codes: Optional[List[str]] = None # https://build.fhir.org/codesystem-assert-response-code-types.html
 
 
 
@@ -124,9 +125,9 @@ class TaskInterface(ABC):
                 self.delete_resource(child_type, child_id)
         
         # Now delete the resource itself
-        print(f"Deleting {url}...")
+        # print(f"Deleting {url}...")
         del_response = requests.delete(url, headers=self.HEADERS)
-        print(f"DELETE {url}: {del_response.status_code}")
+        # print(f"DELETE {url}: {del_response.status_code}")
         time.sleep(0.1)  # avoid overwhelming the server
         
         
@@ -156,14 +157,14 @@ class TaskInterface(ABC):
         ]
 
         for resource_type in deletion_order:
-            print(f"\nProcessing {resource_type} resources...")
+            # print(f"\nProcessing {resource_type} resources...")
             resource_ids = self.get_resource_ids(resource_type)
 
             if not resource_ids:
-                print(f"No {resource_type} resources found.")
+                # print(f"No {resource_type} resources found.")
                 continue
 
-            print(f"Deleting {len(resource_ids)} {resource_type} resources...")
+            # print(f"Deleting {len(resource_ids)} {resource_type} resources...")
             for resource_id in resource_ids:
                 self.delete_resource(resource_type, resource_id)
                 # Add a small delay to prevent overwhelming the server
@@ -201,13 +202,15 @@ class TaskInterface(ABC):
         response = requests.put(url, json=resource, headers=headers)
 
         if response.status_code in [200, 201]:
-            print(
-                f"Successfully upserted {resource['resourceType']} with ID {resource['id']}"
-            )
+            # print(
+            #     f"Successfully upserted {resource['resourceType']} with ID {resource['id']}"
+            # )
+            return None
         else:
             print(
                 f"Failed to upsert {resource['resourceType']} with ID {resource['id']}: {response.status_code} {response.text}"
             )
+            return response
             
 
     @abstractmethod
@@ -302,7 +305,7 @@ class TaskInterface(ABC):
             print(f"Error fetching execution log: {e}")
             result = {
                 "workflow_name": None,
-                "raw_log": None,
+                #"raw_log": None,
                 "final_out": None,
                 "token_total": None,
                 "input_query": None,
@@ -318,8 +321,7 @@ class TaskInterface(ABC):
             response_msg=execution_result.response_msg,
             execution_id=execution_result.execution_id,
             workflow_name=result["workflow_name"],
-            raw_log=result["raw_log"],
-            final_out=result["final_out"],
+            #raw_log=result["raw_log"],
             token_total=result["token_total"],
             input_query=result["input_query"],
             total_exec_ms=result["total_exec_ms"],
@@ -345,6 +347,78 @@ class TaskInterface(ABC):
         except Exception as e:
             print(f"Unexpected error while parsing JSON: {str(e)}")
             return None
+    
+    def check_tool_calls(self, task_result: TaskResult, required_tool_calls: List[List[str]], required_tool_orders: List[List[str]], required_resource_types: List[str]) -> TaskFailureMode:
+        """Check the tool calls and return the result"""
+        if task_result.task_success:
+            return None
+        else:
+            execution_result = task_result.execution_result
+            if execution_result is None:
+                return None
+            
+            incorrect_tool_selection = True
+            incorrect_tool_order = True
+            incorrect_resource_type = True
+            error_codes = None
+            
+            if execution_result.tool_calls is not None:
+                for required_tool_call in required_tool_calls:
+                    # OR condition
+                    i = 0
+                    for required_tool_call_x in required_tool_call:
+                        # AND condition
+                        if required_tool_call_x in execution_result.tool_calls:
+                            i += 1
+                        if i == len(required_tool_call):
+                            incorrect_tool_selection = False
+
+                if incorrect_tool_selection == False:
+                    # AND condition
+                    i = 0
+                    for required_tool_order in required_tool_orders:
+                        first_required_tool_list= execution_result.tool_calls[required_tool_order[0]]
+                        second_required_tool_list = execution_result.tool_calls[required_tool_order[1]]
+                        # order by 'startTime' a loose criteria
+                        first_required_tool_first_start = sorted(first_required_tool_list, key=lambda x: x['startTime'])[0]
+                        second_required_tool_last_start = sorted(second_required_tool_list, key=lambda x: x['startTime'],reverse=True)[0]
+                        if second_required_tool_last_start['startTime'] > first_required_tool_first_start['startTime']:
+                            i += 1
+                    if i == len(required_tool_orders):
+                        incorrect_tool_order = False
+                    
+                    # collect all resource types from the tool calls
+                    error_codes, resource_types = self.get_error_codes(execution_result)
+                    if "Slot" in resource_types and "Appointment" in resource_types:
+                        incorrect_resource_type = False
+            
+            return TaskFailureMode(
+                incorrect_tool_selection=incorrect_tool_selection,
+                incorrect_tool_order=incorrect_tool_order,
+                incorrect_resource_type=incorrect_resource_type,
+                error_codes=error_codes
+            )
+    
+    def get_error_codes(self, executionResult: ExecutionResult) -> List[str]:
+        """Get the error codes from the execution result"""
+        error_codes = []
+        resource_types = []
+        tools = ['createResource', 'updateResource', 'deleteResource', 'getAllResources', 'getResource']
+        try:
+            # loop through all tool calls
+            for tool in executionResult.tool_calls.keys():
+                if tool in tools:
+                    resource_types.append(executionResult.tool_calls[tool][-1]["input"]['resourceType'])
+                    output = executionResult.tool_calls[tool][-1]['output']
+                    # Check whether the output is a json object
+                    if isinstance(output, str):
+                        try:
+                            json.loads(output)
+                        except json.JSONDecodeError:
+                            error_codes.append(output)
+        except KeyError as e:
+            print(f"KeyError: {str(e)}")
+        return error_codes, resource_types
        
             
     
