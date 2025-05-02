@@ -57,11 +57,11 @@ class TaskInterface(ABC):
         print(f"N8N_AGENT_URL: {self.N8N_AGENT_URL}")
         print(f"N8N_EXECUTION_URL: {self.N8N_EXECUTION_URL}")
         
-        
         self.HEADERS = {
             "Content-Type": "application/fhir+json",
             "Accept": "application/fhir+json"
         }
+
         self.RESOURCE_TYPES = [
             "Patient",
             "Condition",
@@ -77,6 +77,7 @@ class TaskInterface(ABC):
             "Appointment",
         ]
         
+
     def get_resource_ids(self, resource_type):
         """Fetches all resource IDs for the given resource type, handling pagination."""
         url = f"{self.FHIR_SERVER_URL}/{resource_type}?_count=1000"
@@ -333,6 +334,7 @@ class TaskInterface(ABC):
         
 
 
+
     def get_json_from_response_msg(self, response_msg: str) -> Optional[Dict[str, Any]]:
         """Parse the JSON part in the string"""
         try:
@@ -348,57 +350,102 @@ class TaskInterface(ABC):
             print(f"Unexpected error while parsing JSON: {str(e)}")
             return None
     
-    def check_tool_calls(self, task_result: TaskResult, required_tool_calls: List[List[str]], required_tool_orders: List[List[str]], required_resource_types: List[str]) -> TaskFailureMode:
-        """Check the tool calls and return the result"""
-        if task_result.task_success:
-            return None
-        else:
-            execution_result = task_result.execution_result
-            if execution_result is None:
-                return None
-            
-            incorrect_tool_selection = True
-            incorrect_tool_order = True
-            incorrect_resource_type = True
-            error_codes = None
-            
-            if execution_result.tool_calls is not None:
-                for required_tool_call in required_tool_calls:
-                    # OR condition
-                    i = 0
-                    for required_tool_call_x in required_tool_call:
-                        # AND condition
-                        if required_tool_call_x in execution_result.tool_calls:
-                            i += 1
-                        if i == len(required_tool_call):
-                            incorrect_tool_selection = False
 
-                if incorrect_tool_selection == False:
-                    # AND condition
-                    i = 0
-                    for required_tool_order in required_tool_orders:
-                        first_required_tool_list= execution_result.tool_calls[required_tool_order[0]]
-                        second_required_tool_list = execution_result.tool_calls[required_tool_order[1]]
-                        # order by 'startTime' a loose criteria
-                        first_required_tool_first_start = sorted(first_required_tool_list, key=lambda x: x['startTime'])[0]
-                        second_required_tool_last_start = sorted(second_required_tool_list, key=lambda x: x['startTime'],reverse=True)[0]
-                        if second_required_tool_last_start['startTime'] > first_required_tool_first_start['startTime']:
-                            i += 1
-                    if i == len(required_tool_orders):
-                        incorrect_tool_order = False
-                    
-                    # collect all resource types from the tool calls
-                    error_codes, resource_types = self.get_error_codes(execution_result)
-                    if "Slot" in resource_types and "Appointment" in resource_types:
-                        incorrect_resource_type = False
-            
-            return TaskFailureMode(
-                incorrect_tool_selection=incorrect_tool_selection,
-                incorrect_tool_order=incorrect_tool_order,
-                incorrect_resource_type=incorrect_resource_type,
-                error_codes=error_codes
-            )
+
+
+    def check_tool_calls(self, task_result: TaskResult, required_tool_call_sets: List[Dict[str, Optional[int]]], required_resource_types: List[str]) -> TaskFailureMode:
+        """
+        Given a TaskResult (which wraps an ExecutionResult) decide *why* a task failed.
+
+        Each element in `required_tool_call_sets` is a **template** for one legal tool‑usage
+        pattern.  
+        • Key   – tool name  
+        • Value – required position index (0, 1, 2, …) **or** None if order is irrelevant.
+
+        The logic tries every template in the list until one matches:
+
+            1.  Every tool mentioned in the template must appear in `execution_result.tool_order`
+                → otherwise `incorrect_tool_selection` stays True and we try the next template.
+
+            2.  If the template has *ordered* tools (values that are integers) they must appear
+                as a subsequence in `tool_order` in the given order.  
+                Example: required order `["A","B","C"]` is satisfied by  
+                `"B A D B A C F"` because `A … B … C` exists.
+
+            3.  Only after (1) **and** (2) succeed do we check resource types and error codes.
+        """
+        # --- Fast exits ------------------------------------------------------------------
+        if task_result.task_success or task_result.execution_result is None:
+            return None
+
+        exec_res: ExecutionResult = task_result.execution_result
+        tool_order: List[str]     = exec_res.tool_order or []
+        tool_calls: Dict[str, List[Dict]] = exec_res.tool_calls or {}
+
+        # --- Initialise failure‑mode flags ----------------------------------------------
+        incorrect_tool_selection = True
+        incorrect_tool_order     = True
+        incorrect_resource_type  = True
+        error_codes              = None      # will be filled by get_error_codes
+
+        # --- Try every requirement set ---------------------------------------------------
+        for template in required_tool_call_sets:
+            print(f"[DEBUG] analysing template → {template}")
+
+            # ---------- 1) Tool‑selection check ----------
+            if not all(tool in tool_order for tool in template):
+                print("[DEBUG]   ❌ missing tools, trying next template")
+                continue
+
+            incorrect_tool_selection = False
+            print("[DEBUG]   ✅ all required tools are present")
+
+            # ---------- 2) Order check (if any) ----------
+            ordered_pairs = [(tool, idx)
+                            for tool, idx in template.items()
+                            if isinstance(idx, int)]
+            ordered_pairs.sort(key=lambda x: x[1])           # sort by the expected index
+            ordered_tool_names = [t for t, _ in ordered_pairs]
+
+            if not ordered_tool_names:                       # no ordering constraint at all
+                incorrect_tool_order = False
+                print("[DEBUG]   ⚠️  template has no order constraints — automatically ok")
+            else:
+                # simple subsequence scan
+                wanted_idx = 0
+                for t in tool_order:
+                    if t == ordered_tool_names[wanted_idx]:
+                        wanted_idx += 1
+                        if wanted_idx == len(ordered_tool_names):
+                            incorrect_tool_order = False
+                            print(f"[DEBUG]   ✅ order satisfied for {ordered_tool_names}")
+                            break
+                if incorrect_tool_order:
+                    print(f"[DEBUG]   ❌ order NOT satisfied for {ordered_tool_names}")
+
+            # If both selection and order are now correct we can stop checking other templates
+            if not incorrect_tool_selection and not incorrect_tool_order:
+                break
+
+        # --- 3) Resource‑type & error‑code checks ----------------------------------------
+        if not incorrect_tool_selection:                     # only check types if tools exist
+            error_codes, resource_types = self.get_error_codes(exec_res)
+            if all(rt in resource_types for rt in required_resource_types):
+                incorrect_resource_type = False
+            print(f"[DEBUG]   resource types seen → {resource_types}")
+            print(f"[DEBUG]   error codes captured → {error_codes}")
+
+        # --- Return structured result ----------------------------------------------------
+        return TaskFailureMode(
+            incorrect_tool_selection=incorrect_tool_selection,
+            incorrect_tool_order=incorrect_tool_order,
+            incorrect_resource_type=incorrect_resource_type,
+            error_codes=error_codes,
+        )
     
+
+    
+
     def get_error_codes(self, executionResult: ExecutionResult) -> List[str]:
         """Get the error codes from the execution result"""
         error_codes = []
