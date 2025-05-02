@@ -3,9 +3,10 @@ import os
 import requests # type: ignore
 import json
 from typing import Dict, Any
-from task_interface import TaskInterface, TaskResult, ExecutionResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 from dataclasses import asdict
-from dotenv import load_dotenv 
+from dotenv import load_dotenv
+import re
 
 
 
@@ -75,6 +76,8 @@ class EnterNewPatientTask(TaskInterface):
         )
         return execution_result
 
+
+
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
 
@@ -124,11 +127,42 @@ class EnterNewPatientTask(TaskInterface):
             )
             
 
-    def identify_failure_mode(self, executionResult: ExecutionResult) -> str:
-        if executionResult.task_success:
-            return "No failure mode"
-        else:
-            return "Failed to create patient"
+
+    def identify_failure_mode(self, taskResult: TaskResult) -> TaskFailureMode:
+        # Initialising the failure mode objcet
+        failure_mode = TaskFailureMode()
+
+        # No failure if task succeeded
+        if taskResult.task_success:
+            return failure_mode  # All fields default to False / None
+        
+        # n8n workflow execution success
+        exec_result = taskResult.execution_result
+        if not exec_result:
+            failure_mode.critical_error = True
+            return failure_mode
+        
+        # Detect specific error codes from tool outputs
+        error_codes = []
+        if exec_result.tool_calls:
+            for calls in exec_result.tool_calls.values():
+                for call in calls:
+                    out = call.get("output")
+                    if isinstance(out, str) and "error" in out.lower():
+                        if "status code" in out:
+                            # Extract status code from message
+                            parts = out.split("status code")
+                            if len(parts) > 1:
+                                code = parts[1].split()[0]
+                                error_codes.append(code)
+        if error_codes:
+            failure_mode.error_codes = error_codes
+
+
+
+
+
+
 
 if __name__ == "__main__":
     load_dotenv()
@@ -151,12 +185,12 @@ if __name__ == "__main__":
     task.prepare_test_data()
     n8n_execution_log = task.execute_n8n_agent()
     print("N8N RESPONSE TASK")
-    print(n8n_execution_log.tool_calls['createResource'])
-    print("EVAL TASK")
-    eval_results = task.validate_response(n8n_execution_log)
-    print(f'Eval response: TaskResult {eval_results}')
+    print(n8n_execution_log.tool_order)
+    #print("EVAL TASK")
+    #eval_results = task.validate_response(n8n_execution_log)
+    #print(f'Eval response: TaskResult {eval_results}')
     # save ExecutionResult object to a json file
-    with open("n8n_response.json", "w") as f:
-        json.dump(asdict(eval_results), f, indent=4)
+    #with open("n8n_response.json", "w") as f:
+    #    json.dump(asdict(eval_results), f, indent=4)
     
     

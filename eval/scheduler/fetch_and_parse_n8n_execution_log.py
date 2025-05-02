@@ -55,13 +55,15 @@ def fetch_and_parse_n8n_execution_log(execution_id: int, webhook_url: str, timeo
     # Workflow name (if present)
     workflow_name = _safe_get(log, ["workflowData", "name"]) or log.get("workflowId")
 
-    # 1. Node order
+    # 1. Node order (with duplicates if a tool is called multiple times)
     node_times: List[Tuple[str, int]] = []
     for name, blocks in run_data.items():
-        start = _safe_get(blocks, [0, "startTime"])
-        if isinstance(start, int):
-            node_times.append((name, start))
-    node_times.sort(key=lambda x: x[1])
+        for block in blocks:
+            start = _safe_get(block, ["startTime"])
+            if isinstance(start, int):
+                node_times.append((name, start))
+
+    node_times.sort(key=lambda x: x[1])  # Sort by actual call time
     tool_order = [n for n, _ in node_times]
 
     # 2. Final output

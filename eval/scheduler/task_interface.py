@@ -24,6 +24,7 @@ class ExecutionResult:
     tool_call_counts: Optional[Dict[str, int]] = None
     
 
+
 @dataclass
 class TaskResult:
     task_success: bool = False
@@ -32,6 +33,8 @@ class TaskResult:
     task_name: Optional[str] = None
     execution_result: Optional[ExecutionResult] = None
     
+
+
 @dataclass
 class TaskFailureMode:
     incorrect_tool_selection: Optional[bool] = False
@@ -39,6 +42,8 @@ class TaskFailureMode:
     incorrect_resource_type: Optional[bool] = False
     error_codes: Optional[List[str]] = None
     critical_error: Optional[bool] = False
+
+
 
 class TaskInterface(ABC):
     def __init__(self, fhir_server_url, n8n_url, n8n_execution_url):
@@ -96,6 +101,7 @@ class TaskInterface(ABC):
             url = next_url  # continue if next page exists, else break the loop
         return resource_ids
         
+
     def delete_resource(self, resource_type, resource_id):
         """Deletes a specific resource by ID, removing any references to it first.
         recursively delete all resources that reference the resource_id
@@ -163,6 +169,7 @@ class TaskInterface(ABC):
                 # Add a small delay to prevent overwhelming the server
                 time.sleep(0.1)
     
+
     def post_to_fhir(self,resource):
         """
         Posts a FHIR resource to the FHIR server.
@@ -202,29 +209,36 @@ class TaskInterface(ABC):
                 f"Failed to upsert {resource['resourceType']} with ID {resource['id']}: {response.status_code} {response.text}"
             )
             
+
     @abstractmethod
     def get_task_id(self) -> str:
         """Return the task ID"""
         pass
 
+
     @abstractmethod
     def get_task_name(self) -> str:
         """Return the task name"""
         pass
+
+
     @abstractmethod
     def get_prompt(self) -> str:
         """Return the prompt for the task"""
         pass
+
 
     @abstractmethod
     def prepare_test_data(self) -> None:
         """Prepare any necessary FHIR resources for the test"""
         pass
 
+
     def cleanup_test_data(self) -> None:
         """Clean up any test data created during the test"""
         self.delete_all_resources()
         
+
     def execute_n8n_agent(self) -> ExecutionResult:
         """Execute the task on n8n workflowand and return results"""
         prompt = self.get_prompt()
@@ -339,6 +353,8 @@ class TaskInterface(ABC):
     def validate_response(self, executionResult: ExecutionResult) -> TaskResult:
         """Validate the response using assertions"""
         pass
+    
+
     
     @abstractmethod
     def identify_failure_mode(self, executionResult: ExecutionResult) -> TaskFailureMode:
