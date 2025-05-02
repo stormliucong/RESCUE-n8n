@@ -7,7 +7,7 @@ from fetch_and_parse_n8n_execution_log import fetch_and_parse_n8n_execution_log
 import json
 import logging
 
-logging.basicConfig(level=logging.INFO, filename='task_interface.log', filemode='w')
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -53,9 +53,9 @@ class TaskInterface(ABC):
         self.N8N_AGENT_URL = n8n_url
         self.N8N_EXECUTION_URL = n8n_execution_url
         
-        print(f"FHIR_SERVER_URL: {self.FHIR_SERVER_URL}")
-        print(f"N8N_AGENT_URL: {self.N8N_AGENT_URL}")
-        print(f"N8N_EXECUTION_URL: {self.N8N_EXECUTION_URL}")
+        logger.debug(f"FHIR_SERVER_URL: {self.FHIR_SERVER_URL}")
+        logger.debug(f"N8N_AGENT_URL: {self.N8N_AGENT_URL}")
+        logger.debug(f"N8N_EXECUTION_URL: {self.N8N_EXECUTION_URL}")
         
         self.HEADERS = {
             "Content-Type": "application/fhir+json",
@@ -85,7 +85,7 @@ class TaskInterface(ABC):
         while url:
             response = requests.get(url, headers=self.HEADERS)
             if response.status_code != 200:
-                print(f"Failed to fetch {resource_type}: {response.status_code}")
+                logger.error(f"Failed to fetch {resource_type}: {response.status_code}")
                 break
             
             data = response.json()
@@ -113,8 +113,8 @@ class TaskInterface(ABC):
         rev_url = f"{self.FHIR_SERVER_URL}/{resource_type}?_id={resource_id}&_revinclude:iterate=*"
         response = requests.get(rev_url, headers=self.HEADERS)
         if response.status_code != 200:
-            print(response.json())
-            print(f"Failed to revinclude for {url}")
+            logger.error(f"Failed to revinclude for {url}")
+            logger.error(response.json())
             return
         bundle = response.json()
         entries = bundle.get("entry", [])
@@ -126,9 +126,8 @@ class TaskInterface(ABC):
                 self.delete_resource(child_type, child_id)
         
         # Now delete the resource itself
-        # print(f"Deleting {url}...")
         del_response = requests.delete(url, headers=self.HEADERS)
-        # print(f"DELETE {url}: {del_response.status_code}")
+        logger.debug(f"DELETE {url}: {del_response.status_code}")
         time.sleep(0.1)  # avoid overwhelming the server
         
         
@@ -158,14 +157,14 @@ class TaskInterface(ABC):
         ]
 
         for resource_type in deletion_order:
-            # print(f"\nProcessing {resource_type} resources...")
+            logger.debug(f"\nProcessing {resource_type} resources...")
             resource_ids = self.get_resource_ids(resource_type)
 
             if not resource_ids:
-                # print(f"No {resource_type} resources found.")
+                logger.debug(f"No {resource_type} resources found.")
                 continue
 
-            # print(f"Deleting {len(resource_ids)} {resource_type} resources...")
+            logger.debug(f"Deleting {len(resource_ids)} {resource_type} resources...")
             for resource_id in resource_ids:
                 self.delete_resource(resource_type, resource_id)
                 # Add a small delay to prevent overwhelming the server
@@ -203,12 +202,12 @@ class TaskInterface(ABC):
         response = requests.put(url, json=resource, headers=headers)
 
         if response.status_code in [200, 201]:
-            # print(
-            #     f"Successfully upserted {resource['resourceType']} with ID {resource['id']}"
-            # )
+            logger.debug(
+                f"Successfully upserted {resource['resourceType']} with ID {resource['id']}"
+            )
             return None
         else:
-            print(
+            logger.error(
                 f"Failed to upsert {resource['resourceType']} with ID {resource['id']}: {response.status_code} {response.text}"
             )
             return response
@@ -246,7 +245,7 @@ class TaskInterface(ABC):
     def execute_n8n_agent(self) -> ExecutionResult:
         """Execute the task on n8n workflowand and return results"""
         prompt = self.get_prompt()
-        print(prompt)
+        logger.debug(prompt)
         payload = {
             "prompt": prompt,
             "fhir_server_url": self.FHIR_SERVER_URL
@@ -303,7 +302,7 @@ class TaskInterface(ABC):
 
             
         except Exception as e:
-            print(f"Error fetching execution log: {e}")
+            logger.error(f"Error fetching execution log: {e}")
             result = {
                 "workflow_name": None,
                 #"raw_log": None,
@@ -344,10 +343,10 @@ class TaskInterface(ABC):
             json_str = response_msg[start:end]
             return json.loads(json_str)
         except (ValueError, json.JSONDecodeError):
-            print("Failed to parse JSON from response message.")
+            logger.error("Failed to parse JSON from response message.")
             return None
         except Exception as e:
-            print(f"Unexpected error while parsing JSON: {str(e)}")
+            logger.error(f"Unexpected error while parsing JSON: {str(e)}")
             return None
     
 
@@ -390,15 +389,15 @@ class TaskInterface(ABC):
 
         # --- Try every requirement set ---------------------------------------------------
         for template in required_tool_call_sets:
-            print(f"[DEBUG] analysing template → {template}")
+            logger.debug(f"analysing template → {template}")
 
             # ---------- 1) Tool‑selection check ----------
             if not all(tool in tool_order for tool in template):
-                print("[DEBUG]   ❌ missing tools, trying next template")
+                logger.debug("missing tools, trying next template")
                 continue
 
             incorrect_tool_selection = False
-            print("[DEBUG]   ✅ all required tools are present")
+            logger.debug(" All required tools are present")
 
             # ---------- 2) Order check (if any) ----------
             ordered_pairs = [(tool, idx)
@@ -409,7 +408,7 @@ class TaskInterface(ABC):
 
             if not ordered_tool_names:                       # no ordering constraint at all
                 incorrect_tool_order = False
-                print("[DEBUG]   ⚠️  template has no order constraints — automatically ok")
+                logger.debug("template has no order constraints — automatically ok")
             else:
                 # simple subsequence scan
                 wanted_idx = 0
@@ -418,10 +417,10 @@ class TaskInterface(ABC):
                         wanted_idx += 1
                         if wanted_idx == len(ordered_tool_names):
                             incorrect_tool_order = False
-                            print(f"[DEBUG]   ✅ order satisfied for {ordered_tool_names}")
+                            logger.debug(f"order satisfied for {ordered_tool_names}")
                             break
                 if incorrect_tool_order:
-                    print(f"[DEBUG]   ❌ order NOT satisfied for {ordered_tool_names}")
+                    logger.debug(f"order NOT satisfied for {ordered_tool_names}")
 
             # If both selection and order are now correct we can stop checking other templates
             if not incorrect_tool_selection and not incorrect_tool_order:
@@ -432,8 +431,8 @@ class TaskInterface(ABC):
             error_codes, resource_types = self.get_error_codes(exec_res)
             if all(rt in resource_types for rt in required_resource_types):
                 incorrect_resource_type = False
-            print(f"[DEBUG]   resource types seen → {resource_types}")
-            print(f"[DEBUG]   error codes captured → {error_codes}")
+            logger.debug(f"resource types seen → {resource_types}")
+            logger.debug(f"error codes captured → {error_codes}")
 
         # --- Return structured result ----------------------------------------------------
         return TaskFailureMode(
@@ -464,7 +463,7 @@ class TaskInterface(ABC):
                         except json.JSONDecodeError:
                             error_codes.append(output)
         except KeyError as e:
-            print(f"KeyError: {str(e)}")
+            logger.error(f"KeyError: {str(e)}")
         return error_codes, resource_types
        
             

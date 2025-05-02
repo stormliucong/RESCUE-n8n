@@ -301,10 +301,7 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
 
 
     def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
-
-        print("Running: IDENTIFY FAILURE MODE")
-        
-        # Sequences of ordered tools (set manually)
+                # Sequences of ordered tools (set manually)
         required_tool_call_sets = [{'createResource':1,'getAllResources':0, 'deleteResource':None}, {'updateResource':1, 'getAllResources':0}] # OR relationship
         required_resource_types = ["Slot", "Appointment"]
         
