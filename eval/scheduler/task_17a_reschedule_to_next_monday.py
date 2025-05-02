@@ -4,7 +4,7 @@ import time
 import requests
 from typing import Dict, Any
 from datetime import datetime, timedelta
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
 class RescheduleToNextMondayTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -181,7 +181,7 @@ Task: Reschedule John Doe's (PAT001) appointment to next Monday with Dr. Smith.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         # Find the current appointment
         params = {
             "patient": "Patient/PAT001",
@@ -231,9 +231,12 @@ Task: Reschedule John Doe's (PAT001) appointment to next Monday with Dr. Smith.
         response = requests.put(f"{self.FHIR_SERVER_URL}/Appointment/{current_appointment['id']}", headers=self.HEADERS, json=current_appointment)
         assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
         
-        return response.json()
+        return ExecutionResult(
+            execution_success=True,
+            response_msg=f"Appointment rescheduled successfully to next Monday at 9am with slot: {monday_slot['id']}"
+        )
 
-    def validate_response(self) -> TaskResult:
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
             # Verify that the current slot is free
             start_time = datetime.now()
@@ -248,12 +251,11 @@ Task: Reschedule John Doe's (PAT001) appointment to next Monday with Dr. Smith.
             response = requests.get(f"{self.FHIR_SERVER_URL}/Slot", headers=self.HEADERS, params=params)
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert 'entry' in response.json(), "Expected to find the current slot"
+            assert len(response.json()['entry']) == 1, "Expected to find exactly one slot"
             current_slot = response.json()['entry'][0]['resource']
-            response = requests.get(f"{self.FHIR_SERVER_URL}/Slot/{current_slot['id']}", headers=self.HEADERS)
-            assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
-            assert response.json()['status'] == 'free', "Expected current slot to be free"
+            assert current_slot['status'] == 'free', "Expected current slot to be free"
             
-            # Verify that the Monday slot is busy
+            # Verify that next Monday's slot is busy
             next_monday = datetime.now() + timedelta(days=(7 - datetime.now().weekday()) % 7)
             next_monday = next_monday.replace(hour=9, minute=0, second=0, microsecond=0)
             
@@ -263,10 +265,12 @@ Task: Reschedule John Doe's (PAT001) appointment to next Monday with Dr. Smith.
             }
             response = requests.get(f"{self.FHIR_SERVER_URL}/Slot", headers=self.HEADERS, params=params)
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
-            assert 'entry' in response.json(), "Expected to find the Monday slot"
-            assert response.json()['entry'][0]['resource']['status'] == 'busy', "Expected Monday slot to be busy"
+            assert 'entry' in response.json(), "Expected to find next Monday's slot"
+            assert len(response.json()['entry']) == 1, "Expected to find exactly one slot"
+            monday_slot = response.json()['entry'][0]['resource']
+            assert monday_slot['status'] == 'busy', "Expected Monday slot to be busy"
             
-            # Verify the appointment details
+            # Verify that the appointment is updated correctly
             params = {
                 "patient": "Patient/PAT001",
                 "status": "booked",
@@ -290,33 +294,34 @@ Task: Reschedule John Doe's (PAT001) appointment to next Monday with Dr. Smith.
             assert slot_start.weekday() == 0, "Expected appointment to be on Monday"
 
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data=response.json()
+                task_success=True,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
+            
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    
-    task = RescheduleToNextMondayTask(FHIR_SERVER_URL, N8N_URL)
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response()
-    print(eval_results) 
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )

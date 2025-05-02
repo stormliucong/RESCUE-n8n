@@ -3,7 +3,7 @@ import time
 import requests
 from typing import Dict, Any
 from datetime import datetime, timedelta
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
 class RemovePatientFromWaitlistTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -100,7 +100,7 @@ Task: Patient John Doe (PAT001) no longer wants to be on the waitlist. Remove th
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         # Find the waitlist appointment
         params = {
             "patient": "Patient/PAT001",
@@ -118,9 +118,12 @@ Task: Patient John Doe (PAT001) no longer wants to be on the waitlist. Remove th
         response = requests.put(f"{self.FHIR_SERVER_URL}/Appointment/{waitlist_appointment['id']}", headers=self.HEADERS, json=waitlist_appointment)
         assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
         
-        return response.json()
+        return ExecutionResult(
+            execution_success=True,
+            response_msg=f"Successfully removed patient from waitlist by cancelling appointment {waitlist_appointment['id']}"
+        )
 
-    def validate_response(self) -> TaskResult:
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
             # Verify that there are no waitlist appointments
             params = {
@@ -154,33 +157,33 @@ Task: Patient John Doe (PAT001) no longer wants to be on the waitlist. Remove th
             assert appointment['participant'][1]['actor']['reference'] == 'Practitioner/PROVIDER001', "Expected practitioner to be PROVIDER001"
 
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data=response.json()
+                task_success=True,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    
-    task = RemovePatientFromWaitlistTask(FHIR_SERVER_URL, N8N_URL)
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response()
-    print(eval_results) 
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )

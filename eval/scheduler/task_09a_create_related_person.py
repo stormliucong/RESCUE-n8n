@@ -2,7 +2,7 @@
 import os
 import requests
 from typing import Dict, Any
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
 class CreateRelatedPersonTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -35,7 +35,7 @@ Create a related person resource for the patient PAT001 with the following detai
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         related_person_payload = {
             "resourceType": "RelatedPerson",
             "patient": {"reference": "Patient/PAT001"},
@@ -57,58 +57,72 @@ Create a related person resource for the patient PAT001 with the following detai
             json=related_person_payload
         )
         
-        return response
+        if response.status_code != 201:
+            return ExecutionResult(
+                execution_success=False,
+                response_msg=f"Failed to create related person: {response.text}"
+            )
 
-    def validate_response(self, response: Any) -> TaskResult:
+        response_json = response.json()
+        return ExecutionResult(
+            execution_success=True,
+            response_msg=f"Created related person with ID {response_json.get('id')}"
+        )
+
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            assert response.status_code == 201, f"Expected status code 201, got {response.status_code}"
+            # Verify the related person was created correctly
+            response = requests.get(
+                f"{self.FHIR_SERVER_URL}/RelatedPerson",
+                headers=self.HEADERS,
+                params={"patient": "Patient/PAT001"}
+            )
+            
+            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
             
             response_json = response.json()
-            assert response_json["resourceType"] == "RelatedPerson", "Invalid resource type"
-            assert response_json["patient"]["reference"] == "Patient/PAT001", "Invalid patient reference"
-            assert response_json["birthDate"] == "1960-03-01", "Invalid birth date"
-            assert response_json["name"][0]["family"] == "Doe", "Invalid family name"
-            assert "Alice" in response_json["name"][0]["given"], "Invalid given name"
+            assert 'entry' in response_json, "Expected to find entry in the response"
+            assert len(response_json['entry']) > 0, "Expected to find at least one related person"
             
-            relationship = response_json["relationship"][0]
+            related_person = response_json['entry'][0]['resource']
+            assert related_person["resourceType"] == "RelatedPerson", "Invalid resource type"
+            assert related_person["patient"]["reference"] == "Patient/PAT001", "Invalid patient reference"
+            assert related_person["birthDate"] == "1960-03-01", "Invalid birth date"
+            assert related_person["name"][0]["family"] == "Doe", "Invalid family name"
+            assert "Alice" in related_person["name"][0]["given"], "Invalid given name"
+            
+            relationship = related_person["relationship"][0]
             assert relationship["coding"][0]["code"] == "MOTHER", "Invalid relationship code"
 
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data={
-                    "related_person": response_json,
-                    "relationship": relationship
-                }
+                task_success=True,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response.json() if hasattr(response, 'json') else None
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
-            
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    
-    task = CreateRelatedPersonTask(FHIR_SERVER_URL, N8N_URL)
-    print(task.get_task_id())
-    print(task.get_task_name())
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response(human_response)
-    print(eval_results)
-    # n8n_response = task.execute_n8n_agent()
-    # print(n8n_response)
+
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )

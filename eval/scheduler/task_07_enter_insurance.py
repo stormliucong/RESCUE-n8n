@@ -2,7 +2,7 @@
 import os
 import requests
 from typing import Dict, Any
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
 class EnterInsuranceTask(TaskInterface):
     def get_task_id(self) -> str:
@@ -44,7 +44,7 @@ Task: Add insurance information for a patient
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         try:
             # Step 1: Create RelatedPerson (father)
             related_person_payload = {
@@ -63,6 +63,13 @@ Task: Add insurance information for a patient
                 headers=self.HEADERS,
                 json=related_person_payload
             )
+            
+            if related_person_response.status_code != 201:
+                return ExecutionResult(
+                    execution_success=False,
+                    response_msg=f"Failed to create related person: {related_person_response.text}"
+                )
+            
             related_person_id = related_person_response.json()['id']
 
             # Step 2: Find insurance organization
@@ -72,6 +79,12 @@ Task: Add insurance information for a patient
                 headers=self.HEADERS,
                 params=org_params
             )
+            
+            if org_response.status_code != 200:
+                return ExecutionResult(
+                    execution_success=False,
+                    response_msg=f"Failed to find insurance organization: {org_response.text}"
+                )
 
             # Step 3: Create Coverage
             coverage_payload = {
@@ -114,89 +127,87 @@ Task: Add insurance information for a patient
                 headers=self.HEADERS,
                 json=coverage_payload
             )
+            
+            if coverage_response.status_code != 201:
+                return ExecutionResult(
+                    execution_success=False,
+                    response_msg=f"Failed to create coverage: {coverage_response.text}"
+                )
 
-            return {
-                "related_person": related_person_response,
-                "organization": org_response,
-                "coverage": coverage_response
-            }
+            return ExecutionResult(
+                execution_success=True,
+                response_msg=f"Successfully created insurance coverage with ID {coverage_response.json().get('id')}"
+            )
 
         except Exception as e:
-            raise Exception(f"Failed to execute task: {str(e)}")
+            return ExecutionResult(
+                execution_success=False,
+                response_msg=f"Failed to execute task: {str(e)}"
+            )
 
-    def validate_response(self, response: Dict[str, Any]) -> TaskResult:
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Validate RelatedPerson creation
-            related_person_response = response["related_person"]
-            assert related_person_response.status_code == 201, f"Expected status code 201 for RelatedPerson, got {related_person_response.status_code}"
-            related_person_json = related_person_response.json()
-            assert related_person_json["resourceType"] == "RelatedPerson", "Invalid resource type for RelatedPerson"
-            assert related_person_json["patient"]["reference"] == "Patient/PAT001", "Invalid patient reference in RelatedPerson"
-
-            # Validate Organization search
-            org_response = response["organization"]
-            assert org_response.status_code == 200, f"Expected status code 200 for Organization search, got {org_response.status_code}"
-            org_json = org_response.json()
-            assert org_json["total"] >= 1, "Organization not found"
-            assert org_json["entry"][0]["resource"]["name"] == "Acme Health Insurance", "Invalid organization name"
-
-            # Validate Coverage creation
-            coverage_response = response["coverage"]
-            assert coverage_response.status_code == 201, f"Expected status code 201 for Coverage, got {coverage_response.status_code}"
-            coverage_json = coverage_response.json()
-            assert coverage_json["resourceType"] == "Coverage", "Invalid resource type for Coverage"
-            assert coverage_json["status"] == "active", "Coverage status should be active"
-            assert coverage_json["period"]["start"] == "2024-01-01", "Invalid coverage start date"
-            assert coverage_json["period"]["end"] == "2025-12-31", "Invalid coverage end date"
+            # Verify the insurance coverage was created correctly
+            response = requests.get(
+                f"{self.FHIR_SERVER_URL}/Coverage",
+                headers=self.HEADERS,
+                params={"beneficiary": "Patient/PAT001", "status": "active"}
+            )
             
-            # Validate Coverage details
+            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
+            
+            response_json = response.json()
+            assert 'total' in response_json, "Expected to find total in the response"
+            assert response_json['total'] >= 1, f"Expected at least one insurance, but got {response_json['total']}"
+            assert 'entry' in response_json, "Expected to find entry in the response"
+            assert len(response_json['entry']) >= 1, f"Expected at least one insurance, but got {len(response_json['entry'])}"
+
+            # Validate coverage details
+            coverage = response_json['entry'][0]['resource']
+            assert coverage['resourceType'] == "Coverage", "Resource type must be Coverage"
+            assert coverage['status'] == "active", "Coverage must be active"
+            assert coverage['beneficiary']['reference'] == "Patient/PAT001", "Invalid beneficiary reference"
+            assert coverage['insurer']['reference'] == "Organization/ORG-INSURER001", "Invalid insurer reference"   
+            # Validate coverage class details
             found_group = False
             found_plan = False
-            for class_item in coverage_json["class"]:
-                if class_item["value"] == "Group-98765":
+            for class_item in coverage['class']:
+                if class_item['value'] == "Group-98765":
                     found_group = True
-                elif class_item["value"] == "Plan-GOLD123":
+                elif class_item['value'] == "Plan-GOLD123":
                     found_plan = True
             assert found_group, "Group ID not found in coverage"
             assert found_plan, "Plan ID not found in coverage"
 
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data={
-                    "related_person": related_person_response.json(),
-                    "organization": org_response.json(),
-                    "coverage": coverage_response.json()
-                }
+                task_success=True,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    
-    task = EnterInsuranceTask(FHIR_SERVER_URL, N8N_URL)
-    print(task.get_task_id())
-    print(task.get_task_name())
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response(human_response)
-    print(eval_results)
-    # n8n_response = task.execute_n8n_agent()
-    # print(n8n_response)
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )

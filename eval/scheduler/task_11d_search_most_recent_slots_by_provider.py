@@ -3,18 +3,18 @@ import os
 import requests
 from typing import Dict, Any
 from datetime import datetime, timedelta
-from task_interface import TaskInterface, TaskResult
+from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
 
-class FindSlotsByServiceTask(TaskInterface):
+class FindSlotsByProviderTask(TaskInterface):
     def get_task_id(self) -> str:
-        return "11c"
+        return "11d"
 
     def get_task_name(self) -> str:
-        return "Find Slots by Service"
+        return "Find Slots by Provider"
 
     def get_prompt(self) -> str:
         return """
-Task: Find available slots by service
+Task: Find available slots by provider
 
 Find the most recent available slots for Dr. Smith John
 """
@@ -52,7 +52,7 @@ Find the most recent available slots for Dr. Smith John
                     {"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]},
                     {"coding": [{"system": "urn:ietf:bcp:47", "code": "es"}]}
                 ],
-                "address": [{"use": "work", "line": ["789 Pine St"], "city": "Los Angeles", "state": "CA"}],
+                "address": [{"use" : "work", "line": ["789 Pine St"], "city": "Los Angeles", "state": "CA"}],
             }
 
             practitioner4 = {
@@ -64,7 +64,7 @@ Find the most recent available slots for Dr. Smith John
                     {"coding": [{"system": "urn:ietf:bcp:47", "code": "en"}]},
                     {"coding": [{"system": "urn:ietf:bcp:47", "code": "hi"}]}
                 ],
-                "address": [{"use": "work", "line": ["321 Elm St"], "city": "Chicago", "state": "IL"}],
+                "address": [{"use" : "work", "line": ["321 Elm St"], "city": "Chicago", "state": "IL"}],
             }
 
             # Upsert all practitioners to FHIR server
@@ -150,8 +150,7 @@ Find the most recent available slots for Dr. Smith John
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-    
-    def execute_human_agent(self) -> Dict:
+    def execute_human_agent(self) -> ExecutionResult:
         # Find Dr. Smith John
         practitioner_params = {
             "family": "John",
@@ -161,12 +160,22 @@ Find the most recent available slots for Dr. Smith John
             f"{self.FHIR_SERVER_URL}/Practitioner",
             headers=self.HEADERS,
             params=practitioner_params
-        ).json()
+        )
+        
+        if practitioner_response.status_code != 200:
+            return ExecutionResult(
+                execution_success=False,
+                response_msg=f"Failed to search practitioner: {practitioner_response.text}"
+            )
 
-        if 'entry' not in practitioner_response:
-            return {}
+        practitioner_json = practitioner_response.json()
+        if 'entry' not in practitioner_json:
+            return ExecutionResult(
+                execution_success=False,
+                response_msg="Practitioner not found"
+            )
 
-        practitioner_id = practitioner_response['entry'][0]['resource']['id']
+        practitioner_id = practitioner_json['entry'][0]['resource']['id']
 
         # Get schedules for this practitioner
         schedule_params = {
@@ -176,11 +185,18 @@ Find the most recent available slots for Dr. Smith John
             f"{self.FHIR_SERVER_URL}/Schedule",
             headers=self.HEADERS,
             params=schedule_params
-        ).json()
+        )
+        
+        if schedules_response.status_code != 200:
+            return ExecutionResult(
+                execution_success=False,
+                response_msg=f"Failed to search schedules: {schedules_response.text}"
+            )
 
         all_slots = []
-        if 'entry' in schedules_response:
-            for schedule in schedules_response['entry']:
+        schedules_json = schedules_response.json()
+        if 'entry' in schedules_json:
+            for schedule in schedules_json['entry']:
                 # Get free slots for this schedule
                 slot_params = {
                     "schedule": f"Schedule/{schedule['resource']['id']}",
@@ -191,48 +207,118 @@ Find the most recent available slots for Dr. Smith John
                     f"{self.FHIR_SERVER_URL}/Slot",
                     headers=self.HEADERS,
                     params=slot_params
-                ).json()
+                )
                 
-                if 'entry' in slots_response:
-                    all_slots.extend(slots_response['entry'])
+                if slots_response.status_code != 200:
+                    return ExecutionResult(
+                        execution_success=False,
+                        response_msg=f"Failed to search slots: {slots_response.text}"
+                    )
+                
+                slots_json = slots_response.json()
+                if 'entry' in slots_json:
+                    all_slots.extend(slots_json['entry'])
 
-        # Return the earliest slot if any found
-        return all_slots[0] if all_slots else {}
+        if not all_slots:
+            return ExecutionResult(
+                execution_success=False,
+                response_msg="No available slots found for Dr. Smith John"
+            )
 
+        return ExecutionResult(
+            execution_success=True,
+            response_msg=f"Found {len(all_slots)} available slots for Dr. Smith John"
+        )
 
-    def validate_response(self, response: Any) -> TaskResult:
+    def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            assert response == {}, f"Expected empty response, got {response}"
+            # Find Dr. Smith John
+            practitioner_params = {
+                "family": "John",
+                "given": "Smith"
+            }
+            practitioner_response = requests.get(
+                f"{self.FHIR_SERVER_URL}/Practitioner",
+                headers=self.HEADERS,
+                params=practitioner_params
+            )
+            
+            assert practitioner_response.status_code == 200, f"Expected status code 200, got {practitioner_response.status_code}"
+            
+            practitioner_json = practitioner_response.json()
+            assert 'entry' in practitioner_json, "Expected to find practitioner"
+            
+            practitioner_id = practitioner_json['entry'][0]['resource']['id']
+            assert practitioner_id == "PROVIDER001", f"Expected PROVIDER001, got {practitioner_id}"
+
+            # Get schedules for this practitioner
+            schedule_params = {
+                "actor": f"Practitioner/{practitioner_id}"
+            }
+            schedules_response = requests.get(
+                f"{self.FHIR_SERVER_URL}/Schedule",
+                headers=self.HEADERS,
+                params=schedule_params
+            )
+            
+            assert schedules_response.status_code == 200, f"Expected status code 200, got {schedules_response.status_code}"
+            
+            all_slots = []
+            schedules_json = schedules_response.json()
+            assert 'entry' in schedules_json, "Expected to find entry in schedules response"
+            
+            for schedule in schedules_json['entry']:
+                # Get free slots for this schedule
+                slot_params = {
+                    "schedule": f"Schedule/{schedule['resource']['id']}",
+                    "status": "free",
+                    "_sort": "start"
+                }
+                slots_response = requests.get(
+                    f"{self.FHIR_SERVER_URL}/Slot",
+                    headers=self.HEADERS,
+                    params=slot_params
+                )
+                
+                assert slots_response.status_code == 200, f"Expected status code 200, got {slots_response.status_code}"
+                slots_json = slots_response.json()
+                if 'entry' in slots_json:
+                    all_slots.extend(slots_json['entry'])
+
+            assert len(all_slots) > 0, "Expected to find at least one slot"
+            for slot in all_slots:
+                assert slot['resource']['status'] == "free", "Expected to find free slot"
+                assert slot['resource']['schedule']['reference'] == "Schedule/SCHEDULE001", "Expected slot to be from Dr. Smith's schedule"
+            
             return TaskResult(
-                success=True,
-                error_message=None,
-                response_data={"slots": response}
+                task_success=True,
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
         except AssertionError as e:
             return TaskResult(
-                success=False,
-                error_message=str(e),
-                response_data=response
+                task_success=False,
+                assertion_error_message=str(e),
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
         except Exception as e:
             return TaskResult(
-                success=False,
-                error_message=f"Unexpected error: {str(e)}",
-                response_data=response
+                task_success=False,
+                assertion_error_message=f"Unexpected error: {str(e)}",
+                task_id=self.get_task_id(),
+                task_name=self.get_task_name(),
+                execution_result=execution_result
             )
 
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    
-    task = FindSlotsByServiceTask(FHIR_SERVER_URL, N8N_URL)
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response(human_response)
-    print(eval_results)
-    # n8n_response = task.execute_n8n_agent()
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )
