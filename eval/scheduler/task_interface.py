@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 import time
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple 
 import requests # type: ignore
 from dataclasses import dataclass
 from fetch_and_parse_n8n_execution_log import fetch_and_parse_n8n_execution_log
@@ -333,6 +333,78 @@ class TaskInterface(ABC):
         except Exception as e:
             print(f"Unexpected error while parsing JSON: {str(e)}")
             return None
+    
+    def check_tool_calls(self, task_result: TaskResult, required_tool_calls: List[List[str]], required_tool_orders: List[List[str]], required_resource_types: List[str]) -> TaskFailureMode:
+        """Check the tool calls and return the result"""
+        if task_result.task_success:
+            return None
+        else:
+            execution_result = task_result.execution_result
+            if execution_result is None:
+                return None
+            
+            incorrect_tool_selection = True
+            incorrect_tool_order = True
+            incorrect_resource_type = True
+            error_codes = None
+            
+            if execution_result.tool_calls is not None:
+                for required_tool_call in required_tool_calls:
+                    # OR condition
+                    i = 0
+                    for required_tool_call_x in required_tool_call:
+                        # AND condition
+                        if required_tool_call_x in execution_result.tool_calls:
+                            i += 1
+                        if i == len(required_tool_call):
+                            incorrect_tool_selection = False
+
+                if incorrect_tool_selection == False:
+                    # AND condition
+                    i = 0
+                    for required_tool_order in required_tool_orders:
+                        first_required_tool_list= execution_result.tool_calls[required_tool_order[0]]
+                        second_required_tool_list = execution_result.tool_calls[required_tool_order[1]]
+                        # order by 'startTime' a loose criteria
+                        first_required_tool_first_start = sorted(first_required_tool_list, key=lambda x: x['startTime'])[0]
+                        second_required_tool_last_start = sorted(second_required_tool_list, key=lambda x: x['startTime'],reverse=True)[0]
+                        if second_required_tool_last_start['startTime'] > first_required_tool_first_start['startTime']:
+                            i += 1
+                    if i == len(required_tool_orders):
+                        incorrect_tool_order = False
+                    
+                    # collect all resource types from the tool calls
+                    error_codes, resource_types = self.get_error_codes(execution_result)
+                    if "Slot" in resource_types and "Appointment" in resource_types:
+                        incorrect_resource_type = False
+            
+            return TaskFailureMode(
+                incorrect_tool_selection=incorrect_tool_selection,
+                incorrect_tool_order=incorrect_tool_order,
+                incorrect_resource_type=incorrect_resource_type,
+                error_codes=error_codes
+            )
+    
+    def get_error_codes(self, executionResult: ExecutionResult) -> List[str]:
+        """Get the error codes from the execution result"""
+        error_codes = []
+        resource_types = []
+        tools = ['createResource', 'updateResource', 'deleteResource', 'getAllResources', 'getResource']
+        try:
+            # loop through all tool calls
+            for tool in executionResult.tool_calls.keys():
+                if tool in tools:
+                    resource_types.append(executionResult.tool_calls[tool][-1]["input"]['resourceType'])
+                    output = executionResult.tool_calls[tool][-1]['output']
+                    # Check whether the output is a json object
+                    if isinstance(output, str):
+                        try:
+                            json.loads(output)
+                        except json.JSONDecodeError:
+                            error_codes.append(output)
+        except KeyError as e:
+            print(f"KeyError: {str(e)}")
+        return error_codes, resource_types
        
             
     

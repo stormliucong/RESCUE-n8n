@@ -294,84 +294,19 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
                 execution_result=execution_result,
             )
     
-    def identify_failure_mode(self, executionResult: ExecutionResult) -> TaskFailureMode:
-        if executionResult.task_success:
-            return None
-        else:
-            incorrect_tool_selection = True
-            if 'createResource' in executionResult.tool_calls and 'deleteResource' in executionResult.tool_calls and 'getAllResources' in executionResult.tool_calls:
-                incorrect_tool_selection = True
-            if 'updateResource' in executionResult.tool_calls and 'getAllResources' in executionResult.tool_calls:
-                incorrect_tool_selection = True
-            
-            incorrect_tool_order = True
-            # getAllResources should be called before 'updatedResource' or 'createResource'
-            # tool_calls is a list of ordered tools
-            first_getAllResources_index = [i for i, x in enumerate(executionResult.tool_calls) if x == 'getAllResources'][0]
-            if 'updateResource' in executionResult.tool_calls:
-                first_updateResource_index = [i for i, x in enumerate(executionResult.tool_calls) if x == 'updateResource'][0]
-                if first_updateResource_index > first_getAllResources_index:
-                    incorrect_tool_order = True
-            else:
-                first_createResource_index = [i for i, x in enumerate(executionResult.tool_calls) if x == 'createResource'][0]
-                if first_createResource_index > first_getAllResources_index:
-                    incorrect_tool_order = True
-
-            incorrect_resource_type = True
-            # collect all resource types from the tool calls
-            # function can be reused.
-            resource_types = []
-            error_codes = []
-            tools = ['createResource', 'updateResource', 'deleteResource', 'getAllResources', 'getResource']
-            try:
-                for tool_call in executionResult.tool_calls:
-                    for tool in tools:
-                        if tool in tool_call:
-                            resource_types.append(tool_call['createResource'][-1]["input"]['resourceType'])
-                            output = tool_call['createResource'][-1]["input"]['output']
-                            # Check whether the output is a json object
-                            if isinstance(output, str):
-                                try:
-                                    json.loads(output)
-                                except json.JSONDecodeError:
-                                    error_codes.append(output)
-            except KeyError as e:
-                print(f"KeyError: {str(e)}")
-                
-            if "Slot" in resource_types and "Appointment" in resource_types:
-                incorrect_resource_type = False
-            
-            
-            return TaskFailureMode(
-                incorrect_tool_selection: incorrect_tool_selection
-                incorrect_tool_order: incorrect_tool_order
-                incorrect_resource_type: incorrect_resource_type
-                error_codes: error_codes
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        
+        required_tool_calls = [['createResource','getAllResources', 'deleteResource'], ['updateResource', 'getAllResources']]
+        required_tool_order = [['getAllResources', 'updateResource'], ['getAllResources', 'createResource']]
+        required_resource_types = ["Slot", "Appointment"]
+        
+        task_failure_mode = self.check_tool_calls(task_result, required_tool_calls, required_tool_order, required_resource_types)
+        if task_failure_mode is None:
+            task_failure_mode = TaskFailureMode(
+                incorrect_tool_selection=False,
+                incorrect_tool_order=False,
+                incorrect_resource_type=False,
+                error_codes=None
             )
-            
-
-
-
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
-    # Initialise task
-    task = RescheduleWithAnotherProviderTask(FHIR_SERVER_URL, N8N_URL)
-    task.cleanup_test_data()
-    task.prepare_test_data()
-
-    # Comment when needed
-    print("HUMAN EXECUTION")
-    human_response = task.execute_human_agent()
-
-    #n8n_execution_log = task.execute_n8n_agent()
-    #print("N8N RESPONSE TASK")
-    #print(n8n_execution_log.tool_calls['createResource'])
-    #print("EVAL TASK")
-
-    eval_results = task.validate_response()
-    print(eval_results) 
+        return task_failure_mode
+        
