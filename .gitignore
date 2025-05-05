@@ -17,3 +17,7 @@ __pycache__/
 node_modules/
 ui/node_modules/
 
+eval/scheduler/task_17b_n8n_response.json
+eval/scheduler/task_1_n8n_response.json
+.vscode/launch.json
+eval/scheduler/nohup.out
