@@ -1,0 +1,8 @@
+{
+    "incorrect_tool_selection": false,
+    "incorrect_tool_order": false,
+    "incorrect_resource_type": false,
+    "error_codes": [
+        "There was an error: \"Request failed with status code 400\""
+    ]
+}
