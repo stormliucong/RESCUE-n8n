@@ -298,19 +298,20 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
                 execution_result=execution_result,
             )
             
-    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
-                # Sequences of ordered tools (set manually)
-        required_tool_call_sets = [{'createResource':1,'getAllResources':0, 'deleteResource':None}, {'updateResource':1, 'getAllResources':0}] # OR relationship
-        required_resource_types = ["Slot", "Appointment"]
+
+    # def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+    #     # Sequences of ordered tools (set manually)
+    #     required_tool_call_sets = [{'createResource':1,'getAllResources':0, 'deleteResource':None}, {'updateResource':1, 'getAllResources':0}] # OR relationship
+    #     required_resource_types = ["Slot", "Appointment"]
         
-        task_failure_mode = self.check_tool_calls(task_result, required_tool_call_sets, required_resource_types)
-        if task_failure_mode is None:
-            task_failure_mode = TaskFailureMode(
-                incorrect_tool_selection=False,
-                incorrect_tool_order=False,
-                incorrect_resource_type=False,
-                error_codes=None
-            )
+    #     task_failure_mode = self.check_tool_calls(task_result, required_tool_call_sets, required_resource_types)
+    #     if task_failure_mode is None:
+    #         task_failure_mode = TaskFailureMode(
+    #             incorrect_tool_selection=False,
+    #             incorrect_tool_order=False,
+    #             incorrect_resource_type=False,
+    #             error_codes=None
+    #         )
             
-        return task_failure_mode
+    #     return task_failure_mode
         
