@@ -47,11 +47,18 @@ class TaskFailureMode:
 
 
 class TaskInterface(ABC):
-    def __init__(self, fhir_server_url, n8n_url, n8n_execution_url):
+    def __init__(self, fhir_server_url, n8n_url, n8n_execution_url, required_tool_call_sets=None, required_resource_types=None):
 
         self.FHIR_SERVER_URL = fhir_server_url
         self.N8N_AGENT_URL = n8n_url
         self.N8N_EXECUTION_URL = n8n_execution_url
+
+        # Eval parameters
+        self.required_tool_call_sets = required_tool_call_sets or []
+        self.required_resource_types = required_resource_types or []
+
+        print(f"INIT: {required_tool_call_sets=}, {required_resource_types=}")
+
         
         logger.debug(f"FHIR_SERVER_URL: {self.FHIR_SERVER_URL}")
         logger.debug(f"N8N_AGENT_URL: {self.N8N_AGENT_URL}")
@@ -476,8 +483,27 @@ class TaskInterface(ABC):
     
 
     
-    @abstractmethod
-    def identify_failure_mode(self, executionResult: ExecutionResult) -> TaskFailureMode:
-        """Identify the failure mode of the execution"""
-        pass
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        """
+        Default implementation using metadata from YAML.
+        Override if task-specific logic is needed.
+        """
+        if not self.required_tool_call_sets and not self.required_resource_types:
+            return TaskFailureMode()  # Nothing to check against
+
+        failure_mode = self.check_tool_calls(
+            task_result,
+            self.required_tool_call_sets,
+            self.required_resource_types
+        )
+
+        if failure_mode is None:
+            failure_mode = TaskFailureMode(
+                incorrect_tool_selection=False,
+                incorrect_tool_order=False,
+                incorrect_resource_type=False,
+                error_codes=None
+            )
+
+        return failure_mode
 

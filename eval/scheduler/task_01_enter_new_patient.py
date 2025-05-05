@@ -128,32 +128,32 @@ class EnterNewPatientTask(TaskInterface):
             
 
 
-    def identify_failure_mode(self, taskResult: TaskResult) -> TaskFailureMode:
-        # Initialising the failure mode objcet
-        failure_mode = TaskFailureMode()
+    # def identify_failure_mode(self, taskResult: TaskResult) -> TaskFailureMode:
+    #     # Initialising the failure mode objcet
+    #     failure_mode = TaskFailureMode()
 
-        # No failure if task succeeded
-        if taskResult.task_success:
-            return failure_mode  # All fields default to False / None
+    #     # No failure if task succeeded
+    #     if taskResult.task_success:
+    #         return failure_mode  # All fields default to False / None
         
-        # n8n workflow execution success
-        exec_result = taskResult.execution_result
-        if not exec_result:
-            failure_mode.critical_error = True
-            return failure_mode
+    #     # n8n workflow execution success
+    #     exec_result = taskResult.execution_result
+    #     if not exec_result:
+    #         failure_mode.critical_error = True
+    #         return failure_mode
         
-        # Detect specific error codes from tool outputs
-        error_codes = []
-        if exec_result.tool_calls:
-            for calls in exec_result.tool_calls.values():
-                for call in calls:
-                    out = call.get("output")
-                    if isinstance(out, str) and "error" in out.lower():
-                        if "status code" in out:
-                            # Extract status code from message
-                            parts = out.split("status code")
-                            if len(parts) > 1:
-                                code = parts[1].split()[0]
-                                error_codes.append(code)
-        if error_codes:
-            failure_mode.error_codes = error_codes
+    #     # Detect specific error codes from tool outputs
+    #     error_codes = []
+    #     if exec_result.tool_calls:
+    #         for calls in exec_result.tool_calls.values():
+    #             for call in calls:
+    #                 out = call.get("output")
+    #                 if isinstance(out, str) and "error" in out.lower():
+    #                     if "status code" in out:
+    #                         # Extract status code from message
+    #                         parts = out.split("status code")
+    #                         if len(parts) > 1:
+    #                             code = parts[1].split()[0]
+    #                             error_codes.append(code)
+    #     if error_codes:
+    #         failure_mode.error_codes = error_codes
