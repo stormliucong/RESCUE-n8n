@@ -34,7 +34,7 @@ def load_tasks_from_config(config_path):
         task_classes.append(cls)
 
     return task_classes
-class_list = load_tasks_from_config("run_eval.yaml")
+# class_list = load_tasks_from_config("run_eval.yaml")
 logger.info(f"Running eval with {len(class_list)} tasks")
 agent = "n8n"
 logger.info(f"Running eval with agent: {agent}")
