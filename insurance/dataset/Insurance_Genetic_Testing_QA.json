@@ -1,166 +1,99 @@
 {
     "questions": [
         {
+            "id": "Q0",
+            "question": "What is the requested genetic test? Please specify the name, gene content if known.",
+            "options": ["Free text answer"]
+        },
+        {
             "id": "Q1",
             "question": "Does the patient's age meet the policy's coverage criteria for this genetic test?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ]
+            "options": ["Yes", "No", "Not specified"]
         },
         {
             "id": "Q2",
             "question": "Was the test ordered by a specialist or provider type approved by the policy?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ]
+            "options": ["Yes", "No", "Not specified"]
         },
         {
             "id": "Q3",
-            "question": "Does the patient\u2019s clinical indication meet the policy\u2019s criteria for this genetic test?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ]
+            "question": "Does the patient’s clinical presentation meet the policy’s definition of medical necessity for this genetic test?",
+            "options": ["Yes", "No"]
         },
         {
             "id": "Q4",
             "question": "According to the policy, does the patient's clinical presentation meet any recognized clinical guidelines that support the use of this genetic test?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ],
-            "additional_options_if_yes": [
-                "ACMG",
-                "NCCN",
-                "ASCO",
-                "USPSTF",
-                "ISPD",
-                "Other",
-                "None of the above"
-            ]
+            "options": ["Yes", "No"],
+            "additional_options_if_yes": ["ACMG", "NCCN", "ASCO", "USPSTF", "ISPD", "None of the above"]
         },
         {
             "id": "Q5",
             "question": "Has the patient completed prerequisite evaluations required by the policy (e.g., CMA, panels)?",
-            "options": [
-                "Yes",
-                "No",
-                "Not required"
-            ]
+            "options": ["Yes", "No", "Not required"]
         },
         {
             "id": "Q6",
             "question": "Has prior genetic testing ruled out diagnoses that would make this test redundant under the policy?",
-            "options": [
-                "Yes",
-                "No",
-                "Unknown"
-            ]
+            "options": ["Yes", "No"]
         },
         {
             "id": "Q7",
             "question": "Will this test impact clinical management according to the policy's definition of medical necessity?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ]
+            "options": ["Yes", "No"]
         },
         {
             "id": "Q8",
-            "question": "According to the policy, is this test excluded if a more targeted or specific genetic test is available and clinically appropriate for this patient?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ]
+            "question": "According to the policy, is this test excluded if a more targeted or specific genetic test (e.g., single gene or smaller panel) is available and clinically appropriate for this patient?",
+            "options": ["Yes", "No"]
         },
         {
             "id": "Q9",
             "question": "Does the policy consider family history or consanguinity as supporting factors for coverage?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ]
+            "options": ["Yes", "No", "Not specified"],
+            "additional_options_if_yes": ["Yes", "No"]
         },
         {
             "id": "Q10",
             "question": "Is this test intended for screening purposes, and is screening covered under the policy?",
-            "options": [
-                "Yes",
-                "No",
-                "Only in certain risk cases"
-            ]
+            "options": ["Yes", "No"],
+            "additional_options_if_no": ["Diagnostic", "Risk Assessment", "Predictive", "Other"]
         },
         {
             "id": "Q11",
             "question": "Does the policy require genetic counseling prior to or after this test, and was it provided?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ]
+            "options": ["Yes", "No", "Not specified"]
         },
         {
             "id": "Q12",
             "question": "According to the policy, is repeat testing (e.g. reanalysis, follow-up testing) allowed for this patient scenario?",
-            "options": [
-                "Yes",
-                "No",
-                "Only under certain conditions"
-            ]
+            "options": ["Yes", "No"]
         },
         {
             "id": "Q13",
             "question": "Is prior authorization required for this test according to the policy?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ]
+            "options": ["Yes", "No", "Not specified"]
         },
         {
             "id": "Q14",
             "question": "Is the CPT code for this test listed and covered in the policy?",
-            "options": [
-                "Yes",
-                "No",
-                "Not listed"
-            ],
+            "options": ["Yes", "No", "Not listed"],
             "additional_input_if_yes": "Please specify the CPT code."
         },
         {
             "id": "Q15",
             "question": "Does the patient have any special context covered in the policy (e.g., prenatal testing, pharmacogenetic testing, tumor testing, urgent testing)?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ],
+            "options": ["Yes", "No"],
             "additional_input_if_yes": "Please describe briefly."
         },
         {
             "id": "Q16",
             "question": "Final decision: Based on all policy criteria and patient information, is this test covered for this patient according to the insurance policy?",
-            "options": [
-                "Yes",
-                "No",
-                "Not specified"
-            ]
+            "options": ["Yes", "No"]
         },
         {
             "id": "Q17",
             "question": "What steps must be followed under the policy to submit the claim?",
-            "options": [
-                "Free text answer"
-            ]
+            "options": ["Free text answer"]
         }
     ]
 }
