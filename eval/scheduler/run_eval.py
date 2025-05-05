@@ -1,14 +1,14 @@
 from dataclasses import asdict
 import logging.config
 from dotenv import load_dotenv # type: ignore
-from task_01_enter_new_patient import EnterNewPatientTask
-from task_17b_reschedule_with_another_provider import RescheduleWithAnotherProviderTask
 import os
 import json
 import logging
 import yaml
 import importlib
+
 logging.config.fileConfig('logging.ini')
+
 logger = logging.getLogger(__name__)
 
 load_dotenv()
@@ -20,28 +20,60 @@ HEADERS = {
     "Accept": "application/fhir+json"
 }
 
+
 def load_tasks_from_config(config_path):
     with open(config_path, 'r') as f:
         config = yaml.safe_load(f)
 
-    task_classes = []
+    task_configs = []
     for task in config.get('tasks', []):
         module_name = task['module']
         class_name = task['class']
+        required_tool_call_sets = task.get('required_tool_call_sets', [])
+        required_resource_types = task.get('required_resource_types', [])
 
         module = importlib.import_module(module_name)
         cls = getattr(module, class_name)
-        task_classes.append(cls)
 
-    return task_classes
-# class_list = load_tasks_from_config("run_eval.yaml")
-logger.info(f"Running eval with {len(class_list)} tasks")
+
+        task_configs.append({
+            "class": cls,
+            "required_tool_call_sets": required_tool_call_sets,
+            "required_resource_types": required_resource_types
+        })
+
+    return task_configs
+
+task_configs = load_tasks_from_config("run_eval_test.yaml")
+# task_configs = load_tasks_from_config("run_eval_with_params.yaml")
+
+
+logger.info(f"Running eval with {len(task_configs)} tasks")
+
 agent = "n8n"
 logger.info(f"Running eval with agent: {agent}")
-for task_class in class_list:
+
+# sample 2 items from task_configs
+
+for task_config in task_configs:
     # Initialise task
+    task_class = task_config["class"]
+    required_tool_call_sets = task_config["required_tool_call_sets"]
+    required_resource_types = task_config["required_resource_types"]
+
+    # Logging extracted values
     logger.info(f"Initialising task: {task_class.__name__}")
-    task = task_class(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL)
+    logger.info(f"Required tools sequences: {required_tool_call_sets}")
+    logger.info(f"Required resource types: {required_resource_types}")
+
+    # Defining Task object with evaluation params
+    task = task_class(
+        FHIR_SERVER_URL,
+        N8N_URL,
+        N8N_EXECUTION_URL,
+        required_tool_call_sets=required_tool_call_sets,
+        required_resource_types=required_resource_types
+    )
 
     logger.info(f"Cleaning up test data for task: {task_class.__name__}")
     task.cleanup_test_data()

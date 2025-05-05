@@ -118,29 +118,29 @@ Search for the existing patient id=PAT001 to see if he has any medical history.
                 execution_result=execution_result
             )
 
-    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
-        # This method will be implemented with detailed failure mode analysis later
-        return TaskFailureMode(
-            incorrect_tool_selection=False,
-            incorrect_tool_order=False,
-            incorrect_resource_type=False,
-            error_codes=None
-        )
+    # def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+    #     # This method will be implemented with detailed failure mode analysis later
+    #     return TaskFailureMode(
+    #         incorrect_tool_selection=False,
+    #         incorrect_tool_order=False,
+    #         incorrect_resource_type=False,
+    #         error_codes=None
+    #     )
 
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
+# if __name__ == "__main__":
+#     from dotenv import load_dotenv
+#     load_dotenv()
     
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
+#     FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
+#     N8N_URL = os.getenv("N8N_AGENT_URL")
     
-    task = SearchExistingMedicalHistoryTask(FHIR_SERVER_URL, N8N_URL)
-    print(task.get_task_id())
-    print(task.get_task_name())
-    task.cleanup_test_data()
-    task.prepare_test_data()
-    human_response = task.execute_human_agent()
-    eval_results = task.validate_response(human_response)
-    print(eval_results)
-    # n8n_response = task.execute_n8n_agent()
-    # print(n8n_response)
+#     task = SearchExistingMedicalHistoryTask(FHIR_SERVER_URL, N8N_URL)
+#     print(task.get_task_id())
+#     print(task.get_task_name())
+#     task.cleanup_test_data()
+#     task.prepare_test_data()
+#     human_response = task.execute_human_agent()
+#     eval_results = task.validate_response(human_response)
+#     print(eval_results)
+#     # n8n_response = task.execute_n8n_agent()
+#     # print(n8n_response)
