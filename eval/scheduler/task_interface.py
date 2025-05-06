@@ -43,7 +43,7 @@ class TaskFailureMode:
     incorrect_tool_selection: Optional[bool] = None
     incorrect_tool_order: Optional[bool] = None
     incorrect_resource_type: Optional[bool] = None
-    prohibited_tool_used: Optional[bool] = None,
+    prohibited_tool_used: Optional[bool] = None
     error_codes: Optional[List[str]] = None # https://build.fhir.org/codesystem-assert-response-code-types.html
 
 
@@ -515,8 +515,8 @@ class TaskInterface(ABC):
         )
     
 
-
-    def get_error_codes(self, executionResult: ExecutionResult) -> List[str]:
+    # Add return type hint
+    def get_error_codes(self, executionResult: ExecutionResult):
         """Get the error codes from the execution result"""
         error_codes = []
         resource_types = []
@@ -558,7 +558,8 @@ class TaskInterface(ABC):
         failure_mode = self.check_tool_calls(
             task_result,
             self.required_tool_call_sets,
-            self.required_resource_types
+            self.required_resource_types,
+            self.prohibited_tools
         )
 
         # if failure_mode is None:
