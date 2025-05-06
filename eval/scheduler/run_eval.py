@@ -1,8 +1,6 @@
 from dataclasses import asdict
 import logging.config
 from dotenv import load_dotenv # type: ignore
-from task_01_enter_new_patient import EnterNewPatientTask
-from task_17b_reschedule_with_another_provider import RescheduleWithAnotherProviderTask
 import os
 import json
 import logging
@@ -17,33 +15,72 @@ FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 N8N_URL = os.getenv("N8N_AGENT_URL")
 N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
 N8N_SYSTEM_PROMPT_FILE = os.getenv("N8N_SYSTEM_PROMPT_FILE", None)
+
 HEADERS = {
     "Content-Type": "application/fhir+json",
     "Accept": "application/fhir+json"
 }
 
+
+
 def load_tasks_from_config(config_path):
     with open(config_path, 'r') as f:
         config = yaml.safe_load(f)
 
-    task_classes = []
+    task_configs = []
     for task in config.get('tasks', []):
         module_name = task['module']
         class_name = task['class']
+        required_tool_call_sets = task.get('required_tool_call_sets', [])
+        required_resource_types = task.get('required_resource_types', [])
+        prohibited_tools = task.get('probibited_tools', [])
 
         module = importlib.import_module(module_name)
         cls = getattr(module, class_name)
-        task_classes.append(cls)
 
-    return task_classes
-class_list = load_tasks_from_config("run_eval_task_01.yaml")
-logger.info(f"Running eval with {len(class_list)} tasks")
+        task_configs.append({
+            "class": cls,
+            "required_tool_call_sets": required_tool_call_sets,
+            "required_resource_types": required_resource_types,
+            "prohibited_tools": prohibited_tools
+        })
+
+    return task_configs
+
+
+
+task_configs = load_tasks_from_config("run_eval_test.yaml")
+logger.info(f"Running eval with {len(task_configs)} tasks")
+
 agent = "n8n"
 logger.info(f"Running eval with agent: {agent}")
-for task_class in class_list:
+
+
+for task_config in task_configs:
     # Initialise task
+    task_class = task_config["class"]
+    required_tool_call_sets = task_config["required_tool_call_sets"]
+    required_resource_types = task_config["required_resource_types"]
+    prohibited_tools = task_config["prohibited_tools"]
+
+    # Logging extracted values
     logger.info(f"Initialising task: {task_class.__name__}")
+    logger.info(f"Required tools sequences: {required_tool_call_sets}")
+    logger.info(f"Required resource types: {required_resource_types}")
+    logger.info(f"Prohibited tools: {prohibited_tools}")
+
     task = task_class(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL, N8N_SYSTEM_PROMPT_FILE)
+
+    # Defining Task object with evaluation params
+    task = task_class(
+        fhir_server_url = FHIR_SERVER_URL,
+        n8n_url = N8N_URL,
+        n8n_execution_url = N8N_EXECUTION_URL,
+        n8n_system_prompt_file = N8N_SYSTEM_PROMPT_FILE,
+        required_tool_call_sets = required_tool_call_sets,
+        required_resource_types = required_resource_types,
+        prohibited_tools = prohibited_tools
+    )
 
     logger.info(f"Cleaning up test data for task: {task_class.__name__}")
     task.cleanup_test_data()

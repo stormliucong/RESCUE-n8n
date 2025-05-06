@@ -27,6 +27,10 @@ class EnterNewPatientTask(TaskInterface):
                 - Phone Number: (123) 456-7890
                 - Address: 123 Main St, Boston, MA
 
+                Return the created patient's ID from the FHIR server using the following format:
+                
+                    <patient_id>PATIENTID</patient_id>
+
                 """
 
     def prepare_test_data(self) -> None:
@@ -36,6 +40,7 @@ class EnterNewPatientTask(TaskInterface):
             response.raise_for_status()
         except requests.exceptions.RequestException as e:
             raise Exception(f"FHIR server is not accessible: {str(e)}")
+
 
     def execute_human_agent(self) -> ExecutionResult:
         payload = {
@@ -66,7 +71,9 @@ class EnterNewPatientTask(TaskInterface):
         response = self.post_to_fhir(payload)
         response_msg = None
         if response.status_code == 201:
-            response_msg = f'Patient "John Doe" created successfully with ID: {response.json()["id"]}'
+            tagged_response = f"<patient_id>{response.json()["id"]}</patient_id>"
+                                
+            response_msg = f'Patient "John Doe" created successfully with ID: {tagged_response}'
         else:
             response_msg = f'Failed to create patient: {response.status_code} {response.text}'
         
@@ -91,6 +98,7 @@ class EnterNewPatientTask(TaskInterface):
                 headers=self.HEADERS,
                 params=params
             )
+            # Check if the patient is created successfully
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             response_json = response.json()
             assert 'entry' in response_json, "No patient found"
@@ -99,7 +107,25 @@ class EnterNewPatientTask(TaskInterface):
             assert patient['name'][0]['family'] == "Doe", f"Expected family name 'Doe', got {patient['name'][0]['family']}"
             assert patient['name'][0]['given'][0] == "John", f"Expected given name 'John', got {patient['name'][0]['given'][0]}"
             assert patient['birthDate'] == "1990-06-15", f"Expected birth date '1990-06-15', got {patient['birthDate']}"
-            # Check if the patient is created successfully
+            
+            # Check if returned result matches the human executed request's return.
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            
+                # Parse the response message
+            response_msg = response_msg.strip()
+                # match the response message with the expected format
+            assert "<patient_id>" in response_msg, "Expected to find <patient_id> tag"
+            assert "</patient_id>" in response_msg, "Expected to find </patient_id>tag"
+            
+                # Extract the patient_id from the response message
+            patient_id = response_msg.split("<patient_id>")[1].split("</patient_id>")[0]
+            assert patient_id is not None, "Expected to find patient_id"
+            
+                # slot id should be 
+            expected_patient_id = self.execute_human_agent().response_msg.split("<patient_id>")[1].split("</patient_id>")[0]
+            assert patient_id == expected_patient_id, f"Expected patient_id {expected_patient_id}, got {patient_id}"
+
 
             return TaskResult(
                 task_id = self.get_task_id(),
@@ -126,34 +152,3 @@ class EnterNewPatientTask(TaskInterface):
                 assertion_error_message=f"Unexpected error: {str(e)}",
             )
             
-
-
-    def identify_failure_mode(self, taskResult: TaskResult) -> TaskFailureMode:
-        # Initialising the failure mode objcet
-        failure_mode = TaskFailureMode()
-
-        # No failure if task succeeded
-        if taskResult.task_success:
-            return failure_mode  # All fields default to False / None
-        
-        # n8n workflow execution success
-        exec_result = taskResult.execution_result
-        if not exec_result:
-            failure_mode.critical_error = True
-            return failure_mode
-        
-        # Detect specific error codes from tool outputs
-        error_codes = []
-        if exec_result.tool_calls:
-            for calls in exec_result.tool_calls.values():
-                for call in calls:
-                    out = call.get("output")
-                    if isinstance(out, str) and "error" in out.lower():
-                        if "status code" in out:
-                            # Extract status code from message
-                            parts = out.split("status code")
-                            if len(parts) > 1:
-                                code = parts[1].split()[0]
-                                error_codes.append(code)
-        if error_codes:
-            failure_mode.error_codes = error_codes
