@@ -49,7 +49,14 @@ class TaskFailureMode:
 
 
 class TaskInterface(ABC):
-    def __init__(self, fhir_server_url, n8n_url, n8n_execution_url, n8n_system_prompt_file=None, required_tool_call_sets=None, required_resource_types=None):
+    def __init__(self,
+                fhir_server_url,
+                n8n_url,
+                n8n_execution_url,
+                n8n_system_prompt_file=None,
+                required_tool_call_sets=None,
+                required_resource_types=None,
+                prohibited_tools=None):
 
         self.FHIR_SERVER_URL = fhir_server_url
         self.N8N_AGENT_URL = n8n_url
@@ -58,7 +65,7 @@ class TaskInterface(ABC):
         # Eval parameters
         self.required_tool_call_sets = required_tool_call_sets or []
         self.required_resource_types = required_resource_types or []
-        self.prohibited_tool
+        self.prohibited_tools = prohibited_tools or []
         self.N8N_SYSTEM_PROMPT_FILE = n8n_system_prompt_file
         print(f"INIT: {required_tool_call_sets=}, {required_resource_types=}")
 
