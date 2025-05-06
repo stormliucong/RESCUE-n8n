@@ -39,9 +39,10 @@ class TaskResult:
 
 @dataclass
 class TaskFailureMode:
-    incorrect_tool_selection: Optional[bool] = False
-    incorrect_tool_order: Optional[bool] = False
-    incorrect_resource_type: Optional[bool] = False
+    incorrect_tool_selection: Optional[bool] = None
+    incorrect_tool_order: Optional[bool] = None
+    incorrect_resource_type: Optional[bool] = None
+    prohibited_tool_used: Optional[bool] = None,
     error_codes: Optional[List[str]] = None # https://build.fhir.org/codesystem-assert-response-code-types.html
 
 
@@ -56,6 +57,7 @@ class TaskInterface(ABC):
         # Eval parameters
         self.required_tool_call_sets = required_tool_call_sets or []
         self.required_resource_types = required_resource_types or []
+        self.prohibited_tool
 
         print(f"INIT: {required_tool_call_sets=}, {required_resource_types=}")
 
@@ -359,98 +361,114 @@ class TaskInterface(ABC):
 
 
 
-    def check_tool_calls(self, task_result: TaskResult, required_tool_call_sets: List[Dict[str, Optional[int]]], required_resource_types: List[str]) -> TaskFailureMode:
+    def check_tool_calls(
+        self,
+        task_result: TaskResult,
+        required_tool_call_sets: List[Dict[str, Optional[int]]],
+        required_resource_types: List[str],
+        prohibited_tools: Optional[List[str]] = None,
+        ) -> TaskFailureMode | None:
         """
-        Given a TaskResult (which wraps an ExecutionResult) decide *why* a task failed.
+        Failure analysis with tri‑state flags
+        ------------------------------------
+        False → check performed & passed | True → check performed & failed | None → not evaluated
 
-        Each element in `required_tool_call_sets` is a **template** for one legal tool‑usage
-        pattern.  
-        • Key   – tool name  
-        • Value – required position index (0, 1, 2, …) **or** None if order is irrelevant.
+        Flags returned in `TaskFailureMode`
+        -----------------------------------
+        • prohibited_tool_used     – any disallowed tool called  
+        • incorrect_tool_selection – missing required tool(s)  
+        • incorrect_tool_order     – required tools out of order  
+        • incorrect_resource_type  – wrong resource types  
+        • error_codes              – list captured from execution
 
-        The logic tries every template in the list until one matches:
-
-            1.  Every tool mentioned in the template must appear in `execution_result.tool_order`
-                → otherwise `incorrect_tool_selection` stays True and we try the next template.
-
-            2.  If the template has *ordered* tools (values that are integers) they must appear
-                as a subsequence in `tool_order` in the given order.  
-                Example: required order `["A","B","C"]` is satisfied by  
-                `"B A D B A C F"` because `A … B … C` exists.
-
-            3.  Only after (1) **and** (2) succeed do we check resource types and error codes.
+        Steps
+        -----
+        1.  Iterate `required_tool_call_sets` until a template’s selection & order both pass.  
+        2.  If (1) passes, verify resource types & capture error codes.  
+        3.  Independently flag `prohibited_tool_used` without altering other flags.  
+        4.  Return `None` on overall task success; otherwise a populated `TaskFailureMode`.
         """
-        # --- Fast exits ------------------------------------------------------------------
+        # --- Fast exit ------------------------------------------------------------------
         if task_result.task_success or task_result.execution_result is None:
             return None
 
         exec_res: ExecutionResult = task_result.execution_result
-        tool_order: List[str]     = exec_res.tool_order or []
-        tool_calls: Dict[str, List[Dict]] = exec_res.tool_calls or {}
+        tool_order: List[str] = exec_res.tool_order or []
 
-        # --- Initialise failure‑mode flags ----------------------------------------------
-        incorrect_tool_selection = True
-        incorrect_tool_order     = True
-        incorrect_resource_type  = True
-        error_codes              = None      # will be filled by get_error_codes
+        # --- Initialise flags -----------------------------------------------------------
+        prohibited_tool_used      : Optional[bool] = None
+        incorrect_tool_selection  : Optional[bool] = None
+        incorrect_tool_order      : Optional[bool] = None
+        incorrect_resource_type   : Optional[bool] = None
+        error_codes = None
 
-        # --- Try every requirement set ---------------------------------------------------
+        # --- 1) Match templates ---------------------------------------------------------
         for template in required_tool_call_sets:
             logger.debug(f"analysing template → {template}")
 
-            # ---------- 1) Tool‑selection check ----------
-            if not all(tool in tool_order for tool in template):
-                logger.debug("missing tools, trying next template")
+            # -------- selection check --------
+            if not all(t in tool_order for t in template):
+                logger.debug("missing required tools, trying next template")
                 continue
-
             incorrect_tool_selection = False
-            logger.debug(" All required tools are present")
+            logger.debug("all required tools present")
 
-            # ---------- 2) Order check (if any) ----------
-            ordered_pairs = [(tool, idx)
-                            for tool, idx in template.items()
-                            if isinstance(idx, int)]
-            ordered_pairs.sort(key=lambda x: x[1])           # sort by the expected index
-            ordered_tool_names = [t for t, _ in ordered_pairs]
+            # -------- order check --------
+            ordered = [(t, idx) for t, idx in template.items() if isinstance(idx, int)]
+            ordered.sort(key=lambda x: x[1])
+            ordered_names = [t for t, _ in ordered]
 
-            if not ordered_tool_names:                       # no ordering constraint at all
+            if not ordered_names:
                 incorrect_tool_order = False
-                logger.debug("template has no order constraints — automatically ok")
+                logger.debug("template has no order constraints — automatically OK")
             else:
-                # simple subsequence scan
-                wanted_idx = 0
+                want = 0
                 for t in tool_order:
-                    if t == ordered_tool_names[wanted_idx]:
-                        wanted_idx += 1
-                        if wanted_idx == len(ordered_tool_names):
+                    if t == ordered_names[want]:
+                        want += 1
+                        if want == len(ordered_names):
                             incorrect_tool_order = False
-                            logger.debug(f"order satisfied for {ordered_tool_names}")
+                            logger.debug(f"order satisfied → {ordered_names}")
                             break
-                if incorrect_tool_order:
-                    logger.debug(f"order NOT satisfied for {ordered_tool_names}")
+                if incorrect_tool_order is None:
+                    incorrect_tool_order = True
+                    logger.debug(f"order NOT satisfied → {ordered_names}")
 
-            # If both selection and order are now correct we can stop checking other templates
-            if not incorrect_tool_selection and not incorrect_tool_order:
+            # stop when both checks passed
+            if incorrect_tool_selection is False and incorrect_tool_order is False:
                 break
 
-        # --- 3) Resource‑type & error‑code checks ----------------------------------------
-        if not incorrect_tool_selection:                     # only check types if tools exist
-            error_codes, resource_types = self.get_error_codes(exec_res)
-            if all(rt in resource_types for rt in required_resource_types):
-                incorrect_resource_type = False
-            logger.debug(f"resource types seen → {resource_types}")
+        # if no template matched at all
+        if incorrect_tool_selection is None:
+            incorrect_tool_selection = True
+            logger.debug("no template matched — selection failed")
+
+        # --- 2) Resource/type & error codes --------------------------------------------
+        if incorrect_tool_selection is False:
+            error_codes, res_types = self.get_error_codes(exec_res)
+            incorrect_resource_type = not all(rt in res_types for rt in required_resource_types)
+            logger.debug(f"resource types seen → {res_types}")
             logger.debug(f"error codes captured → {error_codes}")
 
-        # --- Return structured result ----------------------------------------------------
+        # --- 3) Prohibited‑tool scan ----------------------------------------------------
+        if prohibited_tools is not None:
+            prohibited_tool_used = False
+            for bad in prohibited_tools:
+                if bad in tool_order:
+                    prohibited_tool_used = True
+                    logger.debug(f"prohibited tool used → {bad}")
+                    break
+
+        # --- 4) Return structured result -----------------------------------------------
         return TaskFailureMode(
-            incorrect_tool_selection=incorrect_tool_selection,
-            incorrect_tool_order=incorrect_tool_order,
-            incorrect_resource_type=incorrect_resource_type,
-            error_codes=error_codes,
+            prohibited_tool_used     = prohibited_tool_used,
+            incorrect_tool_selection = incorrect_tool_selection,
+            incorrect_tool_order     = incorrect_tool_order,
+            incorrect_resource_type  = incorrect_resource_type,
+            error_codes              = error_codes,
         )
     
 
-    
 
     def get_error_codes(self, executionResult: ExecutionResult) -> List[str]:
         """Get the error codes from the execution result"""
@@ -497,13 +515,13 @@ class TaskInterface(ABC):
             self.required_resource_types
         )
 
-        if failure_mode is None:
-            failure_mode = TaskFailureMode(
-                incorrect_tool_selection=False,
-                incorrect_tool_order=False,
-                incorrect_resource_type=False,
-                error_codes=None
-            )
+        # if failure_mode is None:
+        #     failure_mode = TaskFailureMode(
+        #         incorrect_tool_selection=False,
+        #         incorrect_tool_order=False,
+        #         incorrect_resource_type=False,
+        #         error_codes=None
+        #     )
 
         return failure_mode
 
