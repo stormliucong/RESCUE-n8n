@@ -21,6 +21,7 @@ HEADERS = {
 }
 
 
+
 def load_tasks_from_config(config_path):
     with open(config_path, 'r') as f:
         config = yaml.safe_load(f)
@@ -29,6 +30,8 @@ def load_tasks_from_config(config_path):
     for task in config.get('tasks', []):
         module_name = task['module']
         class_name = task['class']
+        required_tool_call_sets = task.get('required_tool_call_sets', [])
+        required_resource_types = task.get('required_resource_types', [])
         required_tool_call_sets = task.get('required_tool_call_sets', [])
         required_resource_types = task.get('required_resource_types', [])
 
@@ -42,16 +45,25 @@ def load_tasks_from_config(config_path):
             "required_resource_types": required_resource_types
         })
 
-    return task_classes
-class_list = load_tasks_from_config("run_eval_task_01.yaml")
-logger.info(f"Running eval with {len(class_list)} tasks")
+    return task_configs
+
+
+task_configs = load_tasks_from_config("run_eval_task_01.yaml")
+logger.info(f"Running eval with {len(task_configs)} tasks")
+
 agent = "n8n"
 logger.info(f"Running eval with agent: {agent}")
+
 
 # sample 2 items from task_configs
 
 for task_config in task_configs:
     # Initialise task
+    task_class = task_config["class"]
+    required_tool_call_sets = task_config["required_tool_call_sets"]
+    required_resource_types = task_config["required_resource_types"]
+
+    # Logging extracted values
     task_class = task_config["class"]
     required_tool_call_sets = task_config["required_tool_call_sets"]
     required_resource_types = task_config["required_resource_types"]
