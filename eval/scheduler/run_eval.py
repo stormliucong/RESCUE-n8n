@@ -7,14 +7,14 @@ import logging
 import yaml
 import importlib
 
-logging.config.fileConfig('logging.ini')
-
+logging.config.fileConfig('logging.ini', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
 
 load_dotenv()
 FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 N8N_URL = os.getenv("N8N_AGENT_URL")
 N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
+N8N_SYSTEM_PROMPT_FILE = os.getenv("N8N_SYSTEM_PROMPT_FILE", None)
 HEADERS = {
     "Content-Type": "application/fhir+json",
     "Accept": "application/fhir+json"
@@ -42,14 +42,9 @@ def load_tasks_from_config(config_path):
             "required_resource_types": required_resource_types
         })
 
-    return task_configs
-
-task_configs = load_tasks_from_config("run_eval_test.yaml")
-# task_configs = load_tasks_from_config("run_eval_with_params.yaml")
-
-
-logger.info(f"Running eval with {len(task_configs)} tasks")
-
+    return task_classes
+class_list = load_tasks_from_config("run_eval_task_01.yaml")
+logger.info(f"Running eval with {len(class_list)} tasks")
 agent = "n8n"
 logger.info(f"Running eval with agent: {agent}")
 
@@ -63,17 +58,7 @@ for task_config in task_configs:
 
     # Logging extracted values
     logger.info(f"Initialising task: {task_class.__name__}")
-    logger.info(f"Required tools sequences: {required_tool_call_sets}")
-    logger.info(f"Required resource types: {required_resource_types}")
-
-    # Defining Task object with evaluation params
-    task = task_class(
-        FHIR_SERVER_URL,
-        N8N_URL,
-        N8N_EXECUTION_URL,
-        required_tool_call_sets=required_tool_call_sets,
-        required_resource_types=required_resource_types
-    )
+    task = task_class(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL, N8N_SYSTEM_PROMPT_FILE)
 
     logger.info(f"Cleaning up test data for task: {task_class.__name__}")
     task.cleanup_test_data()

@@ -1,0 +1,3 @@
+tasks:
+  - module: task_01_enter_new_patient
+    class: EnterNewPatientTask

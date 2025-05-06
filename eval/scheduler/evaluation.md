@@ -8,71 +8,64 @@ This document outlines a comprehensive evaluation plan for the scheduling agent,
 ## Part 1: Simple Task-Based Evaluation
 
 ### Evaluation Setup
-The evaluation will use predefined tasks from evaluation prompts [1-16].py, covering:
-- Patient Management (Tasks 1-2)
-- Medical History (Tasks 3-4)
-- Surgery Planning (Tasks 5-6)
-- Insurance Management (Tasks 7-8)
-- Guarantor Information (Tasks 9-10)
-- Appointment Scheduling (Tasks 11-15)
-- Waitlist Management (Task 16)
+The evaluation will use predefined tasks from [task_*].py, covering:
+- Patient Management 
+- Medical History 
+- Surgery Planning 
+- Insurance Management 
+- Guarantor Information 
+- Appointment Scheduling 
+- Waitlist Management
+
+Each task will be rated as easy, medium & difficult based on logics and lines of codes needed in human implementation.
 
 ### Evaluation Metrics
 
 - 1-5: require human or LLM to score (this is task dependent, later we may summarize the criteria and train a "judge" agent to score it)
 - 0-1: use defined assertion to score
-- #: Work with execution log
-- ##: Work with script to check FHIR server (`*.py`)
+- 0..*: dependend on the results
 
 #### 1. Task Decomposition
-- Ability to break down complex tasks into manageable steps (1-5#)
-- Logical sequencing of operations (1-5#)
-- Identification of dependencies between steps (1-5#)
+- Ability to break down complex tasks into manageable steps (1-5)
 
 #### 2. Tool Calling Accuracy 
-- Correct identification of resourceType endpoints (0-1#)
-- Appropriate selection of FHIR operations (GET, POST, PUT, etc.) (0-1#)
-- Proper endpoint URL construction (0-1#)
-- Proper refer other agents if it receives a request beyond its scope (0-1#)
+- Correct identification of resourceType endpoints (0-1)
+- Appropriate selection of FHIR operations (GET, POST, PUT, etc.) (0-1)
+- Approriate order of tool selection (0-1)
+- Proper refer other agents/workflows if it receives a request beyond its scope (0-1)
 
 #### 3. Tool Use Success 
-- Correctness of JSON payload structure (0-1#)
-- (Optional) whether concept code are created correctly (0-1#)
-- Proper handling of required vs optional fields (0-1#)
+- Correctness of JSON payload structure (0-1). Derived from error codes.
+- Break down the error codes captured (0..*)
 
 #### 4. Task Completion Success 
-- End-to-end task completion rate (0-1##)
-- Accuracy of final outcomes (0-1##)
-
-#### 5. Critical Error Rate
-- Make the critical error (1-5##). critical errors are defined as those succesfully completed the task but incorrectly. 
+- Task execution rate (0-1)
+- End-to-end correct task completion rate (0-1)
+- Critical error rate (0-1). critical errors are defined as those succesfully executed the task but incorrectly. Derived from the above two.
 
 #### 5. Cost-Effectiveness
-- Token usage per task (#)
-- Execution time measurements (#)
-- Number of API calls required (#)
-
-#### 6. Self-Correction Capability
-- Alternative approach success rate (0-1#). This is defined as whether the agent is able to complete the task successfully after previous trials returned an error message.
+- Token usage per task (0..*)
+- Execution time measurements (0..*)
+- Number of API calls required (0..*)
 
 ### Experimental Variations
 1. Baseline System Prompts
    - 1a. Minimal instruction set
    - 1b. Detailed CoT (Chain of Thought) instructions
 
-2. FHIR Resource Knowledge
+2. FHIR Resource Knowledge (Pending)
    - Without specific FHIR resource guidance
    - With detailed FHIR resource relevant to the included tasks documented in the prompts.
 
-3. Example Incorporation
+3. Example Incorporation in System Prompts
    - Without task examples
    - With specific examples for each task type
 
-4. Web search for FHIR resource page reading
+4. Web search for FHIR resource page reading (Pending)
    - Without example search capability
    - With dynamic example retrieval
 
-## Part 2: Complex Multi-Turn Interaction Evaluation
+## Part 2: Complex Multi-Turn Interaction Evaluation (Pending)
 
 ### Evaluation Setup
 1. Automated User Simulation
