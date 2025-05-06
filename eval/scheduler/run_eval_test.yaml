@@ -1,0 +1,16 @@
+tasks:
+  - module: task_01_enter_new_patient
+    class: EnterNewPatientTask
+    required_tool_call_sets:
+      - { createResource: 0 }
+      - { getResourceById: 0, updateResource: 1 }
+      - { getAllResources: 0, createResource: 1 }
+      - { getAllResources: 0, deleteResource: 1, createResource: 2 }
+    required_resource_types: ["Patient"]
+
+  - module: task_02a_search_existing_patient
+    class: SearchExistingPatientTask
+    required_tool_call_sets:
+      - { getAllResources: 0 }
+      - { getResourceById: 0 }
+    required_resource_types: ["Patient"]

@@ -143,13 +143,13 @@ Search and find if patient id=PAT001 has any surgery plan two weeks from now.
                 execution_result=execution_result
             )
 
-    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
-        # This method will be implemented with detailed failure mode analysis later
-        return TaskFailureMode(
-            incorrect_tool_selection=False,
-            incorrect_tool_order=False,
-            incorrect_resource_type=False,
-            error_codes=None
-        )
+    # def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+    #     # This method will be implemented with detailed failure mode analysis later
+    #     return TaskFailureMode(
+    #         incorrect_tool_selection=False,
+    #         incorrect_tool_order=False,
+    #         incorrect_resource_type=False,
+    #         error_codes=None
+    #     )
 
 
