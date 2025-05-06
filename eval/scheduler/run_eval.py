@@ -8,13 +8,15 @@ import json
 import logging
 import yaml
 import importlib
-logging.config.fileConfig('logging.ini')
+
+logging.config.fileConfig('logging.ini', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
 
 load_dotenv()
 FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 N8N_URL = os.getenv("N8N_AGENT_URL")
 N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
+N8N_SYSTEM_PROMPT_FILE = os.getenv("N8N_SYSTEM_PROMPT_FILE", None)
 HEADERS = {
     "Content-Type": "application/fhir+json",
     "Accept": "application/fhir+json"
@@ -34,14 +36,14 @@ def load_tasks_from_config(config_path):
         task_classes.append(cls)
 
     return task_classes
-# class_list = load_tasks_from_config("run_eval.yaml")
+class_list = load_tasks_from_config("run_eval_task_01.yaml")
 logger.info(f"Running eval with {len(class_list)} tasks")
 agent = "n8n"
 logger.info(f"Running eval with agent: {agent}")
 for task_class in class_list:
     # Initialise task
     logger.info(f"Initialising task: {task_class.__name__}")
-    task = task_class(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL)
+    task = task_class(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL, N8N_SYSTEM_PROMPT_FILE)
 
     logger.info(f"Cleaning up test data for task: {task_class.__name__}")
     task.cleanup_test_data()

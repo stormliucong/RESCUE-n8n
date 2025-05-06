@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from fetch_and_parse_n8n_execution_log import fetch_and_parse_n8n_execution_log
 import json
 import logging
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -47,15 +48,17 @@ class TaskFailureMode:
 
 
 class TaskInterface(ABC):
-    def __init__(self, fhir_server_url, n8n_url, n8n_execution_url):
+    def __init__(self, fhir_server_url, n8n_url, n8n_execution_url, n8n_system_prompt_file=None):
 
         self.FHIR_SERVER_URL = fhir_server_url
         self.N8N_AGENT_URL = n8n_url
         self.N8N_EXECUTION_URL = n8n_execution_url
+        self.N8N_SYSTEM_PROMPT_FILE = n8n_system_prompt_file
         
         logger.debug(f"FHIR_SERVER_URL: {self.FHIR_SERVER_URL}")
         logger.debug(f"N8N_AGENT_URL: {self.N8N_AGENT_URL}")
         logger.debug(f"N8N_EXECUTION_URL: {self.N8N_EXECUTION_URL}")
+        logger.debug(f"N8N_SYSTEM_PROMPT_FILE: {self.N8N_SYSTEM_PROMPT_FILE}")
         
         self.HEADERS = {
             "Content-Type": "application/fhir+json",
@@ -246,10 +249,23 @@ class TaskInterface(ABC):
         """Execute the task on n8n workflowand and return results"""
         prompt = self.get_prompt()
         logger.debug(prompt)
-        payload = {
-            "prompt": prompt,
-            "fhir_server_url": self.FHIR_SERVER_URL
-        }
+        if self.N8N_SYSTEM_PROMPT_FILE:
+            # load json file
+            with open(self.N8N_SYSTEM_PROMPT_FILE, 'r') as file:
+                system_prompt = json.load(file)['system_prompt']
+            logger.debug(f"system_prompt: {system_prompt}")
+            # add a reminder with the current date and time
+            system_prompt += f"\n\nThe current date and time is {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            payload = {
+                "prompt": prompt,
+                "fhir_server_url": self.FHIR_SERVER_URL,
+                "system_prompt": system_prompt
+            }
+        else:
+            payload = {
+                "prompt": prompt,
+                "fhir_server_url": self.FHIR_SERVER_URL,
+            }
         try:
             response = requests.post(self.N8N_AGENT_URL, json=payload)
     
@@ -358,7 +374,7 @@ class TaskInterface(ABC):
 
         Each element in `required_tool_call_sets` is a **template** for one legal tool‑usage
         pattern.  
-        • Key   – tool name  
+        • Key  – tool name  
         • Value – required position index (0, 1, 2, …) **or** None if order is irrelevant.
 
         The logic tries every template in the list until one matches:
