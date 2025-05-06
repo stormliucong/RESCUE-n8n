@@ -22,6 +22,10 @@ class SearchExistingPatientTask(TaskInterface):
 
                 If the patient exists, return their Patient resource ID.
                 If the patient doesn't exist, classify them as a new patient.
+
+                Return the searched patient's ID from the FHIR server using the following format:
+                
+                    <patient_id>PATIENTID</patient_id>
                 """
 
     def prepare_test_data(self) -> None:
@@ -41,6 +45,7 @@ class SearchExistingPatientTask(TaskInterface):
             self.upsert_to_fhir(patient_resource)
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
+
 
     def execute_human_agent(self) -> ExecutionResult:
         search_params = {
@@ -62,10 +67,14 @@ class SearchExistingPatientTask(TaskInterface):
             )
 
         response_json = response.json()
+        tagged_response = f"<patient_id>{response_json['entry'][0]['resource']['id']}</patient_id>"
+
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found patient with ID {response_json['entry'][0]['resource']['id']}"
+            response_msg=f"Found patient with ID {tagged_response}"
         )
+
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -95,6 +104,25 @@ class SearchExistingPatientTask(TaskInterface):
             assert patient['name'][0]['given'][0] == "John", "Invalid given name"
             assert patient['birthDate'] == "1990-06-15", "Invalid birth date"
 
+            # Check if returned result matches the human executed request's return.
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            
+                # Parse the response message
+            response_msg = response_msg.strip()
+                # match the response message with the expected format
+            assert "<patient_id>" in response_msg, "Expected to find <patient_id> tag"
+            assert "</patient_id>" in response_msg, "Expected to find </patient_id>tag"
+            
+                # Extract the patient_id from the response message
+            patient_id = response_msg.split("<patient_id>")[1].split("</patient_id>")[0]
+            assert patient_id is not None, "Expected to find patient_id"
+            
+                # slot id should be 
+            expected_patient_id = self.execute_human_agent().response_msg.split("<patient_id>")[1].split("</patient_id>")[0]
+            assert patient_id == expected_patient_id, f"Expected patient_id {expected_patient_id}, got {patient_id}"
+
+
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),
@@ -119,11 +147,3 @@ class SearchExistingPatientTask(TaskInterface):
                 execution_result=execution_result
             )
 
-    # def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
-    #     # This method will be implemented with detailed failure mode analysis later
-    #     return TaskFailureMode(
-    #         incorrect_tool_selection=False,
-    #         incorrect_tool_order=False,
-    #         incorrect_resource_type=False,
-    #         error_codes=None
-    #     )
