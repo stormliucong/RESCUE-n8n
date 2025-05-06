@@ -33,7 +33,7 @@ def load_tasks_from_config(config_path):
         class_name = task['class']
         required_tool_call_sets = task.get('required_tool_call_sets', [])
         required_resource_types = task.get('required_resource_types', [])
-        prohibited_tools = task.get('probibited_tools', [])
+        prohibited_tools = task.get('prohibited_tools', [])
 
         module = importlib.import_module(module_name)
         cls = getattr(module, class_name)
@@ -48,8 +48,8 @@ def load_tasks_from_config(config_path):
     return task_configs
 
 
-
 task_configs = load_tasks_from_config("run_eval_test.yaml")
+
 logger.info(f"Running eval with {len(task_configs)} tasks")
 
 agent = "n8n"
@@ -68,8 +68,6 @@ for task_config in task_configs:
     logger.info(f"Required tools sequences: {required_tool_call_sets}")
     logger.info(f"Required resource types: {required_resource_types}")
     logger.info(f"Prohibited tools: {prohibited_tools}")
-
-    task = task_class(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL, N8N_SYSTEM_PROMPT_FILE)
 
     # Defining Task object with evaluation params
     task = task_class(
@@ -114,10 +112,10 @@ for task_config in task_configs:
         logger.info(f"Identifying failure mode for task: {task_class.__name__}")
         task_failure_mode = task.identify_failure_mode(task_result)
 
-    if task_failure_mode is not None:
-        file_name = f"task_{task_result.task_id}_{agent}_failure_mode.json"
-        with open(file_name, "w") as f:
-            logger.info(f"Saving failure mode to {file_name}")
-            json.dump(asdict(task_failure_mode),f)
-    else:
-        logger.info(f"No failure mode identified for task: {task_class.__name__}")
+        if task_failure_mode is not None:
+            file_name = f"task_{task_result.task_id}_{agent}_failure_mode.json"
+            with open(file_name, "w") as f:
+                logger.info(f"Saving failure mode to {file_name}")
+                json.dump(asdict(task_failure_mode),f)
+        else:
+            logger.info(f"No failure mode identified for task: {task_class.__name__}")
