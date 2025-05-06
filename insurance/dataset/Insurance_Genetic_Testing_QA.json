@@ -24,7 +24,7 @@
             "id": "Q4",
             "question": "According to the policy, does the patient's clinical presentation meet any recognized clinical guidelines that support the use of this genetic test?",
             "options": ["Yes", "No"],
-            "additional_options_if_yes": ["ACMG", "NCCN", "ASCO", "USPSTF", "ISPD", "None of the above"]
+            "additional_if_yes": ["ACMG", "NCCN", "ASCO", "USPSTF", "ISPD", "None of the above"]
         },
         {
             "id": "Q5",
@@ -33,7 +33,7 @@
         },
         {
             "id": "Q6",
-            "question": "Has prior genetic testing ruled out diagnoses that would make this test redundant under the policy?",
+            "question": "Has prior genetic testing already ruled out the potential diagnoses, making this test redundant and no longer appropriate for this patient?",
             "options": ["Yes", "No"]
         },
         {
@@ -43,20 +43,21 @@
         },
         {
             "id": "Q8",
-            "question": "According to the policy, is this test excluded if a more targeted or specific genetic test (e.g., single gene or smaller panel) is available and clinically appropriate for this patient?",
-            "options": ["Yes", "No"]
+            "question": "Could this test be excluded because a more targeted or specific genetic test (e.g., single gene or smaller panel) would be more appropriate for this patient according to the policy?",
+            "options": ["Yes", "No"],
+            "additional_if_yes": ["Please describe a more appropriate test."]
         },
         {
             "id": "Q9",
             "question": "Does the policy consider family history or consanguinity as supporting factors for coverage?",
             "options": ["Yes", "No", "Not specified"],
-            "additional_options_if_yes": ["Yes", "No"]
+            "additional_if_yes": ["Yes", "No"]
         },
         {
             "id": "Q10",
             "question": "Is this test intended for screening purposes, and is screening covered under the policy?",
             "options": ["Yes", "No"],
-            "additional_options_if_no": ["Diagnostic", "Risk Assessment", "Predictive", "Other"]
+            "additional_if_no": ["Diagnostic", "Risk Assessment", "Predictive", "Other"]
         },
         {
             "id": "Q11",
@@ -77,13 +78,13 @@
             "id": "Q14",
             "question": "Is the CPT code for this test listed and covered in the policy?",
             "options": ["Yes", "No", "Not listed"],
-            "additional_input_if_yes": "Please specify the CPT code."
+            "additional_if_yes": ["Please specify the CPT code."]
         },
         {
             "id": "Q15",
             "question": "Does the patient have any special context covered in the policy (e.g., prenatal testing, pharmacogenetic testing, tumor testing, urgent testing)?",
             "options": ["Yes", "No"],
-            "additional_input_if_yes": "Please describe briefly."
+            "additional_if_yes": ["Please describe briefly."]
         },
         {
             "id": "Q16",
