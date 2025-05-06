@@ -250,12 +250,17 @@ class TaskInterface(ABC):
         prompt = self.get_prompt()
         logger.debug(prompt)
         if self.N8N_SYSTEM_PROMPT_FILE:
-            # load json file
+            # load txt file into string
             with open(self.N8N_SYSTEM_PROMPT_FILE, 'r') as file:
-                system_prompt = json.load(file)['system_prompt']
+                system_prompt = file.read()
             logger.debug(f"system_prompt: {system_prompt}")
             # add a reminder with the current date and time
-            system_prompt += f"\n\nThe current date and time is {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            system_prompt += f'''
+                            \n\n## Final Reminder: 
+                            The current date and time is {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+                            Remember the FHIR server stores timestamps in UTC by default, 
+                            You have to convert the time zone difference when creating and retrieve resources.
+            '''
             payload = {
                 "prompt": prompt,
                 "fhir_server_url": self.FHIR_SERVER_URL,
