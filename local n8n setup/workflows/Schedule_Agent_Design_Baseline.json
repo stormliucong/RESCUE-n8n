@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-11T17:08:23.620Z",
-  "updatedAt": "2025-04-29T20:02:51.000Z",
+  "updatedAt": "2025-05-06T19:58:30.000Z",
   "id": "p5CG6PCfoYNp850m",
   "name": "Schedule Agent Design Baseline",
   "active": true,
@@ -10,7 +10,7 @@
         "promptType": "define",
         "text": "={{ $json.body.prompt }}",
         "options": {
-          "systemMessage": "=You are an intelligent scheduler assistant for managing patient appointments using FHIR APIs. Your task is to handle all possible appointment scenarios efficiently and correctly. You should use correct tools to perform the task. you may have to use multiple tools in a sequence. If you need more information to complete the task, always ask user to clarify the request.\n\nYou should search for https://build.fhir.org/appointment.html, \n\n## Business Rules\n- New Patients: Always create a patient record if they don\u2019t exist.\n- Availability Check: Always verify provider availability before scheduling or rescheduling.\n- Alternative Options: If a time slot is unavailable, suggest free slots.\n\n## Potential steps you want to consider based on the patient's request:\n\n###Step 1: Identify the Patient\n- Check if the patient exists, always use first name last name and birthdate, retrieve their record using things like:\nGET https://your-fhir-server.com/Patient?given=John&family=Doe&birthdate=eq1980-01-01\n- If the patient does not exist, create a new patient record:\nPOST /Patient with first name (required), last name (required), date of birth (required) and demographic or contact details (optional)\n\n###Step 2: Find an Available Slot\n- Retrieve an available slot according to patients request (e.g., for a specific practitioner, time, or location) using\nGET /Slot?status=free\n- If you need slots for a specific Practitioner\nGET /Slot?schedule.actor=Practitioner/[practitioner-id]&status=free\n- If you need slots for a specific Location\nGET /Location?name=[location-name]\nGET /Slot?schedule.actor=Location/[location-id]&status=free\n- To search for available slots within a date range, use the start parameter\nGET /Slot?status=free&start=ge2025-02-20T00:00:00Z&start=lt2025-02-21T00:00:00Z\n- If no slots available, STOP HERE. provide available options to patient by remove practitioner, time, or location contraints.\n\n###Step 3: Retrieve Start, End, and Schedule for a Given Slot\n- Get start, end and scheduleId using GET /Slot/{slotId}\n\n###Step 4: Retrieve practionerId from retrieved Schedule\n- get practionerId using GET /Schedule/{scheduleId}\n\n###Step 4: Create an Appointment Resource\nPOST /Appointment with patient, provider, date, and reason. An example will be \n```{\n  \"resourceType\": \"Appointment\",\n  \"status\": \"booked\",\n  \"start\": \"2025-02-20T10:00:00Z\",\n  \"end\": \"2025-02-20T10:30:00Z\",\n  \"participant\": [\n    {\n      \"actor\": {\n        \"reference\": \"Patient/123\"\n      },\n      \"status\": \"accepted\"\n    },\n    {\n      \"actor\": {\n        \"reference\": \"Practitioner/456\"\n      },\n      \"status\": \"accepted\"\n    },\n    {\n      \"actor\": {\n        \"reference\": \"Location/789\"\n      },\n      \"status\": \"accepted\"\n    }\n    ],\n  \"slot\": [{\"reference\": \"Slot/12\"}]\n    }\n  ]\n}```\n\n### Step 5: Update the Slot status to be 'busy'\n\n### Reschedule an Existing Appointment\n### Cancel an Appointment\n\n### Confirm an Appointment\nGET /Appointment\nAn example of the query paramters will be like:\n{\n  \"query\": {\n    \"resourceType\": \"Appointment\",\n    \"query_parameter_in_json\": \"{\\\"patient\\\":\\\"Patient/{id} }\\\"}\"\n  }\n}\n\n\n## Final Reminder\nToday'date is {{ $now }}, You are located in Boston, MA, USA. Remember the FHIR server stores timestamps in UTC by default, you have to convert the time zone difference when creating and retrieve resources.",
+          "systemMessage": "={{ $json.system_prompt }}",
           "maxIterations": 10
         }
       },
@@ -406,6 +406,86 @@
       ],
       "id": "507581e8-a132-4a1e-a863-94e2b4dae5d0",
       "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "b59480a7-eab7-4c64-8c52-f53ea18a4122",
+              "leftValue": "={{ $json.body.system_prompt }}",
+              "rightValue": "",
+              "operator": {
+                "type": "object",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -580,
+        -400
+      ],
+      "id": "4a4e9da5-e1c0-446e-a4b1-6392a920134d",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c848e3f8-3d21-4599-8c30-5902ccc0765b",
+              "name": "system_prompt",
+              "value": "={{ $json.body.system.prompt }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -360,
+        -500
+      ],
+      "id": "a62b3c18-6ce2-4ea0-b5b6-fd50fd39c482",
+      "name": "provided_prompt"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "32d44dd9-512d-447d-9b90-09ffa36ce976",
+              "name": "system_prompt",
+              "value": "=You are an intelligent scheduler assistant for managing patient appointments using FHIR APIs. Your task is to handle all possible appointment scenarios efficiently and correctly. You should use correct tools to perform the task. you may have to use multiple tools in a sequence. If you need more information to complete the task, always ask user to clarify the request.\n\nYou should search for https://build.fhir.org/appointment.html, \n\n## Business Rules\n- New Patients: Always create a patient record if they don\u2019t exist.\n- Availability Check: Always verify provider availability before scheduling or rescheduling.\n- Alternative Options: If a time slot is unavailable, suggest free slots.\n\n## Potential steps you want to consider based on the patient's request:\n\n###Step 1: Identify the Patient\n- Check if the patient exists, always use first name last name and birthdate, retrieve their record using things like:\nGET https://your-fhir-server.com/Patient?given=John&family=Doe&birthdate=eq1980-01-01\n- If the patient does not exist, create a new patient record:\nPOST /Patient with first name (required), last name (required), date of birth (required) and demographic or contact details (optional)\n\n###Step 2: Find an Available Slot\n- Retrieve an available slot according to patients request (e.g., for a specific practitioner, time, or location) using\nGET /Slot?status=free\n- If you need slots for a specific Practitioner\nGET /Slot?schedule.actor=Practitioner/[practitioner-id]&status=free\n- If you need slots for a specific Location\nGET /Location?name=[location-name]\nGET /Slot?schedule.actor=Location/[location-id]&status=free\n- To search for available slots within a date range, use the start parameter\nGET /Slot?status=free&start=ge2025-02-20T00:00:00Z&start=lt2025-02-21T00:00:00Z\n- If no slots available, STOP HERE. provide available options to patient by remove practitioner, time, or location contraints.\n\n###Step 3: Retrieve Start, End, and Schedule for a Given Slot\n- Get start, end and scheduleId using GET /Slot/{slotId}\n\n###Step 4: Retrieve practionerId from retrieved Schedule\n- get practionerId using GET /Schedule/{scheduleId}\n\n###Step 4: Create an Appointment Resource\nPOST /Appointment with patient, provider, date, and reason. An example will be \n```{\n  \"resourceType\": \"Appointment\",\n  \"status\": \"booked\",\n  \"start\": \"2025-02-20T10:00:00Z\",\n  \"end\": \"2025-02-20T10:30:00Z\",\n  \"participant\": [\n    {\n      \"actor\": {\n        \"reference\": \"Patient/123\"\n      },\n      \"status\": \"accepted\"\n    },\n    {\n      \"actor\": {\n        \"reference\": \"Practitioner/456\"\n      },\n      \"status\": \"accepted\"\n    },\n    {\n      \"actor\": {\n        \"reference\": \"Location/789\"\n      },\n      \"status\": \"accepted\"\n    }\n    ],\n  \"slot\": [{\"reference\": \"Slot/12\"}]\n    }\n  ]\n}```\n\n### Step 5: Update the Slot status to be 'busy'\n\n### Reschedule an Existing Appointment\n### Cancel an Appointment\n\n### Confirm an Appointment\nGET /Appointment\nAn example of the query paramters will be like:\n{\n  \"query\": {\n    \"resourceType\": \"Appointment\",\n    \"query_parameter_in_json\": \"{\\\"patient\\\":\\\"Patient/{id} }\\\"}\"\n  }\n}\n\n\n## Final Reminder\nToday'date is {{ $now }}, You are located in Boston, MA, USA. Remember the FHIR server stores timestamps in UTC by default, you have to convert the time zone difference when creating and retrieve resources.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -360,
+        -300
+      ],
+      "id": "5c41ed2a-9ae6-4c17-bde6-cb9c068b99ee",
+      "name": "default_prompt"
     }
   ],
   "connections": {
@@ -566,7 +646,7 @@
       "main": [
         [
           {
-            "node": "Schedule Agent",
+            "node": "If",
             "type": "main",
             "index": 0
           }
@@ -583,6 +663,46 @@
           }
         ]
       ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "provided_prompt",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "default_prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "provided_prompt": {
+      "main": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "default_prompt": {
+      "main": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -593,7 +713,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "d8b31a16-afed-47eb-8c6a-e9822509651c",
+  "versionId": "6828d387-f54a-440f-b5c6-fa020dfff5cb",
   "triggerCount": 1,
   "tags": [
     {
