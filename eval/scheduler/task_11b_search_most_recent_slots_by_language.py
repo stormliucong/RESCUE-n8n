@@ -202,7 +202,7 @@ Using the following format:
                     params = {
                         "status": "free",
                         "_sort": "start",
-                        "schedule.actor": f"Practitioner/{practitioner_id}"
+                        "schedule.actor:Practitioner": f"Practitioner/{practitioner_id}"
                     }
                     response = requests.get(
                         f"{self.FHIR_SERVER_URL}/Slot",
