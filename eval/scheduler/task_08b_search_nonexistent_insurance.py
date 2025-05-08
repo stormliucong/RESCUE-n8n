@@ -17,6 +17,9 @@ Task: Search for patient insurance information
 
 Search if patient insurance information has been entered in the system for:
 - Beneficiary: Jane Doe (id=PAT002)
+
+If found, return the coverage ID using the following format: <COVERAGE>coverage_id</COVERAGE>
+If none found, return the exact sentence: No insurance coverage found
 """
 
     def prepare_test_data(self) -> None:
@@ -33,6 +36,8 @@ Search if patient insurance information has been entered in the system for:
             self.upsert_to_fhir(patient_resource)
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
+
+
 
     def execute_human_agent(self) -> ExecutionResult:
         params = {
@@ -51,12 +56,21 @@ Search if patient insurance information has been entered in the system for:
                 execution_success=False,
                 response_msg=f"Failed to search for insurance: {response.text}"
             )
-
+        # added logic
         response_json = response.json()
-        return ExecutionResult(
-            execution_success=True,
-            response_msg=f"Found {response_json.get('total', 0)} insurance coverage(s) for patient PAT002"
-        )
+        if response_json.get('total', 0) > 0:
+            coverage_id = response_json['entry'][0]['resource']['id']
+            return ExecutionResult(
+                execution_success=True,
+                response_msg=f"Found {response_json['total']} insurance coverage(s) for patient PAT002: <COVERAGE>{coverage_id}</COVERAGE>"
+            )
+        else:
+            return ExecutionResult(
+                execution_success=True,
+                response_msg="No insurance coverage found"
+            )
+
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -73,6 +87,19 @@ Search if patient insurance information has been entered in the system for:
             assert 'total' in response_json, "Expected to find total in the response"
             assert response_json['total'] == 0, f"Expected no insurance, but got {response_json['total']}"
             assert 'entry' not in response_json, "Expected no entries in the response"
+
+            # Structured-output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            if response_json.get('total', 0) > 0:
+                assert "<COVERAGE>" in response_msg, "Expected to find <COVERAGE> tag"
+                assert "</COVERAGE>" in response_msg, "Expected to find </COVERAGE> tag"
+                coverage_id = response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
+                expected_id = self.execute_human_agent().response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
+                assert coverage_id == expected_id, f"Expected coverage_id {expected_id}, got {coverage_id}"
+            else:
+                assert response_msg == "No insurance coverage found", f"Expected 'No insurance coverage found', got '{response_msg}'"
 
             return TaskResult(
                 task_success=True,
