@@ -17,6 +17,8 @@ class SearchExistingSurgeryPlanTask(TaskInterface):
 Task: Search for surgery plan
 
 Search and find if patient id=PAT001 has any surgery plan two weeks from now.
+
+If found, return the surgery plan’s ID using the following format: <SURGERY_PLAN>plan_id</SURGERY_PLAN>
 """
 
     def prepare_test_data(self) -> None:
@@ -58,6 +60,7 @@ Search and find if patient id=PAT001 has any surgery plan two weeks from now.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
     def execute_human_agent(self) -> ExecutionResult:
         today = datetime.today().date()
         two_weeks_later = today + timedelta(days=14)
@@ -85,8 +88,13 @@ Search and find if patient id=PAT001 has any surgery plan two weeks from now.
         response_json = response.json()
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found {response_json.get('total', 0)} surgery plan(s) for patient PAT001"
+            response_msg=(
+                f"Found {response_json.get('total', 0)} surgery plan(s) for patient PAT001: "
+                f"<SURGERY_PLAN>{response_json['entry'][0]['resource']['id']}</SURGERY_PLAN>"
+            )
         )
+
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -118,7 +126,18 @@ Search and find if patient id=PAT001 has any surgery plan two weeks from now.
             service_request = response_json['entry'][0]['resource']
             assert service_request['resourceType'] == "ServiceRequest", "Resource type must be ServiceRequest"
             assert service_request['subject']['reference'] == "Patient/PAT001", "Subject reference must be Patient/PAT001"
-            
+
+             # Structured‐output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            assert "<SURGERY_PLAN>" in response_msg, "Expected to find <SURGERY_PLAN> tag"
+            assert "</SURGERY_PLAN>" in response_msg, "Expected to find </SURGERY_PLAN> tag"
+            surgery_plan_id = response_msg.split("<SURGERY_PLAN>")[1].split("</SURGERY_PLAN>")[0]
+            assert surgery_plan_id is not None, "Expected to find surgery_plan_id"
+            expected_id = self.execute_human_agent().response_msg.split("<SURGERY_PLAN>")[1].split("</SURGERY_PLAN>")[0]
+            assert surgery_plan_id == expected_id, f"Expected surgery_plan_id {expected_id}, got {surgery_plan_id}"
+
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),
@@ -143,6 +162,7 @@ Search and find if patient id=PAT001 has any surgery plan two weeks from now.
                 execution_result=execution_result
             )
 
+
     # def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
     #     # This method will be implemented with detailed failure mode analysis later
     #     return TaskFailureMode(
@@ -151,5 +171,6 @@ Search and find if patient id=PAT001 has any surgery plan two weeks from now.
     #         incorrect_resource_type=False,
     #         error_codes=None
     #     )
+
 
 

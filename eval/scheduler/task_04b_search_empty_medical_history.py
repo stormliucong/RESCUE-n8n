@@ -16,6 +16,10 @@ class SearchNonexistentMedicalHistoryTask(TaskInterface):
 Task: Search for patient medical history
 
 Search for the existing patient id=PAT002 to see if he has any medical history.
+
+If found, return the condition's ID using the following format: <CONDITION>condition_id</CONDITION>
+
+If not, return this exact sentence: "No medical history found"
 """
 
     def prepare_test_data(self) -> None:
@@ -53,8 +57,9 @@ Search for the existing patient id=PAT002 to see if he has any medical history.
         response_json = response.json()
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found {response_json.get('total', 0)} medical condition(s) for patient PAT002"
+            response_msg=f"Found {response_json.get('total', 0)} medical condition(s) for patient PAT002 : No medical history found"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -71,6 +76,10 @@ Search for the existing patient id=PAT002 to see if he has any medical history.
             assert 'total' in response_json, "Expected to find total in the response"
             assert response_json['total'] == 0, f"Expected no medical history, but got {response_json['total']}"
             assert 'entry' not in response_json or len(response_json['entry']) == 0, "Expected no entries in the response"
+
+            # Additional assertions (to be discussed)
+            response_msg = execution_result.response_msg
+            assert "No medical history found" in response_msg, '"No medical history found"'
 
             return TaskResult(
                 task_success=True,

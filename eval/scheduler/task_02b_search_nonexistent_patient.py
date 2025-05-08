@@ -20,7 +20,10 @@ class SearchNonexistentPatientTask(TaskInterface):
                 - Full Name: John Doe
                 - Birth Date: June 15, 1991
 
-                If the patient exists, return their Patient resource ID.
+                If the patient exists, return their Patient resource ID using the following format:                    
+                 
+                <patient_id>PATIENTID</patient_id>
+                
                 If the patient doesn't exist, classify them as a new patient.
                 """
 

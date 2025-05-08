@@ -16,6 +16,9 @@ class EnterSurgeryPlanTask(TaskInterface):
 Task: Record a surgery plan
 
 Record a surgery plan for patient id=PAT001 for a Appendectomy surgery planned for 2025-05-01.
+
+Once done, return the surgery plan ID in the following format: <surgery_plan>surgeryPlan</surgery_plan>
+
 """
 
     def prepare_test_data(self) -> None:
@@ -32,6 +35,7 @@ Record a surgery plan for patient id=PAT001 for a Appendectomy surgery planned f
             self.upsert_to_fhir(patient_resource)
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
+
 
     def execute_human_agent(self) -> ExecutionResult:
         service_request = {
@@ -67,8 +71,9 @@ Record a surgery plan for patient id=PAT001 for a Appendectomy surgery planned f
         response_json = response.json()
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully created surgery plan with ID {response_json.get('id')}"
+            response_msg=f"Successfully created surgery plan with ID <surgery_plan>{response_json.get('id')}</surgery_plan>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -101,6 +106,26 @@ Record a surgery plan for patient id=PAT001 for a Appendectomy surgery planned f
             
             # Validate the scheduled date
             assert service_request['occurrenceDateTime'] == "2025-05-01", "Incorrect surgery date"
+
+
+            # Check if returned result matches the human executed request's return.
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+
+            # Parse the response message
+            response_msg = response_msg.strip()
+            # match the response message with the expected format
+            assert "<surgery_plan>" in response_msg, "Expected to find <surgery_plan> tag"
+            assert "</surgery_plan>" in response_msg, "Expected to find </surgery_plan>tag"
+
+            # Extract the surgery_plan from the response message
+            surgery_plan = response_msg.split("<surgery_plan>")[1].split("</surgery_plan>")[0]
+            assert surgery_plan is not None, "Expected to find surgery_plan"
+
+            # surgery plan id should be 
+            expected_surgery_plan = self.execute_human_agent().response_msg.split("<surgery_plan>")[1].split("</surgery_plan>")[0]
+            assert surgery_plan == expected_surgery_plan, f"Expected surgery_plan {expected_surgery_plan}, got {surgery_plan}"
+
 
             return TaskResult(
                 task_success=True,

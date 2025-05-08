@@ -17,6 +17,10 @@ class SearchNonexistentSurgeryPlanTask(TaskInterface):
 Task: Search for surgery plan
 
 Search and find if patient id=PAT002 has any surgery plan two weeks from now.
+
+If found, return the surgery plan’s ID using the following format: <SURGERY_PLAN>plan_id</SURGERY_PLAN>.
+If none found, return the exact sentence: No surgery plan found.
+
 """
 
     def prepare_test_data(self) -> None:
@@ -83,10 +87,22 @@ Search and find if patient id=PAT002 has any surgery plan two weeks from now.
             )
 
         response_json = response.json()
-        return ExecutionResult(
-            execution_success=True,
-            response_msg=f"Found {response_json.get('total', 0)} surgery plan(s) for patient PAT001"
-        )
+        # Added eval logic
+        if response_json.get('total', 0) > 0:
+            return ExecutionResult(
+                execution_success=True,
+                response_msg=(
+                    f"Found {response_json['total']} surgery plan(s) for patient PAT002: "
+                    f"<SURGERY_PLAN>{response_json['entry'][0]['resource']['id']}</SURGERY_PLAN>"
+                )
+           )
+        else:
+            return ExecutionResult(
+                execution_success=True,
+                response_msg="No surgery plan found"
+            )
+
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -112,6 +128,21 @@ Search and find if patient id=PAT002 has any surgery plan two weeks from now.
             assert 'total' in response_json, "Expected to find total in the response"
             assert response_json['total'] == 0, f"Expected to find no surgery plans, but got {response_json['total']}"
             assert 'entry' not in response_json or len(response_json['entry']) == 0, "Expected no entries in the response"
+
+            # Structured‐output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            if response_json['total'] > 0:
+                # must include the tag and match the human-agent value
+                assert "<SURGERY_PLAN>" in response_msg, "Expected to find <SURGERY_PLAN> tag"
+                assert "</SURGERY_PLAN>" in response_msg, "Expected to find </SURGERY_PLAN> tag"
+                surgery_plan_id = response_msg.split("<SURGERY_PLAN>")[1].split("</SURGERY_PLAN>")[0]
+                expected_id = self.execute_human_agent().response_msg.split("<SURGERY_PLAN>")[1].split("</SURGERY_PLAN>")[0]
+                assert surgery_plan_id == expected_id, f"Expected surgery_plan_id {expected_id}, got {surgery_plan_id}"
+            else:
+                # no plans → fixed sentence
+                assert response_msg == "No surgery plan found", f"Expected 'No surgery plan found', got '{response_msg}'"
 
             return TaskResult(
                 task_success=True,

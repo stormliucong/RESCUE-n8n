@@ -7,6 +7,7 @@ tasks:
       - { getAllResources: 0, createResource: 1 }
       - { getAllResources: 0, deleteResource: 1, createResource: 2 }
     required_resource_types: ["Patient"]
+    prohibited_tools: ['deleteResource']
 
   - module: task_02a_search_existing_patient
     class: SearchExistingPatientTask
@@ -14,3 +15,29 @@ tasks:
       - { getAllResources: 0 }
       - { getResourceById: 0 }
     required_resource_types: ["Patient"]
+    prohibited_tools: ['deleteResource','createResource']
+
+  - module: task_02b_search_nonexistent_patient
+    class: SearchNonexistentPatientTask
+    required_tool_call_sets:
+      - { getAllResources: 0 }
+      - { getResourceById: 0 }
+    required_resource_types: ["Patient"]
+    prohibited_tools: ['deleteResource','createResource']
+
+  - module: task_03_enter_medical_history
+    class: EnterMedicalHistoryTask
+    required_tool_call_sets:
+      - { createResource: 0 }
+      - { getResourceById: 0, updateResource: 1 }
+      - { getAllResources: 0, createResource: 1 }
+    required_resource_types: ["Condition"]
+    prohibited_tools: ['deleteResource']
+
+  - module: task_04a_search_nonempty_medical_history
+    class: SearchNonemptyMedicalHistoryTask
+    required_tool_call_sets:
+      - { getAllResources: 0 }
+      - { getResourceById: 0 }
+    required_resource_types: ["Condition"]
+    prohibited_tools: ['deleteResource','createResource']
