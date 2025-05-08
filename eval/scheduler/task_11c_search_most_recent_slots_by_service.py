@@ -18,6 +18,9 @@ class FindSlotsByServiceTask(TaskInterface):
 Task: Find available slots by service
 
 Find the most recent available slots for a genetic counseling service.
+
+After searching, return the total number of available slots using the following format: <SLOT_COUNT>number</SLOT_COUNT>
+If none found, return the exact sentence: No available genetic counseling slots found
 """
 
     def prepare_test_data(self) -> None:
@@ -151,6 +154,8 @@ Find the most recent available slots for a genetic counseling service.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         # Find schedules with genetic counseling specialty
         schedule_params = {
@@ -196,14 +201,15 @@ Find the most recent available slots for a genetic counseling service.
 
         if not all_slots:
             return ExecutionResult(
-                execution_success=False,
+                execution_success=True,
                 response_msg="No available genetic counseling slots found"
             )
 
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found {len(all_slots)} available genetic counseling slots"
+            response_msg=f"Found {len(all_slots)} available genetic counseling slots: <SLOT_COUNT>{len(all_slots)}</SLOT_COUNT>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -245,6 +251,15 @@ Find the most recent available slots for a genetic counseling service.
             for slot in all_slots:
                 assert slot['resource']['id'] in ['SLOT008', 'SLOT0010'], f"Expected one of the genetic counseling slots, got {slot['resource']['id']}"
                 assert slot['resource']['status'] == "free", "Expected to find free slot"
+
+                response_msg = execution_result.response_msg
+                assert response_msg is not None, "Expected to find response message"
+                response_msg = response_msg.strip()
+                assert "<SLOT_COUNT>" in response_msg, "Expected to find <SLOT_COUNT> tag"
+                assert "</SLOT_COUNT>" in response_msg, "Expected to find </SLOT_COUNT> tag"
+                slot_count = int(response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
+                expected_count = len(all_slots)
+                assert slot_count == expected_count, f"Expected slot_count {expected_count}, got {slot_count}"
             
             return TaskResult(
                 task_success=True,
@@ -269,6 +284,7 @@ Find the most recent available slots for a genetic counseling service.
                 task_name=self.get_task_name(),
                 execution_result=execution_result
             )
+
 
     def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
         # This method will be implemented with detailed failure mode analysis later

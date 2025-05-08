@@ -17,6 +17,9 @@ class SearchUrgentSlotsTask(TaskInterface):
 Task: Search for urgent slots
 
 Patient needs an urgent visit by the end of tomorrow. Find all available slots.
+
+After searching, return the number of available slots using the following format: <SLOT_COUNT>number</SLOT_COUNT>
+If none found, return the exact sentence: No urgent slots available
 """
 
     def prepare_test_data(self) -> None:
@@ -93,11 +96,18 @@ Patient needs an urgent visit by the end of tomorrow. Find all available slots.
 
         response_json = response.json()
         slots_found = response_json.get('total', 0)
+        if slots_found > 0:
+            return ExecutionResult(
+                execution_success=True,
+                response_msg=f"Found {slots_found} available slots for urgent visit: <SLOT_COUNT>{slots_found}</SLOT_COUNT>"
+            )
+        else:
+            return ExecutionResult(
+                execution_success=True,
+                response_msg="No urgent slots available"
+            )
         
-        return ExecutionResult(
-            execution_success=True,
-            response_msg=f"Found {slots_found} available slots for urgent visit"
-        )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -127,7 +137,24 @@ Patient needs an urgent visit by the end of tomorrow. Find all available slots.
                 assert response_json['total'] > 0, "Expected to find at least one slot"
                 assert 'entry' in response_json, "Expected to find entry in the response"
                 assert len(response_json['entry']) > 0, "Expected to find at least one slot"
-            
+                # Additional eval logic
+                response_msg = execution_result.response_msg
+                assert response_msg is not None, "Expected to find response message"
+                response_msg = response_msg.strip()
+
+                if response_json.get('total', 0) > 0:
+                    assert "<SLOT_COUNT>" in response_msg, "Expected to find <SLOT_COUNT> tag"
+                    assert "</SLOT_COUNT>" in response_msg, "Expected to find </SLOT_COUNT> tag"
+                    slot_count = int(response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
+                    expected_count = response_json['total']
+                    assert slot_count == expected_count, f"Expected slot_count {expected_count}, got {slot_count}"
+
+                    # Check the very first urgent slot’s ID
+                    first_slot_id = response_json['entry'][0]['resource']['id']
+                    assert first_slot_id == "SLOT002", f"Expected first urgent slot id SLOT002, got {first_slot_id}"
+                else:
+                    assert response_msg == "No urgent slots available", f"Expected 'No urgent slots available', got '{response_msg}'"
+
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),
@@ -151,6 +178,7 @@ Patient needs an urgent visit by the end of tomorrow. Find all available slots.
                 task_name=self.get_task_name(),
                 execution_result=execution_result
             )
+
 
     def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
         # This method will be implemented with detailed failure mode analysis later

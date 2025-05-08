@@ -17,6 +17,9 @@ class FindSlotsByProviderTask(TaskInterface):
 Task: Find available slots by provider
 
 Find the most recent available slots for Dr. Smith John
+
+After searching, return the total number of available slots using the following format: <SLOT_COUNT>number</SLOT_COUNT>
+If none found, return the exact sentence: No available slots found for Dr. Smith John
 """
 
     def prepare_test_data(self) -> None:
@@ -227,8 +230,9 @@ Find the most recent available slots for Dr. Smith John
 
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found {len(all_slots)} available slots for Dr. Smith John"
+            response_msg=f"Found {len(all_slots)} available slots for Dr. Smith John: <SLOT_COUNT>{len(all_slots)}</SLOT_COUNT>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -289,7 +293,19 @@ Find the most recent available slots for Dr. Smith John
             for slot in all_slots:
                 assert slot['resource']['status'] == "free", "Expected to find free slot"
                 assert slot['resource']['schedule']['reference'] == "Schedule/SCHEDULE001", "Expected slot to be from Dr. Smith's schedule"
-            
+
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            if all_slots:
+                assert "<SLOT_COUNT>" in response_msg, "Expected to find <SLOT_COUNT> tag"
+                assert "</SLOT_COUNT>" in response_msg, "Expected to find </SLOT_COUNT> tag"
+                slot_count = int(response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
+                expected_count = len(all_slots)
+                assert slot_count == expected_count, f"Expected slot_count {expected_count}, got {slot_count}"
+            else:
+                assert response_msg == "No available slots found for Dr. Smith John", f"Expected 'No available slots found for Dr. Smith John', got '{response_msg}'"
+
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),

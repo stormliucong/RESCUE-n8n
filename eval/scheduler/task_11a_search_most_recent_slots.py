@@ -18,6 +18,10 @@ class FindAvailableSlotsTask(TaskInterface):
 Task: Find available slots
 
 Find most recent available slots from any providers.
+
+If found, return the slot ID using the following format: <SLOT>slot_id</SLOT>
+If none found, return the exact sentence: No available slots found
+
 """
 
     def prepare_test_data(self) -> None:
@@ -151,6 +155,7 @@ Find most recent available slots from any providers.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
     def execute_human_agent(self) -> ExecutionResult:
         params = {
             "status": "free",
@@ -172,15 +177,16 @@ Find most recent available slots from any providers.
         response_json = response.json()
         if not response_json.get('entry'):
             return ExecutionResult(
-                execution_success=False,
+                execution_success=True,
                 response_msg="No available slots found"
             )
-
-        slot = response_json['entry'][0]
+        entry = response_json['entry'][0]
+        slot_id = entry['resource']['id']
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found available slot {slot['resource']['id']} starting at {slot['resource']['start']}"
+            response_msg=f"Found available slot <SLOT>{slot_id}</SLOT>"
         )
+    
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -204,6 +210,18 @@ Find most recent available slots from any providers.
             assert slot['resource']['id'] == 'SLOT0010', f"Expected SLOT0010, got {slot['resource']['id']}"
             assert slot['resource']['status'] == "free", "Expected to find free slot"
             
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            assert "<SLOT>" in response_msg, "Expected to find <SLOT> tag"
+            assert "</SLOT>" in response_msg, "Expected to find </SLOT> tag"
+            slot_id = response_msg.split("<SLOT>")[1].split("</SLOT>")[0]
+            expected_id = self.execute_human_agent().response_msg.split("<SLOT>")[1].split("</SLOT>")[0]
+            assert slot_id == expected_id, f"Expected slot_id {expected_id}, got {slot_id}"
+            # Cross-check against the FHIR response
+            slot = response_json['entry'][0]
+            assert slot['resource']['id'] == slot_id, f"Expected FHIR slot id {slot_id}, got {slot['resource']['id']}"
+
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),
