@@ -19,6 +19,9 @@ Create a related person resource for the patient PAT001 with the following detai
 - Name: Alice Doe
 - Relationship: Mother
 - Date of Birth: March 1, 1960
+
+After creation, return the new RelatedPerson ID using the following format: <RELATED_PERSON>related_person_id</RELATED_PERSON>
+
 """
 
     def prepare_test_data(self) -> None:
@@ -34,6 +37,8 @@ Create a related person resource for the patient PAT001 with the following detai
             self.upsert_to_fhir(patient_resource)
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
+
+
 
     def execute_human_agent(self) -> ExecutionResult:
         related_person_payload = {
@@ -64,10 +69,12 @@ Create a related person resource for the patient PAT001 with the following detai
             )
 
         response_json = response.json()
+        related_person_id = response_json.get('id')
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Created related person with ID {response_json.get('id')}"
+            response_msg=f"Created related person with ID <RELATED_PERSON>{related_person_id}</RELATED_PERSON>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -93,6 +100,18 @@ Create a related person resource for the patient PAT001 with the following detai
             
             relationship = related_person["relationship"][0]
             assert relationship["coding"][0]["code"] == "MOTHER", "Invalid relationship code"
+
+            # Additional asserts
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            assert "<RELATED_PERSON>" in response_msg, "Expected to find <RELATED_PERSON> tag"
+            assert "</RELATED_PERSON>" in response_msg, "Expected to find </RELATED_PERSON> tag"
+            related_person_id = response_msg.split("<RELATED_PERSON>")[1].split("</RELATED_PERSON>")[0]
+            expected_id = self.execute_human_agent().response_msg.split("<RELATED_PERSON>")[1].split("</RELATED_PERSON>")[0]
+            assert related_person_id == expected_id, f"Expected related_person_id {expected_id}, got {related_person_id}"
+            related_person_resource = response_json['entry'][0]['resource']
+            assert related_person_resource['id'] == related_person_id, f"Expected FHIR resource id {related_person_id}, got {related_person_resource['id']}"
 
             return TaskResult(
                 task_success=True,

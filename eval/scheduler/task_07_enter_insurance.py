@@ -19,6 +19,9 @@ Task: Add insurance information for a patient
    - Subscriber and policy holder: patient's father
    - Group Plan: Employer Group Plan (Group ID: Group-98765)
    - Plan ID: GOLD123
+
+After creating the coverage, return the newly created Coverage ID using the following format: <COVERAGE>coverage_id</COVERAGE>
+
 """
 
     def prepare_test_data(self) -> None:
@@ -43,6 +46,7 @@ Task: Add insurance information for a patient
             self.upsert_to_fhir(organization_resource)
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
+
 
     def execute_human_agent(self) -> ExecutionResult:
         try:
@@ -133,10 +137,11 @@ Task: Add insurance information for a patient
                     execution_success=False,
                     response_msg=f"Failed to create coverage: {coverage_response.text}"
                 )
-
+        
+            coverage_id = coverage_response.json().get('id')
             return ExecutionResult(
                 execution_success=True,
-                response_msg=f"Successfully created insurance coverage with ID {coverage_response.json().get('id')}"
+                response_msg=f"Successfully created insurance coverage with ID <COVERAGE>{coverage_id}</COVERAGE>"
             )
 
         except Exception as e:
@@ -144,6 +149,7 @@ Task: Add insurance information for a patient
                 execution_success=False,
                 response_msg=f"Failed to execute task: {str(e)}"
             )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -178,6 +184,22 @@ Task: Add insurance information for a patient
                     found_plan = True
             assert found_group, "Group ID not found in coverage"
             assert found_plan, "Plan ID not found in coverage"
+
+            # Additional eval logic
+            # Structured‐output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            assert "<COVERAGE>" in response_msg, "Expected to find <COVERAGE> tag"
+            assert "</COVERAGE>" in response_msg, "Expected to find </COVERAGE> tag"
+            coverage_id = response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
+            expected_id = self.execute_human_agent().response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
+            assert coverage_id == expected_id, f"Expected coverage_id {expected_id}, got {coverage_id}"
+
+            # Cross‐check against the FHIR resource
+            coverage_resource = response_json['entry'][0]['resource']
+            assert coverage_resource['id'] == coverage_id, f"Expected coverage resource id {coverage_id}, got {coverage_resource['id']}"
+
 
             return TaskResult(
                 task_success=True,

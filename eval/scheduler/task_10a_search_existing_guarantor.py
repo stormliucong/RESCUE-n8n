@@ -20,6 +20,8 @@ Identify and confirm the guarantor responsible for this patient's insurance poli
 Patient's details:
 - Name: John Doe
 - ID: PAT001
+
+If found, return the guarantor’s ID using the following format: <GUARANTOR>guarantor_id</GUARANTOR>
 """
 
     def prepare_test_data(self) -> None:
@@ -59,6 +61,8 @@ Patient's details:
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         params = {
             "patient": "Patient/PAT001"
@@ -91,10 +95,13 @@ Patient's details:
             )
 
         guarantor_reference = account['guarantor'][0]['party']['reference']
+        guarantor_id = guarantor_reference.split('/')[-1]
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found guarantor {guarantor_reference} for patient PAT001"
+            response_msg=f"Found guarantor {guarantor_reference} for patient PAT001: <GUARANTOR>{guarantor_id}</GUARANTOR>"
         )
+    
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -120,6 +127,18 @@ Patient's details:
             assert 'guarantor' in account, "No guarantor found in account"
             guarantor_reference = account['guarantor'][0]['party']['reference']
             assert guarantor_reference == "RelatedPerson/REL001", "Invalid guarantor reference"
+
+            # Structured-output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            assert "<GUARANTOR>" in response_msg, "Expected to find <GUARANTOR> tag"
+            assert "</GUARANTOR>" in response_msg, "Expected to find </GUARANTOR> tag"
+            guarantor_id = response_msg.split("<GUARANTOR>")[1].split("</GUARANTOR>")[0]
+            expected_id = self.execute_human_agent().response_msg.split("<GUARANTOR>")[1].split("</GUARANTOR>")[0]
+            assert guarantor_id == expected_id, f"Expected guarantor_id {expected_id}, got {guarantor_id}"
+            # Cross-check against the FHIR resource
+            assert account['guarantor'][0]['party']['reference'].endswith(guarantor_id), f"Expected guarantor reference to end with {guarantor_id}"
 
             return TaskResult(
                 task_success=True,

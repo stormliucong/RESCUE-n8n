@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, Response
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import requests
@@ -16,9 +16,11 @@ clients = {}
 session_state = {}  # Stores sessionId -> last responding agent
 
 AGENT_WEBHOOKS = {
+    "scheduler_agent":"https://congliu.app.n8n.cloud/webhook/b118593b-9350-40cf-a6a9-d1e3494da1c2",
     "frontdesk_agent": "https://congliu.app.n8n.cloud/webhook/413ab7a1-30ae-4276-a5d0-8d5ecda4f7a3",
     "education_agent": "https://congliu.app.n8n.cloud/webhook/bdfcc15d-a70c-4fb4-9df6-5beaf18fa2d6"
 }
+
 
 @app.route('/')
 def index():
@@ -56,6 +58,7 @@ def route_message():
     except Exception as e:
         print(f"Exception calling agent webhook: {e}")
         return str(e), 500
+
 
 
 @app.route('/receive_reply', methods=['POST'])
@@ -111,6 +114,40 @@ def handle_disconnect():
         print(f"Client disconnected: session {to_remove}")
     else:
         print("Client disconnected, but no matching session found")
+
+
+
+@app.route('/eval/scheduler', methods=['POST'])
+def eval_scheduler_proxy():
+    payload = request.get_json(force=True, silent=True) or {}
+
+    webhook_url = AGENT_WEBHOOKS.get("scheduler_agent")
+    if webhook_url is None:
+        return {"error": "Scheduler Agent webhook not configured"}, 500
+
+    try:
+        # Forward the request and wait for the agent's synchronous reply
+        rsp = requests.post(
+            webhook_url,
+            json=payload,
+            timeout=int(os.getenv("EVAL_PROXY_TIMEOUT", 30))
+        )
+        rsp.raise_for_status()
+        print("")
+
+        # Mirror status code, headers, and body so the TaskInterface
+        # sees *exactly* what it expects
+        return Response(
+            rsp.content,
+            status=rsp.status_code,
+            content_type=rsp.headers.get('execution_id',"Content-Type", "application/json")
+        )
+ 
+    except requests.exceptions.Timeout:
+        return {"error": "Scheduler Agent timed out"}, 504
+    except requests.exceptions.RequestException as e:
+        # Bubble up any non‑2xx response or network failure
+        return {"error": str(e)}, 502
 
 
 if __name__ == '__main__':

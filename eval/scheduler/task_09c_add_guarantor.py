@@ -17,6 +17,9 @@ Task: Add a guarantor to an account
 
 Add the related person REL001 as a guarantor to the account ACC001 with the following details:
 - Relationship: Mother
+
+After updating, return the account ID using the following format: <ACCOUNT>account_id</ACCOUNT>
+
 """
 
     def prepare_test_data(self) -> None:
@@ -68,6 +71,7 @@ Add the related person REL001 as a guarantor to the account ACC001 with the foll
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
     def execute_human_agent(self) -> Dict:
         update_payload = {
             "resourceType": "Account",
@@ -93,10 +97,12 @@ Add the related person REL001 as a guarantor to the account ACC001 with the foll
             )
 
         response_json = response.json()
+        account_id = response_json.get('id')
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Updated account with ID {response_json.get('id')}"
+            response_msg=f"Updated account with ID <ACCOUNT>{account_id}</ACCOUNT>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -111,6 +117,18 @@ Add the related person REL001 as a guarantor to the account ACC001 with the foll
             assert response_json["status"] == "active", "Account status should be active"
             assert "guarantor" in response_json, "Guarantor not added to account"
             assert response_json["guarantor"][0]["party"]["reference"] == "RelatedPerson/REL001", "Invalid guarantor reference"
+
+            # Structured-output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            assert "<ACCOUNT>" in response_msg, "Expected to find <ACCOUNT> tag"
+            assert "</ACCOUNT>" in response_msg, "Expected to find </ACCOUNT> tag"
+            account_id = response_msg.split("<ACCOUNT>")[1].split("</ACCOUNT>")[0]
+            expected_id = self.execute_human_agent().response_msg.split("<ACCOUNT>")[1].split("</ACCOUNT>")[0]
+            assert account_id == expected_id, f"Expected account_id {expected_id}, got {account_id}"
+            # Cross-check against the FHIR resource
+            assert response_json["id"] == account_id, f"Expected FHIR account id {account_id}, got {response_json['id']}"
 
             return TaskResult(
                 task_success=True,

@@ -17,6 +17,8 @@ Task: Search for patient insurance information
 
 Search if patient insurance information has been entered in the system for:
 - Beneficiary: John Doe (id=PAT001)
+
+If found, return the coverage ID using the following format: <COVERAGE>coverage_id</COVERAGE>
 """
 
     def prepare_test_data(self) -> None:
@@ -73,6 +75,7 @@ Search if patient insurance information has been entered in the system for:
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
     def execute_human_agent(self) -> ExecutionResult:
         params = {
             "beneficiary": "Patient/PAT001",
@@ -92,10 +95,13 @@ Search if patient insurance information has been entered in the system for:
             )
 
         response_json = response.json()
+        coverage_id = response_json['entry'][0]['resource']['id']
+
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found {response_json.get('total', 0)} insurance coverage(s) for patient PAT001"
+            response_msg=f"Found {response_json.get('total', 0)} insurance coverage(s) for patient PAT001: <COVERAGE>{coverage_id}</COVERAGE>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -110,7 +116,7 @@ Search if patient insurance information has been entered in the system for:
             
             response_json = response.json()
             assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] >= 1, f"Expected at least one insurance, but got {response_json['total']}"
+            #assert response_json['total'] >= 1, f"Expected at least one insurance, but got {response_json['total']}"
             assert 'entry' in response_json, "Expected to find entry in the response"
             assert len(response_json['entry']) >= 1, f"Expected at least one insurance, but got {len(response_json['entry'])}"
 
@@ -119,6 +125,21 @@ Search if patient insurance information has been entered in the system for:
             assert coverage['resourceType'] == "Coverage", "Resource type must be Coverage"
             assert coverage['beneficiary']['reference'] == "Patient/PAT001", "Beneficiary reference must be Patient/PAT001"
             assert coverage['status'] == "active", "Coverage must be active"
+
+
+            # Structured-output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            assert "<COVERAGE>" in response_msg, "Expected to find <COVERAGE> tag"
+            assert "</COVERAGE>" in response_msg, "Expected to find </COVERAGE> tag"
+            coverage_id = response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
+            expected_id = self.execute_human_agent().response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
+            assert coverage_id == expected_id, f"Expected coverage_id {expected_id}, got {coverage_id}"
+            # Cross-check with FHIR response
+            coverage_resource = response_json['entry'][0]['resource']
+            assert coverage_resource['id'] == coverage_id, f"Expected FHIR coverage id {coverage_id}, got {coverage_resource['id']}"
+
 
             return TaskResult(
                 task_success=True,
