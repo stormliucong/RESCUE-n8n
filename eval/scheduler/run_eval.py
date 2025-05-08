@@ -48,7 +48,7 @@ def load_tasks_from_config(config_path):
     return task_configs
 
 
-task_configs = load_tasks_from_config("run_eval_test.yaml")
+task_configs = load_tasks_from_config("run_eval_test_2.yaml")
 
 logger.info(f"Running eval with {len(task_configs)} tasks")
 

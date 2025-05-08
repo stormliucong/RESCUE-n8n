@@ -17,6 +17,8 @@ Task: Record a medical condition
 
 Record a medical condition for the patient id=PAT001 in his medical history that he has a hypertension. 
 Using SNOMED CT (http://snomed.info/sct) for coding.
+
+Return the recorded condition's ID using the following format: <CONDITION>condition_id</CONDITION>
 """
 
     def prepare_test_data(self) -> None:
@@ -33,6 +35,8 @@ Using SNOMED CT (http://snomed.info/sct) for coding.
             self.upsert_to_fhir(patient_resource)
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
+
+
 
     def execute_human_agent(self) -> ExecutionResult:
         condition_data = {
@@ -64,8 +68,9 @@ Using SNOMED CT (http://snomed.info/sct) for coding.
         response_json = response.json()
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully created medical condition with ID {response_json.get('id')}"
+            response_msg=f"Successfully created medical condition with ID: <CONDITION>{response_json.get('id')}</CONDITION>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -95,6 +100,24 @@ Using SNOMED CT (http://snomed.info/sct) for coding.
             assert condition['code']['coding'][0]['system'] == "http://snomed.info/sct", "Coding system must be SNOMED CT"
             assert condition['code']['coding'][0]['code'] == "38341003", "Invalid condition code"
             assert condition['code']['text'] == "Hypertension", "Invalid condition text"
+
+            # Additional assertions (to be discussed)
+            response_msg = execution_result.response_msg
+
+            assert response_msg is not None, "Expected to find response message"
+
+            response_msg = response_msg.strip()
+                # match the response message with the expected format
+            assert "<CONDITION>" in response_msg, "Expected to find <CONDITION> tag"
+            assert "</CONDITION>" in response_msg, "Expected to find </CONDITION>tag"
+            
+                # Extract the condition_id from the response message
+            condition_id = response_msg.split("<CONDITION>")[1].split("</CONDITION>")[0]
+
+            assert condition_id is not None, "Expected to find condition_id"
+
+            expected_condition_id = self.execute_human_agent().response_msg.split("<CONDITION>")[1].split("</CONDITION>")[0]
+            assert condition_id == expected_condition_id, f"Expected condition_id {expected_condition_id}, got {condition_id}"
 
             return TaskResult(
                 task_success=True,

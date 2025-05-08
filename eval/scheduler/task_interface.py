@@ -288,13 +288,19 @@ class TaskInterface(ABC):
                 "fhir_server_url": self.FHIR_SERVER_URL,
             }
         try:
+
             response = requests.post(self.N8N_AGENT_URL, json=payload)
-    
+
+            # # TESTING
+            # print("calling python server")
+            # SCHEDULER_PROXY_URL =  "http://localhost:8000/eval/scheduler"
+            # response = requests.post(SCHEDULER_PROXY_URL, json=payload)
+
             if response.status_code == 200:
                 success = True
                 response_msg = response.json()[0]['output']
                 # get response header
-                execution_id = response.headers['execution_id'] 
+                execution_id = response.headers['execution_id']
             else:
                 success = False
                 response_msg = f"Error: {response.status_code} - {response.text}"

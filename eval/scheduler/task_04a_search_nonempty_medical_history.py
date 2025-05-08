@@ -16,6 +16,8 @@ class SearchNonemptyMedicalHistoryTask(TaskInterface):
 Task: Search for patient medical history
 
 Search for the existing patient id=PAT001 to see if he has any medical history.
+
+If found, return the condition's ID using the following format: <CONDITION>condition_id</CONDITION>
 """
 
     def prepare_test_data(self) -> None:
@@ -49,6 +51,7 @@ Search for the existing patient id=PAT001 to see if he has any medical history.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
     def execute_human_agent(self) -> ExecutionResult:
         params = {
             "subject": "Patient/PAT001"
@@ -59,7 +62,7 @@ Search for the existing patient id=PAT001 to see if he has any medical history.
             headers=self.HEADERS,
             params=params
         )
-        
+            
         if response.status_code != 200:
             return ExecutionResult(
                 execution_success=False,
@@ -69,8 +72,9 @@ Search for the existing patient id=PAT001 to see if he has any medical history.
         response_json = response.json()
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found {response_json.get('total', 0)} medical condition(s) for patient PAT001"
+            response_msg=f"Found {response_json.get('total', 0)} medical condition(s) for patient PAT001: <CONDITION>{response.json()['entry'][0]['resource']['id']}</CONDITION>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -93,6 +97,24 @@ Search for the existing patient id=PAT001 to see if he has any medical history.
             condition = response_json['entry'][0]['resource']
             assert condition['resourceType'] == "Condition", "Resource type must be Condition"
             assert condition['subject']['reference'] == "Patient/PAT001", "Subject reference must be Patient/PAT001"
+
+            # Additional assertions (to be discussed)
+            response_msg = execution_result.response_msg
+
+            assert response_msg is not None, "Expected to find response message"
+
+            response_msg = response_msg.strip()
+                # match the response message with the expected format
+            assert "<CONDITION>" in response_msg, "Expected to find <CONDITION> tag"
+            assert "</CONDITION>" in response_msg, "Expected to find </CONDITION>tag"
+            
+                # Extract the condition_id from the response message
+            condition_id = response_msg.split("<CONDITION>")[1].split("</CONDITION>")[0]
+
+            assert condition_id is not None, "Expected to find condition_id"
+
+            expected_condition_id = self.execute_human_agent().response_msg.split("<CONDITION>")[1].split("</CONDITION>")[0]
+            assert condition_id == expected_condition_id, f"Expected condition_id {expected_condition_id}, got {condition_id}"
             
             return TaskResult(
                 task_success=True,
@@ -133,14 +155,16 @@ Search for the existing patient id=PAT001 to see if he has any medical history.
     
 #     FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 #     N8N_URL = os.getenv("N8N_AGENT_URL")
+#     N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
+
     
-#     task = SearchExistingMedicalHistoryTask(FHIR_SERVER_URL, N8N_URL)
+#     task = SearchNonemptyMedicalHistoryTask(FHIR_SERVER_URL, N8N_URL, N8N_EXECUTION_URL)
 #     print(task.get_task_id())
 #     print(task.get_task_name())
 #     task.cleanup_test_data()
 #     task.prepare_test_data()
 #     human_response = task.execute_human_agent()
-#     eval_results = task.validate_response(human_response)
-#     print(eval_results)
+#     # eval_results = task.validate_response(human_response)
+#     print(human_response)
 #     # n8n_response = task.execute_n8n_agent()
 #     # print(n8n_response)
