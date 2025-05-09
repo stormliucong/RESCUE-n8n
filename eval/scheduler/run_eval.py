@@ -15,6 +15,7 @@ FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
 N8N_URL = os.getenv("N8N_AGENT_URL")
 N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
 N8N_SYSTEM_PROMPT_FILE = os.getenv("N8N_SYSTEM_PROMPT_FILE", None)
+N8N_MULTI_AGENT_PROMPT_FILE = os.getenv("N8N_MULTI_AGENT_PROMPT_FILE", None)
 
 HEADERS = {
     "Content-Type": "application/fhir+json",
@@ -75,6 +76,7 @@ for task_config in task_configs:
         n8n_url = N8N_URL,
         n8n_execution_url = N8N_EXECUTION_URL,
         n8n_system_prompt_file = N8N_SYSTEM_PROMPT_FILE,
+        n8n_multi_agent_prompt_file = N8N_MULTI_AGENT_PROMPT_FILE,
         required_tool_call_sets = required_tool_call_sets,
         required_resource_types = required_resource_types,
         prohibited_tools = prohibited_tools

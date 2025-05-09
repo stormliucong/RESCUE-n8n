@@ -54,6 +54,7 @@ class TaskInterface(ABC):
                 n8n_url,
                 n8n_execution_url,
                 n8n_system_prompt_file=None,
+                n8n_multi_agent_prompt_file=None,
                 required_tool_call_sets=None,
                 required_resource_types=None,
                 prohibited_tools=None):
@@ -61,13 +62,12 @@ class TaskInterface(ABC):
         self.FHIR_SERVER_URL = fhir_server_url
         self.N8N_AGENT_URL = n8n_url
         self.N8N_EXECUTION_URL = n8n_execution_url
-
+        self.N8N_MULTI_AGENT_PROMPT_FILE = n8n_multi_agent_prompt_file
         # Eval parameters
         self.required_tool_call_sets = required_tool_call_sets or []
         self.required_resource_types = required_resource_types or []
         self.prohibited_tools = prohibited_tools or []
-        self.N8N_SYSTEM_PROMPT_FILE = n8n_system_prompt_file
-        print(f"INIT: {required_tool_call_sets=}, {required_resource_types=}")
+        logger.debug(f"INIT: {required_tool_call_sets=}, {required_resource_types=}, {prohibited_tools=}")
 
         
         
@@ -277,10 +277,15 @@ class TaskInterface(ABC):
                             Remember the FHIR server stores timestamps in UTC by default, 
                             You have to convert the time zone difference when creating and retrieve resources.
             '''
+            if self.N8N_MULTI_AGENT_PROMPT_FILE:
+                with open(self.N8N_MULTI_AGENT_PROMPT_FILE, 'r') as file:
+                    multi_agent_prompt = file.read()
+                logger.debug(f"multi_agent_prompt: {multi_agent_prompt}")
+                system_prompt += f"\n\n{multi_agent_prompt}"
             payload = {
                 "prompt": prompt,
                 "fhir_server_url": self.FHIR_SERVER_URL,
-                "system_prompt": system_prompt
+                "system_prompt": system_prompt,
             }
         else:
             payload = {
