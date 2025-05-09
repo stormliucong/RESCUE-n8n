@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 import time
-from typing import Dict, Any, List, Optional, Tuple 
+from typing import Dict, Any, List, Optional, Tuple
+import uuid 
 import requests # type: ignore
 from dataclasses import dataclass
 from fetch_and_parse_n8n_execution_log import fetch_and_parse_n8n_execution_log
@@ -265,6 +266,8 @@ class TaskInterface(ABC):
         """Execute the task on n8n workflowand and return results"""
         prompt = self.get_prompt()
         logger.debug(prompt)
+        session_id = str(uuid.uuid4())
+        logger.debug(f"session_id: {session_id}")
         if self.N8N_SYSTEM_PROMPT_FILE:
             # load txt file into string
             with open(self.N8N_SYSTEM_PROMPT_FILE, 'r') as file:
@@ -284,12 +287,14 @@ class TaskInterface(ABC):
                 system_prompt += f"\n\n{multi_agent_prompt}"
             payload = {
                 "prompt": prompt,
+                "session_id": session_id,
                 "fhir_server_url": self.FHIR_SERVER_URL,
                 "system_prompt": system_prompt,
             }
         else:
             payload = {
                 "prompt": prompt,
+                "session_id": session_id,
                 "fhir_server_url": self.FHIR_SERVER_URL,
             }
         try:
