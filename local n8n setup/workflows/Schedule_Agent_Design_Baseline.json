@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-11T17:08:23.620Z",
-  "updatedAt": "2025-05-06T20:54:40.000Z",
+  "updatedAt": "2025-05-09T01:35:15.000Z",
   "id": "p5CG6PCfoYNp850m",
   "name": "Schedule Agent Design Baseline",
   "active": true,
@@ -486,6 +486,28 @@
       ],
       "id": "5c41ed2a-9ae6-4c17-bde6-cb9c068b99ee",
       "name": "default_prompt"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $('Webhook').item.json.body.session_id}}",
+        "sessionTTL": 1500,
+        "contextWindowLength": 50
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryRedisChat",
+      "typeVersion": 1.4,
+      "position": [
+        -500,
+        -80
+      ],
+      "id": "ce857940-7357-4159-b80f-c1c5aa8fe21c",
+      "name": "Redis Chat Memory",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
     }
   ],
   "connections": {
@@ -703,6 +725,17 @@
           }
         ]
       ]
+    },
+    "Redis Chat Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Schedule Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -713,7 +746,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "358aca93-2ffd-4745-bb94-20be82bfbfff",
+  "versionId": "03629b3c-ffb6-4af9-be57-9a833654832d",
   "triggerCount": 1,
   "tags": [
     {
