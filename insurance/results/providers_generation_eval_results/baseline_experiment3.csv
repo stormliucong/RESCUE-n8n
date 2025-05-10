@@ -1,2 +1,0 @@
-prompt_name,experiment_id,ground_truth_count,llm_returned_count,common_count,missing_count,extra_count,Precision (%),Recall (%)
-baseline,3,311,180,67,243,113,37.22,21.61
