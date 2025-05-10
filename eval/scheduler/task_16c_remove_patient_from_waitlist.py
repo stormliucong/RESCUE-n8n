@@ -15,6 +15,9 @@ class RemovePatientFromWaitlistTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Patient John Doe (PAT001) no longer wants to be on the waitlist. Remove them from the waitlist.
+
+After removal, return the cancelled appointment ID using the following format:
+<APPOINTMENT>appointment_id</APPOINTMENT>
 """
 
     def prepare_test_data(self) -> None:
@@ -100,6 +103,8 @@ Task: Patient John Doe (PAT001) no longer wants to be on the waitlist. Remove th
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         # Find the waitlist appointment
         params = {
@@ -118,10 +123,13 @@ Task: Patient John Doe (PAT001) no longer wants to be on the waitlist. Remove th
         response = requests.put(f"{self.FHIR_SERVER_URL}/Appointment/{waitlist_appointment['id']}", headers=self.HEADERS, json=waitlist_appointment)
         assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
         
+        appointment_id = waitlist_appointment['id']
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully removed patient from waitlist by cancelling appointment {waitlist_appointment['id']}"
+            response_msg=f"Successfully removed patient from waitlist by cancelling appointment <APPOINTMENT>{appointment_id}</APPOINTMENT>"
         )
+
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -155,6 +163,15 @@ Task: Patient John Doe (PAT001) no longer wants to be on the waitlist. Remove th
             assert appointment['status'] == 'cancelled', "Expected appointment status to be 'cancelled'"
             assert appointment['participant'][0]['actor']['reference'] == 'Patient/PAT001', "Expected patient to be PAT001"
             assert appointment['participant'][1]['actor']['reference'] == 'Practitioner/PROVIDER001', "Expected practitioner to be PROVIDER001"
+
+            # Added logic
+            response_msg = execution_result.response_msg.strip()
+            assert "<APPOINTMENT>" in response_msg and "</APPOINTMENT>" in response_msg, "Missing <APPOINTMENT> tag"
+            appointment_id = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
+
+            # Verify the Appointment resource is cancelled
+            appt_resp = requests.get(f"{self.FHIR_SERVER_URL}/Appointment/{appointment_id}", headers=self.HEADERS)
+            assert appt_resp.status_code == 200 and appt_resp.json().get("status") == "cancelled", f"Appointment {appointment_id} not cancelled"
 
             return TaskResult(
                 task_success=True,

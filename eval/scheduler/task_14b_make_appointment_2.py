@@ -16,6 +16,8 @@ class MakeAppointmentTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Make an appointment time for Jane Doe with Provider Dr. Smith John on next Monday morning at 9am."
+
+After creating the appointment, return the new Appointment ID using the following format: <APPOINTMENT>appointment_id</APPOINTMENT>
 """
 
     def prepare_test_data(self) -> None:
@@ -106,6 +108,8 @@ Task: Make an appointment time for Jane Doe with Provider Dr. Smith John on next
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         start = datetime.now() + timedelta(days=(7 - datetime.now().weekday()) % 7)
         start = start.replace(hour=9, minute=0, second=0, microsecond=0)
@@ -120,6 +124,8 @@ Task: Make an appointment time for Jane Doe with Provider Dr. Smith John on next
             "end": (start + timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ"),
         }
         response = requests.put(f"{self.FHIR_SERVER_URL}/Appointment/APPOINTMENT002", headers=self.HEADERS, json=params)
+        # Added logic
+        appointment_id = response.json().get('id')
         assert response.status_code == 201, f"Expected status code 201, but got {response.status_code}. Response body: {response.text}"
         params = {
             "resourceType": "Slot",
@@ -131,8 +137,9 @@ Task: Make an appointment time for Jane Doe with Provider Dr. Smith John on next
 
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully created appointment APPOINTMENT002 and updated slot SLOT002 to busy"
+            response_msg=f"Successfully created appointment <APPOINTMENT>{appointment_id}</APPOINTMENT>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -154,6 +161,15 @@ Task: Make an appointment time for Jane Doe with Provider Dr. Smith John on next
             response = requests.get(f"{self.FHIR_SERVER_URL}/{slot_id}", headers=self.HEADERS)
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert response.json()['status'] == "busy", "Expected slot to be busy"
+
+            # Added logic
+            response_msg = execution_result.response_msg.strip()
+            assert "<APPOINTMENT>" in response_msg, "Expected to find <APPOINTMENT> tag"
+            assert "</APPOINTMENT>" in response_msg, "Expected to find </APPOINTMENT> tag"
+            appointment_id_tag = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
+            # Compare to the actual Appointment resource returned
+            actual_appt_id = response.json()['entry'][0]['resource']['id']
+            assert appointment_id_tag == actual_appt_id, f"Expected appointment_id {actual_appt_id}, got {appointment_id_tag}"
 
             return TaskResult(
                 task_success=True,

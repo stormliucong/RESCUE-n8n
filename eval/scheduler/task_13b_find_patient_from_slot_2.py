@@ -15,6 +15,9 @@ class FindPatientFromSlotTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Find the patient who has booked Dr. Smith John's slots next Monday morning at 9am.
+
+After finding, return the patient ID using the following format: <PATIENT_ID>patient_id</PATIENT_ID>
+If none found, return the exact sentence: No slots found for Dr. Smith John
 """
 
     def prepare_test_data(self) -> None:
@@ -122,6 +125,8 @@ Task: Find the patient who has booked Dr. Smith John's slots next Monday morning
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         # Find next Monday's slot at 9am
         next_monday = datetime.now() + timedelta(days=(7 - datetime.now().weekday()))
@@ -146,8 +151,10 @@ Task: Find the patient who has booked Dr. Smith John's slots next Monday morning
 
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully found patient {patient_id} for Dr. Smith John's slot"
+            response_msg=f"Successfully found patient <PATIENT_ID>{patient_id}</PATIENT_ID> for Dr. Smith John's slot"
         )
+
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -174,6 +181,23 @@ Task: Find the patient who has booked Dr. Smith John's slots next Monday morning
             assert patient_data['resourceType'] == "Patient", "Expected Patient resource"
             assert patient_data['id'] == "PAT002", "Expected patient with ID PAT002"
             assert patient_data['name'][0]['family'] == "Doe", "Expected patient with family name Doe"
+
+            # Added eval logic
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+
+            if 'entry' in response.json() and response.json()['entry']:
+                assert "<PATIENT_ID>" in response_msg, "Expected to find <PATIENT_ID> tag"
+                assert "</PATIENT_ID>" in response_msg, "Expected to find </PATIENT_ID> tag"
+                patient_id = response_msg.split("<PATIENT_ID>")[1].split("</PATIENT_ID>")[0]
+                expected_id = self.execute_human_agent().response_msg.split("<PATIENT_ID>")[1].split("</PATIENT_ID>")[0]
+                assert patient_id == expected_id, f"Expected patient_id {expected_id}, got {patient_id}"
+                
+                # Cross-check the fetched Patient resource
+                assert patient_data['id'] == patient_id, f"Expected Patient resource id {patient_id}, got {patient_data['id']}"
+            else:
+                assert response_msg == "No slots found for Dr. Smith John", f"Expected 'No slots found for Dr. Smith John', got '{response_msg}'"
             
             return TaskResult(
                 task_success=True,
