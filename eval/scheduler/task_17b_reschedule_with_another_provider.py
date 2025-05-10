@@ -17,6 +17,10 @@ class RescheduleWithAnotherProviderTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monday 9am with another provider who has availability at the same time.
+Return the new Appointment ID and Slot ID using:
+<APPOINTMENT>appointment_id</APPOINTMENT>
+<SLOT_ID>slot_id</SLOT_ID>
+
 """
 
     def prepare_test_data(self) -> None:
@@ -218,12 +222,17 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
         
         response = requests.put(f"{self.FHIR_SERVER_URL}/Appointment/{current_appointment['id']}", headers=self.HEADERS, json=current_appointment)
         assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
-        execution_results = ExecutionResult(
+
+        # Added logic
+        appointment_id = current_appointment['id']
+        new_slot_id   = new_slot['id']
+        return ExecutionResult(
             execution_success=True,
-            response_msg=f"Appointment rescheduled successfully with new slot: {new_slot['id']}",
-            
+            response_msg=(
+                f"Rescheduled successfully <APPOINTMENT>{appointment_id}</APPOINTMENT> "
+                f"with new slot <SLOT_ID>{new_slot_id}</SLOT_ID>"
+            )
         )
-        return execution_results
 
 
 
@@ -255,7 +264,6 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
             new_slot = response.json()['entry'][0]['resource']
             assert new_slot['status'] == 'busy', "Expected new slot to be busy"
             
-            
             # Verify the appointment details
             params = {
                 "patient": "Patient/PAT001",
@@ -273,6 +281,26 @@ Task: Reschedule John Doe's (FHIR Resource ID: PAT001) appointment at next Monda
 
             # Verify the appointment is with the new slot
             assert appointment['slot'][0]['reference'] == f"Slot/{new_slot['id']}", "Expected slot to be the new slot"
+
+            # Added logic
+            response_msg = execution_result.response_msg.strip()
+            # Check tags in the human-readable message
+            assert "<APPOINTMENT>" in response_msg and "</APPOINTMENT>" in response_msg, "Missing <APPOINTMENT> tags"
+            assert "<SLOT_ID>"     in response_msg and "</SLOT_ID>"     in response_msg, "Missing <SLOT_ID> tags"
+
+            # Extract IDs
+            appointment_id = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
+            slot_id        = response_msg.split("<SLOT_ID>")[1].split("</SLOT_ID>")[0]
+
+            # Verify the appointment is now booked
+            appt = requests.get(f"{self.FHIR_SERVER_URL}/Appointment/{appointment_id}", headers=self.HEADERS)
+            assert appt.status_code == 200, f"Appointment {appointment_id} not found"
+            assert appt.json().get("status") == "booked", f"Appointment {appointment_id} status is not booked"
+
+            # Verify the slot is marked busy
+            slot = requests.get(f"{self.FHIR_SERVER_URL}/Slot/{slot_id}", headers=self.HEADERS)
+            assert slot.status_code == 200, f"Slot {slot_id} not found"
+            assert slot.json().get("status") == "busy", f"Slot {slot_id} status is not busy"
            
             return TaskResult(
                 task_success=True,
