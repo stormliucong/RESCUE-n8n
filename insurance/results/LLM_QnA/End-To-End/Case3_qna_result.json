@@ -1,0 +1,29 @@
+{
+  "Q0": "BRCA1/BRCA2 genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": [
+    "Yes",
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": [
+    "Yes",
+    "Yes"
+  ],
+  "Q10": [
+    "No",
+    "Risk Assessment"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit the Aetna Breast and Ovarian Cancer Susceptibility Gene Testing Prior Authorization Form along with the laboratory's test requisition form for precertification. Include documentation of specific cancer diagnoses in family members and pertinent medical records. Provide a summary indicating how this testing will change the immediate medical care of the member."
+}
