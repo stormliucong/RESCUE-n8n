@@ -16,6 +16,10 @@ class CancelAppointmentWithProviderTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Cancel Patient John Doe's next coming appointment with Dr. Smith John.
+After cancellation, return the cancelled appointment ID and freed slot ID using the following format:
+<APPOINTMENT>appointment_id</APPOINTMENT>
+<SLOT_ID>slot_id</SLOT_ID>
+
 """
 
     def prepare_test_data(self) -> None:
@@ -122,6 +126,8 @@ Task: Cancel Patient John Doe's next coming appointment with Dr. Smith John.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         # Find the next appointment for John Doe with Dr. Smith John
         params = {
@@ -178,8 +184,14 @@ Task: Cancel Patient John Doe's next coming appointment with Dr. Smith John.
 
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully cancelled appointment {appointment_id} with Dr. Smith and freed slot {slot_id}"
+            response_msg=(
+                f"Successfully cancelled appointment "
+                f"<APPOINTMENT>{appointment_id}</APPOINTMENT> and freed slot "
+                f"<SLOT_ID>{slot_id}</SLOT_ID>"
+            )
         )
+    
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -210,6 +222,22 @@ Task: Cancel Patient John Doe's next coming appointment with Dr. Smith John.
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert 'entry' in response.json(), "Expected to find the other appointment still booked"
             assert len(response.json()['entry']) == 1, "Expected to find exactly one booked appointment"
+
+            # Additional assertions
+            response_msg = execution_result.response_msg.strip()
+            assert "<APPOINTMENT>" in response_msg and "</APPOINTMENT>" in response_msg, "Missing <APPOINTMENT> tag"
+            assert "<SLOT_ID>" in response_msg and "</SLOT_ID>" in response_msg, "Missing <SLOT_ID> tag"
+
+            appointment_id = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
+            slot_id = response_msg.split("<SLOT_ID>")[1].split("</SLOT_ID>")[0]
+
+            # Verify the appointment status is 'cancelled'
+            appt_resp = requests.get(f"{self.FHIR_SERVER_URL}/Appointment/{appointment_id}", headers=self.HEADERS)
+            assert appt_resp.status_code == 200 and appt_resp.json().get("status") == "cancelled", f"Appointment {appointment_id} not cancelled"
+
+            # Verify the slot status is 'free'
+            slot_resp = requests.get(f"{self.FHIR_SERVER_URL}/Slot/{slot_id}", headers=self.HEADERS)
+            assert slot_resp.status_code == 200 and slot_resp.json().get("status") == "free", f"Slot {slot_id} not freed"
 
             return TaskResult(
                 task_success=True,

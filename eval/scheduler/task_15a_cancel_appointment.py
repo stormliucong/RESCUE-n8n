@@ -17,6 +17,10 @@ class CancelAppointmentTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Cancel Patient John Doe's next coming appointment.
+
+After cancellation, return the cancelled appointment ID and freed slot ID using the following format:
+<APPOINTMENT>appointment_id</APPOINTMENT>
+<SLOT_ID>slot_id</SLOT_ID>
 """
 
     def prepare_test_data(self) -> None:
@@ -101,6 +105,8 @@ Task: Cancel Patient John Doe's next coming appointment.
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         # Find the next appointment for John Doe
         params = {
@@ -156,8 +162,14 @@ Task: Cancel Patient John Doe's next coming appointment.
 
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully cancelled appointment {appointment_id} and freed slot {slot_id}"
+            response_msg=(
+                f"Successfully cancelled appointment "
+                f"<APPOINTMENT>{appointment_id}</APPOINTMENT> "
+                f"and freed slot <SLOT_ID>{slot_id}</SLOT_ID>"
+            )
         )
+
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -176,6 +188,30 @@ Task: Cancel Patient John Doe's next coming appointment.
             response = requests.get(f"{self.FHIR_SERVER_URL}/{slot_id}", headers=self.HEADERS)
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert response.json()['status'] == "free", "Expected slot to be free after cancellation"
+
+            # Additional logic
+            response_msg = execution_result.response_msg.strip()
+            # Appointment tag assertions
+            assert "<APPOINTMENT>" in response_msg, "Expected to find <APPOINTMENT> tag"
+            assert "</APPOINTMENT>" in response_msg, "Expected to find </APPOINTMENT> tag"
+            appointment_id_tag = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
+            # Cross‐check cancelled Appointment resource
+            appt_resp = requests.get(
+                f"{self.FHIR_SERVER_URL}/Appointment",
+                headers=self.HEADERS,
+                params={"patient": "Patient/PAT001", "status": "cancelled"}
+            )
+            cancelled_appt = appt_resp.json()['entry'][0]['resource']
+            assert appointment_id_tag == cancelled_appt['id'], f"Expected appointment_id {cancelled_appt['id']}, got {appointment_id_tag}"
+
+            # Slot tag assertions
+            assert "<SLOT_ID>" in response_msg, "Expected to find <SLOT_ID> tag"
+            assert "</SLOT_ID>" in response_msg, "Expected to find </SLOT_ID> tag"
+            slot_id_tag = response_msg.split("<SLOT_ID>")[1].split("</SLOT_ID>")[0]
+            # Cross‐check freed Slot resource
+            slot_resp = requests.get(f"{self.FHIR_SERVER_URL}/{slot_id_tag}", headers=self.HEADERS)
+            slot_json = slot_resp.json()
+            assert slot_json['id'] == slot_id_tag, f"Expected freed slot id {slot_id_tag}, got {slot_json['id']}"
 
             return TaskResult(
                 task_success=True,

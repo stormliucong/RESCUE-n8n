@@ -16,6 +16,9 @@ class RescheduleToNextMondayTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Reschedule John Doe's (PAT001) appointment to next Monday with Dr. Smith.
+After rescheduling, return the Appointment ID and new Slot ID using:
+<APPOINTMENT>appointment_id</APPOINTMENT>
+<SLOT_ID>slot_id</SLOT_ID>
 """
 
     def prepare_test_data(self) -> None:
@@ -231,10 +234,18 @@ Task: Reschedule John Doe's (PAT001) appointment to next Monday with Dr. Smith.
         response = requests.put(f"{self.FHIR_SERVER_URL}/Appointment/{current_appointment['id']}", headers=self.HEADERS, json=current_appointment)
         assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
         
+        # Added logic
+        appointment_id = current_appointment['id']
+        slot_id = monday_slot['id']
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Appointment rescheduled successfully to next Monday at 9am with slot: {monday_slot['id']}"
+            response_msg=(
+                f"Rescheduled appointment <APPOINTMENT>{appointment_id}</APPOINTMENT> "
+                f"to next Monday with slot <SLOT_ID>{slot_id}</SLOT_ID>"
+            )
         )
+    
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -292,6 +303,23 @@ Task: Reschedule John Doe's (PAT001) appointment to next Monday with Dr. Smith.
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             slot_start = datetime.strptime(response.json()['start'], "%Y-%m-%dT%H:%M:%SZ")
             assert slot_start.weekday() == 0, "Expected appointment to be on Monday"
+
+            # Added logic
+            response_msg = execution_result.response_msg.strip()
+            assert "<APPOINTMENT>" in response_msg and "</APPOINTMENT>" in response_msg, "Missing <APPOINTMENT> tag"
+            assert "<SLOT_ID>" in response_msg and "</SLOT_ID>" in response_msg, "Missing <SLOT_ID> tag"
+
+            appointment_id = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
+            slot_id = response_msg.split("<SLOT_ID>")[1].split("</SLOT_ID>")[0]
+
+            # Verify appointment is still booked and updated
+            appt_resp = requests.get(f"{self.FHIR_SERVER_URL}/Appointment/{appointment_id}", headers=self.HEADERS)
+            assert appt_resp.status_code == 200 and appt_resp.json().get("status") == "booked", f"Appointment {appointment_id} not booked"
+            assert appt_resp.json()['slot'][0]['reference'].endswith(slot_id), f"Appointment not updated to slot {slot_id}"
+
+            # Verify slot is now busy
+            slot_resp = requests.get(f"{self.FHIR_SERVER_URL}/Slot/{slot_id}", headers=self.HEADERS)
+            assert slot_resp.status_code == 200 and slot_resp.json().get("status") == "busy", f"Slot {slot_id} not busy"
 
             return TaskResult(
                 task_success=True,

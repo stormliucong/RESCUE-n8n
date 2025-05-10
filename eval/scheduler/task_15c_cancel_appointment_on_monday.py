@@ -15,6 +15,10 @@ class CancelAppointmentOnMondayTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Cancel Patient John Doe's appointment on next Monday.
+
+After cancelling, return the cancelled appointment ID and freed slot ID using:
+<APPOINTMENT>appointment_id</APPOINTMENT>
+<SLOT_ID>slot_id</SLOT_ID>
 """
 
     def prepare_test_data(self) -> None:
@@ -162,8 +166,13 @@ Task: Cancel Patient John Doe's appointment on next Monday.
 
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully cancelled appointment {appointment_id} on Monday and freed slot {slot_id}"
+            response_msg=(
+                f"Successfully cancelled appointment <APPOINTMENT>{appointment_id}</APPOINTMENT> "
+                f"and freed slot <SLOT_ID>{slot_id}</SLOT_ID>"
+            )
         )
+
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -202,6 +211,22 @@ Task: Cancel Patient John Doe's appointment on next Monday.
             booked_appointments = [appt for appt in response.json()['entry'] 
                                 if appt['resource']['status'] == 'booked']
             assert len(booked_appointments) == 1, "Expected to find exactly one booked appointment"
+
+            # Additional eval
+            response_msg = execution_result.response_msg.strip()
+            assert "<APPOINTMENT>" in response_msg and "</APPOINTMENT>" in response_msg, "Missing <APPOINTMENT> tag"
+            assert "<SLOT_ID>" in response_msg and "</SLOT_ID>" in response_msg, "Missing <SLOT_ID> tag"
+
+            appointment_id = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
+            slot_id = response_msg.split("<SLOT_ID>")[1].split("</SLOT_ID>")[0]
+
+            # Verify appointment is cancelled
+            appt_resp = requests.get(f"{self.FHIR_SERVER_URL}/Appointment/{appointment_id}", headers=self.HEADERS)
+            assert appt_resp.status_code == 200 and appt_resp.json().get("status") == "cancelled", f"Appointment {appointment_id} not cancelled"
+
+            # Verify slot is free
+            slot_resp = requests.get(f"{self.FHIR_SERVER_URL}/Slot/{slot_id}", headers=self.HEADERS)
+            assert slot_resp.status_code == 200 and slot_resp.json().get("status") == "free", f"Slot {slot_id} not freed"
 
             return TaskResult(
                 task_success=True,

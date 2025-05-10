@@ -15,6 +15,10 @@ class MovePatientOutOfWaitlistTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Move patient John Doe (PAT001) out of the waitlist by booking them into an available slot with Dr. Smith.
+
+After moving, return the appointment ID and slot ID using the following format:
+<APPOINTMENT>appointment_id</APPOINTMENT>
+<SLOT_ID>slot_id</SLOT_ID>
 """
 
     def prepare_test_data(self) -> None:
@@ -108,6 +112,8 @@ Task: Move patient John Doe (PAT001) out of the waitlist by booking them into an
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         # Find the waitlist appointment
         params = {
@@ -152,10 +158,18 @@ Task: Move patient John Doe (PAT001) out of the waitlist by booking them into an
         response = requests.put(f"{self.FHIR_SERVER_URL}/Appointment/{waitlist_appointment['id']}", headers=self.HEADERS, json=waitlist_appointment)
         assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
         
+        # Additional logic
+        appointment_id = waitlist_appointment['id']
+        slot_id = available_slot['id']
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully moved patient from waitlist to booked appointment {waitlist_appointment['id']} with slot {available_slot['id']}"
+            response_msg=(
+                f"Successfully moved patient from waitlist to booked appointment "
+                f"<APPOINTMENT>{appointment_id}</APPOINTMENT> with slot "
+                f"<SLOT_ID>{slot_id}</SLOT_ID>"
+            )
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -194,6 +208,22 @@ Task: Move patient John Doe (PAT001) out of the waitlist by booking them into an
             response = requests.get(f"{self.FHIR_SERVER_URL}/Slot/SLOT002", headers=self.HEADERS)
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert response.json()['status'] == 'busy', "Expected slot to be marked as busy"
+
+            # Additonal logic
+            response_msg = execution_result.response_msg.strip()
+            assert "<APPOINTMENT>" in response_msg and "</APPOINTMENT>" in response_msg, "Missing <APPOINTMENT> tag"
+            assert "<SLOT_ID>" in response_msg and "</SLOT_ID>" in response_msg, "Missing <SLOT_ID> tag"
+
+            appointment_id = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
+            slot_id = response_msg.split("<SLOT_ID>")[1].split("</SLOT_ID>")[0]
+
+            # Verify appointment is booked
+            appt_resp = requests.get(f"{self.FHIR_SERVER_URL}/Appointment/{appointment_id}", headers=self.HEADERS)
+            assert appt_resp.status_code == 200 and appt_resp.json().get("status") == "booked", f"Appointment {appointment_id} not booked"
+
+            # Verify slot is busy
+            slot_resp = requests.get(f"{self.FHIR_SERVER_URL}/Slot/{slot_id}", headers=self.HEADERS)
+            assert slot_resp.status_code == 200 and slot_resp.json().get("status") == "busy", f"Slot {slot_id} not busy"
             
             return TaskResult(
                 task_success=True,

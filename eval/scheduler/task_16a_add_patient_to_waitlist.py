@@ -16,6 +16,7 @@ class AddPatientToWaitlistTask(TaskInterface):
     def get_prompt(self) -> str:
         return """
 Task: Patient John Doe id=PAT001 wants an earlier time with Dr. Smith. Add them to the waitlist.
+After adding, return the new waitlist Appointment ID using the following format: <APPOINTMENT>appointment_id</APPOINTMENT>
 """
 
     def prepare_test_data(self) -> None:
@@ -83,6 +84,8 @@ Task: Patient John Doe id=PAT001 wants an earlier time with Dr. Smith. Add them 
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
+
+
     def execute_human_agent(self) -> ExecutionResult:
         # Create waitlist appointment
         start = datetime.now() + timedelta(days=1)
@@ -105,10 +108,13 @@ Task: Patient John Doe id=PAT001 wants an earlier time with Dr. Smith. Add them 
         response = requests.post(f"{self.FHIR_SERVER_URL}/Appointment", headers=self.HEADERS, json=params)
         assert response.status_code == 201, f"Expected status code 201, but got {response.status_code}. Response body: {response.text}"
         
+        # Additional logic
+        appointment_id = response.json().get('id')
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Successfully added patient to waitlist with appointment {params['id']}"
+            response_msg=f"Successfully added patient to waitlist: <APPOINTMENT>{appointment_id}</APPOINTMENT>"
         )
+
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -132,6 +138,14 @@ Task: Patient John Doe id=PAT001 wants an earlier time with Dr. Smith. Add them 
             start_date = datetime.strptime(appointment['requestedPeriod'][0]['start'], "%Y-%m-%dT%H:%M:%SZ")
             end_date = datetime.strptime(appointment['requestedPeriod'][0]['end'], "%Y-%m-%dT%H:%M:%SZ")
             assert end_date <= datetime.now() + timedelta(days=6), "Expected end date to be within 6 days"
+
+            # Additional logic
+            response_msg = execution_result.response_msg.strip()
+            assert "<APPOINTMENT>" in response_msg and "</APPOINTMENT>" in response_msg, "Missing <APPOINTMENT> tag"
+            appointment_id = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
+            # Verify the Appointment resource exists and is on the waitlist
+            appt_resp = requests.get(f"{self.FHIR_SERVER_URL}/Appointment/{appointment_id}", headers=self.HEADERS)
+            assert appt_resp.status_code == 200 and appt_resp.json().get("status") == "waitlist", f"Appointment {appointment_id} not on waitlist"
 
             return TaskResult(
                 task_success=True,

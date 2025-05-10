@@ -17,6 +17,9 @@ class SearchWednesdayMorningSlotsTask(TaskInterface):
 Task: Search for Wednesday morning slots
 
 Patient needs a visit on any Wednesday morning before 12pm one month from now. Find all available slots.
+
+After searching, return all slot IDs using the following format: <SLOT_IDS>id1,id2,…</SLOT_IDS> and the total count using <SLOT_COUNT>number</SLOT_COUNT>
+If none found, return the exact sentence: No Wednesday morning slots found
 """
 
     def prepare_test_data(self) -> None:
@@ -92,16 +95,23 @@ Patient needs a visit on any Wednesday morning before 12pm one month from now. F
                     if 'entry' in response_json:
                         all_slots.extend(response_json['entry'])
         
-        if not all_slots:
-            return ExecutionResult(
-                execution_success=False,
-                response_msg="No Wednesday morning slots found"
-            )
+            if not all_slots:
+                return ExecutionResult(
+                    execution_success=False,
+                    response_msg="No Wednesday morning slots found"
+                )
 
-        return ExecutionResult(
-            execution_success=True,
-            response_msg=f"Found {len(all_slots)} available Wednesday morning slots"
-        )
+            slot_ids = [entry['resource']['id'] for entry in all_slots]
+            ids_str = ",".join(slot_ids)
+            return ExecutionResult(
+                execution_success=True,
+                response_msg=(
+                    f"Found {len(slot_ids)} available Wednesday morning slots: "
+                    f"<SLOT_COUNT>{len(slot_ids)}</SLOT_COUNT> "
+                    f"<SLOT_IDS>{ids_str}</SLOT_IDS>"
+                )
+            )
+        
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
@@ -141,6 +151,22 @@ Patient needs a visit on any Wednesday morning before 12pm one month from now. F
                 date_delta = slot_time - datetime.now()
                 assert date_delta.days <= 30, "Expected to find slots within 30 days"
                 assert entry['resource']['status'] == "free", "Expected to find free slot"
+            
+            response_msg = execution_result.response_msg.strip()
+            if all_slots:
+                assert "<SLOT_COUNT>" in response_msg, "Expected to find <SLOT_COUNT> tag"
+                assert "</SLOT_COUNT>" in response_msg, "Expected to find </SLOT_COUNT> tag"
+                count = int(response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
+                expected_count = len(all_slots)
+                assert count == expected_count, f"Expected slot_count {expected_count}, got {count}"
+
+                assert "<SLOT_IDS>" in response_msg, "Expected to find <SLOT_IDS> tag"
+                assert "</SLOT_IDS>" in response_msg, "Expected to find </SLOT_IDS> tag"
+                returned_ids = response_msg.split("<SLOT_IDS>")[1].split("</SLOT_IDS>")[0].split(",")
+                expected_ids = [entry['resource']['id'] for entry in all_slots]
+                assert returned_ids == expected_ids, f"Expected slot_ids {expected_ids}, got {returned_ids}"
+            else:
+                assert response_msg == "No Wednesday morning slots found", f"Expected 'No Wednesday morning slots found', got '{response_msg}'"
 
             return TaskResult(
                 task_success=True,
