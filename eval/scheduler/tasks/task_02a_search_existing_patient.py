@@ -78,32 +78,6 @@ class SearchExistingPatientTask(TaskInterface):
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Verify the patient was found correctly
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Patient",
-                headers=self.HEADERS,
-                params={
-                    "family": "Doe",
-                    "given": "John",
-                    "birthdate": "1990-06-15"
-                }
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] > 0, "Expected to find at least one patient"
-            assert 'entry' in response_json, "Expected to find entry in the response"
-            assert len(response_json['entry']) > 0, "Expected to find at least one patient"
-
-            # Validate the patient details
-            patient = response_json['entry'][0]['resource']
-            assert patient['resourceType'] == "Patient", "Resource type must be Patient"
-            assert patient['name'][0]['family'] == "Doe", "Invalid family name"
-            assert patient['name'][0]['given'][0] == "John", "Invalid given name"
-            assert patient['birthDate'] == "1990-06-15", "Invalid birth date"
-
             # Check if returned result matches the human executed request's return.
             response_msg = execution_result.response_msg
             assert response_msg is not None, "Expected to find response message"

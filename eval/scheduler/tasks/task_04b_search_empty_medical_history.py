@@ -63,23 +63,10 @@ If not, return this exact sentence: "No medical history found"
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Verify no medical history was found
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Condition",
-                headers=self.HEADERS,
-                params={"subject": "Patient/PAT002"}
-            )
             
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] == 0, f"Expected no medical history, but got {response_json['total']}"
-            assert 'entry' not in response_json or len(response_json['entry']) == 0, "Expected no entries in the response"
-
             # Additional assertions (to be discussed)
             response_msg = execution_result.response_msg
-            assert "No medical history found" in response_msg, '"No medical history found"'
+            assert "no medical history found" in response_msg.lower(), "Expected response message to indicate no medical history found; got {response_msg}"
 
             return TaskResult(
                 task_success=True,

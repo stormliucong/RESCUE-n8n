@@ -22,12 +22,7 @@ Task: Find available slots
 
 Find most recent available slots from any providers who can speak spanish, was a female and working at Boston. 
 Return the Slot ID from the FHIR server. 
-Using the following format:
-```
-<response>
-    <slot_id>SLOT0010</slot_id>
-</response>
-```
+Using the following format: <slot_id>SLOT0010</slot_id>
 """
 
     def prepare_test_data(self) -> None:
@@ -238,20 +233,10 @@ Using the following format:
                             )
        
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
-        try:
-            params = {
-                "status": "free",
-                "_sort": "start"
-            }
-            
-            response_msg = execution_result.response_msg
-            assert response_msg is not None, "Expected to find response message"
-            
+        try:            
             # Parse the response message
             response_msg = response_msg.strip()
             # match the response message with the expected format
-            assert "<response>" in response_msg, "Expected to find <response> tag"
-            assert "</response>" in response_msg, "Expected to find </response> tag"
             assert "<slot_id>" in response_msg, "Expected to find <slot_id> tag"
             assert "</slot_id>" in response_msg, "Expected to find </slot_id> tag"
             

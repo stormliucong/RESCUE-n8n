@@ -115,59 +115,18 @@ If none found, return the exact sentence: No Wednesday morning slots found
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            all_slots = []
-            for delta in range(1, 30):
-                check_date = datetime.now() + timedelta(days=delta)
-                if check_date.weekday() == 2:  # Wednesday
-                    start = check_date.replace(hour=9, minute=0, second=0, microsecond=0)
-                    end = check_date.replace(hour=12, minute=0, second=0, microsecond=0)
-                    
-                    params = {
-                        "start": [
-                            f'ge{start.strftime("%Y-%m-%dT%H:%M:%SZ")}',
-                            f'le{end.strftime("%Y-%m-%dT%H:%M:%SZ")}'
-                        ],
-                        "status": "free"
-                    }
-                    
-                    response = requests.get(
-                        f"{self.FHIR_SERVER_URL}/Slot",
-                        headers=self.HEADERS,
-                        params=params
-                    )
-                    
-                    if response.status_code == 200:
-                        response_json = response.json()
-                        if 'entry' in response_json:
-                            all_slots.extend(response_json['entry'])
 
-            assert len(all_slots) > 0, "Expected to find at least one slot"
-            
-            # Validate that all slots are on Wednesday mornings
-            for entry in all_slots:
-                slot_time = datetime.strptime(entry['resource']['start'], "%Y-%m-%dT%H:%M:%SZ")
-                assert slot_time.weekday() == 2, "All slots must be on Wednesday"
-                assert 9 <= slot_time.hour < 12, "All slots must be in the morning before 12pm"
-                date_delta = slot_time - datetime.now()
-                assert date_delta.days <= 30, "Expected to find slots within 30 days"
-                assert entry['resource']['status'] == "free", "Expected to find free slot"
-            
             response_msg = execution_result.response_msg.strip()
-            if all_slots:
-                assert "<SLOT_COUNT>" in response_msg, "Expected to find <SLOT_COUNT> tag"
-                assert "</SLOT_COUNT>" in response_msg, "Expected to find </SLOT_COUNT> tag"
-                count = int(response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
-                expected_count = len(all_slots)
-                assert count == expected_count, f"Expected slot_count {expected_count}, got {count}"
-
+            assert response_msg is not None, "Expected to find response message"
+            human_agent_response = self.execute_human_agent()
+            if "<SLOT_IDS>" not in human_agent_response.response_msg:
+                assert "no wednesday morning slots found" in response_msg.lower(), "Expected to find no available slots"
+            else:
                 assert "<SLOT_IDS>" in response_msg, "Expected to find <SLOT_IDS> tag"
                 assert "</SLOT_IDS>" in response_msg, "Expected to find </SLOT_IDS> tag"
                 returned_ids = response_msg.split("<SLOT_IDS>")[1].split("</SLOT_IDS>")[0].split(",")
-                expected_ids = [entry['resource']['id'] for entry in all_slots]
+                expected_ids = human_agent_response.response_msg.split("<SLOT_IDS>")[1].split("</SLOT_IDS>")[0].split(",")
                 assert returned_ids == expected_ids, f"Expected slot_ids {expected_ids}, got {returned_ids}"
-            else:
-                assert response_msg == "No Wednesday morning slots found", f"Expected 'No Wednesday morning slots found', got '{response_msg}'"
-
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),

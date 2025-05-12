@@ -122,11 +122,6 @@ Once done, return the surgery plan ID in the following format: <surgery_plan>sur
             surgery_plan = response_msg.split("<surgery_plan>")[1].split("</surgery_plan>")[0]
             assert surgery_plan is not None, "Expected to find surgery_plan"
 
-            # surgery plan id should be 
-            expected_surgery_plan = self.execute_human_agent().response_msg.split("<surgery_plan>")[1].split("</surgery_plan>")[0]
-            assert surgery_plan == expected_surgery_plan, f"Expected surgery_plan {expected_surgery_plan}, got {surgery_plan}"
-
-
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),

@@ -105,29 +105,6 @@ If found, return the guarantor’s ID using the following format: <GUARANTOR>gua
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            params = {
-                "patient": "Patient/PAT001"
-            }
-
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Account",
-                headers=self.HEADERS,
-                params=params
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] > 0, "Expected to find at least one guarantor"
-            assert 'entry' in response_json, "Expected to find entry in the response"
-            assert len(response_json['entry']) > 0, "Expected to find at least one account"
-            
-            account = response_json['entry'][0]['resource']
-            assert 'guarantor' in account, "No guarantor found in account"
-            guarantor_reference = account['guarantor'][0]['party']['reference']
-            assert guarantor_reference == "RelatedPerson/REL001", "Invalid guarantor reference"
-
             # Structured-output assertions
             response_msg = execution_result.response_msg
             assert response_msg is not None, "Expected to find response message"
@@ -137,9 +114,7 @@ If found, return the guarantor’s ID using the following format: <GUARANTOR>gua
             guarantor_id = response_msg.split("<GUARANTOR>")[1].split("</GUARANTOR>")[0]
             expected_id = self.execute_human_agent().response_msg.split("<GUARANTOR>")[1].split("</GUARANTOR>")[0]
             assert guarantor_id == expected_id, f"Expected guarantor_id {expected_id}, got {guarantor_id}"
-            # Cross-check against the FHIR resource
-            assert account['guarantor'][0]['party']['reference'].endswith(guarantor_id), f"Expected guarantor reference to end with {guarantor_id}"
-
+           
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),

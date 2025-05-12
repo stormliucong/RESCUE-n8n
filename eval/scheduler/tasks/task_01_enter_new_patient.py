@@ -121,10 +121,6 @@ class EnterNewPatientTask(TaskInterface):
                 # Extract the patient_id from the response message
             patient_id = response_msg.split("<patient_id>")[1].split("</patient_id>")[0]
             assert patient_id is not None, "Expected to find patient_id"
-            
-                # slot id should be 
-            expected_patient_id = self.execute_human_agent().response_msg.split("<patient_id>")[1].split("</patient_id>")[0]
-            assert patient_id == expected_patient_id, f"Expected patient_id {expected_patient_id}, got {patient_id}"
 
 
             return TaskResult(

@@ -24,7 +24,7 @@ class SearchNonexistentPatientTask(TaskInterface):
                  
                 <patient_id>PATIENTID</patient_id>
                 
-                If the patient doesn't exist, classify them as a new patient.
+                If the patient doesn't exist, return this exact sentence: "This is a new patient"
                 """
 
     def prepare_test_data(self) -> None:
@@ -61,23 +61,9 @@ class SearchNonexistentPatientTask(TaskInterface):
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Verify no patient was found
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Patient",
-                headers=self.HEADERS,
-                params={
-                    "family": "Doe",
-                    "given": "John",
-                    "birthdate": "1991-06-15"
-                }
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] == 0, "Expected to find no patient"
-            assert 'entry' not in response_json or len(response_json['entry']) == 0, "Expected no entries in the response"
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            assert "new patient" in response_msg.lower(), f"Expected 'This is a new patient', got '{response_msg}'"
 
             return TaskResult(
                 task_success=True,

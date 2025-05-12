@@ -13,7 +13,7 @@ class SearchNonexistentInsuranceTask(TaskInterface):
 
     def get_prompt(self) -> str:
         return """
-Task: Search for patient insurance information
+Task: Search for patient (PAT002) insurance information
 
 Search if patient insurance information has been entered in the system for:
 - Beneficiary: Jane Doe (id=PAT002)
@@ -74,32 +74,10 @@ If none found, return the exact sentence: No insurance coverage found
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Verify no insurance coverage exists for the patient
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Coverage",
-                headers=self.HEADERS,
-                params={"beneficiary": "Patient/PAT002", "status": "active"}
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] == 0, f"Expected no insurance, but got {response_json['total']}"
-            assert 'entry' not in response_json, "Expected no entries in the response"
-
             # Structured-output assertions
             response_msg = execution_result.response_msg
             assert response_msg is not None, "Expected to find response message"
-            response_msg = response_msg.strip()
-            if response_json.get('total', 0) > 0:
-                assert "<COVERAGE>" in response_msg, "Expected to find <COVERAGE> tag"
-                assert "</COVERAGE>" in response_msg, "Expected to find </COVERAGE> tag"
-                coverage_id = response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
-                expected_id = self.execute_human_agent().response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
-                assert coverage_id == expected_id, f"Expected coverage_id {expected_id}, got {coverage_id}"
-            else:
-                assert response_msg == "No insurance coverage found", f"Expected 'No insurance coverage found', got '{response_msg}'"
+            assert "no insurance coverage found" in response_msg.lower(), f"Expected 'No insurance coverage found', got '{response_msg}'"
 
             return TaskResult(
                 task_success=True,

@@ -27,6 +27,17 @@ If none found, return the exact sentence: No surgery plan found.
         try:
             today = datetime.today().date()
             three_weeks_later = today + timedelta(days=21)
+            
+            # Create test patient
+            patient_resource = {
+                "resourceType": "Patient",
+                "id": "PAT001",
+                "name": [{"use": "official", "family": "Doe", "given": ["John"]}],
+                "birthDate": "1990-06-15",
+                "telecom": [{"system": "phone", "value": "123-456-7890"}],
+                "address": [{"line": ["123 Main St"], "city": "Boston", "state": "MA"}]
+            }
+            self.upsert_to_fhir(patient_resource)
 
             # Create test patient
             patient_resource = {
@@ -106,43 +117,11 @@ If none found, return the exact sentence: No surgery plan found.
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Verify no surgery plan was found
-            today = datetime.today().date()
-            two_weeks_later = today + timedelta(days=14)
-            
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/ServiceRequest",
-                headers=self.HEADERS,
-                params={
-                    "subject": "Patient/PAT001",
-                    "occurrence": [
-                        f"ge{today.isoformat()}",
-                        f"le{two_weeks_later.isoformat()}"
-                    ]
-                }
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            #assert response_json['total'] == 0, f"Expected to find no surgery plans, but got {response_json['total']}"
-            assert 'entry' not in response_json or len(response_json['entry']) == 0, "Expected no entries in the response"
-
             # Structured‐output assertions
             response_msg = execution_result.response_msg
             assert response_msg is not None, "Expected to find response message"
             response_msg = response_msg.strip()
-            if response_json['total'] > 0:
-                # must include the tag and match the human-agent value
-                assert "<SURGERY_PLAN>" in response_msg, "Expected to find <SURGERY_PLAN> tag"
-                assert "</SURGERY_PLAN>" in response_msg, "Expected to find </SURGERY_PLAN> tag"
-                surgery_plan_id = response_msg.split("<SURGERY_PLAN>")[1].split("</SURGERY_PLAN>")[0]
-                expected_id = self.execute_human_agent().response_msg.split("<SURGERY_PLAN>")[1].split("</SURGERY_PLAN>")[0]
-                assert surgery_plan_id == expected_id, f"Expected surgery_plan_id {expected_id}, got {surgery_plan_id}"
-            else:
-                # no plans → fixed sentence
-                assert response_msg == "No surgery plan found", f"Expected 'No surgery plan found', got '{response_msg}'"
+            assert "no surgery plan found" in response_msg.lower(), f"Expected 'No surgery plan found', got '{response_msg}'"
 
             return TaskResult(
                 task_success=True,

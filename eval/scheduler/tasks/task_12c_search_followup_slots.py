@@ -17,6 +17,8 @@ class SearchFollowupSlotsTask(TaskInterface):
 Task: Search for follow-up slots
 
 Find any available follow-up slots for a patient about one month from now.
+After searching, return all slot IDs using the following format: <SLOT_IDS>id1,id2,…</SLOT_IDS>
+If none found, return the exact sentence: No available slots for next Friday
 """
 
     def prepare_test_data(self) -> None:
@@ -102,37 +104,18 @@ Find any available follow-up slots for a patient about one month from now.
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            start = datetime.now() + timedelta(days=30)
-            if start.weekday() > 4:  # If weekend, move to next weekday
-                start = start + timedelta(days=(7 - start.weekday()))
-            start = start.replace(hour=9, minute=0, second=0, microsecond=0)
-            end = start + timedelta(days=1)
-            
-            params = {
-                "start": [
-                    f'ge{start.strftime("%Y-%m-%dT%H:%M:%SZ")}',
-                    f'le{end.strftime("%Y-%m-%dT%H:%M:%SZ")}'
-                ],
-                "status": "free"
-            }
-            
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Slot",
-                headers=self.HEADERS,
-                params=params
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] > 0, "Expected to find at least one slot"
-            assert 'entry' in response_json, "Expected to find entry in the response"
-            assert len(response_json['entry']) > 0, "Expected to find at least one slot"
-            for entry in response_json['entry']:
-                # start date should be +-3 days one month from now
-                date_delta = datetime.strptime(entry['resource']['start'], "%Y-%m-%dT%H:%M:%SZ") - start
-                assert date_delta.days >= -3 and date_delta.days <= 3, "Expected to find followup slot within 3 days of one month from now"
-                assert entry['resource']['status'] == "free", "Expected to find free slot"
+            # Additional eval logic
+            response_msg = execution_result.response_msg.strip()
+            assert response_msg is not None, "Expected to find response message"
+            human_agent_response = self.execute_human_agent()
+            if "<SLOT_IDS>" not in human_agent_response.response_msg:
+                assert "no available slots" in response_msg.lower(), "Expected to find no available slots"
+            else:
+                assert "<SLOT_IDS>" in response_msg, "Expected to find <SLOT_IDS> tag"
+                assert "</SLOT_IDS>" in response_msg, "Expected to find </SLOT_IDS> tag"
+                returned_ids = response_msg.split("<SLOT_IDS>")[1].split("</SLOT_IDS>")[0].split(",")
+                expected_ids = human_agent_response.response_msg.split("<SLOT_IDS>")[1].split("</SLOT_IDS>")[0].split(",")
+                assert returned_ids == expected_ids, f"Expected slot_ids {expected_ids}, got {returned_ids}"
                 
             return TaskResult(
                 task_success=True,
