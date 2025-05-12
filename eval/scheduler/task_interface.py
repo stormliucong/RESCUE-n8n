@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 import time
-from typing import Dict, Any, List, Optional, Tuple 
+from typing import Dict, Any, List, Optional, Tuple
+import uuid 
 import requests # type: ignore
 from dataclasses import dataclass
 from fetch_and_parse_n8n_execution_log import fetch_and_parse_n8n_execution_log
@@ -54,6 +55,7 @@ class TaskInterface(ABC):
                 n8n_url,
                 n8n_execution_url,
                 n8n_system_prompt_file=None,
+                n8n_multi_agent_prompt_file=None,
                 required_tool_call_sets=None,
                 required_resource_types=None,
                 prohibited_tools=None,
@@ -62,15 +64,16 @@ class TaskInterface(ABC):
         self.FHIR_SERVER_URL = fhir_server_url
         self.N8N_AGENT_URL = n8n_url
         self.N8N_EXECUTION_URL = n8n_execution_url
-
+        self.N8N_MULTI_AGENT_PROMPT_FILE = n8n_multi_agent_prompt_file
         # Eval parameters
         self.required_tool_call_sets = required_tool_call_sets or []
         self.required_resource_types = required_resource_types or []
         self.prohibited_tools = prohibited_tools or []
         self.difficulty_level = difficulty_level
         self.N8N_SYSTEM_PROMPT_FILE = n8n_system_prompt_file
-        print(f"INIT: {required_tool_call_sets=}, {required_resource_types=}")
-
+        
+        #print(f"INIT: {required_tool_call_sets=}, {required_resource_types=}")
+        logger.debug(f"INIT: {required_tool_call_sets=}, {required_resource_types=}, {prohibited_tools=}")
         
         
         logger.debug(f"FHIR_SERVER_URL: {self.FHIR_SERVER_URL}")
@@ -267,6 +270,8 @@ class TaskInterface(ABC):
         """Execute the task on n8n workflowand and return results"""
         prompt = self.get_prompt()
         logger.debug(prompt)
+        session_id = str(uuid.uuid4())
+        logger.debug(f"session_id: {session_id}")
         if self.N8N_SYSTEM_PROMPT_FILE:
             # load txt file into string
             with open(self.N8N_SYSTEM_PROMPT_FILE, 'r') as file:
@@ -279,14 +284,21 @@ class TaskInterface(ABC):
                             Remember the FHIR server stores timestamps in UTC by default, 
                             You have to convert the time zone difference when creating and retrieve resources.
             '''
+            if self.N8N_MULTI_AGENT_PROMPT_FILE:
+                with open(self.N8N_MULTI_AGENT_PROMPT_FILE, 'r') as file:
+                    multi_agent_prompt = file.read()
+                logger.debug(f"multi_agent_prompt: {multi_agent_prompt}")
+                system_prompt += f"\n\n{multi_agent_prompt}"
             payload = {
                 "prompt": prompt,
+                "session_id": session_id,
                 "fhir_server_url": self.FHIR_SERVER_URL,
-                "system_prompt": system_prompt
+                "system_prompt": system_prompt,
             }
         else:
             payload = {
                 "prompt": prompt,
+                "session_id": session_id,
                 "fhir_server_url": self.FHIR_SERVER_URL,
             }
         try:
