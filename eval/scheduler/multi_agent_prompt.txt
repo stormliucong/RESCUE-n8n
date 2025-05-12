@@ -5,5 +5,5 @@
 - <Counselor>: for medical knowledge support
 - <Insurance>: for insurance–related inquiries
 - <Lab>: for laboratory ordering support
-- <Manager>: to re‑evaluate and triage the request
+- <Manager>: to re‑evaluate the uncleared request dand triage the request
 3. Out of Scope: If the question falls outside the genetic service workflow, respond with: “This is out of scope of the system’s services.” and append the <Patient> token at the end.

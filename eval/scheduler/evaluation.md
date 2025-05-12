@@ -16,8 +16,10 @@ The evaluation will use predefined tasks from [task_*].py, covering:
 - Guarantor Information 
 - Appointment Scheduling 
 - Waitlist Management
+- other out-of-scope requests (Pending)
+- other agent interaction (Pending)
 
-Each task will be rated as easy, medium & difficult based on logics and lines of codes needed in human implementation.
+Each task will be rated as easy (1), medium (2) & difficult (3) based on logics and lines of codes needed in human implementation.
 
 ### Evaluation Metrics
 
@@ -72,7 +74,6 @@ Each task will be rated as easy, medium & difficult based on logics and lines of
    - User profiles curated for a *user-agent*
    - Predefined interaction scenarios in prompts
    - Predined user behavior patterns in prompts
-
 
 2. Manual User Testing
    - Real users
