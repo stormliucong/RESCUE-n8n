@@ -68,6 +68,8 @@ After finding, return the patient ID using the following format: <PATIENT_ID>pat
                 "id": "APPOINTMENT001",
                 "status": "booked",
                 "slot": [{"reference": "Slot/SLOT001"}],
+                "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "end": (start + timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "participant": [{"actor": {"reference": "Patient/PAT001"}, "status": "accepted"}, {"actor": {"reference": "Practitioner/PROVIDER001"}, "status": "accepted"}],
             }
             self.upsert_to_fhir(appointment1)
@@ -117,6 +119,8 @@ After finding, return the patient ID using the following format: <PATIENT_ID>pat
                 "id": "APPOINTMENT002",
                 "status": "booked",
                 "slot": [{"reference": "Slot/SLOT002"}],
+                "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "end": (start + timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "participant": [{"actor": {"reference": "Patient/PAT002"}, "status": "accepted"}, {"actor": {"reference": "Practitioner/PROVIDER002"}, "status": "accepted"}],
             }
             self.upsert_to_fhir(appointment2)

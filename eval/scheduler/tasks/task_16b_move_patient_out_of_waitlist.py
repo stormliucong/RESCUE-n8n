@@ -151,7 +151,7 @@ After moving, return the appointment ID and slot ID using the following format:
         # Update the appointment to booked status and link it to the slot
         waitlist_appointment['status'] = 'booked'
         waitlist_appointment['slot'] = [{"reference": f"Slot/{available_slot['id']}"}]
-        waitlist_appointment['start'] = available_slot['start']
+        waitlist_appointment['start'] = available_slot['start'] # Only proposed or cancelled appointments can be missing start/end dates
         waitlist_appointment['end'] = available_slot['end']
         del waitlist_appointment['requestedPeriod']
         
@@ -203,6 +203,8 @@ After moving, return the appointment ID and slot ID using the following format:
             assert appointment['participant'][0]['actor']['reference'] == 'Patient/PAT001', "Expected patient to be PAT001"
             assert appointment['participant'][1]['actor']['reference'] == 'Practitioner/PROVIDER001', "Expected practitioner to be PROVIDER001"
             assert 'slot' in appointment, "Expected appointment to have a slot"
+            assert "start" in appointment, "Expected appointment to have a start time"
+            assert "end" in appointment, "Expected appointment to have an end time"
             
             # Verify the slot SLOT002 is marked as busy
             response = requests.get(f"{self.FHIR_SERVER_URL}/Slot/SLOT002", headers=self.HEADERS)
