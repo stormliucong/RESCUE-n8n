@@ -31,18 +31,20 @@ def load_tasks_from_config(config_path):
     for task in config.get('tasks', []):
         module_name = task['module']
         class_name = task['class']
+        difficulty_level = task['difficulty_level']
         required_tool_call_sets = task.get('required_tool_call_sets', [])
         required_resource_types = task.get('required_resource_types', [])
         prohibited_tools = task.get('prohibited_tools', [])
 
-        module = importlib.import_module(module_name)
+        module = importlib.import_module(f"tasks.{module_name}")
         cls = getattr(module, class_name)
 
         task_configs.append({
             "class": cls,
             "required_tool_call_sets": required_tool_call_sets,
             "required_resource_types": required_resource_types,
-            "prohibited_tools": prohibited_tools
+            "prohibited_tools": prohibited_tools,
+            "difficulty_level": difficulty_level
         })
 
     return task_configs
@@ -62,12 +64,14 @@ for task_config in task_configs:
     required_tool_call_sets = task_config["required_tool_call_sets"]
     required_resource_types = task_config["required_resource_types"]
     prohibited_tools = task_config["prohibited_tools"]
+    difficulty_level = task_config['difficulty_level']
 
     # Logging extracted values
     logger.info(f"Initialising task: {task_class.__name__}")
     logger.info(f"Required tools sequences: {required_tool_call_sets}")
     logger.info(f"Required resource types: {required_resource_types}")
     logger.info(f"Prohibited tools: {prohibited_tools}")
+    logger.info(f"difficulty_level: {difficulty_level}")
 
     # Defining Task object with evaluation params
     task = task_class(

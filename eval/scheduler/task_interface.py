@@ -56,7 +56,8 @@ class TaskInterface(ABC):
                 n8n_system_prompt_file=None,
                 required_tool_call_sets=None,
                 required_resource_types=None,
-                prohibited_tools=None):
+                prohibited_tools=None,
+                difficulty_level = None):
 
         self.FHIR_SERVER_URL = fhir_server_url
         self.N8N_AGENT_URL = n8n_url
@@ -66,6 +67,7 @@ class TaskInterface(ABC):
         self.required_tool_call_sets = required_tool_call_sets or []
         self.required_resource_types = required_resource_types or []
         self.prohibited_tools = prohibited_tools or []
+        self.difficulty_level = difficulty_level
         self.N8N_SYSTEM_PROMPT_FILE = n8n_system_prompt_file
         print(f"INIT: {required_tool_call_sets=}, {required_resource_types=}")
 
@@ -577,4 +579,12 @@ class TaskInterface(ABC):
         #     )
 
         return failure_mode
+    
+    
+
+    def get_difficulty_level(self):
+        # Return the difficulty level
+        return self.difficulty_level
+
+
 
