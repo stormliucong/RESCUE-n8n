@@ -1,36 +1,29 @@
 tasks:
-  - module: task_06a_search_existing_surgery_plan
-    class: SearchExistingSurgeryPlanTask
+  - module: task_01_enter_new_patient
+    class: EnterNewPatientTask
+    required_tool_call_sets:
+      - { createResource: 0 }
+      - { getResourceById: 0, updateResource: 1 }
+      - { getAllResources: 0, createResource: 1 }
+      - { getAllResources: 0, deleteResource: 1, createResource: 2 }
+    required_resource_types: ["Patient"]
+    prohibited_tools: []
+    difficulty_level: 1
+
+  - module: task_02a_search_existing_patient
+    class: SearchExistingPatientTask
     required_tool_call_sets:
       - { getAllResources: 0 }
       - { getResourceById: 0 }
-    required_resource_types: ["ServiceRequest"]
+    required_resource_types: ["Patient"]
+    prohibited_tools: ["createResource", "updateResource", "deleteResource"]
+    difficulty_level: 1
 
-  - module: task_06b_search_nonexistent_surgery_plan
-    class: SearchNonexistentSurgeryPlanTask
+  - module: task_02b_search_nonexistent_patient
+    class: SearchNonexistentPatientTask
     required_tool_call_sets:
       - { getAllResources: 0 }
       - { getResourceById: 0 }
-    required_resource_types: ["ServiceRequest"]
-
-  - module: task_07_enter_insurance
-    class: EnterInsuranceTask
-    required_tool_call_sets:
-      - { createResource: 0, createResource: 1 }
-      - { getResourceById: 0, updateResource: 1, createResource: 2 }
-      - { getAllResources: 0, deleteResource: 1, createResource: 2, createResource: 3 }
-    required_resource_types: ["RelatedPerson", "Coverage"]
-
-  - module: task_08a_search_existing_insurance
-    class: SearchExistingInsuranceTask
-    required_tool_call_sets:
-      - { getAllResources: 0 }
-      - { getResourceById: 0 }
-    required_resource_types: ["Coverage"]
-
-  - module: task_08b_search_nonexistent_insurance
-    class: SearchNonexistentInsuranceTask
-    required_tool_call_sets:
-      - { getAllResources: 0 }
-      - { getResourceById: 0 }
-    required_resource_types: ["Coverage"]
+    required_resource_types: ["Patient"]
+    prohibited_tools: ["createResource", "updateResource", "deleteResource"]
+    difficulty_level: 1
