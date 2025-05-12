@@ -58,7 +58,8 @@ class TaskInterface(ABC):
                 n8n_multi_agent_prompt_file=None,
                 required_tool_call_sets=None,
                 required_resource_types=None,
-                prohibited_tools=None):
+                prohibited_tools=None,
+                difficulty_level = None):
 
         self.FHIR_SERVER_URL = fhir_server_url
         self.N8N_AGENT_URL = n8n_url
@@ -68,8 +69,11 @@ class TaskInterface(ABC):
         self.required_tool_call_sets = required_tool_call_sets or []
         self.required_resource_types = required_resource_types or []
         self.prohibited_tools = prohibited_tools or []
+        self.difficulty_level = difficulty_level
+        self.N8N_SYSTEM_PROMPT_FILE = n8n_system_prompt_file
+        
+        #print(f"INIT: {required_tool_call_sets=}, {required_resource_types=}")
         logger.debug(f"INIT: {required_tool_call_sets=}, {required_resource_types=}, {prohibited_tools=}")
-
         
         
         logger.debug(f"FHIR_SERVER_URL: {self.FHIR_SERVER_URL}")
@@ -298,13 +302,19 @@ class TaskInterface(ABC):
                 "fhir_server_url": self.FHIR_SERVER_URL,
             }
         try:
+
             response = requests.post(self.N8N_AGENT_URL, json=payload)
-    
+
+            # # TESTING
+            # print("calling python server")
+            # SCHEDULER_PROXY_URL =  "http://localhost:8000/eval/scheduler"
+            # response = requests.post(SCHEDULER_PROXY_URL, json=payload)
+
             if response.status_code == 200:
                 success = True
                 response_msg = response.json()[0]['output']
                 # get response header
-                execution_id = response.headers['execution_id'] 
+                execution_id = response.headers['execution_id']
             else:
                 success = False
                 response_msg = f"Error: {response.status_code} - {response.text}"
@@ -581,4 +591,12 @@ class TaskInterface(ABC):
         #     )
 
         return failure_mode
+    
+    
+
+    def get_difficulty_level(self):
+        # Return the difficulty level
+        return self.difficulty_level
+
+
 
