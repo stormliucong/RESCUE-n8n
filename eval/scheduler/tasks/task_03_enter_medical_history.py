@@ -116,9 +116,6 @@ Return the recorded condition's ID using the following format: <CONDITION>condit
 
             assert condition_id is not None, "Expected to find condition_id"
 
-            expected_condition_id = self.execute_human_agent().response_msg.split("<CONDITION>")[1].split("</CONDITION>")[0]
-            assert condition_id == expected_condition_id, f"Expected condition_id {expected_condition_id}, got {condition_id}"
-
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),

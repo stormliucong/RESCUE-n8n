@@ -154,31 +154,7 @@ After finding, return the patient ID using the following format: <PATIENT_ID>pat
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Find next Monday's slot at 9am
-            next_monday = datetime.now() + timedelta(days=(7 - datetime.now().weekday()))
-            target_time = next_monday.replace(hour=9, minute=0, second=0, microsecond=0)
             
-            params={
-                    "start": target_time.strftime("%Y-%m-%d"),
-                    "schedule.actor.given": "John",
-                    "schedule.actor.family": "Smith",
-            }
-            response = requests.get(f"{self.FHIR_SERVER_URL}/Slot", headers=self.HEADERS, params=params)
-            assert 'entry' in response.json(), "Expected entry in the response"
-            slot_id = response.json()['entry'][0]['resource']['id']
-            params = {"slot": f"Slot/{slot_id}"}
-            response = requests.get(f"{self.FHIR_SERVER_URL}/Appointment", headers=self.HEADERS, params=params)
-            patient_id = response.json()['entry'][0]['resource']['participant'][0]['actor']['reference']
-            response = requests.get(f"{self.FHIR_SERVER_URL}/{patient_id}", headers=self.HEADERS)
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            patient_data = response.json()
-            assert patient_data['resourceType'] == "Patient", "Expected Patient resource"
-            assert patient_data['id'] == "PAT001", "Expected patient with ID PAT001"
-            assert patient_data['name'][0]['family'] == "Doe", "Expected patient with family name Doe"
-
-            # Additional logic
             response_msg = execution_result.response_msg
             assert response_msg is not None, "Expected to find response message"
             response_msg = response_msg.strip()
@@ -187,7 +163,6 @@ After finding, return the patient ID using the following format: <PATIENT_ID>pat
             patient_id = response_msg.split("<PATIENT_ID>")[1].split("</PATIENT_ID>")[0]
             expected_id = self.execute_human_agent().response_msg.split("<PATIENT_ID>")[1].split("</PATIENT_ID>")[0]
             assert patient_id == expected_id, f"Expected patient_id {expected_id}, got {patient_id}"
-            assert patient_data['id'] == patient_id, f"Expected Patient resource id {patient_id}, got {patient_data['id']}"
             
             return TaskResult(
                 task_success=True,

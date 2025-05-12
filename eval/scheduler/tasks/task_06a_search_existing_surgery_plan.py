@@ -98,35 +98,7 @@ If found, return the surgery plan’s ID using the following format: <SURGERY_PL
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Verify the surgery plan was found correctly
-            today = datetime.today().date()
-            two_weeks_later = today + timedelta(days=14)
             
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/ServiceRequest",
-                headers=self.HEADERS,
-                params={
-                    "subject": "Patient/PAT001",
-                    "occurrence": [
-                        f"ge{today.isoformat()}",
-                        f"le{two_weeks_later.isoformat()}"
-                    ]
-                }
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] > 0, f"Expected to find at least one surgery plan, but got {response_json['total']}"
-            assert 'entry' in response_json, "Expected to find entry in the response"
-            assert len(response_json['entry']) > 0, f"Expected to find at least one surgery plan, but got {len(response_json['entry'])}"
-
-            # Validate the service request details
-            service_request = response_json['entry'][0]['resource']
-            assert service_request['resourceType'] == "ServiceRequest", "Resource type must be ServiceRequest"
-            assert service_request['subject']['reference'] == "Patient/PAT001", "Subject reference must be Patient/PAT001"
-
              # Structured‐output assertions
             response_msg = execution_result.response_msg
             assert response_msg is not None, "Expected to find response message"

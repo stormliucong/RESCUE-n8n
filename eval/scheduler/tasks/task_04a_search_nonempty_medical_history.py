@@ -78,27 +78,7 @@ If found, return the condition's ID using the following format: <CONDITION>condi
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Verify the medical history was found correctly
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Condition",
-                headers=self.HEADERS,
-                params={"subject": "Patient/PAT001"}
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] > 0, f"Expected to find at least one medical history, but got {response_json['total']}"
-            assert 'entry' in response_json, "Expected to find entry in the response"
-            assert len(response_json['entry']) > 0, f"Expected to find at least one medical history, but got {len(response_json['entry'])}"
-
-            # Validate the condition details
-            condition = response_json['entry'][0]['resource']
-            assert condition['resourceType'] == "Condition", "Resource type must be Condition"
-            assert condition['subject']['reference'] == "Patient/PAT001", "Subject reference must be Patient/PAT001"
-
-            # Additional assertions (to be discussed)
+            # Check if returned result matches the human executed request's return.
             response_msg = execution_result.response_msg
 
             assert response_msg is not None, "Expected to find response message"

@@ -111,50 +111,21 @@ If none found, return the exact sentence: No urgent slots available
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            start = datetime.now()
-            end = start + timedelta(days=1)
-            end = end.replace(hour=17, minute=0, second=0, microsecond=0)
-            
-            params = {
-                "start": [
-                    f'gt{start.strftime("%Y-%m-%dT%H:%M:%SZ")}',
-                    f'lt{end.strftime("%Y-%m-%dT%H:%M:%SZ")}'
-                ],
-                "status": "free"
-            }
-            
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Slot",
-                headers=self.HEADERS,
-                params=params
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            if datetime.now().weekday() in [0, 1, 2, 3]:  # Monday to Thursday
-                assert 'total' in response_json, "Expected to find total in the response"
-                assert response_json['total'] > 0, "Expected to find at least one slot"
-                assert 'entry' in response_json, "Expected to find entry in the response"
-                assert len(response_json['entry']) > 0, "Expected to find at least one slot"
-                # Additional eval logic
-                response_msg = execution_result.response_msg
-                assert response_msg is not None, "Expected to find response message"
-                response_msg = response_msg.strip()
+            # Structured-output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
+            response_msg = response_msg.strip()
+            human_agent_response = self.execute_human_agent()
+            if "<SLOT_COUNT>" not in human_agent_response.response_msg:
+                assert "no urgent slots available"  in response_msg.lower(), "Expected to find no available slots"
+            else:
+                assert "<SLOT_COUNT>" in response_msg, "Expected to find <SLOT_COUNT> tag"
+                assert "</SLOT_COUNT>" in response_msg, "Expected to find </SLOT_COUNT> tag"
+                slot_count = int(response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
+                expected_count = int(human_agent_response.response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
+                assert slot_count == expected_count, f"Expected slot_count {expected_count}, got {slot_count}"
 
-                if response_json.get('total', 0) > 0:
-                    assert "<SLOT_COUNT>" in response_msg, "Expected to find <SLOT_COUNT> tag"
-                    assert "</SLOT_COUNT>" in response_msg, "Expected to find </SLOT_COUNT> tag"
-                    slot_count = int(response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
-                    expected_count = response_json['total']
-                    assert slot_count == expected_count, f"Expected slot_count {expected_count}, got {slot_count}"
-
-                    # Check the very first urgent slot’s ID
-                    first_slot_id = response_json['entry'][0]['resource']['id']
-                    assert first_slot_id == "SLOT002", f"Expected first urgent slot id SLOT002, got {first_slot_id}"
-                else:
-                    assert response_msg == "No urgent slots available", f"Expected 'No urgent slots available', got '{response_msg}'"
-
+        
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),

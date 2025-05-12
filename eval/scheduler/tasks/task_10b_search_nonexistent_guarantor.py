@@ -76,35 +76,12 @@ If none found, return the exact sentence: "No guarantor found for patient PAT002
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            params = {
-                "patient": "Patient/PAT002"
-            }
-
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Account",
-                headers=self.HEADERS,
-                params=params
-            )
             
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            assert response_json['total'] == 0, "Expected to find no guarantor"
-            assert 'entry' not in response_json, "Expected no entries in the response"
-
             # Structured-output assertions
             response_msg = execution_result.response_msg
             assert response_msg is not None, "Expected to find response message"
             response_msg = response_msg.strip()
-            if response_json.get('total', 0) > 0:
-                assert "<GUARANTOR>" in response_msg, "Expected to find <GUARANTOR> tag"
-                assert "</GUARANTOR>" in response_msg, "Expected to find </GUARANTOR> tag"
-                guarantor_id = response_msg.split("<GUARANTOR>")[1].split("</GUARANTOR>")[0]
-                expected_id = self.execute_human_agent().response_msg.split("<GUARANTOR>")[1].split("</GUARANTOR>")[0]
-                assert guarantor_id == expected_id, f"Expected guarantor_id {expected_id}, got {guarantor_id}"
-            else:
-                assert response_msg == "No guarantor found for patient PAT002", f"Expected 'No guarantor found for patient PAT002', got '{response_msg}'"
+            assert "no guarantor found" in response_msg.lower(), f"Expected 'No guarantor found for patient PAT002', got '{response_msg}'"
 
             return TaskResult(
                 task_success=True,

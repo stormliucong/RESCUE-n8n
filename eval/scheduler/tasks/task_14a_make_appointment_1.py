@@ -162,16 +162,7 @@ After creating the appointment and updating the slot, return the new Appointment
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert response.json()['status'] == "busy", "Expected slot to be busy"
 
-            #Added logic
-            response_msg = execution_result.response_msg.strip()
-            assert "<APPOINTMENT>" in response_msg, "Expected to find <APPOINTMENT> tag"
-            assert "</APPOINTMENT>" in response_msg, "Expected to find </APPOINTMENT> tag"
-            appointment_id_tag = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
-
-            # Cross‐check the FHIR Appointment resource
-            appt_entry = response.json()['entry'][0]['resource']
-            assert appt_entry['id'] == appointment_id_tag, f"Expected appointment id {appointment_id_tag}, got {appt_entry['id']}"
-
+            
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),

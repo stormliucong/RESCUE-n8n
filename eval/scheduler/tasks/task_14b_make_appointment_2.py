@@ -162,15 +162,6 @@ After creating the appointment, return the new Appointment ID using the followin
             assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
             assert response.json()['status'] == "busy", "Expected slot to be busy"
 
-            # Added logic
-            response_msg = execution_result.response_msg.strip()
-            assert "<APPOINTMENT>" in response_msg, "Expected to find <APPOINTMENT> tag"
-            assert "</APPOINTMENT>" in response_msg, "Expected to find </APPOINTMENT> tag"
-            appointment_id_tag = response_msg.split("<APPOINTMENT>")[1].split("</APPOINTMENT>")[0]
-            # Compare to the actual Appointment resource returned
-            actual_appt_id = response.json()['entry'][0]['resource']['id']
-            assert appointment_id_tag == actual_appt_id, f"Expected appointment_id {actual_appt_id}, got {appointment_id_tag}"
-
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),

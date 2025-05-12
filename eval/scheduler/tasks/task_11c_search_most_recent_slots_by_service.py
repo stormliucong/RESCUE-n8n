@@ -213,52 +213,20 @@ If none found, return the exact sentence: No available genetic counseling slots 
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Find schedules with genetic counseling specialty
-            schedule_params = {
-                "specialty": "394580004"  # SNOMED CT code for Clinical genetics
-            }
-            schedules_response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Schedule",
-                headers=self.HEADERS,
-                params=schedule_params
-            )
-            
-            assert schedules_response.status_code == 200, f"Expected status code 200, got {schedules_response.status_code}"
-            
-            all_slots = []
-            schedules_json = schedules_response.json()
-            assert 'entry' in schedules_json, "Expected to find entry in schedules response"
-            
-            for schedule in schedules_json['entry']:
-                # Get free slots for this schedule
-                slot_params = {
-                    "schedule": f"Schedule/{schedule['resource']['id']}",
-                    "status": "free",
-                    "_sort": "start"
-                }
-                slots_response = requests.get(
-                    f"{self.FHIR_SERVER_URL}/Slot",
-                    headers=self.HEADERS,
-                    params=slot_params
-                )
+            # Structured-output assertions
                 
-                assert slots_response.status_code == 200, f"Expected status code 200, got {slots_response.status_code}"
-                slots_json = slots_response.json()
-                if 'entry' in slots_json:
-                    all_slots.extend(slots_json['entry'])
 
-            assert len(all_slots) > 0, "Expected to find at least one slot"
-            for slot in all_slots:
-                assert slot['resource']['id'] in ['SLOT008', 'SLOT0010'], f"Expected one of the genetic counseling slots, got {slot['resource']['id']}"
-                assert slot['resource']['status'] == "free", "Expected to find free slot"
-
-                response_msg = execution_result.response_msg
+            response_msg = execution_result.response_msg
+            human_agent_response = self.execute_human_agent()
+            if "<SLOT_COUNT>" not in human_agent_response.response_msg:
+                assert "no available slots" in response_msg.lower(), f"Expected 'No available genetic counseling slots found', got '{response_msg}'"
+            else:
                 assert response_msg is not None, "Expected to find response message"
                 response_msg = response_msg.strip()
                 assert "<SLOT_COUNT>" in response_msg, "Expected to find <SLOT_COUNT> tag"
                 assert "</SLOT_COUNT>" in response_msg, "Expected to find </SLOT_COUNT> tag"
                 slot_count = int(response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
-                expected_count = len(all_slots)
+                expected_count = int(human_agent_response.response_msg.split("<SLOT_COUNT>")[1].split("</SLOT_COUNT>")[0])
                 assert slot_count == expected_count, f"Expected slot_count {expected_count}, got {slot_count}"
             
             return TaskResult(

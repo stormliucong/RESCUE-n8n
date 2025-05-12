@@ -20,7 +20,7 @@ Task: Find available slots
 Find most recent available slots from any providers.
 
 If found, return the slot ID using the following format: <SLOT>slot_id</SLOT>
-If none found, return the exact sentence: No available slots found
+If none found, return the exact sentence: 'No available slots found'
 
 """
 
@@ -190,25 +190,6 @@ If none found, return the exact sentence: No available slots found
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            params = {
-                "status": "free",
-                "_sort": "start"
-            }
-            
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Slot",
-                headers=self.HEADERS,
-                params=params
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            response_json = response.json()
-            assert 'entry' in response_json, "Expected to find entry in the response"
-            assert len(response_json['entry']) > 0, "Expected to find at least one slot"
-            
-            slot = response_json['entry'][0]
-            assert slot['resource']['id'] == 'SLOT0010', f"Expected SLOT0010, got {slot['resource']['id']}"
-            assert slot['resource']['status'] == "free", "Expected to find free slot"
             
             response_msg = execution_result.response_msg
             assert response_msg is not None, "Expected to find response message"
@@ -218,10 +199,7 @@ If none found, return the exact sentence: No available slots found
             slot_id = response_msg.split("<SLOT>")[1].split("</SLOT>")[0]
             expected_id = self.execute_human_agent().response_msg.split("<SLOT>")[1].split("</SLOT>")[0]
             assert slot_id == expected_id, f"Expected slot_id {expected_id}, got {slot_id}"
-            # Cross-check against the FHIR response
-            slot = response_json['entry'][0]
-            assert slot['resource']['id'] == slot_id, f"Expected FHIR slot id {slot_id}, got {slot['resource']['id']}"
-
+            
             return TaskResult(
                 task_success=True,
                 task_id=self.get_task_id(),

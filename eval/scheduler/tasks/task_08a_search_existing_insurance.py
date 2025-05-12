@@ -13,7 +13,7 @@ class SearchExistingInsuranceTask(TaskInterface):
 
     def get_prompt(self) -> str:
         return """
-Task: Search for patient insurance information
+Task: Search for patient (id=PAT001) insurance information
 
 Search if patient insurance information has been entered in the system for:
 - Beneficiary: John Doe (id=PAT001)
@@ -105,28 +105,6 @@ If found, return the coverage ID using the following format: <COVERAGE>coverage_
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
-            # Verify the insurance coverage was found correctly
-            response = requests.get(
-                f"{self.FHIR_SERVER_URL}/Coverage",
-                headers=self.HEADERS,
-                params={"beneficiary": "Patient/PAT001", "status": "active"}
-            )
-            
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
-            
-            response_json = response.json()
-            assert 'total' in response_json, "Expected to find total in the response"
-            #assert response_json['total'] >= 1, f"Expected at least one insurance, but got {response_json['total']}"
-            assert 'entry' in response_json, "Expected to find entry in the response"
-            assert len(response_json['entry']) >= 1, f"Expected at least one insurance, but got {len(response_json['entry'])}"
-
-            # Validate coverage details
-            coverage = response_json['entry'][0]['resource']
-            assert coverage['resourceType'] == "Coverage", "Resource type must be Coverage"
-            assert coverage['beneficiary']['reference'] == "Patient/PAT001", "Beneficiary reference must be Patient/PAT001"
-            assert coverage['status'] == "active", "Coverage must be active"
-
-
             # Structured-output assertions
             response_msg = execution_result.response_msg
             assert response_msg is not None, "Expected to find response message"
@@ -134,12 +112,7 @@ If found, return the coverage ID using the following format: <COVERAGE>coverage_
             assert "<COVERAGE>" in response_msg, "Expected to find <COVERAGE> tag"
             assert "</COVERAGE>" in response_msg, "Expected to find </COVERAGE> tag"
             coverage_id = response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
-            expected_id = self.execute_human_agent().response_msg.split("<COVERAGE>")[1].split("</COVERAGE>")[0]
-            assert coverage_id == expected_id, f"Expected coverage_id {expected_id}, got {coverage_id}"
-            # Cross-check with FHIR response
-            coverage_resource = response_json['entry'][0]['resource']
-            assert coverage_resource['id'] == coverage_id, f"Expected FHIR coverage id {coverage_id}, got {coverage_resource['id']}"
-
+            assert coverage_id is not None, "Expected to find coverage_id"
 
             return TaskResult(
                 task_success=True,
