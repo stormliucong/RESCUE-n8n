@@ -71,7 +71,7 @@ class EnterNewPatientTask(TaskInterface):
         response = self.post_to_fhir(payload)
         response_msg = None
         if response.status_code == 201:
-            tagged_response = f"<patient_id>{response.json()["id"]}</patient_id>"
+            tagged_response = f"<patient_id>{response.json()['id']}</patient_id>"
                                 
             response_msg = f'Patient "John Doe" created successfully with ID: {tagged_response}'
         else:
