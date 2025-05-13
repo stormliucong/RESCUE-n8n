@@ -1,0 +1,26 @@
+{
+  "Q0": "Whole exome sequencing (WES)",
+  "Q1": "No",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "Please describe a more appropriate test."
+  ],
+  "Q9": "No",
+  "Q10": "No",
+  "Q10_followup": [
+    "Other"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires prior authorization for genetic and molecular testing. Ensure that the test is expected to influence medical management and submit the necessary documentation for prior authorization."
+}

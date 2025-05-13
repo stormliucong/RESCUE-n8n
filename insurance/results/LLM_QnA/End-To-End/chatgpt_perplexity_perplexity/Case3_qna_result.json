@@ -1,0 +1,25 @@
+{
+  "Q0": "BRCA1/BRCA2 genetic testing for hereditary breast and ovarian cancer risk assessment",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_follow_up": [
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_follow_up": "Yes",
+  "Q10": "No",
+  "Q10_follow_up": "Risk Assessment",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit prior authorization request with documentation of the patient's strong family history of breast and ovarian cancer (mother with breast cancer at age 42, maternal aunt with ovarian cancer), the patient's age (35), and confirmation that genetic counseling was provided. Include the recommendation from the genetic counselor and specify that this testing is for risk assessment to guide management decisions."
+}

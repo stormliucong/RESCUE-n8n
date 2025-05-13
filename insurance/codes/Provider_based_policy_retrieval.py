@@ -19,7 +19,7 @@ perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
 gpt_client = OpenAI(api_key=openai_api_key)
 
 # Directories
-BASE_RESULT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance/results/policy_retrieval"
+BASE_RESULT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance/results/Policy Retrieval/Provider-based"
 LLM_FOLDER_ROOT = os.path.join(BASE_RESULT_DIR, "llm_searched")
 MANUAL_FOLDER = "/home/cptaswadu/RESCUE-n8n/insurance/insurance_policy"
 RETRIEVAL_SUMMARY_CSV = f"{BASE_RESULT_DIR}/retrieval_summary.csv"
