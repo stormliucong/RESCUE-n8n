@@ -1,0 +1,29 @@
+{
+  "Q0": "Whole exome sequencing (WES), which analyzes the coding regions (exons) of all known genes to identify potential genetic variants underlying neurodevelopmental delay and seizures.",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit a prior authorization request with comprehensive clinical documentation, including the patient's detailed history, results of prior chromosomal microarray testing, family history of neurodevelopmental disorders, and a statement on how WES will impact diagnosis and management. Ensure the laboratory is registered with UnitedHealthcare's Genetic Test Registry. Follow UnitedHealthcare's current submission procedures for genetic and molecular testing claims."
+}

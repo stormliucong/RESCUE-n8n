@@ -1,0 +1,32 @@
+{
+  "Q0": "Whole exome sequencing (WES) to investigate potential underlying genetic causes of neurodevelopmental delay and seizures. Gene content: all exons (protein-coding regions) of the genome.",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_guidelines": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Other first- or second-degree family member(s) with similar clinical features is a supporting factor for coverage."
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "81415 (Exome; sequence analysis)"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure documentation includes: (1) clinical records supporting neurodevelopmental delay and seizures, (2) evidence of prior negative chromosomal microarray, (3) ordering provider is a medical geneticist, neurologist, or developmental pediatrician, (4) family history of neurodevelopmental disorders, (5) genetic counseling provided, and (6) use the appropriate CPT code (81415). Check the member-specific benefit plan and any state mandates for additional requirements. Prior authorization may be required depending on the plan."
+}

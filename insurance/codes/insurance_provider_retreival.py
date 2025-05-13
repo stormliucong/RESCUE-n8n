@@ -6,32 +6,81 @@ import re
 from dotenv import load_dotenv
 import json
 from openai import OpenAI
+import requests
 
+# Load environment variables
 path = '/home/cptaswadu/RESCUE-n8n/insurance'
-load_dotenv(dotenv_path=os.path.join(path, ".env"))
+load_dotenv(dotenv_path=os.path.join(path, '.env')) 
 openai_api_key = os.getenv("OPEN_AI_API_KEY")
 perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
-client = OpenAI(api_key=openai_api_key)
+gpt_client = OpenAI(api_key=openai_api_key)
 
+# Directories
 ROOT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance"
-PROVIDERS_EVAL_DIR = os.path.join(ROOT_DIR, "results/providers_generation_eval_results")
+RESULT_DIR = os.path.join(ROOT_DIR, "results/Providers Retrieval")
 
+# Number of times to repeat each experiment
+N_EXPERIMENTS = 3
+
+# List of LLM models to evaluate
+MODELS = ["ChatGPT", "perplexity"]
+
+# Manually verified list of in-network providers
 df = pd.read_csv('/home/cptaswadu/RESCUE-n8n/insurance/In-Network_providers.csv')
 real_list = df["In-network Provider"].dropna().str.strip().tolist()
 
-def normalize_provider(name): #add annotation
+# prompts
+def make_prompt(system_message, user_message):
+    return [
+        {"role": "system", "content": system_message},
+        {"role": "user", "content": user_message}
+    ]
+
+PROMPT_TEMPLATES = {
+    "baseline": (
+        "You are a helpful assistant. Respond only in strict JSON format with no explanation or extra commentary.",
+        "List all the medical insurance providers that are currently in-network with GeneDx. "
+        "Format your response as: "
+        "{\"Providers\": [list of provider names], \"source_url\": \"link to the official source\"}. "
+        "Only use information from official GeneDx or trusted affiliate websites."
+    ),
+    "counted_311": (
+        "You are an artificial intelligence assistant and you need to "
+        "engage in a helpful, detailed, polite conversation with a user.",
+        "List all the 311 medical insurance providers that are currently in-network with GeneDx. "
+        "Output the result strictly in JSON format using the following structure: "
+        "{\"Providers\": [list of provider names], \"source_url\": \"link to the official source\"}. "
+        "Only include links from the official GeneDx website or affiliated trusted sources. "
+        "Do not include any introduction, explanation, or extra commentary — only return the JSON object."
+    ),
+    "explicit_source": (
+        "You are an artificial intelligence assistant and you need to "
+        "engage in a helpful, detailed, polite conversation with a user.",
+        "List all the medical insurance providers that are currently in-network with GeneDx. "
+        "You may use the official GeneDx insurance network page at "
+        "https://www.genedx.com/commercial-insurance-in-network-contracts/ as the primary source of information. "
+        "Output the result strictly in JSON format using the following structure: "
+        "{\"Providers\": [list of provider names], \"source_url\": \"link to the official source\"}. "
+        "Only include links from the official GeneDx website or affiliated trusted sources. "
+        "Do not include any introduction, explanation, or extra commentary — only return the JSON object."
+    )
+}
+
+prompt_bank = {key: lambda sm=sm, um=um: make_prompt(sm, um) for key, (sm, um) in PROMPT_TEMPLATES.items()}
+
+
+def normalize_provider_name(name):
     '''
     Normalize the provider name by removing unnecessary parts and standardizing the format.
     1. Kansas City -> Kansas
     2. State Medicaid (FFS) -> State Medicaid
     3. Blue Shield of -> BS
     '''
-
     name = name.strip()
 
     if "Kansas City" in name:
         name = name.replace("Kansas City", "Kansas")
-    
+
     if name.endswith("(FFS)"):
         name = name.replace("(FFS)", "").strip()
 
@@ -40,256 +89,208 @@ def normalize_provider(name): #add annotation
 
     return name
 
-def evaluate_llm_provider_performance(messages, ground_truth_list, prompt_name=None, experiment_id=None, output_dir=PROVIDERS_EVAL_DIR):
+# Function for pPerplexity API
+def query_perplexity(messages, api_key, model="sonar-pro"):
     """
-    Evaluate the LLM-generated list of in-network providers against a ground truth list.
-    Saves evaluation results and handles error cases such as invalid JSON responses.
-
-    Parameters:
-    - messages: list of dicts (Chat API message format)
-    - ground_truth_list: list of strings (manually verified provider names)
-    - prompt_name: str, identifier for the prompt used
-    - experiment_id: int or str, identifier for the experiment repetition
-    - output_dir: str, directory to save evaluation results
+    Call Perplexity API using raw HTTP request via requests.post.
+    
+    Args:
+        messages (list): List of chat messages (role-content format).
+        api_key (str): Perplexity API key.
+        model (str): Model name. Default is "pplx-70b-chat".
 
     Returns:
-    - Dictionary containing evaluation summary (precision, recall, etc.)
+        str: Response text (LLM output only).
     """
-
-    def try_llm_response_with_retry(message_block, max_retries=3):
-        """
-        Retry LLM API call up to max_retries times.
-        """
-        for attempt in range(1, max_retries + 1):
-            try:
-                print(f"🔁 Attempt {attempt} to get LLM response...")
-                response = client.responses.create(
-                    model="gpt-4o",
-                    tools=[{"type": "web_search_preview"}],
-                    input=message_block
-                )
-                return response.output_text.strip()
-            except Exception as e:
-                print(f"❌ Attempt {attempt} failed: {e}")
-        return None
-
-    # 1. Query LLM
-    response_text = try_llm_response_with_retry(messages)
-    if not response_text:
-        return {
-            "error": "All attempts failed.",
-            "Precision (%)": 0,
-            "Recall (%)": 0
-        }
-
-    # 2. Preprocess and patch invalid JSON edge cases
-    response_text = re.sub(r"^```json\s*", "", response_text)
-    response_text = re.sub(r"\s*```$", "", response_text)
-
-    if response_text.endswith(","):
-        response_text = response_text.rstrip(",") + "]}"
-
-    elif response_text.endswith("["):
-        response_text += "]}"
-
-    elif "Providers" in response_text and "source_url" not in response_text:
-        response_text += ', "source_url": ""}'
-
-    # 3. Attempt to parse JSON
-    try:
-        result = json.loads(response_text)
-    except json.JSONDecodeError:
-        print("❌ JSON decoding failed even after retry.")
-        print(response_text[:500])
-
-        os.makedirs(output_dir, exist_ok=True)
-        fail_path = os.path.join(output_dir, f"{prompt_name}_experiment{experiment_id}_failed.csv")
-        pd.DataFrame([{"error": "invalid JSON", "raw_output": response_text}]).to_csv(fail_path, index=False)
-        print(f"⚠️ Raw output saved to '{fail_path}'")
-
-        return {
-            "error": "invalid JSON",
-            "Precision (%)": 0,
-            "Recall (%)": 0
-        }
-
-    # 4. Normalize and compare providers
-    llm_raw_list = result.get("Providers", [])
-    llm_normalized_list = [normalize_provider(name) for name in llm_raw_list]
-
-    ground_truth_set = set(ground_truth_list)
-    llm_set = set(llm_normalized_list)
-
-    common = ground_truth_set & llm_set
-    missing = ground_truth_set - llm_set
-    extra = llm_set - ground_truth_set
-
-    precision = len(common) / len(llm_set) * 100 if llm_set else 0
-    recall = len(common) / len(ground_truth_set) * 100 if ground_truth_set else 0
-
-    evaluation_result = {
-        "prompt_name": prompt_name,
-        "experiment_id": experiment_id,
-        "ground_truth_count": len(ground_truth_list),
-        "llm_returned_count": len(llm_set),
-        "common_count": len(common),
-        "missing_count": len(missing),
-        "extra_count": len(extra),
-        "Precision (%)": round(precision, 2),
-        "Recall (%)": round(recall, 2)
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
     }
 
-    # 5. Save results to CSV
+    data = {
+        "model": model,
+        "messages": messages
+    }
+
+    url = "https://api.perplexity.ai/chat/completions"
+
+    try:
+        response = requests.post(url, headers=headers, json=data)
+        response.raise_for_status()
+        return response.json()["choices"][0]["message"]["content"].strip()
+    
+    except requests.exceptions.RequestException as e:
+        print(f"❗ Perplexity API call failed: {e}")
+        return None
+
+# Experiment function
+def query_llm_for_providers(messages, model="ChatGPT", openai_client=None, perplexity_api_key=None, max_retries=3):
+    def call_ChatGPT():
+        response = gpt_client.responses.create(
+            model="gpt-4o",
+            input=messages,
+            tools=[{"type": "web_search_preview"}],
+            temperature=0
+        )
+
+        result = response.output_text.strip()
+        print("✅ ChatGPT Response:\n", result)
+        return result
+
+    def call_perplexity():
+        headers = {
+            "Authorization": f"Bearer {perplexity_api_key}",
+            "Content-Type": "application/json"
+        }
+        data = {
+            "model": "sonar-pro",
+            "messages": messages
+        }
+        url = "https://api.perplexity.ai/chat/completions"
+        res = requests.post(url, headers=headers, json=data)
+        if res.status_code == 200:
+            result = res.json()["choices"][0]["message"]["content"].strip()
+            print("✅ Perplexity Response:\n", result)
+            return result
+        else:
+            raise Exception(f"Perplexity error: {res.status_code} - {res.text}")
+
+    for attempt in range(1, max_retries + 1):
+        try:
+            print(f"🔁 Attempt {attempt} ({model})...")
+            return call_perplexity() if model == "perplexity" else call_ChatGPT()
+        except Exception as e:
+            print(f"❌ Attempt {attempt} failed: {e}")
+    return None
+
+
+# Extranct LLM response in JSON format
+def extract_provider_json(response_text):
+    """
+    Attempts to extract a valid JSON object containing 'Providers' and 'source_url' fields
+    from possibly malformed, long, or incomplete LLM responses.
+    """
+    original = response_text.strip()
+
+    # Step 1: Try to extract ```json ... ``` or ``` blocks
+    json_block = re.search(r"```(?:json)?\s*(\{[\s\S]+?)```", original, re.IGNORECASE)
+    if json_block:
+        candidate = json_block.group(1).strip()
+    else:
+        # Step 2: Fallback: find first "{" block
+        brace_match = re.search(r"(\{[\s\S]+)", original)
+        candidate = brace_match.group(1).strip() if brace_match else original
+
+    # Step 3: Try direct JSON parsing
+    try:
+        result = json.loads(candidate)
+        if isinstance(result, dict) and "Providers" in result:
+            result["Providers"] = list(set(result.get("Providers", [])))  # Deduplicate
+            return result
+    except json.JSONDecodeError:
+        pass
+
+    # Step 4: Manual recovery of "Providers" list from malformed text
+    provider_list_match = re.search(r'"Providers"\s*:\s*\[([\s\S]+?)\](,|\s*\})', candidate)
+    if provider_list_match:
+        raw_items = provider_list_match.group(1)
+        providers = re.findall(r'"(.*?)"', raw_items)
+        return {
+            "Providers": list(set(providers)),  # Deduplicated list
+            "source_url": ""
+        }
+
+    print("⚠️ Could not parse JSON. Using fallback empty provider list.")
+    return {
+        "Providers": [],
+        "source_url": ""
+    }
+
+
+
+
+# Evaluation function
+def compute_provider_metrics(predicted, ground_truth):
+    """
+    Compute precision and recall between predicted and ground truth provider lists.
+    Handles empty input cases safely.
+    """
+    # If either list is empty, return zeros and diagnostics
+    if not predicted or not ground_truth:
+        return {
+            "ground_truth_count": len(ground_truth),
+            "llm_returned_count": len(predicted),
+            "common_count": 0,
+            "missing_count": len(ground_truth),
+            "extra_count": len(predicted),
+            "Precision (%)": 0.0,
+            "Recall (%)": 0.0,
+        }
+
+    pred_set = set(normalize_provider_name(x) for x in predicted)
+    gt_set = set(normalize_provider_name(x) for x in ground_truth)
+    common = pred_set & gt_set
+    precision = len(common) / len(pred_set) * 100 if pred_set else 0
+    recall = len(common) / len(gt_set) * 100 if gt_set else 0
+
+    return {
+        "ground_truth_count": len(gt_set),
+        "llm_returned_count": len(pred_set),
+        "common_count": len(common),
+        "missing_count": len(gt_set - pred_set),
+        "extra_count": len(pred_set - gt_set),
+        "Precision (%)": round(precision, 2),
+        "Recall (%)": round(recall, 2),
+    }
+
+# Trnsform the result to a DataFrame & save it
+def export_evaluation_to_csv(result, model, prompt_name, experiment_id, output_dir):
     if prompt_name and experiment_id is not None:
-        os.makedirs(output_dir, exist_ok=True)
-        eval_path = os.path.join(output_dir, f"{prompt_name}_experiment{experiment_id}.csv")
-        pd.DataFrame([evaluation_result]).to_csv(eval_path, index=False)
-        print(f"📁 Evaluation result saved to '{eval_path}'")
+        trial_dir = os.path.join(output_dir, f"{model}_{prompt_name}_experiment{experiment_id}")
+        os.makedirs(trial_dir, exist_ok=True)
+        path = os.path.join(trial_dir, "evaluation.csv")
+        df = pd.DataFrame([result])
+        print(df)
+        df.to_csv(path, index=False)
+        print(f"✅ Saved: {path}")
 
-    return evaluation_result
+# Main function to run all experiments
+def run_all_experiments():
+    provider_csv_root = RESULT_DIR
 
-def provider_task_prompt_baseline():
-    '''
-    The first basic prompt
-    '''
-    return [
-        {
-            "role": "system",
-            "content": "You are a helpful assistant. Respond only in strict JSON format with no explanation or extra commentary."
-        },
-        {
-            "role": "user",
-            "content": (
-                "List all the medical insurance providers that are currently in-network with GeneDx. "
-                "Format your response as: "
-                "{\"Providers\": [list of provider names], \"source_url\": \"link to the official source\"}. "
-                "Only use information from official GeneDx or trusted affiliate websites."
-            )
-        }
-    ]
+    for experiment_id in range(1, N_EXPERIMENTS + 1):
+        print(f"\n🚀 Starting Experiment {experiment_id}...\n")
 
+        for model in MODELS:
+            for prompt_name, prompt_fn in prompt_bank.items():
+                print(f"=== {model.upper()} - Prompt: {prompt_name} ===")
 
-def provider_task_prompt_counted_311():
-    '''
-    The second prompt with a specific request for 311 providers
-    '''
-    return [
-        {
-            "role": "system",
-            "content": (
-                "You are an artificial intelligence assistant and you need to "
-                "engage in a helpful, detailed, polite conversation with a user."
-            )
-        },
-        {
-            "role": "user",
-            "content": (
-                "List all the 311 medical insurance providers that are currently in-network with GeneDx. "
-                "Output the result strictly in JSON format using the following structure: "
-                "{\"Providers\": [list of provider names], \"source_url\": \"link to the official source\"}. "
-                "Only include links from the official GeneDx website or affiliated trusted sources. "
-                "Do not include any introduction, explanation, or extra commentary — only return the JSON object."
-            )
-        }
-    ]
+                messages = prompt_fn()
+                response_text = query_llm_for_providers(
+                    messages=messages,
+                    model=model,
+                    openai_client=gpt_client,
+                    perplexity_api_key=perplexity_api_key
+                )
 
-def provider_task_prompt_explicit_source():
-    '''
-    The third prompt with an explicit source
-    '''
-    return [
-        {
-            "role": "system",
-            "content": (
-                "You are an artificial intelligence assistant and you need to "
-                "engage in a helpful, detailed, polite conversation with a user."
-            )
-        },
-        {
-            "role": "user",
-            "content": (
-                "List all the medical insurance providers that are currently in-network with GeneDx. "
-                "You may use the official GeneDx insurance network page at "
-                "https://www.genedx.com/commercial-insurance-in-network-contracts/ as the primary source of information. "
-                "Output the result strictly in JSON format using the following structure: "
-                "{\"Providers\": [list of provider names], \"source_url\": \"link to the official source\"}. "
-                "Only include links from the official GeneDx website or affiliated trusted sources. "
-                "Do not include any introduction, explanation, or extra commentary — only return the JSON object."
-            )
-        }
-    ]
+                if response_text:
+                    try:
+                        parsed = extract_provider_json(response_text)
+                        providers = parsed.get("Providers", [])
+                        df_providers = pd.DataFrame(providers, columns=["Providers"])
 
+                        # ✅ Save provider.csv under results/provider_retrieval
+                        trial_folder = os.path.join(provider_csv_root, f"{model}_{prompt_name}_experiment{experiment_id}")
+                        os.makedirs(trial_folder, exist_ok=True)
+                        df_providers.to_csv(os.path.join(trial_folder, "provider.csv"), index=False)
 
-prompt_bank = {
-    "baseline": provider_task_prompt_baseline,
-    "counted_311": provider_task_prompt_counted_311,
-    "explicit_source": provider_task_prompt_explicit_source,
-}
+                        # ✅ Save evaluation summary to RESULT_DIR
+                        result = compute_provider_metrics(providers, real_list)
+                        export_evaluation_to_csv(result, model, prompt_name, experiment_id, RESULT_DIR)
 
-def summarize_eval_results(evaluation_df, output_path=os.path.join(PROVIDERS_EVAL_DIR, "summary_stats.csv")):
-    if evaluation_df.empty:
-        print("⚠️ No data to summarize.")
-        return
-
-    group_cols = ["prompt_name"]
-    metric_cols = ["Precision (%)", "Recall (%)", "ground_truth_count", "llm_returned_count", "common_count", "missing_count", "extra_count"]
-
-    # Compute mean and std
-    summary = evaluation_df.groupby(group_cols)[metric_cols].agg(['mean', 'std']).round(2)
-    summary.columns = ['_'.join(col) for col in summary.columns]
-    summary.reset_index(inplace=True)
-
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    summary.to_csv(output_path, index=False)
-    print(f"📊 Summary statistics saved to '{output_path}'")
-
-    return summary
-
-### just in case making multiple runs
-def run_all_prompt_evaluations(real_list, prompt_bank, num_experiments=1, output_dir=PROVIDERS_EVAL_DIR):
-    """
-    Executes LLM evaluations for all prompts and multiple experiment runs.
-
-    Args:
-        real_list (list): Ground truth list of providers.
-        prompt_bank (dict): Dictionary mapping prompt names to prompt-generating functions.
-        num_experiments (int): Number of times each prompt is evaluated.
-        output_dir (str): Directory to save evaluation results.
-
-    Returns:
-        pd.DataFrame: Combined evaluation results from all runs.
-    """
-    all_results = []
-
-    for prompt_name, prompt_fn in prompt_bank.items():
-        for exp_id in range(1, num_experiments + 1):
-            print(f"\n🚀 Running {prompt_name}, Experiment {exp_id}")
-            messages = prompt_fn()
-            result = evaluate_llm_provider_performance(
-                messages=messages,
-                ground_truth_list=real_list,
-                prompt_name=prompt_name,
-                experiment_id=exp_id,
-                output_dir=output_dir
-            )
-            all_results.append(result)
-
-    # Convert to DataFrame and save combined results
-    df = pd.DataFrame(all_results)
-    summary_path = os.path.join(output_dir, "combined_evaluation_summary.csv")
-    os.makedirs(output_dir, exist_ok=True)
-    df.to_csv(summary_path, index=False)
-    print(f"\n📊 Combined evaluation summary saved to '{summary_path}'")
-    return df
-
+                    except Exception as e:
+                        print(f"⚠️ Error during parsing or saving: {e}")
+                else:
+                    print("⚠️ No valid response from model")
 if __name__ == "__main__":
-    print("🚀 Starting provider evaluation...")
-
-    df = run_all_prompt_evaluations(
-        real_list=real_list,
-        prompt_bank=prompt_bank,
-        num_experiments=3
-    )
-
-    # Add stats summary
-    summarize_eval_results(df)
+    run_all_experiments()

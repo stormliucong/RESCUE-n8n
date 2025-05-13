@@ -1,0 +1,29 @@
+{
+  "Q0": "Whole exome sequencing (WES), which analyzes the coding regions of all known genes to identify potential genetic causes of neurodevelopmental disorders.",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The genetic counselor or ordering provider must submit a prior authorization request to UnitedHealthcare, including comprehensive clinical documentation: the patient's clinical history, prior negative chromosomal microarray results, family history of neurodevelopmental disorders, and the rationale for whole exome sequencing. Await approval before proceeding with testing. Ensure genetic counseling is documented as provided."
+}

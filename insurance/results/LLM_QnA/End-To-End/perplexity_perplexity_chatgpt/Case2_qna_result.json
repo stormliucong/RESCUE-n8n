@@ -1,0 +1,26 @@
+{
+  "Q0": "Whole exome sequencing (WES)",
+  "Q1": "Not specified",
+  "Q2": "Not specified",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "Please describe a more appropriate test."
+  ],
+  "Q9": "No",
+  "Q10": "No",
+  "Q10_followup": [
+    "Other"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Since there is no specific policy found, follow standard claim submission procedures including providing clinical justification, prior test results, and any relevant documentation."
+}
