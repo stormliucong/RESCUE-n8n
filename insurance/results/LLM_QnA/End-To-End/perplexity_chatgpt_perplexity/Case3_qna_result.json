@@ -1,0 +1,25 @@
+{
+  "Q0": "BRCA1/BRCA2 genetic testing for hereditary breast and ovarian cancer risk assessment",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": "Yes",
+  "Q10": "No",
+  "Q10_followup": "Risk Assessment",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit a prior authorization request to Aetna with documentation of the patient's strong family history of breast and ovarian cancer (mother with breast cancer at age 42, maternal aunt with ovarian cancer), the genetic counselor's recommendation, and clinical rationale for testing. Include the specific CPT codes for BRCA1/BRCA2 testing and any relevant clinical notes supporting medical necessity."
+}

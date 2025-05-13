@@ -1,0 +1,25 @@
+{
+  "Q0": "BRCA1/BRCA2 genetic testing for hereditary breast and ovarian cancer risk assessment",
+  "Q1": "Yes",
+  "Q2": "Not specified",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_follow_up": [
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_follow_up": "Yes",
+  "Q10": "No",
+  "Q10_follow_up": "Risk Assessment",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "1. Complete the 'Aetna Breast and Ovarian Cancer Susceptibility Gene Testing Prior Authorization Form'\n2. Submit the laboratory's test requisition form\n3. Include detailed family history documentation emphasizing breast and ovarian cancer occurrences\n4. Provide pertinent medical records confirming the family history\n5. Include a summary indicating how the test results will influence the immediate medical care of the patient\n6. Ensure genetic counseling documentation is included with the submission\n7. Obtain prior authorization before proceeding with testing"
+}
