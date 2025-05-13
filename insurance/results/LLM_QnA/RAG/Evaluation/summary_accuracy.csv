@@ -1,0 +1,5 @@
+Model_Combination,Mean_Accuracy
+chatgpt_perplexity,64.64%
+chatgpt_chatgpt,76.75%
+perplexity_chatgpt,63.87%
+perplexity_perplexity,65.56%

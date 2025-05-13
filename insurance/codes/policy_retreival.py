@@ -16,19 +16,21 @@ path = '/home/cptaswadu/RESCUE-n8n/insurance'
 load_dotenv(dotenv_path=os.path.join(path, ".env"))
 openai_api_key = os.getenv("OPEN_AI_API_KEY")
 perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
-client = OpenAI(api_key=openai_api_key)
+gpt_client = OpenAI(api_key=openai_api_key)
 
-ROOT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance"
-BASE_RESULT_DIR = os.path.join(ROOT_DIR, "results/policy_retrieval")
-BASE_LLM_FOLDER = os.path.join(BASE_RESULT_DIR, "llm_searched")
-manual_folder = os.path.join(ROOT_DIR, "insurance_policy")
+# Directories
+BASE_RESULT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance/results/policy_retrieval"
+LLM_FOLDER_ROOT = os.path.join(BASE_RESULT_DIR, "llm_searched")
+MANUAL_FOLDER = "/home/cptaswadu/RESCUE-n8n/insurance/insurance_policy"
+RETRIEVAL_SUMMARY_CSV = f"{BASE_RESULT_DIR}/retrieval_summary.csv"
+MD5_COMPARISON_CSV = f"{BASE_RESULT_DIR}/md5_comparison.csv"
 
-def get_next_iteration_folder(prompt_name, trial, root=BASE_LLM_FOLDER):
-    folder_name = f"{prompt_name}_trial{trial}"
-    full_path = os.path.join(root, folder_name)
-    os.makedirs(full_path, exist_ok=True)
-    return full_path
+os.makedirs(BASE_RESULT_DIR, exist_ok=True)
+os.makedirs(LLM_FOLDER_ROOT, exist_ok=True)
+os.makedirs(os.path.join(BASE_RESULT_DIR, "retrieval"), exist_ok=True)
+os.makedirs(os.path.join(BASE_RESULT_DIR, "md5"), exist_ok=True)
 
+# list of providers
 #df = pd.read_csv('/home/cptaswadu/RESCUE-n8n/insurance/Providers_Network_update.csv')
 #provider_list = df["In-network Provider"].dropna().str.strip().tolist()
 
@@ -51,7 +53,7 @@ def policy_retrieval_prompt_baseline(provider_name):
         "Do not include any additional text or explanations—only the JSON object."
     )
 
-def policy_retrieval_prompt_keyword(provider_name):
+def policy_retrieval_prompt_keyword_checked_document(provider_name):
     """
     Retrieves links only if the documents contain specific genetic-related keywords and excludes irrelevant content.
     """
@@ -70,7 +72,7 @@ def policy_retrieval_prompt_keyword(provider_name):
         "Do not include any explanation, markdown, natural language, or formatting — only return the raw JSON object."
     )
 
-def policy_retrieval_prompt_strict(provider_name):
+def policy_retrieval_prompt_keyword_verified_links(provider_name):
     """
     Added stricter requirements for URL validity and official policy page confirmation.
     """
@@ -91,9 +93,10 @@ def policy_retrieval_prompt_strict(provider_name):
 
 prompt_functions = {
     "baseline": policy_retrieval_prompt_baseline,
-    "keyword": policy_retrieval_prompt_keyword,
-    "strict": policy_retrieval_prompt_strict
+    "keyword_checked_document": policy_retrieval_prompt_keyword_checked_document,
+    "keyword_verified_links": policy_retrieval_prompt_keyword_verified_links
 }
+
 
 
 def download_pdf(url, save_path):
@@ -118,7 +121,82 @@ def save_webpage_as_pdf(url, save_path):
         print(f"❌ Failed to save {url} as PDF: {e}")
         return False
     
-def retrieve_and_save_policy(provider, prompt_fn, iteration_folder):
+def query_llm_for_providers(messages, model="ChatGPT", openai_client=None, perplexity_api_key=None, max_retries=3):
+    def call_ChatGPT():
+        prompt = messages[-1]["content"]  
+        response = openai_client.responses.create(
+            model="gpt-4o",
+            input=messages,
+            tools=[{"type": "web_search_preview"}]
+        )
+        return response.output_text.strip()
+
+    def call_perplexity():
+        headers = {
+            "Authorization": f"Bearer {perplexity_api_key}",
+            "Content-Type": "application/json"
+        }
+        data = {
+            "model": "sonar-pro",
+            "messages": messages
+        }
+        url = "https://api.perplexity.ai/chat/completions"
+        res = requests.post(url, headers=headers, json=data)
+        if res.status_code == 200:
+            return res.json()["choices"][0]["message"]["content"].strip()
+        else:
+            raise Exception(f"Perplexity error: {res.status_code} - {res.text}")
+
+    for attempt in range(1, max_retries + 1):
+        try:
+            print(f"🔁 Attempt {attempt} ({model})...")
+            return call_perplexity() if model == "Perplexity" else call_ChatGPT()
+        except Exception as e:
+            print(f"❌ Attempt {attempt} failed: {e}")
+    return None
+
+
+def extract_provider_json(response_text):
+    original = response_text.strip()
+
+    # Step 1: Try direct JSON
+    try:
+        result = json.loads(original)
+        if isinstance(result, dict) and "pdf_links" in result:
+            return result
+    except json.JSONDecodeError:
+        pass
+
+    # Step 2: Try cleanup of ```json blocks
+    response_text = re.sub(r"^```json\s*|\s*```$", "", original, flags=re.IGNORECASE).strip()
+    
+    # Step 3: Try parsing again
+    try:
+        result = json.loads(response_text)
+        if isinstance(result, dict) and "pdf_links" in result:
+            return result
+    except json.JSONDecodeError:
+        pass
+
+    # Step 4: Find first JSON block in messy response
+    json_match = re.search(r"(\{[\s\S]*?\})", original)
+    if json_match:
+        try:
+            result = json.loads(json_match.group(1))
+            if isinstance(result, dict) and "pdf_links" in result:
+                return result
+        except json.JSONDecodeError as e:
+            print("⚠️ Still invalid JSON block:", e)
+
+    print("⚠️ Could not parse JSON. Using fallback empty provider list.")
+    return {
+        "pdf_links": [],
+        "webpage_links": []
+    }
+
+
+    
+def retrieve_and_save_policy(provider, prompt_fn, model="ChatGPT", prompt_name="baseline", openai_client=None, perplexity_api_key=None, experiment_id = None):
     '''
     Retrieves genetic testing policy links for the given provider using the specified prompt.
     Returns a dictionary containing retrieval result summary.
@@ -130,20 +208,17 @@ def retrieve_and_save_policy(provider, prompt_fn, iteration_folder):
     ]
 
     try:
-        response = client.responses.create(
-            model="gpt-4o",
-            tools=[{"type": "web_search_preview"}],
-            input=messages
+        response_text = query_llm_for_providers(
+            messages, model=model, openai_client=gpt_client, perplexity_api_key=perplexity_api_key
         )
-
-        result_text = response.output_text.strip().replace("```json", "").replace("```", "").strip()
-        result_json = json.loads(result_text)
+        print(f"\n🧾 {model.upper()} raw response for '{provider}':\n{response_text}\n")
+        result_json = extract_provider_json(response_text)
 
         pdf_links = result_json.get("pdf_links", [])
         webpage_links = result_json.get("webpage_links", [])
         all_links = pdf_links + webpage_links
 
-        folder = os.path.join(iteration_folder, provider.replace(" ", "_"))
+        folder = os.path.join(LLM_FOLDER_ROOT, model, f"{prompt_name}_experiment{experiment_id}", provider.replace(" ", "_"))
         os.makedirs(folder, exist_ok=True)
 
         downloaded_pdfs = sum(
@@ -183,26 +258,24 @@ def retrieve_and_save_policy(provider, prompt_fn, iteration_folder):
             "All Links": "[]",
             "Total Count": 0
         }
-    
-def summarize_policy_retrieval(providers, prompt_fn, output_csv_path=None, iteration_folder=None):
-    '''
-    Collects and summarizes policy retrieval results for a list of insurance providers using a specified prompt function.
-    Saves a combined CSV with retrieval statistics per provider, as well as total and average rows.
 
-    Args:
-        providers (list of str): List of insurance provider names.
-        prompt_fn (function): Prompt function to generate the search prompt (e.g., policy_retrieval_prompt_keyword).
-
-    Returns:
-        DataFrame containing per-provider retrieval results and summary rows.
-    '''
+def summarize_policy_retrieval(providers, prompt_fn, model="ChatGPT", prompt_name="baseline", experiment_id=None,
+                                openai_client=None, perplexity_api_key=None, base_output_dir="llm_results"):
+    """
+    Summarizes retrieval results from ChatGPT or Perplexity.
+    """
     results = []
-
     for provider in providers:
-        result = retrieve_and_save_policy(provider, prompt_fn, iteration_folder)
+        result = retrieve_and_save_policy(
+            provider,
+            prompt_fn,
+            model=model,
+            prompt_name=prompt_name,
+            openai_client=gpt_client,
+            perplexity_api_key=perplexity_api_key
+        )
         results.append(result)
 
-    # Add total and average rows
     df = pd.DataFrame(results)
     numeric_cols = ["PDF Count", "Downloaded PDFs", "Webpage Count", "Saved Webpages as PDF", "Total Count"]
 
@@ -213,16 +286,41 @@ def summarize_policy_retrieval(providers, prompt_fn, output_csv_path=None, itera
     avg_row["Provider"] = "AVERAGE"
 
     df = pd.concat([df, pd.DataFrame([sum_row, avg_row])], ignore_index=True)
+    print(f"📊 Summary DataFrame:\n{df}")
 
-    # Save to CSV
-    os.makedirs(os.path.dirname(output_csv_path), exist_ok=True)
-    df.to_csv(output_csv_path, index=False)
-    print(f"📄 Combined results saved to: {output_csv_path}")
+    model_folder = os.path.join(base_output_dir, model)
+    os.makedirs(model_folder, exist_ok=True)
+    output_path = os.path.join(model_folder, f"{prompt_name}_experiment{experiment_id}.csv")
+
+    df.to_csv(output_path, index=False)
+    print(f"📄 Combined results saved to: {output_path}")
 
     return df
 
-def evaluate_md5_comparisons(results, manual_folder, llm_root,
-                              output_dir, return_stats=False, custom_output_path=None):
+
+def evaluate_md5_comparisons(results, model="ChatGPT", prompt_name="baseline",
+                              manual_folder=MANUAL_FOLDER,
+                              llm_root=LLM_FOLDER_ROOT,
+                              output_dir=BASE_RESULT_DIR,
+                              return_stats=False,
+                              custom_output_path=None,
+                              experiment_id=None):
+    """
+    Compares MD5 hashes of LLM-downloaded files with manually curated ones.
+
+    Args:
+        results: List of retrieval result dicts.
+        model: "ChatGPT" or "perplexity" to locate correct LLM folder.
+        prompt_name: Name of the prompt, used for folder disambiguation.
+        manual_folder: Path to manually curated documents.
+        llm_root: Root folder containing LLM-generated content.
+        output_dir: Where to save the MD5 comparison results.
+        return_stats: If True, return match counts.
+        custom_output_path: Optional override for CSV save path.
+
+    Returns:
+        Updated results with MD5 stats added or summary dict (if return_stats=True).
+    """
     matched_rows = []
     llm_only_rows = []
     md5_stats = {}
@@ -242,19 +340,24 @@ def evaluate_md5_comparisons(results, manual_folder, llm_root,
                 md5_map[file] = compute_md5(path)
         return md5_map
 
+    llm_root_model = os.path.join(llm_root, model, prompt_name)
+    global_key = f"{model}_{prompt_name}"
+    global_md5_set = set()
+
     for row in results:
         provider = row["Provider"]
         if provider in ["TOTAL_SUM", "AVERAGE"]:
             continue
 
         print(f"\n📂 Comparing files for '{provider}'...")
-        llm_folder = os.path.join(llm_root, provider.replace(" ", "_"))
+        llm_folder = os.path.join(llm_root_model, provider.replace(" ", "_"))
 
         manual_hashes = get_md5_map(manual_folder)
         llm_hashes = get_md5_map(llm_folder)
 
         manual_md5_set = set(manual_hashes.values())
         llm_md5_set = set(llm_hashes.values())
+        global_md5_set |= llm_md5_set
 
         matched = manual_md5_set & llm_md5_set
         only_llm = llm_md5_set - manual_md5_set
@@ -264,7 +367,6 @@ def evaluate_md5_comparisons(results, manual_folder, llm_root,
             "LLM Only": len(only_llm)
         }
 
-        # Build link map
         link_map = {}
         try:
             pdf_links = json.loads(row.get("PDF Links", "[]"))
@@ -275,7 +377,6 @@ def evaluate_md5_comparisons(results, manual_folder, llm_root,
         except Exception:
             print(f"⚠️ Could not parse links for {provider}")
 
-        # Match/unmatch tracking
         for filename, md5 in llm_hashes.items():
             link = link_map.get(filename, "")
             entry = {
@@ -300,14 +401,45 @@ def evaluate_md5_comparisons(results, manual_folder, llm_root,
 
     if matched_rows or llm_only_rows:
         md5_df = pd.DataFrame(matched_rows + llm_only_rows)
-        os.makedirs(output_dir, exist_ok=True)
-        output_path = custom_output_path if custom_output_path else os.path.join(output_dir, "md5_comparison.csv")
+        output_path = (
+            custom_output_path
+            if custom_output_path
+            else os.path.join(
+                output_dir,
+                "md5",
+                model,
+                prompt_name,
+                f"{model}_md5_comparison_{prompt_name}"
+                + (f"_experiment{experiment_id}" if experiment_id is not None else "")
+                + ".csv"
+            )
+        )
+
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
         md5_df.to_csv(output_path, index=False)
         print(f"📄 MD5 results saved to: {output_path}")
 
     if return_stats:
         total_match = sum(stat["MD5 Matched"] for stat in md5_stats.values())
         total_llm = sum(stat["LLM Only"] for stat in md5_stats.values())
+
+        stats_df = pd.DataFrame([
+            {"Provider": k, **v} for k, v in md5_stats.items()
+        ])
+        stats_path = os.path.join(
+            output_dir,
+            "md5",
+            model,
+            prompt_name,
+            f"{model}_md5_stats_summary_{prompt_name}"
+            + (f"_experiment{experiment_id}" if experiment_id is not None else "")
+            + ".csv"
+        )
+
+        os.makedirs(os.path.dirname(stats_path), exist_ok=True)
+        stats_df.to_csv(stats_path, index=False)
+        print(f"📄 MD5 stats summary saved to: {stats_path}")
+
         return {
             "match_count": total_match,
             "llm_only_count": total_llm
@@ -315,75 +447,135 @@ def evaluate_md5_comparisons(results, manual_folder, llm_root,
 
     return results
 
+def compute_md5_set_for_model_prompt(model_path):
+    import hashlib, os
 
-def run_retrieval_trials(providers, prompt_fns, num_trials=3, base_output_path="insurance/results/policy_retrieval/"):
-    md5_trial_stats = []
-    combined_stats_summary = []
+    md5_set = set()
 
-    retrieval_dir = os.path.join(base_output_path, "retrieval")
-    md5_dir = os.path.join(base_output_path, "md5")
-    os.makedirs(retrieval_dir, exist_ok=True)
-    os.makedirs(md5_dir, exist_ok=True)
+    def compute_md5(file_path):
+        hasher = hashlib.md5()
+        with open(file_path, 'rb') as f:
+            while chunk := f.read(8192):
+                hasher.update(chunk)
+        return hasher.hexdigest()
 
-    for prompt_name, prompt_fn in prompt_fns.items():
-        all_prompt_trials = []
+    for root, _, files in os.walk(model_path):
+        for f in files:
+            path = os.path.join(root, f)
+            md5_set.add(compute_md5(path))
+    return md5_set
 
-        for trial in range(1, num_trials + 1):
-            iteration_folder = get_next_iteration_folder(prompt_name, trial)
+def compare_md5_union_intersection(model_a, model_b, prompt_name, output_dir, experiment_id=None):
+    """
+    Computes and compares MD5 hash sets between two models for a given prompt.
+    Saves union/intersection stats as a CSV file, with optional experiment ID tagging.
 
-            trial_output_path = os.path.join(retrieval_dir, f"{prompt_name}_trial{trial}.csv")
-            df = summarize_policy_retrieval(providers, prompt_fn, output_csv_path=trial_output_path, iteration_folder=iteration_folder)
-            df["Prompt"] = prompt_name
-            df["Trial"] = trial
-            all_prompt_trials.append(df)
+    Args:
+        model_a (str): First model name (e.g., "ChatGPT")
+        model_b (str): Second model name (e.g., "Perplexity")
+        prompt_name (str): Prompt variant name (e.g., "keyword_filtered")
+        output_dir (str): Base directory for saving results
+        experiment_id (int or None): Optional experiment index to disambiguate multiple runs
+    """
+    path_a = os.path.join(LLM_FOLDER_ROOT, model_a, prompt_name)
+    path_b = os.path.join(LLM_FOLDER_ROOT, model_b, prompt_name)
 
-            print(f"\n✅ [{prompt_name} | Trial {trial}] Retrieval saved to:")
-            print(f"   📄 {trial_output_path}")
+    set_a = compute_md5_set_for_model_prompt(path_a)
+    set_b = compute_md5_set_for_model_prompt(path_b)
 
-            df_cleaned = df[~df["Provider"].isin(["TOTAL_SUM", "AVERAGE"])]
-            md5_output_path = os.path.join(md5_dir, f"{prompt_name}_trial{trial}_md5.csv")
+    union = set_a | set_b
+    intersection = set_a & set_b
 
-            eval_result = evaluate_md5_comparisons(
-                df_cleaned.to_dict(orient="records"),
-                manual_folder="/home/cptaswadu/RESCUE-n8n/insurance/insurance_policy",
-                llm_root=iteration_folder,
-                output_dir=base_output_path,
-                custom_output_path=md5_output_path,
-                return_stats=True
+    print(f"\n🔬 MD5 UNION COUNT between {model_a} and {model_b} ({prompt_name}): {len(union)}")
+    print(f"🔬 MD5 INTERSECTION COUNT: {len(intersection)}")
+
+    # Create output folder
+    save_folder = os.path.join(output_dir, "md5", prompt_name)
+    os.makedirs(save_folder, exist_ok=True)
+
+    # Construct filename with experiment_id
+    filename = f"md5_union_intersection_{prompt_name}"
+    if experiment_id is not None:
+        filename += f"_experiment{experiment_id}"
+    filename += ".csv"
+
+    union_path = os.path.join(save_folder, filename)
+
+    # Save results
+    pd.DataFrame([{
+        "Prompt": prompt_name,
+        "Model A": model_a,
+        "Model B": model_b,
+        "Experiment ID": experiment_id,
+        "MD5 Union Count": len(union),
+        "MD5 Intersection Count": len(intersection)
+    }]).to_csv(union_path, index=False)
+
+    print(f"📄 Cross-model MD5 union/intersection saved to: {union_path}")
+
+
+def run_policy_experiments_multiple_times(n_trials=3, providers=None):
+    if providers is None:
+        providers = ["United Healthcare"]
+    base_output_dir = os.path.join(BASE_RESULT_DIR, "retrieval")
+
+    for experiment_id in range(1, n_trials + 1):
+        print(f"\n🚀 Running policy retrieval trial {experiment_id}...\n")
+
+        for model in ["ChatGPT", "Perplexity"]:
+            for prompt_name, prompt_fn in prompt_functions.items():
+                print(f"→ Model: {model}, Prompt: {prompt_name}")
+
+                for provider in providers:
+                    retrieve_and_save_policy(
+                        provider=provider,
+                        model=model,
+                        prompt_name=prompt_name,
+                        prompt_fn=prompt_fn,
+                        experiment_id=experiment_id
+                    )
+
+                df = summarize_policy_retrieval(
+                    providers=providers,
+                    prompt_fn=prompt_fn,
+                    model=model,
+                    prompt_name=prompt_name,
+                    experiment_id=experiment_id,
+                    openai_client=gpt_client,
+                    perplexity_api_key=perplexity_api_key,
+                    base_output_dir=base_output_dir
+                )
+
+                df_clean = df[~df["Provider"].isin(["TOTAL_SUM", "AVERAGE"])]
+                md5_output_path = os.path.join(
+                    BASE_RESULT_DIR,
+                    "md5",
+                    model,
+                    prompt_name,
+                    f"{model}_md5_comparison_{prompt_name}_experiment{experiment_id}.csv"
+                )
+
+                evaluate_md5_comparisons(
+                    results=df_clean.to_dict(orient="records"),
+                    model=model,
+                    prompt_name=prompt_name,
+                    manual_folder=MANUAL_FOLDER,
+                    llm_root=LLM_FOLDER_ROOT,
+                    output_dir=BASE_RESULT_DIR,
+                    custom_output_path=md5_output_path,
+                    experiment_id=experiment_id
+                )
+
+        for prompt_name in prompt_functions:
+            compare_md5_union_intersection(
+                model_a="ChatGPT",
+                model_b="Perplexity",
+                prompt_name=prompt_name,
+                output_dir=BASE_RESULT_DIR,
+                experiment_id=experiment_id
             )
 
-            md5_trial_stats.append({
-                "Prompt": prompt_name,
-                "Trial": trial,
-                "Match_Count": eval_result["match_count"],
-                "LLM_Only_Count": eval_result["llm_only_count"]
-            })
-
-        df_combined = pd.concat(all_prompt_trials, ignore_index=True)
-        df_cleaned_combined = df_combined[~df_combined["Provider"].isin(["TOTAL_SUM", "AVERAGE"])]
-        numeric_cols = ["PDF Count", "Downloaded PDFs", "Webpage Count", "Saved Webpages as PDF", "Total Count"]
-
-        mean_vals = df_cleaned_combined[numeric_cols].mean().round(2).to_dict()
-        std_vals = df_cleaned_combined[numeric_cols].std().round(2).to_dict()
-
-        combined_stat = {"Prompt": prompt_name}
-        for col in numeric_cols:
-            combined_stat[f"{col}_Mean"] = mean_vals[col]
-            combined_stat[f"{col}_Std"] = std_vals[col]
-        combined_stats_summary.append(combined_stat)
-
-    pd.DataFrame(combined_stats_summary).to_csv(os.path.join(base_output_path, "prompt_combined_stats.csv"), index=False)
-    pd.DataFrame(md5_trial_stats).to_csv(os.path.join(base_output_path, "md5_stats_by_trial.csv"), index=False)
-
-    print("\n🎉 Retrieval + MD5 evaluation summary complete.")
-
-
-
-def main():
-    providers = ["United Healthcare", "Aetna"]
-    prompt_fns = prompt_functions
-    run_retrieval_trials(providers, prompt_fns, num_trials=3)
-
 if __name__ == "__main__":
-    main()
-
+    print("🔁 Starting full policy retrieval experiment loop...\n")
+    run_policy_experiments_multiple_times(n_trials=2)
+    print("\n✅ All experiments completed successfully.")
