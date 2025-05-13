@@ -19,7 +19,7 @@ perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
 gpt_client = OpenAI(api_key=openai_api_key)
 
 # Directories
-BASE_RESULT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance/results/policy_retrieval"
+BASE_RESULT_DIR = "/home/cptaswadu/RESCUE-n8n/insurance/results/Policy Retrieval/LLM-chained"
 LLM_FOLDER_ROOT = os.path.join(BASE_RESULT_DIR, "llm_searched")
 MANUAL_FOLDER = "/home/cptaswadu/RESCUE-n8n/insurance/insurance_policy"
 RETRIEVAL_SUMMARY_CSV = f"{BASE_RESULT_DIR}/retrieval_summary.csv"
@@ -196,7 +196,7 @@ def extract_provider_json(response_text):
 
 
     
-def retrieve_and_save_policy(provider, prompt_fn, model="ChatGPT", prompt_name="baseline", openai_client=None, perplexity_api_key=None, experiment_id = None):
+def retrieve_and_save_policy(provider, prompt_fn, model, prompt_name, experiment_id, openai_client=None, perplexity_api_key=None, provider_source_tag= None):
     '''
     Retrieves genetic testing policy links for the given provider using the specified prompt.
     Returns a dictionary containing retrieval result summary.
@@ -218,7 +218,7 @@ def retrieve_and_save_policy(provider, prompt_fn, model="ChatGPT", prompt_name="
         webpage_links = result_json.get("webpage_links", [])
         all_links = pdf_links + webpage_links
 
-        folder = os.path.join(LLM_FOLDER_ROOT, model, f"{prompt_name}_experiment{experiment_id}", provider.replace(" ", "_"))
+        folder = os.path.join(LLM_FOLDER_ROOT, model, f"{provider_source_tag}-{model}-{prompt_name}-experiment{experiment_id}", provider.replace(" ", "_"))
         os.makedirs(folder, exist_ok=True)
 
         downloaded_pdfs = sum(
@@ -259,8 +259,7 @@ def retrieve_and_save_policy(provider, prompt_fn, model="ChatGPT", prompt_name="
             "Total Count": 0
         }
 
-def summarize_policy_retrieval(providers, prompt_fn, model="ChatGPT", prompt_name="baseline", experiment_id=None,
-                                openai_client=None, perplexity_api_key=None, base_output_dir="llm_results"):
+def summarize_policy_retrieval(providers, prompt_fn, model, prompt_name, experiment_id, openai_client=None, perplexity_api_key=None, base_output_dir="llm_results", provider_source_tag=None):
     """
     Summarizes retrieval results from ChatGPT or Perplexity.
     """
@@ -288,7 +287,9 @@ def summarize_policy_retrieval(providers, prompt_fn, model="ChatGPT", prompt_nam
     df = pd.concat([df, pd.DataFrame([sum_row, avg_row])], ignore_index=True)
     print(f"📊 Summary DataFrame:\n{df}")
 
-    model_folder = os.path.join(base_output_dir, model)
+    folder_name = f"{provider_source_tag}-{model}-{prompt_name}-experiment{experiment_id}"
+    model_folder = os.path.join(base_output_dir, folder_name)
+
     os.makedirs(model_folder, exist_ok=True)
     output_path = os.path.join(model_folder, f"{prompt_name}_experiment{experiment_id}.csv")
 
@@ -304,7 +305,8 @@ def evaluate_md5_comparisons(results, model="ChatGPT", prompt_name="baseline",
                               output_dir=BASE_RESULT_DIR,
                               return_stats=False,
                               custom_output_path=None,
-                              experiment_id=None):
+                              experiment_id=None,
+                              provider_source_tag=None):
     """
     Compares MD5 hashes of LLM-downloaded files with manually curated ones.
 
@@ -404,15 +406,7 @@ def evaluate_md5_comparisons(results, model="ChatGPT", prompt_name="baseline",
         output_path = (
             custom_output_path
             if custom_output_path
-            else os.path.join(
-                output_dir,
-                "md5",
-                model,
-                prompt_name,
-                f"{model}_md5_comparison_{prompt_name}"
-                + (f"_experiment{experiment_id}" if experiment_id is not None else "")
-                + ".csv"
-            )
+            else os.path.join(output_dir, "md5", model, prompt_name, f"{provider_source_tag}-{model}-{prompt_name}-experiment{experiment_id}.csv")
         )
 
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -514,7 +508,7 @@ def compare_md5_union_intersection(model_a, model_b, prompt_name, output_dir, ex
     print(f"📄 Cross-model MD5 union/intersection saved to: {union_path}")
 
 
-def run_policy_experiments_multiple_times(n_trials=3, providers=None):
+def run_policy_experiments_multiple_times(n_trials=3, providers=None, target_model=None, provider_source_tag=None):
     if providers is None:
         providers = ["United Healthcare"]
     base_output_dir = os.path.join(BASE_RESULT_DIR, "retrieval")
@@ -529,21 +523,23 @@ def run_policy_experiments_multiple_times(n_trials=3, providers=None):
                 for provider in providers:
                     retrieve_and_save_policy(
                         provider=provider,
-                        model=model,
+                        model=target_model,
                         prompt_name=prompt_name,
                         prompt_fn=prompt_fn,
-                        experiment_id=experiment_id
+                        experiment_id=experiment_id,
+                        provider_source_tag=provider_source_tag
                     )
 
                 df = summarize_policy_retrieval(
                     providers=providers,
                     prompt_fn=prompt_fn,
-                    model=model,
+                    model=target_model,
                     prompt_name=prompt_name,
                     experiment_id=experiment_id,
                     openai_client=gpt_client,
                     perplexity_api_key=perplexity_api_key,
-                    base_output_dir=base_output_dir
+                    base_output_dir=base_output_dir,
+                    provider_source_tag=provider_source_tag
                 )
 
                 df_clean = df[~df["Provider"].isin(["TOTAL_SUM", "AVERAGE"])]
@@ -557,13 +553,14 @@ def run_policy_experiments_multiple_times(n_trials=3, providers=None):
 
                 evaluate_md5_comparisons(
                     results=df_clean.to_dict(orient="records"),
-                    model=model,
+                    model=target_model,
                     prompt_name=prompt_name,
                     manual_folder=MANUAL_FOLDER,
                     llm_root=LLM_FOLDER_ROOT,
                     output_dir=BASE_RESULT_DIR,
                     custom_output_path=md5_output_path,
-                    experiment_id=experiment_id
+                    experiment_id=experiment_id,
+                    provider_source_tag=provider_source_tag
                 )
 
         for prompt_name in prompt_functions:
@@ -577,5 +574,53 @@ def run_policy_experiments_multiple_times(n_trials=3, providers=None):
 
 if __name__ == "__main__":
     print("🔁 Starting full policy retrieval experiment loop...\n")
-    run_policy_experiments_multiple_times(n_trials=2)
+
+    def get_providers_from_llm(model_name):
+        messages = [
+            {
+                "role": "system",
+                "content": "You are a helpful assistant. Respond only in strict JSON format."
+            },
+            {
+                "role": "user",
+                "content": (
+                    "List all the medical insurance providers that are currently in-network with GeneDx. "
+                    "Here is the source: https://www.genedx.com/commercial-insurance-in-network-contracts/ "
+                    "Return only in JSON: {\"Providers\": [list of provider names]}."
+                )
+            }
+        ]
+        response = query_llm_for_providers(
+            messages,
+            model=model_name,
+            openai_client=gpt_client,
+            perplexity_api_key=perplexity_api_key
+        )
+        parsed = extract_provider_json(response)
+        return parsed.get("Providers", [])
+
+    # ✅ Step 1. Get providers from both LLMs
+    chatgpt_providers = get_providers_from_llm("ChatGPT")
+    perplexity_providers = get_providers_from_llm("Perplexity")
+
+    if not chatgpt_providers:
+        raise ValueError("❌ ChatGPT did not return any providers.")
+    if not perplexity_providers:
+        raise ValueError("❌ Perplexity did not return any providers.")
+
+    print(f"📋 ChatGPT Providers: {len(chatgpt_providers)}")
+    print(f"📋 Perplexity Providers: {len(perplexity_providers)}")
+
+    # ✅ Step 2. Run 4 experiments: each model x each provider source
+    for provider_source, provider_list in [("ChatGPT", chatgpt_providers), ("Perplexity", perplexity_providers)]:
+        for target_model in ["ChatGPT", "Perplexity"]:
+            print(f"\n🚀 Running {target_model} on providers from {provider_source}...\n")
+            run_policy_experiments_multiple_times(
+                n_trials=3,
+                providers=provider_list,
+                target_model=target_model,
+                provider_source_tag=provider_source
+            )
+
     print("\n✅ All experiments completed successfully.")
+
