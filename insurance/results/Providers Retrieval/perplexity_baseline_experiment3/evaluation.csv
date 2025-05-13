@@ -1,0 +1,2 @@
+ground_truth_count,llm_returned_count,common_count,missing_count,extra_count,Precision (%),Recall (%)
+310,4,2,308,2,50.0,0.65
