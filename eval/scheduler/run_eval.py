@@ -1,18 +1,21 @@
 from dataclasses import asdict
 import logging.config
+import uuid
 from dotenv import load_dotenv # type: ignore
 import os
 import json
 import logging
 import yaml
 import importlib
+import requests
 
 logging.config.fileConfig('logging.ini', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
 
 load_dotenv()
 FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-N8N_URL = os.getenv("N8N_AGENT_URL")
+# test FHIR_SERVER_URL 
+N8N_AGENT_URL = os.getenv("N8N_AGENT_URL")
 N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
 N8N_SYSTEM_PROMPT_FILE = os.getenv("N8N_SYSTEM_PROMPT_FILE", None)
 N8N_MULTI_AGENT_PROMPT_FILE = os.getenv("N8N_MULTI_AGENT_PROMPT_FILE", None)
@@ -51,12 +54,49 @@ def load_tasks_from_config(config_path):
     return task_configs
 
 
+def test_fhir_server():
+    try:
+        response = requests.get(f"{FHIR_SERVER_URL}/metadata", headers=HEADERS)
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        logger.error(f"FHIR server is not accessible: {str(e)}")
+        raise Exception(f"FHIR server is not accessible: {str(e)}")
+    return True
+
+def test_n8n():
+    try:
+        prompt = "Hello, how are you?"
+        session_id = str(uuid.uuid4())
+        payload = {
+            "prompt": prompt,
+            "session_id": session_id,
+            "fhir_server_url": FHIR_SERVER_URL,
+        }
+        response = requests.post(N8N_AGENT_URL, json=payload)
+        response.raise_for_status()
+        try:
+            execution_id = response.headers['execution_id']
+            response = requests.get(N8N_EXECUTION_URL, params={"executionId": execution_id}, timeout=100)
+            response.raise_for_status()
+        except requests.exceptions.RequestException as e:
+            logger.error(f"N8N execution is not accessible: {str(e)}")
+            raise Exception(f"N8N execution is not accessible: {str(e)}")
+    except requests.exceptions.RequestException as e:
+        logger.error(f"N8N agent is not accessible: {str(e)}")
+        raise Exception(f"N8N agent is not accessible: {str(e)}")
+    return True
+
 task_configs = load_tasks_from_config("run_eval_test_2.yaml")
 
 logger.info(f"Running eval with {len(task_configs)} tasks")
 
 agent = "n8n"
 logger.info(f"Running eval with agent: {agent}")
+
+if test_fhir_server():
+    logger.info("FHIR server is accessible")
+if test_n8n():
+    logger.info("N8N agent/execution is accessible")
 
 
 for task_config in task_configs:
@@ -77,7 +117,7 @@ for task_config in task_configs:
     # Defining Task object with evaluation params
     task = task_class(
         fhir_server_url = FHIR_SERVER_URL,
-        n8n_url = N8N_URL,
+        n8n_url = N8N_AGENT_URL,
         n8n_execution_url = N8N_EXECUTION_URL,
         n8n_system_prompt_file = N8N_SYSTEM_PROMPT_FILE,
         n8n_multi_agent_prompt_file = N8N_MULTI_AGENT_PROMPT_FILE,
