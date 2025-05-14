@@ -31,8 +31,8 @@ jobs:
           import json
           import requests
 
-          # Adjusted folder path to "local n8n setup/workflows"
-          WORKFLOWS_FOLDER = "local n8n setup/workflows"
+          # Adjusted folder path to "n8n_local/workflows"
+          WORKFLOWS_FOLDER = "n8n_local/workflows"
 
           # 1) Make sure this folder exists
           os.makedirs(WORKFLOWS_FOLDER, exist_ok=True)
@@ -84,6 +84,6 @@ jobs:
 
           now=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
           # Use quotes around the folder path with spaces
-          git add -A "local n8n setup/workflows/"
+          git add -A "n8n_local/workflows/"
           git diff --cached --quiet || git commit -m "🔄 Nightly n8n workflow sync on $now"
           git push
