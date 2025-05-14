@@ -1,9 +1,9 @@
 {
   "createdAt": "2025-03-11T17:08:23.620Z",
-  "updatedAt": "2025-05-13T19:46:36.000Z",
+  "updatedAt": "2025-05-13T21:28:18.000Z",
   "id": "p5CG6PCfoYNp850m",
   "name": "Schedule Agent Design Baseline",
-  "active": false,
+  "active": true,
   "nodes": [
     {
       "parameters": {
@@ -508,6 +508,19 @@
           "name": "Redis account"
         }
       }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract the output field from the incoming data\nconst inputData = items[0].json;\n\n// Ensure 'output' exists\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\n// Return the new object with hardcoded to_agent/from_agent and execution_id\nreturn [\n  {\n    json: {\n      output: inputData.output,\n      execution_id: $execution.id,\n      to_agent: \"SchedulingAgent\",   // Hardcoded value\n      from_agent: \"FrontDeskAgent\"   // Hardcoded value\n    },\n  },\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        -400
+      ],
+      "id": "446efe16-6b70-4795-b8be-5f47f77d75a9",
+      "name": "Code"
     }
   ],
   "connections": {
@@ -515,7 +528,7 @@
       "main": [
         [
           {
-            "node": "Respond to Webhook",
+            "node": "Code",
             "type": "main",
             "index": 0
           }
@@ -730,6 +743,22 @@
       "ai_memory": [
         []
       ]
+    },
+    "Respond to Webhook": {
+      "main": [
+        []
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -740,7 +769,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "16dcc623-f4fc-411c-a143-c5915589003b",
+  "versionId": "f53a3434-86b9-4c5c-9c58-bc51697dfc6e",
   "triggerCount": 1,
   "tags": [
     {

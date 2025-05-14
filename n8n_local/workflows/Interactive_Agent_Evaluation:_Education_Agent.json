@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-26T19:28:56.868Z",
-  "updatedAt": "2025-04-21T21:30:37.000Z",
+  "updatedAt": "2025-05-14T01:54:58.000Z",
   "id": "zOSJ4AMpO5cMILRN",
   "name": "Interactive Agent Evaluation: Education Agent",
   "active": true,
@@ -15,7 +15,7 @@
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "position": [
         0,
-        0
+        -60
       ]
     },
     {
@@ -94,7 +94,7 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        440,
+        460,
         180
       ],
       "id": "58217d37-daae-4862-a128-c3dbfba04fb9",
@@ -278,14 +278,14 @@
     },
     {
       "parameters": {
-        "respondWith": "json",
-        "responseBody": "{\n  \"msg\": \"conversation finished: Education Agent\"\n}",
-        "options": {}
+        "options": {
+          "responseKey": ""
+        }
       },
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        1060,
+        1100,
         180
       ],
       "id": "5e12eedc-3470-4377-98cb-7e90dbe3b87c",
@@ -330,7 +330,7 @@
       "typeVersion": 3.4,
       "position": [
         200,
-        0
+        -60
       ],
       "id": "f027f226-2c05-46cd-861b-92ab12b69215",
       "name": "Edit Fields1"
@@ -445,8 +445,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        200,
-        180
+        460,
+        -40
       ],
       "id": "d8ce09fb-8a76-4c6c-98e4-a75dfba6647b",
       "name": "Edit Fields"
@@ -578,12 +578,12 @@
     },
     {
       "parameters": {
-        "jsCode": "const result = [];\n\nfor (const item of $input.all()) {\n  let message = item.json.output || \"\";\n  const containsStop = message.includes(\"<STOP>\");\n\n  // Default agent is null unless we detect one of the tags\n  let target_agent = null;\n\n  // Check for <PATIENT> token\n  if (message.includes(\"<PATIENT>\")) {\n    target_agent = \"patient\";\n    message = message.replace(\"<PATIENT>\", \"\");\n  }\n  // Check for <EDUCATION> token\n  else if (message.includes(\"<FRONT_DESK>\")) {\n    target_agent = \"front_desk_agent\";\n    message = message.replace(\"<FRONT_DESK>\", \"\");\n  }\n\n  // Remove <STOP> token for final output\n  message = message.replace(\"<STOP>\", \"\").trim();\n\n  result.push({\n    json: {\n      reply: message,\n      end_conversation: containsStop,\n      target_agent: target_agent\n    }\n  });\n}\n\nreturn result;\n"
+        "jsCode": "// Extract the output field from the first incoming item\nconst inputData = items[0].json;\n\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\nlet message = inputData.output;\nconst containsStop = message.includes(\"<STOP>\");\n\n// Determine target agent based on tag\nlet target_agent = \"unknown\";\n\nif (message.includes(\"<PATIENT>\")) {\n  target_agent = \"patient\";\n  message = message.replace(\"<PATIENT>\", \"\");\n} else if (message.includes(\"<FRONT_DESK>\")) {\n  target_agent = \"front_desk_agent\";\n  message = message.replace(\"<FRONT_DESK>\", \"\");\n} else if (message.includes(\"<SCHEDULING>\")) {\n  target_agent = \"scheduling_agent\";\n  message = message.replace(\"<SCHEDULING>\", \"\");\n}\n\n// Clean up <STOP> and trim\nmessage = message.replace(\"<STOP>\", \"\").trim();\n\n// Return the final formatted object\nreturn [\n  {\n    json: {\n      output: message,\n      execution_id: $execution.id,\n      to_agent: \"patient_agent\",   // hardcoded\n      from_agent: \"education_agent\",   // hardcoded\n      end_conversation: containsStop\n    },\n  },\n];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        840,
+        860,
         180
       ],
       "id": "5b838747-c37a-4c56-8b4e-719630500d12",
@@ -620,6 +620,43 @@
       ],
       "id": "883461aa-6d79-47f1-b369-0a296bfcdf5c",
       "name": "HTTP Request to Patient Server"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.body.message }}",
+              "type": "string"
+            },
+            {
+              "id": "acaa3e0d-ead3-4019-bc81-02071201fa0f",
+              "name": "sessionId",
+              "value": "={{ $json.body.sessionId }}",
+              "type": "string"
+            },
+            {
+              "id": "a47060b8-062a-4059-ab98-cea56d4baf8d",
+              "name": "from_agent",
+              "value": "={{ $json.body.from_agent }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        200,
+        180
+      ],
+      "id": "edfeeadc-b93a-462c-b687-a619d2d4b9e1",
+      "name": "Edit Fields2"
     }
   ],
   "connections": {
@@ -759,7 +796,7 @@
       "main": [
         [
           {
-            "node": "Edit Fields",
+            "node": "Edit Fields2",
             "type": "main",
             "index": 0
           }
@@ -773,13 +810,7 @@
     },
     "Edit Fields1": {
       "main": [
-        [
-          {
-            "node": "Education Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Redis Chat Memory": {
@@ -795,13 +826,7 @@
     },
     "Respond to Webhook": {
       "main": [
-        [
-          {
-            "node": "Switch",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Edit Fields": {
@@ -842,6 +867,17 @@
       "main": [
         []
       ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -860,7 +896,7 @@
       }
     ]
   },
-  "versionId": "fc069e55-16f6-441b-8987-feecd20626dd",
+  "versionId": "0e5a118c-e7b5-4436-9762-1c8227b3c870",
   "triggerCount": 1,
   "tags": [
     {

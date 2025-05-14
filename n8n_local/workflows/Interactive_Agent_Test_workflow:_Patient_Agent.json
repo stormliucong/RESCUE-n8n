@@ -1,9 +1,9 @@
 {
   "createdAt": "2025-03-19T18:51:45.516Z",
-  "updatedAt": "2025-03-26T19:39:33.000Z",
+  "updatedAt": "2025-05-14T01:55:09.000Z",
   "id": "7M5mjiX5RAsxrzFZ",
   "name": "Interactive Agent Test workflow: Patient Agent",
-  "active": false,
+  "active": true,
   "nodes": [
     {
       "parameters": {
@@ -17,7 +17,7 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1.2,
       "position": [
-        -320,
+        -300,
         400
       ],
       "id": "168fe762-3089-429f-b3fc-24cdbf56c7ea",
@@ -40,12 +40,6 @@
               "type": "string"
             },
             {
-              "id": "3378b757-1dae-4d5c-ba84-45dbd15f7a8e",
-              "name": "counter",
-              "value": "={{ $json.body.counter + 1}} ",
-              "type": "number"
-            },
-            {
               "id": "acaa3e0d-ead3-4019-bc81-02071201fa0f",
               "name": "sessionId",
               "value": "={{ $json.body.sessionId }}",
@@ -53,8 +47,8 @@
             },
             {
               "id": "f7232c6e-3724-4664-9096-72924752a395",
-              "name": "end_conversation",
-              "value": "={{ [\"true\", true, \"1\", 1].includes($json.body.end_conversation) }}",
+              "name": "from_agent",
+              "value": "={{ $json.body.from_agent }}",
               "type": "boolean"
             }
           ]
@@ -98,22 +92,20 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        340,
-        160
+        500,
+        120
       ],
       "id": "ba5dbcaf-81c2-4d0c-bcba-df57655f5061",
       "name": "HTTP Request to FrontDesk Agent"
     },
     {
       "parameters": {
-        "respondWith": "json",
-        "responseBody": "={\n  \"msg\": \"conversation finished: Patient Agent (message limit not exceeded)\"\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        100,
+        280,
         140
       ],
       "id": "243a71e0-b118-4c7c-b3e8-cafb34510af7",
@@ -124,7 +116,7 @@
         "promptType": "define",
         "text": "={{ $json.chatInput }}",
         "options": {
-          "systemMessage": "You are a simulated patient participating in a virtual consultation with a doctor.\n\nUse the following dummy medical record as your internal source of truth. Reveal only the information that becomes relevant based on the doctor\u2019s questions. Respond naturally and avoid oversharing.\n\n\ud83e\uddfe Patient Record\n\nName: Samira El Amrani\nAge: 34\nSex: Female\nPrimary Concern: Fatigue and joint pain over the past week\nOther Symptoms: Occasional low-grade fever, mild shortness of breath\nMedical History:\nDiagnosed with mild asthma as a child\nNo known allergies\nFamily history of autoimmune disorders (mother has lupus)\nMedications:\nOccasional use of ibuprofen\nInhaler (albuterol) for rare asthma flare-ups\nLifestyle:\nWorks a desk job, generally sedentary\nEats a balanced diet, non-smoker\nHas been under work-related stress recently\n"
+          "systemMessage": "=You are a simulated patient participating in a virtual consultation with a doctor.\n\nUse the following dummy medical record as your internal source of truth. Reveal only the information that becomes relevant based on the doctor\u2019s questions. Respond naturally and avoid oversharing.\n\n\ud83e\uddfe Patient Record\n\nName: Samira El Amrani\nAge: 34\nSex: Female\nPrimary Concern: Fatigue and joint pain over the past week\nOther Symptoms: Occasional low-grade fever, mild shortness of breath\nMedical History:\nDiagnosed with mild asthma as a child\nNo known allergies\nFamily history of autoimmune disorders (mother has lupus)\nMedications:\nOccasional use of ibuprofen\nInhaler (albuterol) for rare asthma flare-ups\nLifestyle:\nWorks a desk job, generally sedentary\nEats a balanced diet, non-smoker\nHas been under work-related stress recently\n"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
@@ -158,7 +150,7 @@
       "type": "@n8n/n8n-nodes-langchain.memoryRedisChat",
       "typeVersion": 1.4,
       "position": [
-        -180,
+        -160,
         400
       ],
       "id": "6652e256-da6c-4529-baae-b2a49ea39be2",
@@ -241,11 +233,24 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        340,
-        -40
+        500,
+        -80
       ],
       "id": "a4f3746a-a7f8-4661-b23c-5d6b363f2437",
       "name": "HTTP Request to FrontDesk Agent1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract the output field from the first incoming item\nconst inputData = items[0].json;\n\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\nlet message = inputData.output;\nconst containsStop = message.includes(\"<STOP>\");\n\n// Determine target agent based on tag\nlet target_agent = \"frontdesk_agent\";\n\nif (message.includes(\"<PATIENT>\")) {\n  target_agent = \"patient\";\n  message = message.replace(\"<PATIENT>\", \"\");\n} else if (message.includes(\"<FRONT_DESK>\")) {\n  target_agent = \"frontdesk_agent\";\n  message = message.replace(\"<FRONT_DESK>\", \"\");\n} else if (message.includes(\"<SCHEDULING>\")) {\n  target_agent = \"scheduling_agent\";\n  message = message.replace(\"<SCHEDULING>\", \"\");\n}\n\n// Clean up <STOP> and trim\nmessage = message.replace(\"<STOP>\", \"\").trim();\n\n// Return the final formatted object\nreturn [\n  {\n    json: {\n      output: message,\n      execution_id: $execution.id,\n      to_agent: \"education_agent\",   // hardcoded\n      from_agent: \"patient_agent\",   // hardcoded\n      end_conversation: containsStop\n    },\n  },\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        80,
+        140
+      ],
+      "id": "5151d1e6-009a-4397-aca8-a5f4d7fa5db5",
+      "name": "Code"
     }
   ],
   "connections": {
@@ -280,7 +285,7 @@
       "main": [
         [
           {
-            "node": "Respond to Webhook (previous stopped)",
+            "node": "Code",
             "type": "main",
             "index": 0
           }
@@ -316,9 +321,14 @@
     },
     "Respond to Webhook (previous stopped)": {
       "main": [
+        []
+      ]
+    },
+    "Code": {
+      "main": [
         [
           {
-            "node": "HTTP Request to FrontDesk Agent1",
+            "node": "Respond to Webhook (previous stopped)",
             "type": "main",
             "index": 0
           }
@@ -334,7 +344,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "fdce298f-c8b7-40e4-853f-6826513e1ae8",
+  "versionId": "7ef6235a-8e34-4d68-a4f9-4678af0bd5fe",
   "triggerCount": 1,
   "tags": [
     {
