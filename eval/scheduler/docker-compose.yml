@@ -4,3 +4,15 @@ services:
     image: "hapiproject/hapi:latest"
     ports:
       - "7070:8080"
+    environment:
+      # Tell HAPI FHIR to disable async indexing so searches immediately reflect writes
+      SPRING_APPLICATION_JSON: |
+        {
+          "hapi": {
+            "jpa": {
+              "async": {
+                "indexer": false
+              }
+            }
+          }
+        }

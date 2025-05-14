@@ -54,9 +54,17 @@ class SearchNonexistentPatientTask(TaskInterface):
             )
 
         response_json = response.json()
+        if "entry" in response_json and len(response_json["entry"]) > 0:
+            # Patient found
+            patient_id = response_json["entry"][0]["resource"]["id"]
+            return ExecutionResult(
+                execution_success=True,
+                response_msg=f"<patient_id>{patient_id}</patient_id>"
+            )
+        # No patient found
         return ExecutionResult(
             execution_success=True,
-            response_msg=f"Found {response_json.get('total', 0)} patient(s) matching the criteria"
+            response_msg=f"This is a new patient"
         )
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:

@@ -1,5 +1,6 @@
 from dataclasses import asdict
 import logging.config
+import time
 import uuid
 from dotenv import load_dotenv # type: ignore
 import os
@@ -8,6 +9,28 @@ import logging
 import yaml
 import importlib
 import requests
+import argparse
+
+argparse = argparse.ArgumentParser(description="Run evaluation tasks")
+argparse.add_argument(
+    "--config",
+    type=str,
+    default="run_eval_test_2.yaml",
+    help="Path to the configuration file"
+)
+argparse.add_argument(
+    "--agent",
+    type=str,
+    default="human",
+    choices=["human", "n8n"],
+    help="Agent to use for evaluation"
+)
+args = argparse.parse_args()
+agent = args.agent
+config_path = args.config
+
+# sh command
+# python run_eval.py --config run_eval_with_params_v2.yaml --agent human
 
 logging.config.fileConfig('logging.ini', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
@@ -86,11 +109,8 @@ def test_n8n():
         raise Exception(f"N8N agent is not accessible: {str(e)}")
     return True
 
-task_configs = load_tasks_from_config("run_eval_test_2.yaml")
-
+task_configs = load_tasks_from_config(config_path)
 logger.info(f"Running eval with {len(task_configs)} tasks")
-
-agent = "n8n"
 logger.info(f"Running eval with agent: {agent}")
 
 if test_fhir_server():
@@ -125,7 +145,7 @@ for task_config in task_configs:
         required_resource_types = required_resource_types,
         prohibited_tools = prohibited_tools
     )
-
+    
     logger.info(f"Cleaning up test data for task: {task_class.__name__}")
     task.cleanup_test_data()
 
@@ -165,3 +185,25 @@ for task_config in task_configs:
                 json.dump(asdict(task_failure_mode),f)
         else:
             logger.info(f"No failure mode identified for task: {task_class.__name__}")
+            
+
+# read all *_task_result.json files and summarise the success rate.
+task_results = []
+for file in os.listdir():
+    if file.endswith(f"{agent}_task_result.json"):
+        with open(file, "r") as f:
+            task_result = json.load(f)
+            task_results.append(task_result)
+            task_success = task_result.get("task_success", False)
+            task_id = task_result.get("task_id", None)
+            task_name = task_result.get("task_name", None)
+            if not task_success:
+                logger.warning(f"Task {task_id} ({task_name}) failed")
+# calculate success rate
+success_count = sum(1 for result in task_results if result.get("task_success", False))
+total_count = len(task_results)
+logger.info(f"Total tasks executed: {total_count}")
+logger.info(f"Total tasks succeeded: {success_count}")
+logger.info(f"Total tasks failed: {total_count - success_count}")
+success_rate = success_count / total_count * 100 if total_count > 0 else 0
+logger.info(f"Success rate: {success_rate:.2f}%")
