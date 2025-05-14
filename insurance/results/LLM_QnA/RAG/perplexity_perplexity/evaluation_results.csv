@@ -1,79 +1,23 @@
 Case,Question,Predicted,Gold,Score
-Case2,Q0,Whole Exome Sequencing (WES); gene content not specified.,Whole Exome Sequencing (WES),0
-Case2,Q1,Yes,Yes,1
-Case2,Q2,No,No,1
-Case2,Q3,No,No,1
-Case2,Q4,No,No,1
-Case2,Q5,Yes,Yes,1
-Case2,Q6,No,No,1
-Case2,Q7,No,No,1
-Case2,Q8,No,No,1
-Case2,Q9,Yes,Yes,1
-Case2,Q9_followup,None,No,0
-Case2,Q10,Yes,No,0
-Case2,Q11,No,Yes,0
-Case2,Q12,No,No,1
-Case2,Q13,Not specified,Yes,0
-Case2,Q14,Yes,Yes,1
-Case2,Q14_followup,None,"81415, 81416",0
-Case2,Q15,No,No,1
-Case2,Q16,No,No,1
-Case2,TOTAL,Correct: 13,Incorrect: 6,Accuracy: 68.42%
-Case1,Q0,Whole exome sequencing (WES) to investigate potential underlying genetic causes of neurodevelopmental delay and seizures. Gene content: all exons (protein-coding regions) in the genome.,Whole Exome Sequencing (WES),0
+Case1,Q0,"Whole exome sequencing (WES) to investigate potential underlying genetic causes of neurodevelopmental delay and seizures. Specific gene content is not specified, as WES covers all protein-coding regions of the genome.",Whole Exome Sequencing (WES),0
 Case1,Q1,Yes,Yes,1
 Case1,Q2,Yes,Yes,1
 Case1,Q3,Yes,Yes,1
 Case1,Q4,Yes,Yes,1
-Case1,Q4_followup,None,ACMG,0
+Case1,Q4_followup,None,Yes,0
 Case1,Q5,Yes,Yes,1
 Case1,Q6,No,No,1
 Case1,Q7,Yes,Yes,1
 Case1,Q8,No,No,1
 Case1,Q9,Yes,Yes,1
-Case1,Q9_followup,Other first- or second-degree family member(s) with similar clinical features is a supporting factor for coverage.,Yes,0
+Case1,Q9_followup,None,Yes,0
 Case1,Q10,No,No,1
-Case1,Q10_followup,Diagnostic,Diagnostic,1
+Case1,Q10_followup,None,Diagnostic,0
 Case1,Q11,Yes,Yes,1
-Case1,Q12,No,No,1
+Case1,Q12,Yes,No,0
 Case1,Q13,Not specified,Yes,0
 Case1,Q14,Yes,Yes,1
-Case1,Q14_followup,81415 (Exome; sequence analysis),"81415, 81416",0
+Case1,Q14_followup,None,"81415, 81416",0
 Case1,Q15,No,No,1
 Case1,Q16,Yes,Yes,1
-Case1,TOTAL,Correct: 16,Incorrect: 5,Accuracy: 76.19%
-Case3,Q0,BRCA1/BRCA2 genetic testing for hereditary breast and ovarian cancer risk assessment,BRCA1/BRCA2 genetic testing,0
-Case3,Q1,Yes,Yes,1
-Case3,Q2,Yes,Yes,1
-Case3,Q3,Yes,Yes,1
-Case3,Q4,"Yes, NCCN",Yes,0
-Case3,Q5,Not required,Yes,0
-Case3,Q6,No,No,1
-Case3,Q7,Yes,No,0
-Case3,Q8,No,No,1
-Case3,Q9,"Yes, Yes",Yes,0
-Case3,Q10,"No, Risk Assessment",No,0
-Case3,Q11,Yes,Yes,1
-Case3,Q12,No,No,1
-Case3,Q13,Yes,Yes,1
-Case3,Q14,"Yes, 81162, 81163, 81164, 81165, 81166, 81167",Yes,0
-Case3,Q15,No,No,1
-Case3,Q16,Yes,Yes,1
-Case3,TOTAL,Correct: 10,Incorrect: 7,Accuracy: 58.82%
-Case4,Q0,BRCA1/BRCA2 genetic testing,BRCA1/BRCA2 genetic testing,1
-Case4,Q1,Yes,Yes,1
-Case4,Q2,Not specified,Yes,0
-Case4,Q3,No,No,1
-Case4,Q4,No,No,1
-Case4,Q5,Not required,No,0
-Case4,Q6,No,No,1
-Case4,Q7,No,No,1
-Case4,Q8,No,No,1
-Case4,Q9,"Yes, No",Yes,0
-Case4,Q10,"Yes, No",No,0
-Case4,Q11,Yes,No,0
-Case4,Q12,No,No,1
-Case4,Q13,Required,Yes,0
-Case4,Q14,Not listed,Yes,0
-Case4,Q15,No,No,1
-Case4,Q16,No,No,1
-Case4,TOTAL,Correct: 10,Incorrect: 7,Accuracy: 58.82%
+Case1,TOTAL,Correct: 14,Incorrect: 7,Accuracy: 66.67%
