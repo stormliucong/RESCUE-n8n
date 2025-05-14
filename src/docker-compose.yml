@@ -1,6 +1,7 @@
 version: '3.9'
 
 services:
+
   flask:
     build:
       context: ./server
@@ -10,8 +11,10 @@ services:
       - "8000:8000"
     restart: always
     volumes:
-      - ./server.py:/app/server.py
-      - ./requirements.txt:/app/requirements.txt
+      - ./server/server.py:/app/server.py
+      - ./server/requirements.txt:/app/requirements.txt
+      # (optional) make the env file visible inside the container
+      - ./server/.env:/app/.env
     depends_on:
       - react
 
