@@ -3,22 +3,13 @@
   "Q1": "Yes",
   "Q2": "Yes",
   "Q3": "Yes",
-  "Q4": "Yes",
-  "Q4_followup": [
-    "ACMG"
-  ],
+  "Q4": "No",
   "Q5": "Yes",
   "Q6": "No",
   "Q7": "Yes",
   "Q8": "No",
   "Q9": "Yes",
-  "Q9_followup": [
-    "Yes"
-  ],
   "Q10": "No",
-  "Q10_followup": [
-    "Diagnostic"
-  ],
   "Q11": "Yes",
   "Q12": "Yes",
   "Q13": "Not specified",
@@ -28,5 +19,5 @@
   ],
   "Q15": "No",
   "Q16": "Yes",
-  "Q17": "To submit the claim, ensure that the test is ordered by an approved specialist, confirm that the patient meets the medical necessity criteria, and provide documentation of prior genetic counseling. Include the appropriate CPT code (81415) and any relevant medical records that support the necessity of the test."
+  "Q17": "To submit the claim, ensure that the test was ordered by an approved specialist, confirm that the patient meets the medical necessity criteria, and include documentation of prior genetic testing results. Genetic counseling should be documented as provided. Verify if prior authorization is required and obtain it if necessary."
 }

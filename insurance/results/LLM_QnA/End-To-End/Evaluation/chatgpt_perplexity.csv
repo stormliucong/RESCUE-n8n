@@ -1,0 +1,20 @@
+Case,Question,Predicted,Gold,Score
+Case1,Q0,"Whole exome sequencing (WES), which analyzes the coding regions (exons) of all known genes associated with human disease.",Whole Exome Sequencing (WES),0
+Case1,Q1,Yes,Yes,1
+Case1,Q2,Yes,Yes,1
+Case1,Q3,Yes,Yes,1
+Case1,Q4,No,Yes,0
+Case1,Q5,Yes,Yes,1
+Case1,Q6,No,No,1
+Case1,Q7,Yes,Yes,1
+Case1,Q8,No,No,1
+Case1,Q9,Not specified,Yes,0
+Case1,Q10,No,No,1
+Case1,Q10_followup,Diagnostic,Diagnostic,1
+Case1,Q11,Not specified,Yes,0
+Case1,Q12,No,No,1
+Case1,Q13,Yes,Yes,1
+Case1,Q14,Not listed,Yes,0
+Case1,Q15,No,No,1
+Case1,Q16,Yes,Yes,1
+Case1,TOTAL,Correct: 13,Incorrect: 5,Accuracy: 72.22%
