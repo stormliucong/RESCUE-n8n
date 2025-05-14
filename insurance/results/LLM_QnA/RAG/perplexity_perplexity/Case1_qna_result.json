@@ -1,10 +1,11 @@
 {
-  "Q0": "Whole exome sequencing (WES) to investigate potential underlying genetic causes of neurodevelopmental delay and seizures. Gene content: all exons (protein-coding regions) in the genome.",
+  "Q0": "Whole exome sequencing (WES) to investigate potential underlying genetic causes of neurodevelopmental delay and seizures. Specific gene content is not specified, as WES covers all protein-coding regions of the genome.",
   "Q1": "Yes",
   "Q2": "Yes",
   "Q3": "Yes",
   "Q4": "Yes",
-  "Q4_guidelines": [
+  "Q4a": "Yes",
+  "Q4b": [
     "ACMG"
   ],
   "Q5": "Yes",
@@ -12,21 +13,20 @@
   "Q7": "Yes",
   "Q8": "No",
   "Q9": "Yes",
-  "Q9_followup": [
-    "Other first- or second-degree family member(s) with similar clinical features is a supporting factor for coverage."
-  ],
+  "Q9a": "Yes",
   "Q10": "No",
-  "Q10_followup": [
-    "Diagnostic"
-  ],
+  "Q10a": "Diagnostic",
   "Q11": "Yes",
-  "Q12": "No",
+  "Q12": "Yes",
   "Q13": "Not specified",
   "Q14": "Yes",
-  "Q14_followup": [
-    "81415 (Exome; sequence analysis)"
+  "Q14a": [
+    "81415",
+    "81416",
+    "0214U",
+    "0215U"
   ],
   "Q15": "No",
   "Q16": "Yes",
-  "Q17": "To submit the claim, ensure documentation includes: (1) clinical records supporting neurodevelopmental delay and seizures, (2) evidence of prior negative chromosomal microarray, (3) ordering provider is a medical geneticist, neurologist, or developmental pediatrician, (4) family history of neurodevelopmental disorders, (5) genetic counseling provided, and (6) use the appropriate CPT code (81415). Submit all documentation as required by UnitedHealthcare and check for any plan-specific requirements or pre-authorization needs."
+  "Q17": "To submit the claim, ensure that: (1) the test is ordered by an appropriate provider (e.g., Board-Certified Medical Geneticist or Certified Genetic Counselor); (2) documentation includes evidence of prior negative chromosomal microarray, clinical features, and family history; (3) pre- and post-test counseling is documented; (4) CPT codes 81415, 81416, 0214U, or 0215U are used as appropriate; (5) all required clinical notes and genetic counseling documentation are included. Prior authorization may be required\u2014verify with the health plan before proceeding."
 }

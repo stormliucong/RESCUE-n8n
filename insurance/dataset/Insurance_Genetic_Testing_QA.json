@@ -23,18 +23,21 @@
         {
             "id": "Q4",
             "question": "Does the insurance policy explicitly reference any clinical guidelines relevant to this test?",
-            "options": ["Yes", "No"]
-          },
-          {
-            "id": "Q4a",
-            "question": "If yes to Q4: Does the patient’s clinical presentation match the criteria in those guidelines?",
-            "options": ["Yes", "No"]
-          },
-          {
-            "id": "Q4b",
-            "question": "If yes to Q4a: Which guideline(s) apply?",
-            "options": ["ACMG", "NCCN", "ASCO", "USPSTF", "ISPD", "None of the above"]
-          },
+            "options": ["Yes", "No"],
+            "additional_if_yes": [
+              {
+                "question": "Does the patient’s clinical presentation match the criteria in those guidelines?",
+                "options": ["Yes", "No"],
+                "additional_if_yes": [
+                  {
+                    "question": "Which guideline(s) apply?",
+                    "options": ["ACMG", "NCCN", "ASCO", "USPSTF", "ISPD", "None of the above"]
+                  }
+                ]
+              }
+            ]
+          }
+          ,
         {
             "id": "Q5",
             "question": "Has the patient completed prerequisite evaluations required by the policy (e.g., CMA, panels)?",
