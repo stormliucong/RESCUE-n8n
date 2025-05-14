@@ -17,7 +17,7 @@ const App = () => {
       padding: "20px"
     }}>
       <header style={{ marginBottom: "20px", textAlign: "center" }}>
-        <h1 style={{ color: "#000" , margin: 0, fontSize: "36px", fontWeight: "bold" }}>Multi-Agent Chat</h1>
+        <h1 style={{ color: "#000" , margin: 0, fontSize: "36px", fontWeight: "bold" }}>Multi-Agent Chat Test</h1>
         <h3 style={{ margin: 0, fontSize: "20px", fontWeight: "normal", color: "gray" }}>
           Session: {sessionId}
         </h3>

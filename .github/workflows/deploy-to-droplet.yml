@@ -1,11 +1,12 @@
 name: Deploy Chat UI to Droplet
 
 on:
+  # 1) Auto-deploy when code under src/chat-ui-react/ changes on main
   push:
-    branches:
-      - main
-    paths-ignore:
-      - 'eval/**'
+    branches: [ main ]
+    paths:
+      - 'src/chat-ui-react/**'
+  # 2) Manual “Run workflow” button
   workflow_dispatch:
 
 jobs:
@@ -13,25 +14,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Check out the repo
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      # 2. Add SSH key so the runner can SSH into the droplet
       - name: Setup SSH key
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.DROPLET_SSH_KEY }}
 
+      # 3. SSH into the droplet and redeploy
       - name: Deploy to Droplet
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no \
+              ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_HOST }} << 'EOF'
+
+            # ── Go to the repo root on the server
             cd ${{ secrets.DROPLET_PATH }}
+
+            # ── Make sure we’re on the latest main
             git fetch origin
             git checkout main
             git pull origin main
+
+            # ── Move into src/, where docker-compose.yml now lives
+            cd src
+
+            # ── Stop and remove the existing stack (only this project)
             docker compose down -v
-            cd chat-ui-react
-            npm install
-            npm run build
-            cd ..
+
+            # ── Rebuild & start everything
             docker compose up --build -d
           EOF
