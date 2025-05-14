@@ -14,6 +14,10 @@ from typing import Dict, List
 import requests
 from flask import Flask, request, Response
 from flask_cors import CORS
+from dotenv import load_dotenv
+
+# Loading environment
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"))
 
 # -- Parse run‑mode ---------------------------------------------------------
 parser = argparse.ArgumentParser(description="Run the server in GUI, EVAL, MULTI or ALL mode")
@@ -35,13 +39,13 @@ clients: dict[str, str] = {}          # sessionId -> socket SID
 session_state: dict[str, str] = {}    # sessionId -> last agent
 conversation_history: dict[str, list[dict]] = {} # for multi turn interactions
 
-AGENT_WEBHOOKS = {
-    "scheduler_agent": "https://congliu.app.n8n.cloud/webhook/b118593b-9350-40cf-a6a9-d1e3494da1c2",
-    "frontdesk_agent": "https://congliu.app.n8n.cloud/webhook/413ab7a1-30ae-4276-a5d0-8d5ecda4f7a3",
-    "education_agent": "https://congliu.app.n8n.cloud/webhook/bdfcc15d-a70c-4fb4-9df6-5beaf18fa2d6",
-    "patient_agent"  : "https://congliu.app.n8n.cloud/webhook/4549813e-3274-43bf-b541-dcfda9854f00",
-}
 
+AGENT_WEBHOOKS = {
+    "scheduler_agent": os.getenv("AGENT_WEBHOOK_SCHEDULER"),
+    "frontdesk_agent": os.getenv("AGENT_WEBHOOK_FRONTDESK"),
+    "education_agent": os.getenv("AGENT_WEBHOOK_EDUCATION"),
+    "patient_agent": os.getenv("AGENT_WEBHOOK_PATIENT"),
+}
 
 # For multi-turn interactions
 def broker_multiturn(session_id: str, start_agent: str, start_message: str) -> None:
