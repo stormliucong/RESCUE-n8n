@@ -303,12 +303,12 @@ class TaskInterface(ABC):
             }
         try:
 
-            response = requests.post(self.N8N_AGENT_URL, json=payload)
+            #response = requests.post(self.N8N_AGENT_URL, json=payload)
 
-            # # TESTING
-            # print("calling python server")
-            # SCHEDULER_PROXY_URL =  "http://localhost:8000/eval/scheduler"
-            # response = requests.post(SCHEDULER_PROXY_URL, json=payload)
+            # TESTING
+            print("calling python server")
+            SCHEDULER_PROXY_URL = "http://localhost:8000/eval/scheduler"
+            response = requests.post(SCHEDULER_PROXY_URL, json=payload)
 
             if response.status_code == 200:
                 success = True
