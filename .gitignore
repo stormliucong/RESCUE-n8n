@@ -20,3 +20,4 @@ ui/node_modules/
 .vscode/launch.json
 eval/scheduler/nohup.out
 eval/scheduler/task_*.json
+eval/scheduler/logging.ini

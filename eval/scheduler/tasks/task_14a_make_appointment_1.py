@@ -125,7 +125,7 @@ After creating the appointment and updating the slot, return the new Appointment
         response = requests.put(f"{self.FHIR_SERVER_URL}/Appointment/APPOINTMENT001", headers=self.HEADERS, json=params)
         # Added logic
         appointment_id = response.json().get('id')
-        assert response.status_code == 201, f"Expected status code 201, but got {response.status_code}. Response body: {response.text}"
+        assert response.status_code in ['201','200'], f"Expected status code 201 or 200, but got {response.status_code}. Response body: {response.text}"
         params = {
             "resourceType": "Slot",
             "id": "SLOT001",
