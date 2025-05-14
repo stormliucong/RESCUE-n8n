@@ -1,9 +1,9 @@
 {
   "createdAt": "2025-03-13T02:56:31.694Z",
-  "updatedAt": "2025-04-15T20:04:07.000Z",
+  "updatedAt": "2025-05-14T01:39:09.000Z",
   "id": "bIw7bxVzjXzsARlc",
   "name": "Interactive Agent Evaluation: Front Desk Agent",
-  "active": true,
+  "active": false,
   "nodes": [
     {
       "parameters": {
@@ -79,8 +79,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        100,
-        -140
+        160,
+        0
       ],
       "id": "2b57757d-aa4e-4d6c-b278-81eb4cba4515",
       "name": "Edit Fields"
@@ -122,8 +122,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        340,
-        -140
+        380,
+        -160
       ],
       "id": "2d9bd216-ceb8-47fd-8368-7284f430f0f2",
       "name": "If"
@@ -215,8 +215,8 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
       "position": [
-        -120,
-        -140
+        -60,
+        0
       ],
       "id": "f80db2bd-7e13-4857-b7cc-04d47817d5b9",
       "name": "Webhook - Listen for Patient Msg",
@@ -635,7 +635,7 @@
       "main": [
         [
           {
-            "node": "If",
+            "node": "FrontDesk Agent",
             "type": "main",
             "index": 0
           }
@@ -651,13 +651,7 @@
             "index": 0
           }
         ],
-        [
-          {
-            "node": "FrontDesk Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "FrontDesk Agent": {
@@ -705,13 +699,7 @@
     },
     "Respond to Webhook (previous stopped)": {
       "main": [
-        [
-          {
-            "node": "Switch",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Structured Output Parser1": {
@@ -812,7 +800,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "ef461133-4e6e-47b4-b5bb-60efc8e678ef",
+  "versionId": "33e58dc7-47ee-4254-84f3-861cc4546af8",
   "triggerCount": 1,
   "tags": [
     {
