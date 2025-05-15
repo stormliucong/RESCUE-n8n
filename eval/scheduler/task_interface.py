@@ -229,7 +229,7 @@ class TaskInterface(ABC):
             logger.debug(
                 f"Successfully upserted {resource['resourceType']} with ID {resource['id']}"
             )
-            return None
+            return response
         else:
             logger.error(
                 f"Failed to upsert {resource['resourceType']} with ID {resource['id']}: {response.status_code} {response.text}"

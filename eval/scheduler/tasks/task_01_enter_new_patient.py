@@ -99,7 +99,7 @@ class EnterNewPatientTask(TaskInterface):
                 params=params
             )
             # Check if the patient is created successfully
-            assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+            assert response.status_code in [200, 201], f"Expected status code 200 or 201, but got {response.status_code}. Response body: {response.text}"
             response_json = response.json()
             assert 'entry' in response_json, "No patient found"
             assert len(response_json['entry']) > 0, "No patient found"

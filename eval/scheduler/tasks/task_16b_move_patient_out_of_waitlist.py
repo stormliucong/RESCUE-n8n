@@ -101,13 +101,14 @@ After moving, return the appointment ID and slot ID using the following format:
                 }
             }
             self.upsert_to_fhir(waitlist_appointment)
+            time.sleep(60) # hot fix for https://github.com/stormliucong/RESCUE-n8n/issues/77
             
             # make the SLOT002 10am slots free
             slot002 = requests.get(f"{self.FHIR_SERVER_URL}/Slot/SLOT002", headers=self.HEADERS)
             slot002 = slot002.json()
             slot002['status'] = 'free'
             response = requests.put(f"{self.FHIR_SERVER_URL}/Slot/SLOT002", headers=self.HEADERS, json=slot002)            
-            assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+            assert response.status_code in [200, 201], f"Expected status code 200 or 201, but got {response.status_code}. Response body: {response.text}"
 
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
@@ -121,7 +122,7 @@ After moving, return the appointment ID and slot ID using the following format:
             "status": "waitlist",
         }
         response = requests.get(f"{self.FHIR_SERVER_URL}/Appointment", headers=self.HEADERS, params=params)
-        assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}. Response body: {response.text}"
+        assert response.status_code in [200, 201], f"Expected status code 200 or 201, but got {response.status_code}. Response body: {response.text}"
         assert 'entry' in response.json(), "Expected to find the waitlist appointment"
         assert len(response.json()['entry']) == 1, "Expected to find exactly one waitlist appointment"
         

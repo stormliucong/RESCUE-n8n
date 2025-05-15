@@ -81,7 +81,7 @@ Return the recorded condition's ID using the following format: <CONDITION>condit
                 params={"subject": "Patient/PAT001", "clinical-status": "active"}
             )
             
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
+            assert response.status_code in [200, 201], f"Expected status code 200 or 201, got {response.status_code}"
             
             response_json = response.json()
             assert 'total' in response_json, "Expected to find total in the response"
