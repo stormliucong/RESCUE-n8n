@@ -13,9 +13,9 @@ Case1,Q9,Yes,Yes,1
 Case1,Q9_followup,None,Yes,0
 Case1,Q10,No,No,1
 Case1,Q10_followup,None,Diagnostic,0
-Case1,Q11,Yes,Yes,1
-Case1,Q12,Yes,No,0
-Case1,Q13,Not specified,Yes,0
+Case1,Q11,Not specified,Yes,0
+Case1,Q12,No,No,1
+Case1,Q13,No,Yes,0
 Case1,Q14,Yes,Yes,1
 Case1,Q14_followup,None,"81415, 81416",0
 Case1,Q15,No,No,1

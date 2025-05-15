@@ -5,10 +5,8 @@
   "Q3": "Yes",
   "Q4": "Yes",
   "Q4_followup": {
-    "match": "Yes",
-    "guidelines": [
-      "ACMG"
-    ]
+    "clinical_presentation_match": "Yes",
+    "guideline": "ACMG"
   },
   "Q5": "Yes",
   "Q6": "No",
@@ -24,12 +22,12 @@
   ],
   "Q11": "Yes",
   "Q12": "No",
-  "Q13": "No",
+  "Q13": "Yes",
   "Q14": "Yes",
-  "Q14_followup": [
-    "81415, 81416"
-  ],
+  "Q14_followup": {
+    "CPT_code": "81415"
+  },
   "Q15": "No",
   "Q16": "Yes",
-  "Q17": "Submit the claim with the appropriate CPT codes (81415, 81416) and ensure that documentation of medical necessity, including the patient's clinical presentation and family history, is included. Genetic counseling documentation should also be provided."
+  "Q17": "The policy requires preauthorization for the test. Ensure that the test is ordered by a qualified specialist, such as a genetic counselor, and that genetic counseling is provided before and after the test. Submit the claim with the appropriate CPT code (81415) and ensure that all clinical criteria are documented, including the patient's clinical presentation and family history."
 }

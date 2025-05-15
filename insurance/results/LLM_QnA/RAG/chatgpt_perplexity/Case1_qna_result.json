@@ -1,25 +1,27 @@
 {
-  "Q0": "Whole exome sequencing (WES) has been requested for an 8-year-old boy with neurodevelopmental delay and seizures. A prior chromosomal microarray test was negative. The test was ordered by a genetic counselor to investigate potential underlying genetic causes.",
+  "Q0": "Whole Exome Sequencing (WES) to investigate potential underlying genetic causes of neurodevelopmental delay and seizures. Gene content: all exons (protein-coding regions) of the genome.",
   "Q1": "Yes",
-  "Q2": "No",
+  "Q2": "Yes",
   "Q3": "Yes",
   "Q4": "Yes",
-  "Q4_1": "Yes",
-  "Q4_1_1": "ACMG",
+  "Q4a": "Yes",
+  "Q4b": [
+    "ACMG"
+  ],
   "Q5": "Yes",
   "Q6": "No",
   "Q7": "Yes",
   "Q8": "No",
   "Q9": "Yes",
-  "Q9_1": "Yes",
+  "Q9a": "Yes",
   "Q10": "No",
-  "Q10_1": "Diagnostic",
-  "Q11": "Not specified",
+  "Q10a": "Diagnostic",
+  "Q11": "Yes",
   "Q12": "Yes",
   "Q13": "Not specified",
   "Q14": "Yes",
-  "Q14_1": "81415 (Exome sequence analysis)",
+  "Q14a": "81415 (Exome; sequence analysis)",
   "Q15": "No",
-  "Q16": "No",
-  "Q17": "According to the policy, WES must be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. In this case, the test was ordered by a genetic counselor, which does not meet the policy requirements. To submit a claim that would be covered, the test would need to be ordered by one of the approved specialists. Additionally, documentation should include the patient's clinical history, prior testing results (including the negative chromosomal microarray), and explanation of how the results will influence medical management and clinical outcomes."
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure documentation includes: (1) evidence that the patient meets all clinical criteria (nonspecific presentation, negative prior chromosomal microarray, clinical suspicion of genetic etiology, and relevant features such as global developmental delay, seizures, and family history); (2) confirmation that the test was ordered by an approved specialist (e.g., genetic counselor in consultation with a medical geneticist, neurologist, or developmental pediatrician); (3) documentation of prior genetic testing (negative CMA); (4) genetic counseling provided; (5) use of the appropriate CPT code (81415); and (6) submission according to the member-specific benefit plan and any applicable state or federal requirements. Prior authorization may be required depending on the plan, so verify with UnitedHealthcare before proceeding."
 }

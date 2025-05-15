@@ -4,7 +4,7 @@ Case1,Q1,Yes,Yes,1
 Case1,Q2,Yes,Yes,1
 Case1,Q3,Yes,Yes,1
 Case1,Q4,Yes,Yes,1
-Case1,Q4_followup,"{'match': 'Yes', 'guidelines': ['ACMG']}",Yes,0
+Case1,Q4_followup,"{'clinical_presentation_match': 'Yes', 'guideline': 'ACMG'}",Yes,0
 Case1,Q5,Yes,Yes,1
 Case1,Q6,No,No,1
 Case1,Q7,Yes,Yes,1
@@ -15,9 +15,9 @@ Case1,Q10,No,No,1
 Case1,Q10_followup,Diagnostic,Diagnostic,1
 Case1,Q11,Yes,Yes,1
 Case1,Q12,No,No,1
-Case1,Q13,No,Yes,0
+Case1,Q13,Yes,Yes,1
 Case1,Q14,Yes,Yes,1
-Case1,Q14_followup,"81415, 81416","81415, 81416",1
+Case1,Q14_followup,{'CPT_code': '81415'},"81415, 81416",0
 Case1,Q15,No,No,1
 Case1,Q16,Yes,Yes,1
 Case1,TOTAL,Correct: 19,Incorrect: 2,Accuracy: 90.48%
