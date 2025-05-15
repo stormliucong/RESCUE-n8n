@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-19T18:51:45.516Z",
-  "updatedAt": "2025-05-14T01:55:09.000Z",
+  "updatedAt": "2025-05-15T03:37:27.000Z",
   "id": "7M5mjiX5RAsxrzFZ",
   "name": "Interactive Agent Test workflow: Patient Agent",
   "active": true,
@@ -116,7 +116,7 @@
         "promptType": "define",
         "text": "={{ $json.chatInput }}",
         "options": {
-          "systemMessage": "=You are a simulated patient participating in a virtual consultation with a doctor.\n\nUse the following dummy medical record as your internal source of truth. Reveal only the information that becomes relevant based on the doctor\u2019s questions. Respond naturally and avoid oversharing.\n\n\ud83e\uddfe Patient Record\n\nName: Samira El Amrani\nAge: 34\nSex: Female\nPrimary Concern: Fatigue and joint pain over the past week\nOther Symptoms: Occasional low-grade fever, mild shortness of breath\nMedical History:\nDiagnosed with mild asthma as a child\nNo known allergies\nFamily history of autoimmune disorders (mother has lupus)\nMedications:\nOccasional use of ibuprofen\nInhaler (albuterol) for rare asthma flare-ups\nLifestyle:\nWorks a desk job, generally sedentary\nEats a balanced diet, non-smoker\nHas been under work-related stress recently\n"
+          "systemMessage": "=You are a simulated patient participating in a virtual consultation with a doctor.\n\nUse the following dummy medical record as your internal source of truth. Reveal only the information that becomes relevant based on the doctor\u2019s questions. Respond naturally and avoid oversharing.\n\n\ud83e\uddfe Patient Record\nName: Samira El Amrani\nAge: 34\nSex: Female\n\nPrimary Concern:\nFatigue and joint pain over the past week\n\nOther Symptoms:\nOccasional low-grade fever, mild shortness of breath\n\nMedical History:\n\nDiagnosed with mild asthma as a child\n\nNo known allergies\n\nFamily history of autoimmune disorders (mother has lupus)\n\nMedications:\n\nOccasional use of ibuprofen\n\nInhaler (albuterol) for rare asthma flare-ups\n\nLifestyle:\n\nWorks a desk job, generally sedentary\n\nEats a balanced diet, non-smoker\n\nHas been under work-related stress recently\n\nBehavior\nYou are polite, cooperative, and slightly concerned about your symptoms.\n\nYou respond like a real patient would: concisely, sometimes uncertain, and naturally conversational.\n\nOnly disclose details from your record when they become contextually relevant.\n\nIf asked a question outside your record, feel free to answer \u201cI\u2019m not sure\u201d or improvise a plausible answer.\n\n\nTriggered Behavior on START\nWhen you receive the input message \"START\":\n- Embody your patient persona immediately.\n- Begin the conversation by stating that you're looking to consult a doctor.\n-Mention one general medical concern relevant to your profile (e.g., \u201cI\u2019ve been feeling unusually tired lately\u201d).\n-After that, follow up with a realistic administrative question, such as:\n\n\u201cDo I need an appointment for this?\u201d\n\n\u201cAre consultations covered by insurance?\u201d\n\n\u201cWhat days do you have availability?\u201d\n\nAfter that, continue responding naturally based on the conversation.\n\n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\".\n\n"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
@@ -241,7 +241,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Extract the output field from the first incoming item\nconst inputData = items[0].json;\n\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\nlet message = inputData.output;\nconst containsStop = message.includes(\"<STOP>\");\n\n// Determine target agent based on tag\nlet target_agent = \"frontdesk_agent\";\n\nif (message.includes(\"<PATIENT>\")) {\n  target_agent = \"patient\";\n  message = message.replace(\"<PATIENT>\", \"\");\n} else if (message.includes(\"<FRONT_DESK>\")) {\n  target_agent = \"frontdesk_agent\";\n  message = message.replace(\"<FRONT_DESK>\", \"\");\n} else if (message.includes(\"<SCHEDULING>\")) {\n  target_agent = \"scheduling_agent\";\n  message = message.replace(\"<SCHEDULING>\", \"\");\n}\n\n// Clean up <STOP> and trim\nmessage = message.replace(\"<STOP>\", \"\").trim();\n\n// Return the final formatted object\nreturn [\n  {\n    json: {\n      output: message,\n      execution_id: $execution.id,\n      to_agent: \"education_agent\",   // hardcoded\n      from_agent: \"patient_agent\",   // hardcoded\n      end_conversation: containsStop\n    },\n  },\n];\n"
+        "jsCode": "// Extract the output field from the first incoming item\nconst inputData = items[0].json;\n\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\nlet message = inputData.output;\n\nconst containsStop = message.includes(\"<STOP>\");\n\n// Determine target agent based on tag\nlet to_agent = \"frontdesk_agent\";\n\n// Clean up <STOP> and trim\nmessage = message.replace(\"<STOP>\", \"\").trim();\n\n// Return the final formatted object\nreturn [\n  {\n    json: {\n      output: message,\n      execution_id: $execution.id,\n      to_agent: $('Edit Fields').first().json.from_agent,\n      from_agent: \"patient_agent\",   // hardcoded\n      end_conversation: containsStop\n    },\n  },\n];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -251,6 +251,17 @@
       ],
       "id": "5151d1e6-009a-4397-aca8-a5f4d7fa5db5",
       "name": "Code"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -780,
+        -40
+      ],
+      "id": "ba3e540c-cf28-4d36-b7ee-9640aefad8bc",
+      "name": "When clicking \u2018Test workflow\u2019"
     }
   ],
   "connections": {
@@ -334,6 +345,11 @@
           }
         ]
       ]
+    },
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        []
+      ]
     }
   },
   "settings": {
@@ -343,8 +359,20 @@
   "meta": {
     "templateCredsSetupCompleted": true
   },
-  "pinData": {},
-  "versionId": "7ef6235a-8e34-4d68-a4f9-4678af0bd5fe",
+  "pinData": {
+    "When clicking \u2018Test workflow\u2019": [
+      {
+        "json": {
+          "body": {
+            "message": "START",
+            "sessionId": 4,
+            "from_agent": "test_agent"
+          }
+        }
+      }
+    ]
+  },
+  "versionId": "84d5a8ea-e7da-455f-adfe-434c77b49f20",
   "triggerCount": 1,
   "tags": [
     {
