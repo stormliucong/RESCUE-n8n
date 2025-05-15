@@ -1,9 +1,9 @@
 {
   "createdAt": "2025-03-13T02:56:31.694Z",
-  "updatedAt": "2025-05-14T01:39:09.000Z",
+  "updatedAt": "2025-05-15T19:09:09.000Z",
   "id": "bIw7bxVzjXzsARlc",
   "name": "Interactive Agent Evaluation: Front Desk Agent",
-  "active": false,
+  "active": true,
   "nodes": [
     {
       "parameters": {
@@ -80,7 +80,7 @@
       "typeVersion": 3.4,
       "position": [
         160,
-        0
+        -220
       ],
       "id": "2b57757d-aa4e-4d6c-b278-81eb4cba4515",
       "name": "Edit Fields"
@@ -123,7 +123,7 @@
       "typeVersion": 2.2,
       "position": [
         380,
-        -160
+        -240
       ],
       "id": "2d9bd216-ceb8-47fd-8368-7284f430f0f2",
       "name": "If"
@@ -134,7 +134,7 @@
         "text": "={{ $json.chatInput }}",
         "hasOutputParser": true,
         "options": {
-          "systemMessage": "=You are a front desk agent for a telemedicine clinic. In every interaction you must check the Redis memory for context.\n\nIf the patient\u2019s question is strictly administrative (e.g., about scheduling, billing, appointment logistics, clinic policies, etc.), provide the answer. End your response with the token \"<PATIENT>\".\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, forward the entire message verbatim to the education agent. End your output with the token \"<EDUCATION>\".\n\nBy default, you must always end your reply with the token <PATIENT>, unless it is a referral to the education agent. \n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\"."
+          "systemMessage": "=You are a front desk agent for a telemedicine clinic. In every interaction you must check the Redis memory for context.\n\nIf the patient\u2019s question is strictly administrative (e.g., about billing clinic policies, etc.), provide the answer. End your response with the token \"<PATIENT>\".\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, forward the entire message verbatim to the education agent. End your output with the token \"<EDUCATION>\".\n\nIf the patient is specifically requesting to book, reschedule, or cancel an appointment, or asking about available time slots, clinic hours, or scheduling logistics, you must forward the entire message verbatim to the scheduling agent. Do not attempt to process scheduling requests yourself. End your output with the token <SCHEDULING>.\n\nBy default, you must always end your reply with the token <PATIENT>, unless it is a referral to an agent.\n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\"."
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
@@ -215,7 +215,7 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
       "position": [
-        -60,
+        -20,
         0
       ],
       "id": "f80db2bd-7e13-4857-b7cc-04d47817d5b9",
@@ -224,8 +224,6 @@
     },
     {
       "parameters": {
-        "respondWith": "json",
-        "responseBody": "={\n  \"msg\": \"conversation finished: Front-Desk Agent (message limit not exceeded)\"\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.respondToWebhook",
@@ -315,7 +313,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const result = [];\n\nfor (const item of $input.all()) {\n  let message = item.json.output || \"\";\n  const containsStop = message.includes(\"<STOP>\");\n\n  // Default agent is null unless we detect one of the tags\n  let target_agent = null;\n\n  // Check for <PATIENT> token\n  if (message.includes(\"<PATIENT>\")) {\n    target_agent = \"patient\";\n    message = message.replace(\"<PATIENT>\", \"\");\n  }\n  // Check for <EDUCATION> token\n  else if (message.includes(\"<EDUCATION>\")) {\n    target_agent = \"education_agent\";\n    message = message.replace(\"<EDUCATION>\", \"\");\n  }\n\n  // Remove <STOP> token for final output\n  message = message.replace(\"<STOP>\", \"\").trim();\n\n  result.push({\n    json: {\n      reply: message,\n      end_conversation: containsStop,\n      target_agent: target_agent\n    }\n  });\n}\n\nreturn result;\n"
+        "jsCode": "const inputData = items[0].json;\n\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\nlet message = inputData.output;\nconst containsStop = message.includes(\"<STOP>\");\n\n// Determine target agent\nlet to_agent = \"patient_agent\";  // default\nif (message.includes(\"<FRONT_DESK>\")) {\n  to_agent = \"frontdesk_agent\";\n  message = message.replace(\"<FRONT_DESK>\", \"\");\n} else if (message.includes(\"<SCHEDULING>\")) {\n  to_agent = \"scheduling_agent\";\n  message = message.replace(\"<SCHEDULING>\", \"\");\n} else if (message.includes(\"<EDUCATION>\")) {\n  to_agent = \"education_agent\";\n  message = message.replace(\"<EDUCATION>\", \"\");\n} else if (message.includes(\"<PATIENT>\")) {\n  to_agent = \"patient_agent\";\n  message = message.replace(\"<PATIENT>\", \"\");\n}\n\n// Clean up <STOP> token\nmessage = message.replace(\"<STOP>\", \"\").trim();\n\n// Final output object\nreturn [\n  {\n    json: {\n      output: message,\n      execution_id: $execution.id,\n      to_agent: to_agent,\n      from_agent: \"frontdesk_agent\",  // update per agent\n      end_conversation: containsStop\n    }\n  }\n];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -617,6 +615,55 @@
       ],
       "id": "7df83ccd-8848-4aab-a4c0-e2ca4fe23ec6",
       "name": "HTTP Request to Patient Server"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.body.message }}",
+              "type": "string"
+            },
+            {
+              "id": "acaa3e0d-ead3-4019-bc81-02071201fa0f",
+              "name": "sessionId",
+              "value": "={{ $json.body.sessionId }}",
+              "type": "string"
+            },
+            {
+              "id": "f7232c6e-3724-4664-9096-72924752a395",
+              "name": "from_agent",
+              "value": "={{ $json.body.from_agent }}",
+              "type": "boolean"
+            },
+            {
+              "id": "8eb282c1-91c9-40e7-96b1-a5662f9a047c",
+              "name": "system_prompt",
+              "value": "={{ $json.body.system_prompt }}",
+              "type": "string"
+            },
+            {
+              "id": "1ea79f1c-8397-4532-a26f-4af9927eb826",
+              "name": "fhir_server_url",
+              "value": "={{ $json.body.fhir_server_url }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        360,
+        0
+      ],
+      "id": "0def64c5-f360-4bc4-b4d0-a5a55a090bee",
+      "name": "Edit Fields1"
     }
   ],
   "connections": {
@@ -635,7 +682,7 @@
       "main": [
         [
           {
-            "node": "FrontDesk Agent",
+            "node": "If",
             "type": "main",
             "index": 0
           }
@@ -669,7 +716,7 @@
       "main": [
         [
           {
-            "node": "Edit Fields",
+            "node": "Edit Fields1",
             "type": "main",
             "index": 0
           }
@@ -790,6 +837,17 @@
           }
         ]
       ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "FrontDesk Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -800,7 +858,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "33e58dc7-47ee-4254-84f3-861cc4546af8",
+  "versionId": "43846efa-fc10-432f-9824-8cc05c355a1b",
   "triggerCount": 1,
   "tags": [
     {

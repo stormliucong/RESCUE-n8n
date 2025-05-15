@@ -1,9 +1,9 @@
 {
   "createdAt": "2025-03-11T17:08:23.620Z",
-  "updatedAt": "2025-05-13T21:28:18.000Z",
+  "updatedAt": "2025-05-15T02:15:06.000Z",
   "id": "p5CG6PCfoYNp850m",
   "name": "Schedule Agent Design Baseline",
-  "active": true,
+  "active": false,
   "nodes": [
     {
       "parameters": {
@@ -511,7 +511,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Extract the output field from the incoming data\nconst inputData = items[0].json;\n\n// Ensure 'output' exists\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\n// Return the new object with hardcoded to_agent/from_agent and execution_id\nreturn [\n  {\n    json: {\n      output: inputData.output,\n      execution_id: $execution.id,\n      to_agent: \"SchedulingAgent\",   // Hardcoded value\n      from_agent: \"FrontDeskAgent\"   // Hardcoded value\n    },\n  },\n];\n"
+        "jsCode": "// Extract the output field from the incoming data\nconst inputData = items[0].json;\n\n// Ensure 'output' exists\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\n// Return the new object with hardcoded to_agent/from_agent and execution_id\nreturn [\n  {\n    json: {\n      output: inputData.output,\n      execution_id: $execution.id,\n      to_agent: \"SchedulingAgent\",   // Hardcoded value\n      from_agent: \"FrontDeskAgent\", // Hardcoded value\n      end_conversation: false  \n    },\n  },\n];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -769,7 +769,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "f53a3434-86b9-4c5c-9c58-bc51697dfc6e",
+  "versionId": "7e9a6425-f3aa-47e1-a62c-b51daeaaddd4",
   "triggerCount": 1,
   "tags": [
     {
