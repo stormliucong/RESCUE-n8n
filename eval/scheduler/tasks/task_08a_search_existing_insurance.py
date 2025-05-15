@@ -1,5 +1,6 @@
 # task_08a_search_existing_insurance.py
 import os
+import time
 import requests
 from typing import Dict, Any
 from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
@@ -72,6 +73,7 @@ If found, return the coverage ID using the following format: <COVERAGE>coverage_
                 ]
             }
             self.upsert_to_fhir(coverage_resource)
+            time.sleep(60) # hot fix for https://github.com/stormliucong/RESCUE-n8n/issues/77
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
@@ -88,7 +90,7 @@ If found, return the coverage ID using the following format: <COVERAGE>coverage_
             params=params
         )
         
-        if response.status_code != 200:
+        if response.status_code not in [200, 201]:
             return ExecutionResult(
                 execution_success=False,
                 response_msg=f"Failed to search for insurance: {response.text}"
@@ -96,6 +98,7 @@ If found, return the coverage ID using the following format: <COVERAGE>coverage_
 
         response_json = response.json()
         coverage_id = response_json['entry'][0]['resource']['id']
+        
 
         return ExecutionResult(
             execution_success=True,

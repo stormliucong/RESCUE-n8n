@@ -85,7 +85,7 @@ After creation, return the new RelatedPerson ID using the following format: <REL
                 params={"patient": "Patient/PAT001"}
             )
             
-            assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
+            assert response.status_code in [200, 201], f"Expected status code 200 or 201, got {response.status_code}"
             
             response_json = response.json()
             assert 'entry' in response_json, "Expected to find entry in the response"

@@ -96,11 +96,18 @@ If none found, return the exact sentence: No available slots for next Friday
 
         response_json = response.json()
         slots_found = response_json.get('total', 0)
+        if slots_found == 0:
+            return ExecutionResult(
+                execution_success=True,
+                response_msg="No available slots for next Friday"
+            )
         
-        return ExecutionResult(
-            execution_success=True,
-            response_msg=f"Found {slots_found} available follow-up slots"
-        )
+        else:
+            slot_ids = [slot['resource']['id'] for slot in response_json.get('entry', [])]
+            return ExecutionResult(
+                execution_success=True,
+                response_msg=f"Found {slots_found} available follow-up slots: <SLOT_IDS>{','.join(slot_ids)}</SLOT_IDS>"
+            )
 
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:

@@ -21,3 +21,5 @@ ui/node_modules/
 eval/scheduler/nohup.out
 eval/scheduler/task_*.json
 eval/scheduler/logging.ini
+eval/scheduler/logging.ini
+eval/scheduler/run_eval_test.yaml
