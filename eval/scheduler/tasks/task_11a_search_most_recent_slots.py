@@ -17,7 +17,7 @@ class FindAvailableSlotsTask(TaskInterface):
         return """
 Task: Find available slots
 
-Find most recent available slots from any providers.
+Find earliest available slots from any providers.
 
 If found, return the slot ID using the following format: <SLOT>slot_id</SLOT>
 If none found, return the exact sentence: 'No available slots found'
