@@ -47,21 +47,39 @@ AGENT_WEBHOOKS = {
     "patient_agent": os.getenv("AGENT_WEBHOOK_PATIENT"),
 }
 
+FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
+
+
+# For loading per-agent system prompts
+def load_system_prompt(agent: str) -> str:
+    """Return the prompt text from prompts/<agent>.txt (or '')."""
+    prompt_dir = os.getenv("PROMPT_DIR", "prompts")
+    path = os.path.join(prompt_dir, f"{agent}.txt")
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read()
+    except FileNotFoundError:
+        app.logger.warning("Prompt file not found: %s", path)
+        return ""
+
+
 # For multi-turn interactions
 def broker_multiturn(session_id: str, start_agent: str, start_message: str) -> None:
     """Synchronous loop that hops from agent to agent until one ends."""
     agent  = start_agent          # who we call next
     message = start_message       # payload
-    prev_agent = start_agent      # sent as from_agent on first hop
+    prev_agent = "frontdesk_agent"      # sent as from_agent on first hop
 
     max_iters = int(os.getenv("MULTI_MAX_STEPS", 10))
     for step in range(max_iters):
         rsp = requests.post(
             AGENT_WEBHOOKS[agent],
             json={
-                "sessionId":   session_id,
-                "message":     message,
-                "from_agent":  prev_agent,
+                "sessionId":       session_id,
+                "message":         message,
+                "from_agent":      prev_agent,
+                "system_prompt":   load_system_prompt(agent),
+                "fhir_server_url": FHIR_SERVER_URL,
             },
             timeout=int(os.getenv("MULTI_TIMEOUT", 30)),
         )
@@ -107,7 +125,6 @@ def broker_multiturn(session_id: str, start_agent: str, start_message: str) -> N
     app.logger.warning("%s : max step limit reached (%d) — conversation stopped", session_id, max_iters)
 
 
-
 # -- Healthcheck ------------------------------------------------------------
 @app.route("/")
 def index():
@@ -118,38 +135,44 @@ if MODE in ("GUI", "ALL"):
 
     @app.route("/route_message", methods=["POST"])
     def route_message():
-        data = request.get_json(force=True, silent=True) or {}
-        session_id = data.get("sessionId")
-        message = data.get("message")
+        data        = request.get_json(force=True) or {}
+        session_id  = data.get("sessionId")
+        message     = data.get("message")
         if not session_id or message is None:
             return {"error": "sessionId and message required"}, 400
 
-        agent = session_state.get(session_id, "frontdesk_agent")
+        agent   = session_state.get(session_id, "frontdesk_agent")
         webhook = AGENT_WEBHOOKS.get(agent)
         if webhook is None:
             return {"error": f"Unknown agent '{agent}'"}, 400
 
+        payload = {
+            "sessionId":       session_id,
+            "message":         message,
+            "from_agent":      "user",
+            "system_prompt":   load_system_prompt(agent),
+            "fhir_server_url": FHIR_SERVER_URL,
+        }
+
         try:
-            rsp = requests.post(webhook, json={"sessionId": session_id, "message": message})
-            print(f"→ {agent} {rsp.status_code}")
-            return "Routed", 200
+            rsp = requests.post(webhook, json=payload, timeout=15)
+            rsp.raise_for_status()
         except requests.RequestException as e:
             return {"error": str(e)}, 502
 
-    @app.route("/receive_reply", methods=["POST"])
-    def receive_reply():
-        data = request.get_json(force=True, silent=True) or {}
-        session_id = data.get("sessionId")
-        reply = data.get("reply")
-        agent = data.get("responding_agent")
-        if agent:
-            session_state[session_id] = agent
+        body = rsp.json()[0] if isinstance(rsp.json(), list) else rsp.json()
+        reply_text  = body.get("output", "")
+        responding  = body.get("from_agent", agent)
+        session_state[session_id] = responding   # remember last agent
 
-        sid = clients.get(session_id)
-        if sid and socketio:
-            socketio.emit("reply", {"message": reply, "responding_agent": agent}, room=sid)
-            return "Delivered", 200
-        return "User not connected", 404
+        # push to connected GUI client
+        if socketio and session_id in clients:
+            socketio.emit("reply", {"message": reply_text,
+                                    "responding_agent": responding},
+                        room=clients[session_id])
+
+        return {"status": "delivered"}, 200
+
 
     # -- Socket.IO events ---------------------------------------------------
     @socketio.on("connect")
@@ -210,7 +233,6 @@ if MODE in ("MULTI", "ALL"):
         broker_multiturn(sid, "patient_agent", token)
         return {"status": "completed",
                 "messages": conversation_history.get(sid, [])}, 200
-
 
 
 @app.route("/multi/history/<session_id>", methods=["GET"])
