@@ -69,3 +69,17 @@ class OtherAgentsNeededTask(TaskInterface):
                 task_success=False,
                 assertion_error_message=f"Unexpected error: {str(e)}",
             )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+           
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return []
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "updateResource", "deleteResource", "getAllResources", "getResourceById"]
+
+    def get_difficulty_level(self) -> int:
+        return 1

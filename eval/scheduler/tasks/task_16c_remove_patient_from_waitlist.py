@@ -129,8 +129,6 @@ After removal, return the cancelled appointment ID using the following format:
             response_msg=f"Successfully removed patient from waitlist by cancelling appointment <APPOINTMENT>{appointment_id}</APPOINTMENT>"
         )
 
-
-
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
             # Verify that there are no waitlist appointments
@@ -204,3 +202,20 @@ After removal, return the cancelled appointment ID using the following format:
             incorrect_resource_type=False,
             error_codes=None
         )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0, "updateResource": 1},
+            {"getAllResources": 0, "deleteResource": 1},
+            {"getResourceById": 0, "updateResource": 1},
+            {"getResourceById": 0, "deleteResource": 1}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Appointment"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 2

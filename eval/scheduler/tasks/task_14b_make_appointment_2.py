@@ -194,6 +194,19 @@ After creating the appointment, return the new Appointment ID using the followin
             error_codes=None
         )
 
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"updateResource": 0, "updateResource": 1}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Appointment", "Slot"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "getAllResources", "getResourceById", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 2
 
     
     

@@ -148,3 +148,20 @@ class EnterNewPatientTask(TaskInterface):
                 assertion_error_message=f"Unexpected error: {str(e)}",
             )
             
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"createResource": 0},
+            {"getResourceById": 0, "updateResource": 1},
+            {"getAllResources": 0, "createResource": 1},
+            {"getAllResources": 0, "deleteResource": 1, "createResource": 2}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Patient"]
+
+    def get_prohibited_tools(self) -> list:
+        return []
+
+    def get_difficulty_level(self) -> int:
+        return 1
+            

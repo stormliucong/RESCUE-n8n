@@ -37,8 +37,6 @@ If none found, return the exact sentence: No insurance coverage found
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
-
-
     def execute_human_agent(self) -> ExecutionResult:
         params = {
             "beneficiary": "Patient/PAT002",
@@ -70,8 +68,6 @@ If none found, return the exact sentence: No insurance coverage found
                 response_msg="No insurance coverage found"
             )
 
-
-
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
             # Structured-output assertions
@@ -102,6 +98,21 @@ If none found, return the exact sentence: No insurance coverage found
                 task_name=self.get_task_name(),
                 execution_result=execution_result
             )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0},
+            {"getResourceById": 0}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Coverage"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "updateResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 1
 
     # def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
     #     # This method will be implemented with detailed failure mode analysis later

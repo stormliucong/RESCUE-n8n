@@ -123,3 +123,20 @@ After creation, return the new Account ID using the following format: <ACCOUNT>a
     #         incorrect_resource_type=False,
     #         error_codes=None
     #     )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"createResource": 0},
+            {"getResourceById": 0, "updateResource": 1},
+            {"getAllResources": 0, "createResource": 1},
+            {"getAllResources": 0, "deleteResource": 1, "createResource": 2}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Account"]
+
+    def get_prohibited_tools(self) -> list:
+        return []
+
+    def get_difficulty_level(self) -> int:
+        return 1

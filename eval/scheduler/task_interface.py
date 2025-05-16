@@ -55,31 +55,18 @@ class TaskInterface(ABC):
                 n8n_url,
                 n8n_execution_url,
                 n8n_system_prompt_file=None,
-                n8n_multi_agent_prompt_file=None,
-                required_tool_call_sets=None,
-                required_resource_types=None,
-                prohibited_tools=None,
-                difficulty_level = None):
+                n8n_multi_agent_prompt_file=None):
 
         self.FHIR_SERVER_URL = fhir_server_url
         self.N8N_AGENT_URL = n8n_url
         self.N8N_EXECUTION_URL = n8n_execution_url
         self.N8N_MULTI_AGENT_PROMPT_FILE = n8n_multi_agent_prompt_file
         # Eval parameters
-        self.required_tool_call_sets = required_tool_call_sets or []
-        self.required_resource_types = required_resource_types or []
-        self.prohibited_tools = prohibited_tools or []
-        self.difficulty_level = difficulty_level
+        self.required_tool_call_sets = self.get_required_tool_call_sets() or []
+        self.required_resource_types = self.get_required_resource_types() or []
+        self.prohibited_tools = self.get_prohibited_tools() or []
+        self.difficulty_level = self.get_difficulty_level()
         self.N8N_SYSTEM_PROMPT_FILE = n8n_system_prompt_file
-        
-        #print(f"INIT: {required_tool_call_sets=}, {required_resource_types=}")
-        logger.debug(f"INIT: {required_tool_call_sets=}, {required_resource_types=}, {prohibited_tools=}")
-        
-        
-        logger.debug(f"FHIR_SERVER_URL: {self.FHIR_SERVER_URL}")
-        logger.debug(f"N8N_AGENT_URL: {self.N8N_AGENT_URL}")
-        logger.debug(f"N8N_EXECUTION_URL: {self.N8N_EXECUTION_URL}")
-        logger.debug(f"N8N_SYSTEM_PROMPT_FILE: {self.N8N_SYSTEM_PROMPT_FILE}")
         
         self.HEADERS = {
             "Content-Type": "application/fhir+json",
@@ -247,8 +234,27 @@ class TaskInterface(ABC):
     def get_task_name(self) -> str:
         """Return the task name"""
         pass
+    
+    @abstractmethod
+    def get_required_tool_call_sets(self) -> List[Dict[str, Optional[int]]]:
+        """Return the required tool call sets"""
+        pass
 
-
+    @abstractmethod
+    def get_required_resource_types(self) -> List[str]:
+        """Return the required resource types"""
+        pass
+    
+    @abstractmethod
+    def get_prohibited_tools(self) -> List[str]:
+        """Return the prohibited tools"""
+        pass
+    
+    @abstractmethod
+    def get_difficulty_level(self) -> int:
+        """Return the difficulty level"""
+        pass
+    
     @abstractmethod
     def get_prompt(self) -> str:
         """Return the prompt for the task"""

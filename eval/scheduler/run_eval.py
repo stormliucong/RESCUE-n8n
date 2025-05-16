@@ -15,7 +15,7 @@ argparse = argparse.ArgumentParser(description="Run evaluation tasks")
 argparse.add_argument(
     "--config",
     type=str,
-    default="run_eval_test_2.yaml",
+    default="experiments/experiment.yaml",
     help="Path to the configuration file"
 )
 argparse.add_argument(
@@ -25,12 +25,19 @@ argparse.add_argument(
     choices=["human", "n8n"],
     help="Agent to use for evaluation"
 )
+argparse.add_argument(
+    "--output_dir",
+    type=str,
+    default="experiments/output",
+    help="Directory to save the output files"
+)
 args = argparse.parse_args()
 agent = args.agent
 config_path = args.config
+output_dir = args.output_dir
 
 # sh command
-# python run_eval.py --config run_eval_with_params_v2.yaml --agent human
+# python run_eval.py --config experiments/experiment.yaml --agent human --output_dir experiments/output
 
 logging.config.fileConfig('logging.ini', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
@@ -122,17 +129,9 @@ if test_n8n():
 for task_config in task_configs:
     # Initialise task
     task_class = task_config["class"]
-    required_tool_call_sets = task_config["required_tool_call_sets"]
-    required_resource_types = task_config["required_resource_types"]
-    prohibited_tools = task_config["prohibited_tools"]
-    difficulty_level = task_config['difficulty_level']
 
     # Logging extracted values
     logger.info(f"Initialising task: {task_class.__name__}")
-    logger.info(f"Required tools sequences: {required_tool_call_sets}")
-    logger.info(f"Required resource types: {required_resource_types}")
-    logger.info(f"Prohibited tools: {prohibited_tools}")
-    logger.info(f"difficulty_level: {difficulty_level}")
 
     # Defining Task object with evaluation params
     task = task_class(
@@ -140,10 +139,7 @@ for task_config in task_configs:
         n8n_url = N8N_AGENT_URL,
         n8n_execution_url = N8N_EXECUTION_URL,
         n8n_system_prompt_file = N8N_SYSTEM_PROMPT_FILE,
-        n8n_multi_agent_prompt_file = N8N_MULTI_AGENT_PROMPT_FILE,
-        required_tool_call_sets = required_tool_call_sets,
-        required_resource_types = required_resource_types,
-        prohibited_tools = prohibited_tools
+        n8n_multi_agent_prompt_file = N8N_MULTI_AGENT_PROMPT_FILE
     )
     
     logger.info(f"Cleaning up test data for task: {task_class.__name__}")
@@ -170,6 +166,9 @@ for task_config in task_configs:
 
     # save ExecutionResult object to a json file
     file_name = f"task_{task_result.task_id}_{agent}_task_result.json"
+    file_name = os.path.join(output_dir, file_name)
+    os.makedirs(output_dir, exist_ok=True)
+    logger.info(f"Saving task result to {file_name}")
     with open(file_name, "w") as f:
         logger.info(f"Saving task result to {file_name}")
         json.dump(asdict(task_result),f)
@@ -180,6 +179,9 @@ for task_config in task_configs:
 
         if task_failure_mode is not None:
             file_name = f"task_{task_result.task_id}_{agent}_failure_mode.json"
+            file_name = os.path.join(output_dir, file_name)
+            os.makedirs(output_dir, exist_ok=True)
+            logger.info(f"Saving failure mode to {file_name}")
             with open(file_name, "w") as f:
                 logger.info(f"Saving failure mode to {file_name}")
                 json.dump(asdict(task_failure_mode),f)
@@ -189,7 +191,7 @@ for task_config in task_configs:
 
 # read all *_task_result.json files and summarise the success rate.
 task_results = []
-for file in os.listdir():
+for file in os.listdir(output_dir):
     if file.endswith(f"{agent}_task_result.json"):
         with open(file, "r") as f:
             task_result = json.load(f)

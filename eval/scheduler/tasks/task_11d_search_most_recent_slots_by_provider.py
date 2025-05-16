@@ -283,3 +283,20 @@ If none found, return the exact sentence: No available slots found for Dr. Smith
             incorrect_resource_type=False,
             error_codes=None
         )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0},
+            {"getAllResources": 0, "getAllResources": 1},
+            {"getAllResources": 0, "getAllResources": 1, "getAllResources": 2},
+            {"getAllResources": 0, "getResourceById": 1, "getAllResources": 2}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Slot"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "updateResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 2

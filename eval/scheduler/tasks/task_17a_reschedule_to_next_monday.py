@@ -353,3 +353,18 @@ After rescheduling, return the Appointment ID and new Slot ID using:
             incorrect_resource_type=False,
             error_codes=None
         )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0, "getResourceById": 1, "getAllResources": 2, "updateResource": 3, "updateResource": 4, "updateResource": 5},
+            {"getResourceById": 0, "getResourceById": 1, "getAllResources": 2, "updateResource": 3, "updateResource": 4, "updateResource": 5}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Appointment", "Slot"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 3

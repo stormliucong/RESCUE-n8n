@@ -259,3 +259,17 @@ After cancelling, return the cancelled appointment ID and freed slot ID using:
             incorrect_resource_type=False,
             error_codes=None
         )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0, "getResourceById": 1, "updateResource": 2, "updateResource": 3}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Appointment", "Slot"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 3

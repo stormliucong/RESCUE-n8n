@@ -105,4 +105,19 @@ class SearchNonexistentPatientTask(TaskInterface):
     #         incorrect_resource_type=False,
     #         error_codes=None
     #     )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0},
+            {"getResourceById": 0}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Patient"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "updateResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 1
             
