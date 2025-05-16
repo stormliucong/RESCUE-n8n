@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-13T02:56:31.694Z",
-  "updatedAt": "2025-05-15T19:09:09.000Z",
+  "updatedAt": "2025-05-15T22:15:43.000Z",
   "id": "bIw7bxVzjXzsARlc",
   "name": "Interactive Agent Evaluation: Front Desk Agent",
   "active": true,
@@ -134,7 +134,7 @@
         "text": "={{ $json.chatInput }}",
         "hasOutputParser": true,
         "options": {
-          "systemMessage": "=You are a front desk agent for a telemedicine clinic. In every interaction you must check the Redis memory for context.\n\nIf the patient\u2019s question is strictly administrative (e.g., about billing clinic policies, etc.), provide the answer. End your response with the token \"<PATIENT>\".\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, forward the entire message verbatim to the education agent. End your output with the token \"<EDUCATION>\".\n\nIf the patient is specifically requesting to book, reschedule, or cancel an appointment, or asking about available time slots, clinic hours, or scheduling logistics, you must forward the entire message verbatim to the scheduling agent. Do not attempt to process scheduling requests yourself. End your output with the token <SCHEDULING>.\n\nBy default, you must always end your reply with the token <PATIENT>, unless it is a referral to an agent.\n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\"."
+          "systemMessage": "={{ \n  $json.system_prompt && $json.system_prompt.trim() !== '' \n    ? $json.system_prompt \n    : `You are a front desk agent for a telemedicine clinic. In every interaction you must check the Redis memory for context.\n\nIf the patient\u2019s question is strictly administrative (e.g., about billing clinic policies, etc.), provide the answer. End your response with the token \"<PATIENT>\".\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, forward the entire message verbatim to the education agent. End your output with the token \"<EDUCATION>\".\n\nIf the patient is specifically requesting to book, reschedule, or cancel an appointment, or asking about available time slots, clinic hours, or scheduling logistics, you must forward the entire message verbatim to the scheduling agent. Do not attempt to process scheduling requests yourself. End your output with the token <SCHEDULING>.\n\nBy default, you must always end your reply with the token <PATIENT>, unless it is a referral to an agent.\n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\".`\n}}\n"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
@@ -858,7 +858,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "43846efa-fc10-432f-9824-8cc05c355a1b",
+  "versionId": "0a00cfda-24e8-4c73-a121-7e73b320d7c4",
   "triggerCount": 1,
   "tags": [
     {
