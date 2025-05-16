@@ -70,24 +70,88 @@ prompt_bank = {key: lambda sm=sm, um=um: make_prompt(sm, um) for key, (sm, um) i
 
 
 def normalize_provider_name(name):
-    '''
-    Normalize the provider name by removing unnecessary parts and standardizing the format.
-    1. Kansas City -> Kansas
-    2. State Medicaid (FFS) -> State Medicaid
-    3. Blue Shield of -> BS
-    '''
     name = name.strip()
 
-    if "Kansas City" in name:
-        name = name.replace("Kansas City", "Kansas")
+    # Fix garbled characters
+    name = re.sub(r"\?\?\s*Medicaid", "- Medicaid", name, flags=re.IGNORECASE)
 
+    # Kansas City → Kansas
+    name = name.replace("Kansas City", "Kansas")
+
+    # Remove (FFS)
     if name.endswith("(FFS)"):
         name = name.replace("(FFS)", "").strip()
 
-    if "Blue Shield of" in name:
-        name = name.replace("Blue Shield of", "BS")
+    # Blue Shield of X → BS X
+    name = re.sub(r"Blue Shield of", "BS", name)
 
-    return name
+    # Aetna Better Health → strip state
+    if "Aetna Better Health" in name:
+        name = "Aetna Better Health"
+
+    # United Healthcare Community Plan → ignore state
+    if re.search(r"United\s*Healthcare\s*Community\s*Plan", name, flags=re.IGNORECASE):
+        name = "United Healthcare Community Plan"
+
+    # WellCare (XX) → WellCare
+    if re.search(r"WellCare\s*\(.*?\)", name, flags=re.IGNORECASE):
+        name = "WellCare"
+
+    # Wellpoint (Amerigroup ...) → Wellpoint
+    if re.search(r"Wellpoint\s*\(Amerigroup.*?\)", name, flags=re.IGNORECASE):
+        name = "Wellpoint"
+
+    # Oscar Health → Oscar
+    if name.startswith("Oscar Health"):
+        name = "Oscar"
+
+    # Medicaid <State> → <State> Medicaid
+    match = re.match(r"(Medicaid)\s+(.*)", name, flags=re.IGNORECASE)
+    if match:
+        name = f"{match.group(2).strip()} Medicaid"
+
+    # Wellpoint (XX) → Wellpoint XX
+    match = re.match(r"Wellpoint\s*\((\w{2})\)", name)
+    if match:
+        name = f"Wellpoint {match.group(1)}"
+
+    # AmeriHealth Caritas <State> → AmeriHealth Caritas XX
+    state_abbrev = {
+        "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA",
+        "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE", "Florida": "FL", "Georgia": "GA",
+        "Hawaii": "HI", "Idaho": "ID", "Illinois": "IL", "Indiana": "IN", "Iowa": "IA", "Kansas": "KS",
+        "Kentucky": "KY", "Louisiana": "LA", "Maine": "ME", "Maryland": "MD", "Massachusetts": "MA",
+        "Michigan": "MI", "Minnesota": "MN", "Mississippi": "MS", "Missouri": "MO", "Montana": "MT",
+        "Nebraska": "NE", "Nevada": "NV", "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM",
+        "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", "Ohio": "OH", "Oklahoma": "OK",
+        "Oregon": "OR", "Pennsylvania": "PA", "Rhode Island": "RI", "South Carolina": "SC",
+        "South Dakota": "SD", "Tennessee": "TN", "Texas": "TX", "Utah": "UT", "Vermont": "VT",
+        "Virginia": "VA", "Washington": "WA", "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY"
+    }
+
+    for state, abbr in state_abbrev.items():
+        if re.fullmatch(rf"AmeriHealth Caritas {state}", name, flags=re.IGNORECASE):
+            name = f"AmeriHealth Caritas {abbr}"
+        if re.fullmatch(rf"Wellpoint {state}", name, flags=re.IGNORECASE):
+            name = f"Wellpoint {abbr}"
+
+    # These keep the full state name
+    preserve_state_full = [
+        "Amerigroup", "Anthem BCBS", "BCBS", "Blue Cross", "CareSource", "Healthy Blue", "Molina Healthcare"
+    ]
+    for prefix in preserve_state_full:
+        if re.fullmatch(rf"{prefix} of [A-Za-z ]+", name, flags=re.IGNORECASE):
+            return name  # keep original
+
+    # X of State → X
+    name = re.sub(r"\bof\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\b", "", name)
+
+    # Clean-up
+    name = name.replace("&", "and")
+    name = re.sub(r"\s+", " ", name)
+    name = re.sub(r"\s*\(.*?\)", "", name)
+
+    return name.strip()
 
 # Function for pPerplexity API
 def query_perplexity(messages, api_key, model="sonar-pro"):
@@ -223,6 +287,8 @@ def compute_provider_metrics(predicted, ground_truth):
             "common_count": 0,
             "missing_count": len(ground_truth),
             "extra_count": len(predicted),
+            "Missing Providers": ground_truth,  
+            "Extra Providers": predicted,
             "Precision (%)": 0.0,
             "Recall (%)": 0.0,
         }
@@ -230,6 +296,8 @@ def compute_provider_metrics(predicted, ground_truth):
     pred_set = set(normalize_provider_name(x) for x in predicted)
     gt_set = set(normalize_provider_name(x) for x in ground_truth)
     common = pred_set & gt_set
+    missing = gt_set - pred_set
+    extra = pred_set - gt_set
     precision = len(common) / len(pred_set) * 100 if pred_set else 0
     recall = len(common) / len(gt_set) * 100 if gt_set else 0
 
@@ -239,6 +307,8 @@ def compute_provider_metrics(predicted, ground_truth):
         "common_count": len(common),
         "missing_count": len(gt_set - pred_set),
         "extra_count": len(pred_set - gt_set),
+        "Missing Providers": sorted(list(missing)),
+        "Extra Providers": sorted(list(extra)),
         "Precision (%)": round(precision, 2),
         "Recall (%)": round(recall, 2),
     }
