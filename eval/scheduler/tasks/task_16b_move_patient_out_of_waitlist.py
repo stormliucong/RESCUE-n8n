@@ -259,3 +259,19 @@ After moving, return the appointment ID and slot ID using the following format:
             incorrect_resource_type=False,
             error_codes=None
         )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0, "getResourceById": 1, "updateResource": 2, "updateResource": 3},
+            {"getAllResources": 0, "getResourceById": 1, "updateResource": 2, "updateResource": 3, "deleteResource": 4},
+            {"getAllResources": 0, "getResourceById": 1, "createResource": 2, "updateResource": 3}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Appointment", "Slot"]
+
+    def get_prohibited_tools(self) -> list:
+        return []
+
+    def get_difficulty_level(self) -> int:
+        return 3

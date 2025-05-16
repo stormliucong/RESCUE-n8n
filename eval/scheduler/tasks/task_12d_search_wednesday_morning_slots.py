@@ -159,3 +159,17 @@ If none found, return the exact sentence: No Wednesday morning slots found
             incorrect_resource_type=False,
             error_codes=None
         )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Slot"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "updateResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 3

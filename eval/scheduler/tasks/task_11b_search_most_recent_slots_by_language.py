@@ -281,23 +281,19 @@ Using the following format: <slot_id>SLOT0010</slot_id>
             incorrect_resource_type=False,
             error_codes=None
         )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0},
+            {"getResourceById": 0}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Slot"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "updateResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 1
         
-if __name__ == "__main__":
-    # load the environment variables
-    import os
-    from dotenv import load_dotenv
-    load_dotenv()
-    FHIR_SERVER_URL = os.getenv("FHIR_SERVER_URL")
-    N8N_URL = os.getenv("N8N_AGENT_URL")
-    N8N_EXECUTION_URL = os.getenv("N8N_EXECUTION_URL")
-    HEADERS = {
-        "Content-Type": "application/fhir+json",
-        "Accept": "application/fhir+json"
-    }
-    
-    task = FindAvailableSlotsTask(fhir_server_url=FHIR_SERVER_URL, n8n_url=N8N_URL, n8n_execution_url=N8N_EXECUTION_URL)
-    task.delete_all_resources()
-    task.prepare_test_data()
-    execution_result = task.execute_human_agent()
-    task_result = task.validate_response(execution_result)
-    print(task_result)

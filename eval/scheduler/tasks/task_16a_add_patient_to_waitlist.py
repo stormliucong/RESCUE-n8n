@@ -178,3 +178,18 @@ After adding, return the new waitlist Appointment ID using the following format:
             incorrect_resource_type=False,
             error_codes=None
         )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"createResource": 0},
+            {"getAllResources": 0, "createResource": 1}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Appointment"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["updateResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 1

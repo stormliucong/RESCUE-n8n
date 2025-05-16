@@ -194,6 +194,21 @@ After creating the appointment and updating the slot, return the new Appointment
             incorrect_resource_type=False,
             error_codes=None
         )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getResourceById": 0, "updateResource": 1},
+            {"updateResource": 2}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Slot", "Appointment"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "getAllResources", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 2
     
     
     

@@ -148,3 +148,19 @@ Return the recorded condition's ID using the following format: <CONDITION>condit
     #         incorrect_resource_type=False,
     #         error_codes=None
     #     )
+
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"createResource": 0},
+            {"getResourceById": 0, "updateResource": 1},
+            {"getAllResources": 0, "createResource": 1}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Condition"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 2

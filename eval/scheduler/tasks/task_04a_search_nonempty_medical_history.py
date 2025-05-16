@@ -129,6 +129,21 @@ If found, return the condition's ID using the following format: <CONDITION>condi
     #         error_codes=None
     #     )
 
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 0},
+            {"getResourceById": 0}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Condition"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "updateResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 1
+
 # if __name__ == "__main__":
 #     from dotenv import load_dotenv
 #     load_dotenv()

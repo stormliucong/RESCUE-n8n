@@ -23,3 +23,9 @@ eval/scheduler/task_*.json
 eval/scheduler/logging.ini
 eval/scheduler/logging.ini
 eval/scheduler/run_eval_test.yaml
+eval/scheduler/run_eval_with_params.yaml
+eval/scheduler/run_eval_with_params_v2.yaml
+eval/scheduler/eval_results.failed.example.json
+eval/scheduler/eval_results.success.example.json
+
+**/experiments/**

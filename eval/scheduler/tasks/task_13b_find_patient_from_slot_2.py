@@ -205,4 +205,18 @@ After finding, return the patient ID using the following format: <PATIENT_ID>pat
             error_codes=None
         )
 
+    def get_required_tool_call_sets(self) -> list:
+        return [
+            {"getAllResources": 2, "getResourceById": 1}
+        ]
+
+    def get_required_resource_types(self) -> list:
+        return ["Slot", "Appointment", "Patient"]
+
+    def get_prohibited_tools(self) -> list:
+        return ["createResource", "updateResource", "deleteResource"]
+
+    def get_difficulty_level(self) -> int:
+        return 2
+
         
