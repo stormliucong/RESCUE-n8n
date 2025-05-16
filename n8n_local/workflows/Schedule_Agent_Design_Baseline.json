@@ -1,9 +1,9 @@
 {
   "createdAt": "2025-03-11T17:08:23.620Z",
-  "updatedAt": "2025-05-15T02:15:06.000Z",
+  "updatedAt": "2025-05-16T01:40:31.000Z",
   "id": "p5CG6PCfoYNp850m",
   "name": "Schedule Agent Design Baseline",
-  "active": false,
+  "active": true,
   "nodes": [
     {
       "parameters": {
