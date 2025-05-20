@@ -1,0 +1,59 @@
+{
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "Text Analysis Tool",
+      "description": "Analyzes text content",
+      "placeholders": [
+        {
+          "name": "text_input",
+          "type": "string",
+          "description": "Input text to analyze"
+        },
+        {
+          "name": "analysis_type",
+          "type": "enum",
+          "options": ["sentiment", "keywords", "summary"],
+          "description": "Type of analysis to perform"
+        }
+      ]
+    },
+    {
+      "id": "tool2",
+      "name": "Data Processing Tool",
+      "description": "Processes numerical data",
+      "placeholders": [
+        {
+          "name": "data_format",
+          "type": "enum",
+          "options": ["csv", "json", "xml"],
+          "description": "Format of input data"
+        },
+        {
+          "name": "processing_type",
+          "type": "enum",
+          "options": ["filter", "sort", "aggregate"],
+          "description": "Type of processing to perform"
+        }
+      ]
+    },
+    {
+      "id": "tool3",
+      "name": "API Integration Tool",
+      "description": "Integrates with external APIs",
+      "placeholders": [
+        {
+          "name": "api_endpoint",
+          "type": "string",
+          "description": "API endpoint URL"
+        },
+        {
+          "name": "method",
+          "type": "enum",
+          "options": ["GET", "POST", "PUT", "DELETE"],
+          "description": "HTTP method to use"
+        }
+      ]
+    }
+  ]
+} 

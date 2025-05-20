@@ -1,0 +1,23 @@
+.difficulty-section {
+  background-color: white;
+}
+
+.difficulty-selector {
+  margin-top: 15px;
+}
+
+.difficulty-dropdown {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.difficulty-dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+} 

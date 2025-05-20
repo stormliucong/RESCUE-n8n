@@ -1,0 +1,92 @@
+.tool-selection-section {
+  background-color: white;
+}
+
+.tool-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.tool-info {
+  margin-bottom: 10px;
+}
+
+.tool-info h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.tool-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.tool-selection {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tool-selection label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.tool-selection input[type="radio"] {
+  margin: 0;
+}
+
+.tool-placeholders {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.tool-placeholders h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.placeholder-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.placeholder-item label {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.placeholder-item select,
+.placeholder-item input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.placeholder-item select:focus,
+.placeholder-item input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+} 
