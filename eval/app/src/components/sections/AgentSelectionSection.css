@@ -1,0 +1,52 @@
+.agent-selection-section {
+  background-color: white;
+}
+
+.agent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.agent-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.agent-info {
+  margin-bottom: 10px;
+}
+
+.agent-info h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.agent-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.agent-selection {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.agent-selection label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.agent-selection input[type="radio"] {
+  margin: 0;
+} 

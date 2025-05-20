@@ -1,0 +1,22 @@
+{
+  "agents": [
+    {
+      "id": "agent1",
+      "name": "Basic Agent",
+      "description": "A simple agent with basic capabilities",
+      "capabilities": ["text_processing", "basic_math"]
+    },
+    {
+      "id": "agent2",
+      "name": "Advanced Agent",
+      "description": "An agent with advanced capabilities",
+      "capabilities": ["text_processing", "advanced_math", "pattern_recognition"]
+    },
+    {
+      "id": "agent3",
+      "name": "Specialized Agent",
+      "description": "A specialized agent for specific tasks",
+      "capabilities": ["specialized_processing", "domain_knowledge"]
+    }
+  ]
+} 

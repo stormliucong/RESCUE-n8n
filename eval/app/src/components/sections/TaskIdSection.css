@@ -1,0 +1,33 @@
+.task-id-section {
+  background-color: white;
+}
+
+.task-id-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.task-id-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: monospace;
+  background-color: #f8f8f8;
+}
+
+.new-id-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.new-id-button:hover {
+  background-color: #0056b3;
+} 
