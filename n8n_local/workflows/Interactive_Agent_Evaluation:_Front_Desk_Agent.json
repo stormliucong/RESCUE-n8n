@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-13T02:56:31.694Z",
-  "updatedAt": "2025-05-15T22:15:43.000Z",
+  "updatedAt": "2025-05-23T19:34:55.000Z",
   "id": "bIw7bxVzjXzsARlc",
   "name": "Interactive Agent Evaluation: Front Desk Agent",
   "active": true,
@@ -730,13 +730,7 @@
     },
     "Redis Chat Memory": {
       "ai_memory": [
-        [
-          {
-            "node": "FrontDesk Agent",
-            "type": "ai_memory",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Structured Output Parser": {
@@ -858,7 +852,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "0a00cfda-24e8-4c73-a121-7e73b320d7c4",
+  "versionId": "30499b18-8e24-4a40-8e57-4f23c891bca7",
   "triggerCount": 1,
   "tags": [
     {
