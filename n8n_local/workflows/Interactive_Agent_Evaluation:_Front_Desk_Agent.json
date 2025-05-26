@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-13T02:56:31.694Z",
-  "updatedAt": "2025-05-23T19:34:55.000Z",
+  "updatedAt": "2025-05-26T17:24:06.000Z",
   "id": "bIw7bxVzjXzsARlc",
   "name": "Interactive Agent Evaluation: Front Desk Agent",
   "active": true,
@@ -9,9 +9,9 @@
       "parameters": {
         "model": {
           "__rl": true,
-          "value": "gpt-4o",
+          "value": "o1",
           "mode": "list",
-          "cachedResultName": "gpt-4o"
+          "cachedResultName": "o1"
         },
         "options": {}
       },
@@ -134,7 +134,7 @@
         "text": "={{ $json.chatInput }}",
         "hasOutputParser": true,
         "options": {
-          "systemMessage": "={{ \n  $json.system_prompt && $json.system_prompt.trim() !== '' \n    ? $json.system_prompt \n    : `You are a front desk agent for a telemedicine clinic. In every interaction you must check the Redis memory for context.\n\nIf the patient\u2019s question is strictly administrative (e.g., about billing clinic policies, etc.), provide the answer. End your response with the token \"<PATIENT>\".\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, forward the entire message verbatim to the education agent. End your output with the token \"<EDUCATION>\".\n\nIf the patient is specifically requesting to book, reschedule, or cancel an appointment, or asking about available time slots, clinic hours, or scheduling logistics, you must forward the entire message verbatim to the scheduling agent. Do not attempt to process scheduling requests yourself. End your output with the token <SCHEDULING>.\n\nBy default, you must always end your reply with the token <PATIENT>, unless it is a referral to an agent.\n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\".`\n}}\n"
+          "systemMessage": "={{ \n  $json.system_prompt && $json.system_prompt.trim() !== '' \n    ? $json.system_prompt \n    : `You are a front desk agent for a telemedicine clinic. In every interaction you must check the Redis memory for context.\n\nIf the patient\u2019s question is strictly administrative (e.g., about billing, clinic policies, etc.), or if the issue is related to insurance (e.g., coverage, copays, claims), forward the entire message verbatim to the administrative agent. End your output with the token \"<ADMIN>\".\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, forward the entire message verbatim to the education agent. End your output with the token \"<EDUCATION>\".\n\nIf the patient is specifically requesting to book, reschedule, or cancel an appointment, or asking about available time slots, clinic hours, or scheduling logistics, you must forward the entire message verbatim to the scheduling agent. Do not attempt to process scheduling requests yourself. End your output with the token <SCHEDULING>.\n\nBy default, you must always end your reply with the token <PATIENT>, unless it is a referral to an agent.\n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\".\n`\n}}\n"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
@@ -313,7 +313,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const inputData = items[0].json;\n\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\nlet message = inputData.output;\nconst containsStop = message.includes(\"<STOP>\");\n\n// Determine target agent\nlet to_agent = \"patient_agent\";  // default\nif (message.includes(\"<FRONT_DESK>\")) {\n  to_agent = \"frontdesk_agent\";\n  message = message.replace(\"<FRONT_DESK>\", \"\");\n} else if (message.includes(\"<SCHEDULING>\")) {\n  to_agent = \"scheduling_agent\";\n  message = message.replace(\"<SCHEDULING>\", \"\");\n} else if (message.includes(\"<EDUCATION>\")) {\n  to_agent = \"education_agent\";\n  message = message.replace(\"<EDUCATION>\", \"\");\n} else if (message.includes(\"<PATIENT>\")) {\n  to_agent = \"patient_agent\";\n  message = message.replace(\"<PATIENT>\", \"\");\n}\n\n// Clean up <STOP> token\nmessage = message.replace(\"<STOP>\", \"\").trim();\n\n// Final output object\nreturn [\n  {\n    json: {\n      output: message,\n      execution_id: $execution.id,\n      to_agent: to_agent,\n      from_agent: \"frontdesk_agent\",  // update per agent\n      end_conversation: containsStop\n    }\n  }\n];\n"
+        "jsCode": "const inputData = items[0].json;\n\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\nlet message = inputData.output;\nconst containsStop = message.includes(\"<STOP>\");\n\n// Determine target agent\nlet to_agent = \"patient_agent\";  // default\nif (message.includes(\"<ADMIN>\")) {\n  to_agent = \"administrative_agent\";\n  message = message.replace(\"<ADMIN>\", \"\");\n} else if (message.includes(\"<SCHEDULING>\")) {\n  to_agent = \"scheduling_agent\";\n  message = message.replace(\"<SCHEDULING>\", \"\");\n} else if (message.includes(\"<EDUCATION>\")) {\n  to_agent = \"education_agent\";\n  message = message.replace(\"<EDUCATION>\", \"\");\n} else if (message.includes(\"<PATIENT>\")) {\n  to_agent = \"patient_agent\";\n  message = message.replace(\"<PATIENT>\", \"\");\n}\n\n// Clean up <STOP> token\nmessage = message.replace(\"<STOP>\", \"\").trim();\n\n// Final output object\nreturn [\n  {\n    json: {\n      output: message,\n      execution_id: $execution.id,\n      to_agent: to_agent,\n      from_agent: \"frontdesk_agent\",  // update per agent\n      end_conversation: containsStop\n    }\n  }\n];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -852,7 +852,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "30499b18-8e24-4a40-8e57-4f23c891bca7",
+  "versionId": "ff75df70-810b-417c-9e59-9f838b7ec20a",
   "triggerCount": 1,
   "tags": [
     {
