@@ -1,0 +1,20 @@
+Case,Question,Predicted,Gold,Score
+Case11,Q0,Whole Exome Sequencing (WES),Whole Exome Sequencing (WES),1
+Case11,Q1,Not specified,Yes,0
+Case11,Q2,Yes,No,0
+Case11,Q3,No,No,1
+Case11,Q4,No,Yes,0
+Case11,Q5,No,No,1
+Case11,Q6,No,No,1
+Case11,Q7,No,No,1
+Case11,Q8,Yes,Yes,1
+Case11,Q8_followup,None,Neuromuscular gene panel,0
+Case11,Q9,Not specified,Yes,0
+Case11,Q10,No,Yes,0
+Case11,Q11,Not specified,Yes,0
+Case11,Q12,No,No,1
+Case11,Q13,Not specified,Yes,0
+Case11,Q14,Not listed,Yes,0
+Case11,Q15,No,No,1
+Case11,Q16,No,No,1
+Case11,TOTAL,Correct: 9,Incorrect: 9,Accuracy: 50.00%

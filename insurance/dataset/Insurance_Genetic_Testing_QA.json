@@ -2,7 +2,7 @@
     "questions": [
         {
             "id": "Q0",
-            "question": "What is the requested genetic test? Please specify the name, gene content if known.",
+            "question": "What is the requested genetic test? Please specify the name.",
             "options": ["Free text answer"]
         },
         {
@@ -57,13 +57,18 @@
             "id": "Q8",
             "question": "Could this test be excluded because a more targeted or specific genetic test (e.g., single gene or smaller panel) would be more appropriate for this patient according to the policy?",
             "options": ["Yes", "No"],
-            "additional_if_yes": ["Please describe a more appropriate test."]
+            "additional_if_yes": ["Name the most appropriate alternative test."]
         },
         {
             "id": "Q9",
             "question": "Does the policy consider family history or consanguinity as supporting factors for coverage?",
             "options": ["Yes", "No", "Not specified"],
-            "additional_if_yes": ["Yes", "No"]
+            "additional_if_yes": [
+              {
+                "question": "Does this patient have a relevant family history or consanguinity that aligns with the policy?",
+                "options": ["Yes", "No"]
+                }
+            ]
         },
         {
             "id": "Q10",

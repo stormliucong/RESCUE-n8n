@@ -1,0 +1,35 @@
+{
+  "Q0": "Limb-Girdle Muscular Dystrophy Panel",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "None of the above"
+      ]
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "Single gene tests for specific mutations such as dysferlin or anctinin-5"
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit prior authorization with detailed medical records, including neurology consultation and confirmed family history."
+}

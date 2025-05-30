@@ -1,0 +1,34 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Not specified",
+  "Q2": "Not specified",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "guideline_match": "No",
+    "guideline": "ACMG"
+  },
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": {
+    "alternative_test": "Nonsyndromic Hearing Loss and Deafness Multigene Panel Testing"
+  },
+  "Q9": "Yes",
+  "Q9_followup": {
+    "family_history_match": "Yes"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires that any claims submitted must include necessary information for automated processing, such as ICD code and place of service. Claims may require submission of medical records for post-service review. Any individual gene or multi-gene panel is only reimbursable once per lifetime. When a panel is performed, it should be billed with a single, appropriate panel procedure code.",
+  "match": false
+}

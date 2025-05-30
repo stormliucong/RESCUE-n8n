@@ -1,0 +1,17 @@
+[
+    {
+    "id": "Case1",
+    "patient_info": "An 8-year-old boy with neurodevelopmental delay and seizures. A prior chromosomal microarray test was negative. Whole exome sequencing (WES) has been requested by the genetic counselor to investigate potential underlying genetic causes that may guide diagnosis and future treatment decisions. There is also a family history of neurodevelopmental disorders, as his older brother was diagnosed with autism spectrum disorder. The patient is covered by United Healthcare Choice Plus through a family plan and resides in New Jersey.",
+    "policy_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d"
+  },
+  {
+    "id": "Case2",
+    "patient_info": "A 7-year-old boy presents with global developmental delay, axial hypotonia, and treatment-resistant epilepsy. Previous workups included chromosomal microarray and an epilepsy-focused gene panel, both of which returned negative. Brain MRI showed nonspecific white matter changes. Family history reveals a paternal cousin with similar neurodevelopmental symptoms. Whole exome sequencing (WES) was requested by Pediatric Neurologist to evaluate for a monogenic etiology. The patient is enrolled in the Aetna Choice POS II family plan and resides in California.",
+    "policy_md5": "af9f1086001f5b00ec242195723c10bf"
+  },
+  {
+    "id": "Case3",
+    "patient_info": "A 5-year-old girl with significant expressive language delay, repetitive hand movements, and poor eye contact was evaluated for possible autism spectrum disorder. Minor dysmorphic features were noted on physical exam. Chromosomal microarray and Fragile X testing were non-diagnostic. Her maternal uncle had intellectual disability. Given the syndromic features and strong family history, whole exome sequencing (WES) was recommended by Clinical Geneticist to aid diagnosis. The patient is covered under the Cigna Open Access Plus (OAP) family plan and resides in Texas.",
+    "policy_md5": "ad2eb3a750b767e32ff847032f0e8e03"
+  }
+]

@@ -1,5 +1,5 @@
 {
-    "Case1": {
+    "Case1": { "expected_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d", 
         "Q0": "Whole Exome Sequencing (WES)",
         "Q1": "Yes",
         "Q2": "Yes",
@@ -23,8 +23,1405 @@
         "Q12": "No",
         "Q13": "Yes",
         "Q14": "Yes",
-        "Q14_followup": ["81415", "81416"],
+        "Q14_followup": ["81415"],
         "Q15": "No",
         "Q16": "Yes"
+    },
+
+     "Case2": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "Yes",
+        "Q8_followup": ["chromosomal microarray (CMA)"],
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+     "Case3": { "expected_md5": "ad2eb3a750b767e32ff847032f0e8e03",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+     "Case4": { "expected_md5": "a73b8a2ce768f28198cd9450f3858945",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "Yes",
+        "Q8_followup": ["chromosomal microarray (CMA)"],
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+     "Case5": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+     "Case6": { "expected_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+     "Case7": { "expected_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["chromosomal microarray (CMA)"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case8": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["Neurodevelopmental gene panel"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case9": { "expected_md5": "ad2eb3a750b767e32ff847032f0e8e03",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["Developmental delay gene panel", "chromosomal microarray (CMA)"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case10": { "expected_md5": "a73b8a2ce768f28198cd9450f3858945",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["Neurodevelopmental gene panel", "chromosomal microarray (CMA)"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case11": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["Neuromuscular gene panel"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case12": { "expected_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d",
+        "Q0": "Whole Exome Sequencing (WES)",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["Inherited retinal disorder gene panel"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81415"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case13": { "expected_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d",
+        "Q0": "Whole Genome Sequencing (WGS)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81425"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case14": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Whole Genome Sequencing (WGS)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81425"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case15": { "expected_md5": "36bb5264dda1b2027dcdfdd32a714204",
+        "Q0": "Whole Genome Sequencing (WGS)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81425"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case16": { "expected_md5": "a73b8a2ce768f28198cd9450f3858945",
+        "Q0": "Whole Genome Sequencing (WGS)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81425"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case17": { "expected_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d",
+        "Q0": "Whole Genome Sequencing (WGS)",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["Targeted neurodevelopmental panel"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81425"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case18": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Whole Genome Sequencing (WGS)",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["chromosomal microarray (CMA)"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81425"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case19": { "expected_md5": "36bb5264dda1b2027dcdfdd32a714204",
+        "Q0": "Whole Genome Sequencing (WGS)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["chromosomal microarray (CMA)"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81425"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case20": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Whole Genome Sequencing (WGS)",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["chromosomal microarray (CMA)", "Fragile X testing"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81425"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case21": { "expected_md5": "853350c3473bcef32091186fbb7318fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["NCCN"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Risk Assessment"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case22": { "expected_md5": "853350c3473bcef32091186fbb7318fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case23": { "expected_md5": "853350c3473bcef32091186fbb7318fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["NCCN"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+    "Case24": { "expected_md5": "853350c3473bcef32091186fbb7318fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["NCCN"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+    "Case25": { "expected_md5": "c69485372670ce1d12aa8f61d83a06fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG", "USPSTF", "NCCN"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81217"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+    "Case26": { "expected_md5": "c69485372670ce1d12aa8f61d83a06fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["NCCN"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Risk Assessment"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81217"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case27": { "expected_md5": "853350c3473bcef32091186fbb7318fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "No",
+        "Q2": "Yes",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case28": { "expected_md5": "853350c3473bcef32091186fbb7318fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q10_followup": ["Risk Assessment"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case29": { "expected_md5": "c69485372670ce1d12aa8f61d83a06fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q10_followup": ["Risk Assessment"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case30": { "expected_md5": "c69485372670ce1d12aa8f61d83a06fd",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case31": { "expected_md5": "626eac4d60df057ea93ece78f8cc3dfc",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["NCCN"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case32": { "expected_md5": "626eac4d60df057ea93ece78f8cc3dfc",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["NCCN"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Risk Assessment"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case33": { "expected_md5": "626eac4d60df057ea93ece78f8cc3dfc",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case34": { "expected_md5": "626eac4d60df057ea93ece78f8cc3dfc",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case35": { "expected_md5": "34dc0823a03ca2f20ba740345d7b57da",
+        "Q0": "BRCA1/BRCA2 testing and PALB2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["NCCN"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case36": { "expected_md5": "34dc0823a03ca2f20ba740345d7b57da",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["NCCN"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81217"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case37": { "expected_md5": "34dc0823a03ca2f20ba740345d7b57da",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes", 
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case38": { "expected_md5": "34dc0823a03ca2f20ba740345d7b57da",
+        "Q0": "BRCA1/BRCA2 testing",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes", 
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81162"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case39": { "expected_md5": "f77e783d8f23d96b1932bc0f7cf7e8c7",
+        "Q0": "LQTS gene panel",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81413"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+    "Case40": { "expected_md5": "f77e783d8f23d96b1932bc0f7cf7e8c7",
+        "Q0": ["cardiomyopathy gene panel", "Dilated Cardiomyopathy (DCM) gene panel"],
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81439"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+    "Case41": { "expected_md5": "4dec1a815b8ecffdf00d34ad7f04836f",
+        "Q0": "limb-girdle muscular dystrophy (LGMD) gene panel",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81412", "81448"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+     "Case42": { "expected_md5": "4dec1a815b8ecffdf00d34ad7f04836f",
+        "Q0": "Mitochondrial DNA panel (mtDNA panel)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81460", "81479"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+     "Case43": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "cardiomyopathy gene panel",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["None of the above"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81439"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+     "Case44": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "LQTS gene panel",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81413"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+     "Case45": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "DMD gene panel",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["ACMG"]
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81161", "81408"],
+        "Q15": "Yes",
+        "Q16": "Yes"
+    },
+
+    "Case46": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Mitochondrial DNA panel (mtDNA panel)",
+        "Q1": "Yes",
+        "Q2": "Yes",
+        "Q3": "Yes",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "Yes",
+                "followup": ["None of the above"]
+            }
+        ],
+        "Q5": "Yes",
+        "Q6": "No",
+        "Q7": "Yes",
+        "Q8": "No",
+        "Q9": "Yes",
+        "Q9_followup": ["Yes"],
+        "Q10": "No",
+        "Q10_followup": ["Diagnostic"],
+        "Q11": "Yes",
+        "Q12": "No",
+        "Q13": "Yes",
+        "Q14": "Yes",
+        "Q14_followup": ["81460"],
+        "Q15": "No",
+        "Q16": "Yes"
+    },
+
+    "Case47": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Arrhythmia gene panel",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["Single gene testing"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q10_followup": ["Risk Assessment"],
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "No",
+        "Q14": "Yes",
+        "Q14_followup": ["81413"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case48": { "expected_md5": "af9f1086001f5b00ec242195723c10bf",
+        "Q0": "Neuromuscular gene panel",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["CK test before panel"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q10_followup": ["Risk Assessment"],
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "No",
+        "Q14": "Yes",
+        "Q14_followup": ["81448"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+    "Case49": { "expected_md5": "f77e783d8f23d96b1932bc0f7cf7e8c7",
+        "Q0": "Cardiomyopathy gene panel",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "Not required",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["clinical evaluation"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q10_followup": ["Risk Assessment"],
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "No",
+        "Q14": "Yes",
+        "Q14_followup": ["81439"],
+        "Q15": "No",
+        "Q16": "No"
+    },
+
+    "Case50": { "expected_md5": "4dec1a815b8ecffdf00d34ad7f04836f",
+        "Q0": "Neuromuscular gene panel",
+        "Q1": "Yes",
+        "Q2": "No",
+        "Q3": "No",
+        "Q4": "Yes",
+        "Q4_followup": [
+            {
+                "answer": "No"
+            }
+        ],
+        "Q5": "No",
+        "Q6": "No",
+        "Q7": "No",
+        "Q8": "Yes",
+        "Q8_followup": ["CK test"],
+        "Q9": "Yes",
+        "Q9_followup": ["No"],
+        "Q10": "Yes",
+        "Q10_followup": ["Risk Assessment"],
+        "Q11": "No",
+        "Q12": "No",
+        "Q13": "No",
+        "Q14": "Yes",
+        "Q14_followup": ["81448"],
+        "Q15": "No",
+        "Q16": "No"
     }
 }

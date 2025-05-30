@@ -1,0 +1,35 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Yes",
+  "Q2": "Not specified",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "patient_clinical_presentation_matches_criteria": "No",
+    "guidelines_apply": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": {
+    "alternative_test": "None specified"
+  },
+  "Q9": "Yes",
+  "Q9_followup": {
+    "relevant_family_history": "No"
+  },
+  "Q10": "Yes",
+  "Q10_followup": {
+    "screening_covered": "No",
+    "purpose": "Risk Assessment"
+  },
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires precertification and consideration of both maternal and paternal family histories. Genetic counseling is also required prior to testing. The claim should be submitted with documentation of genetic counseling and any relevant family history if applicable.",
+  "match": false
+}

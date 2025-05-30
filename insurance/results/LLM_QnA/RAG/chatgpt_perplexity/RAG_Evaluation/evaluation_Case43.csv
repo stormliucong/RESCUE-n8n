@@ -1,0 +1,22 @@
+Case,Question,Predicted,Gold,Score
+Case43,Q0,"Cardiomyopathy gene panel for dilated cardiomyopathy (DCM) (multi-gene panel targeting DCM-related genes such as BAG3, DSP, FLNC, LMNA, MYH7, RBM20, TNNT2, TTN, etc.)",cardiomyopathy gene panel,0
+Case43,Q1,Yes,Yes,1
+Case43,Q2,Yes,Yes,1
+Case43,Q3,Yes,Yes,1
+Case43,Q4,No,Yes,0
+Case43,Q5,Not required,Not required,1
+Case43,Q6,No,No,1
+Case43,Q7,Yes,Yes,1
+Case43,Q8,No,No,1
+Case43,Q9,Yes,Yes,1
+Case43,Q9_followup,None,Yes,0
+Case43,Q10,No,No,1
+Case43,Q10_followup,None,Diagnostic,0
+Case43,Q11,Not specified,Yes,0
+Case43,Q12,No,No,1
+Case43,Q13,Not specified,Yes,0
+Case43,Q14,Yes,Yes,1
+Case43,Q14_followup,None,81439,0
+Case43,Q15,No,Yes,0
+Case43,Q16,Yes,Yes,1
+Case43,TOTAL,Correct: 12,Incorrect: 8,Accuracy: 60.00%

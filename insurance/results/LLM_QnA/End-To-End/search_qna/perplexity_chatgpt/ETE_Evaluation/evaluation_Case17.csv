@@ -1,0 +1,20 @@
+Case,Question,Predicted,Gold,Score
+Case17,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case17,Q1,Not specified,Yes,0
+Case17,Q2,Not specified,No,0
+Case17,Q3,No,No,1
+Case17,Q4,No,Yes,0
+Case17,Q5,Not required,No,0
+Case17,Q6,No,No,1
+Case17,Q7,No,No,1
+Case17,Q8,Yes,Yes,1
+Case17,Q8_followup,CMA (Chromosomal Microarray Analysis),Targeted neurodevelopmental panel,0
+Case17,Q9,Not specified,Yes,0
+Case17,Q10,No,Yes,0
+Case17,Q11,Not specified,No,0
+Case17,Q12,No,No,1
+Case17,Q13,Not specified,Yes,0
+Case17,Q14,Not listed,Yes,0
+Case17,Q15,No,No,1
+Case17,Q16,No,No,1
+Case17,TOTAL,Correct: 8,Incorrect: 10,Accuracy: 44.44%

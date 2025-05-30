@@ -1,0 +1,20 @@
+Case,question_id,Predicted,Gold,correct
+Case19,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case19,Q1,Not specified,Yes,0
+Case19,Q2,Yes,Yes,1
+Case19,Q3,No,No,1
+Case19,Q4,No,Yes,0
+Case19,Q5,Not required,No,0
+Case19,Q6,No,No,1
+Case19,Q7,No,No,1
+Case19,Q8,Yes,Yes,1
+Case19,Q8_followup,None,chromosomal microarray (CMA),0
+Case19,Q9,Not specified,Yes,0
+Case19,Q10,No,Yes,0
+Case19,Q11,Not specified,Yes,0
+Case19,Q12,No,No,1
+Case19,Q13,Not specified,Yes,0
+Case19,Q14,Not listed,Yes,0
+Case19,Q15,No,No,1
+Case19,Q16,No,No,1
+Case19,TOTAL,Correct: 9,Incorrect: 9,Accuracy: 50.00%

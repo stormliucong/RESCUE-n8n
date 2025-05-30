@@ -1,0 +1,30 @@
+{
+  "Q0": "Mitochondrial DNA panel (multi-gene targeted panel testing for mitochondrial disease).",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": "None of the above",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14a": [
+    "81440",
+    "81460",
+    "81465",
+    "0417U"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit the claim with supporting medical records documenting: (1) the clinical suspicion of mitochondrial disease, (2) that the test was ordered by or in consultation with a board-certified neurologist or medical geneticist, (3) the patient's clinical features (progressive external ophthalmoplegia, sensorineural hearing loss, exercise-induced fatigue), and (4) the specific CPT code(s) for the mitochondrial DNA panel used. Ensure the claim references the UnitedHealthcare policy for Genetic Testing for Neuromuscular Disorders and includes any required prior authorization documentation if applicable. Coverage is subject to the member's specific benefit plan and applicable state or federal mandates.",
+  "match": true
+}

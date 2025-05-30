@@ -1,0 +1,23 @@
+Case,Question,Predicted,Gold,Score
+Case47,Q0,Genetic arrhythmia panel testing (multi-gene panel for inherited arrhythmia syndromes).,Arrhythmia gene panel,0
+Case47,Q1,Yes,Yes,1
+Case47,Q2,Not specified,No,0
+Case47,Q3,No,No,1
+Case47,Q4,Yes,Yes,1
+Case47,Q4_followup,None,No,0
+Case47,Q5,Not required,Not required,1
+Case47,Q6,No,No,1
+Case47,Q7,No,No,1
+Case47,Q8,Yes,Yes,1
+Case47,Q8_followup,None,Single gene testing,0
+Case47,Q9,Yes,Yes,1
+Case47,Q9_followup,None,No,0
+Case47,Q10,No,Yes,0
+Case47,Q11,Not specified,No,0
+Case47,Q12,No,No,1
+Case47,Q13,Not specified,No,0
+Case47,Q14,Yes,Yes,1
+Case47,Q14_followup,None,81413,0
+Case47,Q15,No,No,1
+Case47,Q16,No,No,1
+Case47,TOTAL,Correct: 12,Incorrect: 9,Accuracy: 57.14%

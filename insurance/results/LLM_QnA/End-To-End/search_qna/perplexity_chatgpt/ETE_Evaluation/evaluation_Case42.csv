@@ -1,0 +1,20 @@
+Case,Question,Predicted,Gold,Score
+Case42,Q0,Mitochondrial DNA panel,Mitochondrial DNA panel (mtDNA panel),0
+Case42,Q1,Not specified,Yes,0
+Case42,Q2,Yes,Yes,1
+Case42,Q3,Not specified,Yes,0
+Case42,Q4,Not specified,Yes,0
+Case42,Q5,Not specified,Not required,0
+Case42,Q6,No,No,1
+Case42,Q7,Not specified,Yes,0
+Case42,Q8,Not specified,No,0
+Case42,Q9,Not specified,Yes,0
+Case42,Q10,No,No,1
+Case42,Q10_followup,None,Diagnostic,0
+Case42,Q11,Not specified,Yes,0
+Case42,Q12,Not specified,No,0
+Case42,Q13,Not specified,Yes,0
+Case42,Q14,Not listed,Yes,0
+Case42,Q15,No,Yes,0
+Case42,Q16,Not specified,Yes,0
+Case42,TOTAL,Correct: 3,Incorrect: 15,Accuracy: 16.67%

@@ -1,0 +1,23 @@
+{
+  "Q0": "Whole genome sequencing (WGS)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": "Yes",
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "To submit the claim, ensure documentation includes: (1) clinical notes detailing the patient's neurodevelopmental regression, prior non-diagnostic genetic/metabolic evaluations, and family history of a similarly affected sibling; (2) evidence that the test was ordered by a pediatric geneticist or neurologist; (3) documentation of genetic counseling; (4) a clear statement that WGS is being requested for diagnostic purposes after prior negative CMA and WES. Submit all documentation per UnitedHealthcare's claim submission process and confirm if prior authorization is required under the specific plan.",
+  "match": false
+}

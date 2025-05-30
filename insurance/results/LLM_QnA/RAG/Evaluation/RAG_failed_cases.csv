@@ -1,0 +1,51 @@
+case_id,retrieval_model,qna_model,error
+Case1,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case2,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case3,perplexity,perplexity,list index out of range
+Case4,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case5,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case6,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case7,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case8,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case9,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case10,perplexity,perplexity,list index out of range
+Case11,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case12,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case13,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case14,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case15,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case16,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case17,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case18,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case19,perplexity,perplexity,list index out of range
+Case20,perplexity,perplexity,list index out of range
+Case21,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case22,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case23,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case24,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case25,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case26,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case27,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case28,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case29,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case30,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case31,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case32,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case33,perplexity,perplexity,list index out of range
+Case34,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case35,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case36,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case37,perplexity,perplexity,list index out of range
+Case38,perplexity,perplexity,list index out of range
+Case39,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case40,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case41,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case42,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case43,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case44,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case45,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case46,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case47,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case48,perplexity,perplexity,cannot access local variable 'result_content' where it is not associated with a value
+Case49,perplexity,perplexity,'NoneType' object has no attribute 'lower'
+Case50,perplexity,perplexity,list index out of range

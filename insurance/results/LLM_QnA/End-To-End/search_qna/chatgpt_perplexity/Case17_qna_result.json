@@ -1,0 +1,23 @@
+{
+  "Q0": "Whole genome sequencing (WGS)",
+  "Q1": "Yes",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": "Chromosomal microarray (CMA)",
+  "Q9": "Not specified",
+  "Q10": "Yes",
+  "Q10_followup": "Other",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit prior authorization request with clinical documentation, including specialist referral, evidence of medical necessity, and results of prerequisite evaluations (e.g., CMA or targeted panel), as required by the policy.",
+  "match": false
+}

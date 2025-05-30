@@ -1,0 +1,23 @@
+{
+  "Q0": "BRCA1/2 testing",
+  "Q1": "Not specified",
+  "Q2": "Not specified",
+  "Q3": "Yes",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_follow-up": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "Yes",
+  "Q15_follow-up": "Tumor testing",
+  "Q16": "Yes",
+  "Q17": "Steps not specified",
+  "match": false
+}

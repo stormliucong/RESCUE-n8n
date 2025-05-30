@@ -1,0 +1,31 @@
+{
+  "Q0": "BRCA testing (BRCA1 and BRCA2 gene analysis)",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "Does the patient\u2019s clinical presentation match the criteria in those guidelines?": "No",
+    "Which guideline(s) apply?": "NCCN"
+  },
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "Does this patient have a relevant family history or consanguinity that aligns with the policy?": "No"
+  },
+  "Q10": "Yes",
+  "Q10_followup": [
+    "Other"
+  ],
+  "Q11": "No",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires that the test be ordered by an appropriate specialist, that the patient meet medical necessity criteria (including personal or family history of cancer), and that genetic counseling be provided. Prior authorization is required. Submit documentation of clinical indications, family history, and genetic counseling if applicable. In this case, the claim would not be approved as submitted.",
+  "match": false
+}

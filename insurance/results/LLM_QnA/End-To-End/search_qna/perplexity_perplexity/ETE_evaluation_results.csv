@@ -1,0 +1,917 @@
+Case,Question,Predicted,Gold,Score
+Case10,Q0,Whole Exome Sequencing (WES),Whole Exome Sequencing (WES),1
+Case10,Q1,Not specified,Yes,0
+Case10,Q2,Not specified,No,0
+Case10,Q3,No,No,1
+Case10,Q4,No,Yes,0
+Case10,Q5,Not required,No,0
+Case10,Q6,No,No,1
+Case10,Q7,No,No,1
+Case10,Q8,Yes,Yes,1
+Case10,Q8_followup,None,"Neurodevelopmental gene panel, chromosomal microarray (CMA)",0
+Case10,Q9,Not specified,Yes,0
+Case10,Q10,No,Yes,0
+Case10,Q11,Not specified,No,0
+Case10,Q12,No,No,1
+Case10,Q13,Not specified,Yes,0
+Case10,Q14,Not listed,Yes,0
+Case10,Q15,No,No,1
+Case10,Q16,No,No,1
+Case10,TOTAL,Correct: 8,Incorrect: 10,Accuracy: 44.44%
+Case7,Q0,Whole exome sequencing (WES),Whole Exome Sequencing (WES),1
+Case7,Q1,Not specified,Yes,0
+Case7,Q2,No,No,1
+Case7,Q3,No,No,1
+Case7,Q4,No,Yes,0
+Case7,Q5,Yes,Yes,1
+Case7,Q6,No,No,1
+Case7,Q7,No,No,1
+Case7,Q8,No,Yes,0
+Case7,Q9,Not specified,Yes,0
+Case7,Q10,Yes,Yes,1
+Case7,Q11,Not specified,Yes,0
+Case7,Q12,Not specified,No,0
+Case7,Q13,Yes,Yes,1
+Case7,Q14,Not listed,Yes,0
+Case7,Q15,No,No,1
+Case7,Q16,No,No,1
+Case7,TOTAL,Correct: 10,Incorrect: 7,Accuracy: 58.82%
+Case44,Q0,Long QT Syndrome (LQTS) gene panel testing,LQTS gene panel,0
+Case44,Q1,Not specified,Yes,0
+Case44,Q2,Yes,Yes,1
+Case44,Q3,Yes,Yes,1
+Case44,Q4,No,Yes,0
+Case44,Q5,Not required,Not required,1
+Case44,Q6,No,No,1
+Case44,Q7,Yes,Yes,1
+Case44,Q8,No,No,1
+Case44,Q9,Yes,Yes,1
+Case44,Q9_followup,None,Yes,0
+Case44,Q10,No,No,1
+Case44,Q10_followup,None,Diagnostic,0
+Case44,Q11,Not specified,Yes,0
+Case44,Q12,No,No,1
+Case44,Q13,Not specified,Yes,0
+Case44,Q14,Not listed,Yes,0
+Case44,Q15,No,Yes,0
+Case44,Q16,Yes,Yes,1
+Case44,TOTAL,Correct: 10,Incorrect: 9,Accuracy: 52.63%
+Case23,Q0,BRCA1/2 genetic testing,BRCA1/BRCA2 testing,0
+Case23,Q1,Yes,Yes,1
+Case23,Q2,Yes,Yes,1
+Case23,Q3,Yes,Yes,1
+Case23,Q4,Yes,Yes,1
+Case23,Q4_followup,None,Yes,0
+Case23,Q5,Not required,Not required,1
+Case23,Q6,No,No,1
+Case23,Q7,Yes,Yes,1
+Case23,Q8,No,No,1
+Case23,Q9,Yes,Yes,1
+Case23,Q9_followup,None,No,0
+Case23,Q10,No,No,1
+Case23,Q10_followup,None,Diagnostic,0
+Case23,Q11,Yes,Yes,1
+Case23,Q12,No,No,1
+Case23,Q13,Yes,Yes,1
+Case23,Q14,Not listed,Yes,0
+Case23,Q15,No,Yes,0
+Case23,Q16,Yes,Yes,1
+Case23,TOTAL,Correct: 14,Incorrect: 6,Accuracy: 70.00%
+Case33,Q0,BRCA genetic testing (BRCA1/BRCA2 analysis),BRCA1/BRCA2 testing,0
+Case33,Q1,Not specified,Yes,0
+Case33,Q2,No,No,1
+Case33,Q3,No,No,1
+Case33,Q4,Yes,Yes,1
+Case33,Q4_followup,No,No,1
+Case33,Q5,Not required,Not required,1
+Case33,Q6,No,No,1
+Case33,Q7,No,No,1
+Case33,Q8,No,No,1
+Case33,Q9,Yes,Yes,1
+Case33,Q9_followup,No,No,1
+Case33,Q10,Yes,Yes,1
+Case33,Q11,Not specified,No,0
+Case33,Q12,No,No,1
+Case33,Q13,Not specified,Yes,0
+Case33,Q14,Not listed,Yes,0
+Case33,Q15,No,No,1
+Case33,Q16,No,No,1
+Case33,TOTAL,Correct: 14,Incorrect: 5,Accuracy: 73.68%
+Case37,Q0,BRCA genetic testing (BRCA1 and BRCA2 gene analysis),BRCA1/BRCA2 testing,0
+Case37,Q1,Not specified,Yes,0
+Case37,Q2,No,No,1
+Case37,Q3,No,No,1
+Case37,Q4,Yes,Yes,1
+Case37,Q4_followup,None,No,0
+Case37,Q5,Not specified,Not required,0
+Case37,Q6,No,No,1
+Case37,Q7,No,No,1
+Case37,Q8,No,No,1
+Case37,Q9,Yes,Yes,1
+Case37,Q9_followup,None,No,0
+Case37,Q10,No,Yes,0
+Case37,Q11,Yes,No,0
+Case37,Q12,No,No,1
+Case37,Q13,Yes,Yes,1
+Case37,Q14,Not listed,Yes,0
+Case37,Q15,No,No,1
+Case37,Q16,No,No,1
+Case37,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case39,Q0,Long QT syndrome (LQTS) gene panel testing,LQTS gene panel,0
+Case39,Q1,Not specified,Yes,0
+Case39,Q2,Not specified,Yes,0
+Case39,Q3,Yes,Yes,1
+Case39,Q4,No,Yes,0
+Case39,Q5,Not required,Not required,1
+Case39,Q6,No,No,1
+Case39,Q7,Yes,Yes,1
+Case39,Q8,No,No,1
+Case39,Q9,Yes,Yes,1
+Case39,Q9_followup,None,Yes,0
+Case39,Q10,No,No,1
+Case39,Q10_followup,None,Diagnostic,0
+Case39,Q11,Not specified,Yes,0
+Case39,Q12,No,No,1
+Case39,Q13,Not specified,Yes,0
+Case39,Q14,Not listed,Yes,0
+Case39,Q15,No,Yes,0
+Case39,Q16,Yes,Yes,1
+Case39,TOTAL,Correct: 9,Incorrect: 10,Accuracy: 47.37%
+Case34,Q0,BRCA testing (BRCA1 and BRCA2 gene analysis),BRCA1/BRCA2 testing,0
+Case34,Q1,Not specified,Yes,0
+Case34,Q2,No,No,1
+Case34,Q3,No,No,1
+Case34,Q4,Yes,Yes,1
+Case34,Q4_followup,"{'Does the patient’s clinical presentation match the criteria in those guidelines?': 'No', 'Which guideline(s) apply?': 'NCCN'}",No,0
+Case34,Q5,No,Not required,0
+Case34,Q6,No,No,1
+Case34,Q7,No,No,1
+Case34,Q8,No,No,1
+Case34,Q9,Yes,Yes,1
+Case34,Q9_followup,{'Does this patient have a relevant family history or consanguinity that aligns with the policy?': 'No'},No,0
+Case34,Q10,Yes,Yes,1
+Case34,Q11,No,No,1
+Case34,Q12,No,No,1
+Case34,Q13,Yes,Yes,1
+Case34,Q14,Not listed,Yes,0
+Case34,Q15,No,No,1
+Case34,Q16,No,No,1
+Case34,TOTAL,Correct: 13,Incorrect: 6,Accuracy: 68.42%
+Case11,Q0,Whole Exome Sequencing (WES),Whole Exome Sequencing (WES),1
+Case11,Q1,Not specified,Yes,0
+Case11,Q2,Yes,No,0
+Case11,Q3,No,No,1
+Case11,Q4,No,Yes,0
+Case11,Q5,No,No,1
+Case11,Q6,No,No,1
+Case11,Q7,No,No,1
+Case11,Q8,Yes,Yes,1
+Case11,Q8_followup,Chromosomal microarray (CMA),Neuromuscular gene panel,0
+Case11,Q9,Yes,Yes,1
+Case11,Q9_followup,No,No,1
+Case11,Q10,No,Yes,0
+Case11,Q11,Not specified,Yes,0
+Case11,Q12,No,No,1
+Case11,Q13,Not specified,Yes,0
+Case11,Q14,Not listed,Yes,0
+Case11,Q15,No,No,1
+Case11,Q16,No,No,1
+Case11,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case14,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case14,Q1,Not specified,Yes,0
+Case14,Q2,Yes,Yes,1
+Case14,Q3,Yes,Yes,1
+Case14,Q4,No,Yes,0
+Case14,Q5,Yes,Yes,1
+Case14,Q6,No,No,1
+Case14,Q7,Yes,Yes,1
+Case14,Q8,No,No,1
+Case14,Q9,Not specified,Yes,0
+Case14,Q10,No,No,1
+Case14,Q10_followup,Diagnostic,Diagnostic,1
+Case14,Q11,Not specified,Yes,0
+Case14,Q12,Not specified,No,0
+Case14,Q13,Not specified,Yes,0
+Case14,Q14,Not listed,Yes,0
+Case14,Q15,No,No,1
+Case14,Q16,No,Yes,0
+Case14,TOTAL,Correct: 10,Incorrect: 8,Accuracy: 55.56%
+Case2,Q0,Whole Exome Sequencing (WES),Whole Exome Sequencing (WES),1
+Case2,Q1,Not specified,Yes,0
+Case2,Q2,Yes,Yes,1
+Case2,Q3,Yes,Yes,1
+Case2,Q4,No,Yes,0
+Case2,Q5,Yes,Yes,1
+Case2,Q6,No,No,1
+Case2,Q7,Yes,Yes,1
+Case2,Q8,No,Yes,0
+Case2,Q9,Yes,Yes,1
+Case2,Q9_followup,None,Yes,0
+Case2,Q10,No,No,1
+Case2,Q10_followup,None,Diagnostic,0
+Case2,Q11,Not specified,No,0
+Case2,Q12,No,No,1
+Case2,Q13,Not specified,Yes,0
+Case2,Q14,Not listed,Yes,0
+Case2,Q15,No,No,1
+Case2,Q16,Yes,No,0
+Case2,TOTAL,Correct: 10,Incorrect: 9,Accuracy: 52.63%
+Case9,Q0,Whole Exome Sequencing (WES),Whole Exome Sequencing (WES),1
+Case9,Q1,Not specified,Yes,0
+Case9,Q2,Yes,Yes,1
+Case9,Q3,No,No,1
+Case9,Q4,No,Yes,0
+Case9,Q5,No,No,1
+Case9,Q6,No,No,1
+Case9,Q7,No,No,1
+Case9,Q8,Yes,Yes,1
+Case9,Q8_followup,None,"Developmental delay gene panel, chromosomal microarray (CMA)",0
+Case9,Q9,Yes,Yes,1
+Case9,Q9_followup,None,No,0
+Case9,Q10,No,Yes,0
+Case9,Q11,Yes,No,0
+Case9,Q12,No,No,1
+Case9,Q13,Yes,Yes,1
+Case9,Q14,Not listed,Yes,0
+Case9,Q15,No,No,1
+Case9,Q16,No,No,1
+Case9,TOTAL,Correct: 12,Incorrect: 7,Accuracy: 63.16%
+Case1,Q0,Whole exome sequencing (WES),Whole Exome Sequencing (WES),1
+Case1,Q1,Not specified,Yes,0
+Case1,Q2,Not specified,Yes,0
+Case1,Q3,Not specified,Yes,0
+Case1,Q4,Not specified,Yes,0
+Case1,Q5,Not specified,Yes,0
+Case1,Q6,No,No,1
+Case1,Q7,Not specified,Yes,0
+Case1,Q8,Not specified,No,0
+Case1,Q9,Not specified,Yes,0
+Case1,Q10,No,No,1
+Case1,Q10_followup,Diagnostic,Diagnostic,1
+Case1,Q11,Not specified,Yes,0
+Case1,Q12,Not specified,No,0
+Case1,Q13,Not specified,Yes,0
+Case1,Q14,Not listed,Yes,0
+Case1,Q15,No,No,1
+Case1,Q16,Not specified,Yes,0
+Case1,TOTAL,Correct: 5,Incorrect: 13,Accuracy: 27.78%
+Case3,Q0,Whole exome sequencing (WES),Whole Exome Sequencing (WES),1
+Case3,Q1,Not specified,Yes,0
+Case3,Q2,Yes,Yes,1
+Case3,Q3,Yes,Yes,1
+Case3,Q4,No,Yes,0
+Case3,Q5,Yes,Yes,1
+Case3,Q6,No,No,1
+Case3,Q7,Yes,Yes,1
+Case3,Q8,No,No,1
+Case3,Q9,Not specified,Yes,0
+Case3,Q10,No,No,1
+Case3,Q10_followup,Diagnostic,Diagnostic,1
+Case3,Q11,Not specified,Yes,0
+Case3,Q12,Not specified,No,0
+Case3,Q13,Not specified,Yes,0
+Case3,Q14,Not listed,Yes,0
+Case3,Q15,No,No,1
+Case3,Q16,Yes,Yes,1
+Case3,TOTAL,Correct: 11,Incorrect: 7,Accuracy: 61.11%
+Case49,Q0,Cardiomyopathy gene panel testing,Cardiomyopathy gene panel,1
+Case49,Q1,Not specified,Yes,0
+Case49,Q2,No,No,1
+Case49,Q3,No,No,1
+Case49,Q4,No,Yes,0
+Case49,Q5,Not required,Not required,1
+Case49,Q6,No,No,1
+Case49,Q7,No,No,1
+Case49,Q8,No,Yes,0
+Case49,Q9,Yes,Yes,1
+Case49,Q9_followup,No,No,1
+Case49,Q10,Yes,Yes,1
+Case49,Q10_followup,Screening,Risk Assessment,0
+Case49,Q11,Not specified,No,0
+Case49,Q12,No,No,1
+Case49,Q13,Not specified,No,0
+Case49,Q14,Not listed,Yes,0
+Case49,Q15,No,No,1
+Case49,Q16,No,No,1
+Case49,TOTAL,Correct: 12,Incorrect: 7,Accuracy: 63.16%
+Case47,Q0,Genetic arrhythmia panel testing,Arrhythmia gene panel,0
+Case47,Q1,Not specified,Yes,0
+Case47,Q2,Not specified,No,0
+Case47,Q3,No,No,1
+Case47,Q4,Yes,Yes,1
+Case47,Q4_followup,None,No,0
+Case47,Q5,No,Not required,0
+Case47,Q6,No,No,1
+Case47,Q7,No,No,1
+Case47,Q8,No,Yes,0
+Case47,Q9,Yes,Yes,1
+Case47,Q9_followup,None,No,0
+Case47,Q10,No,Yes,0
+Case47,Q11,Not specified,No,0
+Case47,Q12,No,No,1
+Case47,Q13,Not specified,No,0
+Case47,Q14,Not listed,Yes,0
+Case47,Q15,No,No,1
+Case47,Q16,No,No,1
+Case47,TOTAL,Correct: 8,Incorrect: 11,Accuracy: 42.11%
+Case13,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case13,Q1,Not specified,Yes,0
+Case13,Q2,Yes,Yes,1
+Case13,Q3,Yes,Yes,1
+Case13,Q4,No,Yes,0
+Case13,Q5,Yes,Yes,1
+Case13,Q6,No,No,1
+Case13,Q7,Yes,Yes,1
+Case13,Q8,No,No,1
+Case13,Q9,Yes,Yes,1
+Case13,Q9_followup,None,Yes,0
+Case13,Q10,No,No,1
+Case13,Q10_followup,None,Diagnostic,0
+Case13,Q11,Not specified,Yes,0
+Case13,Q12,Not specified,No,0
+Case13,Q13,Not specified,Yes,0
+Case13,Q14,Not listed,Yes,0
+Case13,Q15,No,No,1
+Case13,Q16,Yes,Yes,1
+Case13,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case32,Q0,BRCA1 and BRCA2 genetic testing,BRCA1/BRCA2 testing,0
+Case32,Q1,Yes,Yes,1
+Case32,Q2,Yes,Yes,1
+Case32,Q3,Yes,Yes,1
+Case32,Q4,Yes,Yes,1
+Case32,Q4_followup,"{'Does the patient’s clinical presentation match the criteria in those guidelines?': 'Yes', 'Which guideline(s) apply?': 'NCCN'}",Yes,0
+Case32,Q5,Not required,Not required,1
+Case32,Q6,No,No,1
+Case32,Q7,Yes,Yes,1
+Case32,Q8,No,No,1
+Case32,Q9,Yes,Yes,1
+Case32,Q9_followup,{'Does this patient have a relevant family history or consanguinity that aligns with the policy?': 'Yes'},Yes,0
+Case32,Q10,No,No,1
+Case32,Q10_followup,"Risk Assessment, Predictive",Risk Assessment,1
+Case32,Q11,Yes,Yes,1
+Case32,Q12,No,No,1
+Case32,Q13,Yes,Yes,1
+Case32,Q14,Not listed,Yes,0
+Case32,Q15,No,No,1
+Case32,Q16,Yes,Yes,1
+Case32,TOTAL,Correct: 16,Incorrect: 4,Accuracy: 80.00%
+Case43,Q0,Cardiomyopathy gene panel,cardiomyopathy gene panel,1
+Case43,Q1,Not specified,Yes,0
+Case43,Q2,Yes,Yes,1
+Case43,Q3,Yes,Yes,1
+Case43,Q4,No,Yes,0
+Case43,Q5,Not required,Not required,1
+Case43,Q6,No,No,1
+Case43,Q7,Yes,Yes,1
+Case43,Q8,No,No,1
+Case43,Q9,Yes,Yes,1
+Case43,Q9_followup,None,Yes,0
+Case43,Q10,No,No,1
+Case43,Q10_followup,None,Diagnostic,0
+Case43,Q11,Not specified,Yes,0
+Case43,Q12,No,No,1
+Case43,Q13,Not specified,Yes,0
+Case43,Q14,Not listed,Yes,0
+Case43,Q15,No,Yes,0
+Case43,Q16,Yes,Yes,1
+Case43,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case19,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case19,Q1,Not specified,Yes,0
+Case19,Q2,Yes,Yes,1
+Case19,Q3,No,No,1
+Case19,Q4,No,Yes,0
+Case19,Q5,No,No,1
+Case19,Q6,No,No,1
+Case19,Q7,No,No,1
+Case19,Q8,Yes,Yes,1
+Case19,Q8_followup,Chromosomal microarray (CMA) or whole exome sequencing (WES),chromosomal microarray (CMA),0
+Case19,Q9,Not specified,Yes,0
+Case19,Q10,No,Yes,0
+Case19,Q11,Not specified,Yes,0
+Case19,Q12,No,No,1
+Case19,Q13,Not specified,Yes,0
+Case19,Q14,Not listed,Yes,0
+Case19,Q15,No,No,1
+Case19,Q16,No,No,1
+Case19,TOTAL,Correct: 10,Incorrect: 8,Accuracy: 55.56%
+Case4,Q0,Whole exome sequencing (WES),Whole Exome Sequencing (WES),1
+Case4,Q1,Not specified,Yes,0
+Case4,Q2,Yes,Yes,1
+Case4,Q3,Yes,Yes,1
+Case4,Q4,No,Yes,0
+Case4,Q5,Yes,Yes,1
+Case4,Q6,No,No,1
+Case4,Q7,Yes,Yes,1
+Case4,Q8,No,Yes,0
+Case4,Q9,Not specified,Yes,0
+Case4,Q10,No,No,1
+Case4,Q10_followup,Diagnostic,Diagnostic,1
+Case4,Q11,Not specified,Yes,0
+Case4,Q12,Not specified,No,0
+Case4,Q13,Not specified,Yes,0
+Case4,Q14,Not listed,Yes,0
+Case4,Q15,No,No,1
+Case4,Q16,Not specified,No,0
+Case4,TOTAL,Correct: 9,Incorrect: 9,Accuracy: 50.00%
+Case20,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case20,Q1,Not specified,Yes,0
+Case20,Q2,Yes,No,0
+Case20,Q3,No,No,1
+Case20,Q4,No,Yes,0
+Case20,Q5,No,No,1
+Case20,Q6,No,No,1
+Case20,Q7,No,No,1
+Case20,Q8,Yes,Yes,1
+Case20,Q8_followup,None,"chromosomal microarray (CMA), Fragile X testing",0
+Case20,Q9,Yes,Yes,1
+Case20,Q9_followup,None,No,0
+Case20,Q10,No,Yes,0
+Case20,Q11,Not specified,No,0
+Case20,Q12,No,No,1
+Case20,Q13,Yes,Yes,1
+Case20,Q14,Not listed,Yes,0
+Case20,Q15,No,No,1
+Case20,Q16,No,No,1
+Case20,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case5,Q0,Whole Exome Sequencing (WES),Whole Exome Sequencing (WES),1
+Case5,Q1,Not specified,Yes,0
+Case5,Q2,Yes,Yes,1
+Case5,Q3,Yes,Yes,1
+Case5,Q4,No,Yes,0
+Case5,Q5,Yes,Yes,1
+Case5,Q6,No,No,1
+Case5,Q7,Yes,Yes,1
+Case5,Q8,No,No,1
+Case5,Q9,Yes,Yes,1
+Case5,Q9_followup,None,Yes,0
+Case5,Q10,No,No,1
+Case5,Q10_followup,None,Diagnostic,0
+Case5,Q11,Not specified,No,0
+Case5,Q12,Not specified,No,0
+Case5,Q13,Not specified,Yes,0
+Case5,Q14,Not listed,Yes,0
+Case5,Q15,No,No,1
+Case5,Q16,Yes,Yes,1
+Case5,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case38,Q0,BRCA genetic testing,BRCA1/BRCA2 testing,0
+Case38,Q1,Not specified,Yes,0
+Case38,Q2,Not specified,No,0
+Case38,Q3,No,No,1
+Case38,Q4,Yes,Yes,1
+Case38,Q4_followup,None,No,0
+Case38,Q5,Not required,Not required,1
+Case38,Q6,No,No,1
+Case38,Q7,No,No,1
+Case38,Q8,No,No,1
+Case38,Q9,Yes,Yes,1
+Case38,Q9_followup,None,No,0
+Case38,Q10,Yes,Yes,1
+Case38,Q11,Not specified,No,0
+Case38,Q12,No,No,1
+Case38,Q13,Not specified,Yes,0
+Case38,Q14,Not listed,Yes,0
+Case38,Q15,No,No,1
+Case38,Q16,No,No,1
+Case38,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case22,Q0,BRCA1/BRCA2 testing,BRCA1/BRCA2 testing,1
+Case22,Q1,Not specified,Yes,0
+Case22,Q2,Not specified,Yes,0
+Case22,Q3,No,No,1
+Case22,Q4,Yes,Yes,1
+Case22,Q4_followup,None,No,0
+Case22,Q5,Not required,Not required,1
+Case22,Q6,No,No,1
+Case22,Q7,No,No,1
+Case22,Q8,No,No,1
+Case22,Q9,Yes,Yes,1
+Case22,Q9_followup,None,No,0
+Case22,Q10,No,Yes,0
+Case22,Q11,Not specified,Yes,0
+Case22,Q12,No,No,1
+Case22,Q13,Not specified,Yes,0
+Case22,Q14,Not listed,Yes,0
+Case22,Q15,No,No,1
+Case22,Q16,No,No,1
+Case22,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case30,Q0,BRCA genetic testing,BRCA1/BRCA2 testing,0
+Case30,Q1,No,Yes,0
+Case30,Q2,Not specified,No,0
+Case30,Q3,No,No,1
+Case30,Q4,No,Yes,0
+Case30,Q5,Not required,Not required,1
+Case30,Q6,No,No,1
+Case30,Q7,No,No,1
+Case30,Q8,No,No,1
+Case30,Q9,Yes,Yes,1
+Case30,Q9_followup,None,No,0
+Case30,Q10,No,Yes,0
+Case30,Q11,Not specified,No,0
+Case30,Q12,No,No,1
+Case30,Q13,Not specified,Yes,0
+Case30,Q14,Not listed,Yes,0
+Case30,Q15,No,No,1
+Case30,Q16,No,No,1
+Case30,TOTAL,Correct: 9,Incorrect: 9,Accuracy: 50.00%
+Case15,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case15,Q1,Not specified,Yes,0
+Case15,Q2,Yes,Yes,1
+Case15,Q3,Yes,Yes,1
+Case15,Q4,No,Yes,0
+Case15,Q5,Yes,Yes,1
+Case15,Q6,No,No,1
+Case15,Q7,Yes,Yes,1
+Case15,Q8,No,No,1
+Case15,Q9,Not specified,Yes,0
+Case15,Q10,No,No,1
+Case15,Q10_followup,Diagnostic,Diagnostic,1
+Case15,Q11,Not specified,Yes,0
+Case15,Q12,No,No,1
+Case15,Q13,Yes,Yes,1
+Case15,Q14,Not listed,Yes,0
+Case15,Q15,No,No,1
+Case15,Q16,Yes,Yes,1
+Case15,TOTAL,Correct: 13,Incorrect: 5,Accuracy: 72.22%
+Case31,Q0,BRCA1/2 genetic testing,BRCA1/BRCA2 testing,0
+Case31,Q1,Yes,Yes,1
+Case31,Q2,Not specified,Yes,0
+Case31,Q3,Yes,Yes,1
+Case31,Q4,Yes,Yes,1
+Case31,Q4_followup,None,Yes,0
+Case31,Q5,Not required,Not required,1
+Case31,Q6,No,No,1
+Case31,Q7,Yes,Yes,1
+Case31,Q8,No,No,1
+Case31,Q9,Yes,Yes,1
+Case31,Q9_followup,None,Yes,0
+Case31,Q10,No,No,1
+Case31,Q10_followup,None,Diagnostic,0
+Case31,Q11,Not specified,Yes,0
+Case31,Q12,No,No,1
+Case31,Q13,Not specified,Yes,0
+Case31,Q14,Not listed,Yes,0
+Case31,Q15,No,No,1
+Case31,Q16,Yes,Yes,1
+Case31,TOTAL,Correct: 12,Incorrect: 8,Accuracy: 60.00%
+Case46,Q0,Mitochondrial DNA sequencing,Mitochondrial DNA panel (mtDNA panel),0
+Case46,Q1,Not specified,Yes,0
+Case46,Q2,Yes,Yes,1
+Case46,Q3,Yes,Yes,1
+Case46,Q4,No,Yes,0
+Case46,Q5,Not required,Yes,0
+Case46,Q6,No,No,1
+Case46,Q7,Yes,Yes,1
+Case46,Q8,No,No,1
+Case46,Q9,Yes,Yes,1
+Case46,Q9_followup,None,Yes,0
+Case46,Q10,No,No,1
+Case46,Q10_followup,None,Diagnostic,0
+Case46,Q11,Not specified,Yes,0
+Case46,Q12,No,No,1
+Case46,Q13,Yes,Yes,1
+Case46,Q14,Not listed,Yes,0
+Case46,Q15,No,No,1
+Case46,Q16,Yes,Yes,1
+Case46,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case12,Q0,Whole Exome Sequencing (WES),Whole Exome Sequencing (WES),1
+Case12,Q1,Not specified,Yes,0
+Case12,Q2,Yes,No,0
+Case12,Q3,No,No,1
+Case12,Q4,Yes,Yes,1
+Case12,Q4_followup,None,No,0
+Case12,Q5,No,No,1
+Case12,Q6,No,No,1
+Case12,Q7,No,No,1
+Case12,Q8,Yes,Yes,1
+Case12,Q8_followup,None,Inherited retinal disorder gene panel,0
+Case12,Q9,Yes,Yes,1
+Case12,Q9_followup,None,No,0
+Case12,Q10,No,Yes,0
+Case12,Q11,Not specified,No,0
+Case12,Q12,No,No,1
+Case12,Q13,Yes,Yes,1
+Case12,Q14,Not listed,Yes,0
+Case12,Q15,No,No,1
+Case12,Q16,No,No,1
+Case12,TOTAL,Correct: 12,Incorrect: 8,Accuracy: 60.00%
+Case6,Q0,Whole Exome Sequencing (WES),Whole Exome Sequencing (WES),1
+Case6,Q1,Not specified,Yes,0
+Case6,Q2,Yes,Yes,1
+Case6,Q3,Yes,Yes,1
+Case6,Q4,No,Yes,0
+Case6,Q5,Yes,Yes,1
+Case6,Q6,No,No,1
+Case6,Q7,Yes,Yes,1
+Case6,Q8,No,No,1
+Case6,Q9,Not specified,Yes,0
+Case6,Q10,No,No,1
+Case6,Q10_followup,Diagnostic,Diagnostic,1
+Case6,Q11,Not specified,No,0
+Case6,Q12,Not specified,No,0
+Case6,Q13,Yes,Yes,1
+Case6,Q14,Not listed,Yes,0
+Case6,Q15,No,No,1
+Case6,Q16,Yes,Yes,1
+Case6,TOTAL,Correct: 12,Incorrect: 6,Accuracy: 66.67%
+Case21,Q0,BRCA1/BRCA2 genetic testing,BRCA1/BRCA2 testing,0
+Case21,Q1,Yes,Yes,1
+Case21,Q2,Not specified,Yes,0
+Case21,Q3,Yes,Yes,1
+Case21,Q4,Yes,Yes,1
+Case21,Q4_followup,None,Yes,0
+Case21,Q5,Not required,Not required,1
+Case21,Q6,No,No,1
+Case21,Q7,Yes,Yes,1
+Case21,Q8,No,No,1
+Case21,Q9,Yes,Yes,1
+Case21,Q9_followup,None,Yes,0
+Case21,Q10,No,No,1
+Case21,Q10_followup,None,Risk Assessment,0
+Case21,Q11,Yes,Yes,1
+Case21,Q12,Not specified,No,0
+Case21,Q13,Not specified,Yes,0
+Case21,Q14,Not listed,Yes,0
+Case21,Q15,No,No,1
+Case21,Q16,Yes,Yes,1
+Case21,TOTAL,Correct: 12,Incorrect: 8,Accuracy: 60.00%
+Case26,Q0,BRCA genetic testing,BRCA1/BRCA2 testing,0
+Case26,Q1,Yes,Yes,1
+Case26,Q2,Not specified,Yes,0
+Case26,Q3,Yes,Yes,1
+Case26,Q4,Yes,Yes,1
+Case26,Q4_followup,None,Yes,0
+Case26,Q5,Not required,Not required,1
+Case26,Q6,No,No,1
+Case26,Q7,Yes,Yes,1
+Case26,Q8,No,No,1
+Case26,Q9,Yes,Yes,1
+Case26,Q9_followup,None,Yes,0
+Case26,Q10,No,No,1
+Case26,Q10_followup,None,Risk Assessment,0
+Case26,Q11,Yes,Yes,1
+Case26,Q12,Not specified,No,0
+Case26,Q13,Not specified,Yes,0
+Case26,Q14,Not listed,Yes,0
+Case26,Q15,Yes,No,0
+Case26,Q16,Yes,Yes,1
+Case26,TOTAL,Correct: 11,Incorrect: 9,Accuracy: 55.00%
+Case28,Q0,BRCA1 and BRCA2 genetic testing,BRCA1/BRCA2 testing,0
+Case28,Q1,Yes,Yes,1
+Case28,Q2,Not specified,Yes,0
+Case28,Q3,No,No,1
+Case28,Q4,Yes,Yes,1
+Case28,Q4_followup,None,No,0
+Case28,Q5,Not required,Not required,1
+Case28,Q6,No,No,1
+Case28,Q7,No,No,1
+Case28,Q8,No,No,1
+Case28,Q9,Yes,Yes,1
+Case28,Q9_followup,None,No,0
+Case28,Q10,No,Yes,0
+Case28,Q11,Not specified,Yes,0
+Case28,Q12,No,No,1
+Case28,Q13,Not specified,Yes,0
+Case28,Q14,Not listed,Yes,0
+Case28,Q15,No,No,1
+Case28,Q16,No,No,1
+Case28,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case24,Q0,BRCA1/BRCA2 genetic testing,BRCA1/BRCA2 testing,0
+Case24,Q1,Not specified,Yes,0
+Case24,Q2,Not specified,Yes,0
+Case24,Q3,Yes,Yes,1
+Case24,Q4,Yes,Yes,1
+Case24,Q4_followup,None,Yes,0
+Case24,Q5,Not required,Not required,1
+Case24,Q6,No,No,1
+Case24,Q7,Yes,Yes,1
+Case24,Q8,No,No,1
+Case24,Q9,Yes,Yes,1
+Case24,Q9_followup,None,Yes,0
+Case24,Q10,No,No,1
+Case24,Q10_followup,None,Diagnostic,0
+Case24,Q11,Not specified,Yes,0
+Case24,Q12,No,No,1
+Case24,Q13,Not specified,Yes,0
+Case24,Q14,Not listed,Yes,0
+Case24,Q15,No,Yes,0
+Case24,Q16,Yes,Yes,1
+Case24,TOTAL,Correct: 10,Incorrect: 10,Accuracy: 50.00%
+Case8,Q0,Whole exome sequencing (WES),Whole Exome Sequencing (WES),1
+Case8,Q1,Not specified,Yes,0
+Case8,Q2,Yes,Yes,1
+Case8,Q3,No,No,1
+Case8,Q4,No,Yes,0
+Case8,Q5,Not specified,No,0
+Case8,Q6,No,No,1
+Case8,Q7,No,No,1
+Case8,Q8,Yes,Yes,1
+Case8,Q8_followup,Targeted gene panel or chromosomal microarray (CMA),Neurodevelopmental gene panel,0
+Case8,Q9,Not specified,Yes,0
+Case8,Q10,No,Yes,0
+Case8,Q11,Not specified,No,0
+Case8,Q12,Not specified,No,0
+Case8,Q13,Not specified,Yes,0
+Case8,Q14,Not listed,Yes,0
+Case8,Q15,No,No,1
+Case8,Q16,No,No,1
+Case8,TOTAL,Correct: 8,Incorrect: 10,Accuracy: 44.44%
+Case41,Q0,Limb-girdle muscular dystrophy genetic panel,limb-girdle muscular dystrophy (LGMD) gene panel,1
+Case41,Q1,Not specified,Yes,0
+Case41,Q2,Yes,Yes,1
+Case41,Q3,Yes,Yes,1
+Case41,Q4,No,Yes,0
+Case41,Q5,Not specified,Not required,0
+Case41,Q6,No,No,1
+Case41,Q7,Yes,Yes,1
+Case41,Q8,No,No,1
+Case41,Q9,Not specified,Yes,0
+Case41,Q10,No,No,1
+Case41,Q10_followup,Diagnostic,Diagnostic,1
+Case41,Q11,Not specified,Yes,0
+Case41,Q12,Not specified,No,0
+Case41,Q13,Not specified,Yes,0
+Case41,Q14,Not listed,Yes,0
+Case41,Q15,No,Yes,0
+Case41,Q16,Not specified,Yes,0
+Case41,TOTAL,Correct: 8,Incorrect: 10,Accuracy: 44.44%
+Case40,Q0,Multi-gene panel test for inherited cardiomyopathy,"cardiomyopathy gene panel, Dilated Cardiomyopathy (DCM) gene panel",0
+Case40,Q1,Not specified,Yes,0
+Case40,Q2,Not specified,Yes,0
+Case40,Q3,Yes,Yes,1
+Case40,Q4,No,Yes,0
+Case40,Q5,Not required,Not required,1
+Case40,Q6,No,No,1
+Case40,Q7,Yes,Yes,1
+Case40,Q8,No,No,1
+Case40,Q9,Yes,Yes,1
+Case40,Q9_followup,None,Yes,0
+Case40,Q10,No,No,1
+Case40,Q10_followup,None,Diagnostic,0
+Case40,Q11,Not specified,Yes,0
+Case40,Q12,No,No,1
+Case40,Q13,Not specified,Yes,0
+Case40,Q14,Not listed,Yes,0
+Case40,Q15,No,Yes,0
+Case40,Q16,Yes,Yes,1
+Case40,TOTAL,Correct: 9,Incorrect: 10,Accuracy: 47.37%
+Case50,Q0,Neuromuscular gene panel testing,Neuromuscular gene panel,1
+Case50,Q1,Not specified,Yes,0
+Case50,Q2,No,No,1
+Case50,Q3,No,No,1
+Case50,Q4,No,Yes,0
+Case50,Q5,No,No,1
+Case50,Q6,No,No,1
+Case50,Q7,No,No,1
+Case50,Q8,Yes,Yes,1
+Case50,Q8_followup,None,CK test,0
+Case50,Q9,Yes,Yes,1
+Case50,Q9_followup,None,No,0
+Case50,Q10,Yes,Yes,1
+Case50,Q10_followup,None,Risk Assessment,0
+Case50,Q11,Not specified,No,0
+Case50,Q12,No,No,1
+Case50,Q13,Not specified,No,0
+Case50,Q14,Not listed,Yes,0
+Case50,Q15,No,No,1
+Case50,Q16,No,No,1
+Case50,TOTAL,Correct: 12,Incorrect: 8,Accuracy: 60.00%
+Case36,Q0,BRCA1/BRCA2 genetic testing,BRCA1/BRCA2 testing,0
+Case36,Q1,Not specified,Yes,0
+Case36,Q2,Not specified,Yes,0
+Case36,Q3,Yes,Yes,1
+Case36,Q4,Yes,Yes,1
+Case36,Q4_followup,None,Yes,0
+Case36,Q5,Not required,Not required,1
+Case36,Q6,No,No,1
+Case36,Q7,Yes,Yes,1
+Case36,Q8,No,No,1
+Case36,Q9,Not specified,Yes,0
+Case36,Q10,No,No,1
+Case36,Q10_followup,None,Diagnostic,0
+Case36,Q11,Not specified,Yes,0
+Case36,Q12,No,No,1
+Case36,Q13,Not specified,Yes,0
+Case36,Q14,Not listed,Yes,0
+Case36,Q15,No,No,1
+Case36,Q16,Yes,Yes,1
+Case36,TOTAL,Correct: 10,Incorrect: 9,Accuracy: 52.63%
+Case35,Q0,BRCA1/2 and PALB2 genetic testing,BRCA1/BRCA2 testing and PALB2 testing,0
+Case35,Q1,Yes,Yes,1
+Case35,Q2,Yes,Yes,1
+Case35,Q3,Yes,Yes,1
+Case35,Q4,Yes,Yes,1
+Case35,Q4_followup,None,Yes,0
+Case35,Q5,Not required,Not required,1
+Case35,Q6,No,No,1
+Case35,Q7,Yes,Yes,1
+Case35,Q8,No,No,1
+Case35,Q9,Yes,Yes,1
+Case35,Q9_followup,None,Yes,0
+Case35,Q10,No,No,1
+Case35,Q10_followup,None,Diagnostic,0
+Case35,Q11,Not specified,Yes,0
+Case35,Q12,No,No,1
+Case35,Q13,Yes,Yes,1
+Case35,Q14,Not listed,Yes,0
+Case35,Q15,No,No,1
+Case35,Q16,Yes,Yes,1
+Case35,TOTAL,Correct: 14,Incorrect: 6,Accuracy: 70.00%
+Case48,Q0,Neuromuscular gene panel testing,Neuromuscular gene panel,1
+Case48,Q1,Not specified,Yes,0
+Case48,Q2,No,No,1
+Case48,Q3,No,No,1
+Case48,Q4,No,Yes,0
+Case48,Q5,No,No,1
+Case48,Q6,No,No,1
+Case48,Q7,No,No,1
+Case48,Q8,Yes,Yes,1
+Case48,Q8_followup,None,CK test before panel,0
+Case48,Q9,Yes,Yes,1
+Case48,Q9_followup,None,No,0
+Case48,Q10,No,Yes,0
+Case48,Q11,Not specified,No,0
+Case48,Q12,No,No,1
+Case48,Q13,Not specified,No,0
+Case48,Q14,Not listed,Yes,0
+Case48,Q15,No,No,1
+Case48,Q16,No,No,1
+Case48,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case45,Q0,DMD gene (Duchenne muscular dystrophy) genetic testing,DMD gene panel,0
+Case45,Q1,Yes,Yes,1
+Case45,Q2,Yes,Yes,1
+Case45,Q3,Yes,Yes,1
+Case45,Q4,No,Yes,0
+Case45,Q5,Not required,Not required,1
+Case45,Q6,No,No,1
+Case45,Q7,Yes,Yes,1
+Case45,Q8,No,No,1
+Case45,Q9,Yes,Yes,1
+Case45,Q9_followup,Yes,Yes,1
+Case45,Q10,No,No,1
+Case45,Q10_followup,Diagnostic,Diagnostic,1
+Case45,Q11,Not specified,Yes,0
+Case45,Q12,No,No,1
+Case45,Q13,Not specified,Yes,0
+Case45,Q14,Not listed,Yes,0
+Case45,Q15,No,Yes,0
+Case45,Q16,Yes,Yes,1
+Case45,TOTAL,Correct: 13,Incorrect: 6,Accuracy: 68.42%
+Case27,Q0,BRCA1/2 genetic testing,BRCA1/BRCA2 testing,0
+Case27,Q1,No,No,1
+Case27,Q2,Not specified,Yes,0
+Case27,Q3,No,No,1
+Case27,Q4,Yes,Yes,1
+Case27,Q4_followup,None,No,0
+Case27,Q5,Not required,Not required,1
+Case27,Q6,No,No,1
+Case27,Q7,No,Yes,0
+Case27,Q8,No,No,1
+Case27,Q9,Yes,Yes,1
+Case27,Q9_followup,None,No,0
+Case27,Q10,No,No,1
+Case27,Q10_followup,None,Diagnostic,0
+Case27,Q11,Not specified,Yes,0
+Case27,Q12,No,No,1
+Case27,Q13,Not specified,Yes,0
+Case27,Q14,Not listed,Yes,0
+Case27,Q15,No,No,1
+Case27,Q16,No,No,1
+Case27,TOTAL,Correct: 11,Incorrect: 9,Accuracy: 55.00%
+Case18,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case18,Q1,Not specified,Yes,0
+Case18,Q2,No,No,1
+Case18,Q3,No,No,1
+Case18,Q4,No,Yes,0
+Case18,Q5,No,No,1
+Case18,Q6,No,No,1
+Case18,Q7,No,No,1
+Case18,Q8,Yes,Yes,1
+Case18,Q8_followup,None,chromosomal microarray (CMA),0
+Case18,Q9,Yes,Yes,1
+Case18,Q9_followup,None,No,0
+Case18,Q10,No,Yes,0
+Case18,Q11,Not specified,No,0
+Case18,Q12,No,No,1
+Case18,Q13,Not specified,Yes,0
+Case18,Q14,Not listed,Yes,0
+Case18,Q15,No,No,1
+Case18,Q16,No,No,1
+Case18,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%
+Case16,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case16,Q1,Not specified,Yes,0
+Case16,Q2,Yes,Yes,1
+Case16,Q3,Not specified,Yes,0
+Case16,Q4,Not specified,Yes,0
+Case16,Q5,Yes,Yes,1
+Case16,Q6,No,No,1
+Case16,Q7,Not specified,Yes,0
+Case16,Q8,No,No,1
+Case16,Q9,Not specified,Yes,0
+Case16,Q10,No,No,1
+Case16,Q10_followup,Diagnostic,Diagnostic,1
+Case16,Q11,Not specified,Yes,0
+Case16,Q12,Not specified,No,0
+Case16,Q13,Not specified,Yes,0
+Case16,Q14,Not listed,Yes,0
+Case16,Q15,No,No,1
+Case16,Q16,Not specified,Yes,0
+Case16,TOTAL,Correct: 8,Incorrect: 10,Accuracy: 44.44%

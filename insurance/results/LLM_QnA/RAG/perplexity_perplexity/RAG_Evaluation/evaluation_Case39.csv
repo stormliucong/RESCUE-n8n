@@ -1,0 +1,22 @@
+Case,Question,Predicted,Gold,Score
+Case39,Q0,Long QT syndrome (LQTS) gene panel testing,LQTS gene panel,0
+Case39,Q1,Yes,Yes,1
+Case39,Q2,Yes,Yes,1
+Case39,Q3,Yes,Yes,1
+Case39,Q4,No,Yes,0
+Case39,Q5,Not required,Not required,1
+Case39,Q6,No,No,1
+Case39,Q7,Yes,Yes,1
+Case39,Q8,No,No,1
+Case39,Q9,Yes,Yes,1
+Case39,Q9_followup,Yes,Yes,1
+Case39,Q10,No,No,1
+Case39,Q10_followup,Diagnostic,Diagnostic,1
+Case39,Q11,Yes,Yes,1
+Case39,Q12,No,No,1
+Case39,Q13,Not specified,Yes,0
+Case39,Q14,Yes,Yes,1
+Case39,Q14_followup,"81413, 81414, 81403, 81404, 81405, 81406, 81407, 81408, 81479, S3861, 0237U",81413,1
+Case39,Q15,No,Yes,0
+Case39,Q16,Yes,Yes,1
+Case39,TOTAL,Correct: 16,Incorrect: 4,Accuracy: 80.00%

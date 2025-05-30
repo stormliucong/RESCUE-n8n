@@ -1,0 +1,23 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_alternative_test": "Single gene testing or smaller panel",
+  "Q9": "No",
+  "Q10": "Yes",
+  "Q10_purpose": "Screening",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires that the patient be evaluated by a clinician with expertise in clinical genetics and that genetic counseling be provided. Additionally, there must be a potential for a change in management and clinical outcome for the individual being tested. The test should not be for screening purposes, and prior genetic testing should be non-diagnostic with a strong clinical suspicion of genetic etiology. The claim should include documentation of these criteria being met.",
+  "match": false
+}

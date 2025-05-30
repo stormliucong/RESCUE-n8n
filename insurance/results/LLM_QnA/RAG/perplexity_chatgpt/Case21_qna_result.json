@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA1/BRCA2 testing",
+  "Q1": "Yes",
+  "Q2": "Not specified",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "match_criteria": "Yes",
+    "guidelines": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "relevant_family_history": "Yes"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Risk Assessment"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81162"
+  },
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The policy requires the completion of an Aetna Breast and Ovarian Cancer Susceptibility Gene Testing Prior Authorization Form, which must be submitted along with the Laboratory's Test Requisition Form to Aetna for precertification. Documentation of specific cancer diagnosis in the proband(s) and pertinent medical records may be required prior to authorization. A summary indicating how this testing will change the immediate medical care of the member must also be included with the Prior Authorization request.",
+  "match": true
+}

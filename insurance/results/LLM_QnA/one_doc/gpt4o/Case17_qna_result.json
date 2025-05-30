@@ -1,0 +1,34 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No"
+    }
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "Single gene test or targeted panel"
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "Yes",
+  "Q10_followup": [
+    "Screening"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit the prior authorization request, provide clinical documentation meeting policy criteria, and follow insurer's claim submission procedures."
+}

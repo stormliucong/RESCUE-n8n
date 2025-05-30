@@ -1,0 +1,23 @@
+{
+  "Q0": "Cardiomyopathy gene panel testing",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": "No",
+  "Q10": "Yes",
+  "Q10_followup": "Screening",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires that genetic testing be ordered by an appropriate specialist and meet medical necessity criteria, including relevant personal or family history and clinical indications. For claim submission, ensure the ordering provider is a qualified specialist, document medical necessity, and include all required clinical documentation as outlined in the policy.",
+  "match": false
+}

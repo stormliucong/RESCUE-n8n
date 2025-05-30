@@ -1,0 +1,37 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "ACMG"
+      ]
+    }
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "No",
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "81425"
+  ],
+  "Q15": "Yes",
+  "Q15_followup": [
+    "Patient meets criteria for a suspected genetic disorder with unexplained congenital anomalies"
+  ],
+  "Q16": "Yes",
+  "Q17": "Submit a prior authorization request including documentation of clinical necessity, specialist evaluation, and completed prerequisite genetic testing. Ensure all medical records and previous test results are included to support the claim."
+}

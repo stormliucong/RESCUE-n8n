@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA1/2 Targeted Variant Analysis - Ashkenazi Jewish Founder Variants",
+  "Q1": "Yes",
+  "Q2": "Not specified",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "match": "Yes",
+    "guideline": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "relevant_family_history": "No"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Risk Assessment"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "No",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81212"
+  },
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The policy does not specify detailed steps for claim submission. It is recommended to follow standard claim submission procedures as outlined by UnitedHealthcare Choice Plus, ensuring all necessary documentation and test results are included.",
+  "match": false
+}

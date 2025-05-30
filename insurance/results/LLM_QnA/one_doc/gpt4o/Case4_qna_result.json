@@ -1,0 +1,42 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "ACMG"
+      ]
+    }
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "81415",
+    "81416",
+    "81417",
+    "81425",
+    "81426",
+    "81427"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Under the policy, a claim for Whole Exome Sequencing (WES) should include documentation demonstrating that the patient meets the medical necessity criteria, including being evaluated by a clinician with expertise in clinical genetics, potential impact on clinical management, and prior non-diagnostic genetic testing. Additionally, if prior authorization is required, ensure that it is obtained. The appropriate CPT codes, such as 81415, 81416, 81417, 81425, 81426, 81427, should be used according to the test performed."
+}

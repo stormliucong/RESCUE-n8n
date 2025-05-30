@@ -1,0 +1,19 @@
+Case,question_id,Predicted,Gold,correct
+Case31,Q0,,BRCA1/BRCA2 testing,0
+Case31,Q1,,Yes,0
+Case31,Q2,,Yes,0
+Case31,Q3,,Yes,0
+Case31,Q4,,Yes,0
+Case31,Q5,,Not required,0
+Case31,Q6,,No,0
+Case31,Q7,,Yes,0
+Case31,Q8,,No,0
+Case31,Q9,,Yes,0
+Case31,Q10,,No,0
+Case31,Q11,,Yes,0
+Case31,Q12,,No,0
+Case31,Q13,,Yes,0
+Case31,Q14,,Yes,0
+Case31,Q15,,No,0
+Case31,Q16,,Yes,0
+Case31,TOTAL,Correct: 0,Incorrect: 17,Accuracy: 0.00%

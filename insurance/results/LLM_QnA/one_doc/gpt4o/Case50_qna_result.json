@@ -1,0 +1,35 @@
+{
+  "Q0": "neuromuscular gene panel testing",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": []
+    }
+  ],
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "Single gene or smaller panel genetic test"
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "Yes",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The specific steps to submit the claim are not detailed in the policy. Review the requirements based on the patient's plan."
+}

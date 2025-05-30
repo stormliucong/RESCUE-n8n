@@ -1,0 +1,21 @@
+Case,question_id,Predicted,Gold,correct
+Case25,Q0,The genetic test is not specifically named in the query. The policy covers various molecular oncology tests for solid tumors.,BRCA1/BRCA2 testing,0
+Case25,Q1,Not specified,Yes,0
+Case25,Q2,Not specified,Yes,0
+Case25,Q3,No,Yes,0
+Case25,Q4,Yes,Yes,1
+Case25,Q4_followup,None,Yes,0
+Case25,Q5,Not required,Not required,1
+Case25,Q6,No,No,1
+Case25,Q7,No,Yes,0
+Case25,Q8,No,No,1
+Case25,Q9,No,Yes,0
+Case25,Q10,No,No,1
+Case25,Q10_followup,None,Diagnostic,0
+Case25,Q11,Not specified,Yes,0
+Case25,Q12,No,No,1
+Case25,Q13,Not specified,Yes,0
+Case25,Q14,Not listed,Yes,0
+Case25,Q15,Yes,Yes,1
+Case25,Q16,No,Yes,0
+Case25,TOTAL,Correct: 7,Incorrect: 12,Accuracy: 36.84%

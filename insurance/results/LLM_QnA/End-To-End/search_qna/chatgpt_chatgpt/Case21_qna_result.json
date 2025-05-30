@@ -1,0 +1,28 @@
+{
+  "Q0": "BRCA1/BRCA2 genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "Yes",
+  "Q10": "No",
+  "Q10a": "Risk Assessment",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14a": "81211",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Precertification is required for BRCA testing. The provider should submit a precertification request, including the patient's clinical information and family history, to Aetna for approval prior to testing.",
+  "match": false
+}

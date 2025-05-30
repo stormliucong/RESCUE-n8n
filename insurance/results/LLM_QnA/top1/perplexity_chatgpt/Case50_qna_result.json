@@ -1,0 +1,31 @@
+{
+  "Q0": "Neuromuscular gene panel testing",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "match": "No",
+    "guidelines": "None of the above"
+  },
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": {
+    "alternative_test": "Single gene or targeted genetic analysis"
+  },
+  "Q9": "Not specified",
+  "Q10": "Yes",
+  "Q10_followup": {
+    "purpose": "Screening"
+  },
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires that the test be ordered by or in consultation with a board-certified medical geneticist, developmental pediatrician, or neurologist, and that there is a high degree of suspicion of having a neuromuscular disorder based on medical history, family history, laboratory, or other clinical tests. Additionally, the clinical presentation must support the use of a multi-gene panel. The claim must include documentation of these criteria being met.",
+  "match": true
+}

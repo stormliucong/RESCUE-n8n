@@ -4,30 +4,23 @@
   "Q2": "Yes",
   "Q3": "Yes",
   "Q4": "Yes",
-  "Q4_followup": {
-    "clinical_presentation_match": "Yes",
-    "guideline": "ACMG"
-  },
+  "Q4.1": "Yes",
+  "Q4.2": "ACMG",
   "Q5": "Yes",
   "Q6": "No",
   "Q7": "Yes",
   "Q8": "No",
   "Q9": "Yes",
-  "Q9_followup": [
-    "Yes"
-  ],
+  "Q9.1": "Yes",
   "Q10": "No",
-  "Q10_followup": [
-    "Diagnostic"
-  ],
+  "Q10.1": "Diagnostic",
   "Q11": "Yes",
   "Q12": "No",
-  "Q13": "Yes",
+  "Q13": "Not specified",
   "Q14": "Yes",
-  "Q14_followup": {
-    "CPT_code": "81415"
-  },
+  "Q14.1": "81415",
   "Q15": "No",
   "Q16": "Yes",
-  "Q17": "The policy requires preauthorization for the test. Ensure that the test is ordered by a qualified specialist, such as a genetic counselor, and that genetic counseling is provided before and after the test. Submit the claim with the appropriate CPT code (81415) and ensure that all clinical criteria are documented, including the patient's clinical presentation and family history."
+  "Q17": "The policy requires that the patient has been evaluated by a clinician with expertise in clinical genetics, genetic counseling has been provided, and there is potential for a change in management and clinical outcome. Ensure that all these criteria are documented and submitted with the claim.",
+  "match": false
 }

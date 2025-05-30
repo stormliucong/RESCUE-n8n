@@ -1,0 +1,22 @@
+Case,Question,Predicted,Gold,Score
+Case23,Q0,BRCA1 and BRCA2 genetic testing,BRCA1/BRCA2 testing,0
+Case23,Q1,No,Yes,0
+Case23,Q2,Yes,Yes,1
+Case23,Q3,No,Yes,0
+Case23,Q4,Yes,Yes,1
+Case23,Q4_followup,"{'Does the patient’s clinical presentation match the criteria in those guidelines?': 'No', 'Which guideline(s) apply?': 'NCCN'}",Yes,0
+Case23,Q5,Not required,Not required,1
+Case23,Q6,No,No,1
+Case23,Q7,No,Yes,0
+Case23,Q8,No,No,1
+Case23,Q9,Yes,Yes,1
+Case23,Q9_followup,{'Does this patient have a relevant family history or consanguinity that aligns with the policy?': 'No'},No,0
+Case23,Q10,No,No,1
+Case23,Q10_followup,Risk Assessment,Diagnostic,0
+Case23,Q11,Not specified,Yes,0
+Case23,Q12,No,No,1
+Case23,Q13,Not specified,Yes,0
+Case23,Q14,Not listed,Yes,0
+Case23,Q15,No,Yes,0
+Case23,Q16,No,Yes,0
+Case23,TOTAL,Correct: 8,Incorrect: 12,Accuracy: 40.00%

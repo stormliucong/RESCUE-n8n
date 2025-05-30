@@ -1,0 +1,20 @@
+Case,question_id,Predicted,Gold,correct
+Case41,Q0,Limb-girdle muscular dystrophy (LGMD) genetic panel,limb-girdle muscular dystrophy (LGMD) gene panel,1
+Case41,Q1,Not specified,Yes,0
+Case41,Q2,Yes,Yes,1
+Case41,Q3,No,Yes,0
+Case41,Q4,No,Yes,0
+Case41,Q5,Not required,Not required,1
+Case41,Q6,No,No,1
+Case41,Q7,No,Yes,0
+Case41,Q8,Yes,No,0
+Case41,Q9,Not specified,Yes,0
+Case41,Q10,No,No,1
+Case41,Q10_followup,None,Diagnostic,0
+Case41,Q11,Not specified,Yes,0
+Case41,Q12,No,No,1
+Case41,Q13,Not specified,Yes,0
+Case41,Q14,No,Yes,0
+Case41,Q15,No,Yes,0
+Case41,Q16,No,Yes,0
+Case41,TOTAL,Correct: 6,Incorrect: 12,Accuracy: 33.33%

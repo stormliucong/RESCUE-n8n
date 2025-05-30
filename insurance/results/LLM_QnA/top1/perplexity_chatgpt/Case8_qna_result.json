@@ -1,0 +1,37 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "guideline_match": "No",
+    "guideline": "None of the above"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": {
+    "alternative_test": "Comparative genomic hybridization (CHG)/chromosomal microarray analysis (CMA)"
+  },
+  "Q9": "Yes",
+  "Q9_followup": {
+    "family_history_match": "No"
+  },
+  "Q10": "No",
+  "Q10_followup": {
+    "purpose": "Diagnostic"
+  },
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81415"
+  },
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Ensure that the test is ordered by a clinician with expertise in clinical genetics, provide genetic counseling, and confirm that all medical prerequisites have been met. Submit the claim with the appropriate CPT code and documentation of medical necessity.",
+  "match": false
+}

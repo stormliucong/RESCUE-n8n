@@ -1,0 +1,31 @@
+{
+  "Q0": "Whole genome sequencing (WGS)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "guideline_match": "Yes",
+    "guideline": "None of the above"
+  },
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "family_history_match": "Yes"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy does not provide specific steps for claim submission. It is recommended to refer to the member-specific benefit plan document and any applicable federal or state mandates for claim submission procedures.",
+  "match": false
+}

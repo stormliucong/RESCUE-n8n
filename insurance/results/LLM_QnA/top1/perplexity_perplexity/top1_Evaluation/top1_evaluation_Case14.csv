@@ -1,0 +1,22 @@
+Case,question_id,Predicted,Gold,correct
+Case14,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case14,Q1,Yes,Yes,1
+Case14,Q2,Not specified,Yes,0
+Case14,Q3,No,Yes,0
+Case14,Q4,Yes,Yes,1
+Case14,Q4_followup,None,Yes,0
+Case14,Q5,Yes,Yes,1
+Case14,Q6,No,No,1
+Case14,Q7,No,Yes,0
+Case14,Q8,Yes,No,0
+Case14,Q9,Yes,Yes,1
+Case14,Q9_followup,None,Yes,0
+Case14,Q10,No,No,1
+Case14,Q10_followup,None,Diagnostic,0
+Case14,Q11,Not specified,Yes,0
+Case14,Q12,No,No,1
+Case14,Q13,Not specified,Yes,0
+Case14,Q14,No,Yes,0
+Case14,Q15,No,No,1
+Case14,Q16,No,Yes,0
+Case14,TOTAL,Correct: 9,Incorrect: 11,Accuracy: 45.00%

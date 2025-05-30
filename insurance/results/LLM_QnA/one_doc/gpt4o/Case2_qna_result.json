@@ -1,0 +1,34 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "No",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "ACMG"
+      ]
+    }
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q11": "Yes",
+  "Q12": "Yes",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "81415"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit the completed prior authorization form including patient details, test details, and relevant clinical information justifying the medical necessity, and ensure that genetic counseling requirements have been met."
+}

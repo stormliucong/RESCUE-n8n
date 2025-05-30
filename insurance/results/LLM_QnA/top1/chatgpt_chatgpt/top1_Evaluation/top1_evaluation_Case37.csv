@@ -1,0 +1,21 @@
+Case,question_id,Predicted,Gold,correct
+Case37,Q0,BRCA testing,BRCA1/BRCA2 testing,0
+Case37,Q1,Yes,Yes,1
+Case37,Q2,No,No,1
+Case37,Q3,No,No,1
+Case37,Q4,Yes,Yes,1
+Case37,Q4_followup,"{'guideline_match': 'No', 'guideline': 'NCCN'}",No,0
+Case37,Q5,Not required,Not required,1
+Case37,Q6,No,No,1
+Case37,Q7,No,No,1
+Case37,Q8,Yes,No,0
+Case37,Q9,Yes,Yes,1
+Case37,Q9_followup,{'family_history_match': 'No'},No,0
+Case37,Q10,No,Yes,0
+Case37,Q11,Yes,No,0
+Case37,Q12,No,No,1
+Case37,Q13,Not specified,Yes,0
+Case37,Q14,Not listed,Yes,0
+Case37,Q15,No,No,1
+Case37,Q16,No,No,1
+Case37,TOTAL,Correct: 11,Incorrect: 8,Accuracy: 57.89%

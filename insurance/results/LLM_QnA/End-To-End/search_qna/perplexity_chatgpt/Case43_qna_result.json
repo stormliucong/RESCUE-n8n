@@ -1,0 +1,27 @@
+{
+  "Q0": "Cardiomyopathy gene panel",
+  "Q1": "Not specified",
+  "Q2": "Not specified",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "ACMG"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "Yes",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "Not specified",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit the claim with documentation of medical necessity, including clinical features, family history, and the cardiologist's recommendation for the genetic test.",
+  "match": false
+}

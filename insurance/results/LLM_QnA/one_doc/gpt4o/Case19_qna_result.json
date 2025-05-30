@@ -1,0 +1,36 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": []
+    }
+  ],
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "Chromosomal microarray analysis (CMA)"
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "81425"
+  ],
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "A claim must include all necessary billing information including the ICD code, place of service, and appropriate CPT code; prior authorization requirements must be met if specified in the Health Plan\u2019s procedure code list."
+}

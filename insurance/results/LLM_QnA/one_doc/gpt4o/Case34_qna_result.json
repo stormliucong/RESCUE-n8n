@@ -1,0 +1,49 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": []
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    {
+      "answer": "None",
+      "followup": []
+    }
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "Yes",
+  "Q10_followup": [
+    {
+      "answer": "No",
+      "followup": [
+        "Screening"
+      ]
+    }
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": [
+    {
+      "answer": "BRCA1 full sequencing 81165",
+      "followup": []
+    }
+  ],
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The claim submission requires pre-authorization, genetic counseling documentation, and use of appropriate CPT codes."
+}

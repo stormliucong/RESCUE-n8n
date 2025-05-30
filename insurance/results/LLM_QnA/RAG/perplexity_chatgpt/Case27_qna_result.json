@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA1/2 testing",
+  "Q1": "Yes",
+  "Q2": "Not specified",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "patient_clinical_presentation_matches_criteria": "Yes",
+    "guidelines": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "patient_has_relevant_family_history": "No"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Risk Assessment"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81162"
+  },
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The policy requires prior authorization for BRCA1/2 testing. Ensure that the appropriate CPT code (81162) is used when submitting the claim. The claim should include documentation of medical necessity based on the patient's clinical presentation and the NCCN guidelines. Additionally, confirm that the test was ordered by a qualified specialist.",
+  "match": false
+}

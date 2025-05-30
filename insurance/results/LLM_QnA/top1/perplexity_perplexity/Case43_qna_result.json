@@ -1,0 +1,33 @@
+{
+  "Q0": "Comprehensive cardiomyopathy gene panel for idiopathic dilated cardiomyopathy.",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": "ACMG",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "Yes",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14a": [
+    "81403",
+    "81405",
+    "81406",
+    "81407",
+    "81439",
+    "81479"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure the test is ordered by a qualified provider (e.g., cardiologist), document that the patient has idiopathic dilated cardiomyopathy after a negative workup for secondary causes, include relevant clinical notes and family history, use the appropriate CPT code(s) listed in the policy, and verify any plan-specific requirements or preauthorization by consulting the member\u2019s health benefit plan or contacting Capital Blue Cross. Attach all supporting documentation as required by the insurer.",
+  "match": false
+}

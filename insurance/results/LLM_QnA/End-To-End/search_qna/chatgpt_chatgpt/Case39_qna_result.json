@@ -1,0 +1,28 @@
+{
+  "Q0": "Long QT Syndrome (LQTS) gene panel testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "ACMG"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "Yes",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14a": "81413",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit prior authorization through the UnitedHealthcare Provider Portal or by phone, ensuring all required documentation is included.",
+  "match": false
+}

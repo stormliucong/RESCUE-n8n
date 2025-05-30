@@ -1,0 +1,26 @@
+{
+  "Q0": "Cardiomyopathy gene panel for dilated cardiomyopathy (DCM) (multi-gene panel targeting DCM-related genes such as BAG3, DSP, FLNC, LMNA, MYH7, RBM20, TNNT2, TTN, etc.)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_sub": {
+    "Does this patient have a relevant family history or consanguinity that aligns with the policy?": "Yes"
+  },
+  "Q10": "No",
+  "Q10_sub": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_sub": "81439 (Hereditary cardiomyopathy genomic sequence analysis panel, must include sequencing of at least 5 cardiomyopathy-related genes)",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure the following steps are followed: 1) Document that the patient has idiopathic dilated cardiomyopathy with no identifiable cause after conventional diagnostic studies, 2) Confirm that the patient has a first-degree relative (her father) who died suddenly at age 39, meeting the policy's family history criteria, 3) Ensure the test is ordered by a cardiologist or appropriate specialist, 4) Use the appropriate CPT code (81439) for the hereditary cardiomyopathy panel, 5) Include clinical notes supporting the medical necessity based on the policy criteria, 6) Attach any required prior authorization forms if requested by Aetna, 7) Submit all documentation and the claim to Aetna for processing.",
+  "match": true
+}

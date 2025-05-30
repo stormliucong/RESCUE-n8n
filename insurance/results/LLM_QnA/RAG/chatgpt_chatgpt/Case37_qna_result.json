@@ -1,0 +1,33 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Yes",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "match": "No"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": {
+    "alternative_test": "Testing restricted to the known familial mutation"
+  },
+  "Q9": "Yes",
+  "Q9_followup": {
+    "relevant_family_history": "No"
+  },
+  "Q10": "No",
+  "Q10_followup": {
+    "purpose": "Diagnostic"
+  },
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires precertification and genetic counseling prior to testing. The claim should be submitted with documentation of these prerequisites and any relevant clinical information supporting the medical necessity of the test.",
+  "match": false
+}

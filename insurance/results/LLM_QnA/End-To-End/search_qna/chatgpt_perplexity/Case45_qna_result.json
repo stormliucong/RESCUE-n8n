@@ -1,0 +1,29 @@
+{
+  "Q0": "DMD gene testing (Duchenne Muscular Dystrophy genetic testing)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "Does the patient\u2019s clinical presentation match the criteria in those guidelines?": "Yes",
+    "Which guideline(s) apply?": "ACMG"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "Does this patient have a relevant family history or consanguinity that aligns with the policy?": "Yes"
+  },
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit documentation of clinical findings (progressive muscle weakness, elevated CK, Gower\u2019s sign, family history), specialist referral, and genetic test order with claim. Follow any additional Aetna prior authorization or documentation requirements as specified in the policy.",
+  "match": false
+}

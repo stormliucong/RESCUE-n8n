@@ -1,0 +1,32 @@
+{
+  "Q0": "Whole exome sequencing (WES), with trio testing if possible.",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4.1": "Yes",
+  "Q4.2": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9.1": "Yes",
+  "Q10": "No",
+  "Q10.1": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14.1": [
+    "81415",
+    "81416",
+    "81417"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit documentation showing: (1) the patient is under 21 years old; (2) the test was ordered by a clinical genetics specialist; (3) genetic counseling was provided; (4) prior genetic testing (chromosomal microarray and Fragile X) was non-diagnostic; (5) there is a strong clinical suspicion of a genetic etiology; (6) the test is expected to impact clinical management. Include appropriate CPT codes (81415, 81416, 81417) and ICD-10 codes reflecting the patient's congenital anomalies and neurodevelopmental disorder. Confirm benefit eligibility and preauthorization requirements with Capital Blue Cross as plan variations may apply.",
+  "match": true
+}

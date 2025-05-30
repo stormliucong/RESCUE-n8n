@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "match_criteria": "No",
+    "guidelines": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": {
+    "alternative_test": "None specified"
+  },
+  "Q9": "Yes",
+  "Q9_followup": {
+    "relevant_family_history": "No"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires that genetic testing be performed in a setting with suitably trained healthcare providers who can provide appropriate pre- and post-test counseling. The test should be ordered by a specialist or provider type approved by the policy, and the patient should meet the medical necessity criteria outlined in the policy. Genetic counseling is recommended prior to testing.",
+  "match": true
+}

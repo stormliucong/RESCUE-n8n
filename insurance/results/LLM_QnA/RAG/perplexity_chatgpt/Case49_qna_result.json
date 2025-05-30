@@ -1,0 +1,35 @@
+{
+  "Q0": "Cardiomyopathy gene testing",
+  "Q1": "Not specified",
+  "Q2": "Not specified",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "match_criteria": "No",
+    "guidelines": "None of the above"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": {
+    "alternative_test": "None specified"
+  },
+  "Q9": "Yes",
+  "Q9_followup": {
+    "relevant_family_history": "No"
+  },
+  "Q10": "Yes",
+  "Q10_followup": {
+    "screening_covered": "No",
+    "purpose": "Other"
+  },
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires preauthorization for genetic testing of cardiac disorders. Ensure that the test is ordered by a specialist in cardiac genetics and that the patient meets the medical necessity criteria outlined in the policy. Submit the claim with the appropriate documentation and preauthorization approval.",
+  "match": false
+}

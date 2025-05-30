@@ -1,0 +1,22 @@
+Case,Question,Predicted,Gold,Score
+Case15,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case15,Q1,Yes,Yes,1
+Case15,Q2,Yes,Yes,1
+Case15,Q3,No,Yes,0
+Case15,Q4,Yes,Yes,1
+Case15,Q4_followup,None,Yes,0
+Case15,Q5,Yes,Yes,1
+Case15,Q6,No,No,1
+Case15,Q7,Yes,Yes,1
+Case15,Q8,Yes,No,0
+Case15,Q9,Yes,Yes,1
+Case15,Q9_followup,None,No,0
+Case15,Q10,No,No,1
+Case15,Q10_followup,None,Diagnostic,0
+Case15,Q11,Yes,Yes,1
+Case15,Q12,No,No,1
+Case15,Q13,Yes,Yes,1
+Case15,Q14,No,Yes,0
+Case15,Q15,No,No,1
+Case15,Q16,No,Yes,0
+Case15,TOTAL,Correct: 13,Incorrect: 7,Accuracy: 65.00%

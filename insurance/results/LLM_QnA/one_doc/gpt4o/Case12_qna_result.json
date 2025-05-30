@@ -1,0 +1,38 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": []
+    }
+  ],
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "single gene or targeted gene panel"
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Other"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "No",
+  "Q14_followup": [
+    "Not listed"
+  ],
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "According to the policy, documentation of medical necessity and evidence supporting the clinical utility and impact of genetic testing on medical management and outcomes must be prepared. Additionally, policy compliance including prior genetic evaluations such as CMA, and confirming appropriate ordering by a qualified specialist may be necessary. Personal insurance policies or specific mandates may dictate some of these requirements."
+}

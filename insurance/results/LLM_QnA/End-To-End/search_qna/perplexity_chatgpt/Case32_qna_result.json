@@ -1,0 +1,30 @@
+{
+  "Q0": "BRCA1 and BRCA2 genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "USPSTF"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "Yes",
+  "Q10": "No",
+  "Q10a": [
+    "Risk Assessment"
+  ],
+  "Q11": "Yes",
+  "Q12": "Not specified",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14a": "81162",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Ensure the patient undergoes genetic counseling by an independent board-certified genetic specialist prior to BRCA1/BRCA2 genetic testing. Obtain precertification for the genetic test as required by the policy.",
+  "match": false
+}

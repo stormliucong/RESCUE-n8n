@@ -1,0 +1,23 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_alternative_test": "Epilepsy gene panel (CPT code 81419)",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_purpose": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Claims must include specific coding scenarios, limits on allowable test combinations or frequency, and necessary information for automated processing (e.g., ICD code, place of service). Any claim may require submission of medical records for post-service review.",
+  "match": false
+}

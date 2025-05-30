@@ -1,0 +1,22 @@
+Case,question_id,Predicted,Gold,correct
+Case22,Q0,BRCA1/BRCA2 testing,BRCA1/BRCA2 testing,1
+Case22,Q1,Yes,Yes,1
+Case22,Q2,Not specified,Yes,0
+Case22,Q3,No,No,1
+Case22,Q4,Yes,Yes,1
+Case22,Q4_followup,"{'guideline_match': 'No', 'guidelines': 'NCCN'}",No,0
+Case22,Q5,Not required,Not required,1
+Case22,Q6,No,No,1
+Case22,Q7,No,No,1
+Case22,Q8,Yes,No,0
+Case22,Q9,Yes,Yes,1
+Case22,Q9_followup,{'family_history_match': 'No'},No,0
+Case22,Q10,No,Yes,0
+Case22,Q11,Yes,Yes,1
+Case22,Q12,No,No,1
+Case22,Q13,Yes,Yes,1
+Case22,Q14,Yes,Yes,1
+Case22,Q14_followup,{'CPT_code': '81162'},81162,0
+Case22,Q15,No,No,1
+Case22,Q16,No,No,1
+Case22,TOTAL,Correct: 14,Incorrect: 6,Accuracy: 70.00%

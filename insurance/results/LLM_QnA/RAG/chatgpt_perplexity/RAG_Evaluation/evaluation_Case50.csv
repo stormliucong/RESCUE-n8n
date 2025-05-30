@@ -1,0 +1,23 @@
+Case,Question,Predicted,Gold,Score
+Case50,Q0,Neuromuscular gene panel testing (multi-gene targeted panel testing for neuromuscular disorders).,Neuromuscular gene panel,0
+Case50,Q1,Yes,Yes,1
+Case50,Q2,No,No,1
+Case50,Q3,No,No,1
+Case50,Q4,Yes,Yes,1
+Case50,Q4_followup,None,No,0
+Case50,Q5,No,No,1
+Case50,Q6,No,No,1
+Case50,Q7,No,No,1
+Case50,Q8,Yes,Yes,1
+Case50,Q8_followup,None,CK test,0
+Case50,Q9,Yes,Yes,1
+Case50,Q9_followup,None,No,0
+Case50,Q10,Yes,Yes,1
+Case50,Q10_followup,None,Risk Assessment,0
+Case50,Q11,Not specified,No,0
+Case50,Q12,No,No,1
+Case50,Q13,Not specified,No,0
+Case50,Q14,Not listed,Yes,0
+Case50,Q15,No,No,1
+Case50,Q16,No,No,1
+Case50,TOTAL,Correct: 13,Incorrect: 8,Accuracy: 61.90%

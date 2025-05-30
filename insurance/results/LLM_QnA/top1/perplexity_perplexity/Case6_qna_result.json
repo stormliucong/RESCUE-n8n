@@ -1,0 +1,32 @@
+{
+  "Q0": "Whole exome sequencing (WES), with trio testing if possible.",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4.1": "Yes",
+  "Q4.2": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9.1": "Yes",
+  "Q10": "No",
+  "Q10.1": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14.1": [
+    "81415",
+    "81416",
+    "81417"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure documentation includes: (1) evidence of evaluation by a clinician with expertise in clinical genetics, (2) documentation of genetic counseling provided, (3) summary of prior non-diagnostic genetic testing (e.g., targeted gene panel), (4) clinical rationale for WES including potential impact on management, and (5) appropriate CPT code(s) (e.g., 81415, 81416, 81417). Confirm that the service is a covered benefit under the member\u2019s health plan and obtain any required preauthorization per plan requirements.",
+  "match": false
+}

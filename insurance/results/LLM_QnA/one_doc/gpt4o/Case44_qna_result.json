@@ -1,0 +1,37 @@
+{
+  "Q0": "LQTS gene panel testing",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "ESC"
+      ]
+    }
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": [
+    {
+      "answer": "81413"
+    }
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The policy requires that the test be ordered by an appropriate specialist; ensure the specific criteria are met, including ruling out acquired causes. Document clinical management changes and confirm coverage criteria with correct CPT code. Submit prior authorization if required."
+}

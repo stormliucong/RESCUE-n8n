@@ -1,0 +1,23 @@
+Case,question_id,Predicted,Gold,correct
+Case17,Q0,Whole genome sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case17,Q1,Yes,Yes,1
+Case17,Q2,No,No,1
+Case17,Q3,No,No,1
+Case17,Q4,Yes,Yes,1
+Case17,Q4_followup,None,No,0
+Case17,Q5,No,No,1
+Case17,Q6,No,No,1
+Case17,Q7,No,No,1
+Case17,Q8,Yes,Yes,1
+Case17,Q8_followup,None,Targeted neurodevelopmental panel,0
+Case17,Q9,Yes,Yes,1
+Case17,Q9_followup,None,No,0
+Case17,Q10,No,Yes,0
+Case17,Q11,Yes,No,0
+Case17,Q12,No,No,1
+Case17,Q13,Not specified,Yes,0
+Case17,Q14,Yes,Yes,1
+Case17,Q14_followup,None,81425,0
+Case17,Q15,No,No,1
+Case17,Q16,No,No,1
+Case17,TOTAL,Correct: 14,Incorrect: 7,Accuracy: 66.67%

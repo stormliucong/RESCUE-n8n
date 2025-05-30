@@ -1,0 +1,54 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Not specified",
+  "Q2": "Not specified",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": []
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "Not specified",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "Single-gene testing for a known familial variant"
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "Yes",
+  "Q10_followup": [
+    "Other"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "81162",
+    "81163",
+    "81164",
+    "81165",
+    "81166",
+    "81167",
+    "81212",
+    "81215",
+    "81216",
+    "81217",
+    "81307",
+    "81308",
+    "81406",
+    "81408",
+    "81432",
+    "81479",
+    "0129U"
+  ],
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit the claim by ensuring that all required documents and forms are completed accurately, including prior authorizations if required. Attach the relevant clinical information and supporting documents. Ensure that the CPT codes are listed accurately as covered under the policy."
+}

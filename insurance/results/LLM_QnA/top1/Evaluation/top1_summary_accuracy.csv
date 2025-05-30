@@ -1,0 +1,5 @@
+retrieval_model,qna_model,mean_accuracy,case_count
+chatgpt,perplexity,61.07186812346771,45
+chatgpt,chatgpt,60.93109270998847,36
+perplexity,chatgpt,58.281716603410025,43
+perplexity,perplexity,60.80789093946988,44

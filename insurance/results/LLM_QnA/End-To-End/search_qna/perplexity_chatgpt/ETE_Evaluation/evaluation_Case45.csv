@@ -1,0 +1,20 @@
+Case,Question,Predicted,Gold,Score
+Case45,Q0,DMD gene testing,DMD gene panel,0
+Case45,Q1,Not specified,Yes,0
+Case45,Q2,Yes,Yes,1
+Case45,Q3,Yes,Yes,1
+Case45,Q4,No,Yes,0
+Case45,Q5,Not required,Not required,1
+Case45,Q6,No,No,1
+Case45,Q7,Yes,Yes,1
+Case45,Q8,No,No,1
+Case45,Q9,Not specified,Yes,0
+Case45,Q10,No,No,1
+Case45,Q10_followup,None,Diagnostic,0
+Case45,Q11,Not specified,Yes,0
+Case45,Q12,Not specified,No,0
+Case45,Q13,Not specified,Yes,0
+Case45,Q14,Not listed,Yes,0
+Case45,Q15,No,Yes,0
+Case45,Q16,Yes,Yes,1
+Case45,TOTAL,Correct: 8,Incorrect: 10,Accuracy: 44.44%

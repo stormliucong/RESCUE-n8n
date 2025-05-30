@@ -1,0 +1,36 @@
+{
+  "Q0": "BRCA1 and BRCA2 germline genetic testing (hereditary breast and ovarian cancer panel).",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "Yes",
+  "Q10": "No",
+  "Q10a": "Risk Assessment",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14a": [
+    "81163",
+    "81165",
+    "81166",
+    "81167",
+    "81212",
+    "81215",
+    "81432"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure the test is ordered by an approved provider (such as an OB-GYN), include documentation of the patient's family history and genetic counseling, specify the appropriate CPT code(s) for BRCA1/2 testing, and submit all required clinical notes and referral documentation. Prior authorization may be required depending on the specific Cigna Connect plan; verify with the plan administrator before proceeding.",
+  "match": false
+}

@@ -1,5 +1,5 @@
-Model_Combination,Mean_Accuracy
-chatgpt_perplexity,66.67%
-chatgpt_chatgpt,75.00%
-perplexity_chatgpt,90.48%
-perplexity_perplexity,66.67%
+retrieval_model,qna_model,mean_accuracy,case_count
+chatgpt,perplexity,61.75268563565777,50
+chatgpt,chatgpt,60.49986076301866,36
+perplexity,chatgpt,62.23443139439011,45
+perplexity,perplexity,61.692804921705175,46

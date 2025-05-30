@@ -1,0 +1,35 @@
+{
+  "Q0": "BRCA1/2 germline genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "No",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14a": [
+    "81162",
+    "81163",
+    "81164",
+    "81165",
+    "81166",
+    "81167"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit the claim with documentation of the patient's diagnosis of invasive ductal breast cancer, age at diagnosis (51), and the ordering provider's specialty. Include the appropriate covered CPT code(s) for BRCA1/2 testing (e.g., 81162, 81163, 81164, 81165, 81166, 81167). Ensure that genetic counseling is documented as provided. Check the member's specific benefit plan for any additional requirements or preauthorization needs.",
+  "match": false
+}

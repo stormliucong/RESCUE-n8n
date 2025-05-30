@@ -1,0 +1,21 @@
+Case,Question,Predicted,Gold,Score
+Case37,Q0,BRCA genetic testing (BRCA1 and BRCA2 genes),BRCA1/BRCA2 testing,0
+Case37,Q1,Yes,Yes,1
+Case37,Q2,No,No,1
+Case37,Q3,No,No,1
+Case37,Q4,Yes,Yes,1
+Case37,Q4_followup,None,No,0
+Case37,Q5,No,Not required,0
+Case37,Q6,No,No,1
+Case37,Q7,No,No,1
+Case37,Q8,No,No,1
+Case37,Q9,Yes,Yes,1
+Case37,Q9_followup,None,No,0
+Case37,Q10,No,Yes,0
+Case37,Q11,Yes,No,0
+Case37,Q12,No,No,1
+Case37,Q13,Yes,Yes,1
+Case37,Q14,Not listed,Yes,0
+Case37,Q15,No,No,1
+Case37,Q16,No,No,1
+Case37,TOTAL,Correct: 12,Incorrect: 7,Accuracy: 63.16%

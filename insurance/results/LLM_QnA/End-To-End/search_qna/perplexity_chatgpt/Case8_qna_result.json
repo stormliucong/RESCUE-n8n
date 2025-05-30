@@ -1,0 +1,28 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "Yes",
+  "Q8a": "Chromosomal Microarray Analysis (CMA)",
+  "Q9": "Yes",
+  "Q9a": "No",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "Yes",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit documentation of medical necessity, including clinical evaluation, family history, and prior genetic testing results, along with the claim.",
+  "match": false
+}

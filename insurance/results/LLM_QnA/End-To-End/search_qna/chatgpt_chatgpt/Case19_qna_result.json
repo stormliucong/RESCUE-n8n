@@ -1,0 +1,23 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_follow_up": "Whole Exome Sequencing (WES)",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_follow_up": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit a prior authorization request through EviCore by Evernorth\u00ae for the specific genetic test, ensuring all required clinical documentation is included.",
+  "match": false
+}

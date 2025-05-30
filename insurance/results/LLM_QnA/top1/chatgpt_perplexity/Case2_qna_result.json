@@ -1,0 +1,23 @@
+{
+  "Q0": "Whole exome sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_detail": "A more targeted or specific genetic test, such as a single gene test or a smaller epilepsy/neurodevelopmental panel, would be more appropriate according to the policy.",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_detail": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy does not provide a pathway for coverage of whole exome sequencing (WES) for this clinical scenario. To submit a claim, ensure the requested test is specifically listed as covered and meets all medical necessity criteria. For this patient, only targeted pharmacogenetic or pharmacodynamic tests for specific drug indications are considered. WES is not covered under this policy for neurodevelopmental or epilepsy indications. Consider submitting claims for tests that are explicitly listed as covered in the policy.",
+  "match": false
+}

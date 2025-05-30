@@ -1,0 +1,19 @@
+Case,Question,Predicted,Gold,Score
+Case38,Q0,BRCA testing,BRCA1/BRCA2 testing,0
+Case38,Q1,Not specified,Yes,0
+Case38,Q2,Not specified,No,0
+Case38,Q3,No,No,1
+Case38,Q4,Not specified,Yes,0
+Case38,Q5,Not specified,Not required,0
+Case38,Q6,No,No,1
+Case38,Q7,No,No,1
+Case38,Q8,No,No,1
+Case38,Q9,No,Yes,0
+Case38,Q10,No,Yes,0
+Case38,Q11,Not specified,No,0
+Case38,Q12,No,No,1
+Case38,Q13,Not specified,Yes,0
+Case38,Q14,Not listed,Yes,0
+Case38,Q15,No,No,1
+Case38,Q16,No,No,1
+Case38,TOTAL,Correct: 7,Incorrect: 10,Accuracy: 41.18%

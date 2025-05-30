@@ -1,0 +1,35 @@
+{
+  "Q0": "BRCA1 and BRCA2 germline genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4.1": "Yes",
+  "Q4.2": [
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9.1": "Yes",
+  "Q10": "No",
+  "Q10.1": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14.1": [
+    "81162",
+    "81163",
+    "81164",
+    "81165",
+    "81166",
+    "81167"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit the claim with documentation of the patient's diagnosis of triple-negative breast cancer, family history of male breast cancer, and the ordering provider's specialty. Include the appropriate covered CPT code (e.g., 81162) and relevant ICD-10 codes (e.g., C50.x for breast cancer, Z80.3 for family history of breast cancer). Ensure that genetic counseling is documented as provided. Prior authorization requirements are not specified in the policy, but it is advisable to confirm with the plan administrator.",
+  "match": false
+}

@@ -1,0 +1,37 @@
+{
+  "Q0": "Multi-Gene Panel testing for inherited cardiomyopathy",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "ACMG"
+      ]
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "Not specified",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "81439"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The policy requires submission of prior authorization if applicable, verification of coverage criteria based on patient\u2019s clinical information and medical necessity as outlined, and the appropriate CPT codes must be used when submitting the claim."
+}

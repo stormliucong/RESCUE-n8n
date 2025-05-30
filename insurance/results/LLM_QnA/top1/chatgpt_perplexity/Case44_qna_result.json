@@ -1,0 +1,32 @@
+{
+  "Q0": "Long QT syndrome (LQTS) gene panel testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4.1": "Yes",
+  "Q4.2": [
+    "ACMG"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9.1": "Yes",
+  "Q10": "No",
+  "Q10.1": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14.1": [
+    "0237U",
+    "81413",
+    "81414"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure the following steps are followed: 1) Confirm the test was ordered by an appropriate specialist (e.g., pediatric cardiologist); 2) Document the patient's clinical features (recurrent exertional syncope, QTc \u2265 480 ms, T-wave alternans, family history of sudden cardiac death); 3) Provide evidence that acquired causes of QT prolongation have been ruled out; 4) Include documentation of genetic counseling before and after testing; 5) Use the appropriate covered CPT code (e.g., 0237U, 81413, or 81414); 6) Attach all relevant clinical notes and the referral from the specialist; 7) If required by the plan, obtain and submit prior authorization; 8) Submit the claim to Aetna with all supporting documentation.",
+  "match": true
+}

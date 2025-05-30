@@ -1,0 +1,29 @@
+{
+  "Q0": "BRCA1/2 genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4a1": [
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "Yes",
+  "Q10": "No",
+  "Q10a": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "Not specified",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "1. Obtain prior authorization through EviCore by Evernorth\u00ae. 2. Ensure the test is performed in a CLIA-accredited laboratory. 3. Confirm that the test is FDA-approved or meets Cigna's criteria for medical necessity. 4. Submit the claim with appropriate documentation, including the genetic counseling report and prior authorization approval.",
+  "match": false
+}

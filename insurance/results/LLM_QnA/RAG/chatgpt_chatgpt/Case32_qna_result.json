@@ -1,0 +1,36 @@
+{
+  "Q0": "BRCA1/2 Sequencing",
+  "Q1": "Not specified",
+  "Q2": "Not specified",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "patient_matches_criteria": "Yes",
+    "guidelines": [
+      "NCCN"
+    ]
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "patient_has_relevant_family_history": "Yes"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Risk Assessment"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81163"
+  },
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The policy does not specify detailed steps for claim submission. It is recommended to follow standard claim submission procedures, ensuring all necessary documentation, such as the referral from the OB-GYN and genetic counseling notes, are included.",
+  "match": false
+}

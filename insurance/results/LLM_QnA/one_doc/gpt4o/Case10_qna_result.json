@@ -1,0 +1,32 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": []
+    }
+  ],
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": "single gene testing or CMA/CHG",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "Yes",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": "81415, 81416, 81417",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Follow Capital Blue Cross policy guidelines for submission. Ensure prior authorization is obtained. Use appropriate CPT codes and provide supporting clinical information indicating medical necessity."
+}

@@ -1,0 +1,21 @@
+{
+  "Q0": "Mitochondrial DNA sequencing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not specified",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "According to the Aetna Pharmacogenetic and Pharmacodynamic Testing policy, mitochondrial DNA sequencing is not listed as a covered test for any indication, including for patients with clinical suspicion of mitochondrial disease. The policy only covers specific pharmacogenetic and pharmacodynamic tests related to drug response and certain cancer therapies. To submit a claim, ensure the test is listed as covered in the policy, meets all medical necessity criteria, and that the appropriate CPT code is used. For this scenario, the test is not covered, so a claim would likely be denied. If submitting, include all clinical documentation, specialist recommendations, and rationale, but coverage is not supported by the policy.",
+  "match": false
+}
