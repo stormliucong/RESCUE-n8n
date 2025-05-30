@@ -1,0 +1,23 @@
+{
+  "Q0": "Whole exome sequencing (WES)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not specified",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": "Targeted gene panel or chromosomal microarray (CMA)",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "Not specified",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Review the policy for specific prior authorization requirements, ensure all prerequisite evaluations (such as CMA or targeted panels) are completed and documented, confirm ordering provider is a specialist, and submit clinical notes supporting medical necessity with the claim.",
+  "match": false
+}

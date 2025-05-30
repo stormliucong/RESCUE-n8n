@@ -1,0 +1,23 @@
+{
+  "Q0": "Neuromuscular gene panel testing",
+  "Q1": "Yes",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_alternative_test": "No genetic test is indicated per policy; prerequisite clinical evaluation (neurologic exam, serum CK) is required before considering genetic testing.",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_purpose": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires that genetic testing for neuromuscular conditions be considered only after appropriate clinical evaluation (including neurologic examination and serum CK testing) and when ordered by a qualified specialist. The test was suggested by a naturopathic provider, and no prior clinical evaluation was performed. Therefore, the claim would not be eligible for submission or coverage under this policy. To submit a claim, the provider must ensure all policy criteria are met, including documentation of clinical necessity, prerequisite evaluations, and ordering by an approved provider type.",
+  "match": false
+}

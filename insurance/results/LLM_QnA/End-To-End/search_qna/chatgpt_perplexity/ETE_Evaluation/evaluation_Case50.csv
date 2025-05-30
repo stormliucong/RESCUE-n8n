@@ -1,0 +1,22 @@
+Case,Question,Predicted,Gold,Score
+Case50,Q0,Neuromuscular gene panel testing,Neuromuscular gene panel,1
+Case50,Q1,Not specified,Yes,0
+Case50,Q2,No,No,1
+Case50,Q3,No,No,1
+Case50,Q4,No,Yes,0
+Case50,Q5,No,No,1
+Case50,Q6,No,No,1
+Case50,Q7,No,No,1
+Case50,Q8,Yes,Yes,1
+Case50,Q8_followup,Creatine kinase (CK) testing,CK test,0
+Case50,Q9,Yes,Yes,1
+Case50,Q9_followup,No,No,1
+Case50,Q10,Yes,Yes,1
+Case50,Q10_followup,Screening,Risk Assessment,0
+Case50,Q11,Not specified,No,0
+Case50,Q12,No,No,1
+Case50,Q13,Yes,No,0
+Case50,Q14,Not listed,Yes,0
+Case50,Q15,No,No,1
+Case50,Q16,No,No,1
+Case50,TOTAL,Correct: 13,Incorrect: 7,Accuracy: 65.00%

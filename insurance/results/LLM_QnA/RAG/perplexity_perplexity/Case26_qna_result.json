@@ -1,0 +1,22 @@
+{
+  "Q0": "BRCA1/BRCA2 genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_subtype": "Risk Assessment",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The provided policy document does not address hereditary cancer genetic testing like BRCA1/BRCA2. This policy specifically covers molecular testing for hematologic cancers. A different UnitedHealthcare policy would need to be consulted for hereditary cancer testing coverage criteria. According to general information from the American Cancer Society, most insurance plans cover genetic testing for BRCA mutations for women at higher risk, and federal healthcare laws require coverage for some high-risk women without cancer. The patient should request pre-authorization specifically referencing her family history of breast and ovarian cancer and Ashkenazi Jewish ancestry as risk factors.",
+  "match": false
+}

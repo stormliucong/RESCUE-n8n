@@ -1,0 +1,22 @@
+Case,question_id,Predicted,Gold,correct
+Case45,Q0,DMD gene testing (Duchenne muscular dystrophy genetic testing),DMD gene panel,0
+Case45,Q1,Yes,Yes,1
+Case45,Q2,Yes,Yes,1
+Case45,Q3,Yes,Yes,1
+Case45,Q4,No,Yes,0
+Case45,Q5,Not required,Not required,1
+Case45,Q6,No,No,1
+Case45,Q7,Yes,Yes,1
+Case45,Q8,No,No,1
+Case45,Q9,Yes,Yes,1
+Case45,Q9_followup,Yes,Yes,1
+Case45,Q10,No,No,1
+Case45,Q10_followup,Diagnostic,Diagnostic,1
+Case45,Q11,Yes,Yes,1
+Case45,Q12,No,No,1
+Case45,Q13,Not specified,Yes,0
+Case45,Q14,Yes,Yes,1
+Case45,Q14_followup,"81161, 0218U","81161, 81408",1
+Case45,Q15,No,Yes,0
+Case45,Q16,Yes,Yes,1
+Case45,TOTAL,Correct: 16,Incorrect: 4,Accuracy: 80.00%

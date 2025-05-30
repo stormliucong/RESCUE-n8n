@@ -1,0 +1,22 @@
+Case,Question,Predicted,Gold,Score
+Case42,Q0,Mitochondrial DNA panel,Mitochondrial DNA panel (mtDNA panel),0
+Case42,Q1,Not specified,Yes,0
+Case42,Q2,Yes,Yes,1
+Case42,Q3,Yes,Yes,1
+Case42,Q4,Yes,Yes,1
+Case42,Q4_followup,"{'guideline_match': 'Yes', 'guideline': 'None of the above'}",Yes,0
+Case42,Q5,Not required,Not required,1
+Case42,Q6,No,No,1
+Case42,Q7,Yes,Yes,1
+Case42,Q8,No,No,1
+Case42,Q9,Not specified,Yes,0
+Case42,Q10,No,No,1
+Case42,Q10_followup,Diagnostic,Diagnostic,1
+Case42,Q11,Yes,Yes,1
+Case42,Q12,No,No,1
+Case42,Q13,Not specified,Yes,0
+Case42,Q14,Yes,Yes,1
+Case42,Q14_followup,{'CPT_code': '81460'},"81460, 81479",0
+Case42,Q15,No,Yes,0
+Case42,Q16,Yes,Yes,1
+Case42,TOTAL,Correct: 13,Incorrect: 7,Accuracy: 65.00%

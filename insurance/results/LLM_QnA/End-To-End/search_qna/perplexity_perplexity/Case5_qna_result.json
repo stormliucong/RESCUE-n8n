@@ -1,0 +1,23 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9.1": "Yes",
+  "Q10": "No",
+  "Q10.1": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "Not specified",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit documentation of medical necessity including clinical presentation, family history, and results of previous genetic testing. Ensure the test is ordered by the appropriate specialist (Pediatric Neurologist) and that prior testing results (chromosomal microarray and epilepsy gene panel) are included.",
+  "match": false
+}

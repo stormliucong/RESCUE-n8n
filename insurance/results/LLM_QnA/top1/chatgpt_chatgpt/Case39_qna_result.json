@@ -1,0 +1,34 @@
+{
+  "Q0": "Long QT Syndrome (LQTS) gene panel testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "guideline_match": "Yes",
+    "guideline": "None of the above"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "family_history_match": "Yes"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81413"
+  },
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure that the test is ordered by a qualified specialist, confirm the medical necessity based on the patient's clinical presentation and family history, and use the appropriate CPT code (81413) for billing.",
+  "match": true
+}

@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA1, BRCA2, and PALB2 germline genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4.1": "Yes",
+  "Q4.1.1": [
+    "NCCN"
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9.1": "Yes",
+  "Q10": "No",
+  "Q10.1": "Risk Assessment",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14.1": [
+    "81162",
+    "81406",
+    "81408",
+    "81432",
+    "81479"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit the claim with documentation of the patient's personal history of ER+/PR+ breast cancer, family history of a brother with metastatic prostate cancer, and the referral from a breast surgeon. Include the relevant ICD-10 codes (e.g., C50.x for breast cancer, Z80.42 for family history of prostate cancer) and the CPT codes for BRCA1, BRCA2, and PALB2 testing. Ensure that genetic counseling is documented as provided. Prior authorization requirements are not specified in the policy, but it is advisable to confirm with Capital Blue Cross if needed.",
+  "match": true
+}

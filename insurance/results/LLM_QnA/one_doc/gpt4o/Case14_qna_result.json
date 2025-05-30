@@ -1,0 +1,34 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "ACMG"
+      ]
+    }
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Not specified",
+  "Q12": "Yes",
+  "Q13": "Yes",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure that all required medical documentation is attached, including the clinical geneticist's recommendation and any prior authorization forms as specified by the policy."
+}

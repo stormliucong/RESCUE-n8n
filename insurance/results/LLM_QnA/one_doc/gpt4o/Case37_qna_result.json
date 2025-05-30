@@ -1,0 +1,43 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": [
+        null
+      ]
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "Targeted BRCA testing based on known familial variant"
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q11_followup": [
+    "No"
+  ],
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "81162"
+  ],
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The claim must be submitted with a provider who meets the policy criteria, including genetic counseling, following the guidelines for prior authorization and using covered CPT codes such as 81162."
+}

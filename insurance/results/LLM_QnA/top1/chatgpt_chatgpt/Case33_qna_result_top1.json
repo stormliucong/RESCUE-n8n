@@ -1,0 +1,32 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_sub": {
+    "match": "No",
+    "guidelines": "None of the above"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_sub": {
+    "relevant_family_history": "No"
+  },
+  "Q10": "No",
+  "Q10_sub": "Other",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_sub": {
+    "CPT_code": "81163"
+  },
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy does not specify steps for claim submission. It is recommended to contact Cigna directly for guidance on claim submission procedures.",
+  "match": false
+}

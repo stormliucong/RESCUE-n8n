@@ -1,0 +1,22 @@
+{
+  "Q0": "Whole exome sequencing (WES)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "Not specified",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit claim with documentation of clinical features, family history, prior genetic testing results (CMA and Fragile X), and specialist recommendation. Include medical records and any required forms per Cigna policy.",
+  "match": false
+}

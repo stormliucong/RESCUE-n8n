@@ -1,0 +1,23 @@
+{
+  "Q0": "Limb-girdle muscular dystrophy (LGMD) genetic panel",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_alternative_test": "Genetic testing for facioscapulohumeral muscular dystrophy (FSHD) only",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_purpose": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy only addresses coverage for genetic testing specific to facioscapulohumeral muscular dystrophy (FSHD), not for limb-girdle muscular dystrophy panels. To submit a claim for FSHD genetic testing, ensure the patient meets clinical criteria for FSHD, use the appropriate CPT code (81404), and confirm benefit eligibility under the member\u2019s health plan. For other muscular dystrophy panels, coverage is not addressed in this policy and would require review under a different or more relevant policy.",
+  "match": false
+}

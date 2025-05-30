@@ -1,0 +1,31 @@
+{
+  "Q0": "Limb-girdle muscular dystrophy panel",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "guideline_match": "Yes",
+    "guideline": "None of the above"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "family_history_match": "Yes"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The policy requires that the test be ordered by a specialist, and the patient's clinical presentation must meet the medical necessity criteria. Ensure that all relevant medical records and documentation are submitted with the claim to demonstrate compliance with the policy's coverage rationale.",
+  "match": true
+}

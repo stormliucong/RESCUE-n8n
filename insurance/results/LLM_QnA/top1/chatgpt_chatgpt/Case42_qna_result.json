@@ -1,0 +1,24 @@
+{
+  "Q0": "Mitochondrial DNA panel",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81460"
+  },
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The policy requires that the test be ordered by or in consultation with a board-certified medical geneticist, developmental pediatrician, or neurologist. Ensure that the claim includes documentation of the specialist's involvement and the clinical suspicion of mitochondrial disease. Submit the claim with the appropriate CPT code (81460) and any required medical records documentation to support the medical necessity of the test.",
+  "match": true
+}

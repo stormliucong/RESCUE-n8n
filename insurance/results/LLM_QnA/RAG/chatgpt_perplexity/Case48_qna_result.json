@@ -1,0 +1,23 @@
+{
+  "Q0": "Neuromuscular gene panel testing",
+  "Q1": "Yes",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_detail": "No specific alternative test is named in the policy, but the policy only covers specific gene tests for defined indications, not broad neuromuscular panels.",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_detail": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy does not provide a process for claim submission for this test, as it is not covered. If a claim is submitted, it will likely be denied as the test is not considered medically necessary under the policy. Only the specific pharmacogenetic and pharmacodynamic tests listed in the policy are eligible for coverage; neuromuscular gene panel testing for the presented indication is not included.",
+  "match": false
+}

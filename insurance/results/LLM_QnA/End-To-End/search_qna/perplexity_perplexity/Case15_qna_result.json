@@ -1,0 +1,22 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit prior authorization with clinical documentation including: (1) detailed clinical history, (2) results of prior non-diagnostic genetic/metabolic tests, (3) specialist recommendations, and (4) rationale for WGS. Use appropriate CPT code as per lab billing. Await approval before proceeding with testing.",
+  "match": false
+}

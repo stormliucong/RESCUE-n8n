@@ -1,0 +1,23 @@
+Case,Question,Predicted,Gold,Score
+Case4,Q0,"Whole exome sequencing (WES), with trio testing if possible.",Whole Exome Sequencing (WES),0
+Case4,Q1,Yes,Yes,1
+Case4,Q2,Yes,Yes,1
+Case4,Q3,Yes,Yes,1
+Case4,Q4,Yes,Yes,1
+Case4,Q4_followup,None,Yes,0
+Case4,Q5,Yes,Yes,1
+Case4,Q6,No,No,1
+Case4,Q7,Yes,Yes,1
+Case4,Q8,No,Yes,0
+Case4,Q9,Yes,Yes,1
+Case4,Q9_followup,None,Yes,0
+Case4,Q10,No,No,1
+Case4,Q10_followup,None,Diagnostic,0
+Case4,Q11,Yes,Yes,1
+Case4,Q12,No,No,1
+Case4,Q13,Not specified,Yes,0
+Case4,Q14,Yes,Yes,1
+Case4,Q14_followup,None,81415,0
+Case4,Q15,No,No,1
+Case4,Q16,Yes,No,0
+Case4,TOTAL,Correct: 13,Incorrect: 8,Accuracy: 61.90%

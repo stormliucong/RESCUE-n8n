@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Yes",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": []
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "Yes",
+  "Q10_followup": [
+    "Other"
+  ],
+  "Q11": "Yes",
+  "Q11_followup": "No",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": "81162",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit supporting documentation including family history and any relevant clinical notes, obtain prior authorization, and ensure genetic counseling is performed."
+}

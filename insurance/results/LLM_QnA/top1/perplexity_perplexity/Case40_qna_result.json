@@ -1,0 +1,35 @@
+{
+  "Q0": "Multi-gene panel testing for inherited cardiomyopathy risk (comprehensive genetic testing for DCM).",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "Yes",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14a": [
+    "81403",
+    "81405",
+    "81406",
+    "81407",
+    "81439",
+    "81479"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure documentation of the patient's idiopathic DCM diagnosis, negative workup for secondary causes, and relevant family history. Use the appropriate CPT code (e.g., 81439 for multi-gene panel) and ICD-10 code I42.0. Confirm that the service is a covered benefit under the member's health plan and follow any plan-specific requirements for preauthorization or documentation. Attach clinical notes and test order from the cardiologist. If required, include evidence of completed prerequisite evaluations. Contact UnitedHealthcare Navigate for any plan-specific submission requirements.",
+  "match": false
+}

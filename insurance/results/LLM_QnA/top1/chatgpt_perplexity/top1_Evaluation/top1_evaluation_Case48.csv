@@ -1,0 +1,19 @@
+Case,question_id,Predicted,Gold,correct
+Case48,Q0,Neuromuscular gene panel testing,Neuromuscular gene panel,1
+Case48,Q1,Yes,Yes,1
+Case48,Q2,No,No,1
+Case48,Q3,No,No,1
+Case48,Q4,No,Yes,0
+Case48,Q5,No,No,1
+Case48,Q6,No,No,1
+Case48,Q7,No,No,1
+Case48,Q8,No,Yes,0
+Case48,Q9,Not specified,Yes,0
+Case48,Q10,No,Yes,0
+Case48,Q11,Not specified,No,0
+Case48,Q12,No,No,1
+Case48,Q13,Not specified,No,0
+Case48,Q14,Not listed,Yes,0
+Case48,Q15,No,No,1
+Case48,Q16,No,No,1
+Case48,TOTAL,Correct: 10,Incorrect: 7,Accuracy: 58.82%

@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA1 and BRCA2 genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "NCCN"
+      ]
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": "81162",
+  "Q15": "Yes",
+  "Q15_followup": "The patient is of Ashkenazi Jewish descent which is considered a high-risk ethnic group for BRCA mutations.",
+  "Q16": "Yes",
+  "Q17": "The steps to submit the claim include verifying coverage under the specific health benefit plan, obtaining any necessary pre-authorizations, performing the genetic test in a CLIA-certified lab, and including correct coding information in the claim submission."
+}

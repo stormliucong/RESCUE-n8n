@@ -1,0 +1,22 @@
+{
+  "Q0": "BRCA genetic testing",
+  "Q1": "Yes",
+  "Q2": "Not specified",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "Yes",
+  "Q15_description": "Breast cancer genetic testing",
+  "Q16": "No",
+  "Q17": "The provided policy document is for hematologic cancer testing, not solid tumors like breast cancer. The correct policy document needed is 'Molecular Oncology Testing for Solid Tumor Cancer Diagnosis, Prognosis, and Treatment Decisions' as referenced in the Related Commercial Policies section. Without the appropriate policy document, specific submission steps cannot be determined.",
+  "match": false
+}

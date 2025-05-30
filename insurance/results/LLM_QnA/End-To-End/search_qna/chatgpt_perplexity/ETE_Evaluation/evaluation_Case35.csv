@@ -1,0 +1,22 @@
+Case,Question,Predicted,Gold,Score
+Case35,Q0,BRCA1/2 and PALB2 testing,BRCA1/BRCA2 testing and PALB2 testing,0
+Case35,Q1,Yes,Yes,1
+Case35,Q2,Yes,Yes,1
+Case35,Q3,Yes,Yes,1
+Case35,Q4,Yes,Yes,1
+Case35,Q4_followup,None,Yes,0
+Case35,Q5,Not required,Not required,1
+Case35,Q6,No,No,1
+Case35,Q7,Yes,Yes,1
+Case35,Q8,No,No,1
+Case35,Q9,Yes,Yes,1
+Case35,Q9_followup,None,Yes,0
+Case35,Q10,No,No,1
+Case35,Q10_followup,None,Diagnostic,0
+Case35,Q11,Not specified,Yes,0
+Case35,Q12,No,No,1
+Case35,Q13,Not specified,Yes,0
+Case35,Q14,Not listed,Yes,0
+Case35,Q15,No,No,1
+Case35,Q16,Yes,Yes,1
+Case35,TOTAL,Correct: 13,Incorrect: 7,Accuracy: 65.00%

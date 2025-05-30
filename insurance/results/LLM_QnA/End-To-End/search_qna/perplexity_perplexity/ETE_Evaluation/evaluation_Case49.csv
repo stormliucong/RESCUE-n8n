@@ -1,0 +1,21 @@
+Case,Question,Predicted,Gold,Score
+Case49,Q0,Cardiomyopathy gene panel testing,Cardiomyopathy gene panel,1
+Case49,Q1,Not specified,Yes,0
+Case49,Q2,No,No,1
+Case49,Q3,No,No,1
+Case49,Q4,No,Yes,0
+Case49,Q5,Not required,Not required,1
+Case49,Q6,No,No,1
+Case49,Q7,No,No,1
+Case49,Q8,No,Yes,0
+Case49,Q9,Yes,Yes,1
+Case49,Q9_followup,No,No,1
+Case49,Q10,Yes,Yes,1
+Case49,Q10_followup,Screening,Risk Assessment,0
+Case49,Q11,Not specified,No,0
+Case49,Q12,No,No,1
+Case49,Q13,Not specified,No,0
+Case49,Q14,Not listed,Yes,0
+Case49,Q15,No,No,1
+Case49,Q16,No,No,1
+Case49,TOTAL,Correct: 12,Incorrect: 7,Accuracy: 63.16%

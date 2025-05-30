@@ -1,0 +1,22 @@
+Case,Question,Predicted,Gold,Score
+Case7,Q0,Whole exome sequencing (WES),Whole Exome Sequencing (WES),1
+Case7,Q1,Not specified,Yes,0
+Case7,Q2,No,No,1
+Case7,Q3,No,No,1
+Case7,Q4,Yes,Yes,1
+Case7,Q4_followup,None,No,0
+Case7,Q5,Yes,Yes,1
+Case7,Q6,No,No,1
+Case7,Q7,No,No,1
+Case7,Q8,Yes,Yes,1
+Case7,Q8_followup,None,chromosomal microarray (CMA),0
+Case7,Q9,Yes,Yes,1
+Case7,Q9_followup,None,No,0
+Case7,Q10,Yes,Yes,1
+Case7,Q11,Yes,Yes,1
+Case7,Q12,No,No,1
+Case7,Q13,Yes,Yes,1
+Case7,Q14,Not listed,Yes,0
+Case7,Q15,No,No,1
+Case7,Q16,No,No,1
+Case7,TOTAL,Correct: 15,Incorrect: 5,Accuracy: 75.00%

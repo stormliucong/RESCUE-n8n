@@ -1,0 +1,27 @@
+{
+  "Q0": "Whole exome sequencing (WES)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "A more targeted or specific genetic test, such as a single gene or small panel relevant to the clinical presentation, would be more appropriate according to the policy."
+  ],
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy does not provide a pathway for coverage of whole exome sequencing (WES) for this clinical scenario. Only specific pharmacogenetic and pharmacodynamic tests are listed as medically necessary, and WES is not among them. To submit a claim, ensure the test is one of those specifically listed as covered in the policy, meets all medical necessity criteria, and that all required documentation (including specialist ordering, clinical indications, and prior testing results) is included. For WES, coverage is not supported under this policy.",
+  "match": false
+}

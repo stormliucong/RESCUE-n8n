@@ -1,0 +1,32 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    {
+      "answer": "No",
+      "followup": []
+    }
+  ],
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "81425"
+  ],
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "To submit a claim for genetic testing, you must gather necessary documentation, ensure that prior authorization is obtained if required, verify the CPT codes, ensure that any required genetic counseling has been provided, and then submit the claim with the required supporting documents such as test requisitions, physician orders, and clinical notes that support the medical necessity of the test."
+}

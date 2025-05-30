@@ -1,0 +1,24 @@
+{
+  "Q0": "Mitochondrial DNA panel",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81460"
+  },
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The policy requires submission of the following information for review: name of the genetic test, name of the performing laboratory, the exact genes and/or variants being tested, relevant billing codes, a brief description of how the genetic test results will guide clinical decisions, and medical records related to this genetic test including history and physical exam, conventional testing and outcomes, and conservative treatments if any.",
+  "match": false
+}

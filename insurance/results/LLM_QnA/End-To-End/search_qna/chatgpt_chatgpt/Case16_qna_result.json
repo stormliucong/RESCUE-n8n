@@ -1,0 +1,26 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "Yes",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit prior authorization request including clinical documentation supporting medical necessity, ensure genetic counseling is provided, and use a preferred genetic laboratory if applicable.",
+  "match": false
+}

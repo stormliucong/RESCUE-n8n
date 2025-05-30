@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "patient_criteria_match": "No",
+    "guidelines": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "patient_family_history_match": "No"
+  },
+  "Q10": "Yes",
+  "Q10_followup": [
+    "Predictive"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81163"
+  },
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy does not specify steps for claim submission. Typically, claims should be submitted with the appropriate CPT code and any required documentation supporting medical necessity, if applicable.",
+  "match": false
+}

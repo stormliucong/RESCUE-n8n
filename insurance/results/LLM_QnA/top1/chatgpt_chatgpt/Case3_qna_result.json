@@ -1,0 +1,29 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_sub": {
+    "Q4_1": "Yes",
+    "Q4_2": "ACMG"
+  },
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_sub": {
+    "Q9_1": "Yes"
+  },
+  "Q10": "No",
+  "Q10_sub": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The claim must include the necessary information for automated processing, such as ICD code and place of service. Submission of medical records may be required for post-service review.",
+  "match": false
+}

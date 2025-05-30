@@ -1,0 +1,22 @@
+{
+  "Q0": "Whole exome sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "No",
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit documentation of clinical features, prior genetic testing results (CMA and epilepsy panel), specialist order (Pediatric Neurologist), and evidence that results will impact management. Include medical records, genetic counseling (if provided), and any required forms per Aetna\u2019s claim submission process.",
+  "match": false
+}

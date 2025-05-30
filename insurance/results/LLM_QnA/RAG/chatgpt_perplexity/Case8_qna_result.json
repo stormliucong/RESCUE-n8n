@@ -1,0 +1,22 @@
+{
+  "Q0": "Whole exome sequencing (WES)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "Yes",
+  "Q15_Description": "Pharmacogenetic testing context as requested by a pediatric neurologist",
+  "Q16": "No",
+  "Q17": "Submit claim with appropriate documentation including clinical notes from the pediatric neurologist and indication for testing; ensure test is coded with applicable CPT codes if covered; prior authorization may be required if specified by plan.",
+  "match": false
+}

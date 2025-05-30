@@ -1,20 +1,30 @@
 {
   "Q0": "Whole Exome Sequencing (WES)",
-  "Q1": "Yes",
+  "Q1": "Not specified",
   "Q2": "Yes",
   "Q3": "Yes",
-  "Q4": "Not specified",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "ACMG"
+  ],
   "Q5": "Yes",
   "Q6": "No",
   "Q7": "Yes",
   "Q8": "No",
-  "Q9": "Not specified",
+  "Q9": "Yes",
+  "Q9a": "Yes",
   "Q10": "No",
-  "Q11": "Not specified",
-  "Q12": "Yes",
+  "Q10a": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "Not specified",
   "Q13": "Yes",
   "Q14": "Yes",
+  "Q14a": "81415",
   "Q15": "No",
   "Q16": "Yes",
-  "Q17": "Submit a prior authorization request through the UnitedHealthcare Provider Portal."
+  "Q17": "Submit prior authorization through the UnitedHealthcare Provider Portal or by calling 877-303-7736. Ensure all required clinical documentation is included to demonstrate medical necessity.",
+  "match": false
 }

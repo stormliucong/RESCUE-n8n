@@ -1,0 +1,35 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "NCCN",
+        "USPSTF",
+        "ACMG"
+      ]
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": "Risk Assessment",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": "81162",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit genetic counseling documentation, prior authorization form, and laboratory specifications."
+}

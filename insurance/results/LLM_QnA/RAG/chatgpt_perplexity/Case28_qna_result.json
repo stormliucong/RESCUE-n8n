@@ -1,0 +1,23 @@
+{
+  "Q0": "BRCA genetic testing (for hereditary breast and ovarian cancer risk assessment).",
+  "Q1": "Yes",
+  "Q2": "Not specified",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": "No",
+  "Q10": "No",
+  "Q10_followup": "Risk Assessment",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "According to the policy, BRCA testing is only considered medically necessary if the member is at direct risk of inheriting the mutation (pre-symptomatic) and disease-specific criteria are met. The policy requires a first- or second-degree relative with breast, ovarian, or related cancers, or a known BRCA mutation in the family. A cousin with prostate cancer at age 67 does not meet these criteria. No claim should be submitted as the test is not covered for this scenario.",
+  "match": false
+}

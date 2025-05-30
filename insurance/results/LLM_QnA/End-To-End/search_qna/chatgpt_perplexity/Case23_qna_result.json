@@ -1,0 +1,31 @@
+{
+  "Q0": "BRCA1 and BRCA2 genetic testing",
+  "Q1": "No",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "Does the patient\u2019s clinical presentation match the criteria in those guidelines?": "No",
+    "Which guideline(s) apply?": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "Does this patient have a relevant family history or consanguinity that aligns with the policy?": "No"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Risk Assessment"
+  ],
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy requires that the patient meet specific clinical and family history criteria (such as diagnosis at age 45 or younger, or relevant family history) for BRCA1/2 testing coverage. Since the patient was diagnosed at age 51 and has no family history or Ashkenazi Jewish ancestry, the claim would not meet coverage criteria. No claim submission steps are indicated for this scenario.",
+  "match": false
+}

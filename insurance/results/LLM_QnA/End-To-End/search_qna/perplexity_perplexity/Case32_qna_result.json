@@ -1,0 +1,32 @@
+{
+  "Q0": "BRCA1 and BRCA2 genetic testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "Does the patient\u2019s clinical presentation match the criteria in those guidelines?": "Yes",
+    "Which guideline(s) apply?": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "Does this patient have a relevant family history or consanguinity that aligns with the policy?": "Yes"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Risk Assessment",
+    "Predictive"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Submit prior authorization with documentation of family history, genetic counseling notes, risk assessment model results, and ordering provider information as required by the policy.",
+  "match": false
+}

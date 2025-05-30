@@ -1,0 +1,31 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "clinical_presentation_match": "Yes",
+    "guideline_applicable": "None of the above"
+  },
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "family_history_alignment": "No"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure that the necessary information such as ICD code, place of service, and documentation from the ordering provider indicating how test results will impact medical care are included. Claims may require submission of medical records for post-service review.",
+  "match": false
+}

@@ -1,0 +1,2 @@
+total_cases,mean_accuracy,std_accuracy,min_accuracy,max_accuracy,median_accuracy,q25_accuracy,q75_accuracy
+45,76.8955722639933,9.830221390328065,55.00000000000001,95.23809523809523,76.19047619047619,70.0,85.71428571428571

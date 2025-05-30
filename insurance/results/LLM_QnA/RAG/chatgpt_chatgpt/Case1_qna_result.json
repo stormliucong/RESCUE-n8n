@@ -3,21 +3,32 @@
   "Q1": "Yes",
   "Q2": "Yes",
   "Q3": "Yes",
-  "Q4": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "guideline_match": "Yes",
+    "guideline": "None of the above"
+  },
   "Q5": "Yes",
   "Q6": "No",
   "Q7": "Yes",
   "Q8": "No",
   "Q9": "Yes",
+  "Q9_followup": {
+    "family_history_match": "Yes"
+  },
   "Q10": "No",
-  "Q11": "Yes",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Not specified",
   "Q12": "Yes",
   "Q13": "Not specified",
   "Q14": "Yes",
-  "Q14_followup": [
-    "81415"
-  ],
+  "Q14_followup": {
+    "CPT_code": "81415"
+  },
   "Q15": "No",
   "Q16": "Yes",
-  "Q17": "Ensure the test is ordered by an approved specialist, confirm that genetic counseling has been provided, and verify that prior genetic testing (CMA) has been completed. Submit the claim with the appropriate CPT code (81415) and any required documentation of medical necessity and prior test results."
+  "Q17": "Ensure that the test is ordered by an approved specialist, confirm that all prerequisite evaluations have been completed, and submit the claim with the appropriate CPT code (81415) along with documentation of medical necessity and family history.",
+  "match": true
 }

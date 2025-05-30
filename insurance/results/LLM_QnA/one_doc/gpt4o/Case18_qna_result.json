@@ -1,0 +1,37 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Not specified",
+  "Q2": "No",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": [
+        "None of the above"
+      ]
+    }
+  ],
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    "Chromosomal Microarray"
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "Not specified",
+  "Q13": "Yes",
+  "Q14": "No",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit a prior authorization request including documentation of medical necessity not fulfilled and evidence of unsuccessful chromosomal microarray testing, if attempted."
+}

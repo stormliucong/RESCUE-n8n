@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "NCCN"
+      ]
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": "Risk Assessment",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": "81162",
+  "Q15": "Yes",
+  "Q15_followup": "Ashkenazi Jewish ancestry with family history of BRCA-related cancers",
+  "Q16": "Yes",
+  "Q17": "Submit a claim with relevant medical documentation, including a referral from an OB/GYN and proof of family history and Ashkenazi Jewish ancestry. Ensure prior authorization is obtained as per insurance requirements."
+}

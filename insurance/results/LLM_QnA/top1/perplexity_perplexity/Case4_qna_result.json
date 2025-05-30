@@ -1,0 +1,32 @@
+{
+  "Q0": "Whole exome sequencing (WES), with trio testing if possible.",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4.1": "Yes",
+  "Q4.2": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9.1": "Yes",
+  "Q10": "No",
+  "Q10.1": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14.1": [
+    "81415",
+    "81416",
+    "81417"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure that the ordering provider is a clinical geneticist or a clinician with expertise in clinical genetics, document that genetic counseling was provided, confirm that prior genetic testing (chromosomal microarray and Fragile X) was non-diagnostic, and that there remains a strong clinical suspicion of a genetic etiology. Include all relevant clinical notes, prior test results, and the CPT code(s) 81415, 81416, and/or 81417 for trio WES. Check the member\u2019s benefit plan for any additional requirements or preauthorization steps, as benefit variations may apply.",
+  "match": true
+}

@@ -1,0 +1,23 @@
+Case,Question,Predicted,Gold,Score
+Case26,Q0,BRCA1 and BRCA2 genetic testing,BRCA1/BRCA2 testing,0
+Case26,Q1,Yes,Yes,1
+Case26,Q2,Yes,Yes,1
+Case26,Q3,Yes,Yes,1
+Case26,Q4,Yes,Yes,1
+Case26,Q4_followup,None,Yes,0
+Case26,Q5,Not required,Not required,1
+Case26,Q6,No,No,1
+Case26,Q7,Yes,Yes,1
+Case26,Q8,No,No,1
+Case26,Q9,Yes,Yes,1
+Case26,Q9_followup,None,Yes,0
+Case26,Q10,No,No,1
+Case26,Q10_followup,None,Risk Assessment,0
+Case26,Q11,Yes,Yes,1
+Case26,Q12,No,No,1
+Case26,Q13,Yes,Yes,1
+Case26,Q14,Yes,Yes,1
+Case26,Q14_followup,None,81217,0
+Case26,Q15,No,No,1
+Case26,Q16,Yes,Yes,1
+Case26,TOTAL,Correct: 16,Incorrect: 5,Accuracy: 76.19%

@@ -1,0 +1,21 @@
+Case,Question,Predicted,Gold,Score
+Case40,Q0,Multi-gene panel test for inherited cardiomyopathy,"cardiomyopathy gene panel, Dilated Cardiomyopathy (DCM) gene panel",0
+Case40,Q1,Not specified,Yes,0
+Case40,Q2,Not specified,Yes,0
+Case40,Q3,Yes,Yes,1
+Case40,Q4,No,Yes,0
+Case40,Q5,Not required,Not required,1
+Case40,Q6,No,No,1
+Case40,Q7,Yes,Yes,1
+Case40,Q8,No,No,1
+Case40,Q9,Yes,Yes,1
+Case40,Q9_followup,None,Yes,0
+Case40,Q10,No,No,1
+Case40,Q10_followup,None,Diagnostic,0
+Case40,Q11,Not specified,Yes,0
+Case40,Q12,No,No,1
+Case40,Q13,Not specified,Yes,0
+Case40,Q14,Not listed,Yes,0
+Case40,Q15,No,Yes,0
+Case40,Q16,Yes,Yes,1
+Case40,TOTAL,Correct: 9,Incorrect: 10,Accuracy: 47.37%

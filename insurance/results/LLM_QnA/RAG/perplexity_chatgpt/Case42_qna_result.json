@@ -1,0 +1,31 @@
+{
+  "Q0": "Mitochondrial DNA panel",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "guideline_match": "Yes",
+    "guideline": "None of the above"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81460"
+  },
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "Ensure that the test is ordered by a qualified specialist, confirm that genetic counseling has been provided, and use the appropriate CPT code (81460) when submitting the claim.",
+  "match": false
+}

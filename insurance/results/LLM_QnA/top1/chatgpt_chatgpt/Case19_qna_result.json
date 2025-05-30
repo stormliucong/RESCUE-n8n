@@ -1,0 +1,23 @@
+{
+  "Q0": "Whole Genome Sequencing (WGS)",
+  "Q1": "Not specified",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_alternative_test": "POLG Full Gene Sequencing",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_purpose": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The policy does not specify steps for submitting the claim for this test.",
+  "match": false
+}

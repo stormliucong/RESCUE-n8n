@@ -1,0 +1,34 @@
+{
+  "Q0": "BRCA1/2 and PALB2 testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "guideline_match": "Yes",
+    "guideline": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": {
+    "family_history_match": "Yes"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Diagnostic"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81162"
+  },
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The claim must be submitted with documentation of medical necessity, including the patient's clinical history, family history, and the specialist's referral. Ensure that the CPT code 81162 is used and that genetic counseling documentation is included if required by the policy.",
+  "match": true
+}

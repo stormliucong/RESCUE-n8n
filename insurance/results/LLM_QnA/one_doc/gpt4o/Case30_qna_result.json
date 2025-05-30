@@ -1,0 +1,31 @@
+{
+  "Q0": "BRCA1/2 Testing",
+  "Q1": "Not specified",
+  "Q2": "Not specified",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "No",
+      "followup": []
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "No"
+  ],
+  "Q10": "No",
+  "Q10_followup": "Risk Assessment",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14_followup": "81162",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The claim must be submitted referencing the correct CPT code for BRCA1/2 testing and based on the physician's attestation of medical necessity if applicable. Documentation for why the criteria for coverage are not met should be provided if the coverage is being contested."
+}

@@ -1,0 +1,29 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4a1": [
+    "ACMG"
+  ],
+  "Q5": "Not specified",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "Yes",
+  "Q8a": "Chromosomal microarray analysis (CMA)",
+  "Q9": "Yes",
+  "Q9a": "No",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "Not specified",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14a": "81415",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit a completed Whole Exome Sequencing Recommendation Form, including a three-generation pedigree, the ordering provider's laboratory requisition form, and documentation of a genetics evaluation. Ensure prior authorization is obtained through EviCore by Evernorth.",
+  "match": false
+}

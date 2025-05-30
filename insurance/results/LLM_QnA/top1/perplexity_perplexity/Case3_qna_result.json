@@ -1,0 +1,28 @@
+{
+  "Q0": "Whole exome sequencing (WES)",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4.1": "Yes",
+  "Q4.2": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9.1": "Yes",
+  "Q10": "No",
+  "Q10.1": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14.1": "81415",
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure documentation includes: (1) evidence of evaluation by a clinical geneticist, (2) documentation of genetic counseling provided, (3) results of prior non-diagnostic genetic testing (chromosomal microarray and Fragile X), (4) clinical notes supporting unexplained neurodevelopmental disorder and syndromic features, (5) family history details, and (6) the CPT code 81415 for WES. Submit through standard claims process, and confirm if prior authorization is required by the specific Cigna OAP plan.",
+  "match": false
+}

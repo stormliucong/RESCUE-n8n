@@ -1,0 +1,20 @@
+Case,Question,Predicted,Gold,Score
+Case10,Q0,Whole Exome Sequencing (WES),Whole Exome Sequencing (WES),1
+Case10,Q1,Not specified,Yes,0
+Case10,Q2,Not specified,No,0
+Case10,Q3,No,No,1
+Case10,Q4,No,Yes,0
+Case10,Q5,Not required,No,0
+Case10,Q6,No,No,1
+Case10,Q7,No,No,1
+Case10,Q8,Yes,Yes,1
+Case10,Q8_followup,None,"Neurodevelopmental gene panel, chromosomal microarray (CMA)",0
+Case10,Q9,Not specified,Yes,0
+Case10,Q10,No,Yes,0
+Case10,Q11,Not specified,No,0
+Case10,Q12,No,No,1
+Case10,Q13,Not specified,Yes,0
+Case10,Q14,Not listed,Yes,0
+Case10,Q15,No,No,1
+Case10,Q16,No,No,1
+Case10,TOTAL,Correct: 8,Incorrect: 10,Accuracy: 44.44%

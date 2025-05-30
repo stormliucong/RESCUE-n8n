@@ -1,0 +1,22 @@
+{
+  "Q0": "BRCA testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "No",
+  "Q9": "Not specified",
+  "Q10": "No",
+  "Q10_subtype": "Risk Assessment",
+  "Q11": "Not specified",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Not listed",
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The provided policy document does not cover BRCA testing for hereditary breast and ovarian cancer risk assessment. This policy specifically addresses molecular testing for hematologic malignancies. The patient would need to be evaluated under a different UnitedHealthcare policy that covers genetic testing for hereditary cancer syndromes. The provider should check UnitedHealthcare's policy for hereditary cancer genetic testing and submit the claim with appropriate documentation of the patient's family history of cancer and Ashkenazi Jewish ancestry to demonstrate medical necessity.",
+  "match": false
+}

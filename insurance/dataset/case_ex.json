@@ -2,5 +2,250 @@
     {
         "id": "Case1",
         "patient_info": "An 8-year-old boy with neurodevelopmental delay and seizures. A prior chromosomal microarray test was negative. Whole exome sequencing (WES) has been requested by the genetic counselor to investigate potential underlying genetic causes that may guide diagnosis and future treatment decisions. There is also a family history of neurodevelopmental disorders, as his older brother was diagnosed with autism spectrum disorder. The patient is covered by United Healthcare Choice Plus through a family plan and resides in New Jersey."
+    },
+
+    {
+        "id": "Case2",
+        "patient_info": "A 7-year-old boy presents with global developmental delay, axial hypotonia, and treatment-resistant epilepsy. Previous workups included chromosomal microarray and an epilepsy-focused gene panel, both of which returned negative. Brain MRI showed nonspecific white matter changes. Family history reveals a paternal cousin with similar neurodevelopmental symptoms. Whole exome sequencing (WES) was requested by Pediatric Neurologist to evaluate for a monogenic etiology. The patient is enrolled in the Aetna Choice POS II family plan and resides in California."
+    },
+
+    {
+        "id": "Case3",
+        "patient_info": "A 5-year-old girl with significant expressive language delay, repetitive hand movements, and poor eye contact was evaluated for possible autism spectrum disorder. Minor dysmorphic features were noted on physical exam. Chromosomal microarray and Fragile X testing were non-diagnostic. Her maternal uncle had intellectual disability. Given the syndromic features and strong family history, whole exome sequencing (WES) was recommended by Clinical Geneticist to aid diagnosis. The patient is covered under the Cigna Open Access Plus (OAP) family plan and resides in Texas."
+    },
+
+    {
+        "id": "Case4",
+        "patient_info": "A 4-year-old boy with a diagnosis of autism spectrum disorder, mild craniofacial dysmorphism, and a congenital heart defect (VSD) noted at birth. Fragile X testing and chromosomal microarray returned normal findings. There is a maternal uncle with a similar behavioral profile. Due to the syndromic features and unclear genetic diagnosis, whole exome sequencing (WES) was requested by Clinical Geneticist. The patient is covered by Capital Blue Cross Silver PPO through a family plan and resides in PA."
+    },
+
+    {
+        "id": "Case5",
+        "patient_info": "A 6-year-old girl presenting with global developmental delay, hypotonia, and seizures. Brain MRI revealed cerebellar atrophy. Chromosomal microarray and epilepsy gene panel testing were both negative. Given the complex neurological features and a family history of epilepsy on the maternal side, whole exome sequencing (WES) was ordered by Pediatric Neurologist to identify a potential monogenic etiology. The patient is covered by Aetna Choice POSII through a family plan and resides in New Jersey."
+    },
+
+    {
+        "id": "Case6",
+        "patient_info": "A 9-year-old girl with progressive gait instability, muscle stiffness, and decreased visual acuity noted since age 6. Initial metabolic screening and targeted gene panel (ataxia-focused) were inconclusive. Her paternal aunt had a similar neurodegenerative presentation in adolescence. Considering the constellation of neurological and sensory deficits with positive family history, whole exome sequencing (WES) was recommended by Pediatric Neurologist. The patient is covered by UnitedHealthcare Choice Plus through a family plan and resides in New Jersey."
+    },
+
+    {
+        "id": "Case7",
+        "patient_info": "An 8-year-old boy with mild learning difficulties and no significant neurological symptoms. There is no family history of genetic conditions, and his prior chromosomal microarray test was negative. Whole exome sequencing (WES) has been requested by his primary care provider (PCP) to explore potential genetic factors as part of general health screening and educational planning. The patient is covered by UnitedHealthcare Choice Plus through a family plan and resides in New Jersey."
+    },
+
+    {
+        "id": "Case8",
+        "patient_info": "A 7-year-old boy with general academic underperformance and occasional inattentiveness in class. No seizures or hypotonia are observed. Developmental milestones were slightly delayed but within acceptable range. There is no known family history of neurological disorders. Despite the absence of significant findings on neurologic exam or imaging, whole exome sequencing (WES) was requested by a pediatric neurologist. The patient is enrolled in the Aetna Choice POS II family plan and resides in California."
+    },
+
+    {
+        "id": "Case9",
+        "patient_info": "A 5-year-old girl with mild language delay and some behavioral concerns reported by teachers, though she interacts well at home. No dysmorphic features or other systemic abnormalities are present. Genetic testing has not been performed prior, and there is no family history of intellectual disability or developmental disorders. WES was requested by a developmental pediatrician as part of broad screening. The patient is covered under the Cigna Open Access Plus (OAP) family plan and resides in Texas."
+    },
+
+    {
+        "id": "Case10",
+        "patient_info": "A 4-year-old boy with a recent diagnosis of mild speech delay. He has no craniofacial abnormalities, no structural birth defects, and has met all motor milestones. Family history is non-contributory. No prior genetic testing has been done. A general pediatrician suggested WES to rule out subtle genetic causes. The patient is covered by Capital Blue Cross PPO and resides in Harrisburg, PA."
+    },
+
+    {
+        "id": "Case11",
+        "patient_info": "A 6-year-old girl with episodes of clumsiness and mild fatigue. Her neurological exam is unremarkable, and an MRI was normal. Chromosomal microarray has not been performed, and there is no family history of epilepsy or neurological disorders. A genetics consult was requested, and WES was ordered without prior targeted genetic evaluation by PCP. The patient is covered by Aetna Choice POS II through a family plan and resides in New Jersey."
+    },
+
+    {
+        "id": "Case12",
+        "patient_info": "A 9-year-old girl with blurry vision complaints and mild coordination difficulties during sports. Visual acuity improved with corrective lenses. There is no family history of neurological or sensory disorders. A school nurse noted she was ‘less coordinated,’ and WES was proposed by a concerned ophthalmologist. No metabolic or genetic workups have been done. The patient is covered by UnitedHealthcare Choice Plus through a family plan and resides in New Jersey."
+    },
+
+    {
+        "id": "Case13",
+        "patient_info": "A 6-year-old girl with unexplained neurodevelopmental regression, progressive loss of motor function, and feeding difficulties. Prior evaluations including metabolic screening, chromosomal microarray, and WES were all non-diagnostic. A neurologist noted a pattern suggestive of a rare mitochondrial disorder. Her older brother died at age 3 with a similar decline, though undiagnosed. Whole genome sequencing (WGS) was recommended by a pediatric geneticist to explore potential noncoding mitochondrial variants. The patient is enrolled in the UnitedHealthcare Choice Plus family plan and resides in New Jersey."
+    },
+
+    {
+        "id": "Case14",
+        "patient_info": "A 7-year-old boy with congenital hearing loss, cleft palate, and mild developmental delay. Both chromosomal microarray and WES were performed, returning no pathogenic variants. Family history reveals a maternal aunt with cleft palate and learning difficulties. A clinical geneticist recommended WGS to evaluate possible structural or noncoding variants related to craniofacial development. The patient is covered by Aetna Choice POS II and resides in California."
+    },
+
+    {
+        "id": "Case15",
+        "patient_info": "A 9-year-old boy with severe ataxia, spasticity, and visual decline starting at age 6. Neurological exam and MRI are consistent with neurodegeneration, but no focal lesions. WES, ataxia panels, and metabolic tests were all non-diagnostic. His fraternal twin is healthy. A pediatric neurologist and clinical geneticist jointly recommended WGS due to concern for deep intronic or structural variants. The patient is enrolled in the Cigna Open Access Plus (OAP) family plan and resides in Texas."
+    },
+
+    {
+        "id": "Case16",
+        "patient_info": "A 5-year-old girl with complex congenital anomalies including anal atresia, cardiac septal defect, and growth retardation. CMA and WES were negative. There is no immediate family history, but the pattern suggests a possible de novo structural variant. A pediatric geneticist requested WGS for enhanced resolution of regulatory and structural regions. The patient is covered under  Capital Blue Cross HMO and resides in Harrisburg, PA."
+    },
+    
+    {
+        "id": "Case17",
+        "patient_info": "A 6-year-old girl with mild speech delay and recent issues with classroom focus. No neurological abnormalities or dysmorphic features noted. No history of seizures or regression. Family history is unremarkable. No prior genetic testing has been conducted. A general pediatrician suggested whole genome sequencing (WGS) out of curiosity about possible learning disabilities. The patient is enrolled in the UnitedHealthcare Choice Plus family plan and resides in New Jersey."
+    },
+
+    {
+        "id": "Case18",
+        "patient_info": "A 7-year-old boy with attention deficit symptoms and mild coordination difficulty during physical education. No congenital malformations or intellectual disability observed. Chromosomal microarray was not performed; WES was ordered but not completed due to insurance denial. A neuropsychologist (non-MD) requested WGS to explore possible explanations. There is a paternal cousin with dyslexia, but no major neurodevelopmental disorder. The patient is covered by Aetna Choice POS II and resides in California."
+    },
+
+    {
+        "id": "Case19",
+        "patient_info": "A 9-year-old boy with fatigue and frequent headaches. All neurological and imaging tests are normal. Chromosomal microarray and WES were not pursued. His older sister was diagnosed with juvenile idiopathic arthritis. A pediatric geneticist requested WGS despite the lack of structural or developmental concerns, citing interest in fatigue-related genetic factors. The patient is enrolled in the Cigna Open Access Plus (OAP) family plan and resides in Texas."
+    },
+
+    {
+        "id": "Case20",
+        "patient_info": "A 5-year-old girl with generalized anxiety and mild behavioral issues at daycare. No developmental delays, organ malformations, or neurological concerns are reported. Family history is unremarkable. WGS was recommended by a developmental pediatrician to look for genetic contributions to anxiety. No previous genetic tests were performed. The patient is covered under Aetna Open Access Managed Choice Plan and resides in Illinois."
+    },
+
+    {
+        "id": "Case21",
+        "patient_info": "A 35-year-old woman with a strong family history of breast and ovarian cancer. Her mother was diagnosed with breast cancer at age 42, and her maternal aunt had ovarian cancer in her 50s. The patient herself has no history of cancer but has dense breast tissue and is considered at increased risk. The genetic counselor has recommended BRCA1/BRCA2 testing to assess her hereditary cancer risk and guide risk-reducing management decisions, including potential prophylactic options. The patient is covered by Aetna Open Access Managed Choice Plan and resides in California."
+    },
+
+    {
+        "id": "Case22",
+        "patient_info": "A 31-year-old woman with no known family history of breast or ovarian cancer. She has a history of multiple benign breast biopsies and dense breast tissue noted on mammograms. During her annual gynecologic exam, her OB-GYN expressed concern about her cumulative risk and recommended BRCA1/BRCA2 testing as part of a broader risk assessment strategy. While formal genetic counseling was not provided, the OB-GYN discussed the implications and potential management options if a mutation were identified. The patient is covered under Aetna Open Access Managed Choice Plan and resides in Illinois."
+    },
+
+    {
+        "id": "Case23",
+        "patient_info": "A 51-year-old woman was recently diagnosed with invasive ductal breast cancer. She has no known family history of cancer and no Ashkenazi Jewish ancestry. Given her diagnosis before the age of 45, BRCA1/2 testing was recommended by her oncologist to guide treatment and inform family risk. The patient is covered by Aetna Choice POS II and resides in California."
+    },
+
+    {
+        "id": "Case24",
+        "patient_info": "A 43-year-old woman was diagnosed with triple-negative breast cancer. Her maternal uncle was treated for male breast cancer at age 59. The patient has no Ashkenazi ancestry. Her oncologist referred her for BRCA testing based on personal and familial history. She is insured under Aetna Choice POS II and resides in New Jersey."
+    },
+
+    {
+        "id": "Case25",
+        "patient_info": "A 38-year-old woman with Ashkenazi Jewish ancestry was recently diagnosed with unilateral breast cancer. She reports no known family history of cancer. Given her ancestry and cancer diagnosis, her oncologist referred her for BRCA1/2 testing. The patient is enrolled in UnitedHealthcare Choice Plus and resides in Florida."
+    },
+
+    {
+        "id": "Case26",
+        "patient_info": "A 37-year-old woman has no personal history of cancer. However, her mother was diagnosed with ovarian cancer at age 47 and her maternal aunt had breast cancer at 42. Due to this family history and her Ashkenazi Jewish background, her OB/GYN referred her for BRCA testing. She is insured through UnitedHealthcare Choice Plus and lives in New York."
+    },
+
+    {
+        "id": "Case27",
+        "patient_info": "A 66-year-old woman was diagnosed with hormone receptor-positive breast cancer. She has no known family history of cancer and does not have Ashkenazi Jewish ancestry. Her oncologist requested BRCA1/2 testing to assess future risk and treatment planning. The patient is insured through Aetna Choice POS II and resides in New Jersey."
+    },
+
+    {
+        "id": "Case28",
+        "patient_info": "A 34-year-old woman with no personal history of cancer sought BRCA testing after her cousin on her father's side was diagnosed with prostate cancer at age 67. No other cancer history is reported in the family. She is covered by Aetna Choice POS II and lives in California."
+    },
+
+    {
+        "id": "Case29",
+        "patient_info": "A 56-year-old woman was diagnosed with ER+/PR+ breast cancer. She has no family history of breast, ovarian, or pancreatic cancer and no Ashkenazi Jewish background. Despite this, her surgeon suggested BRCA testing. She is enrolled in UnitedHealthcare Choice Plus and resides in Texas."
+    },
+
+    {
+        "id": "Case30",
+        "patient_info": "A 39-year-old woman without any personal cancer history seeks BRCA testing. Her father was diagnosed with colon cancer at age 52, and her paternal uncle had stomach cancer. No BRCA-related cancers (breast, ovarian, pancreatic, prostate) are reported in the family. She is insured under UnitedHealthcare Choice Plus and resides in Florida."
+    },
+
+    {
+        "id": "Case31",
+        "patient_info": "A 44-year-old woman with a recent diagnosis of triple-negative breast cancer (TNBC). Her mother was also diagnosed with breast cancer at age 48. Her oncologist referred her for BRCA1/2 testing to guide treatment planning. She is covered by the Cigna Open Access Plus (OAP) plan and resides in Texas."
+    },
+
+    {
+        "id": "Case32",
+        "patient_info": "A 38-year-old woman with no personal history of cancer, but with a strong family history: her maternal aunt had ovarian cancer at age 49 and her grandmother had breast cancer at age 52. Genetic counseling suggested >10% risk for BRCA mutation using Tyrer-Cuzick model. Her OB-GYN referred her for BRCA testing. She is covered by Cigna Connect plan and resides in Florida."
+    },
+
+    {
+        "id": "Case33",
+        "patient_info": "A 63-year-old woman with mild fibrocystic breast changes but no cancer history. Her cousin had breast cancer in her 70s. She independently requested BRCA testing for 'peace of mind' without clinician referral. Covered by Cigna LocalPlus and resides in Arizona."
+    },
+
+    {
+        "id": "Case34",
+        "patient_info": "A 35-year-old woman with no personal or family history of cancer requested BRCA testing due to anxiety over recent media reports. Her primary care doctor submitted the request without genetic counseling. She is enrolled in the Cigna SureFit plan and resides in Illinois."
+    },
+
+    {
+        "id": "Case35",
+        "patient_info": "A 41-year-old woman with ER+/PR+ breast cancer and a brother diagnosed with metastatic prostate cancer at age 58. A breast surgeon referred her for BRCA1/2 and PALB2 testing. She is enrolled in Capital Blue Cross PPO and resides in Harrisburg, PA."
+    },
+
+    {
+        "id": "Case36",
+        "patient_info": "A 36-year-old Ashkenazi Jewish woman diagnosed with breast cancer. Though she reports no known family history, her ancestry qualifies her for BRCA testing under NCCN. She is covered by Capital Blue Cross HMO and lives in Lancaster, PA."
+    },
+
+    {
+        "id": "Case37",
+        "patient_info": "A 59-year-old woman with ductal carcinoma in situ (DCIS) and no family history of cancer requested BRCA testing. The request was submitted by her PCP without referral to a genetic counselor. She is enrolled in Capital Blue Cross PPO and lives in Allentown, PA."
+    },
+
+    {
+        "id": "Case38",
+        "patient_info": "A 42-year-old woman with anxiety but no personal or family history of breast, ovarian, or related cancers. She is seeking BRCA testing out of concern. Covered under Capital Blue Cross EPO plan in Scranton, PA."
+    },
+
+    {
+        "id": "Case39",
+        "patient_info": "A 17-year-old male with recurrent syncopal episodes and family history of sudden cardiac death in his father at age 38. ECG revealed prolonged QTc interval at rest (>470ms) and T-wave alternans. A pediatric cardiologist referred him for long QT syndrome (LQTS) gene panel testing. He is covered under UnitedHealthcare Choice Plus and resides in Illinois."
+    },
+
+    {
+        "id": "Case40",
+        "patient_info": "A 42-year-old woman with a diagnosis of dilated cardiomyopathy (DCM) and second-degree AV block. Her brother died suddenly at age 40. Cardiology referred her for multi-gene panel testing to evaluate inherited cardiomyopathy risk. She is covered by UnitedHealthcare Navigate and resides in Colorado."
+    },
+
+    {
+        "id": "Case41",
+        "patient_info": "A 9-year-old boy presents with proximal muscle weakness, exercise intolerance, and elevated serum CK levels. Neurology consult noted waddling gait and family history of muscular dystrophy in a maternal uncle. A pediatric neurologist ordered a limb-girdle muscular dystrophy panel. The patient is covered under UnitedHealthcare Compass and lives in Texas."
+    },
+
+    {
+        "id": "Case42",
+        "patient_info": "A 28-year-old woman with progressive external ophthalmoplegia, sensorineural hearing loss, and exercise-induced fatigue. Mitochondrial disease suspected clinically. A neurologist and medical geneticist jointly ordered a mitochondrial DNA panel. Her insurance is UnitedHealthcare Choice Plus, and she resides in Florida."
+    },
+
+    {
+        "id": "Case43",
+        "patient_info": "A 41-year-old woman with newly diagnosed idiopathic dilated cardiomyopathy. Her father died suddenly in his sleep at age 39 with no known prior cardiac history. ECG shows frequent PVCs and 1st-degree AV block. A cardiologist recommended a cardiomyopathy gene panel. She is insured under Aetna Choice POS II and resides in Pennsylvania."
+    },
+
+    {
+        "id": "Case44",
+        "patient_info": "A 16-year-old boy with recurrent exertional syncope during soccer. Resting ECG shows QTc of 482ms and T-wave alternans. His uncle died during a marathon at age 28. Pediatric cardiologist referred him for LQTS gene panel testing. The patient is enrolled in Aetna PPO and lives in Georgia."
+    },
+
+    {
+        "id": "Case45",
+        "patient_info": "A 7-year-old boy presents with progressive difficulty climbing stairs and Gower’s sign. Serum creatine kinase (CK) is elevated (12,000 IU/L). His maternal uncle had muscle weakness and wheelchair use before age 15. A pediatric neurologist referred him for DMD gene testing. Covered under Aetna Choice POS II in California."
+    },
+
+    {
+        "id": "Case46",
+        "patient_info": "A 27-year-old woman with progressive ophthalmoplegia, ptosis, and exertional fatigue. Muscle biopsy suggested mitochondrial changes. Her sister has hearing loss and similar fatigue. A neurologist and geneticist jointly recommended mitochondrial DNA sequencing. Covered by Aetna PPO and residing in New York."
+    },
+
+    {
+        "id": "Case47",
+        "patient_info": "A 52-year-old woman with occasional palpitations and anxiety was referred by her primary care physician for genetic arrhythmia panel testing. She has no history of syncope, ECG is within normal limits, and there is no family history of sudden cardiac death. The test was ordered for reassurance. The patient is enrolled in Aetna Choice POS II and resides in New Jersey."
+    },
+
+    {
+        "id": "Case48",
+        "patient_info": "A 30-year-old man requested neuromuscular gene panel testing due to general fatigue and mild hand tremor. No prior neurologic exam or serum CK testing was done. No family history of neuromuscular conditions. The test was suggested by a naturopathic provider. He is covered by Aetna PPO in Texas."
+    },
+
+    {
+        "id": "Case49",
+        "patient_info": "A 25-year-old man with no symptoms and normal ECG requested cardiomyopathy gene testing after reading about genetic heart conditions online. He reports no family history of cardiac disease. The request was submitted through a telehealth wellness coach. He is enrolled in UnitedHealthcare Choice Plus and lives in Illinois."
+    },
+
+    {
+        "id": "Case50",
+        "patient_info": "A 12-year-old boy with normal motor development and no complaints was offered neuromuscular gene panel testing by his school psychologist after poor athletic performance. No clinical neurology referral or prior CK testing was performed. There is no relevant family history. The patient is enrolled in UnitedHealthcare Navigate and resides in Colorado."
     }
 ]

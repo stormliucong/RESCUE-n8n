@@ -1,0 +1,37 @@
+{
+  "Q0": "BRCA1/2 testing",
+  "Q1": "Yes",
+  "Q2": "Not specified",
+  "Q3": "No",
+  "Q4": "Yes",
+  "Q4_followup": {
+    "patient_clinical_presentation_matches_criteria": "No",
+    "guidelines": "NCCN"
+  },
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": {
+    "alternative_test": "Multigene panel testing for moderate to high-penetrance breast and/or epithelial ovarian cancer susceptibility genes"
+  },
+  "Q9": "Yes",
+  "Q9_followup": {
+    "relevant_family_history": "No"
+  },
+  "Q10": "No",
+  "Q10_followup": [
+    "Risk Assessment"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": {
+    "CPT_code": "81162"
+  },
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "The provider must complete the Aetna Breast and Ovarian Cancer Susceptibility Gene Prior Authorization Form, confirming the basis for high-risk status, and submit it along with the Laboratory's test requisition form. The test should not be performed until confirmation of coverage is received and the test is precertified.",
+  "match": true
+}

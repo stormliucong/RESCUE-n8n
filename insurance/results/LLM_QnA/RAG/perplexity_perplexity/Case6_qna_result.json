@@ -1,0 +1,32 @@
+{
+  "Q0": "Whole exome sequencing (WES), with trio testing when possible.",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4a": "Yes",
+  "Q4b": [
+    "ACMG"
+  ],
+  "Q5": "Yes",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9a": "Yes",
+  "Q10": "No",
+  "Q10a": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Not specified",
+  "Q14": "Yes",
+  "Q14a": [
+    "81415",
+    "81416",
+    "81417"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "To submit the claim, ensure documentation includes: (1) evidence of evaluation by a clinician with expertise in clinical genetics, (2) documentation of genetic counseling provided, (3) summary of prior non-diagnostic genetic testing (e.g., targeted gene panel), (4) clinical notes supporting unexplained neurodevelopmental disorder with strong suspicion of genetic etiology, and (5) CPT code(s) 81415, 81416, or 81417 as appropriate. Confirm that the service is a covered benefit under the member\u2019s health plan and submit through standard claims channels. Prior authorization may be required depending on the specific UnitedHealthcare plan.",
+  "match": false
+}

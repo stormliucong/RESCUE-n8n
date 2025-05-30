@@ -1,0 +1,21 @@
+Case,Question,Predicted,Gold,Score
+Case20,Q0,Whole Genome Sequencing (WGS),Whole Genome Sequencing (WGS),1
+Case20,Q1,Not specified,Yes,0
+Case20,Q2,Yes,No,0
+Case20,Q3,No,No,1
+Case20,Q4,No,Yes,0
+Case20,Q5,No,No,1
+Case20,Q6,No,No,1
+Case20,Q7,No,No,1
+Case20,Q8,Yes,Yes,1
+Case20,Q8_followup,None,"chromosomal microarray (CMA), Fragile X testing",0
+Case20,Q9,Yes,Yes,1
+Case20,Q9_followup,None,No,0
+Case20,Q10,Yes,Yes,1
+Case20,Q11,Not specified,No,0
+Case20,Q12,No,No,1
+Case20,Q13,Yes,Yes,1
+Case20,Q14,Not listed,Yes,0
+Case20,Q15,No,No,1
+Case20,Q16,No,No,1
+Case20,TOTAL,Correct: 12,Incorrect: 7,Accuracy: 63.16%

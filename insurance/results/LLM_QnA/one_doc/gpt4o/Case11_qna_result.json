@@ -1,0 +1,37 @@
+{
+  "Q0": "Whole Exome Sequencing (WES)",
+  "Q1": "No",
+  "Q2": "Yes",
+  "Q3": "No",
+  "Q4": "No",
+  "Q5": "No",
+  "Q6": "No",
+  "Q7": "No",
+  "Q8": "Yes",
+  "Q8_followup": [
+    {
+      "answer": "Yes",
+      "followup": "Chromosomal microarray (CMA)"
+    }
+  ],
+  "Q9": "Yes",
+  "Q9_followup": [
+    {
+      "answer": "No"
+    }
+  ],
+  "Q10": "No",
+  "Q10_followup": "Diagnostic",
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": [
+    {
+      "CPT code": "81415"
+    }
+  ],
+  "Q15": "No",
+  "Q16": "No",
+  "Q17": "Submit evidence of medical necessity including detailed family and personal history, clinical notes, genetic counseling records, completed required pre-authorization forms if necessary, and justification for selection of WES over other targeted tests, as per policy guidelines."
+}

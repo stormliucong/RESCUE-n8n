@@ -1,0 +1,37 @@
+{
+  "Q0": "BRCA1/BRCA2 testing",
+  "Q1": "Yes",
+  "Q2": "Yes",
+  "Q3": "Yes",
+  "Q4": "Yes",
+  "Q4_followup": [
+    {
+      "answer": "Yes",
+      "followup": [
+        "NCCN"
+      ]
+    }
+  ],
+  "Q5": "Not required",
+  "Q6": "No",
+  "Q7": "Yes",
+  "Q8": "No",
+  "Q9": "Yes",
+  "Q9_followup": [
+    "Yes"
+  ],
+  "Q10": "No",
+  "Q10_followup": [
+    "Risk Assessment"
+  ],
+  "Q11": "Yes",
+  "Q12": "No",
+  "Q13": "Yes",
+  "Q14": "Yes",
+  "Q14_followup": [
+    "0102U"
+  ],
+  "Q15": "No",
+  "Q16": "Yes",
+  "Q17": "The provider must complete the Breast and Ovarian Cancer Susceptibility Gene Prior Authorization Form and send it along with the test requisition form to the requesting laboratory. The test should not be conducted until coverage confirmation and precertification are received. Genetic counseling should also be provided as required before and possibly after testing."
+}

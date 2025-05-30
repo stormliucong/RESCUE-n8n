@@ -1,0 +1,19 @@
+Case,Question,Predicted,Gold,Score
+Case8,Q0,Whole exome sequencing (WES),Whole Exome Sequencing (WES),1
+Case8,Q1,Not specified,Yes,0
+Case8,Q2,Yes,Yes,1
+Case8,Q3,No,No,1
+Case8,Q4,No,Yes,0
+Case8,Q5,Not required,No,0
+Case8,Q6,No,No,1
+Case8,Q7,No,No,1
+Case8,Q8,No,Yes,0
+Case8,Q9,Not specified,Yes,0
+Case8,Q10,No,Yes,0
+Case8,Q11,Not specified,No,0
+Case8,Q12,No,No,1
+Case8,Q13,Not specified,Yes,0
+Case8,Q14,Not listed,Yes,0
+Case8,Q15,Yes,No,0
+Case8,Q16,No,No,1
+Case8,TOTAL,Correct: 7,Incorrect: 10,Accuracy: 41.18%
