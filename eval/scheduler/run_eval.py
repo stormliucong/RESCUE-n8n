@@ -65,20 +65,12 @@ def load_tasks_from_config(config_path):
     for task in config.get('tasks', []):
         module_name = task['module']
         class_name = task['class']
-        difficulty_level = task['difficulty_level']
-        required_tool_call_sets = task.get('required_tool_call_sets', [])
-        required_resource_types = task.get('required_resource_types', [])
-        prohibited_tools = task.get('prohibited_tools', [])
 
         module = importlib.import_module(f"tasks.{module_name}")
         cls = getattr(module, class_name)
 
         task_configs.append({
             "class": cls,
-            "required_tool_call_sets": required_tool_call_sets,
-            "required_resource_types": required_resource_types,
-            "prohibited_tools": prohibited_tools,
-            "difficulty_level": difficulty_level
         })
 
     return task_configs
@@ -127,6 +119,7 @@ if test_n8n():
 
 
 for task_config in task_configs:
+   
     # Initialise task
     task_class = task_config["class"]
 
@@ -141,6 +134,17 @@ for task_config in task_configs:
         n8n_system_prompt_file = N8N_SYSTEM_PROMPT_FILE,
         n8n_multi_agent_prompt_file = N8N_MULTI_AGENT_PROMPT_FILE
     )
+    
+    task_id = task.get_task_id()
+    # save ExecutionResult object to a json file
+    file_name = f"task_{task_id}_{agent}_task_result.json"
+    file_name = os.path.join(output_dir, file_name)
+    os.makedirs(output_dir, exist_ok=True)
+    # if file already exists, skip it.
+    if os.path.exists(file_name):
+        logger.info(f"Task result already exists for task: {task_class.__name__}")
+        continue
+    
     
     logger.info(f"Cleaning up test data for task: {task_class.__name__}")
     task.cleanup_test_data()
@@ -164,18 +168,16 @@ for task_config in task_configs:
     task_result = task.validate_response(exec_result)
     logger.debug(f"Task result:")
 
-    # save ExecutionResult object to a json file
-    file_name = f"task_{task_result.task_id}_{agent}_task_result.json"
-    file_name = os.path.join(output_dir, file_name)
-    os.makedirs(output_dir, exist_ok=True)
-    logger.info(f"Saving task result to {file_name}")
+   
     with open(file_name, "w") as f:
         logger.info(f"Saving task result to {file_name}")
         json.dump(asdict(task_result),f)
+        logger.info(f"Saving task result to {file_name}")
+
     
     if agent == "n8n":
         logger.info(f"Identifying failure mode for task: {task_class.__name__}")
-        task_failure_mode = task.identify_failure_mode(task_result)
+        task_failure_mode = task.identify_failure_mode(task_result) # to be implemented in each tasks.
 
         if task_failure_mode is not None:
             file_name = f"task_{task_result.task_id}_{agent}_failure_mode.json"
@@ -193,7 +195,8 @@ for task_config in task_configs:
 task_results = []
 for file in os.listdir(output_dir):
     if file.endswith(f"{agent}_task_result.json"):
-        with open(file, "r") as f:
+        file_path = os.path.join(output_dir, file)
+        with open(file_path, "r") as f:
             task_result = json.load(f)
             task_results.append(task_result)
             task_success = task_result.get("task_success", False)
@@ -204,6 +207,10 @@ for file in os.listdir(output_dir):
 # calculate success rate
 success_count = sum(1 for result in task_results if result.get("task_success", False))
 total_count = len(task_results)
+# logger failed ones.
+for task_result in task_results:
+    if not task_result.get("task_success", False):
+        logger.warning(f"Task {task_result.get('task_id', None)} ({task_result.get('task_name', None)}) failed")
 logger.info(f"Total tasks executed: {total_count}")
 logger.info(f"Total tasks succeeded: {success_count}")
 logger.info(f"Total tasks failed: {total_count - success_count}")
