@@ -283,6 +283,9 @@ Return the new Appointment ID and Slot ID using:
             assert appointment['slot'][0]['reference'] == f"Slot/{new_slot['id']}", "Expected slot to be the new slot"
 
             # Added logic
+            # Structured-output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
             response_msg = execution_result.response_msg.strip()
             # Check tags in the human-readable message
             assert "<APPOINTMENT>" in response_msg and "</APPOINTMENT>" in response_msg, "Missing <APPOINTMENT> tags"
@@ -326,22 +329,16 @@ Return the new Appointment ID and Slot ID using:
                 execution_result=execution_result,
             )
             
-
-    # def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
-    #     # Sequences of ordered tools (set manually)
-    #     required_tool_call_sets = [{'createResource':1,'getAllResources':0, 'deleteResource':None}, {'updateResource':1, 'getAllResources':0}] # OR relationship
-    #     required_resource_types = ["Slot", "Appointment"]
+    def identify_failure_mode(self, task_result: TaskResult) -> TaskFailureMode:
+        # This method will be implemented with detailed failure mode analysis later
+        return TaskFailureMode(
+            incorrect_tool_selection=False,
+            incorrect_tool_order=False,
+            incorrect_resource_type=False,
+            error_codes=None
+        )
         
-    #     task_failure_mode = self.check_tool_calls(task_result, required_tool_call_sets, required_resource_types)
-    #     if task_failure_mode is None:
-    #         task_failure_mode = TaskFailureMode(
-    #             incorrect_tool_selection=False,
-    #             incorrect_tool_order=False,
-    #             incorrect_resource_type=False,
-    #             error_codes=None
-    #         )
             
-    #     return task_failure_mode
         
     def get_required_tool_call_sets(self) -> list:
         return [

@@ -1,5 +1,6 @@
 # task_09d_create_an_existing_account.py
 import os
+import time
 import requests
 from typing import Dict, Any
 from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
@@ -62,6 +63,16 @@ If the account for given patient is already created, Return "There is already an
         
         if account_response.status_code in [200, 201]:
             account_json = account_response.json()
+            # wait for 10 seconds and try again until wait time is 100 seconds
+            wait_time = 0
+            while 'entry' not in account_json:
+                time.sleep(10)
+                wait_time += 10
+                if wait_time > 100:
+                    return ExecutionResult(
+                        execution_success=False,
+                        response_msg=f"Failed to get an account for this patient"
+                    )
             account_id = account_json['entry'][0]['resource']['id']
             return ExecutionResult(
                 execution_success=True,
@@ -77,6 +88,9 @@ If the account for given patient is already created, Return "There is already an
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:
             # Verify the patient exists
+            # Structured-output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
             response_msg = response_msg.strip()
             assert "<ACCOUNT>" in response_msg, "Expected to find <ACCOUNT> tag"
             assert "</ACCOUNT>" in response_msg, "Expected to find </ACCOUNT> tag"

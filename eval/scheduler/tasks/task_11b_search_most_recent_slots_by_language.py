@@ -234,7 +234,9 @@ Using the following format: <slot_id>SLOT0010</slot_id>
        
     def validate_response(self, execution_result: ExecutionResult) -> TaskResult:
         try:            
-            # Parse the response message
+            # Structured-output assertions
+            response_msg = execution_result.response_msg
+            assert response_msg is not None, "Expected to find response message"
             response_msg = response_msg.strip()
             # match the response message with the expected format
             assert "<slot_id>" in response_msg, "Expected to find <slot_id> tag"
