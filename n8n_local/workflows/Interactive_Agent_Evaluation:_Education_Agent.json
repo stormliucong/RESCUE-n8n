@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-26T19:28:56.868Z",
-  "updatedAt": "2025-05-29T03:30:26.000Z",
+  "updatedAt": "2025-06-04T00:32:21.000Z",
   "id": "zOSJ4AMpO5cMILRN",
   "name": "Interactive Agent Evaluation: Education Agent",
   "active": true,
@@ -22,9 +22,9 @@
       "parameters": {
         "model": {
           "__rl": true,
-          "value": "o1",
+          "value": "gpt-4o",
           "mode": "list",
-          "cachedResultName": "o1"
+          "cachedResultName": "gpt-4o"
         },
         "options": {}
       },
@@ -196,7 +196,7 @@
           "cachedResultName": "education"
         },
         "options": {
-          "pineconeNamespace": "tier1_dummy_references"
+          "pineconeNamespace": "tier1_real_references"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
@@ -243,7 +243,7 @@
           "cachedResultName": "education"
         },
         "options": {
-          "pineconeNamespace": "tier2_dummy_references"
+          "pineconeNamespace": "tier2_real_references"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
@@ -892,7 +892,7 @@
       }
     ]
   },
-  "versionId": "52549189-b9d9-4c55-94cf-eddaa891968e",
+  "versionId": "9dedc06f-6aaa-4e90-be7e-3bec9703218d",
   "triggerCount": 1,
   "tags": [
     {
