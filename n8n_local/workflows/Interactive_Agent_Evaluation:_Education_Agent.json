@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-26T19:28:56.868Z",
-  "updatedAt": "2025-06-04T00:32:21.000Z",
+  "updatedAt": "2025-06-05T23:27:38.000Z",
   "id": "zOSJ4AMpO5cMILRN",
   "name": "Interactive Agent Evaluation: Education Agent",
   "active": true,
@@ -99,7 +99,8 @@
         180
       ],
       "id": "58217d37-daae-4862-a128-c3dbfba04fb9",
-      "name": "Education Agent"
+      "name": "Education Agent",
+      "onError": "continueErrorOutput"
     },
     {
       "parameters": {
@@ -288,7 +289,7 @@
       "typeVersion": 1.1,
       "position": [
         1100,
-        180
+        60
       ],
       "id": "5e12eedc-3470-4377-98cb-7e90dbe3b87c",
       "name": "Respond to Webhook"
@@ -392,8 +393,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1620,
-        60
+        2080,
+        100
       ],
       "id": "6af3acef-126e-45e1-b27d-8e4464283a0f",
       "name": "HTTP Request to Customized Patient Agent"
@@ -528,8 +529,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        1360,
-        180
+        1820,
+        220
       ],
       "id": "589e104e-66e5-4e46-8558-7b0d82de337f",
       "name": "Switch"
@@ -572,8 +573,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1620,
-        280
+        2080,
+        320
       ],
       "id": "fade1616-13e4-4a8a-ac87-00cc140e0a6e",
       "name": "HTTP Request to Front Desk Agent"
@@ -586,7 +587,7 @@
       "typeVersion": 2,
       "position": [
         860,
-        180
+        60
       ],
       "id": "5b838747-c37a-4c56-8b4e-719630500d12",
       "name": "Code"
@@ -617,8 +618,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1620,
-        -140
+        2080,
+        -100
       ],
       "id": "883461aa-6d79-47f1-b369-0a296bfcdf5c",
       "name": "HTTP Request to Patient Server"
@@ -659,6 +660,21 @@
       ],
       "id": "edfeeadc-b93a-462c-b687-a619d2d4b9e1",
       "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"output\": \"error!!!\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1100,
+        240
+      ],
+      "id": "ce1b3e9b-230f-460c-92ad-a79bb83ad0a5",
+      "name": "Respond to Webhook1"
     }
   ],
   "connections": {
@@ -700,6 +716,13 @@
         [
           {
             "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond to Webhook1",
             "type": "main",
             "index": 0
           }
@@ -817,7 +840,13 @@
     },
     "Redis Chat Memory": {
       "ai_memory": [
-        []
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
       ]
     },
     "Respond to Webhook": {
@@ -892,7 +921,7 @@
       }
     ]
   },
-  "versionId": "9dedc06f-6aaa-4e90-be7e-3bec9703218d",
+  "versionId": "14d247bf-7257-4045-99ec-7c4405d56e25",
   "triggerCount": 1,
   "tags": [
     {
