@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-03-26T19:28:56.868Z",
-  "updatedAt": "2025-06-05T23:27:38.000Z",
+  "updatedAt": "2025-06-11T19:29:59.000Z",
   "id": "zOSJ4AMpO5cMILRN",
   "name": "Interactive Agent Evaluation: Education Agent",
   "active": true,
@@ -100,6 +100,8 @@
       ],
       "id": "58217d37-daae-4862-a128-c3dbfba04fb9",
       "name": "Education Agent",
+      "retryOnFail": true,
+      "maxTries": 2,
       "onError": "continueErrorOutput"
     },
     {
@@ -393,8 +395,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2080,
-        100
+        1840,
+        40
       ],
       "id": "6af3acef-126e-45e1-b27d-8e4464283a0f",
       "name": "HTTP Request to Customized Patient Agent"
@@ -529,8 +531,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        1820,
-        220
+        1580,
+        160
       ],
       "id": "589e104e-66e5-4e46-8558-7b0d82de337f",
       "name": "Switch"
@@ -573,8 +575,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2080,
-        320
+        1840,
+        260
       ],
       "id": "fade1616-13e4-4a8a-ac87-00cc140e0a6e",
       "name": "HTTP Request to Front Desk Agent"
@@ -586,7 +588,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        860,
+        880,
         60
       ],
       "id": "5b838747-c37a-4c56-8b4e-719630500d12",
@@ -618,8 +620,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2080,
-        -100
+        1840,
+        -160
       ],
       "id": "883461aa-6d79-47f1-b369-0a296bfcdf5c",
       "name": "HTTP Request to Patient Server"
@@ -670,7 +672,7 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        1100,
+        880,
         240
       ],
       "id": "ce1b3e9b-230f-460c-92ad-a79bb83ad0a5",
@@ -840,13 +842,7 @@
     },
     "Redis Chat Memory": {
       "ai_memory": [
-        [
-          {
-            "node": "Education Agent",
-            "type": "ai_memory",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Respond to Webhook": {
@@ -921,7 +917,7 @@
       }
     ]
   },
-  "versionId": "14d247bf-7257-4045-99ec-7c4405d56e25",
+  "versionId": "1a704c5c-e5e7-4132-8caa-fae5c59868d6",
   "triggerCount": 1,
   "tags": [
     {
