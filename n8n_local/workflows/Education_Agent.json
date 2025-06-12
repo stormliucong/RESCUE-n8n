@@ -1,6 +1,6 @@
 {
   "createdAt": "2025-02-14T18:57:13.661Z",
-  "updatedAt": "2025-03-26T17:55:14.000Z",
+  "updatedAt": "2025-06-12T15:35:38.000Z",
   "id": "prQpeARJzVI1zlSz",
   "name": "Education Agent",
   "active": false,
@@ -142,10 +142,10 @@
         "operation": "download",
         "fileId": {
           "__rl": true,
-          "value": "1UC0Qv2jR1N8wh3hk3loVo_VAL6F7JEHy",
+          "value": "1rpgwiuoHUmdMMJUiBmiNPKhVqM4GMdgH",
           "mode": "list",
-          "cachedResultName": "Tier 2:  Aurora Syndrome \u2013 Molecular Mechanisms and Management Strategies.pdf",
-          "cachedResultUrl": "https://drive.google.com/file/d/1UC0Qv2jR1N8wh3hk3loVo_VAL6F7JEHy/view?usp=drivesdk"
+          "cachedResultName": "Genereviews: Cant\u00fa Syndrome.pdf",
+          "cachedResultUrl": "https://drive.google.com/file/d/1rpgwiuoHUmdMMJUiBmiNPKhVqM4GMdgH/view?usp=drivesdk"
         },
         "options": {
           "binaryPropertyName": "data"
@@ -162,8 +162,8 @@
       "alwaysOutputData": false,
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "Hpf5fsZSKXgRAeiA",
-          "name": "Google Drive account"
+          "id": "zDc8X8wm8MQZzy0g",
+          "name": "Google Drive account 2"
         }
       }
     },
@@ -230,7 +230,7 @@
           "cachedResultName": "education"
         },
         "options": {
-          "pineconeNamespace": "tier2_dummy_references"
+          "pineconeNamespace": "tier2_real_references"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
@@ -761,7 +761,7 @@
       }
     ]
   },
-  "versionId": "3e7e03b3-e870-4caa-ba8f-855599c1398b",
+  "versionId": "7c7aeb02-54c2-455f-b6ac-8952f0a22f5d",
   "triggerCount": 1,
   "tags": [
     {

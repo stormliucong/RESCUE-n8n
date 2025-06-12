@@ -1,13 +1,14 @@
 {
-  "createdAt": "2025-04-22T01:14:50.890Z",
-  "updatedAt": "2025-06-12T01:02:46.000Z",
-  "id": "lcDa6RjRjPcDdWxc",
-  "name": "Import Executions",
-  "active": false,
+  "createdAt": "2025-06-12T01:05:11.570Z",
+  "updatedAt": "2025-06-12T01:10:37.000Z",
+  "id": "zizmTLjphdZofBWe",
+  "name": "Import PDF to JSON",
+  "active": true,
   "nodes": [
     {
       "parameters": {
-        "path": "9e17d9af-78a5-46df-bb0f-76376c1eba3e",
+        "httpMethod": "POST",
+        "path": "76137e77-2a43-4b79-8945-3ec3b3341fa6",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -17,34 +18,24 @@
         0,
         0
       ],
-      "id": "701fd24a-17a3-4dc4-873d-3cb423d70971",
+      "id": "e76ae687-5c65-4d3c-bf06-b17b14a8f5cd",
       "name": "Webhook",
-      "webhookId": "9e17d9af-78a5-46df-bb0f-76376c1eba3e"
+      "webhookId": "76137e77-2a43-4b79-8945-3ec3b3341fa6"
     },
     {
       "parameters": {
-        "resource": "execution",
-        "operation": "get",
-        "executionId": "={{ $json.query.executionId }}",
-        "options": {
-          "activeWorkflows": true
-        },
-        "requestOptions": {}
+        "operation": "pdf",
+        "binaryPropertyName": "file",
+        "options": {}
       },
-      "type": "n8n-nodes-base.n8n",
+      "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
         220,
         0
       ],
-      "id": "38d97dc1-c8e5-492d-b39f-f9171b82695e",
-      "name": "n8n",
-      "credentials": {
-        "n8nApi": {
-          "id": "wUZ6h8bonj6zrvGr",
-          "name": "n8n account"
-        }
-      }
+      "id": "73b595d3-b35a-47cf-bf3e-1f9a90a69028",
+      "name": "Extract from File"
     },
     {
       "parameters": {
@@ -56,7 +47,7 @@
         440,
         0
       ],
-      "id": "f00bb347-2e11-47bf-a7fb-b58400da94b3",
+      "id": "db7a0817-f5f4-45f3-904f-88d46437af1f",
       "name": "Respond to Webhook"
     }
   ],
@@ -65,14 +56,14 @@
       "main": [
         [
           {
-            "node": "n8n",
+            "node": "Extract from File",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "n8n": {
+    "Extract from File": {
       "main": [
         [
           {
@@ -88,11 +79,9 @@
     "executionOrder": "v1"
   },
   "staticData": null,
-  "meta": {
-    "templateCredsSetupCompleted": true
-  },
+  "meta": null,
   "pinData": {},
-  "versionId": "4af9a12b-8b75-4fd1-99d6-336aaf962bbb",
+  "versionId": "fa273feb-61d8-43c3-9530-03a27745b01f",
   "triggerCount": 1,
   "tags": [
     {
@@ -102,10 +91,10 @@
       "name": "status: temp"
     },
     {
-      "createdAt": "2025-03-26T17:51:52.394Z",
-      "updatedAt": "2025-03-26T17:53:37.550Z",
-      "id": "f1eRCMwsFVB12Daf",
-      "name": "type: eval"
+      "createdAt": "2025-02-14T18:59:44.562Z",
+      "updatedAt": "2025-03-26T17:54:02.609Z",
+      "id": "p924Avtw60OkFX3e",
+      "name": "type: test"
     }
   ]
 }
