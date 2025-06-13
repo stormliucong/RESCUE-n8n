@@ -1,9 +1,9 @@
 {
   "createdAt": "2025-06-12T01:05:11.570Z",
-  "updatedAt": "2025-06-12T01:10:37.000Z",
+  "updatedAt": "2025-06-13T17:59:37.000Z",
   "id": "zizmTLjphdZofBWe",
   "name": "Import PDF to JSON",
-  "active": true,
+  "active": false,
   "nodes": [
     {
       "parameters": {
