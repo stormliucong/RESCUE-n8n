@@ -154,6 +154,7 @@ After creating the coverage, return the newly created Coverage ID using the foll
             response = requests.get(
                 f"{self.FHIR_SERVER_URL}/Coverage",
                 headers=self.HEADERS,
+                # Change manually to PAT002 TEST
                 params={"beneficiary": "Patient/PAT001", "status": "active"}
             )
             
