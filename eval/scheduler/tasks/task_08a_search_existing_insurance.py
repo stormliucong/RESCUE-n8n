@@ -1,5 +1,6 @@
 # task_08a_search_existing_insurance.py
 import os
+import time
 import requests
 from typing import Dict, Any
 from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
@@ -71,35 +72,55 @@ If found, return the coverage ID using the following format: <COVERAGE>coverage_
                     }
                 ]
             }
-            self.upsert_to_fhir(coverage_resource)
+            resp = self.upsert_to_fhir(coverage_resource)
+            if resp:                                # only non-None on failure
+                print("Coverage upsert failed: %s %s",
+                            resp.status_code, resp.text)
+                raise RuntimeError("Failed to create coverage")
+            
+            # TEST
+            # Testing POLL to wait for the server to finish indexing..
+            self.poll_until_exists('Patient', 'PAT001')
+            self.poll_until_exists('Organization', 'ORG-INSURER001')
+            self.poll_until_exists('RelatedPerson', 'PAT001-FATHER')
+            self.poll_until_exists('Coverage', 'COV-PAT001')
+
+            time.sleep(10)
+
         except Exception as e:
             raise Exception(f"Failed to prepare test data: {str(e)}")
 
 
     def execute_human_agent(self) -> ExecutionResult:
-        params = {
-            "beneficiary": "Patient/PAT001",
-            "status": "active"
-        }
+        """Return structured success / failure; retry until the index sees it."""
+        params = {"beneficiary": "Patient/PAT001", "status": "active", "_summary": "false"}
 
-        response = requests.get(
-            f"{self.FHIR_SERVER_URL}/Coverage",
-            headers=self.HEADERS,
-            params=params
-        )
-        
-        if response.status_code != 200:
-            return ExecutionResult(
-                execution_success=False,
-                response_msg=f"Failed to search for insurance: {response.text}"
-            )
+        # ── at most three quick polls: 0.1 s, 0.2 s, 0.4 s
+        delay = 0.1
+        for attempt in range(5):
+            #resp = requests.get(f"{self.FHIR_SERVER_URL}/Coverage", headers=self.HEADERS, params=params)
+            resp = requests.get(f"{self.FHIR_SERVER_URL}/Coverage", params=params)
 
-        response_json = response.json()
-        coverage_id = response_json['entry'][0]['resource']['id']
+            if resp.status_code != 200:
+                return ExecutionResult(
+                    False, f"FHIR search failed: {resp.status_code} {resp.text}"
+                )
 
+            bundle = resp.json()
+            if bundle.get("total", 0) > 0:
+                cov_id = bundle["entry"][0]["resource"]["id"] 
+                return ExecutionResult(
+                    True,
+                    f"Found coverage <COVERAGE>{cov_id}</COVERAGE>"
+                )
+
+            time.sleep(delay)
+            delay *= 2 
+
+        # still nothing after three tries
         return ExecutionResult(
-            execution_success=True,
-            response_msg=f"Found {response_json.get('total', 0)} insurance coverage(s) for patient PAT001: <COVERAGE>{coverage_id}</COVERAGE>"
+            False,
+            "No active coverage found for patient PAT001 after 3 retries"
         )
 
 

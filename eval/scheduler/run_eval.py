@@ -158,6 +158,8 @@ for task_config in task_configs:
         exec_result = task.execute_human_agent()
         logger.debug(f"Human response:")
         logger.debug(exec_result)
+        print("RESPONSE")
+        print(exec_result)
     if agent == "n8n":
         logger.info(f"Executing task on N8N: {task_class.__name__}")
         exec_result = task.execute_n8n_agent()
@@ -166,44 +168,44 @@ for task_config in task_configs:
     
     logger.info(f"Validating response for task: {task_class.__name__}")
     task_result = task.validate_response(exec_result)
-    logger.debug(f"Task result:")
+    #logger.debug(f"Task result:")
 
-    # save ExecutionResult object to a json file
-    file_name = f"task_{task_result.task_id}_{agent}_task_result.json"
-    with open(file_name, "w") as f:
-        logger.info(f"Saving task result to {file_name}")
-        json.dump(asdict(task_result),f)
+#     # save ExecutionResult object to a json file
+#     file_name = f"task_{task_result.task_id}_{agent}_task_result.json"
+#     with open(file_name, "w") as f:
+#         logger.info(f"Saving task result to {file_name}")
+#         json.dump(asdict(task_result),f)
     
-    if agent == "n8n":
-        logger.info(f"Identifying failure mode for task: {task_class.__name__}")
-        task_failure_mode = task.identify_failure_mode(task_result)
+#     if agent == "n8n":
+#         logger.info(f"Identifying failure mode for task: {task_class.__name__}")
+#         task_failure_mode = task.identify_failure_mode(task_result)
 
-        if task_failure_mode is not None:
-            file_name = f"task_{task_result.task_id}_{agent}_failure_mode.json"
-            with open(file_name, "w") as f:
-                logger.info(f"Saving failure mode to {file_name}")
-                json.dump(asdict(task_failure_mode),f)
-        else:
-            logger.info(f"No failure mode identified for task: {task_class.__name__}")
+#         if task_failure_mode is not None:
+#             file_name = f"task_{task_result.task_id}_{agent}_failure_mode.json"
+#             with open(file_name, "w") as f:
+#                 logger.info(f"Saving failure mode to {file_name}")
+#                 json.dump(asdict(task_failure_mode),f)
+#         else:
+#             logger.info(f"No failure mode identified for task: {task_class.__name__}")
             
 
-# read all *_task_result.json files and summarise the success rate.
-task_results = []
-for file in os.listdir():
-    if file.endswith(f"{agent}_task_result.json"):
-        with open(file, "r") as f:
-            task_result = json.load(f)
-            task_results.append(task_result)
-            task_success = task_result.get("task_success", False)
-            task_id = task_result.get("task_id", None)
-            task_name = task_result.get("task_name", None)
-            if not task_success:
-                logger.warning(f"Task {task_id} ({task_name}) failed")
-# calculate success rate
-success_count = sum(1 for result in task_results if result.get("task_success", False))
-total_count = len(task_results)
-logger.info(f"Total tasks executed: {total_count}")
-logger.info(f"Total tasks succeeded: {success_count}")
-logger.info(f"Total tasks failed: {total_count - success_count}")
-success_rate = success_count / total_count * 100 if total_count > 0 else 0
-logger.info(f"Success rate: {success_rate:.2f}%")
+# # read all *_task_result.json files and summarise the success rate.
+# task_results = []
+# for file in os.listdir():
+#     if file.endswith(f"{agent}_task_result.json"):
+#         with open(file, "r") as f:
+#             task_result = json.load(f)
+#             task_results.append(task_result)
+#             task_success = task_result.get("task_success", False)
+#             task_id = task_result.get("task_id", None)
+#             task_name = task_result.get("task_name", None)
+#             if not task_success:
+#                 logger.warning(f"Task {task_id} ({task_name}) failed")
+# # calculate success rate
+# success_count = sum(1 for result in task_results if result.get("task_success", False))
+# total_count = len(task_results)
+# logger.info(f"Total tasks executed: {total_count}")
+# logger.info(f"Total tasks succeeded: {success_count}")
+# logger.info(f"Total tasks failed: {total_count - success_count}")
+# success_rate = success_count / total_count * 100 if total_count > 0 else 0
+# logger.info(f"Success rate: {success_rate:.2f}%")

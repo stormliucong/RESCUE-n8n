@@ -234,7 +234,8 @@ class TaskInterface(ABC):
             logger.error(
                 f"Failed to upsert {resource['resourceType']} with ID {resource['id']}: {response.status_code} {response.text}"
             )
-            return response
+            raise RuntimeError(f"{response.status_code} – {response.text}")
+            #return response
             
 
     @abstractmethod
@@ -592,7 +593,25 @@ class TaskInterface(ABC):
 
         return failure_mode
     
-    
+
+    def poll_until_exists(self, resource_type, resource_id, timeout=5):
+        """Polls until the resource exists on the FHIR server, or raises after timeout."""
+        start = time.time()
+        url = f"{self.FHIR_SERVER_URL}/{resource_type}/{resource_id}"
+        logger.info(f"Polling for {resource_type}/{resource_id} to appear on the FHIR server (timeout={timeout}s)...")
+        attempt = 0
+        while time.time() - start < timeout:
+            resp = requests.get(url, headers=self.HEADERS)
+            attempt += 1
+            if resp.status_code == 200:
+                logger.info(f"Resource found: {resource_type}/{resource_id} (after {attempt} attempt(s), {time.time() - start:.2f}s)")
+                return True
+            else:
+                logger.debug(f"Attempt {attempt}: {resource_type}/{resource_id} not found (status {resp.status_code}); retrying in 0.2s...")
+            time.sleep(0.2)
+        logger.warning(f"Timeout: {resource_type}/{resource_id} not found after {timeout}s and {attempt} attempt(s).")
+        raise Exception(f"{resource_type}/{resource_id} not found after {timeout}s")
+
 
     def get_difficulty_level(self):
         # Return the difficulty level
