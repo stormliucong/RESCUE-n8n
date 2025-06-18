@@ -1,3 +1,28 @@
 tasks:
-  - module: task_01_enter_new_patient
-    class: EnterNewPatientTask
+  - module: task_06b_search_nonexistent_surgery_plan
+    class: SearchNonexistentSurgeryPlanTask
+    required_tool_call_sets:
+      - { getAllResources: 0 }
+      - { getResourceById: 0 }
+    required_resource_types: ["ServiceRequest"]
+    prohibited_tools: ["createResource", "updateResource", "deleteResource"]
+    difficulty_level: 2
+    
+  - module: task_07_enter_insurance
+    class: EnterInsuranceTask
+    required_tool_call_sets:
+      - { createResource: 0, createResource: 1 }
+      - { getResourceById: 0, updateResource: 1, createResource: 2 }
+      - { getAllResources: 0, deleteResource: 1, createResource: 2, createResource: 3 }
+    required_resource_types: ["RelatedPerson", "Coverage"]
+    prohibited_tools: []
+    difficulty_level: 2
+    
+  - module: task_08a_search_existing_insurance
+    class: SearchExistingInsuranceTask
+    required_tool_call_sets:
+      - { getAllResources: 0 }
+      - { getResourceById: 0 }
+    required_resource_types: ["Coverage"]
+    prohibited_tools: ["createResource", "updateResource", "deleteResource"]
+    difficulty_level: 1

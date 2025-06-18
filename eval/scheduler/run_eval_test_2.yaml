@@ -1,4 +1,13 @@
 tasks:
+    - module: task_08a_search_existing_insurance
+    class: SearchExistingInsuranceTask
+    required_tool_call_sets:
+      - { getAllResources: 0 }
+      - { getResourceById: 0 }
+    required_resource_types: ["Coverage"]
+    prohibited_tools: ["createResource", "updateResource", "deleteResource"]
+    difficulty_level: 1
+    
   - module: task_01_enter_new_patient
     class: EnterNewPatientTask
     required_tool_call_sets:

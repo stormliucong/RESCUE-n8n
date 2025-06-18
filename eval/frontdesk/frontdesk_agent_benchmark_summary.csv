@@ -1,0 +1,15 @@
+,4o-base,4o-textgrad,o1-base
+chitchat/out_of_scope,0.75,0.86,0.75
+clarification,0.65,0.64,0.75
+conversation_end,0.825,0.875,0.75
+multi_intent,0.45,0.75,0.82
+safety,0.77,0.73,0.65
+straight_admin,0.7,0.68,0.7
+straight_education,0.7,0.85,0.75
+straight_patient,0.49,0.9,0.25
+straight_scheduling,0.75,0.85,0.75
+0,,,
+Overall Average Score,0.6655,0.7869,0.681
+0,,,
+Total Tokens Used,11619,20752,25750
+Total Cost ($),0.0373575,0.0641125,1.073895
