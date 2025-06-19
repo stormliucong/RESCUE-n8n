@@ -1,8 +1,8 @@
 {
   "createdAt": "2025-04-17T19:03:15.697Z",
-  "updatedAt": "2025-04-19T20:11:53.000Z",
+  "updatedAt": "2025-06-19T19:31:42.000Z",
   "id": "Z5qrW63sxXjrmIE1",
-  "name": "Patient Agent: Profile Generation using PubMed Case Reports",
+  "name": "Patient Agent - Profile Generation using PubMed Case Reports",
   "active": false,
   "nodes": [
     {
@@ -393,7 +393,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "df816a37-8e74-4d35-896a-da55b6162f79",
+  "versionId": "4879e2dd-7d15-48ad-8c58-1b08a390524f",
   "triggerCount": 0,
   "tags": [
     {

@@ -1,8 +1,8 @@
 {
   "createdAt": "2025-03-19T18:51:45.516Z",
-  "updatedAt": "2025-05-16T01:40:13.000Z",
+  "updatedAt": "2025-06-19T19:30:56.000Z",
   "id": "7M5mjiX5RAsxrzFZ",
-  "name": "Interactive Agent Test workflow: Patient Agent",
+  "name": "Interactive Agent Test workflow - Patient Agent",
   "active": false,
   "nodes": [
     {
@@ -372,7 +372,7 @@
       }
     ]
   },
-  "versionId": "9ed13b46-e794-48a1-8b5b-cdf7669990f7",
+  "versionId": "68455fd4-e2ba-4a0c-b9a9-4fd6084425ae",
   "triggerCount": 1,
   "tags": [
     {

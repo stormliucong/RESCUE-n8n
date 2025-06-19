@@ -1,8 +1,8 @@
 {
   "createdAt": "2025-03-25T01:37:45.806Z",
-  "updatedAt": "2025-03-26T19:28:22.000Z",
+  "updatedAt": "2025-06-19T19:31:55.000Z",
   "id": "lsoQFqsiY96Fmvry",
-  "name": "Agent Evaluation: Education Agent",
+  "name": "Agent Evaluation - Education Agent",
   "active": false,
   "nodes": [
     {
@@ -238,7 +238,7 @@
   "staticData": null,
   "meta": null,
   "pinData": {},
-  "versionId": "87b56c9c-ac3f-46c5-9f83-883cc572a788",
+  "versionId": "2386d71a-5535-4cb2-97a6-eb9e4764334f",
   "triggerCount": 0,
   "tags": [
     {
