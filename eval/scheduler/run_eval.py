@@ -15,7 +15,7 @@ argparse = argparse.ArgumentParser(description="Run evaluation tasks")
 argparse.add_argument(
     "--config",
     type=str,
-    default="run_eval_test_2.yaml",
+    default="run_eval_all_params.yaml",
     help="Path to the configuration file"
 )
 argparse.add_argument(
@@ -168,6 +168,8 @@ for task_config in task_configs:
     
     logger.info(f"Validating response for task: {task_class.__name__}")
     task_result = task.validate_response(exec_result)
+    print(f"TASK SUCCESS: {task_result.task_success}")
+    print(f"{'assertion_error_message: ' + task_result.assertion_error_message if not task_result.task_success else 'no assertion message'}")
     #logger.debug(f"Task result:")
 
 #     # save ExecutionResult object to a json file

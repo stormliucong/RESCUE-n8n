@@ -1,0 +1,30 @@
+tasks:
+  - module: task_03_enter_medical_history
+    class: EnterMedicalHistoryTask
+    required_tool_call_sets:
+      - { createResource: 0 }
+      - { getResourceById: 0, updateResource: 1 }
+      - { getAllResources: 0, createResource: 1 }
+    required_resource_types: ["Condition"]
+    prohibited_tools: ["deleteResource"]
+    difficulty_level: 2
+
+  - module: task_05_enter_surgery_plan
+    class: EnterSurgeryPlanTask
+    required_tool_call_sets:
+      - { createResource: 0 }
+      - { getResourceById: 0, updateResource: 1 }
+      - { getAllResources: 0, createResource: 1 }
+    required_resource_types: ["ServiceRequest"]
+    prohibited_tools: ["deleteResource"]
+    difficulty_level: 2
+
+  - module: task_07_enter_insurance
+    class: EnterInsuranceTask
+    required_tool_call_sets:
+      - { createResource: 0, createResource: 1 }
+      - { getResourceById: 0, updateResource: 1, createResource: 2 }
+      - { getAllResources: 0, deleteResource: 1, createResource: 2, createResource: 3 }
+    required_resource_types: ["RelatedPerson", "Coverage"]
+    prohibited_tools: []
+    difficulty_level: 2

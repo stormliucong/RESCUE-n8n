@@ -129,11 +129,11 @@ After creating the coverage, return the newly created Coverage ID using the foll
             
             coverage_response = self.upsert_to_fhir(coverage_payload)
             
-            if coverage_response.status_code not in [200,201]:
-                return ExecutionResult(
-                    execution_success=False,
-                    response_msg=f"Failed to create coverage: {coverage_response.text}"
-                )
+            # if coverage_response != None:
+            #     return ExecutionResult(
+            #         execution_success=False,
+            #         response_msg=f"Failed to create coverage: {coverage_response.text}"
+            #     )
         
             coverage_id = coverage_response.json().get('id')
             return ExecutionResult(

@@ -73,11 +73,12 @@ If found, return the coverage ID using the following format: <COVERAGE>coverage_
                     }
                 ]
             }
-            resp = self.upsert_to_fhir(coverage_resource)
-            if resp:                                # only non-None on failure
-                print("Coverage upsert failed: %s %s",
-                            resp.status_code, resp.text)
-                raise RuntimeError("Failed to create coverage")
+            self.upsert_to_fhir(coverage_resource)
+            #resp = self.upsert_to_fhir(coverage_resource)
+            # if resp:                                # only non-None on failure
+            #     print("Coverage upsert failed: %s %s",
+            #                 resp.status_code, resp.text)
+            #     raise RuntimeError("Failed to create coverage")
             
             # TEST
             # Testing POLL to wait for the server to finish indexing..
