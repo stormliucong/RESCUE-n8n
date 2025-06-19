@@ -1,8 +1,8 @@
 {
   "createdAt": "2025-03-26T19:28:56.868Z",
-  "updatedAt": "2025-06-11T19:29:59.000Z",
+  "updatedAt": "2025-06-19T19:30:32.000Z",
   "id": "zOSJ4AMpO5cMILRN",
-  "name": "Interactive Agent Evaluation: Education Agent",
+  "name": "Interactive Agent Evaluation - Education Agent",
   "active": true,
   "nodes": [
     {
@@ -917,7 +917,7 @@
       }
     ]
   },
-  "versionId": "1a704c5c-e5e7-4132-8caa-fae5c59868d6",
+  "versionId": "3690af7c-6b1b-4b72-a716-2c10fc06e98c",
   "triggerCount": 1,
   "tags": [
     {

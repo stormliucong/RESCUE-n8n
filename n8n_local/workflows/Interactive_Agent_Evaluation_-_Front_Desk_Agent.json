@@ -1,8 +1,8 @@
 {
   "createdAt": "2025-03-13T02:56:31.694Z",
-  "updatedAt": "2025-05-26T17:24:06.000Z",
+  "updatedAt": "2025-06-19T19:30:45.000Z",
   "id": "bIw7bxVzjXzsARlc",
-  "name": "Interactive Agent Evaluation: Front Desk Agent",
+  "name": "Interactive Agent Evaluation - Front Desk Agent",
   "active": true,
   "nodes": [
     {
@@ -852,7 +852,7 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "ff75df70-810b-417c-9e59-9f838b7ec20a",
+  "versionId": "8bc0e10e-f736-4bee-834b-08745737a1f9",
   "triggerCount": 1,
   "tags": [
     {
