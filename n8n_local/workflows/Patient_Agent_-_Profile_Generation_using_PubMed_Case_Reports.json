@@ -1,0 +1,412 @@
+{
+  "createdAt": "2025-04-17T19:03:15.697Z",
+  "updatedAt": "2025-06-19T19:31:42.000Z",
+  "id": "Z5qrW63sxXjrmIE1",
+  "name": "Patient Agent - Profile Generation using PubMed Case Reports",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -120,
+        -120
+      ],
+      "id": "40b12695-8603-48c1-96ba-21f4fef0c796",
+      "name": "When clicking \u2018Test workflow\u2019"
+    },
+    {
+      "parameters": {
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "db",
+              "value": "pubmed"
+            },
+            {
+              "name": "term",
+              "value": "(\"case reports\"[Publication Type] OR \"case report\"[Title] OR \"case reports\"[Title]) AND \"Case Rep Genet\"[Journal]"
+            },
+            {
+              "name": "retmax",
+              "value": "10"
+            },
+            {
+              "name": "retmode",
+              "value": "json"
+            },
+            {
+              "name": "mindate",
+              "value": "2010"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        100,
+        -120
+      ],
+      "id": "20a3b657-d1e0-4eec-8f5f-a7e25cacfbd8",
+      "name": "Fetch case reports' PMIDs"
+    },
+    {
+      "parameters": {
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "dbfrom",
+              "value": "pubmed"
+            },
+            {
+              "name": "db",
+              "value": "pmc"
+            },
+            {
+              "name": "retmode",
+              "value": "json"
+            },
+            {
+              "name": "id",
+              "value": "={{ $json[\"esearchresult\"][\"idlist\"].join(\",\") }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        320,
+        -120
+      ],
+      "id": "b6d27760-dc97-4d57-8ac9-c64e00eb87b3",
+      "name": "Retrieve Equivalemts PMCIDs"
+    },
+    {
+      "parameters": {
+        "jsCode": "const linksets = $json.linksets || $json[0]?.linksets || [];\n\nif (!linksets.length || !linksets[0].linksetdbs) {\n  return [];\n}\n\n// Get the PMC links (from either pubmed_pmc or pubmed_pmc_local)\nconst pmcLinks = linksets[0].linksetdbs\n  .find(db => db.linkname === \"pubmed_pmc\")?.links || [];\n\nreturn pmcLinks.map(id => {\n  return {\n    json: {\n      pmcid: `PMC${id}`\n    }\n  };\n});\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        540,
+        -120
+      ],
+      "id": "e5b6f20c-e945-462b-a1de-2d37114c0679",
+      "name": "Extracting and formatting PMCIDs"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        760,
+        -120
+      ],
+      "id": "96e7a42d-ef5a-4d4b-b326-cf06f956665e",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "db",
+              "value": "pmc"
+            },
+            {
+              "name": "id",
+              "value": "={{ $json.pmcid }}"
+            },
+            {
+              "name": "retmode",
+              "value": "xml"
+            },
+            {
+              "name": "rettype",
+              "value": "full"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1040,
+        -80
+      ],
+      "id": "86871837-f452-47cd-80a7-6942946ba1c9",
+      "name": "Fetch full text from pmc"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You will read the following case report and extract two fields:\n\nPatient Profile: Summarize the patient\u2019s background and symptoms in a clinical but neutral tone. Do not mention or hint at the diagnosis or underlying condition.\n\nDiagnosis: List the underlying medical condition(s) as clearly as possible.\n\n\nYou must strictly adhere to the information provided in the case report. Do not infer, assume, or add any details that are not explicitly stated.\n\nThis task supports the evaluation of a diagnostic model. The Patient Profile will be presented as input to the model, while the Diagnosis will serve as the ground truth for assessing accuracy.\n\nCase Report:\n{{ $json.data }}",
+        "hasOutputParser": true
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.5,
+      "position": [
+        1280,
+        -80
+      ],
+      "id": "4861e5e1-c9f0-48af-b301-93a7dbdbe24a",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1220,
+        160
+      ],
+      "id": "81df430d-a948-4d70-8027-93377af04800",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n    \"Patient Profile\": \"Summary of the patient\u2019s background and symptoms in a clinical but neutral tone. Do not mention or hint at the diagnosis or underlying condition\",\n    \n    \"Diagnosis\": \"List the underlying medical condition(s) as clearly as possible.\"\n  \n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        1420,
+        160
+      ],
+      "id": "481a9a01-6da4-4b2b-9224-0ab8cce68cce",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1wvBOuzxZIt3j0NJo21p-v5ATzESiDVER-LZ95uM1dfs",
+          "mode": "list",
+          "cachedResultName": "PubMed Case Reports: Patient Vignettes and Diagnosis",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1wvBOuzxZIt3j0NJo21p-v5ATzESiDVER-LZ95uM1dfs/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1wvBOuzxZIt3j0NJo21p-v5ATzESiDVER-LZ95uM1dfs/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Patient Profile": "={{ $json.output['Patient Profile'] }}",
+            "Diagnosis": "={{ $json.output.Diagnosis }}"
+          },
+          "matchingColumns": [
+            "Patient Profile"
+          ],
+          "schema": [
+            {
+              "id": "Patient Profile",
+              "displayName": "Patient Profile",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Diagnosis",
+              "displayName": "Diagnosis",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1640,
+        -80
+      ],
+      "id": "ed1237fa-3adb-4448-9cb3-ee86ffe2c5d9",
+      "name": "Write Results Externally",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Phbe7DRI4BKje07O",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        [
+          {
+            "node": "Fetch case reports' PMIDs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch case reports' PMIDs": {
+      "main": [
+        [
+          {
+            "node": "Retrieve Equivalemts PMCIDs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Retrieve Equivalemts PMCIDs": {
+      "main": [
+        [
+          {
+            "node": "Extracting and formatting PMCIDs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extracting and formatting PMCIDs": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Fetch full text from pmc",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch full text from pmc": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Write Results Externally",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write Results Externally": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "4879e2dd-7d15-48ad-8c58-1b08a390524f",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:52.394Z",
+      "updatedAt": "2025-03-26T17:53:37.550Z",
+      "id": "f1eRCMwsFVB12Daf",
+      "name": "type: eval"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

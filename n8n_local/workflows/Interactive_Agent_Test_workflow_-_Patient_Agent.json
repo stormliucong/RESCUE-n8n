@@ -1,0 +1,391 @@
+{
+  "createdAt": "2025-03-19T18:51:45.516Z",
+  "updatedAt": "2025-06-19T19:30:56.000Z",
+  "id": "7M5mjiX5RAsxrzFZ",
+  "name": "Interactive Agent Test workflow - Patient Agent",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -300,
+        400
+      ],
+      "id": "168fe762-3089-429f-b3fc-24cdbf56c7ea",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.body.message }}",
+              "type": "string"
+            },
+            {
+              "id": "acaa3e0d-ead3-4019-bc81-02071201fa0f",
+              "name": "sessionId",
+              "value": "={{ $json.body.sessionId }}",
+              "type": "string"
+            },
+            {
+              "id": "f7232c6e-3724-4664-9096-72924752a395",
+              "name": "from_agent",
+              "value": "={{ $json.body.from_agent }}",
+              "type": "boolean"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -520,
+        140
+      ],
+      "id": "a95ae1a7-0e36-4dcc-809b-8b8f9476e3b1",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://congliu.app.n8n.cloud/webhook/413ab7a1-30ae-4276-a5d0-8d5ecda4f7a3",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "counter",
+              "value": "={{ $('Edit Fields').item.json.counter }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "={{ $('Edit Fields').item.json.sessionId }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        500,
+        120
+      ],
+      "id": "ba5dbcaf-81c2-4d0c-bcba-df57655f5061",
+      "name": "HTTP Request to FrontDesk Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        280,
+        140
+      ],
+      "id": "243a71e0-b118-4c7c-b3e8-cafb34510af7",
+      "name": "Respond to Webhook (previous stopped)"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "options": {
+          "systemMessage": "={{\n  $json.system_prompt && $json.system_prompt.trim() !== ''\n    ? $json.system_prompt\n    : `You are a simulated patient participating in a virtual consultation with a doctor.\n\nUse the following dummy medical record as your internal source of truth. Reveal only the information that becomes relevant based on the doctor\u2019s questions. Respond naturally and avoid oversharing.\n\n\ud83e\uddfe Patient Record\n-----------------\nName: Samira El Amrani  \nAge: 34  \nSex: Female  \n\nPrimary Concern:  \n- Fatigue and joint pain over the past week\n\nOther Symptoms:  \n- Occasional low-grade fever\n- Mild shortness of breath\n\nMedical History:\n- Diagnosed with mild asthma as a child\n- No known allergies\n- Family history of autoimmune disorders (mother has lupus)\n\nMedications:\n- Occasional use of ibuprofen\n- Inhaler (albuterol) for rare asthma flare-ups\n\nLifestyle:\n- Works a desk job, generally sedentary\n- Eats a balanced diet, non-smoker\n- Has been under work-related stress recently\n\nBehavior\n--------\n- You are polite, cooperative, and slightly concerned about your symptoms.\n- You respond like a real patient would: concisely, sometimes uncertain, and naturally conversational.\n- Only disclose details from your record when they become contextually relevant.\n- If asked a question outside your record, feel free to answer \u201cI\u2019m not sure\u201d or improvise a plausible answer.\n\nTriggered Behavior on START\n---------------------------\nWhen you receive the input message \"START\":\n- Embody your patient persona immediately.\n- Begin the conversation by stating that you're looking to consult a doctor.\n- Mention one general medical concern relevant to your profile (e.g., \u201cI\u2019ve been feeling unusually tired lately\u201d).\n- After that, follow up with a realistic administrative question, such as:\n    - \u201cDo I need an appointment for this?\u201d\n    - \u201cAre consultations covered by insurance?\u201d\n    - \u201cWhat days do you have availability?\u201d\n- After that, continue responding naturally based on the conversation.\n\nIf at any point the conversation should conclude, output the single token: \"<STOP>\".`\n}}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -280,
+        140
+      ],
+      "id": "8d12779c-6a82-4a55-88e9-11e672870a75",
+      "name": "Patient Agent"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "4549813e-3274-43bf-b541-dcfda9854f00",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -780,
+        140
+      ],
+      "id": "ff30dab8-f37a-4b07-ac89-0d5cb95bcbd1",
+      "name": "Webhook - Listen for Front Desk Agent",
+      "webhookId": "4549813e-3274-43bf-b541-dcfda9854f00"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryRedisChat",
+      "typeVersion": 1.4,
+      "position": [
+        -160,
+        400
+      ],
+      "id": "6652e256-da6c-4529-baae-b2a49ea39be2",
+      "name": "Redis Chat Memory",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "key": "conversation_1",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        140,
+        -320
+      ],
+      "id": "9e37b22a-58bf-4d7a-b986-4cd1c51e05ae",
+      "name": "Redis",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "key": "conversation_1"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        400,
+        -320
+      ],
+      "id": "ddf4244d-9929-4cf2-b57f-1b7c3326ef5e",
+      "name": "Redis1",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://congliu.app.n8n.cloud/webhook/413ab7a1-30ae-4276-a5d0-8d5ecda4f7a3",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "counter",
+              "value": "={{ $('Edit Fields').item.json.counter }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "={{ $('Edit Fields').item.json.sessionId }}"
+            },
+            {
+              "name": "end_conversation",
+              "value": "={{ [\"true\", true, \"1\", 1].includes($('Edit Fields').item.json.end_conversation) }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        500,
+        -80
+      ],
+      "id": "a4f3746a-a7f8-4661-b23c-5d6b363f2437",
+      "name": "HTTP Request to FrontDesk Agent1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract the output field from the first incoming item\nconst inputData = items[0].json;\n\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\nlet message = inputData.output;\n\nconst containsStop = message.includes(\"<STOP>\");\n\n// Determine target agent based on tag\nlet to_agent = \"frontdesk_agent\";\n\n// Clean up <STOP> and trim\nmessage = message.replace(\"<STOP>\", \"\").trim();\n\n// Return the final formatted object\nreturn [\n  {\n    json: {\n      output: message,\n      execution_id: $execution.id,\n      to_agent: $('Edit Fields').first().json.from_agent,\n      from_agent: \"patient_agent\",   // hardcoded\n      end_conversation: containsStop\n    },\n  },\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        80,
+        140
+      ],
+      "id": "5151d1e6-009a-4397-aca8-a5f4d7fa5db5",
+      "name": "Code"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -780,
+        -40
+      ],
+      "id": "ba3e540c-cf28-4d36-b7ee-9640aefad8bc",
+      "name": "When clicking \u2018Test workflow\u2019"
+    }
+  ],
+  "connections": {
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Patient Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Patient Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request to FrontDesk Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Patient Agent": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook - Listen for Front Desk Agent": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis Chat Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Patient Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis": {
+      "main": [
+        []
+      ]
+    },
+    "Respond to Webhook (previous stopped)": {
+      "main": [
+        []
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook (previous stopped)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {
+    "When clicking \u2018Test workflow\u2019": [
+      {
+        "json": {
+          "body": {
+            "message": "START",
+            "sessionId": 4,
+            "from_agent": "test_agent"
+          }
+        }
+      }
+    ]
+  },
+  "versionId": "68455fd4-e2ba-4a0c-b9a9-4fd6084425ae",
+  "triggerCount": 1,
+  "tags": [
+    {
+      "createdAt": "2025-02-14T18:59:44.562Z",
+      "updatedAt": "2025-03-26T17:54:02.609Z",
+      "id": "p924Avtw60OkFX3e",
+      "name": "type: test"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}

@@ -1,0 +1,936 @@
+{
+  "createdAt": "2025-03-26T19:28:56.868Z",
+  "updatedAt": "2025-06-19T19:30:32.000Z",
+  "id": "zOSJ4AMpO5cMILRN",
+  "name": "Interactive Agent Evaluation - Education Agent",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "5a0733d3-01c7-4c47-b1b4-ea11499d3468",
+      "typeVersion": 1.1,
+      "name": "Workflow Input Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "position": [
+        0,
+        -60
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -160,
+        460
+      ],
+      "id": "de440b56-6744-42e0-9462-ead6620717e8",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Call API tool to obtain education materials",
+        "url": "http://education-server:8080/api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{placeholder}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        1220,
+        440
+      ],
+      "id": "e2326e5f-7982-407d-b680-869cf681ccf4",
+      "name": "Education Material HTTP Request"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        460,
+        660
+      ],
+      "id": "0534cd4c-c091-4c8a-8516-6227080b526a",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "={{\n  $json.system_prompt && $json.system_prompt.trim() !== ''\n    ? $json.system_prompt\n    : `You are the Genetic Education Agent for our eConsult system. Your mission is to provide comprehensive, clear, and personalized educational content regarding genetic conditions, inheritance patterns, test procedures, management options, and ethical, legal, and privacy concerns.\n\nWhen prompted by a patient you should be:\n- Asking for their symptoms and chief complaint.\n- Asking relevant follow-up questions to gather diagnostic information.\n- Offering a likely diagnosis or recommendation based on the information gathered.\n- Once you provide a diagnosis, check with the patient to see if they are satisfied with your answer or they have further remarks.\n- When you receive a message, greet the patient and ask about the purpose of their eVisit if appropriate.\n\nAt any point, if you feel like the interaction with the patient should conclude (i.e., once you check with the patient and they confirm that your diagnosis is satisfactory), output a single token: <STOP>.\n\nIf the patient\u2019s question requires a medical diagnosis or specialized medical knowledge, proceed to answer the query or follow-up accordingly. Make sure to end your output with the token \"<PATIENT>\".\n\nIf the patient\u2019s question is about insurance (e.g., coverage, copays, claims) or billing (e.g., invoices, payment, financial questions), forward the entire message verbatim to the administrative agent. End your output with the token \"<ADMIN>\".\n\nIf the patient\u2019s question involves clinic hours, directions, or general clinic policies (but NOT insurance, billing, or appointment booking/rescheduling), forward to the front-desk agent and end with <FRONT_DESK>.\n\nIf the message requests to book, cancel, or reschedule an appointment, or asks about appointment availability, forward to the scheduling agent and end with <SCHEDULING>.\n\nDo not attempt to answer scheduling queries yourself. \n\nYour response must always end with a referral token\u2014by default, it should remain <PATIENT>, unless forwarding to another agent.\n\n\n**Tools**\nYou have access to these 3 tools:\n- [protocol]: Vector database containing the hospital's Internal Education Material which contains verified, institution-specific educational material and references. These are highly verified sources and must be prioritized over any other source or pretrained knowledge.\n\n- [genereviews]: Vector database containing education material obtained from GeneReviews. This is another highly verified knowledge source. It must be prioritized over all sources or pretrained knowledge except for references returned by [protocol]. Make sure to supplement references from this source with those from [protocol].\n\n- [Wikipedia]: A tool that enables access to wikipedia. if both sources [protocol] and [genereviews] fail to return an answer to the user query, use this tool to search Wikipedia.\n\n\n**Steps**\n1. Use the Tool [protocol] to search internal educational material/protocol. Wait for output before using other tools.\n2. Use the search genereviews tool [genereviews]. Wait for output before proceeding to use other tools. If satisfactory results are found, STOP HERE and do not proceed to Step 3.\n3. Look it up in Wikipedia using the tool [Wikipedia]. If satisfactory results are found, STOP HERE and do not proceed to Step 4.\n4. If no satisfactory results are found, use the knowledge you are trained on to provide an answer.\n\nA satisfactory result is one that fully addresses the user\u2019s query according to your knowledge hierarchy.\n\n\n**Knowledge-Use Rules (strict source control)**  \n1. **Respect source hierarchy** \u2192 Always consult sources in the following strict order: [protocol], then [genereviews], then [Wikipedia], and only use pretrained knowledge if all three return no relevant information.  \n2. **Do not invent or supplement** \u2192 Your response must be based **only** on retrieved content. Do not introduce facts, explanations, or terminology that are not explicitly found in the retrieved documents.  \n3. **Avoid real-world additions** \u2192 Do not include medically accurate but unreferenced content, such as gene names, mechanisms, or treatments, unless explicitly present in the retrieved material.  \n4. **No assumptions** \u2192 If the tools return no relevant information, state this clearly and avoid answering based on pretrained or assumed knowledge.\n\nAny violation of these rules may lead to incorrect or unsafe outputs.\n\n\n**Communication Style**\n- Be concise, empathetic, and supportive.\n- Use bullet points or numbered lists where it enhances clarity.\n- If the topic is complex, break it down into sub-sections with clear headings.\n\n\n**Output Format**\n- For the reply field, provide your response in plain text that can be included in a patient-facing report.\n- Clearly label sections (e.g., \u201cOverview of the Condition,\u201d \u201cInheritance Patterns,\u201d \u201cTesting Procedure,\u201d \u201cManagement Options,\u201d \u201cEthical and Privacy Considerations\u201d) to enhance readability.\n\nYour goal is to ensure that the user fully understands the topic in a manner that is both accessible and accurate.`\n}}\n\n\nFinal Reminders\n---------------\nHere is the current date/time: {{ $now }}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        460,
+        180
+      ],
+      "id": "58217d37-daae-4862-a128-c3dbfba04fb9",
+      "name": "Education Agent",
+      "retryOnFail": true,
+      "maxTries": 2,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "name": "protocol",
+        "description": "Vector database containing the hospital's Internal Education Material which contains verified, institution-specific educational material and references",
+        "topK": 8
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        340,
+        460
+      ],
+      "id": "e39cdeea-6e79-4d92-9158-15a40e1e7fdf",
+      "name": "Search Internal Education Material"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolWikipedia",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        460
+      ],
+      "id": "6a619b92-21c8-4573-9023-ed6cc289a0dd",
+      "name": "Wikipedia"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        980,
+        660
+      ],
+      "id": "137fdeed-a51e-4306-8b99-0520567915b4",
+      "name": "OpenAI Chat Model2",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "genereviews",
+        "description": "Vector database containing education material obtained from GeneReviews.",
+        "topK": 8
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        660,
+        460
+      ],
+      "id": "ef60a204-def7-4306-a2ce-4647a469be1b",
+      "name": "Search GeneReviews"
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        100,
+        840
+      ],
+      "id": "3993ff65-c80a-4d8e-9b0f-81531b78b035",
+      "name": "Embeddings OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "education",
+          "mode": "list",
+          "cachedResultName": "education"
+        },
+        "options": {
+          "pineconeNamespace": "tier1_real_references"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        160,
+        660
+      ],
+      "id": "6953d197-3326-4161-b166-03e259f5dec3",
+      "name": "Pinecone Vector Store: Tier 1",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "text-embedding-3-large",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        620,
+        840
+      ],
+      "id": "a23d13ad-ccab-4f43-88f8-2541a8f38251",
+      "name": "Embeddings OpenAI2",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "education",
+          "mode": "list",
+          "cachedResultName": "education"
+        },
+        "options": {
+          "pineconeNamespace": "tier2_real_references"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1,
+      "position": [
+        680,
+        660
+      ],
+      "id": "3cd51c99-62f3-460a-a73f-820cffb8c8cc",
+      "name": "Pinecone Vector Store: Tier 2",
+      "credentials": {
+        "pineconeApi": {
+          "id": "YoXkCj7xkYVRS0cz",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bdfcc15d-a70c-4fb4-9df6-5beaf18fa2d6",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -20,
+        180
+      ],
+      "id": "83befdb9-af1f-4072-8280-5b7a2e75060f",
+      "name": "Webhook",
+      "webhookId": "bdfcc15d-a70c-4fb4-9df6-5beaf18fa2d6"
+    },
+    {
+      "parameters": {
+        "options": {
+          "responseKey": ""
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1100,
+        60
+      ],
+      "id": "5e12eedc-3470-4377-98cb-7e90dbe3b87c",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\t\"reply\": \"answer to the user query\",\n\t\"tools_called\": [\"genereviews\"]\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        160,
+        460
+      ],
+      "id": "09dbad26-8661-45b3-89e8-42f2953eb24e",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.query }}",
+              "type": "string"
+            },
+            {
+              "id": "ae5baf46-9324-4ef8-ae45-9e1ba880b2c3",
+              "name": "sessionId",
+              "value": "conversation_1",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        200,
+        -60
+      ],
+      "id": "f027f226-2c05-46cd-861b-92ab12b69215",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryRedisChat",
+      "typeVersion": 1.4,
+      "position": [
+        0,
+        460
+      ],
+      "id": "4b2fccc8-4e9e-48cf-ae6e-05249dc4a073",
+      "name": "Redis Chat Memory",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://congliu.app.n8n.cloud/webhook/4549813e-3274-43bf-b541-dcfda9854f00",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.reply }}"
+            },
+            {
+              "name": "counter",
+              "value": "={{ $('Edit Fields').item.json.counter }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "={{ $('Edit Fields').item.json.sessionId }}"
+            },
+            {
+              "name": "end_conversation",
+              "value": "={{ [\"true\", true, \"1\", 1].includes($('Edit Fields').item.json.end_conversation) }}"
+            },
+            {
+              "name": "patient_profile",
+              "value": "={{ $('Edit Fields').item.json.patient_profile }}"
+            },
+            {
+              "name": "target_agent",
+              "value": "={{ $('Edit Fields').item.json.target_agent }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1840,
+        40
+      ],
+      "id": "6af3acef-126e-45e1-b27d-8e4464283a0f",
+      "name": "HTTP Request to Customized Patient Agent"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.body.message }}",
+              "type": "string"
+            },
+            {
+              "id": "3378b757-1dae-4d5c-ba84-45dbd15f7a8e",
+              "name": "counter",
+              "value": "={{ $json.body.counter + 1}} ",
+              "type": "number"
+            },
+            {
+              "id": "acaa3e0d-ead3-4019-bc81-02071201fa0f",
+              "name": "sessionId",
+              "value": "={{ $json.body.sessionId }}",
+              "type": "string"
+            },
+            {
+              "id": "f7232c6e-3724-4664-9096-72924752a395",
+              "name": "end_conversation",
+              "value": "={{ [\"true\", true, \"1\", 1].includes($json.body.end_conversation) }}",
+              "type": "boolean"
+            },
+            {
+              "id": "295d1b3f-6237-48c0-9e72-06ebeae18c3b",
+              "name": "patient_profile",
+              "value": "={{ $json.body.patient_profile }}",
+              "type": "string"
+            },
+            {
+              "id": "a47060b8-062a-4059-ab98-cea56d4baf8d",
+              "name": "target_agent",
+              "value": "={{ $json.body.target_agent }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        460,
+        -40
+      ],
+      "id": "d8ce09fb-8a76-4c6c-98e4-a75dfba6647b",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "key": "conversation_1"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        860,
+        -160
+      ],
+      "id": "07b2630d-e9b6-4e93-aba7-55aeeb4cf109",
+      "name": "Redis",
+      "credentials": {
+        "redis": {
+          "id": "Ib3bWFlXBjukwLTb",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Code').item.json.target_agent }}",
+                    "rightValue": "patient",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "fa90ab01-93cf-4cb3-85dc-5f547c4c7845",
+                    "leftValue": "={{ $('Code').item.json.target_agent }}",
+                    "rightValue": "front_desk_agent",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        1580,
+        160
+      ],
+      "id": "589e104e-66e5-4e46-8558-7b0d82de337f",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://congliu.app.n8n.cloud/webhook/413ab7a1-30ae-4276-a5d0-8d5ecda4f7a3",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "counter",
+              "value": "={{ $('Edit Fields').item.json.counter }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "={{ $('Edit Fields').item.json.sessionId }}"
+            },
+            {
+              "name": "end_conversation",
+              "value": "={{ [\"true\", true, \"1\", 1].includes($('Edit Fields').item.json.end_conversation) }}"
+            },
+            {
+              "name": "patient_profile",
+              "value": "={{ $('Edit Fields').item.json.patient_profile }}"
+            },
+            {
+              "name": "target_agent",
+              "value": "={{ $('Edit Fields').item.json.target_agent }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1840,
+        260
+      ],
+      "id": "fade1616-13e4-4a8a-ac87-00cc140e0a6e",
+      "name": "HTTP Request to Front Desk Agent"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract the output field from the first incoming item\nconst inputData = items[0].json;\n\nif (!inputData.output) {\n  throw new Error(\"Missing 'output' field in input\");\n}\n\nlet message = inputData.output;\nconst containsStop = message.includes(\"<STOP>\");\n\nlet to_agent = \"unknown\";\nif (message.includes(\"<PATIENT>\")) {\n  to_agent = \"patient_agent\";\n} else if (message.includes(\"<FRONT_DESK>\")) {\n  to_agent = \"frontdesk_agent\";\n} else if (message.includes(\"<ADMIN>\")) {\n  to_agent = \"administrative_agent\";\n} else if (message.includes(\"<SCHEDULING>\")) {\n  to_agent = \"scheduling_agent\";\n}\n\n// Remove any/all referral tags and <STOP>\nmessage = message\n  .replace(/<PATIENT>|<FRONT_DESK>|<ADMIN>|<SCHEDULING>|<STOP>/g, \"\")\n  .trim();\n\nreturn [\n  {\n    json: {\n      output: message,\n      execution_id: $execution.id,\n      to_agent: to_agent,\n      from_agent: \"education_agent\", // hardcoded\n      end_conversation: containsStop,\n    },\n  },\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        60
+      ],
+      "id": "5b838747-c37a-4c56-8b4e-719630500d12",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://165.22.13.117:8080/receive_reply",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "reply",
+              "value": "={{ $json.reply }}"
+            },
+            {
+              "name": "sessionId",
+              "value": "={{ $('Edit Fields').item.json.sessionId }}"
+            },
+            {
+              "name": "responding_agent",
+              "value": "education_agent"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1840,
+        -160
+      ],
+      "id": "883461aa-6d79-47f1-b369-0a296bfcdf5c",
+      "name": "HTTP Request to Patient Server"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.body.message }}",
+              "type": "string"
+            },
+            {
+              "id": "acaa3e0d-ead3-4019-bc81-02071201fa0f",
+              "name": "sessionId",
+              "value": "={{ $json.body.sessionId }}",
+              "type": "string"
+            },
+            {
+              "id": "a47060b8-062a-4059-ab98-cea56d4baf8d",
+              "name": "from_agent",
+              "value": "={{ $json.body.from_agent }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        220,
+        180
+      ],
+      "id": "edfeeadc-b93a-462c-b687-a619d2d4b9e1",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"output\": \"error!!!\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        880,
+        240
+      ],
+      "id": "ce1b3e9b-230f-460c-92ad-a79bb83ad0a5",
+      "name": "Respond to Webhook1"
+    }
+  ],
+  "connections": {
+    "Workflow Input Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Search Internal Education Material",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Education Agent": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Internal Education Material": {
+      "ai_tool": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wikipedia": {
+      "ai_tool": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Search GeneReviews",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search GeneReviews": {
+      "ai_tool": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store: Tier 1",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store: Tier 1": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Search Internal Education Material",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI2": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store: Tier 2",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store: Tier 2": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Search GeneReviews",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        []
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        []
+      ]
+    },
+    "Redis Chat Memory": {
+      "ai_memory": [
+        []
+      ]
+    },
+    "Respond to Webhook": {
+      "main": [
+        []
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        []
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request to Patient Server",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request to Front Desk Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request to Customized Patient Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Education Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {
+    "Workflow Input Trigger": [
+      {
+        "json": {
+          "query": "What is Hulu syndrome?"
+        }
+      }
+    ]
+  },
+  "versionId": "3690af7c-6b1b-4b72-a716-2c10fc06e98c",
+  "triggerCount": 1,
+  "tags": [
+    {
+      "createdAt": "2025-03-26T17:51:52.394Z",
+      "updatedAt": "2025-03-26T17:53:37.550Z",
+      "id": "f1eRCMwsFVB12Daf",
+      "name": "type: eval"
+    },
+    {
+      "createdAt": "2025-02-07T19:25:06.365Z",
+      "updatedAt": "2025-03-26T17:53:28.478Z",
+      "id": "swsybkCsjhDW90oq",
+      "name": "status: dev"
+    }
+  ]
+}
