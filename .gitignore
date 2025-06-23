@@ -29,3 +29,7 @@ eval/scheduler/eval_results.failed.example.json
 eval/scheduler/eval_results.success.example.json
 
 **/experiments/**
+
+# Ignore all .pdf files
+*.pdf
+
