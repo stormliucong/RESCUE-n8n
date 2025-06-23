@@ -44,18 +44,8 @@ PROMPT_TEMPLATES = {
         "{\"Providers\": [list of provider names], \"source_url\": \"link to the official source\"}. "
         "Only use information from official GeneDx or trusted affiliate websites."
     ),
-    "counted_311": (
-        "You are an artificial intelligence assistant and you need to "
-        "engage in a helpful, detailed, polite conversation with a user.",
-        "List all the 311 medical insurance providers that are currently in-network with GeneDx. "
-        "Output the result strictly in JSON format using the following structure: "
-        "{\"Providers\": [list of provider names], \"source_url\": \"link to the official source\"}. "
-        "Only include links from the official GeneDx website or affiliated trusted sources. "
-        "Do not include any introduction, explanation, or extra commentary — only return the JSON object."
-    ),
     "explicit_source": (
-        "You are an artificial intelligence assistant and you need to "
-        "engage in a helpful, detailed, polite conversation with a user.",
+        "You are a helpful assistant.",
         "List all the medical insurance providers that are currently in-network with GeneDx. "
         "You may use the official GeneDx insurance network page at "
         "https://www.genedx.com/commercial-insurance-in-network-contracts/ as the primary source of information. "

@@ -42,8 +42,8 @@ def policy_retrieval_prompt_baseline(provider_name):
     return (
         f"Find and list all the links to official policy documents that contain genetic testing coverage policies "
         f"for the insurance provider '{provider_name}'. "
-        "Include both PDF files and webpage URLs if the information is only available on the website. "
-        "Only include links from official sources such as the insurance company's website or regulatory bodies. "
+        "Include both PDF URLs and webpage URLs if the information is only available on the website. "
+        "Only include links from official sources such as the insurance company's website."
         "Exclude links from news articles, blog posts, or discussion forums. "
         "If the policy is available as a PDF, return the direct PDF link under the key \"pdf_links\". "
         "If the policy is available only as an HTML webpage, return the webpage URL under the key \"webpage_links\". "
@@ -63,13 +63,13 @@ def policy_retrieval_prompt_keyword_checked_document(provider_name):
         "'coverage policy', 'medical policy', 'clinical policy', 'WES', 'WGS', 'BRCA', 'Duchenne muscular dystrophy', "
         "'hereditary cancer', 'genetic testing', 'lynch syndrome', or 'pharmacogenetic'. "
         "Exclude any documents that contain the phrase 'providal guideline', or that are press releases, claim forms, newsletters, blog posts, or provider manuals."
-        "Only include links from official sources such as the insurance company’s website or regulatory bodies. "
-        "If a document is available as a downloadable PDF, return the full direct PDF link under the key 'pdf_links'. "
-        "If the document is only available as a webpage, return the full URL under the key 'webpage_links'. "
+        "Only include links from official sources such as the insurance company’s website."
+        "If a document is available as a downloadable PDF, return the full direct PDF link under the key \"pdf_links\"."
+        "If the document is only available as a webpage, return the full URL under the key \"webpage_links\"."
         "The JSON response must follow this exact format: "
         "{\"pdf_links\": [list of direct PDF links], \"webpage_links\": [list of webpage URLs]}. "
         "If no qualifying documents are found, return empty lists. "
-        "Do not include any explanation, markdown, natural language, or formatting — only return the raw JSON object."
+        "Do not include any additional text or explanations—only the JSON object."
     )
 
 def policy_retrieval_prompt_keyword_verified_links(provider_name):
@@ -82,13 +82,13 @@ def policy_retrieval_prompt_keyword_verified_links(provider_name):
         "'coverage policy', 'medical policy', 'clinical policy', 'WES', 'WGS', 'BRCA', 'Duchenne muscular dystrophy', "
         "'hereditary cancer', 'genetic testing', 'lynch syndrome', or 'pharmacogenetic'. "
         "Exclude any documents that contain the phrase 'providal guideline', or that are press releases, claim forms, newsletters, blog posts, or provider manuals."
-        "Only include links from official sources such as the insurance company’s website or regulatory bodies. with direct PDF links and ofiicial HTML policy pages."
+        "Only include links from official sources such as the insurance company’s website, with direct PDF links and ofiicial HTML policy pages."
         "If a document is available as a downloadable PDF, return the full direct PDF link under the key 'pdf_links'. "
         "If the document is only available as a webpage, return the full URL under the key 'webpage_links'. "
         "The JSON response must follow this exact format: "
         "{\"pdf_links\": [list of direct PDF links], \"webpage_links\": [list of webpage URLs]}. "
         "Make sure the lists contain only valid, existing URLs. If no documents are found, return empty lists. "
-        "Do not include any explanation, markdown, natural language, or formatting — only return the raw JSON object."
+        "Do not include any additional text or explanations—only the JSON object."
     )
 
 prompt_functions = {

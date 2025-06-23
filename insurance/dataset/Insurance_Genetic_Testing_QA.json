@@ -17,7 +17,7 @@
         },
         {
             "id": "Q3",
-            "question": "Does this genetic test meet medical necessity based on the patient’s clinical features and its potential to impact clinical management?",
+            "question": "Do the patient’s clinical features meet the medical necessity criteria as defined in the insurance policy for this test?",
             "options": ["Yes", "No"]
         },
         {
