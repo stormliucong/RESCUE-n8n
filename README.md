@@ -8,9 +8,6 @@ This project is a modular, multi-agent chat system built to support patients, pr
     - `deploy-to-droplet.yml`: Github Action to automatically redeploy the Chat UI to a remote droplet server whenever changes are pushed to `src/chat-ui-react/` on the `main branch`, or when triggered manually
     - `sync-n8n-workflows.yml`: Github Action to Sync the `n8n_local/workflows/` folder daily with the latest workflows from the remote n8n instance.
 
-- `db/`
-    - `insurance_policy`: Insurance policies related to genetic testing for major insurance providers in the US.
-
 - `eval/`
     - `scheduler/`: Evaluation pipeline for the *Scheduling Agent*
         - `tasks/`: List of tailored evaluation scenarios for the *Scheduling Agent*, implementing the `task_interface.py` interface.
