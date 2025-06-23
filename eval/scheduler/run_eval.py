@@ -15,7 +15,7 @@ argparse = argparse.ArgumentParser(description="Run evaluation tasks")
 argparse.add_argument(
     "--config",
     type=str,
-    default="run_eval_all_params.yaml",
+    default="run_eval_temp.yaml",
     help="Path to the configuration file"
 )
 argparse.add_argument(
@@ -158,6 +158,8 @@ for task_config in task_configs:
         exec_result = task.execute_human_agent()
         logger.debug(f"Human response:")
         logger.debug(exec_result)
+        print("RESPONSE")
+        print(exec_result)
         print("RESPONSE")
         print(exec_result)
     if agent == "n8n":

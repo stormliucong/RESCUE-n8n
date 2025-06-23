@@ -1,7 +1,10 @@
 # task_08a_search_existing_insurance.py
 import os
 import time
+<<<<<<< HEAD
 import time
+=======
+>>>>>>> b817ea0b219028ffc44e9549f23a2cf0983af377
 import requests
 from typing import Dict, Any
 from task_interface import TaskInterface, TaskResult, ExecutionResult, TaskFailureMode
@@ -73,12 +76,20 @@ If found, return the coverage ID using the following format: <COVERAGE>coverage_
                     }
                 ]
             }
+<<<<<<< HEAD
             self.upsert_to_fhir(coverage_resource)
             #resp = self.upsert_to_fhir(coverage_resource)
             # if resp:                                # only non-None on failure
             #     print("Coverage upsert failed: %s %s",
             #                 resp.status_code, resp.text)
             #     raise RuntimeError("Failed to create coverage")
+=======
+            resp = self.upsert_to_fhir(coverage_resource)
+            if resp:                                # only non-None on failure
+                print("Coverage upsert failed: %s %s",
+                            resp.status_code, resp.text)
+                raise RuntimeError("Failed to create coverage")
+>>>>>>> b817ea0b219028ffc44e9549f23a2cf0983af377
             
             # TEST
             # Testing POLL to wait for the server to finish indexing..
