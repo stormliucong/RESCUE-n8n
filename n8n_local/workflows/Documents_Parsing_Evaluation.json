@@ -1,0 +1,172 @@
+{
+  "createdAt": "2025-06-25T03:19:06.090Z",
+  "updatedAt": "2025-06-25T03:23:07.000Z",
+  "id": "UmGumZVIY3JtzXBr",
+  "name": "Documents Parsing Evaluation",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "3bfe4969-ed3e-42c2-bf85-b4856abd4f0d",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -220,
+        0
+      ],
+      "id": "a6279363-c246-4c96-b9f6-8507e30ec252",
+      "name": "Webhook",
+      "webhookId": "3bfe4969-ed3e-42c2-bf85-b4856abd4f0d"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        220,
+        0
+      ],
+      "id": "f613a096-b953-4370-bad4-a317af977428",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        180,
+        220
+      ],
+      "id": "1511f3fd-7701-4f26-976a-f7a58fcc0ee3",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "5gmazfiFAFlABBU5",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        580,
+        0
+      ],
+      "id": "717c78ae-84d1-4e9c-b541-dd2ed11c4418",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6fbb766f-6dd3-4d01-8cc0-ff92e8f9fce2",
+              "name": "chatInput",
+              "value": "={{ $json.body.prompt }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        0,
+        0
+      ],
+      "id": "9d83f501-fd28-4c69-8cd5-ab85e461d398",
+      "name": "Edit Fields"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "42615668-6dd3-4ed8-b413-4297b14a70aa",
+  "triggerCount": 1,
+  "tags": [
+    {
+      "createdAt": "2025-02-03T20:04:43.955Z",
+      "updatedAt": "2025-03-26T17:53:54.426Z",
+      "id": "HrM6YwZGkAgTkFAf",
+      "name": "status: temp"
+    },
+    {
+      "createdAt": "2025-03-26T17:51:52.394Z",
+      "updatedAt": "2025-03-26T17:53:37.550Z",
+      "id": "f1eRCMwsFVB12Daf",
+      "name": "type: eval"
+    }
+  ]
+}
