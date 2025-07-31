@@ -16,7 +16,24 @@ genetic_tests_options = genetic_tests_options = {
 
 
 # q1 - age criteria
-age_criteria_options = [(0,0), (0,18), (0, 21), (18,45), (46, 65), (65, 75)]
+def generate_age_in_category():
+    age_categories = [(0,0), (0,17), (0,18), (0,21), (18,45), (46,65), (66,75)]
+    selected_category = random.choice(age_categories)
+    
+    if selected_category == (0,0):
+        return 0
+    else:
+        return random.randint(selected_category[0], selected_category[1])
+
+def is_in_age_range(age_value, target_ranges):
+    for min_age, max_age in target_ranges:
+        if min_age == 0 and max_age == 0:
+            if age_value == 0:
+                return True
+        elif min_age <= age_value <= max_age:
+            return True
+    return False
+
 
 # q2 - order providers
 order_providers_options = ["Oncologist", "Neurologist", "Medical Geneticist", "Neonatologist", "Developmental Pediatrician"]
@@ -66,76 +83,83 @@ cpt_codes_options = ["81162", "81277", "81228", "81415", "81425", "Not specified
 
 def get_answers(sample_patient_dict):
     insurance, genetic_tests, age, order_provider, clinical_indication, prior_testing, family_history, genetic_counselor, cpt_code = sample_patient_dict.values()
-    q1, q2, q3, q4, q5, q6, q7, q8 = ["Not Specified"] * 9  # Initialize all questions with None
+    q0, q1, q2, q3, q4, q5, q6, q7, q8 = ["Not Specified"] * 9  # Initialize all questions with None
     
+    # q0 - genetic tests
+
+    if genetic_tests.startswith('CMA'):
+        q0 = "CMA"
+    else:
+        q0 = genetic_tests
+    
+    # q1 - age criteria
+
     if insurance == "BCBS_FEP":
         if genetic_tests == "WES":
-            if age == (0,0) or age == (0,18):
+            if is_in_age_range(age, [(0,0), (0,18)]):
                 q1 = "Yes"
             else:
                 q1 = "No"
         elif genetic_tests == "BRCA1/2":
-            if age == (0,0) or age == (0,18) or age == (65,75):
+            if is_in_age_range(age, [(0,0), (0,17), (66,75)]):  # 0-17, 66-75
                 q1 = "No"
-            elif age == (18,45):
-                q1 = "Yes"
-            elif age == (46,65):
+            elif is_in_age_range(age, [(18,45), (46,65)]):  # 18-65
                 q1 = "Yes"
         elif genetic_tests == "WGS":
-            if age == (0,0) or age == (0,18):
+            if is_in_age_range(age, [(0,0), (0,18)]):
                 q1 = "Yes"
             else:
                 q1 = "No"
 
     if insurance == "UHC":
         if genetic_tests == "WES":
-            if age == (0,0) or age == (0,18):
+            if is_in_age_range(age, [(0,0), (0,18)]):
                 q1 = "Yes"
             else:
                 q1 = "No"
         elif genetic_tests == "BRCA1/2":
-            if age == (0,0) or age == (0,18) or age == (65,75):
+            if is_in_age_range(age, [(0,0), (0,17), (66,75)]):  # 0-17, 66-75
                 q1 = "No"
-            elif age == (18,45):
-                q1 = "Yes"
-            elif age == (46,65):
+            elif is_in_age_range(age, [(18,45), (46,65)]):  # 18-65
                 q1 = "Yes"
         elif genetic_tests == "WGS":
-            if age == (0,0) or age == (0,18):
+            if is_in_age_range(age, [(0,0), (0,18)]):
                 q1 = "Yes"
             else:
                 q1 = "No"
 
     if insurance == "Cigna":
         if genetic_tests == "WES":
-            if age == (0,0) or age == (0,21):
+            if is_in_age_range(age, [(0,0), (0,21)]):
                 q1 = "Yes"
             else:
                 q1 = "No"
         elif genetic_tests == "BRCA1/2":
-            if age == (0,0) or age == (0,18) or age == (65,75):
+            if is_in_age_range(age, [(0,0), (0,17), (66,75)]):  # 0-17, 66-75
                 q1 = "No"
-            elif age == (18,45):
-                q1 = "Yes"
-            elif age == (46,65):
+            elif is_in_age_range(age, [(18,45), (46,65)]):  # 18-65
                 q1 = "Yes"
         elif genetic_tests == "WGS":
-            if age == (0,0) or age == (0,21):
+            if is_in_age_range(age, [(0,0), (0,21)]):
                 q1 = "Yes"
             else:
                 q1 = "No"
         elif genetic_tests == "CMA_developmental_disorder":
-            if age == (0,0): # prenatal/pronatal
+            if age == 0: # prenatal/pronatal
                 q1 = "Yes"
             else:
                 q1 = "No"
+
+    # q2 - order provider
 
     if insurance == "UHC":
         if genetic_tests == "WES":
             q2 = "Yes" if order_provider in ["Oncologist", "Neurologist", "Medical Geneticist", "Neonatologist", "Developmental Pediatrician"] else "No"
         elif genetic_tests == "WGS":
             q2 = "Yes" if order_provider in ["Oncologist", "Neurologist", "Medical Geneticist", "Neonatologist", "Developmental Pediatrician"] else "No"
-        
+    
+    # q3 - clinical indication
+
     if genetic_tests == "BRCA1/2":
         q3 = "Yes" if clinical_indication in [
     "Breast cancer diagnosed at age 45 or younger",
@@ -175,6 +199,7 @@ def get_answers(sample_patient_dict):
     if genetic_tests in ["WES", "WGS"] or (insurance == "Cigna" and genetic_tests == "CMA_developmental_disorder"):
         q4 = "Yes" if prior_testing in ["CMA", "Fragile X testing", "FISH testing", "Karyotype testing"] else "No"
 
+    # q5 family history
     wes_wgs_family_history = [
     "First-degree or Second-degree relative with Congenital Anomaly",
     "First-degree or Seconde-degree relative with a history of Consanguinity",
@@ -211,6 +236,7 @@ def get_answers(sample_patient_dict):
     elif genetic_tests == "BRCA1/2":
         q5 = "Yes" if family_history in brca_family_history else "No"
 
+    # q6 - counselor
     if insurance == "BCBS_FEP" and genetic_tests in ["BRCA1/2", "WES", "WGS"]:
         q6 = "Yes" if genetic_counselor == "Saw a genetic counselor before testing and will visit after results are received" else "No"
     elif insurance == "Cigna" and genetic_tests in ["BRCA1/2", "CMA_developmental_disorder"]:
@@ -225,19 +251,37 @@ def get_answers(sample_patient_dict):
     "CMA_tumor": "81277"
 }
 
+    # q7 - cpt code
     if insurance in ["UHC", "Cigna"]:
         expected_cpt = cpt_mapping.get(genetic_tests)
         q7 = "Yes" if cpt_code == expected_cpt else "No"
-                  
+
+    # q8 - final decision
+    all_answers = [q1, q2, q3, q4, q5, q6, q7]   
+    if "No" in all_answers:
+        q8 = "No"
+    else:
+        q8 = "Yes"           
                 
-    return q1, q2, q3, q4, q5, q6, q7, q8 
+    return {
+        'Q0': q0,
+        'Q1': q1,  
+        'Q2': q2,  
+        'Q3': q3,  
+        'Q4': q4,  
+        'Q5': q5,  
+        'Q6': q6,  
+        'Q7': q7,  
+        'Q8': q8
+    } 
     
 
 def make_it_real_llm(sample_patient_dict):
     # Simulate a free-text for a sample patient
+    patient_without_cpt = {k: v for k, v in sample_patient_dict.items() if k != 'cpt_code'}
     Instruction = "Generate a free-text description for the following sample patient. Add necessary detailes"
     # Using ChatGPT-like model to generate a free-text description
-    prompt = f"{Instruction}: {sample_patient_dict}"
+    prompt = f"{Instruction}: {patient_without_cpt}"
     # Here we would call the LLM API to get the response, but for this example
     model = 'gpt-3.5-turbo'
     # call openai api to get the response
@@ -251,9 +295,9 @@ def make_it_real_llm(sample_patient_dict):
     )
     patient_description = response.choices[0].message['content']
     return f"Sample Patient: {patient_description}"
+
 def is_this_like_a_real_patient(sample_patient_dict):
     # Simulate a check to see if the sample patient is like a real patient
-     # Simulate a free-text for a sample patient
     Instruction = "Read the following sample patient. Determine if this is like a real patient. If yes, return 'True', otherwise return 'False'."
     # Using ChatGPT-like model to generate a free-text description
     prompt = f"{Instruction}: {sample_patient_dict}"
@@ -279,12 +323,13 @@ while idx < number_of_samples:
     sample_patient = {
         "insurance": insurance,
         "genetic_tests": random.choice(genetic_tests_options[insurance]),
-        "age": random.choice(age_criteria_options),
+        "age": generate_age_in_category(),
         "order_provider": random.choice(order_providers_options),
         "clinical_indication": random.choice(clinical_indications_options),
         "prior_testing": random.choice(prior_testing_options),  
         "family_history": random.choice(family_history_options),
         "genetic_counselor": random.choice(genetic_counselor_options),
+        "cpt_code": random.choice(cpt_codes_options)
     }
 
     if is_this_like_a_real_patient(sample_patient):
