@@ -51,6 +51,318 @@ def is_in_age_range(age_value, target_ranges):
 order_providers_options = ["Oncologist", "Neurologist", "Medical Geneticist", "Neonatologist", "Developmental Pediatrician", "Primary Care Physician", "General Pediatrician", "Nurse Practitioner"]
 
 # q3 - clinical indications
+wes_wgs_clinical_mapping = {
+    "Congenital Anomalies": [
+        "Multiple congenital anomalies",
+        "Multiple congenital anomalies (must affect different organ systems)",
+        "Multiple congenital anomalies not specific to a well-delineated genetic syndrome",
+        "Multiple congenital abnormalities affecting different organ systems",
+        "major abnormality affecting at minimum a single organ system",
+        "Congenital anomaly",
+        "Choanal atresia",
+        "Coloboma",
+        "Hirschsprung disease",
+        "Meconium ileus",
+        "abnormality affecting at minimum a single organ system and autism",
+        "abnormality affecting at minimum a single organ system and complex neurodevelopmental disorder"
+    ],
+
+    "Neurodevelopmental Disorders": [
+        "Global developmental delay",
+        "Global Developmental Delay",
+        "Moderate/severe/profound intellectual disability",
+        "Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",
+        "complex neurodevelopmental disorder and autism",
+        "Autism spectrum disorder",
+        "Developmental Delay/Intellectual Disability where a specific syndrome is not suspected",
+        "Apparent nonsyndromic developmental delay/intellectual disability"
+    ],
+
+    "Neurological / Seizure-related Disorders": [
+        "Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed",
+        "Epileptic encephalopathy with onset before three years of age",
+        "Persistent seizures",
+        "Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",
+        "Hypotonia or hypertonia in infancy",
+        "Significant hypotonia",
+        "High-risk Brief Resolved Unexplained Event with Recurrent events without respiratory infection",
+        "High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events",
+        "High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",
+        "High-risk Brief Resolved Unexplained Event with Required cardiopulmonary resuscitation (CPR)"
+    ],
+
+    "Metabolic / Laboratory Abnormalities": [
+        "Conjugated hyperbilirubinemia (not due to TPN cholestasis)",
+        "Hyperammonemia",
+        "Laboratory abnormalities suggestive of an inborn error of metabolism (IEM)"
+    ],
+
+    "Growth and Dysmorphology": [
+        "Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",
+        "Dysmorphic features"
+    ],
+
+    "Hearing / Vision Impairments": [
+        "Significant hearing or visual impairment diagnosed by 18 years of age"
+    ],
+
+    "Developmental Regression": [
+        "Unexplained developmental regression, unrelated to autism or epilepsy"
+    ],
+
+    "Psychiatric / Neuropsychiatric Disorders": [
+        "Neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)"
+    ],
+
+    "Immunologic / Hematologic Disorders": [
+        "Persistent and severe immunologic or hematologic disorder"
+    ],
+
+    "Family / Consanguinity": [
+        "Consanguinity"
+    ],
+    "Prenatal": [
+        "Fetal hydrops of unknown etiology",
+        "Multiple fetal structural anomalies affecting unrelated organ systems",
+        "A fetal structural anomaly affecting a single organ system and family history strongly suggests a genetic etiology",
+        "Multiple congenital anomalies (must affect different organ systems)",
+        "Sample for WES testing is obtained from amniotic fluid and/or chorionic villi, cultured cells from amniotic fluid/chorionic villi, or DNA is extracted from fetal blood or tissue",
+        "A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology"
+    ]
+}
+
+category_coverage_wes_wgs = {
+    "Congenital Anomalies": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": True
+    },
+    "Neurodevelopmental Disorders": {
+        "BCBS_FEP": False,
+        "Cigna": True,
+        "UHC": True
+    },
+    "Neurological / Seizure-related Disorders": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": True
+    },
+    "Metabolic / Laboratory Abnormalities": {
+        "BCBS_FEP": True,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Growth and Dysmorphology": {
+        "BCBS_FEP": False,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Hearing / Vision Impairments": {
+        "BCBS_FEP": False,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Developmental Regression": {
+        "BCBS_FEP": False,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Psychiatric / Neuropsychiatric Disorders": {
+        "BCBS_FEP": False,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Immunologic / Hematologic Disorders": {
+        "BCBS_FEP": False,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Family / Consanguinity": {
+        "BCBS_FEP": False,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Prenatal": {
+        "BCBS_FEP": False,
+        "Cigna": True,
+        "UHC": True
+    }
+}
+
+
+brca_clinical_mapping = {
+    "Breast Cancer - Personal History": [
+        "Diagnosed breast cancer at age equal to under 45",
+        "Female with breast cancer diagnosis 50 years of age or younger",
+        "Breast cancer diagnosed at age 50 or younger",
+        "Diagnosed with two or more primary breast cancers at any age",
+        "Multiple primary Breast Cancers (as a prior diagnosis or as a bilateral primary cancer)",
+        "Diagnosed between ages 46 and 50 with an additional primary breast cancer at any age",
+        "Diagnosed equal and under 60 with Triple-negative breast cancer",
+        "Diagnosed at any age with triple negative breast cancer (i.e., estrogen receptornegative (ER-), progesterone receptor negative (PR-), and human epidermal growth factor receptor negative (HER2-) breast cancer)",
+        "Triple-negative breast cancer",
+        "Metastatic Breast Cancer",
+        "Lobular Breast Cancer and a personal or family history of diffuse gastric cancer",
+        "Breast Cancer and Unknown or Limited Family History",
+        "Breast Cancer and individual was assigned male at birth",
+        "Male with breast cancer at any age"
+    ],
+
+    "Ovarian / Peritoneal Cancer": [
+        "Diagnosed any age with at least one close relative with ovarian carcinoma",
+        "Personal history of epithelial ovarian carcinoma (including fallopian tube cancer or peritoneal cancer) at any age",
+        "Epithelial ovarian, fallopian tube, or primary peritoneal cancer diagnosis at any age",
+        "Ovarian cancer at any age",
+        "Primary peritoneal cancer diagnosis at any age",
+        "At least one first-or second-degree relative with a history of Ovarian Cancer (including fallopian tube cancer and/or primary peritoneal cancer)"
+    ],
+
+    "Pancreatic Cancer": [
+        "Diagnosed any age with at least one close relative with pancreatic cancer",
+        "Personal history of exocrine pancreatic cancer at any age",
+        "Exocrine pancreatic cancer",
+        "Pancreatic cancer at any age",
+        "At least one first-or second-degree relative with a history of Pancreatic cancer"
+    ],
+
+    "Prostate Cancer": [
+        "Diagnosed any age with at least one close relative with Metastatic or intraductal/cribriform prostate cancer",
+        "Personal history of metastatic or intraductal/cribriform histology prostate cancer at any age",
+        "Prostate cancer at any age with metastatic, intraductal/cribriform histology, high-risk, or very-high-risk group",
+        "At least one first-or second-degree relative with a history of Metastatic prostate cancer"
+    ],
+
+    "Family History - Breast Cancer": [
+        "Diagnosed any age with at least one close relative with breast cancer diagnosed at age equal to under 50 years",
+        "Breast Cancer or Prostate Cancer and at least one first- or second-degree relative with a BRCA-Related Cancer",
+        "At least one first-or second-degree relative with a history of Breast Cancer diagnosed at age 50 or younger",
+        "At least one first-or second-degree relative with a history of Triple-Negative Breast Cancer",
+        "At least one first-or second-degree relative with a history of Breast Cancer and relative was assigned male at birth"
+    ],
+
+    "Other Solid Tumors and Genetic Risk Scores": [
+        "Individual has a personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and Tyrer-Cuzick, BRCAPro, or Penn11 Score of 2.5% or greater for a BRCA1/2 pathogenic variant",
+        "Individual has a Tyrer-Cuzick, BRCAPro, or Penn11 Score of 5% or greater for a BRCA1/2 pathogenic variant",
+        "Individual has a personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and PREMM5, MMRpro, or MMRpredict Score of 2.5% or greater for having a Lynch syndrome gene mutation",
+        "Individual has a PREMM5, MMRpro, or MMRpredict Score of 5% or greater for having a Lynch syndrome gene mutation",
+        "personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least one Close Blood Relative with history of a Cancer Associated with Lynch Syndrome",
+        "personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least one Close Blood Relative diagnosed with a Primary Solid Tumor (excluding basal or squamous cell skin cancer) at age 40 or younger",
+        "personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least two Close Blood Relatives (in addition to affected individual) on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer)",
+        "At least one first degree relative with a history of Two or more different Primary Solid Tumors (excluding basal or squamous cell skin cancer)",
+        "At least one second-degree relative with a history of Two or more Cancers Associated with Lynch Syndrome",
+        "At least one second-degree relative with a history of Cancer Associated with Lynch Syndrome diagnosed at age 50 or younger",
+        "At least one first degree relative with a history of Cancer Associated with Lynch Syndrome"
+    ],
+
+    "Other Rare Cancers": [
+        "Neuroendocrine tumor (e.g., adrenocortical carcinoma, paraganglioma, pheochromocytoma)",
+        "Malignant phyllodes tumors",
+        "At least one first degree relative with a history of Neuroendocrine tumor"
+    ],
+
+    "Colorectal Findings": [
+        "A personal history of colorectal polyposis with at least ten adenomas"
+    ]
+}
+
+category_coverage_brca = {
+    "Breast Cancer - Personal History": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": True
+    },
+    "Ovarian / Peritoneal Cancer": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": True
+    },
+    "Pancreatic Cancer": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": True
+    },
+    "Prostate Cancer": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": True
+    },
+    "Family History - Breast Cancer": {
+        "BCBS_FEP": True,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Other Solid Tumors and Genetic Risk Scores": {
+        "BCBS_FEP": True,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Other Rare Cancers": {
+        "BCBS_FEP": False,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Colorectal Findings": {
+        "BCBS_FEP": False,
+        "Cigna": False,
+        "UHC": True
+    }
+}
+
+cma_clinical_mapping = {
+    "Neurodevelopmental Disorders": [
+        "Apparent nonsyndromic developmental delay/intellectual disability",
+        "Developmental delay",
+        "Developmental Delay/Intellectual Disability where a specific syndrome is not suspected",
+        "Intellectual disability",
+        "Autism spectrum disorder"
+    ],
+
+    "Congenital Anomalies": [
+        "Multiple congenital anomalies not specific to a well-delineated genetic syndrome",
+        "Multiple congenital anomalies",
+        "Major congenital cardiac anomaly",
+        "Isolated severe congenital heart disease"
+    ],
+
+    "Cancer-related Findings": [
+        "cancer of the central nervous system",
+        "soft tissue sarcoma"
+    ],
+    "Prenatal": [
+        "Major congenital cardiac anomaly",
+        "Multiple congenital anomalies",
+        "Developmental delay",
+        "Intellectual disability",
+        "Autism spectrum disorder",
+        "Intrauterine fetal demise or stillbirth",
+        "Testing the products of conception following pregnancy loss",
+        "Individuals undergoing invasive prenatal testing (i.e., amniocentesis, chorionic villus sampling, or fetal tissue sampling)"
+    ]
+}
+
+category_coverage_cma = {
+    "Neurodevelopmental Disorders": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": True
+    },
+    "Congenital Anomalies": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": True         
+    },
+    "Cancer-related Findings": {
+        "BCBS_FEP": False,
+        "Cigna": True,
+        "UHC": False
+    },
+    "Prenatal": {
+        "BCBS_FEP": False,
+        "Cigna": True,
+        "UHC": True         
+    }
+}
+
 clinical_indications_options = ["Multiple congenital anomalies","Conjugated hyperbilirubinemia (not due to TPN cholestasis)", "Hyperammonemia", "Significant hypotonia", "Persistent seizures",
                 "High-risk Brief Resolved Unexplained Event with Recurrent events without respiratory infection", "High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events",
                 "High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",
@@ -145,10 +457,131 @@ clinical_indications_options = ["Multiple congenital anomalies","Conjugated hype
                 "A personal history of colorectal polyposis with at least ten adenomas"
                 ]
 
+#clinical_mapping = {
+#    "WES/WGS": wes_wgs_clinical_mapping,
+#    "BRCA1/2": brca_clinical_mapping,
+#    "CMA": cma_clinical_mapping
+#}
+
 # q4 - prior testing
 prior_testing_options = ["CMA", "Fragile X testing", "FISH testing", "Karyotype testing", "No prior testing"]
 
 # q5 - family history
+wes_wgs_family_history_mapping = {
+    "Cardiac / Arrhythmia": [
+        "Arrhythmia",
+        "Long QT syndrome",
+        "Sudden unexplained death in first- or second-degree family members before age 35",
+        "Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)"
+    ],
+    "Neurodevelopmental": [
+        "Developmental delay",
+        "First- or second-degree family member with global developmental delay",
+        "First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",
+        "First- or second-degree family member with epileptic encephalopathy with onset before three years of age",
+        "First- or second-degree family member with autism spectrum disorder",
+        "First- or second-degree family member with neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",
+        "First- or second-degree family member with hypotonia or hypertonia in infancy",
+        "First- or second-degree family member with dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",
+        "First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy"
+    ],
+    "Congenital / Metabolic": [
+        "First- or second-degree family member with multiple congenital anomalies",
+        "First- or second-degree family member with congenital anomaly",
+        "First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age",
+        "First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM)",
+        "Inborn error of metabolism",
+        "First- or second-degree family member with growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",
+        "First- or second-degree family member with persistent and severe immunologic or hematologic disorder",
+        "First- or second-degree family member with dysmorphic features",
+        "First- or second-degree family member with consanguinity"
+    ]
+}
+
+wes_wgs_category_coverage_family_history = {
+    "Cardiac / Arrhythmia": {
+        "BCBS_FEP": True,
+        "Cigna": False,
+        "UHC": False
+    },
+    "Neurodevelopmental": {
+        "BCBS_FEP": True,
+        "Cigna": False,
+        "UHC": True
+    },
+    "Congenital / Metabolic": {
+        "BCBS_FEP": True,
+        "Cigna": False,
+        "UHC": True
+    }
+}
+
+brca_family_history_mapping = {
+    "Breast Cancer": [
+        "First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years",
+        "Breast cancer in at least 1 close blood relative (first-, second-, or thirddegree) occurring at 50 years of age or younger",
+        "Male close blood relative (first- or second-degree) with breast cancer",
+        "A close blood relative (first- or second-degree) with a triple negative breast cancer",
+        "At least two close blood relatives (on the same side of the family) with either breast cancer or a confirmed diagnosis of prostate cancer at any age",
+        "Three or more total diagnoses of breast cancer in the individual and/or close relatives (can include first-, second-, or third-degree relatives)"
+    ],
+    "Ovarian / Peritoneal Cancer": [
+        "First-degree or second-degree relative with ovarian carcinoma (including fallopian tube or peritoneal cancer)",
+        "Epithelial ovarian, fallopian tube, or primary peritoneal cancer in at least 1 close blood relative (first-, second-, or third- degree) at any age"
+    ],
+    "Prostate Cancer": [
+        "First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",
+        "At least one close relative (first-, second-, or third- degree) with metastatic (radiographic evidence of or biopsy proven disease) or intraductal/cribriform histology, high- or very-high risk prostate cancer at any age"
+    ],
+    "Pancreatic Cancer": [
+        "First-degree or second-degree relative with pancreatic cancer",
+        "At least one close relative (first-, second-, or third- degree) with pancreatic cancer at any age"
+    ],
+    "Known BRCA Mutation": [
+        "First-degree or second-degree relative with known BRCA1, BRCA2, or PALB2 pathogenic/likely pathogenic variant",
+        "Known family mutation in BRCA1/2 identified in 1st, 2nd, or 3rd degree relative(s)"
+    ],
+    "Lynch Syndrome / Polyposis": [
+        "Two or more second-degree relatives on the same side of the family with a Cancer Associated with Lynch Syndrome",
+        "At least three Close Blood Relatives on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer)",
+        "Family member who meets diagnostic criteria (personal history of at least ten cumulative adenomas) for a polyposis syndrome and affected family member(s) is unwilling/unable to have genetic testing"
+    ]
+}
+
+category_coverage_family_history_brca = {
+    "Breast Cancer Family History": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": False
+    },
+    "Ovarian / Peritoneal Cancer Family History": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": False
+    },
+    "Prostate Cancer Family History": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": False
+    },
+    "Pancreatic Cancer Family History": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": False
+    },
+    "Known BRCA Mutation Family History": {
+        "BCBS_FEP": True,
+        "Cigna": True,
+        "UHC": False
+    },
+    "Lynch Syndrome / Polyposis Family History": {
+        "BCBS_FEP": False,
+        "Cigna": False,
+        "UHC": True
+    }
+}
+
+
 family_history_options = ["Arrhythmia", "Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)", "Developmental delay", "Inborn error of metabolism", "Long QT syndrome", "Sudden unexplained death in first- or second-degree family members before age 35", "First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years", "First-degree or second-degree relative with ovarian carcinoma (including fallopian tube or peritoneal cancer)", "First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group", "First-degree or second-degree relative with pancreatic cancer", "Three or more total diagnoses of breast cancer in the individual and/or close relatives (can include first-, second-, or third-degree relatives)", "First-degree or second-degree relative with known BRCA1, BRCA2, or PALB2 pathogenic/likely pathogenic variant", "Known family mutation in BRCA1/2 identified in 1st, 2nd, or 3rd degree relative(s)",
                 "Breast cancer in at least 1 close blood relative (first-, second-, or thirddegree) occurring at 50 years of age or younger",
                 "Epithelial ovarian, fallopian tube, or primary peritoneal cancer in at least 1 close blood relative (first-, second-, or third- degree) at any age",
@@ -266,165 +699,148 @@ def get_answers(sample_patient_dict):
     # double check insurance companies!!!
     if insurance == "BCBS_FEP":
         if genetic_tests in ["WES", "WGS"]:
-            q3 = "Yes" if clinical_indication in [
-                "Multiple congenital anomalies","Conjugated hyperbilirubinemia (not due to TPN cholestasis)", "Hyperammonemia", "Significant hypotonia", "Persistent seizures",
-                "High-risk Brief Resolved Unexplained Event with Recurrent events without respiratory infection", "High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events",
-                "High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",
-                "High-risk Brief Resolved Unexplained Event with Required cardiopulmonary resuscitation (CPR)",
-                "Choanal atresia", "Coloboma", "Hirschsprung disease", "Meconium ileus"
-                ] else "No"
+            q3 = "No"
+            if is_in_age_range(age, [(0,0), (0,18)]):
+                for category, conditions in wes_wgs_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "Yes" if category_coverage_wes_wgs.get(category, {}).get("BCBS_FEP", False) else "No"
+                        break
+            else:
+                for category, conditions in wes_wgs_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "No"
+                        break
 
         elif genetic_tests == "BRCA1/2":
-            q3 = "Yes" if clinical_indication in [
-                "Diagnosed breast cancer at age equal to under 45", 
-                "Diagnosed between ages 46 and 50 with an additional primary breast cancer at any age",
-                "Diagnosed between ages 46 and 50 with at least one close relative diagnosed with breast, ovarian, pancreatic, or prostate cancer at any age",
-                "Diagnosed equal and under 60 with Triple-negative breast cancer",
-                "Diagnosed any age with at least one close relative with breast cancer diagnosed at age equal to under 50 years",
-                "Diagnosed any age with at least one close relative with ovarian carcinoma",
-                "Diagnosed any age with at least one close relative with pancreatic cancer",
-                "Diagnosed any age with at least one close relative with Metastatic or intraductal/cribriform prostate cancer",
-                "Personal history of epithelial ovarian carcinoma (including fallopian tube cancer or peritoneal cancer) at any age",
-                "Personal history of exocrine pancreatic cancer at any age",
-                "Personal history of metastatic or intraductal/cribriform histology prostate cancer at any age"
-                ] else "No"
-        
-        elif genetic_tests == "CMA":
-            q3 = "Yes" if clinical_indication in [
-                "Apparent nonsyndromic developmental delay/intellectual disability", 
-                "Autism spectrum disorder",
-                "Multiple congenital anomalies not specific to a well-delineated genetic syndrome"
-                ] else "No"
+            q3 = "No"
+            if is_in_age_range(age, [(18,45), (46,65)]):
+                for category, conditions in brca_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "Yes" if category_coverage_brca.get(category, {}).get("BCBS_FEP", False) else "No"
+                        break
+
+            else:
+                for category, conditions in brca_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "No"
+                        break
+
+        elif genetic_tests in ["CMA", "CMA_tumor", "CMA_developmental_disorder"]:
+            q3 = "No"
+            for category, conditions in cma_clinical_mapping.items():
+                if clinical_indication in conditions:
+                    q3 = "Yes" if category_coverage_cma.get(category, {}).get("BCBS_FEP", False) else "No"
+                    break
 
     elif insurance == "Cigna":
         if genetic_tests == "BRCA1/2":
-            q3 = "Yes" if clinical_indication in [
-                "Female with breast cancer diagnosis 50 years of age or younger", 
-                "Diagnosed with two or more primary breast cancers at any age",
-                "Diagnosed at any age with triple negative breast cancer (i.e., estrogen receptornegative (ER-), progesterone receptor negative (PR-), and human epidermal growth factor receptor negative (HER2-) breast cancer)",
-                "Male with breast cancer at any age",
-                "Epithelial ovarian, fallopian tube, or primary peritoneal cancer diagnosis at any age",
-                "Prostate cancer at any age with metastatic, intraductal/cribriform histology, high-risk, or very-high-risk group",
-                "Exocrine pancreatic cancer"
-                ] else "No"
+            q3 = "No"
+            if is_in_age_range(age, [(18,45), (46,65)]):
+                for category, conditions in brca_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "Yes" if category_coverage_brca.get(category, {}).get("Cigna", False) else "No"
+                        break
+
+            else:
+                for category, conditions in brca_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "No"
+                        break
 
         elif genetic_tests in ["WES", "WGS"]:
+            q3 = "No"
             if is_in_age_range(age, [(0,0), (0,21)]):
-                q3 = "Yes" if clinical_indication in [
-                    "Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed",
-                    "Global developmental delay",
-                    "Moderate/severe/profound intellectual disability",
-                    "Multiple congenital abnormalities affecting different organ systems",
-                    "major abnormality affecting at minimum a single organ system",
-                    "complex neurodevelopmental disorder and autism", "abnormality affecting at minimum a single organ system aand autism", "abnormality affecting at minimum a single organ system and complex neurodevelopmental disorder"
-                    ] else "No"
+                for category, conditions in wes_wgs_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "Yes" if category_coverage_wes_wgs.get(category, {}).get(insurance, False) else "No"
+                        break
+
             elif age == -1 and genetic_tests == "WES":
-                q3 = "Yes" if clinical_indication in [
-                    "Fetal hydrops of unknown etiology",
-                    "Multiple fetal structural anomalies affecting unrelated organ systems",
-                    "A fetal structural anomaly affecting a single organ system and family history strongly suggests a genetic etiology"
-                    ] else "No"
+                if clinical_indication in wes_wgs_clinical_mapping.get("Prenatal", []):
+                    q3 = "Yes" if category_coverage_wes_wgs.get("Prenatal", {}).get(insurance, False) else "No"
+                else:
+                    q3 = "No"
                 
             elif age == -1 and genetic_tests == "WGS":
                 q3 = "No"
+
+            else:
+                for category, conditions in wes_wgs_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "No"
+                        break
             
-        elif genetic_tests == "CMA_developmental_disorder":
-            q3 = "Yes" if clinical_indication in [
-                "Major congenital cardiac anomaly",
-                "Multiple congenital anomalies",
-                "Developmental delay",
-                "Intellectual disability",
-                "Autism spectrum disorder" 
-                ] else "No"
+        elif genetic_tests in ["CMA", "CMA_developmental_disorder"]:
+            if age == -1 or age == 0:
+                q3 = "No" 
+                for category, conditions in cma_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "Yes" if category_coverage_cma.get(category, {}).get(insurance, False) else "No"
+                        break
+            else:
+                q3 = "No"
 
         elif genetic_tests == "CMA_tumor":
-            q3 = "Yes" if clinical_indication in ["cancer of the central nervous system", "soft tissue sarcoma"] else "No"
+            q3 = "No" 
+            for category, conditions in cma_clinical_mapping.items():
+                if clinical_indication in conditions:
+                    q3 = "Yes" if category_coverage_cma.get(category, {}).get(insurance, False) else "No"
+                    break
 
 
     elif insurance == "UHC":
         if genetic_tests in ["WES", "WGS"]:
             if is_in_age_range(age, [(0,0), (0,18)]):
-                q3 = "Yes" if clinical_indication in [
-                    "Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",
-                    "Multiple congenital anomalies", 
-                    "Global Developmental Delay",
-                    "Epileptic encephalopathy with onset before three years of age",
-                    "Congenital anomaly",
-                    "Significant hearing or visual impairment diagnosed by 18 years of age",
-                    "Laboratory abnormalities suggestive of an inborn error of metabolism (IEM)",
-                    "Autism spectrum disorder",
-                    "Neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",
-                    "Hypotonia or hypertonia in infancy",
-                    "Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",
-                    "Unexplained developmental regression, unrelated to autism or epilepsy",
-                    "Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",
-                    "Persistent and severe immunologic or hematologic disorder",
-                    "Dysmorphic features",
-                    "Consanguinity"
-                    ] else "No"
+                q3 = "No"
+                for category, conditions in wes_wgs_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "Yes" if category_coverage_wes_wgs.get(category, {}).get("UHC", False) else "No"
+                        break
+                
             elif age == -1 and genetic_tests == "WES":
-                q3 = "Yes" if clinical_indication in [
-                    "Fetal hydrops of unknown etiology",
-                    "Multiple congenital anomalies (must affect different organ systems)",
-                    "Sample for WES testing is obtained from amniotic fluid and/or chorionic villi, cultured cells from amniotic fluid/chorionic villi, or DNA is extracted from fetal blood or tissue",
-                    "A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology"
-                    ] else "No"
+                if clinical_indication in wes_wgs_clinical_mapping.get("Prenatal", []):
+                    q3 = "Yes" if category_coverage_wes_wgs.get("Prenatal", {}).get(insurance, False) else "No"
+                else:
+                    q3 = "No"
+                
             elif age == -1 and genetic_tests == "WGS":
                 q3 = "No"
-            
-        elif genetic_tests == "CMA":
+                
+            else: 
+                q3 = "No"
+                for category, conditions in wes_wgs_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "No"
+                        break
+
+        elif genetic_tests in ["CMA", "CMA_tumor", "CMA_developmental_disorder"]:
+            q3 = "No"
             if is_in_age_range(age, [(0,0), (0,18)]):
-                q3 = "Yes" if clinical_indication in [
-                    "Isolated severe congenital heart disease", 
-                    "Autism spectrum disorder",
-                    "Multiple congenital anomalies not specific to a well-delineated genetic syndrome",
-                    "Developmental Delay/Intellectual Disability where a specific syndrome is not suspected"
-                ] else "No"
+                for category, conditions in cma_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "Yes" if category_coverage_cma.get(category, {}).get(insurance, False) else "No"
+                        break
 
             elif age == -1:
-                q3 = "Yes" if clinical_indication in [
-                    "Intrauterine fetal demise or stillbirth",
-                    "Testing the products of conception following pregnancy loss",
-                    "Individuals undergoing invasive prenatal testing (i.e., amniocentesis, chorionic villus sampling, or fetal tissue sampling)"
-                ] else "No"
+                for category, conditions in cma_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "Yes" if category_coverage_cma.get(category, {}).get(insurance, False) else "No"
+                        break
+            else:
+                q3 = "No"
 
         elif genetic_tests == "BRCA1/2":
-            q3 = "Yes" if clinical_indication in [
-                "Breast cancer diagnosed at age 50 or younger",
-                "Metastatic Breast Cancer",
-                "Multiple primary Breast Cancers (as a prior diagnosis or as a bilateral primary cancer)",
-                "Ovarian cancer at any age",
-                "Pancreatic cancer at any age",
-                "Lobular Breast Cancer and a personal or family history of diffuse gastric cancer",
-                "Breast Cancer and Unknown or Limited Family History",
-                "Triple-negative breast cancer",
-                "Breast Cancer and individual was assigned male at birth",
-                "Primary peritoneal cancer diagnosis at any age",
-                "Breast Cancer or Prostate Cancer and at least one first- or second-degree relative with a BRCA-Related Cancer",
-                "Individual has a personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and Tyrer-Cuzick, BRCAPro, or Penn11 Score of 2.5% or greater for a BRCA1/2 pathogenic variant",
-                "Individual has a personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and PREMM5, MMRpro, or MMRpredict Score of 2.5% or greater for having a Lynch syndrome gene mutation",
-                "Individual has a Tyrer-Cuzick, BRCAPro, or Penn11 Score of 5% or greater for a BRCA1/2 pathogenic variant",
-                "Individual has a PREMM5, MMRpro, or MMRpredict Score of 5% or greater for having a Lynch syndrome gene mutation",
-                "Neuroendocrine tumor (e.g., adrenocortical carcinoma, paraganglioma, pheochromocytoma)",
-                "Malignant phyllodes tumors",
-                "personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least one Close Blood Relative with history of a Cancer Associated with Lynch Syndrome",
-                "personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least one Close Blood Relative diagnosed with a Primary Solid Tumor (excluding basal or squamous cell skin cancer) at age 40 or younger",
-                "personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least two Close Blood Relatives (in addition to affected individual) on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer)",
-                "At least one first degree relative with a history of Two or more different Primary Solid Tumors (excluding basal or squamous cell skin cancer)",
-                "At least one first degree relative with a history of Cancer Associated with Lynch Syndrome",
-                "At least one first degree relative with a history of Neuroendocrine tumor",
-                "At least one first-or second-degree relative with a history of Breast Cancer diagnosed at age 50 or younger",
-                "At least one first-or second-degree relative with a history of Triple-Negative Breast Cancer",
-                "At least one first-or second-degree relative with a history of Breast Cancer and relative was assigned male at birth",
-                "At least one first-or second-degree relative with a history of Metastatic prostate cancer",
-                "At least one first-or second-degree relative with a history of Ovarian Cancer (including fallopian tube cancer and/or primary peritoneal cancer)",
-                "At least one first-or second-degree relative with a history of Pancreatic cancer",
-                "At least one second-degree relative with a history of Two or more Cancers Associated with Lynch Syndrome",
-                "At least one second-degree relative with a history of Cancer Associated with Lynch Syndrome diagnosed at age 50 or younger",
-                "A personal history of colorectal polyposis with at least ten adenomas"
-                ] else "No"
-    
-
+            q3 = "No"
+            if is_in_age_range(age, [(18,45), (46,65)]):
+                for category, conditions in brca_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "Yes" if category_coverage_brca.get(category, {}).get("UHC", False) else "No"
+                        break
+            else:
+                for category, conditions in brca_clinical_mapping.items():
+                    if clinical_indication in conditions:
+                        q3 = "No"
+                        break
 
     # q4 - Prior Testing
     # double check cigna_prenatal (cigna, fagile x)
@@ -437,51 +853,36 @@ def get_answers(sample_patient_dict):
     # double check insurance companies
     if insurance == "BCBS_FEP":
         if genetic_tests in ["WES", "WGS"]:
-            q5 = "Yes" if family_history in ["Arrhythmia", "Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)", "Developmental delay",
-            "Inborn error of metabolism", "Long QT syndrome", "Sudden unexplained death in first- or second-degree family members before age 35"] else "No"
+            for category, conditions in wes_wgs_family_history_mapping.items():
+                if family_history in conditions:
+                    q5 = "Yes" if wes_wgs_category_coverage_family_history.get(category, {}).get("BCBS_FEP", False) else "No"
+                    break
+                
         elif genetic_tests == "BRCA1/2":
-            q5 = "Yes" if family_history in ["First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years", "First-degree or second-degree relative with ovarian carcinoma (including fallopian tube or peritoneal cancer)", ""
-            "First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group", "First-degree or second-degree relative with pancreatic cancer", "Three or more total diagnoses of breast cancer in the individual and/or close relatives (can include first-, second-, or third-degree relatives)", "First-degree or second-degree relative with known BRCA1, BRCA2, or PALB2 pathogenic/likely pathogenic variant"
-            ] else "No"
+            for category, conditions in brca_family_history_mapping.items():
+                if family_history in conditions:
+                    q5 = "Yes" if category_coverage_family_history_brca.get(category, {}).get("BCBS_FEP", False) else "No"
+                    break
 
     elif insurance == "Cigna":
         if genetic_tests == "BRCA1/2":
-            q5 = "Yes" if family_history in ["Known family mutation in BRCA1/2 identified in 1st, 2nd, or 3rd degree relative(s)",
-                                             "Breast cancer in at least 1 close blood relative (first-, second-, or thirddegree) occurring at 50 years of age or younger", 
-                                             "Epithelial ovarian, fallopian tube, or primary peritoneal cancer in at least 1 close blood relative (first-, second-, or third- degree) at any age",
-                                             "Male close blood relative (first- or second-degree) with breast cancer",
-                                             "At least one close relative (first-, second-, or third- degree) with metastatic (radiographic evidence of or biopsy proven disease) or intraductal/cribriform histology, high- or very-high risk prostate cancer at any age",
-                                             "At least one close relative (first-, second-, or third- degree) with pancreatic cancer at any age",
-                                             "A close blood relative (first- or second-degree) with a triple negative breast cancer",
-                                             "At least two close blood relatives (on the same side of the family) with either breast cancer or a confirmed diagnosis of prostate cancer at any age"
-                                             ] else "No"
-            
+            for category, conditions in brca_family_history_mapping.items():
+                if family_history in conditions:
+                    q5 = "Yes" if category_coverage_family_history_brca.get(category, {}).get("Cigna", False) else "No"
+                    break
+
     elif insurance == "UHC":
         if genetic_tests in ["WES", "WGS"]:
-            q5 = "Yes" if family_history in [
-        "First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",
-        "First- or second-degree family member with multiple congenital anomalies",
-        "First- or second-degree family member with global developmental delay",
-        "First- or second-degree family member with epileptic encephalopathy with onset before three years of age",
-        "First- or second-degree family member with congenital anomaly",
-        "First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age",
-        "First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM)",
-        "First- or second-degree family member with autism spectrum disorder",
-        "First- or second-degree family member with neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",
-        "First- or second-degree family member with hypotonia or hypertonia in infancy",
-        "First- or second-degree family member with dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",
-        "First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",
-        "First- or second-degree family member with growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",
-        "First- or second-degree family member with persistent and severe immunologic or hematologic disorder",
-        "First- or second-degree family member with dysmorphic features",
-        "First- or second-degree family member with consanguinity"] else "No"
-            
-        if genetic_tests == "BRCA1/2":
-            q5 = "Yes" if family_history in [
-                "Two or more second-degree relatives on the same side of the family with a Cancer Associated with Lynch Syndrome",
-                "At least three Close Blood Relatives on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer)",
-                "Family member who meets diagnostic criteria (personal history of at least ten cumulative adenomas) for a polyposis syndrome and affected family member(s) is unwilling/unable to have genetic testing"
-            ] else "No"
+            for category, conditions in wes_wgs_family_history_mapping.items():
+                if family_history in conditions:
+                    q5 = "Yes" if wes_wgs_category_coverage_family_history.get(category, {}).get("UHC", False) else "No"
+                    break
+                
+        elif genetic_tests == "BRCA1/2":
+            for category, conditions in brca_family_history_mapping.items():
+                if family_history in conditions:
+                    q5 = "Yes" if category_coverage_family_history_brca.get(category, {}).get("UHC", False) else "No"
+                    break
 
     # q6 - counselor
     if insurance == "BCBS_FEP" and genetic_tests in ["BRCA1/2", "WES", "WGS"]:
@@ -573,7 +974,7 @@ def is_this_like_a_real_patient(sample_patient_dict):
     is_true = is_true.strip().lower() == 'true'  # Normalize the response to boolean
     return is_true
 
-number_of_samples = 1000000  # Number of sample patients to generate
+number_of_samples = 1000  # Number of sample patients to generate
 idx = 0
 samples = []
 while idx < number_of_samples:
