@@ -1,128 +1,1142 @@
 [
     {
-        "Case22": {
-            "Q0": "WGS",
-            "Q1": "No",
+        "Case619": {
+            "Q0": "WES",
+            "Q1": "Yes",
             "Q2": "Not Specified",
-            "Q3": "No",
-            "Q4": "Yes",
-            "Q5": "Not specified",
-            "Q6": "Yes",
-            "Q7": "Not Specified",
-            "Q8": "No",
-            "sample_patient_dict": {
-                "case_id": "Case22",
-                "insurance": "BCBS_FEP",
-                "genetic_tests": "WGS",
-                "age_years": -1,
-                "age_string": "35 weeks gestation",
-                "order_provider": "Oncologist",
-                "clinical_indication": "Major congenital cardiac anomaly",
-                "prior_testing": "CMA",
-                "family_history": "Male close blood relative (first- or second-degree) with breast cancer",
-                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
-                "cpt_code": "81277"
-            }
-        }
-    },
-    {
-        "Case12": {
-            "Q0": "CMA",
-            "Q1": "Not Specified",
-            "Q2": "Not Specified",
-            "Q3": "No",
-            "Q4": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "No",
             "Q5": "Not specified",
             "Q6": "Not Specified",
-            "Q7": "Not Specified",
+            "Q7": "81415",
             "Q8": "No",
             "sample_patient_dict": {
-                "case_id": "Case12",
-                "insurance": "BCBS_FEP",
-                "genetic_tests": "CMA_tumor",
-                "age_years": -1,
-                "age_string": "13 weeks gestation",
-                "order_provider": "Nurse Practitioner",
-                "clinical_indication": "Persistent seizures",
-                "prior_testing": "CMA",
-                "family_history": "Inborn error of metabolism",
+                "case_id": "Case619",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
+                "age_years": 12,
+                "age_string": "12 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Developmental Delay/Intellectual Disability where a specific syndrome is not suspected",
+                "prior_testing": "No prior testing",
+                "family_history": "Epithelial ovarian, fallopian tube, or primary peritoneal cancer in at least 1 close blood relative (first-, second-, or third- degree) at any age",
                 "genetic_counselor": "No genetic counseling conducted",
-                "cpt_code": "81162"
+                "cpt_code": "Not specified"
             }
         }
     },
     {
-        "Case33": {
+        "Case939": {
+            "Q0": "WES",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case939",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 71,
+                "age_string": "71 years age",
+                "order_provider": "Medical Geneticist",
+                "clinical_indication": "Coloboma",
+                "prior_testing": "Karyotype testing",
+                "family_history": "At least one first- or second-degree relative with a history of Pancreatic cancer",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case236": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Yes",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case236",
+                "insurance": "UHC",
+                "genetic_tests": "WES",
+                "age_years": 4,
+                "age_string": "4 years age",
+                "order_provider": "Neurologist",
+                "clinical_indication": "Congenital anomaly",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case772": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "No",
+            "Q5": "Yes",
+            "Q6": "No",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case772",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 0,
+                "age_string": "0 years age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "Multiple fetal structural anomalies affecting unrelated organ systems",
+                "prior_testing": "No prior testing",
+                "family_history": "Inborn error of metabolism",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case26": {
             "Q0": "WES",
             "Q1": "Yes",
             "Q2": "Not Specified",
             "Q3": "Yes",
             "Q4": "Yes",
             "Q5": "Not specified",
-            "Q6": "Yes",
-            "Q7": "Not Specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
             "Q8": "Yes",
             "sample_patient_dict": {
-                "case_id": "Case33",
-                "insurance": "BCBS_FEP",
+                "case_id": "Case26",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
+                "age_years": 16,
+                "age_string": "16 years age",
+                "order_provider": "Medical Geneticist",
+                "clinical_indication": "Isolated severe congenital heart disease",
+                "prior_testing": "Fragile X testing",
+                "family_history": "First- or second-degree family member with neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case812": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case812",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
+                "age_years": 9,
+                "age_string": "9 years age",
+                "order_provider": "Medical Geneticist",
+                "clinical_indication": "personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least one Close Blood Relative diagnosed with a Primary Solid Tumor (excluding basal or squamous cell skin cancer) at age 40 or younger",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with autism spectrum disorder",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case35": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Yes",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case35",
+                "insurance": "UHC",
                 "genetic_tests": "WES",
                 "age_years": 0,
-                "age_string": "2 weeks age",
+                "age_string": "8 weeks age",
                 "order_provider": "Neonatologist",
-                "clinical_indication": "Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed",
-                "prior_testing": "Fragile X testing",
-                "family_history": "At least one close relative (first-, second-, or third- degree) with metastatic (radiographic evidence of or biopsy proven disease) or intraductal/cribriform histology, high- or very-high risk prostate cancer at any age",
+                "clinical_indication": "Epileptic encephalopathy with onset before three years of age",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM)",
                 "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
                 "cpt_code": "Not specified"
             }
         }
     },
     {
-        "Case67": {
-            "Q0": "CMA",
-            "Q1": "Not Specified",
+        "Case233": {
+            "Q0": "WES",
+            "Q1": "No",
             "Q2": "Not Specified",
             "Q3": "Yes",
-            "Q4": "Not Specified",
+            "Q4": "No",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case233",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 58,
+                "age_string": "58 years age",
+                "order_provider": "Medical Geneticist",
+                "clinical_indication": "Significant hearing or visual impairment diagnosed by 18 years of age",
+                "prior_testing": "No prior testing",
+                "family_history": "First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81277"
+            }
+        }
+    },
+    {
+        "Case38": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
             "Q5": "Not specified",
             "Q6": "Not Specified",
-            "Q7": "81228",
+            "Q7": "81415",
             "Q8": "Yes",
             "sample_patient_dict": {
-                "case_id": "Case67",
-                "insurance": "UHC",
-                "genetic_tests": "CMA",
+                "case_id": "Case38",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
                 "age_years": 0,
-                "age_string": "7 weeks age",
-                "order_provider": "Medical Geneticist",
+                "age_string": "0 years age",
+                "order_provider": "Primary Care Physician",
+                "clinical_indication": "Global developmental delay",
+                "prior_testing": "Fragile X testing",
+                "family_history": "A close blood relative (first- or second-degree) with a triple negative breast cancer",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case205": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case205",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
+                "age_years": 19,
+                "age_string": "19 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Moderate/severe/profound intellectual disability",
+                "prior_testing": "CMA",
+                "family_history": "First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case542": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case542",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 15,
+                "age_string": "15 years age",
+                "order_provider": "Nurse Practitioner",
                 "clinical_indication": "Meconium ileus",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with epileptic encephalopathy with onset before three years of age",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case158": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Yes",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case158",
+                "insurance": "UHC",
+                "genetic_tests": "WES",
+                "age_years": 6,
+                "age_string": "6 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",
+                "prior_testing": "Fragile X testing",
+                "family_history": "At least one first- or second-degree relative with a history of Pancreatic cancer",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case542": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case542",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 15,
+                "age_string": "15 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Meconium ileus",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with epileptic encephalopathy with onset before three years of age",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case815": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case815",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
+                "age_years": 4,
+                "age_string": "4 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Metastatic Breast Cancer",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with consanguinity",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case713": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "No",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case713",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
+                "age_years": 2,
+                "age_string": "2 years age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "Autism spectrum disorder",
                 "prior_testing": "No prior testing",
-                "family_history": "Male close blood relative (first- or second-degree) with breast cancer",
+                "family_history": "First- or second-degree family member with dysmorphic features",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case288": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Yes",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case288",
+                "insurance": "UHC",
+                "genetic_tests": "WES",
+                "age_years": 2,
+                "age_string": "2 years age",
+                "order_provider": "Neurologist",
+                "clinical_indication": "Autism spectrum disorder",
+                "prior_testing": "FISH testing",
+                "family_history": "At least two close blood relatives (on the same side of the family) with either breast cancer or a confirmed diagnosis of prostate cancer at any age",
                 "genetic_counselor": "No mention of genetic counseling",
                 "cpt_code": "81277"
             }
         }
     },
     {
-        "Case56": {
+        "Case555": {
             "Q0": "WES",
             "Q1": "Yes",
-            "Q2": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case555",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 3,
+                "age_string": "3 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Hirschsprung disease",
+                "prior_testing": "CMA",
+                "family_history": "Male close blood relative (first- or second-degree) with breast cancer",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case644": {
+            "Q0": "WES",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Yes",
+            "Q6": "No",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case644",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 72,
+                "age_string": "72 years age",
+                "order_provider": "Neurologist",
+                "clinical_indication": "Multiple congenital anomalies",
+                "prior_testing": "Fragile X testing",
+                "family_history": "Inborn error of metabolism",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case630": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
             "Q3": "Yes",
             "Q4": "No",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case630",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 14,
+                "age_string": "14 years age",
+                "order_provider": "Primary Care Physician",
+                "clinical_indication": "Congenital anomaly",
+                "prior_testing": "No prior testing",
+                "family_history": "First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case951": {
+            "Q0": "WES",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "No",
+            "Q5": "Yes",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case951",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": -1,
+                "age_string": "38 weeks gestation",
+                "order_provider": "Primary Care Physician",
+                "clinical_indication": "Apparent nonsyndromic developmental delay/intellectual disability",
+                "prior_testing": "No prior testing",
+                "family_history": "Developmental delay",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case542": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case542",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 15,
+                "age_string": "15 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Meconium ileus",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with epileptic encephalopathy with onset before three years of age",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case553": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case553",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 2,
+                "age_string": "2 years age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Personal history of breast cancer diagnosed equal and under 60 with Triple-negative breast cancer",
+                "prior_testing": "Fragile X testing",
+                "family_history": "At least one first- or second-degree relative with a history of Metastatic prostate cancer",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case292": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case292",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
+                "age_years": -1,
+                "age_string": "10 weeks gestation",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Multiple congenital anomalies not specific to a well-delineated genetic syndrome",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case11": {
+            "Q0": "WES",
+            "Q1": "No",
+            "Q2": "Yes",
+            "Q3": "Yes",
+            "Q4": "Yes",
             "Q5": "Yes",
             "Q6": "Not Specified",
             "Q7": "81415",
             "Q8": "No",
             "sample_patient_dict": {
-                "case_id": "Case56",
+                "case_id": "Case11",
+                "insurance": "UHC",
+                "genetic_tests": "WES",
+                "age_years": 58,
+                "age_string": "58 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Meconium ileus",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First- or second-degree family member with epileptic encephalopathy with onset before three years of age",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case87": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Yes",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case87",
                 "insurance": "UHC",
                 "genetic_tests": "WES",
                 "age_years": -1,
-                "age_string": "20 weeks gestation",
+                "age_string": "29 weeks gestation",
+                "order_provider": "Oncologist",
+                "clinical_indication": "High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events",
+                "prior_testing": "FISH testing",
+                "family_history": "A close blood relative (first- or second-degree) with a triple negative breast cancer",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case600": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case600",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
+                "age_years": -1,
+                "age_string": "31 weeks gestation",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",
+                "prior_testing": "CMA",
+                "family_history": "At least one first- or second-degree relative with a history of Metastatic prostate cancer",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case513": {
+            "Q0": "WES",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Yes",
+            "Q5": "Yes",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case513",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 67,
+                "age_string": "67 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Male with breast cancer at any age",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM)",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case233": {
+            "Q0": "WES",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "No",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case233",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WES",
+                "age_years": 58,
+                "age_string": "58 years age",
+                "order_provider": "Medical Geneticist",
+                "clinical_indication": "Significant hearing or visual impairment diagnosed by 18 years of age",
+                "prior_testing": "No prior testing",
+                "family_history": "First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81277"
+            }
+        }
+    },
+    {
+        "Case933": {
+            "Q0": "WES",
+            "Q1": "Yes",
+            "Q2": "Yes",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case933",
+                "insurance": "UHC",
+                "genetic_tests": "WES",
+                "age_years": -1,
+                "age_string": "36 weeks gestation",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Multiple congenital anomalies (must affect different organ systems)",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with epileptic encephalopathy with onset before three years of age",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case346": {
+            "Q0": "WES",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81415",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case346",
+                "insurance": "Cigna",
+                "genetic_tests": "WES",
+                "age_years": 74,
+                "age_string": "74 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Unexplained developmental regression, unrelated to autism or epilepsy",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with epileptic encephalopathy with onset before three years of age",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case444": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Yes",
+            "Q3": "No",
+            "Q4": "Yes",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case444",
+                "insurance": "UHC",
+                "genetic_tests": "WGS",
+                "age_years": 1,
+                "age_string": "1 years age",
+                "order_provider": "Neurologist",
+                "clinical_indication": "abnormality affecting at minimum a single organ system and complex neurodevelopmental disorder",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First- or second-degree family member with global developmental delay",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case308": {
+            "Q0": "WGS",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "No",
+            "Q5": "Yes",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case308",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WGS",
+                "age_years": 75,
+                "age_string": "75 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Autism spectrum disorder",
+                "prior_testing": "No prior testing",
+                "family_history": "Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case361": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case361",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 0,
+                "age_string": "5 weeks age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Moderate/severe/profound intellectual disability",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with autism spectrum disorder",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case9": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "No",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case9",
+                "insurance": "UHC",
+                "genetic_tests": "WGS",
+                "age_years": 6,
+                "age_string": "6 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Choanal atresia",
+                "prior_testing": "CMA",
+                "family_history": "Epithelial ovarian, fallopian tube, or primary peritoneal cancer in at least 1 close blood relative (first-, second-, or third- degree) at any age",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case783": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case783",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 0,
+                "age_string": "5 weeks age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "Meconium ileus",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case875": {
+            "Q0": "WGS",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case875",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 45,
+                "age_string": "45 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Diagnosed breast cancer at age equal to under 45",
+                "prior_testing": "FISH testing",
+                "family_history": "Epithelial ovarian, fallopian tube, or primary peritoneal cancer in at least 1 close blood relative (first-, second-, or third- degree) at any age",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81277"
+            }
+        }
+    },
+    {
+        "Case361": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case361",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 0,
+                "age_string": "5 weeks age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Moderate/severe/profound intellectual disability",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with autism spectrum disorder",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case391": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case391",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 0,
+                "age_string": "2 weeks age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Multiple congenital anomalies",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case929": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "No",
+            "Q3": "No",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case929",
+                "insurance": "UHC",
+                "genetic_tests": "WGS",
+                "age_years": 18,
+                "age_string": "18 years age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "High-risk Brief Resolved Unexplained Event with Required cardiopulmonary resuscitation (CPR)",
+                "prior_testing": "Fragile X testing",
+                "family_history": "First-degree or second-degree relative with ovarian carcinoma (including fallopian tube or peritoneal cancer)",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81277"
+            }
+        }
+    },
+    {
+        "Case587": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case587",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 1,
+                "age_string": "1 years age",
+                "order_provider": "Neurologist",
+                "clinical_indication": "Meconium ileus",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case524": {
+            "Q0": "WGS",
+            "Q1": "No",
+            "Q2": "Yes",
+            "Q3": "No",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case524",
+                "insurance": "UHC",
+                "genetic_tests": "WGS",
+                "age_years": 60,
+                "age_string": "60 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Fetal hydrops of unknown etiology",
+                "prior_testing": "Karyotype testing",
+                "family_history": "A close blood relative (first- or second-degree) with a triple negative breast cancer",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case361": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case361",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 0,
+                "age_string": "5 weeks age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Moderate/severe/profound intellectual disability",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with autism spectrum disorder",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case128": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case128",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 14,
+                "age_string": "14 years age",
                 "order_provider": "Medical Geneticist",
                 "clinical_indication": "Multiple congenital anomalies",
-                "prior_testing": "No prior testing",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case913": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Yes",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case913",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WGS",
+                "age_years": 8,
+                "age_string": "8 years age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",
+                "prior_testing": "Karyotype testing",
                 "family_history": "First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM)",
                 "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
                 "cpt_code": "81162"
@@ -130,85 +1144,371 @@
         }
     },
     {
-        "Case11": {
-            "Q0": "CMA",
-            "Q1": "Not Specified",
+        "Case31": {
+            "Q0": "WGS",
+            "Q1": "Yes",
             "Q2": "Not Specified",
-            "Q3": "No",
-            "Q4": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
             "Q5": "Not specified",
             "Q6": "Not Specified",
-            "Q7": "81228",
-            "Q8": "No",
+            "Q7": "81425",
+            "Q8": "Yes",
             "sample_patient_dict": {
-                "case_id": "Case11",
-                "insurance": "UHC",
-                "genetic_tests": "CMA_tumor",
-                "age_years": 17,
-                "age_string": "17 years age",
+                "case_id": "Case31",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 12,
+                "age_string": "12 years age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events",
+                "prior_testing": "Fragile X testing",
+                "family_history": "First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case314": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Yes",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case314",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "WGS",
+                "age_years": 0,
+                "age_string": "7 weeks age",
                 "order_provider": "Neonatologist",
-                "clinical_indication": "Metastatic prostate cancer",
-                "prior_testing": "Karyotype testing",
-                "family_history": "First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",
+                "clinical_indication": "Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",
                 "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
                 "cpt_code": "81162"
             }
         }
     },
     {
-        "Case33": {
-            "Q0": "WES",
+        "Case157": {
+            "Q0": "WGS",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case157",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
+                "age_years": 62,
+                "age_string": "62 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Coloboma",
+                "prior_testing": "CMA",
+                "family_history": "Breast cancer in at least 1 close blood relative (first-, second-, or thirddegree) occurring at 50 years of age or younger",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case834": {
+            "Q0": "WGS",
+            "Q1": "Yes",
+            "Q2": "Yes",
+            "Q3": "Yes",
+            "Q4": "No",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case834",
+                "insurance": "UHC",
+                "genetic_tests": "WGS",
+                "age_years": 14,
+                "age_string": "14 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Multiple congenital anomalies",
+                "prior_testing": "No prior testing",
+                "family_history": "At least one first- or second-degree relative with a history of Ovarian Cancer (including fallopian tube cancer and/or primary peritoneal cancer)",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case110": {
+            "Q0": "WGS",
+            "Q1": "No",
+            "Q2": "Yes",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81425",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case110",
+                "insurance": "UHC",
+                "genetic_tests": "WGS",
+                "age_years": 31,
+                "age_string": "31 years age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Multiple congenital anomalies (must affect different organ systems)",
+                "prior_testing": "CMA",
+                "family_history": "Inborn error of metabolism",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81277"
+            }
+        }
+    },
+    {
+        "Case391": {
+            "Q0": "WGS",
             "Q1": "Yes",
             "Q2": "Not Specified",
             "Q3": "Yes",
             "Q4": "Yes",
             "Q5": "Not specified",
-            "Q6": "Yes",
-            "Q7": "Not Specified",
+            "Q6": "Not Specified",
+            "Q7": "81425",
             "Q8": "Yes",
             "sample_patient_dict": {
-                "case_id": "Case33",
-                "insurance": "BCBS_FEP",
-                "genetic_tests": "WES",
+                "case_id": "Case391",
+                "insurance": "Cigna",
+                "genetic_tests": "WGS",
                 "age_years": 0,
                 "age_string": "2 weeks age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Multiple congenital anomalies",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case151": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case151",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 17,
+                "age_string": "17 years age",
                 "order_provider": "Neonatologist",
-                "clinical_indication": "Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed",
-                "prior_testing": "Fragile X testing",
-                "family_history": "At least one close relative (first-, second-, or third- degree) with metastatic (radiographic evidence of or biopsy proven disease) or intraductal/cribriform histology, high- or very-high risk prostate cancer at any age",
+                "clinical_indication": "High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",
+                "prior_testing": "FISH testing",
+                "family_history": "At least one first- or second-degree relative with a history of Pancreatic cancer",
                 "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case290": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case290",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 0,
+                "age_string": "3 weeks age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Autism spectrum disorder",
+                "prior_testing": "No prior testing",
+                "family_history": "At least one first- or second-degree relative with a history of Pancreatic cancer",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case708": {
+            "Q0": "BRCA1/2",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case708",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 58,
+                "age_string": "58 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Multiple congenital anomalies not specific to a well-delineated genetic syndrome",
+                "prior_testing": "FISH testing",
+                "family_history": "At least one first- or second-degree relative with a history of Pancreatic cancer",
+                "genetic_counselor": "No mention of genetic counseling",
                 "cpt_code": "Not specified"
             }
         }
     },
     {
-        "Case33": {
-            "Q0": "WES",
+        "Case907": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case907",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 0,
+                "age_string": "6 weeks age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Neuroendocrine tumor (e.g., adrenocortical carcinoma, paraganglioma, pheochromocytoma)",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case171": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case171",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 9,
+                "age_string": "9 years age",
+                "order_provider": "Neurologist",
+                "clinical_indication": "Major congenital cardiac anomaly",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM)",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81277"
+            }
+        }
+    },
+    {
+        "Case712": {
+            "Q0": "BRCA1/2",
             "Q1": "Yes",
             "Q2": "Not Specified",
             "Q3": "Yes",
-            "Q4": "Yes",
+            "Q4": "Not Specified",
             "Q5": "Not specified",
-            "Q6": "Yes",
-            "Q7": "Not Specified",
+            "Q6": "Not Specified",
+            "Q7": "81162",
             "Q8": "Yes",
             "sample_patient_dict": {
-                "case_id": "Case33",
+                "case_id": "Case712",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 19,
+                "age_string": "19 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Metastatic Breast Cancer",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM)",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case339": {
+            "Q0": "BRCA1/2",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case339",
                 "insurance": "BCBS_FEP",
-                "genetic_tests": "WES",
-                "age_years": 0,
-                "age_string": "2 weeks age",
-                "order_provider": "Neonatologist",
-                "clinical_indication": "Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 18,
+                "age_string": "18 years age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Multiple congenital abnormalities affecting different organ systems",
+                "prior_testing": "CMA",
+                "family_history": "Developmental delay",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81277"
+            }
+        }
+    },
+    {
+        "Case832": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case832",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 7,
+                "age_string": "7 years age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "Congenital anomaly",
                 "prior_testing": "Fragile X testing",
-                "family_history": "At least one close relative (first-, second-, or third- degree) with metastatic (radiographic evidence of or biopsy proven disease) or intraductal/cribriform histology, high- or very-high risk prostate cancer at any age",
-                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "family_history": "First- or second-degree family member with dysmorphic features",
+                "genetic_counselor": "No mention of genetic counseling",
                 "cpt_code": "Not specified"
             }
         }
     },
     {
-        "Case57": {
+        "Case327": {
             "Q0": "BRCA1/2",
             "Q1": "Yes",
             "Q2": "Not Specified",
@@ -219,22 +1519,256 @@
             "Q7": "Not Specified",
             "Q8": "No",
             "sample_patient_dict": {
-                "case_id": "Case57",
+                "case_id": "Case327",
                 "insurance": "BCBS_FEP",
                 "genetic_tests": "BRCA1/2",
-                "age_years": 38,
-                "age_string": "38 years age",
-                "order_provider": "Nurse Practitioner",
-                "clinical_indication": "Intellectual disability",
-                "prior_testing": "No prior testing",
-                "family_history": "Three or more total diagnoses of breast cancer in the individual and/or close relatives (can include first-, second-, or third-degree relatives)",
-                "genetic_counselor": "No genetic counseling conducted",
+                "age_years": 37,
+                "age_string": "37 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Hypotonia or hypertonia in infancy",
+                "prior_testing": "Karyotype testing",
+                "family_history": "A close blood relative (first- or second-degree) with a triple negative breast cancer",
+                "genetic_counselor": "No mention of genetic counseling",
                 "cpt_code": "81162"
             }
         }
     },
     {
-        "Case94": {
+        "Case140": {
+            "Q0": "BRCA1/2",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Yes",
+            "Q7": "81162",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case140",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 38,
+                "age_string": "38 years age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "Personal history of metastatic or intraductal/cribriform histology prostate cancer at any age",
+                "prior_testing": "Karyotype testing",
+                "family_history": "Male close blood relative (first- or second-degree) with breast cancer",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case213": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case213",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 2,
+                "age_string": "2 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",
+                "prior_testing": "Karyotype testing",
+                "family_history": "At least one first- or second-degree relative with a history of Pancreatic cancer",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case861": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case861",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 74,
+                "age_string": "74 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "major abnormality affecting at minimum a single organ system",
+                "prior_testing": "No prior testing",
+                "family_history": "First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case36": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case36",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 1,
+                "age_string": "1 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Dysmorphic features",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First- or second-degree family member with epileptic encephalopathy with onset before three years of age",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case915": {
+            "Q0": "BRCA1/2",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case915",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 49,
+                "age_string": "49 years age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Metastatic Breast Cancer",
+                "prior_testing": "Fragile X testing",
+                "family_history": "At least one second-degree relative with a history of Two or more Cancers Associated with Lynch Syndrome",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case362": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case362",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 13,
+                "age_string": "13 years age",
+                "order_provider": "Neurologist",
+                "clinical_indication": "Coloboma",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case500": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case500",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 12,
+                "age_string": "12 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed",
+                "prior_testing": "No prior testing",
+                "family_history": "First- or second-degree family member with global developmental delay",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case967": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case967",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 0,
+                "age_string": "2 weeks age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Individual has a personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and Tyrer-Cuzick, BRCAPro, or Penn11 Score of 2.5% or greater for a BRCA1/2 pathogenic variant",
+                "prior_testing": "Fragile X testing",
+                "family_history": "Breast cancer in at least 1 close blood relative (first-, second-, or thirddegree) occurring at 50 years of age or younger",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case523": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case523",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 75,
+                "age_string": "75 years age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Global developmental delay",
+                "prior_testing": "Karyotype testing",
+                "family_history": "First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case607": {
             "Q0": "BRCA1/2",
             "Q1": "No",
             "Q2": "Not Specified",
@@ -245,17 +1779,823 @@
             "Q7": "81162",
             "Q8": "No",
             "sample_patient_dict": {
-                "case_id": "Case94",
+                "case_id": "Case607",
                 "insurance": "UHC",
                 "genetic_tests": "BRCA1/2",
-                "age_years": 72,
-                "age_string": "72 years age",
-                "order_provider": "Primary Care Physician",
-                "clinical_indication": "Choanal atresia",
-                "prior_testing": "Fragile X testing",
-                "family_history": "First- or second-degree family member with dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",
+                "age_years": 15,
+                "age_string": "15 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Autism spectrum disorder",
+                "prior_testing": "CMA",
+                "family_history": "Developmental delay",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case708": {
+            "Q0": "BRCA1/2",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case708",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 58,
+                "age_string": "58 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Multiple congenital anomalies not specific to a well-delineated genetic syndrome",
+                "prior_testing": "FISH testing",
+                "family_history": "At least one first- or second-degree relative with a history of Pancreatic cancer",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case885": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case885",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 0,
+                "age_string": "1 weeks age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Exocrine pancreatic cancer",
+                "prior_testing": "CMA",
+                "family_history": "Inborn error of metabolism",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case831": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case831",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 0,
+                "age_string": "3 weeks age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Multiple congenital anomalies",
+                "prior_testing": "No prior testing",
+                "family_history": "First- or second-degree family member with hypotonia or hypertonia in infancy",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case282": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case282",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": -1,
+                "age_string": "28 weeks gestation",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Hyperammonemia",
+                "prior_testing": "FISH testing",
+                "family_history": "First-degree or second-degree relative with pancreatic cancer",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case677": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case677",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 66,
+                "age_string": "66 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",
+                "prior_testing": "Karyotype testing",
+                "family_history": "At least one first degree relative with a history of Cancer Associated with Lynch Syndrome",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case861": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "Yes",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case861",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 74,
+                "age_string": "74 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "major abnormality affecting at minimum a single organ system",
+                "prior_testing": "No prior testing",
+                "family_history": "First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case405": {
+            "Q0": "BRCA1/2",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81162",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case405",
+                "insurance": "UHC",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 23,
+                "age_string": "23 years age",
+                "order_provider": "Medical Geneticist",
+                "clinical_indication": "personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least two Close Blood Relatives (in addition to affected individual) on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer)",
+                "prior_testing": "No prior testing",
+                "family_history": "Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)",
                 "genetic_counselor": "No mention of genetic counseling",
                 "cpt_code": "81277"
+            }
+        }
+    },
+    {
+        "Case486": {
+            "Q0": "BRCA1/2",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Yes",
+            "Q6": "No",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case486",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 42,
+                "age_string": "42 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Personal history of breast cancer diagnosed equal and under 60 with Triple-negative breast cancer",
+                "prior_testing": "CMA",
+                "family_history": "At least one first- or second-degree relative with a history of Metastatic prostate cancer",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case222": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case222",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 15,
+                "age_string": "15 years age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "Hypotonia or hypertonia in infancy",
+                "prior_testing": "Fragile X testing",
+                "family_history": "First- or second-degree family member with global developmental delay",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81277"
+            }
+        }
+    },
+    {
+        "Case433": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Yes",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case433",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 1,
+                "age_string": "1 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Global Developmental Delay",
+                "prior_testing": "No prior testing",
+                "family_history": "First- or second-degree family member with multiple congenital anomalies",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case944": {
+            "Q0": "BRCA1/2",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "81162",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case944",
+                "insurance": "Cigna",
+                "genetic_tests": "BRCA1/2",
+                "age_years": 15,
+                "age_string": "15 years age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case897": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81228",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case897",
+                "insurance": "UHC",
+                "genetic_tests": "CMA_developmental_disorder",
+                "age_years": 67,
+                "age_string": "67 years age",
+                "order_provider": "Primary Care Physician",
+                "clinical_indication": "Autism spectrum disorder",
+                "prior_testing": "CMA",
+                "family_history": "First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case345": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case345",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "CMA_tumor",
+                "age_years": 55,
+                "age_string": "55 years age",
+                "order_provider": "Primary Care Physician",
+                "clinical_indication": "Apparent nonsyndromic developmental delay/intellectual disability",
+                "prior_testing": "No prior testing",
+                "family_history": "First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case101": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81228",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case101",
+                "insurance": "UHC",
+                "genetic_tests": "CMA",
+                "age_years": 0,
+                "age_string": "1 weeks age",
+                "order_provider": "Medical Geneticist",
+                "clinical_indication": "Developmental delay",
+                "prior_testing": "Fragile X testing",
+                "family_history": "Developmental delay",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case494": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81228",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case494",
+                "insurance": "UHC",
+                "genetic_tests": "CMA",
+                "age_years": 22,
+                "age_string": "22 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Intellectual disability",
+                "prior_testing": "Fragile X testing",
+                "family_history": "First- or second-degree family member with dysmorphic features",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case326": {
+            "Q0": "CMA",
+            "Q1": "Yes",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "81228",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case326",
+                "insurance": "Cigna",
+                "genetic_tests": "CMA_developmental_disorder",
+                "age_years": 0,
+                "age_string": "4 weeks age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Developmental Delay/Intellectual Disability where a specific syndrome is not suspected",
+                "prior_testing": "FISH testing",
+                "family_history": "First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case674": {
+            "Q0": "CMA",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "81228",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case674",
+                "insurance": "Cigna",
+                "genetic_tests": "CMA_developmental_disorder",
+                "age_years": 1,
+                "age_string": "1 years age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Multiple congenital anomalies (must affect different organ systems)",
+                "prior_testing": "Karyotype testing",
+                "family_history": "Inborn error of metabolism",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case865": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case865",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "CMA",
+                "age_years": -1,
+                "age_string": "27 weeks gestation",
+                "order_provider": "Primary Care Physician",
+                "clinical_indication": "Meconium ileus",
+                "prior_testing": "Fragile X testing",
+                "family_history": "At least one first- or second-degree relative with a history of Breast Cancer diagnosed at age 50 or younger",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case665": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case665",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "CMA_tumor",
+                "age_years": 39,
+                "age_string": "39 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Global Developmental Delay",
+                "prior_testing": "Karyotype testing",
+                "family_history": "At least three Close Blood Relatives on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer)",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case981": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case981",
+                "insurance": "Cigna",
+                "genetic_tests": "CMA",
+                "age_years": 19,
+                "age_string": "19 years age",
+                "order_provider": "Oncologist",
+                "clinical_indication": "Breast Cancer and individual was assigned male at birth",
+                "prior_testing": "Karyotype testing",
+                "family_history": "At least one close relative (first-, second-, or third- degree) with pancreatic cancer at any age",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case662": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81228",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case662",
+                "insurance": "UHC",
+                "genetic_tests": "CMA",
+                "age_years": -1,
+                "age_string": "15 weeks gestation",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Global developmental delay",
+                "prior_testing": "No prior testing",
+                "family_history": "First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case240": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not Specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case240",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "CMA_developmental_disorder",
+                "age_years": 16,
+                "age_string": "16 years age",
+                "order_provider": "Developmental Pediatrician",
+                "clinical_indication": "Multiple congenital abnormalities affecting different organ systems",
+                "prior_testing": "FISH testing",
+                "family_history": "First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81162"
+            }
+        }
+    },
+    {
+        "Case632": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case632",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "CMA",
+                "age_years": 5,
+                "age_string": "5 years age",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Moderate/severe/profound intellectual disability",
+                "prior_testing": "Fragile X testing",
+                "family_history": "Sudden unexplained death in first- or second-degree family members before age 35",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case817": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81228",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case817",
+                "insurance": "UHC",
+                "genetic_tests": "CMA",
+                "age_years": 31,
+                "age_string": "31 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Autism spectrum disorder",
+                "prior_testing": "No prior testing",
+                "family_history": "First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case194": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case194",
+                "insurance": "Cigna",
+                "genetic_tests": "CMA",
+                "age_years": 16,
+                "age_string": "16 years age",
+                "order_provider": "Primary Care Physician",
+                "clinical_indication": "complex neurodevelopmental disorder and autism",
+                "prior_testing": "FISH testing",
+                "family_history": "First- or second-degree family member with global developmental delay",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case257": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case257",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "CMA",
+                "age_years": 73,
+                "age_string": "73 years age",
+                "order_provider": "Neonatologist",
+                "clinical_indication": "Isolated severe congenital heart disease",
+                "prior_testing": "Fragile X testing",
+                "family_history": "First- or second-degree family member with congenital anomaly",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81228"
+            }
+        }
+    },
+    {
+        "Case808": {
+            "Q0": "CMA",
+            "Q1": "No",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Yes",
+            "Q5": "Not specified",
+            "Q6": "No",
+            "Q7": "81228",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case808",
+                "insurance": "Cigna",
+                "genetic_tests": "CMA_developmental_disorder",
+                "age_years": -1,
+                "age_string": "26 weeks gestation",
+                "order_provider": "Nurse Practitioner",
+                "clinical_indication": "Isolated severe congenital heart disease",
+                "prior_testing": "Karyotype testing",
+                "family_history": "Inborn error of metabolism",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case412": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "Yes",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not Specified",
+            "Q8": "Yes",
+            "sample_patient_dict": {
+                "case_id": "Case412",
+                "insurance": "BCBS_FEP",
+                "genetic_tests": "CMA",
+                "age_years": 12,
+                "age_string": "12 years age",
+                "order_provider": "General Pediatrician",
+                "clinical_indication": "Moderate/severe/profound intellectual disability",
+                "prior_testing": "CMA",
+                "family_history": "Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)",
+                "genetic_counselor": "No mention of genetic counseling",
+                "cpt_code": "81415"
+            }
+        }
+    },
+    {
+        "Case388": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "Not specified",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case388",
+                "insurance": "Cigna",
+                "genetic_tests": "CMA",
+                "age_years": 60,
+                "age_string": "60 years age",
+                "order_provider": "Neurologist",
+                "clinical_indication": "High-risk Brief Resolved Unexplained Event with Required cardiopulmonary resuscitation (CPR)",
+                "prior_testing": "Karyotype testing",
+                "family_history": "Arrhythmia",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "81425"
+            }
+        }
+    },
+    {
+        "Case520": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81228",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case520",
+                "insurance": "UHC",
+                "genetic_tests": "CMA_developmental_disorder",
+                "age_years": 69,
+                "age_string": "69 years age",
+                "order_provider": "Primary Care Physician",
+                "clinical_indication": "Laboratory abnormalities suggestive of an inborn error of metabolism (IEM)",
+                "prior_testing": "Fragile X testing",
+                "family_history": "Long QT syndrome",
+                "genetic_counselor": "No genetic counseling conducted",
+                "cpt_code": "Not specified"
+            }
+        }
+    },
+    {
+        "Case669": {
+            "Q0": "CMA",
+            "Q1": "Not Specified",
+            "Q2": "Not Specified",
+            "Q3": "No",
+            "Q4": "Not Specified",
+            "Q5": "Not specified",
+            "Q6": "Not Specified",
+            "Q7": "81228",
+            "Q8": "No",
+            "sample_patient_dict": {
+                "case_id": "Case669",
+                "insurance": "UHC",
+                "genetic_tests": "CMA_tumor",
+                "age_years": 68,
+                "age_string": "68 years age",
+                "order_provider": "Neurologist",
+                "clinical_indication": "Congenital anomaly",
+                "prior_testing": "CMA",
+                "family_history": "At least one first- or second-degree relative with a history of Breast Cancer and relative was assigned male at birth",
+                "genetic_counselor": "Saw a genetic counselor before testing and will visit after results are received",
+                "cpt_code": "81415"
             }
         }
     }

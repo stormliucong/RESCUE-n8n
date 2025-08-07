@@ -1,6 +1,7 @@
 # import library
 import random
 import json
+from collections import defaultdict
 # import openai
 import pandas as pd
 import numpy as np
@@ -31,14 +32,16 @@ def generate_age_in_category(age_categories):
         return 0, f"{weeks} weeks age"
     else:
         if selected_category == (0,0):
+            # pronatal cases
             months = random.randint(3, 12)
             return 0, f"{months} months age"
         else:
+            # other age ranges
             years = random.randint(selected_category[0], selected_category[1])
             return years, f"{years} years age" 
          
 def is_in_age_range(age_value, target_ranges):
-    age_value = int(age_years)
+    age_value = int(age_value)
     for min_age, max_age in target_ranges:
         if min_age == 0 and max_age == 0:
             if age_value == 0:
@@ -159,75 +162,16 @@ def get_answers(sample_patient_dict):
         q3 = "No"
     else:
         # check if clinical indication exists for the test
-        indication_data = test_info[test_info['Indication'] == sample_patient["clinical_indication"]]
+        indication_data = test_info[test_info['Indication'] == clinical_indication]
         if indication_data.empty:
             q3 = "No"
         else:
             # check if insurance coverage exists for the test and clinical indication
-            coverage = indication_data[indication_data['Insurance']== sample_patient["insurance"]]
+            coverage = indication_data[indication_data['Insurance'] == insurance]
             if coverage.empty:
                 q3 = "No"
-                # If insurance and indication both match, check age conditions
             else:
-                # All the BRCA1/2 age criteria is in this range
-                if sample_patient["genetic_tests"] == "BRCA1/2":
-                    if is_in_age_range(sample_patient["age_years"], [(18,45), (46,65)]):
-                        q3 = "Yes"
-                    else:
-                        q3 = "No"
-
-                # BCBS_FEP only considers 0~18 for WES/WGS
-                elif sample_patient["genetic_tests"] in ["WES", "WGS"]:
-                    if sample_patient["insurance"] == "BCBS_FEP":
-                        if is_in_age_range(sample_patient["age_years"], [(0,0), (0,18)]):
-                            q3 = "Yes"
-                        else:
-                            q3 = "No"
-
-                    # cigna has different age criteria
-                    elif sample_patient["insurance"] == "Cigna":
-                        if is_in_age_range(sample_patient["age_years"], [(0,0), (0,21)]):
-                            q3 = "Yes"
-                        elif sample_patient["age_years"] == -1 and sample_patient["genetic_tests"] == "WES":
-                            q3 = "Yes"
-                        elif sample_patient["age_years"] == -1 and sample_patient["genetic_tests"] == "WGS": # no prenatal for WGS
-                            q3 = "No"
-                        else:
-                            q3 = "No" # age over 21
-
-
-                    elif sample_patient["insurance"] == "UHC":
-                        if is_in_age_range(sample_patient["age_years"], [(0,0), (0,18)]):
-                            q3 = "Yes"
-                        elif sample_patient["age_years"] == -1 and sample_patient["genetic_tests"] == "WES":
-                            q3 = "Yes"
-                        elif sample_patient["age_years"] == -1 and sample_patient["genetic_tests"] == "WGS": # no prenatal for WGS
-                            q3 = "No"
-                        else:
-                            q3 = "No" # age over 19
-
-                elif sample_patient["genetic_tests"] in ["CMA", "CMA_developmental_disorder", "CMA_tumor"]:
-                    if sample_patient["insurance"] == "BCBS_FEP":
-                        q3 = "Yes" # no age criteria for CMA in BCBS_FEP
-
-                    elif sample_patient["insurance"] == "Cigna":
-                        if sample_patient["genetic_tests"] == "CMA_tumor":
-                            q3 = "Yes" # no age criteria for CMA_tumor in Cigna
-
-                        elif sample_patient["genetic_tests"] == "CMA_developmental_disorder":
-                            if sample_patient["age_years"] == -1 or sample_patient["age_years"] == 0:
-                                q3 = "Yes"
-                            else:
-                                q3 = "No" # age over 1 is not covered for CMA_developmental_disorder in Cigna
-                        else:
-                            q3 = "No" # There is no CMA in Cigna
-
-
-                    elif sample_patient["insurance"] == "UHC":
-                        if is_in_age_range(sample_patient["age_years"], [(0,0), (0,18)]) or sample_patient["age_years"] == -1:
-                            q3 = "Yes"
-                        else:
-                            q3 = "No"
+                q3 = "Yes"
 
     # q4 - Prior Testing (For WES/WGS/CMA_developmental_disorder only)
     if genetic_tests in ["WES", "WGS"]:
@@ -236,20 +180,20 @@ def get_answers(sample_patient_dict):
         q4 = "Yes" if prior_testing in ["FISH testing", "Karyotype testing"] else "No"
 
     # q5 - family history
-    test_info = q5_merged[q5_merged['Test'] == sample_patient["genetic_tests"]]
+    test_info = q5_merged[q5_merged['Test'] == genetic_tests]
 
     if test_info.empty:
         q5 = "Not specified"  # Test itself does not exist in family history policy
     else:
         # Check if family_history is included in the test
-        history_data = test_info[test_info['Family history'] == sample_patient["family_history"]]
+        history_data = test_info[test_info['Family history'] == family_history]
     
         if history_data.empty:
             q5 = "Not specified"  # This family history is not mentioned in policy
         else:
             # Check insurance coverage
-            coverage_data = history_data[history_data['Insurance'] == sample_patient["insurance"]]
-        
+            coverage_data = history_data[history_data['Insurance'] == insurance]
+
             if coverage_data.empty:
                 q5 = "Not specified"  # Insurance doesn't have policy for this family history
             else:
@@ -277,6 +221,8 @@ def get_answers(sample_patient_dict):
         if q0 == "CMA":
             if insurance == "UHC" and genetic_tests == "CMA_tumor": # there is no CMA_tumor in UHC
                 q7 = cpt_mapping.get("CMA")
+            elif insurance == "Cigna" and genetic_tests == "CMA":
+                q7 = "Not specified"  # Cigna does not have CMA itself in the policy
             else:
                 q7 = cpt_mapping.get(genetic_tests)
         else:
@@ -284,6 +230,7 @@ def get_answers(sample_patient_dict):
 
     # q8 - final decision
     all_answers = [q1, q2, q3, q4, q5, q6] 
+    # if one of the answers is "No", then q8 is "No"
     if "No" in all_answers:
         q8 = "No"
     else:
@@ -345,7 +292,7 @@ def is_this_like_a_real_patient(sample_patient_dict):
     is_true = is_true.strip().lower() == 'true'  # Normalize the response to boolean
     return is_true
 
-number_of_samples = 100  # Number of sample patients to generate
+number_of_samples = 1000  # Number of sample patients to generate
 idx = 0 # initial index
 samples = [] # empty list to store sample patients
 # Generate sample patients
@@ -370,23 +317,53 @@ while idx < number_of_samples:
     samples.append(answer)
     idx += 1
     
-def negative_sample_balanced_dataset(samples,target_size):
-    count_yes = sum(1 for s in samples for case_data in s.values() if case_data["Q8"] == "Yes")
-    p_q8_yes = count_yes / len(samples)
+def negative_sample_balanced_dataset(samples, target_size, test_proportions):  
+    # considering the proportion of genetic tests & Q8 balance
+    test_groups = defaultdict(list)  # initialize a dictionary to hold samples by test type
+    for s in samples:
+        case_data = list(s.values())[0] # get the first (and only) case data
+        test_name = case_data["Q0"] # get the test name
+        test_groups[test_name].append(s) # append the sample to the corresponding test group
 
+    balanced_samples = [] # empty list to hold the balanced samples
+    
+    # Calculate Q8 ratio from entire dataset
+    # count the number of "Yes" responses in Q8
+    count_yes = sum(1 for s in samples for case_data in s.values() if case_data["Q8"] == "Yes")
+    # calculate the ratio of "Yes" responses for q8
+    p_q8_yes = count_yes / len(samples)
+    
     def _compute_q8_weight(sample, p_q8_yes, epsilon=1e-6):
+        # IPW
         case_data = list(sample.values())[0]
         if case_data["Q8"] == "Yes":
             return 1 / (p_q8_yes + epsilon)
         else:
             return 1 / (1 - p_q8_yes + epsilon)
+    
+    for test, proportion in test_proportions.items():
+        group = test_groups.get(test, [])
+        if not group:
+            continue
 
-    weights = [_compute_q8_weight(s, p_q8_yes) for s in samples]
-    probabilities = np.array(weights) / np.sum(weights)
-    k = target_size or len(samples)
-    return random.choices(samples, weights=probabilities, k=k)
+        # Compute weights for each sample in the current group (fixed: was using entire samples)
+        weights = [_compute_q8_weight(s, p_q8_yes) for s in group]
+        # Normalize weights to sum to 1
+        probabilities = np.array(weights) / np.sum(weights)
+        k = int(target_size * proportion) # Calculate the number of samples to select for this test type
+        selected = random.choices(group, weights=probabilities, k=k) # Select samples from the group
+        balanced_samples.extend(selected) # extend the balanced samples with selected samples (not append, since we want to keep the structure of samples)
+    
+    return balanced_samples
 
-balanced_samples = negative_sample_balanced_dataset(samples, target_size=10)
+test_ratios = {
+    "WES": 0.3,
+    "WGS": 0.2,
+    "BRCA1/2": 0.3,
+    "CMA": 0.2
+}
+balanced_samples = negative_sample_balanced_dataset(samples, target_size=100, test_proportions=test_ratios)
+
 
 # Save the balanced samples to a JSON file
 dataset_dir = '/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/dataset'
