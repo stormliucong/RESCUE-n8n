@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Case2354",
+    "patient_info": "Patient Case Description:\n\nA 21-week gestational female fetus, with genetic testing ordered by a General Pediatrician due to clinical indications of hypotonia or hypertonia in infancy. The prior testing included FISH testing. The family history reveals the presence of at least one close relative with metastatic prostate cancer or high-risk prostate cancer. The patient is covered under Cigna insurance. Whole exome sequencing (WES) was performed following a consultation with a genetic counselor, with plans to review results with the counselor post-testing."
+  },
+  {
+    "id": "Case2339",
+    "patient_info": "Case Presentation:\n\nPatient: A 12-year-old male with BCBS_FEP insurance presents with multiple congenital abnormalities affecting various organ systems. The patient underwent whole exome sequencing (WES) genetic testing ordered by a General Pediatrician due to the complexity of the clinical presentation. Previously, the patient had undergone FISH testing. \n\nMedical History: The patient's family history reveals a first- or second-degree family member with unexplained developmental regression, not associated with autism or epilepsy. No genetic counseling has been provided to the patient or family.\n\nConclusion: Further evaluation and management are required to explore the genetic basis of the patient's condition in the context of the family history of unexplained developmental regression. The involvement of a genetic counselor may be beneficial in guiding the family through the implications of the genetic testing results and potential management options."
+  },
+  {
+    "id": "Case2224",
+    "patient_info": "Patient Presentation:\nThe patient, a 54-year-old individual covered by BCBS FEP insurance, was referred by their oncologist for Whole Exome Sequencing (WES) due to multiple congenital anomalies not specific to a well-delineated genetic syndrome. There is no prior genetic testing history for the patient. Their family history is notable for at least one second-degree relative with a history of two or more cancers associated with Lynch Syndrome. The patient saw a genetic counselor before undergoing testing and is scheduled to follow up after receiving the results for further counseling and management recommendations."
+  },
+  {
+    "id": "Case3347",
+    "patient_info": "Patient Case Description:\n\nAn 8-week-old infant, referred by a Developmental Pediatrician, presents with developmental delay and intellectual disability without suspicion of a specific syndrome. The patient's family history indicates a first- or second-degree relative diagnosed with moderate to severe intellectual disabilities by 18 years of age. Previous testing included FISH testing. Whole-genome sequencing (WGS) has been ordered by the pediatrician, given the clinical indication. The patient is covered by UnitedHealthcare (UHC), and genetic counseling has not been conducted yet. Further evaluation and genetic analysis are planned to provide a comprehensive understanding of the underlying genetic factors contributing to the patient's condition."
+  },
+  {
+    "id": "Case2447",
+    "patient_info": "Patient is a 67-year-old male covered by BCBS Federal Employee Program insurance. He was referred by a Nurse Practitioner for whole-genome sequencing due to a clinical indication of growth abnormality. Prior testing included karyotype testing. There is a family history of Long QT syndrome. Genetic counseling was not mentioned."
+  },
+  {
+    "id": "Case7249",
+    "patient_info": "Patient is a 21-week gestation fetus with a known family history of congenital anomalies. The mother has a personal history of epithelial ovarian carcinoma, including fallopian tube cancer or peritoneal cancer. Genetic testing for BRCA1/2 has been ordered due to the high-risk family history. The patient's insurance is Cigna. Prior testing included Fragile X testing. The order for genetic testing was placed by the Primary Care Physician without mention of genetic counseling."
+  },
+  {
+    "id": "Case4187",
+    "patient_info": "Clinical Case Description:\n\nMrs. Smith, a 71-year-old female covered under UHC insurance, presents with isolated severe congenital heart disease. She has undergone prior Fragile X testing and genetic tests specifically for BRCA1/2 mutations have been ordered by her General Pediatrician. Mrs. Smith has a family history of first- or second-degree relatives with significant hearing or visual impairments diagnosed by the age of 18. Despite this family history, no genetic counseling has been conducted. Further evaluation and management of her condition are warranted, taking into account the potential implications of the genetic testing results."
+  },
+  {
+    "id": "Case6643",
+    "patient_info": "Clinical Case Description:\n\nA 27-week pregnant woman, covered under Cigna insurance, presented to an oncologist for genetic testing due to a family history of Long QT syndrome and a clinical indication of coloboma in the fetus. Previous karyotype testing had been performed. The patient had genetic tests for BRCA1/2, with no mention of genetic counseling documented. Given the complex clinical scenario and genetic predisposition concerns, further genetic counseling and coordination of care with maternal-fetal medicine specialists may be advised."
+  },
+  {
+    "id": "Case8363",
+    "patient_info": "Patient Presentation:\nMr. Smith, a 67-year-old male with Cigna insurance, was referred by a Medical Geneticist for genetic testing (CMA) due to clinical indications of choanal atresia. A prior CMA was performed. Family history includes developmental delay. No genetic counseling has been conducted thus far."
+  },
+  {
+    "id": "Case3283",
+    "patient_info": "Case Description:\n\nA 5-year-old female patient with Cigna insurance was referred by a Nurse Practitioner for genetic testing due to a complex neurodevelopmental disorder and autism. The patient had a prior chromosomal microarray (CMA) test and now requires a follow-up comprehensive genomic profiling through CMA tumor testing. Family history includes consanguinity in first- or second-degree relatives. The patient has already consulted a genetic counselor pre-testing and is scheduled to visit the counselor post-results for further interpretation and guidance."
+  }
+]

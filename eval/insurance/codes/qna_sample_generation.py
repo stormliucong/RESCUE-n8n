@@ -2,13 +2,14 @@
 import random
 import json
 from collections import defaultdict
-# import openai
+from openai import OpenAI
 import pandas as pd
 import numpy as np
 import os
-# setup OpenAI API key by loading .env file
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+
+load_dotenv('/home/cptaswadu/new-rescue/RESCUE-n8n/.env')
+client = OpenAI(api_key=os.getenv('OPEN_AI_API_KEY'))
 
 insurance_options = ["BCBS_FEP", "Cigna", "UHC"]
 test_options = ["BRCA1/2", "WES", "WGS", "CMA", "CMA_developmental_disorder", "CMA_tumor"]
@@ -159,19 +160,19 @@ def get_answers(sample_patient_dict):
     # filter test first, if not exist, return "No"
     test_info = q3_merged[q3_merged['Test'] == genetic_tests]
     if test_info.empty:
-        q3 = "No"
+        q3 = "Not specified"  # Test itself does not exist in clinical indication policy
     else:
         # check if clinical indication exists for the test
         indication_data = test_info[test_info['Indication'] == clinical_indication]
         if indication_data.empty:
-            q3 = "No"
+            q3 = "Not specified"
         else:
             # check if insurance coverage exists for the test and clinical indication
             coverage = indication_data[indication_data['Insurance'] == insurance]
             if coverage.empty:
-                q3 = "No"
+                q3 = "No" # This insurance does not cover the test for this indication
             else:
-                q3 = "Yes"
+                q3 = "Yes" # Fully matched: test + indication + insurance are all covered
 
     # q4 - Prior Testing (For WES/WGS/CMA_developmental_disorder only)
     if genetic_tests in ["WES", "WGS"]:
@@ -194,11 +195,10 @@ def get_answers(sample_patient_dict):
             # Check insurance coverage
             coverage_data = history_data[history_data['Insurance'] == insurance]
 
-            if coverage_data.empty:
-                q5 = "Not specified"  # Insurance doesn't have policy for this family history
+            if not coverage_data.empty:
+                q5 = "Yes"  # Insurance covers this test and family history
             else:
-                # Insurance has specific policy for this family history
-                q5 = "Yes"  # Coverage confirmed
+                q5 = "No"  # Insurance does not cover family history for this test
 
     # q6 - counselor (For BCBS_FEP BRCA1/2, WES, WGS; Cigna BRCA1/2, CMA_developmental_disorder only)
     if insurance == "BCBS_FEP" and genetic_tests in ["BRCA1/2", "WES", "WGS"]:
@@ -251,48 +251,65 @@ def get_answers(sample_patient_dict):
         }    
     } 
     
-
 def make_it_real_llm(sample_patient_dict):
-    # Simulate a free-text for a sample patient
-    patient_without_cpt = {k: v for k, v in sample_patient_dict.items() if k != 'cpt_code'} # exclude cpt code
-    Instruction = "Generate a free-text description for the following sample patient. Add necessary detailes"
-    # Using ChatGPT-like model to generate a free-text description
-    prompt = f"{Instruction}: {patient_without_cpt}"
-    # Here we would call the LLM API to get the response, but for this example
-    model = 'gpt-3.5-turbo'
-    # call openai api to get the response
+    """Generate a free-text description for a sample patient using LLM"""
+    # Exclude CPT code 
+    patient_without_cpt_case_id = {k: v for k, v in sample_patient_dict.items() if k not in ['cpt_code', 'case_id']}
+
+    instruction = "Generate a clinical case description using all the provided patient information. Be comprehensive but concise. Also, make it a realistic scenario."
+    prompt = f"{instruction}\n\nPatient Information: {patient_without_cpt_case_id}"
     
-    response = openai.ChatCompletion.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": prompt}
-        ]
-    )
-    patient_description = response.choices[0].message['content']
-    return f"Sample Patient: {patient_description}"
+    model = 'gpt-3.5-turbo'
+    
+    try:
+        response = client.chat.completions.create(  # client 사용
+            model=model,
+            messages=[
+                {"role": "system", "content": "You are a medical writer who creates realistic patient case descriptions based on structured data."},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        patient_description = response.choices[0].message.content
+        return f"Sample Patient: {patient_description}"
+    
+    except Exception as e:
+        return f"Error generating patient description: {str(e)}"
 
 def is_this_like_a_real_patient(sample_patient_dict):
-    # Simulate a check to see if the sample patient is like a real patient
-    Instruction = "Read the following sample patient. Determine if this is like a real patient. If yes, return 'True', otherwise return 'False'."
-    # Using ChatGPT-like model to generate a free-text description
-    prompt = f"{Instruction}: {sample_patient_dict}"
-    # Here we would call the LLM API to get the response, but for this example
-    model = 'gpt-3.5-turbo'
-    # call openai api to get the response
+    """Evaluate if a sample patient case seems realistic using LLM"""
+    instruction = """Evaluate if this patient case is medically realistic and consistent. 
+    Consider factors like:
+    - Age-appropriate conditions and tests
+    - Medical logic and consistency
+    - Realistic insurance and provider combinations
+    - Appropriate clinical indications for genetic testing
     
-    response = openai.ChatCompletion.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": prompt}
-        ]
-    )
-    is_true = response.choices[0].message['content']
-    is_true = is_true.strip().lower() == 'true'  # Normalize the response to boolean
-    return is_true
+    Respond with ONLY 'True' if realistic, 'False' if unrealistic."""
+    
+    prompt = f"{instruction}\n\nPatient Case: {sample_patient_dict}"
+    model = 'gpt-3.5-turbo'
+    
+    try:
+        response = client.chat.completions.create(  # client 사용
+            model=model,
+            messages=[
+                {"role": "system", "content": "You are a medical expert who evaluates the realism and consistency of patient cases."},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        
+        response_text = response.choices[0].message.content.strip().lower()
+        # Check for various positive responses
+        positive_responses = ['true', 'yes', '1', 'realistic', 'correct']
+        is_realistic = any(pos in response_text for pos in positive_responses)
+        
+        return is_realistic
+    
+    except Exception as e:
+        print(f"Error evaluating patient realism: {str(e)}")
+        return False  # Default to False if API fails
 
-number_of_samples = 1000  # Number of sample patients to generate
+number_of_samples = 10000  # Number of sample patients to generate
 idx = 0 # initial index
 samples = [] # empty list to store sample patients
 # Generate sample patients
@@ -333,11 +350,11 @@ def negative_sample_balanced_dataset(samples, target_size, test_proportions):
     # calculate the ratio of "Yes" responses for q8
     p_q8_yes = count_yes / len(samples)
     
-    def _compute_q8_weight(sample, p_q8_yes, epsilon=1e-6):
+    def _compute_q8_weight(sample, p_q8_yes, epsilon=1e-6, boost_factor=3.0):
         # IPW
         case_data = list(sample.values())[0]
         if case_data["Q8"] == "Yes":
-            return 1 / (p_q8_yes + epsilon)
+            return 1 / (p_q8_yes + epsilon) * boost_factor 
         else:
             return 1 / (1 - p_q8_yes + epsilon)
     
@@ -356,13 +373,41 @@ def negative_sample_balanced_dataset(samples, target_size, test_proportions):
     
     return balanced_samples
 
+def generate_llm_samples(balanced_samples):
+    """Generate free-text descriptions for balanced samples using LLM"""
+    llm_samples = []
+    
+    for idx, sample in enumerate(balanced_samples):
+        print(f"Processing sample {idx + 1}/{len(balanced_samples)}...")
+        
+        # Extract case data from the nested structure
+        case_data = list(sample.values())[0]
+        sample_patient_dict = case_data.get("sample_patient_dict", {})
+        
+        # Generate free-text description using LLM
+        patient_description = make_it_real_llm(sample_patient_dict)
+        
+        # Remove "Sample Patient: " prefix if it exists
+        if patient_description.startswith("Sample Patient: "):
+            patient_description = patient_description[16:]  # Remove prefix
+        
+        # Create the structured output
+        llm_sample = {
+            "id": sample_patient_dict.get("case_id", f"Case{idx + 1}"),
+            "patient_info": patient_description
+        }
+        
+        llm_samples.append(llm_sample)
+    
+    return llm_samples
+
 test_ratios = {
     "WES": 0.3,
     "WGS": 0.2,
     "BRCA1/2": 0.3,
     "CMA": 0.2
 }
-balanced_samples = negative_sample_balanced_dataset(samples, target_size=100, test_proportions=test_ratios)
+balanced_samples = negative_sample_balanced_dataset(samples, target_size=10, test_proportions=test_ratios)
 
 
 # Save the balanced samples to a JSON file
@@ -379,3 +424,9 @@ def print_q8_balance(dataset):
     print(f"Q8 Yes: {yes/total:.2f}, No: {(total - yes)/total:.2f}")
 
 print_q8_balance(balanced_samples)
+
+# Generate LLM samples from balanced samples
+llm_samples = generate_llm_samples(balanced_samples)
+
+with open(f'{dataset_dir}/llm_samples.json', 'w') as f:
+    json.dump(llm_samples, f, indent=2)
