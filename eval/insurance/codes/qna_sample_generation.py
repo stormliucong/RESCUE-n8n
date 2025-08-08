@@ -256,7 +256,7 @@ def make_it_real_llm(sample_patient_dict):
     # Exclude CPT code 
     patient_without_cpt_case_id = {k: v for k, v in sample_patient_dict.items() if k not in ['cpt_code', 'case_id']}
 
-    instruction = "Generate a clinical case description using all the provided patient information. Be comprehensive but concise. Also, make it a realistic scenario."
+    instruction = "Generate a single-paragraph clinical case description using all the provided patient information. Do not include any titles or headings (e.g., 'Patient Case Description', 'Case Presentation', 'Conclusion'). Be comprehensive but concise, and make it a realistic scenario."
     prompt = f"{instruction}\n\nPatient Information: {patient_without_cpt_case_id}"
     
     model = 'gpt-3.5-turbo'
@@ -350,11 +350,11 @@ def negative_sample_balanced_dataset(samples, target_size, test_proportions):
     # calculate the ratio of "Yes" responses for q8
     p_q8_yes = count_yes / len(samples)
     
-    def _compute_q8_weight(sample, p_q8_yes, epsilon=1e-6, boost_factor=3.0):
+    def _compute_q8_weight(sample, p_q8_yes, epsilon=1e-6):
         # IPW
         case_data = list(sample.values())[0]
         if case_data["Q8"] == "Yes":
-            return 1 / (p_q8_yes + epsilon) * boost_factor 
+            return 1 / (p_q8_yes + epsilon)
         else:
             return 1 / (1 - p_q8_yes + epsilon)
     
