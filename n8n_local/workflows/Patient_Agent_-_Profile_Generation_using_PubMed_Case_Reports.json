@@ -4,6 +4,7 @@
   "id": "Z5qrW63sxXjrmIE1",
   "name": "Patient Agent - Profile Generation using PubMed Case Reports",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {},
@@ -395,6 +396,15 @@
   "pinData": {},
   "versionId": "4879e2dd-7d15-48ad-8c58-1b08a390524f",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-04-17T19:03:15.702Z",
+      "updatedAt": "2025-04-17T19:03:15.702Z",
+      "role": "workflow:owner",
+      "workflowId": "Z5qrW63sxXjrmIE1",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:52.394Z",

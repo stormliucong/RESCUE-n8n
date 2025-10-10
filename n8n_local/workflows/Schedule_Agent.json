@@ -4,6 +4,7 @@
   "id": "NrDTpAS4g3N6XV9m",
   "name": "Schedule Agent",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -303,6 +304,15 @@
   },
   "versionId": "91184cd7-a184-4b9f-9f4f-1be31ad91f4a",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-14T18:56:18.673Z",
+      "updatedAt": "2025-02-14T18:56:18.673Z",
+      "role": "workflow:owner",
+      "workflowId": "NrDTpAS4g3N6XV9m",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:52:09.555Z",

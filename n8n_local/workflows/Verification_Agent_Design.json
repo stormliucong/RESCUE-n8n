@@ -4,6 +4,7 @@
   "id": "WGGX3RZkZXCbLSqa",
   "name": "Verification Agent Design",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -266,6 +267,15 @@
   "pinData": {},
   "versionId": "06c5af11-35b8-4a42-8811-bfcd38d35249",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-03-21T16:37:06.725Z",
+      "updatedAt": "2025-03-21T16:37:06.725Z",
+      "role": "workflow:owner",
+      "workflowId": "WGGX3RZkZXCbLSqa",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:38.054Z",

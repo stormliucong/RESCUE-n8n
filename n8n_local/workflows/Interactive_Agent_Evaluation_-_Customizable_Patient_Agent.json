@@ -4,6 +4,7 @@
   "id": "yU1RuRjV2spllnCo",
   "name": "Interactive Agent Evaluation - Customizable Patient Agent",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -564,6 +565,15 @@
   "pinData": {},
   "versionId": "d69bc771-1b1c-4c01-8b34-9c06c187c169",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-03-26T18:39:17.458Z",
+      "updatedAt": "2025-03-26T18:39:17.458Z",
+      "role": "workflow:owner",
+      "workflowId": "yU1RuRjV2spllnCo",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:52.394Z",

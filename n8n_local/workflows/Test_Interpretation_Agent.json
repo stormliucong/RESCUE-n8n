@@ -4,6 +4,7 @@
   "id": "9UEhn9Rn1PCXWkLk",
   "name": "Test Interpretation Agent",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -346,6 +347,15 @@
   "pinData": {},
   "versionId": "c878d7b9-d6bd-4fd5-8a76-d27a64042282",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-14T18:59:28.320Z",
+      "updatedAt": "2025-02-14T18:59:28.320Z",
+      "role": "workflow:owner",
+      "workflowId": "9UEhn9Rn1PCXWkLk",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:38.054Z",

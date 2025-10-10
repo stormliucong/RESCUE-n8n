@@ -4,6 +4,7 @@
   "id": "UmGumZVIY3JtzXBr",
   "name": "Documents Parsing Evaluation",
   "active": true,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -157,6 +158,15 @@
   "pinData": {},
   "versionId": "e6d8e462-4284-47d3-935f-916aaea0a44d",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-06-25T03:19:06.095Z",
+      "updatedAt": "2025-06-25T03:19:06.095Z",
+      "role": "workflow:owner",
+      "workflowId": "UmGumZVIY3JtzXBr",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-02-03T20:04:43.955Z",

@@ -4,6 +4,7 @@
   "id": "lsoQFqsiY96Fmvry",
   "name": "Agent Evaluation - Education Agent",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {},
@@ -240,6 +241,15 @@
   "pinData": {},
   "versionId": "2386d71a-5535-4cb2-97a6-eb9e4764334f",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-03-25T01:37:45.809Z",
+      "updatedAt": "2025-03-25T01:37:45.809Z",
+      "role": "workflow:owner",
+      "workflowId": "lsoQFqsiY96Fmvry",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:52.394Z",

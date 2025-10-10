@@ -4,6 +4,7 @@
   "id": "zizmTLjphdZofBWe",
   "name": "Import PDF to JSON",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -83,6 +84,15 @@
   "pinData": {},
   "versionId": "fa273feb-61d8-43c3-9530-03a27745b01f",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-06-12T01:05:11.575Z",
+      "updatedAt": "2025-06-12T01:05:11.575Z",
+      "role": "workflow:owner",
+      "workflowId": "zizmTLjphdZofBWe",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-02-03T20:04:43.955Z",

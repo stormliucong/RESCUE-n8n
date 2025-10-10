@@ -4,6 +4,7 @@
   "id": "zOSJ4AMpO5cMILRN",
   "name": "Interactive Agent Evaluation - Education Agent",
   "active": true,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -919,6 +920,15 @@
   },
   "versionId": "3690af7c-6b1b-4b72-a716-2c10fc06e98c",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-03-26T19:28:56.871Z",
+      "updatedAt": "2025-03-26T19:28:56.871Z",
+      "role": "workflow:owner",
+      "workflowId": "zOSJ4AMpO5cMILRN",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:52.394Z",

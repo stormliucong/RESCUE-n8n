@@ -4,6 +4,7 @@
   "id": "vOrMopBcQ8w3GNXb",
   "name": "Knowledge Base Update - GeneReviews",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {},
@@ -796,6 +797,15 @@
   "pinData": {},
   "versionId": "b9366e01-c795-41aa-9674-79c05d1a4273",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-14T19:01:40.710Z",
+      "updatedAt": "2025-02-14T19:01:40.710Z",
+      "role": "workflow:owner",
+      "workflowId": "vOrMopBcQ8w3GNXb",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:45.906Z",

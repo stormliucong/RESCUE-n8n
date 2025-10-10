@@ -4,6 +4,7 @@
   "id": "huhEmpdmqrmx4npo",
   "name": "Workflows Import",
   "active": true,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -90,6 +91,15 @@
   "pinData": {},
   "versionId": "e739dd53-7d3e-4b74-a2a4-7dff3c4c137e",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-03-31T21:26:35.595Z",
+      "updatedAt": "2025-03-31T21:26:35.595Z",
+      "role": "workflow:owner",
+      "workflowId": "huhEmpdmqrmx4npo",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-02-03T20:04:43.955Z",

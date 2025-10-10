@@ -4,6 +4,7 @@
   "id": "7M5mjiX5RAsxrzFZ",
   "name": "Interactive Agent Test workflow - Patient Agent",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -374,6 +375,15 @@
   },
   "versionId": "68455fd4-e2ba-4a0c-b9a9-4fd6084425ae",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-03-19T18:51:45.520Z",
+      "updatedAt": "2025-03-19T18:51:45.520Z",
+      "role": "workflow:owner",
+      "workflowId": "7M5mjiX5RAsxrzFZ",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-02-14T18:59:44.562Z",

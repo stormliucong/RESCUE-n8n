@@ -4,6 +4,7 @@
   "id": "bIw7bxVzjXzsARlc",
   "name": "Interactive Agent Evaluation - Front Desk Agent",
   "active": true,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -854,6 +855,15 @@
   "pinData": {},
   "versionId": "8bc0e10e-f736-4bee-834b-08745737a1f9",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-03-13T02:56:31.697Z",
+      "updatedAt": "2025-03-13T02:56:31.697Z",
+      "role": "workflow:owner",
+      "workflowId": "bIw7bxVzjXzsARlc",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-02-14T18:59:44.562Z",

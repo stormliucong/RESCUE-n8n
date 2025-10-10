@@ -4,6 +4,7 @@
   "id": "5VjocNN3HD1vibvc",
   "name": "Front Desk Agent DEMO",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -374,6 +375,15 @@
   "pinData": {},
   "versionId": "fd77300d-cf4c-466d-a8bc-20d7e7202d55",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-07T19:25:07.320Z",
+      "updatedAt": "2025-02-07T19:25:07.320Z",
+      "role": "workflow:owner",
+      "workflowId": "5VjocNN3HD1vibvc",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:52:09.555Z",

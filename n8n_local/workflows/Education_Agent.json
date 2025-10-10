@@ -4,6 +4,7 @@
   "id": "prQpeARJzVI1zlSz",
   "name": "Education Agent",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -763,6 +764,15 @@
   },
   "versionId": "7c7aeb02-54c2-455f-b6ac-8952f0a22f5d",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-02-14T18:57:13.664Z",
+      "updatedAt": "2025-02-14T18:57:13.664Z",
+      "role": "workflow:owner",
+      "workflowId": "prQpeARJzVI1zlSz",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:38.054Z",

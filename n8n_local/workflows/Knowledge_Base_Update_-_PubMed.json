@@ -4,6 +4,7 @@
   "id": "8gTgjm3hnonn1Qc8",
   "name": "Knowledge Base Update - PubMed",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {},
@@ -303,6 +304,15 @@
   "pinData": {},
   "versionId": "7751bb38-be3e-4b8c-9a17-c36fe0d987a1",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-14T19:01:33.829Z",
+      "updatedAt": "2025-02-14T19:01:33.829Z",
+      "role": "workflow:owner",
+      "workflowId": "8gTgjm3hnonn1Qc8",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:45.906Z",

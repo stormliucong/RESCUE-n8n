@@ -4,6 +4,7 @@
   "id": "p5CG6PCfoYNp850m",
   "name": "Schedule Agent Design Baseline",
   "active": true,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -781,6 +782,15 @@
   "pinData": {},
   "versionId": "3925da80-1b1f-4f2c-9897-23067aba6617",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-03-11T17:08:23.623Z",
+      "updatedAt": "2025-03-11T17:08:23.623Z",
+      "role": "workflow:owner",
+      "workflowId": "p5CG6PCfoYNp850m",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:38.054Z",

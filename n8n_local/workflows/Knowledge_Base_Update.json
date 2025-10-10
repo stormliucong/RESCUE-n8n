@@ -4,6 +4,7 @@
   "id": "Hz7Kec49HnONA7qL",
   "name": "Knowledge Base Update",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -739,6 +740,15 @@
   },
   "versionId": "37ddf8e0-441a-429d-ba29-5145455f5644",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-05T02:57:43.059Z",
+      "updatedAt": "2025-02-05T02:57:43.059Z",
+      "role": "workflow:owner",
+      "workflowId": "Hz7Kec49HnONA7qL",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:52:09.555Z",

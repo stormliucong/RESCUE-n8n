@@ -4,6 +4,7 @@
   "id": "mA7ZUmOMecNgOM2j",
   "name": "Workflows Documentation Generator",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {},
@@ -159,6 +160,15 @@
   "pinData": {},
   "versionId": "b5834742-d3c9-4dab-8e72-36e1217266e1",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-04-24T01:59:50.604Z",
+      "updatedAt": "2025-04-24T01:59:50.604Z",
+      "role": "workflow:owner",
+      "workflowId": "mA7ZUmOMecNgOM2j",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-02-14T18:59:44.562Z",

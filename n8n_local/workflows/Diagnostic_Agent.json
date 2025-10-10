@@ -4,6 +4,7 @@
   "id": "0LiEkHxgHvS9iHbe",
   "name": "Diagnostic Agent",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -373,6 +374,15 @@
   "pinData": {},
   "versionId": "9f08d453-1450-4544-8780-fe7eb6b48253",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-14T18:58:25.544Z",
+      "updatedAt": "2025-02-14T18:58:25.544Z",
+      "role": "workflow:owner",
+      "workflowId": "0LiEkHxgHvS9iHbe",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:38.054Z",

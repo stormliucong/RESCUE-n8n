@@ -4,6 +4,7 @@
   "id": "5lS9gnvG5rz08nAS",
   "name": "Triage Agent",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -168,6 +169,15 @@
   },
   "versionId": "635b4456-72d5-41cf-a88c-f2207fc943bd",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-14T19:01:26.436Z",
+      "updatedAt": "2025-02-14T19:01:26.436Z",
+      "role": "workflow:owner",
+      "workflowId": "5lS9gnvG5rz08nAS",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:38.054Z",

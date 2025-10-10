@@ -4,6 +4,7 @@
   "id": "2pB1IOup4ZeogtAG",
   "name": "Admin Agent",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -298,6 +299,15 @@
   "pinData": {},
   "versionId": "af32c28f-98d5-4d3b-ac90-dc1b4e03ec07",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-14T18:57:09.635Z",
+      "updatedAt": "2025-02-14T18:57:09.635Z",
+      "role": "workflow:owner",
+      "workflowId": "2pB1IOup4ZeogtAG",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:51:38.054Z",

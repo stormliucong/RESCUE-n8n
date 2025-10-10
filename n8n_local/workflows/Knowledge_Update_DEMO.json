@@ -4,6 +4,7 @@
   "id": "MIKAjxF8Ndb89JSw",
   "name": "Knowledge Update DEMO",
   "active": false,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -620,6 +621,15 @@
   },
   "versionId": "78ebbd1d-c903-425f-b27d-0b8787404788",
   "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-02-19T22:50:49.892Z",
+      "updatedAt": "2025-02-19T22:50:49.892Z",
+      "role": "workflow:owner",
+      "workflowId": "MIKAjxF8Ndb89JSw",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-03-26T17:52:09.555Z",

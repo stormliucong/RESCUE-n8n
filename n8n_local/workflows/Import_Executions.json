@@ -4,6 +4,7 @@
   "id": "lcDa6RjRjPcDdWxc",
   "name": "Import Executions",
   "active": true,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -94,6 +95,15 @@
   "pinData": {},
   "versionId": "4af9a12b-8b75-4fd1-99d6-336aaf962bbb",
   "triggerCount": 1,
+  "shared": [
+    {
+      "createdAt": "2025-04-22T01:14:50.894Z",
+      "updatedAt": "2025-04-22T01:14:50.894Z",
+      "role": "workflow:owner",
+      "workflowId": "lcDa6RjRjPcDdWxc",
+      "projectId": "ZVPxqwONDF7DfDpT"
+    }
+  ],
   "tags": [
     {
       "createdAt": "2025-02-03T20:04:43.955Z",
