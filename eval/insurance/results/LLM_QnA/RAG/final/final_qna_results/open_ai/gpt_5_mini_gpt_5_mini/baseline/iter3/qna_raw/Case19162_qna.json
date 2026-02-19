@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note states the medical geneticist referred the neonate for whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP coverage for WGS includes pediatric/neonatal patients with suspected genetic disorders; the patient is a neonate and therefore meets age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP policies require WGS be ordered by an appropriate qualified clinician (e.g., medical geneticist); the ordering provider is a medical geneticist, meeting that requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP medical necessity criteria include infants/neonates with complex neurologic abnormalities or suspected genetic/metabolic disorders; this neonate has dystonia, ataxia, asymmetric weakness and a sibling with an IEM, which meets those clinical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "For critically ill neonates or infants with significant neurologic findings, BCBS_FEP allows WGS without mandatory prior testing (although targeted tests may be reasonable). The record documents prior Fragile X testing (nondiagnostic) but does not indicate a required prior CMA; the policy does not strictly mandate specific prior tests in this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP considers relevant family history (e.g., sibling with an inborn error of metabolism) supportive of WGS coverage for a suspected genetic disorder; this family history is present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires pre-test genetic counseling for WGS; the record documents pre-test counseling with a genetic counselor and planned post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (WGS), which is the test requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP criteria the neonate meets age, ordering-provider, clinical indication, family-history and counseling requirements for WGS; prior testing does not preclude coverage in this critically affected neonate. Therefore WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1999,
+    "output_tokens": 1827,
+    "total_tokens": 3826
+  }
+}

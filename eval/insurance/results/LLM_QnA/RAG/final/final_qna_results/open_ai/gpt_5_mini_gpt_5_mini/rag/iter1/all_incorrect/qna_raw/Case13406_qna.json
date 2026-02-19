@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states 'Whole genome sequencing (WGS) has been ordered' by a medical geneticist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years of age for genome sequencing; the patient is 6 weeks old, which meets the <21 years age criterion (policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires appropriate genetic/family history evaluation and documentation and that the rendering laboratory be qualified, but it does not explicitly mandate a specific ordering provider specialty; thus provider specialty requirements are not specified in the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy lists specific clinical indications (e.g., GDD 'following formal assessment by a developmental pediatrician or neurologist'). Patient has concern for global developmental delay but no documentation of a formal assessment by a developmental pediatrician or neurologist, so the specified medical indication is not met per policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires that prior exome/genome not have been performed (met) and that a clinical letter detail prior tests and results. Although CMA was performed and nondiagnostic, there is no documentation provided of the required clinical letter/complete prior-test documentation specified by the guideline."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy includes family history as a relevant criterion (e.g., 'family history strongly suggestive of a genetic etiology' in rapid WGS criteria). The patient has a sibling history of an unexplained event (altered responsiveness with cyanosis/pallor/irregular breathing), so a relevant family history is present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy and ACMG guidance require pretest counseling. Patient information states pre-test counseling has been completed, satisfying the counseling requirement specified in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy specifies 81425 for proband whole genome (WGS) sequence analysis ('81425 should be billed for the proband' for entire genome sequence)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, absence of prior exome/genome, prior nondiagnostic CMA, and pre-test counseling are present, the policy requires documented formal evaluation (e.g., formal developmental assessment by a developmental pediatrician or neurologist for GDD) and a clinical letter detailing differential diagnoses, testing algorithm, prior tests/results, assertion that a genetic etiology is most likely and that GS is most appropriate. Those required documentation elements are not provided in the patient information, so the policy criteria are not fully met and the test is not covered per the guideline."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9176,
+    "output_tokens": 2638,
+    "total_tokens": 11814
+  }
+}

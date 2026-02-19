@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information explicitly states evaluation for BRCA1/2 testing. Basis: patient clinical note 'being evaluated for BRCA1/2 testing.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided Cigna hereditary cancer panel policy does not state explicit age cutoffs for BRCA testing in this document; it refers to a separate 'BRCA Analysis' guideline for specific BRCA criteria, which is not included here. Basis: policy references 'Member meets criteria for BRCA Analysis based on current EviCore guideline BRCA Analysis' but age-specific criteria are not provided in the supplied text."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate provider and that the rendering laboratory be qualified, but it does not specify requirements for the ordering provider's specialty/type in the supplied text. Basis: policy statements on counseling and laboratory qualification without explicit ordering-provider restrictions."
+    },
+    "Q3": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires both (A) a personal diagnosis consistent with the suspected hereditary syndrome (which the patient has: personal breast cancer) AND (B) that the member 'meets criteria for BRCA Analysis based on current EviCore guideline BRCA Analysis.' The BRCA Analysis criteria themselves are not included in the provided policy text, so whether the patient meets those specific BRCA Analysis criteria cannot be determined from the supplied documents. Basis: policy's dual requirement for multi-syndrome panels and absence of the BRCA Analysis guideline text."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of a specific prior genetic test before BRCA/multigene testing (it requires absence of prior hereditary cancer multigene panel/testing for genes on the panel). The policy does require pre- and post-test genetic counseling, but that is counseling rather than a prior test. The supplied information does not indicate any required prior genetic test that must have been completed. Basis: policy statements 'No previous hereditary cancer syndrome multigene panel testing' and counseling requirement; no mandated prior genetic test is defined in the provided text."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy uses family cancer history for eligibility; it requires assessing family history of cancers and absence of a known mutation in the family. The patient’s family history includes only a sibling with short stature and no documented family cancers relevant to hereditary breast/ovarian cancer, so she does not have a qualifying family cancer history per the supplied info. Basis: policy emphasis on family cancer history and requirement of no known family mutation; patient facts show no relevant family cancer history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy explicitly requires pre- and post-test genetic counseling by an appropriate provider for hereditary cancer panel testing. The patient record states there is no documentation of prior genetic counseling. Therefore counseling requirement is not met. Basis: policy 'Pre- and post-test genetic counseling by an appropriate provider' and patient fact 'no documentation of prior genetic counseling.'"
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists panel and lab-specific procedure codes (e.g., U-codes, 81432, 81479) but does not map BRCA1/2 single-gene testing to any of the supplied CPT options (81162, 81277, 81228, 81415, 81425). The only code in the provided text that matches the option list is 81228 (chromosomal microarray), which is not the BRCA1/2 test requested. Therefore the appropriate CPT code for BRCA1/2 cannot be determined from the provided policy text. Basis: absence of a mapping to the provided CPT options in the supplied guideline."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the supplied Cigna hereditary cancer panel policy, coverage requires pre- and post-test genetic counseling and meeting BRCA Analysis criteria (as part of the panel criteria). The patient lacks documented pre-test genetic counseling and it cannot be confirmed from the provided policy whether she meets the separate BRCA Analysis criteria (that guideline text was not supplied). Additionally, the ordering information does not show compliance with the counseling requirement. Therefore, based on the supplied policy and patient facts, the request does not meet all documented coverage requirements. Basis: policy requirements for counseling and meeting BRCA Analysis criteria (BRCA guideline not provided) and patient fact 'no documentation of prior genetic counseling.'"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11877,
+    "output_tokens": 4160,
+    "total_tokens": 16037
+  }
+}

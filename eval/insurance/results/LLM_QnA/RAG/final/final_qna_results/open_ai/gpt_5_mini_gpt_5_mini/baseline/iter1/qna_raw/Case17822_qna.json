@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered as the next-tier diagnostic test."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC policy defines WES/WGS coverage for pediatric patients with unexplained multiple congenital anomalies or developmental concerns; the patient is a 13-year-old (pediatric) and meets the age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires ordering by an appropriate qualified provider (e.g., medical geneticist); the order was placed by a medical geneticist, satisfying provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical necessity criteria include unexplained multiple congenital anomalies affecting different organ systems as an indication for WGS; the patient meets this clinical criterion."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires prior chromosomal microarray (CMA) testing before WES/WGS for congenital anomaly presentations; the record states a nondiagnostic CMA was completed, meeting prior test requirements."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria (affected first‑degree relative or similar phenotype) are relevant for WES/WGS consideration; the patient has a sibling with short stature, which is a relevant family history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC generally requires documentation of pretest genetic counseling/informed consent for WES/WGS; the family declined genetic counseling prior to testing, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among listed CPT options, 81425 corresponds to whole genome sequencing performed for diagnostic purposes."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, clinical indication, prior CMA, and family history meet UHC criteria, the required pretest genetic counseling/documentation was declined and thus a key coverage requirement is unmet, making the test not covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1985,
+    "output_tokens": 1713,
+    "total_tokens": 3698
+  }
+}

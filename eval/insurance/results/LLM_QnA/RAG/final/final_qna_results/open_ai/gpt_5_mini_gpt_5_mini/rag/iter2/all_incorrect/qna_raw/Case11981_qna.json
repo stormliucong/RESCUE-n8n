@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical info states 'Whole genome sequencing (WGS) is being requested' after pre-test discussion with a genetic specialist. Basis: patient data."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is stated for 'children' with unexplained congenital or neurodevelopmental disorders; the patient is a 9-year-old child, which meets the age category in the policy. Basis: FEP policy statements referencing children."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation and counseling by a clinician with expertise in clinical genetics; the record states a pre-test discussion with a genetic specialist and family/phenotype review. Basis: Policy criterion 1."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "Policy defines medical-indication criteria for WES in children with unexplained congenital or neurodevelopmental disorders, but the policy does not define standard medical-necessity criteria supporting non-rapid WGS for a non-critically ill child (only rapid WGS is addressed for critically ill infants and WGS otherwise is listed investigational). Basis: policy statements on WES vs. WGS."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires prior genetic evaluation/testing (eg, CMA and/or targeted single-gene testing) or documentation that a genetic etiology is most likely despite prior testing. The record only documents nondiagnostic fragile X testing; no CMA or targeted testing or documentation that prior testing was sufficient is provided. Basis: Policy criterion 3."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of inborn error of metabolism or genetic disease among relevant family-history criteria. The family history includes a maternal uncle with a persistent severe immunologic disorder, which was considered in counseling and could represent a relevant family history per policy. Basis: Policy family-history examples and patient history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced clinician; the record documents a pre-test discussion with a genetic specialist. Basis: Policy criterion 1 and Genetic Counseling section."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT codes mapping to WGS or WES; no CPT code guidance is given in the policy text provided. Basis: absence of CPT code information in policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The requested test is WGS for a non-critically ill 9-year-old. The policy explicitly states WGS is considered investigational for diagnosis of genetic disorders in all other situations (except rapid WGS for critically ill infants). Therefore WGS is not covered per the policy. Basis: Policy statement declaring WGS investigational in other situations."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14845,
+    "output_tokens": 3220,
+    "total_tokens": 18065
+  }
+}

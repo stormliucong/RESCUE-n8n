@@ -1,0 +1,18 @@
+{
+  "qna_result": {
+    "Q0": "WGS",
+    "Q1": "Not Specified",
+    "Q2": "Not Specified",
+    "Q3": "Not Specified",
+    "Q4": "No",
+    "Q5": "No",
+    "Q6": "No",
+    "Q7": "81228",
+    "Q8": "No"
+  },
+  "token_usage": {
+    "input_tokens": 8984,
+    "output_tokens": 1560,
+    "total_tokens": 10544
+  }
+}

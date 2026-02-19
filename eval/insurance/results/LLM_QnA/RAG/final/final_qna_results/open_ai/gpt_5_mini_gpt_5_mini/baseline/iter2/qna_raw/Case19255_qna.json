@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states the patient was referred for BRCA1/2 testing to evaluate hereditary breast/ovarian cancer predisposition."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "No payer-specific age cutoff is provided in the patient data. UnitedHealthcare policies use clinical criteria (e.g., personal/family history, multiple primaries) rather than a strict single age limit for BRCA testing in many situations; the record gives the patient’s age (38) but does not provide policy text with specific age-based thresholds."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The record notes referral by a neurologist and that pre-test counseling was completed by a genetic specialist, but it does not explicitly identify the ordering provider. UHC may require an ordering clinician or documented genetic counseling; available data do not state who will place the test order."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Per UHC BRCA coverage criteria, a personal history of multiple (separate primary) breast cancers meets medical indication for BRCA1/2 testing. The patient has two separate primary breast cancers, satisfying that clinical criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The chart notes prior FISH testing was nondiagnostic, but UHC BRCA criteria do not generally mandate a specific prior genetic test before BRCA sequencing for a patient with a qualifying personal history; no required prior tests are documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history includes a father with metastatic prostate cancer. UHC criteria count relevant family history of prostate cancer (particularly metastatic/early-onset) as supporting evidence for BRCA2-related testing; thus a relevant family history is present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires or expects documentation of pre-test genetic counseling for BRCA testing. The record states pre-test counseling was completed with a genetic specialist, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Of the provided CPT options, 81162 corresponds to BRCA1/BRCA2 large rearrangement (deletion/duplication) analysis and is the closest specific BRCA-related CPT among the listed choices; full BRCA sequencing CPTs (81211/81212) are not provided."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC coverage criteria: the patient has a qualifying personal history (two separate primary breast cancers), relevant family history (father with metastatic prostate cancer), and documented pre-test genetic counseling. These factors meet medical necessity and counseling requirements for BRCA1/2 testing, so the test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1972,
+    "output_tokens": 2185,
+    "total_tokens": 4157
+  }
+}

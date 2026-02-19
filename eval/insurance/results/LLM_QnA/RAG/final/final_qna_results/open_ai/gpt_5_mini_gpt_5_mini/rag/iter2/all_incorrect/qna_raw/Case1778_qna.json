@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info states whole exome sequencing (WES) has been requested for diagnostic clarification of an ocular coloboma."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: standard WES/WGS medically necessary for pediatrics under 21 for unexplained congenital anomalies; patient is 14, which meets the age criterion."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and that counseling was provided; patient record shows referral by a PCP but does not document a genetics evaluation or counseling, so ordering provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy: WES indicated for unexplained congenital anomalies in pediatrics and lists coloboma as an example of a malformation suggestive of genetic etiology; patient has an ocular coloboma and prior genetic testing was nondiagnostic."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES when previous genetic testing is non-diagnostic; patient had prior FISH testing that was nondiagnostic, satisfying the prior-test criterion."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy includes family history as a relevant feature in some contexts, but the provided patient information contains no reported family history or consanguinity."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires that the individual has been evaluated by a clinician with expertise in clinical genetics and that counseling was provided; the patient record does not document that genetic counseling occurred."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding lists 81415 among covered procedure codes for exome sequencing; 81415 corresponds to whole exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age, clinical indication (coloboma), and prior nondiagnostic testing criteria, the policy requires evaluation by a clinician with expertise in clinical genetics and documented counseling—information not present—so the all-required criteria for coverage are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14818,
+    "output_tokens": 1790,
+    "total_tokens": 16608
+  }
+}

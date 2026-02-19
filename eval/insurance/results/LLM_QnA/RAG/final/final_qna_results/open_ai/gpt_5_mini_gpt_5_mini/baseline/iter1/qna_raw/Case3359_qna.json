@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The note explicitly states whole exome sequencing is being requested to evaluate for an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES coverage is focused on pediatric patients with unexplained developmental delay/ hypotonia; the patient is a 4‑year‑old child, meeting pediatric age criteria for WES."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policies generally require ordering by or in coordination with an appropriate specialist; the test was ordered by a developmental pediatrician and pre‑test counseling was done by a genetic counselor, which meets provider/counseling requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical indications covered include unexplained global developmental delay/ongoing developmental concerns and significant hypotonia; the patient has these findings and a nondiagnostic prior CMA."
+    },
+    "Q4": {
+      "answer": "Not Answerable",
+      "reasoning": "CMA was performed and nondiagnostic (a common required prior test and satisfied). However some payer rules also require condition‑specific prior testing (e.g., Fragile X testing in males); patient sex and whether any additional prior tests were completed are not provided."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant to eligibility: there is a sibling with developmental delay, which supports a genetic evaluation and is noted in the clinical story."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Genetic counseling is required by UHC policy for WES; pre‑test counseling was completed with a genetic counselor on multiple occasions per the record."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (sequence analysis and interpretation) and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC coverage criteria applied to this case: pediatric patient with unexplained developmental delay and hypotonia, nondiagnostic CMA, appropriate specialist involvement and documented pre‑test genetic counseling — WES meets medical necessity and is covered. (Final coverage contingent on any additional payer‑required prior tests, e.g., Fragile X in males, if applicable.)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1993,
+    "output_tokens": 2015,
+    "total_tokens": 4008
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES/WGS medically necessary for pediatrics <21 years; patient is a 5-week-old infant <21, meeting the age criterion (Policy I)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual to have 'been evaluated by a clinician with expertise in clinical genetics' (Policy I). The ordering provider is a family medicine physician and there is no documentation the patient was evaluated by a clinician with genetics expertise, so provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication includes evaluation of unexplained congenital anomalies in pediatrics when prior genetic testing is non-diagnostic and there is potential to change management. Patient has a major congenital cardiac anomaly, prior FISH was non-diagnostic, and testing is intended to clarify etiology/syndromic associations, meeting the specified indications (Policy I)."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "One of the policy criteria is previous genetic testing non-diagnostic; the patient had prior FISH testing that was nondiagnostic, satisfying the prior-test requirement noted in the policy (Policy I)."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy gives examples of relevant family history for rapid testing (e.g., arrhythmia, developmental delay) but does not define short stature in a parent as a specified family-history criterion for WES eligibility; the provided policy does not explicitly address this mother’s short stature as a qualifying family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling by someone with experience in genetic medicine (Policy: Genetic Counseling section and Policy I). The clinical information states pre-test genetic counseling was completed, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding lists 81415 among covered CPT codes for exome sequencing when medically necessary; 81415 corresponds to exome sequencing and best matches WES in the provided coding table (Coding Information)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although patient age, prior nondiagnostic testing, and genetic counseling meet policy clinical criteria, the policy requires evaluation by a clinician with expertise in clinical genetics (Policy I) and this evaluation is not documented (ordering by family medicine physician). Additionally, the policy states product variation for FEP (Section II) and directs to the FEP Medical Policy manual for FEP PPO—patient is billed through BCBS_FEP, so coverage cannot be confirmed under this policy. Based on the provided policy text and patient facts, coverage is not supported."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14870,
+    "output_tokens": 2511,
+    "total_tokens": 17381
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being evaluated for BRCA1/2 testing to assess hereditary breast and ovarian cancer risk; request explicitly for BRCA1/2."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age requirement for BRCA full sequence analysis is ≥18 years; patient is 64, meeting age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate provider but does not specify required ordering provider specialty; the ordering provider is a general practitioner, which the policy does not explicitly prohibit or require."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Full sequence analysis diagnostic criteria include 'female with breast cancer diagnosis 50 years of age or younger'; patient had breast cancer diagnosed ≤50, so meets a defined medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires no prior BRCA full sequencing/deletion-duplication; patient has had chromosomal microarray (CMA) only (nondiagnostic), with no prior BRCA testing documented."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies relevant family history criteria (first-/second-/third-degree relatives with cancers); patient’s family history (a sibling with short stature) is not a qualifying cancer family history per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider for BRCA testing; there is no documentation of prior genetic counseling for this patient."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy lists CPT 81162 as the likely appropriate code when BRCA1/2 sequencing is performed concurrently with deletion/duplication analysis (full sequencing + del/dup)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age and medical indication and has no prior BRCA testing, the policy requires documented pre- and post-test genetic counseling for BRCA full sequence analysis and this is not documented; therefore coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10263,
+    "output_tokens": 2060,
+    "total_tokens": 12323
+  }
+}

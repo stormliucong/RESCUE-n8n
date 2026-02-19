@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note states BRCA1 and BRCA2 testing has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna BRCA coverage criteria are based on personal/family cancer history and not on specific age cutoffs; the patient's age (69) does not invoke a separate exclusion or special age-based rule in routine BRCA policies."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna policies do not generally restrict BRCA test ordering to a specific specialty in the documentation provided; no provider-type restriction is specified in the patient information."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Cigna BRCA coverage requires personal and/or family history of BRCA-associated cancers or known familial BRCA mutation. The patient’s indication (hearing/visual impairment since age 18) and the sibling’s BRUE-like event are not BRCA-associated clinical indications, so the medical-necessity criteria are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna BRCA criteria do not require prior FISH or other cytogenetic testing before BRCA sequencing; the prior nondiagnostic FISH does not satisfy or substitute for any stated prerequisite testing requirement."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Cigna’s family-history criteria for BRCA testing require a personal/family history of breast, ovarian, pancreatic, or related BRCA-associated cancers or a known familial BRCA mutation. The provided family history (a sibling with a brief resolved unexplained event) is not relevant to BRCA eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna BRCA policies typically require documented pre-test genetic counseling or counseling by a qualified provider; the record states no pre-test genetic counseling was conducted, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "None of the listed CPT options clearly correspond to full BRCA1/2 testing (commonly billed as specific BRCA CPT codes not listed here), so an exact match from the provided choices cannot be determined."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under Cigna BRCA coverage criteria the request is not medically indicated (no personal/family history of BRCA-associated cancer or known familial mutation) and required pre-test genetic counseling is absent; therefore the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1989,
+    "output_tokens": 1422,
+    "total_tokens": 3411
+  }
+}

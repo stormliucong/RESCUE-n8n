@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinician explicitly requested BRCA1 and BRCA2 testing despite the pediatric gastrointestinal indication."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "FEP BRCA coverage is driven by personal/family cancer history and clinical indication rather than a strict age cutoff; no age-based eligibility criterion specific to BRCA testing is documented in the patient information."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The case does not document any payer-imposed ordering-provider specialty requirement; FEP policies typically allow ordering by the treating clinician and do not mandate a specific specialty in the provided information."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "FEP BRCA coverage requires a relevant personal history of breast/ovarian cancer or a family history meeting defined risk thresholds. This patient (age 15) has Hirschsprung disease, no personal cancer history, and no documented family cancer history, so does not meet the medical/clinical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP-related information does not indicate any required prior genetic testing (and the prior nondiagnostic karyotype is not a typical prerequisite for BRCA testing)."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family-history criteria are relevant for BRCA coverage under FEP, but the only family history documented is a mother with bipolar disorder and no cancer history, so the patient does not meet family-history eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "FEP BRCA testing generally requires documentation of pre-test genetic counseling or informed consent by a qualified provider; the record states there is no documentation of pre-test genetic counseling."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Among the provided CPT options, 81277 most closely corresponds to BRCA1/BRCA2 gene testing (the available choices do not include the more specific BRCA CPTs such as 81211/81213), so 81277 is the best match for BRCA1/2 testing in this list."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per FEP BRCA coverage criteria the patient lacks qualifying personal or family cancer history and there is no documentation of required pre-test genetic counseling; therefore the requested BRCA1/2 test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1979,
+    "output_tokens": 2111,
+    "total_tokens": 4090
+  }
+}

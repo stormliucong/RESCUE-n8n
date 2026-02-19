@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The note explicitly states whole-genome sequencing (WGS) is being considered to identify a genetic cholestatic/metabolic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES/WGS coverage criteria are based on clinical indication rather than strict age cutoffs; no explicit age-based exclusion applies to newborns in the policy, so age-specific eligibility is not specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally require an appropriate ordering clinician but do not rigidly restrict ordering to a single specialty in all cases; the provided information does not document a payer-mandated specialist requirement for WGS."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The infant has conjugated hyperbilirubinemia (neonatal cholestasis) with concern for a genetic cholestatic/metabolic etiology and a family history of a sibling with unexplained developmental regression—these meet UHC criteria for suspicion of an underlying genetic disorder warranting comprehensive genomic testing."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC criteria typically expect prior appropriate diagnostic workup (e.g., targeted metabolic testing/gene panels or chromosomal microarray when indicated) before WGS; only a nondiagnostic karyotype is documented (karyotype is not equivalent to CMA), and no prior targeted metabolic or panel testing is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant per UHC criteria: there is an affected sibling with unexplained developmental regression, which supports genetic testing eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC typically requires documentation of pre-test genetic counseling/consent for WGS; the record states no pretest genetic counseling is documented."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole-genome sequencing (WGS) analysis and best matches the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical presentation and family history meet medical indications for comprehensive genomic testing, coverage requirements (documentation of required prior testing/workup and pre-test genetic counseling) are not met; therefore per UHC coverage criteria the request would not be approved as presented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1987,
+    "output_tokens": 1970,
+    "total_tokens": 3957
+  }
+}

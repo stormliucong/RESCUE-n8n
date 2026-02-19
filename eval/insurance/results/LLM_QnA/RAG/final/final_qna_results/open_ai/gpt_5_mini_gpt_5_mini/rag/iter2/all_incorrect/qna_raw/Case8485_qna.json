@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided Cigna policy gives explicit age-based criteria (<21 years) for genome sequencing (WGS/GS) but does not present explicit age-based eligibility criteria for whole exome sequencing (WES) specifically."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires a 'qualified' rendering laboratory and documentation of an appropriate genetic and family history evaluation for genome sequencing, but it does not state explicit ordering-provider specialty/credential requirements for WES in the provided text."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Applying the policy's genome-sequencing clinical criteria (the only detailed test criteria in the document), the member does not meet defined indications: the GS criteria require specific presentations (e.g., global developmental delay with formal assessment in young children, multiple congenital anomalies, or meeting two listed features). The 8‑year‑old has hypotonia and motor delay but lacks documentation of the required formal specialist assessment or the two qualifying criteria listed in the GS policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The GS criteria require that the member has not had prior exome or genome sequencing; the patient has had Fragile X testing only and no prior exome/genome testing, satisfying that explicit prior-test requirement in the policy. (Note: the policy also requires an appropriate genetic/family history evaluation and clinical letter, which are not documented.)"
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's main genome-sequencing criteria do not define family-history or consanguinity requirements for GS (family history is mentioned in rWGS infant criteria), so family history relevance for WES is not specified in the provided policy text."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy cites ACMG recommendations that pretest counseling by a geneticist/genetic counselor should occur for ES/GS and requires an 'appropriate genetic and family history evaluation' and clinical documentation for GS, but it does not explicitly state a coverage requirement for documented pretest genetic counseling specific to WES in the plan criteria presented."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Whole exome sequencing is typically reported with CPT 81415 (exome sequencing); the policy's listed genome CPT is 81425, which corresponds to whole-genome sequencing rather than exome."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the provided Cigna GS policy (the only coverage criteria in the document) the patient does not meet the specific clinical indications and required documentation for genome sequencing, and the policy does not explicitly provide coverage criteria for WES. Additionally, required specialist evaluation/documentation and pretest counseling are not documented. Therefore the requested WES is not supported for coverage per the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9143,
+    "output_tokens": 2939,
+    "total_tokens": 12082
+  }
+}

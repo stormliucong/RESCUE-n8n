@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) has been requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's WES/WGS criteria do not impose strict age cutoffs for testing in neurodevelopmental disorders; the patient is a child (7 years) but age-based restrictions are not specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna policies typically require an appropriate ordering clinician, but do not universally restrict orders to a single specialty in all cases. The documentation shows neurology as the ordering provider; the policy does not explicitly mandate only genetics specialists for all WGS orders, so ordering-provider requirements are not specifically determinable from the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Cigna's coverage criteria list unexplained neurodevelopmental disorders (including autism spectrum disorder/developmental delay) as appropriate indications for WES/WGS; the patient has ASD, which meets the clinical indication criterion."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Cigna requires prior appropriate genetic testing (commonly chromosomal microarray and other indicated tests such as Fragile X or targeted gene panels) to be non-diagnostic before WES/WGS; the patient has had no prior genetic testing."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While family history can be relevant, Cigna's core eligibility criteria for WGS focus on the proband's clinical presentation and prior testing. The presence of a maternal uncle with an immunologic disorder is documented but the policy does not define a family-history requirement that changes eligibility in this case."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna's policy requires pre-test genetic counseling as part of WES/WGS coverage criteria; the family declined pre-test genetic counseling, so this required element is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequence analysis, which matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient's diagnosis (ASD) meets clinical indication for WGS, coverage criteria (Cigna) require prior appropriate genetic testing be non-diagnostic and pre-test genetic counseling; the patient has no prior genetic testing and declined counseling, so policy prerequisites are not met and the test would not be covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1989,
+    "output_tokens": 1807,
+    "total_tokens": 3796
+  }
+}

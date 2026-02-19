@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists global developmental delay and intellectual disability with onset before 18 years as qualifying features for WGS; the patient is a 2-year-old with developmental delay/ID, meeting the age-related criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient is being evaluated by and WGS was ordered by a medical geneticist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WGS is medically necessary when presentation is nonspecific and one qualifying feature (e.g., global developmental delay or intellectual disability) is present; the patient has nonspecific developmental delay/ID without a specific syndrome."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion for WGS states 'Neither CMA nor WES have been performed.' Patient history notes only nondiagnostic Fragile X testing and no prior CMA or WES, satisfying this requirement."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy’s family-history criteria refer to consanguinity or first/second-degree relatives with similar clinical features; the patient’s family history is paternal long QT syndrome, which is not a similar neurodevelopmental phenotype or consanguinity."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WGS; patient had pre-test counseling with a genetic counselor and plans for post-test counseling, meeting counseling expectations."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy applicable CPT codes list 81425 for genome (sequence analysis) which corresponds to WGS for the proband."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All policy coverage criteria for WGS are met: clinical presentation nonspecific (no specific syndrome), qualifying feature present (global developmental delay/ID), ordered by a medical geneticist, and neither CMA nor WES have been performed; genetic counseling was provided."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36943,
+    "output_tokens": 1747,
+    "total_tokens": 38690
+  }
+}

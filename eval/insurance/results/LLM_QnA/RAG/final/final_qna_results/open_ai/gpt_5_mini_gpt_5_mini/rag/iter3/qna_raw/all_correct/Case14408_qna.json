@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1/2 testing (document: 'referred ... for BRCA1/2 testing')."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires age >= 18 for BRCA testing; patient is 75, meeting the 'Age 18 years or older' requirement in the BRCA criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies genetic counseling and that the rendering laboratory be a qualified provider but does not specify required ordering provider specialty; the ordering provider requirement is not specified in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows predisposition testing when the member has a first‑degree relative who meets diagnostic criteria (e.g., 'Male with breast cancer at any age'); the patient has a brother with breast cancer (first‑degree), satisfying the family-history indication for BRCA testing."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires no previous BRCA full sequencing/known family mutation for testing; patient has no prior genetic testing, satisfying the 'no previous testing' prerequisite."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy uses family history as a key criterion; patient has a first‑degree relative (brother) with breast cancer, which is relevant per the policy's family history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling. Patient information states pre-test counseling was completed and post-test follow-up with a genetic counselor is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy lists CPT 81162 for 'BRCA1/2 full sequencing and duplication/deletion analysis (combined)' and notes 81162 is likely most appropriate if sequencing and deletion/duplication are performed concurrently; no known familial mutation exists, so comprehensive sequencing +/- del/dup (81162) is appropriate."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Clinical criteria in the policy are met (age >=18, required pre-test counseling completed, no prior BRCA testing, and first‑degree relative [brother] with male breast cancer meeting diagnostic criteria), supporting coverage per the BRCA guideline. Note: policy also requires the rendering laboratory be a qualified provider (not specified in patient info) but clinically the patient meets the stated coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10244,
+    "output_tokens": 2384,
+    "total_tokens": 12628
+  }
+}

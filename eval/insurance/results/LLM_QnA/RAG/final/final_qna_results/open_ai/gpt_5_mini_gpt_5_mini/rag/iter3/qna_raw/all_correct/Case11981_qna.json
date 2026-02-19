@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states 'Whole genome sequencing (WGS) is being requested' — explicitly identifies WGS."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age thresholds (e.g., features diagnosed by age 18) apply; patient is 9 years old which meets pediatric age references in the WGS coverage criteria (e.g., features diagnosed by 18 years)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires WGS to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. Patient record notes referral by neurology and pre-test discussion with a genetic specialist but does not explicitly state which provider is the ordering provider."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history strongly suggesting a genetic cause plus specified features. Patient has abnormal muscle tone noted in infancy (hypotonia/hypertonia) and ongoing motor/neurologic and developmental concerns — meeting the listed neurologic/developmental features for WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that neither CMA nor WES have been performed prior to WGS. Patient had fragile X testing only; there is no documentation of prior CMA or WES, meeting the policy requirement that CMA/WES have not been performed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists family history (first- or second-degree relatives with similar clinical features) as a qualifying feature. Patient has a maternal uncle with a severe immunologic disorder, but this is not described as a family member with similar neurodevelopmental/motor features required by the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WES/WGS but does not make counseling a strict coverage precondition. Patient had pre-test discussion with a genetic specialist, but counseling is described as recommended rather than a formal stated coverage requirement."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy Applicable Codes list CPT 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponding to whole genome sequencing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the UnitedHealthcare policy, WGS is medically necessary when (a) neither CMA nor WES have been performed (true), (b) presentation is nonspecific and no targeted gene test fits (patient has nonspecific motor/developmental phenotype and fragile X was nondiagnostic), (c) ordered by an approved specialty (patient was referred by neurology and had pre-test discussion with a genetic specialist — consistent with neurologist/geneticist involvement), and (d) the patient has qualifying features (hypotonia/abnormal tone in infancy and ongoing neurologic/developmental concerns). Based on these facts and the policy criteria, WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36954,
+    "output_tokens": 3636,
+    "total_tokens": 40590
+  }
+}

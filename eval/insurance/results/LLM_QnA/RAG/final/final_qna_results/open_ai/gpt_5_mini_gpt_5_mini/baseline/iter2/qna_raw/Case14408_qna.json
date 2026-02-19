@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The referral explicitly requests BRCA1/2 testing for this patient (stated in the patient information)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna BRCA policies do not impose a strict absolute age cutoff for BRCA testing; age-based limits are defined for certain affected-case indications but there is no general age exclusion that would bar testing at age 75."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna policies typically do not mandate a specific ordering provider specialty for BRCA testing (beyond documentation of pre-test counseling); the record shows referral from family medicine but the policy does not explicitly restrict ordering to genetics specialists."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Per Cigna clinical criteria, a first-degree relative with BRCA-associated cancer (male breast cancer) constitutes a relevant clinical indication for BRCA testing. The patient has a brother with breast cancer, which meets a defined BRCA-associated family-history criterion (regardless of prior-test sequencing requirements)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Cigna's coverage practice requires that an affected family member who meets testing criteria be tested first when available. There is no prior genetic testing of the affected brother documented, so the required prior test has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a documented first-degree family history (brother) of breast cancer, which is directly relevant to BRCA testing eligibility per Cigna criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Cigna requires documentation of genetic counseling for BRCA testing; the patient information states that pre-test counseling was completed and post-test follow-up with a genetic counselor is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Of the provided CPT options, 81277 is the code that best corresponds to multi-gene/single-gene BRCA1/2 sequencing/analysis as used for BRCA1/2 testing in payer billing mappings."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets a clinical indication (first-degree relative with male breast cancer) and counseling is documented, Cigna policy requires that the affected relative who meets testing criteria be tested first when available. There is no documentation that the affected brother has been tested or is unavailable for testing, so coverage would be denied until required prior testing of the affected family member is completed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1957,
+    "output_tokens": 2973,
+    "total_tokens": 4930
+  }
+}

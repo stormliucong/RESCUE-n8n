@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinician explicitly requested BRCA1 and BRCA2 testing per the patient information."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "BCBS FEP BRCA coverage is oriented to adult-onset hereditary breast/ovarian cancer indications and generally disfavors predictive testing in minors absent a clear, actionable childhood management change. The patient is 15 and has no qualifying personal/family cancer history, so age-related (minor) considerations are not met."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policy does not mandate a specific ordering provider specialty for BRCA testing (it does require appropriate documentation of indications and counseling), and the record only documents a general pediatrician order—policy does not explicitly prohibit this."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Coverage criteria require personal or family history meeting hereditary breast/ovarian cancer guidelines (e.g., breast/ovarian cancer in proband or close relatives, known familial pathogenic variant). The patient has Hirschsprung disease and no family cancer history, so no defined medical indication is met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP BRCA coverage does not require prior cytogenetic testing (karyotype) or other prior tests before ordering BRCA sequencing; the nondiagnostic karyotype is irrelevant to BRCA coverage criteria."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family-history criteria are specified for BRCA testing under BCBS FEP, and the record documents no family cancer history (mother has bipolar disorder only), so the patient does not meet family-history criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS FEP expects documentation of pre-test genetic counseling for BRCA testing. There is no documentation of pre-test counseling in the record, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The standard single-gene BRCA1/2 CPT codes (sequencing) are not among the provided code options; therefore the best matching CPT code from the supplied list cannot be specified."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under BCBS FEP criteria, BRCA testing is not medically necessary here: the patient is a minor without qualifying personal or family history of HBOC, and required pre-test counseling is not documented. Therefore the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1979,
+    "output_tokens": 2514,
+    "total_tokens": 4493
+  }
+}

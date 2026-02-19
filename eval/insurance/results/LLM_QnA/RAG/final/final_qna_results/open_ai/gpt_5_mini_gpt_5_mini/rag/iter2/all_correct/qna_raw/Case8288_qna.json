@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info explicitly states whole exome sequencing (WES) is being pursued to evaluate the fetus."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes specific prenatal WES criteria (applies to a fetus). The patient is a fetus at 36 weeks, so the age/gestational status fits the prenatal WES indication per the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires prenatal WES to be ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist; the clinical information does not state who specifically ordered the WES, so provider requirement cannot be confirmed."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Prenatal WES criteria in the policy require (1) prior CMA/karyotype uninformative (met: CMA nondiagnostic) and (2) fetus with a congenital anomaly affecting a single organ system plus family history suggesting genetic etiology — patient has a major cardiac anomaly (single organ system) and family history of an inborn error of metabolism in an affected sibling, meeting the indicated clinical criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires CMA and/or karyotyping be performed and uninformative before prenatal WES; patient had a prior CMA that was nondiagnostic, satisfying the prior testing requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history as an indication for prenatal WES. Patient has a family history of an inborn error of metabolism affecting an older sibling, which meets that family-history criterion."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make it an absolute coverage requirement. Patient info documents multiple genetic counseling sessions, but the policy does not mandate counseling as a strict required criterion for coverage."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable codes list CPT 81415 for exome (sequence analysis), which corresponds to WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indications and prior testing (nondiagnostic CMA, fetal cardiac anomaly, relevant family history, and counseling) meet prenatal WES criteria in the policy, the policy also explicitly requires WES to be ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist. The provided patient information does not document that the ordering provider meets that requirement, so not all policy coverage criteria are demonstrably met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36980,
+    "output_tokens": 2410,
+    "total_tokens": 39390
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The note explicitly states whole exome sequencing (WES) is being pursued to evaluate an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES criteria specify pediatric patients with early-onset unexplained neurodevelopmental / congenital anomaly presentations are eligible; the patient is a 7‑week‑old infant with early-onset movement disorder, meeting pediatric age-related indication."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policy requires an appropriate licensed ordering clinician and documentation of pre‑test counseling but does not strictly limit ordering to a specific specialty; here testing was referred by the general pediatrician and pre‑test counseling was completed by a genetic counselor."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP lists unexplained early-onset neurodevelopmental or multiple congenital anomaly presentations (including movement disorders/dystonia) as medical indications for WES; this infant has dystonia/ataxia/hemiplegic episodes and a sibling with congenital anomalies, meeting those clinical criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires prior appropriate testing such as chromosomal microarray for congenital anomaly/developmental presentations; CMA was previously performed and reported nondiagnostic, satisfying the prior test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history/affected sibling is an accepted supporting criterion in BCBS_FEP WES coverage; the patient has a positive family history (older sibling with multiple congenital anomalies)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of genetic counseling for WES; pre‑test counseling was completed with a genetic counselor and post‑test follow‑up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (WES) with interpretation and report, which matches the requested test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP WES policy, the patient meets coverage requirements: appropriate pediatric age/clinical indication (early severe movement disorder and possible syndromic features), prior CMA nondiagnostic, documented genetic counseling, and relevant family history; therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2018,
+    "output_tokens": 1722,
+    "total_tokens": 3740
+  }
+}

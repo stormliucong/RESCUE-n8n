@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient record explicitly states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC genomic sequencing policy includes pediatric patients with congenital anomalies; the patient is a 7‑week infant, which meets age‑based pediatric eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires ordering/oversight by an appropriate specialist and/or genetics provider; the referral is from neurology and pre‑test counseling was completed with a genetic specialist, so provider requirements are met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria cover WGS for unexplained multiple congenital anomalies or an atypical presentation not fitting a well‑delineated syndrome; the infant has multiple congenital anomalies and a nondiagnostic prior karyotype, meeting clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior standard cytogenomic testing (chromosomal microarray) as first‑tier for multiple congenital anomalies; only a nondiagnostic karyotype is documented and CMA is not documented as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of related congenital anomalies as supportive information for sequencing; the record documents a maternal aunt with a congenital anomaly, which is relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documented pre‑test genetic counseling by a qualified genetics professional for genomic sequencing; pre‑test counseling was completed with a genetic specialist and results will be reviewed with family and neurology."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "81425 corresponds to whole genome sequencing and is the CPT most consistent with the requested WGS in the options provided."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, clinical indication, counseling, and family history meet UHC criteria, required prior testing (chromosomal microarray/CMA) is not documented; per UHC coverage rules WGS would not be approved until required prior testing is completed or documented as unnecessary."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1983,
+    "output_tokens": 2119,
+    "total_tokens": 4102
+  }
+}

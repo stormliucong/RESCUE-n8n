@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case statement explicitly says \"whole exome sequencing (WES) is being pursued to evaluate for an underlying genetic etiology.\""
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP genomic sequencing criteria allow WES for infants/children with suspected genetic disorders or critically ill neonates; the patient is a 5‑week‑old infant and therefore meets age‑related applicability for pediatric/infant WES."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP generally permits the treating physician to order WES provided appropriate documentation and genetic counseling; this case documents a cardiology referral and completed pre‑test counseling with a genetic counselor, satisfying provider/counseling ordering requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria require a suspected underlying genetic etiology for significant, unexplained clinical presentations (e.g., life‑threatening events in infants). The infant had a high‑risk BRUE requiring CPR and is being evaluated for genetic causes, meeting clinical indication for WES."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP sequencing policies commonly require prior basic testing such as chromosomal microarray when appropriate; the record states prior CMA testing was nondiagnostic, fulfilling required prior testing before WES."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history can be relevant to genomic testing eligibility; here the mother has a persistent/severe immunologic or hematologic disorder, which is documented and relevant to consideration of a genetic etiology."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP requires documentation of pre‑test genetic counseling for clinical genomic sequencing; the patient completed pre‑test counseling with a genetic counselor and has plans for post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) and best matches the requested test in this case."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on BCBS FEP coverage criteria (infant with severe unexplained life‑threatening event, CMA nondiagnostic, documented genetic counseling, appropriate ordering), WES is medically necessary and covered for this patient."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1999,
+    "output_tokens": 1399,
+    "total_tokens": 3398
+  }
+}

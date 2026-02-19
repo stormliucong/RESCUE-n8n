@@ -1,0 +1,10 @@
+{
+  "qna_result": {
+    "raw": "```json\n{\n  \"Q0\": \"BRCA1/2\",\n  \"Q1\": \"No\",\n  \"Q2\": \"Not Specified\",\n  \"Q3\": \"No\",\n  \"Q4\": \"Not Specified\",\n  \"Q5\": \"Yes\",\n  \"Q6\": \"Yes\",\n  \"Q7\": \"81162\",\n  \"Q8\": \"No\"\n}\n```"
+  },
+  "token_usage": {
+    "input_tokens": 17915,
+    "output_tokens": 88,
+    "total_tokens": 18003
+  }
+}

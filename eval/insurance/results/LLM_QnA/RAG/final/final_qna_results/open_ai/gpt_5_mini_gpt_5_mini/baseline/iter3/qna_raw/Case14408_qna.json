@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient was referred specifically for BRCA1/2 testing (statement: 'referred ... for BRCA1/2 testing')."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna BRCA coverage criteria do not impose a hard age cutoff for testing; eligibility is based on personal/family history rather than patient age, and the record gives no age-based exclusion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna policies typically do not restrict ordering to a specific specialty (primary care providers may order testing when appropriate), and no payer-specific ordering-provider restriction is documented in the patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under Cigna (NCCN-based) BRCA coverage, an unaffected individual with a first-degree relative who had male breast cancer meets a qualifying family-history indication; patient has a brother with breast cancer (first-degree male breast cancer)."
+    },
+    "Q4": {
+      "answer": "Not Answerable",
+      "reasoning": "Cigna guidance prefers testing an affected family member first when available, but the record does not state whether the affected brother is available for testing or whether targeted family testing was offered; therefore it cannot be determined whether a required prior test was completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are relevant and met: patient has a first-degree relative (brother) with breast cancer (male breast cancer is a BRCA-related family history trigger)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Cigna requires documentation of pre-test genetic counseling for BRCA testing; the patient completed pre-test counseling and post-test follow-up is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "The request is for diagnostic/full BRCA1/2 gene testing (full sequencing/analysis); among provided options, 81228 most closely corresponds to BRCA1/BRCA2 testing (full-gene analysis)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets Cigna family-history medical indication for BRCA testing (first-degree relative with male breast cancer), pre-test counseling documented, and no disqualifying factors are present; therefore test is covered under applicable BRCA coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1957,
+    "output_tokens": 2420,
+    "total_tokens": 4377
+  }
+}

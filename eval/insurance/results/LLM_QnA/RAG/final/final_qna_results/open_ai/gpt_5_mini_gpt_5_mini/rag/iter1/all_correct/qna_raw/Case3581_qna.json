@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information states \"BRCA1 and BRCA2 testing has been ordered.\" Basis: patient clinical info."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires age ≥18 for BRCA analyses (Known familial, Ashkenazi, Full Sequence). Patient is 69, which meets the age requirement. Basis: Cigna BRCA Analysis criteria (Age 18 years or older)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not specify required ordering provider specialty; it specifies genetic counseling by an appropriate provider and that rendering laboratory be qualified but does not restrict who may order. Basis: Cigna BRCA Analysis (Genetic Counseling and Rendering laboratory requirements)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific clinical/diagnostic indications focused on personal or family history of breast, ovarian, pancreatic, prostate cancers or known familial BRCA mutation. The patient’s history (hearing/visual impairment since age 18) and sibling BRUE do not meet any BRCA indications in the policy. Basis: Cigna BRCA Analysis diagnostic and personal/family history criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists prior BRCA genetic testing exclusions (eg, no prior full sequencing for full sequence request) but does not require specific prior non-BRCA tests (FISH is not referenced). There is no specified prior genetic test the patient must have completed in this scenario. Basis: Cigna BRCA Analysis (Previous Genetic Testing sections)."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family-history criteria (first-/second-/third-degree relatives with relevant cancers). The patient’s family history (sibling with brief resolved unexplained event) is not one of the BRCA family-history criteria. Basis: Cigna BRCA Analysis family history definitions and indication lists."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider for BRCA testing. The patient has had no pre-test genetic counseling. Basis: Cigna BRCA Analysis (Genetic Counseling requirement)."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy lists CPT codes and states that when BRCA sequencing and deletion/duplication analysis are performed concurrently, CPT 81162 (full sequencing and duplication/deletion combined) is likely most appropriate. The request is for BRCA1/2 testing; 81162 best corresponds per policy. Basis: Cigna BRCA Analysis procedure codes and billing section."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage criteria are unmet: patient does not meet BRCA medical/diagnostic indications (no relevant personal or family cancer history) and has not completed required pre-test genetic counseling; policy requires both indication-based criteria and pre/post-test counseling. Therefore testing is not covered per the Cigna BRCA Analysis guideline. Basis: Cigna BRCA Analysis diagnostic/Personal & Family History criteria and Genetic Counseling requirement."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10276,
+    "output_tokens": 1870,
+    "total_tokens": 12146
+  }
+}

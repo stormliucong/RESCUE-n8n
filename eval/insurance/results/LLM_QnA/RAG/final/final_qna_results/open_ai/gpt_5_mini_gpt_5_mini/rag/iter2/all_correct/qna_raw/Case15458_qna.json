@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is described as 'being evaluated for BRCA1 and BRCA2 testing' — the clinical information explicitly requests BRCA1/2 testing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'personal history of breast cancer' diagnosed at age ≤45 years as a medical-necessity criterion; the patient is 19 and therefore meets the age-based criterion (Policy: 'Diagnosed at age ≤45 years')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires testing be performed in a setting with suitably trained providers and CLIA-licensed labs and recommends genetic counseling, but it does not specify required ordering provider types or prohibit nurse practitioners from ordering testing."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists personal history of breast cancer diagnosed ≤45 years and family history elements (ovarian cancer, metastatic/intraductal prostate cancer) as indications for BRCA1/2 testing; the patient meets these clinical criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses testing strategies and prior limited testing in some scenarios but does not require specific prior tests be completed before BRCA1/2 germline testing in this clinical situation."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly considers family history (first/second/third-degree relatives) including ovarian cancer and metastatic/intraductal prostate cancer as relevant criteria; the patient has a maternal aunt with ovarian cancer and a close relative with metastatic/intraductal prostate cancer."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires appropriate pre- and post-test genetic counseling and states counseling should be performed by experienced providers; the patient completed pre-test genetic counseling with plans for post-test follow-up, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or reference specific CPT codes for BRCA1/2 testing, so a best-corresponding CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, BRCA1/2 testing is medically necessary for individuals with a personal history of breast cancer diagnosed ≤45 years and with the described family history (ovarian and metastatic/intraductal prostate cancer). The patient meets these criteria and has documented pre-test counseling, so BRCA1/2 testing is covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18955,
+    "output_tokens": 1754,
+    "total_tokens": 20709
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Team plans whole exome sequencing (WES) to investigate a possible genetic epilepsy syndrome (explicitly stated)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES policy does not impose strict age cutoffs for exome sequencing; pediatric patients are commonly eligible and no age restriction is noted in the provided clinical context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The clinical information documents involvement of genetics for counseling and follow-up but does not indicate a payer-mandated ordering-provider restriction; BCBS_FEP policies typically do not rigidly require a specific ordering specialty in all cases."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has persistent, unexplained pediatric-onset seizures concerning for a genetic epilepsy syndrome and prior diagnostic workup (see Q4) — this meets BCBS_FEP clinical indications for WES when a genetic etiology is suspected."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP generally requires prior clinically appropriate testing such as chromosomal microarray for neurodevelopmental/epileptic presentations; a CMA was completed and was nondiagnostic, satisfying that prior-test criterion documented here."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a relevant family history (uncle with sudden unexplained death before age 35), which supports suspicion of an inherited disorder and is relevant under payer criteria for expanded genetic evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES coverage requires appropriate genetic counseling; the patient had multiple visits with a genetic counselor and arranged post-test genetics follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (proband or single exome), which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP coverage logic the patient meets clinical indication (pediatric persistent unexplained seizures), has required prior testing (nondiagnostic CMA), has documented genetic counseling and follow-up arrangements, and has relevant family history — overall supporting coverage of WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 2143,
+    "total_tokens": 4121
+  }
+}

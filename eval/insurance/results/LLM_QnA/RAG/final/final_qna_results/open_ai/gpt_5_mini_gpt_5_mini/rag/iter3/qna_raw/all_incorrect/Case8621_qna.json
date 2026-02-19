@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) is being performed. Policy document addresses WES/WGS; thus WES is the requested test."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES may be medically necessary for children with unexplained neurodevelopmental disorders. The patient is a 2-year-old child, which meets the policy's child/ pediatric age criterion."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics. The ordering provider is the child's oncologist; there is no documentation that the oncologist is a clinician with expertise in clinical genetics, so the ordering provider does not meet the policy-specified requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES is medically necessary for children with unexplained neurodevelopmental disorders after standard workup. The patient has a complex neurodevelopmental disorder (autism) that remains unexplained, matching the defined indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing (eg, chromosomal microarray) failed to yield a diagnosis. The patient had prior CMA testing that was nondiagnostic, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance notes family history is relevant and should be documented. The patient has an uncle with a congenital anomaly, which is relevant family history per the policy's family-history considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling by an individual with experience/expertise in genetic medicine. The family met with a genetic counselor multiple times with pre-test counseling completed and plans for post-test follow-up, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or specify CPT codes corresponding to WES; therefore a specific CPT from the provided options is not specified in the policy."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, standard WES may be medically necessary for children with unexplained neurodevelopmental disorders when ALL criteria are met. The patient: is a child with an unexplained neurodevelopmental disorder (meets indication), had prior CMA nondiagnostic (meets prior-testing criterion), and has completed pre-test genetic counseling. Although the ordering provider is an oncologist (Q2), documentation shows evaluation/counseling by a genetic counselor meeting the policy's counseling/expertise requirement. The family seeks a unifying diagnosis (implying potential to change management). Therefore the case meets the policy's criteria for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14841,
+    "output_tokens": 2171,
+    "total_tokens": 17012
+  }
+}

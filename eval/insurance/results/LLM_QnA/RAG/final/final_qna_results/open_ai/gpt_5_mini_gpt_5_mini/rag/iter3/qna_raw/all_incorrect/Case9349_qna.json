@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP policy discusses pediatric testing considerations but provides no explicit numeric age-based eligibility cutoffs for the requested test (WES); therefore age-based criteria are not specified for WES in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy states testing should be performed by an expert in genetic testing and/or cardiac ion channelopathies; the record notes referral by a cardiologist but does not state whether the ordering provider meets the policy's 'expert' requirement, so there is insufficient information to determine compliance."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for targeted genetic testing for channelopathies (LQTS, BrS, CPVT, SQTS) but does not define indications for broad tests like WES. Thus specific medical indications for the requested WES are not specified in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy outlines prior diagnostic evaluation (ECG, stress test, echocardiography) and starting with a known familial variant for targeted testing, but it does not define specific required prior tests for WES. The patient has prior nondiagnostic FISH, but the policy does not specify FISH as a required prior test for WES."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history (eg, sudden cardiac death in a family member younger than 45) as a relevant criterion for considering genetic testing for channelopathies; the patient has a paternal uncle with sudden unexplained death before age 35 (a second-degree relative), which meets the family-history criterion in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires/strongly recommends genetic counseling by experienced personnel when genetic testing for inherited cardiac conditions is considered. The patient completed pre-test counseling with a genetic counselor and has planned post-test follow-up, satisfying the policy's counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); the CPT option in the list corresponding to WES is 81415 (whole exome sequencing). The policy itself does not enumerate CPT codes, but WES best maps to 81415."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The BCBS_FEP policy supports targeted genetic testing for cardiac ion channelopathies when specific clinical criteria are met and recommends testing focused on known familial variants or targeted panels after comprehensive evaluation. The policy does not specify coverage for broad testing such as WES; it also states benefits are not provided for genetic panels/tests when included tests are not covered or are investigational. The patient lacks documentation in the record of a known familial pathogenic variant, a documented comprehensive channelopathy workup meeting the policy's described pretest criteria, and the policy does not authorize broad exome sequencing in this scenario. Therefore, under the policy the requested WES would not be covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15898,
+    "output_tokens": 3358,
+    "total_tokens": 19256
+  }
+}

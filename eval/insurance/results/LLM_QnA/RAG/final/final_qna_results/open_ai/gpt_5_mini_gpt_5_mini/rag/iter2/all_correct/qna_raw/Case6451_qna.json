@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related features include 'hypotonia in infancy' and other pediatric criteria; the patient is a 7‑week‑old infant with hypotonia, meeting the age-related criteria in the WGS coverage rationale."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering clinician is a developmental pediatrician, satisfying this requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires nonspecific presentation plus one listed feature (or two of a list); the infant has significant hypotonia in infancy (a listed feature) and a nonspecific presentation, meeting the medical indication for WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy states WGS is appropriate when 'Neither CMA nor WES have been performed.' The patient had a nondiagnostic karyotype but no CMA or WES reported, satisfying the prior test criterion."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history and 'persistent and severe immunologic or hematologic disorder' among relevant features; the mother has a history of a persistent severe immunologic/hematologic disorder, representing relevant family history."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make counseling an explicit mandatory coverage requirement; patient did have pre-test counseling, but the policy language is recommendation rather than a required criterion."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy lists CPT 81425 for 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponding to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All policy coverage criteria for WGS are met: ordered by an allowed provider (developmental pediatrician), presentation nonspecific with a listed feature (hypotonia in infancy), no prior CMA/WES performed, and family history supportive; therefore WGS is medically necessary per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36937,
+    "output_tokens": 2027,
+    "total_tokens": 38964
+  }
+}

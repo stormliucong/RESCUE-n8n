@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued at the ordering provider's request."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP policy discusses pediatric testing and factors to consider for testing in children but does not provide an explicit age cutoff or strict age-based eligibility criteria for the requested test (WGS)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy Guidelines state genetic testing \"should be performed by an expert in genetic testing and/or cardiac ion channelopathies.\" The ordering provider here is a gynecologist (per patient info), who does not meet the policy-specified expert provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows genetic testing when signs/symptoms of a channelopathy are present but a definitive diagnosis cannot be made without testing. The infant has a significantly abnormal ECG raising concern for an underlying channelopathy/arrhythmia, which meets the policy's clinical indication for testing."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends a comprehensive clinical evaluation (ECG, history, possible echo/stress testing) and to begin testing with a known familial variant when available, but it does not state an absolute prior-test checklist that must be completed before genetic testing in all cases; specific prior-test requirements for WGS are not defined."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy's family-history criteria center on a close relative with a known channelopathy variant or diagnosed LQTS/CPVT/BrS/SQTS. The maternal uncle's unexplained developmental regression is not described as a diagnosed cardiac channelopathy or known pathogenic variant, so the policy's family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy specifies that genetic counseling is recommended and should be performed by someone experienced in genetic medicine. Patient information documents that pre-test counseling was completed with a genetic counselor and plans for post-test follow-up are in place, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing (WGS); among the provided CPT options, 81425 corresponds to whole genome sequencing services."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient has clinical signs meeting the policy's indication for genetic testing of cardiac channelopathies, the policy emphasizes targeted or condition-specific testing and states benefits are not provided for genetic panels when included tests are not covered/are investigational. WGS is a broad genome-wide assay (not specified as an acceptable test type in the policy) and may include noncovered/ investigational content; additionally, the policy requires testing be performed by an expert (ordering provider here is a gynecologist). Based on the policy language, WGS as requested is not supported/covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15953,
+    "output_tokens": 2284,
+    "total_tokens": 18237
+  }
+}

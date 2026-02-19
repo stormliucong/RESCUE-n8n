@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states the patient is undergoing whole exome sequencing (WES). Basis: patient clinical note."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not impose a single age cutoff for WES; coverage criteria are phenotype- and onset-based (e.g., epileptic encephalopathy with onset <3 years, ID diagnosed by 18 years). Patient is 68 but policy does not state a blanket exclusion by age, so age-based eligibility is not explicitly specified for this adult patient."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The patient information does not state the specialty of the ordering provider, so it cannot be determined if ordering-provider requirements are met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage requires specific clinical indications (e.g., epileptic encephalopathy with onset before 3 years, or ≥2 listed features such as congenital anomalies, global developmental delay, consanguinity, or other family members with similar features). The record notes persistent seizures but does not document early-onset epileptic encephalopathy, developmental delay, consanguinity, or other qualifying features, so the patient does not meet the policy-defined medical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not require a specific prior test for outpatient WES (except that targeted/single-gene testing should be done if a specific syndrome is suspected). The patient had prior nondiagnostic FISH, but the policy does not list FISH or other prior testing as a required step for WES in this scenario."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists family history of other first- or second-degree relatives with similar clinical features (or consanguinity) as a criterion. Patient reports a sister with ovarian/fallopian/peritoneal carcinoma, which is not a similar neurologic phenotype, and consanguinity is not reported; thus the patient does not meet the policy's family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WES/WGS. Patient has seen a genetic counselor multiple times with plans for post-test follow-up, meeting the counseling recommendations described in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy lists CPT 81415 for exome (sequence analysis) which corresponds to whole exome sequencing (WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the UnitedHealthcare WES policy, coverage requires meeting specified clinical criteria (e.g., early-onset epileptic encephalopathy or multiple qualifying features). The patient is an adult with persistent seizures but lacks documentation of the policy-defined qualifying features (and ordering-provider specialty is not documented). Although counseling is documented, the patient does not meet the policy's medical-necessity criteria for WES; therefore the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36951,
+    "output_tokens": 2900,
+    "total_tokens": 39851
+  }
+}

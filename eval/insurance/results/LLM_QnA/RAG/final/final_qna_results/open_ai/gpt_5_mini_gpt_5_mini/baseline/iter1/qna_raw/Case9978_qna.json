@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient record explicitly states 'whole exome sequencing (WES) at the request of the neurologist.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC coverage for WES is driven by clinical phenotype (childhood-onset neurodevelopmental/epileptic encephalopathy) rather than a strict age cutoff in this case; no payer-imposed absolute age exclusion is documented in the information provided."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The case lists the ordering provider as a neurologist; the payer policy typically does not mandate a specific specialty beyond an appropriate clinician order, and no explicit ordering-provider restriction is provided in the patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has early-onset epileptic encephalopathy with onset before age 3 and persistent seizures into adulthood—this meets UHC criteria for WES when a suspected genetic cause of childhood-onset epilepsy exists and prior targeted testing has been nondiagnostic."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC often requires prior appropriate testing (e.g., chromosomal microarray and/or targeted epilepsy gene panel or other targeted testing) before WES; only Fragile X testing (nondiagnostic) is documented and no CMA or prior targeted panel is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a brother with an inborn error of metabolism; a family history of a related genetic disorder is relevant to eligibility under payer criteria for broader genomic testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The record documents completion of pre-test counseling with a genetic counselor and plans for post-test follow-up, satisfying typical payer counseling requirements for WES."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (WES), which is the test ordered."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indication, required prior testing (e.g., chromosomal microarray and/or appropriate targeted gene testing per UHC policy) is not documented as completed; lacking required prior tests, the payer’s coverage criteria for WES would not be met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1973,
+    "output_tokens": 1900,
+    "total_tokens": 3873
+  }
+}

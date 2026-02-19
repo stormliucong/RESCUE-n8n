@@ -1,0 +1,66 @@
+[
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_10retrieve_gpt_5_mini_gpt_5_mini_update",
+    "batch_id": "batch_68d849039ca4819084c1744a3b126d30"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_mini_gpt_5_mini_update",
+    "batch_id": "batch_68d84907bfd48190a2f2d4233894114d"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_30retrieve_gpt_5_mini_gpt_5_mini_update",
+    "batch_id": "batch_68d8490a2be08190ad4ef31fa0ae9b09"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_30retrieve_gpt_5_mini_gpt_5_mini_update",
+    "batch_id": "batch_68d8494dd6788190ab16ffe62529f935"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_10retrieve_gpt_5_mini_gpt_5_update",
+    "batch_id": "batch_68d8494fceb881909ba5890b2bf00fdf"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_mini_gpt_5_update",
+    "batch_id": "batch_68d84952f8648190b5f6b87f2ad7e516"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_30retrieve_gpt_5_mini_gpt_5_update",
+    "batch_id": "batch_68d84955491c8190b3035e3c8b824fa7"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_30retrieve_gpt_5_mini_gpt_5_update",
+    "batch_id": "batch_68d8495a8098819088963fce815bfb92"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_10retrieve_gpt_5_gpt_5_mini_update",
+    "batch_id": "batch_68d8495f2c4c8190acfa688eeef03d5d"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_gpt_5_mini_update",
+    "batch_id": "batch_68d84962ef8481908275a1077097c01a"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_30retrieve_gpt_5_gpt_5_mini_update",
+    "batch_id": "batch_68d8496585c88190ac163ee8b836ac45"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_30retrieve_gpt_5_gpt_5_mini_update",
+    "batch_id": "batch_68d8496a101481909139ac3108fac398"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_10retrieve_gpt_5_gpt_5_update",
+    "batch_id": "batch_68d8496c6b288190a9d38f090e008e42"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_gpt_5_update",
+    "batch_id": "batch_68d8497003948190be673e3a50ada39f"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_30retrieve_gpt_5_gpt_5_update",
+    "batch_id": "batch_68d849721f4c819093be1a685077fbaa"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_30retrieve_gpt_5_gpt_5_update",
+    "batch_id": "batch_68d8497605fc8190a8bb341f043a063c"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states she is being referred for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC BRCA coverage includes women with personal history of breast cancer diagnosed before age 50; the patient is 35, so she meets the age-based criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC allows ordering by the treating physician or appropriate clinician; the test was ordered/referral made by the patient's gynecologist (an appropriate ordering physician)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC defines medical indications including personal history of breast cancer diagnosed <50 years — the patient meets this specific medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA germline testing criteria do not generally mandate completion of prior genetic tests (the prior nondiagnostic karyotype is not a required prerequisite), and no specific prior-test requirement is stated in the provided information."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for BRCA testing; the patient reports an uncle with pancreatic cancer, which is a cancer type included in BRCA-associated family histories and therefore relevant to eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC BRCA policy requires documentation of pre-test genetic counseling or informed discussion per policy; the record states no pre-test genetic counseling has been conducted, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The request is for BRCA1/2 germline testing, but the typical BRCA CPT codes (e.g., individual BRCA sequencing/deletion-duplication codes) are not among the provided options, so none of the listed codes clearly correspond."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age and medical indication criteria and the ordering provider is appropriate per UHC policy, pre-test genetic counseling/documentation is required per UHC BRCA coverage rules and has not been performed; therefore coverage would not be approved until counseling/documentation is completed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1974,
+    "output_tokens": 2392,
+    "total_tokens": 4366
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is being requested as the next diagnostic step."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES criteria apply to patients with unexplained developmental delay/intellectual disability without specific age cutoff; no age-based exclusion applies to this 10-year-old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policies generally require an appropriate ordering clinician but do not impose a strict specialty-only ordering requirement for WES in this context; the record shows referral by a cardiologist but policy does not explicitly restrict ordering to a geneticist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP considers WES medically indicated for unexplained developmental delay/intellectual disability after standard first-tier testing is nondiagnostic; the patient has nonsyndromic developmental delay and intellectual disability, which meets the clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP requires prior first‑tier genomic testing (chromosomal microarray) for unexplained DD/ID before WES. Only FISH (nondiagnostic) was completed; CMA is not documented, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While family history (an affected brother) is clinically relevant and present, BCBS FEP WES eligibility does not require specific family history/consanguinity criteria as a hard requirement; policy treats family history as supportive but not mandatory."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP expects documentation of pre‑test genetic counseling for WES; the record documents pre‑test counseling and plans for post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (clinical exome sequencing) for the proband, which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication and counseling are met, BCBS FEP requires prior first‑tier testing (chromosomal microarray) for unexplained DD/ID; CMA is not documented (only nondiagnostic FISH), so WES would not meet coverage criteria at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1997,
+    "output_tokens": 2235,
+    "total_tokens": 4232
+  }
+}

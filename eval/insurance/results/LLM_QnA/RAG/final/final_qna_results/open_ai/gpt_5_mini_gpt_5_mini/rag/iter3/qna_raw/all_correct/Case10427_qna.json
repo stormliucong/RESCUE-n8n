@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes hypotonia in infancy as an eligible feature for WGS and several criteria reference age (e.g., features diagnosed by 18 years); the patient is an 8‑week‑old infant with hypotonia, meeting the age-related context in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the test was ordered by a neurologist, satisfying provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history suggesting a genetic cause plus specific features. The patient has hypotonia in infancy (listed) and a family history of an older sibling with unexplained developmental regression (a listed relevant family/neurologic feature), meeting the policy's feature-based medical indication for WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy states WGS is appropriate when neither CMA nor WES have been performed. The record documents only prior FISH (nondiagnostic) and does not report prior CMA or WES, satisfying the policy prior-test condition."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history/consanguinity as qualifying criteria (e.g., other first‑ or second‑degree family member(s) with similar clinical features and/or unexplained developmental regression). The patient has an older sibling with unexplained developmental regression, which is relevant per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WGS but does not make counseling a strict mandatory coverage requirement; note patient did receive pre‑test counseling per the record."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable codes list CPT 81425 for genome (whole genome) sequence analysis; this best corresponds to the requested WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare policy, WGS is medically necessary when ordered by an allowed specialist, clinical presentation is nonspecific with features suggesting genetic etiology, neither CMA nor WES have been performed, and listed features are present. The patient (8‑week‑old infant) has hypotonia, a relevant family history of unexplained developmental regression, no prior CMA/WES, and the test is ordered by a neurologist; therefore coverage criteria are met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36955,
+    "output_tokens": 2857,
+    "total_tokens": 39812
+  }
+}

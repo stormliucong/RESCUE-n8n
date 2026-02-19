@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is explicitly being evaluated for BRCA1 and BRCA2 testing per the clinical information."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP BRCA coverage uses clinical-age thresholds (early-onset breast cancer and strong family history) — a 19‑year‑old with personal history of breast cancer meets age-related criteria for testing."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policy focuses on clinical indications and counseling; it does not explicitly restrict ordering to a physician only. The record shows a nurse practitioner ordered testing, which is typically allowed within scope of practice, but the payer policy does not specifically state single-provider-type requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical indications in BCBS_FEP BRCA policy include personal history of breast cancer at a very young age and/or family history of ovarian/prostate cancer; the patient has a personal history of breast cancer at 19 plus a maternal aunt with ovarian cancer, satisfying medical necessity criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA policy does not mandate completion of specific prior tests (the reported nondiagnostic FISH is not a standard required precursor), so no prior-test prerequisite is specified."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are part of BRCA coverage rules; the patient has a maternal aunt with ovarian cancer and another close relative with prostate cancer, which supports testing eligibility under BCBS_FEP criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires (or strongly recommends) pre-test genetic counseling for BRCA testing; the patient completed pre-test counseling with planned post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "The requested service is diagnostic BRCA1/BRCA2 gene testing; the CPT option most consistent with comprehensive BRCA1/2 sequence analysis among the provided choices is 81228."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP BRCA coverage criteria the patient meets medical necessity (very early-onset breast cancer plus supporting family history), counseling requirements are met, and no disqualifying prior-test or provider restrictions apply — test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 1983,
+    "total_tokens": 3974
+  }
+}

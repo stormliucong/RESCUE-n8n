@@ -1,0 +1,10 @@
+{
+  "qna_result": {
+    "raw": "```json\n{\n  \"Q0\": \"WGS\",\n  \"Q1\": \"No\",\n  \"Q2\": \"Not Specified\",\n  \"Q3\": \"Not Specified\",\n  \"Q4\": \"Yes\",\n  \"Q5\": \"Not Specified\",\n  \"Q6\": \"No\",\n  \"Q7\": \"81425\",\n  \"Q8\": \"No\"\n}\n```"
+  },
+  "token_usage": {
+    "input_tokens": 8446,
+    "output_tokens": 87,
+    "total_tokens": 8533
+  }
+}

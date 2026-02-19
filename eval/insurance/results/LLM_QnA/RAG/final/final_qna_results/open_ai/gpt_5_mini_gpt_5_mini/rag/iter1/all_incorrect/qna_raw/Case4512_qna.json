@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The Humana cardiac genetic policy lists age criteria for specific conditions (eg, FH LDL thresholds) but does not specify any age-based eligibility for WGS; no WGS age criteria are provided in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify provider specialty or ordering provider requirements for WGS. Appendix lists qualified professionals for genetic counseling but not ordering-provider requirements for whole genome sequencing."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications for specific cardiac genetic tests (eg, CPVT, FH, HCM, LQTS). The patient’s diagnosis (major congenital cardiac anomaly since birth) and family history do not match any disease-specific covered indications listed in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies prior-test requirements for certain listed conditions (eg, LDL measurements for FH, ECG for LQTS) but does not define required prior testing for WGS; no required prior tests for WGS are given."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies family-history criteria for certain covered tests (eg, affected first-degree relative with known pathogenic variant), but it does not specify family-history criteria applicable to WGS; the patient’s sibling history does not meet any specific familial-variant criteria in the policy."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by qualified personnel (eg, board-certified/-eligible genetic counselor not employed by a commercial lab). The record states pre-test counseling was done by 'a genetic counselor' but provides no credentialing or employment details to confirm policy compliance."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT choices, 81425 corresponds to whole genome sequencing (WGS) genomic analysis; this best matches the WGS requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The Humana policy limits coverage to specific listed cardiac genetic tests/genes and states members may NOT be eligible for tests other than those listed. WGS is not listed as a covered test and therefore is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12150,
+    "output_tokens": 2562,
+    "total_tokens": 14712
+  }
+}

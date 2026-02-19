@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info states whole-genome sequencing (WGS) is being considered to identify a genetic cholestatic/metabolic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age criterion: WES/WGS indications apply to individuals <18 years. Patient is one week old (<18), so age criterion is met (Policy Section II: criteria for individuals less than 18 years)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy (II.1.a) requires evaluation by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor and counseling; the ordering provider is a neonatologist and no geneticist/genetic counselor involvement is documented."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy allows WGS only after WES fails to identify a causative mutation and other criteria are met (II.4). The patient has not had WES yet, so does not meet the policy's specified medical indication for WGS."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires WES (and negative/non-diagnostic WES) before WGS is covered (II.4 and II.5); patient has nondiagnostic karyotype but no WES performed, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a relevant family history: a sibling with unexplained developmental regression. Policy references family/pedigree context (trio testing and prior affected sibling scenarios) as relevant to sequencing indications (Sections II and V)."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy (II.1.a and prenatal guidance) requires pre-test counseling by an ABMGG geneticist or ABGC genetic counselor; no pre-test genetic counseling is documented for this patient."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT billing codes to WES/WGS, so a specific CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, WGS meets coverage only when WES has been performed and failed to identify a causative mutation and when geneticist/genetic counselor evaluation and counseling are documented (II.4 and II.1.a). The patient has not had WES and lacks documented pre-test genetic counseling by an ABMGG/ABGC provider; therefore WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22474,
+    "output_tokens": 1820,
+    "total_tokens": 24294
+  }
+}

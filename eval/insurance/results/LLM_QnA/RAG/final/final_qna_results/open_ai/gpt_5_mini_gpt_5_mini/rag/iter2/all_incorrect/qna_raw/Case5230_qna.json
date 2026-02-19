@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) was ordered to evaluate a congenital anomaly."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy makes WES medically necessary for 'children' with unexplained congenital anomalies; the patient is a 15-year-old adolescent (a child under the policy), so age meets policy application."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled about risks; the record shows referral by neurology and genetic counseling was declined, with no documentation of genetics evaluation or counseling."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists evaluation of unexplained congenital anomalies in children after standard workup as a medical indication; the patient has a congenital anomaly and a nondiagnostic CMA, which matches the policy's clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES is appropriate when previous genetic testing (eg, chromosomal microarray analysis) has failed to yield a diagnosis; the patient had a nondiagnostic CMA."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of an inborn error of metabolism as relevant family history; the patient has a sibling with an inborn error of metabolism."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual be counseled about risks of genetic testing by a clinician with genetics expertise; the patient declined genetic counseling, so the counseling requirement is not met per policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or specify CPT codes corresponding to WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indication (unexplained congenital anomaly) and prior testing (nondiagnostic CMA), the policy requires documented evaluation by a clinician with expertise in clinical genetics and counseling (criterion 1), which is not met; therefore all required policy criteria are not satisfied and WES is not covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14806,
+    "output_tokens": 1742,
+    "total_tokens": 16548
+  }
+}

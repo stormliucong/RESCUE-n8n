@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WGS/WES policies focus on individuals with congenital anomalies or neurodevelopmental disorders and often include pediatric age groups; the patient is 15 years old, which meets pediatric age-based eligibility for diagnostic WGS."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "UHC policies commonly require ordering or documentation by a qualified provider (eg, genetics provider) or documentation of genetics involvement; the record does not state who formally placed the WGS order, so adequacy of the ordering provider cannot be determined from provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria support WGS for individuals with unexplained congenital anomalies/multiple congenital anomalies; the patient has a congenital anomaly present since birth, meeting a medical indication for diagnostic WGS."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior appropriate testing (eg, chromosomal microarray and/or appropriate targeted tests) before WGS; only FISH was performed and was nondiagnostic, and FISH alone does not satisfy the typical prior-testing requirement (CMA) per policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "UHC policies consider relevant family history in support of WGS; the patient has a sibling with a similar congenital anomaly, which is a relevant family history for genetic evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires pre- and post-test genetic counseling or documentation of genetics involvement; the patient has been seen multiple times by a genetic counselor with plans for post-test counseling, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT code 81425 corresponds to genome sequencing services and best matches WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, medical indication, family history, and genetic counseling are met, required prior testing (eg, chromosomal microarray) has not been completed per UHC coverage rules; lacking required prior tests makes the WGS request non-covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1830,
+    "total_tokens": 3808
+  }
+}

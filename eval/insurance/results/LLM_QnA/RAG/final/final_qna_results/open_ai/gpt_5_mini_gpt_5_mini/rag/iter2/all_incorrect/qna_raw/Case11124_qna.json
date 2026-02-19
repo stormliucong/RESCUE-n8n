@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole-exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy allows exome for nonsyndromic developmental delay with onset prior to age 18 (Standard Exome I.A.2.a); patient is an infant with developmental delay, so age criterion is met."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by a Board-Certified/Board-Eligible Medical Geneticist or APGN and counseling by appropriate providers (Standard Exome I.F and I.G). The patient data do not state the credentials of the ordering/referring provider or who performed the pre-test counseling, so adequacy vs policy cannot be determined."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient meets a defined medical indication: unexplained developmental delay with onset <18 years (Standard Exome I.A.2.a). Family history further supports a likely genetic etiology."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior tests (e.g., CMA) as an absolute prerequisite; it requires alternate etiologies to be considered (Standard Exome I.B) and notes exome is often considered after CMA/panel testing, but no single explicit prior-test requirement is specified."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history strongly suggestive of genetic etiology (including consanguinity) as a qualifying criterion (Standard Exome I.A.2.b(5)); patient has an older sibling with childhood hearing impairment consistent with relevant family history."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires pre- and post-test counseling by an appropriate provider (Standard Exome I.F). Patient data state pre-test counseling was completed and post-test planned but do not specify the counselor's credentials, so compliance with the policy requirement cannot be confirmed."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding table lists 81415 for standard exome sequencing (proband) and associates it with WES; the requested test is WES for a proband."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "While the patient meets a primary clinical indication (developmental delay), the policy requires additional criteria/documentation (e.g., consideration/rule-out of alternate etiologies, that presentation not fit a well-described syndrome, predicted impact on management, and evaluation/counseling by specified genetics providers per Standard Exome I.B–I.G). The provided patient information lacks documentation that these required elements (notably evaluation by a Board-Certified/Board-Eligible Medical Geneticist or APGN and qualified counseling provider credentials) have been met, so coverage per the policy cannot be confirmed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12227,
+    "output_tokens": 2460,
+    "total_tokens": 14687
+  }
+}

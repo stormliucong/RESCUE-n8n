@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info explicitly states Whole Exome Sequencing (WES) is being ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy states predictive genetic testing in related children for inherited arrhythmia syndromes (including LQTS/CPVT/BrS) is recommended from birth onward; the patient is age 2 so meets age-based criteria relevant to the family-history LQTS indication (policy coverage rationale and EHRA/HRS guidance)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify ordering-provider specialty/type requirements for genetic testing; it only states pre-test genetic counseling is strongly recommended."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for targeted multi-gene cardiac panels (e.g., family history of congenital LQTS) but does not explicitly define diagnostic/coverage indications for WES as the requested test; WES-specific indications are not specified in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies some prior/phenotypic testing requirements for certain cardiac diagnoses (e.g., ECG/Schwartz score for LQTS) but does not define a universal required prior-test sequence for WES; no explicit prior-test requirement for WES is provided."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a first-degree relative (mother) with Long QT syndrome; the policy lists multi-gene panel testing as medically necessary for asymptomatic individuals with a first- or second-degree relative with congenital LQTS (Testing Based Only On Family History)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states that pre-test genetic counseling is 'strongly recommended' but does not state it as an absolute coverage requirement; the patient did receive pre-test counseling, but the policy does not make counseling a strict coverage condition."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The patient is requesting Whole Exome Sequencing (WES); CPT code 81415 corresponds to exome sequencing and is the best match for WES per coding conventions referenced in the policy context (policy describes exome/genome technologies)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient has a relevant family history of congenital LQTS (which the policy supports for targeted multi-gene panel testing), the policy coverage rationale is written around targeted multi-gene panels (and microarray profiles) for cardiac syndromes. WES is not explicitly listed as a covered/medically necessary modality for this indication in the policy text; therefore the requested WES is not supported as covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 39565,
+    "output_tokens": 3081,
+    "total_tokens": 42646
+  }
+}

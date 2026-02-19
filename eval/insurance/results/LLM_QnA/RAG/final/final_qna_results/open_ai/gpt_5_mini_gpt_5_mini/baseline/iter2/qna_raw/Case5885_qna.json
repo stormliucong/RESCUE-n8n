@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states 'whole genome sequencing (WGS) is requested to investigate an underlying genetic cause.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC clinical sequencing policies distinguish pediatric indications and cover genomic sequencing for children with suspected genetic disorders; the patient is 11 years old, which meets pediatric age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires ordering by or in consultation with an appropriate specialist (geneticist/genetic counselor). Pre-test counseling was discussed with a genetic specialist, indicating the ordering/provider requirements are met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage for WES/WGS includes patients with major congenital anomalies or multisystem abnormalities; the patient has a major abnormality affecting at least one organ system, which satisfies medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC policies generally require first‑tier testing (e.g., chromosomal microarray) prior to WGS/WES for many pediatric presentations. Fragile X testing was performed and nondiagnostic, but no CMA or equivalent prior test result is provided, so required prior testing appears incomplete."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "While a family history of long QT syndrome in the mother is reported, UHC coverage criteria for WGS emphasize family history of the same or similar phenotype to support testing. The maternal LQTS is not clearly relevant to the patient's organ‑system abnormality, so no relevant family history for eligibility is documented."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre‑test genetic counseling for genomic sequencing; the record states pre‑test counseling was discussed with a genetic specialist and post‑test follow‑up plans are in place, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole genome sequencing; CPT 81415 corresponds to clinical whole genome sequencing (interpretation and report)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider involvement, clinical indication, and counseling requirements are met, UHC generally requires completion of first‑tier testing (e.g., chromosomal microarray) prior to WGS for many pediatric presentations. The record does not document CMA or equivalent prior testing, so coverage is not supported until required prior testing is completed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 2313,
+    "total_tokens": 4288
+  }
+}

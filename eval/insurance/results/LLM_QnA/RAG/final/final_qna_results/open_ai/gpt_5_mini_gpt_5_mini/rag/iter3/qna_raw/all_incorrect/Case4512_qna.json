@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The Humana policy lists disease- and gene-specific criteria (eg, CPVT, HCM, LQTS, FH) and some age cutoffs for specific conditions (eg, LDL-C thresholds), but it does not specify age-based eligibility criteria for whole genome sequencing (WGS)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify ordering-provider specialty/type requirements for WGS; it only specifies who may perform pre-/post-test genetic counseling (Appendix A)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy limits coverage to specific listed gene- or disease-specific tests (eg, CPVT gene testing, HCM genes, LQTS genes) and states members may NOT be eligible for tests other than those listed. WGS is not listed among covered tests, so the patient does not meet a covered medical indication per this policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines prior testing requirements for specific covered conditions (eg, exclusion of secondary causes for FH, ECG/imaging for HCM/LQTS) but does not define prior testing requirements for WGS."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy uses family-history criteria for certain covered tests (eg, affected first-degree relative with known pathogenic variant for KFV testing), but it does not specify family-history criteria applicable to WGS; WGS is not listed."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires pre- and post-test genetic counseling performed by qualified personnel (Appendix A: board-certified/board-eligible genetic counselor not employed by a commercial lab, etc.). Patient notes 'pre-test counseling was completed with a genetic counselor' but does not state the counselor's board status or employment, so sufficiency per the policy cannot be confirmed from provided information."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's CPT code table does not map any listed codes to whole genome sequencing (WGS), and no WGS-specific CPT code is specified in this policy document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy Coverage Limitations, Humana members may NOT be eligible for genetic tests other than the specific gene- or disease-based tests listed. WGS is not listed as a covered test; therefore, it is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12150,
+    "output_tokens": 2098,
+    "total_tokens": 14248
+  }
+}

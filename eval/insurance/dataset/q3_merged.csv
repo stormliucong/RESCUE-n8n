@@ -1,0 +1,655 @@
+Category,Indication,Test,Insurance
+Breast Cancer,Diagnosed breast cancer at age equal to under 45,BRCA1/2,BCBS_FEP
+Breast Cancer,Diagnosed breast cancer at age equal to under 45,BRCA1/2,Cigna
+Breast Cancer,Diagnosed breast cancer at age equal to under 45,BRCA1/2,UHC
+Breast Cancer,Personal history of breast cancer diagnosed between ages 46 and 50 with an additional primary breast cancer at any age,BRCA1/2,BCBS_FEP
+Breast Cancer,Personal history of breast cancer diagnosed between ages 46 and 50 with an additional primary breast cancer at any age,BRCA1/2,Cigna
+Breast Cancer,Personal history of breast cancer diagnosed between ages 46 and 50 with an additional primary breast cancer at any age,BRCA1/2,UHC
+Breast Cancer,Personal history of breast cancer diagnosed equal and under 60 with Triple-negative breast cancer,BRCA1/2,BCBS_FEP
+Breast Cancer,Personal history of breast cancer diagnosed equal and under 60 with Triple-negative breast cancer,BRCA1/2,Cigna
+Breast Cancer,Personal history of breast cancer diagnosed equal and under 60 with Triple-negative breast cancer,BRCA1/2,UHC
+Breast Cancer,Personal history of breast cancer diagnosed any age with at least one close relative with breast cancer diagnosed at age equal to under 50 years,BRCA1/2,BCBS_FEP
+Breast Cancer,Personal history of breast cancer diagnosed any age with at least one close relative with breast cancer diagnosed at age equal to under 50 years,BRCA1/2,Cigna
+Breast Cancer,Personal history of breast cancer diagnosed any age with at least one close relative with breast cancer diagnosed at age equal to under 50 years,BRCA1/2,UHC
+Breast Cancer,Female with breast cancer diagnosis 50 years of age or younger,BRCA1/2,BCBS_FEP
+Breast Cancer,Female with breast cancer diagnosis 50 years of age or younger,BRCA1/2,Cigna
+Breast Cancer,Female with breast cancer diagnosis 50 years of age or younger,BRCA1/2,UHC
+Breast Cancer,Diagnosed with two or more primary breast cancers at any age,BRCA1/2,BCBS_FEP
+Breast Cancer,Diagnosed with two or more primary breast cancers at any age,BRCA1/2,Cigna
+Breast Cancer,Diagnosed with two or more primary breast cancers at any age,BRCA1/2,UHC
+Breast Cancer,"Diagnosed at any age with triple negative breast cancer (i.e., estrogen receptornegative (ER-), progesterone receptor negative (PR-), and human epidermal growth factor receptor negative (HER2-) breast cancer)",BRCA1/2,BCBS_FEP
+Breast Cancer,"Diagnosed at any age with triple negative breast cancer (i.e., estrogen receptornegative (ER-), progesterone receptor negative (PR-), and human epidermal growth factor receptor negative (HER2-) breast cancer)",BRCA1/2,Cigna
+Breast Cancer,"Diagnosed at any age with triple negative breast cancer (i.e., estrogen receptornegative (ER-), progesterone receptor negative (PR-), and human epidermal growth factor receptor negative (HER2-) breast cancer)",BRCA1/2,UHC
+Breast Cancer,Male with breast cancer at any age,BRCA1/2,BCBS_FEP
+Breast Cancer,Male with breast cancer at any age,BRCA1/2,Cigna
+Breast Cancer,Male with breast cancer at any age,BRCA1/2,UHC
+Breast Cancer,Breast cancer diagnosed at age 50 or younger,BRCA1/2,BCBS_FEP
+Breast Cancer,Breast cancer diagnosed at age 50 or younger,BRCA1/2,Cigna
+Breast Cancer,Breast cancer diagnosed at age 50 or younger,BRCA1/2,UHC
+Breast Cancer,Metastatic Breast Cancer,BRCA1/2,BCBS_FEP
+Breast Cancer,Metastatic Breast Cancer,BRCA1/2,Cigna
+Breast Cancer,Metastatic Breast Cancer,BRCA1/2,UHC
+Breast Cancer,Multiple primary Breast Cancers (as a prior diagnosis or as a bilateral primary cancer),BRCA1/2,BCBS_FEP
+Breast Cancer,Multiple primary Breast Cancers (as a prior diagnosis or as a bilateral primary cancer),BRCA1/2,Cigna
+Breast Cancer,Multiple primary Breast Cancers (as a prior diagnosis or as a bilateral primary cancer),BRCA1/2,UHC
+Breast Cancer,Lobular Breast Cancer and a personal or family history of diffuse gastric cancer,BRCA1/2,BCBS_FEP
+Breast Cancer,Lobular Breast Cancer and a personal or family history of diffuse gastric cancer,BRCA1/2,Cigna
+Breast Cancer,Lobular Breast Cancer and a personal or family history of diffuse gastric cancer,BRCA1/2,UHC
+Breast Cancer,Breast Cancer and Unknown or Limited Family History,BRCA1/2,BCBS_FEP
+Breast Cancer,Breast Cancer and Unknown or Limited Family History,BRCA1/2,Cigna
+Breast Cancer,Breast Cancer and Unknown or Limited Family History,BRCA1/2,UHC
+Breast Cancer,Triple-negative breast cancer,BRCA1/2,BCBS_FEP
+Breast Cancer,Triple-negative breast cancer,BRCA1/2,Cigna
+Breast Cancer,Triple-negative breast cancer,BRCA1/2,UHC
+Breast Cancer,Breast Cancer and individual was assigned male at birth,BRCA1/2,BCBS_FEP
+Breast Cancer,Breast Cancer and individual was assigned male at birth,BRCA1/2,Cigna
+Breast Cancer,Breast Cancer and individual was assigned male at birth,BRCA1/2,UHC
+Cardiac / cardiorespiratory episode,High-risk Brief Resolved Unexplained Event with Recurrent events without respiratory infection,WES,BCBS_FEP
+Cardiac / cardiorespiratory episode,High-risk Brief Resolved Unexplained Event with Recurrent events without respiratory infection,WGS,BCBS_FEP
+Cardiac / cardiorespiratory episode,High-risk Brief Resolved Unexplained Event with Required cardiopulmonary resuscitation (CPR),WES,BCBS_FEP
+Cardiac / cardiorespiratory episode,High-risk Brief Resolved Unexplained Event with Required cardiopulmonary resuscitation (CPR),WGS,BCBS_FEP
+Cardiac / cardiorespiratory episode,High-risk Brief Resolved Unexplained Event with Recurrent events without respiratory infection,WES,BCBS_FEP
+Cardiac / cardiorespiratory episode,High-risk Brief Resolved Unexplained Event with Recurrent events without respiratory infection,WGS,BCBS_FEP
+Cardiac / cardiorespiratory episode,High-risk Brief Resolved Unexplained Event with Required cardiopulmonary resuscitation (CPR),WES,BCBS_FEP
+Cardiac / cardiorespiratory episode,High-risk Brief Resolved Unexplained Event with Required cardiopulmonary resuscitation (CPR),WGS,BCBS_FEP
+Colorectal polyposis,A personal history of colorectal polyposis with at least ten adenomas,BRCA1/2,UHC
+Complex Presentation,abnormality affecting at minimum a single organ system and autism,WES,Cigna
+Complex Presentation,abnormality affecting at minimum a single organ system and autism,WGS,Cigna
+Complex Presentation,abnormality affecting at minimum a single organ system and autism,BRCA1/2,UHC
+Complex Presentation,abnormality affecting at minimum a single organ system and complex neurodevelopmental disorder,WES,Cigna
+Complex Presentation,abnormality affecting at minimum a single organ system and complex neurodevelopmental disorder,WGS,Cigna
+Complex Presentation,abnormality affecting at minimum a single organ system and complex neurodevelopmental disorder,BRCA1/2,UHC
+Complex Presentation,A fetal structural anomaly affecting a single organ system and family history strongly suggests a genetic etiology,WES,Cigna
+Complex Presentation,A fetal structural anomaly affecting a single organ system and family history strongly suggests a genetic etiology,WGS,Cigna
+Complex Presentation,A fetal structural anomaly affecting a single organ system and family history strongly suggests a genetic etiology,BRCA1/2,UHC
+Complex Presentation,abnormality affecting at minimum a single organ system aand autism,WES,Cigna
+Complex Presentation,abnormality affecting at minimum a single organ system aand autism,WGS,Cigna
+Complex Presentation,abnormality affecting at minimum a single organ system aand autism,BRCA1/2,UHC
+Complex Presentation,abnormality affecting at minimum a single organ system and complex neurodevelopmental disorder,WES,Cigna
+Complex Presentation,abnormality affecting at minimum a single organ system and complex neurodevelopmental disorder,WGS,Cigna
+Complex Presentation,abnormality affecting at minimum a single organ system and complex neurodevelopmental disorder,BRCA1/2,UHC
+Complex Presentation,personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least one Close Blood Relative diagnosed with a Primary Solid Tumor (excluding basal or squamous cell skin cancer) at age 40 or younger,WES,Cigna
+Complex Presentation,personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least one Close Blood Relative diagnosed with a Primary Solid Tumor (excluding basal or squamous cell skin cancer) at age 40 or younger,WGS,Cigna
+Complex Presentation,personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least one Close Blood Relative diagnosed with a Primary Solid Tumor (excluding basal or squamous cell skin cancer) at age 40 or younger,BRCA1/2,UHC
+Complex Presentation,personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least two Close Blood Relatives (in addition to affected individual) on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer),WES,Cigna
+Complex Presentation,personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least two Close Blood Relatives (in addition to affected individual) on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer),WGS,Cigna
+Complex Presentation,personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least two Close Blood Relatives (in addition to affected individual) on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer),BRCA1/2,UHC
+Composite Cancer,Breast Cancer or Prostate Cancer and at least one first- or second-degree relative with a BRCA-Related Cancer,BRCA1/2,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,UHC
+Congenital anomalies & structural malformations,Choanal atresia,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Choanal atresia,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Choanal atresia,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Choanal atresia,WES,Cigna
+Congenital anomalies & structural malformations,Choanal atresia,WGS,Cigna
+Congenital anomalies & structural malformations,Choanal atresia,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Choanal atresia,WES,UHC
+Congenital anomalies & structural malformations,Choanal atresia,WGS,UHC
+Congenital anomalies & structural malformations,Choanal atresia,CMA,UHC
+Congenital anomalies & structural malformations,Hirschsprung disease,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Hirschsprung disease,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Hirschsprung disease,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Hirschsprung disease,WES,Cigna
+Congenital anomalies & structural malformations,Hirschsprung disease,WGS,Cigna
+Congenital anomalies & structural malformations,Hirschsprung disease,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Hirschsprung disease,WES,UHC
+Congenital anomalies & structural malformations,Hirschsprung disease,WGS,UHC
+Congenital anomalies & structural malformations,Hirschsprung disease,CMA,UHC
+Congenital anomalies & structural malformations,Meconium ileus,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Meconium ileus,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Meconium ileus,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Meconium ileus,WES,Cigna
+Congenital anomalies & structural malformations,Meconium ileus,WGS,Cigna
+Congenital anomalies & structural malformations,Meconium ileus,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Meconium ileus,WES,UHC
+Congenital anomalies & structural malformations,Meconium ileus,WGS,UHC
+Congenital anomalies & structural malformations,Meconium ileus,CMA,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,UHC
+Congenital anomalies & structural malformations,Choanal atresia,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Choanal atresia,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Choanal atresia,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Choanal atresia,WES,Cigna
+Congenital anomalies & structural malformations,Choanal atresia,WGS,Cigna
+Congenital anomalies & structural malformations,Choanal atresia,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Choanal atresia,WES,UHC
+Congenital anomalies & structural malformations,Choanal atresia,WGS,UHC
+Congenital anomalies & structural malformations,Choanal atresia,CMA,UHC
+Congenital anomalies & structural malformations,Coloboma,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Coloboma,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Coloboma,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Coloboma,WES,Cigna
+Congenital anomalies & structural malformations,Coloboma,WGS,Cigna
+Congenital anomalies & structural malformations,Coloboma,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Coloboma,WES,UHC
+Congenital anomalies & structural malformations,Coloboma,WGS,UHC
+Congenital anomalies & structural malformations,Coloboma,CMA,UHC
+Congenital anomalies & structural malformations,Hirschsprung disease,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Hirschsprung disease,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Hirschsprung disease,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Hirschsprung disease,WES,Cigna
+Congenital anomalies & structural malformations,Hirschsprung disease,WGS,Cigna
+Congenital anomalies & structural malformations,Hirschsprung disease,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Hirschsprung disease,WES,UHC
+Congenital anomalies & structural malformations,Hirschsprung disease,WGS,UHC
+Congenital anomalies & structural malformations,Hirschsprung disease,CMA,UHC
+Congenital anomalies & structural malformations,Meconium ileus,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Meconium ileus,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Meconium ileus,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Meconium ileus,WES,Cigna
+Congenital anomalies & structural malformations,Meconium ileus,WGS,Cigna
+Congenital anomalies & structural malformations,Meconium ileus,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Meconium ileus,WES,UHC
+Congenital anomalies & structural malformations,Meconium ileus,WGS,UHC
+Congenital anomalies & structural malformations,Meconium ileus,CMA,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,CMA,UHC
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,CMA,UHC
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WES,BCBS_FEP
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WES,Cigna
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WGS,Cigna
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WES,UHC
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WGS,UHC
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,CMA,UHC
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital abnormalities affecting different organ systems,CMA,UHC
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WES,BCBS_FEP
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WES,Cigna
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WGS,Cigna
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WES,UHC
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,WGS,UHC
+Congenital anomalies & structural malformations,major abnormality affecting at minimum a single organ system,CMA,UHC
+Congenital anomalies & structural malformations,Major congenital cardiac anomaly,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Major congenital cardiac anomaly,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Major congenital cardiac anomaly,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Major congenital cardiac anomaly,WES,Cigna
+Congenital anomalies & structural malformations,Major congenital cardiac anomaly,WGS,Cigna
+Congenital anomalies & structural malformations,Major congenital cardiac anomaly,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Major congenital cardiac anomaly,WES,UHC
+Congenital anomalies & structural malformations,Major congenital cardiac anomaly,WGS,UHC
+Congenital anomalies & structural malformations,Major congenital cardiac anomaly,CMA,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,UHC
+Congenital anomalies & structural malformations,Congenital anomaly,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Congenital anomaly,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Congenital anomaly,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Congenital anomaly,WES,Cigna
+Congenital anomalies & structural malformations,Congenital anomaly,WGS,Cigna
+Congenital anomalies & structural malformations,Congenital anomaly,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Congenital anomaly,WES,UHC
+Congenital anomalies & structural malformations,Congenital anomaly,WGS,UHC
+Congenital anomalies & structural malformations,Congenital anomaly,CMA,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies (must affect different organ systems),WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies (must affect different organ systems),WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies (must affect different organ systems),CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies (must affect different organ systems),WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies (must affect different organ systems),WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies (must affect different organ systems),CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies (must affect different organ systems),WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies (must affect different organ systems),WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies (must affect different organ systems),CMA,UHC
+Congenital anomalies & structural malformations,A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology,WES,BCBS_FEP
+Congenital anomalies & structural malformations,A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology,WES,Cigna
+Congenital anomalies & structural malformations,A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology,WGS,Cigna
+Congenital anomalies & structural malformations,A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology,WES,UHC
+Congenital anomalies & structural malformations,A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology,WGS,UHC
+Congenital anomalies & structural malformations,A congenital anomaly affecting a single organ system and family history that suggests likelihood for a genetic etiology,CMA,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies,CMA,UHC
+Congenital anomalies & structural malformations,Congenital anomaly,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Congenital anomaly,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Congenital anomaly,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Congenital anomaly,WES,Cigna
+Congenital anomalies & structural malformations,Congenital anomaly,WGS,Cigna
+Congenital anomalies & structural malformations,Congenital anomaly,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Congenital anomaly,WES,UHC
+Congenital anomalies & structural malformations,Congenital anomaly,WGS,UHC
+Congenital anomalies & structural malformations,Congenital anomaly,CMA,UHC
+Congenital anomalies & structural malformations,Isolated severe congenital heart disease,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Isolated severe congenital heart disease,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Isolated severe congenital heart disease,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Isolated severe congenital heart disease,WES,Cigna
+Congenital anomalies & structural malformations,Isolated severe congenital heart disease,WGS,Cigna
+Congenital anomalies & structural malformations,Isolated severe congenital heart disease,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Isolated severe congenital heart disease,WES,UHC
+Congenital anomalies & structural malformations,Isolated severe congenital heart disease,WGS,UHC
+Congenital anomalies & structural malformations,Isolated severe congenital heart disease,CMA,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WES,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WGS,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WES,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WGS,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,CMA_developmental_disorder,Cigna
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WES,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,WGS,UHC
+Congenital anomalies & structural malformations,Multiple congenital anomalies not specific to a well-delineated genetic syndrome,CMA,UHC
+Developmental regression,"Unexplained developmental regression, unrelated to autism or epilepsy",WES,UHC
+Developmental regression,"Unexplained developmental regression, unrelated to autism or epilepsy",WGS,UHC
+Developmental regression,"Unexplained developmental regression, unrelated to autism or epilepsy",WES,UHC
+Developmental regression,"Unexplained developmental regression, unrelated to autism or epilepsy",WGS,UHC
+Family / consanguinity,Consanguinity,WES,UHC
+Family / consanguinity,Consanguinity,WGS,UHC
+Family / consanguinity,Consanguinity,WES,UHC
+Family / consanguinity,Consanguinity,WGS,UHC
+Growth and dysmorphology,"Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WES,UHC
+Growth and dysmorphology,"Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WES,UHC
+Growth and dysmorphology,"Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WGS,UHC
+Growth and dysmorphology,Dysmorphic features,WES,UHC
+Growth and dysmorphology,Dysmorphic features,WES,UHC
+Growth and dysmorphology,Dysmorphic features,WGS,UHC
+Growth and dysmorphology,"Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WES,UHC
+Growth and dysmorphology,"Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WES,UHC
+Growth and dysmorphology,"Growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WGS,UHC
+Growth and dysmorphology,Dysmorphic features,WES,UHC
+Growth and dysmorphology,Dysmorphic features,WES,UHC
+Growth and dysmorphology,Dysmorphic features,WGS,UHC
+Hearing / vision impairments,Coloboma,WES,BCBS_FEP
+Hearing / vision impairments,Coloboma,WGS,BCBS_FEP
+Hearing / vision impairments,Coloboma,WES,UHC
+Hearing / vision impairments,Coloboma,WGS,UHC
+Hearing / vision impairments,Significant hearing or visual impairment diagnosed by 18 years of age,WES,BCBS_FEP
+Hearing / vision impairments,Significant hearing or visual impairment diagnosed by 18 years of age,WGS,BCBS_FEP
+Hearing / vision impairments,Significant hearing or visual impairment diagnosed by 18 years of age,WES,UHC
+Hearing / vision impairments,Significant hearing or visual impairment diagnosed by 18 years of age,WGS,UHC
+Hearing / vision impairments,Significant hearing or visual impairment diagnosed by 18 years of age,WES,BCBS_FEP
+Hearing / vision impairments,Significant hearing or visual impairment diagnosed by 18 years of age,WGS,BCBS_FEP
+Hearing / vision impairments,Significant hearing or visual impairment diagnosed by 18 years of age,WES,UHC
+Hearing / vision impairments,Significant hearing or visual impairment diagnosed by 18 years of age,WGS,UHC
+Immunologic / hematologic disorders,Persistent and severe immunologic or hematologic disorder,WES,UHC
+Immunologic / hematologic disorders,Persistent and severe immunologic or hematologic disorder,WGS,UHC
+Immunologic / hematologic disorders,Persistent and severe immunologic or hematologic disorder,WES,UHC
+Immunologic / hematologic disorders,Persistent and severe immunologic or hematologic disorder,WGS,UHC
+Lynch syndrome Cancer,"Individual has a personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and PREMM5, MMRpro, or MMRpredict Score of 2.5% or greater for having a Lynch syndrome gene mutation",BRCA1/2,UHC
+Lynch syndrome Cancer,"Individual has a PREMM5, MMRpro, or MMRpredict Score of 5% or greater for having a Lynch syndrome gene mutation",BRCA1/2,UHC
+Lynch syndrome Cancer,personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and At least one Close Blood Relative with history of a Cancer Associated with Lynch Syndrome,BRCA1/2,UHC
+Metabolic / laboratory abnormalities,Conjugated hyperbilirubinemia (not due to TPN cholestasis),WES,BCBS_FEP
+Metabolic / laboratory abnormalities,Conjugated hyperbilirubinemia (not due to TPN cholestasis),WGS,BCBS_FEP
+Metabolic / laboratory abnormalities,Conjugated hyperbilirubinemia (not due to TPN cholestasis),WES,UHC
+Metabolic / laboratory abnormalities,Conjugated hyperbilirubinemia (not due to TPN cholestasis),WGS,UHC
+Metabolic / laboratory abnormalities,Hyperammonemia,WES,BCBS_FEP
+Metabolic / laboratory abnormalities,Hyperammonemia,WGS,BCBS_FEP
+Metabolic / laboratory abnormalities,Hyperammonemia,WES,UHC
+Metabolic / laboratory abnormalities,Hyperammonemia,WGS,UHC
+Metabolic / laboratory abnormalities,Conjugated hyperbilirubinemia (not due to TPN cholestasis),WES,BCBS_FEP
+Metabolic / laboratory abnormalities,Conjugated hyperbilirubinemia (not due to TPN cholestasis),WGS,BCBS_FEP
+Metabolic / laboratory abnormalities,Conjugated hyperbilirubinemia (not due to TPN cholestasis),WES,UHC
+Metabolic / laboratory abnormalities,Conjugated hyperbilirubinemia (not due to TPN cholestasis),WGS,UHC
+Metabolic / laboratory abnormalities,Hyperammonemia,WES,BCBS_FEP
+Metabolic / laboratory abnormalities,Hyperammonemia,WGS,BCBS_FEP
+Metabolic / laboratory abnormalities,Hyperammonemia,WES,UHC
+Metabolic / laboratory abnormalities,Hyperammonemia,WGS,UHC
+Metabolic / laboratory abnormalities,Laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WES,BCBS_FEP
+Metabolic / laboratory abnormalities,Laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WGS,BCBS_FEP
+Metabolic / laboratory abnormalities,Laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WES,UHC
+Metabolic / laboratory abnormalities,Laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WGS,UHC
+Metabolic / laboratory abnormalities,Laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WES,BCBS_FEP
+Metabolic / laboratory abnormalities,Laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WGS,BCBS_FEP
+Metabolic / laboratory abnormalities,Laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WES,UHC
+Metabolic / laboratory abnormalities,Laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WGS,UHC
+Neurodevelopmental disorders,Apparent nonsyndromic developmental delay/intellectual disability,CMA,BCBS_FEP
+Neurodevelopmental disorders,Apparent nonsyndromic developmental delay/intellectual disability,WES,Cigna
+Neurodevelopmental disorders,Apparent nonsyndromic developmental delay/intellectual disability,WGS,Cigna
+Neurodevelopmental disorders,Apparent nonsyndromic developmental delay/intellectual disability,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Apparent nonsyndromic developmental delay/intellectual disability,WES,UHC
+Neurodevelopmental disorders,Apparent nonsyndromic developmental delay/intellectual disability,WGS,UHC
+Neurodevelopmental disorders,Apparent nonsyndromic developmental delay/intellectual disability,CMA,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,BCBS_FEP
+Neurodevelopmental disorders,Autism spectrum disorder,WES,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WES,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,UHC
+Neurodevelopmental disorders,Global developmental delay,CMA,BCBS_FEP
+Neurodevelopmental disorders,Global developmental delay,WES,Cigna
+Neurodevelopmental disorders,Global developmental delay,WGS,Cigna
+Neurodevelopmental disorders,Global developmental delay,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Global developmental delay,WES,UHC
+Neurodevelopmental disorders,Global developmental delay,WGS,UHC
+Neurodevelopmental disorders,Global developmental delay,CMA,UHC
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,CMA,BCBS_FEP
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,WES,Cigna
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,WGS,Cigna
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,WES,UHC
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,WGS,UHC
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,CMA,UHC
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,CMA,BCBS_FEP
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,WES,Cigna
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,WGS,Cigna
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,WES,UHC
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,WGS,UHC
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,CMA,UHC
+Neurodevelopmental disorders,Global developmental delay,CMA,BCBS_FEP
+Neurodevelopmental disorders,Global developmental delay,WES,Cigna
+Neurodevelopmental disorders,Global developmental delay,WGS,Cigna
+Neurodevelopmental disorders,Global developmental delay,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Global developmental delay,WES,UHC
+Neurodevelopmental disorders,Global developmental delay,WGS,UHC
+Neurodevelopmental disorders,Global developmental delay,CMA,UHC
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,CMA,BCBS_FEP
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,WES,Cigna
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,WGS,Cigna
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,WES,UHC
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,WGS,UHC
+Neurodevelopmental disorders,Moderate/severe/profound intellectual disability,CMA,UHC
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,CMA,BCBS_FEP
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,WES,Cigna
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,WGS,Cigna
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,WES,UHC
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,WGS,UHC
+Neurodevelopmental disorders,complex neurodevelopmental disorder and autism,CMA,UHC
+Neurodevelopmental disorders,Developmental delay,CMA,BCBS_FEP
+Neurodevelopmental disorders,Developmental delay,WES,Cigna
+Neurodevelopmental disorders,Developmental delay,WGS,Cigna
+Neurodevelopmental disorders,Developmental delay,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Developmental delay,WES,UHC
+Neurodevelopmental disorders,Developmental delay,WGS,UHC
+Neurodevelopmental disorders,Developmental delay,CMA,UHC
+Neurodevelopmental disorders,Intellectual disability,CMA,BCBS_FEP
+Neurodevelopmental disorders,Intellectual disability,WES,Cigna
+Neurodevelopmental disorders,Intellectual disability,WGS,Cigna
+Neurodevelopmental disorders,Intellectual disability,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Intellectual disability,WES,UHC
+Neurodevelopmental disorders,Intellectual disability,WGS,UHC
+Neurodevelopmental disorders,Intellectual disability,CMA,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,BCBS_FEP
+Neurodevelopmental disorders,Autism spectrum disorder,WES,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WES,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,UHC
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",CMA,BCBS_FEP
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WES,Cigna
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WGS,Cigna
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WES,UHC
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WGS,UHC
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",CMA,UHC
+Neurodevelopmental disorders,Global Developmental Delay,CMA,BCBS_FEP
+Neurodevelopmental disorders,Global Developmental Delay,WES,Cigna
+Neurodevelopmental disorders,Global Developmental Delay,WGS,Cigna
+Neurodevelopmental disorders,Global Developmental Delay,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Global Developmental Delay,WES,UHC
+Neurodevelopmental disorders,Global Developmental Delay,WGS,UHC
+Neurodevelopmental disorders,Global Developmental Delay,CMA,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,BCBS_FEP
+Neurodevelopmental disorders,Autism spectrum disorder,WES,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WES,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,UHC
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",CMA,BCBS_FEP
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WES,Cigna
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WGS,Cigna
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WES,UHC
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WGS,UHC
+Neurodevelopmental disorders,"Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",CMA,UHC
+Neurodevelopmental disorders,Global Developmental Delay,CMA,BCBS_FEP
+Neurodevelopmental disorders,Global Developmental Delay,WES,Cigna
+Neurodevelopmental disorders,Global Developmental Delay,WGS,Cigna
+Neurodevelopmental disorders,Global Developmental Delay,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Global Developmental Delay,WES,UHC
+Neurodevelopmental disorders,Global Developmental Delay,WGS,UHC
+Neurodevelopmental disorders,Global Developmental Delay,CMA,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,BCBS_FEP
+Neurodevelopmental disorders,Autism spectrum disorder,WES,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WES,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,BCBS_FEP
+Neurodevelopmental disorders,Autism spectrum disorder,WES,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Autism spectrum disorder,WES,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,WGS,UHC
+Neurodevelopmental disorders,Autism spectrum disorder,CMA,UHC
+Neurodevelopmental disorders,Developmental Delay/Intellectual Disability where a specific syndrome is not suspected,CMA,BCBS_FEP
+Neurodevelopmental disorders,Developmental Delay/Intellectual Disability where a specific syndrome is not suspected,WES,Cigna
+Neurodevelopmental disorders,Developmental Delay/Intellectual Disability where a specific syndrome is not suspected,WGS,Cigna
+Neurodevelopmental disorders,Developmental Delay/Intellectual Disability where a specific syndrome is not suspected,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,Developmental Delay/Intellectual Disability where a specific syndrome is not suspected,WES,UHC
+Neurodevelopmental disorders,Developmental Delay/Intellectual Disability where a specific syndrome is not suspected,WGS,UHC
+Neurodevelopmental disorders,Developmental Delay/Intellectual Disability where a specific syndrome is not suspected,CMA,UHC
+Neurological / seizure-related disorders,Significant hypotonia,WES,BCBS_FEP
+Neurological / seizure-related disorders,Significant hypotonia,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Significant hypotonia,WES,Cigna
+Neurological / seizure-related disorders,Significant hypotonia,WGS,Cigna
+Neurological / seizure-related disorders,Significant hypotonia,WES,UHC
+Neurological / seizure-related disorders,Significant hypotonia,WGS,UHC
+Neurological / seizure-related disorders,Persistent seizures,WES,BCBS_FEP
+Neurological / seizure-related disorders,Persistent seizures,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Persistent seizures,WES,Cigna
+Neurological / seizure-related disorders,Persistent seizures,WGS,Cigna
+Neurological / seizure-related disorders,Persistent seizures,WES,UHC
+Neurological / seizure-related disorders,Persistent seizures,WGS,UHC
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WES,BCBS_FEP
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WGS,BCBS_FEP
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WES,Cigna
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WGS,Cigna
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WES,UHC
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WGS,UHC
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WES,BCBS_FEP
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WGS,BCBS_FEP
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WES,Cigna
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WGS,Cigna
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WES,UHC
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WGS,UHC
+Neurological / seizure-related disorders,Significant hypotonia,WES,BCBS_FEP
+Neurological / seizure-related disorders,Significant hypotonia,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Significant hypotonia,WES,Cigna
+Neurological / seizure-related disorders,Significant hypotonia,WGS,Cigna
+Neurological / seizure-related disorders,Significant hypotonia,WES,UHC
+Neurological / seizure-related disorders,Significant hypotonia,WGS,UHC
+Neurological / seizure-related disorders,Persistent seizures,WES,BCBS_FEP
+Neurological / seizure-related disorders,Persistent seizures,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Persistent seizures,WES,Cigna
+Neurological / seizure-related disorders,Persistent seizures,WGS,Cigna
+Neurological / seizure-related disorders,Persistent seizures,WES,UHC
+Neurological / seizure-related disorders,Persistent seizures,WGS,UHC
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WES,BCBS_FEP
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WGS,BCBS_FEP
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WES,Cigna
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WGS,Cigna
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WES,UHC
+Neurological / seizure-related disorders,High-risk Brief Resolved Unexplained Event with Recurrent witnessed seizure-like events,WGS,UHC
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WES,BCBS_FEP
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WGS,BCBS_FEP
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WES,Cigna
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WGS,Cigna
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WES,UHC
+Neurological / seizure-related disorders,"High-risk Brief Resolved Unexplained Event with Significantly abnormal ECG (channelopathies, arrhythmias, cardiomyopathies, myocarditis, structural heart disease)",WGS,UHC
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WES,BCBS_FEP
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WES,Cigna
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WGS,Cigna
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WES,UHC
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WGS,UHC
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WES,BCBS_FEP
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WES,Cigna
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WGS,Cigna
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WES,UHC
+Neurological / seizure-related disorders,Unexplained epileptic encephalopathy (onset before three years of age) and no prior epilepsy multigene panel testing performed,WGS,UHC
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WES,BCBS_FEP
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WES,Cigna
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WGS,Cigna
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WES,UHC
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WGS,UHC
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WES,BCBS_FEP
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WES,Cigna
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WGS,Cigna
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WES,UHC
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WGS,UHC
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WES,BCBS_FEP
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WGS,BCBS_FEP
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WES,Cigna
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WGS,Cigna
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WES,UHC
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WGS,UHC
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WES,BCBS_FEP
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WES,Cigna
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WGS,Cigna
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WES,UHC
+Neurological / seizure-related disorders,Epileptic encephalopathy with onset before three years of age,WGS,UHC
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WES,BCBS_FEP
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WGS,BCBS_FEP
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WES,Cigna
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WGS,Cigna
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WES,UHC
+Neurological / seizure-related disorders,Hypotonia or hypertonia in infancy,WGS,UHC
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WES,BCBS_FEP
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WGS,BCBS_FEP
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WES,Cigna
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WGS,Cigna
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WES,UHC
+Neurological / seizure-related disorders,"Dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WGS,UHC
+Other Cancer,cancer of the central nervous system,CMA_tumor,Cigna
+Other Cancer,cancer of the central nervous system,BRCA1/2,UHC
+Other Cancer,soft tissue sarcoma,CMA_tumor,Cigna
+Other Cancer,soft tissue sarcoma,BRCA1/2,UHC
+Other Cancer,"Individual has a personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and Tyrer-Cuzick, BRCAPro, or Penn11 Score of 2.5% or greater for a BRCA1/2 pathogenic variant",CMA_tumor,Cigna
+Other Cancer,"Individual has a personal history of a Primary Solid Tumor (excluding basal or squamous cell skin cancer) and Tyrer-Cuzick, BRCAPro, or Penn11 Score of 2.5% or greater for a BRCA1/2 pathogenic variant",BRCA1/2,UHC
+Other Cancer,"Individual has a Tyrer-Cuzick, BRCAPro, or Penn11 Score of 5% or greater for a BRCA1/2 pathogenic variant",CMA_tumor,Cigna
+Other Cancer,"Individual has a Tyrer-Cuzick, BRCAPro, or Penn11 Score of 5% or greater for a BRCA1/2 pathogenic variant",BRCA1/2,UHC
+Other Cancer,"Neuroendocrine tumor (e.g., adrenocortical carcinoma, paraganglioma, pheochromocytoma)",CMA_tumor,Cigna
+Other Cancer,"Neuroendocrine tumor (e.g., adrenocortical carcinoma, paraganglioma, pheochromocytoma)",BRCA1/2,UHC
+Other Cancer ,Malignant phyllodes tumors,,
+Ovarian Cancer,Ovarian cancer at any age,BRCA1/2,UHC
+Ovarian Cancer,Primary peritoneal cancer diagnosis at any age,BRCA1/2,UHC
+Ovarian Cancer ,"Personal history of breast cancer diagnosed between ages 46 and 50 with at least one close relative diagnosed with breast, ovarian, pancreatic, or prostate cancer at any age",BRCA1/2,BCBS_FEP
+Ovarian Cancer ,"Personal history of breast cancer diagnosed between ages 46 and 50 with at least one close relative diagnosed with breast, ovarian, pancreatic, or prostate cancer at any age",BRCA1/2,Cigna
+Ovarian Cancer ,Personal history of breast cancer diagnosed any age with at least one close relative with ovarian carcinoma,BRCA1/2,BCBS_FEP
+Ovarian Cancer ,Personal history of breast cancer diagnosed any age with at least one close relative with ovarian carcinoma,BRCA1/2,Cigna
+Ovarian Cancer ,Personal history of epithelial ovarian carcinoma (including fallopian tube cancer or peritoneal cancer) at any age,BRCA1/2,BCBS_FEP
+Ovarian Cancer ,Personal history of epithelial ovarian carcinoma (including fallopian tube cancer or peritoneal cancer) at any age,BRCA1/2,Cigna
+Ovarian Cancer ,"Epithelial ovarian, fallopian tube, or primary peritoneal cancer diagnosis at any age",BRCA1/2,BCBS_FEP
+Ovarian Cancer ,"Epithelial ovarian, fallopian tube, or primary peritoneal cancer diagnosis at any age",BRCA1/2,Cigna
+Pancreatic Cancer,Personal history of breast cancer diagnosed any age with at least one close relative with pancreatic cancer,BRCA1/2,BCBS_FEP
+Pancreatic Cancer,Personal history of breast cancer diagnosed any age with at least one close relative with pancreatic cancer,BRCA1/2,Cigna
+Pancreatic Cancer,Personal history of breast cancer diagnosed any age with at least one close relative with pancreatic cancer,BRCA1/2,UHC
+Pancreatic Cancer,Personal history of exocrine pancreatic cancer at any age,BRCA1/2,BCBS_FEP
+Pancreatic Cancer,Personal history of exocrine pancreatic cancer at any age,BRCA1/2,Cigna
+Pancreatic Cancer,Personal history of exocrine pancreatic cancer at any age,BRCA1/2,UHC
+Pancreatic Cancer,Exocrine pancreatic cancer,BRCA1/2,BCBS_FEP
+Pancreatic Cancer,Exocrine pancreatic cancer,BRCA1/2,Cigna
+Pancreatic Cancer,Exocrine pancreatic cancer,BRCA1/2,UHC
+Pancreatic Cancer,Pancreatic cancer at any age,BRCA1/2,BCBS_FEP
+Pancreatic Cancer,Pancreatic cancer at any age,BRCA1/2,Cigna
+Pancreatic Cancer,Pancreatic cancer at any age,BRCA1/2,UHC
+Prenatal findings,Fetal hydrops of unknown etiology,WES,Cigna
+Prenatal findings,Fetal hydrops of unknown etiology,WES,UHC
+Prenatal findings,Fetal hydrops of unknown etiology,CMA,UHC
+Prenatal findings,Multiple fetal structural anomalies affecting unrelated organ systems,WES,Cigna
+Prenatal findings,Multiple fetal structural anomalies affecting unrelated organ systems,WES,UHC
+Prenatal findings,Multiple fetal structural anomalies affecting unrelated organ systems,CMA,UHC
+Prenatal findings,Fetal hydrops of unknown etiology,WES,Cigna
+Prenatal findings,Fetal hydrops of unknown etiology,WES,UHC
+Prenatal findings,Fetal hydrops of unknown etiology,CMA,UHC
+Prenatal findings,"Sample for WES testing is obtained from amniotic fluid and/or chorionic villi, cultured cells from amniotic fluid/chorionic villi, or DNA is extracted from fetal blood or tissue",WES,Cigna
+Prenatal findings,"Sample for WES testing is obtained from amniotic fluid and/or chorionic villi, cultured cells from amniotic fluid/chorionic villi, or DNA is extracted from fetal blood or tissue",WES,UHC
+Prenatal findings,"Sample for WES testing is obtained from amniotic fluid and/or chorionic villi, cultured cells from amniotic fluid/chorionic villi, or DNA is extracted from fetal blood or tissue",CMA,UHC
+Prenatal findings,Intrauterine fetal demise or stillbirth,WES,Cigna
+Prenatal findings,Intrauterine fetal demise or stillbirth,WES,UHC
+Prenatal findings,Intrauterine fetal demise or stillbirth,CMA,UHC
+Prenatal findings,Testing the products of conception following pregnancy loss,WES,Cigna
+Prenatal findings,Testing the products of conception following pregnancy loss,WES,UHC
+Prenatal findings,Testing the products of conception following pregnancy loss,CMA,UHC
+Prenatal findings,"Individuals undergoing invasive prenatal testing (i.e., amniocentesis, chorionic villus sampling, or fetal tissue sampling)",WES,Cigna
+Prenatal findings,"Individuals undergoing invasive prenatal testing (i.e., amniocentesis, chorionic villus sampling, or fetal tissue sampling)",WES,UHC
+Prenatal findings,"Individuals undergoing invasive prenatal testing (i.e., amniocentesis, chorionic villus sampling, or fetal tissue sampling)",CMA,UHC
+Prostate Cancer,Personal history of breast cancer diagnosed any age with at least one close relative with Metastatic or intraductal/cribriform prostate cancer,BRCA1/2,BCBS_FEP
+Prostate Cancer,Personal history of breast cancer diagnosed any age with at least one close relative with Metastatic or intraductal/cribriform prostate cancer,BRCA1/2,Cigna
+Prostate Cancer,Personal history of breast cancer diagnosed any age with at least one close relative with Metastatic or intraductal/cribriform prostate cancer,BRCA1/2,UHC
+Prostate Cancer,Personal history of metastatic or intraductal/cribriform histology prostate cancer at any age,BRCA1/2,BCBS_FEP
+Prostate Cancer,Personal history of metastatic or intraductal/cribriform histology prostate cancer at any age,BRCA1/2,Cigna
+Prostate Cancer,Personal history of metastatic or intraductal/cribriform histology prostate cancer at any age,BRCA1/2,UHC
+Prostate Cancer,"Prostate cancer at any age with metastatic, intraductal/cribriform histology, high-risk, or very-high-risk group",BRCA1/2,BCBS_FEP
+Prostate Cancer,"Prostate cancer at any age with metastatic, intraductal/cribriform histology, high-risk, or very-high-risk group",BRCA1/2,Cigna
+Prostate Cancer,"Prostate cancer at any age with metastatic, intraductal/cribriform histology, high-risk, or very-high-risk group",BRCA1/2,UHC
+Prostate Cancer,Metastatic prostate cancer,BRCA1/2,BCBS_FEP
+Prostate Cancer,Metastatic prostate cancer,BRCA1/2,Cigna
+Prostate Cancer,Metastatic prostate cancer,BRCA1/2,UHC
+Psychiatric / neuropsychiatric disorders,"Neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",WES,UHC
+Psychiatric / neuropsychiatric disorders,"Neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",WGS,UHC
+Psychiatric / neuropsychiatric disorders,"Neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",WES,UHC
+Psychiatric / neuropsychiatric disorders,"Neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",WGS,UHC

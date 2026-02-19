@@ -1,0 +1,1082 @@
+case_id,Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,token_input,token_output,token_total,combo_folder,retrieval_model,qna_model,retrieval_count,top_k,error,correct,total,accuracy
+Case10363,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81425,No,15930,1694,17624,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case10427,WGS,Yes,Not Specified,No,Not Specified,Yes,Yes,81425,No,8067,3286,11353,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case10451,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,13754,2068,15822,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case10529,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,13742,2518,16260,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case10850,WGS,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81425,No,13760,2966,16726,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case10917,WES,Yes,Yes,No,Yes,No,Yes,81415,No,13739,3218,16957,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case11124,WES,Yes,Not Specified,Yes,No,No,Yes,81415,No,13733,2324,16057,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case1130,WES,Yes,Not Specified,Yes,Not Specified,No,Yes,81415,Yes,13135,2262,15397,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case11514,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81415,No,15938,1567,17505,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,3,9,33.333333333333336
+Case11855,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,14626,2459,17085,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case11981,WGS,No,Not Specified,No,No,Not Specified,Yes,Not Specified,No,13747,2839,16586,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,1,9,11.11111111111111
+Case12834,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,Not Specified,81228,No,14606,2522,17128,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case13406,WGS,Yes,Yes,No,Yes,Yes,Yes,81425,No,13759,2450,16209,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case13517,WES,Yes,Not Specified,No,Yes,Yes,Yes,81415,No,13746,2196,15942,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case13613,WES,No,Not Specified,No,Not Specified,No,Yes,81415,No,13733,2198,15931,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,2,9,22.22222222222222
+Case13675,WGS,Yes,Not Specified,No,Not Specified,Yes,No,81425,No,13749,2902,16651,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,3,9,33.333333333333336
+Case14127,WES,Yes,Yes,Yes,Yes,Not Specified,Yes,81415,Yes,13758,2836,16594,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case14141,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81415,No,14598,2462,17060,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,2,9,22.22222222222222
+Case14155,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,12088,2578,14666,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case1428,WGS,Yes,Not Specified,No,Not Specified,Yes,No,81425,No,13724,3478,17202,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case14371,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,13738,2646,16384,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case14408,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,17823,2201,20024,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case1501,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,No,13760,2516,16276,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case15557,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,13763,2324,16087,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case15820,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,Yes,81228,Yes,14599,1752,16351,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case15834,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13729,3156,16885,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case15938,WGS,Yes,Not Specified,Not Specified,Not Specified,Yes,No,81425,No,13742,3736,17478,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case16246,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Yes,Not Specified,81162,Yes,901,2013,2914,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,8,9,88.88888888888889
+Case16487,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,No,13770,3862,17632,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case1778,WES,Yes,Not Specified,Yes,Yes,Not Specified,Not Specified,81415,No,13720,1688,15408,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,8,9,88.88888888888889
+Case17822,WGS,Yes,Yes,Yes,Yes,No,No,81425,No,13770,2002,15772,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case17929,CMA,Yes,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,14609,2457,17066,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case18257,BRCA1/2,Yes,Not Specified,Yes,Not Specified,No,No,81162,No,903,1753,2656,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,9,9,100.0
+Case18281,WGS,No,Not Specified,No,Not Specified,Yes,No,81425,No,13737,3414,17151,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case18821,WES,Not Specified,Not Specified,Yes,No,Not Specified,No,81415,No,21380,1944,23324,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case18868,WGS,Yes,Not Specified,No,No,Not Specified,No,81425,No,9141,2390,11531,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case18882,WES,Yes,Not Specified,Yes,Not Specified,Not Specified,No,81415,No,21367,2776,24143,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case19255,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Not Specified,Yes,81162,Yes,899,1501,2400,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case19321,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13737,2516,16253,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case19905,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,13710,3284,16994,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,17866,2519,20385,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case2496,WES,Not Specified,Not Specified,No,No,Yes,No,81415,No,11146,2710,13856,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,2,9,22.22222222222222
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13748,3156,16904,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,Not Specified,Not Specified,No,Yes,81415,No,17830,2650,20480,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case3465,WGS,Not Specified,Not Specified,No,Not Specified,Not Specified,Not Specified,81425,No,3444,1820,5264,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13767,1938,15705,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Not Specified,Not Specified,Not Specified,No,Not Specified,81228,No,9198,3228,12426,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case3677,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,924,1371,2295,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case4067,WES,Yes,Not Specified,Not Specified,No,Yes,Not Specified,81415,No,13725,2584,16309,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case4512,WGS,Not Specified,Not Specified,No,Not Specified,No,Yes,81425,No,9869,1560,11429,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case4982,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13792,2836,16628,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case5230,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,13708,2068,15776,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case5303,BRCA1/2,Not Specified,Not Specified,Not Specified,Not Specified,No,Not Specified,81162,No,887,1439,2326,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case5380,WGS,Yes,Not Specified,No,Yes,No,No,81425,No,13736,2772,16508,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case5605,WGS,Not Specified,Not Specified,Not Specified,Not Specified,No,Yes,Not Specified,No,17835,2651,20486,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case5885,WGS,Not Specified,Not Specified,No,Not Specified,Yes,Yes,81425,No,13730,2712,16442,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,2,9,22.22222222222222
+Case6451,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81425,No,13760,3284,17044,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,5,9,55.55555555555556
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,81162,No,17842,2071,19913,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case7014,WGS,Yes,Not Specified,No,No,No,Yes,81425,No,13738,3476,17214,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,3,9,33.333333333333336
+Case7297,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13752,1812,15564,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case7376,WES,No,Not Specified,No,Yes,No,Yes,81415,No,13738,2708,16446,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case7604,WGS,Yes,Not Specified,Yes,Not Specified,Not Specified,No,81425,No,13728,2392,16120,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case7682,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13728,2388,16116,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case8288,WES,Not Specified,Not Specified,Yes,No,Not Specified,Not Specified,81415,No,21407,2586,23993,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case8485,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,13726,2196,15922,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,7,9,77.77777777777777
+Case8621,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13743,2580,16323,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case8661,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81425,No,3381,1951,5332,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,3,9,33.333333333333336
+Case8710,WES,Yes,Not Specified,No,Yes,Not Specified,No,81415,No,13746,2710,16456,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,11163,2578,13741,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,6,9,66.66666666666667
+Case9978,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,19545,2326,21871,top1_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,1,,4,9,44.44444444444444
+Case10363,WGS,Not Specified,Not Specified,No,No,No,Yes,Not Specified,No,6265,2071,8336,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case10427,WGS,Yes,Not Specified,No,No,Yes,Yes,81425,No,8067,2708,10775,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case10451,WES,Yes,No,Yes,No,Yes,No,81415,No,13754,1234,14988,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case10529,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,13742,2198,15940,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case10850,WGS,Yes,Not Specified,Yes,No,Yes,Yes,81415,No,13760,1620,15380,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case10917,WES,Yes,Yes,No,No,Yes,Yes,81415,No,13739,2258,15997,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case11124,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13733,2260,15993,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case1130,WES,No,Not Specified,No,Not Specified,Not Specified,Yes,81415,No,15826,1496,17322,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case11514,WES,Not Specified,Not Specified,Not Specified,Not Specified,Yes,Not Specified,Not Specified,No,15938,1629,17567,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case11855,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,Not Specified,No,14626,1435,16061,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case11981,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13777,1618,15395,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case12834,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,No,Not Specified,Yes,14606,1177,15783,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case13406,WGS,Not Specified,Yes,No,Yes,Yes,Yes,Not Specified,No,13759,1749,15508,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case13517,WES,Yes,No,Yes,No,Yes,Yes,81415,No,13776,2450,16226,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case13613,WES,No,Yes,No,Yes,Yes,Yes,81415,No,13733,1746,15479,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case13675,WGS,Yes,No,No,No,Yes,No,Not Specified,No,13749,2131,15880,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,2,9,22.22222222222222
+Case14127,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13758,1682,15440,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case14141,WES,Not Specified,Not Specified,Not Specified,No,Not Specified,Yes,Not Specified,No,14598,1627,16225,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case14155,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,12088,1490,13578,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case1428,WGS,Yes,Yes,Yes,Yes,Yes,No,81425,No,13754,1874,15628,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case14371,WES,Yes,No,Yes,No,No,Yes,81415,No,13738,1682,15420,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case14408,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,17823,1624,19447,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case1501,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13730,1490,15220,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case15557,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,13763,2198,15961,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case15820,CMA,Not Specified,Not Specified,Yes,Yes,No,Yes,Not Specified,Yes,14599,1623,16222,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case15834,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13729,1810,15539,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case15938,WGS,Yes,No,No,No,Yes,No,81425,No,13742,2706,16448,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case16246,BRCA1/2,Yes,Yes,Yes,Yes,Not Specified,No,81277,Yes,901,1559,2460,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case16487,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,13770,1622,15392,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case1778,WES,Yes,Not Specified,Yes,No,No,No,81415,No,13720,1556,15276,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case17822,WGS,Yes,Yes,Yes,Yes,No,No,81425,No,13770,1554,15324,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case17929,CMA,Yes,Not Specified,No,Not Specified,No,Yes,81228,No,14609,1750,16359,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case18257,BRCA1/2,Yes,Not Specified,Yes,No,No,No,Not Specified,Yes,903,1560,2463,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case18281,WGS,Yes,No,Yes,No,Yes,No,81425,No,13767,1746,15513,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case18868,WGS,Yes,Yes,Yes,Not Specified,Yes,Yes,81425,Yes,9141,2964,12105,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,2,9,22.22222222222222
+Case18882,WES,Yes,No,No,No,Yes,No,Not Specified,No,13733,1171,14904,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,2,9,22.22222222222222
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81277,Yes,9124,2071,11195,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case19321,WES,Yes,Not Specified,Not Specified,Not Specified,Yes,Not Specified,81415,No,11133,1754,12887,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case19905,WES,Yes,No,Yes,No,Yes,No,81415,No,13710,1298,15008,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case2211,BRCA1/2,Yes,Yes,Yes,Yes,Yes,Yes,Not Specified,Yes,17866,1750,19616,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case2496,WES,Not Specified,No,Yes,No,Yes,No,81415,No,11146,1556,12702,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13748,1748,15496,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Yes,Not Specified,No,9897,1693,11590,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case3465,WGS,Not Specified,Not Specified,No,Not Specified,Yes,Yes,Not Specified,No,38473,1689,40162,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,1,9,11.11111111111111
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13767,1298,15065,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Yes,Yes,No,Yes,Yes,Not Specified,No,9198,2581,11779,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case3677,BRCA1/2,Not Specified,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,924,1498,2422,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case4067,WES,Yes,No,Yes,No,Yes,No,81415,No,13725,1554,15279,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case4512,WGS,Not Specified,Not Specified,No,No,No,Yes,Not Specified,No,9869,1111,10980,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case4982,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,13792,2326,16118,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case5230,WES,Yes,No,Yes,No,Yes,No,81415,No,13708,1298,15006,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case5303,BRCA1/2,Not Specified,Not Specified,No,No,No,No,Not Specified,No,887,922,1809,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case5380,WGS,Yes,No,No,No,No,No,Not Specified,No,13736,2003,15739,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,2,9,22.22222222222222
+Case5605,WGS,No,Not Specified,Not Specified,Not Specified,Yes,Yes,Not Specified,No,17835,2009,19844,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case5885,WGS,No,Yes,No,No,Yes,Yes,81425,No,13730,2386,16116,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case6451,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13760,1812,15572,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,17842,1176,19018,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case7014,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13738,3154,16892,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case7297,WES,Yes,Yes,Yes,Not Specified,No,Yes,81415,Yes,13752,1748,15500,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case7376,WES,No,Not Specified,No,No,No,Yes,81415,No,13738,1364,15102,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case7604,WGS,Yes,Not Specified,No,No,Yes,No,81425,No,13758,1428,15186,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case7682,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13728,1426,15154,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case8288,WES,Yes,Not Specified,Not Specified,No,Yes,Yes,81415,No,21407,2326,23733,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case8485,WES,Yes,No,No,No,Yes,No,81415,No,13726,1234,14960,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case8621,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,13743,2326,16069,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case8661,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,No,3464,1695,5159,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,2,9,22.22222222222222
+Case8710,WES,Yes,No,No,No,Not Specified,No,81415,No,13746,1620,15366,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case950,WES,Yes,Yes,Yes,No,No,Yes,81415,Yes,11163,1618,12781,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case9978,WES,No,Not Specified,No,No,Yes,Yes,81415,No,9375,1300,10675,top1_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case10363,WGS,Not Specified,Not Specified,Not Specified,Not Specified,No,Not Specified,Not Specified,No,15930,2013,17943,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case10427,WGS,Yes,Not Specified,No,Not Specified,Yes,Yes,81425,No,8067,3094,11161,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case10451,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,13754,1940,15694,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case10529,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,13742,2902,16644,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case10850,WGS,Yes,Not Specified,Yes,Not Specified,Not Specified,Yes,81425,Yes,13760,3480,17240,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case10917,WES,Yes,Yes,No,No,No,Yes,81415,No,13739,2386,16125,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case11124,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,No,11129,3414,14543,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case1130,WES,No,Not Specified,No,Not Specified,No,Yes,Not Specified,No,15826,2263,18089,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case11514,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81415,No,15938,2206,18144,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,3,9,33.333333333333336
+Case11855,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,14626,2075,16701,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,7,9,77.77777777777777
+Case11981,WGS,No,Not Specified,No,No,Not Specified,Yes,81425,No,13747,3862,17609,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,2,9,22.22222222222222
+Case12834,CMA,Not Specified,Not Specified,Yes,Not Specified,Not Specified,Not Specified,81228,Yes,14606,3292,17898,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case13406,WGS,Yes,Yes,No,Yes,Yes,Yes,81425,No,13759,2386,16145,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case13517,WES,Yes,Not Specified,No,Yes,Yes,Yes,81415,No,13746,2196,15942,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case13613,WES,No,Not Specified,No,No,No,Yes,81415,No,13733,2068,15801,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,2,9,22.22222222222222
+Case13675,WGS,Not Specified,Not Specified,No,No,Yes,No,81425,No,13749,2582,16331,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,2,9,22.22222222222222
+Case14127,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13758,2258,16016,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,8,9,88.88888888888889
+Case14141,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81415,No,14598,2206,16804,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,2,9,22.22222222222222
+Case14155,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81228,No,14604,1695,16299,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case1428,WGS,Yes,Yes,No,No,Yes,No,81425,No,13724,2259,15983,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case14371,WES,Yes,Not Specified,Yes,No,Not Specified,Yes,81415,No,13738,2198,15936,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case14408,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,17823,1755,19578,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case1501,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,No,13730,3284,17014,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case15557,WGS,No,Not Specified,No,No,Not Specified,Yes,81425,No,13733,2966,16699,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,2,9,22.22222222222222
+Case15820,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,Not Specified,81228,Yes,14599,1754,16353,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case15834,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13729,3220,16949,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case15938,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81425,No,13742,3672,17414,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case16246,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,Yes,17840,1817,19657,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,8,9,88.88888888888889
+Case16487,WES,Yes,Not Specified,Yes,No,Not Specified,Not Specified,81415,No,13740,2904,16644,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case1778,WES,Yes,Not Specified,Yes,Yes,Not Specified,Not Specified,81415,No,13720,1944,15664,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,8,9,88.88888888888889
+Case17822,WGS,No,Yes,No,Yes,No,No,81425,No,13740,2770,16510,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case17929,CMA,Yes,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,14609,2136,16745,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case18257,BRCA1/2,Not Specified,Not Specified,Not Specified,Not Specified,No,Not Specified,81162,No,6952,2015,8967,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case18281,WGS,Yes,Not Specified,No,No,Yes,No,81425,No,13767,2260,16027,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case18868,WGS,Not Specified,Not Specified,Yes,Not Specified,Yes,No,81425,No,9141,2520,11661,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case18882,WES,Yes,Not Specified,Yes,No,Not Specified,No,81415,No,21367,2518,23885,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case19255,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,899,2459,3358,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,7,9,77.77777777777777
+Case19321,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,13737,3350,17087,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case19905,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,13710,2132,15842,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case2211,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,927,2075,3002,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case2496,WES,Not Specified,Not Specified,No,Not Specified,No,Not Specified,81415,No,2213,2586,4799,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,3,9,33.333333333333336
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13748,2580,16328,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,No,Not Specified,No,Yes,81415,No,14889,1624,16513,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case3465,WGS,Not Specified,Not Specified,No,No,Not Specified,Not Specified,Not Specified,No,3444,1563,5007,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,3,9,33.333333333333336
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13767,2130,15897,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Not Specified,Not Specified,Not Specified,No,Not Specified,81228,No,11666,2268,13934,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case3677,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,924,1180,2104,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,7,9,77.77777777777777
+Case4067,WES,Yes,Not Specified,Yes,No,Yes,Not Specified,81415,No,13725,2390,16115,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case4512,WGS,Not Specified,Not Specified,No,Not Specified,No,Yes,Not Specified,No,9869,2073,11942,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case4982,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13792,2772,16564,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,7,9,77.77777777777777
+Case5230,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,13708,1684,15392,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case5303,BRCA1/2,Yes,Not Specified,No,Yes,No,No,81162,No,9149,1879,11028,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,7,9,77.77777777777777
+Case5380,WGS,Yes,Not Specified,Yes,Yes,No,Not Specified,81425,No,13736,2966,16702,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case5605,WGS,Not Specified,Not Specified,No,No,No,Yes,81425,No,8510,1686,10196,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,4,9,44.44444444444444
+Case5885,WGS,No,Not Specified,No,No,Yes,Yes,81425,No,13730,3668,17398,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,2,9,22.22222222222222
+Case6451,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81425,No,13760,2900,16660,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case6478,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,Yes,17842,2073,19915,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,8,9,88.88888888888889
+Case7014,WGS,Yes,Not Specified,No,Not Specified,Not Specified,Yes,81425,No,13738,3928,17666,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,3,9,33.333333333333336
+Case7297,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13752,2196,15948,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case7376,WES,No,Not Specified,No,Not Specified,No,Yes,81415,No,13738,2710,16448,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case7604,WGS,Yes,No,Yes,Yes,Yes,No,81425,No,13758,3026,16784,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case7682,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13728,2324,16052,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,7,9,77.77777777777777
+Case8288,WES,Not Specified,Not Specified,Yes,Yes,Yes,Yes,81415,No,13803,2198,16001,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case8485,WES,Yes,No,No,Yes,Not Specified,No,81415,No,13726,3156,16882,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case8621,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,No,13743,2324,16067,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,5,9,55.55555555555556
+Case8661,WGS,Not Specified,Not Specified,No,Not Specified,Not Specified,Not Specified,Not Specified,No,15838,2077,17915,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,2,9,22.22222222222222
+Case8710,WES,Yes,Not Specified,Yes,No,Not Specified,No,81415,No,13746,2006,15752,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,3,9,33.333333333333336
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,11163,3666,14829,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,6,9,66.66666666666667
+Case9978,WES,Yes,Not Specified,Yes,Not Specified,Not Specified,Yes,Not Specified,No,15810,3225,19035,top1_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,1,,3,9,33.333333333333336
+Case10363,WGS,Not Specified,Not Specified,No,Not Specified,No,Not Specified,Not Specified,No,15930,1563,17493,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case10427,WGS,Yes,Not Specified,No,No,Yes,Yes,81425,No,8067,2004,10071,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case10451,WES,Yes,No,No,Yes,Yes,No,81415,No,13754,1234,14988,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case10529,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,Yes,13742,1876,15618,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case10850,WGS,Yes,No,Yes,No,Yes,Yes,81425,No,13760,1746,15506,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case10917,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13739,1810,15549,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case11124,WES,Yes,No,No,No,Yes,Not Specified,Not Specified,No,13733,1493,15226,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case1130,WES,No,Not Specified,No,Not Specified,No,Yes,Not Specified,No,15826,1495,17321,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case11514,WES,Not Specified,Not Specified,Not Specified,Not Specified,Yes,Not Specified,81415,No,15938,2012,17950,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case11855,CMA,Yes,Not Specified,No,Yes,No,Yes,Not Specified,No,14626,1685,16311,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case11981,WGS,Yes,Yes,Yes,Not Specified,No,Yes,81425,No,13747,3092,16839,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case12834,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,No,Not Specified,Yes,14606,1625,16231,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case13406,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13759,2002,15761,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case13517,WES,Yes,Not Specified,No,No,Yes,Yes,81415,No,13746,1684,15430,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case13613,WES,No,Yes,No,Yes,Yes,Yes,81415,No,13733,2130,15863,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case13675,WGS,Yes,No,No,No,Yes,No,81425,No,13779,1810,15589,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case13,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,No,16638,1567,18205,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case14127,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13758,1362,15120,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case14141,WES,Not Specified,Not Specified,Not Specified,Yes,Yes,Yes,81415,No,14598,1880,16478,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case14155,WGS,Not Specified,Not Specified,No,No,Not Specified,No,Not Specified,No,14604,1113,15717,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case1428,WGS,Yes,Yes,No,No,Yes,No,Not Specified,No,13724,2515,16239,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case14371,WES,Yes,No,No,No,Not Specified,Yes,81415,No,13738,1492,15230,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case14408,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,17823,1752,19575,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case1501,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13730,2068,15798,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case15557,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,13763,1430,15193,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case15820,CMA,Not Specified,Not Specified,Yes,Not Specified,No,Yes,Not Specified,Yes,14599,1241,15840,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case15834,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13729,1810,15539,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case15938,WGS,Yes,No,Not Specified,No,Yes,No,81425,No,13742,1556,15298,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case16246,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,901,1496,2397,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case16487,WES,Yes,No,No,No,Yes,Not Specified,81415,No,11136,1812,12948,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case1778,WES,Yes,Not Specified,Yes,Yes,Not Specified,Not Specified,81415,Yes,13720,2072,15792,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case17822,WGS,Yes,Yes,No,No,No,No,81425,No,13770,1042,14812,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case17929,CMA,Yes,Not Specified,No,Not Specified,No,Yes,81228,No,14609,2134,16743,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case18257,BRCA1/2,No,Not Specified,No,Not Specified,No,No,81162,No,6952,1241,8193,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case18281,WGS,Yes,No,No,No,Yes,No,81425,No,13767,1426,15193,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case18868,WGS,Yes,Yes,Yes,Not Specified,Yes,Not Specified,Not Specified,Yes,9141,2199,11340,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,2,9,22.22222222222222
+Case18882,WES,Yes,No,No,No,Yes,No,81415,No,21367,1426,22793,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case19255,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,Not Specified,Yes,899,1500,2399,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case19321,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13737,1428,15165,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case19905,WES,Yes,No,Yes,No,Yes,No,81415,No,13710,1618,15328,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,17866,1624,19490,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case2496,WES,Not Specified,Not Specified,No,Not Specified,No,Not Specified,81415,No,2213,1818,4031,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case3359,WES,Yes,Yes,Yes,Yes,Yes,Yes,Not Specified,Yes,13748,1235,14983,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,No,Yes,No,Yes,81415,No,14889,1238,16127,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case3465,WGS,Not Specified,Not Specified,No,No,No,Not Specified,Not Specified,No,3444,1369,4813,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,2,9,22.22222222222222
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13767,1170,14937,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Not Specified,Not Specified,Not Specified,Yes,Yes,Not Specified,No,9198,2523,11721,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case3677,BRCA1/2,Not Specified,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,924,1242,2166,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case4067,WES,Yes,No,Yes,No,Yes,Not Specified,81415,No,13725,1492,15217,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case4512,WGS,Not Specified,Not Specified,No,No,No,Yes,Not Specified,No,9869,1175,11044,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case4982,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,13792,1750,15542,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case5230,WES,Yes,No,No,Yes,Yes,No,81415,No,13738,1106,14844,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,81162,No,9149,983,10132,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case5380,WGS,Yes,Not Specified,Yes,Not Specified,Not Specified,No,Not Specified,Yes,15818,2073,17891,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case5605,WGS,Not Specified,Not Specified,No,Yes,No,Yes,81425,No,28576,1750,30326,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,5,9,55.55555555555556
+Case5885,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13730,2258,15988,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,7,9,77.77777777777777
+Case6451,WGS,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,81425,No,14824,1370,16194,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,2,9,22.22222222222222
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,17842,1432,19274,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case7014,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13738,2258,15996,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case7297,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,13752,1490,15242,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case7376,WES,No,Yes,No,No,No,Yes,81415,No,13738,1490,15228,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case7604,WGS,Yes,No,No,No,Yes,No,Not Specified,No,13728,2131,15859,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case7682,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13728,1554,15282,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,8,9,88.88888888888889
+Case8288,WES,No,Not Specified,Not Specified,Not Specified,Yes,Yes,81415,No,13803,1432,15235,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case8485,WES,Yes,No,No,No,Yes,No,81415,No,13726,1618,15344,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case8621,WES,Yes,No,Yes,Yes,Yes,Yes,81415,No,13743,1682,15425,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case8661,WGS,Not Specified,Not Specified,Yes,Not Specified,Yes,Not Specified,Not Specified,No,3464,1883,5347,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case8710,WES,Yes,No,No,No,Yes,No,81415,No,13746,1362,15108,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,4,9,44.44444444444444
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,11163,1170,12333,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,6,9,66.66666666666667
+Case9978,WES,Yes,Not Specified,Yes,Not Specified,Not Specified,Yes,81415,Yes,13969,1560,15529,top1_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,1,,3,9,33.333333333333336
+Case10363,WGS,Not Specified,Yes,Yes,Yes,No,Yes,81425,No,9151,3092,12243,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case10427,WGS,Yes,Not Specified,No,No,Yes,Yes,81425,No,13748,3028,16776,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case10451,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,13754,2516,16270,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case10529,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13742,2964,16706,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case10850,WGS,No,Not Specified,No,Not Specified,No,Yes,81425,No,13730,3542,17272,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,2,9,22.22222222222222
+Case10917,WES,Yes,Yes,No,Not Specified,Not Specified,Yes,81415,No,13739,3542,17281,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case11124,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13733,2580,16313,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case1130,WES,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,Not Specified,No,15826,2459,18285,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,2,9,22.22222222222222
+Case11514,WES,Yes,Not Specified,No,No,Yes,No,81415,No,13792,1940,15732,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case11855,CMA,Yes,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,14626,3096,17722,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case11981,WGS,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81425,Yes,13777,2198,15975,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case12834,CMA,Not Specified,Not Specified,Not Specified,Not Specified,No,Not Specified,81228,No,9199,2844,12043,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case13406,WGS,Yes,Yes,Yes,No,Not Specified,Yes,81425,No,21393,2836,24229,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case13517,WES,Yes,Not Specified,No,No,Yes,Yes,81415,No,13746,2132,15878,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case13613,WES,Not Specified,Not Specified,Not Specified,No,Not Specified,Not Specified,81415,No,21367,1948,23315,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,3,9,33.333333333333336
+Case13675,WGS,Yes,Not Specified,No,Not Specified,Yes,No,81425,No,13749,2454,16203,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,3,9,33.333333333333336
+Case14127,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,11154,2644,13798,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case1428,WGS,Not Specified,Not Specified,No,Not Specified,Yes,Not Specified,81425,No,13724,3546,17270,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case14371,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,13738,3350,17088,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case1501,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13730,3412,17142,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case15557,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,13763,3220,16983,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case15820,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,Yes,81228,Yes,14599,2456,17055,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case15834,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13729,2964,16693,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case15938,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81425,No,13742,2776,16518,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case16246,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,Yes,17840,2201,20041,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,8,9,88.88888888888889
+Case16487,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81415,No,15916,2206,18122,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case1778,WES,Yes,Not Specified,No,No,Not Specified,Not Specified,81415,No,13690,3096,16786,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case17822,WGS,Yes,Yes,Yes,Yes,No,No,81425,No,13770,2194,15964,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case17929,CMA,Yes,Not Specified,No,Yes,No,Yes,81228,No,14609,2644,17253,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case18257,BRCA1/2,Not Specified,Not Specified,Not Specified,Not Specified,No,No,81162,No,903,2589,3492,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case18281,WGS,Yes,No,Yes,No,Yes,No,81425,No,13767,2450,16217,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case18821,WES,Not Specified,Not Specified,Yes,No,Yes,No,81415,No,10240,2198,12438,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case18868,WGS,Not Specified,Not Specified,No,No,Not Specified,No,81425,No,9141,3992,13133,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case18882,WES,Yes,Not Specified,No,No,Yes,No,81415,No,13733,1812,15545,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,3,9,33.333333333333336
+Case19255,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,899,1947,2846,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case19321,WES,Not Specified,Not Specified,Yes,Yes,Yes,Yes,81415,No,11133,4118,15251,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case19905,WES,Yes,Not Specified,Yes,Not Specified,Not Specified,No,81415,No,21344,2840,24184,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,17866,2713,20579,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case2496,WES,Not Specified,Not Specified,No,No,Yes,No,81415,No,10244,1942,12186,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,2,9,22.22222222222222
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13748,2708,16456,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,Yes,Yes,No,Yes,81415,No,20493,3286,23779,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case3465,WGS,No,Yes,No,Not Specified,Yes,Yes,81425,No,13736,3924,17660,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,3,9,33.333333333333336
+Case3474,WGS,No,Yes,No,No,Yes,Yes,81425,No,13737,3026,16763,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case3592,CMA,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81228,No,9198,2846,12044,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,44565,2007,46572,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case4067,WES,Yes,Not Specified,Not Specified,No,Yes,Not Specified,81415,No,13725,2456,16181,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case4196,WES,Not Specified,Yes,No,Not Specified,Not Specified,Yes,81415,No,28604,2392,30996,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,2,9,22.22222222222222
+Case4512,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Yes,Yes,81425,No,9158,3034,12192,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case4982,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13792,2836,16628,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case5230,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,13708,2004,15712,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case5303,BRCA1/2,Not Specified,Not Specified,No,Not Specified,No,No,81162,No,887,1307,2194,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case5380,WGS,Yes,Not Specified,No,Yes,No,No,81425,No,13766,2964,16730,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case5605,WGS,Yes,Not Specified,Not Specified,Not Specified,No,Yes,81425,No,9121,2968,12089,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case5885,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,13760,2772,16532,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case6451,WGS,Yes,Not Specified,No,No,Not Specified,Yes,81425,No,13730,3286,17016,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,3,9,33.333333333333336
+Case6478,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,Yes,17842,2457,20299,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,8,9,88.88888888888889
+Case7014,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,8057,4244,12301,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case7297,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,13752,2836,16588,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case7376,WES,Not Specified,Not Specified,No,No,Not Specified,Not Specified,81415,No,11134,2714,13848,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case7604,WGS,Yes,Not Specified,Yes,Yes,Yes,No,81425,No,13758,3284,17042,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case7682,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13728,2516,16244,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,7,9,77.77777777777777
+Case8288,WES,Yes,Not Specified,Yes,No,No,Yes,81415,No,21407,2132,23539,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case8621,WES,Not Specified,Not Specified,Yes,Yes,Not Specified,Yes,81415,No,11139,3480,14619,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case8661,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,12100,2642,14742,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,6,9,66.66666666666667
+Case8710,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81415,No,12371,1503,13874,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,4,9,44.44444444444444
+Case950,WES,Yes,Yes,Yes,Not Specified,No,Yes,81415,Yes,11163,2452,13615,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case9978,WES,No,Not Specified,Yes,Not Specified,Not Specified,Yes,81415,No,21362,3352,24714,top1_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,1,,5,9,55.55555555555556
+Case10363,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81425,Yes,13754,3412,17166,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case10427,WGS,Yes,Not Specified,No,No,Yes,Yes,Not Specified,No,13748,2325,16073,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case10451,WES,Yes,No,Yes,Yes,No,No,81415,No,11150,1554,12704,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case10529,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13742,1940,15682,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case10850,WGS,Yes,No,No,No,Yes,Yes,81425,No,13730,2322,16052,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case10917,WES,Yes,Yes,Yes,Yes,Yes,Yes,Not Specified,Yes,13739,3219,16958,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case11124,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,13733,1749,15482,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case1130,WES,Yes,No,No,No,No,Yes,81415,No,11140,2002,13142,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case11514,WES,Yes,No,No,No,Yes,No,81415,No,13792,1746,15538,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case11855,CMA,Yes,Not Specified,No,Yes,No,Yes,Not Specified,No,14626,1877,16503,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case11981,WGS,Yes,Yes,Yes,Not Specified,Not Specified,Yes,81415,No,13747,2582,16329,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case12834,CMA,Yes,Not Specified,No,No,No,No,Not Specified,No,6257,1685,7942,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case13406,WGS,Yes,Not Specified,No,No,Not Specified,Not Specified,81425,No,21393,2072,23465,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case13517,WES,Yes,Not Specified,No,No,Yes,Yes,81415,No,13746,1940,15686,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case13613,WES,Yes,Yes,Not Specified,No,Yes,Yes,81415,No,21367,1428,22795,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case13675,WGS,Not Specified,No,No,No,Yes,No,Not Specified,No,13749,1685,15434,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,1,9,11.11111111111111
+Case14127,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13758,1426,15184,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,8,9,88.88888888888889
+Case1428,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,12068,1170,13238,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case14371,WES,Yes,No,No,Yes,Not Specified,Yes,81415,No,13738,2388,16126,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case1501,WES,Yes,Not Specified,Not Specified,No,Yes,Yes,81415,Yes,13730,1750,15480,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case15202,BRCA1/2,Yes,Not Specified,Not Specified,Yes,No,Yes,Not Specified,No,9491,1536,11027,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case15557,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,14496,2042,16538,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case15820,CMA,Not Specified,Not Specified,Yes,Yes,No,Yes,Not Specified,Yes,14599,1303,15902,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case15834,WES,Yes,Yes,Yes,Not Specified,Not Specified,No,81415,Yes,12476,914,13390,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case15938,WGS,Yes,No,No,No,Yes,No,81425,No,13742,1810,15552,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case16246,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,17840,1432,19272,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case16487,WES,Yes,No,Yes,No,Yes,Yes,81415,No,55481,2578,58059,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case1778,WES,Yes,No,Yes,No,Not Specified,No,81415,No,13690,1748,15438,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case17822,WGS,Yes,Yes,Yes,Yes,No,No,Not Specified,No,13740,2195,15935,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case17929,CMA,Not Specified,Not Specified,No,Not Specified,No,Yes,81415,No,14609,1560,16169,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case18257,BRCA1/2,Yes,Not Specified,Yes,No,No,No,81277,Yes,903,1239,2142,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case18281,WGS,Yes,No,No,No,Yes,No,81425,No,13767,1298,15065,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case18821,WES,Yes,No,Yes,No,Yes,No,81415,No,10240,1426,11666,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case18868,WGS,Yes,Yes,Yes,Yes,Yes,Not Specified,Not Specified,Yes,9141,1877,11018,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case18882,WES,Yes,No,Yes,No,Not Specified,No,81415,No,21367,1556,22923,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case19255,BRCA1/2,Not Specified,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,899,1306,2205,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case19321,WES,Yes,No,No,Yes,Yes,Yes,81415,No,13737,1426,15163,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case19905,WES,Yes,No,Yes,No,Yes,No,Not Specified,No,21344,1491,22835,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,17866,1624,19490,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case2496,WES,Not Specified,No,No,No,Yes,No,81415,No,10244,1748,11992,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,2,9,22.22222222222222
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13748,1620,15368,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,20493,1622,22115,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case3465,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13766,1746,15512,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13767,1106,14873,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Yes,Not Specified,Not Specified,Yes,Yes,Not Specified,Yes,10209,39,10248,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,1,9,11.11111111111111
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81277,Yes,924,1303,2227,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case4067,WES,Yes,No,No,No,Yes,No,81415,No,13725,1234,14959,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case4512,WGS,Not Specified,Not Specified,No,Not Specified,No,Yes,Not Specified,No,9869,1049,10918,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case4982,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13792,1620,15412,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case5230,WES,Yes,No,No,No,Yes,No,Not Specified,No,13708,1235,14943,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case5303,BRCA1/2,Not Specified,Not Specified,No,No,No,No,Not Specified,No,887,986,1873,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case5380,WGS,Yes,No,No,No,No,No,81425,No,13766,1554,15320,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case5605,WGS,Yes,Not Specified,Yes,Yes,No,Yes,Not Specified,Yes,9121,1493,10614,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case5885,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13760,1362,15122,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case6451,WGS,Yes,Not Specified,Yes,No,Yes,Yes,81425,Yes,13730,2388,16118,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,17842,1496,19338,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case7014,WGS,Yes,Not Specified,Not Specified,Not Specified,Yes,Yes,81425,Yes,8057,2072,10129,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case7297,WES,Not Specified,Yes,Yes,Yes,No,Yes,Not Specified,Yes,13752,1429,15181,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case7376,WES,Not Specified,Not Specified,Not Specified,Not Specified,Yes,No,81415,No,11134,2394,13528,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case7604,WGS,Yes,No,No,No,Yes,No,Not Specified,No,13728,2771,16499,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case7682,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13728,1554,15282,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,8,9,88.88888888888889
+Case8288,WES,Not Specified,No,Yes,Yes,Yes,Yes,81415,No,11169,2132,13301,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case8621,WES,Yes,No,Yes,No,Yes,Yes,81415,No,13743,1746,15489,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case8661,WGS,Yes,Yes,Yes,Not Specified,Yes,No,81425,No,12100,1236,13336,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case8710,WES,Yes,No,Yes,No,Yes,No,Not Specified,No,13746,1939,15685,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,11163,1682,12845,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case9978,WES,No,No,No,Yes,Yes,Yes,Not Specified,No,21362,2003,23365,top1_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case10363,WGS,No,Not Specified,No,No,No,Yes,81425,No,13754,2772,16526,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case10427,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,13778,2580,16358,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case10451,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,13754,2068,15822,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case10529,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,13742,2710,16452,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case10850,WGS,No,Not Specified,No,Not Specified,No,Yes,81425,No,13730,2518,16248,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,2,9,22.22222222222222
+Case10917,WES,Yes,Yes,No,Yes,Not Specified,Yes,81415,No,13739,2900,16639,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case11124,WES,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81415,No,11129,2968,14097,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case1130,WES,No,Not Specified,No,Not Specified,Not Specified,Yes,81415,No,13985,2136,16121,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case11514,WES,Yes,Not Specified,No,Yes,Yes,No,81415,No,13792,2196,15988,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case11855,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,14626,1626,16252,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case11981,WGS,Not Specified,Yes,No,No,Yes,Yes,81425,No,13747,3220,16967,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case12792,BRCA1/2,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Yes,81162,No,14578,2336,16914,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case12834,CMA,Not Specified,Not Specified,Not Specified,Not Specified,No,Not Specified,81228,No,9199,2140,11339,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case13406,WGS,Not Specified,Yes,No,Not Specified,Not Specified,Yes,81425,No,11155,2264,13419,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case13517,WES,Yes,Not Specified,No,Yes,Yes,Yes,81415,No,13746,3156,16902,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case13613,WES,No,Not Specified,No,No,No,Yes,81415,No,13763,2004,15767,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,2,9,22.22222222222222
+Case13675,WGS,Not Specified,Not Specified,Not Specified,Not Specified,No,Not Specified,Not Specified,No,4418,1885,6303,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,2,9,22.22222222222222
+Case14127,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,11154,3092,14246,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case1428,WGS,Yes,Yes,No,Not Specified,Yes,No,81425,No,13724,3604,17328,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case14371,WES,Yes,Not Specified,Yes,No,Not Specified,Yes,81415,No,13738,2518,16256,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case1501,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,No,13730,2644,16374,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case15557,WGS,No,Not Specified,No,No,Yes,Yes,81425,No,13733,3284,17017,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case15820,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,Not Specified,81228,Yes,14599,1882,16481,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case15834,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,13729,2710,16439,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case15938,WGS,Yes,Not Specified,Not Specified,Not Specified,Yes,No,81425,No,13742,2712,16454,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case16126,BRCA1/2,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81228,No,14582,2657,17239,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case16246,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,No,81162,No,9163,1815,10978,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case16487,WES,Yes,Not Specified,Yes,No,Not Specified,Yes,81415,No,55481,3222,58703,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case1778,WES,Yes,Not Specified,Yes,No,Not Specified,Not Specified,81415,No,13720,3352,17072,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case17822,WGS,Yes,Yes,Yes,Yes,Not Specified,No,81425,No,13770,2132,15902,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case17929,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,Not Specified,No,14609,2971,17580,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case18257,BRCA1/2,Not Specified,Not Specified,Not Specified,Not Specified,No,No,81162,No,903,1821,2724,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case18281,WGS,No,Not Specified,No,No,Yes,No,81415,No,13737,2964,16701,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case18868,WGS,Yes,Not Specified,Yes,No,Not Specified,No,81425,No,9141,2838,11979,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case18882,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,13733,2644,16377,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,899,1625,2524,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,8,9,88.88888888888889
+Case19321,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,13737,2582,16319,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case19905,WES,Yes,Not Specified,No,No,Yes,No,81415,No,13710,1877,15587,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,17866,2327,20193,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case2496,WES,Not Specified,Not Specified,No,No,Not Specified,No,81415,No,21384,1880,23264,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13748,2708,16456,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,No,Not Specified,Yes,Yes,81415,No,5363,2072,7435,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case3465,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,13766,1426,15192,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case3474,WGS,No,Yes,No,No,Yes,Yes,81425,No,13737,2899,16636,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case3592,CMA,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81228,No,11666,2207,13873,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case3677,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,924,1307,2231,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case4067,WES,Yes,Not Specified,Yes,Yes,Yes,Not Specified,81415,No,13755,2390,16145,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case4512,WGS,No,Not Specified,Not Specified,No,Yes,Yes,81425,No,13791,1942,15733,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case4982,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13762,3156,16918,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case5230,WES,Yes,Not Specified,No,Yes,Yes,No,81415,No,13708,2388,16096,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case5303,BRCA1/2,Not Specified,Not Specified,No,Not Specified,No,No,81162,No,887,1819,2706,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case5380,WGS,Yes,Not Specified,No,No,No,No,81425,No,8055,2708,10763,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case5605,WGS,Not Specified,Not Specified,No,Yes,No,Yes,81425,No,9121,2454,11575,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case5885,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,13760,2068,15828,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case6451,WGS,Yes,Not Specified,No,Not Specified,Not Specified,Yes,81425,No,13730,2968,16698,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case6478,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,No,17842,2073,19915,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,7,9,77.77777777777777
+Case7014,WGS,Yes,Not Specified,No,Not Specified,No,Yes,81425,No,13738,2838,16576,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case7297,WES,Not Specified,Not Specified,Yes,Not Specified,No,Not Specified,81415,No,11148,3098,14246,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,6,9,66.66666666666667
+Case7376,WES,Not Specified,Not Specified,No,Not Specified,No,Not Specified,81415,No,11134,2906,14040,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case7604,WGS,Yes,No,No,No,Yes,No,81425,No,13758,1682,15440,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case7682,WES,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,81415,No,11124,3352,14476,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case8288,WES,No,Not Specified,No,Yes,Yes,Yes,81415,No,13773,1748,15521,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,4,9,44.44444444444444
+Case8621,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,No,13743,3348,17091,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,5,9,55.55555555555556
+Case8661,WGS,No,Not Specified,No,Not Specified,No,Not Specified,81425,No,13756,3160,16916,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case8710,WES,Yes,Not Specified,Yes,No,Not Specified,No,81415,No,13746,2326,16072,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case950,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Yes,81415,No,15849,2588,18437,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case9978,WES,Yes,Not Specified,Not Specified,Not Specified,Not Specified,Yes,81415,No,15810,2715,18525,top1_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,1,,3,9,33.333333333333336
+Case10363,WGS,Not Specified,No,No,Yes,No,Yes,Not Specified,No,13754,2517,16271,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case10427,WGS,Yes,No,Yes,No,Yes,Yes,81425,No,13748,2450,16198,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case10451,WES,Yes,No,Yes,Yes,Yes,No,81415,No,13754,1426,15180,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case10529,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,21376,1684,23060,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case10850,WGS,Yes,No,No,No,Yes,Yes,81425,No,13730,2578,16308,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case10917,WES,Yes,Yes,No,Yes,Yes,Yes,Not Specified,No,13739,2899,16638,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case11124,WES,Yes,No,Not Specified,No,Yes,Not Specified,81415,No,11129,1558,12687,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case1130,WES,Yes,Not Specified,Not Specified,Not Specified,No,Yes,81415,No,11140,1752,12892,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case11514,WES,Yes,No,No,No,Yes,No,81415,No,13792,1618,15410,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case11855,CMA,Yes,Not Specified,No,Yes,No,Yes,Not Specified,No,14626,1237,15863,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case11981,WGS,No,Yes,No,No,No,Yes,Not Specified,No,13747,2451,16198,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,2,9,22.22222222222222
+Case12834,CMA,Not Specified,Yes,Yes,Yes,No,Not Specified,Not Specified,Yes,9199,2455,11654,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case13406,WGS,Not Specified,Yes,No,Yes,Yes,Yes,81425,No,13759,1940,15699,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case13517,WES,Yes,Not Specified,No,No,Yes,Yes,81415,No,13746,1748,15494,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case13613,WES,Not Specified,Not Specified,No,No,Yes,Yes,81415,No,21367,1814,23181,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case13675,WGS,Yes,No,No,No,Yes,No,81425,No,13779,1490,15269,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case14127,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13788,1362,15150,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,8,9,88.88888888888889
+Case1428,WGS,Not Specified,Yes,No,No,Yes,No,Not Specified,No,13724,2453,16177,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case14371,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13738,1746,15484,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case1501,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13730,1812,15542,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case15557,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,13763,1942,15705,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case15820,CMA,Not Specified,Not Specified,Yes,Not Specified,No,Yes,Not Specified,Yes,14599,1177,15776,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case15834,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13729,1618,15347,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case15938,WGS,Yes,Not Specified,No,No,Yes,No,81425,No,8061,1556,9617,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case16246,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,81162,No,9163,1111,10274,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case16487,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,13740,1942,15682,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case1778,WES,Yes,Not Specified,Yes,No,No,Not Specified,81415,No,13720,1942,15662,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,8,9,88.88888888888889
+Case17822,WGS,Yes,Yes,No,Yes,No,No,Not Specified,No,13740,2003,15743,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case17929,CMA,Yes,Not Specified,Yes,Not Specified,No,Yes,81425,Yes,14609,1686,16295,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case18257,BRCA1/2,Yes,Not Specified,Yes,No,No,No,Not Specified,Yes,909,1432,2341,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case18281,WGS,Yes,No,No,No,Yes,No,81425,No,13767,1170,14937,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case18868,WGS,Yes,Yes,Yes,Not Specified,Yes,Yes,Not Specified,Yes,9141,2389,11530,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,1,9,11.11111111111111
+Case18882,WES,Yes,No,Yes,No,Not Specified,No,Not Specified,No,21367,1301,22668,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81228,Yes,905,1687,2592,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case19321,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,13737,1172,14909,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case19905,WES,Yes,No,No,No,Yes,No,81415,No,21344,1618,22962,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,19121,1367,20488,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case2496,WES,Yes,Not Specified,No,No,Yes,No,Not Specified,No,21384,1301,22685,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,2,9,22.22222222222222
+Case3359,WES,Yes,No,Yes,Yes,Yes,Yes,81415,No,13748,1682,15430,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case3422,WES,Not Specified,Not Specified,Yes,Yes,No,Yes,81415,Yes,20493,2006,22499,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case3465,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13766,1426,15192,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case3474,WGS,Yes,Yes,No,Yes,Yes,Yes,81425,No,13737,2706,16443,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case3592,CMA,Not Specified,Not Specified,Yes,Not Specified,Yes,Not Specified,Not Specified,No,11666,3035,14701,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case3677,BRCA1/2,Not Specified,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,924,1242,2166,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case4067,WES,Yes,Not Specified,Yes,No,Yes,Not Specified,81415,No,13725,1814,15539,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case4512,WGS,Not Specified,Not Specified,No,No,No,Yes,Not Specified,No,9869,1239,11108,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case4982,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,13792,2454,16246,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case5230,WES,Yes,No,No,No,Yes,No,Not Specified,No,13708,1171,14879,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,81162,No,9149,983,10132,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,7,9,77.77777777777777
+Case5380,WGS,Yes,No,No,No,No,No,Not Specified,No,13736,2835,16571,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,2,9,22.22222222222222
+Case5605,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,9121,1941,11062,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case5674,WES,No,Not Specified,No,Not Specified,Not Specified,Yes,81415,No,13974,1368,15342,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case5885,WGS,No,Not Specified,No,No,Yes,Yes,Not Specified,No,13730,2261,15991,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,1,9,11.11111111111111
+Case6451,WGS,Yes,No,No,Yes,No,Not Specified,81425,No,13760,1876,15636,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,17842,1368,19210,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,6,9,66.66666666666667
+Case7014,WGS,Yes,Yes,No,Yes,Yes,Yes,81415,No,13738,3026,16764,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case7297,WES,Yes,Yes,Yes,Yes,No,Yes,Not Specified,Yes,13752,1939,15691,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case7376,WES,Not Specified,Not Specified,No,Not Specified,No,No,81415,No,11134,2136,13270,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case7604,WGS,Yes,No,Yes,No,Yes,No,81425,No,13758,1490,15248,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,5,9,55.55555555555556
+Case7682,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,13728,1490,15218,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,8,9,88.88888888888889
+Case8288,WES,No,Not Specified,No,Not Specified,Yes,Yes,81415,No,13803,1302,15105,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case8621,WES,Yes,No,No,No,Yes,Yes,81415,No,13743,2066,15809,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case8661,WGS,Yes,No,No,No,Yes,No,Not Specified,No,13756,2003,15759,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case8710,WES,Yes,No,No,No,Yes,No,81415,No,13746,1682,15428,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,4,9,44.44444444444444
+Case950,WES,Yes,Not Specified,Yes,No,No,Yes,Not Specified,Yes,15849,2069,17918,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case9978,WES,Yes,Not Specified,Yes,Not Specified,Not Specified,Yes,81415,Yes,15810,1880,17690,top1_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,1,,3,9,33.333333333333336
+Case10363,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Yes,81425,No,25713,1884,27597,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,3,9,33.333333333333336
+Case10427,WGS,Yes,Not Specified,No,No,Yes,Yes,81425,No,23257,2964,26221,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case10451,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,29329,2388,31717,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case10529,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,30342,2774,33116,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case10850,WGS,Yes,Yes,Yes,Yes,Not Specified,Yes,81425,Yes,30259,2068,32327,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case10917,WES,Yes,Yes,No,Not Specified,Yes,Yes,81415,No,31920,3220,35140,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case11124,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,36790,2582,39372,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case1130,WES,No,Not Specified,No,Not Specified,Not Specified,Yes,81415,No,40849,2904,43753,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case11514,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81415,No,37302,1694,38996,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,3,9,33.333333333333336
+Case11855,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,22877,2970,25847,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case11981,WGS,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81425,Yes,29506,2774,32280,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case12834,CMA,Yes,Not Specified,Yes,No,Not Specified,No,81228,No,22857,3414,26271,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,3,9,33.333333333333336
+Case13406,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,34865,3474,38339,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case13517,WES,Yes,Yes,No,Yes,Yes,Yes,81415,No,37764,2834,40598,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case13613,WES,No,Not Specified,No,No,No,Yes,81415,No,28847,2772,31619,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,2,9,22.22222222222222
+Case13675,WGS,Yes,No,Yes,No,Yes,No,81425,No,36049,3794,39843,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case14127,WES,Yes,Yes,Yes,No,Not Specified,Yes,81415,No,35706,2132,37838,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case14141,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Yes,81415,No,26841,2717,29558,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,3,9,33.333333333333336
+Case14155,WGS,Yes,Yes,Yes,Not Specified,Yes,No,81425,No,36383,2900,39283,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case1428,WGS,Yes,Yes,No,No,Yes,No,81425,No,41558,3282,44840,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case14371,WES,Yes,Not Specified,Yes,Not Specified,Not Specified,Yes,81415,Yes,42636,3033,45669,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case14408,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,36017,1945,37962,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case1501,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,47021,2902,49923,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case15557,WGS,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81425,Yes,29492,3158,32650,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case15820,CMA,Not Specified,Not Specified,Yes,Not Specified,Not Specified,Not Specified,81228,Yes,22850,2524,25374,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case15834,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,46375,3284,49659,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case15938,WGS,Yes,Not Specified,Yes,No,Yes,No,81425,No,37760,3156,40916,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case16246,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,Yes,23888,1305,25193,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,8,9,88.88888888888889
+Case16487,WES,Yes,Not Specified,No,Yes,Not Specified,Yes,81415,No,36797,2518,39315,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case1778,WES,Yes,Not Specified,Yes,Yes,Not Specified,Not Specified,81415,Yes,52167,2520,54687,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case17822,WGS,Yes,Yes,Yes,Yes,No,No,81425,No,40269,1746,42015,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case17929,CMA,Yes,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,28156,2968,31124,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case18257,BRCA1/2,Yes,Not Specified,Not Specified,Not Specified,No,No,81162,No,17833,3035,20868,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,8,9,88.88888888888889
+Case18281,WGS,Yes,No,Yes,No,Yes,No,81425,No,29496,2450,31946,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case18868,WGS,Yes,Not Specified,No,No,No,No,81425,No,31786,3412,35198,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case18882,WES,Yes,No,Yes,No,Yes,No,81415,No,47024,2770,49794,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,61468,1753,63221,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,8,9,88.88888888888889
+Case19321,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,32401,2516,34917,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case19905,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,64118,1620,65738,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,26103,1943,28046,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case2496,WES,Not Specified,Not Specified,No,No,Yes,No,81415,No,13280,2390,15670,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,2,9,22.22222222222222
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47039,1748,48787,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,Not Specified,Not Specified,Yes,Yes,Not Specified,No,45030,2651,47681,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,3,9,33.333333333333336
+Case3465,WGS,Not Specified,Not Specified,No,Not Specified,Yes,Yes,81425,No,78413,1944,80357,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,2,9,22.22222222222222
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,27469,2514,29983,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,33593,2842,36435,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,23911,1433,25344,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,8,9,88.88888888888889
+Case4067,WES,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81415,No,35020,2776,37796,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case4512,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Yes,81425,No,48767,1948,50715,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case4982,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,41512,2580,44092,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case5230,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,46999,2004,49003,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,81162,No,26063,1495,27558,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case5380,WGS,Yes,Not Specified,No,Yes,No,No,81425,No,39645,2132,41777,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case5605,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81425,No,41560,2270,43830,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,3,9,33.333333333333336
+Case5885,WGS,No,Not Specified,No,No,Yes,Yes,81425,No,21983,2708,24691,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,2,9,22.22222222222222
+Case6451,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81425,Yes,23174,2708,25882,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case6478,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,No,24881,1945,26826,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case7014,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81425,Yes,41572,3220,44792,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case7297,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,36164,2516,38680,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case7376,WES,No,Not Specified,No,No,No,Yes,81415,No,36727,1492,38219,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case7604,WGS,Yes,Not Specified,Yes,No,No,No,81425,No,37851,2708,40559,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case7682,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47019,2644,49663,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,7,9,77.77777777777777
+Case8288,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,No,43806,1940,45746,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,5,9,55.55555555555556
+Case8485,WES,Yes,Not Specified,Yes,No,Not Specified,No,81415,No,29951,2710,32661,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case8621,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,42641,3094,45735,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case8661,WGS,Not Specified,Not Specified,No,Not Specified,Not Specified,Not Specified,81425,No,20143,1884,22027,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,3,9,33.333333333333336
+Case8710,WES,Yes,Not Specified,Not Specified,No,Not Specified,No,81415,No,29321,3224,32545,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,4,9,44.44444444444444
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,39125,2066,41191,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case9978,WES,No,Not Specified,Yes,Not Specified,Yes,Yes,81415,No,40802,2518,43320,top3_10retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,10,3,,6,9,66.66666666666667
+Case10363,WGS,Not Specified,Not Specified,No,Yes,Yes,Yes,Not Specified,No,50856,79,50935,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case10427,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,23257,2774,26031,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case10451,WES,Yes,No,Yes,No,Yes,No,81415,No,30231,94,30325,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case10529,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,No,30342,1940,32282,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case10850,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,27837,1426,29263,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case10917,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,29498,2258,31756,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case11124,WES,Yes,Not Specified,Not Specified,Not Specified,Yes,Yes,81415,Yes,38695,58,38753,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case1130,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,40849,2196,43045,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case11514,WES,Not Specified,Not Specified,Yes,No,Yes,No,81415,No,37302,1814,39116,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case11855,CMA,Yes,Not Specified,No,No,No,Yes,81228,No,22878,2452,25330,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case11981,WGS,Yes,Yes,Yes,Yes,No,Yes,81425,Yes,29506,1810,31316,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case12834,CMA,Yes,Not Specified,Yes,No,No,No,Not Specified,No,22858,2773,25631,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case13406,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,41050,606,41656,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case13517,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,37828,21,37849,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case13613,WES,Not Specified,Yes,Yes,Yes,Yes,Yes,81415,No,32976,2580,35556,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case13675,WGS,Yes,No,Yes,No,Yes,No,81425,No,36049,1554,37603,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case14127,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,35706,1684,37390,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case14141,WES,Not Specified,Not Specified,Not Specified,Yes,Yes,Yes,81415,No,32633,1560,34193,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case14155,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,28757,1748,30505,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case1428,WGS,Yes,Yes,Yes,Yes,Yes,No,81415,Yes,29175,19,29194,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case14371,WES,Yes,Yes,Yes,No,Yes,Yes,81415,Yes,42637,2898,45535,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case14408,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,36017,1559,37576,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case1501,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47021,1940,48961,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case15557,WGS,Yes,No,Yes,Yes,Yes,Yes,81425,Yes,29492,2642,32134,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case15820,CMA,Not Specified,Not Specified,Yes,Not Specified,No,Yes,Not Specified,Yes,24790,140,24930,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case15834,WES,Yes,Yes,No,Yes,Yes,Yes,81415,No,47771,34,47805,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case15938,WGS,Yes,No,Yes,No,Yes,No,81425,No,37760,2194,39954,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case16246,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,81162,Yes,24781,355,25136,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case16487,WES,Yes,No,Yes,No,Yes,Not Specified,81415,No,36152,2004,38156,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case1778,WES,Yes,Not Specified,Not Specified,No,No,No,81415,No,52978,1201,54179,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case17822,WGS,Yes,Yes,No,Yes,No,No,81425,No,40269,1106,41375,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case17929,CMA,Yes,Yes,Yes,Not Specified,No,Yes,Not Specified,Yes,28156,2389,30545,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case18257,BRCA1/2,Not Specified,Not Specified,Not Specified,No,No,No,Not Specified,No,17936,2104,20040,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case18281,WGS,Yes,No,No,Yes,Yes,No,81425,No,29577,2052,31629,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case18868,WGS,Yes,Yes,Yes,Yes,No,Yes,81425,Yes,22467,20,22487,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case18882,WES,Yes,No,Yes,No,Yes,No,81415,No,47024,1426,48450,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,61468,1367,62835,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case19321,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,32401,1428,33829,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case19905,WES,Yes,No,Yes,No,Yes,No,81415,No,64118,3218,67336,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,26103,1431,27534,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case2496,WES,Not Specified,No,No,No,Yes,No,81415,No,13280,2068,15348,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,2,9,22.22222222222222
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47039,1556,48595,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Yes,Not Specified,Not Specified,Yes,Yes,81415,No,33280,2008,35288,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case3465,WGS,Not Specified,Not Specified,No,No,Yes,Yes,Not Specified,No,78414,1495,79909,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,1,9,11.11111111111111
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,27469,1106,28575,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case3592,CMA,Yes,Not Specified,Not Specified,Not Specified,Yes,Yes,Not Specified,No,33593,2841,36434,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,23911,983,24894,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case4067,WES,Yes,No,Yes,No,Yes,No,81415,No,35020,1490,36510,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case4512,WGS,Not Specified,Not Specified,No,No,No,Yes,81425,No,58301,2454,60755,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case4982,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,41512,1686,43198,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case5230,WES,Yes,No,Yes,Yes,Yes,No,81415,No,46999,1362,48361,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,81162,No,26731,517,27248,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case5380,WGS,Yes,No,Yes,Yes,Not Specified,No,81415,No,42180,39,42219,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case5605,WGS,Not Specified,Not Specified,No,Not Specified,No,Yes,Not Specified,No,32112,931,33043,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case5885,WGS,Yes,Yes,No,No,Yes,Yes,81425,No,88693,2450,91143,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case6451,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,23174,2006,25180,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,23174,2136,25310,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case7014,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,41488,1874,43362,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case7297,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,36164,2002,38166,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case7376,WES,No,Yes,No,Yes,No,Yes,81415,No,36727,1618,38345,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case7604,WGS,Yes,No,Yes,No,Yes,No,81425,No,54244,1810,56054,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case7682,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,48623,79,48702,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case8288,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,Yes,53450,73,53523,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case8485,WES,Yes,No,No,No,Yes,No,81415,No,30326,1362,31688,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case8621,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,42642,1746,44388,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case8661,WGS,Not Specified,Not Specified,Not Specified,No,Yes,No,Not Specified,No,10543,371,10914,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,2,9,22.22222222222222
+Case8710,WES,Yes,No,Yes,No,Yes,No,81415,No,29321,1810,31131,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,40083,430,40513,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case9978,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,42882,2066,44948,top3_10retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case10363,WGS,Not Specified,Yes,No,Not Specified,No,Yes,81425,No,48048,1686,49734,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case10427,WGS,Yes,Not Specified,No,No,Yes,Yes,81425,No,23257,2836,26093,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case10451,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,29329,1876,31205,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case10529,WES,Yes,Not Specified,Yes,Not Specified,Not Specified,Yes,81415,Yes,55099,2393,57492,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case10850,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37305,1746,39051,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,8,9,88.88888888888889
+Case10917,WES,Yes,Yes,No,Not Specified,Not Specified,Yes,81415,No,54255,2774,57029,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case11124,WES,Yes,Not Specified,Not Specified,Yes,Yes,Yes,81415,Yes,36790,2902,39692,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case1130,WES,Yes,Not Specified,Yes,Not Specified,No,Yes,81415,Yes,55695,3222,58917,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case11514,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81415,No,37302,1630,38932,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case11855,CMA,Yes,Not Specified,No,Not Specified,No,Yes,81228,No,47634,2582,50216,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case11981,WGS,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81425,Yes,31049,3606,34655,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case12834,CMA,Yes,Not Specified,Not Specified,No,Not Specified,No,81228,No,22858,3096,25954,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case13406,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,40288,3154,43442,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case13517,WES,Yes,Yes,No,No,Yes,Yes,81415,No,37764,2386,40150,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case13613,WES,No,Not Specified,No,Yes,Not Specified,Yes,81415,No,32976,2582,35558,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case13675,WGS,Yes,No,Yes,Yes,Yes,No,81425,No,36049,2450,38499,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case14127,WES,Yes,Yes,Yes,No,Not Specified,Yes,81415,No,35706,2580,38286,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case14141,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Yes,81415,No,36036,1820,37856,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case14155,WGS,Yes,Yes,Yes,Not Specified,Not Specified,No,81425,No,36383,3350,39733,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case1428,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,40253,3474,43727,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case14371,WES,Yes,Not Specified,Yes,No,Not Specified,Yes,81415,No,42636,3094,45730,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case14408,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,42470,3159,45629,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case1501,WES,Yes,Not Specified,Yes,Yes,Yes,Not Specified,81415,Yes,47021,2582,49603,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case15557,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,54249,2580,56829,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case15820,CMA,Not Specified,Not Specified,Yes,Not Specified,Not Specified,Yes,81228,Yes,22850,2074,24924,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case15834,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,47861,3348,51209,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case15938,WGS,Yes,Not Specified,Yes,Not Specified,Yes,No,81425,No,41576,3158,44734,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case16246,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,Yes,23888,1689,25577,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,8,9,88.88888888888889
+Case16487,WES,Yes,Not Specified,No,Not Specified,Not Specified,Yes,81415,No,36797,3160,39957,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case1778,WES,Yes,Not Specified,Yes,Yes,Not Specified,Not Specified,81415,Yes,52167,2264,54431,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case17822,WGS,Yes,Yes,Yes,Yes,No,No,81425,No,40269,2194,42463,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case17929,CMA,Not Specified,Not Specified,Yes,Not Specified,Not Specified,Yes,81228,Yes,50491,3098,53589,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case18257,BRCA1/2,Not Specified,Not Specified,Not Specified,Not Specified,No,No,81162,No,26839,2653,29492,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case18281,WGS,Yes,Not Specified,No,No,Yes,No,81425,No,54253,3349,57602,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case18868,WGS,Yes,Not Specified,No,No,No,No,81425,No,31786,3348,35134,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case18882,WES,Yes,No,Yes,Yes,Yes,No,81415,No,47024,2642,49666,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,17829,1881,19710,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,8,9,88.88888888888889
+Case19321,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,37635,2388,40023,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case19905,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,64118,2260,66378,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,26103,2136,28239,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case2496,WES,Not Specified,No,No,No,Yes,No,81415,No,43783,2004,45787,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,2,9,22.22222222222222
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,No,36805,2708,39513,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case3422,WES,Not Specified,Not Specified,Not Specified,Not Specified,No,Not Specified,81415,No,30326,2524,32850,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case3465,WGS,Not Specified,Yes,No,Not Specified,Not Specified,Yes,81228,No,36203,2584,38787,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,27469,2194,29663,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81228,No,32973,2142,35115,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,17854,1881,19735,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,8,9,88.88888888888889
+Case4067,WES,Yes,Not Specified,Yes,No,Yes,Not Specified,81415,No,40254,3222,43476,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case4512,WGS,Not Specified,Not Specified,Not Specified,Not Specified,No,Yes,81425,No,48767,2074,50841,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case4982,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,41512,2388,43900,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case5230,WES,Yes,No,Yes,Yes,Yes,No,81415,No,46999,1874,48873,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,81162,No,17339,1495,18834,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case5380,WGS,Yes,No,No,No,No,No,81425,No,41486,1874,43360,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case5605,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81425,No,31120,2142,33262,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case5885,WGS,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,81425,No,81225,2330,83555,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case6451,WGS,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81425,Yes,23174,3158,26332,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case6478,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,Yes,24881,3097,27978,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,8,9,88.88888888888889
+Case7014,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81425,Yes,41572,2900,44472,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case7297,WES,Yes,Not Specified,Yes,Not Specified,No,Yes,81415,Yes,36164,3158,39322,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case7376,WES,No,Not Specified,No,Not Specified,No,Yes,81415,No,29190,2710,31900,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case7604,WGS,Yes,No,Yes,Yes,Yes,No,81425,No,54244,3346,57590,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case7682,WES,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81415,Yes,44388,3416,47804,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,7,9,77.77777777777777
+Case8288,WES,Not Specified,Not Specified,Yes,No,Yes,Yes,81415,No,47064,2710,49774,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,4,9,44.44444444444444
+Case8485,WES,Yes,Not Specified,No,No,Yes,No,81415,No,29951,1812,31763,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case8621,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,47875,2838,50713,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,6,9,66.66666666666667
+Case8661,WGS,Not Specified,Not Specified,No,Not Specified,Not Specified,Not Specified,81425,No,20143,2204,22347,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case8710,WES,Yes,Not Specified,Yes,No,Not Specified,No,81415,No,32804,2454,35258,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,3,9,33.333333333333336
+Case950,WES,Yes,Yes,Yes,Not Specified,No,Yes,81415,Yes,39125,2452,41577,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case9978,WES,No,Not Specified,Not Specified,Not Specified,Yes,Yes,81415,No,41717,2584,44301,top3_10retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,10,3,,5,9,55.55555555555556
+Case10363,WGS,Not Specified,Not Specified,No,Yes,No,Yes,81425,No,48048,2006,50054,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case10427,WGS,Yes,Not Specified,Yes,No,Yes,Yes,81425,Yes,23257,2964,26221,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case10451,WES,Yes,No,No,No,Yes,No,81415,No,29329,1298,30627,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case10529,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,57243,55,57298,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case10850,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37305,1554,38859,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case10917,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,54255,1746,56001,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case11124,WES,Yes,No,Yes,No,Yes,Not Specified,81415,No,36790,1748,38538,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case1130,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,55695,2196,57891,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case11514,WES,Not Specified,Not Specified,No,No,Yes,No,81415,No,33172,295,33467,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case11855,CMA,Yes,Yes,No,Yes,No,Yes,81228,No,45212,2002,47214,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case11981,WGS,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,31049,2260,33309,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case12834,CMA,Yes,Yes,Yes,Yes,Yes,No,81228,Yes,48933,1938,50871,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,1,9,11.11111111111111
+Case13406,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,40288,1042,41330,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case13517,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,37764,3154,40918,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case13613,WES,Not Specified,Yes,Not Specified,No,Yes,Yes,81415,No,32976,1750,34726,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case13675,WGS,Yes,No,Yes,No,Yes,No,81425,No,37759,173,37932,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case14127,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,36409,45,36454,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case14141,WES,Not Specified,Not Specified,Not Specified,Yes,Yes,Yes,81415,No,58970,78,59048,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case14155,WGS,Yes,Not Specified,Yes,No,Yes,No,81425,Yes,36641,19,36660,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case1428,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,40336,1474,41810,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case14371,WES,Yes,No,Yes,Yes,Yes,Yes,81415,Yes,42636,2002,44638,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case14408,BRCA1/2,Not Specified,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,36017,1945,37962,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case1501,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,47617,67,47684,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case15557,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,54249,2132,56381,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case15820,CMA,Not Specified,Not Specified,Yes,No,No,Yes,Not Specified,Yes,22851,2647,25498,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case15834,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,46375,1810,48185,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case15938,WGS,Yes,No,No,No,Yes,No,81425,No,42138,1318,43456,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case16246,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,No,81162,Yes,24378,757,25135,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case16487,WES,Yes,No,Yes,No,Yes,Yes,81415,No,36797,1490,38287,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case1778,WES,Yes,Not Specified,Yes,Not Specified,Not Specified,Not Specified,81415,Yes,53271,75,53346,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case17822,WGS,Yes,Yes,No,Yes,No,No,81425,No,40758,943,41701,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case17929,CMA,Yes,Not Specified,Yes,Yes,No,Yes,81229,Yes,50556,20,50576,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case18257,BRCA1/2,Not Specified,Not Specified,Yes,Not Specified,No,No,Not Specified,Yes,10027,1637,11664,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case18281,WGS,Yes,No,No,No,Yes,No,81425,No,56512,1298,57810,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case18868,,,,,,,,,,34743,13,34756,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,Q8 missing value,0,9,0.0
+Case18882,WES,Yes,No,Yes,No,Yes,No,81415,No,47024,1362,48386,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,61468,1431,62899,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case19321,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,32401,1812,34213,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case19905,WES,Yes,No,Yes,No,Yes,No,81415,No,64240,1374,65614,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,33392,1367,34759,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case2496,WES,Yes,No,Yes,No,Yes,No,81415,No,32843,1746,34589,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case3359,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,47039,1878,48917,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case3422,WES,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,81415,No,38261,1087,39348,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case3465,WGS,Not Specified,Yes,No,No,No,Yes,81425,No,68687,1812,70499,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,27469,978,28447,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Not Specified,No,Not Specified,Yes,Yes,Not Specified,No,32973,2329,35302,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,19143,466,19609,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case4067,WES,Yes,No,Yes,No,Yes,No,81415,No,35020,1938,36958,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case4512,WGS,Not Specified,Not Specified,Not Specified,Yes,Yes,Yes,Not Specified,No,58755,84,58839,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case4982,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,41512,1494,43006,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case5230,WES,Yes,No,Yes,No,Yes,No,81415,No,46999,1618,48617,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,81162,No,21801,1047,22848,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case5380,WGS,Yes,No,Yes,No,No,No,81425,No,41486,1554,43040,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case5605,WGS,Not Specified,Not Specified,Not Specified,Not Specified,Yes,Yes,81425,No,32870,583,33453,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case5885,WGS,Yes,Not Specified,Not Specified,Not Specified,Yes,Yes,Not Specified,No,88693,3865,92558,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,2,9,22.22222222222222
+Case6451,WGS,Yes,Not Specified,Yes,No,No,Yes,81425,Yes,24730,323,25053,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,24881,1688,26569,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case7014,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,42173,38,42211,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,7,9,77.77777777777777
+Case7297,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,36164,1874,38038,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case7376,WES,No,Yes,No,No,No,Yes,81415,No,29544,1014,30558,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case7604,WGS,Yes,No,Yes,No,Yes,No,81425,No,54244,2450,56694,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case7682,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,Yes,44388,3220,47608,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,6,9,66.66666666666667
+Case8288,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,No,47187,2140,49327,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case8485,WES,Yes,No,No,No,Yes,No,81415,No,30061,935,30996,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case8621,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,44403,1938,46341,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,8,9,88.88888888888889
+Case8661,WGS,Not Specified,Not Specified,No,No,Yes,No,81425,No,20169,2111,22280,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,3,9,33.333333333333336
+Case8710,WES,Yes,No,Yes,No,Yes,No,81415,No,35623,16,35639,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,4,9,44.44444444444444
+Case950,WES,Yes,Yes,Yes,Not Specified,No,Yes,81415,Yes,38886,1428,40314,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case9978,WES,No,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,43631,29,43660,top3_10retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,10,3,,5,9,55.55555555555556
+Case10363,WGS,Not Specified,Not Specified,Not Specified,Yes,No,Yes,81425,No,36811,5016,41827,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case10427,WGS,Yes,Not Specified,No,No,Yes,Yes,81425,No,33715,3028,36743,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case10451,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,36811,3220,40031,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case10529,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,47033,3030,50063,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case10850,WGS,Yes,Yes,Yes,Yes,Not Specified,Yes,81425,Yes,37748,3092,40840,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case10917,WES,Yes,Yes,No,No,Not Specified,Yes,81415,No,37757,2388,40145,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case11124,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,36790,2902,39692,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case1130,WES,Yes,Not Specified,Yes,Not Specified,No,Yes,81415,Yes,41952,2262,44214,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case11514,WES,Yes,Not Specified,No,Yes,Yes,No,81415,No,37766,2388,40154,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case11855,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,30172,1882,32054,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case11981,WGS,Yes,Yes,Yes,Not Specified,Not Specified,Yes,81425,Yes,32063,2390,34453,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case12834,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,Not Specified,81228,No,35694,4186,39880,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case13406,WGS,Yes,Yes,Yes,No,Yes,Yes,81425,No,47050,3730,50780,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case13517,WES,Yes,Not Specified,No,No,Yes,Yes,81415,No,35041,3028,38069,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case13613,WES,Not Specified,Not Specified,Yes,No,Not Specified,Not Specified,81415,No,23497,1434,24931,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case13675,WGS,Yes,Not Specified,Yes,No,Yes,No,81425,No,34283,2964,37247,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case14127,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,35054,4114,39168,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,8,9,88.88888888888889
+Case1428,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,28094,3026,31120,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case14371,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,45204,2772,47976,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case1501,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47021,3732,50753,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case15557,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37751,1874,39625,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,8,9,88.88888888888889
+Case15820,CMA,Yes,Not Specified,Yes,Not Specified,Not Specified,Yes,81228,Yes,42414,2136,44550,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case15834,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,47020,2646,49666,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case15938,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81425,Yes,33709,2968,36677,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case16246,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,81162,No,61470,1687,63157,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case16487,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,No,78516,2902,81418,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case1778,WES,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81415,No,30074,1630,31704,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case17822,WGS,Not Specified,Yes,No,Not Specified,Not Specified,Not Specified,81425,No,65872,1754,67626,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case17929,CMA,Not Specified,Yes,No,Not Specified,No,Yes,81277,No,42424,3222,45646,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case18257,BRCA1/2,Yes,Not Specified,No,Not Specified,No,No,81162,No,23890,2713,26603,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,8,9,88.88888888888889
+Case18281,WGS,Not Specified,Not Specified,Yes,No,Yes,No,81425,No,23672,2262,25934,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case18868,WGS,Not Specified,Not Specified,No,Not Specified,Not Specified,Not Specified,81425,No,53829,2460,56289,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case18882,WES,Yes,No,Yes,No,Yes,No,81415,No,47024,1938,48962,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,61468,1687,63155,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case19321,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,42635,2582,45217,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case19905,WES,Yes,No,Yes,No,Yes,No,81415,No,47001,2386,49387,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,26103,2584,28687,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case2496,WES,Not Specified,Not Specified,No,No,Yes,No,81415,No,39086,2326,41412,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,2,9,22.22222222222222
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47039,1556,48595,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,Not Specified,Yes,Not Specified,Yes,81415,No,28751,2330,31081,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case3465,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,28106,3794,31900,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37755,2514,40269,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Not Specified,81228,No,33274,2012,35286,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,61493,2071,63564,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case4067,WES,Yes,Not Specified,Yes,Yes,Yes,Not Specified,81415,No,35020,3478,38498,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case4512,WGS,No,Not Specified,Not Specified,Not Specified,Yes,Yes,81425,No,30923,3096,34019,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case4982,WES,Yes,Not Specified,No,No,Yes,Yes,81415,No,30050,3540,33590,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case5230,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,45174,1300,46474,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,81162,No,26064,1559,27623,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case5380,WGS,Yes,Not Specified,Not Specified,Not Specified,No,No,81425,No,33704,2264,35968,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,3,9,33.333333333333336
+Case5605,WGS,Not Specified,Not Specified,Not Specified,Not Specified,No,Yes,81425,No,47262,2842,50104,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case5885,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37748,2258,40006,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case6451,WGS,Yes,Not Specified,No,Not Specified,Not Specified,Yes,81425,No,33697,3673,37370,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,3,9,33.333333333333336
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,81162,No,69718,1303,71021,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case7014,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81425,Yes,33705,3412,37117,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case7297,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,36809,2708,39517,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case7376,WES,No,Not Specified,No,Not Specified,No,Yes,81415,No,32403,2838,35241,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,5,9,55.55555555555556
+Case7604,WGS,Yes,Yes,Yes,Not Specified,Yes,No,81425,No,37746,3220,40966,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case7682,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,36785,2580,39365,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case8288,WES,Not Specified,Not Specified,Not Specified,No,Yes,Yes,81415,No,44433,3096,47529,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,3,9,33.333333333333336
+Case8621,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,52812,2132,54944,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case8661,WGS,Yes,Yes,Yes,Yes,Yes,No,81425,No,37774,2706,40480,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,7,9,77.77777777777777
+Case8710,WES,Yes,Yes,Yes,No,Not Specified,No,81415,No,33372,3028,36400,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,4,9,44.44444444444444
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,35713,4050,39763,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case9978,WES,No,Not Specified,Yes,Not Specified,Yes,Yes,81415,No,48422,2647,51069,top3_30retrieve_gpt_5_gpt_5_update,gpt_5,gpt_5,30,3,,6,9,66.66666666666667
+Case10363,WGS,Yes,No,Yes,No,No,Yes,81425,No,32196,2386,34582,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case10427,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,37766,1750,39516,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case10451,WES,Yes,No,Yes,No,Yes,No,81415,No,47045,1490,48535,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case10529,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,47033,1938,48971,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case10850,WGS,Not Specified,Yes,No,No,Yes,Yes,81425,No,49214,2516,51730,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case10917,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,37757,2002,39759,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case11124,WES,Yes,No,Yes,No,Yes,Yes,81415,Yes,36790,2130,38920,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case1130,WES,Yes,No,No,No,No,Yes,81415,No,39102,2322,41424,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case11514,WES,Yes,No,Yes,No,Yes,No,81415,No,37766,1874,39640,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case11855,CMA,Yes,Yes,No,Yes,No,Yes,Not Specified,No,28173,2771,30944,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case11981,WGS,Yes,Yes,Yes,Not Specified,Not Specified,Yes,81425,Yes,32063,1878,33941,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case12834,CMA,Not Specified,Yes,Yes,Yes,No,No,81415,No,35694,2324,38018,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case13406,WGS,Yes,Yes,No,No,Not Specified,Yes,81425,No,38716,2004,40720,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case13517,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,35041,3350,38391,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case13613,WES,Yes,Not Specified,No,No,Yes,Not Specified,81415,No,47024,1366,48390,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case13675,WGS,Yes,No,Yes,No,Yes,No,81425,No,37767,1234,39001,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case14127,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,35053,1556,36609,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case1428,WGS,Yes,Yes,No,No,Yes,No,81425,No,28094,2130,30224,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case14371,WES,Yes,No,Yes,No,Not Specified,Yes,81415,No,35033,2004,37037,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case1501,WES,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81415,Yes,47021,2712,49733,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case15557,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37751,1682,39433,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case15820,CMA,Not Specified,Yes,Yes,Yes,No,Yes,81277,Yes,42414,2324,44738,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,3,9,33.333333333333336
+Case15834,WES,Yes,Yes,Not Specified,Not Specified,Yes,Yes,81415,No,35025,2134,37159,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case15938,WGS,Yes,No,Yes,No,Yes,No,81425,No,40812,2066,42878,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case16246,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,17831,1752,19583,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case16487,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,81147,1748,82895,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case1778,WES,Yes,No,Yes,No,No,Not Specified,81415,No,46981,2260,49241,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case17822,WGS,Yes,Yes,No,Yes,No,No,81425,No,34795,1746,36541,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case17929,CMA,Yes,Yes,Yes,Yes,No,Yes,81277,Yes,42424,2130,44554,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,2,9,22.22222222222222
+Case18257,BRCA1/2,Yes,Not Specified,Yes,No,No,No,81162,No,61472,1559,63031,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case18281,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,37755,1810,39565,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case18868,WGS,Yes,Yes,Yes,No,Yes,Yes,81425,No,26061,3154,29215,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,3,9,33.333333333333336
+Case18882,WES,Yes,No,Yes,No,Yes,No,81415,No,47024,1682,48706,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,61468,1239,62707,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case19321,WES,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81415,Yes,44397,1432,45829,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case19905,WES,Yes,No,No,No,Yes,No,81415,No,35561,2130,37691,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,3,9,33.333333333333336
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,69743,1303,71046,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case2496,WES,Not Specified,No,No,No,Yes,No,81415,No,29757,1748,31505,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,2,9,22.22222222222222
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,No,36805,2068,38873,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case3422,WES,Not Specified,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,28751,1558,30309,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case3465,WGS,Not Specified,Not Specified,Not Specified,Yes,Yes,Yes,Not Specified,No,64144,2201,66345,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,2,9,22.22222222222222
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37755,978,38733,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case3592,CMA,Yes,Not Specified,No,No,Yes,Yes,81228,No,31617,2580,34197,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,61493,1175,62668,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case4067,WES,Yes,Not Specified,Yes,No,Yes,Not Specified,81415,No,48520,2262,50782,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case4512,WGS,Yes,Not Specified,Yes,Yes,Yes,Yes,81425,Yes,48010,1940,49950,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case4982,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,30050,1878,31928,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case5230,WES,Yes,No,Yes,No,Yes,No,81415,No,46999,1490,48489,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,81162,No,36020,1047,37067,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case5380,WGS,Yes,No,Yes,No,No,No,81425,No,33704,1490,35194,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case5605,WGS,Yes,Yes,Yes,Yes,No,Yes,81425,Yes,32458,2322,34780,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case5885,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37748,1810,39558,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case6451,WGS,Yes,No,Yes,No,No,Yes,81425,No,33697,2002,35699,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,81162,No,61472,1111,62583,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case7014,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,33706,2130,35836,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case7297,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,36809,2002,38811,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case7376,WES,No,Not Specified,Yes,No,Yes,No,81415,No,32403,2324,34727,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case7604,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,37746,1298,39044,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case7682,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,47019,2004,49023,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case8288,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,No,44451,2388,46839,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case8621,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,42642,1684,44326,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case8661,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,37774,2002,39776,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case8710,WES,Yes,Yes,Yes,No,Yes,No,81415,No,33372,2386,35758,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,33100,1618,34718,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case9978,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,48422,2322,50744,top3_30retrieve_gpt_5_gpt_5_mini_update,gpt_5,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case10363,WGS,Yes,Not Specified,No,Not Specified,No,Yes,81425,No,36811,3286,40097,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case10427,WGS,Yes,Not Specified,No,No,Yes,Yes,81425,No,33715,3476,37191,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case10451,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,47045,1940,48985,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case10529,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,47033,2902,49935,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case10850,WGS,Yes,Not Specified,No,No,No,Yes,81425,No,40259,5140,45399,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,3,9,33.333333333333336
+Case10917,WES,Yes,Yes,No,No,Not Specified,Yes,81415,No,37757,2516,40273,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case11124,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,36790,3156,39946,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case1130,WES,Yes,Not Specified,Not Specified,Not Specified,No,Yes,81415,No,41952,1944,43896,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case11514,WES,Yes,Not Specified,No,Yes,Yes,No,81415,No,27256,2132,29388,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case11855,CMA,Yes,Not Specified,No,Not Specified,No,Yes,81228,No,32692,2006,34698,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case11981,WGS,Yes,Yes,Yes,Yes,Not Specified,Yes,81425,Yes,33714,3796,37510,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case12834,CMA,Not Specified,Not Specified,No,No,No,No,81228,No,15701,2326,18027,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case13406,WGS,Yes,Yes,No,Not Specified,Yes,Yes,81425,No,44419,2708,47127,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case13517,WES,Yes,Not Specified,No,No,Yes,Yes,81415,No,35041,2580,37621,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case13613,WES,Not Specified,Not Specified,No,No,Not Specified,Not Specified,81415,No,47024,1498,48522,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,3,9,33.333333333333336
+Case13675,WGS,Yes,Not Specified,No,No,Yes,No,81425,No,30088,2516,32604,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,3,9,33.333333333333336
+Case14127,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,36815,2132,38947,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case1428,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,28094,3090,31184,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case14371,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,47029,2516,49545,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case1501,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47021,3285,50306,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case15557,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37751,2322,40073,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,8,9,88.88888888888889
+Case15820,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,Yes,81228,Yes,42414,2904,45318,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case15834,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,47020,3028,50048,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case15938,WGS,Yes,Not Specified,Yes,No,Yes,Not Specified,81425,No,33710,3414,37124,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case16126,BRCA1/2,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,Not Specified,81162,No,33918,3553,37471,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case16246,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,No,81162,No,26078,2199,28277,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case16487,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,81147,4052,85199,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case17822,WGS,Yes,Not Specified,Yes,Yes,No,No,81425,No,34795,3092,37887,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case17929,CMA,Yes,Not Specified,No,Not Specified,Not Specified,Yes,81228,No,37809,2840,40649,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case18257,BRCA1/2,Yes,Not Specified,Not Specified,Not Specified,No,No,81162,No,17833,2907,20740,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,8,9,88.88888888888889
+Case18281,WGS,Yes,Yes,Yes,Yes,Yes,No,81425,No,37755,2514,40269,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case18868,WGS,Not Specified,Not Specified,No,No,Not Specified,No,81425,No,47039,2520,49559,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case18882,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,47024,2452,49476,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,894,1689,2583,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,8,9,88.88888888888889
+Case19321,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,42635,2326,44961,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case19905,WES,Yes,No,Yes,No,Yes,No,81415,No,47001,2962,49963,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,53780,2327,56107,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case2496,WES,Not Specified,Not Specified,Not Specified,No,Not Specified,No,81415,No,32843,2650,35493,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,3,9,33.333333333333336
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,45214,2260,47474,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,No,Yes,No,Yes,81415,No,56392,1878,58270,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case3465,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,40265,2834,43099,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37755,2834,40589,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Not Specified,No,Not Specified,Not Specified,Not Specified,81228,No,31617,2716,34333,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,26100,2391,28491,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case4067,WES,Yes,Not Specified,Not Specified,Not Specified,Yes,Not Specified,81415,No,35020,2202,37222,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case4512,WGS,No,Not Specified,Yes,No,Yes,Yes,81425,No,30923,2772,33695,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,8,9,88.88888888888889
+Case4982,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,36819,3796,40615,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case5230,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,46999,1812,48811,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,81162,No,27327,1303,28630,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case5380,WGS,Yes,Not Specified,Not Specified,No,No,No,81425,No,33704,2838,36542,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,3,9,33.333333333333336
+Case5605,WGS,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81425,Yes,57052,2262,59314,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case5885,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37748,2450,40198,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case6451,WGS,Yes,Not Specified,Not Specified,Not Specified,No,Yes,81425,No,33698,2776,36474,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,3,9,33.333333333333336
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,81162,Yes,17833,2327,20160,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case7014,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81425,Yes,33705,3220,36925,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case7297,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,38795,2196,40991,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case7376,WES,No,Not Specified,No,Not Specified,No,Yes,81415,No,32421,3030,35451,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,5,9,55.55555555555556
+Case7604,WGS,Yes,Yes,Yes,Yes,Yes,No,81425,No,37746,3538,41284,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case7682,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,35023,2964,37987,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case8288,WES,Not Specified,Not Specified,Yes,No,Yes,Yes,81415,No,47064,2198,49262,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case8621,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,52812,2645,55457,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case8661,WGS,Yes,Yes,Yes,Yes,Yes,No,81425,No,37774,3538,41312,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,7,9,77.77777777777777
+Case8710,WES,Yes,Not Specified,Yes,No,Not Specified,No,81415,No,33372,2966,36338,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,3,9,33.333333333333336
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,39125,2450,41575,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,6,9,66.66666666666667
+Case9978,WES,No,Not Specified,No,Not Specified,Not Specified,Yes,81415,No,49320,2584,51904,top3_30retrieve_gpt_5_mini_gpt_5_update,gpt_5_mini,gpt_5,30,3,,4,9,44.44444444444444
+Case10363,WGS,Yes,Not Specified,Yes,Yes,No,Yes,81425,Yes,36811,3092,39903,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case10427,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,33715,2006,35721,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case10451,WES,Yes,No,Yes,No,Yes,No,81415,No,47045,1490,48535,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case10529,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,47033,2450,49483,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case10850,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,40259,2198,42457,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case10917,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,37757,1554,39311,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case11124,WES,Yes,Not Specified,Yes,No,Yes,Not Specified,81415,No,36790,2134,38924,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case1130,WES,Yes,Not Specified,Yes,Yes,No,Yes,81415,Yes,41088,2196,43284,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case11514,WES,Yes,No,Yes,No,Yes,No,81415,No,32077,1490,33567,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case11855,CMA,Not Specified,Yes,No,Yes,No,Yes,81228,No,35680,2004,37684,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case11981,WGS,Yes,Yes,Yes,Not Specified,Yes,Yes,81425,Yes,33714,2132,35846,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case12834,CMA,Not Specified,Not Specified,Yes,Yes,Not Specified,Not Specified,Not Specified,Yes,35694,1755,37449,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case13406,WGS,Yes,Yes,No,No,Yes,Yes,81425,No,44419,2578,46997,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case13517,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,35041,2518,37559,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case13613,WES,Yes,Not Specified,Not Specified,No,Yes,Not Specified,81415,No,47024,2264,49288,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case13675,WGS,Yes,No,No,No,Yes,No,81425,No,34283,1362,35645,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,3,9,33.333333333333336
+Case14127,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,35053,1362,36415,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case1428,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,37742,1810,39552,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case14371,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,47029,2068,49097,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case1501,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,Yes,61507,2836,64343,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case15557,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,40262,2262,42524,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case15820,CMA,Not Specified,Yes,Yes,Yes,No,Yes,81277,Yes,42414,2388,44802,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,3,9,33.333333333333336
+Case15834,WES,Yes,Yes,No,No,Yes,Yes,81415,No,35025,1938,36963,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case15938,WGS,Yes,No,Yes,No,Yes,No,81425,No,33710,2834,36544,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case16246,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,81162,No,26077,1367,27444,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case16487,WES,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81415,Yes,36797,2136,38933,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case1778,WES,Yes,No,Yes,No,No,No,81415,No,46981,1682,48663,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case17822,WGS,Yes,Yes,Yes,No,No,No,81425,No,34795,1682,36477,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case17929,CMA,Yes,Yes,Yes,Yes,No,Yes,81277,Yes,42424,1746,44170,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,2,9,22.22222222222222
+Case18257,BRCA1/2,Yes,Not Specified,Yes,Not Specified,No,No,81162,Yes,25153,1497,26650,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case18281,WGS,Yes,No,No,No,Yes,No,81425,No,64145,1874,66019,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case18868,WGS,Yes,Yes,No,No,Yes,No,81415,No,57022,2258,59280,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,3,9,33.333333333333336
+Case18882,WES,Yes,No,Yes,No,Yes,No,81415,No,47024,1490,48514,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,Not Specified,Yes,17829,1624,19453,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case19321,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,44397,1428,45825,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case19905,WES,Yes,No,Yes,No,Yes,No,81415,No,47001,1554,48555,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case2211,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,44307,2007,46314,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case2496,WES,Yes,No,No,No,Yes,No,81415,No,31668,1554,33222,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,3,9,33.333333333333336
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,45214,1556,46770,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case3422,WES,Not Specified,Not Specified,No,Yes,No,Yes,81415,No,51085,2134,53219,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case3465,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,40265,1746,42011,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case3474,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37755,1042,38797,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case3592,CMA,Not Specified,Yes,No,No,Yes,Yes,Not Specified,No,32734,2581,35315,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,No,81162,Yes,9160,1815,10975,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case4067,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,35020,1556,36576,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case4512,WGS,No,No,Yes,No,Yes,Yes,81425,No,35643,2322,37965,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case4982,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,35057,1686,36743,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case5230,WES,Yes,No,No,No,Yes,No,81415,No,46999,1490,48489,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case5303,BRCA1/2,Yes,Not Specified,No,No,No,No,Not Specified,No,21940,1496,23436,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case5380,WGS,Yes,No,Yes,No,No,No,81425,No,33703,1234,34937,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case5605,WGS,Yes,Yes,Yes,Yes,No,Yes,81425,Yes,57052,2770,59822,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case5885,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,37748,1298,39046,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,7,9,77.77777777777777
+Case6451,WGS,Yes,No,Yes,Not Specified,Not Specified,Not Specified,81425,No,36787,2200,38987,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case6478,BRCA1/2,Yes,Not Specified,Yes,No,Yes,No,Not Specified,Yes,17833,1496,19329,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case7014,WGS,Yes,Yes,Yes,Yes,Yes,Yes,81425,Yes,33705,1682,35387,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case7297,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,38795,1746,40541,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case7376,WES,No,Yes,No,Not Specified,No,Yes,81415,No,32421,2772,35193,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case7604,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,37746,1810,39556,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case7682,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,47019,1874,48893,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case8288,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,50109,2646,52755,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case8621,WES,Yes,Yes,Yes,Yes,Yes,Yes,81415,Yes,52812,1746,54558,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,8,9,88.88888888888889
+Case8661,WGS,Yes,No,No,No,Yes,No,81425,No,36056,1938,37994,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,4,9,44.44444444444444
+Case8710,WES,Yes,Yes,Yes,No,Yes,No,81415,No,33372,2706,36078,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556
+Case950,WES,Yes,Yes,Yes,Yes,No,Yes,81415,Yes,41738,2706,44444,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,6,9,66.66666666666667
+Case9978,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,49320,3092,52412,top3_30retrieve_gpt_5_mini_gpt_5_mini_update,gpt_5_mini,gpt_5_mini,30,3,,5,9,55.55555555555556

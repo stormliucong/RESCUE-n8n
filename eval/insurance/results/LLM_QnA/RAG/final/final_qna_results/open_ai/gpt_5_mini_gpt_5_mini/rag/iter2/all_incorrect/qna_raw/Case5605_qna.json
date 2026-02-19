@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) was requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy age restriction applies to asymptomatic testing for adult-onset conditions (must be >= age of majority) but gives no age limit for symptomatic diagnostic germline testing; no explicit age-based exclusion for WGS in symptomatic patients is specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate a specific ordering provider specialty for germline testing; it requires genetic counseling unless testing is ordered by a disease-process specialist, but it does not define strict ordering-provider eligibility in the policy text."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy section II.2.a.i: testing meets coverage when the individual is currently symptomatic with suspicion of a known genetic disease where knowledge of mutation will assist diagnosis/treatment — the patient has a major congenital cardiac anomaly being evaluated for an underlying genetic cause."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not list specific mandatory prior tests for WGS; although it requires that 'other testing for the disease is equivocal or does not exist' as part of overall coverage criteria, it does not specify particular prior tests that must have been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy references family history for asymptomatic/risk testing but does not specify family history/consanguinity criteria for symptomatic WGS in this context; the patient’s maternal aunt with pancreatic cancer is noted but policy does not make that a defined requirement for this WGS indication."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy II.1 requires genetic counseling prior to and after genetic testing (unless ordered by a disease-process specialist). Patient had pre-test counseling with a genetic specialist, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "Policy gives general reimbursement guidance (use specific NGS procedure code if available or 81479 if none) but does not map WGS to any of the listed CPT codes in the provided policy text; none of the specific CPT options are explicitly specified for WGS in the document."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per policy II.2.a.i the patient is symptomatic with a suspected genetic disorder (congenital cardiac anomaly); pre-test genetic counseling was completed and prior CMA was nondiagnostic (supporting that other testing is equivocal). Taken together these facts meet the policy's indications for covered germline genomic testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10219,
+    "output_tokens": 2923,
+    "total_tokens": 13142
+  }
+}

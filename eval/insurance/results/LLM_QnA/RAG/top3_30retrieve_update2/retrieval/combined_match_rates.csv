@@ -1,0 +1,2 @@
+retrieval_model,top_k,match_rate,matched_cases,total_cases
+perplexity,3,0.33962264150943394,36,106

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is being requested to evaluate the child with developmental delay/intellectual disability."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES coverage criteria are based on clinical presentation (unexplained DD/ID) rather than an age cutoff; no payer-specific age restriction is specified and the patient is within a pediatric age group (6 yrs)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided payer criteria do not mandate a specific ordering provider specialty in this case; documentation shows referral by PCP and pre-test counseling by a genetic counselor, which meets typical provider/counseling expectations but no strict specialty requirement is specified."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has unexplained developmental delay/intellectual disability and a nondiagnostic prior CMA — this matches BCBS_FEP indications for WES for DD/ID when prior first‑line testing was nondiagnostic."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires prior chromosomal microarray as a first‑line test for DD/ID; the record states CMA was performed and nondiagnostic, satisfying prior test requirements."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant: an older sibling with moderate–severe intellectual disability is documented, which supports genetic testing per coverage considerations for familial DD/ID."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP commonly requires documentation of pre‑test genetic counseling for WES; the record documents pre‑test counseling by a genetic counselor and plans for post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (sequencing and interpretation) and is the appropriate code for the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All key BCBS_FEP coverage criteria are met: appropriate clinical indication (unexplained DD/ID), required prior CMA nondiagnostic, relevant family history, and documented pre‑test genetic counseling — therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1995,
+    "output_tokens": 1829,
+    "total_tokens": 3824
+  }
+}

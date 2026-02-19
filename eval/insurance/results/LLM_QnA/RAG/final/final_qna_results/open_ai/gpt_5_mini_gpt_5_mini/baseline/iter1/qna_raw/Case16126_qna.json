@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note states BRCA1 and BRCA2 testing has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage policies do not impose strict age cutoffs; eligibility is driven by personal/family cancer history rather than patient age, and no age-based exclusion is specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA policies typically require appropriate documentation and counseling but do not mandate a specific ordering specialty; the record shows a gynecologist ordered testing but the payer policy does not explicitly restrict ordering provider type."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP covers BRCA testing for individuals meeting clinical criteria (personal history of relevant cancer or qualifying family history/NCCN criteria). This 6-week-old infant with multiple congenital anomalies has no personal history of breast/ovarian cancer and no documented qualifying family cancer history, so medical indication for BRCA1/2 testing is not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA policies do not require specific prior diagnostic genetic tests (e.g., FISH) prior to BRCA testing; the prior nondiagnostic FISH is not listed as a required prior test."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP BRCA eligibility is based on family cancer history (affected relatives, ages at diagnosis, etc.). The record reports parental consanguinity but provides no family history of breast/ovarian cancer meeting coverage criteria, so required family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP generally requires or expects genetic counseling for BRCA testing. The record documents pre-test counseling completed and planned post-test follow-up, satisfying counseling expectations."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Of the provided CPT options, 81277 is the gene-specific code most consistent with BRCA1/BRCA2 molecular testing (the other codes correspond to WES/WGS or non-BRCA tests)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under BCBS_FEP BRCA coverage rules testing is covered only when clinical/NCCN family or personal cancer history criteria are met. This 6-week-old infant lacks a qualifying personal or family cancer history despite counseling; therefore BRCA1/2 testing is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1967,
+    "output_tokens": 1948,
+    "total_tokens": 3915
+  }
+}

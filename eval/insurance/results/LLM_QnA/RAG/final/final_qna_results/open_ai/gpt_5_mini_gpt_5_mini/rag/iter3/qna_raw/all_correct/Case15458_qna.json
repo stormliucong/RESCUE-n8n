@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being evaluated specifically for BRCA1 and BRCA2 testing (patient summary: 'being evaluated for BRCA1 and BRCA2 testing')."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Personal history of breast cancer and ... Diagnosed at age ≤45 years' as medically necessary indication. The patient is 19 with a personal history of breast cancer, meeting the age-based criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires testing be performed in a setting with 'suitably trained health care providers' and recommends genetic counseling but does not specify required ordering provider type or specialty; the patient’s order by a nurse practitioner is not addressed explicitly in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists personal history of breast cancer diagnosed ≤45 and personal history with a close relative with ovarian or metastatic prostate cancer as indications. Patient has personal breast cancer and family history of ovarian cancer (maternal aunt) and metastatic prostate cancer in a close relative, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy discusses prior limited testing in some contexts but does not require a specific prior test (and does not require FISH prior to BRCA testing); the patient's prior nondiagnostic FISH is not defined as a required precondition in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy defines 'close relatives' and lists family history (ovarian carcinoma; metastatic prostate cancer) as criteria. The patient has a maternal aunt with ovarian cancer (a close relative) and a close relative with metastatic prostate cancer, which are relevant family-history indications."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires appropriate pre- and post-test genetic counseling and that testing occur in a setting with suitably trained providers. The patient completed pre-test genetic counseling with plans for post-test follow-up, meeting the counseling requirement described in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing code mappings for BRCA1/BRCA2 testing, so a specific CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy: patient has a personal history of breast cancer diagnosed ≤45 and relevant family history (ovarian carcinoma and metastatic prostate cancer), and received pre-test genetic counseling; these meet the policy's medical necessity and counseling requirements for BRCA1/2 germline testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18955,
+    "output_tokens": 1838,
+    "total_tokens": 20793
+  }
+}

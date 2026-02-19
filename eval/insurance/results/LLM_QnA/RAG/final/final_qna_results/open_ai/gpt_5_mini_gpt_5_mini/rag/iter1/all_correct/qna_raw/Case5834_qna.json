@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states the test being requested is chromosomal microarray (CMA); the policy is the BCBS_FEP CMA policy."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's coverage statement refers to 'individuals' with developmental delay/intellectual disability and does not set an explicit age cutoff; therefore no specific age-based eligibility criteria are specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define specific ordering-provider specialty or credential requirements for CMA (it discusses genetic counseling expertise but not ordering-provider restrictions)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The policy states CMA may be considered medically necessary as first-line testing for 'apparent nonsyndromic developmental delay/intellectual disability'; the patient has lifelong severe intellectual disability meeting this indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of specific prior tests before CMA. Although guidelines referenced recommend fragile X testing as part of first-tier evaluation along with CMA, no explicit prerequisite tests are defined in the policy."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's coverage criteria are based on the patient's developmental/intellectual disability or congenital anomalies and do not specify family history or consanguinity criteria relevant to CMA eligibility; the patient's maternal ovarian cancer history is not addressed by the policy for CMA."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy recommends formal genetic counseling and states it should be performed by someone with genetic expertise; the patient had pre-test counseling with a genetic counselor and plans for post-test follow-up, meeting the counseling expectations described."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to CMA testing, so no specific CPT code is specified in the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, CMA 'may be considered medically necessary as first-line testing' for apparent nonsyndromic intellectual disability; the patient meets that clinical indication, has had genetic counseling, and no disqualifying prior-test or age restrictions are specified—so CMA is covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15715,
+    "output_tokens": 1704,
+    "total_tokens": 17419
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states whole genome sequencing (WGS) has been ordered to assess hereditary cancer predisposition."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Cigna GS criteria explicitly require the member to be <21 years of age; the patient is 41, so age criterion is not met (policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires an 'appropriate genetic and family history evaluation' and a detailed clinical letter. The record notes evaluation by a medical geneticist but the required clinical letter content is not provided, so inability to confirm that ordering/provider documentation meets policy requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific medical indications (primarily pediatric neurodevelopmental/congenital criteria) and requires member <21; the adult patient with cancer does not meet the enumerated clinical/age indications in the policy."
+    },
+    "Q4": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires no prior exome/genome and documentation of prior testing in the clinical letter. While only a nondiagnostic karyotype is documented and no prior exome/genome is reported, the materials do not confirm all required prior testing/documentation per policy, so cannot verify compliance."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy references family history as relevant to evaluation. The patient has a first-degree relative (mother) with a persistent severe hematologic disorder raising concern for a heritable syndrome, which is relevant family history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "ACMG guidance cited in the policy requires pretest counseling by a medical geneticist or genetic counselor; the materials state there was no documented record of pre-test genetic counseling, so counseling requirements are not met in the documentation provided."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy lists CPT 81425 for genome sequencing (proband) and states 81425 should be billed for whole genome sequence analysis."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage criteria require all listed conditions including member age <21 and detailed clinical documentation; the patient is 41 and the documentation of required clinical letter and pre-test counseling is lacking, therefore the test does not meet the policy's medical necessity criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9161,
+    "output_tokens": 2491,
+    "total_tokens": 11652
+  }
+}

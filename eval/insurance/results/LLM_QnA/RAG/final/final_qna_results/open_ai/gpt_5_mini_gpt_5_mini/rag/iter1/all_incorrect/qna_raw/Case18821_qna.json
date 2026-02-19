@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info: obstetrician requests fetal whole exome sequencing (WES) at 22 weeks — request explicitly for WES."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy criteria for standard exome sequencing allow testing for 'multiple congenital abnormalities affecting unrelated organ systems' without an explicit prenatal/fetal age limit; the policy does specify age limits for rapid testing of acutely-ill infants but does not set an explicit age requirement for prenatal WES in the Standard Exome section."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires evaluation by a Board-Certified/Board-Eligible Medical Geneticist or Advanced Practice Nurse in Genetics and pre-/post-test counseling by an appropriate provider (Standard ES, items F and G). Patient info documents ordering obstetrician only and no geneticist/APGN evaluation or documented counseling, so ordering/provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy Standard Exome Sequencing I.A.2.a explicitly lists 'Multiple congenital abnormalities affecting unrelated organ systems' as an indication; patient has prenatal imaging showing multiple congenital anomalies affecting different organ systems, meeting this clinical criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires that alternate etiologies be considered and ruled out 'when possible' but does not mandate completion of a specific prior genetic test (e.g., CMA) as an absolute prerequisite in the Standard Exome criteria; thus no specific prior-test requirement is defined."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Family history strongly suggestive of a genetic etiology, including consanguinity' as a supportive criterion. Patient has a maternal aunt reported to have dysmorphic features, which is relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy Standard ES item F requires pre- and post-test counseling by an appropriate provider (e.g., Board-Certified Medical Geneticist or Certified Genetic Counselor). Patient information states there is no documentation of pre-test genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding: Standard Exome Sequencing common CPT code for a proband exome is 81415 (listed in policy's Coverage Criteria/Coding Implications for Standard Exome Sequencing)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets a clinical indication (multiple congenital anomalies) per the policy, mandatory coverage requirements (pre- and post-test genetic counseling and evaluation by a Board-Certified/Board-Eligible Medical Geneticist or APGN per Standard ES items F and G) are not documented. Because required provider/counseling criteria are unmet, the test does not meet all policy coverage conditions."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12240,
+    "output_tokens": 2145,
+    "total_tokens": 14385
+  }
+}

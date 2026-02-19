@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The clinical note explicitly states chromosomal microarray (CMA) has been ordered to evaluate for copy number variants in a patient with developmental delay/intellectual disability."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna CMA coverage criteria are based on clinical indication (unexplained developmental delay/intellectual disability) and do not impose an age limit for testing in this clinical context; the policy does not specify age-based exclusion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's CMA policy does not mandate a specific ordering provider specialty for coverage; no provider-type restriction is documented in the patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Cigna covers CMA for individuals with unexplained developmental delay/intellectual disability; the patient is a 31-year-old with developmental delay and intellectual disability without a suspected specific syndrome, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's policy generally allows CMA as a first‑line test for unexplained developmental delay/ID and does not require completion of other genetic tests prior to CMA; no required prior tests are documented."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "CMA eligibility criteria do not hinge on family history or consanguinity; the noted family history (mother with early-onset breast cancer) is relevant to BRCA testing but not to CMA coverage criteria."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "While genetic counseling is good clinical practice and the patient completed pre-test counseling, Cigna's CMA coverage criteria do not explicitly require documented genetic counseling as a coverage precondition in this scenario."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT code 81425 corresponds to chromosomal microarray analysis for copy number variant detection (CMA), matching the ordered test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per Cigna policy, CMA is covered for unexplained developmental delay/intellectual disability; the patient meets the medical indication, no disqualifying age/provider/prior-test requirements apply, and counseling has been completed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1984,
+    "output_tokens": 1754,
+    "total_tokens": 3738
+  }
+}

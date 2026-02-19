@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient information states that BRCA1 and BRCA2 testing has been ordered explicitly."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy (Genetic Testing for Developmental Delay/ID, ASD, and Congenital Anomalies) does not specify age-based eligibility for BRCA1/2 testing; age-related criteria are not addressed in the policy text for this test."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy document does not specify ordering-provider specialty or other provider-type requirements for BRCA1/2 testing; no ordering-provider rules for this test are described in the provided policy."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP policy defines clinical indications for CMA (e.g., multiple congenital anomalies) but does not define medical indication criteria for BRCA1/2 testing; the policy does not address BRCA testing indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy does not list required prior tests to be completed before BRCA1/2 testing; although FISH was nondiagnostic, the policy does not set prior-test prerequisites for BRCA testing."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has consanguineous parents, the policy does not specify family-history or consanguinity criteria relevant to BRCA1/2 testing in the provided document."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states experts recommend formal genetic counseling for inherited-condition testing and that counseling should be by someone with genetics expertise. The patient had pre-test counseling and plans post-test follow-up, meeting the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP policy text provided does not list or map CPT codes to BRCA1/2 or other tests; no CPT guidance is given in the document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the provided policy, BRCA1/2 testing is not addressed as medically necessary for an infant with multiple congenital anomalies. The policy specifically supports chromosomal microarray as first-line for multiple congenital anomalies but does not support BRCA testing for this clinical scenario; therefore BRCA1/2 is not covered per the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15680,
+    "output_tokens": 2308,
+    "total_tokens": 17988
+  }
+}

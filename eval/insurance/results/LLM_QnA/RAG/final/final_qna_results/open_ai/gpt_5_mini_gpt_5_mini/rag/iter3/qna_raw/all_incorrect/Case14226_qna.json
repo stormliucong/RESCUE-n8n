@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient info explicitly states the oncology evaluation is for germline BRCA1 and BRCA2 (BRCA1/2) testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided Cigna/EviCore hereditary cancer panel policy does not specify age-based eligibility for single-gene BRCA1/2 testing in this document and instead refers to a separate 'BRCA Analysis' guideline for BRCA-specific criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires 'pre- and post-test genetic counseling by an appropriate provider' for hereditary cancer multigene panels and that rendering labs be qualified, but it does not specify ordering-provider specialty/type requirements for BRCA1/2 single-gene testing within this document."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "This document defers BRCA-specific clinical indications to the separate EviCore 'BRCA Analysis' guideline. The provided policy does not explicitly define BRCA1/2 medical-indication criteria, so whether the patient's findings meet BRCA criteria cannot be determined from this document alone."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy requires no prior hereditary cancer multigene panel testing or prior testing for any gene on the panel. Patient history states no prior genetic testing, so the 'no previous testing' requirement in the policy is satisfied."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy uses family cancer history (e.g., first-/second-degree relatives with relevant cancers) as part of eligibility for hereditary cancer testing. The patient's only noted family history is a mother with a severe hematologic/immunologic disorder (non-cancer), which is not a policy‑specified relevant family cancer history."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Pre- and post-test genetic counseling is explicitly required for hereditary cancer multigene panels in this policy. However, BRCA1/2 single-gene testing is addressed by a separate 'BRCA Analysis' guideline (not provided), so the counseling requirement specific to BRCA1/2 single-gene testing is not specified in the provided document. Patient fact: no pre-test counseling was completed."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists various panel and test-specific codes (e.g., 81432, 81479) and shows 81228 for chromosomal microarray, but it does not provide a specific CPT code for single-gene BRCA1/2 testing in the provided text. None of the CPT options match a BRCA1/2 code explicitly listed in this document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage cannot be confirmed from the provided policy: BRCA1/2 single-gene eligibility is governed by a separate 'BRCA Analysis' guideline referenced but not included. Additionally, the hereditary cancer panel policy requires pre-test genetic counseling for panel testing and other specific criteria; the patient has no pre-test counseling and the BRCA-specific criteria (per the referenced guideline) are not documented here. Based on the provided policy text and available patient facts, the documentation does not meet the insurer's specified criteria for approval."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11927,
+    "output_tokens": 3704,
+    "total_tokens": 15631
+  }
+}

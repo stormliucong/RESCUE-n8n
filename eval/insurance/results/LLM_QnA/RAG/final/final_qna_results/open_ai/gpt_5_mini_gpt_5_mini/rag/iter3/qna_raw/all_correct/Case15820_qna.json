@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient info states chromosomal microarray (CMA) has been ordered; policy addresses CMA (procedure codes such as 81228)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed on a living child or adult; the patient is a 31-year-old adult, meeting the age/setting criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies genetic counseling and that the rendering laboratory be qualified, but does not specify ordering provider specialty/type requirements for CMA."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists developmental delay/intellectual disability (DD/ID) as a qualifying presentation. Patient has DD/ID, no prior CMA, testing on a living adult, and no suspected specific syndrome (so no more appropriate targeted test indicated)."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires no previous CMA testing; patient has no prior genetic testing reported, satisfying the 'no previous CMA' requirement."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy only notes family history of chromosome rearrangement as relevant/exclusion; the patient’s reported family history (mother with early breast cancer) is not the chromosome rearrangement/consanguinity criterion and no consanguinity is reported."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider; patient completed multiple pre-test genetic counseling sessions and plans post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Policy lists CPT 81228 as the chromosomal microarray (constitutional) procedure code; this corresponds to the ordered CMA."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy criteria for CMA for developmental disorders (DD/ID), patient meets required clinical indications, has no prior CMA, fulfills counseling requirement, and is an adult; therefore the test is covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10097,
+    "output_tokens": 1718,
+    "total_tokens": 11815
+  }
+}

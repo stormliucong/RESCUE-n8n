@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note states whole genome sequencing (WGS) has been ordered by a medical geneticist."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES/WGS coverage criteria do not impose a strict age cutoff; testing is applied based on clinical presentation (pediatric age is acceptable). No explicit age-based exclusion applies to this 6‑week‑old."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires an appropriate ordering clinician; the test is ordered by a medical geneticist, which meets provider requirements in UHC coverage criteria."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria consider unexplained global developmental delay/neurologic/developmental disorders as medical indications for WGS, and this infant has global developmental delay."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires prior standard testing (e.g., chromosomal microarray) for developmental delay before WES/WGS; CMA was performed and nondiagnostic per the record."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history/consanguinity is not a required determinant in UHC WGS coverage for this indication; the sibling's brief resolved unexplained event is noted but is not defined as a qualifying family history criterion in policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage expects documentation of genetic counseling; pre‑test counseling was completed and post‑test follow up is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (WGS) analysis and interpretation."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per UHC coverage criteria the patient meets medical indication (global developmental delay), required prior testing (nondiagnostic CMA), an appropriate ordering provider (medical geneticist), and counseling documentation — therefore WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2004,
+    "output_tokens": 2095,
+    "total_tokens": 4099
+  }
+}

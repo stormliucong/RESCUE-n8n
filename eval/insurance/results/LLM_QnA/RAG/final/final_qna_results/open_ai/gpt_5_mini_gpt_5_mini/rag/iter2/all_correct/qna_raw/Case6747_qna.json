@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info states whole genome sequencing (WGS) was ordered by the medical geneticist."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy allows rapid WGS/WES only for critically ill infants in NICU/PICU; for other situations whole genome sequencing is stated as investigational. The patient is a 12-year-old who is not a critically ill infant, so age/acuity-based eligibility for WGS is not met (Policy Statement: rapid WGS for critically ill infants; 'Whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations')."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion #1 requires evaluation by a clinician with expertise in clinical genetics and counseling; the test was ordered by a medical geneticist, meeting the ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications for WGS only as rapid testing in critically ill infants; the patient (12-year-old, not critically ill) does not meet those WGS-specific clinical criteria. (Policy Statement: rapid WGS/WES medically necessary for critically ill infants; otherwise WGS investigational.)"
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy expects prior standard workup (eg, chromosomal microarray analysis) before sequencing; the record states CMA was previously performed and nondiagnostic, satisfying required prior testing per policy guidelines."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as relevant; the family reports a sibling with developmental delay, which is a relevant family history per Policy Guidelines."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling and documentation; the patient had pre-test counseling completed and post-test counseling planned, meeting the counseling requirement (Policy Statement #1 and 'Genetic Counseling' section)."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to WGS/WES services; no CPT guidance is present in the policy text supplied."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets many WES criteria (child with multiple congenital anomalies, CMA nondiagnostic, evaluated by geneticist, counseling done), the requested test is WGS. The policy states 'Whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations' (except rapid WGS for critically ill infants). Because this patient is a non-critically ill 12-year-old, WGS is investigational and not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14819,
+    "output_tokens": 2997,
+    "total_tokens": 17816
+  }
+}

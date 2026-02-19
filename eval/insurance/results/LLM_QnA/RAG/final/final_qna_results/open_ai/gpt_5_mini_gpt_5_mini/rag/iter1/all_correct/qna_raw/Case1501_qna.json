@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record states Whole Exome Sequencing (WES) is being ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related criteria include global developmental delay (onset <5 years) and intellectual disability diagnosed by 18. The patient is 2 years old with developmental concerns, meeting the age-related presentation described in the WES coverage rationale."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a developmental pediatrician."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical necessity: WES is covered when clinical history strongly suggests a genetic cause and features such as multiple congenital anomalies and/or global developmental delay are present. The patient has multiple congenital anomalies and ongoing developmental concerns, and prior karyotype was nondiagnostic."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate prior specific tests (e.g., CMA) before postnatal WES; it only recommends targeted testing if a specific syndrome is suspected. The patient had a nondiagnostic karyotype, but no policy-required prior test is specified for this scenario."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists family history of other first- or second-degree members with similar clinical features or consanguinity as relevant criteria. The patient’s noted family history (mother with Long QT) is not described as similar clinical features or consanguinity, so the family history does not meet the policy-specified family/consanguinity criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES/WGS. The patient completed pre-test genetic counseling with plans for post-test follow-up, meeting the counseling recommendation in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy lists CPT 81415 for exome (sequence analysis) for a proband; this corresponds to the WES requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy WES is medically necessary when ordered by a developmental pediatrician and the individual has features such as multiple congenital anomalies and developmental delay. The 2-year-old patient has multiple congenital anomalies, developmental concerns, nondiagnostic prior karyotype, appropriate ordering provider, and completed pre-test counseling—meeting coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36937,
+    "output_tokens": 2131,
+    "total_tokens": 39068
+  }
+}

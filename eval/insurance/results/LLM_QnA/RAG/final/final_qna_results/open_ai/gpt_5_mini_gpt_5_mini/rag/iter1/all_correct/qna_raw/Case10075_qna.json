@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient clinical notes state consideration of chromosomal microarray (CMA) testing to evaluate for an underlying chromosomal/genetic etiology; prior CMA was nondiagnostic. Policy under review is specific to CMA."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses postnatal use of CMA in infants/children but does not define explicit age cutoffs; the patient is a 4‑week‑old infant and no age-based exclusion or explicit age eligibility criteria are specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state specific ordering provider/specialty requirements for CMA (it recommends genetic counseling by experienced individuals but does not restrict who may order the test)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy states CMA is medically necessary as first-line for (1) apparent nonsyndromic developmental delay/ID, (2) ASD, or (3) multiple congenital anomalies not specific to a well‑delineated syndrome. The infant has meconium ileus (a single neonatal/intestinal issue) and no documented developmental delay, ASD, or multiple congenital anomalies; therefore the patient does not meet the policy's listed medical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate completion of any specific prior diagnostic tests before performing CMA in the covered indications; it does not provide required prior‑test steps for this clinical situation."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a sibling with an inborn error of metabolism, the policy does not specify family history or consanguinity criteria as qualifying indications for CMA in this context."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states formal genetic counseling is recommended and should be performed by an individual with genetics expertise. The patient had pre‑test counseling with a genetic specialist and arrangements for post‑test follow‑up, which meets the policy's counseling expectation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy document does not list or map CPT codes to chromosomal microarray testing; no CPT code is specified in the provided policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the policy's coverage criteria, CMA is covered only for individuals with developmental delay/ID, ASD, or multiple congenital anomalies. The 4‑week‑old infant's presentation (meconium ileus, prior nondiagnostic CMA, family history of metabolic disease) does not meet the policy's specified medical indications for CMA, so the test is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15704,
+    "output_tokens": 1858,
+    "total_tokens": 17562
+  }
+}

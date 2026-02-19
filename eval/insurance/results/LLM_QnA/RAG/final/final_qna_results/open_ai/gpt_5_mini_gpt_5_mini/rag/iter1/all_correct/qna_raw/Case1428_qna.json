@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose a general age cutoff for WGS; age-specific items (e.g., ID diagnosed by 18, onset windows) are phenotype-related but there is no standalone age-based eligibility that would exclude or include a 3-week-old."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The patient is being evaluated by a medical geneticist who ordered WGS, meeting the provider requirement (Policy: 'WGS is ordered by a medical geneticist...')."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires either (A) the proband have one major feature (e.g., multiple congenital anomalies affecting different organ systems, moderate–severe ID by 18, global DD, early epileptic encephalopathy) or (B) two or more listed features (e.g., congenital anomaly plus another). The infant has a single congenital anomaly (Hirschsprung) and a family history of a sibling with severe ID, but does not meet the policy's required one-major-feature or two-or-more-secondary-features thresholds for WGS (Policy: 'one of the following: ... or ... two or more of the following')."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WGS is proven medically necessary when 'Neither CMA nor WES have been performed.' The clinical information notes only Fragile X testing was done and no CMA or WES, so the prior-test requirement (absence of CMA/WES) is met."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a first-degree relative (older sibling) with severe intellectual disability diagnosed by age 18. The policy lists family history/consanguinity as relevant features (Policy lists 'Other first- or second-degree family member(s) with similar clinical features' and includes family history among features considered)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make documented pre-test counseling a coverage requirement. The record indicates no documented pre-test counseling, but counseling is not specified as a mandatory coverage criterion in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponding to whole genome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although provider type (medical geneticist) and prior-test status (no CMA/WES performed) meet policy requirements, the patient does not meet the policy's defined medical necessity phenotype criteria for WGS (no major feature or two or more secondary features present). Therefore WGS is not supported as medically necessary per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36931,
+    "output_tokens": 3664,
+    "total_tokens": 40595
+  }
+}

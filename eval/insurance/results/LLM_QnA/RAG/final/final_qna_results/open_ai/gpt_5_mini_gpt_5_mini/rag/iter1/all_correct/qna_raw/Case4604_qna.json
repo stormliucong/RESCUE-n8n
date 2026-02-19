@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested to evaluate the child's developmental delay/intellectual disability."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy defines WES as medically necessary for children with unexplained congenital or neurodevelopmental disorders; the patient is a 6-year-old child, which meets the 'children' age criterion in the policy (and aligns with guidelines referring to onset <18 years)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics (including family history and phenotype) and counseled. Patient data documents pre-test counseling by a genetic counselor but does not document an evaluation by a clinician with expertise in clinical genetics, so ordering-provider requirements are not shown to be met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication: unexplained neurodevelopmental disorder in a child after standard workup qualifies. The patient has developmental delay/intellectual disability without a specific syndromic diagnosis after prior standard testing (CMA nondiagnostic), meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy notes WES is indicated when previous genetic testing (eg, chromosomal microarray analysis) has failed to yield a diagnosis. Patient history documents prior CMA testing was nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance lists family history of developmental delay as relevant. The patient has an older sibling with moderate to severe intellectual disability, which is relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling; patient information states pre-test counseling was completed with a genetic counselor and plans for post-test follow-up, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP policy document does not specify or map CPT codes to WES; no CPT guidance appears in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications (unexplained pediatric neurodevelopmental disorder) and prior CMA was nondiagnostic and genetic counseling was performed, the policy requires documentation that the individual was evaluated by a clinician with expertise in clinical genetics. Such an evaluation is not documented in the patient information; therefore all required policy criteria are not fully met and coverage cannot be confirmed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14848,
+    "output_tokens": 2444,
+    "total_tokens": 17292
+  }
+}

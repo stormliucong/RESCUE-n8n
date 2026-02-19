@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info explicitly states whole genome sequencing (WGS) is being ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose a general age cutoff for WGS; age-qualifiers exist for certain features (e.g., ID by 18, GDD onset <5) but no overall age-based exclusion for WGS is specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient’s test is ordered by a medical geneticist (meets requirement)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical-necessity for WGS requires: neither CMA nor WES performed, ordered by an approved specialist, and clinical history suggesting genetic cause with either one of certain major features or two or more listed features. The patient has no CMA/WES documented, is ordered by a medical geneticist, and has a congenital anomaly (choanal atresia) plus a first‑degree relative with developmental delay (meets the 'two or more' features branch)."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion for WGS states 'Neither CMA nor WES have been performed.' Patient history notes only a prior karyotype (nondiagnostic) and no CMA or WES, so the prior-test requirement is satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Other first- or second-degree family member(s) with similar clinical features' as an eligibility feature; patient has an older sibling with developmental delay, which is relevant per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WGS/WES. Patient completed pre-test genetic counseling multiple times with planned post-test follow-up, meeting the counseling expectation in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponding to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the UnitedHealthcare WGS policy WGS is medically necessary when criteria are met: ordered by an approved specialist (medical geneticist), neither CMA nor WES performed, and clinical history suggests a genetic cause with qualifying features. The patient satisfies these (congenital anomaly + affected sibling), so WGS is covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36944,
+    "output_tokens": 2284,
+    "total_tokens": 39228
+  }
+}

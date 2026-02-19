@@ -1,0 +1,41 @@
+case_id,rank,name,score
+Case10917,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.606764554977417
+Case10917,2,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6104922294616699
+Case10917,3,BCBS_FEP_204102 Whole Exome and.pdf,0.5933697819709778
+Case10917,4,United Healthcare_chromosome-microarray-testing.pdf,0.5772044658660889
+Case10917,5,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf,0.5879162549972534
+Case10917,6,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.5813785195350647
+Case10917,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5601845979690552
+Case10917,8,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.4456981122493744
+Case10917,9,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.44218581914901733
+Case10917,10,Cigna_MOL.TS_.344.A_Chromosomal_Microarray_Solid_Tumors_eff01.01.2025_pub09.11.2024_0.pdf,0.3938666880130768
+Case8051,1,BCBS_FEP_204102 Whole Exome and.pdf,0.7005797624588013
+Case8051,2,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5626083016395569
+Case8051,3,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.4483134150505066
+Case8051,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.695828378200531
+Case8051,5,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6945850849151611
+Case8051,6,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf,0.6723467111587524
+Case8051,7,United Healthcare_chromosome-microarray-testing.pdf,0.6454423666000366
+Case8051,8,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.6714187264442444
+Case8051,9,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.47089606523513794
+Case8051,10,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.48106491565704346
+Case10917,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.3363971710205078
+Case10917,2,BCBS_FEP_204102 Whole Exome and.pdf,0.5167980194091797
+Case10917,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.43713048100471497
+Case10917,4,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf,0.4140997529029846
+Case10917,5,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.3381265103816986
+Case10917,6,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.4447783827781677
+Case10917,7,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.19132313132286072
+Case10917,8,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.38644248247146606
+Case10917,9,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.33440011739730835
+Case10917,10,Cigna_MOL.TS_.344.A_Chromosomal_Microarray_Solid_Tumors_eff01.01.2025_pub09.11.2024_0.pdf,0.2645283341407776
+Case8051,1,BCBS_FEP_204102 Whole Exome and.pdf,0.5906248688697815
+Case8051,2,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.417484313249588
+Case8051,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.31227409839630127
+Case8051,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.45656242966651917
+Case8051,5,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf,0.37623775005340576
+Case8051,6,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.33152836561203003
+Case8051,7,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.17710712552070618
+Case8051,8,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.5028584003448486
+Case8051,9,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.29963016510009766
+Case8051,10,Cigna_MOL.TS_.344.A_Chromosomal_Microarray_Solid_Tumors_eff01.01.2025_pub09.11.2024_0.pdf,0.2323966920375824

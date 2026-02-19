@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient clinical information explicitly states referral for chromosomal microarray (CMA) testing to evaluate a genomic etiology for developmental disorder."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS FEP policy defines clinical indications for CMA but does not specify age-based eligibility limits for CMA; therefore age criteria are not specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling expertise but does not specify ordering-provider specialty or other formal ordering-provider requirements for CMA."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy Statement: 'Chromosomal microarray analysis may be considered medically necessary as first-line testing in the initial evaluation of individuals with... apparently nonsyndromic developmental delay/intellectual disability.' The patient has lifelong severe intellectual disability, meeting this clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy allows CMA as first-line testing and does not require completion of prior genetic tests before CMA. Although guidelines referenced recommend fragile X plus CMA as first-tier, the policy does not mandate prior tests as prerequisites; the patient has had no prior genetic testing."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's CMA coverage criteria are based on the patient's clinical presentation (developmental delay/ID/ASD/multiple congenital anomalies) and do not specify family history or consanguinity requirements; the patient's maternal history of ovarian cancer is not cited as relevant in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy notes that genetic counseling is recommended and should be performed by experienced personnel. The patient had pre-test counseling with a genetic counselor on multiple occasions and plans for post-test follow-up, meeting the counseling expectation in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS FEP policy document does not list or map CPT codes to CMA; no CPT code is specified in the policy text supplied."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy statement, CMA 'may be considered medically necessary as first-line testing' for apparent nonsyndromic intellectual disability. The patient has severe intellectual disability consistent with that indication, no prior testing is required, and genetic counseling was performed; therefore the CMA is covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15715,
+    "output_tokens": 1855,
+    "total_tokens": 17570
+  }
+}

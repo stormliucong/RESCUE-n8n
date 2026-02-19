@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) was requested to evaluate multiple congenital anomalies."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-based coverage for WES/WGS applies to individuals <18 years; the patient is 7 weeks old, meeting the <18 years criterion referenced in the policy (see Indications #1 and #4 linking WGS to the <18 criteria)."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy (Indications #1a) requires evaluation by an ABMGG board‑certified medical geneticist or an ABGC board‑certified genetic counselor for WES (and WGS is contingent on WES criteria). The record notes pre‑test counseling and GP referral but does not state the counselor's certification or that an ABMGG geneticist evaluated the patient, so sufficiency cannot be confirmed from available information."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines WGS coverage only when WES was unable to identify a causative mutation and the other WES criteria are met (Indication #4). The patient has congenital anomalies consistent with an indication for WES, but WES has not been reported as performed/negative, so the specific medical indication for WGS per policy is not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires prior WES (and meeting WES criteria) before WGS coverage (Indication #4). Patient has only nondiagnostic Fragile X testing reported; there is no documentation of prior WES having been completed and nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not require family history or consanguinity as a distinct eligibility criterion for WGS; although the patient has an older sibling with ASD, the policy does not list family history/consanguinity as a required element for WGS coverage in this scenario."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires pre‑test counseling by an ABMGG geneticist or ABGC board‑certified genetic counselor for WES (Indication #1a) and WGS coverage is contingent on WES criteria. The record states pre‑test counseling was completed but does not document the counselor's certification, so compliance with the policy's counseling/provider requirement cannot be confirmed."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT billing codes to WES/WGS; therefore a CPT code cannot be determined from the policy text alone."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, WGS only meets coverage criteria after WES is unable to identify a causative mutation and the WES criteria are met (Indication #4). The patient has not had documented WES (only nondiagnostic Fragile X), so WGS as requested does not meet the coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22452,
+    "output_tokens": 2685,
+    "total_tokens": 25137
+  }
+}

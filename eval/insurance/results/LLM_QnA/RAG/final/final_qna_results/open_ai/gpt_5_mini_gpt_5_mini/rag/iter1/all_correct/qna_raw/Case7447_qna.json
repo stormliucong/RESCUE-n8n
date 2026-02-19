@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info states the cardiologist has ordered whole genome sequencing (WGS) for the fetus."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy defines age-based indications for postnatal children and critically ill neonates/infants and explicitly excludes prenatal (fetal) testing; the patient is a fetus and therefore does not meet the policy's age/site criteria."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics (documentation of genetics evaluation) before WES/WGS; the order was from a cardiologist and there is no documentation that a clinical genetics evaluation was done."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy specifies medical indications for WES/WGS in postnatal children or critically ill infants and explicitly states it does not address prenatal (fetal) testing; an isolated fetal congenital heart defect at 33 weeks is a prenatal indication not covered by the policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy for diagnostic WES/WGS requires prior appropriate genetic workup (eg, chromosomal microarray and/or targeted testing) where applicable; only nondiagnostic fragile X testing is documented and there is no documentation of required prior testing such as CMA."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists specific family-history criteria (eg, arrhythmia, developmental delay, LQTS, sudden unexplained death) relevant to testing; the documented family history (maternal aunt with triple-negative breast cancer) is not among the policy-specified family-history criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires counseling by an individual experienced in genetic medicine and documentation that the individual was counseled; there is no documentation of pre-test genetic counseling for this patient."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP policy document does not list or map specific CPT codes to WGS/WES, so a CPT code cannot be selected from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the BCBS_FEP policy, WGS/WES coverage applies to postnatal children or critically ill infants under specified criteria and the policy explicitly does not address prenatal (fetal) testing; the requested prenatal WGS and the submitted documentation do not meet the policy's coverage requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14825,
+    "output_tokens": 2059,
+    "total_tokens": 16884
+  }
+}

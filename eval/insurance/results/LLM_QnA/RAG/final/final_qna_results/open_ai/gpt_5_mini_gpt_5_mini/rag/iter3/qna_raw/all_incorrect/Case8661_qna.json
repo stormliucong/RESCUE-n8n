@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient clinical information explicitly states 'whole genome sequencing (WGS) is requested to investigate a possible genetic cause.'"
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy specifies whole-genome sequencing as medically necessary only as rapid WGS for critically ill infants in NICU/PICU. The patient is a 7-year-old child not critically ill, so the age/setting requirement for the medically‑necessary rapid WGS is not met (policy: rapid WGS for critically ill infants)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling about risks. The ordering provider is the child's neurologist and pre-test genetic counseling was declined, so the policy-specified requirement (evaluation/counseling by genetics‑expert clinician) is not satisfied."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy states WGS is considered investigational for diagnosis in situations other than rapid WGS in critically ill infants. The patient is not a critically ill infant in an intensive care unit, so the medical indication for WGS per the policy is not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists prior testing requirements (eg, CMA and/or targeted single‑gene testing) for standard WES eligibility, but does not specify prior-test requirements for non‑rapid WGS in the policy text; therefore specific prior-test requirements for the requested WGS are not specified in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list relevant family history (eg, developmental delay, early severe neurologic disease in a sibling) as pertinent. The patient has a sibling who developed epileptic encephalopathy before age 3, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires genetic counseling by an individual experienced in genetic medicine prior to testing. The family declined pre-test genetic counseling, so the policy-required pre‑test counseling criterion is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The test requested is whole genome sequencing (WGS); the CPT code among the options that corresponds to whole genome sequencing is 81425."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, WGS is considered investigational for diagnosis except as rapid WGS for critically ill infants in NICU/PICU. The patient is a non‑critically ill 7‑year‑old; criteria for medically necessary WGS are not met (and pre‑test genetics evaluation/counseling requirement is not met), so WGS is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14854,
+    "output_tokens": 3532,
+    "total_tokens": 18386
+  }
+}

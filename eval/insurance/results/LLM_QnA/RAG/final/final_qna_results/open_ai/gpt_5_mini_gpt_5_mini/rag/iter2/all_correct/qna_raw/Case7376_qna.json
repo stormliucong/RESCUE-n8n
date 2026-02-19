@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical info states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy includes age-specific criteria for some qualifying features (e.g., intellectual disability or sensory impairment diagnosed by age 18). The member is 73 with no documentation of meeting those age-dependent criteria, so age-based eligibility in the policy is not met."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering/referring provider is a neurologist, meeting the requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires clinical presentation nonspecific + one of specified high‑priority features or two or more listed features (many pediatric/early‑onset items, family members with similar features, consanguinity, etc.). The record documents an unexplained major abnormality of ≥1 organ system but lacks the specific qualifying features listed in the policy, so medical indication per policy is not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate specific prior tests for outpatient WES in non‑prenatal settings (other than performing targeted testing first if a specific syndrome is suspected); prior FISH was nondiagnostic but the policy does not list FISH/CMA/karyotype as a required prior test for the described adult outpatient indication."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists family history of other first- or second-degree relatives with similar clinical features or consanguinity as qualifying. The patient’s family history (sister with triple‑negative breast cancer) is not documentation of a relative with similar features to the proband nor consanguinity, so it does not meet the policy’s family‑history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES/WGS. The record documents pre-test counseling was completed with a genetic specialist, meeting the counseling expectation in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Applicable codes in the policy list 81415 for exome (sequence analysis); this is the CPT code corresponding to WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although ordering provider specialty and pre-test counseling meet policy expectations and the requested test is WES (CPT 81415), the policy requires specific clinical features (e.g., early‑onset developmental/neurologic criteria, multisystem congenital anomalies, family members with similar features, consanguinity, etc.) for WES to be medically necessary. The patient record does not document any of those qualifying features; therefore per the UnitedHealthcare WES/WGS policy the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36945,
+    "output_tokens": 2720,
+    "total_tokens": 39665
+  }
+}

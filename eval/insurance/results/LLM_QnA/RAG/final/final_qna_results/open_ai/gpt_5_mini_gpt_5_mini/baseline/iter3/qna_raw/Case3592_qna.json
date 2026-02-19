@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The clinical note explicitly states \"chromosomal microarray (CMA) testing for developmental disorders is being requested.\""
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's CMA coverage is based on clinical indication (unexplained developmental delay/ID/ASD or congenital anomalies) rather than strict age cutoffs; no age-based exclusion for a neonate is specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna medical policy for CMA does not generally mandate a specific ordering provider specialty; no provider-type requirement is provided in the case information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The patient has neonatal-onset epileptic encephalopathy and unexplained developmental disorder—conditions that fall under Cigna's medically necessary indications for CMA (unexplained developmental delay/neurologic/developmental disorders)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's CMA policy does not require specific prior testing before performing CMA (CMA is often first‑tier for developmental disorders); the record notes a prior CMA was nondiagnostic, but no required prior tests are defined."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "A relevant family history is documented (an older sibling with unexplained developmental regression), which is pertinent to genetic testing considerations per payer criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Cigna policies generally require or expect appropriate genetic counseling for genetic testing; pre-test counseling with a genetics specialist was documented and post-test follow-up is planned, meeting counseling expectations."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to chromosomal microarray/constitutional genome‑wide microarray testing (the appropriate code for CMA)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications for CMA, a prior CMA for this patient was nondiagnostic. Cigna typically does not cover repeat CMA on the same individual absent new clinical features, a different testing technology with clear justification, or other specified reasons. Given the prior nondiagnostic CMA and no documented justification for repeat CMA (e.g., new anomalies or use of a different validated platform), coverage is not supported."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1990,
+    "output_tokens": 2413,
+    "total_tokens": 4403
+  }
+}

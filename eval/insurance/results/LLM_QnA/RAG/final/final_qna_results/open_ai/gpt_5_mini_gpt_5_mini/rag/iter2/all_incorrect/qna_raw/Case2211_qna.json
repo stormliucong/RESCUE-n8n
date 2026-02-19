@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information: referral expressly for BRCA1 and BRCA2 testing. Policy covers BRCA1 and BRCA2 germline testing (FEP 2.04.02 policy statements)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly states testing in minors is investigational; otherwise adults are eligible. Patient is 21 (an adult), so age meets policy-specified age criteria (minors excluded) per FEP 2.04.02."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers who can give pre- and post-test counseling. Patient completed pre-test counseling with a genetic specialist and plans post-test follow-up, satisfying provider/counseling setting requirements in FEP 2.04.02."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists as medically necessary testing for individuals with any close blood relative with a known BRCA1/BRCA2/PALB2 pathogenic variant. Patient's mother carries a known BRCA2 pathogenic variant, meeting that criterion (FEP 2.04.02 policy statement)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends targeted testing when a familial BRCA variant is known but does not require completion of prior testing before ordering; no specific prior-test prerequisite is mandated in the policy text (Recommended Testing Strategies)."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy includes family history criteria and defines close relatives; patient reports at least two additional affected blood relatives on same side and a mother with known BRCA2 pathogenic variant, which is directly relevant to eligibility (FEP 2.04.02 family history/close relatives sections)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed by experienced providers and that testing should occur where pre- and post-test counseling is available. Patient completed pre-test counseling with a genetic specialist and plans post-test follow-up, meeting counseling requirements (Genetic Counseling section)."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy text does not specify CPT or billing codes for BRCA1/BRCA2 testing; therefore a specific CPT code cannot be determined from the policy document."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per FEP 2.04.02 policy, testing is medically necessary for individuals with any close blood relative with a known BRCA pathogenic variant. The patient’s mother has a known BRCA2 pathogenic variant, the patient is an adult, and pre-test genetic counseling was completed—so coverage is supported by the policy statement."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18964,
+    "output_tokens": 1742,
+    "total_tokens": 20706
+  }
+}

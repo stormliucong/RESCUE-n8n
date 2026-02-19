@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states 'whole exome sequencing (WES) is being requested.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare WES coverage commonly applies to pediatric patients with unexplained developmental delay/congenital anomalies; the patient is a 9-year-old child, which meets age-related criteria for pediatric WES."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires involvement of or consultation with a genetics provider for WES. Pre-test counseling was completed with a genetic specialist, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria for WES include unexplained multisystem congenital anomalies and developmental delay; this child has multiple congenital abnormalities affecting different organ systems and developmental concerns, meeting clinical indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC policy generally requires prior appropriate cytogenomic testing (commonly chromosomal microarray) before WES for developmental delay/MCAs. Only a nondiagnostic karyotype is documented; CMA is not documented as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are relevant for WES; this patient has a sibling with developmental delay, which is documented and supports testing eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of genetic counseling for WES. The record states pre-test counseling was completed with a genetic specialist and post-test follow-up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT 81415 corresponds to clinical exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, medical indication, genetics involvement, and counseling are met, UnitedHealthcare typically requires prior chromosomal microarray (or equivalent cytogenomic testing) before authorization of WES for developmental delay/MCAs; CMA is not documented, so current criteria for coverage are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1973,
+    "output_tokens": 1595,
+    "total_tokens": 3568
+  }
+}

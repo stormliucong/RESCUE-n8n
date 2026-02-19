@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information explicitly states she 'is undergoing BRCA1/2 testing at the request of her obstetrician.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy document is specific to CHEK2/ATM/BARD1 and references a related BRCA1/2 policy (2.04.02) but the BRCA1/2 policy text and any age-based eligibility criteria are not included in the provided documents."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy does not specify ordering-provider specialty or other formal ordering requirements for BRCA1/2 testing; genetic counseling is recommended but no explicit ordering-provider requirement for BRCA1/2 is given in the supplied text."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The supplied policy focuses on CHEK2/ATM/BARD1 and does not contain the BRCA1/2 coverage criteria or specific medical indications (those would be in related policy 2.04.02 which was not provided)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy does not state any prerequisite testing specifically required prior to BRCA1/2 testing; related guidance (BRCA1/2 policy) is not included in the supplied documents."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a relevant family history (father with metastatic prostate cancer) and the policy emphasizes consideration of personal/family history, the provided document does not specify BRCA1/2-specific family-history criteria, so applicability cannot be determined from the supplied text alone."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The provided policy's 'Genetic Counseling' section states formal genetic counseling is recommended when genetic testing for an inherited condition is considered and should be performed by an experienced provider; the patient completed pre-test counseling with a genetic specialist and has plans for post-test follow-up, meeting the counseling recommendation in the supplied policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to BRCA1/2 testing; no CPT-code assignment is specified in the supplied text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The only FEP policy text provided addresses CHEK2/ATM/BARD1 (stating those tests are investigational) and references a separate BRCA1/2 policy that was not included. The supplied documents do not provide explicit coverage criteria establishing BRCA1/2 as a covered service for this patient; benefits are stated to be available only when testing is 'medically necessary,' which is not demonstrated by the provided policy text. Therefore, coverage cannot be affirmed based on the provided policy and must be denied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11011,
+    "output_tokens": 2786,
+    "total_tokens": 13797
+  }
+}

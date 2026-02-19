@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy M2032 ties pediatric genomic testing to the <18 y indication for WES and the WGS coverage pathway depends on those criteria; the patient is an 8‑week‑old infant (<18 years) so age requirement for the pediatric pathway is met."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by an ABMGG board‑certified medical geneticist or an ABGC board‑certified genetic counselor; the chart only notes 'genetic counselor' without board‑certification or ABMGG evaluation details, so sufficiency cannot be confirmed from provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES/WGS applicability for unexplained congenital or neurodevelopmental disorders in <18 y; the infant has significant unexplained hypotonia and family history suggesting a genomic etiology, which meets the clinical indication described in the policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy states WGS MEETS COVERAGE CRITERIA only when WES was performed and failed to identify a causative mutation; there is no record of prior WES (only nondiagnostic FISH), so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a relevant family history (older sibling with unexplained developmental regression); the policy references family history/recurrence as relevant to genomic testing eligibility."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires pretest counseling by an ABMGG medical geneticist or an ABGC board‑certified genetic counselor; the record confirms pretest counseling occurred but does not state the counselor's ABGC board‑certification, so compliance cannot be confirmed from provided data."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document (M2032) does not list or map CPT codes to WGS/WES, so no specific CPT code can be determined from the policy text alone."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy M2032, WGS is covered only when WES has been performed and failed to identify a causative mutation while the other WES criteria are met; since WES has not been documented as performed and the request is for direct WGS, the WGS request does not meet coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22480,
+    "output_tokens": 3232,
+    "total_tokens": 25712
+  }
+}

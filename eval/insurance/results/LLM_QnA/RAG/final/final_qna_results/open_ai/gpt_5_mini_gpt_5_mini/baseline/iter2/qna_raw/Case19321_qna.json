@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The note explicitly states whole exome sequencing (WES) is being pursued to investigate a possible genetic etiology for the patient's neurodevelopmental disorder."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria specify WES for pediatric patients with unexplained neurodevelopmental disorders (developmental delay/autism); the patient is 1 year old and meets pediatric age-based criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires ordering by an appropriate treating clinician (e.g., neurologist, geneticist, pediatrician); the test was ordered/referral by a neurologist, which meets provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical necessity criteria include unexplained complex neurodevelopmental disorder and features concerning for autism spectrum disorder; the patient has these indications and prior CMA was nondiagnostic."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires prior chromosomal microarray as first‑line testing for developmental disorders; the record states CMA testing was nondiagnostic, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "A relevant family history is present (maternal aunt with multiple congenital anomalies), which supports genetic evaluation per policy family-history considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre‑test (and post‑test) genetic counseling for WES; the record documents pre‑test genetic counseling and plans for post‑test follow‑up."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) including interpretation, which matches the requested test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All applicable UHC coverage criteria are met: pediatric age, appropriate medical indication (complex neurodevelopmental disorder with ASD features), required prior CMA completed and nondiagnostic, ordering clinician is appropriate neurologist, and pre‑test genetic counseling documented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1982,
+    "output_tokens": 1785,
+    "total_tokens": 3767
+  }
+}

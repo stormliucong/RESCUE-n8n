@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested as the next diagnostic step."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy states WES may be medically necessary for evaluation of unexplained congenital or neurodevelopmental disorders in children; the patient is a 10-year-old child and therefore meets the age-based (child) criterion."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics. Patient data notes referral by a cardiologist and that pre-test genetic counseling was completed, but does not explicitly document evaluation by a clinician with expertise in clinical genetics, so this cannot be confirmed from the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indication: WES is appropriate for children with unexplained neurodevelopmental disorders. The patient has nonsyndromic developmental delay and intellectual disability and prior genetic testing (FISH) was nondiagnostic, meeting the policy's clinical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy gives examples of prior testing (eg, chromosomal microarray and/or targeted single-gene testing) or prior genetic testing that failed to yield a diagnosis, but does not mandate a single specific prior test. The patient had prior FISH testing that was nondiagnostic; the policy does not explicitly require CMA first, so specific prior test requirements are not strictly specified."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance lists family history of developmental delay as a relevant criterion. The patient has a brother diagnosed with moderate to severe intellectual disability, which is relevant per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling and evaluation including family history and phenotype. Patient information states pre-test genetic counseling was completed with plans for post-test follow-up, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT code 81415 corresponds to clinical whole exome sequencing (interpretation and report)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on the FEP policy, WES may be considered medically necessary for children with unexplained neurodevelopmental disorders when criteria are met. The patient is a child with unexplained developmental delay/ID, prior genetic testing was nondiagnostic, pre-test genetic counseling was completed, and there is relevant family history—together these facts meet the policy's medical-necessity criteria for standard WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14850,
+    "output_tokens": 3629,
+    "total_tokens": 18479
+  }
+}

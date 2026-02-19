@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info explicitly states 'whole genome sequencing (WGS) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP policy (Genetic Testing for Idiopathic DCM) contains no explicit age-based eligibility cutoffs for the genetic testing indication; age criteria are not specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and referral to expert centers but does not define specific ordering-provider specialty requirements for testing, so provider requirements are not specified."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage is limited to genetic testing for idiopathic dilated cardiomyopathy (DCM) in individuals with signs/symptoms of DCM after negative workup. The patient has a congenital major cardiac anomaly but the record does not document DCM or that the condition is idiopathic DCM; therefore the patient does not meet the policy's specific medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires a standard cardiac workup and that testing for DCM be performed when DCM is idiopathic after negative workup. The patient record does not document completion of the required DCM workup (eg, echocardiography, ECG, evaluation for secondary causes), so required prior testing has not been shown."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy's family-history criteria are specific to familial DCM (eg, first-degree relative with DCM and known familial variant). The patient reports a sibling with a brief resolved unexplained event, not a diagnosed DCM in a relative, so the family-history criteria for DCM testing are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states genetic counseling is recommended/appropriate for patients undergoing genetic testing. The patient had pre-test counseling with a genetic counselor and a post-test visit is planned, satisfying the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP policy document does not provide or map specific CPT codes to whole genome sequencing or other tests; CPT coding is not specified in the policy text provided."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, genetic testing is medically necessary only for idiopathic DCM after appropriate negative workup (or targeted testing for relatives with a known familial variant). The patient is undergoing WGS for a congenital cardiac anomaly without documentation that this is idiopathic DCM or that required cardiac workup/criteria were met; therefore the requested WGS is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10967,
+    "output_tokens": 2101,
+    "total_tokens": 13068
+  }
+}

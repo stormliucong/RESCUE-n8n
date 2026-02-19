@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient clinical information explicitly states she presents for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy (2.04.126) does not specify age-based eligibility criteria for BRCA1/2 testing; it references related policy 2.04.02 for BRCA testing but no age limits are given in the supplied text."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy discusses genetic counseling and recommends experienced counselors but does not define specific ordering-provider type or specialty requirements for BRCA1/2 ordering in the supplied text."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Within the provided document the American Society of Breast Surgeons statement (included in the policy) says genetic testing should be made available to all individuals with a personal history of breast cancer and should include BRCA1/BRCA2; the patient has a personal history of breast cancer, meeting that clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy notes that testing an affected family member first is ideal and references NCCN criteria, but it does not mandate specific prior tests that must be completed before BRCA1/2 testing in the supplied text."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy emphasizes family history in risk assessment (references NCCN and other guidance). The patient has relevant family history (mother with breast cancer at age 50 and a brother with metastatic prostate cancer with intraductal features), which is pertinent to hereditary breast/ovarian cancer evaluation per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states genetic counseling is recommended and should be performed by an experienced provider; the patient had multiple pre-test counseling visits with a genetic counselor, satisfying the counseling expectation described in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not list or map specific CPT codes to BRCA1/2 testing, so a corresponding CPT code is not specified in the supplied document."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the Benefit Application the policy states benefits are available for specialized diagnostic genetic testing when medically necessary to diagnose/manage a patient's existing medical condition. Additionally, the included American Society of Breast Surgeons guidance in the policy supports offering BRCA1/2 testing to individuals with a personal history of breast cancer. The patient has a personal history of breast cancer, documented genetic counseling, and relevant family history; therefore, per the provided policy text BRCA1/2 testing would be covered as medically necessary."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11017,
+    "output_tokens": 2115,
+    "total_tokens": 13132
+  }
+}

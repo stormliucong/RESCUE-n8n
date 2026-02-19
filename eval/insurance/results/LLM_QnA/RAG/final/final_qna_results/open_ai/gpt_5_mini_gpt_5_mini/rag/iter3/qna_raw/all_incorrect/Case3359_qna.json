@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'Whole exome sequencing (WES) is being requested' for evaluation of developmental concerns."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to 'children' with unexplained congenital or neurodevelopmental disorders. The patient is a 4-year-old child, meeting the policy's age-based reference to children."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics. Patient info documents referral by a developmental pediatrician and genetic counseling, but does not document evaluation by a clinician with expertise in clinical genetics, so ordering provider requirement is not satisfied per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy permits WES for children with unexplained neurodevelopmental disorders when a genetic etiology is considered likely despite prior testing. The patient has significant hypotonia (listed in policy examples), ongoing developmental concerns, and a nondiagnostic CMA, meeting the medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing (eg, CMA and/or targeted testing) to be nondiagnostic or genetic etiology still likely. Patient had chromosomal microarray (CMA) previously performed and nondiagnostic, satisfying the prior test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as relevant. Patient has a sibling with developmental delay, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires counseling about risks of genetic testing by someone with expertise. Patient had pre-test counseling with a genetic counselor on multiple occasions, satisfying the policy's genetic counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); of the provided CPT options, 81415 corresponds to exome sequencing and is the best match for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy 'ALL of the following criteria are met' for coverage. Although age, medical indication (including nondiagnostic CMA), prior testing, family history, and genetic counseling are met, the policy requires documented evaluation by a clinician with expertise in clinical genetics (criterion 1), which is not documented in the patient information. Therefore coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14846,
+    "output_tokens": 1804,
+    "total_tokens": 16650
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related items (e.g., features diagnosed by 18 years) apply and the patient is 13, which meets the policy age-related criteria for pediatric indications such as multiple congenital anomalies."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the order was placed by a medical geneticist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Multiple congenital anomalies (must affect different organ systems)' as an approved clinical indication for WGS; the patient has multiple congenital anomalies affecting different organ systems."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy states WGS is medically necessary only when 'Neither CMA nor WES have been performed'; the patient already had a nondiagnostic CMA, so the policy's prior-test requirement for WGS is not met."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family history/consanguinity as relevant (e.g., 'other first- or second-degree family member(s) with similar clinical features'); the patient’s family history (sibling with short stature) does not represent a first-/second-degree relative with similar multisystem congenital anomalies, so the family-history criterion is not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state counseling is a coverage requirement; the patient declined counseling but counseling is not specified as mandatory for coverage in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy applicable CPT codes list 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponding to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age, provider, and clinical indication criteria (multiple congenital anomalies), the policy requires that WGS be used when 'Neither CMA nor WES have been performed.' The patient has already had CMA (nondiagnostic), so per the policy WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36947,
+    "output_tokens": 2482,
+    "total_tokens": 39429
+  }
+}

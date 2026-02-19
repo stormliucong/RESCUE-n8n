@@ -1,0 +1,2 @@
+total_cases,mean_accuracy,std_accuracy,min_accuracy,max_accuracy,median_accuracy,exact_match_cases,unknown_md5_cases,no_file_found_cases
+10,72.22222222222223,11.38550085106622,55.55555555555556,88.88888888888889,72.22222222222223,10,0,0

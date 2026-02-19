@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient was referred specifically for whole genome sequencing (WGS). (Patient info: 'referred by an obstetrician for whole genome sequencing (WGS)')"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: standard WES/WGS medically necessary for pediatrics under 21. Patient is 11 years old, which meets the age criterion (policy I: 'pediatrics under 21 years of age')."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires the individual be evaluated by a clinician with expertise in clinical genetics and that counseling was provided. Patient facts: pre-test counseling was completed with a genetic specialist, satisfying the provider/counseling requirement in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indication: WES/WGS for evaluation of unexplained congenital disorders in pediatrics when prior genetic testing is non-diagnostic. Patient facts: 11-year-old with a major congenital cardiac anomaly and a nondiagnostic prior CMA — meets the policy medical indication (policy I: 'unexplained congenital ...' and 'Previous genetic testing is non-diagnostic')."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES/WGS when previous genetic testing is non-diagnostic as one qualifying criterion. Patient facts: prior chromosomal microarray (CMA) was nondiagnostic, which satisfies the prior testing requirement in the policy."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists specific family-history examples relevant to genetic testing (e.g., arrhythmia, sudden unexplained death, developmental delay). Patient's family history (maternal aunt with pancreatic cancer) is not one of the policy-specified relevant family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced clinician. Patient facts: pre-test counseling was completed with a genetic specialist, meeting the policy's genetic counseling requirement."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy coding section lists 81425 among covered procedure codes for WES/WGS when medically necessary; 81425 corresponds to whole-genome sequencing in the policy's covered CPT code list."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All required policy criteria are met: patient is pediatric (<21), has an unexplained congenital cardiac anomaly, prior CMA was nondiagnostic, and genetic evaluation/counseling was completed by a genetic specialist — therefore standard WGS may be considered medically necessary per policy I."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14852,
+    "output_tokens": 2597,
+    "total_tokens": 17449
+  }
+}

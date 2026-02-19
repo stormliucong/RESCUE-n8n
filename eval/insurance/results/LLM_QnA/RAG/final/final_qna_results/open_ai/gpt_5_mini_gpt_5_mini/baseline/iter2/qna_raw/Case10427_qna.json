@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare pediatric genomic testing criteria apply to children; the patient is an 8-week-old infant (pediatric), meeting age-based eligibility for WGS per payer pediatric testing policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC allows ordering by treating specialists (e.g., neurologist) and/or genetics teams; the test was referred by a neurologist and counseling was provided by a genetic counselor, satisfying ordering/counseling provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical indications listed in UHC criteria for WGS/WES include unexplained hypotonia and suspected genetic neurologic disorders; the infant has significant hypotonia and a positive family history, meeting medical necessity criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior first‑tier testing (chromosomal microarray) or documentation why first‑tier testing is not appropriate; only FISH was performed and was nondiagnostic, and no CMA result is documented, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant: an older sibling had unexplained developmental regression, which supports testing per UHC family-history/clinical criteria for genetic evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre-test genetic counseling was completed with a genetic counselor multiple times and post-test follow-up is planned, meeting UHC counseling requirements for clinical genomic testing."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (proband) and best matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, indication, provider, family history, and counseling meet UHC criteria, coverage requires documented prior first‑tier testing (typically chromosomal microarray) or an exception; only FISH was nondiagnostic and no CMA is documented, so coverage would be denied pending required prior testing or justification."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1993,
+    "output_tokens": 1554,
+    "total_tokens": 3547
+  }
+}

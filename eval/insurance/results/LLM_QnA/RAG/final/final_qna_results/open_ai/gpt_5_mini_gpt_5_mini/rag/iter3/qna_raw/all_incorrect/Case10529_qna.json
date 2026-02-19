@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'whole exome sequencing (WES) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy medical necessity statement specifically addresses children with unexplained neurodevelopmental disorders; the patient is a 6-year-old child and therefore meets the age-based eligibility (policy applies to 'children')."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires 'documentation that the individual has been evaluated by a clinician with expertise in clinical genetics' plus counseling. The record documents pre-test genetic counseling but does not explicitly document evaluation by a clinician with expertise in clinical genetics (only referral by neurology). Insufficient information to confirm the required clinician evaluation."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists unexplained neurodevelopmental disorders/intellectual disability in children as an indication for WES when criteria are met. The patient is a child with nonsyndromic developmental delay and intellectual disability and prior targeted testing (Fragile X) was nondiagnostic, consistent with the policy's clinical indication for WES."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy gives examples of prior genetic testing (eg, chromosomal microarray and/or targeted single-gene testing) as part of the evaluation but does not mandate a single absolute prior test in all cases. The patient had Fragile X testing (nondiagnostic) but no documentation of CMA; the policy does not explicitly require one specific prior test in every situation, so specific prior-test completion is not definitively specified from the provided materials."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance notes family history of developmental or genetic disease as relevant. The patient has a maternal uncle with neurologic disease (dystonia and ataxia), which is relevant family history supporting a possible genetic etiology."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an individual with genetics expertise. The patient/family 'has seen a genetic counselor multiple times and pre-test counseling is complete with plans for post-test follow-up,' meeting the policy's counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); among the listed CPT options, 81415 corresponds to exome sequencing and is the code that best corresponds to WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, standard WES with trio testing when possible may be medically necessary for children with unexplained neurodevelopmental disorders when criteria are met. The patient is a child with unexplained developmental delay/ID, prior targeted testing (Fragile X) was nondiagnostic, relevant family history is present, and genetic counseling has been completed. Although explicit documentation of evaluation by a clinician with expertise in clinical genetics is not provided in the record reviewed, the documented counseling, nondiagnostic prior testing, and clinical presentation satisfy the principal coverage indications in the policy; therefore WES is covered per policy criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14840,
+    "output_tokens": 3977,
+    "total_tokens": 18817
+  }
+}

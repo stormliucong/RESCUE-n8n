@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'whole exome sequencing (WES) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria apply to 'children' for WES; the patient is a 6-year-old child, which meets the policy age category (policy text: 'children')."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled. The record states the family has seen a genetic counselor multiple times and pre-test counseling is complete, satisfying the policy's evaluation/counseling requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL criteria including (1) genetics evaluation/counseling (met), (2) 'There is potential for a change in management and clinical outcome' (not documented in the patient information), and (3) prior genetic testing failed (fragile X was nondiagnostic). Because the required documentation of potential for a change in management is not present, the ALL-criteria requirement is not met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES is appropriate when previous genetic testing has failed to yield a diagnosis (eg, targeted single-gene testing/CMA). The patient had prior Fragile X testing that was nondiagnostic, meeting the policy's 'previous genetic testing has failed' condition."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history (eg, developmental delay or other genetic disease) as relevant. The patient has a maternal uncle with neurologic disease (dystonia and ataxia), which is a relevant family history per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced individual. Patient information states the family has seen a genetic counselor multiple times and pre-test counseling is complete with plans for post-test follow-up, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; among provided CPT options, 81415 corresponds to exome sequencing and is the best match."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy WES is medically necessary only when ALL listed criteria are met. Although genetics evaluation/counseling and prior nondiagnostic targeted testing (Fragile X) and relevant family history are documented, the patient record does not document the required criterion that 'there is potential for a change in management and clinical outcome.' Because all policy criteria must be met and that criterion is not documented, the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14840,
+    "output_tokens": 2366,
+    "total_tokens": 17206
+  }
+}

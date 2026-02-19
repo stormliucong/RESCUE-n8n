@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years of age for ES; patient is 14, meeting the age criterion."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires an appropriate genetic/family history evaluation and a clinical letter with specific elements (differential, testing algorithm, prior tests/results, recommendation for ES). The patient record only notes referral by a PCP and does not document the required clinical letter or ordering provider qualifications, so sufficiency cannot be determined from the provided information."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific clinical indications (e.g., multiple congenital anomalies affecting different organ systems, neurodevelopmental criteria, or two listed features). Patient has an isolated ocular coloboma (single organ system) and does not meet the listed ES indications from the policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires prior evaluation documentation and lists prior testing/results as required in the clinical letter; patient has only prior nondiagnostic FISH documented and no evidence of the required genetic evaluation/clinical letter or other prior testing (e.g., CMA) in the record provided."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy references family history in required documentation and for certain prenatal indications; the provided patient information contains no family history or consanguinity relevant to eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy and cited ACMG guidance require pretest counseling (medical geneticist or genetic counselor) and documented consent/clinical letter; the patient information does not document genetic counseling or consent meeting these requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy specifies CPT 81415 is the appropriate code to bill for proband whole exome sequencing (analysis of the entire exome)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and requested test type align with policy and CPT 81415 is appropriate, the patient does not meet the policy's defined medical-necessity clinical criteria (isolated single-organ ocular coloboma does not satisfy required indications), and required documentation/genetic evaluation and counseling are not provided; therefore ES is not covered per the policy criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10435,
+    "output_tokens": 2557,
+    "total_tokens": 12992
+  }
+}

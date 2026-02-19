@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age criteria allow WES for intellectual disability diagnosed by age 18; the patient is 6 years old with ID/DD, so age criterion is satisfied (Policy: WES indicated for ID diagnosed by 18)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; patient was referred by neurology (neurologist ordering meets policy requirement)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires nonspecific presentation plus one of listed features (e.g., intellectual disability or global developmental delay, or neurologic abnormalities/family members with similar features). Patient has nonsyndromic developmental delay/intellectual disability and a maternal uncle with dystonia/ataxia, meeting policy clinical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate specific prior tests for postnatal WES in this scenario (it advises targeted testing if a specific syndrome is suspected); patient had Fragile X testing nondiagnostic, but policy does not require additional specific prior tests for WES here."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists other first- or second-degree family members with similar clinical features as a criterion; patient has a maternal uncle with dystonia and ataxia (relevant second-degree family history)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'strongly recommends' genetic counseling but does not make counseling an explicit coverage requirement; patient has documented pre-test counseling and planned post-test follow-up, but counseling is not specified as a mandatory coverage criterion in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy lists CPT 81415 for exome sequence analysis (proband exome), which corresponds to the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy WES is proven/medically necessary when criteria are met: nonsyndromic presentation, ordered by an approved specialist (neurologist), and presence of ID/DD and relevant family history — all met by this patient, so WES is covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36949,
+    "output_tokens": 1859,
+    "total_tokens": 38808
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The note states: \"Whole genome sequencing (WGS) has been ordered by a medical geneticist.\""
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage for WES/WGS is aimed at pediatric patients with unexplained global developmental delay/ID or congenital anomalies; the patient is a 6-week-old infant with concern for global developmental delay, meeting pediatric age-based criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires ordering by a qualified clinician (e.g., medical geneticist or other appropriate specialist) for WES/WGS; the test was ordered by a medical geneticist, meeting that requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC defines medical necessity for WES/WGS for individuals with unexplained developmental delay/ intellectual disability or multiple congenital anomalies after initial evaluation; this infant has concern for global developmental delay and nondiagnostic prior workup, so a defined clinical indication is met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require prior appropriate testing (chromosomal microarray) before WES/WGS for unexplained developmental delay; CMA was performed and nondiagnostic, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WGS criteria do not specifically require family history/consanguinity in this scenario; while a sibling had a brief resolved unexplained event, the documentation does not establish a family history criterion required for coverage."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires genetic counseling for WES/WGS; pre-test counseling was completed and post-test follow-up with a genetic counselor is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to clinical germline whole genome sequencing (WGS), which matches the ordered test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Applying UHC coverage criteria: the patient is pediatric (6 weeks) with unexplained global developmental delay, prior CMA was nondiagnostic, the ordering provider is a medical geneticist, and pre-test counseling was completed — collectively meeting UHC medical necessity and coverage requirements for WGS."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2004,
+    "output_tokens": 1705,
+    "total_tokens": 3709
+  }
+}

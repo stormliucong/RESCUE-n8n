@@ -1,0 +1,14 @@
+```json
+{
+  "pdf_links": [],
+  "webpage_links": [
+    "https://ams-prod.uhcprovider.com/en/policies-protocols/commercial-policies/umr-medical-drug-policies.html",
+    "https://www.uhcprovider.com/content/provider/en/policies-protocols/exchange-policies/exchanges-medical-drug-policies.html",
+    "https://www.uhcprovider.com/en/resource-library/news/2025/genetic-testing-codes-req-prior-auth.html",
+    "https://www.uhcprovider.com/en/resource-library/news/2025/prior-auth-non-invasive-prenatal.html",
+    "https://ams-prod.uhcprovider.com/en/resource-library/news/2024/changes-genetic-molecular-testing-coverage-pa-requirements.html",
+    "https://www.uhcprovider.com/en/policies-protocols/commercial-policies/oxford-policies.html",
+    "https://www.uhcprovider.com/content/provider/en/resource-library/news/2025/medicaid-genetic-molecular-codes-added-pa.html"
+  ]
+}
+```

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states 'chromosomal microarray (CMA) testing ... is being requested.' Basis: patient clinical info."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The Cigna epilepsy guideline defines clinical diagnoses (eg, early infantile epileptic encephalopathy, neonatal seizures) but does not state an explicit age cutoff requirement for CMA; age-based eligibility criteria are not specified for CMA in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires the rendering laboratory be qualified but does not specify ordering-provider specialty or other provider requirements for CMA; no explicit ordering-provider criteria for this test are provided."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline specifies medical necessity criteria for epilepsy single-gene tests and multigene panels (eg, early infantile epileptic encephalopathy) but does not provide explicit coverage/medical-necessity criteria specific to CMA; although the patient meets diagnostic features (neonatal epileptic encephalopathy), CMA-specific indications are not defined in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not list required prior tests before performing CMA. Although the patient had a prior nondiagnostic CMA, the guideline does not specify prior-testing prerequisites for CMA."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The guideline does list family history as a specific criterion for some epilepsy panel indications (eg, focal epilepsy with positive family history suggestive of monogenic inheritance). The patient’s family history is an older sibling with unexplained developmental regression (not described as epilepsy or a family history suggestive of monogenic epilepsy), so it does not meet the family-history criterion as specified in the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient notes pre-test counseling occurred, the Cigna guideline does not list genetic counseling as an explicit coverage requirement for CMA; counseling is recommended by professional groups but is not defined as a coverage prerequisite in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists many CPT codes for epilepsy gene tests and discusses CGH/CMA conceptually, but it does not provide a specific CPT code for chromosomal microarray within the document. None of the provided answer choices are explicitly linked to CMA in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The requested test is CMA, but the Cigna epilepsy guideline's coverage criteria focus on single-gene testing, multigene panels, ES/GS and do not define CMA-specific medical-necessity criteria. Additionally the patient already had a prior nondiagnostic CMA. Based strictly on the policy text (no explicit CMA coverage criteria and emphasis on panels/ES/GS for neonatal epileptic encephalopathy), the requested repeat CMA is not supported as meeting explicit coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12764,
+    "output_tokens": 2735,
+    "total_tokens": 15499
+  }
+}

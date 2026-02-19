@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The referral explicitly requests chromosomal microarray (CMA) testing to evaluate longstanding neuropsychiatric presentation."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP CMA policy is based on clinical indication (unexplained developmental delay/intellectual disability, ASD, or multiple congenital anomalies) rather than a strict age cutoff; no age-based exclusion for CMA is specified in the payer criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP molecular cytogenetic policies generally do not mandate a specific ordering provider specialty for CMA; no provider-specialty requirement is specified in the policy applied to this case."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Under BCBS FEP CMA coverage criteria, testing is medically indicated for unexplained developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies. The patient has adult-onset neuropsychiatric symptoms (bipolar/schizophrenia/OCD features) without documentation of developmental delay, intellectual disability, ASD, or multiple congenital anomalies, so the clinical indications are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP CMA criteria do not uniformly require a prior test before CMA (array is often first-line for indicated indications). Although a karyotype was performed and nondiagnostic, payer rules do not specify a mandatory prior test for CMA in this clinical context."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP CMA coverage hinges on the proband's clinical features; while a sibling had early hearing/visual impairment, the policy does not rely on family history/consanguinity alone as a primary eligibility criterion for CMA in the absence of the proband meeting clinical indications."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS FEP documentation requirements for cytogenomic testing typically require documentation of pre-test genetic counseling/informed consent. The patient has no pre-test genetic counseling documented, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to chromosomal microarray analysis (e.g., array CGH or SNP array) and is the appropriate code for CMA."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on BCBS FEP coverage criteria, CMA is not supported because the patient does not meet the payer's specified medical indications (no documented developmental delay/intellectual disability/ASD or multiple congenital anomalies) and required pre-test genetic counseling is not documented; therefore the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1992,
+    "output_tokens": 2101,
+    "total_tokens": 4093
+  }
+}

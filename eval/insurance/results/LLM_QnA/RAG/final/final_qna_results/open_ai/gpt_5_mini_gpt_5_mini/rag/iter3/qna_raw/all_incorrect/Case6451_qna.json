@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient record explicitly states 'whole genome sequencing (WGS) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy addresses infants/children (including infants <1 year) as candidates for WES/WGS; the patient is a 7‑week‑old infant, meeting the age-based scope in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics. The record shows evaluation by a developmental pediatrician and that pre‑test counseling was completed and genetics follow‑up is planned, but it does not document who ordered the test or explicitly that a clinical genetics evaluation was performed by a genetics clinician; therefore provider eligibility cannot be determined from provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'significant hypotonia' as a clinical feature suggesting a genetic disease and supports WES/WGS for unexplained congenital/neurodevelopmental disorders; the infant has significant hypotonia and an unexplained presentation, meeting the medical indication criterion."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy indicates prior genetic testing such as chromosomal microarray analysis (CMA) and/or targeted single‑gene testing is expected before standard WES/WGS. The record documents a nondiagnostic karyotype but not prior CMA or targeted single‑gene testing, so required prior testing is not documented as completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies relevant family history items (e.g., developmental delay, inborn errors, arrhythmia, BRUE, early sudden death). The record notes the mother has an immunologic/hematologic disorder, which is not one of the specific family history criteria listed in the policy.",
+      "Q6": {
+        "answer": "Yes",
+        "reasoning": "Policy requires genetic counseling; the record states pre‑test counseling has been completed and post‑test follow‑up with genetics is planned, satisfying the counseling requirement in the policy."
+      },
+      "Q7": {
+        "answer": "Not Specified",
+        "reasoning": "The provided policy document does not specify CPT code mappings for WGS/WES; no CPT code for WGS is given in the policy text, so a specific CPT cannot be determined from the provided policy."
+      },
+      "Q8": {
+        "answer": "No",
+        "reasoning": "Although medical indication and age criteria are met (significant hypotonia in a 7‑week‑old), the policy's coverage criteria require documentation of evaluation by a clinician with expertise in clinical genetics and prior relevant genetic testing (examples include CMA/targeted testing). The submitted information lacks documentation of a genetics clinician evaluation and does not document prior CMA/targeted testing (only a nondiagnostic karyotype), therefore the policy's all‑criteria requirements for standard WES/WGS are not satisfied and coverage is not supported."
+      }
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14828,
+    "output_tokens": 3179,
+    "total_tokens": 18007
+  }
+}

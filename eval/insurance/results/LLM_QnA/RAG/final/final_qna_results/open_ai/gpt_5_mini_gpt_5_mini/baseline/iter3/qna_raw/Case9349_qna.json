@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient is explicitly referred for whole exome sequencing (WES) in the provided clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES coverage criteria do not impose a strict age cutoff for exome testing; the patient is a pediatric case (5 years) but no age-based exclusion/inclusion criterion is specified that would affect eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies generally require an appropriate ordering clinician but do not universally mandate a single specialty for ordering WES. Here the patient was referred by a cardiologist and had pre-test genetic counseling, which satisfies typical provider/counseling expectations; the policy does not specify that only a geneticist may order testing."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP criteria support WES when a patient has a congenital anomaly with suspected genetic etiology and a relevant family history suggesting an inherited disorder. The patient has a congenital cardiac anomaly and a paternal uncle with sudden unexplained death <35, meeting medical indication for WES per payer criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP often expects prior targeted testing when appropriate, but for a single-organ congenital cardiac anomaly with strong family history of sudden death, the policy does not uniformly require a specific prior test such as CMA before WES. The record documents a nondiagnostic FISH; no explicit CMA requirement is stated in the provided policy context."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for WES per BCBS_FEP; the paternal uncle's sudden unexplained death before age 35 constitutes a concerning family history that supports testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires pre-test genetic counseling for complex genomic testing; the record documents that pre-test counseling was completed with a genetic counselor and plans for post-test follow-up are confirmed, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (sequence analysis and interpretation) and best maps to the requested WES in this clinical scenario."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP criteria WES is covered when there is a suspected genetic etiology for a congenital anomaly, relevant family history suggesting inherited disease, and appropriate genetic counseling. The patient is a 5-year-old with a congenital cardiac anomaly, a paternal uncle with sudden unexplained death <35, nondiagnostic prior (FISH) testing, completed pre-test counseling, and planned follow-up—together meeting payer medical necessity and coverage requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1990,
+    "output_tokens": 1997,
+    "total_tokens": 3987
+  }
+}

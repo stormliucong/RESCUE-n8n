@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states she was referred for BRCA1 and BRCA2 testing to evaluate hereditary breast/ovarian cancer risk."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA criteria do not impose a strict age cutoff for testing; eligibility is based on personal/family cancer history rather than patient age alone, so no age-based exclusion/inclusion applies here."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP typically allows orders from treating physicians or genetics providers; the record shows referral by a gynecologist and pre-test counseling by a genetic specialist, and the policy does not state a restrictive ordering-provider specialty requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP coverage for BRCA testing is tied to a personal or family history consistent with hereditary breast/ovarian cancer (e.g., epithelial breast carcinoma diagnosed at young age, ovarian cancer, multiple primaries, known family mutation). The patient’s breast diagnosis is a malignant phyllodes tumor (a stromal neoplasm, not a typical BRCA-associated epithelial breast cancer) and her family history does not report breast/ovarian cancer, so she does not meet the defined medical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage criteria do not mandate completion of specific prior laboratory tests before BRCA germline testing; no required prior tests are documented in the patient record relevant to coverage criteria."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP family-history criteria require relatives with breast, ovarian, pancreatic, or related BRCA-associated cancers. The only reported family history is a sister with an immunologic/hematologic disorder, which is not a BRCA-related cancer history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP and standard practice require pre-test genetic counseling for hereditary cancer testing; the record documents pre-test counseling with a genetic specialist and plans for post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The submission requests BRCA1/2 testing but the provided CPT options do not unambiguously map to the gene-specific BRCA1/2 procedure codes in this context; the record does not list a CPT and the available choices cannot be conclusively matched to BRCA1/2 based on the information given."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying BCBS_FEP coverage criteria for hereditary breast/ovarian cancer testing, the patient lacks qualifying personal or family history (her breast tumor is a malignant phyllodes tumor, not a BRCA-associated epithelial breast cancer, and no family history of breast/ovarian cancer is reported). Although counseling requirements are met, the absence of a covered medical indication means the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1990,
+    "output_tokens": 2357,
+    "total_tokens": 4347
+  }
+}

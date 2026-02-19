@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1/2 testing to evaluate hereditary breast/ovarian cancer risk (stated in patient info)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: \"BRCA1/2 gene testing is proven and medically necessary for individuals with a personal history of Breast Cancer diagnosed at age 65 or younger.\" Patient is 38, so meets age criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy strongly recommends pre-test genetic counseling and that evaluations be done by providers familiar with hereditary cancer, but it does not state a strict ordering-provider specialty requirement for coverage. The patient did have pre-test counseling."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists as indications: personal history of breast cancer diagnosed ≤65 and \"Multiple primary Breast Cancers.\" Patient has two separate primary breast cancers at age 38, meeting medical necessity criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not require completion of specific prior diagnostic tests before BRCA1/2 germline testing; prior tumor testing may inform indication but is not a universal prerequisite. The prior FISH result is not listed as a required prior test."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy considers BRCA-related cancers to include prostate cancer and uses first-degree relatives with prostate cancer as relevant family history. Patient's father has metastatic prostate cancer (first-degree), which is relevant to eligibility."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy: \"Pre-test genetic counseling is strongly recommended,\" but counseling is described as a recommendation rather than an explicit coverage requirement. Patient did complete pre-test counseling with a genetic specialist."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "CPT list in policy: 81162 = BRCA1/BRCA2 full sequence analysis and full duplication/deletion analysis, the comprehensive BRCA1/2 test appropriate for this indication."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Policy coverage rationale: BRCA1/2 testing is proven and medically necessary for individuals with breast cancer diagnosed ≤65 and for individuals with multiple primary breast cancers. Patient is 38 with two primary breast cancers and relevant family history (father with metastatic prostate cancer); therefore BRCA1/2 testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 38613,
+    "output_tokens": 1734,
+    "total_tokens": 40347
+  }
+}

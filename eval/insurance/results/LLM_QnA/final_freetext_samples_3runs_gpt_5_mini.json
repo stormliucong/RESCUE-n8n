@@ -1,0 +1,122 @@
+[
+    {
+        "id": "Case2476",
+        "patient_info": "The patient is a 6-year-old being evaluated for multiple congenital anomalies, and the team is planning whole exome sequencing (WES) with the order placed by an oncologist; Fragile X testing was previously performed and was non-diagnostic. A sibling has a history of a brief resolved unexplained event characterized by altered responsiveness with cyanosis, pallor, and irregular breathing. No genetic counseling has been conducted to date, and the family\u2019s insurance is BCBS_FEP."
+    },
+    {
+        "id": "Case811",
+        "patient_info": "The 7-week-old infant is being evaluated for early-onset abnormal movements characterized by dystonic posturing, ataxic-appearing movements and focal weakness suggestive of hemiplegia, and chromosomal microarray (CMA) was non-diagnostic; the General Pediatrician has therefore ordered whole exome sequencing (WES) to assess for an underlying genetic cause. The mother has a history of multiple congenital anomalies, the family is insured by BCBS_FEP, and they saw a genetic counselor before testing and will follow up with genetics after the results are returned."
+    },
+    {
+        "id": "Case2496",
+        "patient_info": "At 32 weeks' gestation the pregnancy is being evaluated due to parental consanguinity and a family history of sudden unexplained death in a sibling before age 35; a neonatologist has ordered prenatal whole exome sequencing (WES) under UHC, prior FISH testing was non\u2011diagnostic, and no genetic counseling has been conducted to date."
+    },
+    {
+        "id": "Case4262",
+        "patient_info": "The patient is a 5-week-old infant being evaluated for multiple congenital anomalies that do not fit a well-delineated genetic syndrome, and whole exome sequencing (WES) has been ordered by the oncologist to investigate a possible genetic etiology; a prior karyotype was performed and was non-diagnostic. There is a family history notable for a sibling who experienced a brief resolved unexplained event with altered level of responsiveness, cyanosis, pallor and irregular breathing. The family is insured through BCBS_FEP, and the patient saw a genetic counselor before testing and will return to the genetic counselor after results are received."
+    },
+    {
+        "id": "Case1892",
+        "patient_info": "A 13-year-old is being evaluated by a Medical Geneticist for a history of meconium ileus at birth and is undergoing whole exome sequencing (WES) to identify an underlying genetic cause; prior FISH testing was non-diagnostic. The patient has a sibling in the family with known consanguinity, and the evaluation is being pursued in that context. The family\u2019s insurance is BCBS_FEP, and a genetic counselor saw the family prior to testing and will meet with them again to review results."
+    },
+    {
+        "id": "Case4970",
+        "patient_info": "The patient is a 10-year-old referred for evaluation of a congenital ocular coloboma and whole exome sequencing (WES) has been ordered; Fragile X testing was previously performed and was non-diagnostic. The order was placed by a Family Medicine Physician, no genetic counseling has been conducted to date, and the family history is notable for three relatives with breast cancer including the patient's mother and two maternal aunts; the patient is insured through BCBS_FEP."
+    },
+    {
+        "id": "Case2847",
+        "patient_info": "The infant is 5 weeks of age and was evaluated for a high-risk brief resolved unexplained event that required cardiopulmonary resuscitation, and the cardiologist has ordered whole exome sequencing to assess for an underlying genetic etiology; chromosomal microarray testing was previously performed and was non-diagnostic. There is a family history of a severe, persistent immunologic or hematologic disorder in the mother. The family saw a genetic counselor prior to testing and will have follow-up counseling after results are returned. Insurance is BCBS_FEP."
+    },
+    {
+        "id": "Case3959",
+        "patient_info": "The 2-week-old infant is being evaluated for congenital choanal atresia with nasal airway obstruction, and whole exome sequencing (WES) was ordered by the Primary Care Physician to investigate an underlying genetic etiology; prior Fragile X testing was non-diagnostic. The family reports that the mother has a persistent and severe immunologic or hematologic disorder. A genetic counselor saw the family before testing and will provide post-test counseling, and the infant\u2019s insurance is BCBS_FEP."
+    },
+    {
+        "id": "Case2597",
+        "patient_info": "The fetus, at 17 weeks gestation, is being evaluated for a suspected soft tissue sarcoma noted on prenatal imaging; prior karyotype testing was non-diagnostic. The evaluation was ordered by a General Practitioner, the pregnancy is covered by UHC, and the expectant parent has seen a genetic counselor multiple times; whole exome sequencing (WES) has been ordered for diagnostic clarification given a family history of a sibling with multiple congenital anomalies."
+    },
+    {
+        "id": "Case3385",
+        "patient_info": "The 0-year-old infant is being evaluated for an ocular coloboma and the developmental pediatrician has ordered whole exome sequencing to investigate a possible genetic etiology; Fragile X testing was previously performed and was non-diagnostic. The family history is notable for a sibling with autism spectrum disorder. The family carries UHC insurance, and the patient has seen a genetic counselor multiple times for pretest counseling with plans for follow-up after results."
+    },
+    {
+        "id": "Case4296",
+        "patient_info": "The patient is a newborn (0 weeks of age) presenting with meconium ileus, and whole exome sequencing (WES) has been ordered to evaluate for an underlying genetic etiology; a karyotype was previously performed and was non-diagnostic. The family reports an older sibling who was diagnosed with severe intellectual disability by age 18. The case was referred to and is being managed by a Medical Geneticist, and the family\u2019s insurance carrier is UHC."
+    },
+    {
+        "id": "Case4177",
+        "patient_info": "At 19 weeks' gestation the fetus was referred for genetic evaluation after a prenatal ultrasound detected a major congenital cardiac anomaly, and insurance coverage is through Cigna; prior karyotype testing was non\u2011diagnostic and the ordering Nurse Practitioner has requested prenatal whole exome sequencing (WES) to assess for an underlying genetic etiology, with no genetic counseling conducted to date, and family history is notable for a sibling who experienced a brief resolved unexplained event characterized by altered level of responsiveness with cyanosis, pallor, and irregular breathing."
+    },
+    {
+        "id": "Case129",
+        "patient_info": "The patient is a 12-year-old referred for evaluation of a complex neurodevelopmental disorder with autism spectrum features; chromosomal microarray (CMA) was previously performed and was non-diagnostic, and the neurologist has ordered whole genome sequencing (WGS) to investigate an underlying genetic etiology; the family history is notable for long QT syndrome in the patient\u2019s mother, and the evaluation will be billed to UHC."
+    },
+    {
+        "id": "Case2324",
+        "patient_info": "The patient is a 12-year-old undergoing genetic evaluation for Hirschsprung disease, and whole genome sequencing (WGS) is planned after no prior genetic testing; the order was placed by a gynecologist, pre-test counseling was discussed with a genetic specialist, the family reports a maternal aunt with triple-negative breast cancer, and the patient\u2019s insurance is UHC."
+    },
+    {
+        "id": "Case3032",
+        "patient_info": "The 6-week-old infant is being evaluated by a neurologist for early-onset dystonia, ataxia and hemiplegia suggestive of a movement disorder with neuromuscular features; the family history is notable for the mother who has global developmental delay. FISH testing was performed and was non-diagnostic, and the neurologist has ordered whole genome sequencing (WGS) for diagnostic evaluation; the family is insured by UHC and pre-test genetic counseling was offered but declined."
+    },
+    {
+        "id": "Case280",
+        "patient_info": "The patient is an 8-year-old child being evaluated for multiple congenital anomalies; prior karyotype testing was non-diagnostic. The general pediatrician has ordered whole genome sequencing to further investigate the etiology, and the family reports a sibling born to parents who are related, raising concern for a recessive inherited condition. The child saw a genetic counselor before testing and will follow up with the counselor after results are received, and insurance is BCBS_FEP."
+    },
+    {
+        "id": "Case881",
+        "patient_info": "An infant at 2 weeks of age is undergoing whole genome sequencing to evaluate early concerns described as intellectual disability, with the test ordered by a cardiologist; prior FISH testing was non\u2011diagnostic. The family reports an older sibling with unexplained developmental regression unrelated to autism or epilepsy. The family has BCBS_FEP insurance and met with a genetic counselor before testing, with plans to follow up with the counselor after results are returned."
+    },
+    {
+        "id": "Case4346",
+        "patient_info": "A 9-year-old child is being evaluated for global developmental delay and was referred by a neurologist for genetic testing; Fragile X testing was performed and was non-diagnostic, and whole genome sequencing (WGS) is planned. The patient has a sibling with autism spectrum disorder. The family carries UHC insurance, and the child has seen a genetic counselor multiple times prior to testing with plans to follow up after results."
+    },
+    {
+        "id": "Case3296",
+        "patient_info": "The patient is a 10-year-old child with autism spectrum disorder being evaluated by a neurologist who has ordered whole genome sequencing; chromosomal microarray was previously performed and was non-diagnostic. The family history is notable for a sibling reported to have an infantile tone abnormality (described as hypotonia or hypertonia), and the family has seen a genetic counselor multiple times as part of the evaluation. The patient is insured by UHC."
+    },
+    {
+        "id": "Case2674",
+        "patient_info": "The patient is a 17-year-old seen by a neurologist for a complex movement disorder characterized predominantly by dystonia and ataxia with intermittent hemiplegic episodes and neuromuscular features; whole genome sequencing (WGS) is being requested through UHC after a non-diagnostic chromosomal microarray (CMA), the mother is reported to have a similar movement disorder, and no pre-test genetic counseling has been conducted."
+    },
+    {
+        "id": "Case2007",
+        "patient_info": "The patient is an 18-year-old presenting with metastatic breast cancer who is undergoing BRCA1/2 testing; the patient's mother had breast cancer at about age 50 and a prior chromosomal microarray (CMA) was non-diagnostic. The family medicine physician placed the order, the patient saw a genetic counselor before testing and will follow up with the counselor after results are returned, and the testing is being billed to BCBS_FEP."
+    },
+    {
+        "id": "Case1367",
+        "patient_info": "The 62-year-old patient has a history of breast cancer diagnosed at or before age 50 and is undergoing BRCA1/2 testing ordered by the Primary Care Physician; prior chromosomal microarray (CMA) was non-diagnostic, family history is significant for a mother with pancreatic cancer, the patient saw a genetic counselor prior to testing and will return for post-test counseling, and insurance is BCBS_FEP."
+    },
+    {
+        "id": "Case3175",
+        "patient_info": "The 33-year-old woman is undergoing evaluation for hereditary BRCA-related cancer risk and is being offered BRCA1/2 testing because of concern for breast cancer in the patient and a family history of BRCA-associated cancers; she reports at least two affected blood relatives on the same side of the family, including her mother and a maternal uncle. No prior genetic testing has been performed. The test was ordered by her gynecologist, she has seen a genetic counselor multiple times and will follow up with the counselor for result disclosure, and insurance coverage is through UHC."
+    },
+    {
+        "id": "Case22",
+        "patient_info": "An 18-year-old male is undergoing BRCA1/2 testing for prostate cancer presenting with features concerning for metastatic disease or intraductal/cribriform histology and classified as high\u2011 or very\u2011high\u2011risk; he reports a family history notable for his father having metastatic prostate cancer with high\u2011risk histology. Chromosomal microarray (CMA) was previously performed and was non\u2011diagnostic. The test was ordered by a neurologist, and he saw a genetic counselor before testing and will follow up with the counselor after results are returned. Insurance is BCBS_FEP."
+    },
+    {
+        "id": "Case2546",
+        "patient_info": "The 16-year-old is being evaluated for a major congenital abnormality affecting at least one organ system and has a mother who was diagnosed with breast cancer before age 50; chromosomal microarray analysis was previously performed and was non-diagnostic, an obstetrician has ordered BRCA1/2 testing, the patient has seen a genetic counselor multiple times, and the visit is covered by Cigna."
+    },
+    {
+        "id": "Case3985",
+        "patient_info": "The 53-year-old woman with triple-negative breast cancer is undergoing BRCA1/2 testing to assess hereditary risk; she reports a father with high-risk metastatic prostate cancer, prior karyotype testing was non-diagnostic, the test was ordered by a Medical Geneticist, she saw a genetic counselor before testing and will return for post-test counseling, and her insurance is Cigna."
+    },
+    {
+        "id": "Case2552",
+        "patient_info": "A 58-year-old patient with a personal history of exocrine pancreatic cancer is being managed by a General Practitioner and has had chromosomal microarray analysis for developmental disorders ordered; prior FISH testing was non-diagnostic, the patient has seen a genetic counselor multiple times, there is a sibling with autism spectrum disorder in the family history, and insurance coverage is BCBS_FEP."
+    },
+    {
+        "id": "Case10",
+        "patient_info": "The patient is a 1-year-old referred for evaluation of a complex neurodevelopmental disorder with global developmental delay and an abnormality involving at least one organ system; a sibling has global developmental delay. Fragile X testing was performed and was non-diagnostic. The developmental pediatrician has ordered chromosomal microarray (CMA) testing, pre-test genetic counseling was offered but declined by the family, and the patient is covered by Cigna."
+    },
+    {
+        "id": "Case4725",
+        "patient_info": "The patient is a 12-year-old being evaluated for a major abnormality affecting at least one organ system with developmental concerns, and chromosomal microarray analysis (CMA) for developmental disorders has been requested; fragile X testing was previously performed and was non-diagnostic. A sibling reportedly had epileptic encephalopathy with onset before three years of age, which raises concern for an underlying genomic etiology. The test was ordered by a General Practitioner and will be billed to Cigna."
+    },
+    {
+        "id": "Case2578",
+        "patient_info": "At 13 weeks' gestation the pregnant patient is being evaluated for suspected meconium ileus and a chromosomal microarray (CMA) has been ordered by the general practitioner; there is a family history of an inborn error of metabolism in a previous child, prior FISH testing was non-diagnostic, the patient declined genetic counseling, and insurance coverage is through UHC."
+    }
+]

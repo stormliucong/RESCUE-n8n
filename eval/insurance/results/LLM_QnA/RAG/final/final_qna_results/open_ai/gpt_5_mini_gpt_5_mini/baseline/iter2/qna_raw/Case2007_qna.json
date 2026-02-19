@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states the patient was referred for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP policies require adult-age eligibility (and often a minimum age of 18 for predictive/diagnostic testing); the patient is 18, meeting age-based requirements for BRCA testing."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP allows ordering by a treating physician; the order was placed by a family medicine physician, which meets typical ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria include a personal history of breast cancer and/or a first-degree relative with breast cancer at ≤50. The patient has metastatic breast cancer and a mother diagnosed at ≤50, satisfying clinical indications in BCBS_FEP BRCA policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage does not mandate prior chromosomal microarray or other specific genetic tests before BRCA1/2 testing; the prior nondiagnostic CMA is not a required prerequisite."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are specified for BRCA coverage and the patient has a relevant family history (mother with breast cancer at age ≤50), which supports eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP typically requires documentation of genetic counseling. The patient completed pre-test counseling and will return for post-test counseling, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Of the provided CPT options, 81228 most closely corresponds to BRCA1/BRCA2 gene testing in standard coding lists; therefore it is the best match for BRCA1/2 testing among the choices."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on BCBS_FEP criteria (personal history of breast cancer, first-degree relative with early-onset breast cancer, appropriate counseling completed, appropriate ordering provider and age), BRCA1/2 testing is medically necessary and covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1980,
+    "output_tokens": 2385,
+    "total_tokens": 4365
+  }
+}

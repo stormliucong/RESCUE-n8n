@@ -1,0 +1,186 @@
+Category,Family history,Test,Insurance
+Cancer – Breast family history,First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years,BRCA1/2,BCBS_FEP
+Cancer – Breast family history,First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years,BRCA1/2,Cigna
+Cancer – Breast family history,First-degree or second-degree relative with breast cancer diagnosed at age equal to or under 50 years,BRCA1/2,UHC
+Cancer – Breast family history,"Three or more total diagnoses of breast cancer in the individual and/or close relatives (can include first-, second-, or third-degree relatives)",BRCA1/2,BCBS_FEP
+Cancer – Breast family history,"Three or more total diagnoses of breast cancer in the individual and/or close relatives (can include first-, second-, or third-degree relatives)",BRCA1/2,Cigna
+Cancer – Breast family history,"Three or more total diagnoses of breast cancer in the individual and/or close relatives (can include first-, second-, or third-degree relatives)",BRCA1/2,UHC
+Cancer – Breast family history,"Breast cancer in at least 1 close blood relative (first-, second-, or thirddegree) occurring at 50 years of age or younger",BRCA1/2,BCBS_FEP
+Cancer – Breast family history,"Breast cancer in at least 1 close blood relative (first-, second-, or thirddegree) occurring at 50 years of age or younger",BRCA1/2,Cigna
+Cancer – Breast family history,"Breast cancer in at least 1 close blood relative (first-, second-, or thirddegree) occurring at 50 years of age or younger",BRCA1/2,UHC
+Cancer – Breast family history,Male close blood relative (first- or second-degree) with breast cancer,BRCA1/2,BCBS_FEP
+Cancer – Breast family history,Male close blood relative (first- or second-degree) with breast cancer,BRCA1/2,Cigna
+Cancer – Breast family history,Male close blood relative (first- or second-degree) with breast cancer,BRCA1/2,UHC
+Cancer – Breast family history,A close blood relative (first- or second-degree) with a triple negative breast cancer,BRCA1/2,BCBS_FEP
+Cancer – Breast family history,A close blood relative (first- or second-degree) with a triple negative breast cancer,BRCA1/2,Cigna
+Cancer – Breast family history,A close blood relative (first- or second-degree) with a triple negative breast cancer,BRCA1/2,UHC
+Cancer – Breast family history,At least two close blood relatives (on the same side of the family) with either breast cancer or a confirmed diagnosis of prostate cancer at any age,BRCA1/2,BCBS_FEP
+Cancer – Breast family history,At least two close blood relatives (on the same side of the family) with either breast cancer or a confirmed diagnosis of prostate cancer at any age,BRCA1/2,Cigna
+Cancer – Breast family history,At least two close blood relatives (on the same side of the family) with either breast cancer or a confirmed diagnosis of prostate cancer at any age,BRCA1/2,UHC
+Cancer – Breast family history,At least one first- or second-degree relative with a history of Breast Cancer diagnosed at age 50 or younger,BRCA1/2,BCBS_FEP
+Cancer – Breast family history,At least one first- or second-degree relative with a history of Breast Cancer diagnosed at age 50 or younger,BRCA1/2,Cigna
+Cancer – Breast family history,At least one first- or second-degree relative with a history of Breast Cancer diagnosed at age 50 or younger,BRCA1/2,UHC
+Cancer – Breast family history,At least one first- or second-degree relative with a history of Triple-Negative Breast Cancer,BRCA1/2,BCBS_FEP
+Cancer – Breast family history,At least one first- or second-degree relative with a history of Triple-Negative Breast Cancer,BRCA1/2,Cigna
+Cancer – Breast family history,At least one first- or second-degree relative with a history of Triple-Negative Breast Cancer,BRCA1/2,UHC
+Cancer – Breast family history,At least one first- or second-degree relative with a history of Breast Cancer and relative was assigned male at birth,BRCA1/2,BCBS_FEP
+Cancer – Breast family history,At least one first- or second-degree relative with a history of Breast Cancer and relative was assigned male at birth,BRCA1/2,Cigna
+Cancer – Breast family history,At least one first- or second-degree relative with a history of Breast Cancer and relative was assigned male at birth,BRCA1/2,UHC
+Cancer – Hereditary Solid Tumors,At least three Close Blood Relatives on the same side of the family diagnosed with any Primary Solid Tumor (excluding basal or squamous cell skin cancer),BRCA1/2,UHC
+Cancer – Hereditary Solid Tumors,At least one first degree relative with a history of Two or more different Primary Solid Tumors (excluding basal or squamous cell skin cancer),BRCA1/2,UHC
+Cancer – Lynch syndrome / Polyposis family history,Two or more second-degree relatives on the same side of the family with a Cancer Associated with Lynch Syndrome,BRCA1/2,UHC
+Cancer – Lynch syndrome / Polyposis family history,Family member who meets diagnostic criteria (personal history of at least ten cumulative adenomas) for a polyposis syndrome and affected family member(s) is unwilling/unable to have genetic testing,BRCA1/2,UHC
+Cancer – Lynch syndrome / Polyposis family history,At least one second-degree relative with a history of Two or more Cancers Associated with Lynch Syndrome,BRCA1/2,UHC
+Cancer – Lynch syndrome / Polyposis family history,At least one second-degree relative with a history of Cancer Associated with Lynch Syndrome diagnosed at age 50 or younger,BRCA1/2,UHC
+Cancer – Lynch syndrome / Polyposis family history,At least one first degree relative with a history of Cancer Associated with Lynch Syndrome,BRCA1/2,UHC
+Cancer – Neuroendocrine tumors family history,"At least one first degree relative with a history of Neuroendocrine tumor (e.g., adrenocortical carcinoma, paraganglioma, pheochromocytoma)",BRCA1/2,UHC
+Cancer – Ovarian family history,First-degree or second-degree relative with ovarian carcinoma (including fallopian tube or peritoneal cancer),BRCA1/2,BCBS_FEP
+Cancer – Ovarian family history,First-degree or second-degree relative with ovarian carcinoma (including fallopian tube or peritoneal cancer),BRCA1/2,Cigna
+Cancer – Ovarian family history,First-degree or second-degree relative with ovarian carcinoma (including fallopian tube or peritoneal cancer),BRCA1/2,UHC
+Cancer – Ovarian family history,"Epithelial ovarian, fallopian tube, or primary peritoneal cancer in at least 1 close blood relative (first-, second-, or third- degree) at any age",BRCA1/2,BCBS_FEP
+Cancer – Ovarian family history,"Epithelial ovarian, fallopian tube, or primary peritoneal cancer in at least 1 close blood relative (first-, second-, or third- degree) at any age",BRCA1/2,Cigna
+Cancer – Ovarian family history,"Epithelial ovarian, fallopian tube, or primary peritoneal cancer in at least 1 close blood relative (first-, second-, or third- degree) at any age",BRCA1/2,UHC
+Cancer – Ovarian family history,At least one first- or second-degree relative with a history of Ovarian Cancer (including fallopian tube cancer and/or primary peritoneal cancer),BRCA1/2,BCBS_FEP
+Cancer – Ovarian family history,At least one first- or second-degree relative with a history of Ovarian Cancer (including fallopian tube cancer and/or primary peritoneal cancer),BRCA1/2,Cigna
+Cancer – Ovarian family history,At least one first- or second-degree relative with a history of Ovarian Cancer (including fallopian tube cancer and/or primary peritoneal cancer),BRCA1/2,UHC
+Cancer – Pancreatic family history,First-degree or second-degree relative with pancreatic cancer,BRCA1/2,BCBS_FEP
+Cancer – Pancreatic family history,First-degree or second-degree relative with pancreatic cancer,BRCA1/2,Cigna
+Cancer – Pancreatic family history,First-degree or second-degree relative with pancreatic cancer,BRCA1/2,UHC
+Cancer – Pancreatic family history,"At least one close relative (first-, second-, or third- degree) with pancreatic cancer at any age",BRCA1/2,BCBS_FEP
+Cancer – Pancreatic family history,"At least one close relative (first-, second-, or third- degree) with pancreatic cancer at any age",BRCA1/2,Cigna
+Cancer – Pancreatic family history,"At least one close relative (first-, second-, or third- degree) with pancreatic cancer at any age",BRCA1/2,UHC
+Cancer – Pancreatic family history,At least one first- or second-degree relative with a history of Pancreatic cancer,BRCA1/2,BCBS_FEP
+Cancer – Pancreatic family history,At least one first- or second-degree relative with a history of Pancreatic cancer,BRCA1/2,Cigna
+Cancer – Pancreatic family history,At least one first- or second-degree relative with a history of Pancreatic cancer,BRCA1/2,UHC
+Cancer – Prostate family history,"First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",BRCA1/2,BCBS_FEP
+Cancer – Prostate family history,"First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",BRCA1/2,Cigna
+Cancer – Prostate family history,"First-degree or second-degree relative with metastatic or intraductal/cribriform prostate cancer, or prostate cancer in high-risk or very-high-risk group",BRCA1/2,UHC
+Cancer – Prostate family history,"At least one close relative (first-, second-, or third- degree) with metastatic (radiographic evidence of or biopsy proven disease) or intraductal/cribriform histology, high- or very-high risk prostate cancer at any age",BRCA1/2,BCBS_FEP
+Cancer – Prostate family history,"At least one close relative (first-, second-, or third- degree) with metastatic (radiographic evidence of or biopsy proven disease) or intraductal/cribriform histology, high- or very-high risk prostate cancer at any age",BRCA1/2,Cigna
+Cancer – Prostate family history,"At least one close relative (first-, second-, or third- degree) with metastatic (radiographic evidence of or biopsy proven disease) or intraductal/cribriform histology, high- or very-high risk prostate cancer at any age",BRCA1/2,UHC
+Cancer – Prostate family history,At least one first- or second-degree relative with a history of Metastatic prostate cancer,BRCA1/2,BCBS_FEP
+Cancer – Prostate family history,At least one first- or second-degree relative with a history of Metastatic prostate cancer,BRCA1/2,Cigna
+Cancer – Prostate family history,At least one first- or second-degree relative with a history of Metastatic prostate cancer,BRCA1/2,UHC
+Cardiac family history,Arrhythmia,WES,BCBS_FEP
+Cardiac family history,Arrhythmia,WGS,BCBS_FEP
+Cardiac family history,"Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)",WES,BCBS_FEP
+Cardiac family history,"Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)",WGS,BCBS_FEP
+Cardiac family history,Long QT syndrome,WES,BCBS_FEP
+Cardiac family history,Long QT syndrome,WGS,BCBS_FEP
+Cardiac family history,Sudden unexplained death in first- or second-degree family members before age 35,WES,BCBS_FEP
+Cardiac family history,Sudden unexplained death in first- or second-degree family members before age 35,WGS,BCBS_FEP
+Cardiac family history,Arrhythmia,WES,BCBS_FEP
+Cardiac family history,Arrhythmia,WGS,BCBS_FEP
+Cardiac family history,"Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)",WES,BCBS_FEP
+Cardiac family history,"Brief Resolved Unexplained Event in sibling (Altered level of responsiveness, Cyanosis, pallor, irregular breathing)",WGS,BCBS_FEP
+Cardiac family history,Long QT syndrome,WES,BCBS_FEP
+Cardiac family history,Long QT syndrome,WGS,BCBS_FEP
+Cardiac family history,Sudden unexplained death in first- or second-degree family members before age 35,WES,BCBS_FEP
+Cardiac family history,Sudden unexplained death in first- or second-degree family members before age 35,WGS,BCBS_FEP
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with multiple congenital anomalies,WES,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with multiple congenital anomalies,WGS,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with congenital anomaly,WES,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with congenital anomaly,WGS,UHC
+Congenital anomalies / dysmorphic family history,"First- or second-degree family member with growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WES,UHC
+Congenital anomalies / dysmorphic family history,"First- or second-degree family member with growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WGS,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with dysmorphic features,WES,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with dysmorphic features,WGS,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with multiple congenital anomalies,WES,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with multiple congenital anomalies,WGS,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with congenital anomaly,WES,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with congenital anomaly,WGS,UHC
+Congenital anomalies / dysmorphic family history,"First- or second-degree family member with growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WES,UHC
+Congenital anomalies / dysmorphic family history,"First- or second-degree family member with growth abnormality (e.g., failure to thrive, short stature, microcephaly, macrocephaly, or overgrowth)",WGS,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with dysmorphic features,WES,UHC
+Congenital anomalies / dysmorphic family history,First- or second-degree family member with dysmorphic features,WGS,UHC
+Consanguinity,First- or second-degree family member with consanguinity,WES,UHC
+Consanguinity,First- or second-degree family member with consanguinity,WGS,UHC
+Consanguinity,First- or second-degree family member with consanguinity,WES,UHC
+Consanguinity,First- or second-degree family member with consanguinity,WGS,UHC
+Hearing / Vision impairments family history,First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age,WES,UHC
+Hearing / Vision impairments family history,First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age,WGS,UHC
+Hearing / Vision impairments family history,First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age,WES,UHC
+Hearing / Vision impairments family history,First- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age,WGS,UHC
+Known familial pathogenic variant,"First-degree or second-degree relative with known BRCA1, BRCA2, or PALB2 pathogenic/likely pathogenic variant",BRCA1/2,BCBS_FEP
+Known familial pathogenic variant,"First-degree or second-degree relative with known BRCA1, BRCA2, or PALB2 pathogenic/likely pathogenic variant",BRCA1/2,Cigna
+Known familial pathogenic variant,"Known family mutation in BRCA1/2 identified in 1st, 2nd, or 3rd degree relative(s)",BRCA1/2,BCBS_FEP
+Known familial pathogenic variant,"Known family mutation in BRCA1/2 identified in 1st, 2nd, or 3rd degree relative(s)",BRCA1/2,Cigna
+Metabolic / immuno-hematologic family history,Inborn error of metabolism,WES,BCBS_FEP
+Metabolic / immuno-hematologic family history,Inborn error of metabolism,WGS,BCBS_FEP
+Metabolic / immuno-hematologic family history,Inborn error of metabolism,WES,UHC
+Metabolic / immuno-hematologic family history,Inborn error of metabolism,WGS,UHC
+Metabolic / immuno-hematologic family history,Inborn error of metabolism,WES,BCBS_FEP
+Metabolic / immuno-hematologic family history,Inborn error of metabolism,WGS,BCBS_FEP
+Metabolic / immuno-hematologic family history,Inborn error of metabolism,WES,UHC
+Metabolic / immuno-hematologic family history,Inborn error of metabolism,WGS,UHC
+Metabolic / immuno-hematologic family history,First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WES,BCBS_FEP
+Metabolic / immuno-hematologic family history,First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WGS,BCBS_FEP
+Metabolic / immuno-hematologic family history,First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WES,UHC
+Metabolic / immuno-hematologic family history,First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WGS,UHC
+Metabolic / immuno-hematologic family history,First- or second-degree family member with persistent and severe immunologic or hematologic disorder,WES,BCBS_FEP
+Metabolic / immuno-hematologic family history,First- or second-degree family member with persistent and severe immunologic or hematologic disorder,WGS,BCBS_FEP
+Metabolic / immuno-hematologic family history,First- or second-degree family member with persistent and severe immunologic or hematologic disorder,WES,UHC
+Metabolic / immuno-hematologic family history,First- or second-degree family member with persistent and severe immunologic or hematologic disorder,WGS,UHC
+Metabolic / immuno-hematologic family history,First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WES,BCBS_FEP
+Metabolic / immuno-hematologic family history,First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WGS,BCBS_FEP
+Metabolic / immuno-hematologic family history,First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WES,UHC
+Metabolic / immuno-hematologic family history,First- or second-degree family member with laboratory abnormalities suggestive of an inborn error of metabolism (IEM),WGS,UHC
+Metabolic / immuno-hematologic family history,First- or second-degree family member with persistent and severe immunologic or hematologic disorder,WES,BCBS_FEP
+Metabolic / immuno-hematologic family history,First- or second-degree family member with persistent and severe immunologic or hematologic disorder,WGS,BCBS_FEP
+Metabolic / immuno-hematologic family history,First- or second-degree family member with persistent and severe immunologic or hematologic disorder,WES,UHC
+Metabolic / immuno-hematologic family history,First- or second-degree family member with persistent and severe immunologic or hematologic disorder,WGS,UHC
+Neurodevelopmental family history,Developmental delay,WES,BCBS_FEP
+Neurodevelopmental family history,Developmental delay,WGS,BCBS_FEP
+Neurodevelopmental family history,Developmental delay,WES,UHC
+Neurodevelopmental family history,Developmental delay,WGS,UHC
+Neurodevelopmental family history,Developmental delay,WES,BCBS_FEP
+Neurodevelopmental family history,Developmental delay,WGS,BCBS_FEP
+Neurodevelopmental family history,Developmental delay,WES,UHC
+Neurodevelopmental family history,Developmental delay,WGS,UHC
+Neurodevelopmental family history,"First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WES,BCBS_FEP
+Neurodevelopmental family history,"First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WGS,BCBS_FEP
+Neurodevelopmental family history,"First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WES,UHC
+Neurodevelopmental family history,"First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WGS,UHC
+Neurodevelopmental family history,First- or second-degree family member with global developmental delay,WES,BCBS_FEP
+Neurodevelopmental family history,First- or second-degree family member with global developmental delay,WGS,BCBS_FEP
+Neurodevelopmental family history,First- or second-degree family member with global developmental delay,WES,UHC
+Neurodevelopmental family history,First- or second-degree family member with global developmental delay,WGS,UHC
+Neurodevelopmental family history,First- or second-degree family member with autism spectrum disorder,WES,BCBS_FEP
+Neurodevelopmental family history,First- or second-degree family member with autism spectrum disorder,WGS,BCBS_FEP
+Neurodevelopmental family history,First- or second-degree family member with autism spectrum disorder,WES,UHC
+Neurodevelopmental family history,First- or second-degree family member with autism spectrum disorder,WGS,UHC
+Neurodevelopmental family history,"First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",WES,BCBS_FEP
+Neurodevelopmental family history,"First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",WGS,BCBS_FEP
+Neurodevelopmental family history,"First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",WES,UHC
+Neurodevelopmental family history,"First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",WGS,UHC
+Neurodevelopmental family history,"First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WES,BCBS_FEP
+Neurodevelopmental family history,"First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WGS,BCBS_FEP
+Neurodevelopmental family history,"First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WES,UHC
+Neurodevelopmental family history,"First- or second-degree family member with moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age",WGS,UHC
+Neurodevelopmental family history,First- or second-degree family member with global developmental delay,WES,BCBS_FEP
+Neurodevelopmental family history,First- or second-degree family member with global developmental delay,WGS,BCBS_FEP
+Neurodevelopmental family history,First- or second-degree family member with global developmental delay,WES,UHC
+Neurodevelopmental family history,First- or second-degree family member with global developmental delay,WGS,UHC
+Neurodevelopmental family history,First- or second-degree family member with autism spectrum disorder,WES,BCBS_FEP
+Neurodevelopmental family history,First- or second-degree family member with autism spectrum disorder,WGS,BCBS_FEP
+Neurodevelopmental family history,First- or second-degree family member with autism spectrum disorder,WES,UHC
+Neurodevelopmental family history,First- or second-degree family member with autism spectrum disorder,WGS,UHC
+Neurodevelopmental family history,"First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",WES,BCBS_FEP
+Neurodevelopmental family history,"First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",WGS,BCBS_FEP
+Neurodevelopmental family history,"First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",WES,UHC
+Neurodevelopmental family history,"First- or second-degree family member with unexplained developmental regression, unrelated to autism or epilepsy",WGS,UHC
+Neurological / movement family history,"First- or second-degree family member with dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",,
+Neurological family history,First- or second-degree family member with epileptic encephalopathy with onset before three years of age,WES,UHC
+Neurological family history,First- or second-degree family member with epileptic encephalopathy with onset before three years of age,WGS,UHC
+Neurological family history,First- or second-degree family member with hypotonia or hypertonia in infancy,WES,UHC
+Neurological family history,First- or second-degree family member with hypotonia or hypertonia in infancy,WGS,UHC
+Neurological family history,"First- or second-degree family member with dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WES,UHC
+Neurological family history,"First- or second-degree family member with dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormality",WGS,UHC
+Neurological family history,First- or second-degree family member with epileptic encephalopathy with onset before three years of age,WES,UHC
+Neurological family history,First- or second-degree family member with epileptic encephalopathy with onset before three years of age,WGS,UHC
+Neurological family history,First- or second-degree family member with hypotonia or hypertonia in infancy,WES,UHC
+Neurological family history,First- or second-degree family member with hypotonia or hypertonia in infancy,WGS,UHC
+Neuropsychiatric family history,"First- or second-degree family member with neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",WES,UHC
+Neuropsychiatric family history,"First- or second-degree family member with neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",WGS,UHC
+Neuropsychiatric family history,"First- or second-degree family member with neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",WES,UHC
+Neuropsychiatric family history,"First- or second-degree family member with neuropsychiatric condition (e.g., bipolar disorder, schizophrenia, obsessive-compulsive disorder)",WGS,UHC

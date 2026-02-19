@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) is being pursued to identify an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES for individuals with multiple congenital anomalies (must affect different organ systems); there is no minimum age exclusion for this indication and the patient is 3 years old, so the patient’s age does not preclude eligibility (policy lists some age-based thresholds for other features but multiple congenital anomalies have no prohibitive age requirement)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The information states referral by a family medicine physician and does not state that one of the required specialties ordered the test; therefore ordering provider requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital anomalies (must affect different organ systems)' as a qualifying clinical feature for WES; the patient has multiple congenital anomalies affecting different organ systems, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES coverage criteria do not mandate specific prior tests for postnatal cases with multiple congenital anomalies (prenatal WES requires prior CMA/karyotype), so no specific required prior testing is defined for this indication in the policy. The patient did have prior nondiagnostic karyotype, which is documented."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists consanguinity or other first- or second-degree family member(s) with similar clinical features as qualifying family-history criteria. The patient has a maternal aunt with ovarian cancer (a second-degree relative) but not 'similar clinical features' to the proband’s congenital anomalies; therefore the family-history criterion relevant to WES eligibility is not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES; the patient’s record documents pre-test counseling completed with a genetic specialist and plans for post-test follow-up, satisfying the counseling expectation in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable CPT codes list 81415 for exome sequence analysis (proband); this best corresponds to the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indication (multiple congenital anomalies), age, counseling, and appropriate CPT mapping (81415), the policy explicitly requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The provided information indicates referral by a family medicine physician and does not document that an eligible ordering provider placed the WES order; therefore coverage criteria are not fully met per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36959,
+    "output_tokens": 2719,
+    "total_tokens": 39678
+  }
+}

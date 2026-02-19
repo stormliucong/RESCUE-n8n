@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient information explicitly states whole exome sequencing (WES) is being requested as the next diagnostic step."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy does not specify explicit age-based eligibility cutoffs for WES; it discusses postnatal/children broadly but no numeric age criteria are given."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and testing generally but does not specify ordering-provider specialty or explicit provider-type requirements for ordering WES."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines clinical indications for CMA (e.g., apparent nonsyndromic developmental delay/ID) and states NGS panel testing is investigational; it does not define medical indications for WES in this document (WES is addressed in a separate policy 2.04.102)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Per this policy, chromosomal microarray (CMA) is the first-line test for apparent nonsyndromic developmental delay/intellectual disability; the patient has had nondiagnostic FISH but no CMA documented, so a first-line CMA prior test has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a brother with childhood intellectual disability (family history present), the policy does not specify family history or consanguinity criteria as requirements for WES in this document."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states experts recommend formal genetic counseling and that it should be performed by someone with expertise, but it does not state a binding coverage requirement for counseling specific to WES; the patient has pre-test counseling documented, but the policy does not define whether that satisfies a coverage requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT code 81415 corresponds to exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Within the provided policy, CMA is the defined first-line test for apparent nonsyndromic developmental delay/ID and next-generation sequencing panel testing is considered investigational; WES is not covered by this policy (it is addressed separately in policy 2.04.102 which is not provided). The patient has not had documented CMA. Based on the FEP 2.04.59 content alone, WES is not supported as covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15710,
+    "output_tokens": 2720,
+    "total_tokens": 18430
+  }
+}

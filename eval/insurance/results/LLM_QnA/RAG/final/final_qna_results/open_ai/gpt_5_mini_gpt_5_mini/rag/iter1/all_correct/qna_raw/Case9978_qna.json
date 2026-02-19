@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states the 53-year-old is undergoing whole exome sequencing (WES) at the request of the neurologist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related criterion is based on onset for certain features; WES coverage criteria explicitly list 'epileptic encephalopathy with onset before three years of age.' Patient’s encephalopathy began before age three, meeting that age-related criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The ordering provider is a neurologist, which satisfies the policy requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists epileptic encephalopathy with onset before age three as a specific clinical indication for WES. The patient has epileptic encephalopathy with onset before age three, so meets the medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy only specifies prior/alternate testing if a specific genetic syndrome is suspected (targeted single gene/panel first). Patient history does not indicate a specific syndrome requiring prior targeted testing; Fragile X was done but policy does not mandate additional specific prior tests for this indication."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy includes family history/related affected first- or second-degree relatives as a relevant feature. The patient has a brother with an inborn error of metabolism (a first-degree relative with a genetic disorder), satisfying the family-history-related criterion in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES/WGS. Patient completed pre-test counseling with a genetic counselor and plans post-test follow-up, meeting the counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Applicable Codes section of the policy lists 81415 as the CPT code for exome sequence analysis (WES) for unexplained constitutional or heritable disorder or syndrome."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy, WES is proven and medically necessary when (a) ordered by an appropriate specialist (neurologist), (b) clinical presentation includes epileptic encephalopathy with onset before age three (met), and (c) counseling provided (met). These criteria are satisfied by the patient’s facts, so the test is covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36935,
+    "output_tokens": 2777,
+    "total_tokens": 39712
+  }
+}

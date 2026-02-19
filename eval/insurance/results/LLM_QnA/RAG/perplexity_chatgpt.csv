@@ -1,2 +1,0 @@
-case_id,Q0,Q1,Q2,Q3,Q4,Q4_followup,Q5,Q6,Q7,Q8,Q9,Q9_followup,Q10,Q10_followup,Q11,Q12,Q13,Q14,Q14_followup,Q15,Q16,Q17
-Case1,Whole Exome Sequencing (WES),Yes,Yes,Yes,Yes,"{'match': 'Yes', 'guidelines': ['ACMG']}",Yes,No,Yes,No,Yes,Yes,No,Diagnostic,Yes,No,No,Yes,"81415, 81416",No,Yes,"Submit the claim with the appropriate CPT codes (81415, 81416) and ensure that documentation of medical necessity, including the patient's clinical presentation and family history, is included. Genetic counseling documentation should also be provided."

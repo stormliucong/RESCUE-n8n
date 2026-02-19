@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states 'whole exome sequencing (WES) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP WES criteria include infants/children with suspected genetic etiology or severe early‑onset presentation; the patient is a 5‑week‑old infant and therefore meets the pediatric/neonatal age criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policies typically require qualified ordering and documentation of counseling but do not strictly restrict ordering to a single specialty in the presented policy text; the patient info notes cardiology referral but does not state a prohibited ordering provider."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria for WES under BCBS FEP include infants with severe unexplained early‑onset events or suspected genetic disorders; this infant had a high‑risk unexplained event requiring CPR and thus meets the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy typically requires prior chromosomal microarray for unexplained congenital/neurologic presentations; the record states prior CMA was nondiagnostic, satisfying this prior testing requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of mother with a persistent severe immunologic/hematologic disorder is relevant to genetic evaluation and supports eligibility under family history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP requires documentation of pre‑test genetic counseling for complex genomic testing; the record documents that pre‑test counseling was completed and post‑test follow‑up is planned."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (clinical exome sequencing) and best matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "From a BCBS FEP coverage adjudication perspective the patient meets age, medical necessity (severe unexplained early‑onset event), prior testing (CMA nondiagnostic), family history, and counseling requirements — WES is therefore covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1999,
+    "output_tokens": 1615,
+    "total_tokens": 3614
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states the patient is being considered for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC policies allow WES for pediatric patients with unexplained neurodevelopmental or syndromic presentations; an 11-year-old meets pediatric age-related eligibility for WES."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Ordering by a developmental pediatrician with documented genetic counselor involvement meets typical UHC ordering/provider requirements for genetic testing referral and authorization."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical indications—Hirschsprung disease with developmental evaluation plus a sibling with early-onset epileptic encephalopathy—are consistent with UHC medical necessity criteria for WES to evaluate a suspected heritable syndromic/neurodevelopmental condition."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC commonly requires prior standard testing (e.g., chromosomal microarray) for neurodevelopmental indications; the patient had FISH (nondiagnostic) but no documentation of prior CMA, so required prior testing was not completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a sibling with epileptic encephalopathy before age three—family history relevant to suspicion of a heritable disorder and consistent with family-history criteria in coverage guidelines."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The family has met with a genetic counselor multiple times for pre-test counseling with planned post-test disclosure, satisfying UHC counseling requirements for WES."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing and is the appropriate billing code for the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, indication, family history, and counseling criteria are met, required prior testing (notably chromosomal microarray) was not documented as completed; per UHC coverage criteria the absence of required prior testing makes WES not covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2007,
+    "output_tokens": 1542,
+    "total_tokens": 3549
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was explicitly referred for BRCA1/2 testing per the clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage is driven by personal/family cancer history and clinical criteria rather than a strict age cut‑off; no age‑based exclusion/applicability is specified for BRCA testing and the patient is an adult (18)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided information does not indicate any payer requirement for a specific ordering provider specialty; BCBS_FEP policies generally do not limit ordering to a single specialty in the clinical scenario provided."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP coverage for BRCA1/2 requires qualifying personal or family history of BRCA‑related cancers or a known familial pathogenic variant. The patient has no personal history of breast/ovarian/etc. cancer and the only family history is a maternal uncle with dystonia/ataxia (not a qualifying BRCA‑related cancer), so medical indication for BRCA testing is not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP does not generally require prior diagnostic cytogenetic testing (karyotype) before BRCA testing; the nondiagnostic karyotype is irrelevant to BRCA criteria and no other specific prior tests are mandated in the provided criteria."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family‑history criteria are specified for BRCA testing (first/second degree relatives with BRCA‑associated cancers, known familial mutation). The documented family history (maternal uncle with neurologic disease) is not a qualifying family history for BRCA coverage."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP commonly requires documentation of pretest genetic counseling for BRCA testing; the record states no pretest genetic counseling was conducted, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The clinical request is for BRCA1/2 testing, but the provided CPT options do not unambiguously map to standard BRCA sequencing (common BRCA sequence codes such as 81211/81213 are not listed). Therefore a specific CPT from the provided list cannot be confidently selected."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying BCBS_FEP BRCA coverage rules: patient lacks qualifying personal/family history of BRCA‑associated cancer and pretest genetic counseling is not documented. Therefore, under payer criteria the BRCA1/2 test would not be covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1960,
+    "output_tokens": 2491,
+    "total_tokens": 4451
+  }
+}

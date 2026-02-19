@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole-exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage policies are indication-based (developmental delay/possible genetic disorder) and do not impose a specific age cutoff in this clinical context; the record only states 'infant' but payer age-specific restrictions are not specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC medical policy does not mandate a specific ordering provider specialty for WES in this setting (any qualified ordering physician/genetics team may order); the note indicates referral by an oncologist but the policy does not explicitly restrict ordering to a subspecialist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria for WES include unexplained developmental delay or suspected genetic disorder. The infant has developmental delay and a suspicious family history, satisfying a covered medical indication per payer criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior chromosome microarray (CMA) or equivalent cytogenetic testing before WES for developmental delay. The record documents prior FISH was nondiagnostic but does not document a CMA, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The family history notes an older sibling with significant childhood-onset hearing impairment, which is relevant and supports hereditary etiology per payer criteria for comprehensive exomic testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre-test genetic counseling for WES. The record states pre-test counseling was completed and post-test counseling is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT code 81415 corresponds to exome sequencing (WES) and best fits the ordered test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications and genetic counseling is documented, UHC requires completion of specified prior testing (e.g., CMA) before approving WES. Only nondiagnostic FISH is documented and no CMA is recorded, so coverage would be denied pending completion/documentation of required prior testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1446,
+    "total_tokens": 3424
+  }
+}

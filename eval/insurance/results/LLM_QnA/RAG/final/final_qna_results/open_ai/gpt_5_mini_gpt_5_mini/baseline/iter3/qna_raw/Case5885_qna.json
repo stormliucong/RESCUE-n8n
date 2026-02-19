@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states 'whole genome sequencing (WGS) is requested.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WGS/WES policies apply primarily to pediatric patients with suspected genetic disorders; the patient is 11 years old (pediatric) and therefore meets age-based eligibility under the payer's pediatric testing criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires appropriate specialist involvement and documentation of genetic counseling; the referral was from neurology with pre-test counseling discussed with a genetic specialist, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UHC coverage criteria for WGS usually require multiple congenital anomalies affecting two or more organ systems, significant neurodevelopmental disorder, or other defined clinical indications. The record documents a 'major abnormality affecting at least one organ system' without meeting the multi-system or neurodevelopmental criteria, so medical-necessity criteria are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC often requires prior appropriate testing (e.g., chromosomal microarray and/or targeted panels) before WGS. Only Fragile X testing (nondiagnostic) is documented; no CMA or other required prior tests are documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a family history relevant to genetic evaluation (mother with long QT syndrome). UHC accepts pertinent family history as relevant supporting information for genetic testing eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documented pre-test genetic counseling and post-test plans for high-complexity testing; the note states pre-test counseling was discussed with a genetic specialist and post-test follow-up plans are in place."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing with interpretation and report, which matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Despite appropriate age, provider involvement, documented genetic counseling, and relevant family history, the request fails payer medical-necessity requirements (no multi‑system congenital findings or defined indication) and required prior testing (e.g., CMA) is not documented; therefore coverage is not supported under UHC criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 1585,
+    "total_tokens": 3560
+  }
+}

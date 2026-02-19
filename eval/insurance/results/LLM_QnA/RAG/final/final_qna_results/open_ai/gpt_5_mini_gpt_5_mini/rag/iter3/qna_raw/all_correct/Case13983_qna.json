@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states whole genome sequencing (WGS) is being pursued at the request of the ordering gynecologist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy addresses infants/children (including neonates) and lists BRUE/abnormal ECG in infants as a clinical feature; the patient is a 7-week-old infant, which meets the policy's age-related pediatric/infant scope."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics (Policy Statement #1). The ordering provider is a gynecologist and there is no documentation that a clinician with genetics expertise evaluated the infant, so ordering-provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy Guidelines explicitly list 'Infant with high risk stratification on evaluation for a Brief Resolved Unexplained Event (BRUE) ...' and 'Significantly abnormal electrocardiogram (ECG) including ... possible channelopathies' as clinical features suggesting a genetic disease. The patient has a high-risk BRUE and significantly abnormal ECG, meeting that clinical criterion."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "For standard WES/WGS the policy requires prior genetic testing (eg, chromosomal microarray analysis and/or targeted single‑gene testing) unless rapid testing for a critically ill infant in NICU/PICU is indicated. The patient had prior nondiagnostic FISH but no documentation of CMA or targeted single‑gene testing and is not documented as being critically ill in NICU/PICU, so required prior tests were not completed per policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history items (eg, developmental delay, arrhythmia, BRUE in sibling) as relevant. The patient has a maternal uncle with unexplained developmental regression, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed by someone with expertise. The patient had pre-test counseling with a genetic counselor and plans for post-test follow-up, satisfying the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT 81425 corresponds to whole genome sequence analysis/interpretation and is the best match for WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets a listed clinical criterion (high‑risk BRUE with significantly abnormal ECG) and is within the pediatric age range and has documented genetic counseling, the policy requires either (a) rapid WGS/WES for critically ill infants in NICU/PICU or (b) prior evaluation by a clinician with genetics expertise and prior appropriate genetic testing (eg, CMA or targeted single‑gene testing) for non‑rapid testing. There is no documentation the infant is critically ill/in NICU, no documentation of evaluation by a genetics clinician, and prior CMA/targeted testing was not documented. Additionally, the policy states WGS is investigational in other situations. Therefore WGS is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14898,
+    "output_tokens": 2475,
+    "total_tokens": 17373
+  }
+}

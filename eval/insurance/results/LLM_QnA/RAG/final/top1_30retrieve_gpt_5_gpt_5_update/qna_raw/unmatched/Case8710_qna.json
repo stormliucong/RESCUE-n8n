@@ -1,0 +1,18 @@
+{
+  "qna_result": {
+    "Q0": "WES",
+    "Q1": "Not Specified",
+    "Q2": "Not Specified",
+    "Q3": "Not Specified",
+    "Q4": "Not Specified",
+    "Q5": "Not Specified",
+    "Q6": "Not Specified",
+    "Q7": "81415",
+    "Q8": "No"
+  },
+  "token_usage": {
+    "input_tokens": 12371,
+    "output_tokens": 1503,
+    "total_tokens": 13874
+  }
+}

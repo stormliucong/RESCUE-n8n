@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case explicitly states whole exome sequencing (WES) is being pursued with UHC coverage."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES policies specifically address pediatric patients with unexplained developmental delay/intellectual disability; the patient is 6 years old and therefore meets age-based pediatric eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires ordering by an appropriate treating specialist or genetics provider; the referral is from neurology and the family has engaged genetics, meeting ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria include unexplained developmental delay/intellectual disability as an indication for WES; the patient has nonsyndromic developmental delay and intellectual disability."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior appropriate testing (eg, chromosomal microarray and fragile X testing) before WES. Fragile X was done and nondiagnostic, but no CMA is documented, so the required prior test (CMA) has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of neurologic disease (maternal uncle with dystonia and ataxia) is present and is relevant to the genetic evaluation and eligibility considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre-test genetic counseling for WES; the family has seen a genetic counselor multiple times and pre-test counseling is complete with plans for post-test follow-up."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (proband), which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, clinical indication, provider, counseling, and family history meet UHC criteria, a required prior test (chromosomal microarray) is not documented as completed; absence of the required prior testing would render the WES request non-covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1987,
+    "output_tokens": 1594,
+    "total_tokens": 3581
+  }
+}

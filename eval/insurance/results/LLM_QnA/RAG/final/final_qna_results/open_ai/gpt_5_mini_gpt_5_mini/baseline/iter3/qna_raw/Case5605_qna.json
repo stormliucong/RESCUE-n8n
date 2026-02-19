@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient was referred for whole genome sequencing (WGS) per the provided clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WGS/WES coverage criteria are based on clinical indications rather than strict age cutoffs; no payer-specific age exclusion is stated and an 11-year-old is within the pediatric/adult range typically considered."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Payer policy commonly requires ordering/authorization by or in consultation with a genetics specialist. The record notes pre-test counseling with a genetic specialist but does not explicitly state who placed the WGS order, so available information is insufficient to confirm ordering-provider requirements are met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP coverage criteria support WGS/WES for individuals with major congenital anomalies or unexplained multiple congenital malformations. The patient has a major congenital cardiac anomaly and thus meets a defined medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Payer criteria commonly require prior chromosomal microarray (CMA) before WES/WGS; the patient had a nondiagnostic CMA, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "While payer criteria may consider family history/consanguinity relevant (eg, similarly affected relatives), the only family history noted is a maternal aunt with pancreatic cancer, which is not a relevant family history for the patient’s congenital cardiac anomaly per typical eligibility rules."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP typically requires pre-test genetic counseling for WGS/WES. The record states pre-test counseling was completed with a genetic specialist, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Of the listed CPT options, 81425 corresponds to whole genome sequencing (WGS) analysis and interpretation; 81415 more commonly maps to whole exome sequencing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "The patient meets clinical-necessity criteria for WGS (major congenital anomaly), has a nondiagnostic prior CMA, and completed pre-test genetic counseling — aligning with BCBS_FEP coverage requirements for WGS/WES, so the test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1969,
+    "output_tokens": 2033,
+    "total_tokens": 4002
+  }
+}

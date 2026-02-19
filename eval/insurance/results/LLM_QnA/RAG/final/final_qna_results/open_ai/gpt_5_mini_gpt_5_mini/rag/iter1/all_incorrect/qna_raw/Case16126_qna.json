@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information states BRCA1 and BRCA2 testing has been ordered. Basis: patient clinical info."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy (FEP 2.04.93) does not state age-based eligibility criteria for BRCA1/2 testing or cancer susceptibility testing; patient is a 6-week-old infant but no age rules are specified in the policy text."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and expert performance but does not specify required ordering provider specialty or type for BRCA1/2 testing; the ordering provider being a gynecologist is not addressed as a restriction in the provided policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage is tied to individuals with a personal and/or family history suggesting an inherited cancer syndrome. The infant has multiple congenital anomalies but no documented personal or family history of breast/ovarian cancer in the provided facts, so the medical indication in the policy is not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define specific required prior tests before BRCA1/2 testing; although FISH was nondiagnostic per patient facts, the policy does not require specific prior testing."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family history of cancer as relevant to eligibility; the provided patient information does not document a family history of breast/ovarian cancer (only consanguinity is noted), so the family-history criterion in the policy is not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states formal genetic counseling is recommended and 'should be performed by an individual with experience and expertise.' The patient had pre-test counseling and plans post-test follow-up with a genetic counselor, meeting the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not list or map CPT codes for BRCA1/2 or other genetic tests, so a specific CPT from the provided options cannot be determined from the policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the FEP policy, cancer susceptibility testing (including panels) is considered only when coverage criteria (personal/family history suggesting inherited cancer syndrome or other related policy criteria) are met. The infant lacks a personal or documented family history of breast/ovarian cancer in the provided facts; therefore BRCA1/2 testing as ordered is not supported by the policy criteria and is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 7671,
+    "output_tokens": 2033,
+    "total_tokens": 9704
+  }
+}

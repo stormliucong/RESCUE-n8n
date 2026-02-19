@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note states she is undergoing BRCA1/2 testing at the request of her obstetrician."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP BRCA coverage is based on personal/family cancer history rather than a strict age cutoff; no age-specific exclusion/threshold is specified and the patient is an adult (21)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "FEP policy does not limit ordering to a narrow specialty; requirements focus on counseling/documentation rather than that the order come only from a geneticist, and the record shows an obstetrician ordered the test."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "FEP coverage criteria include individuals with a first-degree relative with BRCA-associated cancers such as metastatic prostate cancer; the patient’s father has metastatic prostate cancer (first-degree), meeting medical indication for BRCA1/2 testing."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "There are no FEP requirements for completion of specific prior tests before BRCA1/2 sequencing; the prior nondiagnostic FISH is unrelated to BRCA testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are specified for BRCA testing and she has a relevant first-degree family history (father with metastatic prostate cancer)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "FEP BRCA policy requires documentation of pre-test genetic counseling; the record documents pre-test counseling with a genetic specialist and planned post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The usual single-gene BRCA1/2 CPT codes (e.g., 81211/81213) are not among the provided options; none of the listed CPT codes clearly correspond to standard BRCA1/2 single-gene testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "She meets FEP medical-necessity family-history criteria (first-degree relative with metastatic prostate cancer) and has documented pre-test genetic counseling; therefore BRCA1/2 testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1980,
+    "output_tokens": 2139,
+    "total_tokens": 4119
+  }
+}

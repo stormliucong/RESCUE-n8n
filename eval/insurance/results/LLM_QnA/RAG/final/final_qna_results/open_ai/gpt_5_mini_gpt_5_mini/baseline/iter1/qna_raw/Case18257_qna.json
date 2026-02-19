@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states the patient is being evaluated for BRCA1/2 testing to assess hereditary breast and ovarian cancer risk."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Cigna BRCA criteria include personal history of breast cancer diagnosed at age ≤50 as an indication; the patient had breast cancer diagnosed at age 50 or younger, so age-related eligibility is met."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Cigna policies generally allow orders from licensed physicians or other qualified providers. The test was ordered by the patient's general practitioner (a physician), which satisfies ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Cigna defines a personal history of breast cancer diagnosed ≤50 years as a covered medical indication for BRCA1/2 testing; the patient meets this specific clinical criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "There are no Cigna prior-testing requirements (e.g., CMA or other tests) that must be completed before BRCA1/2 testing in this clinical scenario; the provided prior CMA result is informational but not a prerequisite."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "While family history can be relevant for BRCA testing, the only family detail provided (a sibling with short stature) is not a qualifying family history for hereditary breast/ovarian cancer per Cigna criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna requires documentation of genetic counseling (pre-test and typically post-test) for BRCA testing; there is no documentation of prior genetic counseling for this patient, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The exact CPT codes for BRCA1/2 sequencing (e.g., single-gene BRCA1/BRCA2 codes) are not among the provided options, and the patient information does not specify test methodology that would map to the listed CPT codes."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets medical and age criteria for BRCA1/2 testing under Cigna policy, the absence of documented genetic counseling (a Cigna coverage requirement) means coverage is not met as presented; counseling must be documented or provided per policy for approval."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1976,
+    "output_tokens": 1975,
+    "total_tokens": 3951
+  }
+}

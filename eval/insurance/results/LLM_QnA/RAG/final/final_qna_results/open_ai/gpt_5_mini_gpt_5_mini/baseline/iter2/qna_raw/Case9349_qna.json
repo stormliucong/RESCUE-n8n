@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient record explicitly states referral for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES coverage criteria do not impose a strict age cutoff for exome testing; the patient is 5 years old which does not conflict with typical age guidance, and no payer-specific pediatric age restriction is specified in the information provided."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies commonly allow ordering by the treating clinician with appropriate documentation rather than restrict to a single specialty; the record shows a cardiologist referral and genetic counselor involvement, and no payer-specific ordering-provider restriction was provided."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP WES medical-necessity rules generally define covered indications (e.g., multiple congenital anomalies, global developmental delay/ID/autism, or complex multisystem unexplained phenotype). This patient has a single-organ congenital cardiac anomaly; that clinical presentation alone does not meet BCBS_FEP's defined WES indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "For a single-organ cardiac phenotype BCBS_FEP policy expects targeted cardiac genetic testing (disease-specific gene panel) or other relevant focused tests prior to broad WES. Only nondiagnostic FISH was done; no prior targeted cardiomyopathy/arrhythmia gene panel or other recommended prior testing is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant: a paternal uncle with sudden unexplained death before age 35 raises concern for an inherited cardiac arrhythmia/cardiomyopathy, which BCBS_FEP recognizes as pertinent to genetic evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of pre-test genetic counseling for complex genomic tests; the record documents pre-test counseling by a genetic counselor and plans for post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (proband-only), which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although counseling and relevant family history are documented, BCBS_FEP WES coverage criteria require an appropriate covered clinical indication (typically multisystem or neurodevelopmental phenotypes) or prior targeted testing when the presentation is single-organ. This patient has a single-organ congenital cardiac anomaly and has not completed recommended targeted cardiac gene testing; therefore WES does not meet BCBS_FEP medical-necessity/prior-test requirements and would not be covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1990,
+    "output_tokens": 1978,
+    "total_tokens": 3968
+  }
+}

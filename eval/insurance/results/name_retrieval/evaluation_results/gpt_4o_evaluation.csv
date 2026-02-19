@@ -1,0 +1,9 @@
+Prompt Type,Iteration,Total Retrieved,Exact Match Precision (%),Exact Match Recall (%),Regex Match Precision (%),Regex Match Recall (%),LLM Match Precision (%),LLM Match Recall (%)
+baseline,1,165.0,27.27,18.83,26.03,17.84,0.0,0.0
+baseline,2,191.0,77.49,61.92,96.3,85.45,0.0,0.0
+baseline,3,196.0,78.06,64.02,96.39,87.79,53.06,43.51
+baseline,Average,184.0,60.94,48.26,72.91,63.69,17.69,14.5
+explicit,1,160.0,78.12,52.3,94.97,70.89,0.0,0.0
+explicit,2,85.0,91.76,32.64,95.24,37.56,0.0,0.0
+explicit,3,38.0,89.47,14.23,97.3,16.9,84.21,13.39
+explicit,Average,94.3,86.45,33.05,95.83,41.78,28.07,4.46

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) was ordered to evaluate for an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage guidance does not impose a strict age cutoff for exome sequencing; the patient is 16 but age-based limits are not specified in policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally require appropriate specialty documentation but do not mandate a single specific ordering specialty for WES; the order from a developmental pediatrician is acceptable and no explicit restrictive ordering-provider requirement is provided in the record."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria for WES include evaluation of suspected genetic disorders/inborn errors of metabolism and situations with an affected family member. The patient has conjugated hyperbilirubinemia with a sibling whose labs suggest an inborn error, meeting an indication for WES per UHC coverage criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC often requires prior targeted testing (e.g., CMA for isolated developmental delay) in some contexts, but for suspected inborn errors/metabolic disease there is no single universally required prior test documented here. The record notes Fragile X was done, but no other required prior tests are explicitly mandated for this metabolic presentation."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a sibling with laboratory abnormalities suggestive of an inborn error of metabolism; family history of an affected first-degree relative is relevant and supports WES per coverage criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of genetic counseling for WES; pre-test counseling was completed with a genetic counselor and post-test counseling is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (WES) with analysis and interpretation; this is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC coverage principles: the patient has a clinical suspicion of a genetic/inborn error (conjugated hyperbilirubinemia) plus a sibling with suggestive labs (affected family member), pre-test genetic counseling was completed, and WES is an appropriate diagnostic modality for suspected metabolic/genetic disorders. These factors meet medical necessity criteria for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 2386,
+    "total_tokens": 4377
+  }
+}

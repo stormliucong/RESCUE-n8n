@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) is being ordered after nondiagnostic CMA to evaluate for an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy refers to 'children' and gives special guidance for infants (eg, BRUE) but does not provide a specific numeric age cutoff; the infant is a child, but the policy does not explicitly define an age-based eligibility threshold."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires documentation that the individual 'has been evaluated by a clinician with expertise in clinical genetics' and counseled. Patient data state pre-test genetic counseling was completed but do not explicitly document who the ordering provider is or whether the required genetics evaluation documentation exists, so this cannot be confirmed from the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Infant with high risk stratification on evaluation for a Brief Resolved Unexplained Event (BRUE) ... Significantly abnormal electrocardiogram (ECG), including ... possible channelopathies, arrhythmias, cardiomyopathies' as clinical features suggesting a genetic disease. The patient is a three-week-old infant with a high-risk BRUE and a markedly abnormal ECG, matching policy indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior testing (eg, chromosomal microarray) to have failed to yield a diagnosis. The patient had CMA previously performed and nondiagnostic, meeting this prior-testing requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay/intellectual disability as relevant. The patient has a sibling with moderate to severe intellectual disability, which aligns with the policy's family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling by an individual with experience in genetic medicine. Patient information states pre-test genetic counseling has been completed with plans for post-test follow-up, satisfying the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES). CPT 81415 corresponds to exome sequencing (interpretation and report) and is the best match among the provided CPT options for WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, WES may be considered medically necessary for children when all criteria are met: (1) evaluation and counseling by genetics (patient had pre-test genetic counseling and family/phenotype info documented), (2) potential to change management (abnormal ECG/channelopathy concerns are actionable), and (3) prior testing nondiagnostic (CMA nondiagnostic). These conditions are satisfied in the provided information, supporting coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14874,
+    "output_tokens": 2771,
+    "total_tokens": 17645
+  }
+}

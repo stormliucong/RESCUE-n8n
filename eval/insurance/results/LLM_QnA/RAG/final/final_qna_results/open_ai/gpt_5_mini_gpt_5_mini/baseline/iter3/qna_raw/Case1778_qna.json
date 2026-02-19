@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient information explicitly states that whole exome sequencing (WES) has been requested for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Most commercial WES policies do not impose a strict single age cutoff (many apply to both pediatric and adult patients or specify ‘pediatric’ broadly). The patient is 14 (pediatric), but the provided information does not cite a payer policy that specifies an age-based exclusion or requirement, so age-based criteria are not specified in the case data."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "No ordering-provider specialty or credential information is given in the patient data and many payer WES policies either do not specify strict provider-type requirements or vary by payer. The chart does not state any required provider credential is present or absent."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Typical payer coverage criteria for WES require a patient to have a suspected genetic disorder not explained by prior testing and commonly require either multiple congenital anomalies, unexplained developmental delay/intellectual disability, or other syndromic features. This patient has an isolated ocular coloboma (single-organ finding) with no other syndromic features noted, so she does not meet commonly specified medical-indication criteria for diagnostic WES."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Many payer WES policies require prior appropriate targeted testing such as chromosomal microarray (CMA) and/or other recommended targeted tests before WES. The record states prior FISH testing was nondiagnostic, but FISH is not equivalent to CMA and CMA was not documented, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Answerable",
+      "reasoning": "The patient information contains no family history or consanguinity data. Because family-history–based criteria are commonly relevant to WES eligibility, but no such information is provided here, this cannot be determined from the supplied facts."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Pre-test genetic counseling is commonly required by many payer policies for WES, but the provided information does not state whether genetic counseling has occurred or who counseled the patient, so this requirement cannot be confirmed from the record."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; the CPT code that corresponds to clinical exome sequencing in this set of options is 81415."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per usual payer medical policy criteria applied to this case: the patient has an isolated ocular coloboma (not the typical multi-system or neurodevelopmental presentation that triggers WES coverage), required prior testing (notably chromosomal microarray) was not documented (only FISH was done), and genetic counseling/other ordering requirements were not documented. Based on these deficiencies relative to common payer WES coverage rules, the test would not be covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1935,
+    "output_tokens": 1850,
+    "total_tokens": 3785
+  }
+}

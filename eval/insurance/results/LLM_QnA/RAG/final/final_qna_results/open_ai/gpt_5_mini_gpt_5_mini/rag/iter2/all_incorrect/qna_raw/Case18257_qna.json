@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being evaluated for BRCA1/2 testing to assess hereditary breast/ovarian cancer risk (patient statement)."
+    },
+    "Q1": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy contains explicit age-based criteria (e.g., diagnosed ≤45, or 46–50 with additional qualifiers). Patient history states 'diagnosed at age 50 or younger' which is ambiguous relative to the policy thresholds (≤45 vs 46–50 with additional criteria), so insufficient information to determine if age criterion is met."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify required ordering provider specialty/type for BRCA1/2 testing; no ordering-provider restrictions are given in the document."
+    },
+    "Q3": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy defines specific clinical indications. Patient has a personal breast cancer history diagnosed at '50 or younger' but the policy's categories are age-specific and some (46–50) require additional criteria the patient does not clearly have. Because the exact age at diagnosis and presence of required additional qualifiers are not determinable from the provided information, medical-indication status cannot be confirmed."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of any specific prior tests before BRCA1/2 testing (it notes prior limited testing is relevant but not required), so no mandatory prior-test requirement is specified."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history criteria for eligibility (e.g., close blood relative with breast/ovarian/pancreatic/prostate cancer). The patient’s reported family history is limited to a sibling with short stature (no cancer), so she does not meet the policy family-history criteria."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy includes billing codes for genetic counseling but does not state that documented prior genetic counseling is a prerequisite for coverage of BRCA1/2 testing; therefore counseling requirements are not specified as mandatory in the policy."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy billing/coding lists CPT 81162 as BRCA1/BRCA2 full sequence analysis plus full duplication/deletion analysis (full BRCA1/2 testing), which corresponds to the requested BRCA1/2 test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage under the policy requires meeting one or more specific criteria. Based on provided facts: exact age at diagnosis relative to policy thresholds is unclear and the patient lacks a qualifying family cancer history. Because medical-necessity criteria from the policy cannot be confirmed with the available information, the request is not supported for coverage per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 8050,
+    "output_tokens": 2513,
+    "total_tokens": 10563
+  }
+}

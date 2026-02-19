@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states 'whole exome sequencing (WES) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requirement: 'Member is <21 years of age.' Patient is 8 years old, meeting the age criterion (Cigna Exome Sequencing criteria)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires an 'appropriate genetic and family history evaluation' and a clinical letter but does not specify ordering-provider specialty or other explicit ordering provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires specific clinical indications (e.g., global developmental delay after formal assessment by developmental pediatrician/neurologist, multiple congenital anomalies, or other defined criteria). The patient has hypotonia and motor delay without documentation of the required formal assessments or meeting one of the listed phenotype criteria; thus the medical indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires prior appropriate genetic/family history evaluation and documentation of previous tests and results. Patient has only nondiagnostic Fragile X noted and no documentation of the required clinical letter, formal specialist assessment, or other prior testing (e.g., CMA or documented targeted workup) required by the guideline."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires inclusion of family history in the evaluation but does not define specific family-history/consanguinity criteria that alone confer eligibility. Patient has a sibling with ASD, but the policy does not state this specific family history makes the member eligible."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "ACMG guidance cited in the policy and the Cigna criteria require appropriate genetic evaluation/pretest counseling; patient record states pre-test genetic counseling was not performed, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy billing section: '81415 should be billed for the proband' when analyzing the entire exome (exome sequencing/WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and proband CPT mapping are satisfied, the Cigna Exome criteria require ALL conditions (no prior ES/GS, appropriate genetic/family history evaluation with a clinical letter, meeting one of the defined phenotype indications, etc.). The patient lacks documented specialist assessment/clinical letter, required phenotype criteria, and pretest genetic counseling, so the test does not meet all coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10471,
+    "output_tokens": 2458,
+    "total_tokens": 12929
+  }
+}

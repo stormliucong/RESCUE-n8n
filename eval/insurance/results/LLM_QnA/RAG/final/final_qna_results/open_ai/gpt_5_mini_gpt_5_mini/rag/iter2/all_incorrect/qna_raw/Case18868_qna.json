@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient record states whole genome sequencing (WGS) has been ordered to assess for an underlying hereditary cancer predisposition."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy allows genome testing when criteria met and requires adult age (≥18) for adult-onset risk testing; patient is 41 years old, meeting the age requirement (II.2.a.ii)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling unless testing is ordered by a specialist in the disease process. The patient was evaluated by a medical geneticist (a specialist), satisfying ordering/provider requirements (Section II.1 and II.2)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy MEETS COVERAGE for genome testing when the individual is symptomatic with suspicion of a known genetic disease where knowledge will assist diagnosis/treatment (II.2.a.i). The patient has primary peritoneal carcinoma and WGS ordered for hereditary cancer predisposition."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not list explicit mandatory prior tests required before genome testing; it states other testing should be equivocal or not exist (II.2.b.ii) but does not specify concrete prior-test requirements for WGS."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy considers family history for risk assessment (II.2.a.ii). The patient has a relevant family history (mother with a persistent/severe hematologic disorder), which is pertinent to hereditary risk evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling prior to/after testing unless the test is ordered by a specialist in the disease process (II.1). The ordering provider is a medical geneticist, so the counseling requirement is addressed per policy despite no separate pre-test counseling documentation provided."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's reimbursement section does not explicitly map whole genome sequencing (WGS) to any of the listed CPT codes; it states use of specific NGS procedure codes or 81479 when no specific code exists (III.1-2) but does not specify 81162/81277/81228/81415/81425 for WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic testing of the individual's genome MEETS COVERAGE once per lifetime when criteria are met (symptomatic patient where results can impact management) (II.2). The patient is symptomatic with cancer, meets clinical indication, age, and ordering by a specialist, so WGS is covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10239,
+    "output_tokens": 2491,
+    "total_tokens": 12730
+  }
+}

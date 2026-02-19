@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is requested to assess for an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WES/WGS coverage is driven by clinical indications rather than a strict age cutoff in typical policy language; no explicit age-based exclusion or minimum is stated for WGS in this clinical context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies typically require an appropriate ordering clinician but do not universally restrict orders to a single specialty; the patient was referred by neurology (an appropriate specialist), but the payer policy does not explicitly mandate a single named specialty in the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The infant has early-onset recurrent seizure-like events/BRUE with concern for genetic etiology and prior nondiagnostic CMA — this meets UHC criteria for WES/WGS for unexplained early-onset epilepsy/neurodevelopmental disorder."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires prior chromosomal microarray evaluation before WES/WGS when applicable; the record states CMA was performed and nondiagnostic, satisfying that prior-test requirement. (No documentation of a prior epilepsy gene panel is provided.)"
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family history provided only includes maternal short stature (a growth finding) which is not a clearly relevant family history of seizures or a specified consanguinity criterion in UHC coverage rules."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC typically requires documentation of pre-test genetic counseling or informed consent; the family declined pre-test genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (interpretation and report), which matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications for WGS are met and prior CMA is nondiagnostic, the payer routinely requires documented pre-test genetic counseling/informed consent. The family declined pre-test counseling, so coverage would not meet UHC documentation requirements and would be denied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1981,
+    "output_tokens": 2339,
+    "total_tokens": 4320
+  }
+}

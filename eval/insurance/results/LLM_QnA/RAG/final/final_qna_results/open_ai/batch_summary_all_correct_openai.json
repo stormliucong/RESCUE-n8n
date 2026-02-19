@@ -1,0 +1,22 @@
+[
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/final_qna_results/open_ai/gpt_5_mini_gpt_5_mini/rag/iter3",
+    "batch_id": "batch_69543885996c81908549bb9bcfd5040b",
+    "case_type": "all_correct",
+    "mode": "rag",
+    "exp_type": "header",
+    "k_retrieval": 30,
+    "k_rerank": 3,
+    "qna_model": "gpt-5-mini"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/final_qna_results/open_ai/gpt_5_mini_gpt_5_mini/baseline/iter3",
+    "batch_id": "batch_69543888431c819083c2e08d566038bf",
+    "case_type": "",
+    "mode": "baseline",
+    "exp_type": "header",
+    "k_retrieval": 30,
+    "k_rerank": 3,
+    "qna_model": "gpt-5-mini"
+  }
+]

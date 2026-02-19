@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The note explicitly states 'whole exome sequencing (WES) is planned' to investigate an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES coverage policies do not impose a strict age cutoff for diagnostic WES in patients with unexplained congenital anomalies/developmental delay; the patient is 7 years old which is within typical pediatric indications, but no specific age criterion is stated."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "FEP WES policies require appropriate documentation of medical necessity but generally do not restrict ordering to a single provider specialty; the referring oncologist ordering evaluation is acceptable and no specific ordering-provider limitation is specified in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "FEP clinical criteria support WES for patients with multiple congenital anomalies and/or global developmental delay when a genetic etiology is suspected; this patient has multiple congenital anomalies and a family history of developmental delay, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP requires prior chromosomal microarray (CMA) as first‑line testing for unexplained developmental delay/congenital anomalies; the record states CMA was performed and reported as nondiagnostic, satisfying the prior‑test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of global developmental delay in a sibling is documented; FEP policies list a family history of similar neurodevelopmental disorders as relevant supportive information for diagnostic WES eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "FEP WES guidance requires pre‑test genetic counseling and arrangements for post‑test counseling; the record confirms pre‑test counseling was completed and post‑test follow‑up is arranged, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (WES) with interpretation and report, which matches the requested test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per BCBS FEP WES coverage criteria: the patient has a compatible clinical indication (multiple congenital anomalies/developmental concerns), prior CMA was nondiagnostic, pre‑test counseling documented, and supportive family history—thus the test meets FEP medical necessity criteria and is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1983,
+    "output_tokens": 1472,
+    "total_tokens": 3455
+  }
+}

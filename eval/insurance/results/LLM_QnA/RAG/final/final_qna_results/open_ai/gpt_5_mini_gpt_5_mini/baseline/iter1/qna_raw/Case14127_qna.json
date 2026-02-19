@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case text explicitly states 'whole exome sequencing (WES) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose a specific age cutoff for exome sequencing for unexplained neurodevelopmental disorders; age (17) is not a limiting factor per typical policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require tests to be ordered/coordinated by an appropriate provider (medical geneticist or other qualified clinician). The medical geneticist is coordinating testing, which satisfies ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC indicates WES is clinically indicated for unexplained global developmental delay/intellectual disability and related neurodevelopmental presentations; the patient has lifelong GDD/cognitive and adaptive deficits, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior diagnostic chromosomal microarray testing (and in some cases Fragile X testing for males) before WES for GDD/ID. The record only documents nondiagnostic FISH (not equivalent to CMA) and no CMA/Fragile X results, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a relevant family history: a sibling with epileptic encephalopathy with onset before age three, which is pertinent to genetic evaluation and included in coverage considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC expects documentation of genetic counseling for WES. The patient had pre-test genetic counseling and will return for post-test counseling, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, ordering provider, and counseling requirements are met, UHC coverage requires prior diagnostic CMA (and where applicable Fragile X) before approving WES for GDD/ID. No CMA/Fragile X results are documented, so coverage would be denied until required prior testing is completed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2003,
+    "output_tokens": 1637,
+    "total_tokens": 3640
+  }
+}

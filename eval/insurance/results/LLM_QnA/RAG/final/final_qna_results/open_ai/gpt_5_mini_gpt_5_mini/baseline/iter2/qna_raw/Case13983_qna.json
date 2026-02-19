@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states 'whole genome sequencing (WGS) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP pediatric WGS criteria apply to infants/children with suspected genetic disorders; the patient is a 7‑week‑old infant, which meets age-based pediatric eligibility."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP policies require ordering by an appropriate specialist (e.g., clinical geneticist or treating specialist) or documentation of specialist/genetics oversight; the order was placed by a gynecologist and no documentation that the ordering provider meets the specialist requirement is provided."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP allows WGS when a suspected genetic disorder is present (e.g., unexplained concerning cardiac findings/channelopathy, abnormal ECG, family history) and prior relevant testing is nondiagnostic; the patient has an abnormal ECG, concern for channelopathy/arrhythmia, and a family history, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP typically requires prior appropriate targeted testing (e.g., chromosomal microarray for developmental concerns and/or targeted cardiac gene panel) or documentation that such testing is not diagnostic or not appropriate; only prior FISH (nondiagnostic) is documented and CMA/targeted cardiac panel are not reported as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP considers relevant family history in eligibility for genomic testing; the maternal uncle's unexplained developmental regression is a relevant family history supporting inherited etiology."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires pre‑test genetic counseling for comprehensive genomic testing; the record states pre‑test counseling was completed with a genetic counselor and plans for post‑test follow‑up are in place."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to clinical whole genome sequencing (proband or interpretation/report) and best maps to the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the medical indication, age, family history, and genetic counseling meet BCBS_FEP criteria, required prior testing (e.g., CMA and/or targeted cardiac gene panel) was not documented and the ordering provider does not meet the stated specialist/provider requirement; because these payer‑specified prerequisites are not satisfied, coverage would be denied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2045,
+    "output_tokens": 1883,
+    "total_tokens": 3928
+  }
+}

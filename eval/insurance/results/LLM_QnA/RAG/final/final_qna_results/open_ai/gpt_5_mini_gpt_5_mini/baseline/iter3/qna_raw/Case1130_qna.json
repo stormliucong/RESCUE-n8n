@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient record explicitly states 'whole exome sequencing (WES) to assess for an underlying genetic etiology.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC exome coverage criteria do not impose a strict age cutoff for WES; the patient is 68 but age-based limits are not specified in the policy for WES in adults with suspected genetic disease."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC typically requires an appropriate ordering clinician and documentation but does not mandate a single specific specialty (e.g., must be a geneticist) for ordering WES; the record shows cardiology referral and genetics involvement but the policy does not specify a restrictive ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES when there is a suspected genetic etiology for unexplained, persistent neurologic disease such as refractory or unexplained seizures and prior targeted testing is nondiagnostic. The patient has persistent seizures and prior FISH testing was nondiagnostic, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC coverage criteria require appropriate prior diagnostic evaluation but do not universally mandate a single specific prior test in all clinical scenarios. The patient had prior nondiagnostic FISH; policy allows WES when prior testing is nondiagnostic or phenotype is broad, so no single required prior test is clearly specified for this scenario."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES criteria do not generally require specific family history or consanguinity for coverage. Although a relative has ovarian/fallopian/peritoneal cancer, that family history is more relevant to BRCA testing than to WES and is not a stated WES eligibility requirement."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre- and/or post-test genetic counseling for large-panel/exome testing; the patient has seen a genetic counselor multiple times with planned post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (proband/single exome), which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC criteria: the patient has persistent unexplained seizures (clinical indication), prior targeted testing (FISH) was nondiagnostic, documented genetic counseling is present, and no disqualifying age or ordering-provider restrictions apply—therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1989,
+    "output_tokens": 1961,
+    "total_tokens": 3950
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: standard WES/WGS medically necessary for pediatrics under 21. Patient is 7 years old, which meets the age criterion (<21)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual to have been evaluated by a clinician with expertise in clinical genetics and that counseling was provided; the ordering/referring provider is neurology and there is no documentation of evaluation by a genetics clinician, so provider requirement is not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indication: evaluation of unexplained neurodevelopmental disorder in pediatrics is an accepted indication. The child has autism spectrum disorder (a neurodevelopmental disorder), so the medical indication criterion is met (regardless of other requirements)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy allows WES/WGS when one of several conditions is met (prior testing non-diagnostic OR invasive testing would otherwise be required OR presentation does not fit a well-described syndrome). There is no universal mandatory prior-test requirement; the patient has had no prior genetic testing but the policy does not uniformly require prior testing in all situations."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history (e.g., genetic disease, developmental delay) among clinical features prompting consideration. The patient has a maternal uncle with a severe immunologic disorder raising concern for inherited predisposition, which is relevant per policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires genetic counseling by an experienced individual as part of eligibility. The family declined pre-test genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy coding lists 81425 among covered when medically necessary codes for genome/exome sequencing; 81425 corresponds to genome sequencing and best matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and the clinical indication (neurodevelopmental disorder) meet policy criteria, the policy requires ALL listed conditions (including evaluation by a clinician with expertise in clinical genetics and that counseling was provided). The patient has not been evaluated by genetics and declined pre-test genetic counseling, so the policy's required conditions are not all satisfied; therefore WGS is not covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14872,
+    "output_tokens": 2964,
+    "total_tokens": 17836
+  }
+}

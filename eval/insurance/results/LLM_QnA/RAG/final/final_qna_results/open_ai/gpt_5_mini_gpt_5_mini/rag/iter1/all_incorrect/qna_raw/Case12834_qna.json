@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient record states chromosomal microarray (CMA) testing has been ordered. (Patient fact)"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy addresses CMA as first-line testing in infants/children and postnatal evaluation for developmental delay/ID; the patient is a 16‑year‑old (pediatric/postnatal) and therefore meets the age context in the policy. (Policy: CMA may be considered medically necessary as first-line in children; Patient fact: age 16)"
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and follow-up but does not specify prescriptive ordering‑provider specialty or credential requirements for ordering CMA. (Policy: no explicit ordering provider requirement)"
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists apparent nonsyndromic developmental delay/intellectual disability, ASD, or multiple congenital anomalies as indications for CMA; the patient was referred by a developmental pediatrician for a complex neurodevelopmental disorder (developmental indication) and prior Fragile X was nondiagnostic, matching the policy indications. (Policy indication + Patient facts)"
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate completion of specific prior tests before CMA (it notes fragile X and CMA are first‑tier tests), so there is no required prior testing sequence specified as a condition of coverage. (Policy: stepwise approach mentions fragile X and CMA as first tier; no prerequisite requirement)"
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not use family history or consanguinity as a required eligibility criterion for CMA; although the patient has a maternal uncle with a movement disorder, the policy does not tie eligibility to that family history. (Policy: eligibility based on patient phenotype; Patient fact: family history present but policy does not make it a criterion)"
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends formal genetic counseling and states it should be performed by someone experienced, but it does not state counseling is a mandatory coverage requirement or precondition for CMA. The record shows counseling is not documented but the policy does not define counseling as required for coverage. (Policy: counseling recommended; Patient fact: not documented)"
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy document does not provide or map specific CPT codes to CMA or other tests; therefore a specific CPT code cannot be identified from the provided policy text. (Policy: no CPT code listing)"
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, chromosomal microarray may be considered medically necessary as first‑line testing for individuals with apparently nonsyndromic developmental delay/intellectual disability or related neurodevelopmental disorders. The 16‑year‑old patient has a complex neurodevelopmental disorder, was referred for evaluation, and prior Fragile X testing was nondiagnostic, so CMA is covered under the policy. (Policy statement + Patient facts)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15704,
+    "output_tokens": 2567,
+    "total_tokens": 18271
+  }
+}

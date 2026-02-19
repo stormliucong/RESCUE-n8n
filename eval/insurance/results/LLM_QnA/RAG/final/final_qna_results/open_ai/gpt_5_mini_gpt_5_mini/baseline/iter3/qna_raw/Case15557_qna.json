@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES/WGS criteria generally apply to pediatric patients with unexplained congenital anomalies; the patient is 15 years old (pediatric) and therefore meets age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require ordering by an appropriate treating specialist (e.g., geneticist or relevant specialist). The test was ordered via neurology (a relevant specialist), which meets ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria permit WGS for unexplained congenital anomalies/possible genetic etiology; the patient has a congenital anomaly since birth that remains unexplained, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior first‑tier testing such as chromosomal microarray (CMA) for congenital anomalies. Only FISH was performed and was nondiagnostic; CMA is not documented, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "UHC considers relevant family history in evaluation; the patient has a sibling with a similar congenital anomaly, which is relevant to eligibility and supports testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre/post‑test genetic counseling for complex genomic testing. The patient has been seen multiple times by a genetic counselor with plans for post‑test counseling, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT code 81425 corresponds to whole genome sequence analysis."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, clinical indication, ordering provider, family history, and counseling meet UHC criteria, required prior testing (notably chromosomal microarray as first‑tier testing for congenital anomalies) is not documented; failure to complete required prior testing means WGS is not covered under UHC policy in this case."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1477,
+    "total_tokens": 3455
+  }
+}

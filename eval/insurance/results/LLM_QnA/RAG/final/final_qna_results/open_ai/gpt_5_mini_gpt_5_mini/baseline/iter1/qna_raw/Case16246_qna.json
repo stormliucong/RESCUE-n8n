@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states the patient is being referred for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC BRCA coverage includes women with personal history of breast cancer diagnosed <50 y/o; the patient is 35, meeting the age-based criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC allows ordering by the treating physician or appropriate specialist; the test was ordered/referred by the patient's gynecologist (an accepted ordering provider)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC lists personal history of breast cancer diagnosed before age 50 as a covered clinical indication for BRCA1/2 testing; the patient meets this indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA policies do not require prior genetic testing (e.g., karyotype) before BRCA1/2 sequencing; the provided prior karyotype is irrelevant and there is no required prior test documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient reports an uncle with pancreatic cancer; UHC considers certain family histories (including pancreatic cancer) relevant to BRCA-related risk, and a family history is present."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC BRCA policies require that testing be accompanied by documented pre-test genetic counseling or counseling by an appropriate provider; the record states no pre-test genetic counseling was conducted."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "The requested test is BRCA1/2 single-gene germline testing; among the provided CPT options, 81228 is the closest match for targeted hereditary cancer gene sequencing in this list."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, clinical indication, provider, and family-history criteria are met, required pre-test genetic counseling is not documented per UHC policy; lack of required counseling would preclude coverage approval at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1974,
+    "output_tokens": 2045,
+    "total_tokens": 4019
+  }
+}

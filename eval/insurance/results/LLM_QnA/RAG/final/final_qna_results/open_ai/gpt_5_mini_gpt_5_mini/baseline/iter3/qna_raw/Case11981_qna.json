@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The note explicitly states that whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WGS/WES pediatric coverage criteria apply to children with unexplained developmental/motor concerns; age limits are pediatric (<18) and the patient is 9 years old, so age-based eligibility is met."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires ordering/clearance by a genetics specialist or appropriate clinician and documentation of pre-test genetic counseling; the record states pre-test discussion with a genetic specialist, meeting provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Coverage criteria for WGS include unexplained developmental delay/neurologic/motor concerns persisting from infancy. The patient has abnormal tone since infancy and ongoing motor/developmental concerns, which meets a clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC policies generally require prior appropriate testing (commonly chromosomal microarray and other targeted tests) before WGS; fragile X testing was done and nondiagnostic, but no documentation of prior chromosomal microarray (CMA) is provided, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While a maternal uncle with a severe immunologic disorder is reported, family history/consanguinity are not specified as required eligibility criteria in the payer's WGS policy for this presentation, and the relative's immunologic disorder is not clearly relevant to the patient's neurodevelopmental indication."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre-test genetic counseling for WGS/WES; the chart documents pre-test discussion with a genetic specialist, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to clinical whole genome sequencing (WGS)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, indication, provider, and counseling requirements are met and fragile X was performed, UHC typically requires prior CMA (or equivalent) before WGS; CMA is not documented, so full coverage criteria are not met and the test would not be approved under the payer policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1992,
+    "output_tokens": 1579,
+    "total_tokens": 3571
+  }
+}

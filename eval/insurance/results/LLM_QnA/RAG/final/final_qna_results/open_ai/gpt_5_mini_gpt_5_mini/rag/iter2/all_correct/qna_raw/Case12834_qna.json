@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient record states chromosomal microarray (CMA) testing was ordered (requisition specifies a tumor-type assay)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The Cigna policy for chromosomal microarray for solid tumors (MOL.TS.344.A) does not include any age-based eligibility criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy specifies the rendering laboratory must be a qualified provider per Health Plan policy but does not define ordering provider specialty or other ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy medical necessity requires the member be diagnosed with CNS cancer or soft tissue sarcoma; the patient has a neurodevelopmental disorder with no documented diagnosis of CNS cancer or soft tissue sarcoma, so the clinical indication in policy is not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not list required prior tests that must be completed before CMA for solid tumors."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The CMA-for-solid-tumors policy does not include family history or consanguinity as eligibility criteria; the patient’s family history is therefore not addressed by the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses laboratory reporting and potential germline findings but does not mandate or specify pre-test genetic counseling requirements for this assay."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "The policy's procedure table and text list cytogenomic neoplasia microarray analysis with CPT code 81277 for chromosomal microarray of solid tumors."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, CMA on solid tumor tissue is medically necessary only for members diagnosed with CNS cancer or soft tissue sarcoma and performed by a qualified lab; this patient (16-year-old with a neurodevelopmental disorder and no documented CNS cancer or soft tissue sarcoma) does not meet the policy's coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 6182,
+    "output_tokens": 1214,
+    "total_tokens": 7396
+  }
+}

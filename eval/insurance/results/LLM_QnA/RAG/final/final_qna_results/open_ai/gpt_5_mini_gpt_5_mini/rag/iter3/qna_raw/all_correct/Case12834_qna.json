@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient record states chromosomal microarray (CMA) testing has been ordered (requisition specifies a tumor-type rather than a germline assay)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The Cigna policy for chromosomal microarray for solid tumors (MOL.TS.344.A) does not specify any age-based eligibility criteria for the test."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires the rendering laboratory be a qualified provider per Health Plan policy but does not specify ordering provider specialty or other ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy medical necessity is limited to CMA on solid tumor tissue for individuals diagnosed with CNS cancer or soft tissue sarcoma. The patient has a neurodevelopmental disorder (no documented CNS cancer or soft tissue sarcoma), so the patient does not meet the policy's specified indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define any required prior testing that must be completed before ordering CMA for solid tumors."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's coverage criteria are diagnosis-based (CNS cancer or soft tissue sarcoma) and do not specify family history or consanguinity criteria; the patient’s family history (maternal uncle with movement disorder) is not addressed as a coverage criterion."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy mentions laboratories should address potential germline/secondary findings but does not specify genetic counseling as a coverage requirement for CMA on solid tumors; the record notes counseling is not documented."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "The policy's procedures table maps cytogenomic neoplasia microarray analysis (solid tumor CMA) to CPT code 81277."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the Cigna policy, CMA on solid tumor tissue is medically necessary only for members diagnosed with CNS cancer or soft tissue sarcoma. The patient is a 16-year-old with a neurodevelopmental disorder and no documented diagnosis of CNS cancer or soft tissue sarcoma; therefore the requested tumor-type CMA is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 6182,
+    "output_tokens": 1258,
+    "total_tokens": 7440
+  }
+}

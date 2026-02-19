@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient info explicitly states a chromosomal microarray (CMA) was ordered to assess for copy number changes."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not impose age limits for diagnostic testing in symptomatic individuals; the patient is symptomatic (2-year-old with severe intellectual disability) but no age-specific eligibility criteria are specified for CMA."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate a specific ordering provider specialty for germline testing; it only ties the genetic counseling requirement to whether a disease-specialist ordered the test. No explicit ordering-provider restriction is stated."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy states testing meets coverage when the individual is currently symptomatic with suspicion of a known genetic disease where mutation knowledge will assist diagnosis/treatment. The child has severe intellectual disability and suspicion of an underlying genetic etiology, meeting this criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not list specific required prior tests before CMA for this clinical scenario; patient has no prior genetic testing but the policy does not require particular prior testing."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy references family history for asymptomatic/risk-based testing, but does not define family-history/consanguinity requirements specific to CMA in symptomatic patients. Although a maternal aunt with an immunologic disorder is noted, the policy does not specify this as a requirement for coverage here."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling prior to testing if not ordered by a disease specialist. The family completed pre-test genetic counseling (and plans post-test counseling), satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's reimbursement section addresses use of multigene panel codes and unlisted molecular pathology codes but does not specify CPT code mapping for chromosomal microarray (CMA); none of the provided CPT options are specified in the policy for CMA."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, germline/genomic testing meets coverage when the patient is symptomatic and testing will assist diagnosis/management. The child has severe intellectual disability with suspected genetic etiology, no conflicting policy exclusions apply, and required pre-test genetic counseling was completed, supporting coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10244,
+    "output_tokens": 1793,
+    "total_tokens": 12037
+  }
+}

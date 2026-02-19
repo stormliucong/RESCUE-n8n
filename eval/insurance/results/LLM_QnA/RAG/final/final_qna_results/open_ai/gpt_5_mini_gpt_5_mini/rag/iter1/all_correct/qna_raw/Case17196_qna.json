@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient was referred for chromosomal microarray testing (CMA) per the clinical information; the policy provided is the BCBS FEP CMA policy (FEP 2.04.59), confirming CMA is the requested test."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes CMA as first‑line for individuals with developmental delay/ID, ASD, or multiple congenital anomalies but does not impose an explicit age cutoff for eligibility; the patient is 63 but no age-based exclusion is specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses the role of genetic counseling and clinical geneticists but does not define specific ordering‑provider specialty/type requirements for CMA; the ordering provider (oncologist) is noted in the patient info but the policy has no explicit ordering‑provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy medical‑necessity criteria are explicit: CMA is medically necessary for apparent nonsyndromic developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies. The patient has adult neuropsychiatric diagnoses (bipolar/schizophrenia/OCD features) and does not meet any of the policy‑listed indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of specific prior tests before CMA (CMA is described as a first‑line test for the listed indications). Although the patient had a nondiagnostic karyotype, the policy does not mandate prior testing as a coverage prerequisite."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define family history or consanguinity as an independent eligibility criterion for CMA (it notes parental evaluation/follow‑up if a CNV is found), and the patient’s sibling history is not addressed as a coverage criterion in the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states experts recommend formal genetic counseling and that it should be performed by experienced individuals, but it does not state genetic counseling is a mandatory coverage requirement prior to CMA; the patient had no pre‑test counseling, and the policy does not make lack of counseling an explicit denial criterion."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy document does not list or map CPT/billing codes to CMA; no CPT code guidance for CMA is provided in the supplied policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy CMA is covered only for evaluation of developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies. The patient's indication is adult neuropsychiatric disease (bipolar/schizophrenia/OCD features), which is not among the policy‑listed medically necessary indications; therefore CMA is not covered for this presentation per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15705,
+    "output_tokens": 1963,
+    "total_tokens": 17668
+  }
+}

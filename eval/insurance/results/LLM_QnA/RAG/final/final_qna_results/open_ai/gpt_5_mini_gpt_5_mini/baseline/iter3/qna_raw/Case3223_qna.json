@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The referral explicitly states BRCA1 and BRCA2 testing is requested (patient referred for BRCA1 and BRCA2 testing)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage is based on personal/family history criteria rather than strict age cutoffs; no age-based exclusion applies in this clinical scenario (patient is 75) per payer criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP does not impose a narrow specialty restriction for ordering BRCA testing in the typical policy language; a referring physician (general practitioner) can order testing. The record shows a GP referral, but the policy does not specify a special ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP coverage criteria approve BRCA testing for unaffected individuals with a first-degree relative with epithelial ovarian cancer. The patient has a sister with epithelial ovarian cancer (first-degree), meeting a medical/family-history indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP BRCA policy does not require completion of other genetic tests prior to BRCA1/2 testing in this scenario; the prior CMA for a congenital cardiac anomaly is unrelated and not a required prior test."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are relevant for BRCA testing and the patient has a first-degree relative (sister) with epithelial ovarian cancer, which is a specified relevant family history per payer criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP typically requires documentation of pre-test genetic counseling for BRCA testing. The record states there is no documentation of pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Among the provided CPT options, 81162 corresponds to full BRCA1/BRCA2 analysis (combined BRCA1/2 testing) used for hereditary breast/ovarian cancer testing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical/family-history criteria for BRCA1/2 testing (first-degree relative with ovarian cancer), BCBS_FEP requires documented pre-test genetic counseling. Because no pre-test counseling is documented, coverage criteria are not fully met and the claim would not meet payer requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1963,
+    "output_tokens": 1997,
+    "total_tokens": 3960
+  }
+}

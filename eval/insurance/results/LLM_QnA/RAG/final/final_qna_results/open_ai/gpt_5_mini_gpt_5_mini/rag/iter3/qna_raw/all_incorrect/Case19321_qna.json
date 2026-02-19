@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member be <21 years of age for ES; patient is 1 year old, meeting the age criterion (policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires 'appropriate genetic and family history evaluation' and a clinical letter but does not specify a required ordering provider specialty or explicit ordering-provider credential; thus ordering provider requirements are not specifically defined in the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires the genetic etiology be most likely based on specific listed indications (e.g., global developmental delay after formal assessment by a developmental pediatrician or neurologist, or meeting TWO specific criteria). The record documents 'features concerning for autism' and 'complex neurodevelopmental disorder' but does not document a formal assessment meeting the policy's global developmental delay definition nor two of the listed criteria; therefore the patient does not clearly meet the policy's specified medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate a specific prior test (except that prior ES/WGS must not have been performed). The patient has a nondiagnostic CMA and no prior ES/WGS, but the policy does not list a single required prior test universally for postnatal ES beyond documentation of prior testing in the clinical letter, so specific prior-test requirements are not explicitly defined."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires appropriate genetic and family history evaluation be provided, but it does not define family history or consanguinity as a separate eligibility criterion for postnatal ES. The patient does have a maternal aunt with multiple congenital anomalies, but family-history-based criteria are not specified as a standalone coverage requirement in the exome criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires appropriate genetic/family history evaluation and documentation; ACMG-based statements within the policy recommend pretest counseling by a geneticist or genetic counselor. The patient had pre-test genetic counseling completed, satisfying the policy's counseling/documentation requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy specifies CPT 81415 should be billed for proband exome sequencing (policy billing section: '81415 should be billed for the proband')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, lack of prior ES/GS, prior nondiagnostic CMA, and pretest counseling are consistent with policy elements, the policy requires specific medical-indication criteria (e.g., global developmental delay after formal assessment or other listed indications). The patient record does not document meeting any of the policy's defined indication criteria (per policy: one of the listed indications or TWO specified criteria), so the request does not meet the policy's medical-necessity criteria for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10482,
+    "output_tokens": 3070,
+    "total_tokens": 13552
+  }
+}

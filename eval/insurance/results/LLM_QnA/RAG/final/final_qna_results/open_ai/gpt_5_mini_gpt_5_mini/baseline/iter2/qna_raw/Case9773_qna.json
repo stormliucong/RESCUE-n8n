@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The clinical note explicitly states chromosomal microarray (CMA) was ordered to assess for genomic copy number changes."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "FEP/CMA coverage is not age‑restricted in practice for evaluation of unexplained developmental delay/intellectual disability; no specific age cutoff is specified and the 2‑year‑old is within typical indication."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "FEP policies for CMA do not mandate a specific ordering provider specialty (any qualified physician may order); the ordering oncologist is an appropriate ordering provider and no specialty restriction is specified."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria for CMA under FEP include unexplained developmental delay/intellectual disability; the patient has severe intellectual disability, which meets this indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "CMA is considered a first‑tier test for unexplained intellectual disability and there are no required prior genetic tests documented; patient has no prior genetic testing but none is required by policy."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "FEP CMA criteria do not require a specific family history; although a maternal aunt has an immunologic disorder noted, this is not a clearly defined family history requirement for CMA eligibility in the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "FEP coverage for CMA does not uniformly mandate documented genetic counseling as a precondition in the policy language; however, the family did complete pre‑test counseling and plans post‑test counseling."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to chromosomal microarray (genomic copy number analysis) and best matches the requested CMA."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under FEP coverage criteria CMA is covered for evaluation of unexplained intellectual disability/developmental delay. The patient is a 2‑year‑old with severe intellectual disability, no prior testing is required, the test was ordered by an appropriate provider, and pre‑test counseling was completed, supporting coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1994,
+    "output_tokens": 1691,
+    "total_tokens": 3685
+  }
+}

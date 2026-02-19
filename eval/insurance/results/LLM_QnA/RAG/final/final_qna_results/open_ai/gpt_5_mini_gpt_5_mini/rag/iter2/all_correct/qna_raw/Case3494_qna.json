@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states 'whole exome sequencing (WES) is being requested.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Cigna policy requires the member be <21 years of age for ES; the patient is a six‑week‑old infant, which meets this age criterion (policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires an 'appropriate genetic and family history evaluation' and the rendering laboratory be qualified, but it does not specify explicit ordering‑provider specialty/credential requirements for ordering ES."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Cigna's ES criteria require that a genetic etiology is most likely based on specified phenotype pathways (e.g., multiple congenital anomalies, or TWO listed criteria such as a major abnormality plus symptoms of a complex neurodevelopmental disorder) and accompanying documentation. The infant has a single congenital abnormality and only a concern for evolving neurodevelopmental disorder; the required clinical documentation/detailed evaluation letter is not provided, so the defined medical indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The guideline requires documentation of prior genetic/family evaluation and previous tests performed/results as part of the clinical letter. The patient has had no prior genetic testing and no such documentation was provided, so required prior testing/documentation has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires that family history be included in the clinical evaluation, but family history is not defined as a standalone eligibility criterion for postnatal ES (except specific prenatal scenarios). While the patient has a sibling with dysmorphic features, the policy does not explicitly state family history/consanguinity alone makes the patient eligible."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy and cited ACMG guidance recommend pretest counseling by a geneticist/genetic counselor and formal consent, but the Cigna ES coverage criteria do not explicitly make documented genetic counseling a separate required element for coverage; the family declined counseling, and the policy does not state this alone denies coverage."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Cigna billing section specifies 81415 should be billed for the proband when analyzing the entire exome sequence ('81415 should be billed for the proband')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage requires ALL listed ES criteria be met (no prior ES/WGS, required clinical/family evaluation with a detailed clinical letter, <21 y, genetic etiology most likely per listed phenotype criteria, alternate etiologies considered, presentation not fitting a syndrome with available first‑tier testing, predicted impact on care, etc.). Although age and absence of prior ES/WGS are met, the required detailed clinical evaluation/documentation is not provided and the phenotype criteria (per policy) are not clearly met. Therefore the test does not meet Cigna's all‑criteria medical necessity requirements and is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10475,
+    "output_tokens": 3024,
+    "total_tokens": 13499
+  }
+}

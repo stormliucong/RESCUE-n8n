@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1/2 testing to evaluate hereditary breast/ovarian cancer predisposition."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC BRCA coverage includes individuals with early-onset or multiple primary breast cancers; the patient is 38 and has two separate primary breast cancers, satisfying age-related/early-onset criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC allows ordering by treating physicians when appropriate and requires documentation of pre-test genetic counseling; the record indicates pre-test counseling with a genetic specialist, meeting ordering/counseling-related requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical indications for BRCA testing include history of two primary breast cancers and/or early-onset breast cancer; the patient has two separate primary breast cancers, meeting a defined medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC does not generally require prior unrelated cytogenetic/FISH testing before BRCA1/2 germline testing; the provided information notes a nondiagnostic FISH but no payer-required prior test is specified."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria consider relevant family history (including prostate cancer in a first-degree relative) as supporting evidence for BRCA testing; the patient has a father with metastatic prostate cancer, which is relevant."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre-test genetic counseling for BRCA testing; the patient had pre-test counseling with a genetic specialist, meeting this requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The submission specifies BRCA1/2 testing but does not provide a CPT code. None of the supplied CPT options clearly correspond to the standard BRCA1/2 single-gene CPT codes, so the best match is not specified."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC coverage criteria (multiple primary breast cancers, early age, relevant family history) plus documented pre-test genetic counseling, BRCA1/2 testing is medically indicated and covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1972,
+    "output_tokens": 1945,
+    "total_tokens": 3917
+  }
+}

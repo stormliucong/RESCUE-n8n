@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states the neurologist referred the 10-year-old for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy medical necessity is defined for 'children' with unexplained neurodevelopmental disorders; the patient is a 10-year-old child, meeting the policy's age-related descriptor for pediatric WES."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy Criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling; the order was placed by neurology and there is no documentation of evaluation by a genetics clinician or genetic counseling, so ordering/provider requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES for children with unexplained neurodevelopmental disorders when prior genetic testing has failed; the patient has an unexplained neurodevelopmental disorder and prior CMA was nondiagnostic, meeting the policy clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria reference prior genetic testing (eg, chromosomal microarray) failing to yield a diagnosis; the patient had a nondiagnostic CMA, satisfying the prior-test requirement in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists family history items (including BRUE in a sibling) as relevant; the patient has a sibling with a BRUE, which is a specified relevant family history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy Criterion 1 requires the individual be counseled about risks of genetic testing by a clinician experienced in genetics; there is no documentation of prior genetic counseling for this patient, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); the CPT code in the provided options most consistent with clinical WES is 81415."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, ALL listed criteria must be met for WES to be medically necessary. Although the patient is a child with unexplained neurodevelopmental disorder and prior nondiagnostic CMA (meeting clinical and prior-test criteria) and has relevant family history, the policy requires evaluation by a clinician with expertise in clinical genetics and documented counseling (Criterion 1), which is not present. Therefore the request does not meet all policy requirements and is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14852,
+    "output_tokens": 1674,
+    "total_tokens": 16526
+  }
+}

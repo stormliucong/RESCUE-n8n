@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The case explicitly states chromosomal microarray (CMA) testing is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna CMA coverage is not age limited in usual policy language for developmental disorders; no specific age exclusion or minimum is stated for CMA in this clinical context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's CMA policy typically does not mandate a particular ordering provider specialty; no provider specialty requirement is specified in the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has unexplained neonatal-onset epileptic encephalopathy (a neurodevelopmental presentation). Cigna's CMA coverage criteria support CMA for unexplained developmental/neurodevelopmental disorders, so the clinical indication is met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "CMA policy does not generally require prior testing before initial CMA. Although a prior CMA was already performed and was nondiagnostic (noted in the record), Cigna policy language about required prior tests (for an initial CMA) is not specified in the provided information."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The patient does have a relevant family history (an older sibling with unexplained developmental regression), but Cigna's CMA criteria do not make family history a required eligibility criterion in the usual policy wording; family history is supportive but not a formal specified requirement."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Although pre-test counseling by a genetics specialist was discussed (and post-test follow-up planned), Cigna's CMA coverage criteria do not explicitly mandate specific documented genetic counseling as a gating requirement in the typical policy statements provided here."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to chromosomal microarray/cytogenomic microarray testing (CMA) in standard coding mappings; that best matches the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "While the patient’s presentation meets clinical indications for CMA, Cigna policy generally does not cover repeat CMA after a prior nondiagnostic CMA unless new, clearly documented clinical findings or other qualifying changes are present. Here a prior CMA was nondiagnostic and no new qualifying features are documented; additionally an epilepsy gene panel or WES may be the more appropriate next step. Therefore, under Cigna criteria the requested repeat CMA is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1990,
+    "output_tokens": 2769,
+    "total_tokens": 4759
+  }
+}

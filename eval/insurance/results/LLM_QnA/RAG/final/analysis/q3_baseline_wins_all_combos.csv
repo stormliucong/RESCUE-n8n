@@ -1,0 +1,98 @@
+case_id,combo_folder,retrieval_model,qna_model,Q3_baseline,Q3_internal,Q3_gt
+Case13983,top1_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case18821,top1_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case19162,top1_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,Not Specified,Yes
+Case2162,top1_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case3494,top1_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case6747,top1_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case14017,top1_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case18821,top1_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case2162,top1_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case2666,top1_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,No,Yes,No
+Case3494,top1_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,Not Specified,Yes
+Case5674,top1_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case811,top1_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case13983,top1_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,Not Specified,Yes
+Case18821,top1_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case2162,top1_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case3494,top1_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case6747,top1_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case8051,top1_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case14017,top1_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case19162,top1_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case2162,top1_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case2847,top1_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case3494,top1_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case5674,top1_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case13983,top1_30retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case7447,top1_30retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case8051,top1_30retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case8485,top1_30retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case11795,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case14017,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case14226,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Not Specified,No,Not Specified
+Case18821,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case3494,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case5674,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case6747,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case7447,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case811,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case8485,top1_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case13983,top1_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case2162,top1_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case3494,top1_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case6747,top1_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case8485,top1_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case13,top1_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case14017,top1_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case19162,top1_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case2162,top1_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case3494,top1_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case5674,top1_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case811,top1_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case8485,top1_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case10075,top3_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,No,Yes,No
+Case18821,top3_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,Not Specified,Yes
+Case3494,top3_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,Not Specified,Yes
+Case5674,top3_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case8051,top3_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case13983,top3_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case14017,top3_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case18821,top3_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,Not Specified,Yes
+Case19162,top3_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case2162,top3_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case3494,top3_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case5674,top3_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case6747,top3_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case811,top3_10retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,Not Specified,Yes
+Case18821,top3_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case13983,top3_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case2162,top3_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case3494,top3_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case5674,top3_10retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case10075,top3_30retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,No,Yes,No
+Case2162,top3_30retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case5674,top3_30retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Yes,No,Yes
+Case14017,top3_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case18821,top3_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,Not Specified,Yes
+Case2162,top3_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case2666,top3_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,No,Yes,No
+Case2847,top3_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case3494,top3_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case5674,top3_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case8485,top3_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Yes,No,Yes
+Case2162,top3_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case2666,top3_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,No,Yes,No
+Case8051,top3_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case8485,top3_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Yes,No,Yes
+Case11795,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case13983,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case14017,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case18821,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case19162,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case2162,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case2847,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,Not Specified,Yes
+Case3494,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case5674,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case6747,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes
+Case8485,top3_30retrieve_gpt_5_gpt_5,gpt-5,gpt-5,Yes,No,Yes

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being requested to identify an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WGS/WES for children/infants with multiple unexplained congenital anomalies; the patient is a seven-week-old infant with multiple congenital anomalies, so age meets the policy's child/infant criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion #1 requires evaluation by a clinician with expertise in clinical genetics and counseling. Patient had pre-test genetic counseling completed with a genetic specialist, satisfying the provider/counseling requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical necessity for WGS requires multiple unexplained congenital anomalies and prior standard workup without diagnosis. The patient has multiple congenital anomalies not fitting a syndrome and prior karyotype was nondiagnostic, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that previous genetic testing failed to yield a diagnosis (eg, CMA and/or targeted testing) or that further testing would be invasive. Patient had prior karyotype testing that was nondiagnostic, which constitutes prior genetic testing that failed to yield a diagnosis."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance lists relevant family history items for consideration. The patient has a maternal aunt with a congenital anomaly, which is a relevant family history noted in the clinical information."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed by an individual with genetic expertise. Patient received pre-test genetic counseling with a genetic specialist, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy document does not list or map specific CPT codes to WGS/WES testing; therefore a specific CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on the FEP policy, WGS may be considered medically necessary for children with multiple unexplained congenital anomalies after standard workup when all criteria are met. The patient is an infant with multiple congenital anomalies, prior genetic testing nondiagnostic, evaluated/counseled by a genetic specialist, and therefore meets the policy's stated criteria for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14836,
+    "output_tokens": 2485,
+    "total_tokens": 17321
+  }
+}

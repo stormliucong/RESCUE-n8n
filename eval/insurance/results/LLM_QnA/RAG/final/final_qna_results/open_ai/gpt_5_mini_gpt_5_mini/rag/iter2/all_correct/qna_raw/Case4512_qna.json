@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy medical-necessity statements apply to 'children' (pediatric) for standard WES/WGS; patient is 21 years old and therefore does not meet the age-based pediatric eligibility described in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual 'has been evaluated by a clinician with expertise in clinical genetics' (Policy Statement #1). Patient record documents referral by a PCP and pre-test counseling by a genetic counselor but does not document evaluation by a clinician with expertise in clinical genetics."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications for WES/WGS in children with unexplained congenital anomalies or neurodevelopmental disorders; the patient is an adult (age 21) and thus does not meet the policy's defined pediatric medical-indication criteria. Additionally, the policy states WGS is investigational 'in all other situations.'"
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy specifies prior testing (eg, CMA and/or targeted single-gene testing) as part of criteria for standard WES in children, but does not define prior-test requirements specific to non-rapid WGS in this adult scenario; patient has no prior genetic testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly lists 'BRUE in sibling' under relevant family history examples. Patient has a sibling with a BRUE-like event, which matches the policy's listed family-history criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling: 'Documentation ... counseled about the potential risks of genetic testing' and recommends formal genetic counseling. Patient completed pre-test counseling with a genetic counselor and has a post-test visit planned, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to WGS/WES; therefore a specific CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, WGS is considered investigational for diagnosis 'in all other situations' and standard WES/WGS medical-necessity criteria apply to children. The patient is an adult (age 21), ordering-provider genetics-evaluation requirement is not met, and thus WGS is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14859,
+    "output_tokens": 2527,
+    "total_tokens": 17386
+  }
+}

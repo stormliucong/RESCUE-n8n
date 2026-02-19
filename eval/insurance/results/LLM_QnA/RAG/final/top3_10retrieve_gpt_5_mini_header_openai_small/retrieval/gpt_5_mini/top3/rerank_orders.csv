@@ -1,0 +1,1061 @@
+case_id,rank,name,score,rerank_success
+Case14017,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6160951852798462,True
+Case14017,2,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.5401041507720947,True
+Case14017,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5598963499069214,True
+Case14017,4,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5713420510292053,True
+Case14017,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5660563707351685,True
+Case14017,6,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.6029800772666931,True
+Case14017,7,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5501575469970703,True
+Case14017,8,Blue Cross Idaho_02.04.088_02-27-25.pdf,0.5570982694625854,True
+Case14017,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5443726181983948,True
+Case14017,10,tricare_west.pdf,0.5580923557281494,True
+Case1778,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6157834529876709,True
+Case1778,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5851062536239624,True
+Case1778,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5463629364967346,True
+Case1778,4,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Eye-Disorders.pdf,0.52498459815979,True
+Case1778,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5474492907524109,True
+Case1778,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5389304161071777,True
+Case1778,7,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.5309786796569824,True
+Case1778,8,Cigna_MOL.TS_.267.A_Ehlers-Danlos_Syndrome_Genetic_Testing_eff01.01.2025_09.12.2024_0.pdf,0.5237134695053101,True
+Case1778,9,CapitalBC_medical-policy-genetic-testing-for-PTEN-hamartoma-tumor-syndrome.pdf,0.5081663727760315,True
+Case1778,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5209031701087952,True
+Case4604,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6654519438743591,True
+Case4604,2,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6154518127441406,True
+Case4604,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5806652307510376,True
+Case4604,4,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5876111388206482,True
+Case4604,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6441939473152161,True
+Case4604,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.604794442653656,True
+Case4604,7,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6208556890487671,True
+Case4604,8,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5836218595504761,True
+Case4604,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5884742140769958,True
+Case4604,10,tricare_west.pdf,0.5813531279563904,True
+Case3422,1,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5824201107025146,True
+Case3422,2,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5788655281066895,True
+Case3422,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5802005529403687,True
+Case3422,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5477986335754395,True
+Case3422,5,BCBS_FEP_204102 Whole Exome and.pdf,0.5649205446243286,True
+Case3422,6,BCBS_MN_VI-16-014.pdf,0.5509067177772522,True
+Case3422,7,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.5502309799194336,True
+Case3422,8,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.552336573600769,True
+Case3422,9,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.5511357188224792,True
+Case3422,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5487277507781982,True
+Case10917,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5527310371398926,True
+Case10917,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6186363101005554,True
+Case10917,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5344597101211548,True
+Case10917,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6058274507522583,True
+Case10917,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5669817924499512,True
+Case10917,6,BCBS_NE_V63.pdf,0.5396381616592407,True
+Case10917,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5713373422622681,True
+Case10917,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5666307210922241,True
+Case10917,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5510666966438293,True
+Case10917,10,BCBS_HW_GTM Testing of Homocysteine Metabolism-Related Conditions AHS-M2141 2023-0601_v2.pdf,0.5338409543037415,True
+Case18821,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6625069379806519,True
+Case18821,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5983412861824036,True
+Case18821,3,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5737030506134033,True
+Case18821,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6352615356445312,True
+Case18821,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6201740503311157,True
+Case18821,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6180700063705444,True
+Case18821,7,BCBS_NE_V62.pdf,0.5934716463088989,True
+Case18821,8,BCBS_NE_V63.pdf,0.5834574699401855,True
+Case18821,9,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.6028413772583008,True
+Case18821,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5930176973342896,True
+Case13,1,BCBS_FEP_204102 Whole Exome and.pdf,0.7011138796806335,True
+Case13,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6154079437255859,True
+Case13,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6744436025619507,True
+Case13,4,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6021997928619385,True
+Case13,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6529151201248169,True
+Case13,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6352552175521851,True
+Case13,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5946261882781982,True
+Case13,8,tricare_west.pdf,0.5904815196990967,True
+Case13,9,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.6271576881408691,True
+Case13,10,Sentara_Genetic Testing-Cancer Prevention, Diagnosis and Treatment Medicaid - Medical 34A.pdf,0.59464430809021,True
+Case8621,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6357889771461487,True
+Case8621,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6738002300262451,True
+Case8621,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6435734033584595,True
+Case8621,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.622916579246521,True
+Case8621,5,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5673893690109253,True
+Case8621,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6472009420394897,True
+Case8621,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6000247597694397,True
+Case8621,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5597392320632935,True
+Case8621,9,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5789967775344849,True
+Case8621,10,tricare_west.pdf,0.576296329498291,True
+Case8051,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6517918109893799,True
+Case8051,2,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5515093803405762,True
+Case8051,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5506600737571716,True
+Case8051,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6246649026870728,True
+Case8051,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5729928016662598,True
+Case8051,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.55545574426651,True
+Case8051,7,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.545971691608429,True
+Case8051,8,V2.2023 Concert Genetics Genetic Testing- Aortopathies & Connective Tissue Disorders.pdf,0.5406637191772461,True
+Case8051,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5378015041351318,True
+Case8051,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5685204863548279,True
+Case13517,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5514993667602539,True
+Case13517,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6189898252487183,True
+Case13517,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6090253591537476,True
+Case13517,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5607746839523315,True
+Case13517,5,BCBS_NE_V63.pdf,0.5369677543640137,True
+Case13517,6,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5726024508476257,True
+Case13517,7,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5630590915679932,True
+Case13517,8,BCBS_HW_GTM Testing of Homocysteine Metabolism-Related Conditions AHS-M2141 2023-0601_v2.pdf,0.5315099358558655,True
+Case13517,9,HealthParners_prenatal and preconception carrier screening.pdf,0.5372703075408936,True
+Case13517,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5346817970275879,True
+Case3359,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6287703514099121,True
+Case3359,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6858854293823242,True
+Case3359,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6622380018234253,True
+Case3359,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6065086126327515,True
+Case3359,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.636459469795227,True
+Case3359,6,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5902080535888672,True
+Case3359,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6296829581260681,True
+Case3359,8,BCBS_NE_V63.pdf,0.581609845161438,True
+Case3359,9,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5885988473892212,True
+Case3359,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5787424445152283,True
+Case2496,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5921889543533325,True
+Case2496,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5996058583259583,True
+Case2496,3,BCBS_FEP_204102 Whole Exome and.pdf,0.681655764579773,True
+Case2496,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6678123474121094,True
+Case2496,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6000902652740479,True
+Case2496,6,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.5688924789428711,True
+Case2496,7,BCBS_NE_V62.pdf,0.5688602924346924,True
+Case2496,8,BCBS_NE_V63.pdf,0.5635583400726318,True
+Case2496,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5677483081817627,True
+Case2496,10,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5799379348754883,True
+Case8485,1,BCBS_FEP_204102 Whole Exome and.pdf,0.5836126208305359,True
+Case8485,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5446968078613281,True
+Case8485,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5178155899047852,True
+Case8485,4,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5227270722389221,True
+Case8485,5,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5202233195304871,True
+Case8485,6,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.565666675567627,True
+Case8485,7,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.549591064453125,True
+Case8485,8,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5168657302856445,True
+Case8485,9,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Prenatal-Preconception-Carrier-Screening.pdf,0.513816237449646,True
+Case8485,10,HealthParners_prenatal and preconception carrier screening.pdf,0.5474475622177124,True
+Case5674,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6202000975608826,True
+Case5674,2,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.5877618193626404,True
+Case5674,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5301284193992615,True
+Case5674,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5693872570991516,True
+Case5674,5,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5835301280021667,True
+Case5674,6,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.6619211435317993,True
+Case5674,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5385632514953613,True
+Case5674,8,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5448538064956665,True
+Case5674,9,Cigna_MOL.TS_.257.A_Epilepsy_Genetic_Testing_eff01.01.2025_09.12.2024_0.pdf,0.5526721477508545,True
+Case5674,10,tricare_west.pdf,0.5315412282943726,True
+Case3494,1,BCBS_FEP_204102 Whole Exome and.pdf,0.67153400182724,True
+Case3494,2,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5670182704925537,True
+Case3494,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6428132057189941,True
+Case3494,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6237585544586182,True
+Case3494,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6143389344215393,True
+Case3494,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.592590868473053,True
+Case3494,7,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5750257968902588,True
+Case3494,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5838749408721924,True
+Case3494,9,IUHP_Genetic-Test-Whole-Genome-Exome-Seq-Policy.pdf,0.5633598566055298,True
+Case3494,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5679123401641846,True
+Case7297,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6242815256118774,True
+Case7297,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6709619760513306,True
+Case7297,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6896278262138367,True
+Case7297,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6263736486434937,True
+Case7297,5,BCBS_MN_VI-16-014.pdf,0.6016334295272827,True
+Case7297,6,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.5977209210395813,True
+Case7297,7,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.5898514986038208,True
+Case7297,8,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.5989029407501221,True
+Case7297,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5989587306976318,True
+Case7297,10,BCBS_FEP_20408 Genetic Testing for Lynch.pdf,0.5940036177635193,True
+Case9978,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5237287878990173,True
+Case9978,2,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5667659044265747,True
+Case9978,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5532299280166626,True
+Case9978,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5194644331932068,True
+Case9978,5,BCBS_FEP_204102 Whole Exome and.pdf,0.586122989654541,True
+Case9978,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5196173787117004,True
+Case9978,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5697447061538696,True
+Case9978,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5712535381317139,True
+Case9978,9,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5301527976989746,True
+Case9978,10,HealthParners_prenatal and preconception carrier screening.pdf,0.5576047301292419,True
+Case4196,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6582186222076416,True
+Case4196,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5945625305175781,True
+Case4196,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.621373176574707,True
+Case4196,4,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.588119626045227,True
+Case4196,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6135083436965942,True
+Case4196,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5987081527709961,True
+Case4196,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5893915891647339,True
+Case4196,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5715377330780029,True
+Case4196,9,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5743076205253601,True
+Case4196,10,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.5711674094200134,True
+Case14141,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6904727816581726,True
+Case14141,2,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6123716831207275,True
+Case14141,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6203312277793884,True
+Case14141,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6752303838729858,True
+Case14141,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6556013822555542,True
+Case14141,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6513853669166565,True
+Case14141,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6109338402748108,True
+Case14141,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6088554859161377,True
+Case14141,9,tricare_west.pdf,0.6115633249282837,True
+Case14141,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6119223833084106,True
+Case18882,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6188181042671204,True
+Case18882,2,BCBS_FEP_204102 Whole Exome and.pdf,0.699393093585968,True
+Case18882,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.688372015953064,True
+Case18882,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6217682361602783,True
+Case18882,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6270679235458374,True
+Case18882,6,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5815601348876953,True
+Case18882,7,BCBS_NE_V63.pdf,0.5777862668037415,True
+Case18882,8,tricare_west.pdf,0.578437328338623,True
+Case18882,9,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.5841056108474731,True
+Case18882,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5987107753753662,True
+Case5230,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6000593900680542,True
+Case5230,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6104930639266968,True
+Case5230,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6518716812133789,True
+Case5230,4,BCBS_FEP_204102 Whole Exome and.pdf,0.6804792881011963,True
+Case5230,5,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5687105655670166,True
+Case5230,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.606132984161377,True
+Case5230,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5679318904876709,True
+Case5230,8,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5697848796844482,True
+Case5230,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5582273006439209,True
+Case5230,10,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5707508325576782,True
+Case11124,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6141387224197388,True
+Case11124,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6831129193305969,True
+Case11124,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6171087026596069,True
+Case11124,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6530683636665344,True
+Case11124,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6225725412368774,True
+Case11124,6,BCBS_NE_V35.pdf,0.5773404836654663,True
+Case11124,7,BCBS_NE_V63.pdf,0.5940099954605103,True
+Case11124,8,tricare_west.pdf,0.5831685066223145,True
+Case11124,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5720640420913696,True
+Case11124,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5736846327781677,True
+Case8288,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6338013410568237,True
+Case8288,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6242440342903137,True
+Case8288,3,V2.2023 Concert Genetics Genetic Testing- Aortopathies & Connective Tissue Disorders.pdf,0.5758744478225708,True
+Case8288,4,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5772558450698853,True
+Case8288,5,BCBS_NE_V62.pdf,0.577316403388977,True
+Case8288,6,BCBS_MI2.pdf,0.5668284893035889,True
+Case8288,7,BCBS_HW_GTM Prenatal Screening (Genetic) AHS-M2179 2025-0301.pdf,0.5547798275947571,True
+Case8288,8,BCBS_NE_V63.pdf,0.5659415125846863,True
+Case8288,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5774586796760559,True
+Case8288,10,Asuris_Northwest_Health_Conceptio_Pregnancy_Loss.pdf,0.5887831449508667,True
+Case7376,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6002564430236816,True
+Case7376,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6143927574157715,True
+Case7376,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.606262743473053,True
+Case7376,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6325787305831909,True
+Case7376,5,BCBS_FEP_204102 Whole Exome and.pdf,0.6423269510269165,True
+Case7376,6,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6071616411209106,True
+Case7376,7,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.5981476902961731,True
+Case7376,8,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.5922576189041138,True
+Case7376,9,BCBS_MN_VI-16-014.pdf,0.5845048427581787,True
+Case7376,10,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.5907691717147827,True
+Case7682,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6293500661849976,True
+Case7682,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6819586157798767,True
+Case7682,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6720806360244751,True
+Case7682,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6101804971694946,True
+Case7682,5,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5610185265541077,True
+Case7682,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6432169079780579,True
+Case7682,7,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5707711577415466,True
+Case7682,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5660837888717651,True
+Case7682,9,BCBS_NE_V63.pdf,0.5612441301345825,True
+Case7682,10,BCBS_NE_V69.pdf,0.5615445375442505,True
+Case19905,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6183568239212036,True
+Case19905,2,BCBS_FEP_204102 Whole Exome and.pdf,0.7011381387710571,True
+Case19905,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6964762210845947,True
+Case19905,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6235686540603638,True
+Case19905,5,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5654705166816711,True
+Case19905,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6293448209762573,True
+Case19905,7,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5724455714225769,True
+Case19905,8,BCBS_NE_V63.pdf,0.5707197189331055,True
+Case19905,9,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5932971835136414,True
+Case19905,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5706184506416321,True
+Case2847,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6494542956352234,True
+Case2847,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5745058059692383,True
+Case2847,3,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5813433527946472,True
+Case2847,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6150879859924316,True
+Case2847,5,BCBS_NE_V63.pdf,0.5672940015792847,True
+Case2847,6,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.615563154220581,True
+Case2847,7,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6039773225784302,True
+Case2847,8,tricare_west.pdf,0.569977879524231,True
+Case2847,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5766233205795288,True
+Case2847,10,Asuris_Northwest_Health_Conceptio_Pregnancy_Loss.pdf,0.5618726015090942,True
+Case10529,1,BCBS_FEP_204102 Whole Exome and.pdf,0.5843819379806519,True
+Case10529,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5508900880813599,True
+Case10529,3,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Prenatal-Preconception-Carrier-Screening.pdf,0.553388237953186,True
+Case10529,4,BCBS_HW_GTM Genetic Testing for Neurodegenerative Disorders AHS–M2167 2025-0201.pdf,0.5408342480659485,True
+Case10529,5,tricare_west.pdf,0.535521388053894,True
+Case10529,6,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.616957426071167,True
+Case10529,7,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.613629937171936,True
+Case10529,8,HealthParners_prenatal and preconception carrier screening.pdf,0.5753588080406189,True
+Case10529,9,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5740370750427246,True
+Case10529,10,BCBS_FEP_204137 Genetic Testing for Neurofibromatosis.pdf,0.5359976887702942,True
+Case16487,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5498624444007874,True
+Case16487,2,BCBS_FEP_204102 Whole Exome and.pdf,0.5962531566619873,True
+Case16487,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5601092576980591,True
+Case16487,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5872029066085815,True
+Case16487,5,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.5498578548431396,True
+Case16487,6,BCBS_NE_V63.pdf,0.5657707452774048,True
+Case16487,7,tricare_west.pdf,0.5493431091308594,True
+Case16487,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.553514838218689,True
+Case16487,9,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.554304301738739,True
+Case16487,10,BCBS_FEP_20408 Genetic Testing for Lynch.pdf,0.537320077419281,True
+Case811,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6523200273513794,True
+Case811,2,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5896201133728027,True
+Case811,3,BCBS_HW_GTM Genetic Testing for Neurodegenerative Disorders AHS–M2167 2025-0201.pdf,0.572582483291626,True
+Case811,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6099046468734741,True
+Case811,5,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5786585211753845,True
+Case811,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5731542110443115,True
+Case811,7,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5858119130134583,True
+Case811,8,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.6112545728683472,True
+Case811,9,Humana_Genetic Testing for Muscular Dystrophy and Spinal Muscular Atrophy - Commercial.pdf,0.5780406594276428,True
+Case811,10,tricare_west.pdf,0.5815630555152893,True
+Case9408,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6607518196105957,True
+Case9408,2,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5710093975067139,True
+Case9408,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5974369049072266,True
+Case9408,4,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.6412866115570068,True
+Case9408,5,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.6035099029541016,True
+Case9408,6,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6094412803649902,True
+Case9408,7,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6311565637588501,True
+Case9408,8,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6258044242858887,True
+Case9408,9,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.6000847816467285,True
+Case9408,10,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.574137806892395,True
+Case4067,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.543402373790741,True
+Case4067,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6306860446929932,True
+Case4067,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5407053232192993,True
+Case4067,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5554490685462952,True
+Case4067,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.601159930229187,True
+Case4067,6,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5188631415367126,True
+Case4067,7,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5337849259376526,True
+Case4067,8,BCBS_NE_V69.pdf,0.5315762758255005,True
+Case4067,9,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5280128121376038,True
+Case4067,10,BCBS_NE_V63.pdf,0.5246953964233398,True
+Case4982,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6089299917221069,True
+Case4982,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6416168808937073,True
+Case4982,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5792790055274963,True
+Case4982,4,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5716654062271118,True
+Case4982,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6243727207183838,True
+Case4982,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6123858690261841,True
+Case4982,7,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.594014048576355,True
+Case4982,8,BCBS_NE_V69.pdf,0.5816388130187988,True
+Case4982,9,tricare_west.pdf,0.5817956328392029,True
+Case4982,10,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.573642373085022,True
+Case8710,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6169788837432861,True
+Case8710,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6688960790634155,True
+Case8710,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5849185585975647,True
+Case8710,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6244193315505981,True
+Case8710,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6251589059829712,True
+Case8710,6,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5803639888763428,True
+Case8710,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5725810527801514,True
+Case8710,8,BCBS_HW_GTM Genetic Testing for Neurodegenerative Disorders AHS–M2167 2025-0201.pdf,0.5823758840560913,True
+Case8710,9,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5946730971336365,True
+Case8710,10,tricare_west.pdf,0.5816096067428589,True
+Case13613,1,BCBS_FEP_204102 Whole Exome and.pdf,0.5905755758285522,True
+Case13613,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.574927031993866,True
+Case13613,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5421730279922485,True
+Case13613,4,BCBS_NE_V63.pdf,0.5600935220718384,True
+Case13613,5,BCBS_NE_V62.pdf,0.5498061180114746,True
+Case13613,6,BCBS_MI2.pdf,0.5424702763557434,True
+Case13613,7,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5917022228240967,True
+Case13613,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5858601331710815,True
+Case13613,9,HealthParners_prenatal and preconception carrier screening.pdf,0.5726976990699768,True
+Case13613,10,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5712836980819702,True
+Case1501,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6135363578796387,True
+Case1501,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6903281807899475,True
+Case1501,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6753135919570923,True
+Case1501,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5961315631866455,True
+Case1501,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6260826587677002,True
+Case1501,6,BCBS_HW_GTM Genetic Testing for Inherited Cardiomyopathies and Channelopathies AHS-M2025 2023-0601_v2.pdf,0.5810726284980774,True
+Case1501,7,oxford_gene-expression-tests-cardiac-conditions-ohp.pdf,0.5739895105361938,True
+Case1501,8,tricare_west.pdf,0.585362434387207,True
+Case1501,9,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5830240845680237,True
+Case1501,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5807492733001709,True
+Case10451,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6282474398612976,True
+Case10451,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6781622171401978,True
+Case10451,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5945133566856384,True
+Case10451,4,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5736566781997681,True
+Case10451,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6133924126625061,True
+Case10451,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6474868059158325,True
+Case10451,7,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5879849791526794,True
+Case10451,8,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5888389348983765,True
+Case10451,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.575319230556488,True
+Case10451,10,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5859503746032715,True
+Case4262,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6542356014251709,True
+Case4262,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5868175029754639,True
+Case4262,3,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5861254930496216,True
+Case4262,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6474037170410156,True
+Case4262,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6186882853507996,True
+Case4262,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6016284227371216,True
+Case4262,7,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5710083246231079,True
+Case4262,8,BCBS_NE_V63.pdf,0.5810235738754272,True
+Case4262,9,tricare_west.pdf,0.5726439952850342,True
+Case4262,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5761406421661377,True
+Case19321,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6346805095672607,True
+Case19321,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6798369884490967,True
+Case19321,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.605654239654541,True
+Case19321,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6455230116844177,True
+Case19321,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6442259550094604,True
+Case19321,6,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5801141262054443,True
+Case19321,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6058462858200073,True
+Case19321,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5783520340919495,True
+Case19321,9,tricare_west.pdf,0.5792653560638428,True
+Case19321,10,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5991154909133911,True
+Case11795,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6644392013549805,True
+Case11795,2,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5903040170669556,True
+Case11795,3,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5809469819068909,True
+Case11795,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6206384897232056,True
+Case11795,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6104674339294434,True
+Case11795,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6007982492446899,True
+Case11795,7,tricare_west.pdf,0.5807403922080994,True
+Case11795,8,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.599664568901062,True
+Case11795,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5846433043479919,True
+Case11795,10,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.578826904296875,True
+Case9349,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6249837875366211,True
+Case9349,2,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5564625263214111,True
+Case9349,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6106929779052734,True
+Case9349,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5655924081802368,True
+Case9349,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.574093222618103,True
+Case9349,6,Humana_Genetic Testing for Cardiac Conditions - Commercial.pdf,0.5506775975227356,True
+Case9349,7,tricare_west.pdf,0.5530993342399597,True
+Case9349,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5471107363700867,True
+Case9349,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5439711809158325,True
+Case9349,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5686848163604736,True
+Case14127,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6405234932899475,True
+Case14127,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6724443435668945,True
+Case14127,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5934594869613647,True
+Case14127,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6445013880729675,True
+Case14127,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6410592198371887,True
+Case14127,6,South Carolina Medicaid_Genetic testing.pdf,0.5791937112808228,True
+Case14127,7,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.6015437245368958,True
+Case14127,8,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.6017985343933105,True
+Case14127,9,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.5918475985527039,True
+Case14127,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5770848393440247,True
+Case950,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5605963468551636,True
+Case950,2,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.6527233719825745,True
+Case950,3,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.5542743802070618,True
+Case950,4,BCBS_FEP_204102 Whole Exome and.pdf,0.6161412000656128,True
+Case950,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5726679563522339,True
+Case950,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5532958507537842,True
+Case950,7,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.541676938533783,True
+Case950,8,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5602890253067017,True
+Case950,9,tricare_west.pdf,0.5414657592773438,True
+Case950,10,BCBS_FEP_20488 Genetic Testing for PTEN.pdf,0.5437186360359192,True
+Case15834,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5822105407714844,True
+Case15834,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6098042726516724,True
+Case15834,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.578484833240509,True
+Case15834,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5918674468994141,True
+Case15834,5,BCBS_NE_V63.pdf,0.5516220331192017,True
+Case15834,6,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6219293475151062,True
+Case15834,7,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.631985068321228,True
+Case15834,8,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5636101365089417,True
+Case15834,9,HealthParners_prenatal and preconception carrier screening.pdf,0.5668838024139404,True
+Case15834,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5510411262512207,True
+Case14371,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5843495726585388,True
+Case14371,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6392971277236938,True
+Case14371,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5883506536483765,True
+Case14371,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5654810667037964,True
+Case14371,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5824138522148132,True
+Case14371,6,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5556402206420898,True
+Case14371,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6123350858688354,True
+Case14371,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6103606820106506,True
+Case14371,9,HealthParners_prenatal and preconception carrier screening.pdf,0.5566834211349487,True
+Case14371,10,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Prenatal-Preconception-Carrier-Screening.pdf,0.5466091632843018,True
+Case1130,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5888695120811462,True
+Case1130,2,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5766985416412354,True
+Case1130,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5728803873062134,True
+Case1130,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5945063829421997,True
+Case1130,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.584994375705719,True
+Case1130,6,BCBS_FEP_204102 Whole Exome and.pdf,0.5917479991912842,True
+Case1130,7,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.5702512264251709,True
+Case1130,8,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.5763074159622192,True
+Case1130,9,BCBS_MN_VI-16-014.pdf,0.579963743686676,True
+Case1130,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5794833898544312,True
+Case11514,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5585216879844666,True
+Case11514,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6232146620750427,True
+Case11514,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5665017366409302,True
+Case11514,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.598129153251648,True
+Case11514,5,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5615580081939697,True
+Case11514,6,BCBS_FEP_204117 Genetic Testing for Mitochondrial.pdf,0.5612859129905701,True
+Case11514,7,BCBS_HW_GTM Testing of Homocysteine Metabolism-Related Conditions AHS-M2141 2023-0601_v2.pdf,0.5801854133605957,True
+Case11514,8,tricare_west.pdf,0.5616260766983032,True
+Case11514,9,BCBS_FEP_20408 Genetic Testing for Lynch.pdf,0.5587618350982666,True
+Case11514,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5575038194656372,True
+Case13675,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5785178542137146,True
+Case13675,2,BCBS_FEP_204102 Whole Exome and.pdf,0.642602801322937,True
+Case13675,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6524009108543396,True
+Case13675,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5813719034194946,True
+Case13675,5,V2.2023 Concert Genetic Testing- Hearing Loss.pdf,0.6162621378898621,True
+Case13675,6,BCBS_FEP_20487 Genetic Testing for HHL.pdf,0.6023092865943909,True
+Case13675,7,BCBS_NE_V35.pdf,0.5910104513168335,True
+Case13675,8,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.5741668939590454,True
+Case13675,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5772829055786133,True
+Case13675,10,BCBS_HW_GTM Genetic Testing for Inherited Cardiomyopathies and Channelopathies AHS-M2025 2023-0601_v2.pdf,0.5793701410293579,True
+Case3474,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6160593032836914,True
+Case3474,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6079028248786926,True
+Case3474,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6454831957817078,True
+Case3474,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6193304061889648,True
+Case3474,5,BCBS_FEP_204106 Genetic Testing for Charge.pdf,0.5687328577041626,True
+Case3474,6,BCBS_HW_GTM Genetic Testing for CHARGE Syndrome AHS–M2070 2023-0601_v2.pdf,0.5820910930633545,True
+Case3474,7,V2.2023 Concert Genetic Testing- Hearing Loss.pdf,0.570417582988739,True
+Case3474,8,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Commerical - Medical 34D.pdf,0.5613558292388916,True
+Case3474,9,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicare - Medical 34D.pdf,0.5613558292388916,True
+Case3474,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5649341940879822,True
+Case13983,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6285587549209595,True
+Case13983,2,BCBS_FEP_20443 Genetic Testing for Cardiac.pdf,0.5871833562850952,True
+Case13983,3,BCBS_HW_GTM Genetic Testing for Inherited Cardiomyopathies and Channelopathies AHS-M2025 2023-0601_v2.pdf,0.5809401273727417,True
+Case13983,4,V2.2023 Concert Genetics Genetic Testing- Aortopathies & Connective Tissue Disorders.pdf,0.5825379490852356,True
+Case13983,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6086263656616211,True
+Case13983,6,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6032027006149292,True
+Case13983,7,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5928002595901489,True
+Case13983,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5736604332923889,True
+Case13983,9,tricare_west.pdf,0.5751056671142578,True
+Case13983,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.575959324836731,True
+Case11981,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5702171325683594,True
+Case11981,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6078185439109802,True
+Case11981,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5882956981658936,True
+Case11981,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5738797187805176,True
+Case11981,5,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.613892674446106,True
+Case11981,6,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6046818494796753,True
+Case11981,7,BCBS_HW_GTM Genetic Testing for Neurodegenerative Disorders AHS–M2167 2025-0201.pdf,0.5640023350715637,True
+Case11981,8,BCBS_FEP_204137 Genetic Testing for Neurofibromatosis.pdf,0.5621029734611511,True
+Case11981,9,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5868408679962158,True
+Case11981,10,HealthParners_prenatal and preconception carrier screening.pdf,0.5922921299934387,True
+Case10427,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5824481248855591,True
+Case10427,2,BCBS_FEP_204102 Whole Exome and.pdf,0.645995020866394,True
+Case10427,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6378215551376343,True
+Case10427,4,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf,0.551823616027832,True
+Case10427,5,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.5530929565429688,True
+Case10427,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5736721158027649,True
+Case10427,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5633646249771118,True
+Case10427,8,BCBS_HW_GTM Genetic Testing for Neurodegenerative Disorders AHS–M2167 2025-0201.pdf,0.5515474677085876,True
+Case10427,9,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.5567811727523804,True
+Case10427,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5568431615829468,True
+Case17822,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.657823920249939,True
+Case17822,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6911516189575195,True
+Case17822,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.7084320187568665,True
+Case17822,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6626439094543457,True
+Case17822,5,AIHP_Arizona_Medicaid.pdf,0.640002965927124,True
+Case17822,6,Washington Medicaid_Genetic_Testing_Policy_Clinical_Coverage_Criteria_-_MM165.pdf,0.6255767345428467,True
+Case17822,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6525980830192566,True
+Case17822,8,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6298787593841553,True
+Case17822,9,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.6337719559669495,True
+Case17822,10,BCBS_FEP_20475 Genetic Testing of CADASIL.pdf,0.6148700714111328,True
+Case6747,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6826150417327881,True
+Case6747,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.7048546075820923,True
+Case6747,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.616896390914917,True
+Case6747,4,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6650277376174927,True
+Case6747,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6749365925788879,True
+Case6747,6,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6113580465316772,True
+Case6747,7,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6618608832359314,True
+Case6747,8,AIHP_Arizona_Medicaid.pdf,0.6110625267028809,True
+Case6747,9,Washington Medicaid_Genetic_Testing_Policy_Clinical_Coverage_Criteria_-_MM165.pdf,0.6095519065856934,True
+Case6747,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6220337152481079,True
+Case15938,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5543394684791565,True
+Case15938,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6272813081741333,True
+Case15938,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6296042203903198,True
+Case15938,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5670520663261414,True
+Case15938,5,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5318878889083862,True
+Case15938,6,BCBS_FEP_204117 Genetic Testing for Mitochondrial.pdf,0.5363317728042603,True
+Case15938,7,BCBS_HW_GTM Testing of Homocysteine Metabolism-Related Conditions AHS-M2141 2023-0601_v2.pdf,0.5593303442001343,True
+Case15938,8,BCBS_NE_V62.pdf,0.5386260151863098,True
+Case15938,9,tricare_west.pdf,0.5384756326675415,True
+Case15938,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5442674160003662,True
+Case18868,1,BCBS_HW_GTM General Genetic Testing - Germline Disorders AHS-M2145 2025-0201.pdf,0.5933102965354919,True
+Case18868,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6070809364318848,True
+Case18868,3,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6007876396179199,True
+Case18868,4,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.5880842804908752,True
+Case18868,5,BCBS_MN_VI-16-014.pdf,0.6224609017372131,True
+Case18868,6,Capital Health Plan_BRCA.pdf,0.5889807939529419,True
+Case18868,7,BCBS_NE_V57.pdf,0.5888420343399048,True
+Case18868,8,V2.2023 Concert Oncology- Molecular Analysis of Solid Tumors & Hematologic Malignancies.pdf,0.6113166213035583,True
+Case18868,9,BCBS_FEP_204154 Germline Genetic Testing for Hereditary.pdf,0.5974467992782593,True
+Case18868,10,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.6344480514526367,True
+Case2162,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6473798155784607,True
+Case2162,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6612223386764526,True
+Case2162,3,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5875896215438843,True
+Case2162,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5961958169937134,True
+Case2162,5,BCBS_NE_V62.pdf,0.5767678618431091,True
+Case2162,6,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5873386859893799,True
+Case2162,7,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5826449394226074,True
+Case2162,8,HealthParners_prenatal and preconception carrier screening.pdf,0.5879076719284058,True
+Case2162,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6192066073417664,True
+Case2162,10,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6191188097000122,True
+Case7447,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6049106121063232,True
+Case7447,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6162945628166199,True
+Case7447,3,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.5779705047607422,True
+Case7447,4,BCBS_HW_GTM Prenatal Screening (Genetic) AHS-M2179 2025-0301.pdf,0.5571391582489014,True
+Case7447,5,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5743449926376343,True
+Case7447,6,BCBS_NE_V62.pdf,0.5964502096176147,True
+Case7447,7,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Prenatal-Cell-Free-DNA.pdf,0.5564593076705933,True
+Case7447,8,Oregon Medicaaid_Prioritized-List-Prenatal-Genetic-Testing.pdf,0.5579627156257629,True
+Case7447,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5788568258285522,True
+Case7447,10,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.57407146692276,True
+Case5380,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5897775888442993,True
+Case5380,2,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5571454763412476,True
+Case5380,3,BCBS_FEP_204102 Whole Exome and.pdf,0.636231005191803,True
+Case5380,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6134744882583618,True
+Case5380,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6036930680274963,True
+Case5380,6,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5731871128082275,True
+Case5380,7,Blue Cross Idaho_02.04.088_02-27-25.pdf,0.5603125691413879,True
+Case5380,8,BCBS_NE_V63.pdf,0.5517253279685974,True
+Case5380,9,tricare_west.pdf,0.567344069480896,True
+Case5380,10,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5571379065513611,True
+Case3465,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6179920434951782,True
+Case3465,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6548937559127808,True
+Case3465,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6400273442268372,True
+Case3465,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6163329482078552,True
+Case3465,5,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.5897095203399658,True
+Case3465,6,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6281399130821228,True
+Case3465,7,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6198283433914185,True
+Case3465,8,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6134821176528931,True
+Case3465,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5938980579376221,True
+Case3465,10,HealthParners_prenatal and preconception carrier screening.pdf,0.5888413190841675,True
+Case5885,1,HealthParners_prenatal and preconception carrier screening.pdf,0.590530514717102,True
+Case5885,2,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6107805967330933,True
+Case5885,3,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.630294919013977,True
+Case5885,4,BCBS_FEP_204102 Whole Exome and.pdf,0.620711088180542,True
+Case5885,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5735078454017639,True
+Case5885,6,BCBS_FEP_204101 Genetic Testing for Li Fraumeni.pdf,0.5734803676605225,True
+Case5885,7,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6119494438171387,True
+Case5885,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6330794095993042,True
+Case5885,9,BCBS_FEP_20443 Genetic Testing for Cardiac.pdf,0.5690076947212219,True
+Case5885,10,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5820887088775635,True
+Case19162,1,BCBS_FEP_204102 Whole Exome and.pdf,0.5806171894073486,True
+Case19162,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5512816905975342,True
+Case19162,3,BCBS_HW_GTM Genetic Testing for Neurodegenerative Disorders AHS–M2167 2025-0201.pdf,0.5338463187217712,True
+Case19162,4,BCBS_FEP_20489 Genetic Testing for the.pdf,0.5521348118782043,True
+Case19162,5,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5346508026123047,True
+Case19162,6,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5955635905265808,True
+Case19162,7,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6015825867652893,True
+Case19162,8,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.55089271068573,True
+Case19162,9,HealthParners_prenatal and preconception carrier screening.pdf,0.5865437984466553,True
+Case19162,10,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Prenatal-Preconception-Carrier-Screening.pdf,0.5443576574325562,True
+Case7604,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6523656845092773,True
+Case7604,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6583706140518188,True
+Case7604,3,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5744891166687012,True
+Case7604,4,BCBS_NE_V62.pdf,0.5716675519943237,True
+Case7604,5,FallonHealth_GeneticTesting.pdf,0.564566969871521,True
+Case7604,6,Blue Cross Idaho_02.04.137_01-30-25.pdf,0.5595588684082031,True
+Case7604,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5769791603088379,True
+Case7604,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.562317967414856,True
+Case7604,9,BCBS_FEP_204137 Genetic Testing for Neurofibromatosis.pdf,0.5693418383598328,True
+Case7604,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5899139046669006,True
+Case8661,1,BCBS_FEP_204102 Whole Exome and.pdf,0.5995807647705078,True
+Case8661,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5842157006263733,True
+Case8661,3,V2.2023 Concert Genetic Testing- Hearing Loss.pdf,0.5710717439651489,True
+Case8661,4,BCBS_FEP_20487 Genetic Testing for HHL.pdf,0.5715999603271484,True
+Case8661,5,BCBS_NE_V35.pdf,0.5686200857162476,True
+Case8661,6,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.5687925815582275,True
+Case8661,7,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6022351980209351,True
+Case8661,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.622351348400116,True
+Case8661,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6312313079833984,True
+Case8661,10,HealthParners_prenatal and preconception carrier screening.pdf,0.5958958864212036,True
+Case10850,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6195487976074219,True
+Case10850,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6609851717948914,True
+Case10850,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5812810659408569,True
+Case10850,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6146129369735718,True
+Case10850,5,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6627600193023682,True
+Case10850,6,BCBS_NE_V66.pdf,0.5816102027893066,True
+Case10850,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5914640426635742,True
+Case10850,8,tricare_west.pdf,0.5927284955978394,True
+Case10850,9,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.5972033143043518,True
+Case10850,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6039516925811768,True
+Case13406,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5872236490249634,True
+Case13406,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6308556795120239,True
+Case13406,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5944761633872986,True
+Case13406,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6435036659240723,True
+Case13406,5,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5653916001319885,True
+Case13406,6,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5968680381774902,True
+Case13406,7,Blue Cross Idaho_02.04.107_09-26-24.pdf,0.5499193072319031,True
+Case13406,8,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5595207214355469,True
+Case13406,9,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Lung-Disorders.pdf,0.5475350618362427,True
+Case13406,10,Asuris_Northwest_Health_Conceptio_Pregnancy_Loss.pdf,0.5469139814376831,True
+Case7014,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6147124767303467,True
+Case7014,2,BCBS_FEP_204102 Whole Exome and.pdf,0.67723548412323,True
+Case7014,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6850366592407227,True
+Case7014,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6226369142532349,True
+Case7014,5,Harvard Pilgrim Health Plan_Tufts Health Plan_WGS_THP-Commercial-MNG.pdf,0.574449360370636,True
+Case7014,6,AIHP_Arizona_Medicaid.pdf,0.5718568563461304,True
+Case7014,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5794523358345032,True
+Case7014,8,Washington Medicaid_Genetic_Testing_Policy_Clinical_Coverage_Criteria_-_MM165.pdf,0.5813884735107422,True
+Case7014,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5729103088378906,True
+Case7014,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5802413821220398,True
+Case6451,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5218816995620728,True
+Case6451,2,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf,0.5009719133377075,True
+Case6451,3,BCBS_FEP_204102 Whole Exome and.pdf,0.5937100648880005,True
+Case6451,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5904160141944885,True
+Case6451,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5171571969985962,True
+Case6451,6,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.49983537197113037,True
+Case6451,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5086590051651001,True
+Case6451,8,BCBS_NE_V63.pdf,0.5022801160812378,True
+Case6451,9,BCBS_NE_V66.pdf,0.501997709274292,True
+Case6451,10,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.5034649968147278,True
+Case18281,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6011970043182373,True
+Case18281,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6501632332801819,True
+Case18281,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.653414249420166,True
+Case18281,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5962238311767578,True
+Case18281,5,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.637740969657898,True
+Case18281,6,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.630539059638977,True
+Case18281,7,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5926992893218994,True
+Case18281,8,HealthParners_prenatal and preconception carrier screening.pdf,0.6134582757949829,True
+Case18281,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6007388234138489,True
+Case18281,10,BCBS_FEP_204139 Genetic Testing for Heterozygous.pdf,0.5828595161437988,True
+Case10363,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6083686351776123,True
+Case10363,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6350241899490356,True
+Case10363,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6703946590423584,True
+Case10363,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6066142320632935,True
+Case10363,5,BCBS_MN_VI-16-014.pdf,0.6072948575019836,True
+Case10363,6,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.59391188621521,True
+Case10363,7,BCBS_FEP_204148 Germline Genetic Testing for Pancreatic.pdf,0.5935744047164917,True
+Case10363,8,BCBS_FEP_20499 Genetic Testing for Hereditary.pdf,0.5958982110023499,True
+Case10363,9,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.6348323822021484,True
+Case10363,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6126065254211426,True
+Case15557,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6330381631851196,True
+Case15557,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6626397371292114,True
+Case15557,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6943017244338989,True
+Case15557,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5924399495124817,True
+Case15557,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6392985582351685,True
+Case15557,6,AIHP_Arizona_Medicaid.pdf,0.5830469131469727,True
+Case15557,7,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5928531289100647,True
+Case15557,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.581499457359314,True
+Case15557,9,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.5784003734588623,True
+Case15557,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6026225686073303,True
+Case4512,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6282088756561279,True
+Case4512,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6309657096862793,True
+Case4512,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.618934154510498,True
+Case4512,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6092990636825562,True
+Case4512,5,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5810309648513794,True
+Case4512,6,BCBS_HW_GTM Genetic Testing for Inherited Cardiomyopathies and Channelopathies AHS-M2025 2023-0601_v2.pdf,0.566609263420105,True
+Case4512,7,Humana_Genetic Testing for Cardiac Conditions - Commercial.pdf,0.5771150588989258,True
+Case4512,8,V2.2023 Concert Genetics Genetic Testing- Aortopathies & Connective Tissue Disorders.pdf,0.5706644058227539,True
+Case4512,9,BCBS_MN_VI-16-014.pdf,0.5665225982666016,True
+Case4512,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5816003084182739,True
+Case1428,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5816309452056885,True
+Case1428,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6135194301605225,True
+Case1428,3,BCBS_FEP_204102 Whole Exome and.pdf,0.6025680303573608,True
+Case1428,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5811586380004883,True
+Case1428,5,BCBS_NE_V35.pdf,0.558836817741394,True
+Case1428,6,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.557951033115387,True
+Case1428,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5982708930969238,True
+Case1428,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5845662951469421,True
+Case1428,9,HealthParners_prenatal and preconception carrier screening.pdf,0.5691735148429871,True
+Case1428,10,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Prenatal-Preconception-Carrier-Screening.pdf,0.5618590712547302,True
+Case5605,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6350455284118652,True
+Case5605,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6583073735237122,True
+Case5605,3,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6076072454452515,True
+Case5605,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6117552518844604,True
+Case5605,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6044976711273193,True
+Case5605,6,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.6177978515625,True
+Case5605,7,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.5947790145874023,True
+Case5605,8,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6176785230636597,True
+Case5605,9,BCBS_MN_VI-16-014.pdf,0.5890331268310547,True
+Case5605,10,Blue Cross Idaho_02.04.107_09-26-24.pdf,0.5914770364761353,True
+Case14155,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6100043058395386,True
+Case14155,2,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5817492604255676,True
+Case14155,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5753071308135986,True
+Case14155,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.595405101776123,True
+Case14155,5,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.5749022960662842,True
+Case14155,6,Driscoll_Genetic-Testing-for-Suspected-Disability.pdf,0.5507553815841675,True
+Case14155,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5541789531707764,True
+Case14155,8,tricare_west.pdf,0.5538517236709595,True
+Case14155,9,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.5665126442909241,True
+Case14155,10,BCBS_FEP_204137 Genetic Testing for Neurofibromatosis.pdf,0.5481999516487122,True
+Case3223,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7027148008346558,True
+Case3223,2,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6228373050689697,True
+Case3223,3,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6407979726791382,True
+Case3223,4,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6405684351921082,True
+Case3223,5,CapitalBC_BRCA.pdf,0.6268925666809082,True
+Case3223,6,Capital Health Plan_BRCA.pdf,0.6912076473236084,True
+Case3223,7,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6425395011901855,True
+Case3223,8,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6451050639152527,True
+Case3223,9,BCBS_MN_VI-16-014.pdf,0.6477824449539185,True
+Case3223,10,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.6291536092758179,True
+Case14195,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6796116828918457,True
+Case14195,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6392143964767456,True
+Case14195,3,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6246275901794434,True
+Case14195,4,BCBS_MN_VI-16-014.pdf,0.6343106627464294,True
+Case14195,5,CapitalBC_BRCA.pdf,0.6346276998519897,True
+Case14195,6,Capital Health Plan_BRCA.pdf,0.6567494869232178,True
+Case14195,7,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6079475283622742,True
+Case14195,8,tricare_west.pdf,0.6051088571548462,True
+Case14195,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6168273687362671,True
+Case14195,10,Vermont_Hereditary Breast and Ovarian Cancer criteria for web.pdf,0.6018539667129517,True
+Case22,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7062354683876038,True
+Case22,2,Capital Health Plan_BRCA.pdf,0.6469331979751587,True
+Case22,3,BCBS_MN_VI-16-014.pdf,0.6214073896408081,True
+Case22,4,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6426979303359985,True
+Case22,5,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6636821031570435,True
+Case22,6,CapitalBC_BRCA.pdf,0.6449721455574036,True
+Case22,7,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6202347278594971,True
+Case22,8,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6166870594024658,True
+Case22,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.615082859992981,True
+Case22,10,tricare_west.pdf,0.6103267669677734,True
+Case19255,1,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6747246980667114,True
+Case19255,2,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6085585951805115,True
+Case19255,3,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7132057547569275,True
+Case19255,4,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6381679773330688,True
+Case19255,5,CapitalBC_BRCA.pdf,0.6530821919441223,True
+Case19255,6,Capital Health Plan_BRCA.pdf,0.6679432392120361,True
+Case19255,7,BCBS_MN_VI-16-014.pdf,0.669343888759613,True
+Case19255,8,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6023643016815186,True
+Case19255,9,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.5996335744857788,True
+Case19255,10,BCBS_FEP_204154 Germline Genetic Testing for Hereditary.pdf,0.5973947048187256,True
+Case15458,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7251415252685547,True
+Case15458,2,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.611311137676239,True
+Case15458,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6774623394012451,True
+Case15458,4,BCBS_MN_VI-16-014.pdf,0.6646589636802673,True
+Case15458,5,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6506929397583008,True
+Case15458,6,CapitalBC_BRCA.pdf,0.6633636355400085,True
+Case15458,7,Capital Health Plan_BRCA.pdf,0.6814727783203125,True
+Case15458,8,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6143986582756042,True
+Case15458,9,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6168398857116699,True
+Case15458,10,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.617825984954834,True
+Case6867,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6868764162063599,True
+Case6867,2,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.5811363458633423,True
+Case6867,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6368811130523682,True
+Case6867,4,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6190778017044067,True
+Case6867,5,BCBS_MN_VI-16-014.pdf,0.6278791427612305,True
+Case6867,6,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.595598578453064,True
+Case6867,7,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.600653886795044,True
+Case6867,8,CapitalBC_BRCA.pdf,0.6326227188110352,True
+Case6867,9,Capital Health Plan_BRCA.pdf,0.6548762321472168,True
+Case6867,10,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.5838348865509033,True
+Case16126,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6618961095809937,True
+Case16126,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6077637076377869,True
+Case16126,3,BCBS_MN_VI-16-014.pdf,0.6214748620986938,True
+Case16126,4,CapitalBC_BRCA.pdf,0.6031278371810913,True
+Case16126,5,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6243649125099182,True
+Case16126,6,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6285755634307861,True
+Case16126,7,Capital Health Plan_BRCA.pdf,0.6222063302993774,True
+Case16126,8,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6213603615760803,True
+Case16126,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6235635280609131,True
+Case16126,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6302530765533447,True
+Case2211,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7688257694244385,True
+Case2211,2,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6969728469848633,True
+Case2211,3,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6478220224380493,True
+Case2211,4,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6686959266662598,True
+Case2211,5,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6748589277267456,True
+Case2211,6,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6650801301002502,True
+Case2211,7,Capital Health Plan_BRCA.pdf,0.7169452905654907,True
+Case2211,8,CapitalBC_BRCA.pdf,0.7080485820770264,True
+Case2211,9,BCBS_MN_VI-16-014.pdf,0.7035573720932007,True
+Case2211,10,BCBS_FEP_204154 Germline Genetic Testing for Hereditary.pdf,0.6358011960983276,True
+Case14408,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6262645125389099,True
+Case14408,2,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6179988384246826,True
+Case14408,3,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6894189715385437,True
+Case14408,4,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6553273797035217,True
+Case14408,5,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6019481420516968,True
+Case14408,6,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6339700222015381,True
+Case14408,7,BCBS_MN_VI-16-014.pdf,0.6582569479942322,True
+Case14408,8,CapitalBC_BRCA.pdf,0.6417847275733948,True
+Case14408,9,Capital Health Plan_BRCA.pdf,0.6652440428733826,True
+Case14408,10,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.647617757320404,True
+Case16246,1,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.675155520439148,True
+Case16246,2,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6464788913726807,True
+Case16246,3,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7404694557189941,True
+Case16246,4,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6663490533828735,True
+Case16246,5,CapitalBC_BRCA.pdf,0.6757940649986267,True
+Case16246,6,Capital Health Plan_BRCA.pdf,0.7131857872009277,True
+Case16246,7,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6398048996925354,True
+Case16246,8,BCBS_MN_VI-16-014.pdf,0.7046462297439575,True
+Case16246,9,BCBS_FEP_204148 Germline Genetic Testing for Pancreatic.pdf,0.6470205783843994,True
+Case16246,10,BCBS_FEP_204154 Germline Genetic Testing for Hereditary.pdf,0.644182562828064,True
+Case2007,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6923181414604187,True
+Case2007,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6533032059669495,True
+Case2007,3,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.631867527961731,True
+Case2007,4,BCBS_MN_VI-16-014.pdf,0.6493252515792847,True
+Case2007,5,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6401708126068115,True
+Case2007,6,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6395083665847778,True
+Case2007,7,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6148059368133545,True
+Case2007,8,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.6251634359359741,True
+Case2007,9,CapitalBC_BRCA.pdf,0.6338949203491211,True
+Case2007,10,Capital Health Plan_BRCA.pdf,0.680241584777832,True
+Case15570,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7163074612617493,True
+Case15570,2,BCBS_MN_VI-16-014.pdf,0.6728965044021606,True
+Case15570,3,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.668306827545166,True
+Case15570,4,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6637445092201233,True
+Case15570,5,CapitalBC_BRCA.pdf,0.6407890319824219,True
+Case15570,6,Capital Health Plan_BRCA.pdf,0.6881599426269531,True
+Case15570,7,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6497665047645569,True
+Case15570,8,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6510775089263916,True
+Case15570,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6449904441833496,True
+Case15570,10,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.6335015892982483,True
+Case6478,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.733809232711792,True
+Case6478,2,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6544516086578369,True
+Case6478,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6774276494979858,True
+Case6478,4,Capital Health Plan_BRCA.pdf,0.6722031831741333,True
+Case6478,5,CapitalBC_BRCA.pdf,0.6692788600921631,True
+Case6478,6,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.637714147567749,True
+Case6478,7,BCBS_MN_VI-16-014.pdf,0.6605504751205444,True
+Case6478,8,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.6529641151428223,True
+Case6478,9,BCBS_FEP_204148 Germline Genetic Testing for Pancreatic.pdf,0.6423972249031067,True
+Case6478,10,BCBS_FEP_204154 Germline Genetic Testing for Hereditary.pdf,0.6251587867736816,True
+Case3677,1,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6486266255378723,True
+Case3677,2,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7179704904556274,True
+Case3677,3,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6126968860626221,True
+Case3677,4,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6398118734359741,True
+Case3677,5,BCBS_MN_VI-16-014.pdf,0.6584103107452393,True
+Case3677,6,Capital Health Plan_BRCA.pdf,0.6815181970596313,True
+Case3677,7,CapitalBC_BRCA.pdf,0.6283313035964966,True
+Case3677,8,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6216253638267517,True
+Case3677,9,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.6021173000335693,True
+Case3677,10,BCBS_FEP_204148 Germline Genetic Testing for Pancreatic.pdf,0.6081398725509644,True
+Case3581,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.5992605686187744,True
+Case3581,2,BCBS_HW_GTM General Genetic Testing - Germline Disorders AHS-M2145 2025-0201.pdf,0.5910974740982056,True
+Case3581,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6225920915603638,True
+Case3581,4,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6666364669799805,True
+Case3581,5,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6205785274505615,True
+Case3581,6,CapitalBC_BRCA.pdf,0.6320626735687256,True
+Case3581,7,Capital Health Plan_BRCA.pdf,0.6336747407913208,True
+Case3581,8,BCBS_MN_VI-16-014.pdf,0.6239972114562988,True
+Case3581,9,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.5937382578849792,True
+Case3581,10,BCBS_FEP_204154 Germline Genetic Testing for Hereditary.pdf,0.5923656821250916,True
+Case15202,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.625255286693573,True
+Case15202,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.5915155410766602,True
+Case15202,3,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.5862194299697876,True
+Case15202,4,Capital Health Plan_BRCA.pdf,0.5942251682281494,True
+Case15202,5,CapitalBC_BRCA.pdf,0.5826328992843628,True
+Case15202,6,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.5671904683113098,True
+Case15202,7,BCBS_MN_VI-16-014.pdf,0.6002776622772217,True
+Case15202,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5733208060264587,True
+Case15202,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6292339563369751,True
+Case15202,10,BCBS_FEP_204101 Genetic Testing for Li Fraumeni.pdf,0.5689562559127808,True
+Case18257,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.619871973991394,True
+Case18257,2,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6109092235565186,True
+Case18257,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6279059648513794,True
+Case18257,4,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6775471568107605,True
+Case18257,5,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.631986677646637,True
+Case18257,6,CapitalBC_BRCA.pdf,0.6435489654541016,True
+Case18257,7,Capital Health Plan_BRCA.pdf,0.6671298146247864,True
+Case18257,8,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.6383832693099976,True
+Case18257,9,BCBS_MN_VI-16-014.pdf,0.6313360929489136,True
+Case18257,10,Vermont_Hereditary Breast and Ovarian Cancer criteria for web.pdf,0.6020399332046509,True
+Case12792,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6377154588699341,True
+Case12792,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6006118059158325,True
+Case12792,3,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.604994535446167,True
+Case12792,4,BCBS_MN_VI-16-014.pdf,0.6010003089904785,True
+Case12792,5,Capital Health Plan_BRCA.pdf,0.6284894943237305,True
+Case12792,6,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.5884099006652832,True
+Case12792,7,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6054776906967163,True
+Case12792,8,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6132282018661499,True
+Case12792,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6160683631896973,True
+Case12792,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5950843095779419,True
+Case14226,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6559145450592041,True
+Case14226,2,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6507515907287598,True
+Case14226,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.7014060616493225,True
+Case14226,4,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6687806844711304,True
+Case14226,5,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6849836707115173,True
+Case14226,6,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7581527829170227,True
+Case14226,7,Capital Health Plan_BRCA.pdf,0.6981728076934814,True
+Case14226,8,CapitalBC_BRCA.pdf,0.7286033034324646,True
+Case14226,9,BCBS_MN_VI-16-014.pdf,0.6790393590927124,True
+Case14226,10,BCBS_FEP_20493 Genetic Cancer Susceptibility.pdf,0.6348744630813599,True
+Case5303,1,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6394710540771484,True
+Case5303,2,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6278051137924194,True
+Case5303,3,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6274731159210205,True
+Case5303,4,CapitalBC_BRCA.pdf,0.6536430716514587,True
+Case5303,5,Capital Health Plan_BRCA.pdf,0.6708447933197021,True
+Case5303,6,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.7122606039047241,True
+Case5303,7,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.5905750393867493,True
+Case5303,8,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6489158868789673,True
+Case5303,9,AetnaBetterHealth_Louisiana_BRCA_Genetic_Testing_and_Counseling.pdf,0.6115185022354126,True
+Case5303,10,BCBS_MN_VI-16-014.pdf,0.647469162940979,True
+Case2666,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6924409866333008,True
+Case2666,2,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6557567119598389,True
+Case2666,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6530329585075378,True
+Case2666,4,BCBS_MN_VI-16-014.pdf,0.647108793258667,True
+Case2666,5,CapitalBC_BRCA.pdf,0.636573076248169,True
+Case2666,6,Capital Health Plan_BRCA.pdf,0.6687312722206116,True
+Case2666,7,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6127395629882812,True
+Case2666,8,Cigna_MOL.TS_.182.A_Hereditary_Cancer_Syndrome_Panels_eff01.01.2025_pub09.10.2024_upd11.18.2024_1.pdf,0.6178930997848511,True
+Case2666,9,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6388923525810242,True
+Case2666,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6170364022254944,True
+Case3592,1,BCBS_FEP_204102 Whole Exome and.pdf,0.591943621635437,True
+Case3592,2,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5534394383430481,True
+Case3592,3,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.5886980295181274,True
+Case3592,4,CapitalBC_medical-policy-genetic-testing-for-epilepsy.pdf,0.6023881435394287,True
+Case3592,5,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6272577047348022,True
+Case3592,6,BCBS_HW_GTM Testing for Autism Spectrum Disorder and Developmental Delay AHS-M2176 2023-0601_v2.pdf,0.5651339292526245,True
+Case3592,7,tricare_west.pdf,0.5658570528030396,True
+Case3592,8,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Prenatal-DX-Amniocentesis-CVS-PUBS-Pregnancy-Loss.pdf,0.5541810989379883,True
+Case3592,9,Asuris_Northwest_Health_Conceptio_Pregnancy_Loss.pdf,0.5616269111633301,True
+Case3592,10,BCBS_HW_GTM Genetic Testing for CHARGE Syndrome AHS–M2070 2023-0601_v2.pdf,0.5688290596008301,True
+Case17595,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6696343421936035,True
+Case17595,2,BCBS_FEP_20487 Genetic Testing for HHL.pdf,0.6080898642539978,True
+Case17595,3,BCBS_FEP_204102 Whole Exome and.pdf,0.6162460446357727,True
+Case17595,4,V2.2023 Concert Genetic Testing- Hearing Loss.pdf,0.6254537105560303,True
+Case17595,5,V2.2023 Concert Genetic Testing- Eye Disorders.pdf,0.6046815514564514,True
+Case17595,6,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6208246946334839,True
+Case17595,7,BCBS_NE_V71.pdf,0.6201075911521912,True
+Case17595,8,BCBS_NE_V35.pdf,0.6193585395812988,True
+Case17595,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5953214168548584,True
+Case17595,10,tricare_west.pdf,0.5993307828903198,True
+Case5834,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6643214225769043,True
+Case5834,2,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6030499339103699,True
+Case5834,3,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.608229398727417,True
+Case5834,4,tricare_west.pdf,0.6141441464424133,True
+Case5834,5,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6078615188598633,True
+Case5834,6,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6051236987113953,True
+Case5834,7,Blue Cross Idaho_02.04.137_01-30-25.pdf,0.6049093008041382,True
+Case5834,8,Blue Cross Idaho_02.04.107_09-26-24.pdf,0.6052582263946533,True
+Case5834,9,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6009092926979065,True
+Case5834,10,BCBS_MN_VI-16-014.pdf,0.6142942309379578,True
+Case15820,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6575408577919006,True
+Case15820,2,BCBS_HW_GTM General Genetic Testing - Germline Disorders AHS-M2145 2025-0201.pdf,0.5822925567626953,True
+Case15820,3,HealthParners_prenatal diagnosis and pregnancy loss.pdf,0.5795806646347046,True
+Case15820,4,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Prenatal-DX-Amniocentesis-CVS-PUBS-Pregnancy-Loss.pdf,0.5788350105285645,True
+Case15820,5,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.577072262763977,True
+Case15820,6,tricare_west.pdf,0.6012888550758362,True
+Case15820,7,BCBS_MN_VI-16-014.pdf,0.5785881876945496,True
+Case15820,8,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.5777626037597656,True
+Case15820,9,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5902377367019653,True
+Case15820,10,Asuris_Northwest_Health_Conceptio_Pregnancy_Loss.pdf,0.5879052877426147,True
+Case17929,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6335009336471558,True
+Case17929,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.576754093170166,True
+Case17929,3,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5825186967849731,True
+Case17929,4,BCBS_HW_GTM Genetic Testing for CHARGE Syndrome AHS–M2070 2023-0601_v2.pdf,0.5866662859916687,True
+Case17929,5,BCBS_MN_VI-16-014.pdf,0.5904157161712646,True
+Case17929,6,tricare_west.pdf,0.5902947187423706,True
+Case17929,7,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.5940157175064087,True
+Case17929,8,Sentara_Genetic Testing-Cancer Prevention, Diagnosis and Treatment Medicare - Medical 34A.pdf,0.5738368034362793,True
+Case17929,9,Sentara_Genetic Testing-Cancer Prevention, Diagnosis and Treatment Commerical - Medical 34A.pdf,0.5688610076904297,True
+Case17929,10,BCBS_FEP_20408 Genetic Testing for Lynch.pdf,0.5930968523025513,True
+Case17196,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6333143711090088,True
+Case17196,2,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.581453800201416,True
+Case17196,3,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5798717737197876,True
+Case17196,4,BCBS_NE_V63.pdf,0.5756113529205322,True
+Case17196,5,tricare_west.pdf,0.581762433052063,True
+Case17196,6,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.5800139307975769,True
+Case17196,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5741345882415771,True
+Case17196,8,BCBS_MN_VI-16-014.pdf,0.5841648578643799,True
+Case17196,9,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.581254243850708,True
+Case17196,10,Blue Cross Idaho_02.04.107_09-26-24.pdf,0.5693892240524292,True
+Case11855,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.640906572341919,True
+Case11855,2,BCBS_NE_V63.pdf,0.6055198311805725,True
+Case11855,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6100306510925293,True
+Case11855,4,BCBS_MN_VI-16-014.pdf,0.6068418025970459,True
+Case11855,5,tricare_west.pdf,0.6291062831878662,True
+Case11855,6,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6447689533233643,True
+Case11855,7,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6874112486839294,True
+Case11855,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6741904616355896,True
+Case11855,9,HealthParners_prenatal and preconception carrier screening.pdf,0.647530198097229,True
+Case11855,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.633402943611145,True
+Case12834,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6214537620544434,True
+Case12834,2,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Prenatal-Preconception-Carrier-Screening.pdf,0.6158041954040527,True
+Case12834,3,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6186907291412354,True
+Case12834,4,tricare_west.pdf,0.5983346700668335,True
+Case12834,5,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6402249932289124,True
+Case12834,6,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6352498531341553,True
+Case12834,7,HealthParners_prenatal and preconception carrier screening.pdf,0.6531957983970642,True
+Case12834,8,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5932487845420837,True
+Case12834,9,BCBS_HW_GTM Genetic Testing for CHARGE Syndrome AHS–M2070 2023-0601_v2.pdf,0.5727157592773438,True
+Case12834,10,BCBS_HW_GTM Prenatal Screening (Genetic) AHS-M2179 2025-0301.pdf,0.5712623596191406,True
+Case10075,1,BCBS_FEP_204102 Whole Exome and.pdf,0.5860283970832825,True
+Case10075,2,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6443480253219604,True
+Case10075,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5678081512451172,True
+Case10075,4,HealthParners_prenatal diagnosis and pregnancy loss.pdf,0.556937038898468,True
+Case10075,5,BCBS_HW_GTM Prenatal Screening (Genetic) AHS-M2179 2025-0301.pdf,0.5584636926651001,True
+Case10075,6,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.5736271739006042,True
+Case10075,7,Blue Cross Idaho_02.04.107_09-26-24.pdf,0.5580635666847229,True
+Case10075,8,tricare_west.pdf,0.5593629479408264,True
+Case10075,9,Asuris_Northwest_Health_Conceptio_Pregnancy_Loss.pdf,0.5684134364128113,True
+Case10075,10,BCBS_FEP_20408 Genetic Testing for Lynch.pdf,0.5635976195335388,True
+Case9773,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6734354496002197,True
+Case9773,2,BCBS_NE_V72.pdf,0.5887961983680725,True
+Case9773,3,BCBS_NE_V69.pdf,0.5879676342010498,True
+Case9773,4,BCBS_NE_V35.pdf,0.6007448434829712,True
+Case9773,5,BCBS_FEP_204102 Whole Exome and.pdf,0.6007330417633057,True
+Case9773,6,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5935381650924683,True
+Case9773,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6086409687995911,True
+Case9773,8,Neighborhood Health Plan of Rhode island_GeneticTesting2.pdf,0.6025185585021973,True
+Case9773,9,tricare_west.pdf,0.611253023147583,True
+Case9773,10,BCBS_FEP_204107 Carrier Screening for Genetic.pdf,0.6013578176498413,True

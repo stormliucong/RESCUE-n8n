@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) has been requested to investigate a potential genetic cause of cholestatic liver disease."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy Indication #1 explicitly addresses individuals <18 years for WES; the patient is 10 years old, which meets the policy's age criterion for the pediatric indication."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy Indication #1(a) requires evaluation by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor and counseling about risks; the ordering provider is the patient's oncologist and there is no documentation of geneticist/genetic counselor evaluation, so provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy's covered pediatric indication (#1) is for 'unexplained congenital or neurodevelopmental disorder' with additional criteria; the patient's presentation is conjugated hyperbilirubinemia/cholestatic liver disease, which is not one of the explicit covered clinical indications listed, so the patient does not meet a defined covered medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify mandatory prior tests for non‑fetal, non‑neurodevelopmental pediatric indications; while the patient had a nondiagnostic CMA (noted in policy for some prenatal scenarios), the policy does not define specific prior test requirements for this liver phenotype."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not establish family history or consanguinity as a standalone explicit eligibility requirement for the pediatric WES indication; although the patient has a cousin with an inborn error of metabolism, family history criteria are not specified as required in the listed coverage indications."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy Indication #1(a) requires the individual has been evaluated by an ABMGG medical geneticist or ABGC genetic counselor and has been counseled about risks; there is no documentation of pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to WES or other tests, so a specific CPT code cannot be determined from the policy text alone."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, WES coverage for pediatric patients is limited to specific indications (e.g., unexplained congenital or neurodevelopmental disorders) and requires evaluation/counseling by a board-certified geneticist or genetic counselor. The patient's phenotype (cholestatic liver disease) is not one of the explicit covered pediatric indications and pre‑test geneticist/genetic counseling requirements are not documented; therefore WES is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22494,
+    "output_tokens": 2209,
+    "total_tokens": 24703
+  }
+}

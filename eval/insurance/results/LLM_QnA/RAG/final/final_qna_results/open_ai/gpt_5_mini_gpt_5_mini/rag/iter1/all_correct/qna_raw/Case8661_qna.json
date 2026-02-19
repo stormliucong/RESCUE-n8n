@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria reference features diagnosed by age 18 (e.g., 'significant hearing or visual impairment diagnosed by 18 years'); patient is 7 years old, which meets the age-related phrasing in the WGS criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is the child's neurologist, meeting the requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "WGS criteria require (among other items) clinical history suggesting a genetic cause plus qualifying features. The patient has significant hearing/visual impairment (one listed feature) and a first-degree sibling with early-onset epileptic encephalopathy (relevant family history listed as a qualifying feature), and the clinical presentation is nonspecific—therefore the medical indication in policy is met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy for WGS requires that neither CMA nor WES have been performed; patient has only had Fragile X testing (no CMA or WES), satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' and 'consanguinity' as relevant features; patient has a sibling with early-onset epileptic encephalopathy, which is relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make pre-test counseling an explicit required coverage criterion; thus counseling is recommended but not specified as mandatory for coverage."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy 'Applicable Codes' lists 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponding to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, WGS is medically necessary when criteria are met: (1) neither CMA nor WES performed (true), (2) ordered by an approved provider type (neurologist, true), and (3) clinical history suggests genetic cause with qualifying features (significant childhood hearing/visual impairment plus relevant first-degree family history). Therefore WGS meets coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36963,
+    "output_tokens": 2788,
+    "total_tokens": 39751
+  }
+}

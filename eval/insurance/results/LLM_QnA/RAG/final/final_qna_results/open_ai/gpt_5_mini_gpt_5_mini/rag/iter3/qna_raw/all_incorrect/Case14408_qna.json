@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient was referred specifically for BRCA1/2 testing per the clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided Cigna/EviCore hereditary cancer syndrome policy does not state any age-based eligibility limits for BRCA1/2 testing in the excerpts provided; BRCA-specific criteria are referenced to a separate 'BRCA Analysis' guideline not included here."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate provider but does not specify ordering provider specialty or type for BRCA testing in the provided text; the ordering provider is a family medicine physician but the policy does not define explicit ordering-provider requirements here."
+    },
+    "Q3": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy states that coverage for panels requires the member to 'meet criteria for BRCA Analysis based on current EviCore guideline BRCA Analysis,' but the specific BRCA medical-necessity criteria are not included in the provided document, so it is not possible to determine whether this patient meets those BRCA-specific criteria from the supplied text."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided guideline specifies prior-testing restrictions for multigene panels (e.g., no previous panel or hereditary cancer testing for genes on the panel) but does not provide explicit prior-test requirements for standalone BRCA1/2 testing in the excerpts given; the patient does have no prior genetic testing, but the policy's BRCA-specific prior-test rules are not present here."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy emphasizes the importance of family history and references BRCA criteria (which are in a separate guideline), but the provided text does not explicitly define which family-history constellations (e.g., a male first‑degree relative with breast cancer) satisfy BRCA eligibility; thus relevance cannot be confirmed from the supplied policy text alone."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The guideline requires pre- and post-test genetic counseling by an appropriate provider; the clinical information states pre-test counseling was completed and post-test follow-up with a genetic counselor is planned, meeting that requirement per the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy lists several procedure codes for panels and microarray (e.g., 81228, 81432) but does not provide the single-gene BRCA CPT code mapping in the supplied text; none of the BRCA-specific CPT codes appear in the excerpts, so an appropriate CPT from the given options cannot be determined from the document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the provided policy, authorization/coverage for BRCA testing requires meeting the specific 'BRCA Analysis' criteria (referenced but not included). The supplied documentation does not demonstrate that the patient meets those BRCA-specific medical-necessity criteria, so coverage cannot be approved based on the available policy text."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11858,
+    "output_tokens": 3402,
+    "total_tokens": 15260
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information states the clinician requested BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy requires affected/unaﬀected individuals to be at least 18 years for routine BRCA testing and states 'In children <18 y, genetic testing is generally not recommended.' The patient is 15, so age criteria are not met."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires precertification but does not specify required ordering provider specialty or credentials for BRCA testing; the ordering provider being a general pediatrician is not addressed in the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Coverage criteria require personal or family history features (e.g., breast/ovarian/pancreatic/prostate cancer, known familial mutation) or other specified indications. The patient is unaffected, has Hirschsprung disease (not a BRCA indication), and no family history of cancer, so no medical indication per policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate completion of specific prior laboratory tests before BRCA testing; it does require genetic counseling and consideration of testing affected relatives first, but no prior diagnostic test requirement is specified in this case."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy coverage depends on relevant family cancer history; the patient’s family history documents no cancers (mother has bipolar disorder only), so the family-history criteria in the policy are not met."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy specifies testing is covered only for individuals who have received genetic counseling; there is no documentation of pre-test genetic counseling for this patient."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map BRCA testing to specific CPT codes, so a CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, BRCA testing coverage requires age ≥18 and relevant personal/family cancer indications and documented genetic counseling; the 15-year-old patient lacks the age requirement, relevant cancer personal/family history, and documented pre-test counseling, therefore testing is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18236,
+    "output_tokens": 1967,
+    "total_tokens": 20203
+  }
+}

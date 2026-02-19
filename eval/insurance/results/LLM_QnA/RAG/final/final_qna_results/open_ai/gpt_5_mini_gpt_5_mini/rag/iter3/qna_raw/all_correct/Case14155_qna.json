@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical information explicitly states whole genome sequencing (WGS) has been requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years for genome sequencing; the patient is 7 years old, meeting the age criterion (MOL.TS.306.C)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The guideline requires an appropriate genetic and family history evaluation and a clinical letter detailing that evaluation be provided. The record only states neurology referral and no clinical evaluation letter is provided; therefore ordering/provider documentation requirements are not satisfied (MOL.TS.306.C criteria)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Medical necessity requires that a genetic etiology is the most likely explanation and fulfillment of phenotype-specific criteria (e.g., global developmental delay under age 5, moderate/severe ID, multiple congenital anomalies, OR TWO of listed criteria). The patient has a formal concern for autism but no second qualifying feature is documented, so the policy's phenotype-based medical indication is not met (MOL.TS.306.C)."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that the member has not had previous exome or genome sequencing; the patient has had no prior genetic testing, so the policy's prior-test requirement (absence of prior ES/GS) is satisfied (MOL.TS.306.C)."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has a family history (maternal uncle with severe immunologic disorder), the standard GS coverage criteria do not list family history/consanguinity as a standalone required eligibility criterion (family history is required to be evaluated but is not specified as a discrete qualifying criterion for standard GS in the policy)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires an appropriate genetic and family history evaluation and documentation but does not explicitly mandate pre-test genetic counseling by a genetic counselor as a condition of coverage in the criteria section; ACMG counseling recommendations are referenced but not listed as an explicit coverage requirement in the policy criteria."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy states 81425 should be billed for the proband when analyzing the entire genome sequence (Genome sequence/proband = 81425)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the Cigna genome sequencing guideline the request fails coverage requirements: the patient does not meet the policy's phenotype-based medical necessity criteria (only autism documented without a second qualifying feature), and required documentation of an appropriate genetic/family history evaluation and clinical letter is not provided. Therefore WGS is not covered per MOL.TS.306.C."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9161,
+    "output_tokens": 2444,
+    "total_tokens": 11605
+  }
+}

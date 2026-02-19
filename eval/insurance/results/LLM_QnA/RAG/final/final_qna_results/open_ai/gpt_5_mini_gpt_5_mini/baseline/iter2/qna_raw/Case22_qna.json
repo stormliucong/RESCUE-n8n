@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The case states the patient is 'undergoing BRCA1/2 testing' to evaluate hereditary predisposition for high-risk metastatic prostate cancer. This explicitly names BRCA1/2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP BRCA coverage is driven by personal/family cancer history and clinical indication rather than strict age cutoffs; no age-based exclusion for an 18-year-old with personal metastatic prostate cancer is specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policies typically require an appropriate ordering clinician but do not mandate a specific specialty for BRCA testing; the record shows an ordering physician (neurologist) but the policy does not specify ordering-provider specialty requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP covers BRCA testing for individuals with a personal history of high-risk/metastatic prostate cancer and/or prostate cancer with intraductal/cribriform histology per NCCN-aligned criteria. The patient has metastatic high-risk prostate cancer with intraductal/cribriform histology, meeting a covered clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP coverage for BRCA1/2 does not require completion of prior genetic tests (CMA is not a prerequisite); no specific prior-test requirement is stated in the policy and the nondiagnostic CMA does not affect BRCA eligibility."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of a first-degree relative (father) with metastatic high-risk prostate cancer with intraductal/cribriform features is relevant to BCBS FEP BRCA coverage criteria and supports testing eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP and standard coverage policies expect documented pre-test counseling for germline BRCA testing. The patient completed pre-test counseling and has post-test follow-up arranged, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The correct CPT codes for BRCA1 and BRCA2 sequence analysis (e.g., 81211, 81213) and associated deletion/duplication codes are not among the provided choices; therefore a precise mapping to the listed CPT options cannot be made."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Applying BCBS FEP medical policy: the patient has a covered clinical indication (personal metastatic high-risk prostate cancer with intraductal/cribriform histology and a positive family history), documented pre-test counseling, and no disqualifying prior-test requirements—BRCA1/2 testing is therefore covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2011,
+    "output_tokens": 1997,
+    "total_tokens": 4008
+  }
+}

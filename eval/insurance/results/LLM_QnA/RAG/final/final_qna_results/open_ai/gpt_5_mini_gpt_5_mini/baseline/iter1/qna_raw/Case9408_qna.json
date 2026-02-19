@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The note explicitly states the patient is undergoing whole exome sequencing (WES) requested by a medical geneticist for evaluation of epileptic encephalopathy."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Blue Cross Blue Shield FEP WES coverage policies do not impose a strict age cutoff for diagnostic WES; the policy is indication-based (early-onset epileptic encephalopathy is eligible). The patient is 17, but age-specific eligibility is not specified in the payer criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "FEP policies generally require ordering or authorization by an appropriate specialist (e.g., medical geneticist/genetics provider). The test was ordered by a medical geneticist, meeting provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "FEP WES coverage criteria include individuals with unexplained epileptic encephalopathy with onset in early childhood; the patient has epileptic encephalopathy with onset before age 3, which meets a listed medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "FEP criteria for WES typically expect prior chromosomal microarray (CMA) testing for neurodevelopmental/epilepsy indications; the record states CMA was previously performed and was nondiagnostic, satisfying prior test requirements."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "While family history of a similar neurologic disorder can support eligibility, the documented family history is a maternal severe immunologic/hematologic disorder, which is not a relevant family history for epilepsy/epileptic encephalopathy per FEP criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "FEP WES policies require pre-test genetic counseling and plans for post-test counseling; the record documents pre-test counseling and planned post-test follow-up with a genetic counselor, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) for a proband and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under Blue Cross Blue Shield FEP criteria the patient meets indication (early-onset epileptic encephalopathy), required prior testing (nondiagnostic CMA), ordering provider requirements (medical geneticist), and counseling requirements; therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1998,
+    "output_tokens": 1668,
+    "total_tokens": 3666
+  }
+}

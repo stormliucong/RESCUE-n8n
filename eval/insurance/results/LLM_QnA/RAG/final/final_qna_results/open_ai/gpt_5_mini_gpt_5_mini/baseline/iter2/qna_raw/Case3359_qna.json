@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states 'Whole exome sequencing (WES) is being requested' for the 4-year-old with hypotonia and developmental concerns."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES coverage policies specify pediatric patients with unexplained developmental delay/ID or neurodevelopmental disorders are eligible; the patient is 4 years old, which meets pediatric age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires an ordering clinician (physician/specialist) with documentation of medical necessity; the order is from a developmental pediatrician and pre-test counseling was done by a genetic counselor, which satisfies ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for unexplained developmental delay/intellectual disability or major neurodevelopmental concerns when prior testing nondiagnostic. The patient has significant hypotonia and ongoing developmental concerns consistent with those indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC policies typically require prior chromosomal microarray as first‑line testing for developmental delay; the record states CMA was previously performed and was nondiagnostic, satisfying prior-test requirements."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for genetic evaluation; the patient has a sibling with developmental delay, which is pertinent and supportive of genetic testing per UHC guidance."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of genetic counseling for WES; the record documents pre-test counseling by a genetic counselor on multiple occasions and plans for post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband or interpretation/reporting of exome sequencing), the appropriate code for the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC coverage criteria: pediatric patient with unexplained developmental delay/hypotonia, nondiagnostic prior CMA, appropriate ordering provider involvement, documented genetic counseling, and relevant family history — all criteria for WES coverage are met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1993,
+    "output_tokens": 1369,
+    "total_tokens": 3362
+  }
+}

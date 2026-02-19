@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states the cardiologist has ordered whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC sequencing policies do not impose a strict age cutoff for WES/WGS; pediatric patients with congenital anomalies are within typical covered populations, and no age-based exclusion is documented in the clinical information."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally require an appropriate ordering clinician but do not universally restrict ordering to a specific specialty in the provided context; the record shows a cardiologist ordered testing but the policy-specified ordering-provider specialty requirement is not documented in the patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria support WES/WGS for patients with multiple congenital anomalies not fitting a well-delineated syndrome; this 6-year-old has multiple congenital anomalies and thus meets the medical indication for diagnostic sequencing."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC coverage for diagnostic sequencing typically requires prior first‑tier testing (e.g., chromosomal microarray); Fragile X was done and nondiagnostic, but there is no documentation that chromosomal microarray (CMA) or other required prior tests were completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a relevant family history (a sibling with an inborn error of metabolism), which is pertinent to genetic testing eligibility per UHC criteria and can support molecular diagnostic evaluation."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies for comprehensive genomic testing typically require pre-test genetic counseling; the record states no genetic counseling was conducted prior to testing, so counseling requirements are unmet."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (WGS) with comprehensive analysis, which maps to the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical indication (multiple congenital anomalies) and has supportive family history, UHC coverage requires prior first‑tier testing (e.g., CMA) and pre‑test genetic counseling; those prerequisites are not documented (CMA not documented, counseling not performed), so coverage would not be approved at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1982,
+    "output_tokens": 1652,
+    "total_tokens": 3634
+  }
+}

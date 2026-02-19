@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient statement: 'whole exome sequencing (WES) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose an age limit for prenatal WES; age-related criteria in the policy apply to postnatal pediatric indications (e.g., diagnoses by age 18) but not to prenatal/fetal testing."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires prenatal WES to be ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist. Patient data do not state who ordered the WES or whether such consultation occurred, so compliance with ordering-provider requirement cannot be confirmed."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy prenatal WES indication: fetus with a congenital anomaly affecting a single organ system plus family history suggesting a genetic etiology qualifies. Patient has a major fetal cardiac anomaly (single organ) and a family history of an inborn error of metabolism in a sibling, satisfying the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires CMA and/or karyotype to have been performed and uninformative prior to prenatal WES. Patient had a prior chromosomal microarray (CMA) that was nondiagnostic, meeting this prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history as a qualifying feature for prenatal WES when a single-organ congenital anomaly plus family history suggests genetic etiology. Patient has family history of an inborn error of metabolism in an older sibling, which is relevant."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES/WGS. Patient/family have had multiple sessions with a genetic counselor, meeting the counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to 'Exome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis,' which matches the requested whole exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although patient meets the clinical indication (single-organ fetal anomaly plus relevant family history) and prior CMA was nondiagnostic, the policy requires that prenatal WES be ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist and that an appropriate fetal sample source be used. The patient record does not document that the ordering/consultation requirement or sample source are met; because the policy requires all listed criteria be satisfied for coverage, coverage cannot be confirmed and the request is not covered per the available documentation."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36980,
+    "output_tokens": 2360,
+    "total_tokens": 39340
+  }
+}

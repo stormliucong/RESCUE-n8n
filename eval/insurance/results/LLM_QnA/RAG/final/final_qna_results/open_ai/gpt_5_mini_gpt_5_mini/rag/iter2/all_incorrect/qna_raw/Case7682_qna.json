@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient note explicitly states 'whole exome sequencing (WES) is being requested.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy coverage applies to 'children' with unexplained congenital or neurodevelopmental disorders; the patient is a 9-year-old child, meeting the age-based criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion #1 requires evaluation by a clinician with expertise in clinical genetics and counseling; the patient had pre-test counseling with a genetic specialist, satisfying the ordering/evaluation requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires unexplained congenital or neurodevelopmental disorder in a child and prior genetic testing failed to yield a diagnosis; the patient has multiple congenital anomalies and a nondiagnostic prior karyotype, meeting the medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy examples mention prior testing (eg, CMA and/or targeted single-gene testing) but do not mandate a specific prior test as an absolute prerequisite; patient had a nondiagnostic karyotype but no CMA is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as relevant; the patient has a sibling with developmental delay, which is a specified relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced provider; patient had pre-test counseling with a genetic specialist and plans for post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT 81415 corresponds to exome sequencing (WES) interpretation and report."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All policy-required elements for medically necessary standard WES are met: child with multiple congenital anomalies, evaluated/counseled by genetics specialist, prior genetic testing nondiagnostic, relevant family history—thus WES may be considered medically necessary per the policy statement."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14826,
+    "output_tokens": 2176,
+    "total_tokens": 17002
+  }
+}

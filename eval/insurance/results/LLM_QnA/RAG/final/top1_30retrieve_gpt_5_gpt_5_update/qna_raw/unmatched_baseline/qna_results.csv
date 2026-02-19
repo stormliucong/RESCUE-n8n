@@ -1,0 +1,68 @@
+case_id,Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,token_input,token_output,token_total
+Case10363,WGS,Not Specified,Not Specified,Yes,No,No,Yes,81425,No,773,1174,1947
+Case10427,WGS,Yes,Not Specified,Yes,No,Yes,Yes,81425,No,767,1364,2131
+Case10451,WES,Yes,Not Specified,Yes,Yes,No,No,81415,No,773,1364,2137
+Case10529,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,No,761,1428,2189
+Case10850,WGS,Not Specified,Not Specified,No,No,Yes,Yes,81425,No,749,1750,2499
+Case10917,WES,Yes,Yes,Yes,Not Specified,Yes,Yes,81415,Yes,758,1301,2059
+Case11124,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,No,752,1044,1796
+Case1130,WES,Not Specified,Not Specified,Not Specified,No,No,Yes,81415,No,763,1176,1939
+Case11514,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,781,2644,3425
+Case11855,CMA,Not Specified,Not Specified,No,Yes,No,Yes,81228,No,785,1942,2727
+Case11981,WGS,Not Specified,Not Specified,Yes,No,No,Yes,81425,No,766,1942,2708
+Case12834,CMA,Yes,Yes,Yes,Yes,Not Specified,No,81228,No,765,2068,2833
+Case13406,WGS,Yes,Yes,No,Yes,No,Yes,81425,No,778,2898,3676
+Case13517,WES,Not Specified,Not Specified,Not Specified,No,Yes,Yes,81415,No,765,1624,2389
+Case13613,WES,Not Specified,Not Specified,Yes,No,Yes,Yes,81415,No,752,982,1734
+Case13675,WGS,Yes,Not Specified,Yes,No,Yes,No,81425,No,768,1236,2004
+Case14127,WES,Not Specified,Yes,Yes,No,Yes,Yes,81415,No,777,980,1757
+Case1428,WGS,Not Specified,Yes,No,No,Yes,No,81425,No,743,1172,1915
+Case14371,WES,Yes,No,Yes,No,No,Yes,81415,No,757,1426,2183
+Case1501,WES,Yes,Not Specified,Yes,No,No,Yes,81415,No,749,1300,2049
+Case15557,WGS,No,Not Specified,No,No,Yes,Yes,81425,No,752,1684,2436
+Case15820,CMA,Not Specified,Yes,Yes,Not Specified,No,Yes,81228,Yes,758,1622,2380
+Case15834,WES,Yes,Not Specified,No,No,Yes,Yes,81415,No,748,1300,2048
+Case15938,WGS,Yes,Not Specified,Not Specified,No,Yes,No,81425,No,761,1494,2255
+Case16246,BRCA1/2,Yes,Yes,Yes,Not Specified,Yes,No,81162,No,748,1175,1923
+Case16487,WES,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,759,1494,2253
+Case1778,WES,Not Specified,Not Specified,No,No,Not Specified,Not Specified,81415,No,709,1434,2143
+Case17822,WGS,Yes,Yes,Yes,No,Not Specified,No,81425,No,759,2324,3083
+Case17929,CMA,Not Specified,Not Specified,No,Yes,No,Yes,81277,No,768,1750,2518
+Case18257,BRCA1/2,Yes,Not Specified,Yes,No,No,No,81162,No,750,1111,1861
+Case18281,WGS,No,Not Specified,No,No,Yes,No,81425,No,756,2068,2824
+Case18821,WES,Not Specified,Not Specified,Yes,No,No,No,81415,No,765,1366,2131
+Case18868,WGS,No,Yes,No,No,Yes,No,81425,No,763,1746,2509
+Case18882,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,752,1300,2052
+Case19255,BRCA1/2,Yes,Not Specified,Yes,Yes,Yes,Yes,81162,Yes,746,2007,2753
+Case19321,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,756,1044,1800
+Case19905,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,729,1364,2093
+Case2211,BRCA1/2,Yes,Yes,Yes,Yes,Yes,Yes,81162,Yes,774,2581,3355
+Case2496,WES,Not Specified,No,No,No,Yes,No,81415,No,769,1428,2197
+Case3359,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,767,1492,2259
+Case3422,WES,Not Specified,Not Specified,Yes,Not Specified,No,Yes,81415,Yes,738,1304,2042
+Case3465,WGS,Yes,Yes,Yes,No,Yes,Yes,81425,No,755,3154,3909
+Case3474,WGS,Yes,Yes,Yes,No,Yes,Yes,81425,No,756,1042,1798
+Case3592,CMA,Yes,Not Specified,No,No,Yes,Yes,81228,No,764,1876,2640
+Case3677,BRCA1/2,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81162,Yes,771,1945,2716
+Case4067,WES,Yes,Not Specified,Yes,No,Yes,Not Specified,81415,No,744,1238,1982
+Case4196,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,No,771,1492,2263
+Case4512,WGS,No,Not Specified,Yes,No,Yes,Yes,81425,No,780,1556,2336
+Case4982,WES,Not Specified,Not Specified,Yes,No,Yes,Yes,81415,No,781,1558,2339
+Case5230,WES,Yes,Not Specified,Yes,Yes,Yes,No,81415,No,727,1428,2155
+Case5303,BRCA1/2,Not Specified,Yes,No,No,No,No,81162,No,734,1047,1781
+Case5380,WGS,Yes,Not Specified,Yes,Not Specified,No,No,81425,No,755,1430,2185
+Case5605,WGS,Not Specified,Not Specified,Not Specified,No,No,Yes,81425,No,743,2712,3455
+Case5885,WGS,Yes,Not Specified,Yes,Not Specified,Yes,Yes,81425,Yes,749,2262,3011
+Case6451,WGS,Yes,Not Specified,Not Specified,No,Yes,Yes,81425,No,749,1558,2307
+Case6478,BRCA1/2,Yes,Yes,Yes,Not Specified,Yes,No,81162,Yes,750,2263,3013
+Case7014,WGS,Yes,Not Specified,No,No,Yes,Yes,81425,No,757,1684,2441
+Case7297,WES,Yes,Not Specified,Yes,No,No,Yes,81415,No,771,1876,2647
+Case7376,WES,No,Not Specified,Yes,No,No,Yes,81415,No,757,1492,2249
+Case7604,WGS,Yes,Not Specified,Yes,No,Yes,No,81425,No,747,1236,1983
+Case7682,WES,Not Specified,Not Specified,Yes,No,Yes,Yes,81415,No,747,918,1665
+Case8288,WES,Not Specified,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,792,918,1710
+Case8621,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,762,1172,1934
+Case8661,WGS,Yes,Yes,Yes,No,Yes,No,81425,No,775,1554,2329
+Case8710,WES,Yes,Not Specified,Yes,No,Yes,No,81415,No,765,852,1617
+Case950,WES,Yes,Yes,Yes,No,No,Yes,81415,No,786,1874,2660
+Case9978,WES,Not Specified,Not Specified,Yes,Not Specified,Yes,Yes,81415,Yes,747,1944,2691

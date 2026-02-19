@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being evaluated by oncology for germline BRCA1 and BRCA2 testing; policy MOL.TS.238.A addresses BRCA analysis (BRCA1/2)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age requirement for BRCA testing (Known familial, Ashkenazi founder, and Full Sequence Analysis) specifies age 18 years or older; patient is 55, meeting the >=18 requirement (MOL.TS.238.A)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider for BRCA testing. Patient information states no pre-test genetic counseling was completed, so ordering-provider/counseling requirements are not satisfied per the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific diagnostic and personal/family-history criteria for BRCA full sequence analysis (e.g., breast/ovarian/pancreatic/prostate cancer, age-specific breast cancer criteria, specific family history). Patient has a non-specific 'primary solid tumor' and a maternal hematologic/immunologic disorder that do not meet the policy's listed BRCA clinical indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires no previous full sequencing/known BRCA mutation for full sequence analysis. Patient has not undergone prior genetic testing, satisfying the 'no previous genetic testing' requirement in the guideline."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history criteria (breast/ovarian/pancreatic/prostate cancers in defined relatives). The patient's family history (mother with hematologic/immunologic disorder) does not meet those specified cancer-related family-history criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires pre- and post-test genetic counseling by an appropriate provider for BRCA testing. Patient documentation states no pre-test genetic counseling was completed, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy procedure table lists CPT 81162 for BRCA1/2 full sequencing and duplication/deletion analysis (appropriate when sequencing and deletion/duplication analysis are performed concurrently)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and absence of prior testing meet policy requirements, the patient does not meet the policy-defined clinical indication/family-history criteria for BRCA testing and has not completed the required pre-test genetic counseling; per MOL.TS.238.A, these unmet criteria support denial of coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10313,
+    "output_tokens": 1836,
+    "total_tokens": 12149
+  }
+}

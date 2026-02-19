@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient notes explicitly state 'whole genome sequencing (WGS) is being requested' by neurology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare WGS policy does not impose an explicit age cutoff for WGS; eligibility is based on clinical features rather than patient age."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The request was initiated by/through neurology, meeting that ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical-indication criteria include nonspecific clinical presentation not fitting a well-defined syndrome and 'multiple congenital anomalies.' The infant has nonspecific multiple congenital anomalies, which matches the listed indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that neither CMA nor WES have been performed prior to WGS. Patient had a karyotype (nondiagnostic) but there is no record of prior CMA or WES, so the patient meets the prior-test condition for WGS."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy notes 'other first- or second-degree family member(s) with similar clinical features' as a supporting feature. The patient has a maternal aunt with a congenital anomaly (a second-degree relative), meeting the family-history criterion."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state it as a strict coverage requirement. The patient did receive pre-test counseling, but the policy does not define counseling as a mandatory eligibility criterion."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy lists CPT 81425 for 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponding to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All applicable policy criteria for medically necessary WGS are met: nonspecific presentation not fitting a defined syndrome with multiple congenital anomalies; ordering provider is a neurologist; neither CMA nor WES has been performed; and pre-test genetic counseling completed. Therefore WGS is covered per the UnitedHealthcare policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36945,
+    "output_tokens": 2353,
+    "total_tokens": 39298
+  }
+}

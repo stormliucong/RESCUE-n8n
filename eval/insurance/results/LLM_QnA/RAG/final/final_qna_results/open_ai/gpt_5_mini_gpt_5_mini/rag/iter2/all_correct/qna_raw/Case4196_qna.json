@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested as the next diagnostic step."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy refers to 'children' and pediatric indications but does not state a specific age cutoff; no explicit age-based eligibility criteria are provided in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires documentation that the individual 'has been evaluated by a clinician with expertise in clinical genetics'; the patient record notes referral by a cardiologist and that pre-test genetic counseling was completed, but it does not explicitly document evaluation by a clinician with expertise in clinical genetics or identify the ordering provider's specialty."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy: WES may be medically necessary for children with unexplained neurodevelopmental disorders when criteria met. Patient: 10-year-old with unexplained developmental delay/intellectual disability (neurodevelopmental disorder) for evaluation—meets the defined clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion allows WES when 'previous genetic testing has failed to yield a diagnosis.' Patient had prior FISH testing that was nondiagnostic, satisfying the 'previous testing failed to yield a diagnosis' condition."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as relevant. Patient has a brother diagnosed with moderate to severe intellectual disability in childhood, which is a relevant family history per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling as part of criterion 1. Patient information documents that pre-test genetic counseling has been completed with plans for post-test follow-up, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS FEP policy text does not list or reference CPT codes for WES; no CPT mapping is specified in the document."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on the policy, WES may be considered medically necessary for children with unexplained neurodevelopmental disorders when all criteria are met. The patient is a child with unexplained developmental delay/ID, prior genetic testing (FISH) was nondiagnostic, pre-test genetic counseling was completed, and there is relevant family history—together meeting the policy's indications for medically necessary WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14850,
+    "output_tokens": 2886,
+    "total_tokens": 17736
+  }
+}

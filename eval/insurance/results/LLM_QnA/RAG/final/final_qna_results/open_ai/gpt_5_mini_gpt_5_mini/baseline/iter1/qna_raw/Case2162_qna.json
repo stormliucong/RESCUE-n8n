@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states the infant was referred for whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP coverage for WGS/WES typically focuses on clinical indications rather than strict age cutoffs; no age-based exclusion or requirement is specified for an infant in the provided policy context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP WGS/WES coverage criteria emphasize clinical indications and pre-test counseling; the information provided does not indicate a payer requirement that a specific specialty (e.g., clinical geneticist) must place the order."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Per BCBS_FEP criteria, WGS/WES is medically indicated for patients with multiple congenital anomalies/multi-system involvement or suspected monogenic disorder; this infant has multiple congenital anomalies affecting multiple organ systems identified at birth."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP policies for WGS/WES commonly require prior standard genetic testing (e.g., chromosomal microarray) to be nondiagnostic before WGS in non‑critically ill patients; only Fragile X testing is documented (nondiagnostic), but no chromosomal microarray (CMA) result is provided."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While family history (an older sibling with ASD) is clinically relevant and supportive, BCBS_FEP WGS/WES coverage criteria do not mandate a specific family-history pattern as a general prerequisite, and the policy does not specify consanguinity/family-history requirements for this indication."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of pre‑test genetic counseling for WGS/WES; the record states pre-test genetic counseling was completed and post-test follow-up is planned, satisfying this requirement."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing procedures and is the code that best maps to the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the infant meets clinical indication and genetic counseling requirements, BCBS_FEP generally requires prior standard genetic testing (notably chromosomal microarray) to be nondiagnostic before approving WGS in non‑critically ill infants; no CMA result is documented, so coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1965,
+    "output_tokens": 2451,
+    "total_tokens": 4416
+  }
+}

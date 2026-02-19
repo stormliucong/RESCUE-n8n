@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP_20459 policy addresses CMA and NGS panels and states WES is addressed in a separate policy (2.04.102); no age-based eligibility criteria for WES are specified in this document."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and specialists for interpretation but does not specify ordering-provider (specialty/type) requirements for WES in this document."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "This policy defines medical indications for CMA (eg, apparently nonsyndromic developmental delay/ID) and states NGS panels are investigational; it does not define medical necessity criteria for WES (WES is referenced as addressed in a separate policy)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes CMA as first-line and mentions stepwise approaches (eg, fragile X and CMA first, then further testing if diagnosis not established), but it does not state explicit required prior testing for WES in this document."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has a relevant family history (affected brother), the provided policy does not specify family history or consanguinity criteria for WES eligibility within this document."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy recommends formal genetic counseling by experienced individuals for genetic testing generally and notes counseling should be performed by someone with expertise; the patient has completed pre-test counseling, but the record does not state the counselor's qualifications required by the policy, so adequacy relative to policy requirements cannot be confirmed from the provided information."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); among the provided CPT options, 81415 corresponds to exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The provided policy (FEP 2.04.59) does not establish coverage criteria for WES (it states WES is addressed in a separate policy 2.04.102) and labels NGS panel testing investigational; because WES coverage criteria are not specified in this document and are handled elsewhere, coverage cannot be confirmed under this policy, so it is not covered based on the provided policy text."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15710,
+    "output_tokens": 2141,
+    "total_tokens": 17851
+  }
+}

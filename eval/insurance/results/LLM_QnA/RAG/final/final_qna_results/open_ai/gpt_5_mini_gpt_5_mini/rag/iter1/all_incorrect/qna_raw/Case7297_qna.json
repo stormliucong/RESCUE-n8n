@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued to identify an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy states WES may be medically necessary for evaluation of unexplained congenital or neurodevelopmental disorders in children; the patient is a 3-year-old child, which meets the 'children' age criterion in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling; patient had pre-test counseling completed with a genetic specialist, satisfying the provider/evaluation requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication includes children with multiple unexplained congenital anomalies; the patient has multiple congenital anomalies affecting different organ systems, meeting the specified clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that a genetic etiology be considered despite previous genetic testing or when prior testing failed to yield a diagnosis; the patient had prior karyotype testing that was nondiagnostic, which fulfills the 'previous testing failed' criterion."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy discusses family history examples relevant for selection (eg, arrhythmia, developmental delay) and requires documentation of family history, but it does not specifically list maternal aunt with ovarian cancer as a defined eligibility criterion for WES; thus specific relevance is not specified in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an individual experienced in genetic medicine; patient had pre-test counseling with a genetic specialist and plans for post-test follow-up, meeting the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT code 81415 corresponds to exome sequencing and is the best match among the provided code options."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All policy-required criteria are met: patient is a child with multiple congenital anomalies, has been evaluated/counseled by a genetics specialist, and prior genetic testing (karyotype) was nondiagnostic; under the policy, standard WES may be considered medically necessary in this scenario."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14850,
+    "output_tokens": 2413,
+    "total_tokens": 17263
+  }
+}

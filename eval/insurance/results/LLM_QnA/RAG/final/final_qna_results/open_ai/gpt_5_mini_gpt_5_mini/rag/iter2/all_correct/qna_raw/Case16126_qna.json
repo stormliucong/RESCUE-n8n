@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information states BRCA1 and BRCA2 testing has been ordered. Basis: the patient's clinical info explicitly names BRCA1/BRCA2."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy explicitly states genetic testing in minors for BRCA1/BRCA2/PALB2 is considered investigational. The patient is a 6‑week‑old infant (minor), so age does not meet policy age-related eligibility. Basis: FEP policy 'Testing Minors' statement."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers who can give pre‑ and post‑test counseling. Patient had pre‑test counseling and plans post‑test follow up with a genetic counselor, satisfying the policy's provider/counseling setting requirement. Basis: policy 'Genetic testing should be performed in a setting that has suitably trained health care providers ... pre- and post-test counseling'."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy medical indications for BRCA1/2 testing are personal cancer history or family history suggesting HBOC or other listed criteria. The infant has no personal or family cancer history meeting those criteria. Basis: policy 'Individuals With Cancer or With a Personal History of Cancer' and 'Individuals Without Cancer' criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy provides recommended testing strategies (eg, test an affected family member first) but does not define a specific required prior test (FISH is not listed). The policy does not explicitly require any prior test in this clinical scenario. Basis: policy 'Recommended Testing Strategies' and testing-unaffected guidance."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family cancer history criteria for BRCA testing (first/second/third‑degree relatives with cancer). The patient record does not report a qualifying family cancer history. Although parents are consanguineous, consanguinity is not listed as a BRCA testing eligibility criterion in the policy. Basis: policy family history/close relatives definitions and testing criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy recommends formal genetic counseling and that testing occur where pre‑ and post‑test counseling is available. Patient had pre‑test counseling and plans post‑test follow‑up with a genetic counselor, meeting policy counseling requirements. Basis: policy 'Genetic Counseling' statements and requirement for pre/post counseling."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map BRCA testing to any CPT codes. No CPT guidance is given in the policy text. Basis: absence of CPT code information in the FEP policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the FEP policy, genetic testing for BRCA1/2 in minors is considered investigational (not covered). Additionally, the patient does not meet the policy's medical indications (no relevant personal or family cancer history). Although counseling requirements are met, the investigational status for minors and lack of medical indication lead to noncoverage. Basis: policy 'Testing Minors' (investigational) and medical necessity criteria for BRCA1/2 testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18931,
+    "output_tokens": 2490,
+    "total_tokens": 21421
+  }
+}

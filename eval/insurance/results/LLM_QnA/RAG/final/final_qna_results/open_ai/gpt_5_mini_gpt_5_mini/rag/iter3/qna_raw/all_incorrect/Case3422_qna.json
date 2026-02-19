@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient is being considered for whole-exome sequencing (WES) per the clinical information ('consideration of whole-exome sequencing (WES)')."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The Concert policy does not set an upper age limit for standard exome sequencing; age-specific limits apply only to rapid/infant testing (<=12 months). Therefore no applicable age-based exclusion for this adult requesting standard WES is specified in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires pre-/post-test counseling and that the patient and family history be evaluated by a Board-Certified/Board-Eligible Medical Geneticist or an Advanced Practice Nurse in Genetics (criteria I.F and I.G). Patient data states only that she has 'seen a genetic counselor multiple times' and does not document evaluation by a Board-Certified/Board-Eligible Medical Geneticist or APGN; thus ordering/provider requirements per policy are not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Under Standard Exome criteria (I.A.2) a genetic etiology is supported by either multiple congenital abnormalities affecting unrelated organ systems OR TWO of listed features (e.g., significant single-organ abnormality plus another feature). The patient has a single congenital anomaly (choanal atresia) and no second qualifying feature (no dysmorphisms, encephalopathy, complex neurodevelopmental symptoms, consanguinity, or suggestive labs documented). Therefore she does not meet the policy's defined medical indication for standard WES."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate completion of a specific prior test (e.g., CMA) as an absolute prior-test requirement in the Standard Exome criteria, though background text notes exome may be considered after nondiagnostic CMA. The formal coverage criteria list 'alternate etiologies considered' but do not explicitly require prior CMA completion."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists 'family history strongly suggestive of a genetic etiology, including consanguinity' as a qualifying criterion. The patient reports a single first‑degree relative (mother) with breast cancer at age 50, which is not documented as a family history meeting the policy's threshold of 'strongly suggestive' (no multiple affected relatives, early-onset pattern, or consanguinity)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test counseling by an appropriate provider (e.g., Certified Genetic Counselor). Patient information states she 'has seen a genetic counselor multiple times,' which satisfies the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy lists CPT 81415 as the common code for standard exome sequencing (proband). The requested test is WES (standard exome), so 81415 is the appropriate corresponding CPT code per the policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the Concert policy, coverage for standard WES requires meeting the defined medical indications (e.g., multiple congenital anomalies OR two qualifying features) and evaluation by a Board-Certified/Board-Eligible Medical Geneticist or APGN. The patient has a single congenital anomaly (choanal atresia) and lacks a second qualifying criterion, and there is no documented evaluation by a Board-Certified/Board-Eligible Medical Geneticist or APGN. Although she had nondiagnostic CMA and genetic counseling (noted in background), she does not meet the explicit medical necessity and provider-evaluation criteria; therefore WES is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12213,
+    "output_tokens": 3018,
+    "total_tokens": 15231
+  }
+}

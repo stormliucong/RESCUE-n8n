@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The record explicitly states Whole Genome Sequencing (WGS) is being requested to evaluate for an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WGS/WES policies generally do not impose a strict single-age cutoff in pediatric neurodevelopmental indications; no age-based exclusion/inclusion criterion is specified in the provided information."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The record documents pre-test discussion with a genetic specialist but does not clearly state who is the ordering provider; UHC policies typically require appropriate ordering documentation but do not mandate a single specific ordering specialty in the provided data."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has persistent abnormal muscle tone from infancy with ongoing motor concerns and developmental surveillance—consistent with unexplained neurodevelopmental phenotype (an accepted indication under UHC WGS/WES criteria), and prior fragile X testing was nondiagnostic."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior first‑tier testing (chromosomal microarray and/or other indicated targeted tests) for unexplained developmental delay/ID before WES/WGS; the record documents fragile X testing but does not document prior CMA, so required prior testing is not shown as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of a maternal uncle with a severe immunologic disorder is reported; family history is included in UHC considerations and is potentially relevant to genetic evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre-test discussion with a genetic specialist is documented, satisfying UHC requirements for genetic counseling prior to WES/WGS."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing with analysis and report, which matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication and genetic counseling meet UHC criteria, required prior testing (notably CMA/first‑tier chromosomal microarray) was not documented as completed; failing prior-test requirements leads to noncoverage per UHC policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1992,
+    "output_tokens": 2070,
+    "total_tokens": 4062
+  }
+}

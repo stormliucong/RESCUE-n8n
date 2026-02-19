@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC genomic sequencing policies do not impose a strict age cutoff for WGS; coverage criteria are based on clinical indications rather than a specific age limit, so no age-based exclusion applies to this 7‑week‑old infant."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires WGS be ordered/authorized by an appropriate provider and pretest genetic counseling/documentation is expected; the case documents referral by neurology and pre‑test counseling by a genetic specialist, meeting provider/ordering requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WGS for patients with unexplained multiple congenital anomalies or complex neurodevelopmental/neurologic presentations when prior targeted testing is nondiagnostic. The infant has multiple congenital anomalies not fitting a known syndrome and neurologic referral, satisfying a covered clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior appropriate cytogenetic testing such as chromosomal microarray (CMA) (or documentation why CMA is inappropriate) before WGS. Only a nondiagnostic karyotype is documented; CMA completion is not documented, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is documented (maternal aunt with a congenital anomaly). While not determinative, the presence of a relative with a congenital anomaly is relevant to genetic evaluation per UHC criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC expects pre‑test genetic counseling for comprehensive genomic testing; the record states pre‑test counseling was completed with a genetic specialist, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (WGS) with analysis/interpretation and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the infant meets clinical indication and counseling/provider requirements, UHC coverage typically requires prior chromosomal microarray (or documentation why it is not appropriate) before WGS. CMA is not documented as completed; therefore, under UHC criteria the WGS request would not meet all prior test requirements and is not covered as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1983,
+    "output_tokens": 1925,
+    "total_tokens": 3908
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info states 'whole genome sequencing (WGS) is being pursued' — the requested test is WGS."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: WES/WGS medically necessary for pediatric patients <21 with unexplained congenital disorder. Patient is 8 weeks old (<21 years), so age criterion is met."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual 'has been evaluated by a clinician with expertise in clinical genetics and counseling was provided.' Ordering provider is a neonatologist and there is no documentation of evaluation by a clinician with genetics expertise, so provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication: unexplained congenital anomalies in pediatrics with prior non-diagnostic testing or atypical presentation. Patient has congenital hearing/visual impairment and prior FISH was nondiagnostic, consistent with policy indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy allows WES/WGS when prior genetic testing is non-diagnostic OR as first-line in some situations; it does not mandate a specific required prior test for all cases, so specific prior-test requirements are not explicitly specified."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of arrhythmia and long QT syndrome as relevant clinical features; patient has a father with long QT syndrome, which is relevant per policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires counseling by a clinician with genetics expertise prior to testing. Patient record notes no documentation of pre-test genetic counseling, so counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT options, the policy lists 81415/81425 etc. and 81425 corresponds to genome sequencing (WGS) in the policy coding list of covered procedure codes."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and clinical indication (congenital anomalies, prior nondiagnostic FISH, relevant family history) would support WGS, the policy requires prior evaluation by a clinician with expertise in clinical genetics with provision of pre-test counseling — which is not documented. Because this required criterion is unmet, the test does not meet the policy's conditions for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14877,
+    "output_tokens": 2232,
+    "total_tokens": 17109
+  }
+}

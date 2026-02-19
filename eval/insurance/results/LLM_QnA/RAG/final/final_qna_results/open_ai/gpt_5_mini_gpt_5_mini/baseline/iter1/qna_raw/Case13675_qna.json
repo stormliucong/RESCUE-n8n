@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The note explicitly states whole genome sequencing (WGS) is being pursued for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare WES/WGS coverage policies specify pediatric patients with early-onset congenital anomalies or suspected monogenic disorders are eligible; an 8‑week‑old infant with congenital hearing/visual impairment meets pediatric age criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require an appropriate ordering clinician (physician or qualified specialist) – the test was ordered by a neonatologist, which meets ordering provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC generally covers WGS when used to evaluate unexplained congenital anomalies or early-onset multisystem findings; significant congenital hearing and/or visual impairment in early infancy is a recognized medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC commonly requires prior appropriate targeted testing (e.g., chromosomal microarray) or documentation that prior standard testing was nondiagnostic; only FISH (nondiagnostic) is documented and no CMA or other recommended prior testing is shown."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of a father with long QT syndrome is documented and is potentially relevant to interpretation of cardiac-related findings, which UHC considers supportive evidence for broader genomic testing."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC typically requires documentation of pre-test genetic counseling for WGS/WES; the record states there is no documentation of pre-test genetic counseling."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (WGS) interpretation and report, matching the explicitly requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, and clinical indication are met, required pre-test documentation is incomplete per UHC policy (no documented pre-test genetic counseling and no documented prior chromosomal microarray/required prior testing), so coverage criteria are not fully satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1994,
+    "output_tokens": 1602,
+    "total_tokens": 3596
+  }
+}

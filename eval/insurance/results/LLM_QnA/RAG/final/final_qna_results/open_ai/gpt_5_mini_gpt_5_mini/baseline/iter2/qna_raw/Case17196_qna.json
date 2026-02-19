@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The patient is explicitly referred for chromosomal microarray (CMA) testing in the provided clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP CMA coverage criteria are indication-based (developmental delay/ID, autism, congenital anomalies) rather than age-limited; no specific age cutoff is specified that would make a 63-year-old ineligible."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP medical policy for CMA focuses on clinical indications; there is no payer-specific ordering-provider specialty requirement documented in the provided facts."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS FEP CMA medical necessity is generally limited to unexplained developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies. The patient has a longstanding psychiatric presentation (bipolar/schizophrenia/OCD features), which does not meet those specified indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP CMA policy does not universally mandate specific prior testing (and CMA is often first-line for developmental delay); while a karyotype was performed and nondiagnostic, the policy does not specify required prior tests in this clinical context."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history requirements are not a defined criterion for BCBS FEP CMA coverage in the standard indications; the sibling history of sensory impairment is noted but does not map to a stated family-history-based eligibility rule."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Pre-test genetic counseling may be best practice, but BCBS FEP CMA coverage criteria focus on clinical indications; a counseling requirement is not specified in the provided payer criteria, and no documented counseling was performed."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to genome-wide chromosomal microarray (constitutional copy number/SNP microarray) testing, which matches the requested CMA."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying BCBS FEP coverage criteria: CMA is covered for unexplained developmental delay/intellectual disability, autism, or multiple congenital anomalies. The patient’s indication is a psychiatric/neuropsychiatric presentation (bipolar/schizophrenia/OCD features) in a 63-year-old, which does not meet the payer's specified medical necessity criteria for CMA; prior karyotype was nondiagnostic but does not change the lack of a covered indication."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1992,
+    "output_tokens": 2019,
+    "total_tokens": 4011
+  }
+}

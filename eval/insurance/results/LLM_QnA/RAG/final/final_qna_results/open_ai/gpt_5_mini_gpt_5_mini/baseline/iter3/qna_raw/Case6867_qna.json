@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The note explicitly states she presents for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP hereditary cancer testing coverage is driven by personal and family cancer history criteria rather than a strict cutoff based solely on the proband's current age; the record gives the patient's age (50) but no policy-specific age exclusion is indicated."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP requires the test be ordered by an appropriate licensed provider; the order was placed by a nurse practitioner (an authorized ordering clinician) and pre-test counseling was performed by a genetic counselor, meeting ordering/provider expectations."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria include a personal history of breast cancer and/or a first-degree relative with cancer types associated with BRCA variants (mother with breast cancer at 50; brother with metastatic prostate showing intraductal features), which meet BCBS FEP indications for BRCA testing."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP does not mandate prior genetic testing or tumor testing for routine full BRCA1/2 germline analysis in this clinical scenario; no specific prior tests are documented as required."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for BRCA testing under the payer policy and are met here: first-degree relatives include a mother with breast cancer at age 50 and a brother with metastatic prostate with intraductal features (BRCA-associated)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP expects documentation of pre-test genetic counseling for hereditary cancer testing; the patient had multiple pre-test counseling visits with a genetic counselor, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "The CPT code corresponding to full sequence analysis of BRCA1 and BRCA2 (germline BRCA testing) is 81162."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS FEP hereditary cancer testing criteria the combination of the patient's personal history of breast cancer plus relevant first‑degree relatives (mother with breast cancer at 50; brother with metastatic prostate with intraductal features) and documented pre‑test counseling supports medical necessity and coverage for BRCA1/2 testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1986,
+    "output_tokens": 2441,
+    "total_tokens": 4427
+  }
+}

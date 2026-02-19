@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) was ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose an overall age cutoff for WES; age limits in the policy apply to specific clinical features (e.g., ID or sensory impairment diagnosed by age 18). The patient is 16 but no overall age-based exclusion or requirement for WES is specified in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The test was ordered by a developmental pediatrician (patient fact), meeting the policy provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES when clinical history suggests a genetic cause and one feature is present, including 'laboratory abnormalities suggestive of an inborn error of metabolism (IEM)'. The patient has conjugated hyperbilirubinemia with a sibling having lab abnormalities suggestive of an IEM, satisfying the listed clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define specific prior diagnostic tests required for non‑prenatal WES in this scenario (except that targeted single‑gene/panel testing is preferred if a specific syndrome is suspected). No mandatory prior tests are specified for evaluation of suspected IEM in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Other first- or second-degree family member(s) with similar clinical features' as a qualifying feature for WES. The patient has a sibling with laboratory abnormalities suggestive of an IEM, meeting this family-history criterion."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES but does not state counseling as a mandatory coverage criterion. Patient facts note pre-test counseling was completed, but the policy does not make this a required coverage element."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable codes list 81415 for exome sequence analysis (proband). The requested WES for the patient corresponds to CPT code 81415."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per policy coverage rationale, WES is medically necessary when (1) clinical presentation is nonspecific, (2) ordered by an approved specialist, and (3) one qualifying feature is present (e.g., laboratory abnormalities suggestive of IEM or a first-degree relative with similar features). The patient: has nonspecific conjugated hyperbilirubinemia, was ordered by a developmental pediatrician, and has a sibling with lab findings suggestive of an IEM. These facts meet the policy criteria for covered WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36953,
+    "output_tokens": 2014,
+    "total_tokens": 38967
+  }
+}

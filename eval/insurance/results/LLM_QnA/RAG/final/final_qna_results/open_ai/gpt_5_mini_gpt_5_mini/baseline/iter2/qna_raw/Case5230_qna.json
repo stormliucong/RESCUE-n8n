@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states the patient was referred for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria are driven by clinical indication rather than strict age cutoffs; the patient is 15 (adolescent) which is within typical covered age ranges, and the policy does not impose a specific age exclusion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies require ordering by an appropriate treating clinician but do not universally restrict ordering to a specific specialty in all cases; the patient was referred by neurology (an appropriate specialist), and the policy does not state a single mandatory ordering provider type."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for individuals with unexplained congenital anomalies or suspected monogenic disorders when prior testing is nondiagnostic; the patient has a congenital anomaly and suspected genetic etiology."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC WES criteria require prior chromosomal microarray for congenital anomalies; the record documents a nondiagnostic CMA was completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "UHC considers relevant family history supportive of testing; the patient has a sibling with an inborn error of metabolism, which is relevant to WES consideration."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC typically requires documentation of pre-test genetic counseling by a qualified provider; here genetic counseling was declined and no counseling documentation is provided, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband-only exome) which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications and prior testing meet UHC WES medical necessity criteria (congenital anomaly with nondiagnostic CMA and supportive family history), the required pre-test genetic counseling/documentation is not met (patient declined), therefore coverage criteria are not fully satisfied per UHC policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1953,
+    "output_tokens": 1996,
+    "total_tokens": 3949
+  }
+}

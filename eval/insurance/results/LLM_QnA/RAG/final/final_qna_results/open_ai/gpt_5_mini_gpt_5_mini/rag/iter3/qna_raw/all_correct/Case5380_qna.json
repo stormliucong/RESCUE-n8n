@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists age-related clinical features (e.g., epileptic encephalopathy with onset before 3 years); the patient is an 8-week-old infant with early-onset seizure-like episodes, meeting the age-related feature."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient was referred by neurology (a neurologist), satisfying the ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Ignoring other requirements, the policy defines neurologic features/early-onset epilepsy (epileptic encephalopathy before age 3) as a qualifying medical indication; the infant has recurrent seizure-like episodes consistent with that clinical criterion."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy prerequisite for WGS states 'Neither CMA nor WES have been performed.' The patient has already had CMA (nondiagnostic), so the required prior-test condition for WGS is not met."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history criteria (e.g., consanguinity or first/second-degree relatives with similar features). The record notes maternal short stature but no family members with similar seizure/neuro features or consanguinity, so relevant family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state counseling as a strict coverage requirement; the family declined pre-test counseling, but counseling is not defined as a mandatory coverage criterion in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable codes list maps whole genome sequence analysis to CPT 81425 ('Genome ... sequence analysis'), which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the infant meets clinical and ordering-provider criteria (early-onset seizures, neurologist ordering), the policy requires that 'Neither CMA nor WES have been performed' before WGS; prior CMA was performed (nondiagnostic), therefore WGS does not meet the policy's coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36943,
+    "output_tokens": 2685,
+    "total_tokens": 39628
+  }
+}

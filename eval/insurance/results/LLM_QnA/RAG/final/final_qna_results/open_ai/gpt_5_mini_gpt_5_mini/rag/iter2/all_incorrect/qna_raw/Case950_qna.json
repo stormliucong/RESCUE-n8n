@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) is being pursued to look for an underlying genetic cause of early-onset epileptic encephalopathy."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related eligibility is based on onset of seizures in early childhood (before age 5). Patient had seizure onset before age 3, meeting the policy's age/onset criterion (Policy Guidelines: 'Onset of seizures in early childhood (i.e., before the age of 5 years)')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The epilepsy policy does not specify ordering-provider specialty or explicit provider-type requirements for ordering WES; it only states genetic counseling should be performed by an individual with experience in genetic medicine."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy states testing is medically necessary for infantile-/early-childhood-onset epileptic encephalopathies when epilepsy is the core symptom. Patient has unexplained epileptic encephalopathy with onset <3 years, no other syndrome identified, and seizures are the core clinical issue — matching the policy's medical-indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses testing strategies (targeted gene testing or multigene panels) and points to MP 2.324 for WES criteria, but does not explicitly require completion of specific prior tests (e.g., prior panel) before WES within this document."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define family-history/consanguinity requirements for eligibility for genetic testing for epilepsy. The patient's family history (uncle with prostate cancer) is not relevant to the policy criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy recommends formal genetic counseling by someone experienced in genetic medicine. Patient has seen a genetic counselor multiple times and has plans for post-test counseling, satisfying the policy's genetic counseling expectations."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole exome sequencing (WES); of the provided CPT options, 81425 corresponds to whole exome sequencing and is the best match to the requested test (policy coding references multiple 8140x procedure codes for genetic testing)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, genetic testing for infantile-/early-childhood-onset epileptic encephalopathies is medically necessary when criteria are met (onset before age 5, severe encephalopathy/epilepsy as primary symptom, no other syndrome). The patient meets these criteria (onset <3 years, unexplained epileptic encephalopathy, karyotype nondiagnostic), and has had genetic counseling; therefore WES is covered per the policy's medically necessary statement."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 16947,
+    "output_tokens": 2467,
+    "total_tokens": 19414
+  }
+}

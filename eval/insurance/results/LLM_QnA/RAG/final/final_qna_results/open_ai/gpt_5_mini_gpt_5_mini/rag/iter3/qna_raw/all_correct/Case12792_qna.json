@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient information states the referral is specifically for \"BRCA1/2 testing.\""
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "The policy explicitly states \"Genetic testing in minors for BRCA1, BRCA2, and PALB2 variants ... is considered investigational.\" The patient is 12 years old, so age-based guidance in the policy indicates testing in a minor is not appropriate/eligible."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires testing be performed in a setting with \"suitably trained health care providers\" and that genetic counseling be provided, but it does not specify a required ordering provider specialty or that only certain provider types may order testing. The case notes pre-test counseling was completed, but the policy does not define explicit ordering-provider credential requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications (personal history of relevant cancers or specific family history/criteria). The patient is an unaffected 12-year-old with congenital choanal atresia and a maternal growth abnormality (no described personal or family history of BRCA-related cancers or known familial BRCA/PALB2 variant), so she does not meet the listed medical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends testing an affected family member first when possible and describes testing strategies, but it does not state a mandatory prior-test requirement that must be completed in this exact scenario. The provided patient data do note prior nondiagnostic FISH, but the policy does not require that specific prior testing prior to BRCA1/2 testing."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history criteria (close blood relatives with early-onset breast, ovarian, pancreatic, prostate cancer, known BRCA/PALB2 pathogenic variant, etc.). The patient’s information does not describe any such cancer family history or known familial BRCA/PALB2 variant, so relevant family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires pre- and post-test genetic counseling in an appropriately trained setting. The patient record states pre-test genetic counseling has been completed and post-test follow-up is planned, which satisfies the policy's counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses recommended testing strategies (targeted familial variant testing vs comprehensive sequencing and large rearrangement analysis) but does not specify CPT codes. The provided policy text does not map tests to any of the listed CPT codes, so a specific CPT code cannot be determined from the policy alone."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the policy: (1) BRCA1/2 testing in minors is considered investigational; and (2) the patient does not meet the policy's medical/family-history criteria for BRCA1/2 testing. Therefore the requested BRCA1/2 test is not covered under the policy for this patient."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18927,
+    "output_tokens": 2318,
+    "total_tokens": 21245
+  }
+}

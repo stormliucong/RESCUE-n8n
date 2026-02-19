@@ -1,0 +1,12 @@
+[
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/final_qna_results/open_ai/gpt_5_mini_gpt_5_mini/rag/iter3",
+    "batch_id": "batch_6954388cead08190857fc94b53bec26c",
+    "case_type": "all_incorrect",
+    "mode": "rag",
+    "exp_type": "header",
+    "k_retrieval": 30,
+    "k_rerank": 3,
+    "qna_model": "gpt-5-mini"
+  }
+]

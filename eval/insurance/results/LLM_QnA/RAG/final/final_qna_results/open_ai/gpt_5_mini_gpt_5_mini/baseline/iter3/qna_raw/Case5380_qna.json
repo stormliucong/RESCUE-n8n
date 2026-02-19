@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is requested to assess an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WES/WGS coverage criteria do not impose a strict maximum/minimum age cutoff for testing; infants are eligible when clinical criteria are met, so no age-based exclusion applies to this 8‑week‑old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies require an appropriately credentialed ordering clinician but do not universally mandate a specific specialty; this test was ordered after neurology referral, which is an appropriate ordering provider under typical UHC practice."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage allows WGS/WES for pediatric patients with unexplained neurologic presentations (recurrent seizure‑like events/BRUE) when a genetic etiology is suspected; this infant meets that clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires prior chromosomal microarray for developmental/ congenital/genetic presentations; CMA was performed and nondiagnostic as stated, satisfying this prior testing requirement for escalation to WGS."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "UHC criteria consider family history of a similar phenotype or consanguinity as relevant when present; the only family note is maternal short stature, which is not a reported family history of the infant's neurologic phenotype and thus does not meet family‑history eligibility criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UnitedHealthcare policies require documentation of pre‑test genetic counseling by a qualified clinician for high‑complexity genomic testing; the family explicitly declined pre‑test counseling, so this requirement is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT code 81425 corresponds to WGS (whole genome sequence analysis) and is the appropriate billing code."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications and prior CMA are consistent with UHC coverage for WGS, the required pre‑test genetic counseling was declined and not documented. Per UHC coverage/billing rules, this unmet counseling requirement prevents coverage authorization."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1981,
+    "output_tokens": 2668,
+    "total_tokens": 4649
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states consideration of whole-exome sequencing (WES) after a nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy Exome Sequencing criteria require the member to be <21 years of age; the patient is 34, so she does not meet the age-based eligibility criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires appropriate genetic/family history evaluation and a clinical letter and recommends pretest counseling by a medical geneticist or affiliated genetic counselor, but it does not explicitly mandate a specific ordering provider specialty for ordering ES; patient was referred by oncology (no explicit conflict in the policy)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy defines specific clinical indications (e.g., pediatric global developmental delay, multiple congenital anomalies, etc.). The patient has a single congenital choanal atresia without documentation of the policy-defined sets of congenital anomalies or neurodevelopmental criteria; therefore she does not meet the defined medical-indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior appropriate testing to be considered (and prenatal ES explicitly requires CMA/karyotype). The patient had a nondiagnostic chromosomal microarray (CMA) and has no prior ES/WGS per the provided facts, satisfying the stated prior-test requirements."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires a genetic and family history evaluation to be documented, but it does not define specific family-history or consanguinity thresholds for adult ES eligibility; the patient's maternal breast cancer history is noted but no policy-specified family-history criterion applies."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires pretest counseling (ACMG recommends counseling by a medical geneticist or affiliated genetic counselor) and a clinical letter with specific elements. The record states the patient 'has seen a genetic counselor multiple times' but does not confirm the presence of the required clinical letter or documented informed consent, so sufficiency cannot be determined from the provided information."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy billing section specifies 81415 should be billed for proband exome sequencing (analyzing the entire exome)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient had a nondiagnostic CMA and no prior ES/WGS, the policy requires the member to be <21 years of age as an absolute criterion for medical necessity; the patient is 34, therefore ES is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10464,
+    "output_tokens": 2159,
+    "total_tokens": 12623
+  }
+}

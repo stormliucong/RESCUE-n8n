@@ -1,42 +1,10 @@
 [
   {
-    "id": "Case9330",
-    "patient_info": "The patient is a 31-week gestation fetus whose genetic testing indicated significant hearing or visual impairment potentially diagnosed by 18 years of age. Previous testing included chromosomal microarray analysis (CMA). There is a family history of first- or second-degree relatives with laboratory abnormalities suggestive of an inborn error of metabolism (IEM). Whole exome sequencing (WES) was ordered by a neurologist, and genetic counseling has not been conducted. The patient is covered by UnitedHealthcare insurance."
+    "id": "Case1",
+    "patient_info": "At 17 weeks\u2019 gestation, the fetus is being evaluated for suspected Hirschsprung disease, with concern first arising in the first trimester; the case was referred by the pregnant patient\u2019s primary care physician, and whole exome sequencing is being pursued to clarify an underlying genetic etiology. Prior Fragile X testing was non-diagnostic. Family history is notable for a maternal aunt who carries a known BRCA1/2 pathogenic variant. Insurance coverage is through UnitedHealthcare (UHC)."
   },
   {
-    "id": "Case1561",
-    "patient_info": "The patient is a 16-year-old individual with a clinical indication of congenital anomaly. They have undergone Fragile X testing in the past and have a family history of at least one first- or second-degree relative with a history of Triple-Negative Breast Cancer. The patient's insurance provider is UHC, and the genetic tests ordered include Whole Exome Sequencing (WES). The ordering provider is a Developmental Pediatrician, and there is no mention of genetic counseling in the provided information."
-  },
-  {
-    "id": "Case4134",
-    "patient_info": "The 3-year-old patient with Cigna insurance presents with a congenital anomaly affecting a single organ system and a family history indicating a possible genetic etiology. They have undergone prior FISH testing and are now scheduled for whole exome sequencing (WES) as part of their diagnostic workup initiated by their Primary Care Physician. The family history reveals a first- or second-degree relative with a significant immunologic or hematologic disorder. There is no mention of genetic counseling in the patient records."
-  },
-  {
-    "id": "Case7751",
-    "patient_info": "The patient is a 3-year-old child covered by BCBS_FEP insurance, with a clinical history of meconium ileus. The genetic testing approach used is whole-genome sequencing (WGS), following prior fluorescence in situ hybridization (FISH) testing. Family history is significant for arrhythmia. The genetic testing was ordered by a neonatologist, with no mention of genetic counseling provided."
-  },
-  {
-    "id": "Case1417",
-    "patient_info": "The patient is a 4-year-old child presented by a neonatologist with a major congenital cardiac anomaly, who has UnitedHealthcare insurance. Whole-genome sequencing has been recommended as part of the diagnostic workup, with no prior genetic testing conducted. There is a family history of consanguinity in first- or second-degree relatives, and genetic counseling has not been initiated."
-  },
-  {
-    "id": "Case3346",
-    "patient_info": "The 19-year-old patient with insurance coverage through BCBS_FEP was referred for genetic testing of BRCA1/2 genes by a Neonatologist due to multiple congenital anomalies not specific to a well-delineated genetic syndrome. The patient had prior karyotype testing completed. The family history includes a first- or second-degree family member with significant hearing or visual impairment diagnosed by 18 years of age. There was no mention of genetic counseling in the patient's records."
-  },
-  {
-    "id": "Case3259",
-    "patient_info": "The patient is a 7-week-old female infant being evaluated by a neonatologist for genetic testing of BRCA1/2 genes due to the clinical indication of having a female family member with a breast cancer diagnosis at 50 years of age or younger. There is no prior genetic testing done, and the family history includes the presence of first- or second-degree relatives with dystonia, ataxia, hemiplegia, neuromuscular disorder, movement disorder, or other neurologic abnormalities. The patient's insurance is through BCBS_FEP, and she has seen a genetic counselor both before testing and will have a follow-up visit after the results are received."
-  },
-  {
-    "id": "Case6578",
-    "patient_info": "The 44-year-old patient with a history of epileptic encephalopathy with onset before three years of age was referred by a Medical Geneticist for genetic testing. The patient, covered by UnitedHealthcare, has no prior genetic testing and is now undergoing BRCA1/2 testing due to a family history of triple negative breast cancer in a close blood relative. The patient had a pre-test counseling session with a genetic counselor and is scheduled for a post-test visit to discuss the results once they are received."
-  },
-  {
-    "id": "Case7862",
-    "patient_info": "The 18-year-old patient with dysmorphic features was referred by a neurologist for genetic testing due to concerns about developmental disorders. Prior testing included Fragile X analysis. Family history revealed a first- or second-degree relative diagnosed with moderate, severe, or profound Intellectual Disability by age 18. The patient's insurance plan is with Cigna, and they are undergoing chromosomal microarray (CMA) testing for developmental disorders. They have consulted with a genetic counselor both before and after the testing process."
-  },
-  {
-    "id": "Case4559",
-    "patient_info": "The patient is a 5-year-old child with insurance coverage through BCBS_FEP and a clinical presentation of an abnormality affecting at least one organ system and a complex neurodevelopmental disorder. The order for genetic testing was placed by a Neonatologist, following prior FISH testing. The patient has a family history of an inborn error of metabolism and has undergone genetic counseling before the testing, with plans to revisit the genetic counselor after receiving the test results. The genetic test ordered for the patient is CMA_tumor to further investigate the underlying genetic factors contributing to the clinical indication."
+    "id": "Case12",
+    "patient_info": "A 51-year-old woman with learning and adaptive difficulties recognized in early childhood and persisting into adulthood, without other syndromic features, was referred by her gynecologist for germline BRCA1 and BRCA2 testing; prior fluorescence in situ hybridization was non-diagnostic. Family history is notable for a younger brother who had significant hearing loss diagnosed in early adolescence. She declined pre-test genetic counseling, with plans to re-offer counseling when results are available. She is insured through UnitedHealthcare under the Choice Plus plan."
   }
 ]

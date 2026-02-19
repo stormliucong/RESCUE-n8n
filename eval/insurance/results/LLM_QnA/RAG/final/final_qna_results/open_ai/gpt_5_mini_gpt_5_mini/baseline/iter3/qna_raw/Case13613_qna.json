@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient was referred for whole exome sequencing (WES) per the clinical note."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WES policies do not impose a strict chronological age cutoff; prenatal/fetal testing is considered under the clinical indications rather than an age limit, so no specific age-based exclusion applies."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC WES coverage typically requires ordering/authorization by or in consultation with a genetics specialist; the record states pre-test discussion occurred with a genetic specialist, meeting the provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC indication for WES includes multiple congenital/structural anomalies or other unexplained major anomalies. Fetal imaging at 22 weeks identified multiple structural anomalies, which meets the medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior standard testing (eg, chromosomal microarray) to be performed and nondiagnostic before WES for fetal structural anomalies. Only Fragile X testing is documented (nondiagnostic); CMA is not documented, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a reported family history of dysmorphic features in a maternal aunt; family history is present and potentially relevant under UHC criteria that consider family history supportive of testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of genetic counseling or specialist discussion prior to WES; the record documents pre-test discussion with a genetic specialist, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication, ordering provider, and genetic counseling meet UHC criteria, a required prior test (chromosomal microarray) is not documented as completed and nondiagnostic. Per UHC policy, WES coverage is contingent on completion of required prior testing, so the request is not covered as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1686,
+    "total_tokens": 3664
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states \"whole genome sequencing (WGS) is being pursued.\""
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES/WGS criteria authorize testing for infants/children with suspected genetic disorders or critically ill neonates; the patient is a 7‑week‑old infant, which meets pediatric/infant age criteria for WGS."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies emphasize appropriate ordering and genetic counseling but generally do not mandate a specific ordering specialty in all situations; the record documents pre‑test genetic counseling but does not indicate a payer requirement that only certain specialties may order WGS."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria for WGS/WES under BCBS_FEP include infants with a suspected genetic etiology for a significant clinical presentation. The infant has a high‑risk BRUE with a markedly abnormal ECG suggestive of channelopathy/arrhythmia/cardiomyopathy and family history — meeting a defined clinical indication for comprehensive genomic testing."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP allows WGS as first‑line in certain infants with strong suspicion for a monogenic disorder or complex presentation; while prior targeted testing (e.g., FISH/CMA/gene panels) may be appropriate in some cases, the policy does not universally require a specific prior test here. The record notes nondiagnostic FISH but no mandatory prior test requirement is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria (affected relatives with possible neurodevelopmental or unexplained regression) are relevant to WGS eligibility. The maternal uncle's unexplained developmental regression constitutes a positive family history supporting genetic evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP expects pre‑test genetic counseling for comprehensive genomic testing. The record states pre‑test counseling was completed with a genetic counselor and post‑test follow‑up is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT options, 81425 most closely corresponds to whole genome sequencing/broad genomic sequencing services (WGS) used for comprehensive sequence analysis."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on BCBS_FEP coverage criteria applied to this case: the patient is an infant with a significant clinical presentation (abnormal ECG and high‑risk BRUE), supportive family history, pre‑test genetic counseling completed, and prior targeted testing nondiagnostic. These factors meet medical necessity criteria for WGS, so the test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2045,
+    "output_tokens": 2434,
+    "total_tokens": 4479
+  }
+}

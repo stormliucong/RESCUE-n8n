@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The referral explicitly requests germline BRCA1 and BRCA2 testing for a man with metastatic prostate cancer."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA1/2 coverage criteria do not impose a specific age cutoff for germline BRCA testing in adults; the patient is an adult (52) but no age-based eligibility rule is specified in policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC medical policy requires an appropriate ordering clinician but typically does not restrict testing to a specific specialty in the BRCA coverage policy; the record shows a physician referral but no specialty restriction is specified."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers germline BRCA1/2 testing for individuals with a personal history of metastatic prostate cancer (a NCCN-recognized indication); the patient meets this clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA coverage does not require prior genetic or tumor testing as a prerequisite to germline BRCA1/2 testing in this clinical scenario; no prior tests are mandated by policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of a first‑degree relative with pancreatic cancer is relevant to BRCA testing per UHC criteria and is present (father with pancreatic cancer)."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC BRCA testing policy requires documentation of pre‑test genetic counseling or informed consent per policy; the patient did not receive pre‑test counseling (only plans for post‑test counseling), so counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The usual specific CPT codes for BRCA1 and BRCA2 (e.g., 81211 / 81213) are not among the provided options, so none of the listed codes clearly correspond to single‑gene BRCA1/2 testing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indication (metastatic prostate cancer) and has relevant family history, UHC requires pre‑test genetic counseling/documentation for BRCA1/2 coverage and this was not completed prior to ordering; therefore coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1976,
+    "output_tokens": 1977,
+    "total_tokens": 3953
+  }
+}

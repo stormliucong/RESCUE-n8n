@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare WES/WGS pediatric policy specifies age-based coverage for pediatric patients with suspected genetic disorders (typically pediatric cutoff ≤21 years); the patient is a 3‑week‑old infant and therefore meets age criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policy requires ordering by or in consultation with an appropriate specialist (e.g., medical geneticist or genetic counselor); the test is being ordered by a medical geneticist, meeting provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria include infants with congenital anomalies or suspected single‑gene disorders or family history of neurodevelopmental disorders as indications for WES/WGS; this infant has Hirschsprung disease (a congenital condition) plus a sibling with severe intellectual disability, supporting a medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior appropriate testing for unexplained DD/ID (commonly chromosomal microarray and Fragile X where applicable) before WES/WGS. Although Fragile X was done and nondiagnostic, there is no documentation of a chromosomal microarray (CMA), so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family‑history criteria are relevant for WES/WGS and the patient has a first‑degree sibling with severe intellectual disability diagnosed by age 18, which is a pertinent family history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies require documented pre‑test genetic counseling by a qualified professional for WES/WGS. The case states there is no documented pre‑test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT code 81425 corresponds to whole genome sequencing (clinical WGS with interpretation), which matches the ordered test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, and clinical indication criteria are met, UnitedHealthcare requires prior testing (e.g., CMA) and documented pre‑test genetic counseling for WGS in this clinical context; those requirements are not satisfied here, so coverage would be denied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1969,
+    "output_tokens": 1980,
+    "total_tokens": 3949
+  }
+}

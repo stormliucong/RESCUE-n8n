@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical info states 'whole exome sequencing (WES) is being requested' — directly names WES."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-based items (e.g., features diagnosed by 18 years) and has no upper age exclusion for multiple congenital anomalies; patient is 9 years old and therefore meets the policy age-related criteria (e.g., criteria that must be met by age 18)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient was referred by a developmental pediatrician who is requesting WES."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital anomalies (must affect different organ systems)' as an explicit qualifying indication for WES; the patient has multiple congenital abnormalities affecting different organ systems and family history of developmental delay."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate prior tests before postnatal WES except when a specific syndrome is suspected (targeted testing first) or for prenatal WES (CMA/karyotype required); no general prior-test requirement for this postnatal WES is specified."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' as a qualifying feature; the patient has a sibling with developmental delay."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES but does not make counseling a formal coverage requirement; patient did receive pre-test counseling, but counseling is not specified as mandatory for coverage."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Applicable CPT codes in the policy list 81415 as 'Exome; sequence analysis' which corresponds to WES requested for this patient."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare WES policy the patient meets all stated coverage criteria: WES is ordered by an allowed provider type (developmental pediatrician), the clinical presentation is nonspecific with multiple congenital anomalies affecting different organ systems (an explicit qualifying indication), there is relevant family history, prior karyotype was nondiagnostic, and pre-test genetic counseling was completed. These facts align with the policy's medical necessity criteria for WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36935,
+    "output_tokens": 2584,
+    "total_tokens": 39519
+  }
+}

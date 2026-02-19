@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) was requested for fetal evaluation at 22 weeks."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy age-related eligibility applies to pediatric individuals under 21 and the Policy Guidelines explicitly exclude prenatal (fetal) testing; this is a 22‑week gestation fetus and therefore does not meet the policy's age/setting criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling; patient had pre-test discussion with a genetic specialist, meeting the provider/counseling requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists evaluation of unexplained multiple congenital anomalies as an indication and allows WES when previous genetic testing is nondiagnostic; patient has multiple structural anomalies and Fragile X testing was nondiagnostic, meeting medical indication criteria (regardless of prenatal exclusion)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate a specific prior test universally; it allows WES when previous genetic testing is nondiagnostic or when preferred testing is not appropriate. Although Fragile X was nondiagnostic, the policy does not define a specific required prior test for this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy examples include relevant family history as part of indications; patient has a maternal aunt with dysmorphic features, which is relevant to eligibility per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced provider; patient had pre-test discussion with a genetic specialist, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding lists 81415 among covered procedure codes 'when medically necessary' for whole exome sequencing; 81415 corresponds to exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications and provider/counseling criteria are met, the policy explicitly states it does not address prenatal (fetal) testing. Therefore WES for this 22‑week fetus is not covered under the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14861,
+    "output_tokens": 2007,
+    "total_tokens": 16868
+  }
+}

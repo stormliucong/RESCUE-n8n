@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly frames WES eligibility for children with unexplained congenital or neurodevelopmental disorders; the patient is a 5-year-old child, meeting the age-based criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires evaluation by a clinician with expertise in clinical genetics (and counseling) but does not specify a required ordering provider specialty or type for placing the order."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL criteria for medical necessity (documentation of genetics evaluation including family history/phenotype and counseling; potential to change management; AND either genetic etiology most likely despite prior testing such as CMA/targeted testing or prior testing failed and next step invasive). The record does not document a genetics clinician evaluation or prior appropriate genetic testing (eg, CMA or targeted testing) meeting the policy's stated conditions, so the full medical-necessity criteria are not met per policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy examples indicate prior genetic testing (eg, chromosomal microarray and/or targeted single‑gene testing) is expected in the standard WES pathway; the patient only had nondiagnostic FISH reported and no CMA/targeted testing documented, so required prior testing is not shown."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy specifically lists sudden unexplained death in first- or second-degree relatives before age 35 as relevant family history; the patient has a paternal uncle with sudden unexplained death <35."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling by an experienced genetics professional as part of eligibility; the record states pre-test counseling was completed with a genetic counselor and post-test follow-up plans are confirmed."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT code 81415 corresponds to clinical exome sequencing and is the best match among provided options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, relevant family history, and genetic counseling are documented, the policy requires ALL listed criteria to be met for medical necessity (including documentation of evaluation by a clinical genetics expert and appropriate prior genetic testing such as CMA/targeted testing or the alternative pathway). Those required items are not documented in the provided information, so per the policy the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14843,
+    "output_tokens": 2978,
+    "total_tokens": 17821
+  }
+}

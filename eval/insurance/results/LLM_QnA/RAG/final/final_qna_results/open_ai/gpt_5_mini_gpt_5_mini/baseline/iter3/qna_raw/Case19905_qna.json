@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states the patient is being considered for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES coverage criteria are focused on pediatric patients with unexplained developmental delay/multiple congenital anomalies; the patient is 3 years old, which satisfies pediatric age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires an appropriate specialist to order WES (genetics, pediatric subspecialist). The test was referred by a developmental pediatrician, which meets ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical necessity criteria support WES for patients with multiple congenital anomalies and developmental concerns; the patient has multiple congenital anomalies and developmental referral, meeting indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior chromosomal microarray (CMA) (and other targeted testing as appropriate) before WES. Only a nondiagnostic karyotype is documented; there is no documentation of prior CMA, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES criteria do not generally require a specific family history or consanguinity to qualify; although a maternal history of long QT is documented, family-history-based criteria for WES eligibility are not specified in this case."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC coverage and best-practice requirements expect documentation of genetic counseling (pre-/post-test) for WES. The record states no genetic counseling has been conducted, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) interpretation/reporting and is the appropriate code for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, and clinical indication meet UHC criteria, required prerequisites (documentation of prior CMA or other required prior testing and documented genetic counseling) are missing; therefore under UHC criteria the test is not covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1955,
+    "output_tokens": 1560,
+    "total_tokens": 3515
+  }
+}

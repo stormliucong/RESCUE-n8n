@@ -1,0 +1,23 @@
+{
+  "provider": "United Healthcare",
+  "prompt_type": "verified",
+  "model": "openai",
+  "iteration": 1,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\":[\"https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/whole-exome-and-whole-genome-sequencing.pdf\",\"https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/genetic-testing-cardiac-disease.pdf\",\"https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/genetic-testing-hereditary-cancer.pdf\",\"https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/genetic-testing-neuromuscular-disorders.pdf\",\"https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/pharmacogenetic-testing.pdf\",\"https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/carrier-testing-for-genetic-diseases.pdf\",\"https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/cell-free-fetal-dna-testing.pdf\",\"https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/preimplantation-genetic-testing.pdf\",\"https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/chromosome-microarray-testing.pdf\"],\"webpage_links\":[]}",
+  "parsed_data": {
+    "pdf_links": [
+      "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/whole-exome-and-whole-genome-sequencing.pdf",
+      "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/genetic-testing-cardiac-disease.pdf",
+      "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/genetic-testing-hereditary-cancer.pdf",
+      "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/genetic-testing-neuromuscular-disorders.pdf",
+      "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/pharmacogenetic-testing.pdf",
+      "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/carrier-testing-for-genetic-diseases.pdf",
+      "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/cell-free-fetal-dna-testing.pdf",
+      "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/preimplantation-genetic-testing.pdf",
+      "https://www.uhcprovider.com/content/dam/provider/docs/public/policies/comm-medical-drug/chromosome-microarray-testing.pdf"
+    ],
+    "webpage_links": []
+  }
+}

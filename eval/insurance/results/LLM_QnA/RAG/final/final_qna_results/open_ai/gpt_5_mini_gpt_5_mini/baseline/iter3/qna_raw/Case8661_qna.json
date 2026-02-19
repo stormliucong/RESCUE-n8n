@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is requested to investigate a possible genetic cause."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC sequencing coverage distinguishes pediatric indications; the patient is 7 years old (pediatric) and therefore meets age-related eligibility for WGS in a child with suspected genetic disorder."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policies typically require ordering by a qualified specialist (e.g., geneticist or treating specialist). The test was ordered/referral placed by the child's neurologist, an appropriate specialist for neurologic/genetic evaluation."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria support WGS for pediatric patients with unexplained major sensory impairment identified in childhood and/or family history of severe early-onset neurologic disease. This child has significant childhood-onset hearing/visual impairment and a sibling with early epileptic encephalopathy, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior targeted testing (e.g., chromosomal microarray as first-tier for congenital anomalies/developmental concerns) and other appropriate targeted tests; only Fragile X testing was performed (nondiagnostic) and no CMA or other prior genomic testing is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of a sibling with epileptic encephalopathy before age 3 is documented and is relevant to eligibility criteria that consider family history of early-onset severe neurologic disorders."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies require documented pre-test genetic counseling by a qualified provider. Although counseling was offered, the family declined pre-test counseling and documentation of completed pre-test counseling is not present, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT code 81425 corresponds to whole genome sequencing (germline) interpretation/reporting, matching the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, ordering provider, clinical indication, and relevant family history support WGS, required prerequisites per UHC (documentation of prior appropriate testing such as CMA and completion of pre-test genetic counseling) are not met; therefore coverage would be denied pending those requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2001,
+    "output_tokens": 1915,
+    "total_tokens": 3916
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient clinical note explicitly states referral for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy gives age-based coverage for BRCA1/2 in the context of a personal history of breast cancer (e.g., diagnosed ≤65) or references ages for affected relatives, but it does not define a standalone age eligibility threshold for an unafflicted individual; the patient is 37 but has no personal history of a qualifying cancer."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends genetic expertise/genetic counseling for test ordering and interpretation but does not state an explicit mandatory ordering-provider specialty requirement; the ordering provider (neurology referral) cannot be judged noncompliant from the policy text alone."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy lists specific medical indications for BRCA1/2 testing (e.g., personal history of breast cancer, family history meeting defined BRCA-related criteria). The patient has no personal history of a primary solid tumor and the family history (brother died suddenly <35) is not described as cancer, so none of the policy's defined indications are met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of any specific prior genetic tests before BRCA1/2 testing in this scenario; the patient has no prior testing but no prior-test requirement is specified."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history criteria for BRCA1/2 (e.g., first-/second-degree relatives with early-onset breast, ovarian, pancreatic, male breast, etc.). The patient's reported family history (brother died suddenly before 35) does not meet any of the policy's specified family-history criteria."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states pre-test genetic counseling is 'strongly recommended' but does not make counseling an absolute coverage requirement; the patient did not receive pre-test counseling, but the policy does not explicitly require it as a condition of coverage."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "The policy's Applicable Codes list 81162 as the CPT code for BRCA1/BRCA2 full sequence analysis plus full duplication/deletion analysis, corresponding to the requested BRCA1/2 testing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the UnitedHealthcare policy, BRCA1/2 testing is covered when policy-specified clinical criteria are met (e.g., personal history of breast cancer ≤65 or qualifying family-history criteria). This patient has no personal history of a qualifying primary solid tumor and no family history meeting the BRCA-related criteria in the policy, so coverage criteria are not satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 38601,
+    "output_tokens": 2207,
+    "total_tokens": 40808
+  }
+}

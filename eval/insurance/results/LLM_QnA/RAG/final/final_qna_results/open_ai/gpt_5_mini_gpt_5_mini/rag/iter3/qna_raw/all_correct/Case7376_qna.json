@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy includes age-based criteria for specific phenotypes (e.g., ID diagnosed by age 18, early-onset epileptic encephalopathy), but there is no overall age cutoff for WES. The patient is 73 and no policy age exclusion for adult WES is stated; therefore no applicable age-based eligibility criterion in the policy explicitly applies to this patient."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The test was ordered by/referred by a neurologist, meeting the ordering-provider requirement per the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage requires, among other things, that the clinical history strongly suggests a genetic cause with either (A) one of specified major features (e.g., multiple congenital anomalies, ID by 18, global developmental delay, early epileptic encephalopathy) or (B) two or more listed features. The clinical data here note an unexplained major abnormality in one organ system and a family history of breast cancer in a sister; the record does not document any of the policy-listed qualifying features (multiple congenital anomalies, early-onset ID/DD, early epilepsy, two or more listed features, consanguinity or relatives with similar clinical features). Thus the patient does not meet the policy-defined medical indications for WES."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies prior testing requirements for certain scenarios (e.g., prenatal CMA/karyotype prior to prenatal WES; specific targeted testing if a syndrome is suspected). For this outpatient adult case, the policy does not define a required prior test that must be completed before WES. Prior FISH was nondiagnostic, but FISH is not listed as a required prior test in the policy."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists family history of other first- or second-degree members with similar clinical features as a qualifying feature for WES. The patient’s sister had triple-negative breast cancer, which is not described as the same clinical feature as the patient’s unexplained organ abnormality and oncology-family-history is addressed under oncology policies. No consanguinity or family members with similar phenotype is documented, so the family-history criteria in this policy are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states genetic counseling is strongly recommended prior to WES/WGS. The patient completed pre-test counseling with a genetic specialist, which satisfies the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT code 81415 in the policy corresponds to exome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis (proband), which matches the ordered whole exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the UnitedHealthcare WES/WGS policy, coverage for WES requires meeting all listed criteria including a clinical history strongly suggestive of a genetic cause plus either one of the major features (e.g., multiple congenital anomalies, childhood-onset ID/DD, early epileptic encephalopathy) or two or more of the specified supporting features (congenital anomaly, IEM labs, autism, neuropsychiatric disorder, consanguinity, relatives with similar features, etc.). The patient’s record documents an unexplained single-organ abnormality and a family history of breast cancer but does not document any of the policy-specified qualifying features. Although ordering-provider and counseling criteria are met, the required medical indication criteria are not met; therefore WES is not covered under this policy for this patient."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36945,
+    "output_tokens": 4975,
+    "total_tokens": 41920
+  }
+}

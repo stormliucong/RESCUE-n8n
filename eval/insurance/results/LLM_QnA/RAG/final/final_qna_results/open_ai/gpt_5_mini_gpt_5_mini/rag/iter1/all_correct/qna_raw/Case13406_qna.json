@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states 'Whole genome sequencing (WGS) has been ordered by a medical geneticist.' Basis: patient record."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists pediatric age-based features (e.g., Global Developmental Delay with onset prior to 5 years; intellectual disability diagnosed by age 18). The patient is an infant (6 weeks), which meets the pediatric age context in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. Basis: WGS was ordered by a medical geneticist per patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Global Developmental Delay' as an explicit clinical criterion for WGS. Basis: patient is being evaluated for concern of global developmental delay."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy coverage for WGS requires 'Neither CMA nor WES have been performed.' The patient had chromosome microarray (CMA) previously performed (nondiagnostic), so the policy's prior-test requirement for WGS is not met."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy counts family history of similar features or consanguinity as relevant criteria. The patient has a sibling with a brief resolved unexplained event (not described as similar to the proband's global developmental delay) and no consanguinity reported; therefore the policy's family/consanguinity criteria are not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state counseling as a strict coverage requirement. Patient had pre-test counseling, but the policy frames counseling as recommendation rather than a coverage criterion."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy Applicable Codes list CPT 81425 for 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indication (global developmental delay) and the ordering provider requirement, the policy's WGS coverage criterion requires that 'Neither CMA nor WES have been performed.' The patient had prior CMA (nondiagnostic); therefore under the policy WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36966,
+    "output_tokens": 2379,
+    "total_tokens": 39345
+  }
+}

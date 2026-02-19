@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info: obstetrician requests fetal whole exome sequencing (WES) at 22 weeks' gestation."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy specifies standard WES/WGS indications for pediatrics <21 but explicitly states it does not address prenatal (fetal) testing; although fetus is <21 chronologically, prenatal testing is excluded by the policy, so age-based eligibility per policy is not met."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and that counseling was provided; patient record shows ordering by an obstetrician and no documentation of genetics evaluation or pre-test genetic counseling."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications (e.g., multiple congenital anomalies) for WES/WGS in pediatric patients but explicitly excludes prenatal/fetal testing from this policy; therefore the patient does not meet policy-defined, applicable indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy lists prior non-diagnostic genetic testing as one qualifying pathway but also (per policy history) allows WES/WGS as first-line in some situations; the policy does not mandate a single universal prior test that must be completed before WES in all cases."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy includes family history of genetic disease/developmental delay among relevant considerations; patient has a reported maternal aunt with dysmorphic features, consistent with a relevant family history per the policy examples."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires genetic counseling by an individual with expertise in genetic medicine before testing; there is no documentation that pre-test genetic counseling was provided."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding lists 81415 among covered procedure codes for exome/genome sequencing; 81415 corresponds to exome sequencing (WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Policy explicitly excludes prenatal (fetal) testing and requires genetics evaluation and pre-test counseling which are not documented; additionally product variation directs FEP members to FEP policy—overall the provided policy does not support coverage for fetal WES in this case."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14874,
+    "output_tokens": 3052,
+    "total_tokens": 17926
+  }
+}

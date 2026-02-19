@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1 and BRCA2 testing per clinical information; policy MOL.TS.238.A addresses BRCA1/2 analysis."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age requirement for BRCA testing is >=18 years for known familial, founder, full sequence and deletion/duplication analyses; patient is 37, which meets the >=18 requirement (policy: 'Age 18 years or older')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider and that the rendering laboratory be qualified, but it does not specify a required ordering provider specialty or that neurology cannot order; therefore specific ordering-provider specialty requirements are not defined."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines clinical indications (personal history of specified cancers or specific family-history combinations). The patient has no personal history of breast/ovarian/pancreatic/prostate cancer and a brother who died suddenly (no cancer); this does not meet the policy's diagnostic or personal/family-history combination criteria for BRCA testing."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy prior-testing requirements state tests are allowable when there is 'No previous full sequencing' or 'No previous deletion/duplication analysis' as applicable; the patient has had no prior genetic testing, satisfying the 'no previous testing' requirements described in the guideline."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy family-history criteria require relatives with breast, ovarian, pancreatic, prostate cancer or a known familial BRCA mutation. The patient's only noted family history is a brother who died suddenly without reported cancer, which does not satisfy the policy's family-history criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires pre- and post-test genetic counseling for BRCA analysis. The patient did not have pre-test genetic counseling, so the policy's counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "The patient requested BRCA1 and BRCA2 testing; the policy indicates that when BRCA1/2 sequencing and deletion/duplication analysis will be performed concurrently, CPT code 81162 ('BRCA1/2 full sequencing and duplication/deletion analysis (combined)') is likely most appropriate."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, BRCA testing requires meeting clinical indications and pre-test genetic counseling. The patient does not meet the policy's specified personal/family-history clinical criteria and did not receive required pre-test counseling; therefore testing is not covered under the provided BRCA policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10247,
+    "output_tokens": 2376,
+    "total_tokens": 12623
+  }
+}

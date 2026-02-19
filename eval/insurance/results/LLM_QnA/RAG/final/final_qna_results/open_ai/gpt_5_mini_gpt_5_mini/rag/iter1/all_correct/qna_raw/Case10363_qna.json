@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare policy does not impose an explicit age cutoff for WGS; age-related items in the policy reference features diagnosed by age (e.g., diagnosed by 18 years) but do not create a strict age eligibility requirement."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requirement: WGS must be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. Patient: WGS was referred/ordered by a general practitioner, which does not meet the specified ordering-provider requirement (policy: 'WGS is ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician')."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy criteria: WGS is covered when clinical presentation is nonspecific AND one of (e.g., multiple congenital anomalies OR moderate/severe ID/global developmental delay/epileptic encephalopathy) OR clinical history suggests genetic cause AND two or more listed features (which include 'congenital anomaly'). Patient: single congenital anomaly present since birth with no additional listed features documented (no multiple congenital anomalies, no developmental delay, no epilepsy, etc.), so patient does not meet the policy's specified clinical criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy condition for WGS: 'Neither CMA nor WES have been performed.' Patient: prior testing noted was FISH (nondiagnostic); there is no documentation of prior CMA or WES, satisfying the policy condition that CMA/WES have not been performed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy includes family history/consanguinity as applicable features (e.g., 'other first- or second-degree family member(s) with similar clinical features' and 'consanguinity'). Patient: family history only notes a maternal aunt with pancreatic cancer (not a first/second-degree relative with similar features) and no consanguinity, so relevant family-history criteria are not present."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WGS/WES but does not specify counseling as a mandatory coverage requirement. Patient: has had multiple pre-test genetic counseling sessions, but counseling is not defined as a required coverage criterion in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy applicable CPT codes: 81425 = 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponds to whole genome sequencing requested for this patient."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the UnitedHealthcare policy, WGS coverage requires meeting specified clinical criteria and ordering-provider requirements. Although the patient meets the requirement that CMA/WES have not been performed, the patient does not meet the policy's clinical criteria (only a single congenital anomaly documented) and the ordering provider is a general practitioner rather than one of the required specialties; therefore the request does not meet policy coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36961,
+    "output_tokens": 2465,
+    "total_tokens": 39426
+  }
+}

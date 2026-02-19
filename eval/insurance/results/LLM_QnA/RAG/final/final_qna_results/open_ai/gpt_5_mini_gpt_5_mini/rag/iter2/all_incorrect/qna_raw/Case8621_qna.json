@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states the 2-year-old is undergoing whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy's indication applies to 'children' with unexplained neurodevelopmental disorders; the patient is a 2‑year‑old child, meeting the age-based criterion."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual 'has been evaluated by a clinician with expertise in clinical genetics.' The test was ordered by the child's oncologist and no documentation is provided that a clinician with expertise in clinical genetics evaluated the child, so ordering‑provider requirement is not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists unexplained neurodevelopmental disorders in children after standard workup as an indication for WES; the patient has a complex neurodevelopmental disorder (autism) following prior standard testing."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy expects prior genetic testing (eg, chromosomal microarray) to have failed to yield a diagnosis; the patient had prior CMA testing that was nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy requests a family history as part of evaluation; the patient has a reported family history (an uncle with a congenital anomaly), which is relevant per the policy's family history considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling; the family reports multiple meetings with a genetic counselor with pre‑test counseling completed and plans for post‑test follow‑up, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to WES; no CPT guidance is given in the text supplied."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient is a child with unexplained neurodevelopmental disorder and prior CMA was nondiagnostic and genetic counseling occurred (meeting several policy elements), the policy requires ALL listed criteria including documentation of evaluation by a clinician with expertise in clinical genetics and evidence of potential for change in management. There is no documentation provided that a clinician with clinical genetics expertise evaluated the child or that potential for management change is documented; therefore the policy's all‑criteria requirement is not satisfied and the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14841,
+    "output_tokens": 2371,
+    "total_tokens": 17212
+  }
+}

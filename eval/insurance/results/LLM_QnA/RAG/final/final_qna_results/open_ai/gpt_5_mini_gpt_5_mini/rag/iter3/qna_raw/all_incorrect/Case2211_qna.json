@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1 and BRCA2 (breast cancer susceptibility) testing per the clinical information; request explicitly names BRCA1/2."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy states testing in minors is investigational; the patient is age 21 (adult). There is no adult age exclusion and being an adult satisfies age-related criteria in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers who can give pre- and post-test counseling. The patient completed pre-test counseling with a genetic specialist and plans post-test follow-up, satisfying the policy's provider/counseling setting requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly lists as medically necessary genetic testing for individuals with any close blood relative with a known BRCA1/BRCA2/PALB2 pathogenic/likely pathogenic variant. The patient reports the mother carries a known BRCA2 pathogenic variant."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends targeted testing when a familial BRCA/PALB2 variant is known but does not mandate prior testing steps the proband must complete before testing; the policy does not specify additional required prior tests for this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy defines close relatives and includes family history criteria. The patient reports a mother with a known BRCA2 pathogenic variant and at least two additional affected blood relatives on the same side, meeting family-history-based criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed by an individual with experience and expertise and testing should be in a setting with appropriate pre-/post-test counseling. The patient completed pre-test counseling with a genetic specialist and plans post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or reference specific CPT codes for BRCA1/2 testing; CPT mapping is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, genetic testing for BRCA1/2 is medically necessary for individuals with any close blood relative with a known pathogenic BRCA variant. The patient is an adult, has a mother with a known BRCA2 pathogenic variant, has appropriate pre-test genetic counseling, and therefore meets coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18964,
+    "output_tokens": 2008,
+    "total_tokens": 20972
+  }
+}

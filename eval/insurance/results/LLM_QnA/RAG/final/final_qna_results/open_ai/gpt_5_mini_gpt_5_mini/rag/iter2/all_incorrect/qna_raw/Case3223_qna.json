@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1 and BRCA2 testing (stated in the patient information)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text (FEP 2.04.126) does not include age-based eligibility criteria for BRCA1/2 testing and instead refers to a separate review (2.04.02) for BRCA1/2 strategy; no explicit age limits are given in the supplied document."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The supplied policy discusses genetic counseling and that testing should be offered per guidelines but does not state specific ordering-provider (specialty/type) requirements for BRCA1/2 testing in the provided text."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The supplied policy (FEP 2.04.126) does not list explicit medical indication criteria for BRCA1/2 (it references review 2.04.02 for BRCA1/2); specific clinical eligibility criteria are not present in the provided document."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy does not specify required prior tests that must be completed before BRCA1/2 testing (it notes testing an affected family member first may be preferred but does not state a required prior test)."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has relevant family history (a sister with epithelial ovarian cancer). The policy references use of family history and NCCN criteria for genetic risk evaluation, so the patient’s first-degree relative with ovarian cancer is relevant per the policy's family-history-based evaluation framework."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends genetic counseling and states it should be performed by an experienced provider, but the provided text does not make documented pre-test genetic counseling an explicit required coverage criterion for BRCA1/2 testing."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not list or map CPT codes to BRCA1/2 testing, so no CPT code can be selected from the supplied document."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Although the BRCA1/2 coverage criteria are contained in a separate review (2.04.02) not provided here, the supplied policy states genetic testing (including BRCA1/2 strategy referenced) should be made available to individuals without a personal history of breast cancer when they meet NCCN guideline criteria. The patient has a first-degree relative with epithelial ovarian cancer, which the policy cites as a family-history-based trigger for guideline-driven genetic risk evaluation; therefore, based on the provided policy language and the patient's family history, BRCA1/2 testing would be considered covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10994,
+    "output_tokens": 2913,
+    "total_tokens": 13907
+  }
+}

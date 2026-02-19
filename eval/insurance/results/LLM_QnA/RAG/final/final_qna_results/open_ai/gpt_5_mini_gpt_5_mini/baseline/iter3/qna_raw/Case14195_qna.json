@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient was specifically referred for BRCA1/2 testing per the clinical information."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP BRCA policies apply to adults; the patient is 18 years old and therefore meets the typical age threshold for adult predictive/testing under the payer policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires an appropriate ordering clinician (physician or qualified genetics professional); the test was ordered by/through an oncologist, which satisfies typical provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP BRCA coverage requires a personal history of BRCA-related cancer or a family history of BRCA-associated cancers (e.g., breast, ovarian, pancreatic, or certain prostate cancers). This patient has no personal cancer history and the only reported family history is a maternal uncle with dystonia/ataxia (not BRCA-associated), so medical indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided clinical information notes a prior nondiagnostic karyotype but BCBS_FEP BRCA policy does not mandate prior cytogenetic testing as a prerequisite for BRCA1/2 sequencing; no payer-required prior tests for BRCA sequencing are specified here."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP BRCA eligibility depends on specific family history of BRCA-related cancers. The family history provided (an uncle with dystonia and ataxia) is not a BRCA-related cancer history, so the patient does not meet family-history criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP typically requires documentation of pre-test genetic counseling for BRCA testing. The record states no pretest genetic counseling has been conducted, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "None of the listed CPT options unambiguously corresponds to a standard full BRCA1/2 sequencing code (e.g., BRCA1/2 single-gene sequencing codes are not provided in the option list), so an exact CPT match cannot be determined from the supplied choices."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and ordering provider are acceptable, the patient lacks the payer-specified medical/family-history indications for BRCA1/2 testing and has no documented pre-test genetic counseling as required by BCBS_FEP; therefore the test is not covered under the payer's coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1960,
+    "output_tokens": 2219,
+    "total_tokens": 4179
+  }
+}

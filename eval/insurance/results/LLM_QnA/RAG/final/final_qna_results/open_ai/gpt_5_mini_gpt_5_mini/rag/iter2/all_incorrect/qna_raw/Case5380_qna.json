@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info states 'whole genome sequencing (WGS) is requested.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy allows rapid WGS for infants (critically ill neonates/pediatric ICU). Patient is an 8‑week‑old infant, so the age criterion (infant) is met (policy applicability uses 'infant/children')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify a required ordering provider specialty for WGS/rapid WGS; the explicit clinician/expertise and counseling requirement is listed for standard WES but not as an ordering‑provider restriction for rapid WGS."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy Guidelines list 'Infant with high risk stratification on evaluation for a BRUE ... Recurrent witnessed seizure like events' as a clinical feature suggesting a genetic disease. The patient has high‑risk BRUE with recurrent witnessed seizure‑like episodes."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's prior‑test requirement (eg, prior CMA or targeted testing) applies to standard WES; rapid WGS criteria do not require prior testing. The patient did have a nondiagnostic CMA, but the policy does not define mandatory prior testing specific to WGS in this context."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists specific family history items (eg, BRUE in sibling, developmental delay, inborn errors, arrhythmia) as relevant. The only family history provided is maternal short stature, which is not among the policy's specified relevant family history items."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy explicitly requires documentation of genetics evaluation and counseling for standard WES; for rapid WGS the rapid‑testing criteria do not explicitly require pre‑test genetic counseling. The patient declined pre‑test counseling, but counseling is not an explicit coverage requirement for rapid WGS in the policy statements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT code 81425 corresponds to clinical whole genome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Policy: whole genome sequencing is considered investigational for diagnosis except for rapid WGS in critically ill infants in the NICU/PICU. Although the patient is an infant and has a BRUE feature that meets a clinical indication, there is no documentation the infant is critically ill or in NICU/PICU. Therefore WGS is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14834,
+    "output_tokens": 3761,
+    "total_tokens": 18595
+  }
+}

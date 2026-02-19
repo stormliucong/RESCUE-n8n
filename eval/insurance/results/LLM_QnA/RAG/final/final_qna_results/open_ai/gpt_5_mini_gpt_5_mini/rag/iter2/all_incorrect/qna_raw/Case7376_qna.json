@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states whole exome sequencing (WES) has been ordered for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Cigna exome guideline explicitly requires the member be <21 years of age as part of medical necessity criteria; patient is 73 years old and therefore does not meet the age criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate a specific ordering provider specialty. It requires appropriate genetic/family history evaluation and a clinical letter and recommends pretest counseling by a geneticist/genetic counselor, but it does not specify that the ordering provider must be a particular specialty."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy defines specific clinical indications (largely pediatric neurodevelopmental criteria or multiple congenital anomalies requiring either one defined pediatric item or two listed features). The patient is an adult (73) with a single unexplained major abnormality and does not meet the enumerated medical-indication criteria in the guideline."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires the member not have prior exome or genome sequencing and documentation of previous testing; patient has no prior ES/WGS noted and prior FISH testing was nondiagnostic — satisfying the policy requirement that prior ES/WGS not have been performed and that prior testing was attempted."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline does not establish family history/consanguinity criteria as a stand-alone eligibility requirement for clinical exome sequencing in adults (family history is referenced in limited prenatal contexts). Although the patient reports a sister with triple-negative breast cancer, the policy does not specify this family history as an eligibility criterion for ES in this scenario."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy/ACMG recommend pretest counseling by a medical geneticist or affiliated genetic counselor. Patient information states pre-test counseling was completed with a genetic specialist, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Cigna guideline specifies CPT 81415 should be billed for the proband when analyzing the entire exome (WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although some administrative/counseling prerequisites appear met, the guideline requires the member be <21 years of age as an essential criterion for medical necessity; the patient is 73, therefore the test does not meet the policy's coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10483,
+    "output_tokens": 2840,
+    "total_tokens": 13323
+  }
+}

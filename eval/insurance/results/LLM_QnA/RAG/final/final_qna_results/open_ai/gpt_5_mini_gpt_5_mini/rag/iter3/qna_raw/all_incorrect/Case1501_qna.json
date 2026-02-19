@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info states 'Whole exome sequencing (WES) is being ordered.' Decision based strictly on the provided patient clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare cardiac testing policy defines age guidance for variant-specific/predictive testing for certain cardiac genes (e.g., LQTS predictive testing 'from birth onward' in guidance), but the policy does not specify age-based eligibility criteria for whole exome sequencing (WES) as the requested test."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends pre-test genetic counseling but does not impose or specify ordering-provider specialty or credential requirements for WES; therefore ordering provider requirements for WES are not specified in the policy."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for multi-gene cardiac panels (e.g., diagnosed or suspected LQTS, CPVT, Brugada, cardiomyopathies) but does not define specific clinical indications for WES. The patient's presentation (congenital anomalies, developmental concerns) is described in the clinical info, but WES-specific indications are not addressed in this cardiac policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state required prior tests before performing WES. It notes that some cardiac testing pathways use targeted panels or variant-specific testing when a familial mutation is known, but no prior-test requirement for WES is provided in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a first-degree relative (mother) with Long QT syndrome. The policy explicitly lists asymptomatic individuals with a first- or second-degree relative with congenital LQTS as an indication for multi-gene panel testing; the provided family history is therefore relevant per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy 'strongly recommends' pre-test genetic counseling. Patient information documents that pre-test genetic counseling was completed and post-test follow-up is planned, meeting the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's 'Applicable Codes' section lists many cardiac panel CPTs but does not provide a CPT code mapping for whole exome sequencing (WES). Therefore a best-fit CPT from the provided options is not specified by this policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the UnitedHealthcare 'Genetic Testing for Cardiac Disease' policy, coverage rationale addresses multi-gene panels for specific cardiac diagnoses and testing based on identified familial pathogenic variants. WES is not specified or listed as a covered test in this policy, and the patient does not meet the policy's defined cardiac diagnostic criteria (no documented QTc, no confirmed cardiac diagnosis). Therefore, based strictly on this policy and the provided patient facts, WES is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 39565,
+    "output_tokens": 2548,
+    "total_tokens": 42113
+  }
+}

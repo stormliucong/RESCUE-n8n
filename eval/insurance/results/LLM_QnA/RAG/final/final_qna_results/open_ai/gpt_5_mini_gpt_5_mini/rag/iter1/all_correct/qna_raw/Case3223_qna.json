@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1 and BRCA2 testing per the clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP policy does not impose an upper age limit for BRCA1/2 testing in adults (only states testing in minors is investigational), so no age-based eligibility restriction is specified that would apply to this 75‑year‑old."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The policy requires testing be performed in a setting with suitably trained providers able to give pre‑ and post‑test genetic counseling. The ordering provider is a general practitioner and there is no documentation that pre‑test counseling or that the required setting/provider expertise is in place."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows BRCA1/2 testing for an unaffected individual who has a 1st‑ or 2nd‑degree relative meeting any 'Patients With Cancer' criterion. The patient's sister had epithelial ovarian carcinoma, which meets the policy's cancer criterion for relatives."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends testing an affected family member first when possible, but it does not state this is an absolute required prior test for coverage of an unaffected individual."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant per policy. The patient has a first‑degree relative (sister) with epithelial ovarian cancer, a family history explicitly cited in the policy as indication for testing."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy requires appropriate pre‑ and post‑test genetic counseling by experienced providers. The clinical information states there is no documentation of pre‑test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP policy document does not specify CPT/billing codes for BRCA1/2 testing; no CPT mapping is given in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets medical‑necessity criteria based on family history (sister with epithelial ovarian cancer), the policy requires testing be performed in a setting with suitably trained providers and appropriate pre‑test genetic counseling. There is no documentation that counseling/setting requirements are met, so coverage cannot be approved per the policy requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18927,
+    "output_tokens": 2187,
+    "total_tokens": 21114
+  }
+}

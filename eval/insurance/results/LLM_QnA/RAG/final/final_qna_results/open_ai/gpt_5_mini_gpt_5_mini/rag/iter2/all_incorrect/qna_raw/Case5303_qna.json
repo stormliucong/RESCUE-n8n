@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred by neurology specifically for BRCA1 and BRCA2 testing per the provided patient information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's age-based criteria apply to WES/WGS (e.g., pediatrics <21) but the policy does not state age criteria for BRCA1/2 testing; therefore age eligibility for BRCA1/2 is not specified in this policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies ordering/provider requirements (evaluation by clinician with genetics expertise and counseling) only in the context of WES/WGS. It does not specify ordering-provider requirements for BRCA1/2 testing."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for WES/WGS (congenital or neurodevelopmental disorders, critically ill infants, etc.) but does not define clinical indications for BRCA1/2 testing; thus medical indication criteria for BRCA1/2 are not specified in this policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists prior testing requirements for WES/WGS in some scenarios (e.g., previous non-diagnostic testing) but does not state prior-test requirements for BRCA1/2 testing; therefore not specified."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy includes family-history criteria relevant to WES/WGS (e.g., sudden unexplained death <35) but does not specify family-history or consanguinity criteria for BRCA1/2 testing; applicability to BRCA1/2 is not specified."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy generally recommends genetic counseling and requires counseling for WES/WGS, but it does not explicitly state counseling requirements specific to BRCA1/2 testing; therefore counseling requirements for BRCA1/2 are not specified in this policy. (Patient had no pre-test counseling.)"
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's coding section lists CPT/HCPCS codes relevant to WES/WGS (e.g., 81415, 81425) but does not list CPT codes for BRCA1/2 testing; thus the appropriate CPT code for BRCA1/2 is not specified in this policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "This medical policy addresses WES/WGS and related codes; it does not provide coverage criteria for BRCA1/2 testing nor list BRCA CPT codes as covered. The policy states benefit determinations are based on the member's health benefit plan. Based solely on this policy document, BRCA1/2 testing is not shown as covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14843,
+    "output_tokens": 2338,
+    "total_tokens": 17181
+  }
+}

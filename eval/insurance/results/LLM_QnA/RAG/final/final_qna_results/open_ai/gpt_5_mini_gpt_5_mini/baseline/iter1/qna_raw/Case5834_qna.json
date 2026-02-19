@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The clinical note explicitly states a referral for chromosomal microarray (CMA) testing to evaluate a genomic etiology for the patient's developmental disorder."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP CMA coverage is driven by clinical indication (unexplained intellectual disability/developmental delay) rather than a strict age cutoff; no payer age-based exclusion is specified that would bar testing for this 67‑year‑old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP medical policy does not mandate a specific ordering provider specialty for CMA (documentation of clinical indication and counseling is required), and no specialty requirement is provided in the patient data."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP considers CMA medically indicated as a first‑line test for individuals with unexplained intellectual disability/developmental delay; the patient has lifelong severe intellectual disability diagnosed by age 18, meeting that clinical criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policy treats CMA as a first‑line test for unexplained intellectual disability and does not require prior cytogenetic testing/karyotype before CMA; the patient had no prior testing but no prior-test prerequisite is specified."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history/consanguinity criteria are not required for CMA coverage in the context of unexplained intellectual disability; the noted maternal ovarian cancer is not relevant to CMA eligibility under BCBS FEP rules."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP expects documentation of pre‑test genetic counseling for complex genomic testing; the record documents multiple pre‑test counseling sessions with a genetic counselor and plans for post‑test follow‑up, satisfying this requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is chromosomal microarray; the most appropriate CPT choice among the options provided is 81415 (microarray/genomic copy number analysis code in the offered list)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS FEP criteria CMA is covered for unexplained intellectual disability/developmental delay, the patient meets the clinical indication, pre‑test genetic counseling is documented, and no disqualifying age or prior‑test requirements apply."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2002,
+    "output_tokens": 2565,
+    "total_tokens": 4567
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient record explicitly states the patient is undergoing whole exome sequencing (WES) requested by the neurologist."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria are driven by clinical presentation (e.g., unexplained early-onset epileptic encephalopathy/developmental disorder) rather than strict age cutoffs; no age exclusion is specified for this scenario."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require WES be ordered by an appropriate treating/qualified clinician (e.g., geneticist, neurologist); the ordering provider is a neurologist, which satisfies the ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES when there is a suspected genetic etiology such as early-onset epileptic encephalopathy/unexplained neurologic disorder beginning in infancy/early childhood; this patient had epilepsy onset before age 3 persisting into adulthood, meeting that clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC commonly requires prior appropriate testing (e.g., chromosomal microarray and/or targeted testing) before WES for developmental/neurologic indications; the record documents prior Fragile X testing only and does not document required prior CMA or other recommended prior tests."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant to WES eligibility under UHC criteria; the patient has a brother with an inborn error of metabolism, which supports a heritable etiology."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre-test genetic counseling for WES; the patient completed pre-test counseling with a genetic counselor and has post-test follow-up planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (interpretation and report), which matches the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, ordering provider, counseling, and family history support WES per UHC policy, required prior testing (e.g., chromosomal microarray/other recommended prior tests) is not documented; because a required prior test was not completed, coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1973,
+    "output_tokens": 1845,
+    "total_tokens": 3818
+  }
+}

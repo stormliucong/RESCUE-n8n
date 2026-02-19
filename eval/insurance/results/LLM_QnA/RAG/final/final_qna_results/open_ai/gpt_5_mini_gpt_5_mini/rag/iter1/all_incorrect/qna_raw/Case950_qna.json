@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued to look for an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not set explicit age cutoffs for WES; it discusses age of seizure onset as a factor (early-onset DEE) but does not impose an age-based eligibility limit for testing."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires the rendering laboratory be a qualified provider per plan policy but does not specify ordering-provider specialty or type requirements for WES."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists testing as medically necessary for early-onset epileptic encephalopathy/DEE; the patient has unexplained epileptic encephalopathy with onset before age 3 and no known cause, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline does not require specific prior tests prior to WES/multi-gene testing in this scenario; patient had nondiagnostic karyotype and no prior epilepsy multigene panel (which the policy notes would preclude repeat testing)."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy includes family-history criteria for some epilepsy testing (e.g., focal epilepsy with positive family history), but the patient's family history (an uncle with prostate cancer) is not a relevant family history for monogenic epilepsy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "While the guideline cites professional recommendations supporting genetic counseling, it does not state a formal counseling requirement as a coverage criterion; patient does have counseling documented."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "WES corresponds to exome sequencing CPT code 81415; patient is requesting whole exome sequencing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, testing is medically necessary for early-onset epileptic encephalopathy/DEE and the patient has unexplained early-onset epileptic encephalopathy (onset <3 years), has no prior epilepsy multigene panel, and karyotype was nondiagnostic; these facts meet the coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12786,
+    "output_tokens": 1956,
+    "total_tokens": 14742
+  }
+}

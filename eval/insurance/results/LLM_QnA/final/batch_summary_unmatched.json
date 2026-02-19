@@ -1,0 +1,42 @@
+[
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_mini_gpt_5_mini_update",
+    "batch_id": "batch_68fa7260b9c4819082ecb3c363a28585",
+    "case_type": "unmatched"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_30retrieve_gpt_5_mini_gpt_5_mini_update",
+    "batch_id": "batch_68fa7272e0688190ae56a2558047c30d",
+    "case_type": "unmatched"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_mini_gpt_5_update",
+    "batch_id": "batch_68fa72802c7081908e0edda4abf88a77",
+    "case_type": "unmatched"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_30retrieve_gpt_5_mini_gpt_5_update",
+    "batch_id": "batch_68fa728a0590819083429b855cd5e5ff",
+    "case_type": "unmatched"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_gpt_5_mini_update",
+    "batch_id": "batch_68fa7293ff388190b52a5a60acb09d57",
+    "case_type": "unmatched"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_30retrieve_gpt_5_gpt_5_mini_update",
+    "batch_id": "batch_68fa729edd988190be39b17a8725b0e2",
+    "case_type": "unmatched"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_gpt_5_update",
+    "batch_id": "batch_68fa72a934f081909cc2cdac988114b3",
+    "case_type": "unmatched"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_30retrieve_gpt_5_gpt_5_update",
+    "batch_id": "batch_68fa72b3d01881909a77e49b0d8d4d68",
+    "case_type": "unmatched"
+  }
+]

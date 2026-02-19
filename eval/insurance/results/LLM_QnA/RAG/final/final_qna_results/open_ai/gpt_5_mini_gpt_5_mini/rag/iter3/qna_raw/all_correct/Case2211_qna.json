@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1 and BRCA2 testing per the clinical information; policy lists BRCA1/2 testing as a distinct category (policy: BRCA1/BRCA2 gene testing)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy specifies age criteria for some BRCA indications (e.g., breast cancer diagnosed ≤65) but does not specify an age limit for single-gene or known familial-mutation BRCA testing. The patient is 21 and age is not an explicit limiting criterion for known familial mutation testing in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends genetic counseling and involvement of providers with genetics expertise but does not enumerate a specific required ordering provider specialty/type; the ordering provider requirement is not explicitly specified."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy states 'Single gene testing and known mutation testing for familial cancer is proven and medically necessary' and lists having a blood relative with a known P/LP variant as an indication. The patient’s mother carries a known BRCA2 pathogenic variant and the patient has multiple affected relatives and a personal primary solid tumor, meeting medical indication per policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of specific prior tests before single-gene or known familial-mutation BRCA testing; no mandatory prior testing is specified in the policy for this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy includes family history criteria (e.g., known P/LP variant in a blood relative; ≥2 affected relatives on same side) as qualifying indications. The patient reports a mother with a known BRCA2 pathogenic variant and at least two additional affected blood relatives on the same side."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'strongly recommends' pre-test genetic counseling but does not state it as a strict coverage requirement; although the patient completed pre-test counseling with a genetic specialist, the policy does not define mandatory counseling requirements for coverage."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy's applicable codes list 81162 for BRCA1/BRCA2 full sequence analysis and full duplication/deletion analysis. This is the CPT code that best corresponds to BRCA1/2 testing as requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per policy, single-gene and known mutation testing for familial cancer is proven and medically necessary and having a blood relative with a known pathogenic BRCA2 variant is a listed indication. The patient meets these criteria (mother with known BRCA2 PV and multiple affected relatives), so BRCA1/2 testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 38641,
+    "output_tokens": 2902,
+    "total_tokens": 41543
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient history explicitly states whole exome sequencing (WES) has been requested to investigate a genetic etiology for autism spectrum disorder with additional abnormalities."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WES coverage criteria do not impose a strict age cutoff; the clinical policy evaluates medical indication rather than an age threshold, and the patient is a pediatric case (12 y/o) which is within commonly covered age ranges but no explicit age limit is specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally require an ordering clinician with appropriate expertise, but the policy does not rigidly limit ordering to a single specialty in all cases. The referral was from a developmental pediatrician (an appropriate specialist), but the policy language about an exact required ordering provider is not explicitly specified in the provided patient data."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinically the patient has autism spectrum disorder plus at least one additional abnormality affecting another organ system and a nondiagnostic prior cytogenetic test, which meets common UHC medical indications for WES (neurodevelopmental disorder with additional anomalies suggesting an underlying genetic etiology)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC WES coverage typically requires prior recommended testing (chromosomal microarray and/or Fragile X and other targeted tests as appropriate). The patient had a nondiagnostic karyotype but no documented chromosomal microarray (CMA) or other recommended prior tests, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While a family history of neurologic disease (paternal uncle with dystonia/ataxia) is documented and may be clinically relevant, UHC WES criteria do not make specific family history or consanguinity a strict standalone eligibility requirement; the policy treats family history as supportive but not a defined gatekeeper criterion."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UnitedHealthcare typically requires documentation of pre-test genetic counseling/informed consent for broad genomic tests like WES. The case states no pre-test genetic counseling was documented, so this required element is not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (whole exome) and is the appropriate billing code for WES in this context."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indication for WES, key UHC coverage prerequisites are unmet: required prior testing (e.g., CMA) is not documented and pre-test genetic counseling is not documented. Based on UHC policy requirements, coverage would be denied until those prerequisites/documentation are satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 1876,
+    "total_tokens": 3867
+  }
+}

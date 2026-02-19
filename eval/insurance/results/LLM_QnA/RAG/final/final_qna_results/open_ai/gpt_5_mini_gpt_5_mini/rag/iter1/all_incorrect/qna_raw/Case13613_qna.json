@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states the pregnancy was referred for whole exome sequencing (WES) to assess fetal anomalies; the requested test is explicitly WES."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy medical-necessity statements and criteria apply to children (and critically ill infants) and the Policy Guidelines explicitly state the policy does not address prenatal (fetal) testing; the patient is a fetus and therefore does not meet the age-related/setting criteria in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling prior to WES. Patient had pre-test discussion with a genetic specialist, satisfying the provider/counseling requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital anomalies' as a medical indication for WES. The fetus has multiple structural anomalies on imaging, meeting the clinical indication criterion (regardless of prenatal exclusion)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy criteria require prior standard workup (eg, chromosomal microarray analysis and/or targeted single-gene testing) or prior genetic testing that failed to yield diagnosis. Patient only had fragile X testing (nondiagnostic); no CMA or equivalent prior testing documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance emphasizes documentation of family history; patient has a relevant family history (maternal aunt with dysmorphic features), meeting the family-history criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling by someone with expertise in genetic medicine; patient had pre-test discussion with a genetic specialist, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); among the provided CPT options, 81415 corresponds to clinical exome/exome sequencing and is the best match for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "From an adjudication perspective, the policy explicitly states it does not address prenatal (fetal) testing and limits medically necessary WES indications to children/critically ill infants per policy statements; prenatal WES is therefore not supported as a covered indication under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14831,
+    "output_tokens": 1964,
+    "total_tokens": 16795
+  }
+}

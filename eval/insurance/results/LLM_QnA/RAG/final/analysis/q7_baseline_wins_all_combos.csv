@@ -1,0 +1,16 @@
+case_id,combo_folder,retrieval_model,qna_model,Q7_baseline,Q7_internal,Q7_gt
+Case7447,top1_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Not Specified,81425,Not Specified
+Case14195,top3_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Not Specified,81162,Not Specified
+Case16126,top3_10retrieve_gpt_5_mini_gpt_5_mini,gpt-5-mini,gpt-5-mini,Not Specified,81162,Not Specified
+Case13983,top3_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81425,Not Specified
+Case15202,top3_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81162,Not Specified
+Case15458,top3_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81162,Not Specified
+Case15570,top3_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81162,Not Specified
+Case16126,top3_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81162,Not Specified
+Case22,top3_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81162,Not Specified
+Case2666,top3_10retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81162,Not Specified
+Case6747,top3_30retrieve_gpt_5_mini_gpt_5,gpt-5-mini,gpt-5,Not Specified,81425,Not Specified
+Case16126,top3_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81162,Not Specified
+Case2666,top3_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81162,Not Specified
+Case3223,top3_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81162,Not Specified
+Case5834,top3_30retrieve_gpt_5_gpt_5_mini,gpt-5,gpt-5-mini,Not Specified,81228,Not Specified

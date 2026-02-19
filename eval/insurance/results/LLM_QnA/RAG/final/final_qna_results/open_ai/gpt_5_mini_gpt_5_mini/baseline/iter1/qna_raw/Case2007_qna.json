@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Referral explicitly requests BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP hereditary breast/ovarian cancer criteria specify early-onset breast cancer (e.g., diagnosis ≤50) as an indication for BRCA testing; the patient is 18, which meets the age-based criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies require documentation of counseling but typically do not mandate a specific ordering physician specialty; the case lists a family medicine physician referral but policy does not specify an ordering-provider specialty requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has a personal history of metastatic breast cancer at a young age plus a first-degree relative (mother) with breast cancer diagnosed ≤50 — both meet BCBS_FEP medical indications for BRCA1/2 germline testing."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage does not require prior chromosomal microarray or other specific prior genetic tests; the prior CMA being nondiagnostic is noted but not required for BRCA testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant: mother had breast cancer at age ≤50, which is a qualifying family-history criterion in BCBS_FEP BRCA coverage rules."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of pre-test genetic counseling for BRCA testing; the patient completed pre-test counseling and will return for post-test counseling, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to BRCA1/BRCA2 germline testing (comprehensive analysis) and best matches the requested BRCA1/2 test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per BCBS_FEP coverage criteria the patient meets medical indications (personal early-onset breast cancer and qualifying family history), has required pre-test counseling documented, and no disqualifying prior-test requirements apply; therefore BRCA1/2 testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1980,
+    "output_tokens": 1945,
+    "total_tokens": 3925
+  }
+}

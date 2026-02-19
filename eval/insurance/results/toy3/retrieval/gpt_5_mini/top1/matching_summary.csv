@@ -1,0 +1,11 @@
+case_id,matched,llm_rank,orig_rank,doc_name
+Case10917,0,,,
+Case8051,1,1,1,BCBS_FEP_204102 Whole Exome and.pdf
+Case11124,0,,,
+Case7376,0,,,
+Case10451,0,,,
+Case19321,0,,,
+Case9349,1,1,1,BCBS_FEP_204102 Whole Exome and.pdf
+Case10363,0,,,
+Case4512,1,1,2,BCBS_FEP_204102 Whole Exome and.pdf
+Case18257,1,1,2,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf

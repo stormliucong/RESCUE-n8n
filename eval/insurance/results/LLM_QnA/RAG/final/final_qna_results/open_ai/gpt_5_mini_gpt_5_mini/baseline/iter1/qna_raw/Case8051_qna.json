@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is being ordered to evaluate the infant with a major congenital cardiac anomaly."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES coverage criteria are not typically age‑restricted; policies apply to pediatric and adult patients. No specific age cutoff is stated in the provided payer-context, so age-based criteria are not specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided payer context does not explicitly state a required ordering specialty. Although some policies prefer genetics involvement, the chart documents that pre‑test genetic counseling was completed, and there is no explicit BCBS_FEP ordering‑provider restriction given in the patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES medical‑necessity criteria include unexplained congenital anomalies or suspected syndromic conditions; this infant has a major congenital cardiac anomaly with concern for syndromic etiology, meeting a clinical indication for WES."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP often requires prior relevant genomic tests (e.g., chromosomal microarray) before WES for congenital anomalies. The record documents prior FISH was nondiagnostic but does not document that CMA was completed, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history relevant to genetic evaluation is present: the mother has short stature raising concern for a growth‑related genetic condition, which is pertinent to syndromic assessment and WES eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre‑test genetic counseling was completed by the family and follow‑up is planned, meeting BCBS_FEP counseling requirements that accompany complex genomic testing in many policies."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, family history, and genetic counseling are documented, BCBS_FEP criteria typically require prior genomic testing (e.g., chromosomal microarray) before WES for congenital anomalies; only FISH (nondiagnostic) was done. Because required prior testing was not completed, the request does not meet the payer's coverage prerequisites."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1987,
+    "output_tokens": 1868,
+    "total_tokens": 3855
+  }
+}

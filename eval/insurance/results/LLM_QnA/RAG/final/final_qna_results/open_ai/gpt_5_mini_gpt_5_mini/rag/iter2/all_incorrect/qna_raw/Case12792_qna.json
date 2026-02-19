@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient clinical information states the 12-year-old was referred for BRCA1/2 testing; that is the explicitly requested test."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP_20459 policy addresses chromosomal microarray and NGS for developmental delay/ congenital anomalies and does not specify age-based eligibility criteria for BRCA1/2 testing."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes genetic counseling and testing context but does not specify ordering-provider specialty or provider-type requirements for BRCA1/2 testing."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's medical indications focus on CMA for developmental delay/ID, ASD, or multiple congenital anomalies; it does not define clinical indications for BRCA1/2 testing, so applicability to this patient's congenital choanal atresia is not addressed."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies some prior testing (eg, fragile X, CMA as first-line) relevant to developmental evaluations, but it does not define prior-test requirements for BRCA1/2 testing."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses parental evaluation in follow-up to CMA abnormal results but does not set family-history or consanguinity criteria for BRCA1/2 testing; the patient summary provides no BRCA-relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states that formal genetic counseling is recommended and should be performed by someone with expertise when genetic testing for an inherited condition is considered. The patient record documents pre-test genetic counseling completed and planned post-test follow-up, meeting the policy's counseling expectations."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not list or map CPT codes to BRCA1/2 testing; therefore a CPT code cannot be selected from the policy alone."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the provided BCBS_FEP_20459 policy, coverage statements address chromosomal microarray as first-line for developmental delay/ID, ASD, and multiple congenital anomalies and label NGS panels investigational for these indications. The policy does not address BRCA1/2 testing or indicate BRCA testing is medically necessary for congenital anomalies (choanal atresia). Using only this policy, BRCA1/2 testing is not supported as covered for this clinical presentation."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15676,
+    "output_tokens": 1957,
+    "total_tokens": 17633
+  }
+}

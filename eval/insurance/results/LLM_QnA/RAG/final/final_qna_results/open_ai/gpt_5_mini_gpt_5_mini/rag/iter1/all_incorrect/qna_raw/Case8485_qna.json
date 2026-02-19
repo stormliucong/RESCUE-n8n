@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy refers to 'children' but does not give a specific numeric age cutoff; no explicit age-based eligibility criterion is specified in the policy text."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled about risks; the ordering provider is a general pediatrician and pre-test genetic counseling was not performed, so provider requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy defines indications for children with unexplained congenital or neurodevelopmental disorders and lists 'significant hypotonia' and developmental delay as clinical features suggesting a genetic disease; the patient has hypotonia and persistent motor delay, meeting a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy indicates prior testing (eg, chromosomal microarray analysis and/or targeted single-gene testing) should have been done or failed to yield a diagnosis; the record notes only nondiagnostic Fragile X testing, with no CMA/targeted testing documented, so required prior tests were not completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as relevant; the family reports a sibling with autism spectrum disorder, which meets the policy's family history criterion."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy states genetic counseling should be performed by someone with experience and expertise and is part of the required documentation; pre-test genetic counseling was not performed for this patient."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to WES; no CPT guidance is given in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical indication (neurodevelopmental disorder with hypotonia and family history), the policy requires ALL criteria (including evaluation by a clinician with genetics expertise and genetic counseling, and appropriate prior testing) to be met for WES to be medically necessary; those documentation requirements and prior testing were not met, so coverage is not supported per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14824,
+    "output_tokens": 1461,
+    "total_tokens": 16285
+  }
+}

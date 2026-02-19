@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states testing is being pursued with whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is framed for children (pediatric patients); the patient is 15 years old and therefore meets the policy's child-age scope for sequencing evaluation."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual 'has been evaluated by a clinician with expertise in clinical genetics' (Policy Statement #1). The clinical information shows referral by neurology and genetic counselor visits but does not document evaluation by a clinician with expertise in clinical genetics/medical geneticist, so ordering/provider requirement is not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication includes unexplained congenital anomalies in children and prior genetic testing failing to yield a diagnosis. The patient has a congenital anomaly since birth, a sibling with a similar anomaly (supporting genetic etiology), and prior FISH testing was nondiagnostic, meeting the clinical indication element of the policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The policy examples/expectation for prior testing reference chromosomal microarray analysis and/or targeted single-gene testing; the patient only has prior nondiagnostic FISH reported and no documentation of prior CMA or targeted single-gene testing, so required prior testing per policy is not completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history/consanguinity is a specified consideration in the policy; the patient has a sibling with a similar congenital anomaly, which is relevant and documented."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling about potential risks by someone experienced in genetic medicine. The patient 'has been seen by a genetic counselor multiple times,' indicating counseling has occurred consistent with the policy's counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT billing codes to WGS; no CPT code for WGS is specified in the policy text supplied."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy statement, whole genome sequencing (WGS) is considered investigational for diagnosis of genetic disorders in all other situations (except rapid testing for critically ill infants). This patient is not a critically ill infant and the requested test is WGS; therefore the test is not covered under the provided policy. Additional policy requirements (evaluation by a clinician with expertise in clinical genetics and prior recommended testing such as CMA) are also not documented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14831,
+    "output_tokens": 3238,
+    "total_tokens": 18069
+  }
+}

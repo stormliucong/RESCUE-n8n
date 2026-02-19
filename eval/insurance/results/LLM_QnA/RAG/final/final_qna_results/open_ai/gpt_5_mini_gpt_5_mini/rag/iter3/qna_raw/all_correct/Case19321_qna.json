@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related items (e.g., developmental delay/ID diagnosed by 18 years) apply and the patient is 1 year old, which meets the policy's age-related eligibility bounds for pediatric WES."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a neurologist, meeting this requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage requires either (A) clinical history strongly suggests genetic cause plus one of: multiple congenital anomalies, moderate-severe ID by 18, global developmental delay, or early epileptic encephalopathy; or (B) clinical history strongly suggests genetic cause plus two or more of a listed set (which includes ASD as one item). The record documents ASD-like features only (one listed feature) and does not explicitly document global developmental delay, ID, multiple congenital anomalies, epilepsy, or a second listed feature; therefore the defined coverage clinical indications are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate prior CMA or other specific tests before WES in the general (non-prenatal) WES coverage criteria. (Patient has had CMA nondiagnostic, but that is not a required prior test per the WES coverage section.)"
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists family history (other first- or second-degree family members with similar clinical features) as a qualifying feature. The record notes a maternal aunt with multiple congenital anomalies, but not a family member with similar neurodevelopmental features; thus the policy's family-history criterion is not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is strongly recommended prior to WES/WGS but does not define it as a required coverage criterion; the patient did receive pre-test counseling, but counseling is presented as recommendation rather than a coverage requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for primary exome (sequence analysis) which corresponds to WES being requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and ordering provider meet policy requirements, the patient does not meet the policy's specified medical indication thresholds (insufficient documented qualifying features per the WES criteria). Per the UnitedHealthcare WES coverage rationale, all listed clinical criteria must be met for coverage; they are not met in this record, so WES is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36944,
+    "output_tokens": 2899,
+    "total_tokens": 39843
+  }
+}

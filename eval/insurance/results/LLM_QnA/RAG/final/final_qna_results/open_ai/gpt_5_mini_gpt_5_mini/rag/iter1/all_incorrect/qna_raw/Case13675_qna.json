@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information states 'whole genome sequencing (WGS) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related language specifies applicability to 'children' and infants with congenital anomalies; the patient is an 8‑week‑old infant, which meets the policy's child/infant age criteria for evaluation of congenital anomalies."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy REQUIREMENT #1: documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled about risks. The ordering/referring provider is a neonatologist and there is 'no documentation of pre‑test genetic counseling' or genetics evaluation, so provider/counseling requirements are not met per the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indications include evaluation of unexplained congenital anomalies; the patient has significant congenital hearing and/or visual impairment and prior genetic testing (FISH) was nondiagnostic, meeting the policy's clinical indication for genome/exome sequencing."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy notes prior testing such as chromosomal microarray analysis (CMA) and/or targeted single‑gene testing should have been performed or failed to yield a diagnosis. Only prior FISH (nondiagnostic) is documented; CMA/targeted testing is not documented, so required prior testing is not shown."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly lists family history items relevant to consideration, including Long QT syndrome; the patient's father has long QT syndrome, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires genetic counseling performed by someone with genetics expertise prior to testing (documentation required). The record states there is no documentation of pre‑test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy document does not list or specify CPT/billing codes for WGS or related tests; thus a specific CPT code is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy statement, whole genome sequencing is considered investigational for diagnosis in all other situations except when rapid WGS is medically necessary for critically ill infants who meet specific ICU criteria. The patient is not documented as critically ill in NICU/PICU and WGS pre‑requirements (genetics evaluation, genetic counseling, prior recommended testing such as CMA) are not met; therefore WGS is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14847,
+    "output_tokens": 2358,
+    "total_tokens": 17205
+  }
+}

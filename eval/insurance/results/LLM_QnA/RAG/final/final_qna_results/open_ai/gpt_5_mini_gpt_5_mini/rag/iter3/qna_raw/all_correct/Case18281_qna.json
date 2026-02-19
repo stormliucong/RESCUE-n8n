@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical information states the cardiologist ordered whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy includes some age-based criteria for specific indications (e.g., ID diagnosed by 18) but does not impose an overall age cut-off for WGS for multiple congenital anomalies; the patient is 6 years old, which is not excluded by the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a cardiologist, so provider requirement is not met (policy: 'WGS is ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician')."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical-necessity criteria include 'multiple congenital anomalies (must affect different organ systems)' for WGS; the patient is a child with multiple congenital anomalies that do not fit a well-delineated syndrome, so the clinical criterion is met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy WGS criteria require that 'neither CMA nor WES have been performed.' Patient had only Fragile X testing (nondiagnostic) and no CMA or WES documented, so this requirement is satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' and 'laboratory abnormalities suggestive of an IEM' among features supporting sequencing; patient has a sibling with an inborn error of metabolism, which is relevant family history."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended prior to WES or WGS' but does not make counseling a coverage requirement; patient had no pre-test genetic counseling, but counseling is not a mandated coverage criterion in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 for genome sequence analysis ('Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis'), which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication (multiple congenital anomalies) and prior-testing condition (no CMA/WES) are met and family history is supportive, the policy requires WGS to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a cardiologist, so the policy's provider requirement is not met and coverage is therefore not supported."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36944,
+    "output_tokens": 2179,
+    "total_tokens": 39123
+  }
+}

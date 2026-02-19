@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case explicitly states whole exome sequencing (WES) is being pursued to evaluate an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES coverage is based on clinical indication (congenital anomalies/early-onset neuro disorder) rather than a strict age cutoff; no age-specific exclusion is documented and the infant age (7 weeks) does not conflict with policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policies typically require an appropriate ordering clinician and documentation but do not mandate a single specific specialty for ordering WES; the provided record does not state a specific required ordering specialty."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP covers WES for unexplained congenital anomalies or early-onset neurologic/movement disorders. The patient has early-onset dystonia/ataxia/hemiplegic episodes and a nondiagnostic CMA, meeting clinical indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP generally requires prior chromosomal microarray for congenital anomalies/neurologic presentations; a CMA was performed and reported nondiagnostic, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are relevant for WES eligibility; the patient has an older sibling with multiple congenital anomalies, which supports testing per BCBS FEP indications."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP requires documented pre-test genetic counseling for WES in many cases; the record states pre-test counseling was completed with a genetic counselor and post-test follow-up is planned."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (whole exome), which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS FEP policy the case meets coverage criteria: infant with early-onset movement/neurologic disorder and family history of congenital anomalies, prior nondiagnostic CMA, and documented pre-test genetic counseling; therefore WES is medically necessary and covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2018,
+    "output_tokens": 1757,
+    "total_tokens": 3775
+  }
+}

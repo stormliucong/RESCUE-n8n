@@ -1,0 +1,10 @@
+{
+  "qna_result": {
+    "raw": "```json\n{\n  \"Q0\": \"CMA\",\n  \"Q1\": \"Not Specified\",\n  \"Q2\": \"Not Specified\",\n  \"Q3\": \"Yes\",\n  \"Q4\": \"Not Specified\",\n  \"Q5\": \"Not Specified\",\n  \"Q6\": \"Yes\",\n  \"Q7\": \"81228\",\n  \"Q8\": \"Yes\"\n}\n```"
+  },
+  "token_usage": {
+    "input_tokens": 14936,
+    "output_tokens": 89,
+    "total_tokens": 15025
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The clinical note explicitly states consideration of chromosomal microarray (CMA) testing to evaluate for an underlying chromosomal or genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP CMA coverage criteria are indication-based (developmental delay, ID, ASD, multiple congenital anomalies) and do not impose a specific age limit; the infant's age (4 weeks) is not a disqualifying factor per payer criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP CMA coverage criteria do not mandate a particular ordering provider specialty beyond an authorized/credentialed clinician; the record documents pre-test counseling by a genetic specialist but the policy does not specify a unique ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Per BCBS_FEP coverage, CMA is medically indicated for unexplained developmental delay/ID, autism spectrum disorder, or multiple congenital anomalies. The infant has isolated meconium ileus and a family history of an inborn error of metabolism (a single-gene/metabolic concern), which do not clearly meet the payer's defined CMA indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP does not generally require specific prior testing before CMA; however, this patient already had a prior nondiagnostic CMA. Payer policy typically restricts repeat CMA unless new clinical findings are documented, but no required prior-test list is specified in the policy."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has a family history of an inborn error of metabolism in a sibling, BCBS_FEP CMA eligibility is not driven by family history of single‑gene metabolic disorders; the policy does not specify family history/consanguinity criteria that would make CMA eligible in this scenario."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP expects appropriate pre-test genetic counseling/documentation for genomic tests; the record states pre-test counseling was completed with a genetic specialist and post-test follow-up was arranged, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Among the provided code options, 81277 corresponds to chromosomal microarray/constitutional copy-number microarray testing (CMA) and best maps to the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying BCBS_FEP coverage rules: CMA is covered for specific indications (DD/ID/ASD or multiple congenital anomalies). This infant has isolated meconium ileus and a family history of an inborn error of metabolism (single‑gene suspicion), and prior CMA was nondiagnostic. These facts do not meet the payer's defined medical necessity criteria for CMA or justify a repeat CMA, so coverage is not supported."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 3038,
+    "total_tokens": 5029
+  }
+}

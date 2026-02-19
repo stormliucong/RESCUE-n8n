@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy does not impose an upper age exclusion for WGS and the patient is a 13‑year‑old child; policy criteria include neurodevelopmental features (e.g., Global Developmental Delay) diagnosed by age 18, which the patient meets."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a developmental pediatrician."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical‑necessity criteria list Global Developmental Delay and/or dysmorphic features/family members with similar features as indications; the patient has global developmental delay and a family history (aunt with dysmorphic features), meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that neither CMA nor WES have been performed prior to WGS; the record documents only prior nondiagnostic FISH and does not report prior CMA or WES, so the patient meets this prior‑test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists other first‑ or second‑degree family members with similar clinical features as a criterion; the patient has an aunt with dysmorphic features (a relevant second‑degree relative)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make counseling a formal coverage requirement; patient did complete pre‑test counseling."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy 'Applicable Codes' lists 81425 for genome (e.g., unexplained constitutional or heritable disorder or syndrome) sequence analysis corresponding to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All applicable policy criteria for WGS are met: ordered by a developmental pediatrician, patient has Global Developmental Delay and relevant family history, no prior CMA or WES documented, and testing is being pursued to evaluate a genetic etiology that would influence management per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36937,
+    "output_tokens": 3049,
+    "total_tokens": 39986
+  }
+}

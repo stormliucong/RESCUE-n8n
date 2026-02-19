@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical information states the cardiologist has ordered whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's age-related eligibility and indications apply to children and critically ill neonates/infants; the policy explicitly states it does not address prenatal (fetal) testing, so age-based criteria for this fetal request are not specified in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The policy requires evaluation by a clinician with expertise in clinical genetics (including family history/phenotype) and counseling before WES/WGS; the order was placed by a cardiologist and there is no documentation of evaluation by a genetics clinician or pre-test genetic counseling, so ordering/provider requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for children and critically ill infants but explicitly states it does not address prenatal (fetal) testing; therefore the policy does not specify clinical indications for fetal WGS."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "For standard WES/WGS the policy expects prior standard workup (eg, chromosomal microarray analysis and/or targeted single-gene testing) or failure of prior testing; the patient only had nondiagnostic fragile X testing and no documentation of CMA or other recommended prior testing, so required prior tests per policy have not been completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists specific family-history items relevant to testing (eg, arrhythmia, developmental delay, inborn error of metabolism, sudden unexplained death) but does not list an aunt with triple-negative breast cancer as a qualifying family history; the provided family history does not meet the policy's specified family-history criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy requires formal genetic counseling by an experienced provider before WES/WGS evaluation; there is no documentation of pre-test genetic counseling in the patient information, so counseling requirements are not met per policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy document does not list or map specific CPT codes to WES or WGS, so a CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The policy explicitly does not address prenatal (fetal) WES/WGS and indicates whole genome sequencing is considered investigational for diagnosis in other situations; the Benefit Application excludes experimental/investigational procedures. Additionally, required genetics evaluation and counseling and prior testing criteria were not met. Based on the policy as the sole authority, the requested prenatal WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14825,
+    "output_tokens": 2632,
+    "total_tokens": 17457
+  }
+}

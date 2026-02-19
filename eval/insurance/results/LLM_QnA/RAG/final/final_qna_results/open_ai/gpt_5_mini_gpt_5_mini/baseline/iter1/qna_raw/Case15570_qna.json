@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Provider explicitly requested BRCA1 and BRCA2 testing per the patient information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP BRCA coverage is based on personal/family cancer history rather than strict age cutoffs; no age-based exclusion or specific minimum age is documented in the payer criteria relevant to this case."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policies typically do not restrict BRCA ordering to a specific specialty in policy language; the record lists a general pediatrician but payer ordering-provider restrictions are not specified in the provided policy context."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS FEP BRCA coverage requires a personal and/or family history meeting hereditary breast/ovarian cancer criteria. The patient has Hirschsprung disease with no personal cancer history and no documented family cancer history, so medical indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Payer BRCA criteria do not require prior diagnostic genetic tests (e.g., karyotype) before BRCA1/2 sequencing; no specific prior-test prerequisites are identified in the applicable coverage criteria for BRCA in this scenario."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "BCBS FEP BRCA eligibility relies on family history of breast/ovarian (or related) cancers. The family history provided (mother with bipolar disorder) contains no relevant cancer history, so family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS FEP generally expects documentation of pre-test genetic counseling for hereditary cancer testing; there is no documentation of pre-test genetic counseling for this patient, so counseling requirements are not satisfied."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The typical BRCA-specific CPT codes (e.g., single-gene BRCA1/BRCA2 codes) are not among the provided options; therefore an exact match from the list cannot be specified."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under BCBS FEP criteria BRCA testing is covered when personal/family cancer history or other specified indications are met and counseling documented. This patient lacks qualifying personal/family cancer history and pre-test counseling, so the test does not meet coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1979,
+    "output_tokens": 2242,
+    "total_tokens": 4221
+  }
+}

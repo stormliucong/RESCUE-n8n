@@ -1,0 +1,15 @@
+{
+  "provider": "United Healthcare",
+  "prompt_type": "keyword",
+  "model": "openai",
+  "iteration": 1,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\": [], \"webpage_links\": [\"https://uhcprovider.com/en/policies-protocols/commercial-policies/umr-medical-drug-policies.html\"]}",
+  "parsed_data": {
+    "pdf_links": [],
+    "webpage_links": [
+      "https://uhcprovider.com/en/policies-protocols/commercial-policies/umr-medical-drug-policies.html"
+    ]
+  }
+}

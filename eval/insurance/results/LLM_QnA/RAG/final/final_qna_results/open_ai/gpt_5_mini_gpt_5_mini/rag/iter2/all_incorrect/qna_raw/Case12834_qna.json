@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient info states chromosomal microarray (CMA) testing has been ordered (requisition specifies a tumor-type assay but the requested test is CMA)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses testing for ASD/ID/GDD across pediatric ages and references recommendations for children, but it does not state an explicit age cutoff or age-based eligibility requirement specific to CMA in this document."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline refers to testing ordered by an \"appropriate health care professional\" and that the rendering laboratory be a qualified provider per plan policy, but it does not specify concrete ordering-provider specialty or credential requirements for CMA in this text."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy and cited professional guidelines (ACMG/AAP/AACAP within the document) indicate chromosomal microarray is a first-tier/recommended test for individuals with unexplained intellectual disability/developmental delay/ASD. The patient is a 16-year-old with a complex neurodevelopmental disorder and prior Fragile X testing was nondiagnostic, meeting the medical indication for CMA per the guideline."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline recommends both chromosomal microarray and Fragile X testing in the evaluation of ID/ASD but does not state that completion of any specific prior test is a formal prerequisite before performing CMA. The patient has had Fragile X testing (nondiagnostic)."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history criteria for certain tests (eg, known familial mutation testing and X-linked ID panels require specific family history). The patient's family history (maternal uncle with dystonia/ataxia) is not described as ASD/ID or a known familial causative mutation relevant to CMA/XLID criteria; therefore relevant family-history eligibility criteria are not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline explicitly requires pre-/post-test genetic counseling for Known Familial Mutation testing but does not specify a genetic counseling requirement for CMA in this document. The record notes genetic counseling is not documented."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy references chromosomal microarray testing but indicates that CMA is addressed in a separate guideline (Chromosomal Microarray Testing For Developmental Disorders) and does not provide a specific CPT code for CMA within this document. None of the provided CPT options are specified for CMA in the policy text given."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the guideline and cited professional recommendations within the document (ACMG/AAP/AACAP), chromosomal microarray is a recommended/first-tier test for individuals with unexplained neurodevelopmental disorders/ID/GDD. The patient is a 16-year-old with complex neurodevelopmental disorder and prior Fragile X testing nondiagnostic, meeting the coverage-related clinical indication for CMA."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10297,
+    "output_tokens": 2624,
+    "total_tokens": 12921
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) was ordered by the medical geneticist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age criterion: pediatrics under 21 years. Patient is 12 years old, which meets the policy age requirement."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics. The test was ordered by a medical geneticist, satisfying the ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indications: WES/WGS medically necessary for unexplained congenital anomalies in pediatrics when evaluated by genetics, counseling provided, and one criterion met. Patient has multiple congenital anomalies, a suspected genetic etiology, and prior CMA was nondiagnostic — meeting the policy clinical criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WGS when previous genetic testing is non-diagnostic as one qualifying criterion. Patient had prior chromosomal microarray (CMA) testing that was nondiagnostic, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as a feature suggesting genetic disease. Patient reports a sibling with developmental delay, which is relevant per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by someone with expertise. Patient had pre-test counseling completed and post-test counseling planned, meeting the policy counseling requirement."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The policy's coding section lists 81425 among procedure codes covered when medically necessary for WES/WGS; therefore 81425 best corresponds to the requested test from the provided code options."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy MP 2.324 the patient meets all required elements for standard WGS: age <21, evaluation by a genetics clinician, counseling provided, and prior CMA nondiagnostic with a suspected genetic etiology — therefore WGS is medically necessary and covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14849,
+    "output_tokens": 2564,
+    "total_tokens": 17413
+  }
+}

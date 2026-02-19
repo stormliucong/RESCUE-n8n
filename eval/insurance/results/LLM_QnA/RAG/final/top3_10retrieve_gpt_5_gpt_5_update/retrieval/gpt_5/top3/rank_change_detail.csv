@@ -1,0 +1,39 @@
+case_id,matched,llm_rank,orig_rank_cand,orig_rank_full,doc_name,rank_change
+Case14017,1,1.0,3.0,3.0,BCBS_FEP_204102 Whole Exome and.pdf,2.0
+Case4604,1,1.0,3.0,3.0,BCBS_FEP_204102 Whole Exome and.pdf,2.0
+Case18821,1,1.0,1.0,1.0,BCBS_FEP_204102 Whole Exome and.pdf,0.0
+Case13,1,1.0,2.0,2.0,BCBS_FEP_204102 Whole Exome and.pdf,1.0
+Case8051,1,1.0,1.0,1.0,BCBS_FEP_204102 Whole Exome and.pdf,0.0
+Case5674,1,1.0,3.0,3.0,BCBS_FEP_204102 Whole Exome and.pdf,2.0
+Case3494,1,1.0,5.0,5.0,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,4.0
+Case4196,1,1.0,2.0,2.0,BCBS_FEP_204102 Whole Exome and.pdf,1.0
+Case2847,1,1.0,4.0,4.0,BCBS_FEP_204102 Whole Exome and.pdf,3.0
+Case811,1,1.0,1.0,1.0,BCBS_FEP_204102 Whole Exome and.pdf,0.0
+Case9408,1,1.0,2.0,2.0,BCBS_FEP_204102 Whole Exome and.pdf,1.0
+Case4262,1,1.0,4.0,4.0,BCBS_FEP_204102 Whole Exome and.pdf,3.0
+Case11795,1,1.0,2.0,2.0,BCBS_FEP_204102 Whole Exome and.pdf,1.0
+Case9349,1,1.0,5.0,5.0,BCBS_FEP_204102 Whole Exome and.pdf,4.0
+Case13983,1,1.0,5.0,5.0,BCBS_FEP_204102 Whole Exome and.pdf,4.0
+Case6747,1,1.0,10.0,10.0,BCBS_FEP_204102 Whole Exome and.pdf,9.0
+Case2162,1,1.0,5.0,5.0,BCBS_FEP_204102 Whole Exome and.pdf,4.0
+Case7447,1,1.0,3.0,3.0,BCBS_FEP_204102 Whole Exome and.pdf,2.0
+Case19162,1,1.0,3.0,3.0,BCBS_FEP_204102 Whole Exome and.pdf,2.0
+Case3223,1,1.0,1.0,1.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.0
+Case14195,1,1.0,2.0,2.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,1.0
+Case22,1,1.0,1.0,1.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.0
+Case15458,1,1.0,1.0,1.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.0
+Case6867,1,1.0,2.0,2.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,1.0
+Case16126,1,1.0,4.0,4.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,3.0
+Case2007,1,1.0,2.0,2.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,1.0
+Case15570,1,1.0,3.0,3.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,2.0
+Case3581,1,1.0,3.0,3.0,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,2.0
+Case15202,1,1.0,3.0,3.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,2.0
+Case12792,1,1.0,2.0,2.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,1.0
+Case14226,1,1.0,5.0,5.0,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,4.0
+Case2666,1,1.0,1.0,1.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.0
+Case17595,1,1.0,1.0,1.0,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.0
+Case5834,1,1.0,1.0,1.0,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.0
+Case17196,1,1.0,1.0,1.0,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.0
+Case10075,1,1.0,1.0,1.0,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.0
+Case9773,1,1.0,1.0,1.0,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.0
+Mean,,1.0,2.675675675675676,2.675675675675676,,1.6756756756756757

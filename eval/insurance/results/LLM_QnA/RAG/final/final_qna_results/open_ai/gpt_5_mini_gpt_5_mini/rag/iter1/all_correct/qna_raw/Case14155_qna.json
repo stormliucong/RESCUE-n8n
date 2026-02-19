@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states \"whole genome sequencing (WGS) has been requested.\""
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists an age requirement of \"Member is <21 years of age\" for genome sequencing; the patient is 7 years old, meeting this criterion."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The guideline requires an \"appropriate genetic and family history evaluation\" and a clinical letter detailing evaluation (differential, testing algorithm, previous tests/results, recommendation that GS is most appropriate). The record shows referral by neurology but does not document the required evaluation/clinical letter or pre-test counseling; therefore provider/order requirements are not satisfied per policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires specific clinical indications (e.g., global developmental delay <5 y, moderate/severe ID, multiple major anomalies, or TWO listed neurodevelopmental criteria including autism plus another). The child has isolated autism spectrum disorder without other listed features or documented ID or additional qualifying criteria; isolated autism alone does not meet the policy's GS clinical criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The guideline requires documentation of prior testing and consideration of standard first‑tier testing (e.g., CMA, targeted panels) and a clinical letter listing \"previous tests performed and results.\" The patient has had no prior genetic testing and no documentation of required prior evaluations, so required prior testing/documentation has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy references family history as part of the required genetic/family history evaluation and includes family history as an explicit criterion only for rapid WGS inpatient criteria. It does not specify that a maternal uncle with an immunologic disorder alone satisfies standard GS eligibility, so family‑history eligibility is not explicitly specified for this scenario."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "ACMG guidance cited in the policy and the GS criteria require pretest genetic counseling/appropriate genetic evaluation; the family declined pre-test genetic counseling, so the counseling requirement is not met per the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The policy lists 81425 as the appropriate CPT for genome sequencing (proband whole genome sequence analysis)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the Cigna GS guideline all listed criteria must be met (including documented genetic/family history evaluation with clinical letter, meeting defined clinical indications beyond isolated autism, prior testing/documentation as appropriate, and pretest counseling). Multiple required elements are not met (isolated autism without additional qualifying features, no prior testing/documentation, and no pretest genetic counseling), therefore coverage is not indicated."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9161,
+    "output_tokens": 2701,
+    "total_tokens": 11862
+  }
+}

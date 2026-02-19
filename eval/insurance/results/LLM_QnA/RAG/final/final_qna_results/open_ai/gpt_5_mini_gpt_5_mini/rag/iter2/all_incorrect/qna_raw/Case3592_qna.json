@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient info explicitly states 'chromosomal microarray (CMA) testing ... is being requested.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The Cigna epilepsy guideline defines age-related indications for epilepsy panels (e.g., neonatal/early infantile encephalopathy) but does not provide explicit age-based eligibility criteria for CMA specifically."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires the rendering laboratory be a qualified provider but does not specify ordering-provider specialty or other ordering-provider requirements for CMA."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline lists clinical indications for epilepsy single-gene tests and multi-gene panels (e.g., early infantile epileptic encephalopathy, intractable neonatal seizures), but it does not state specific medical-indication criteria for CMA as the requested test."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define required prior testing steps specific to CMA. It does note limits on re-testing single genes or panels (one lifetime), but no explicit prior-test requirement for CMA is given."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline includes family-history criteria for panel testing (e.g., positive family history suggestive of monogenic inheritance) but does not specify family-history or consanguinity criteria relevant to CMA specifically, even though the patient has an affected sibling."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Although the document references professional guidance supporting genetic counseling, the policy does not state an explicit mandatory genetic-counseling requirement for CMA."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline tables list many CPT/procedure codes for epilepsy genes and panels but do not provide a CPT code for chromosomal microarray among the answer options; therefore a specific CPT from the provided list is not specified in the policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The requested test is CMA, for which the policy provides no explicit coverage criteria. Additionally, the policy states that individual gene or multi-gene testing is generally reimbursable only once per lifetime; the patient has a prior nondiagnostic CMA. Based on the lack of explicit CMA coverage criteria and prior CMA testing noted in the record, the request is not supported as covered by the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12764,
+    "output_tokens": 2441,
+    "total_tokens": 15205
+  }
+}

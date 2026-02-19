@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Clinical note explicitly states the cardiologist ordered whole genome sequencing (WGS) on the fetus at 33 weeks."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WGS policy allows testing in the prenatal setting for a fetus with a major structural anomaly; gestational age 33 weeks meets the payer's age/setting applicability (no exclusion for prenatal age)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP permits ordering by an appropriate specialist managing the condition (e.g., fetal cardiologist/MFM or other treating specialist); the cardiologist is an appropriate ordering provider per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indications include a fetus with a severe/isolated structural congenital anomaly where a genetic etiology is suspected; isolated severe congenital heart defect at 33 weeks meets that indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP generally requires prior standard genetic testing (e.g., chromosomal microarray and/or karyotype) to be completed and nondiagnostic before WGS; there is no documentation that CMA or standard prenatal cytogenetic testing was completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Although there is a maternal aunt with triple‑negative breast cancer, that family history is unrelated to the fetal structural heart defect and does not satisfy any family‑history/consanguinity criteria relevant to WGS eligibility under the payer policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP requires documentation of pre‑test genetic counseling for high‑complexity genomic tests like WGS; the record states there is no documentation of pre‑test genetic counseling."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to clinical whole genome sequencing/reporting and is the appropriate code for WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although indication, patient age, and ordering provider are acceptable, BCBS_FEP coverage requires prior standard cytogenetic testing (e.g., CMA) be nondiagnostic and documented pre‑test genetic counseling; those prior requirements are not met/documented, so WGS is not covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1972,
+    "output_tokens": 1964,
+    "total_tokens": 3936
+  }
+}

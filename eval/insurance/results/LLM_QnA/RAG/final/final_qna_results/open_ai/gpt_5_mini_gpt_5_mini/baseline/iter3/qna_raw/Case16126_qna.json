@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information explicitly states BRCA1 and BRCA2 testing has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage is driven by personal/family cancer history and guideline-based criteria rather than a strict lower age cutoff; no explicit age-based exclusion for infants is specified in policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies require an appropriate ordering provider/medical documentation but do not universally restrict BRCA orders to a specific specialty in the policy text provided; the record shows a gynecologist ordered testing but the policy does not explicitly require or prohibit that specialty."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP covers BRCA testing for individuals meeting personal or strong family-history criteria for hereditary breast/ovarian cancer per guidelines. This 6-week-old infant has multiple congenital anomalies but no provided personal or family history of BRCA-associated cancers, so medical indication per policy is not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage does not require prior diagnostic tests (the prior nondiagnostic FISH here is unrelated), and the policy does not specify required prior testing that must be completed before BRCA sequencing."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP BRCA coverage depends on family history of breast/ovarian cancer or known familial mutation. Although consanguinity is reported, no family history of BRCA-related cancers or a known pathogenic familial BRCA variant is provided, so relevant family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP and guideline-based testing typically require or strongly recommend pre-test genetic counseling. The record documents pre-test counseling and planned post-test follow-up with a genetic counselor, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided CPT options do not include the common BRCA-specific CPT codes typically used for full BRCA1/2 sequence analysis; none of the listed codes clearly correspond to BRCA1/2 sequencing in standard coding, so a best-match code is not specified from the given options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under BCBS_FEP coverage criteria BRCA1/2 testing is covered only when guideline-based personal or family-history indications or a known familial mutation exist. This infant lacks those indications (no personal/family BRCA-related cancer history or known familial pathogenic variant), so testing is not medically necessary and would not be covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1967,
+    "output_tokens": 2106,
+    "total_tokens": 4073
+  }
+}

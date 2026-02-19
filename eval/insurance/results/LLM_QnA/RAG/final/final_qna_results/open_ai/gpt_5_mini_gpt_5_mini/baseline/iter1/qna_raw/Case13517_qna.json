@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case statement explicitly says \"whole exome sequencing (WES) was ordered.\""
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare WES coverage is age-qualified for pediatric-onset presentations; the patient is 16 years old, which meets pediatric age-based eligibility for WES."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies typically require an appropriate ordering clinician and documentation of counseling but do not mandate a single specific specialty for ordering; the record shows a developmental pediatrician referral and genetic counselor involvement, which satisfy usual practice but a strict provider-specialty requirement is not specified in the policy text."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Coverage criteria support WES when a genetic etiology is suspected for unexplained clinical findings (including suspected inborn errors of metabolism or unexplained conjugated hyperbilirubinemia) and/or when an affected sibling suggests an inherited disorder; this patient has conjugated hyperbilirubinemia and a sibling with lab abnormalities suggestive of an IEM."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES policies may request that targeted testing be performed when a specific single-gene test is strongly indicated, but no specific required prior tests for this clinical presentation are documented in the provided information; only Fragile X (nondiagnostic) is noted."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a relevant family history: a sibling with laboratory abnormalities suggestive of an inborn error of metabolism, which supports genetic testing per coverage criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires documentation of pre-test genetic counseling for WES; the file states pre-test counseling was completed with a genetic counselor and post-test counseling is planned, meeting that requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband-only or exome sequence analysis) and is the CPT most consistent with the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC coverage criteria for pediatric patients with suspected genetic disorders (age met), presence of a relevant affected sibling, documented pre-test genetic counseling, and an appropriate clinical indication (unexplained conjugated hyperbilirubinemia suspicious for an IEM), WES meets coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 1871,
+    "total_tokens": 3862
+  }
+}

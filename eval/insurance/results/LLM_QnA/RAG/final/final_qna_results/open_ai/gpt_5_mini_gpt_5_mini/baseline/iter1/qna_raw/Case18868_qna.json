@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) has been ordered to assess for an underlying hereditary cancer predisposition."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Cigna WES/WGS clinical coverage is age‑restricted toward pediatric/onset genetic disorders (adult WGS for hereditary cancer is not an age‑indication). The patient is 41 and does not meet the age‑related pediatric/onset criteria in the payer's WES/WGS policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Cigna policies that allow WES/WGS require ordering by or documented evaluation with a genetics specialist; the patient was evaluated by a medical geneticist who ordered the test, meeting provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Cigna's defined medical indications for WGS/WES are generally for unexplained developmental delay, congenital anomalies, or complex pediatric neurologic disorders—not adult hereditary cancer predisposition. The patient's indication (adult primary peritoneal carcinoma to evaluate hereditary cancer risk) does not meet the payer's specific WGS/WES indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Cigna typically requires completion of indicated targeted testing (e.g., guideline‑directed single gene or multi‑gene cancer panel testing and/or chromosomal microarray where appropriate) prior to WES/WGS. The record shows only a nondiagnostic karyotype (not CMA) and no prior targeted germline cancer panel, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a relevant family history: the mother has a persistent, severe hematologic disorder raising concern for a heritable syndrome affecting cancer and hematologic risk; this family history is relevant to consideration of hereditary testing."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna requires documented pre‑test genetic counseling for complex genomic tests like WES/WGS. The materials provided contain no documented pre‑test counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT 81425 corresponds to comprehensive genome sequence analysis (WGS) in typical billing nomenclature."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under Cigna clinical coverage, WGS for an adult with suspected hereditary cancer predisposition is not a covered indication (WES/WGS reserved for specific pediatric/complex indications). Required prior targeted testing and documented pre‑test genetic counseling are lacking, so the request is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1989,
+    "output_tokens": 1712,
+    "total_tokens": 3701
+  }
+}

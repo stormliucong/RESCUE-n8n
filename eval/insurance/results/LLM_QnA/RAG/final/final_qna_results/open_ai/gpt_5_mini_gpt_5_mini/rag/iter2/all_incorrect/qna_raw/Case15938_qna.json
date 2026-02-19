@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states whole-genome sequencing (WGS) is being considered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years (and rWGS applies to infants ≤12 months). The patient is one-week-old, which meets the age criteria (Cigna GS guideline: 'Member is <21 years' and rWGS 'infants 12 months of age or younger')."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The guideline requires the member 'has had appropriate genetic and family history evaluation, and a clinical letter detailing the evaluation is provided' as part of GS/rWGS criteria. Patient record shows a neonatologist ordering and no documented genetic/family history evaluation or required clinical letter/pretest counseling; thus ordering/provider requirements in the policy are not satisfied."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under rWGS criteria for acutely ill infants, a genetic etiology is likely when there are TWO of listed findings (e.g., 'family history strongly suggestive of a genetic etiology' and 'laboratory findings suggestive of an inborn error of metabolism'). The patient has conjugated hyperbilirubinemia (possible laboratory sign of metabolic/cholestatic etiology) and a sibling with unexplained developmental regression (family history), meeting the TWO-item threshold in the policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The policy requires prior testing documentation and an appropriate genetic/family history evaluation be provided in a clinical letter. While the patient has no prior exome/genome (which is required), there is no documentation of the required clinical letter/genetic evaluation (and karyotype was done but no CMA documented); therefore required prior evaluation/documentation per the guideline is not complete."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The guideline considers 'family history strongly suggestive of a genetic etiology' (including affected siblings) as a criterion. The patient has a sibling with unexplained developmental regression, which is relevant per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The guideline requires 'appropriate genetic and family history evaluation' and references ACMG recommendations for pretest counseling. The patient has no documented pretest genetic counseling, so the counseling requirement in the policy is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy states 81425 should be billed for the proband for whole genome sequencing ('Genome ... sequence analysis 81425')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and clinical indications (rWGS criteria) are met, the policy requires that ALL criteria be satisfied including prior genetic/family history evaluation and provision of a clinical letter (and pretest counseling/documentation). Those required documentation/provider/counseling criteria are not present in the patient information; therefore the request does not meet all coverage criteria in the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9159,
+    "output_tokens": 2425,
+    "total_tokens": 11584
+  }
+}

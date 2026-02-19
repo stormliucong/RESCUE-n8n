@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1 and BRCA2 testing per the clinical information; policy (FEP 2.04.02) addresses BRCA1/BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "The policy specifies age-based thresholds for qualifying personal history of breast cancer (e.g., diagnosed ≤45 years, 46–50 with additional features, ≤60 for triple-negative, etc.). The patient is 65 and her diagnosis is malignant phyllodes tumor (not listed in the policy as a qualifying breast cancer type), so she does not meet the policy's age-related/diagnosis-based criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers who can give appropriate pre- and post-test counseling. The patient had pre-test counseling with a genetic specialist and plans post-test follow-up, meeting the policy's provider/counseling setting requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific medical indications for BRCA1/2 testing in cancer-affected individuals (specific breast cancer types/ages, ovarian, pancreatic, prostate, known familial pathogenic variant, etc.). The patient has a malignant phyllodes tumor (not listed as a qualifying cancer in the policy) and no reported qualifying family history, so she does not meet any of the policy-defined indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends testing an affected family member first when possible and describes testing strategies, but it does not mandate completion of a specific prior test in this patient; no required prior diagnostic test is specified for this scenario."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history criteria (close blood relatives with breast/ovarian/pancreatic/prostate cancer, etc.) as qualifying. The patient's reported family history (a sister with an immunologic/hematologic disorder) does not meet the policy's specified cancer-family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires genetic counseling by experienced providers for testing. The patient completed pre-test counseling with a genetic specialist and has plans for post-test follow-up, satisfying the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy (2.04.02) does not list or map CPT codes to BRCA1/BRCA2 testing; no CPT guidance is given in the policy text supplied."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy's medical necessity criteria for BRCA1/2 testing, the patient does not meet any listed qualifying indications (her tumor type—malignant phyllodes—is not listed as qualifying breast cancer, she has no qualifying family cancer history, and does not meet age-related qualifying diagnosis criteria). Although counseling requirements are met, lack of meeting the policy's defined indications means the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18954,
+    "output_tokens": 3144,
+    "total_tokens": 22098
+  }
+}

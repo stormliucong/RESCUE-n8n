@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare 'Genetic Testing for Cardiac Disease' policy defines age recommendations for some cardiac tests (e.g., predictive testing in children for specific syndromes) but does not specify age-based eligibility for WGS; the policy does not address WGS for a 2-year-old with developmental delay."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends pre-test genetic counseling and discusses clinical settings/providers but does not specify required ordering provider type or specialty for WGS; patient is being seen by a medical geneticist, but the policy does not define ordering-provider requirements for WGS."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies medical indications for cardiac multi-gene panels (e.g., confirmed/suspected arrhythmia or asymptomatic individuals with a first-degree relative with LQTS), but it does not define clinical indications for WGS in a child with developmental delay; the requested test (WGS for developmental delay) is not explicitly addressed in this cardiac testing policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state prior-test requirements specific to WGS. Although it defines criteria for cardiac panel testing, it does not list prerequisite tests required before WGS for developmental delay."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a first-degree relative (father) with Long QT syndrome. The policy explicitly states multi-gene panel testing is medically necessary for asymptomatic individuals who have a first-degree or second-degree relative with congenital LQTS; thus the family history is relevant to cardiac genetic testing (though for panels, not specifically WGS)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states pre-test genetic counseling is strongly recommended for genetic testing. Patient had pre-test counseling with a genetic counselor and plans for post-test counseling, satisfying the policy's counseling expectation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's Applicable Codes list describes many cardiac panel CPT codes but does not list a CPT code corresponding to whole genome sequencing (WGS) among the provided answer options; thus the policy does not specify which of the listed CPT options maps to the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under this UnitedHealthcare cardiac genetic testing policy, medically necessary coverage is defined for targeted multi-gene panels for inherited arrhythmias when specific criteria are met (including testing of asymptomatic first-degree relatives for LQTS). The requested test is WGS for developmental delay (not a targeted cardiac multi-gene panel). The policy does not establish coverage criteria for WGS in this clinical scenario; therefore, based on this policy text the requested WGS is not covered. (If cardiac testing were sought based solely on the father's LQTS, the policy supports targeted multi-gene panel testing rather than WGS.)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 39571,
+    "output_tokens": 2769,
+    "total_tokens": 42340
+  }
+}

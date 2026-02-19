@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) was requested to assess fetal anomalies."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES criteria are phenotype-driven (multiple congenital anomalies/neurodevelopmental issues) rather than age-limited; the patient is a fetus but no age-based exclusion is specified in the payer criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires ordering/authorization involvement by or discussion with a genetics provider for WES; the record documents pre-test discussion with a genetic specialist, satisfying provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC indications for WES include multiple unexplained structural congenital anomalies; fetal imaging identified multiple structural anomalies, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior standard testing (eg, chromosomal microarray / karyotype) before WES in prenatal cases; the record notes only Fragile X testing (nondiagnostic) and does not document CMA or cytogenetic testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of dysmorphic features in a maternal aunt is documented; payer criteria consider relevant family history (similar phenotype/affected relatives) supportive for WES eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre-test genetic counseling for genome/exome testing; the record documents pre-test discussion with a genetic specialist, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; the appropriate CPT for clinical exome sequencing (interpretation/report) is 81415."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although medical indication, genetic counseling, and genetics-provider involvement are met, coverage is contingent on completion of required prior cytogenetic testing (eg, chromosomal microarray), which is not documented; therefore the request does not meet all UHC prior-test requirements for approval."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1474,
+    "total_tokens": 3452
+  }
+}

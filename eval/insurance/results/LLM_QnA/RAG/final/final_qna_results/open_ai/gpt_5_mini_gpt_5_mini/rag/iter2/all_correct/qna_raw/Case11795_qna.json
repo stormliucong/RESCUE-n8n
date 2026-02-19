@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) is being ordered after nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES/WGS eligibility for children/infants; the patient is a three-week-old infant, which meets the age-related scope in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics. The patient info notes referral by a cardiologist and pre-test genetic counseling but does not state whether a clinician with clinical genetics expertise performed the required evaluation."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists infants with high-risk BRUE and significantly abnormal ECG (possible channelopathies/arrhythmias/cardiomyopathy) as clinical features suggesting a genetic disease; the patient has high-risk BRUE and a markedly abnormal ECG."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing (eg, CMA) to be nondiagnostic before WES; the patient had a CMA previously performed and nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy cites relevant family history (eg, developmental delay in relatives) as pertinent; the patient has a sibling with moderate–severe intellectual disability, which is a listed relevant family-history criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling; the patient had pre-test genetic counseling completed with plans for post-test follow-up, meeting the policy's counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP policy text does not list or map CPT codes to WES or other tests, so a corresponding CPT code is not specified in the policy document."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, WES may be medically necessary when (a) evaluated and counseled about testing, (b) prior genetic testing (CMA) is nondiagnostic, and (c) a genetic etiology is considered likely with potential to change management. The patient has pre-test genetic counseling, nondiagnostic CMA, a high-risk BRUE with markedly abnormal ECG (a policy-listed feature suggesting genetic disease), and potential management implications; therefore the request meets the policy's medical necessity criteria. (Note: documentation of a clinician with expertise in clinical genetics was not explicitly provided in the patient info.)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14874,
+    "output_tokens": 3025,
+    "total_tokens": 17899
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states the infant was referred for whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy (FEP 2.04.59) does not define age-based eligibility for whole‑genome sequencing; WES/WGS are addressed in a separate policy (2.04.102) and no age criteria for WGS are given in this document."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and who should perform it but does not specify ordering‑provider specialty or explicit ordering requirements for WGS in this document."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy provides medical‑necessity criteria for chromosomal microarray (CMA) and states NGS panels are investigational, but it does not specify clinical indication criteria for WGS (WES/WGS are covered under a separate policy)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends a first‑tier stepwise approach (fragile X and CMA) for ASD/ID evaluation and notes fragile X/CMA as initial tests, but it does not state required prior testing specifically before WGS; the patient had nondiagnostic fragile X but no CMA reported."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a sibling with ASD, the provided policy does not define family history or consanguinity criteria specific to WGS eligibility in this document."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends formal genetic counseling by an experienced provider and notes counseling is important, but it does not establish a specific mandatory coverage requirement or required documentation for counseling tied to WGS in this document. The record states pre‑test counseling was completed, but provider qualifications are not provided."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy text supplied does not list or map specific CPT codes to whole genome sequencing or other tests."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under this policy, chromosomal microarray is the medically necessary first‑line test for multiple congenital anomalies; next‑generation sequencing panel testing is described as investigational. WGS/WES are addressed in a different policy (2.04.102) and this document does not provide coverage criteria supporting WGS. The policy also excludes experimental/investigational procedures from coverage. Therefore, based on the provided policy text, WGS is not supported/covered here."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15678,
+    "output_tokens": 2542,
+    "total_tokens": 18220
+  }
+}

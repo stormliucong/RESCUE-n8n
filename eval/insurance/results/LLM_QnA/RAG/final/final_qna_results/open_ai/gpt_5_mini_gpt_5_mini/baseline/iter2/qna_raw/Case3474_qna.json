@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is being ordered to assess an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WGS/WES policies do not impose a strict age cut-off for testing in pediatric patients with congenital anomalies or neurodevelopmental concerns; the patient is a 5-year-old and age-based exclusion is not specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires that testing be ordered/managed by an appropriate genetics provider; the order is from a medical geneticist, which satisfies provider requirements in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria include patients with congenital structural anomalies and suspected syndromic/genetic disorder; the patient has congenital choanal atresia and a sibling with developmental delay, meeting medical indication for diagnostic WGS."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior chromosomal microarray (CMA) or equivalent cytogenomic testing before WES/WGS unless clinically inappropriate; only a nondiagnostic karyotype is documented and no CMA was completed, so required prior testing is not satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for WGS and the patient has a first-degree sibling with developmental delay, which is a relevant positive family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require documented pre-test genetic counseling for WES/WGS; the record states pre-test counseling was completed multiple times with planned post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (genomic sequence analysis—WGS), which matches the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although medical indication, provider type, counseling, and family history support WGS, UHC requires prior appropriate cytogenomic testing (typically chromosomal microarray) before authorizing WGS. CMA was not completed (only a nondiagnostic karyotype), therefore coverage criteria are not met and WGS would be denied pending required prior testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1982,
+    "output_tokens": 1643,
+    "total_tokens": 3625
+  }
+}

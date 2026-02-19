@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The chart explicitly states whole genome sequencing (WGS) is being ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Patient is a 5‑year‑old child; UHC pediatric WES/WGS age criteria are met for pediatric patients when clinically indicated."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Ordering clinician is a medical geneticist; UHC requires an appropriate specialist (e.g., geneticist) for WGS orders and that requirement is satisfied."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical indications present (congenital choanal atresia/structural birth defect and a sibling with developmental delay) meet UHC clinical criteria for evaluation for an underlying genetic etiology."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC coverage typically requires prior chromosomal microarray (or other specified prior testing) before WGS; only a nondiagnostic karyotype is documented and CMA is not documented as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a relevant family history: an older sibling with developmental delay, which is a specified supportive criterion in coverage guidance."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre‑test genetic counseling has been completed and post‑test follow‑up planned, meeting UHC counseling requirements for clinical WGS."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "81425 is the CPT code that corresponds to clinical whole genome sequencing (germline) billed for WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, indications, family history, and counseling meet UHC criteria, required prior testing (chromosomal microarray) is not documented; per UHC policy lack of required prior testing typically results in noncoverage pending completion of those tests."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1982,
+    "output_tokens": 1306,
+    "total_tokens": 3288
+  }
+}

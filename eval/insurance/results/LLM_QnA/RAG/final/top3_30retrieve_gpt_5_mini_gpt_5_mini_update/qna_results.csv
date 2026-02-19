@@ -1,0 +1,21 @@
+case_id,Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,token_input_tokens,token_output_tokens,token_total_tokens,raw
+Case13,WES,Yes,No,Yes,No,Yes,Yes,81415,No,40260,1874,42134,
+Case14017,WES,Yes,Not Specified,Yes,No,Yes,Yes,81415,Yes,40509,2708,43217,
+Case14141,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47029,1556,48585,
+Case18821,WES,No,No,No,No,Yes,No,81415,No,47037,2322,49359,
+Case2847,WES,Yes,Not Specified,Yes,Yes,Not Specified,Yes,81415,Yes,47045,2006,49051,
+Case3494,WES,Yes,No,Yes,No,Yes,No,81415,No,29306,1810,31116,
+Case4196,WES,Yes,Not Specified,No,No,Yes,Yes,81415,No,35888,1684,37572,
+Case4262,WES,Yes,Not Specified,Yes,Not Specified,Yes,Not Specified,81415,Yes,36802,1560,38362,
+Case4604,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47882,2004,49886,
+Case5674,WES,No,Yes,No,Yes,Yes,Yes,Not Specified,No,40483,2579,43062,
+Case8051,,,,,,,,,,48918,39,48957,"{
+  ""Q0"": ""WES"",
+  ""Q1"": ""Yes"",
+  ""Q2"": ""No"",
+  ""Q3"": ""Yes"",
+  ""Q4"": ""No"",
+"
+Case811,WES,Yes,Not Specified,Yes,Yes,Yes,Yes,81415,Yes,47905,1684,49589,
+Case8485,WES,Yes,No,No,No,Yes,No,81415,No,29302,1682,30984,
+Case9408,WES,Yes,Yes,Yes,Yes,Not Specified,Yes,81415,Yes,41724,1492,43216,

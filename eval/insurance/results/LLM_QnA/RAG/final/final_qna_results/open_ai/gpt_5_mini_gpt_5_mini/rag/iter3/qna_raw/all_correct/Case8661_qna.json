@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy’s WGS criteria reference pediatric-onset features 'diagnosed by 18 years of age'; patient is 7 years old, which meets the policy age-related references."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is the child's neurologist, which meets the policy requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires either (A) the patient have one of the first-list features (e.g., epileptic encephalopathy onset <3 years) or (B) two or more of the second-list features (e.g., significant hearing/visual impairment plus another second-list feature). The patient has significant hearing/visual impairment (one second-list feature) and a sibling with early epileptic encephalopathy (family history) but does not have two second-list features nor the first-list feature in the proband; therefore the specified medical/clinical criteria for WGS are not met per the policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion for WGS states 'Neither CMA nor WES have been performed.' Patient history documents prior Fragile X testing only and does not report prior CMA or WES, so the policy’s prior-test condition for WGS is satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Other first- or second-degree family member(s) with similar clinical features' and 'consanguinity' as relevant features; the patient has a sibling with early-onset epileptic encephalopathy, which is relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make pre-test counseling an explicit coverage requirement. Patient declined pre-test counseling and plans post-test counseling; the policy does not mandate pre-test counseling as an eligibility criterion."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy’s applicable CPT codes list 81425 for 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and ordering provider meet policy requirements and no prior CMA/WES is documented, the policy requires specific clinical features (either a first-list feature in the proband or two or more second-list features). The patient only meets one second-list feature (significant hearing/visual impairment) and thus does not meet the policy’s medical necessity criteria for WGS, so the test is not covered under the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36963,
+    "output_tokens": 3495,
+    "total_tokens": 40458
+  }
+}

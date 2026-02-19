@@ -1,0 +1,31 @@
+payer,existing_pdf_count,downloaded_pdf_count,matched_count,new_count,model,prompt_type,iteration
+Cigna,72,2,0,2,gpt-4o,baseline,1
+United Healthcare,12,7,0,7,gpt-5-mini,baseline,1
+Cigna,72,4,0,4,gpt-5-mini,baseline,1
+Blue Cross and Blue Shield Federal Employee Program,43,37,8,29,gpt-5-mini,baseline,1
+United Healthcare,12,9,0,9,gpt-5-mini,keyword,1
+Cigna,72,4,0,4,gpt-5-mini,keyword,1
+Blue Cross and Blue Shield Federal Employee Program,43,32,11,21,gpt-5-mini,keyword,1
+Cigna,72,4,0,4,gpt-5-mini,verified,1
+Blue Cross and Blue Shield Federal Employee Program,43,25,9,16,gpt-5-mini,verified,1
+Blue Cross and Blue Shield Federal Employee Program,43,3,0,3,gpt-4o,baseline,2
+Cigna,72,4,0,4,gpt-4o,keyword,2
+Cigna,72,4,0,4,gpt-4o,verified,2
+United Healthcare,12,7,0,7,gpt-5-mini,baseline,2
+Cigna,72,4,0,4,gpt-5-mini,baseline,2
+Blue Cross and Blue Shield Federal Employee Program,43,40,14,26,gpt-5-mini,baseline,2
+United Healthcare,12,11,0,11,gpt-5-mini,keyword,2
+Cigna,72,4,0,4,gpt-5-mini,keyword,2
+Blue Cross and Blue Shield Federal Employee Program,43,21,6,15,gpt-5-mini,keyword,2
+United Healthcare,12,9,0,9,gpt-5-mini,verified,2
+Cigna,72,4,0,4,gpt-5-mini,verified,2
+Blue Cross and Blue Shield Federal Employee Program,43,39,14,25,gpt-5-mini,verified,2
+United Healthcare,12,12,0,12,gpt-5-mini,baseline,3
+Cigna,72,4,0,4,gpt-5-mini,baseline,3
+Blue Cross and Blue Shield Federal Employee Program,43,26,9,17,gpt-5-mini,baseline,3
+United Healthcare,12,10,0,10,gpt-5-mini,keyword,3
+Cigna,72,4,0,4,gpt-5-mini,keyword,3
+Blue Cross and Blue Shield Federal Employee Program,43,36,12,24,gpt-5-mini,keyword,3
+United Healthcare,12,9,0,9,gpt-5-mini,verified,3
+Cigna,72,4,0,4,gpt-5-mini,verified,3
+Blue Cross and Blue Shield Federal Employee Program,43,28,10,18,gpt-5-mini,verified,3

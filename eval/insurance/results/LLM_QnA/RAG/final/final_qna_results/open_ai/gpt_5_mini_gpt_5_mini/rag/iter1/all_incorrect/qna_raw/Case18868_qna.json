@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states whole genome sequencing (WGS) was ordered to assess hereditary cancer predisposition."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's Cancer Exome and Genome Sequencing section addresses investigational status but does not specify any age-based eligibility criteria for WGS."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state specific ordering provider/specialty requirements for cancer exome/genome sequencing (WGS) in this document."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy explicitly states 'Cancer exome and genome sequencing in solid tumors and hematologic malignancies (0036U, 0329U, 81415, 81416, 81425, 81426) is considered investigational.' Therefore the requested WGS does not meet a defined medically necessary indication in this policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define required prior tests that must be completed before ordering cancer exome/genome sequencing; it only designates the testing as investigational."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a family history (mother with hematologic disorder), the policy does not specify family history or consanguinity criteria relevant to coverage for cancer exome/genome sequencing (WGS)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses informing patients about potential germline findings and recommends genetic evaluation, but it does not state a specific required pre-test genetic counseling documentation requirement for WGS within this policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The policy lists 81415, 81416, 81425, 81426 among codes for cancer exome/genome sequencing; 81425 is the code included in the policy group corresponding to cancer exome/genome sequencing (mapped to the requested WGS)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, 'Cancer exome and genome sequencing ... (0036U, 0329U, 81415, 81416, 81425, 81426) is considered investigational,' therefore the requested WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 32983,
+    "output_tokens": 1846,
+    "total_tokens": 34829
+  }
+}

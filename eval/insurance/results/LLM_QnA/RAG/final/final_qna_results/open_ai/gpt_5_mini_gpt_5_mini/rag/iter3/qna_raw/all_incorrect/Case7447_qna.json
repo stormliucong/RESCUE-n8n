@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info states the cardiologist ordered whole genome sequencing (WGS) for the fetus at 33 weeks gestation."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly addresses prenatal/fetal sequencing (fetus with ultrasound anomalies) as an allowed scenario for genome/exome testing; the patient is a fetus (33 wks), so the age/gestational status falls within the policy prenatal criteria that permit sequencing when other criteria are met."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires pre-test counseling/evaluation by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor for fetal sequencing; the patient record states there is no documentation of pre-test genetic counseling, so ordering-provider requirements are not satisfied per policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy's fetal indication requires all criteria (including pre-test counseling and prior CMA/karyotype non-diagnostic). Although the fetus has an ultrasound anomaly (severe CHD), required fetal- sequencing criteria are not fully met in the record (missing counseling and no documentation that CMA/karyotype were non-diagnostic)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy for fetal sequencing requires standard chromosomal microarray (CMA) and karyotype analysis to have failed to yield a definitive diagnosis prior to WES (and WGS is allowed only after WES failure). The patient record does not document prior CMA/karyotype or prior WES, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy includes specific family-history scenarios as potential indications (e.g., prior undiagnosed affected fetus/recurrence). The documented family history (maternal aunt with triple-negative breast cancer) is not the type of family/recurrence history cited by the policy and therefore does not meet the policy's family-history eligibility criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires pre-test counseling by an ABMGG medical geneticist or ABGC genetic counselor for fetal sequencing; the chart states there is no documentation of pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not specify or map particular CPT codes to WGS/WES testing; no CPT guidance is present in the document excerpt."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy WGS is covered only when WES has been unable to identify a causative mutation and all fetal-sequencing criteria are met (including documented pre-test genetic counseling and prior CMA/karyotype non-diagnostic). The record lacks documentation of required pre-test counseling, prior CMA/karyotype results, and prior WES, so coverage criteria for WGS are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22459,
+    "output_tokens": 2280,
+    "total_tokens": 24739
+  }
+}

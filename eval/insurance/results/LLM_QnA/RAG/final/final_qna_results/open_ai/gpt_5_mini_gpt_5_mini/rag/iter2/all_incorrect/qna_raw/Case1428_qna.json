@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies eligibility for pediatric patients under 21 for WES/WGS; the patient is a three-week-old infant (<21 years), so age meets the policy requirement."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual be evaluated by a clinician with expertise in clinical genetics AND counseling was provided. While the patient is being evaluated by a medical geneticist (meets expertise), the record states there is no documented pre-test genetic counseling, so the ordering/provider requirements are not satisfied."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists congenital anomalies such as Hirschsprung disease and family history of developmental delay as clinical indications. The infant has Hirschsprung disease and an older sibling with severe intellectual disability; fragile X testing was nondiagnostic—meeting the policy's medical indication(s)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior tests for standard WGS (WGS may be first-line or after nondiagnostic testing). Although fragile X was nondiagnostic, the policy does not require a specific prior test (e.g., CMA) in this standard (non-rapid) setting."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy examples include family history of developmental delay as relevant. The patient has an older sibling with severe intellectual disability, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires that the individual be evaluated by a clinician with expertise AND counseling was provided about risks of genetic testing. The record states there is no documented pre-test genetic counseling, therefore counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The policy's coding section lists 81425 among the covered procedure codes for whole exome/genome sequencing; given WGS was ordered, 81425 is the best corresponding CPT code among options provided."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age and clinical indication criteria (Hirschsprung disease, family history, prior nondiagnostic fragile X), the policy requires documented evaluation by a genetics expert AND that counseling was provided. Pre-test genetic counseling is not documented, therefore the policy's required criteria are not fully met and WGS would not be covered per this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14852,
+    "output_tokens": 2392,
+    "total_tokens": 17244
+  }
+}

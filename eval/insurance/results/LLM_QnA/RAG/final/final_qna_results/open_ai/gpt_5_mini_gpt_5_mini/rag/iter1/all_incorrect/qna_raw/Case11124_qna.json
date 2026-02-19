@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole-exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age criteria include developmental delay/intellectual disability with onset prior to age 18 years (Standard ES I.A.2.a). The patient is an infant with developmental delay, which meets the age-based eligibility in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy specifies evaluation/counseling by an appropriate genetics provider (Board-Certified/Board-Eligible Medical Geneticist or APGN) (Standard ES I.F and I.G), but the patient data do not state whether the ordering/referring provider or evaluator meets those specified provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indications include unexplained developmental delay/intellectual disability with onset before age 18 (Standard ES I.A.2.a) and family history suggestive of a genetic etiology. The infant has developmental delay and a sibling with childhood hearing impairment, meeting these clinical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate a specific prior test universally (it notes exome may be considered after CMA or focused testing are unrevealing), and the patient record only documents nondiagnostic FISH; the policy's prior-testing requirements are not explicitly defined for this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'family history strongly suggestive of a genetic etiology' as a qualifying criterion (Standard ES I.A.2.b and Rapid ES I.C.2.f). The patient has an older sibling with significant childhood hearing impairment, which is relevant and supportive."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires pre- and post-test counseling by an appropriate provider (Standard ES I.F). The patient record states pre-test counseling was completed and post-test counseling is planned but does not document the credential of the counseling provider, so it cannot be confirmed the counseling met the policy's provider requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 is listed in the policy as a common code for standard exome sequencing (Standard Exome Sequencing section and Policy Reference Table)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "While the patient meets clinical indication (developmental delay, relevant family history) and age criteria, the policy requires evaluation and counseling by specified genetics providers (Standard ES I.F and I.G). The provided information does not document that the required genetics evaluation/provider credentials were met, so required coverage criteria are not fully demonstrated in the record and coverage cannot be confirmed per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12227,
+    "output_tokens": 1867,
+    "total_tokens": 14094
+  }
+}

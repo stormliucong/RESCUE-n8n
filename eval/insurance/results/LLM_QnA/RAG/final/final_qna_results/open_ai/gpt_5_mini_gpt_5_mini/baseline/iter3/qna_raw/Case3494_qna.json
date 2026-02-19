@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient information explicitly states that whole exome sequencing (WES) is being requested for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna WES coverage policy does not impose a specific age cutoff for WES; pediatric/neonatal patients are eligible when clinical criteria are met, so no age-based exclusion applies to this 6‑week‑old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's WES policy requires appropriate ordering documentation but does not strictly limit ordering to a single specialty in most cases; the record shows a referring pediatrician but the policy does not explicitly restrict orders to a geneticist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under Cigna criteria WES is medically indicated for unexplained congenital anomalies/evolving complex neurodevelopmental disorder and/or suspected monogenic disorder; this infant has a congenital abnormality involving an organ system and concern for an evolving complex neurodevelopmental disorder, which meets those indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Cigna typically requires prior first‑tier testing (e.g., chromosomal microarray for congenital anomalies/developmental delay) before WES; the record states no prior genetic testing has been performed, so required prior testing is not completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Cigna’s clinical considerations include family history as relevant; the patient has a sibling with dysmorphic features, which is pertinent to WES eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna requires documentation of pre‑test genetic counseling/consent for WES; the family declined genetic counseling, therefore counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (whole exome), which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication is met (Q3) and family history is supportive (Q5), Cigna coverage would require prior first‑tier testing (chromosomal microarray) and documented pre‑test genetic counseling; both are missing, so under Cigna policy the WES request would not be covered as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 1777,
+    "total_tokens": 3752
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states 'whole genome sequencing (WGS) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES/WGS policies define clinical indications rather than a strict age cutoff; no payer-specific absolute age exclusion is stated for WGS in this clinical context and the infant age does not conflict with typical pediatric eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC generally requires an appropriate ordering clinician and documentation of counseling but does not mandate a single specific specialty; the record lists a developmental pediatrician ordering the test (an appropriate clinician), but the policy does not impose a narrowly defined provider-type requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The infant has significant unexplained hypotonia in the neonatal period, which meets UHC clinical indications for WES/WGS for suspected genetic disorders (unexplained neurodevelopmental/neuromuscular findings)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior chromosomal microarray (CMA) for unexplained developmental/neurogenic presentations; the record notes a nondiagnostic karyotype but does not document a prior CMA, so the required prior test was not completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "While a maternal history of a severe immunologic/hematologic disorder is reported, it is nonspecific and not documented as a similarly affected relative or known familial variant; UHC family-history criteria require a relevant/similar affected relative or known familial pathogenic variant."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The chart documents that pre-test counseling was completed and post-test genetics follow-up is planned, meeting UHC requirements for documented genetic counseling/informed consent for WGS."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "81425 is the CPT code corresponding to whole genome sequencing (WGS) interpretation and report."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the indication (infant hypotonia) and counseling meet UHC clinical criteria, UHC requires prior CMA for unexplained developmental/neuro presentations and no CMA is documented; absence of the required prior testing makes the WGS noncovered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 2096,
+    "total_tokens": 4071
+  }
+}

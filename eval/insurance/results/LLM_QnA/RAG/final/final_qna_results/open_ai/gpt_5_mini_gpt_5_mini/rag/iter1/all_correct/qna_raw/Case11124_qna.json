@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole-exome sequencing (WES) has been ordered. Basis: patient clinical info."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists global developmental delay and pediatric-onset criteria (e.g., onset prior to 5 years / features diagnosed by 18 years) as indications for WES; the patient is an infant with developmental delay, meeting the age-related criteria. Basis: UnitedHealthcare WES coverage rationale (global developmental delay / pediatric onset)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The patient info notes referral by an oncologist and that WES was ordered, but does not state the specialty of the ordering provider. Basis: UnitedHealthcare ordering-provider requirement not documented in patient info."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indications include global developmental delay and other neurodevelopmental features; the infant presents with developmental delay and a family history suggestive of a genetic etiology, meeting a listed clinical indication. Basis: UnitedHealthcare WES coverage rationale (global developmental delay / features suggestive of genetic cause)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate prior testing (e.g., CMA) for postnatal WES in neurodevelopmental indications; prior FISH was nondiagnostic but no specific prior-test requirement for WES is defined. Basis: UnitedHealthcare coverage rationale and testing pathway statements."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists other first- or second-degree family members with similar clinical features as a relevant criterion; the patient has an affected sibling with childhood hearing impairment, meeting the family-history criterion. Basis: UnitedHealthcare WES coverage criteria (family member with similar features)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES but does not make counseling a stated mandatory coverage requirement; patient info indicates pre-test counseling was completed. Basis: UnitedHealthcare statement that counseling is strongly recommended (not an explicit coverage prerequisite)."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 is the listed code for exome (sequence analysis) in the policy's applicable codes for WES. Basis: UnitedHealthcare applicable CPT codes list (81415 = Exome sequence analysis)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age and clinical indication criteria (infant with developmental delay and relevant family history), the policy requires WES to be ordered by specific provider types (medical geneticist, neonatologist, neurologist, or developmental pediatrician). The ordering provider specialty is not documented in the patient information (referral by an oncologist only), so the ordering-provider requirement is not satisfied/documented per policy; therefore coverage cannot be confirmed. Basis: UnitedHealthcare WES coverage rationale (ordering-provider requirement) and absence of that documentation in patient info."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36940,
+    "output_tokens": 2712,
+    "total_tokens": 39652
+  }
+}

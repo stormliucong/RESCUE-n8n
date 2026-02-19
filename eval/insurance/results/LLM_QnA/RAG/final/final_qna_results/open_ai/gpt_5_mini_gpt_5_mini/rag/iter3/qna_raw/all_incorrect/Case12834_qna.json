@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information states chromosomal microarray (CMA) testing has been ordered; policy addresses CMA for developmental delay/intellectual disability/ASD."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines CMA as first-line for individuals with developmental delay/ID/ASD but does not specify explicit age cutoffs; the patient is 16 but no age-based limits are stated."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling expertise but does not specify required ordering provider specialty or provider-type requirements for CMA ordering."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists CMA as medically necessary as first-line testing for individuals with developmental delay/intellectual disability or ASD; the patient is a 16-year-old with a complex neurodevelopmental disorder meeting this indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy references a stepwise approach (fragile X and CMA are part of first-tier testing) but does not mandate completion of a specific prior test before performing CMA; fragile X was already nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify family history or consanguinity as eligibility criteria for CMA in this context; although a maternal uncle has neurologic disease, the policy's listed indications are phenotype-based."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends formal genetic counseling in most cases and that it be performed by an experienced individual, but it does not state genetic counseling is a formal coverage precondition for CMA."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to CMA or other tests, so no CPT code can be determined from these materials."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, CMA may be considered medically necessary as first-line testing for individuals with developmental delay/intellectual disability/ASD; the patient meets that clinical indication (16-year-old with complex neurodevelopmental disorder and prior nondiagnostic fragile X)."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15704,
+    "output_tokens": 1812,
+    "total_tokens": 17516
+  }
+}

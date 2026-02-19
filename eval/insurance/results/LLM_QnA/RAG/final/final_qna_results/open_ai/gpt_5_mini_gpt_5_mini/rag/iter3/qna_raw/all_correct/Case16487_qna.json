@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) has been ordered for the newborn."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose a strict age cutoff for WES; it lists age-related features (e.g., ID diagnosed by 18) but no absolute age exclusion that would preclude a newborn. Thus age-based eligibility is not specifically limiting in this case."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requirement: WES must be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The ordering provider for this case is an oncologist, which does not meet the policy-specified ordering provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific clinical indications (e.g., multisystem congenital anomalies, global developmental delay, persistent/severe immunologic or hematologic disorder in the proband, consanguinity, etc.). The newborn has recurrent BRUE — not listed — and no proband immunologic/hematologic disorder or other listed features. Therefore the patient does not meet a listed medical indication per the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate specific prior tests for outpatient WES other than recommending targeted testing when a specific syndrome is suspected. The patient had nondiagnostic FISH, but the policy does not explicitly require or specify FISH or other prior tests in this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a relevant family history: a maternal aunt with a persistent severe immunologic or hematologic disorder. The policy lists family history (first- or second-degree relatives) and persistent/severe immunologic or hematologic disorder among relevant features for consideration."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is strongly recommended prior to WES/WGS but does not state it is a strict coverage requirement. Patient information notes pre-test counseling was completed, which aligns with the policy recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for exome (sequence analysis), which corresponds to WES ordered for this patient."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although WES is the requested test and family history/counseling are supportive, the policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The ordering provider is an oncologist, so the request does not meet the policy's ordering-provider requirement and therefore is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36947,
+    "output_tokens": 2431,
+    "total_tokens": 39378
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient record explicitly states the patient is 'undergoing whole exome sequencing (WES) to assess for an underlying genetic etiology.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage is driven by clinical indications rather than strict age cutoffs in policy language; no age-based exclusion or required age threshold is documented for WES in the applicable UHC criteria for this clinical scenario."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES policy defines clinical indications and documentation requirements but does not mandate a specific ordering provider specialty in the applicable coverage rules (no explicit restriction to genetics specialists is specified)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Under UHC WES criteria, coverage is generally limited to patients with unexplained developmental delay/intellectual disability, multiple congenital anomalies, or a suspected genetic disorder with early onset/multi-system involvement or refractory/complex neurologic presentations after targeted testing. This 68‑year‑old has persistent seizures only, without documented early-onset, multisystem findings, or other qualifying features; thus she does not meet the specific medical indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior appropriate targeted testing (e.g., epilepsy gene panel or other targeted molecular testing and/or chromosomal microarray depending on presentation) before WES. The record only notes nondiagnostic FISH; required prior targeted genetic testing or CMA is not documented."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "UHC allowance of WES may consider family history of a similar phenotype or consanguinity; the only family history reported is a sister with ovarian/fallopian/peritoneal carcinoma (reviewed in counseling), which is unrelated to the patient's seizure phenotype and does not satisfy family-history criteria relevant to WES for neurologic disease."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pretest genetic counseling for WES; the record indicates the patient has seen a genetic counselor multiple times with plans for post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (proband-focused); the appropriate CPT for WES (proband only) is 81415."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying UHC WES coverage rules: although counseling is documented, the patient does not meet the policy's specified medical indication (no qualifying developmental/multi-system or early-onset/refractory complex neurologic presentation) and required prior targeted testing/CMA is not documented. Therefore WES is not covered in this case per payer criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1989,
+    "output_tokens": 1482,
+    "total_tokens": 3471
+  }
+}

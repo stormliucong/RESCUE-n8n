@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is being requested to identify a genetic cause for multiple congenital abnormalities."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WES coverage criteria do not impose a strict age cutoff for WES; pediatric age alone does not bar eligibility, so no age-based exclusion applies to this 9‑year‑old."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires an appropriate ordering provider and/or documented genetics involvement for WES. The record documents referral by a developmental pediatrician and pre‑test counseling with a genetic specialist, satisfying provider/counseling requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC policy supports WES for unexplained multi‑system congenital anomalies and neurodevelopmental disorders after prior testing; this child has multiple congenital anomalies affecting different organ systems and developmental concerns, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior appropriate first‑tier testing (e.g., chromosomal microarray and other indicated targeted tests) before WES. The record notes a nondiagnostic karyotype but does not document completion of chromosomal microarray or other required prior testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant under UHC criteria (a sibling with developmental delay supports genetic evaluation). The record documents a sibling with developmental delay."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre‑test genetic counseling for WES. The record states pre‑test counseling was completed with a genetic specialist and plans for post‑test follow‑up."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The CPT code corresponding to diagnostic whole exome sequencing is 81415 (sequencing of the exome)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, provider involvement, counseling, and family history meet UHC criteria, required prior testing (notably chromosomal microarray/other first‑tier tests) is not documented. Per UHC policy WES coverage is contingent on prior appropriate testing being nondiagnostic, so coverage is not supported until those prior tests are completed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1973,
+    "output_tokens": 1392,
+    "total_tokens": 3365
+  }
+}

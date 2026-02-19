@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states a chromosomal microarray (CMA) was ordered to assess genomic copy number changes."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP policy endorses CMA as first-line in postnatal evaluation of infants/children with developmental delay/intellectual disability but does not specify discrete age limits; patient is a 2-year-old which is within the postnatal/child scope but no explicit age criterion is given in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose explicit ordering-provider specialty or credentialing requirements for CMA; it does recommend genetic counseling by experienced personnel but does not restrict which provider may order the test."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy statement: 'Chromosomal microarray analysis may be considered medically necessary as first-line testing in the initial evaluation of individuals with apparent nonsyndromic developmental delay/intellectual disability.' The patient is a 2-year-old with severe intellectual disability, meeting this indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy allows CMA as a first-line test in the initial evaluation and does not require completion of other specific prior tests before CMA in this context; patient has no prior testing which does not conflict with policy."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's coverage criteria are based on the patient’s developmental delay/ID and do not require family history or consanguinity as an eligibility criterion; although a maternal aunt with an immunologic disorder is reported, family-history criteria are not specified for CMA eligibility in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states experts recommend formal genetic counseling for cases when genetic testing is considered; the family completed pre-test genetic counseling and plans post-test counseling, meeting the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy discusses CMA testing but does not specify or map CPT codes for CMA; no CPT code is given in the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the FEP policy, chromosomal microarray analysis 'may be considered medically necessary as first-line testing' for individuals with developmental delay/intellectual disability. The patient is a 2-year-old with severe intellectual disability, no prior conflicting testing, and has had pre-test counseling, meeting the policy criteria for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15707,
+    "output_tokens": 1627,
+    "total_tokens": 17334
+  }
+}

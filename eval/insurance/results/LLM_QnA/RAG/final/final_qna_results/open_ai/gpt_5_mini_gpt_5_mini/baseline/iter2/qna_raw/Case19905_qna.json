@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case explicitly states the patient is being considered for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC genomic sequencing policies do not impose a strict age cutoff for WES; pediatric status supports testing but age-based eligibility is not specifically defined in policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires an appropriate ordering clinician (e.g., genetics specialist or treating specialist) and the order is from a developmental pediatrician, an appropriate specialist per payer practice."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for patients with unexplained multiple congenital anomalies/developmental concerns after prior diagnostic testing is non‑diagnostic; this 3‑year‑old has multiple congenital anomalies and developmental referral, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior standard testing (eg, chromosomal microarray and/or other recommended targeted tests) before WES; only a nondiagnostic karyotype is documented and CMA was not completed, so required prior testing is not satisfied."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Coverage family history criteria relate to similar or concordant familial conditions relevant to the tested phenotype. The noted maternal long QT syndrome is not described as related to the patient's congenital anomalies, so no relevant family history is present per policy criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies require documentation of pre‑test genetic counseling or counseling by an appropriate provider for genomic sequencing; the record states no genetic counseling has been conducted."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (proband only) and is the appropriate code for WES as requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical indication for WES, payer (UHC) coverage requires completion of prerequisite testing (eg, CMA) and documentation of genetic counseling before WES is approved; those requirements have not been met, so the test is not covered as currently documented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1955,
+    "output_tokens": 1564,
+    "total_tokens": 3519
+  }
+}

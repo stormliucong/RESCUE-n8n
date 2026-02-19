@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info explicitly states whole exome sequencing (WES) was ordered to evaluate for an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy uses the term 'children' but does not provide a numeric age cutoff for standard WES; no explicit age-based eligibility (e.g., a specific age range) is specified in the policy text."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criteria require documentation that the individual has been evaluated by a clinician with expertise in clinical genetics. Patient record shows referral by a developmental pediatrician and genetic counseling but does not document evaluation by a clinician with expertise in clinical genetics, so the ordering-provider requirement is not met per policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy limits standard WES as medically necessary for children with unexplained congenital or neurodevelopmental disorders (ALL criteria must be met). The patient has conjugated hyperbilirubinemia (an example listed under rapid sequencing for critically ill infants) but is a 16-year-old not described as critically ill; thus the patient does not meet the policy-defined medical indications for covered WES."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy criterion 3 requires prior genetic testing (eg, chromosomal microarray analysis and/or targeted single-gene testing) or prior testing failure; patient history only documents nondiagnostic Fragile X testing and does not document CMA or targeted single-gene testing, so required prior tests were not completed per policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines explicitly list family history of an inborn error of metabolism or genetic disease as relevant. The patient has a sibling with laboratory abnormalities suggestive of an inborn error of metabolism, satisfying this family-history criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling about potential risks by an individual with experience in genetic medicine. Patient completed pre-test counseling with a genetic counselor and post-test counseling is planned, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The ordered test is whole exome sequencing (WES); CPT code 81415 corresponds to exome sequencing (clinical WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL listed criteria for standard WES to be met (evaluation by clinician with expertise in clinical genetics, potential for change in management, and prior genetic testing as specified). Although counseling and relevant family history are present, the documentation does not show evaluation by a genetics clinician and required prior testing (eg, CMA/targeted testing) is not documented, and the indication (conjugated hyperbilirubinemia in a non-critically ill 16-year-old) is not among the policy's specified covered indications; therefore coverage is not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14844,
+    "output_tokens": 2533,
+    "total_tokens": 17377
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose strict age cutoffs for symptomatic individuals; the patient is 3 years old and age-based restrictions are not specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally require documentation of genetic counseling and an ordering clinician but do not mandate a specific ordering provider specialty; the record shows referral by family medicine and pre-test counseling by a genetics specialist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for individuals with unexplained multiple congenital anomalies or multisystem involvement when prior diagnostic testing is nondiagnostic; this 3-year-old has multiple congenital anomalies and a nondiagnostic karyotype."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC requires appropriate prior testing (typically chromosomal microarray) before WES for multisystem congenital anomalies; only a nondiagnostic karyotype is documented and CMA is not documented as completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family-history/consanguinity rules for WES are not specifically applied here; the noted maternal aunt with ovarian cancer is not a directly relevant affected relative for the patient's congenital anomaly indication and payer criteria do not hinge on that history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of genetic counseling for WES; the record documents pre-test counseling with a genetics specialist and plans for post-test follow-up."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband), which matches the requested test (WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical indication and genetic counseling requirements, UHC requires prior appropriate diagnostic testing (e.g., chromosomal microarray) before WES for multisystem congenital anomalies; CMA is not documented, so coverage would not be approved until prior-test requirements are satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1997,
+    "output_tokens": 1812,
+    "total_tokens": 3809
+  }
+}

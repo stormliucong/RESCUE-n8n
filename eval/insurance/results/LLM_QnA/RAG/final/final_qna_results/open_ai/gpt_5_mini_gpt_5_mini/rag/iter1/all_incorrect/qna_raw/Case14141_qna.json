@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is planned."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES may be medically necessary for evaluation of unexplained congenital/neurodevelopmental disorders in children; the patient is a 7-year-old child, satisfying the 'children' age criterion."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics. The order is from an oncologist and the record does not state evaluation by a clinician with expertise in clinical genetics, so ordering-provider requirement is not documented."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indications include unexplained multiple congenital anomalies and prior nondiagnostic genetic testing (e.g., CMA). The patient has multiple congenital anomalies and a nondiagnostic CMA, matching the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy expects prior standard genetic testing (e.g., CMA) to be nondiagnostic before WES; the patient had CMA reported as nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history (e.g., developmental delay) as relevant; the patient has a sibling with global developmental delay, which is relevant to eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires documentation of individualized genetic counseling before testing. Patient information states pre-test genetic counseling was completed with arrangements for post-test counseling."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 is the code listed in the policy for exome sequence analysis (WES), which corresponds to the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy all listed criteria must be met for WES to be medically necessary. Although age, clinical indication, prior CMA, family history, and pre-test counseling are met, the policy requires evaluation by a clinician with expertise in clinical genetics (ordering/provider requirement) and that documentation is not present (ordering provider is an oncologist). Therefore not all policy criteria are met and the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 56577,
+    "output_tokens": 2139,
+    "total_tokens": 58716
+  }
+}

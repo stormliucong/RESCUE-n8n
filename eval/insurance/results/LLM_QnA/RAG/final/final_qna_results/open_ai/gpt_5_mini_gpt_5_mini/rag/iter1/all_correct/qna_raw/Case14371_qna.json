@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information states the general pediatrician ordered whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-referenced criteria (e.g., features diagnosed by 18 years, GDD defined by onset <5 yrs) but has no upper age exclusion; the patient is 11 years old and therefore meets the age-related thresholds referenced in the policy (e.g., diagnosis by 18 years)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy Coverage Rationale explicitly requires WES to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The ordering provider is a general pediatrician, which is not listed as an authorized ordering specialty."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES when clinical history strongly suggests a genetic cause and relevant features are present. The patient has a complex neurodevelopmental disorder and autism spectrum disorder (both listed as qualifying neurodevelopmental features in the policy), satisfying medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior testing universally before WES (it only advises targeted single-gene/panel testing when a specific syndrome is suspected). The patient did have prior Fragile X testing (nondiagnostic), but the policy does not require Fragile X specifically as a prerequisite for WES."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists family history of other first- or second-degree family members with similar clinical features as a supporting feature. The patient has a maternal aunt with a severe immunologic disorder, but that is not described as a family member with similar neurodevelopmental features, so it does not meet the policy's family-history criterion."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state it as an absolute coverage requirement. The patient did meet the recommendation (pre-test genetic counseling performed), but counseling is not specified as a strict coverage criterion in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Applicable CPT codes in the policy list 81415 for exome sequence analysis (proband), which corresponds to WES ordered for this patient."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient’s clinical presentation (neurodevelopmental disorder/ASD) meets medical indication criteria and pre-test genetic counseling occurred, the policy requires WES to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The ordering provider is a general pediatrician, so the policy’s provider-ordering requirement is not met and coverage is not supported."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36945,
+    "output_tokens": 4314,
+    "total_tokens": 41259
+  }
+}

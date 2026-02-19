@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient note explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-based items (e.g., features diagnosed by age 18) and the patient is an 8‑week‑old infant with congenital hearing/visual impairment (meets the 'diagnosed by 18 years' age criterion)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the order/referral is from a neonatologist."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy medical-necessity criteria for WGS require (in part) either a major feature (e.g., multiple congenital anomalies, global developmental delay, etc.) OR two or more listed features (one of which is 'significant hearing or visual impairment'). The patient has significant congenital hearing and/or visual impairment only (one listed feature) and no documentation of an additional qualifying feature or a major listed feature, so the defined clinical criteria are not met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy for WGS states 'Neither CMA nor WES have been performed' as a criterion. Patient had prior FISH (nondiagnostic) but no CMA or WES documented, so this criterion is satisfied."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies relevant family-history criteria (e.g., other first/second‑degree family members with similar clinical features or consanguinity). The documented family history (father with long QT syndrome) is not one of the policy-defined family-history items relevant to WGS eligibility."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make pre-test counseling an explicit coverage prerequisite; the record documents no pre-test counseling but the policy does not specify it as a required coverage criterion."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 for 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although ordering provider, age, and prior-test status meet policy requirements, the patient does not meet the policy's defined clinical indication for WGS (patient has only one listed feature—significant hearing/visual impairment—where the policy requires either a major feature or two or more listed features). Therefore coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36956,
+    "output_tokens": 3582,
+    "total_tokens": 40538
+  }
+}

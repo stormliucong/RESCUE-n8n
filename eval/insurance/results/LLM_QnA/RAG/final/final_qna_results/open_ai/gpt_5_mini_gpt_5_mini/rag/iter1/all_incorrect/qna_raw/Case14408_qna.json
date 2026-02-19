@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1/2 testing (patient info states BRCA1/2 testing requested)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided Cigna hereditary cancer panel policy does not state age-based eligibility for BRCA1/2 single-gene testing in the text supplied; age-specific criteria are not included in this document."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate provider but does not specify required ordering provider specialty or other ordering-provider restrictions for BRCA1/2 single-gene requests in the supplied text."
+    },
+    "Q3": {
+      "answer": "Not Answerable",
+      "reasoning": "Coverage for BRCA1/2 is governed by a separate EviCore 'BRCA Analysis' guideline referenced in the policy; that guideline's specific medical-criteria are not included here, so we cannot determine if the patient meets those BRCA-specific indications from the provided documents."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy specifies no previous hereditary cancer multigene panel or gene testing is allowed for reimbursement; patient has no prior genetic testing per the provided patient information, satisfying the policy's prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy uses family history in eligibility (e.g., meeting BRCA Analysis criteria); patient has a first‑degree relative (brother) with breast cancer, which is relevant per the policy's family-history-based criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling. Patient had pre-test counseling completed and post-test follow-up with a genetic counselor is planned, satisfying the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The supplied policy refers to a separate BRCA Analysis guideline for single-gene BRCA testing and does not provide the specific CPT code for BRCA1/2 in the provided text; the listed CPTs in this document are for panels and other procedures."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The policy states BRCA1/2 coverage is determined by the separate EviCore 'BRCA Analysis' criteria (referenced but not included). Because the required BRCA-specific medical-necessity criteria are not present in the provided policy text and cannot be confirmed from the patient record alone, coverage cannot be confirmed under the supplied policy and thus is not approved based on available documentation."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11858,
+    "output_tokens": 2408,
+    "total_tokens": 14266
+  }
+}

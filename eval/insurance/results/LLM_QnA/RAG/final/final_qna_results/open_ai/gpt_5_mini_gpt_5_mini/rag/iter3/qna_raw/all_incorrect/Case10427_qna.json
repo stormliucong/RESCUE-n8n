@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient record explicitly states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies pediatric eligibility (<18 years) for genomic sequencing indications; the patient is an 8‑week‑old infant (<18 years), so age meets the policy's age criterion."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by an ABMGG board‑certified medical geneticist or an ABGC board‑certified genetic counselor. The patient note documents pre‑test counseling by a “genetic counselor” but does not state board certification or whether an ABMGG geneticist evaluated the infant, so available information is insufficient to determine if ordering/provider requirements are met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES/WGS are indicated for unexplained congenital or neurodevelopmental disorders in <18-year-olds. The infant has significant unexplained hypotonia and a nondiagnostic FISH, consistent with an unexplained congenital/neurodevelopmental phenotype meeting the policy's medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy allows WGS only when WES has been unable to identify a causative mutation and the other criteria are met. The record does not indicate prior WES was performed, so the required prior test (WES) for WGS coverage has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy recognizes family history/previous affected child as relevant to sequencing decisions; the patient has an older sibling with unexplained developmental regression, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires pre‑test counseling by an ABMGG board‑certified medical geneticist or an ABGC board‑certified genetic counselor. The record notes pre‑test counseling by a genetic counselor but does not specify ABGC board certification, so it is not possible from provided information to confirm that the policy's counseling requirement is satisfied."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to WGS/WES; therefore a specific CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy WGS only meets coverage criteria when WES has already been performed and was nondiagnostic and all other criteria are met. The request is for primary WGS with no documentation of prior WES; therefore WGS does not meet the policy's coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22480,
+    "output_tokens": 3507,
+    "total_tokens": 25987
+  }
+}

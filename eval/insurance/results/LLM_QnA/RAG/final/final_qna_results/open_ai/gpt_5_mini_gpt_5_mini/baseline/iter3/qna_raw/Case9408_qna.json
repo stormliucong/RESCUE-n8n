@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient information explicitly states the patient is undergoing whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "FEP WES coverage is driven by early-onset clinical presentation (epileptic encephalopathy with seizure onset <3 years) rather than a strict maximum age; the patient is 17 and had onset before age 3, meeting the age-related/early-onset criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "FEP policies require an appropriate ordering clinician (typically a medical geneticist, neurologist or other qualified physician); the test was requested by a medical geneticist, which satisfies provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "FEP covers WES for unexplained epileptic encephalopathy/early-onset epilepsy when prior testing is nondiagnostic; the patient has epileptic encephalopathy with onset before age 3, a listed medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "FEP generally requires prior standard testing such as chromosomal microarray before WES for this indication; the record states CMA was previously performed and nondiagnostic, meeting prior test requirements."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Although a family history is reported (mother with a severe immunologic/hematologic disorder), it is not described as a family history of epileptic encephalopathy or consanguinity relevant to WES eligibility per FEP criteria, so relevant family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "FEP requires documentation of pre-test genetic counseling and plans for post-test counseling for WES; the record documents pre-test counseling and planned post-test follow-up with a genetic counselor."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (WES) for a proband; this best matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per FEP WES coverage criteria the patient meets indication (early‑onset epileptic encephalopathy), required prior testing (nondiagnostic CMA), ordering provider (medical geneticist), and counseling requirements, so the test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1998,
+    "output_tokens": 1774,
+    "total_tokens": 3772
+  }
+}

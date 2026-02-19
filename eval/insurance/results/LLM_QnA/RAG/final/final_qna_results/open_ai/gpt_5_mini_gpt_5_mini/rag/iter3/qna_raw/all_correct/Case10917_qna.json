@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information states \"whole exome sequencing (WES) has been ordered.\""
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare WES policy does not impose a strict age cutoff for postnatal WES eligibility; age-specific items in the policy reference ages for particular phenotypes (e.g., features diagnosed by 18 years, prenatal criteria) but no exclusion based on an 8-week infant age is specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient was evaluated by a medical geneticist who ordered WES, meeting the provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history suggesting a genetic cause plus one or more features (e.g., laboratory abnormalities suggestive of an inborn error of metabolism, or a first-degree family member with similar features). The infant has persistent conjugated hyperbilirubinemia (a lab abnormality consistent with possible IEM/cholestatic genetic disorders) and an older sibling with multiple congenital anomalies, meeting the medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior tests (e.g., CMA) before postnatal WES; it only states targeted/single-gene testing should be done first when a specific syndrome is suspected. No required prior testing is documented for this clinical scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' as an indication; the patient has an older sibling with multiple congenital anomalies, which is relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES; the record indicates pre-test counseling was completed with a genetic specialist, satisfying the counseling expectation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable CPT codes list 81415 for Exome (sequence analysis) corresponding to WES (proband) testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on the policy coverage rationale: WES is medically necessary when ordered by an appropriate specialist and clinical history suggests a genetic cause with supporting features. The patient is an infant with persistent conjugated hyperbilirubinemia (lab abnormality suggestive of IEM) and a sibling with multiple congenital anomalies, WES was ordered by a medical geneticist, and pre-test genetic counseling was completed. These facts meet the policy's stated indications for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36946,
+    "output_tokens": 1990,
+    "total_tokens": 38936
+  }
+}

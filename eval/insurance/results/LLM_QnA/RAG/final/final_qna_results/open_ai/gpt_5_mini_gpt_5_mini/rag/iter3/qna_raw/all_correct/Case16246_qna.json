@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being referred for BRCA1 and BRCA2 testing per the clinical information; the request explicitly names BRCA1/2."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy states BRCA1/2 testing is medically necessary for individuals with a personal history of breast cancer diagnosed at age 65 or younger; patient is 35, so she meets the age criterion (Policy: Coverage Rationale)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends genetic expertise and counseling and notes clinicians familiar with hereditary cancer should perform evaluation, but it does not state a specific required ordering provider specialty/type for BRCA1/2 testing."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists personal history of breast cancer diagnosed ≤65 as a specific indication for BRCA1/2 testing; patient has breast cancer diagnosed before age 50, so she meets a defined medical indication (Policy: Coverage Rationale)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not require completion of any specific prior genetic tests before BRCA1/2 testing for an affected individual; no mandatory prior testing is listed in the BRCA1/2 coverage criteria."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies family history criteria and identifies pancreatic cancer as a BRCA-related cancer; patient has an uncle (a second-degree relative) with pancreatic cancer, which is a relevant family history per the policy definitions."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states pre-test genetic counseling is 'strongly recommended' but does not make counseling a stated coverage requirement; the patient has not had pre-test counseling, but counseling is not mandated as a condition of coverage in the policy."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy lists CPT 81162 for BRCA1/2 full sequence analysis plus duplication/deletion analysis, which corresponds to comprehensive BRCA1/2 testing requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy BRCA1/2 testing is proven and medically necessary for individuals with a personal history of breast cancer diagnosed at age 65 or younger; the 35-year-old patient with breast cancer meets the coverage criteria. Pre-test counseling is recommended but not required for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 38615,
+    "output_tokens": 1797,
+    "total_tokens": 40412
+  }
+}

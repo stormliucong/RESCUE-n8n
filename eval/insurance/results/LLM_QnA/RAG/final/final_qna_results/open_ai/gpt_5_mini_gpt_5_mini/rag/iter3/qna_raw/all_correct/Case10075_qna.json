@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information states consideration of chromosomal microarray (CMA) testing; prior CMA was nondiagnostic and CMA will be pursued. Basis: patient facts."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP policy discusses CMA as a postnatal/first‑line test for certain indications but does not specify explicit age limits or numeric age criteria. Patient is a 4‑week‑old infant (postnatal) but no age restriction is stated in the policy. Basis: policy text (no age criteria)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends genetic counseling be performed by someone with expertise but does not state specific ordering‑provider (specialty/type) requirements for CMA. Patient did receive pre‑test counseling from a genetic specialist (patient fact). Basis: policy text (no explicit ordering provider requirement)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy lists CMA as medically necessary as first‑line for (1) apparent nonsyndromic developmental delay/ID, (2) ASD, or (3) multiple congenital anomalies not specific to a well‑delineated syndrome. The infant has meconium ileus (a single neonatal finding) and a family history of an inborn error of metabolism; there is no documentation of developmental delay/ID, ASD, or multiple congenital anomalies. Prior CMA was already nondiagnostic. Therefore the patient does not meet the policy's specified medical indications for CMA. Basis: policy statement and patient facts."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define required prior tests that must be completed before performing CMA as a coverage condition (it notes CMA as first‑line and references guideline sequencing such as fragile X in ASD evaluation but does not mandate prior testing as a coverage prerequisite). Patient has had a prior nondiagnostic CMA (patient fact). Basis: policy text (no explicit prior‑test requirement)."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not set family history or consanguinity as an explicit coverage eligibility criterion for CMA. Patient has a family history of an inborn error of metabolism (patient fact), but the policy does not use family history as a stated coverage criterion. Basis: policy text (family history not specified as coverage criterion)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends formal genetic counseling by an experienced provider and describes its importance, but it does not state counseling as an explicit coverage requirement for CMA. Patient completed pre‑test counseling with a genetic specialist and arranged post‑test follow‑up (patient fact). Basis: policy text (counseling recommended but not defined as coverage requirement)."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to CMA testing. No CPT code correspondence for chromosomal microarray is specified in the policy text. Basis: policy text (no CPTs provided)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage per the FEP policy is limited to CMA when medically necessary for specific indications (nonsyndromic developmental delay/ID, ASD, or multiple congenital anomalies). This infant has a single neonatal presentation (meconium ileus), no documented developmental delay/ID or ASD, and a prior CMA was nondiagnostic. The policy also states CMA is investigational for other conditions. Therefore, under the policy the requested CMA is not covered. Basis: policy statement and patient facts (single anomaly and prior nondiagnostic CMA)."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15704,
+    "output_tokens": 2694,
+    "total_tokens": 18398
+  }
+}

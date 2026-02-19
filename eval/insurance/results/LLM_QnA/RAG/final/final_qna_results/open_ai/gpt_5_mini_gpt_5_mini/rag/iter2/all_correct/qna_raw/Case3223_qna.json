@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1 and BRCA2 testing (clinical information states BRCA1 and BRCA2 testing was requested)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy contains age-based criteria for cancer-affected cases but does not impose an upper age limit or specific age restriction for testing of unaffected individuals; no age restriction applicable to this unaffected 75-year-old is specified in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers who can give appropriate pre- and post-test counseling. The referral is from a general practitioner and there is no documentation of pre-test genetic counseling, so ordering/provider requirements are not met per the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy states testing for unaffected individuals is medically necessary if they have a 1st- or 2nd-degree blood relative who meets the criteria for Patients With Cancer. The patient has a sister (1st-degree) with epithelial ovarian carcinoma, which meets the policy's cancer-family-history criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy strongly recommends testing an affected family member first when possible, but it does not state a firm required prior test that must be completed before testing an unaffected relative; no specific mandatory prior test is defined in the policy for this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria explicitly consider family history; patient has a relevant family history (sister with epithelial ovarian cancer), which is a first-degree relative meeting policy criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires appropriate pre- and post-test genetic counseling by suitably trained providers. The clinical information states there is no documentation of pre-test genetic counseling, so counseling requirements are not satisfied."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not map BRCA1/2 testing to any specific CPT code; no CPT coding guidance is specified in the policy text supplied."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical/family-history medical-necessity criteria for BRCA1/2 testing, the policy requires testing be performed in a setting with suitably trained providers who can provide appropriate pre- and post-test genetic counseling. There is no documentation that pre-test genetic counseling has been provided, so coverage requirements per the policy are not met based on the provided information."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18927,
+    "output_tokens": 2274,
+    "total_tokens": 21201
+  }
+}

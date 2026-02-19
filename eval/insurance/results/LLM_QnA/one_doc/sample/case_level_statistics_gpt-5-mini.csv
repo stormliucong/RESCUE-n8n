@@ -1,0 +1,11 @@
+case_id,accuracy,correct_count,total_count,pdf_used,md5_hash,match_status
+Case4512,77.77777777777779,7,9,True,d5e9701c13de1dca302ad0ce45524039,exact_match
+Case7376,55.55555555555556,5,9,True,4fadf6b3ca9d4d08131cb31365e3aa7d,exact_match
+Case8051,66.66666666666666,6,9,True,d5e9701c13de1dca302ad0ce45524039,exact_match
+Case9349,66.66666666666666,6,9,True,d5e9701c13de1dca302ad0ce45524039,exact_match
+Case10363,55.55555555555556,5,9,True,4fadf6b3ca9d4d08131cb31365e3aa7d,exact_match
+Case10451,88.88888888888889,8,9,True,4fadf6b3ca9d4d08131cb31365e3aa7d,exact_match
+Case10917,66.66666666666666,6,9,True,4fadf6b3ca9d4d08131cb31365e3aa7d,exact_match
+Case11124,77.77777777777779,7,9,True,4fadf6b3ca9d4d08131cb31365e3aa7d,exact_match
+Case18257,77.77777777777779,7,9,True,626eac4d60df057ea93ece78f8cc3dfc,exact_match
+Case19321,88.88888888888889,8,9,True,4fadf6b3ca9d4d08131cb31365e3aa7d,exact_match

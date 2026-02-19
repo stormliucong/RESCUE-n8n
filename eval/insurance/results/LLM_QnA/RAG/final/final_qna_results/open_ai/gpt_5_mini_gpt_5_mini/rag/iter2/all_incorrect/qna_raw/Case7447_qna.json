@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info: cardiologist ordered whole genome sequencing (WGS) for the fetal evaluation. Basis: patient clinical information explicitly states WGS was ordered."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy age criterion: standard WES/WGS medical necessity statements apply to pediatric individuals under 21 years AND the policy explicitly states it does not address prenatal (fetal) testing. The patient is a fetus (33 weeks gestation), so the policy’s age/setting criteria are not met (prenatal testing is not addressed)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requirement: ‘The individual has been evaluated by a clinician with expertise in clinical genetics and counseling was provided’ is a stated criterion. Patient info: test was ordered by a cardiologist and there is no documentation of evaluation by a clinician with expertise in clinical genetics or counseling — requirement not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy clinical indications: WES/WGS may be medically necessary for evaluation of unexplained congenital anomalies (includes congenital malformations of the circulatory system). Patient has an isolated severe congenital heart defect, which meets the clinical indication for evaluation of a congenital anomaly per the policy (noting other policy restrictions)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy lists prior genetic testing as one possible criterion (previous testing non-diagnostic) but does not universally mandate a specific prior test in all situations; it also allows first-line testing in certain circumstances (policy history/ACMG discussion). The provided patient facts (nondiagnostic fragile X) do not clearly satisfy or negate a specific required prior test per the policy."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists specific family history examples relevant for testing (e.g., arrhythmia, BRUE in sibling, developmental delay, LQTS, sudden unexplained death). Patient’s family history (maternal aunt with triple-negative breast cancer) is not among the policy’s listed relevant family-history criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires counseling by an individual with experience/expertise in genetic medicine as part of the medical necessity criteria. Patient info: there is no documentation of pre-test genetic counseling, so the policy’s counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding: covered when medically necessary lists 81415, 81416, 81417, 81425, 81426, 81427. Policy history notes 81425/81426/etc. were associated with rapid testing; the requested test is standard WGS (not rapid). Therefore 81415 is the best corresponding covered CPT among provided options per the policy coding table."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the fetal congenital heart defect meets a clinical indication for WGS, the policy explicitly does not address prenatal (fetal) testing and requires evaluation/counseling by a genetics clinician as part of medical necessity. Additionally, Section II directs FEP members to an FEP-specific policy. Given prenatal exclusion and unmet counseling/provider criteria in the provided facts, the test is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14855,
+    "output_tokens": 3059,
+    "total_tokens": 17914
+  }
+}

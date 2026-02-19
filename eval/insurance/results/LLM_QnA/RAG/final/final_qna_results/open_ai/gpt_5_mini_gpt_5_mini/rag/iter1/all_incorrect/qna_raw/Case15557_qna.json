@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states testing is being pursued with whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is written for 'children' with unexplained congenital or neurodevelopmental disorders; the patient is 15 years old and therefore meets the pediatric (child) age context in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics (Policy Statement #1). The record only notes referral by neurology and multiple genetic counseling visits; there is no explicit documentation that a clinician with expertise in clinical genetics evaluated the patient."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indications include children with unexplained congenital anomalies after prior genetic testing or when genetic etiology is most likely. The patient has a congenital anomaly since birth, prior genetic testing (FISH) was nondiagnostic, and a sibling with a similar anomaly, consistent with the policy's defined clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy language expects prior genetic testing (e.g., CMA or targeted testing) or prior testing failing to yield a diagnosis. The patient had prior FISH testing that was nondiagnostic, satisfying the policy requirement that previous genetic testing failed to yield a diagnosis."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy notes family history (eg, developmental delay or genetic disease) as relevant. The patient has a sibling with a similar congenital anomaly, constituting a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires genetic counseling by an individual with experience in genetic medicine. The patient has been seen by a genetic counselor multiple times and plans for post-test counseling, meeting the policy's genetic counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify corresponding CPT code(s) for WGS; no CPT mappings are given in the policy text excerpt."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications (unexplained congenital anomaly, prior nondiagnostic genetic testing, relevant family history, and genetic counseling), the policy requires documentation of evaluation by a clinician with expertise in clinical genetics as part of the ALL criteria for medical necessity. That documentation is not present in the patient information; therefore, per the policy's ordering/provider requirement, the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14831,
+    "output_tokens": 3228,
+    "total_tokens": 18059
+  }
+}

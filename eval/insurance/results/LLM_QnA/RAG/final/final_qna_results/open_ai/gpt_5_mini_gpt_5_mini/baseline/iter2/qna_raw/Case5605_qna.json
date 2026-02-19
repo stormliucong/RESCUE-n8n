@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states the patient was referred for whole genome sequencing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES/WGS coverage is targeted to pediatric patients with congenital anomalies/early-onset suspected genetic disorders; the patient is 11 years old (pediatric) and therefore meets age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies generally require appropriate clinical documentation and genetics involvement (eg, counseling) but do not rigidly require a specific ordering provider specialty in all cases; the record shows a referral by an obstetrician and counseling by a genetics specialist, but the explicit ordering-provider requirement is not specified in the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP supports WGS for unexplained major congenital anomalies after standard workup; the patient has a major congenital cardiac anomaly, which meets the medical indication for WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP typically requires prior chromosomal microarray for congenital anomaly evaluation; the patient had a nondiagnostic CMA prior to WGS, satisfying prior testing requirements."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family-history–based eligibility would require relatives with similar congenital findings or consanguinity; the only family history documented is a maternal aunt with pancreatic cancer, which is not relevant to congenital cardiac anomaly eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of pre-test genetic counseling for WES/WGS; the record states pre-test counseling was completed with a genetic specialist."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (clinical genome sequence analysis and interpretation), which matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All applicable BCBS_FEP criteria are met: pediatric age, appropriate medical indication (major congenital cardiac anomaly), nondiagnostic prior CMA, and documented pre-test genetic counseling — therefore WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1969,
+    "output_tokens": 2062,
+    "total_tokens": 4031
+  }
+}

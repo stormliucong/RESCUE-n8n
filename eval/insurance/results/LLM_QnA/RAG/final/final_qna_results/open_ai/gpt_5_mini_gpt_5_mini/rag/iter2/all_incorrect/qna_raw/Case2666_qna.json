@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is stated to be 'undergoing BRCA1/2 testing' — the requested test is BRCA1/2. (Patient information)"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly prohibits testing in minors; the patient is age 21 (adult), so age-based exclusion for minors does not apply. (Policy: 'Genetic testing in minors ... is considered experimental / investigational.')"
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires testing be done in a setting with suitably trained providers and genetic counseling by experienced personnel but does not mandate a specific ordering provider specialty; patient had pre-test counseling by a genetic specialist which aligns with guidance. (Policy: 'performed in a setting that has suitably trained healthcare providers' and 'Genetic counseling ... should be performed by an individual with experience and expertise')"
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows testing of an unaffected individual when a 1st- or 2nd-degree blood relative meets any criterion for individuals with cancer. Patient's father is a first-degree relative with metastatic prostate cancer, which meets the policy's cancer criteria (A.6), so the patient meets indication. (Policy A.6 and B.1)"
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends testing an affected family member first 'whenever possible' but does not make prior testing of the affected relative an absolute required precondition for testing the unaffected individual; no documentation of prior family testing is provided. (Policy Guidelines: 'it is strongly recommended that an affected family member be tested first whenever possible')"
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies family-history criteria (close blood relative with cancers listed). Patient reports a father (first-degree) with metastatic prostate cancer, which is specifically addressed in the policy. (Policy A.6; Policy B.1 uses presence of a 1st-degree relative meeting criteria)"
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by experienced providers. Patient completed pre-test counseling with a genetic specialist and has plans for post-test follow-up, meeting counseling requirements. (Policy: 'Genetic counseling ... should be performed by an individual with experience and expertise' and 'performed in a setting that has suitably trained healthcare providers who can give appropriate pre- and post-test counseling')"
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy lists CPT 81162 as 'BRCA1...BRCA2 ... full sequence analysis and full duplication/deletion analysis' which corresponds to comprehensive BRCA1/2 testing typically indicated by the policy. (Policy CPT codes section: 81162)"
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per policy, testing is medically necessary for an unaffected individual who has a 1st-degree relative meeting criteria for cancer-affected individuals; the patient's father has metastatic prostate cancer (meets A.6), the patient had appropriate pre-test genetic counseling, is an adult, and comprehensive BRCA1/2 testing (CPT 81162) is consistent with policy. (Policy A.6; Policy B.1; Policy Guidelines re: counseling and comprehensive testing)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 49081,
+    "output_tokens": 2240,
+    "total_tokens": 51321
+  }
+}

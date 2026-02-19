@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information states whole genome sequencing (WGS) was requested for an infant with multiple congenital anomalies."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy references use in 'children' and includes guidance (ACMG) recommending ES/GS prior to 1 year in supplemental text, but the policy statement itself does not define a strict numeric age cutoff; therefore age-based eligibility is not explicitly specified."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics. The ordering/referring provider is a general practitioner and there is no documentation that a clinician with genetics expertise evaluated the infant."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists evaluation of unexplained congenital anomalies in children as a specific medical indication for WES/WGS; the patient is a 7‑week infant with multiple congenital anomalies identified at birth, which meets that medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The policy requires prior standard workup (examples include chromosomal microarray analysis and/or targeted single‑gene testing) or prior testing having failed; only nondiagnostic Fragile X testing is documented and there is no documentation of CMA or other standard prior testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists family history of developmental delay/related conditions as relevant; the patient has an older sibling with autism spectrum disorder, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires counseling about risks of genetic testing performed by someone experienced; the patient information states pre‑test genetic counseling was completed with plans for post‑test follow‑up, satisfying the counseling requirement as documented."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not specify CPT or billing codes for WGS; no CPT mapping is given in the document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the infant has a policy‑defined medical indication (multiple congenital anomalies), the policy requires (1) evaluation/documentation by a clinician with expertise in clinical genetics and (2) standard prior workup (eg, CMA) or prior testing fail criteria. The record lacks documentation of a genetics clinician evaluation and lacks evidence of required prior testing (CMA/targeted testing), so the policy's ALL‑criteria for medical necessity are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14818,
+    "output_tokens": 2651,
+    "total_tokens": 17469
+  }
+}

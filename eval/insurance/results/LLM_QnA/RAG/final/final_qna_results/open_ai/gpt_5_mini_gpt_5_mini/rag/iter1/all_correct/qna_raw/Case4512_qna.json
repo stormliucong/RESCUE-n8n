@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy limits medically necessary standard WES/WGS indications to children (and rapid WGS/WES to critically ill infants in NICU/PICU). The patient is a 21-year-old adult, so age does not meet the pediatric/infant criteria in the policy (policy basis: \"Standard whole exome sequencing... may be considered medically necessary ... in children\" and \"rapid WGS... for critically ill infants\")."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics (including family history/phenotype) and counseling. Patient record documents pre-test genetic counseling but does not explicitly state evaluation by a clinician with expertise in clinical genetics; insufficient information to determine provider requirement compliance (policy basis: criterion #1)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications for WGS only for rapid testing in critically ill infants; otherwise WGS is considered investigational. The 21-year-old adult with a congenital cardiac anomaly does not meet the policy's defined indications for WGS (policy basis: \"Rapid ... WGS ... may be considered medically necessary ... for critically ill infants\" and \"Whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations\")."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies prior genetic testing (eg, CMA and/or targeted single-gene testing) as part of the WES criteria for children, but does not define a required prior-test pathway for standard WGS in non-rapid situations. The patient has no prior genetic testing, but the policy does not state specific prior-test requirements for this requested WGS scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly lists family history items relevant to testing eligibility, including 'BRUE in sibling.' The patient has a sibling with a BRUE-like event (policy basis: Policy Guidelines family history list)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced individual; patient information documents pre-test counseling with a genetic counselor and a planned post-test visit, meeting the counseling requirement (policy basis: 'Genetic counseling... should be performed by an individual with experience and expertise')."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing (WGS); the CPT code option corresponding to WGS among the provided choices is 81425."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy, whole genome sequencing is considered investigational for diagnosis in all situations other than rapid testing for critically ill infants; this patient is a 21-year-old adult and does not meet the policy's covered indications, so WGS is not covered (policy basis: 'Whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations')."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14859,
+    "output_tokens": 2640,
+    "total_tokens": 17499
+  }
+}

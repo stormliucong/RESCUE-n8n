@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states the newborn 'has been referred for whole exome sequencing (WES) after karyotype testing was nondiagnostic.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP 2.04.59 policy does not specify age-based eligibility criteria for the requested WES; it addresses CMA first-line in postnatal patients but gives no age limits for WES."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and that testing should be performed when medically necessary, but it does not specify ordering-provider specialty/credential requirements for WES or for ordering NGS in this document."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy explicitly defines clinical indications for CMA (e.g., multiple congenital anomalies) but does not define specific medical-necessity criteria for WES in this document (WES is addressed in a separate policy 2.04.102)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy Guidelines recommend a stepwise approach with CMA (and fragile X testing) as first-tier testing for congenital anomalies/developmental delay. Patient info notes only a nondiagnostic karyotype and referral for WES; CMA is not reported as completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has a sibling with unexplained developmental regression, the provided policy does not define family-history or consanguinity criteria applicable to WES or require family-history elements for coverage in this document."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends formal genetic counseling and notes it should be performed by qualified individuals, but it does not state genetic counseling as a defined coverage precondition for WES in this policy; patient has completed pre-test counseling per the clinical info."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP 2.04.59 policy text does not list or map CPT codes to WES or other genetic tests, so a specific CPT from the provided options cannot be determined from this document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under this policy CMA is the indicated first-line test for multiple congenital anomalies; the policy states 'Panel testing using next-generation sequencing is considered investigational in all cases' and WES is not authorized in this document (addressed in a different policy not provided). The patient was referred for WES without documented completion of recommended first-tier CMA, so based solely on this policy the requested WES is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15689,
+    "output_tokens": 2293,
+    "total_tokens": 17982
+  }
+}

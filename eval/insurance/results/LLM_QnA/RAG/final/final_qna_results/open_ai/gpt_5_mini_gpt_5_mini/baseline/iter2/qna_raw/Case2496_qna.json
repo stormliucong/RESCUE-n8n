@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES criteria are typically driven by clinical indication rather than strict patient age limits; the record describes a 32‑week fetus but no payer age restriction is specified in the clinical information."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The documentation lists the ordering provider as a neonatologist but the provided information and UHC criteria summary do not specify a required ordering provider specialty in this case."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES when there is a suspected genetic disorder such as fetal structural/clinical abnormalities, especially with parental consanguinity and family history suggestive of autosomal recessive disease; the record documents consanguinity, concern for AR conditions, fetal imaging concerns and a sibling with unexplained early death—meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC prenatal WES coverage commonly requires prior standard genomic testing (e.g., chromosome analysis/CMA) or targeted testing to be nondiagnostic; only prior FISH is documented as nondiagnostic and chromosomal microarray/karyotype are not reported as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has parental consanguinity and a family history of sudden unexplained death in a sibling <35, both relevant and recognized criteria supporting WES eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC typically requires documented pre‑test genetic counseling for WES/WGS; the record explicitly states no genetic counseling has been completed."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (WES), which is the test requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications (fetal anomalies, consanguinity, family history) support WES, required prior testing (e.g., CMA/karyotype) and documented genetic counseling are not completed as required by UHC coverage policies, so coverage would likely be denied until those prerequisites are met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1995,
+    "output_tokens": 1765,
+    "total_tokens": 3760
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information states 'tumor chromosomal microarray (CMA) testing has been requested'; policy is the CMA policy. Basis: patient request text."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare CMA policy does not impose an age limit for postnatal CMA; coverage criteria are indication-based (e.g., DD/ID, congenital anomalies) rather than age-specific."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends pre-test genetic counseling and expertise for interpretation but does not state a required ordering provider specialty or limit who may order CMA."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists CMA as proven/medically necessary for evaluation of congenital/multiple anomalies and for evaluation when karyotype is nondiagnostic. Patient has a major abnormality affecting ≥1 organ system and prior karyotype was nondiagnostic, which meets the policy indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior tests universally (CMA is often first-tier); although the patient had a nondiagnostic karyotype (supportive), the policy does not require completion of particular prior testing as a universal precondition."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not define CMA eligibility based on family history of BRCA1/2; the noted maternal BRCA1/2 pathogenic variant is unrelated to the CMA coverage criteria in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy 'strongly recommends' pre-test genetic counseling and AAN/SMFM/ACMG guidance support counseling; patient completed multiple pretest counseling sessions with a genetic counselor and plans post-test follow-up, meeting counseling expectations in the policy."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Policy's Applicable Codes list CPT 81228 as 'Cytogenomic (genome-wide) analysis... comparative genomic hybridization [CGH] microarray analysis' which corresponds to CMA requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy coverage rationale, CMA is medically necessary for evaluation of congenital/organ-system anomalies and when karyotype is nondiagnostic. Patient has a major organ-system abnormality, prior nondiagnostic karyotype, and documented pre-test counseling — meeting policy criteria for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 30400,
+    "output_tokens": 2313,
+    "total_tokens": 32713
+  }
+}

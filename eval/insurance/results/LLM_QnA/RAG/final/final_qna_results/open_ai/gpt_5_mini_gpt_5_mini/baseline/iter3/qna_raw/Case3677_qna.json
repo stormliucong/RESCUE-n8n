@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient is explicitly described as 'undergoing BRCA1/2 testing.'"
+    },
+    "Q1": {
+      "answer": "Not Answerable",
+      "reasoning": "UHC BRCA criteria include age-based elements (e.g., age at breast cancer diagnosis thresholds). The record gives current age (46) but does not state age at breast cancer diagnosis, so there is insufficient information to determine whether she meets age-based criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally require appropriate ordering and documentation but do not universally restrict ordering to a specific specialty in the provided information. The record shows an NP referral, but the payer-specific requirement for ordering provider type is not explicitly provided here."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under UHC BRCA coverage criteria, testing is indicated for individuals with a personal history of breast cancer and/or a close relative with BRCA-associated cancers (including pancreatic). The patient has a personal history of breast cancer plus a close relative (mother) with pancreatic cancer and multiple affected maternal relatives, meeting medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "There is no UHC requirement in the provided context that prior genetic tests must be completed before BRCA1/2 testing; the noted prior CMA was nondiagnostic but not a prerequisite for BRCA testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for BRCA testing and are met: mother with pancreatic cancer and at least two additional affected maternal relatives (multiple BRCA-related cancers on same side of family)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires documentation of genetic counseling for BRCA testing. The patient completed pre-test genetic counseling and plans post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Of the provided CPT options, 81277 most closely corresponds to BRCA-related testing (large rearrangement/BRCA series) and is the best available match for BRCA1/2 testing in this list."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC BRCA coverage criteria: the patient has a personal history of breast cancer, a close relative with pancreatic cancer, multiple affected maternal relatives, and documented pre-test genetic counseling. These elements satisfy clinical and counseling requirements, supporting coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1997,
+    "output_tokens": 2700,
+    "total_tokens": 4697
+  }
+}

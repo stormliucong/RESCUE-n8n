@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UHC policy does not impose an overall age cutoff for WGS; age-limited language in the policy applies to specific features (e.g., ID diagnosed by age 18) but no blanket age restriction is specified for WGS and the patient is 5 years old."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient was evaluated and WGS is being ordered by a medical geneticist, meeting ordering-provider criteria (policy: Coverage Rationale)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history strongly suggesting a genetic cause plus qualifying features. The patient has a congenital anomaly (choanal atresia) and a first-degree relative with developmental delay, and the clinical presentation is not described as a well-defined single-gene syndrome; together with the medical geneticist ordering WGS and no prior CMA/WES (see Q4), these facts meet the policy's clinical indications for WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC WGS coverage criterion specifies 'neither CMA nor WES have been performed.' Patient history documents prior karyotype only and does not report prior CMA or WES, so required prior tests (absence of CMA/WES) are satisfied for WGS per policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history (other first- or second-degree family member(s) with similar clinical features) as a qualifying feature; the patient has an older sibling with developmental delay, which constitutes relevant family history under the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WGS. Patient information documents pre-test genetic counseling completed on multiple occasions with plans for post-test follow-up, meeting the counseling recommendation in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's Applicable Codes list maps whole genome sequence analysis to CPT code 81425 (‘Genome; sequence analysis’)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the UHC policy WGS is medically necessary when criteria are met: WGS ordered by a medical geneticist (met), neither CMA nor WES performed (met), clinical history suggests a genetic cause with qualifying features (congenital anomaly + relevant family history) and presentation is nonspecific (met). Therefore WGS meets the policy's coverage rationale and is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36944,
+    "output_tokens": 3461,
+    "total_tokens": 40405
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) has been requested for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Typical payer WES policies do not impose strict age cutoffs; the patient is 14 years old and age-based criteria are generally not specified for WES in standard coverage rules."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Most payer WES policies do not mandate a specific ordering provider specialty in the documented information; no provider specialty requirements are provided in the patient data."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Common payer medical-necessity criteria for WES require multiple congenital anomalies, moderate-to-severe developmental delay/intellectual disability, or a suspected monogenic disorder after prior recommended testing. This patient has an isolated ocular coloboma (single congenital anomaly) with no documented developmental delay or syndromic features, so he does not meet the typical specific medical indications for WES."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Payer policies commonly require prior appropriate targeted testing such as chromosomal microarray (CMA) or other recommended tests before WES for congenital anomalies. The record notes prior FISH was nondiagnostic but does not document CMA or other required prior testing, so required prior tests are not completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "No family history or consanguinity is provided. Relevant payer criteria that consider family history for WES eligibility are not met because no such history is documented."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Many payer policies require documentation of pre-test genetic counseling for WES. The patient information does not document genetic counseling or consent, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 is the code typically used for exome sequencing (WES), which matches the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying typical payer WES coverage rules: the patient lacks the specified medical indications (multiple anomalies or developmental delay), required prior testing (CMA) is not documented, and genetic counseling is not documented. Therefore the request does not meet common coverage criteria and would not be covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1935,
+    "output_tokens": 1587,
+    "total_tokens": 3522
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient record states the clinician requested BRCA1 and BRCA2 testing. Basis: patient clinical information."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy explicitly states genetic testing in minors for BRCA1/2/PALB2 is considered investigational. Patient is 15 years old, so age-based eligibility is not met. Basis: FEP policy 'Testing Minors' statement."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers who can give appropriate pre-/post-test counseling. Ordering provider is a general pediatrician with no documentation of genetic counseling or specialized qualification—requirements are specified and not met. Basis: 'Genetic testing should be performed in a setting that has suitably trained health care providers...' and Genetic Counseling section."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications (personal/family history of cancers or meeting specified criteria). Patient has Hirschsprung disease, no personal cancer history, and no family cancer history; thus does not meet any defined indications. Basis: Policy statements for Individuals With/Without Cancer."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy strongly recommends testing an affected family member first for unaffected individuals. There is no documentation of prior testing of an affected family member; required prior testing strategy not completed. Basis: 'It is strongly recommended that an affected family member be tested first whenever possible.'"
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family history criteria are relevant for eligibility. Patient's family history shows only a mother with bipolar disorder and no cancer history, so family history criteria are not met. Basis: Policy family history requirements."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by experienced providers. There is no documentation of pre-test genetic counseling for this patient, so counseling requirements are not met. Basis: 'Genetic counseling is primarily aimed... experts recommend formal genetic counseling...' and testing setting requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing codes for BRCA1/2 testing. Basis: reviewed policy text contains no CPT code mapping."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, BRCA1/2 testing is investigational in minors and is medically necessary only when personal/family cancer history criteria are met. Patient is a minor (15), lacks personal or relevant family cancer history, has no documented genetic counseling, and testing was not done in a documented suitably trained setting—therefore not covered. Basis: 'Genetic testing in minors... considered investigational'; policy medical necessity criteria and genetic counseling/setting requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18943,
+    "output_tokens": 1817,
+    "total_tokens": 20760
+  }
+}

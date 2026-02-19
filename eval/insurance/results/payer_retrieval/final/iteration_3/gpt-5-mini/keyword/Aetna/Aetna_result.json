@@ -1,0 +1,24 @@
+{
+  "payer": "Aetna",
+  "prompt_type": "keyword",
+  "model": "openai",
+  "iteration": 3,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\": [], \"webpage_links\": [\"https://www.aetna.com/cpb/medical/data/100_199/0140.html\", \"https://www.aetna.com/cpb/medical/data/100_199/0189.html\", \"https://www.aetna.com/cpb/medical/data/200_299/0227.html\", \"https://www.aetna.com/cpb/medical/data/200_299/0249.html\", \"https://www.aetna.com/cpb/medical/data/300_399/0319.html\", \"https://www.aetna.com/cpb/medical/data/300_399/0352.html\", \"https://www.aetna.com/cpb/medical/data/500_599/0561.html\", \"https://www.aetna.com/cpb/medical/data/700_799/0715.html\", \"https://www.aetna.com/cpb/medical/data/900_999/0911.html\", \"https://www.aetna.com/cpb/medical/data/1000_1099/1031.html\"]}",
+  "parsed_data": {
+    "pdf_links": [],
+    "webpage_links": [
+      "https://www.aetna.com/cpb/medical/data/100_199/0140.html",
+      "https://www.aetna.com/cpb/medical/data/100_199/0189.html",
+      "https://www.aetna.com/cpb/medical/data/200_299/0227.html",
+      "https://www.aetna.com/cpb/medical/data/200_299/0249.html",
+      "https://www.aetna.com/cpb/medical/data/300_399/0319.html",
+      "https://www.aetna.com/cpb/medical/data/300_399/0352.html",
+      "https://www.aetna.com/cpb/medical/data/500_599/0561.html",
+      "https://www.aetna.com/cpb/medical/data/700_799/0715.html",
+      "https://www.aetna.com/cpb/medical/data/900_999/0911.html",
+      "https://www.aetna.com/cpb/medical/data/1000_1099/1031.html"
+    ]
+  }
+}

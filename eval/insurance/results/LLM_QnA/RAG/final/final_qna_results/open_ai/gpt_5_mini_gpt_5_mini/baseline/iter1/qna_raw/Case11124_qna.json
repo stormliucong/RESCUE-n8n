@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole-exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare WES coverage is generally limited to pediatric patients with unexplained developmental delay/ID or congenital anomalies; the patient is an infant and therefore meets age-based (pediatric) eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided information says the referral/ordering was via an oncologist, but UHC policy language does not universally mandate a specific ordering specialty for WES in every instance; no explicit ordering-provider restriction is documented in the patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC policy supports WES for unexplained developmental delay/early intellectual disability or suspected genetic etiology; the infant presents with developmental delay and a sibling with childhood hearing impairment, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires first‑tier testing (chromosomal microarray) prior to WES for unexplained developmental delay; the record notes prior FISH was nondiagnostic but does not document a prior CMA, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is positive for an older sibling with significant childhood hearing impairment, which is relevant and supportive of a hereditary etiology per UHC criteria for comprehensive exomic testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires genetic counseling associated with WES; the record documents pre-test counseling was completed and post-test counseling is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (WES) for a proband and is the appropriate code for the ordered WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, clinical indication, family history, and counseling meet UHC criteria, UHC's coverage requires prior chromosomal microarray (or equivalent first‑tier testing) before WES for developmental delay; no CMA is documented, so WES is not covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1499,
+    "total_tokens": 3477
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient record explicitly states 'whole genome sequencing (WGS) has been requested.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years for genome sequencing; patient is 7 years old, meeting the age criterion (policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires the rendering laboratory be a qualified provider per plan but does not specify a required ordering provider specialty/type; neurology referral is noted but policy does not define ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires the phenotype to meet specified clinical criteria (e.g., GDD under age 5, moderate/severe ID, multiple anomalies, or TWO listed criteria including autism plus another feature). The patient has a formal autism diagnosis only and no additional required neurodevelopmental features or formal ID/GDD per the policy, so does not meet the medical-indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires no prior ES/GS AND 'appropriate genetic and family history evaluation' with a clinical letter detailing differential, testing algorithm, prior tests/results, etc. Patient has no prior genetic testing but pre-test genetic evaluation/documentation was not completed (pre-test counseling was declined), so required evaluation/documentation is incomplete."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The standard genome sequencing criteria do not list family history or consanguinity as a standalone eligibility criterion (family history appears only in the rWGS inpatient criteria), so family history is not specified as a criterion for the requested GS in this policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy/ACMG guidance requires pretest genetic counseling and documentation as part of 'appropriate genetic and family history evaluation'; the family declined pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy specifies CPT 81425 should be billed for the proband when analyzing the entire genome sequence (WGS/GS)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and lack of prior ES/GS are met, the policy requires documented appropriate genetic/family history evaluation and that the clinical presentation meet specified diagnostic criteria; pre-test counseling/documentation was not completed and the patient does not meet the policy's defined clinical indication, therefore GS is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9161,
+    "output_tokens": 1946,
+    "total_tokens": 11107
+  }
+}

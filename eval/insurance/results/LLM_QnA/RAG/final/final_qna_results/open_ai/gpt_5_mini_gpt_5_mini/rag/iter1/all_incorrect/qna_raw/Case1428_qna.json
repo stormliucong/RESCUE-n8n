@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states 'whole genome sequencing (WGS) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Patient is a three-week-old infant (a child/neonate). Policy references congenital anomalies in infancy (eg, Hirschsprung) and ACMG guidance for congenital anomalies prior to one year; the patient's age falls within these age-related indications."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics AND counseling about testing risks. Although the patient is being evaluated by a medical geneticist (meets expertise), there is no documented pre-test genetic counseling (policy-required), so ordering/provider requirements are not fully met (Policy Statement #1)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The requested test is WGS. The policy's formal Policy Statement limits medically necessary WGS to rapid WGS for critically ill infants in NICU/PICU; for non-critically ill children WGS is stated as investigational. The infant is not documented as critically ill, so the patient does not meet the medical indication for the requested WGS per the policy statement."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies prior testing requirements explicitly for WES (eg, CMA and/or targeted testing or prior testing that failed), but it does not define specific required prior tests for non-rapid WGS in the Policy Statement. The patient had Fragile X testing (nondiagnostic), but the policy does not clearly state required prior tests for the requested WGS."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list family history of developmental delay as a relevant selection criterion. The patient has an older sibling with severe intellectual disability diagnosed by age 18, which meets the family-history criterion in the policy guidelines."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy requires that the individual be counseled about the potential risks of genetic testing by a clinician with genetics expertise. The record states there is no documented pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to WGS/WES testing; therefore a corresponding CPT code is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the Policy Statement, WGS is considered investigational for diagnosis in all situations other than rapid WGS for critically ill infants. This infant is not documented as critically ill in NICU/PICU; additionally required pre-test genetic counseling is not documented. Based on the policy statement, the requested WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14822,
+    "output_tokens": 3535,
+    "total_tokens": 18357
+  }
+}

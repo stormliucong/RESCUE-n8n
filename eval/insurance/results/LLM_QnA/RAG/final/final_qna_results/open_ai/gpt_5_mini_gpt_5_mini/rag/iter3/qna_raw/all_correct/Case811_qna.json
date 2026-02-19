@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued to evaluate an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES is medically necessary for children with unexplained congenital or neurodevelopmental disorders; the patient is a 7-week-old infant (child) and therefore meets age-related criteria."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled. Patient info documents pre-test counseling by a genetic counselor and a referral by a general pediatrician but does not explicitly state evaluation by a clinician with expertise in clinical genetics, so insufficient information to confirm this requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication includes unexplained congenital or neurodevelopmental disorders in children; the infant has early-onset movement abnormalities (dystonia, ataxia, intermittent hemiplegic episodes) and an unexplained phenotype, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES is appropriate when previous genetic testing (eg, chromosomal microarray) failed to yield a diagnosis. Patient had CMA previously performed and reported as nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy notes relevant family history (eg, developmental delay, multiple congenital anomalies) supports testing. Patient has a positive family history in an older sibling with multiple congenital anomalies."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling; patient information documents pre-test counseling completed with a genetic counselor and planned post-test follow-up, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to WES, so a specific CPT code is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy, WES may be considered medically necessary for children with unexplained congenital or neurodevelopmental disorders when criteria are met. The patient is an infant with an unexplained early-onset movement disorder, prior nondiagnostic CMA, relevant family history, and documented genetic counseling, and therefore meets the policy's medical necessity criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14871,
+    "output_tokens": 2615,
+    "total_tokens": 17486
+  }
+}

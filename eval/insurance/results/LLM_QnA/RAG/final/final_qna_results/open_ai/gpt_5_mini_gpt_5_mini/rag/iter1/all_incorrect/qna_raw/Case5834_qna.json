@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient clinical information explicitly states the test being requested is chromosomal microarray (CMA). (Patient data)"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP WES/WGS policy specifies age criteria for WES/WGS (children) but does not state any age-based eligibility criteria for chromosomal microarray (CMA). (Policy: no CMA age criteria)"
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy includes ordering requirements for WES/WGS (eg, evaluation by genetics) but does not specify ordering-provider requirements for CMA. (Policy: no CMA provider requirements)"
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for WES/WGS (children with unexplained congenital or neurodevelopmental disorders) but does not define specific medical indication criteria for CMA. (Policy: CMA not addressed)"
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists prior testing expectations as part of WES/WGS criteria (eg, CMA may be prior testing) but does not specify required prior tests before performing CMA itself. (Policy: no CMA prior-test requirements)"
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy includes family-history criteria relevant to WES/WGS, but the policy does not specify family history or consanguinity criteria for CMA; the patient's reported family history (mother with ovarian cancer) is not identified in the policy as relevant to CMA. (Policy: no CMA family-history criteria)"
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires genetic counseling documentation for WES/WGS but does not state counseling requirements specific to CMA. (Patient fact: counseling completed; Policy: no CMA counseling requirement specified)"
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to chromosomal microarray (CMA); none of the CPT options are specified in the policy. (Policy: CPT codes not provided)"
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under 'Benefit Application' the policy states benefits are available for specialized diagnostic genetic testing when medically necessary to diagnose/manage a patient's existing medical condition. The patient has an existing developmental/intellectual disability and CMA is being ordered to evaluate a genomic etiology; pre-test counseling completed. The policy does not exclude CMA and permits coverage of medically necessary diagnostic genetic testing. (Policy: Benefit Application + patient facts)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14855,
+    "output_tokens": 2541,
+    "total_tokens": 17396
+  }
+}

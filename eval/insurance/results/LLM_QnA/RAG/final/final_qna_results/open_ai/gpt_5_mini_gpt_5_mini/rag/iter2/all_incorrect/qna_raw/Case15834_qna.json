@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical info explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES may be medically necessary for evaluation of unexplained congenital or neurodevelopmental disorders in children; the patient is an infant (a child), so age meets the policy's child-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and pre-test counseling; patient had pre-test counseling with a genetic specialist, satisfying the ordering/provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists neurodevelopmental disorders (eg, autism spectrum disorder) in children as an indication for WES; the infant is being evaluated for ASD, meeting the specific medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing (eg, CMA and/or targeted single-gene testing) or prior testing that failed to yield a diagnosis; the patient had prior Fragile X testing that was nondiagnostic, which constitutes prior targeted testing that failed to yield a diagnosis."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance notes family history of congenital anomalies as relevant; the patient has a maternal aunt with a congenital anomaly, which is a relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed by an individual with expertise; the patient completed pre-test counseling with a genetic specialist, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT code 81415 corresponds to exome sequencing (WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL criteria be met, including documentation that 'there is potential for a change in management and clinical outcome.' The patient information does not document a specific potential change in management or clinical outcome resulting from WES, so not all required policy criteria are documented; therefore coverage cannot be confirmed under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14827,
+    "output_tokens": 2119,
+    "total_tokens": 16946
+  }
+}

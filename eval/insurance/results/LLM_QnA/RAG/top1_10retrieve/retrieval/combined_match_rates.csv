@@ -1,0 +1,2 @@
+retrieval_model,top_k,match_rate,matched_cases,total_cases
+gpt-5-mini,1,0.3490566037735849,37,106

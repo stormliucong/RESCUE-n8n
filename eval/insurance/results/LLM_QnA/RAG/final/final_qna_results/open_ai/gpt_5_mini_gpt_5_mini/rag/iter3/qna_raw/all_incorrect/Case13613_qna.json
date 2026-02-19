@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record states whole exome sequencing (WES) was ordered for fetal evaluation of multiple structural anomalies."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy defines WES indications for children/critically ill infants and explicitly excludes prenatal (fetal) testing; the patient is a fetus and therefore does not meet the age/context specified in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation and counseling by a clinician with expertise in clinical genetics; patient had pre-test discussion with a genetic specialist, meeting provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Although the fetus has multiple congenital anomalies (a criterion in the policy for neonates/infants), the policy explicitly does not address prenatal/fetal testing, so the patient does not meet an applicable medical indication per this policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires previous standard testing (eg, chromosomal microarray and/or targeted single-gene testing) or prior negative testing; only Fragile X (nondiagnostic) is documented and CMA/targeted testing is not documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy requires documentation of family history and considers family history of congenital/developmental features relevant; patient has a maternal aunt with dysmorphic features."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an expert; patient had pre-test discussion with a genetic specialist, satisfying counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT 81415 corresponds to exome sequencing (clinical exome/WES) in the provided answer options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The policy explicitly does not address prenatal (fetal) testing and limits WES indications to children/critically ill infants; therefore WES for prenatal fetal testing is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14831,
+    "output_tokens": 2036,
+    "total_tokens": 16867
+  }
+}

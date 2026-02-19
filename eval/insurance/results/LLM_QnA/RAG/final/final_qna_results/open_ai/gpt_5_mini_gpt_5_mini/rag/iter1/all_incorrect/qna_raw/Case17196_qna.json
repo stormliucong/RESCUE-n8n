@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states the test requested is chromosomal microarray (CMA) testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy contains general age language for adult-onset risk assessments (must be ≥ age of majority for asymptomatic adult-onset testing) but does not specify an age limit or specific age-based eligibility for CMA; the patient is 63 but no CMA-specific age criteria are provided in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy I.1 states genetic counseling is required prior to testing unless the test is ordered by a specialist in the disease process. The CMA is being requested for a neuropsychiatric indication by an oncologist (not a specialist in neuropsychiatric disease), so the ordering circumstances do not meet the policy exemption and the ordering/provider requirements are not satisfied."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy requires symptomatic individuals to have suspicion of a known genetic disease where mutation knowledge will assist diagnosis/treatment/procreative management and that testing has clinical utility. While the patient is symptomatic with neuropsychiatric features and had a nondiagnostic karyotype, the policy requires evidence that mutation knowledge is clinically actionable and will impact management; the documentation does not demonstrate that criterion is met for this neuropsychiatric CMA request."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define specific prerequisite prior tests that must be completed before CMA; it only generally states other testing should be equivocal or not exist as part of demonstrating need, but no explicit required prior test sequence for CMA is specified."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy references family history as relevant for asymptomatic risk assessment but does not define specific family-history/consanguinity criteria for CMA in this clinical scenario. Although the patient has a sibling with early sensory impairment, the policy does not specifically state this family history makes CMA eligible."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy I.1 explicitly states genetic counseling meets coverage criteria and is required prior to testing unless testing is ordered by a specialist in the disease process. The patient has had no pre-test genetic counseling and the ordering provider (oncologist for a neuropsychiatric indication) does not qualify as that disease-specialist exemption, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's reimbursement section discusses use of appropriate molecular pathology codes and examples but does not specify a CPT code for chromosomal microarray (CMA); none of the listed CPT options are specified in the policy text for CMA."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, testing must meet clinical utility criteria and required pre-test genetic counseling must be completed (unless ordered by a disease specialist). The documentation does not demonstrate that CMA will meet the policy's clinical utility/actionability requirements for this neuropsychiatric indication, and required pre-test genetic counseling was not performed (ordering provider does not meet the specialist exemption). Therefore coverage is not met under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10242,
+    "output_tokens": 2655,
+    "total_tokens": 12897
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case states the newborn 'has been referred for whole exome sequencing (WES)'; that is the explicitly requested test."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP coverage criteria for WES focus on clinical indications rather than strict age cutoffs; no age-based exclusion is specified for pediatric or neonatal WES in the provided clinical context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES policies emphasize documentation of genetic counseling and appropriate clinical ordering but do not mandate a specific ordering provider specialty in this scenario; the record shows a general pediatrician referral and counseling was completed."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP WES medical-necessity criteria include newborns with multiple congenital anomalies not fitting a defined syndrome and/or unexplained neurodevelopmental regression in family—both present (multiple congenital anomalies in the proband and an affected sibling), satisfying an indication for WES."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP typically requires prior appropriate cytogenomic testing (chromosomal microarray) prior to WES for congenital anomalies/ID. The record states only a nondiagnostic karyotype was done; a CMA is not documented, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant per BCBS FEP criteria; the patient has a sibling with unexplained developmental regression, which supports WES eligibility under familial/neurodevelopmental criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP requires documentation of pre-test genetic counseling for WES; the note states pre-test genetic counseling was completed and post-test follow-up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; the CPT code from the provided options that corresponds to WES is 81415."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications and counseling are met, BCBS FEP requires prior cytogenomic testing (chromosomal microarray) before WES for multiple congenital anomalies/related indications; CMA is not documented (only a nondiagnostic karyotype), so coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1976,
+    "output_tokens": 1660,
+    "total_tokens": 3636
+  }
+}

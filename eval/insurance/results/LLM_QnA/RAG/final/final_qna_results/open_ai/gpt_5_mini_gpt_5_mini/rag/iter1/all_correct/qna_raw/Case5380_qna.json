@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UHC policy does not impose an absolute age cutoff for WGS; it lists phenotype-based age references (e.g., epileptic encephalopathy with onset before 3 years) but no strict age exclusion. The infant (8 weeks) does not conflict with those age references, but the policy’s criteria are phenotype-driven rather than strictly age-based."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The case was referred by neurology (a neurologist), meeting the ordering-provider requirement per policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UHC WGS coverage requires specific clinical indication(s): either epileptic encephalopathy with onset before age 3 or two or more listed features. The infant has seizure-like events/BRUE but no documented diagnosis of epileptic encephalopathy and lacks two or more of the listed features. Additionally, the policy requires that neither CMA nor WES have been performed (see Q4), which is not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The policy for WGS states as a prerequisite that neither CMA nor WES have been performed. The patient has already had CMA (nondiagnostic), therefore the policy’s prior-test requirement for WGS is not satisfied."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists family history/consanguinity as an eligibility feature (e.g., other first- or second-degree family members with similar clinical features or consanguinity). The provided family history (maternal short stature) does not constitute a family history of similar features to the infant’s seizure presentation nor consanguinity, so the family-history criterion relevant to eligibility is not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make pre-test counseling an explicit coverage requirement. The family declined pre-test counseling, but that does not override policy coverage criteria which do not mandate counseling as a condition of coverage."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy Applicable Codes map whole genome sequence analysis to CPT code 81425 ('Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis'), which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the UHC WGS coverage criteria, WGS is allowed only when clinical criteria are met and 'neither CMA nor WES have been performed.' The patient had prior CMA (nondiagnostic) and does not meet the required specific clinical indication (no documented epileptic encephalopathy and not ≥2 listed features). Therefore the requested WGS does not meet policy coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36943,
+    "output_tokens": 3459,
+    "total_tokens": 40402
+  }
+}

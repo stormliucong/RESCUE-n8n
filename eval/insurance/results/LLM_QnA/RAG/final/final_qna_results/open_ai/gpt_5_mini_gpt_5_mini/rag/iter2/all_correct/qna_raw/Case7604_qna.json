@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age restrictions do not exclude neonates and the covered WGS indications include congenital anomalies (no minimum age); the patient is a neonate with multiple congenital anomalies, so age-based requirements are met."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a neurologist, which meets the requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital anomalies (must affect different organ systems)' as an accepted indication for WGS; the neonate has multiple congenital anomalies affecting several organ systems, satisfying medical necessity criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that neither CMA nor WES have been performed before WGS; patient had prior FISH (nondiagnostic) but no CMA or WES documented, so prior-test requirement is satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' as a supporting feature; the patient has an older sibling with multiple congenital anomalies, meeting the family-history criterion."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WGS but does not make counseling a mandatory coverage criterion; the family declining counseling does not, per policy text, automatically deny coverage."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 for genome (sequence analysis), which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All written WGS coverage criteria are met per the policy: ordered by an allowed specialist (neurologist), clinical presentation includes multiple congenital anomalies affecting different organ systems, and neither CMA nor WES has been performed; therefore WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36935,
+    "output_tokens": 1799,
+    "total_tokens": 38734
+  }
+}

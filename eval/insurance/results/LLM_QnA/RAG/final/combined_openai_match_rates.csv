@@ -1,0 +1,7 @@
+retrieval_model,qna_model,retrieval_count,top_k,match_rate,matched_cases,total_cases
+gpt-5-mini,gpt-5-mini,10,1,0.7830188679245284,83,106
+gpt-5-mini,gpt-5-mini,10,3,0.7830188679245284,83,106
+gpt-5-mini,gpt-5-mini,30,1,0.8113207547169812,86,106
+gpt-5-mini,gpt-5-mini,30,3,0.8207547169811321,87,106
+gpt-5-mini,gpt-5-mini,10,1,0.660377358490566,70,106
+gpt-5-mini,gpt-5-mini,10,3,0.8113207547169812,86,106

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states consideration of whole-exome sequencing (WES) to assess an underlying genetic etiology after a nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The CCA policy does not state age-based eligibility for exome sequencing (81415); no age restriction is specified in the provided MNG."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires the test be \"ordered and furnished by a qualified clinician ... OR from a provider with genetic counseling expertise\" (Clinical Coverage Criteria 1.e). The patient data notes referral by oncology and multiple genetic counseling visits but does not state who will be the ordering provider, so adequacy of the ordering provider cannot be determined from the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical Coverage Criteria 1.a allows testing when the member is high-risk based on personal history or displays clinical features. The patient has a personal history of a congenital anomaly (choanal atresia), an unexplained heritable disorder is being sought, and CMA was nondiagnostic—consistent with criteria for exome (81415) for \"unexplained constitutional or heritable disorder or syndrome.\""
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Criterion 1.b requires that alternative laboratory/clinical tests be unavailable or nondiagnostic. The patient had a nondiagnostic chromosomal microarray (CMA), satisfying the prior test requirement per the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is an element of the high-risk group per Clinical Coverage Criteria 1.a; the patient reports a mother diagnosed with breast cancer at age 50, so a family history is present in the record."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The MNG specifies ordering provider expertise (qualified clinician or provider with genetic counseling expertise) but does not explicitly require documented patient genetic counseling as a separate coverage criterion. The patient has seen a genetic counselor multiple times, but the policy does not define a distinct counseling documentation requirement to approve testing."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 in the policy corresponds to \"Exome (eg, unexplained constitutional or heritable disorder or syndrome); sequence analysis,\" which matches the requested whole-exome sequencing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under CCA Clinical Coverage Criteria, all applicable conditions are met: member displays a relevant clinical feature/personal history (congenital choanal atresia) (1.a), prior testing (CMA) was nondiagnostic (1.b), exome sequencing is listed in the CPT table (81415), and the patient has had genetic counseling visits (supporting provider/counseling expertise). Prior authorization is required per the MNG. Therefore, based on the provided patient facts and the MNG, the test meets the policy coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 21591,
+    "output_tokens": 2616,
+    "total_tokens": 24207
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The note explicitly states whole exome sequencing (WES) has been ordered to assess for an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES pediatric criteria apply; patient is an infant (pediatric), so age-based eligibility for pediatric WES is met."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires or prefers ordering/ counseling by a genetics provider for WES; pre-test counseling was completed with a genetic specialist and testing was referred by the PCP, meeting ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UHC coverage for WES generally requires unexplained developmental delay/intellectual disability, multiple congenital anomalies, or ASD with additional features (e.g., ID, congenital anomalies, seizures). The infant has early signs concerning for ASD only and no documented developmental delay, ID, seizures, or patient congenital anomalies."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC WES policies commonly require prior first-tier testing such as chromosomal microarray (CMA) (and Fragile X where indicated). Only Fragile X testing was completed (nondiagnostic); CMA is not documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "A maternal aunt with a congenital anomaly is documented. Family history of a congenital anomaly is relevant under UHC criteria as supportive evidence of a possible genetic etiology."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Genetic pre-test counseling was completed with a genetic specialist, which satisfies UHC counseling requirements for WES."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The CPT code that corresponds to clinical exome sequencing (WES) is 81415."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, counseling, and some family-history support are met, UHC coverage requires specific clinical indications (e.g., developmental delay/ID or ASD with additional features) and prior first-tier testing (CMA). The patient lacks documented qualifying clinical features and has no documented CMA, so WES is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1974,
+    "output_tokens": 1429,
+    "total_tokens": 3403
+  }
+}

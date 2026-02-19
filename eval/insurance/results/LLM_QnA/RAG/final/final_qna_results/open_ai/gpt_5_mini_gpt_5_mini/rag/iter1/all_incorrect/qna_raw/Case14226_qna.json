@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient clinical information explicitly states germline BRCA1 and BRCA2 (BRCA1/2) testing is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided Hereditary Cancer Syndrome panel policy does not state any age-based eligibility criteria for BRCA1/2 testing or multigene hereditary cancer testing."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state a specific ordering provider specialty requirement for BRCA/multigene testing; it requires 'pre- and post-test genetic counseling by an appropriate provider' but does not specify required ordering provider type."
+    },
+    "Q3": {
+      "answer": "Not Answerable",
+      "reasoning": "Coverage for panels requires the member meet 'criteria for BRCA Analysis based on current EviCore guideline BRCA Analysis'; that specific BRCA Analysis guideline text is not provided, so it cannot be determined from the provided policy whether this patient's clinical details meet those BRCA-specific criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The policy requires pre- and post-test genetic counseling as part of eligibility for hereditary cancer panel testing; the patient has not completed pre-test genetic counseling, so a required prerequisite was not completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy uses family history to determine eligibility (eg, affected relatives, known mutation in family). The patient’s family history describes a mother with a hematologic/immunologic disorder but no relevant cancer family history or known cancer-predisposing mutation is documented, so the patient does not have the family history required for panel-specific family-based criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy explicitly requires pre- and post-test genetic counseling by an appropriate provider for hereditary cancer panel testing; the patient did not have pre-test genetic counseling completed."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists certain panel and laboratory-specific codes (e.g., BRCAplus 0129U, panel codes like 81432, 81479) but does not map BRCA1/2 single-gene testing to any of the provided CPT options (81162, 81277, 81228, 81415, 81425)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, pre-test genetic counseling is a required criterion for hereditary cancer panel testing and the patient has not completed pre-test counseling; additionally, coverage depends on meeting the BRCA Analysis criteria (which cannot be confirmed from the provided documents). Therefore coverage is not supported based on the provided policy and patient facts."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11927,
+    "output_tokens": 2560,
+    "total_tokens": 14487
+  }
+}

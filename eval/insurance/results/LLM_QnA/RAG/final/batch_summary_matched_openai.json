@@ -1,0 +1,56 @@
+[
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_10retrieve_gpt_5_mini_header_openai_small",
+    "batch_id": "batch_68fb96f1f2bc819088923b6c6af60320",
+    "case_type": "matched",
+    "exp_type": "header",
+    "k_retrieval": 10,
+    "k_rerank": 1,
+    "qna_model": "gpt-5-mini"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_mini_header_openai_small",
+    "batch_id": "batch_68fb9704178481909199001233a32961",
+    "case_type": "matched",
+    "exp_type": "header",
+    "k_retrieval": 10,
+    "k_rerank": 3,
+    "qna_model": "gpt-5-mini"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_30retrieve_gpt_5_mini_header_openai_small",
+    "batch_id": "batch_68fb9708f83081908d3356a5ce71c153",
+    "case_type": "matched",
+    "exp_type": "header",
+    "k_retrieval": 30,
+    "k_rerank": 1,
+    "qna_model": "gpt-5-mini"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_30retrieve_gpt_5_mini_header_openai_small",
+    "batch_id": "batch_68fb97243f7c81908f0b6c07c8385e33",
+    "case_type": "matched",
+    "exp_type": "header",
+    "k_retrieval": 30,
+    "k_rerank": 3,
+    "qna_model": "gpt-5-mini"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top1_10retrieve_gpt_5_mini_policy_openai_small",
+    "batch_id": "batch_68fb97325e50819099625fd35aa64246",
+    "case_type": "matched",
+    "exp_type": "policy",
+    "k_retrieval": 10,
+    "k_rerank": 1,
+    "qna_model": "gpt-5-mini"
+  },
+  {
+    "save_dir": "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/top3_10retrieve_gpt_5_mini_policy_openai_small",
+    "batch_id": "batch_68fb97479648819090e5c142995213ef",
+    "case_type": "matched",
+    "exp_type": "policy",
+    "k_retrieval": 10,
+    "k_rerank": 3,
+    "qna_model": "gpt-5-mini"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The referral explicitly requests BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage is based on personal/family cancer history rather than strict patient age limits; no age-based exclusion is documented for BRCA testing in this clinical context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policy does not restrict BRCA ordering to a specific provider specialty in typical practice; the record shows referral by a general practitioner which is acceptable and no specialty requirement is documented."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP criteria consider a first‑degree relative with epithelial ovarian cancer an accepted indication for BRCA1/2 testing; the patient’s sister had epithelial ovarian cancer, satisfying medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "There are no BCBS_FEP prior‑test requirements (e.g., other genetic tests) that must be completed before germline BRCA1/2 sequencing in this scenario; the prior CMA for a congenital heart defect is unrelated and not required for BRCA testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant and met: the patient has a first‑degree relative (sister) with epithelial ovarian cancer, which is specified in coverage criteria for BRCA testing."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP expects documentation of pre‑test genetic counseling/informed consent for hereditary cancer testing; the chart notes no documentation of pre‑test genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "The requested test is germline BRCA1/2 sequencing; among the provided CPT options, 81228 corresponds to BRCA gene sequencing (best match for BRCA1/2 testing)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets medical indication (first‑degree relative with ovarian cancer) and age is not a barrier, coverage requirements by BCBS_FEP include documentation of pre‑test genetic counseling; because counseling is not documented, the test is not covered as presented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1963,
+    "output_tokens": 2029,
+    "total_tokens": 3992
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1/2 testing per the clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy text does not state age-based eligibility criteria for BRCA1/2 testing (BRCA testing strategy is referenced in a separate policy 2.04.02 which is not included)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy discusses genetic counseling and guideline-based testing but does not define specific ordering provider/specialty requirements for BRCA1/2 testing in the text provided."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy states benefits are for specialized diagnostic genetic testing when medically necessary to diagnose/manage an existing medical condition and that screening is not covered. The 12-year-old has no personal history of breast/ovarian cancer and no reported family history of breast/ovarian cancer in the documentation; therefore the patient does not meet a defined medical indication in the provided policy text."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy mentions that testing an affected family member first has the highest likelihood of a positive result but does not specify mandatory prior tests required before BRCA1/2 testing in the provided text."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy highlights the importance of family history for hereditary breast/ovarian cancer risk assessment, but the patient record does not report a family history of breast/ovarian cancer or consanguinity relevant to BRCA testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states experts recommend formal genetic counseling when genetic testing for an inherited condition is considered. The patient has completed pre-test genetic counseling with planned post-test follow-up, which meets the counseling expectation in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not specify CPT codes for BRCA1/2 testing; the referenced BRCA testing policy (2.04.02) is not included."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the provided policy, benefits are for medically necessary diagnostic testing and screening is not covered. The patient is an unaffected 12-year-old with no documented family history of breast/ovarian cancer; BRCA testing criteria are referenced in a separate policy not provided. Therefore, under the provided policy text the test is not supported as medically necessary and is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10994,
+    "output_tokens": 2459,
+    "total_tokens": 13453
+  }
+}

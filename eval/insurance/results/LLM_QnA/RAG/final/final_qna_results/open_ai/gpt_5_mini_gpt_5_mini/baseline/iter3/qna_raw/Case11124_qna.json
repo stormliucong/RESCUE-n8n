@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states 'whole-exome sequencing (WES) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC genomic sequencing criteria focus on clinical indications (developmental delay/congenital anomalies) rather than a strict age cutoff; no age-based exclusion or specific age threshold is documented in the provided information."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The record shows referral by an oncologist but UHC policy does not universally mandate a single specialty for ordering WES in the provided policy context; no explicit ordering-provider specialty requirement is documented in the patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for unexplained developmental delay/possible hereditary neurodevelopmental disorders; the infant presents with developmental delay and a family history raising concern for a hereditary etiology, meeting clinical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior chromosomal microarray (CMA) or equivalent cytogenomic testing before WES for developmental delay; only prior FISH (nondiagnostic) is documented and no CMA result is provided."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has an affected sibling with childhood hearing impairment; family history of a similar phenotype is relevant and cited by UHC-type criteria as supportive for comprehensive exomic testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre-test genetic counseling for clinical genomic sequencing; the record documents pre-test counseling completed and post-test counseling planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (proband-only) and is the appropriate code for WES under UHC coverage practices."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the infant meets clinical indication and counseling requirements, coverage is not supported because required prior cytogenomic testing (chromosomal microarray) is not documented; per UHC criteria WES is not covered until prior testing requirements are met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1617,
+    "total_tokens": 3595
+  }
+}

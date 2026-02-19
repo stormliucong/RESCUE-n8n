@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states testing was referred for whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES/WGS coverage criteria do not impose a strict age cutoff; WGS can be considered in neonates with suspected genetic disease, so no age-based exclusion is specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP typically requires ordering by an appropriate specialist (e.g., medical geneticist); the order was placed by a medical geneticist, satisfying provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The patient has unexplained, complex neonatal neurologic abnormalities (dystonia, ataxia, asymmetric weakness) with suspicion for an underlying genetic/metabolic cause — an indication consistent with BCBS_FEP criteria for WGS."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP coverage generally requires prior appropriate testing (e.g., chromosomal microarray and/or targeted tests) before WES/WGS unless exceptions apply; Fragile X testing was completed and nondiagnostic but no documentation of prior chromosomal microarray was provided."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of an inborn error of metabolism in a sibling is documented and is relevant to eligibility under BCBS_FEP criteria supporting genomic testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires pre-test genetic counseling for WES/WGS; the record states pre-test counseling was completed and post-test follow-up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT 81425 corresponds to genomic sequencing procedure — whole genome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, ordering provider, counseling, and relevant family history support WGS, BCBS_FEP generally requires prior testing (notably chromosomal microarray) before WGS; no CMA is documented, so coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1999,
+    "output_tokens": 1933,
+    "total_tokens": 3932
+  }
+}

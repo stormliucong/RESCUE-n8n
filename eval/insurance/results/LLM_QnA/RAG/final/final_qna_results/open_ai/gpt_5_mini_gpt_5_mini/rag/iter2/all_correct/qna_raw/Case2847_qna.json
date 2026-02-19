@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'whole exome sequencing (WES) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to children/infants for WES; the patient is a 5-week-old infant and the policy explicitly addresses infants (including BRUE) and children as eligible populations."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled. The record documents pre-test counseling with a genetic counselor and family history/phenotype information, meeting the policy's clinician/counseling requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list 'infant with high risk stratification on evaluation for a Brief Resolved Unexplained Event (BRUE) ... Required cardiopulmonary resuscitation (CPR)' as a clinical feature suggesting a genetic disease; patient had a high-risk BRUE requiring CPR and prior CMA was nondiagnostic, satisfying the policy's clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 3 requires prior genetic testing (eg, chromosomal microarray) to have failed to yield a diagnosis; patient had prior CMA testing that was nondiagnostic."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies relevant family-history items (eg, arrhythmia, BRUE in sibling, inborn error of metabolism, LQTS, early sudden unexplained death). The documented family history (mother with severe immunologic/hematologic disorder) is not among the policy's listed relevant family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed by an individual with experience in genetic medicine. The patient had pre-test counseling completed with a genetic counselor and plans for post-test follow-up, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy text does not list or map specific CPT codes for WES, so no CPT code is specified in the policy document."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on the policy, WES may be considered medically necessary for children when all criteria are met. The patient is an infant with a high-risk BRUE requiring CPR (listed as a clinical feature suggesting genetic disease), prior CMA was nondiagnostic, and genetic counseling was completed—therefore the policy supports coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14852,
+    "output_tokens": 2970,
+    "total_tokens": 17822
+  }
+}

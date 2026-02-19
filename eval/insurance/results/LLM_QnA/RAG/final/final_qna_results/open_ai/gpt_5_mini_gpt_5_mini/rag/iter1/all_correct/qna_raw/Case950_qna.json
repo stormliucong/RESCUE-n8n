@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'whole exome sequencing (WES) is being pursued to look for an underlying genetic cause.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'epileptic encephalopathy with onset before three years of age' as a specific feature meeting WES criteria; patient has epileptic encephalopathy with onset before age 3 (patient currently 38)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; patient is being evaluated by a medical geneticist (ordering provider requirement met)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical necessity criteria for WES include (a) nonspecific clinical presentation, (b) ordering by an approved specialist, and (c) presence of a feature such as 'epileptic encephalopathy with onset before three years of age.' Patient has nonspecific unexplained epileptic encephalopathy with onset <3 years and is being worked up by a medical geneticist, satisfying the listed clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate prior epilepsy multigene panel testing for WES when presentation is nonspecific; it only states that if a specific syndrome is suspected, targeted testing should be done first. Patient has not had prior epilepsy panel but policy does not explicitly require it in this scenario."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists relevant family history (first-/second-degree relatives with similar features) or consanguinity as supportive criteria. Patient's family history is an uncle with prostate cancer (not a similar neurodevelopmental/epilepsy phenotype) and there is no consanguinity, so relevant family history/consanguinity is not present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES/WGS; patient 'has seen a genetic counselor multiple times' and plans for post-test counseling are in place, meeting counseling expectations."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's Applicable Codes list CPT 81415 for 'Exome; sequence analysis' which corresponds to WES requested for this patient."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare WES policy, WES is medically necessary when criteria are met: nonspecific presentation, ordered by an approved specialist (medical geneticist), and presence of 'epileptic encephalopathy with onset before three years of age.' Patient meets these criteria (and counseling documented), so WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36974,
+    "output_tokens": 2182,
+    "total_tokens": 39156
+  }
+}

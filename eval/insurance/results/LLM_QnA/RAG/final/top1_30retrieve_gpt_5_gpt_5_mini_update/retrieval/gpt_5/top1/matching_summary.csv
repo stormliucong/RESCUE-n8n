@@ -1,0 +1,107 @@
+case_id,matched,llm_rank,orig_rank_cand,orig_rank_full,doc_name
+Case14017,1,1,3,3,BCBS_FEP_204102 Whole Exome and.pdf
+Case1778,0,4,24,24,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf
+Case4604,1,1,3,3,BCBS_FEP_204102 Whole Exome and.pdf
+Case3422,0,,,44,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf
+Case10917,0,,,276,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case18821,0,2,1,1,BCBS_FEP_204102 Whole Exome and.pdf
+Case13,1,1,2,2,BCBS_FEP_204102 Whole Exome and.pdf
+Case8621,0,,,271,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case8051,1,1,1,1,BCBS_FEP_204102 Whole Exome and.pdf
+Case13517,0,,,327,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case3359,0,,,283,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case2496,0,,,305,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case8485,1,1,11,11,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf
+Case5674,1,1,3,3,BCBS_FEP_204102 Whole Exome and.pdf
+Case3494,1,1,5,5,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf
+Case7297,0,,,312,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case9978,0,,,317,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case4196,1,1,2,2,BCBS_FEP_204102 Whole Exome and.pdf
+Case14141,1,1,26,26,BCBS_FEP_204102 Whole Exome and.pdf
+Case18882,0,,,366,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case5230,0,,,295,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case11124,0,,,265,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case8288,0,,,393,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case7376,0,,,493,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case7682,0,,,196,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case19905,0,,,252,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case2847,1,1,4,4,BCBS_FEP_204102 Whole Exome and.pdf
+Case10529,0,,,177,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case16487,0,,,267,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case811,1,1,1,1,BCBS_FEP_204102 Whole Exome and.pdf
+Case9408,1,1,2,2,BCBS_FEP_204102 Whole Exome and.pdf
+Case4067,0,,,251,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case4982,0,,,286,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case8710,0,,,178,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case13613,0,,,324,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case1501,0,,,258,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case10451,0,,,301,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case4262,1,1,4,4,BCBS_FEP_204102 Whole Exome and.pdf
+Case19321,0,,,301,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case11795,1,1,2,2,BCBS_FEP_204102 Whole Exome and.pdf
+Case9349,1,1,5,5,BCBS_FEP_204102 Whole Exome and.pdf
+Case14127,0,,,250,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case950,0,,,242,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case15834,0,,,136,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case14371,0,,,269,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case1130,0,,,339,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case11514,0,,,460,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case13675,0,,,427,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case3474,0,,,292,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case13983,1,1,5,5,BCBS_FEP_204102 Whole Exome and.pdf
+Case11981,0,,,334,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case10427,0,,,333,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case17822,0,,,403,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case6747,1,1,10,10,BCBS_FEP_204102 Whole Exome and.pdf
+Case15938,0,,,206,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case18868,0,,,238,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf
+Case2162,1,1,5,5,BCBS_FEP_204102 Whole Exome and.pdf
+Case7447,1,1,3,3,BCBS_FEP_204102 Whole Exome and.pdf
+Case5380,0,,,325,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case3465,0,,,295,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case5885,0,,,357,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case19162,1,1,3,3,BCBS_FEP_204102 Whole Exome and.pdf
+Case7604,0,,,380,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case8661,0,,,238,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case10850,0,,,361,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case13406,0,,,371,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case7014,0,,,359,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case6451,0,,,347,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case18281,0,,,341,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case10363,0,,,469,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case15557,0,,,382,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case4512,0,,,38,BCBS_FEP_204102 Whole Exome and.pdf
+Case1428,0,,,262,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf
+Case5605,0,,,86,BCBS_FEP_204102 Whole Exome and.pdf
+Case14155,1,1,14,14,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf
+Case3223,1,1,1,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case14195,1,1,2,2,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case22,1,1,1,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case19255,0,,,703,United Healthcare_genetic-testing-hereditary-cancer.pdf
+Case15458,1,1,1,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case6867,1,1,2,2,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case16126,1,1,4,4,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case2211,0,,,675,United Healthcare_genetic-testing-hereditary-cancer.pdf
+Case14408,1,1,13,13,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf
+Case16246,0,,,635,United Healthcare_genetic-testing-hereditary-cancer.pdf
+Case2007,1,1,2,2,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case15570,1,1,3,3,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case6478,0,,,685,United Healthcare_genetic-testing-hereditary-cancer.pdf
+Case3677,0,,,678,United Healthcare_genetic-testing-hereditary-cancer.pdf
+Case3581,1,1,3,3,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf
+Case15202,0,4,3,3,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case18257,0,,,31,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf
+Case12792,1,1,2,2,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case14226,1,1,5,5,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf
+Case5303,0,,,592,United Healthcare_genetic-testing-hereditary-cancer.pdf
+Case2666,1,1,1,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf
+Case3592,0,,,43,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf
+Case17595,1,1,1,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf
+Case5834,1,1,1,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf
+Case15820,0,,,343,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf
+Case17929,0,,,735,United Healthcare_chromosome-microarray-testing.pdf
+Case17196,1,1,1,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf
+Case11855,0,,,730,United Healthcare_chromosome-microarray-testing.pdf
+Case12834,0,,,296,Cigna_MOL.TS_.344.A_Chromosomal_Microarray_Solid_Tumors_eff01.01.2025_pub09.11.2024_0.pdf
+Case10075,1,1,1,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf
+Case9773,1,1,1,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf

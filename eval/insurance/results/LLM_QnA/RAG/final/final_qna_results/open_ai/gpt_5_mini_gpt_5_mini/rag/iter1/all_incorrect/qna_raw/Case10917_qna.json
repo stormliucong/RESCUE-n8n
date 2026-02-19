@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been ordered to evaluate an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes WES indications for 'children' and critically ill 'infants' but does not impose a specific numeric age cutoff for standard WES; thus no explicit age-based exclusion applies in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires evaluation and counseling by a clinician with expertise in clinical genetics. Patient was evaluated by a medical geneticist and had pre-test counseling by a genetic specialist, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL criteria for medically necessary standard WES, including (1) specialist evaluation/counseling (met), (2) potential for change in management (not documented), and (3) genetic etiology most likely despite previous genetic testing OR prior genetic testing failed to yield diagnosis. The record documents only nondiagnostic Fragile X testing; no documentation of prior CMA or targeted testing or documented potential management change, so the policy's required medical-indication criteria are not fully met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy indicates prior genetic testing (eg, chromosomal microarray analysis and/or targeted single-gene testing) or failure of prior testing is part of eligibility for standard WES. Patient record documents only Fragile X testing; no CMA or other targeted testing is reported."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy Guidelines list family history (eg, developmental delay or congenital anomalies) as relevant. Patient has an older sibling with multiple congenital anomalies, which is relevant to eligibility per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced clinician. The patient had pre-test counseling completed with a genetic specialist, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Of the provided CPT options, 81415 corresponds to clinical whole exome sequencing and best matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although provider evaluation, counseling, and relevant family history are documented, the policy requires ALL listed criteria for standard WES be met (including documentation of prior relevant genetic testing or that a genetic etiology is most likely despite prior testing, and documented potential to change management). The record lacks documentation of prior CMA/targeted testing or explicit documentation that these policy-required elements are met, so under the policy the WES request is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14837,
+    "output_tokens": 2356,
+    "total_tokens": 17193
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy coverage is limited to 'children' with unexplained congenital or neurodevelopmental disorders; the patient is a 12-year-old child, so age/ pediatric status meets the policy population."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion #1 requires evaluation by a clinician with expertise in clinical genetics and counseling about risks. The patient was referred by a developmental pediatrician and no documentation of evaluation by a clinical genetics expert or pre-test genetic counseling is provided, so ordering/provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy states WES may be medically necessary for children with unexplained neurodevelopmental disorders after standard workup. The patient has autism spectrum disorder with an additional abnormality affecting another organ system and prior workup (karyotype) was nondiagnostic, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires that a genetic etiology is considered despite previous genetic testing (eg, chromosomal microarray analysis and/or targeted single-gene testing) or that prior testing failed to yield a diagnosis before WES. The patient had a nondiagnostic karyotype but no documentation of prior chromosomal microarray or targeted single-gene testing, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines note family history can be relevant (examples include family neurologic/genetic disease). The patient has a paternal uncle with neurologic disease (dystonia and ataxia), which is a relevant family history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires counseling by an individual with genetics expertise as part of criterion #1. The patient has no documented pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing codes for WES; therefore a specific CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient is a child with a neurodevelopmental disorder (meets medical indication and age), the policy requires ALL listed criteria (including evaluation by a clinician with expertise in clinical genetics and pre-test counseling, and prior appropriate genetic testing such as CMA/ targeted testing). Those requirements are not documented (no genetics evaluation/counseling; no CMA/targeted testing), so the policy's conditions for coverage are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14844,
+    "output_tokens": 2039,
+    "total_tokens": 16883
+  }
+}

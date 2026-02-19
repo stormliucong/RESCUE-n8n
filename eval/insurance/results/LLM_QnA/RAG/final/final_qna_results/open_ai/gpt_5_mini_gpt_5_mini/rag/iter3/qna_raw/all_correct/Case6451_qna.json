@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical information states 'whole genome sequencing (WGS) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare WES/WGS policy does not establish a specific age cutoff for WGS; it references age for certain diagnostic features (e.g., diagnoses by 18 years) but no age-based exclusion/requirement that would disqualify a 7‑week‑old."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a developmental pediatrician, which meets the requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires either (A) one of the primary features (e.g., global developmental delay, multiple congenital anomalies, etc.) or (B) two or more secondary features (e.g., hypotonia in infancy plus another listed feature). The infant has hypotonia (one secondary feature) but does not have a second qualifying feature documented, so the medical indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy states WGS is indicated when 'neither CMA nor WES have been performed.' The record documents a prior karyotype (nondiagnostic) and does not document prior CMA or WES, so the patient meets the policy condition regarding prior tests."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists family history of similar clinical features (first/second‑degree relative) or consanguinity as relevant. The record documents the mother has a persistent severe immunologic/hematologic disorder but not 'similar clinical features' to the proband’s hypotonia; consanguinity is not reported, so the specific family‑history criterion relevant to eligibility is not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state counseling as a strict coverage requirement. The chart documents pre‑test counseling was completed, but the policy does not define counseling as a mandatory coverage criterion."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 for 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis,' which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although ordering provider and prior‑test conditions are met and counseling was performed, UnitedHealthcare's WGS coverage criteria require either a primary qualifying feature or two or more secondary features suggesting a genetic cause. The infant has hypotonia (one secondary feature) but lacks documentation of a second qualifying feature or a primary listed feature; therefore the medical‑necessity criteria in the policy are not satisfied and WGS is not covered per the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36937,
+    "output_tokens": 3698,
+    "total_tokens": 40635
+  }
+}

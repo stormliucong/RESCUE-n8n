@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states she presents for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage is driven by personal/family cancer history rather than a strict patient age cutoff; the record gives current age (50) but the policy does not impose a single age exclusion for testing in this clinical context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies generally require an appropriate ordering clinician and documentation of counseling but do not mandate a single specific specialty (physician, NP, or genetic counselor) to place the order; the record shows referral by an NP and documented genetic counseling."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP BRCA criteria, testing is covered for individuals with a personal history of breast cancer plus first‑degree relatives with BRCA‑related cancers (here: a brother with metastatic prostate cancer with intraductal features and a mother with breast cancer at age 50), which meets medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP does not require prior genetic testing for an affected individual with qualifying personal/family history; no prior genetic test was required and none are documented, so prior‑test requirements are satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has relevant first‑degree family history: a brother with metastatic prostate cancer (intraductal features) and a mother with breast cancer at age 50, which is relevant under BCBS_FEP BRCA criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of pre‑test genetic counseling for hereditary cancer testing; the record documents multiple pre‑test counseling visits with a genetic counselor."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "BRCA1/2 single‑gene diagnostic sequencing is reported with gene‑specific molecular CPT(s); of the provided options, 81228 corresponds to single‑gene sequencing type coding applicable to BRCA testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on BCBS_FEP coverage rules: qualifying personal history of breast cancer, relevant first‑degree family history (metastatic prostate in brother and mother with early breast cancer), and documented pre‑test genetic counseling, the requested BRCA1/2 test meets medical necessity and is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1986,
+    "output_tokens": 2906,
+    "total_tokens": 4892
+  }
+}

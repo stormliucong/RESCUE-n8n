@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient explicitly presents for BRCA1 and BRCA2 testing per the clinical information."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-based criteria but also allows testing 'diagnosed at any age' when there is ≥1 close blood relative with metastatic or intraductal/cribriform prostate cancer. The patient is a breast cancer–affected individual with a brother with metastatic intraductal prostate cancer, so age does not preclude eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers and access to a CLIA-licensed lab and recommends genetic counseling, but it does not specify required ordering provider specialty or disallow orders from a nurse practitioner."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'personal history of breast cancer and ... diagnosed at any age with ≥1 close blood relative with ... metastatic or intraductal/cribriform prostate cancer' as a medical indication. The patient has a personal history of breast cancer and a brother with metastatic intraductal prostate cancer, meeting a listed indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends testing an affected family member first when possible and describes testing strategies, but it does not mandate completion of specific prior tests before BRCA1/2 testing for an affected individual; no required prior testing is specified."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly uses family history in eligibility criteria. Patient has a relevant family history (brother with metastatic intraductal prostate cancer and a mother with breast cancer), which is directly pertinent to coverage criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires appropriate pre- and post-test genetic counseling by experienced providers. The patient had multiple pre-test counseling visits with a genetic counselor, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not list or map specific CPT/billing codes for BRCA1/2 testing, so a specific CPT code cannot be determined from the policy."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per policy, BRCA1/2 testing is medically necessary for individuals with a personal history of breast cancer who have ≥1 close blood relative with metastatic or intraductal/cribriform prostate cancer. The patient's history (personal breast cancer and a brother with metastatic intraductal prostate cancer), plus documented pre-test genetic counseling and lack of disqualifying factors, meet the coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18950,
+    "output_tokens": 2104,
+    "total_tokens": 21054
+  }
+}

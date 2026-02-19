@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information states she is undergoing BRCA1/2 testing; policy provided is the BRCA1/BRCA2/PALB2 germline testing policy, so the test requested is BRCA1/2."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "The policy specifically states genetic testing in minors is considered investigational; the patient is 21 (an adult). Thus the age-based policy restriction (minors) does not apply and her age is compatible with testing."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers and that genetic counseling be available. Patient had pre-test counseling with a genetic specialist and plans for post-test follow-up, satisfying provider/counseling setting requirements in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows testing in unaffected individuals who have a 1st- or 2nd-degree blood relative meeting any criterion for Patients With Cancer. The patient’s father (1st-degree) has metastatic prostate cancer, which is listed in the policy as a qualifying cancer, so the patient meets a medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends testing an affected family member first when possible but does not mandate prior diagnostic testing before testing an unaffected 1st-degree relative who otherwise meets criteria. The policy does not specify any required prior tests that the patient must have completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy family-history criteria are relevant; the patient reports a 1st-degree relative (father) with metastatic prostate cancer, which is explicitly a qualifying family history in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed by someone experienced in genetic medicine. The patient completed pre-test counseling with a genetic specialist and has plans for post-test follow-up, meeting the counseling requirement described in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy document does not provide or map specific CPT codes to BRCA1/2 testing. No CPT code is specified in the provided policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, genetic testing for BRCA1/BRCA2 may be considered medically necessary for an unaffected individual who has a 1st-degree relative meeting criteria for Patients With Cancer; the patient’s father has metastatic prostate cancer, a listed qualifying cancer, and counseling requirements are met, so the test is covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18944,
+    "output_tokens": 2479,
+    "total_tokens": 21423
+  }
+}

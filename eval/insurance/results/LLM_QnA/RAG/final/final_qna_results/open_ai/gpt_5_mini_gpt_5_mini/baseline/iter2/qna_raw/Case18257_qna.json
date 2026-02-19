@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is explicitly being evaluated for BRCA1/2 testing for hereditary breast/ovarian cancer risk."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Cigna BRCA criteria use age at diagnosis; patient had breast cancer at age ≤50, which meets age-based eligibility despite current age being 64."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's BRCA policy does not restrict ordering to a specific specialty in most cases; the record shows a general practitioner ordered the test and no payer-specific provider-specialty restriction is documented."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has a personal history of breast cancer diagnosed at age ≤50, which is a defined medical indication in Cigna BRCA coverage criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "There are no Cigna BRCA-specific prior testing requirements (e.g., prior CMA) that must be completed before BRCA1/2 testing; prior CMA was nondiagnostic but is not required."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Cigna BRCA criteria consider family history of breast/ovarian cancers; the only family history documented is a sibling with short stature, which is not relevant to BRCA eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna typically requires documentation of genetic counseling (pre-/post-test) for hereditary cancer testing; there is no documentation of prior genetic counseling in the record."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Of the provided CPT options, 81162 most closely corresponds to BRCA1/BRCA2 targeted analysis (e.g., large rearrangement/BRCA-specific testing); other codes correspond to exome/genome or other genes."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets medical and age indications for BRCA1/2 under Cigna, required documentation of genetic counseling is absent; coverage would be denied or held pending required counseling documentation."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1976,
+    "output_tokens": 1795,
+    "total_tokens": 3771
+  }
+}

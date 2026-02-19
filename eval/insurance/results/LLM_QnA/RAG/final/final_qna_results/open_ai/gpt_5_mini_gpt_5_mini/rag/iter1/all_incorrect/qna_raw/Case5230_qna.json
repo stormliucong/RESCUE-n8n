@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) was referred/ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy states WES may be medically necessary for evaluation of unexplained congenital or neurodevelopmental disorders in children; the patient is a 15-year-old child, meeting the age-based scope in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion #1 requires evaluation by a clinician with expertise in clinical genetics (including family history and phenotype) and counseling; the record shows referral by neurology but no documentation that a clinician with genetics expertise evaluated or counseled the patient."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists unexplained congenital anomalies after standard workup (including nondiagnostic CMA) as an indication; the patient has a congenital anomaly and a nondiagnostic CMA, matching the policy clinical criterion."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria note WES is indicated when previous genetic testing (eg, chromosomal microarray) has failed to yield a diagnosis; the patient had a nondiagnostic CMA."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of an inborn error of metabolism as relevant; the patient has a sibling with an inborn error of metabolism."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires counseling about potential risks of genetic testing by someone with genetics expertise; the patient explicitly declined genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing codes for WES; no CPT guidance is given in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage requires ALL policy criteria be met (including genetics evaluation and counseling). Although age, clinical indication, prior CMA, and relevant family history are met, the required evaluation/counseling by a clinician with genetics expertise was not documented and counseling was declined, therefore the policy conditions for medical necessity are not fully satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14806,
+    "output_tokens": 1932,
+    "total_tokens": 16738
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "Case7376",
+    "patient_info": "The patient is a 73-year-old referred by a neurologist for evaluation of a major abnormality involving at least one organ system that remains unexplained, and whole exome sequencing (WES) has been ordered for diagnostic clarification. Prior fluorescent in situ hybridization testing was nondiagnostic. The patient reports that a sister had triple negative breast cancer, which raises concern for an underlying heritable predisposition. Pre-test counseling was completed with a genetic specialist and testing will proceed with coverage through UHC.",
+    "expected_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d"
+  },
+  {
+    "id": "Case10451",
+    "patient_info": "The patient is a 10-year-old with moderate to severe intellectual disability diagnosed in childhood who was referred by neurology for whole exome sequencing (WES) to evaluate an unexplained neurodevelopmental disorder; prior chromosomal microarray (CMA) testing was nondiagnostic. There is a family history of a sibling who had a brief resolved unexplained event characterized by altered level of responsiveness with cyanosis, pallor, and irregular breathing. The neurologist placed the order, there is no documentation of prior genetic counseling, and testing will be pursued with coverage through UHC.",
+    "expected_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d"
+  },
+  {
+    "id": "Case19321",
+    "patient_info": "The patient is a 1-year-old referred by a neurologist for evaluation of a complex neurodevelopmental disorder with features concerning for autism spectrum disorder, and whole exome sequencing (WES) is being pursued to investigate a possible genetic etiology; prior chromosomal microarray (CMA) testing was nondiagnostic. A maternal aunt is reported to have multiple congenital anomalies, pre-test genetic counseling was completed, and plans are in place for post-test follow-up, with coverage through UHC.",
+    "expected_md5": "4fadf6b3ca9d4d08131cb31365e3aa7d"
+  }
+]

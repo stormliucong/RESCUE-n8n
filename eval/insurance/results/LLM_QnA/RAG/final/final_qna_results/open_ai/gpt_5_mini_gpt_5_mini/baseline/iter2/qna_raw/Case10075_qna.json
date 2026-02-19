@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The note explicitly states consideration of chromosomal microarray (CMA) testing to evaluate for an underlying chromosomal or genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP CMA coverage policies do not impose an absolute age cut-off for CMA; CMA is used across pediatric ages, and no age‑based exclusion is specified for this 4‑week‑old infant."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP CMA policies typically do not restrict ordering to a specific provider specialty; the information gives a developmental pediatrician as the ordering clinician but the payer policy does not specify special provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP coverage for CMA is generally limited to specific indications (unexplained developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies). This infant has an isolated meconium ileus and family history of an inborn error of metabolism (suggesting a metabolic disorder), which do not meet the specified CMA indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP CMA criteria do not define mandatory prior test completion (e.g., karyotype) before CMA; the record notes a prior nondiagnostic CMA, but the policy does not specify required prior testing steps in this scenario."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has a sibling with an inborn error of metabolism, BCBS_FEP CMA eligibility criteria do not specify family history/consanguinity as an independent criterion for CMA coverage; therefore family history relevant to CMA eligibility is not specified."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies do not uniformly mandate documented genetic counseling as a prerequisite for CMA coverage; although pre‑test counseling was completed (and is good clinical practice), specific counseling requirements for coverage are not specified in the policy context provided."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to chromosomal microarray analysis (CMA), which is the test requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under BCBS_FEP CMA coverage criteria, CMA is covered for defined indications (e.g., unexplained developmental delay, intellectual disability, autism, or multiple congenital anomalies). This infant does not meet those criteria (isolated meconium ileus and a family history suggesting a metabolic disorder), and repeat CMA after a prior nondiagnostic CMA is generally not supported without new findings; therefore the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 2489,
+    "total_tokens": 4480
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note states she was referred for BRCA1 and BRCA2 testing to evaluate hereditary breast/ovarian cancer risk."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP BRCA coverage criteria include age/onset-based rules (e.g., breast cancer diagnosed at young age ≤50 or other early-onset criteria). The patient is 65 and her tumor is a malignant phyllodes (a stromal tumor), so she does not meet the age/onset-related eligibility in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of appropriate ordering and genetic counseling; the record documents pre-test counseling with a genetic specialist and a referring physician (gynecologist), which satisfies ordering/counseling/provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy medical indications for BRCA testing are personal history of epithelial breast cancer (especially early-onset, triple-negative ≤60, bilateral/multiple primaries), ovarian cancer, or qualifying family history. A malignant phyllodes tumor and a sister with an immunologic/hematologic disorder do not meet those clinical criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP does not generally require prior diagnostic genetic tests before BRCA1/2 unless a known familial BRCA variant exists; no such prior BRCA-family testing requirement is documented here."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP family-history criteria specify relatives with breast/ovarian/pancreatic/prostate cancers or known BRCA mutation. The sister's reported immunologic/hematologic disorder is not a qualifying family history for BRCA testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP expects pre-test genetic counseling for hereditary cancer testing. The patient completed pre-test counseling with a genetic specialist and has planned post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "The requested test is BRCA1/BRCA2 germline testing; among the provided CPT choices, 81162 corresponds to BRCA1/BRCA2 testing (gene-specific hereditary breast/ovarian cancer testing)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying BCBS_FEP BRCA coverage criteria: although counseling and ordering requirements are met, the patient lacks qualifying personal (epithelial breast/ovarian) or family history indications and does not meet age/onset criteria; therefore BRCA testing is not covered in this situation."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1990,
+    "output_tokens": 2612,
+    "total_tokens": 4602
+  }
+}

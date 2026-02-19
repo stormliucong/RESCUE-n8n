@@ -2,111 +2,84 @@
     "questions": [
         {
             "id": "Q0",
-            "question": "What is the requested genetic test? Please specify the name, gene content if known.",
-            "options": ["Free text answer"]
+            "question": "Based on the patient’s clinical information, which genetic test is explicitly being requested or ordered for this patient?",
+            "options": ["WES", "WGS", "BRCA1/2", "CMA", "Question Unclear", "Not Answerable"]
         },
         {
             "id": "Q1",
-            "question": "Does the patient's age meet the policy's coverage criteria for this genetic test?",
-            "options": ["Yes", "No", "Not specified"]
+            "question": "Based on the patient’s clinical information and the insurance policy, does the patient’s age satisfy age-related eligibility criteria specified in the policy for the requested genetic test?", 
+            "options": [
+                "Yes – The policy explicitly specifies age criteria for the requested genetic test, and the patient’s age meets those criteria.",
+                "No – The policy explicitly specifies age criteria for the requested genetic test, and the patient’s age does not meet those criteria.",
+                "Not Specified – The policy does not specify any age-related eligibility criteria for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or policy document do not contain sufficient information to answer it."
+            ]
         },
         {
             "id": "Q2",
-            "question": "Was the test ordered by a specialist or provider type approved by the policy?",
-            "options": ["Yes", "No", "Not specified"]
+            "question": "Based on the patient’s clinical information and the insurance policy, does the ordering provider satisfy the policy’s requirements for ordering the requested genetic test?",
+            "options": [
+                "Yes – The insurance policy explicitly specifies requirements for the ordering provider (e.g., specialty or provider type), and the patient’s ordering provider meets those requirements.",
+                "No – The insurance policy explicitly specifies requirements for the ordering provider (e.g., specialty or provider type), and the patient’s ordering provider does not meet those requirements.",
+                "Not Specified – The insurance policy does not specify requirements related to the ordering provider for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or policy document do not contain sufficient information to answer it."
+            ]
         },
         {
             "id": "Q3",
-            "question": "Does the patient’s clinical presentation meet the policy’s definition of medical necessity for this genetic test?",
-            "options": ["Yes", "No"]
+            "question": "Based on the patient’s clinical information and the insurance policy, does the patient meet a medical indication listed in the policy for the requested genetic test (regardless of other eligibility requirements)?",
+            "options": [
+                "Yes – The policy lists medical indications for the requested genetic test, and the patient meets at least one of those indications.",
+                "No – The policy lists medical indications for the requested genetic test, but the patient does not meet any of those indications.",
+                "Not Specified – The insurance policy does not specify medical indications for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or policy document do not contain sufficient information to answer it."
+            ]
         },
         {
             "id": "Q4",
-            "question": "Does the insurance policy explicitly reference any clinical guidelines relevant to this test?",
-            "options": ["Yes", "No"],
-            "additional_if_yes": [
-              {
-                "question": "Does the patient’s clinical presentation match the criteria in those guidelines?",
-                "options": ["Yes", "No"],
-                "additional_if_yes": [
-                  {
-                    "question": "Which guideline(s) apply?",
-                    "options": ["ACMG", "NCCN", "ASCO", "USPSTF", "ISPD", "None of the above"]
-                  }
-                ]
-              }
+            "question": "Based on the patient’s clinical information and the insurance policy, has the patient completed any prior genetic tests explicitly required by the policy before the requested genetic test?",
+            "options": [
+                "Yes – The insurance policy explicitly requires one or more prior genetic tests before the requested genetic test, and the patient has completed all such required prior genetic tests.",
+                "No – The insurance policy explicitly requires one or more prior genetic tests before the requested genetic test, and the patient has not completed one or more of the required prior genetic tests.",
+                "Not Specified – The insurance policy does not specify any prior genetic testing requirements for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or policy document do not contain sufficient information to answer it."
             ]
-          }
-          ,
+        },
         {
             "id": "Q5",
-            "question": "Has the patient completed prerequisite evaluations required by the policy (e.g., CMA, panels)?",
-            "options": ["Yes", "No", "Not required"]
+            "question": "Based on the patient’s clinical information and the insurance policy, does the patient have a family history or consanguinity that is listed in the policy for the requested genetic test?",
+            "options": [
+                "Yes – The insurance policy explicitly lists family history or consanguinity for the requested genetic test, and the patient has such a family history or consanguinity.",
+                "No – The insurance policy explicitly lists family history or consanguinity for the requested genetic test, and the patient does not have such a family history or consanguinity.",
+                "Not Specified – The insurance policy does not list family history or consanguinity for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or policy document do not contain sufficient information to answer it."
+            ]
         },
         {
             "id": "Q6",
-            "question": "Has prior genetic testing already ruled out the potential diagnoses, making this test redundant and no longer appropriate for this patient?",
-            "options": ["Yes", "No"]
+            "question": "Based on the patient’s clinical information and the insurance policy, does the patient’s genetic counseling information meet the policy’s requirements for the requested genetic test?",
+            "options": [
+                "Yes – The insurance policy explicitly specifies genetic counseling requirements for the requested genetic test, and the patient’s genetic counseling information meets those requirements.",
+                "No – The insurance policy explicitly specifies genetic counseling requirements for the requested genetic test, and the patient’s genetic counseling information does not meet those requirements.",
+                "Not Specified – The insurance policy does not specify any genetic counseling requirements for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or policy document do not contain sufficient information to answer it."
+            ]
         },
         {
             "id": "Q7",
-            "question": "Will this test impact clinical management according to the policy's definition of medical necessity?",
-            "options": ["Yes", "No"]
+            "question": "Based on the insurance policy, which CPT code is specified for the genetic test requested for this patient?",
+            "options": ["81162", "81277", "81228", "81415", "81425", "Not Specified", "Question Unclear", "Not Answerable"]
         },
         {
             "id": "Q8",
-            "question": "Could this test be excluded because a more targeted or specific genetic test (e.g., single gene or smaller panel) would be more appropriate for this patient according to the policy?",
-            "options": ["Yes", "No"],
-            "additional_if_yes": ["Please describe a more appropriate test."]
-        },
-        {
-            "id": "Q9",
-            "question": "Does the policy consider family history or consanguinity as supporting factors for coverage?",
-            "options": ["Yes", "No", "Not specified"],
-            "additional_if_yes": ["Yes", "No"]
-        },
-        {
-            "id": "Q10",
-            "question": "Is this test intended for screening purposes, and is screening covered under the policy?",
-            "options": ["Yes", "No"],
-            "additional_if_no": ["Diagnostic", "Risk Assessment", "Predictive", "Other"]
-        },
-        {
-            "id": "Q11",
-            "question": "Does the policy require genetic counseling prior to or after this test, and was it provided?",
-            "options": ["Yes", "No", "Not specified"]
-        },
-        {
-            "id": "Q12",
-            "question": "According to the policy, is repeat testing (e.g. reanalysis, follow-up testing) allowed for this patient scenario?",
+            "question": "Considering all policy criteria and the patient’s clinical context, is this genetic test covered under the insurance policy?",
             "options": ["Yes", "No"]
-        },
-        {
-            "id": "Q13",
-            "question": "Is prior authorization required for this test according to the policy?",
-            "options": ["Yes", "No", "Not specified"]
-        },
-        {
-            "id": "Q14",
-            "question": "Is the CPT code for this test listed and covered in the policy?",
-            "options": ["Yes", "No", "Not listed"],
-            "additional_if_yes": ["Please specify the CPT code."]
-        },
-        {
-            "id": "Q15",
-            "question": "Does the patient have any special context covered in the policy (e.g., prenatal testing, pharmacogenetic testing, tumor testing, urgent testing)?",
-            "options": ["Yes", "No"],
-            "additional_if_yes": ["Please describe briefly."]
-        },
-        {
-            "id": "Q16",
-            "question": "Final decision: Based on all policy criteria and patient information, is this test covered for this patient according to the insurance policy?",
-            "options": ["Yes", "No"]
-        },
-        {
-            "id": "Q17",
-            "question": "What steps must be followed under the policy to submit the claim?",
-            "options": ["Free text answer"]
         }
     ]
 }

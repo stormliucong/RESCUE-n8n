@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The record explicitly states 'whole exome sequencing (WES) ordered.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES coverage criteria are driven by clinical indications (congenital anomalies, developmental disorders) rather than a strict age cutoff; the infant's age (5 weeks) is not precluded but no payer-specific age limit is stated in the information provided."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided patient/payer information does not state any BCBS_FEP requirement that WES must be ordered by a specific specialty; ordering clinician is family medicine but no explicit ordering-provider restriction is provided."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical criteria for WES typically include unexplained major congenital anomalies or suspected syndromic etiology; this infant has a major congenital cardiac anomaly with concern for syndromic association (maternal short stature) and prior targeted testing nondiagnostic, meeting those indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Many BCBS_FEP WES policies require prior appropriate cytogenomic testing (eg, chromosomal microarray) for congenital anomalies; the record documents prior FISH was nondiagnostic but does not document a CMA, so required prior testing appears incomplete."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history noted: mother with short stature raising concern for a growth-related genetic condition, which is relevant to eligibility and interpretation of WES."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre-test genetic counseling was completed and follow-up is planned after results, satisfying typical BCBS_FEP counseling requirement for complex genomic testing."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The test requested is whole exome sequencing; CPT 81415 is the code that corresponds to exome sequencing in the provided answer set."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, family history, and pre-test counseling are met, coverage is not supported because required prior cytogenomic testing (eg, chromosomal microarray) is not documented; therefore BCBS_FEP coverage criteria are not fully satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1987,
+    "output_tokens": 1827,
+    "total_tokens": 3814
+  }
+}

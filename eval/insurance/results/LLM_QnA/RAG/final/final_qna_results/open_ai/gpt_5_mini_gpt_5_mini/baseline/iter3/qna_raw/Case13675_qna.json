@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states \"whole genome sequencing (WGS) is being pursued for diagnostic clarification.\""
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES/WGS coverage criteria are age‑sensitive and allow testing for pediatric/infant-onset suspected genetic disorders; the patient is an 8‑week‑old infant and therefore meets the pediatric/early‑onset age criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC permits ordering by treating specialists in the neonatal/critical care setting (genetics consultation preferred but not always required); the order is placed by a neonatologist and planned follow‑up is by the neonatal team, which satisfies provider requirements for NICU/pediatric indications."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical‑necessity criteria for WGS include unexplained congenital anomalies or early‑onset multisystem/sensory deficits; this infant has significant congenital hearing and/or visual impairment identified in early infancy, meeting a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior targeted/first‑line cytogenetic testing (e.g., chromosomal microarray) or other indicated prior tests before WGS for non‑critically ill patients; only nondiagnostic FISH is documented and there is no record of prior chromosomal microarray (CMA), so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While a paternal history of long QT is documented and relevant to interpretation, UHC WGS eligibility criteria do not generally require family history/consanguinity as a formal eligibility condition for WGS, so family history is supportive but not a specified criterion."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies commonly require documentation of pre‑test genetic counseling for WES/WGS; there is no documentation of pre‑test counseling in the record, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT options, 81425 corresponds to whole genome sequencing (WGS) comprehensive sequence analysis/interpretation."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, ordering provider, and medical indication support coverage, required prerequisites are not met (no documented chromosomal microarray/prior required testing and no pre‑test genetic counseling). Under UHC coverage rules these unmet requirements would make WGS not covered at this time until prerequisites and counseling are documented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1994,
+    "output_tokens": 2220,
+    "total_tokens": 4214
+  }
+}

@@ -1,0 +1,108 @@
+case_id,answer_file,rank_header,rank_policy,top1_header_score,top1_policy_score
+Case14017,BCBS_FEP_204102 Whole Exome and.pdf,1.0,5.0,0.6550097465515137,0.6232087016105652
+Case1778,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,12.0,1.0,0.6098190546035767,0.6201828122138977
+Case4604,BCBS_FEP_204102 Whole Exome and.pdf,1.0,4.0,0.6507037878036499,0.6555008888244629
+Case3422,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,293.0,1.0,0.5758839845657349,0.5740810036659241
+Case10917,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,7.0,0.6065529584884644,0.6011670827865601
+Case18821,BCBS_FEP_204102 Whole Exome and.pdf,1.0,8.0,0.6512361764907837,0.6384885311126709
+Case13,BCBS_FEP_204102 Whole Exome and.pdf,1.0,3.0,0.6942830085754395,0.6623032093048096
+Case8621,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,6.0,0.669928789138794,0.6438738107681274
+Case8051,BCBS_FEP_204102 Whole Exome and.pdf,1.0,5.0,0.6394250392913818,0.6363304853439331
+Case13517,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,6.0,0.6238880753517151,0.6207810640335083
+Case3359,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,4.0,0.650826096534729,0.6435483694076538
+Case2496,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,4.0,0.6876201629638672,0.6569746136665344
+Case8485,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,56.0,2.0,0.6151968240737915,0.6233365535736084
+Case5674,BCBS_FEP_204102 Whole Exome and.pdf,1.0,5.0,0.6622896194458008,0.648745596408844
+Case3494,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,60.0,1.0,0.6908549070358276,0.6555783748626709
+Case7297,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,5.0,0.6548734903335571,0.6412228941917419
+Case9978,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,5.0,4.0,0.661104142665863,0.637001633644104
+Case4196,BCBS_FEP_204102 Whole Exome and.pdf,3.0,2.0,0.6263257265090942,0.622929036617279
+Case14141,BCBS_FEP_204102 Whole Exome and.pdf,4.0,2.0,0.6510751247406006,0.6222074627876282
+Case18882,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,6.0,0.6634411811828613,0.6458123922348022
+Case5230,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,5.0,4.0,0.6808387041091919,0.6563778519630432
+Case11124,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,5.0,0.6410396695137024,0.6486784219741821
+Case8288,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,5.0,0.6630251407623291,0.6779264211654663
+Case7376,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,2.0,7.0,0.6191945672035217,0.5942490100860596
+Case7682,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,4.0,0.6583049297332764,0.6504911184310913
+Case19905,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,4.0,0.6886831521987915,0.6578599810600281
+Case2847,BCBS_FEP_204102 Whole Exome and.pdf,1.0,4.0,0.6389257311820984,0.639971137046814
+Case10529,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,9.0,0.6299470067024231,0.6288503408432007
+Case16487,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,7.0,0.6044746041297913,0.5853127241134644
+Case811,BCBS_FEP_204102 Whole Exome and.pdf,1.0,4.0,0.636858344078064,0.6331104636192322
+Case9408,BCBS_FEP_204102 Whole Exome and.pdf,1.0,3.0,0.6861284971237183,0.6559139490127563
+Case4067,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,4.0,0.6489731073379517,0.6334105730056763
+Case4982,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,3.0,0.6407269835472107,0.6360765695571899
+Case8710,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,7.0,0.6608892679214478,0.6429216861724854
+Case13613,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,9.0,0.610426664352417,0.6279858350753784
+Case1501,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,5.0,0.6712625026702881,0.6445239186286926
+Case10451,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,5.0,2.0,0.6503583192825317,0.6285499334335327
+Case4262,BCBS_FEP_204102 Whole Exome and.pdf,1.0,3.0,0.6587403416633606,0.6403988003730774
+Case19321,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,11.0,0.6320838928222656,0.6296747922897339
+Case11795,BCBS_FEP_204102 Whole Exome and.pdf,1.0,6.0,0.6488800048828125,0.6345119476318359
+Case9349,BCBS_FEP_204102 Whole Exome and.pdf,1.0,3.0,0.6221003532409668,0.6122093796730042
+Case14127,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,10.0,0.6331726312637329,0.6406344175338745
+Case950,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,5.0,6.0,0.666134238243103,0.6413185596466064
+Case15834,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,11.0,0.6487443447113037,0.6365714073181152
+Case14371,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,6.0,0.648095965385437,0.6379952430725098
+Case1130,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,10.0,18.0,0.5655390024185181,0.6038120985031128
+Case11514,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,5.0,0.6360266208648682,0.6085526943206787
+Case13675,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,11.0,0.6299563646316528,0.6195502281188965
+Case3474,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,8.0,0.6255910992622375,0.5686014890670776
+Case13983,BCBS_FEP_204102 Whole Exome and.pdf,1.0,16.0,0.6089544892311096,0.600160539150238
+Case11981,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,4.0,0.6102885007858276,0.5971766710281372
+Case10427,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,10.0,0.609279990196228,0.6049041152000427
+Case17822,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,5.0,5.0,0.6595834493637085,0.6209843158721924
+Case6747,BCBS_FEP_204102 Whole Exome and.pdf,2.0,14.0,0.6511901617050171,0.6363766193389893
+Case15938,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,4.0,0.6177370548248291,0.5883708000183105
+Case18868,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf,356.0,98.0,0.6257773637771606,0.6206966042518616
+Case2162,BCBS_FEP_204102 Whole Exome and.pdf,2.0,8.0,0.6499024033546448,0.6184132099151611
+Case7447,BCBS_FEP_204102 Whole Exome and.pdf,6.0,15.0,0.610445499420166,0.6009968519210815
+Case5380,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,5.0,0.6318769454956055,0.5931440591812134
+Case3465,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,6.0,0.6488726139068604,0.616487979888916
+Case5885,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,6.0,6.0,0.614334762096405,0.6064215898513794
+Case19162,BCBS_FEP_204102 Whole Exome and.pdf,1.0,6.0,0.6222082376480103,0.6276754140853882
+Case7604,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,4.0,0.6116420030593872,0.5973391532897949
+Case8661,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,14.0,0.6117643713951111,0.6356924772262573
+Case10850,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,6.0,0.6004362106323242,0.6004908680915833
+Case13406,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,3.0,0.6506367921829224,0.6173369884490967
+Case7014,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,4.0,0.6348440647125244,0.6055585145950317
+Case6451,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,10.0,0.6275174617767334,0.6137001514434814
+Case18281,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0,5.0,0.6437885761260986,0.61588454246521
+Case10363,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,8.0,0.6391341686248779,0.590334951877594
+Case15557,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,7.0,0.622688889503479,0.588447093963623
+Case4512,BCBS_FEP_204102 Whole Exome and.pdf,4.0,6.0,0.6331371665000916,0.5918402671813965
+Case1428,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0,7.0,0.6735984683036804,0.6226310729980469
+Case5605,BCBS_FEP_204102 Whole Exome and.pdf,4.0,43.0,0.6126960515975952,0.6048834323883057
+Case14155,Cigna_MOL.TS_.306.C_Whole_Genome_Sequencing_Cigna_eff01.01.2025_pub09.10.2024.pdf,75.0,47.0,0.6144098043441772,0.639594554901123
+Case3223,BCBS_FEP_20402 Germline Genetic Testing for.pdf,3.0,4.0,0.6842736005783081,0.6462017297744751
+Case14195,BCBS_FEP_20402 Germline Genetic Testing for.pdf,4.0,3.0,0.6609266400337219,0.617866575717926
+Case22,BCBS_FEP_20402 Germline Genetic Testing for.pdf,4.0,3.0,0.6403585076332092,0.6476171016693115
+Case19255,United Healthcare_genetic-testing-hereditary-cancer.pdf,145.0,11.0,0.6467618346214294,0.6412561535835266
+Case15458,BCBS_FEP_20402 Germline Genetic Testing for.pdf,3.0,1.0,0.6728602051734924,0.6500051021575928
+Case6867,BCBS_FEP_20402 Germline Genetic Testing for.pdf,3.0,2.0,0.6641727685928345,0.6375446319580078
+Case16126,BCBS_FEP_20402 Germline Genetic Testing for.pdf,4.0,10.0,0.6107960939407349,0.5860434770584106
+Case2211,United Healthcare_genetic-testing-hereditary-cancer.pdf,163.0,8.0,0.6822846531867981,0.6678916215896606
+Case14408,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,8.0,1.0,0.6561868190765381,0.6274724006652832
+Case16246,United Healthcare_genetic-testing-hereditary-cancer.pdf,110.0,8.0,0.6664175987243652,0.613085150718689
+Case2007,BCBS_FEP_20402 Germline Genetic Testing for.pdf,3.0,10.0,0.6315596103668213,0.6272823810577393
+Case15570,BCBS_FEP_20402 Germline Genetic Testing for.pdf,4.0,5.0,0.6673839092254639,0.6214281320571899
+Case6478,United Healthcare_genetic-testing-hereditary-cancer.pdf,105.0,11.0,0.6440743207931519,0.6426894664764404
+Case3677,United Healthcare_genetic-testing-hereditary-cancer.pdf,125.0,11.0,0.6336112022399902,0.6269514560699463
+Case3581,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,31.0,3.0,0.6326566934585571,0.6079940795898438
+Case15202,BCBS_FEP_20402 Germline Genetic Testing for.pdf,3.0,3.0,0.6302413940429688,0.6130427718162537
+Case18257,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,29.0,3.0,0.659827709197998,0.610404372215271
+Case12792,BCBS_FEP_20402 Germline Genetic Testing for.pdf,4.0,5.0,0.6082901954650879,0.5869990587234497
+Case14226,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,9.0,1.0,0.6941381096839905,0.6788368225097656
+Case5303,United Healthcare_genetic-testing-hereditary-cancer.pdf,153.0,8.0,0.6578941941261292,0.6265021562576294
+Case2666,BCBS_FEP_20402 Germline Genetic Testing for.pdf,3.0,1.0,0.6519581079483032,0.6372953653335571
+Case3592,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,109.0,1.0,0.6113196611404419,0.6508417129516602
+Case17595,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,2.0,15.0,0.5912639498710632,0.6339827179908752
+Case5834,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,16.0,25.0,0.5998784303665161,0.6447367668151855
+Case15820,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,110.0,4.0,0.6121532917022705,0.6485850811004639
+Case17929,United Healthcare_chromosome-microarray-testing.pdf,672.0,17.0,0.6079524755477905,0.6169577836990356
+Case17196,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,10.0,18.0,0.575141429901123,0.6175332069396973
+Case11855,United Healthcare_chromosome-microarray-testing.pdf,658.0,14.0,0.6193498373031616,0.6322382688522339
+Case12834,Cigna_MOL.TS_.344.A_Chromosomal_Microarray_Solid_Tumors_eff01.01.2025_pub09.11.2024_0.pdf,346.0,67.0,0.6208184957504272,0.6295100450515747
+Case10075,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,1.0,14.0,0.6402450799942017,0.6738260388374329
+Case9773,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,5.0,6.0,0.6082144975662231,0.6526294946670532
+Mean_Rank,,37.056603773584904,8.669811320754716,,

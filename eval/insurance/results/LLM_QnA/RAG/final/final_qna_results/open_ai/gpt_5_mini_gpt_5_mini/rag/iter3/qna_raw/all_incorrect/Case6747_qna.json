@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) was ordered by the medical geneticist."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP policy discusses CMA as first‑line in children and refers generally to 'infants or children' but contains no explicit age-based eligibility criteria for WGS."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify ordering‑provider (specialty/type) requirements for WGS; it mentions genetic evaluation/counseling generally but no explicit ordering provider criteria for WGS."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for CMA and states NGS panel testing is investigational; it does not define clinical indications or medical necessity criteria for WGS (WES/WGS are addressed in a separate policy not provided)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state required prior testing specifically before WGS. It does state CMA is first‑line for the listed indications; the patient has a prior nondiagnostic CMA, but no explicit prior‑test requirement for WGS is provided in this document."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify family history or consanguinity criteria for WGS. (Patient has a sibling with developmental delay, but the policy does not link this to WGS eligibility.)"
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends formal genetic counseling generally when genetic testing is considered, but it does not state a specific coverage/counseling requirement for WGS in this document. The patient did receive pre‑test counseling."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not map WGS to any CPT code; no CPT code correspondence for WGS is specified in this document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The policy provided does not authorize WGS. It designates CMA as medically necessary for multiple congenital anomalies and states NGS panel testing is investigational; WES/WGS are addressed in a separate policy not provided. The Benefit Application states experimental/investigational procedures are not covered. Based on the provided policy text (no coverage criteria for WGS and investigational stance for NGS testing), WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15679,
+    "output_tokens": 2641,
+    "total_tokens": 18320
+  }
+}

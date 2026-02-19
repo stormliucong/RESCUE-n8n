@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states the patient is being evaluated for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage criteria are driven by personal/family cancer history rather than a strict age cutoff; the record gives the patient age (19) but the policy does not impose an absolute age exclusion for germline BRCA testing."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP allows testing ordered by qualified treating clinicians; the order came from a nurse practitioner, which is an allowable ordering provider type under typical FEP policy when acting within scope of practice."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria in the BCBS_FEP BRCA policy include a personal history of breast cancer and/or a family history of BRCA-associated cancers (ovarian, male prostate, etc.). The patient has a personal history of breast cancer plus a maternal aunt with ovarian cancer and a close relative with metastatic/intraductal prostate cancer, meeting indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA criteria do not mandate completion of a specific prior laboratory test (the prior nondiagnostic FISH is not a standard required precursor to germline BRCA testing)."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are relevant for BRCA coverage; the patient has a maternal aunt with ovarian cancer and a close relative with prostate cancer, both BRCA-associated cancers that support testing per BCBS_FEP policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP typically requires documentation of pre-test genetic counseling for BRCA testing; the patient completed pre-test counseling and plans post-test follow-up, satisfying this requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The usual CPT codes for BRCA1 and BRCA2 full-gene sequencing (e.g., 81211, 81213) or for specific BRCA analyses are not among the provided options, so none of the listed codes clearly correspond to BRCA1/2 germline testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Applying BCBS_FEP BRCA coverage rules: the patient has a personal history of breast cancer plus family members with ovarian and prostate cancers (BRCA-associated), completed pre-test counseling, and the test was ordered by an acceptable provider—thus medical necessity and administrative requirements are met and coverage is indicated."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 2282,
+    "total_tokens": 4273
+  }
+}

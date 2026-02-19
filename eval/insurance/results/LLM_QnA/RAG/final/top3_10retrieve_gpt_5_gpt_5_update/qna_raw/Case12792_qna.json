@@ -1,0 +1,18 @@
+{
+  "qna_result": {
+    "Q0": "BRCA1/2",
+    "Q1": "No",
+    "Q2": "Not Specified",
+    "Q3": "No",
+    "Q4": "Yes",
+    "Q5": "No",
+    "Q6": "Yes",
+    "Q7": "81162",
+    "Q8": "No"
+  },
+  "token_usage": {
+    "input_tokens": 32123,
+    "output_tokens": 1687,
+    "total_tokens": 33810
+  }
+}

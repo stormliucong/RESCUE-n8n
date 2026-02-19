@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states 'whole exome sequencing (WES) is being pursued to investigate an underlying genetic etiology.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy limits the medically necessary indication to 'children' with unexplained congenital or neurodevelopmental disorders; the patient is 17 years old (a child/adolescent) with global developmental delay, so age-based eligibility is met per policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion #1 requires evaluation by a clinician with expertise in clinical genetics and counseling; the patient is being coordinated by a medical geneticist and has seen a genetic counselor, satisfying ordering/provider requirements in the policy."
+    },
+    "Q3": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires (among other things) that 'there is potential for a change in management' and that a genetic etiology is considered most likely despite previous testing or prior testing failed. The record documents prior nondiagnostic FISH and clinical suspicion (GDD), but the chart does not explicitly document whether a change in management is expected; thus there is insufficient patient-specific information to confirm all required medical-indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy allows WES when prior genetic testing has failed or 'despite previous genetic testing (eg, CMA and/or targeted single-gene testing)'; it does not mandate a specific prior test (such as CMA) in all cases, so specific prior-test requirements are not defined."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list family history (eg, developmental delay, epileptic disorders) as relevant. The patient has a sibling with early-onset epileptic encephalopathy, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling and states it should be performed by someone with experience; the patient had pre-test genetic counseling and will return for post-test counseling, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT codes to bill for WES; no CPT mapping is included in the policy text supplied."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, standard WES 'may be considered medically necessary' for children with unexplained neurodevelopmental disorders when all criteria are met. The patient is a 17-year-old with global developmental delay evaluated by a medical geneticist, has pre-test counseling, prior genetic testing (FISH) was nondiagnostic (prior testing failed to yield diagnosis), and has a relevant family history (sibling with early epileptic encephalopathy). These facts satisfy the policy's required elements (evaluation by genetics, prior nondiagnostic testing, counseling, and age), supporting coverage under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14856,
+    "output_tokens": 2599,
+    "total_tokens": 17455
+  }
+}

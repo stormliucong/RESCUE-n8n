@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "The patient is a 7-week-old infant; the policy describes eligibility categories for infants/children (e.g., rapid WGS/WES for infants) so the patient's age falls within the infant/child category described in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics. The record states evaluation by a developmental pediatrician and that pre-test counseling was completed, but it does not explicitly document evaluation by a clinician with expertise in clinical genetics, so adequacy cannot be determined from provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The policy lists 'significant hypotonia' as a clinical feature suggesting a genetic disease and an indication for sequencing; the infant has significant hypotonia and a suspected genetic cause, meeting a medical indication in the policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The policy's standard WES/WGS criteria expect prior genetic testing (eg, chromosomal microarray analysis and/or targeted single-gene testing) or prior testing that failed to yield a diagnosis. The patient had a prior karyotype (nondiagnostic), but no documentation of CMA or targeted single-gene testing, so required prior testing per policy is not completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies relevant family history examples (developmental delay, inborn error of metabolism, BRUE, arrhythmia/LQTS, sudden unexplained death). The maternal history of a severe immunologic/hematologic disorder is not among the family-history items the policy cites as relevant to sequencing eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires genetic counseling by an experienced individual; the patient record indicates pre-test counseling has been completed and post-test genetics follow-up is planned, satisfying the counseling requirement per the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to WES/WGS, so a specific CPT code cannot be determined from the policy text alone."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, whole genome sequencing is considered investigational for diagnosis of genetic disorders in all other situations except rapid WGS for critically ill infants in NICU/PICU. This infant is not documented as critically ill or in NICU, prior recommended genetic testing (eg, CMA) is not documented, and evaluation by a genetics clinician is not documented; therefore WGS is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14828,
+    "output_tokens": 3535,
+    "total_tokens": 18363
+  }
+}

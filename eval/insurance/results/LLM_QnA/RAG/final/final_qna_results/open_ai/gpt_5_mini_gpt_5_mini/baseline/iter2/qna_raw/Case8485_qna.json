@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient summary explicitly states 'whole exome sequencing (WES) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna WES coverage criteria do not impose a strict age cutoff for pediatric WES; the patient is 8 years old but the policy does not specify an age-based exclusion or specific age requirement."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's WES policy emphasizes ordering by a clinician familiar with genetic testing and interpretation, but it does not rigidly restrict ordering to a single listed specialty in all cases; the record only notes a general pediatrician as the ordering provider, and the policy language about required ordering provider specialty is not definitive in the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Per Cigna criteria, WES is indicated for unexplained neurodevelopmental disorders (developmental delay, hypotonia, evolving tone abnormalities); the patient's persistent motor delay and hypotonia since infancy meet those medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Cigna typically requires first‑tier testing (e.g., chromosomal microarray and Fragile X where applicable) prior to WES. Although Fragile X testing was nondiagnostic, there is no documentation that a CMA/microarray was completed, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While a family history (sibling with ASD) is reported, Cigna's principal WES eligibility is driven by the proband's clinical phenotype and prior testing; family history/consanguinity is not defined as a required criterion in the policy context provided."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna requires documentation of pre‑test genetic counseling/consent for WES and discussion of possible incidental/secondary findings; pre-test genetic counseling was not performed per the record, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (WES) with bioinformatic analysis and interpretation and is the appropriate billing code for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication (unexplained hypotonia and developmental delay) supports WES per Cigna policy, coverage prerequisites are unmet: required prior testing (chromosomal microarray) is not documented and pre‑test genetic counseling/documentation was not completed. Therefore the request would not meet Cigna coverage requirements as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1971,
+    "output_tokens": 1773,
+    "total_tokens": 3744
+  }
+}
