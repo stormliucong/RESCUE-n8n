@@ -3,13 +3,14 @@ import pandas as pd
 import json
 
 def load_ground_truth(csv_path):
+    '''Load ground truth provider list from CSV file'''
     df = pd.read_csv(csv_path)
     pr_list = df['Providers'].dropna().str.strip().tolist()
     print(len(pr_list))
     return pr_list
 
 def load_result(base_dir, iteration, prompt_type, model_name="gpt-4o"):
-    """Load provider list from experiment result files (JSON or CSV)"""
+    '''Load provider list from experiment result files (JSON or CSV)'''
     base_path = f"{base_dir}/iteration_{iteration}/{model_name}/{prompt_type}"
     
     # JSON attempt (gpt-5-mini)
@@ -24,5 +25,5 @@ def load_result(base_dir, iteration, prompt_type, model_name="gpt-4o"):
         df = pd.read_csv(csv_file)
         return df['Providers'].dropna().str.strip().tolist()
     
-    print(f"⚠ File not found: {base_path}")
+    print(f"File not found: {base_path}")
     return []

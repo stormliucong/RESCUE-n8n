@@ -7,7 +7,9 @@ from match_function import exact_match, regex_match, llm_evaluate
 def evaluate_single_iteration(base_dir, ground_truth, openai_client, 
                              prompt_type, iteration, log_dir, 
                              experiment_model, evaluator_model="gpt-4o"):
-    predicted = load_result(base_dir, iteration, prompt_type, experiment_model)  # 실험 모델
+    '''evaluate one iteration of one prompt type'''
+
+    predicted = load_result(base_dir, iteration, prompt_type, experiment_model) 
     
     
     ep, er = exact_match(predicted, ground_truth)
@@ -34,7 +36,7 @@ def evaluate_single_iteration(base_dir, ground_truth, openai_client,
 
 def evaluate_all_experiments(base_dir, ground_truth_path, openai_api_key, 
                             log_dir, experiment_model, evaluator_model="gpt-4o"): 
-    """모든 iteration + 평균 계산"""
+    """all iteration + average calculation"""
     
     ground_truth = load_ground_truth(ground_truth_path)
     client = OpenAI(api_key=openai_api_key)
@@ -90,7 +92,6 @@ def save_results(results, output_dir, experiment_model, evaluator_model):
     
     df = pd.DataFrame(processed_results)
 
-    # 컬럼 순서 및 이름 정리
     df = df[['prompt_type', 'iteration', 'total_retrieved', 
              'exact_precision', 'exact_recall',
              'regex_precision', 'regex_recall', 

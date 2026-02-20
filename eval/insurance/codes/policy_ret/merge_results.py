@@ -2,6 +2,7 @@ import os
 import pandas as pd
 
 def merge_results(result_base_dir, assessment_output, links_output):
+    '''Merge results from multiple iterations, models, prompt types, and payers into consolidated CSV files'''
     assessment_results = []
     links_results = []
     

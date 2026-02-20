@@ -3,13 +3,9 @@ import os
 from download_pdf import calculate_md5
 
 def compare_md5(downloaded_csv, existing_pdfs_base_dir, output_csv, payer_mapping):
-    try:
-        df = pd.read_csv(downloaded_csv)
-    except:
-        return None
+    '''Compare MD5 hashes of downloaded PDFs with existing PDFs and summarize results'''
     
-    if df.empty:
-        return None
+    df = pd.read_csv(downloaded_csv)
     
     summary = []
     

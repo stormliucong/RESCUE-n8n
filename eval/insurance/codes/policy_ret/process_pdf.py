@@ -4,6 +4,7 @@ import os
 import pandas as pd
 
 def count_links(file_path):
+    '''Count the number of PDF and webpage links from the JSON result file and save a summary CSV'''
     output_csv = os.path.join(os.path.dirname(file_path), 'links_summary.csv')
 
     with open(file_path, 'r') as f:
@@ -42,6 +43,7 @@ def count_links(file_path):
     return result
 
 def process_pdf(json_file_path, download_dir, output_csv):
+    '''Download PDFs from JSON result file, calculate MD5, and save a summary CSV'''
     with open(json_file_path, 'r') as f:
         data = json.load(f)
 
