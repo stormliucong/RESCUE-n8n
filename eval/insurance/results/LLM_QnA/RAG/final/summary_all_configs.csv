@@ -1,7 +1,0 @@
-config,model_topk,match_rate
-header_k10_top1,gpt-5-mini_top1,0.7830188679245284
-header_k10_top3,gpt-5-mini_top3,0.7830188679245284
-header_k30_top1,gpt-5-mini_top1,0.8113207547169812
-header_k30_top3,gpt-5-mini_top3,0.8207547169811321
-policy_k10_top1,gpt-5-mini_top1,0.660377358490566
-policy_k10_top3,gpt-5-mini_top3,0.8113207547169812

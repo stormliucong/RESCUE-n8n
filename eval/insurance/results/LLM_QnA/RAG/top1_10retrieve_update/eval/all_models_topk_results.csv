@@ -1,2 +1,0 @@
-retrieval_model,qna_model,model_combo,top_k,accuracy,correct,total
-gpt-5-mini,gpt-5-mini,gpt_5_mini_gpt_5_mini,1,71.47,238,333

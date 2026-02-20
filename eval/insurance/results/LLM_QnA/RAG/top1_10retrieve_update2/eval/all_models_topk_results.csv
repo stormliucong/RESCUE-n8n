@@ -1,2 +1,0 @@
-retrieval_model,qna_model,model_combo,top_k,accuracy,correct,total
-perplexity,perplexity,perplexity_perplexity,1,55.56,90,162
