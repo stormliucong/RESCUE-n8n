@@ -14,12 +14,6 @@ def _parse_llm_response(response_text):
     def extract_list(section_name, text):
         """Extract provider list - supports all 3 observed formats"""
         
-        # Build flexible pattern that matches:
-        # - Optional markdown headers (####)
-        # - Optional bold (**text**)
-        # - Optional description in parentheses
-        # - Followed by newline and list items
-        
         pattern = (
             rf'(?:#{{{1,4}}}\s*)?'  # Optional markdown header
             rf'(?:\*\*)?'            # Optional opening **
