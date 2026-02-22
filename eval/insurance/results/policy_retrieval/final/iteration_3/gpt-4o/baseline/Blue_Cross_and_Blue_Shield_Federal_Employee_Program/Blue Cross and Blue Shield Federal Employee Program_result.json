@@ -1,0 +1,19 @@
+{
+  "payer": "Blue Cross and Blue Shield Federal Employee Program",
+  "prompt_type": "baseline",
+  "model": "openai",
+  "iteration": 3,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "```json\n{\n  \"pdf_links\": [],\n  \"webpage_links\": [\n    \"https://www.fepblue.org/policies\",\n    \"https://www.fepblue.org/legal/notice-privacy-practices\",\n    \"https://www.fepblue.org/our-plans/blue-focus-at-glance\",\n    \"https://www.fepblue.org/our-plans/standard-at-glance\",\n    \"https://www.fepblue.org/tools\"\n  ]\n}\n```",
+  "parsed_data": {
+    "pdf_links": [],
+    "webpage_links": [
+      "https://www.fepblue.org/policies",
+      "https://www.fepblue.org/legal/notice-privacy-practices",
+      "https://www.fepblue.org/our-plans/blue-focus-at-glance",
+      "https://www.fepblue.org/our-plans/standard-at-glance",
+      "https://www.fepblue.org/tools"
+    ]
+  }
+}

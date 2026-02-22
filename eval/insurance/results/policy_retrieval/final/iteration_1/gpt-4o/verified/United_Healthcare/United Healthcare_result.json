@@ -1,0 +1,17 @@
+{
+  "payer": "United Healthcare",
+  "prompt_type": "verified",
+  "model": "openai",
+  "iteration": 1,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\": [], \"webpage_links\": [\"https://www.uhcprovider.com/en/policies-protocols/commercial-policies/umr-medical-drug-policies.html\", \"https://www.uhcprovider.com/en/policies-protocols/commercial-policies/oxford-policies.html\", \"https://www.uhcprovider.com/en/policies-protocols/exchange-policies/exchanges-medical-drug-policies.html\"]}",
+  "parsed_data": {
+    "pdf_links": [],
+    "webpage_links": [
+      "https://www.uhcprovider.com/en/policies-protocols/commercial-policies/umr-medical-drug-policies.html",
+      "https://www.uhcprovider.com/en/policies-protocols/commercial-policies/oxford-policies.html",
+      "https://www.uhcprovider.com/en/policies-protocols/exchange-policies/exchanges-medical-drug-policies.html"
+    ]
+  }
+}

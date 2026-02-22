@@ -1,0 +1,19 @@
+{
+  "payer": "Blue Cross and Blue Shield Federal Employee Program",
+  "prompt_type": "baseline",
+  "model": "openai",
+  "iteration": 2,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\":[\"https://www.fepblue.org/benefit-plans/medical-policies-and-utilization-management-guidelines/-/media/pdfs/medical policies/2_04_02 Germline Genetic Testing for Hereditary Breast-Ovarian Cancer Syndrome and Other High-Risk Cancers (BRCA1, BRCA2, PALB2).pdf\",\"https://www.fepblue.org/benefit-plans/medical-policies-and-utilization-management-guidelines/-/media/pdfs/medical policies/2_04_08 Genetic Testing for Lynch Syndrome and Other Inherited Colon Cancer Syndromes.pdf\",\"https://www.fepblue.org/benefit-plans/medical-policies-and-utilization-management-guidelines/-/media/pdfs/medical policies/2_04_13 Genetic Testing for Alzheimer Disease.pdf\"],\"webpage_links\":[\"https://www.fepblue.org/policies\"]}",
+  "parsed_data": {
+    "pdf_links": [
+      "https://www.fepblue.org/benefit-plans/medical-policies-and-utilization-management-guidelines/-/media/pdfs/medical policies/2_04_02 Germline Genetic Testing for Hereditary Breast-Ovarian Cancer Syndrome and Other High-Risk Cancers (BRCA1, BRCA2, PALB2).pdf",
+      "https://www.fepblue.org/benefit-plans/medical-policies-and-utilization-management-guidelines/-/media/pdfs/medical policies/2_04_08 Genetic Testing for Lynch Syndrome and Other Inherited Colon Cancer Syndromes.pdf",
+      "https://www.fepblue.org/benefit-plans/medical-policies-and-utilization-management-guidelines/-/media/pdfs/medical policies/2_04_13 Genetic Testing for Alzheimer Disease.pdf"
+    ],
+    "webpage_links": [
+      "https://www.fepblue.org/policies"
+    ]
+  }
+}

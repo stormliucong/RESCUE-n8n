@@ -122,8 +122,6 @@ def embed_policies_from_headers(headers: dict, md5s: dict, cache_dir: str, embed
             chunk_info[n] = len(chunks)
 
             max_seen = max(max_seen, *(len(ids) for ids in ids_batches))
-            #print(f"total_chunks={sum(chunk_info.values())}, corpus_len={len(corpus)}")
-            #print(f"[DEBUG] longest_chunk_tokens={max_seen}  (should be <= 256)")
 
         print(f"[SUMMARY] total_chunks={sum(chunk_info.values())}, corpus_len={len(corpus)}")
         vecs = model.encode(corpus, show_progress_bar=False, normalize_embeddings=True).astype(np.float32)
@@ -143,9 +141,6 @@ def embed_policies_from_headers(headers: dict, md5s: dict, cache_dir: str, embed
         final_vecs = np.array(final_vecs, dtype=np.float32)
 
     try:
-        #print(f"[DEBUG] final_vecs.shape={final_vecs.shape}")
-        #if len(final_vecs) > 0:
-            #print(f"[DEBUG] norms(sample)={np.linalg.norm(final_vecs[:3], axis=1)}")
         with open(names_path, "w", encoding="utf-8") as f:
             json.dump(names, f, ensure_ascii=False)
         np.save(vecs_path, final_vecs)

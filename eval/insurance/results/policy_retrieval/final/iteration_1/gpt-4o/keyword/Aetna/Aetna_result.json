@@ -1,0 +1,19 @@
+{
+  "payer": "Aetna",
+  "prompt_type": "keyword",
+  "model": "openai",
+  "iteration": 1,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\": [], \"webpage_links\": [\"https://www.aetna.com/cpb/medical/data/100_199/0140.html\", \"https://www.aetna.com/cpb/medical/data/1000_1099/1008.html\", \"https://www.aetna.com/cpb/medical/data/700_799/0715.html\", \"https://www.aetna.com/cpb/medical/data/1000_1099/1031.html\", \"https://www.aetna.com/cpb/medical/data/1000_1099/0927.html\"]}",
+  "parsed_data": {
+    "pdf_links": [],
+    "webpage_links": [
+      "https://www.aetna.com/cpb/medical/data/100_199/0140.html",
+      "https://www.aetna.com/cpb/medical/data/1000_1099/1008.html",
+      "https://www.aetna.com/cpb/medical/data/700_799/0715.html",
+      "https://www.aetna.com/cpb/medical/data/1000_1099/1031.html",
+      "https://www.aetna.com/cpb/medical/data/1000_1099/0927.html"
+    ]
+  }
+}

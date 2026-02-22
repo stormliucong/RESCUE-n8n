@@ -1,0 +1,18 @@
+{
+  "payer": "Cigna",
+  "prompt_type": "verified",
+  "model": "openai",
+  "iteration": 2,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\":[\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html?pdf=Genetic%20Testing%20for%20Hereditary%20and%20Multifactorial%20Conditions%20-%20%280052%29.pdf\",\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html?pdf=Genetic%20Testing%20for%20Reproductive%20Carrier%20Screening%20and%20Prenatal%20Diagnosis%20-%20%280514%29.pdf\",\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html?pdf=Molecular%20and%20Proteomic%20Diagnostic%20Testing%20for%20Hematology%20and%20Oncology%20Indications%20-%20%280520%29.pdf\",\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html?pdf=Pharmacogenetic%20Testing%20-%20%280500%29.pdf\"],\"webpage_links\":[]}",
+  "parsed_data": {
+    "pdf_links": [
+      "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html?pdf=Genetic%20Testing%20for%20Hereditary%20and%20Multifactorial%20Conditions%20-%20%280052%29.pdf",
+      "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html?pdf=Genetic%20Testing%20for%20Reproductive%20Carrier%20Screening%20and%20Prenatal%20Diagnosis%20-%20%280514%29.pdf",
+      "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html?pdf=Molecular%20and%20Proteomic%20Diagnostic%20Testing%20for%20Hematology%20and%20Oncology%20Indications%20-%20%280520%29.pdf",
+      "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html?pdf=Pharmacogenetic%20Testing%20-%20%280500%29.pdf"
+    ],
+    "webpage_links": []
+  }
+}
