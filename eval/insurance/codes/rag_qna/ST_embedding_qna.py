@@ -2,7 +2,7 @@ import os
 import json
 from dotenv import load_dotenv
 from openai import OpenAI
-from load_policy import load_policies
+from eval.insurance.codes.patient_policy_matching.load_policy import load_policies
 from load_cases import load_unmatched_cases, load_matched_cases, load_correct_cases, load_incorrect_cases
 from qna_execute import run_qna_for_cases
 from qna_execute_baseline import run_baseline_qna_for_cases
