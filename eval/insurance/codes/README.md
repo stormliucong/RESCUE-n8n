@@ -14,7 +14,7 @@ Implements payer identification experiments.
 
 Responsibilities include:
 - Provider name extraction
-- String and rule-based matching
+- GPT-4o Matching
 - Log parsing and preprocessing
 - Experimental execution scripts
 
@@ -28,7 +28,6 @@ Implements policy document retrieval pipelines.
 
 Core components:
 - Policy document acquisition (PDF download and loading)
-- PDF processing and text extraction
 - Prompt-based retrieval experiments
 - Experimental execution control
 - Retrieval result aggregation and merging
@@ -41,13 +40,13 @@ This module evaluates retrieval correctness and document alignment.
 
 ### 3️⃣ patient_policy_matching/
 
-Implements the policy–patient alignment and retrieval evaluation.
+Implements the policy–patient alignment and retrieval evaluation (RAG).
 
 This module performs:
 - Candidate policy retrieval
 - Embedding-based ranking
 - LLM-based reranking
-- Whole-policy execution variants
+- Whole-policy/Summarized (Header) input execution
 - Retrieval result aggregation
 - MD5-based document verification
 - Match-rate computation and analysis
@@ -68,7 +67,6 @@ This module includes:
 - Batch execution and result management
 - JSON-to-CSV merging utilities
 - Final accuracy and adjusted accuracy calculation
-- Statistical analysis
 
 This module evaluates downstream decision quality under different document-conditioning settings.
 
