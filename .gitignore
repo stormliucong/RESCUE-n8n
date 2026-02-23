@@ -33,3 +33,4 @@ eval/scheduler/eval_results.success.example.json
 # Ignore all .pdf files
 *.pdf
 
+eval/insurance/dataset/insurance_policy/

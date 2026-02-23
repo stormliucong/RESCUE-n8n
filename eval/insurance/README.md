@@ -1,19 +1,20 @@
-# Insurance Agent Workflows
+# Evaluating LLM Agents for Genetic Testing Insurance Workflows 
 
-📁 This folder contains the source codes, experimental outputs, and evaluation files associated with our study: **Evaluating Large Language Model Agents for Genetic Testing Insurance Workflows An End-to-End Assessment of Retrieval and Reliability**.
+📁 This folder contains the source codes, experimental outputs, and evaluation files associated with our study: **Evaluating Large Language Model Agents for Genetic Testing Insurance Workflows: An End-to-End Assessment of Retrieval and Reliability**.
 
 ---
 
 ## 🧠 Purpose
 
-This project investigates how web-search-capable LLM agents can support three key tasks in insurance policy workflows related to **genetic testing**, specifically for in-network labs like **GeneDx**:
+This study systematically evaluates the reliability of web-search-enabled LLM agents in supporting insurance workflows for **genetic testing**.
+We assess performance across four sequential tasks:
 
 1. **In-Network Insurance Provider Retrieval** 
 2. **Policy Document Retrieval**
 3. **Patient-Policy Matching**
 4. **LLM Agent for Answering Relevant Questions**
 
-All workflows aim to reduce administrative burden and improve access to coverage information in real time.
+The goal is to quantify retrieval sensitivity, ranking robustness, and downstream decision accuracy.
 
 ---
 
