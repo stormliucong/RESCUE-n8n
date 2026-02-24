@@ -27,7 +27,7 @@ def main():
     DATASET_PATH = f"{BASE_DIR}/qna_free_text_sample.json"
     POLICY_FOLDER = f"{BASE_DIR}/insurance_policy"
     QUESTIONS_PATH = f"{BASE_DIR}/Insurance_Genetic_Testing_QA_Updated.json"
-    INIT_RESULTS_BASE = "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final"
+    INIT_RESULTS_BASE = "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/patient_policy_match"
     RESULTS_BASE = "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final/final_qna_results/open_ai"
     os.makedirs(RESULTS_BASE, exist_ok=True)
 
