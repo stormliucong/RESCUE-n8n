@@ -1,23 +1,23 @@
 # 📊 Insurance Workflow Experiment Results
 
 This folder contains experimental outputs for the evaluating LLM agents for genetic testing insurance workflow.
-Raw experiment outputs are organized by iteration for retrieval tasks (name & policy), while 
-aggregated evaluation results are stored separately for analysis and reporting.
+Raw experiment outputs are organized by iteration for retrieval tasks (name & policy), and QA task while patient-policy matching task stored in configurations.
 
 ---
 
-# 🧩 1️⃣ name_retrieval
+# name_retrieval
 
 Contains results for **insurance payer (in-network provider) retrieval experiments**.
 
 ## 📂 Structure
-
+```bash
 name_retrieval/
 ├── final/
 │   ├── iteration_1/
 │   ├── iteration_2/
 │   └── iteration_3/
 └── evaluation_results/
+```
 
 ## 🔹 final/iteration_{#}/
 
@@ -30,34 +30,23 @@ Each iteration stores:
 
 These represent the direct outputs of LLM-based payer name generation experiments.
 
+### Directory hierarchy
+
+- **Model level**  
+'perplexity', `gpt-4o`, 'gpt-4o-oct', `gpt-5-mini`
+
+- **Prompt level**  
+`baseline`, `explicit`
+
 ## 🔹 evaluation_results/
 
 Processed evaluation outputs for **payer name retrieval** experiments.
 This directory contains analysis-ready tables that summarize performance by
 (model × prompt × iteration) and include GPT-4o matching criteria.
 
-
-### Main files
-
-- **name_result_fin.csv**  
-  Master evaluation table (row = model × prompt × iteration).
-  Includes:
-  - retrieved count (`ret`) and total gold count (`total`)
-  - match counts 
-  - Precision / Recall / F1 for each matching criterion
-  This file is the primary source for cross-model / cross-prompt comparisons,
-  statistical analysis, and figure generation.
-
-- **{model}_eval_by_{judge}.csv** (e.g., `gpt_4o_eval_by_gpt_4o.csv`, `gpt_5_mini_eval_by_gpt_...csv`)  
-  Per-model summary tables grouped by prompt type and iteration.
-  Typically includes per-iteration rows and an `Average` row for the prompt.
-
-- **llm_evaluation_log_*.csv**  
-  Logs generated during LLM-based matching/evaluation.
-  Useful for debugging discrepancies (e.g., common/missing/extra provider lists).
 ---
 
-# 📄 2️⃣ policy_retrieval
+# policy_retrieval
 
 Contains outputs of **insurance policy document retrieval experiments**.
 
@@ -65,7 +54,7 @@ These experiments evaluate whether LLMs can correctly retrieve official
 genetic testing coverage policy documents.
 
 ## 📂 Structure
-
+```bash
 policy_retrieval/
 └── final/
     ├── iteration_1/
@@ -75,7 +64,7 @@ policy_retrieval/
     ├── all_links.csv
     ├── payer_results.csv
     └── policy_experiment_result.csv
-
+```
 ---
 
 ## 🔹 final/iteration_{#}/
@@ -138,10 +127,293 @@ used for reporting and manuscript figures.
 
 ---
 
-# 🔬 Reproducibility Note
+# patient_policy_match
 
-- `final/iteration_*` directories contain raw experiment outputs.
-- Aggregated CSV files provide processed results for analysis.
-- Evaluation summaries are derived from raw outputs using scripts in `codes/`.
+Contains results for **patient-policy matching**.
 
-This structure ensures full reproducibility of reported results.
+## 📂 Structure
+```bash
+patient_policy_match/
+└── top1_10retrieve_gpt_5_mini_gpt_5_mini_update/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top1/
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── top1_matched_docs.csv
+│   │    │       └── top1_unmatched_docs.csv
+└── top1_10retrieve_gpt_5_mini_header_openai_small/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top1/
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── top1_matched_docs.csv
+│   │    │       └── top1_unmatched_docs.csv
+└── top1_10retrieve_gpt_5_mini_policy_openai_small/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top1/
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── top1_matched_docs.csv
+│   │    │       └── top1_unmatched_docs.csv
+└── top1_30retrieve_gpt_5_mini_gpt_5_mini_update/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top1/
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── top1_matched_docs.csv
+│   │    │       └── top1_unmatched_docs.csv
+└── top1_30retrieve_gpt_5_mini_header_openai_small/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top1/
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── top1_matched_docs.csv
+│   │    │       └── top1_unmatched_docs.csv
+└── top3_10retrieve_gpt_5_mini_gpt_5_mini_update/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top3/
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── top3_docs.csv
+│   │    │       ├── top3_matched_docs.csv
+│   │    │       └── top3_unmatched_docs.csv
+└── top3_10retrieve_gpt_5_mini_header_openai_small/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top3/
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── top3_docs.csv
+│   │    │       ├── top3_matched_docs.csv
+│   │    │       └── top3_unmatched_docs.csv
+└── top3_10retrieve_gpt_5_mini_policy_openai_small/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top1/
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── rerank_failed_cases.json
+│   │    │       ├── top3_docs.csv
+│   │    │       ├── top3_matched_docs.csv
+│   │    │       └── top3_unmatched_docs.csv
+└── top3_30retrieve_gpt_5_mini_gpt_5_mini_update/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top3/
+│   │    │       ├── correct_cases.csv
+│   │    │       ├── incorrect_cases.csv
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── top3_docs.csv
+│   │    │       ├── top3_matched_docs.csv
+│   │    │       └── top3_unmatched_docs.csv
+└── top3_30retrieve_gpt_5_mini_header_openai_small/
+│   └── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   └── top3/
+│   │    │       ├── correct_cases.csv
+│   │    │       ├── incorrect_cases.csv
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       ├── top3_docs.csv
+│   │    │       ├── top3_matched_docs.csv
+│   │    │       └── top3_unmatched_docs.csv
+└── whole_policy/
+│   ├── retrieval/
+│   │    └── gpt_5_mini/
+│   │    │   ├── top1/
+│   │    │   │   ├── matching_summary.csv
+│   │    │   │   ├── rank_change_detail.csv
+│   │    │   │   └── rerank_orders.csv
+│   │    │   └── top3/
+│   │    │       ├── matching_summary.csv
+│   │    │       ├── rank_change_detail.csv
+│   │    │       ├── rerank_orders.csv
+│   │    │       └── top3_docs.csv
+│   └── rank_change_summary.csv
+```
+
+## 🔹 Experimental configurations
+
+Each subfolder corresponds to a **patient–policy matching** run under a specific retrieval + embedding + input setting.
+
+### Naming pattern
+
+#### 1) SentenceTransformer embedding (baseline embedding backbone)
+- `top{k}_{c}retrieve_{rerank_model}_{QA_model}_update`  
+  Uses **SentenceTransformer embeddings** with **header (policy summarization) input**.
+
+- `whole_policy/`  
+  Uses **SentenceTransformer embeddings** with **whole-policy text input**.
+
+#### 2) OpenAI embedding (text-embedding-3-small)
+- `top{k}_{c}retrieve_{rerank_model}_header_openai_small`  
+  Uses **OpenAI text-embedding-3-small** with **header (policy summarization) input**.
+
+- `top{k}_{c}retrieve_{rerank_model}_policy_openai_small`  
+  Uses **OpenAI text-embedding-3-small** with **whole-policy text input**.
+
+### Folder contents
+
+Within each configuration, outputs are stored under:
+
+- `retrieval/{rerank_model}/top{k}/`  
+  Matching artifacts for the given `top{k}` setting, including:
+  - `matching_summary.csv`: aggregate match statistics for the run
+  - `rank_change_detail.csv`: rank-change comparison between cosine similarity based ranking and LLM reranking
+  - `rerank_orders.csv`: raw results of LLM reranking
+  - `top{k}_matched_docs.csv`, `top{k}_unmatched_docs.csv`: matched vs unmatched document selections
+  - (optional) `correct_cases.csv`, `incorrect_cases.csv`: case lists for downstream QA (when generated)
+  - (optional) `rerank_failed_cases.json`: rerank failure diagnostics
+
+In addition, `whole_policy/` includes:
+- `rank_change_summary.csv`: summary of reranking stability across top-k settings
+---
+
+# LLM_QnA
+
+Contains results for **insurance coverage Question Answering**.
+
+## 📂 Structure
+```bash
+LLM_QnA/
+└── RAG/
+│   └── final/
+│   │   └── final_qna_results/
+│   │   │   ├── open_ai/
+│   │   │   │   ├── gpt_5_mini_gpt_5_mini/
+│   │   │   │   │   ├── baseline/
+│   │   │   │   │   │   ├── iter1/
+│   │   │   │   │   │   │   ├── qna_raw/
+│   │   │   │   │   │   │   ├── batch_id.txt
+│   │   │   │   │   │   │   ├── batch_qna_requests.jsonl
+│   │   │   │   │   │   │   └── results.csv
+│   │   │   │   │   │   ├── iter2/
+│   │   │   │   │   │   │   ├── qna_raw/
+│   │   │   │   │   │   │   ├── batch_id.txt
+│   │   │   │   │   │   │   ├── batch_qna_requests.jsonl
+│   │   │   │   │   │   │   └── results.csv
+│   │   │   │   │   │   └── iter3/
+│   │   │   │   │   │       ├── qna_raw/
+│   │   │   │   │   │       ├── batch_id.txt
+│   │   │   │   │   │       ├── batch_qna_requests.jsonl
+│   │   │   │   │   │       └── results.csv
+│   │   │   │   │   ├── rag/
+│   │   │   │   │   │   ├── iter1/
+│   │   │   │   │   │   │   ├── all_correct/
+│   │   │   │   │   │   │   │   ├── qna_raw/
+│   │   │   │   │   │   │   │   ├── batch_id.txt
+│   │   │   │   │   │   │   │   ├── batch_qna_requests.jsonl
+│   │   │   │   │   │   │   │   └── results.csv
+│   │   │   │   │   │   │   ├── all_incorrect/
+│   │   │   │   │   │   │   │   ├── qna_raw/
+│   │   │   │   │   │   │   │   ├── batch_id.txt
+│   │   │   │   │   │   │   │   ├── batch_qna_requests.jsonl
+│   │   │   │   │   │   │   │   └── results.csv
+│   │   │   │   │   │   ├── iter2/
+│   │   │   │   │   │   │   ├── all_correct/
+│   │   │   │   │   │   │   │   ├── qna_raw/
+│   │   │   │   │   │   │   │   ├── batch_id.txt
+│   │   │   │   │   │   │   │   ├── batch_qna_requests.jsonl
+│   │   │   │   │   │   │   │   └── results.csv
+│   │   │   │   │   │   │   ├── all_incorrect/
+│   │   │   │   │   │   │   │   ├── qna_raw/
+│   │   │   │   │   │   │   │   ├── batch_id.txt
+│   │   │   │   │   │   │   │   ├── batch_qna_requests.jsonl
+│   │   │   │   │   │   │   │   └── results.csv
+│   │   │   │   │   │   └── iter3/
+│   │   │   │   │   │      ├── all_correct/
+│   │   │   │   │   │      │   ├── qna_raw/
+│   │   │   │   │   │      │   ├── batch_id.txt
+│   │   │   │   │   │      │   ├── batch_qna_requests.jsonl
+│   │   │   │   │   │      │   └── results.csv
+│   │   │   │   │   │      └── all_incorrect/
+│   │   │   │   │   │         ├── qna_raw/
+│   │   │   │   │   │         ├── batch_id.txt
+│   │   │   │   │   │         ├── batch_qna_requests.jsonl
+│   │   │   │   │   │         └── results.csv
+│   │   │   │   │   ├── batch_summary_all_correct_openai.json
+│   │   │   │   │   └── batch_summary_all_incorrect_openai.json
+│   │   │   ├── ST/
+│   │   │   ├── final_all_results_combined.csv
+│   │   │   ├── final_file_updated.csv
+│   │   │   └── final_results_with_accuracy_updated.csv
+```
+
+## 🔹 LLM_QnA Experimental Structure
+
+The `LLM_QnA` module evaluates downstream question-answering performance under different retrieval conditions and embedding backbones.
+
+### Embedding backbones
+
+- `open_ai/`  
+  Uses **OpenAI text-embedding-3-small** for patient–policy matching.
+
+- `ST/`  
+  Uses **SentenceTransformer embeddings** for patient–policy matching.
+
+For both backbones, the downstream **QnA model remains fixed** (e.g., `gpt_5_mini`).
+
+---
+### Experimental modes
+Within each model configuration:
+
+#### 1️⃣ Baseline
+- No policy document provided.
+- The LLM answers based solely on the patient case narrative.
+- Represents an LLM-only condition.
+
+Each configuration is repeated:
+- iter1
+- iter2
+- iter3
+
+Each iteration contains:
+- `qna_raw/` – raw JSON responses
+- `batch_id.txt` – OpenAI batch job identifier
+- `batch_qna_requests.jsonl` – submitted requests
+- `results.csv` – structured answer extraction
+
+#### 2️⃣ RAG (Documented)
+Conducted under two controlled document conditions:
+
+- `all_correct/`  
+  Every sample is paired with its **ground-truth policy document**.
+
+- `all_incorrect/`  
+  Every sample is paired with a **mismatch policy document** (top-ranked by cosine similarity excluding the ground-truth).
+
+Ouput structure and files are same with the Baseline
+---
+
+### Final aggregated outputs
+
+- `final_all_results_combined.csv`  
+  Aggregates all iteration-level results across baseline and RAG settings.
+
+- `final_file_updated.csv`  
+  Adds count-based summary statistics derived from the combined file.
+
+- `final_results_with_accuracy_updated.csv`  
+  Includes computed performance metrics:
+  - Accuracy
+  - Adjusted Accuracy  
+  Used for final statistical analysis and manuscript tables.
+
+---

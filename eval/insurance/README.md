@@ -4,6 +4,40 @@
 
 ---
 
+## Requirements
+- Python 3.10+
+- OpenAI API key
+- Perplexity API key
+
+---
+
+## Installation
+1. Clone the repository
+```bash
+git clone https://github.com/stormliucong/RESCUE-n8n.git 
+cd RESCUE-n8n/eval/insurance
+```
+
+2. Create environment
+```bash
+conda create -n insurance_agent python=3.10 -y
+conda activate insurance_agent
+```
+
+3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+4. Set API Keys
+Create a `.env` file in the project root:
+
+```bash
+touch .env
+```
+
+---
+
 ## 🧠 Purpose
 
 This study systematically evaluates the reliability of web-search-enabled LLM agents in supporting insurance workflows for **genetic testing**.
