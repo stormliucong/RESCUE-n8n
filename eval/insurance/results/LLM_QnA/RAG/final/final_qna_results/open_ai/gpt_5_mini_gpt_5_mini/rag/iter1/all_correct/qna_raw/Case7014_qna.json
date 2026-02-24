@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info explicitly states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose an age exclusion for WGS; age-specific limits are not specified as an eligibility barrier for this indication."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the test was requested by neurology (neurologist), meeting this requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital anomalies (must affect different organ systems)' and nonspecific presentation as an indication for WGS; the infant has multiple congenital anomalies that do not fit a well-delineated syndrome, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that neither CMA nor WES have been performed prior to WGS; patient had a nondiagnostic karyotype only and has not had CMA or WES, satisfying this prior-test criterion."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy identifies 'other first- or second-degree family member(s) with similar clinical features' as a supportive feature; patient has a maternal aunt with a congenital anomaly (second-degree relative), which is relevant."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES/WGS; patient completed pre-test genetic counseling with a genetic specialist, meeting the counseling expectation."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable codes list CPT 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis,' corresponding to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy WGS is medically necessary when presentation is nonspecific, a specific syndrome/test is not indicated, ordered by an allowed specialist, neither CMA nor WES have been performed, and features such as multiple congenital anomalies are present — all of which are met by this patient."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36945,
+    "output_tokens": 2258,
+    "total_tokens": 39203
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states diagnostic whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose a strict age limit for standard exome sequencing; rapid exome requires ≤12 months (patient is 5 weeks), but the request specifies WES without specifying rapid vs standard, so age-based eligibility for the requested test is not explicitly specified."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires the patient/family history be evaluated by a Board‑Certified/Board‑Eligible Medical Geneticist or an APGN for exome testing. Patient data notes pre‑test genetic counseling and planned genetics follow‑up but does not confirm evaluation by a Board‑Certified/Board‑Eligible Medical Geneticist or APGN, so adequacy of ordering/provider requirements cannot be confirmed."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital abnormalities affecting unrelated organ systems' and phenotypes not fitting a well‑described syndrome as an indication for exome sequencing; the five‑week‑old has multiple congenital anomalies not fitting a well‑delineated syndrome, meeting the criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy asks that alternate etiologies be considered and notes exome may be considered after CMA or focused testing is uninformative, but it does not mandate a specific prior test. Patient had a nondiagnostic karyotype; CMA status and other prior testing are not provided."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy counts a family history strongly suggestive of a genetic etiology as a relevant criterion. The patient has a sibling with an unexplained, concerning event (altered responsiveness, cyanosis, pallor, irregular breathing), which is relevant family history per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre‑ and post‑test counseling by an appropriate provider (e.g., Certified Genetic Counselor, Medical Geneticist, or APGN). Patient information states pre‑test genetic counseling was completed and post‑test genetics follow‑up is planned, satisfying the counseling requirement as documented."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's coding table lists 81415 as the common CPT code for exome sequencing (proband), which corresponds to the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical phenotype (multiple congenital anomalies) and completed pre‑test counseling support medical necessity under the policy, required documentation is missing for other explicit policy criteria: there is no confirmation the patient/family history were evaluated by a Board‑Certified/Board‑Eligible Medical Geneticist or an APGN (a stated requirement), nor is there documentation that the test result is predicted to impact immediate medical management. Because all required coverage criteria are not documented, the test is not adjudicated as covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12239,
+    "output_tokens": 3960,
+    "total_tokens": 16199
+  }
+}

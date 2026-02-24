@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient clinical information states the clinician requested BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy (2.04.126) does not define age-based eligibility criteria for BRCA1/2 testing; BRCA testing strategy is referenced to a different review (2.04.02) not included here."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not specify ordering-provider specialty or other explicit ordering requirements for BRCA1/2 testing; it only generally recommends genetic counseling by an experienced provider."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Applicable coverage criteria in the policy emphasize testing for individuals at high breast/ovarian cancer risk (personal history of cancer or meeting NCCN criteria). This patient is a 15-year-old with Hirschsprung disease and no personal or family history of cancer, so the patient does not meet the medical indications described in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy does not list specific required prior tests that must be completed before BRCA1/2 testing (the policy references testing affected family members first but does not mandate prior tests for BRCA1/2 in this text)."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy repeatedly notes family history (and NCCN criteria) is important for risk assessment for hereditary breast/ovarian cancer. The patient has no documented family history of cancer (mother has bipolar disorder only), so relevant family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is recommended and should be performed by someone with expertise, but it does not state in this text that documented pre-test genetic counseling is a formal coverage requirement for BRCA1/2 testing."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or reference CPT codes for BRCA1/2 testing; no CPT mapping is available in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, benefits are available only for specialized diagnostic genetic testing when medically necessary to diagnose/manage an existing condition and testing for hereditary breast/ovarian cancer is intended for individuals at high risk (personal history or meeting NCCN criteria). This 15-year-old has no personal or family history of breast/ovarian cancer and the BRCA test was ordered for an unrelated pediatric GI indication, so the test is not supported as medically necessary under the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11010,
+    "output_tokens": 2812,
+    "total_tokens": 13822
+  }
+}

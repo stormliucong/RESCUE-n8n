@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient info explicitly states 'tumor chromosomal microarray (CMA) testing has been requested' after nondiagnostic karyotype; policy addresses CMA testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy addresses postnatal CMA in children but does not state specific numeric age limits; patient is 7 years old but no age-based eligibility criteria are specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define specific ordering-provider specialty or credential requirements for CMA; patient was referred by a neurologist but the policy contains no ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy lists medical indications for CMA as (1) nonsyndromic developmental delay/intellectual disability, (2) autism spectrum disorder, or (3) multiple congenital anomalies not specific to a well-delineated genetic syndrome. The provided clinical information documents a major abnormality affecting at least one organ system but does not document developmental delay/ASD or multiple congenital anomalies, so the patient does not clearly meet the policy's specified indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy permits CMA as a first-line test and does not require completion of specific prior tests before CMA; although the patient had prior karyotype testing, the policy does not mandate prior testing."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not list family history or consanguinity as coverage criteria for CMA. The patient has a maternal BRCA1/2 pathogenic variant in relatives, but the policy does not make family history of unrelated hereditary cancer genes relevant to CMA eligibility."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends genetic counseling and states it should be performed by an experienced provider, but it does not state formal genetic counseling as an explicit required condition for CMA coverage. The patient has had multiple pretest counseling sessions, which aligns with the policy's recommendation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy document does not specify CPT or billing codes for CMA; none of the provided CPT options are referenced in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage is limited to the policy-defined indications (nonsyndromic developmental delay/ID, ASD, or multiple congenital anomalies). The patient's record does not document developmental delay/ASD or multiple congenital anomalies per the policy definitions, so under the policy the requested CMA is not supported as meeting the specified medical necessity criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15707,
+    "output_tokens": 2035,
+    "total_tokens": 17742
+  }
+}

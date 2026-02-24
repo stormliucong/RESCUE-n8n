@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1/2 testing (documented referral for BRCA1/2). Basis: patient clinical information."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly states testing of minors is investigational; the patient is 18 (an adult). Basis: policy statement that testing minors is investigational and patient age = 18."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers and appropriate pre-test counseling. Patient information states no pretest genetic counseling has been conducted, so ordering/provider requirements (counseling) are not satisfied. Basis: policy Genetic Counseling and Policy Statement requirements + patient facts."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications (personal cancer history meeting criteria or relevant family history of BRCA/PALB2-related cancers). Patient has no personal history of a BRCA-related cancer and family history reported (maternal uncle with dystonia/ataxia) is not a BRCA-related cancer; thus patient does not meet specified clinical criteria. Basis: policy indications for unaffected individuals and patient family history."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy strongly recommends testing an affected family member first when possible. No affected family member with relevant BRCA-related cancer has been reported or tested; prior karyotype was nondiagnostic and is not the recommended prior test. Basis: policy 'Testing Unaffected Individuals' guidance and patient facts."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family history of BRCA-related cancers (breast, ovarian, pancreatic, prostate, etc.) as relevant. The reported family history (maternal uncle with dystonia and ataxia) is not a BRCA-related cancer; therefore relevant family history criteria are not met. Basis: policy family-history criteria and patient facts."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by experienced providers. Patient information states no pretest genetic counseling was conducted, so counseling requirements are not met. Basis: policy Genetic Counseling section and patient facts."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy text does not provide or map specific CPT codes to BRCA1/2 tests. Basis: no CPT code guidance in provided policy document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, germline BRCA1/2 testing is medically necessary only when personal history or family history meets specified BRCA-related criteria or other policy conditions. This patient is an unaffected 18-year-old with no BRCA-related personal cancer history, no qualifying family history, no affected relative tested first, and no pretest counseling—therefore does not meet coverage criteria. Basis: policy 'Policy Statement' and 'Testing Unaffected Individuals' plus patient facts."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18924,
+    "output_tokens": 2099,
+    "total_tokens": 21023
+  }
+}

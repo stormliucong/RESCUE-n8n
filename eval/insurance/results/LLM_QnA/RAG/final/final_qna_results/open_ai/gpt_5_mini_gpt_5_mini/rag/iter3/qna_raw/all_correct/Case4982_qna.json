@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states the patient is being considered for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-based criteria reference features diagnosed by age 18 for WES (e.g., ID diagnosed by 18). The patient is 11 years old, so age is within the policy-specified age window for pediatric indications."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The patient was referred by/being evaluated by a developmental pediatrician, meeting the ordering provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history strongly suggesting a genetic cause plus specific features. The patient has a congenital anomaly (Hirschsprung disease) and a first-degree relative (sibling) with early-onset epileptic encephalopathy, meeting the policy’s listed features supporting WES."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior testing (e.g., CMA) before outpatient WES except in the prenatal setting or when a specific syndrome/targeted test is suspected. The record notes prior nondiagnostic FISH but policy does not require additional specific prior tests for WES in this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history (other first- or second-degree family member(s) with similar clinical features) as a criterion. The patient has a sibling with epileptic encephalopathy before age three, which is relevant per policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state counseling as a formal coverage requirement; the patient has documented pre-test genetic counseling, however counseling is not defined as a mandatory coverage criterion in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Applicable CPT codes in the policy list 81415 for exome sequence analysis (proband); this best corresponds to WES requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per policy WES is medically necessary when ordered by an approved specialty and the clinical history suggests a genetic cause with qualifying features. The patient is 11, the ordering provider is a developmental pediatrician, and qualifying features (congenital anomaly and relevant first-degree family history of early-onset epileptic encephalopathy) are present; therefore coverage is supported per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36969,
+    "output_tokens": 2799,
+    "total_tokens": 39768
+  }
+}

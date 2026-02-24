@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) has been requested to assess genetic contributors to the child's ASD."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Cigna's WES/WGS coverage for unexplained neurodevelopmental disorders applies to pediatric patients; the patient is a 7-year-old child, which meets age-based pediatric eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided information does not document any Cigna-specific ordering-provider specialty requirement; Cigna policies commonly do not strictly limit ordering to a single specialty in the text available here."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Cigna's WES/WGS medically necessary criteria include unexplained autism spectrum disorder/neurodevelopmental disorder — the patient has ASD, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Cigna typically requires prior chromosomal microarray (CMA) as a first‑tier test for unexplained developmental delay/ASD unless contraindicated; the record states no prior genetic testing was done, so required prior testing was not completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Although a maternal uncle has a severe immunologic disorder, this family history is not described as a similar neurodevelopmental phenotype and therefore does not meet family‑history criteria relevant to Cigna's WGS indications for ASD."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna's policy expects documentation of pre‑test genetic counseling or informed consent for WES/WGS; the family declined pre‑test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT 81425 corresponds to WGS (sequencing of the whole genome)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and clinical indication (ASD) are met, required prior testing (CMA) has not been completed and pre‑test genetic counseling was declined. Per Cigna WES/WGS coverage requirements, these unmet prerequisites support a denial of coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1989,
+    "output_tokens": 1622,
+    "total_tokens": 3611
+  }
+}

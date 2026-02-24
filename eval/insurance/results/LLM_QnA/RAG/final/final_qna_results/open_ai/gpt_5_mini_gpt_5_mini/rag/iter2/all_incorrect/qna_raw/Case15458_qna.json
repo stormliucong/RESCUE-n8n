@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient clinical information states she is being evaluated for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP policy document does not specify age-based eligibility criteria for BRCA1/2 testing in the text supplied."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state specific ordering-provider (specialty/type) requirements for BRCA1/2 testing in the provided document."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy cites the American Society of Breast Surgeons guidance that genetic testing should be made available to all individuals with a personal history of breast cancer and include BRCA1/BRCA2; patient has a personal history of breast cancer."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define required prior tests that must be completed before BRCA1/2 testing in the provided text (prior FISH noted in patient record is not referenced in policy)."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy emphasizes family history is relevant to hereditary cancer testing; patient has a family history (maternal aunt with ovarian cancer and a close relative with prostate cancer) relevant to testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is recommended and should be performed by someone experienced; patient completed pre-test genetic counseling with plans for post-test follow-up."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT code(s) for BRCA1/2 testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Policy and cited guidelines in the document (American Society of Breast Surgeons and benefit application stating coverage for medically necessary specialized diagnostic genetic testing) support availability/coverage of BRCA1/2 testing for individuals with a personal history of breast cancer; patient meets that indication and completed pre-test counseling."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11022,
+    "output_tokens": 2042,
+    "total_tokens": 13064
+  }
+}

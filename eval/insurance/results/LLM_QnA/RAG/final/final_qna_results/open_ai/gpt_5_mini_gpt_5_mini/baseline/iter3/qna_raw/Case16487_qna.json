@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states 'whole exome sequencing (WES) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Patient is a newborn. UHC WES coverage policies permit WES for pediatric/neonatal patients with suspected genetic disorders or unexplained critical events (no upper/lower age exclusion), so the infant's age meets age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally require appropriate clinical justification and documentation of counseling rather than narrowly restricting ordering to a single specialty. The record shows an oncologist ordered testing and counseling was completed; payer policy does not explicitly mandate a specific ordering specialty in this scenario."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES when there is a suspected underlying genetic etiology after nondiagnostic prior testing or when clinical presentation is consistent with a genetic disorder. Recurrent high‑risk BRUE with nondiagnostic FISH and concern for an underlying disorder meets a medical indication for WES per payer criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Payer policies often expect prior targeted testing where appropriate; here FISH was performed and nondiagnostic. UHC does not have a uniform requirement that CMA must precede WES for every presentation like BRUE, so specific prior‑test requirements are not clearly specified from the provided information."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history can support medical necessity for WES under UHC rules. The maternal aunt's persistent severe immunologic/hematologic disorder is relevant and strengthens the genetic testing indication."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre‑test counseling and plans for post‑test follow‑up for complex genomic testing. The record states pre‑test counseling was completed and post‑test genetic follow‑up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (proband), which matches the ordered whole exome sequencing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under UHC criteria the neonate has a covered indication: recurrent high‑risk BRUE with nondiagnostic targeted testing, relevant family history, completed pre‑test counseling and plan for follow‑up. Age and documentation meet coverage requirements for WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1985,
+    "output_tokens": 1870,
+    "total_tokens": 3855
+  }
+}

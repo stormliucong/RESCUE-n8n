@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'whole exome sequencing (WES) ordered.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to 'children' and infants with congenital anomalies; the patient is a 5‑week infant, which meets the age scope for WES per the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion #1 requires evaluation by 'a clinician with expertise in clinical genetics' (and counseling). The order was placed by a family medicine physician and there is no documentation that the infant was evaluated by a clinician with expertise in clinical genetics, so ordering/provider requirement is not met per the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy states WES may be medically necessary for evaluation of unexplained congenital anomalies in children when criteria met. The patient has a major congenital cardiac anomaly unexplained by prior testing, consistent with a policy-defined indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that previous genetic testing has failed to yield a diagnosis (examples: CMA and/or targeted testing) OR genetic etiology considered likely despite prior testing. The patient had prior FISH testing that was nondiagnostic, meeting the 'previous genetic testing failed to yield a diagnosis' condition in the policy."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists specific family history items relevant to selection (eg, arrhythmia, developmental delay, LQTS, sudden unexplained death). The only family history documented is a mother with short stature, which is not one of the policy's specified family-history criteria for eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion #1 requires counseling about risks of genetic testing. Patient/family completed pre‑test genetic counseling and will follow up after results, meeting the policy's counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT 81415 corresponds to exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the infant meets age, clinical indication (unexplained major congenital anomaly), prior nondiagnostic genetic testing, and has pre‑test counseling, the policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics. That documentation is not present (order placed by family medicine physician), so not all required policy criteria are met and coverage is not supported per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14840,
+    "output_tokens": 2711,
+    "total_tokens": 17551
+  }
+}

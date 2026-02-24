@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient is being considered for whole exome sequencing (WES) per the clinical information."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is specified for 'children' with unexplained congenital or neurodevelopmental disorders; the patient is an 11-year-old child and thus meets the age-related description."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics; the record shows referral by a developmental pediatrician and genetic counseling sessions but does not explicitly state evaluation by a clinician with expertise in clinical genetics."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES is medically necessary for children with unexplained congenital anomalies or neurodevelopmental disorders; the patient has Hirschsprung disease (listed in Policy Guidelines as an example of a malformation highly suggestive of genetic etiology) and concern for a syndromic/neurodevelopmental condition (sibling with early epileptic encephalopathy)."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES when previous genetic testing has failed to yield a diagnosis; the patient had prior FISH testing that was nondiagnostic, meeting the 'previous genetic testing failed' criterion."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history (eg, developmental delay, early severe neurologic disease in siblings); the patient has a sibling with epileptic encephalopathy before age 3, which is relevant per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an individual with experience; the patient/family has met with a genetic counselor multiple times for pre-test counseling and plans for post-test disclosure, satisfying the counseling requirement in the record."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; among the provided CPT options, 81415 corresponds to exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL listed criteria for WES to be met. Although age, medical indication, prior testing failure, family history, and genetic counseling are documented, the record does not explicitly document evaluation by a clinician with expertise in clinical genetics as required by the policy; because that required criterion cannot be confirmed, coverage per the policy is not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14860,
+    "output_tokens": 2311,
+    "total_tokens": 17171
+  }
+}

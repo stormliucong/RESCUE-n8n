@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states a chromosomal microarray (CMA) was ordered to assess copy number changes."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided WES/WGS policy does not state age-based eligibility criteria for chromosomal microarray testing; age criteria in the policy relate to WES/WGS, not CMA."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies provider expertise requirements for WES/WGS (evaluation by clinician with expertise in clinical genetics) but does not specify ordering-provider requirements for CMA in the provided text."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy defines clinical indications for exome/genome sequencing; the provided policy text does not define explicit medical-necessity criteria for CMA specifically, despite the patient having severe intellectual disability."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy references CMA as prior testing in the context of WES/WGS but does not state required prior tests that must be completed before ordering CMA."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy includes family-history examples relevant to WES/WGS, but the provided text does not specify family-history or consanguinity criteria for CMA; the patient's maternal aunt with an immunologic disorder is not explicitly addressed by the CMA-related criteria in the document."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses the importance of genetic counseling for genetic testing generally and requires counseling/documentation for WES/WGS, but it does not specify counseling requirements for CMA in the provided text (patient did complete pre-test counseling)."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes for chromosomal microarray; none of the CPT code options are specified in the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Benefit Application states \"Benefits are available for specialized diagnostic genetic testing when it is medically necessary to diagnose and/or manage a patient's existing medical condition.\" The CMA is ordered as a diagnostic genetic test for the patient's severe intellectual disability and the policy references CMA in clinical guidance (eg, as prior or parallel testing). Therefore, based on the provided policy language, the CMA is covered as medically necessary diagnostic genetic testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15570,
+    "output_tokens": 1843,
+    "total_tokens": 17413
+  }
+}

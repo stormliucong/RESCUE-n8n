@@ -1,0 +1,15 @@
+{
+  "payer": "Blue Cross and Blue Shield Federal Employee Program",
+  "prompt_type": "verified",
+  "model": "openai",
+  "iteration": 2,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\": [], \"webpage_links\": [\"https://www.fepblue.org/policies\"]}",
+  "parsed_data": {
+    "pdf_links": [],
+    "webpage_links": [
+      "https://www.fepblue.org/policies"
+    ]
+  }
+}

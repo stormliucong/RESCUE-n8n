@@ -1,0 +1,38 @@
+﻿Category,Test,Insurance
+Cardiac family history,WES,BCBS_FEP
+Neurodevelopmental family history,WES,BCBS_FEP
+Metabolic / immuno-hematologic family history,WES,BCBS_FEP
+Cardiac family history,WGS,BCBS_FEP
+Neurodevelopmental family history,WGS,BCBS_FEP
+Metabolic / immuno-hematologic family history,WGS,BCBS_FEP
+Cancer – Breast family history,BRCA1/2,BCBS_FEP
+Cancer – Ovarian family history,BRCA1/2,BCBS_FEP
+Cancer – Prostate family history,BRCA1/2,BCBS_FEP
+Cancer – Pancreatic family history,BRCA1/2,BCBS_FEP
+Known familial pathogenic variant,BRCA1/2,BCBS_FEP
+Known familial pathogenic variant,BRCA1/2,Cigna
+Cancer – Breast family history,BRCA1/2,Cigna
+Cancer – Ovarian family history,BRCA1/2,Cigna
+Cancer – Prostate family history,BRCA1/2,Cigna
+Cancer – Pancreatic family history,BRCA1/2,Cigna
+Neurodevelopmental family history,WES,UHC
+Congenital anomalies / dysmorphic family history,WES,UHC
+Neurological family history,WES,UHC
+Hearing / Vision impairments family history,WES,UHC
+Metabolic / immuno-hematologic family history,WES,UHC
+Neuropsychiatric family history,WES,UHC
+Consanguinity,WES,UHC
+Neurodevelopmental family history,WGS,UHC
+Congenital anomalies / dysmorphic family history,WGS,UHC
+Neurological family history,WGS,UHC
+Hearing / Vision impairments family history,WGS,UHC
+Metabolic / immuno-hematologic family history,WGS,UHC
+Neuropsychiatric family history,WGS,UHC
+Consanguinity,WGS,UHC
+Cancer – Lynch syndrome / Polyposis family history,BRCA1/2,UHC
+Cancer – Hereditary Solid Tumors,BRCA1/2,UHC
+Cancer – Breast family history,BRCA1/2,UHC
+Cancer – Prostate family history,BRCA1/2,UHC
+Cancer – Ovarian family history,BRCA1/2,UHC
+Cancer – Pancreatic family history,BRCA1/2,UHC
+Cancer – Neuroendocrine tumors family history,BRCA1/2,UHC

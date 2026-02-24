@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered to assess for an underlying hereditary cancer predisposition."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Cigna Genome Sequencing criteria explicitly require the member to be <21 years of age. The patient is 41 years old, so age-based eligibility is not met."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires an 'appropriate genetic and family history evaluation' and documentation (clinical letter) but does not specify a required ordering provider specialty/type. The patient was evaluated by a medical geneticist, but the guideline does not mandate a specific ordering provider role, so explicit provider-type requirements are not specified in the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy defines specific clinical indications for genome sequencing (largely pediatric: <21 years with neurodevelopmental/congenital indications). Although the patient has suspected hereditary cancer, the policy's defined medical indications (including the mandatory age <21) are not met by this 41-year-old."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that the member has not had prior exome or genome sequencing. The record indicates prior karyotype was nondiagnostic and does not document prior exome or genome testing, satisfying the policy requirement of no prior ES/WGS."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy considers family history as part of the genetic/family history evaluation (and family history can be relevant for eligibility in certain contexts). The patient reports a mother with a persistent severe hematologic disorder, which is relevant to hereditary risk."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy (and cited ACMG guidance within it) requires appropriate genetic evaluation and pretest counseling (by a medical geneticist or genetic counselor) and written documentation. The materials provided state there was no documented record of pre-test genetic counseling."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Cigna's guideline maps whole genome sequencing (proband genome sequence analysis) to CPT code 81425; the policy directs 81425 should be billed for the proband for WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, genome sequencing is considered medically necessary only when ALL listed criteria are met, including member age <21. The patient is 41 and therefore fails a mandatory criterion; consequently the test is not covered under the provided guideline."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9161,
+    "output_tokens": 2464,
+    "total_tokens": 11625
+  }
+}

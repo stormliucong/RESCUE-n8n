@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical note explicitly states 'whole genome sequencing (WGS) has been ordered.' Basis: patient information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not impose a specific age cutoff for WGS; age-specific items in the policy apply to certain features (e.g., ID diagnosed by 18) but no age-based exclusion/requirement for WGS is specified. Basis: UnitedHealthcare WGS coverage rationale."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a neurologist, meeting the requirement. Basis: UnitedHealthcare WGS ordering-provider criterion."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical necessity requires clinical history strongly suggesting a genetic cause plus at least one feature such as 'Multiple congenital anomalies (must affect different organ systems)'; the neonate has multiple congenital anomalies across several organ systems, meeting the indication. Basis: UnitedHealthcare WGS coverage rationale."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that neither CMA nor WES have been performed prior to WGS. Patient history documents only FISH (nondiagnostic) and does not indicate prior CMA or WES, so the policy condition (no prior CMA/WES) is satisfied. Basis: UnitedHealthcare WGS prerequisite 'Neither CMA nor WES have been performed.'"
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Other first- or second-degree family member(s) with similar clinical features' as a relevant feature for WGS; patient has an older sibling with multiple congenital anomalies, meeting the family-history criterion. Basis: UnitedHealthcare WGS coverage rationale."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'Genetic counseling is strongly recommended' prior to WES/WGS but does not state counseling as a strict coverage prerequisite; the patient declined counseling but policy does not make it a required condition for coverage. Basis: UnitedHealthcare policy 'Genetic counseling is strongly recommended.'"
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Requested test is whole genome sequencing; UnitedHealthcare policy lists CPT 81425 for 'Genome ... sequence analysis' corresponding to WGS. Basis: Applicable codes in policy (81425)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All coverage criteria in the policy for WGS are met: WGS ordered by an acceptable provider (neurologist); clinical indication present (multiple congenital anomalies across organ systems); neither CMA nor WES documented as previously performed; family history supportive. Genetic counseling is recommended but not mandated for coverage. Basis: UnitedHealthcare WGS coverage rationale and applicable codes."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36935,
+    "output_tokens": 2138,
+    "total_tokens": 39073
+  }
+}

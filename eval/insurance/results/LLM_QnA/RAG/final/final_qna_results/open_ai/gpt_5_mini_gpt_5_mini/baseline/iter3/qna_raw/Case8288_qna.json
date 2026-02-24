@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note states whole exome sequencing is being pursued after a nondiagnostic CMA for a fetal major cardiac malformation."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES policy does not impose a strict age cutoff; prenatal/fetal indications are covered under clinical criteria, so age-based eligibility is not specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires an appropriate ordering clinician and documentation of genetic evaluation/counseling. The case was referred for genetic evaluation by a developmental pediatrician and parents had multiple genetic counseling sessions, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria consider WES medically necessary for a fetus with major congenital anomaly when first‑line testing (CMA) is nondiagnostic; this fetal major cardiac anomaly with nondiagnostic CMA meets that indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC WES coverage requires prior appropriate testing (chromosomal microarray) for congenital anomalies; the record states CMA was previously performed and nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a documented family history (older sibling with an inborn error of metabolism), which is relevant to genetic evaluation and supports testing per UHC criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre‑test genetic counseling for WES; the parents have had multiple sessions with a genetic counselor, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT code 81415 corresponds to clinical whole exome sequencing (WES) and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under UHC policy, WES is covered for a fetus with a major structural anomaly when CMA is nondiagnostic and appropriate counseling/ordering clinician documentation exists; all these conditions are met in the provided information."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2018,
+    "output_tokens": 1905,
+    "total_tokens": 3923
+  }
+}

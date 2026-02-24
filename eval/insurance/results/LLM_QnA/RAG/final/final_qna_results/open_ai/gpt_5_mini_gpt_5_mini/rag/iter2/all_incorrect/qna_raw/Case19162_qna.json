@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient was referred for whole genome sequencing (WGS) by a medical geneticist (patient info explicitly states WGS)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy states standard WES or WGS is medically necessary for pediatric patients under 21; the patient is a neonate and therefore meets the age criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling; the patient was referred by a medical geneticist (meets ordering-provider requirement)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires (among other things) counseling, potential to change management, and either prior nondiagnostic testing or atypical presentation; the patient has geneticist evaluation and counseling, Fragile X testing was nondiagnostic, there is strong clinical suspicion of a genetic/metabolic etiology (neonatal neurologic abnormalities), and testing could change management, meeting the medical-necessity criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "One pathway in the policy is 'previous genetic testing is non-diagnostic and there remains a strong clinical suspicion'; the patient had Fragile X testing that was nondiagnostic, satisfying that prior-test pathway."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of an inborn error of metabolism as a relevant family history; the patient has a sibling with an inborn error of metabolism."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be provided by someone with genetics expertise; the patient completed pre-test counseling with a genetic counselor and post-test follow-up is planned."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy coding section lists multiple covered codes (including 81415 and 81425) but does not explicitly map a specific CPT to 'WGS' in the provided text, so the exact best single CPT is not specified in this document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical and medical-necessity criteria for WGS in the policy, Section II and Section VI note product variations and instruct that FEP PPO members should be referred to the FEP Medical Policy manual. The patient’s coverage is through BCBS_FEP, and this policy directs FEP cases to a separate FEP policy; therefore coverage cannot be confirmed under this document for this FEP member and, per the provided policy text, the policy is not authoritative for FEP—so it is not covered under this specific policy document."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14882,
+    "output_tokens": 3056,
+    "total_tokens": 17938
+  }
+}

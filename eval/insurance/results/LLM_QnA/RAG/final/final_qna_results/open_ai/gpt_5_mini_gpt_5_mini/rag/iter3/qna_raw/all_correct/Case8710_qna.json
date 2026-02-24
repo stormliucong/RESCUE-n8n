@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) has been requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-based statements (e.g., features diagnosed by 18 years). The patient is 12 years old, which meets the policy's age-related thresholds (under 18) for pediatric indications described in the WES coverage rationale."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The ordering/referring provider is a developmental pediatrician, which satisfies the requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under the policy WES is medically necessary when clinical history suggests a genetic cause and listed features are present. The patient has autism spectrum disorder (a listed feature) plus at least one additional abnormality affecting another organ system (constituting multisystem involvement/two features), and presentation is nonspecific — meeting the policy's clinical indication for WES."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require prior CMA/karyotype for outpatient/postnatal WES in the described indications; it only specifies targeted testing first if a specific syndrome is suspected. The patient had a nondiagnostic karyotype (documented) but the policy does not mandate additional specific prior testing in this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history (other first- or second-degree family member(s) with similar clinical features) and consanguinity as relevant features. The patient has a paternal uncle (a second-degree relative) with neurologic disease (dystonia and ataxia), which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is strongly recommended prior to WES/WGS but does not state that documented pre-test genetic counseling is an explicit coverage requirement. The patient has no documented pre-test counseling, but the policy treats counseling as recommended rather than a strict coverage criterion."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Applicable CPT codes in the policy list 81415 for 'Exome; sequence analysis', which corresponds to WES requested for this patient."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare WES coverage rationale: WES is covered when (1) presentation is nonspecific and not a well-defined syndrome, (2) ordered by an allowed specialty (developmental pediatrician), and (3) listed clinical features are met. The patient is a 12-year-old with ASD plus an additional abnormality affecting another organ system, prior karyotype nondiagnostic, and the ordering provider is a developmental pediatrician — collectively meeting the policy's coverage criteria for WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36953,
+    "output_tokens": 3819,
+    "total_tokens": 40772
+  }
+}

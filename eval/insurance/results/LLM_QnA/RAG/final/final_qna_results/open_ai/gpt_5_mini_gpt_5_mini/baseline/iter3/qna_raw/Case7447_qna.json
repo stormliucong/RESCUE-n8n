@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The cardiologist explicitly ordered whole genome sequencing (WGS) for the fetus."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WGS coverage criteria are based on clinical presentation and prior testing rather than patient age; no age-based exclusion or requirement is specified for prenatal WGS in the provided policy context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The patient info states the cardiologist ordered the test but the documentation does not state any payer-specific ordering-provider restriction; BCBS_FEP policies typically require an appropriate ordering clinician and genetic counseling involvement but do not universally limit ordering to a single specialty in the provided scenario."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Under BCBS_FEP WGS/WES prenatal criteria, testing is generally reserved for fetuses with multiple congenital anomalies or when standard genetic testing is nondiagnostic and results would affect management. This case documents an isolated severe congenital heart defect (single-organ anomaly) without prior microarray results, so the specified medical-necessity indications are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP prenatal WGS coverage generally requires prior standard testing (eg, karyotype and chromosomal microarray) to be non-diagnostic before WGS; only fragile X testing was reported (nondiagnostic) and there is no documentation of a chromosomal microarray or karyotype."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history of adult-onset breast cancer in a maternal aunt is noted but BCBS_FEP WGS prenatal criteria do not specify that this family history is relevant to prenatal WGS eligibility for a fetal structural cardiac anomaly."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP generally requires pre-test genetic counseling/documentation for high-complexity genomic testing; here there is no documentation of pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (germline) with interpretation and report, which best matches the ordered WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on BCBS_FEP coverage rules: (1) the indication (isolated severe CHD) does not meet the specified prenatal WGS medical-necessity criteria that typically require multiple anomalies or nondiagnostic prior standard testing, (2) required prior testing (chromosomal microarray/karyotype) is not documented, and (3) pre-test genetic counseling is not documented. Therefore the request does not meet coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1972,
+    "output_tokens": 2175,
+    "total_tokens": 4147
+  }
+}

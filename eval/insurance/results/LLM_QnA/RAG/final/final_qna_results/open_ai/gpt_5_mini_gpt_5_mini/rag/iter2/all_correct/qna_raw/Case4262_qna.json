@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient was referred for diagnostic whole exome sequencing (WES) (stated explicitly)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to children/infants with congenital anomalies; the patient is a five-week-old infant, which meets the age scope in the policy for WES."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with genetics expertise and counseling; the record states pre-test genetic counseling has been completed and genetics follow-up is planned, satisfying the provider/counseling requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'unexplained congenital anomalies' in children as an indication for WES; the patient has multiple congenital anomalies not fitting a well-delineated syndrome, matching this medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy cites prior genetic testing (eg, CMA or targeted testing) as relevant but does not mandate a specific prior test; the patient had a nondiagnostic karyotype, but the policy does not explicitly require CMA or any particular prior test before WES."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history items relevant to testing, including 'BRUE in sibling'; the patient’s family history includes a sibling with a BRUE."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling and evaluation by genetics expertise; patient information documents pre-test genetic counseling was completed and post-test genetics follow-up is planned."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT 81415 corresponds to exome sequencing (clinical)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy WES is medically necessary for children with unexplained congenital anomalies when all criteria are met: (1) genetics evaluation/counseling documented (met), (2) potential to change management (implicit in diagnostic evaluation for multiple congenital anomalies), and (3) prior genetic testing nondiagnostic (karyotype nondiagnostic). Therefore the request meets policy criteria for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14843,
+    "output_tokens": 2710,
+    "total_tokens": 17553
+  }
+}

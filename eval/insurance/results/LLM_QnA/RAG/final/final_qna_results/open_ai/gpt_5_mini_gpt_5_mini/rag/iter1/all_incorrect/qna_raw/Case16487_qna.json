@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info states whole exome sequencing (WES) has been ordered by the oncologist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related guidance defines BRUE as an event in an infant <1 year and the policy addresses WES in children/infants; the patient is a newborn, so age meets policy-defined infant/child criteria for WES evaluation."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual was evaluated by a clinician with expertise in clinical genetics (policy criterion #1). Patient record reports WES ordered by an oncologist but does not document evaluation by a clinical genetics expert, so ordering/provider requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'infant with high risk stratification on evaluation for a BRUE with recurrent events without respiratory infection' as an example of clinical features suggesting a genetic disease and WES may be considered when previous genetic testing is nondiagnostic; the patient has high-risk recurrent BRUE and nondiagnostic FISH, so the medical indication criterion is met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria note prior genetic testing (e.g., CMA and/or targeted testing) or prior testing failed to yield a diagnosis; the patient had nondiagnostic FISH testing (a prior genetic test), satisfying the policy's prior testing condition."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history (e.g., inborn error of metabolism or other genetic disease) among features suggesting a genetic etiology. The patient has a maternal aunt with a severe immunologic/hematologic disorder (a second-degree relative), so a relevant family history is present per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly requires documentation of individualized genetic counseling before testing. The patient record states pre-test counseling was completed with plans for post-test genetic follow-up, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding lists CPT 81415 for exome (sequence analysis) which corresponds to WES (proband exome) ordered for this patient."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age, medical indication (high-risk BRUE, recurrent events without respiratory infection), prior nondiagnostic genetic testing, family history, and has documented pre-test counseling, Blue Cross of Idaho policy requires ALL listed criteria including documentation that the individual 'has been evaluated by a clinician with expertise in clinical genetics.' There is no documentation that a clinician with expertise in clinical genetics evaluated the infant (WES was ordered by an oncologist), so the policy's required criteria are not all met and the test is not covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 56579,
+    "output_tokens": 2840,
+    "total_tokens": 59419
+  }
+}

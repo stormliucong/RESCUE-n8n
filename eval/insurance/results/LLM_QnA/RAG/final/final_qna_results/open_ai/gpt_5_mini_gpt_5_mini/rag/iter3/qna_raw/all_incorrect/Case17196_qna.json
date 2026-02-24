@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient clinical information explicitly states a referral for chromosomal microarray (CMA) testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies age limits only for asymptomatic testing for adult-onset conditions (age of majority). For symptomatic diagnostic testing (the patient is symptomatic), the policy does not impose a specific age cutoff for eligibility."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy I.1 requires genetic counseling prior to testing unless the test is ordered by a specialist in the disease process. The test is being ordered by an oncologist for a neuropsychiatric indication (oncologist is not a specialist in that disease process) and no pre-test genetic counseling was done, so ordering-provider/counseling requirements are not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "While the patient is symptomatic (policy I.2.a.i), the policy also requires that all subcriteria (e.g., published evidence of association/clinical utility, other testing being equivocal/standard-of-care confirmation, impact on management) be met. The provided information does not document that these policy subcriteria for CMA in this adult neuropsychiatric presentation are satisfied."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify required prior testing (e.g., that karyotype must be performed before CMA) as a prerequisite for coverage; it only notes that repeat identical testing is not covered. The patient’s prior nondiagnostic karyotype is noted but the policy does not define that as a required prior test."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy allows asymptomatic testing when an individual is judged at significant risk based on family history. The patient has a sibling with early-onset (by age 18) significant hearing or visual impairment, which is family history relevant to consideration under the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy I.1 mandates genetic counseling prior to and after testing when testing is not ordered by a specialist in the disease process. No pre-test genetic counseling was performed and the ordering provider is an oncologist for a neuropsychiatric indication, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses use of specific procedure codes for multigene panels and 81479 for unlisted molecular pathology but does not specify a CPT code mapping for chromosomal microarray (CMA) in the provided text; therefore the appropriate CPT is not specified in the policy document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy the test requires meeting all medical-necessity subcriteria and required pre-test genetic counseling if not ordered by a specialist in the disease process. The documentation provided does not demonstrate that the policy's medical-utility subcriteria are met, and required pre-test genetic counseling was not completed (ordering provider is not a neuropsychiatric specialist). Therefore the request does not meet the policy coverage requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10242,
+    "output_tokens": 2957,
+    "total_tokens": 13199
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole-exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Patient is an infant with developmental delay; policy lists Global Developmental Delay (onset prior to 5 years) and pediatric presentations as qualifying features for WES, so age-related criteria are met per the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the test was ordered following referral by an oncologist, which does not meet the specified ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical-necessity criteria include Global Developmental Delay as a qualifying clinical indication; the infant presents with developmental delay, meeting a defined criterion in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate completion of specific prior tests for initial WES except that targeted/single-gene testing is preferred if a specific syndrome is suspected; patient presentation is nonspecific and prior FISH was nondiagnostic, so no specific required prior test is specified in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history (other first- or second-degree family members with similar clinical features) and consanguinity as qualifying considerations; the family has an older sibling with childhood hearing impairment, a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES but does not make counseling a specified coverage requirement; patient had pre-test counseling and post-test counseling planned."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable codes list 81415 for exome (sequence analysis), which corresponds to WES ordered for this patient."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indication and age criteria for WES (global developmental delay, relevant family history), the policy requires WES be ordered by specified provider types (medical geneticist, neonatologist, neurologist, or developmental pediatrician); the ordering provider is an oncologist, so the policy's provider requirement is not met and coverage is not supported."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36940,
+    "output_tokens": 2362,
+    "total_tokens": 39302
+  }
+}

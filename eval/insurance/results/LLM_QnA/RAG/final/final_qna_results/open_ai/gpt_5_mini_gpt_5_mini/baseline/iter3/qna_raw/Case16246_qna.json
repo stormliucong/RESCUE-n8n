@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The referral explicitly states BRCA1 and BRCA2 testing is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC hereditary cancer testing criteria include affected individuals with breast cancer diagnosed before age 50; the patient is 35 and therefore meets age-related eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires ordering by a licensed provider/physician or qualified healthcare professional but does not restrict to a specific specialty; the test was ordered/referral placed by the patient's gynecologist, which meets ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria for BRCA testing include a personal history of breast cancer diagnosed <50 years; the patient has breast cancer diagnosed before age 50, meeting a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policy does not mandate completion of other genetic tests (the prior nondiagnostic karyotype is unrelated) as a prerequisite to BRCA1/2 sequencing, so no specific prior-test requirement is defined."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are part of BRCA eligibility rules; the patient reports an uncle with pancreatic cancer, which is a relevant family-history finding that supports hereditary cancer evaluation."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC requires documentation of pre-test genetic counseling/informed consent for hereditary BRCA testing; the patient has had no pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Of the provided CPT options, 81228 corresponds to BRCA1/BRCA2 hereditary breast/ovarian cancer gene testing (best match among choices)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and medical indication are met and the ordering provider is acceptable, UHC requires documentation of pre-test genetic counseling for BRCA testing and no counseling has been performed; without this required documentation, coverage would not be authorized."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1974,
+    "output_tokens": 1798,
+    "total_tokens": 3772
+  }
+}

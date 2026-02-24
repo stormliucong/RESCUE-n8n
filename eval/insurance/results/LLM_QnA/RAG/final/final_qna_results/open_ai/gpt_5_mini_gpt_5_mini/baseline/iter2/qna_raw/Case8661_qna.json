@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare WES/WGS criteria specify pediatric eligibility for suspected genetic disorders; the patient is 7 years old (meets pediatric age criteria)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The record shows the ordering provider is the child's neurologist. UHC coverage policies do not universally mandate a single specific specialty as the only permitted ordering provider in this scenario (ordering by an appropriate specialist is acceptable), and no explicit provider-restriction is documented in the provided patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical necessity criteria include children with unexplained sensory impairment, possible neurodevelopmental disorder and/or early-onset epileptic presentations in the family; the patient has childhood hearing/visual impairment and a sibling with early epileptic encephalopathy, meeting clinical indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior appropriate testing (e.g., chromosomal microarray) before WES/WGS; only Fragile X testing was reported (nondiagnostic) and no CMA/other required prior test is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a relevant family history (sibling with epileptic encephalopathy before age 3), which is a specified family-history criterion supporting testing under UHC policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies typically require documented pre-test genetic counseling for WES/WGS; counseling was offered but the family declined pre-test counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Whole genome sequencing is reported using CPT code 81425 (WGS)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications and age criteria, coverage prerequisites per UHC (documented prior testing such as CMA and documented pre-test genetic counseling) are not satisfied; therefore WGS is not covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2001,
+    "output_tokens": 1811,
+    "total_tokens": 3812
+  }
+}

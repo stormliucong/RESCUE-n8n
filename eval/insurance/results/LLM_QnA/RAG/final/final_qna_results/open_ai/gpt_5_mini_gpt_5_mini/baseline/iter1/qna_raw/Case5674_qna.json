@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states the team plans whole exome sequencing (WES) to investigate a possible genetic epilepsy syndrome."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES policy includes pediatric patients with suspected genetic neurologic disorders; the patient is 9 years old (pediatric) and thus meets age-based eligibility for WES."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "FEP typically requires clinician ordering with genetics involvement or consultation. Although the ordering clinician is a general practitioner, the record documents multiple visits with a genetic counselor and arranged genetics follow-up, satisfying the payer's provider/counseling involvement expectations."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP covers WES for unexplained, suspected genetic neurologic disorders such as persistent/early-onset seizures or suspected genetic epilepsy; the child has persistent seizures and concern for a genetic epilepsy syndrome, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "FEP WES criteria commonly require prior chromosomal microarray for unexplained neurodevelopmental or congenital presentations; the patient had a nondiagnostic CMA, satisfying the documented prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history can be relevant for genetic testing eligibility; the record notes sudden unexplained death in an uncle <35, a family history detail supportive of a genetic evaluation for epilepsy-related syndromes."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP expects pre- and post-test genetic counseling/documentation for complex genomic testing. The patient has had multiple visits with a genetic counselor and arrangements for post-test genetics follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT code 81415 corresponds to clinical exome (WES) sequencing and interpretation."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP WES criteria the patient meets age, medical indication (persistent suspected genetic epilepsy), required prior testing (nondiagnostic CMA), documented genetic counseling, and genetics involvement, therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1696,
+    "total_tokens": 3674
+  }
+}

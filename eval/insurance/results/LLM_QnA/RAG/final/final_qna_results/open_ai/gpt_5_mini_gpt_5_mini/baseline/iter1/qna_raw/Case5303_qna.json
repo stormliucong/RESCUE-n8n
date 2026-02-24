@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note states the patient was referred for BRCA1 and BRCA2 testing explicitly."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA coverage is driven by personal/family cancer history and age-at-diagnosis of affected relatives rather than a hard age cutoff for the proband; the patient’s age (37) is not a standalone age exclusion or explicit age-based eligibility criterion in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA policies generally do not mandate a specific ordering provider specialty (any qualified clinician may order), and no specialty requirement is documented in the patient information."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Per UHC BRCA medical criteria, coverage requires a personal history of BRCA-associated cancer or a family history meeting defined patterns (e.g., relatives with breast/ovarian/pancreatic/early-onset prostate or male breast cancer). The patient has no personal history of such cancers and the only family history reported is a brother who died suddenly under age 35 (not a BRCA-associated cancer), so the patient does not meet covered clinical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC guidance often recommends testing an affected relative first when possible but does not universally require a prior specific genetic test in all situations; the chart documents no prior genetic testing but the policy does not define a single required prior test for all BRCA requests."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Coverage-relevant family history for BRCA testing requires relatives with BRCA-associated cancers; the reported family history (brother with sudden unexpected death <35) is not a BRCA-associated cancer and thus does not satisfy family-history criteria in UHC policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC typically expects documentation of pre-test genetic counseling for BRCA testing; the record states no pre-test genetic counseling was conducted, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "From the provided CPT choices, 81277 is the option most consistent with BRCA1/BRCA2 molecular testing among the listed codes (other codes correspond to WES/WGS/CMA or different genes)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying UHC BRCA coverage criteria: the patient lacks a personal history of BRCA-associated cancer, lacks a family history that meets UHC’s defined patterns for BRCA testing, and pre-test genetic counseling was not documented. Therefore the requested BRCA1/2 test does not meet coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1960,
+    "output_tokens": 2436,
+    "total_tokens": 4396
+  }
+}

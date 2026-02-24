@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The clinical note explicitly states chromosomal microarray (CMA) is being ordered to assess for copy number variants."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA coverage criteria do not impose an age cutoff for testing; the policy defines clinical indications rather than age-based eligibility, so age (14 years) is not a limiting factor per policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA policy does not mandate a specific ordering provider specialty to authorize testing; no provider-type restriction is specified in the applicable coverage criteria."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UHC medical necessity criteria for CMA require unexplained developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies. The patient has a congenital anomaly affecting a single organ system without documented global developmental delay/ID/ASD, so the specified indications are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA policy does not require specific prior tests as a universal prerequisite. (Note: Fragile X testing was performed and nondiagnostic, but prior testing requirements for CMA are not defined by policy.)"
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history criteria relevant to CMA coverage are not specified by UHC. The noted family history (maternal aunt with triple‑negative breast cancer) is relevant to hereditary breast cancer testing, not to CMA eligibility."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "UHC guidance may recommend genetic counseling for genomic testing but does not list a mandatory counseling documentation requirement specific to CMA in the coverage criteria. (Pre‑test counseling was performed in this case.)"
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Chromosomal microarray testing is billed under CPT 81425 (genomic microarray/array-based copy number analysis) per standard coding used in UHC coverage/billing practices."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per UHC coverage criteria, CMA is medically necessary for developmental delay/ID/ASD or multiple congenital anomalies. The patient has a single‑organ congenital anomaly without documented developmental delay/ID/ASD, so medical necessity is not met and the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2011,
+    "output_tokens": 2359,
+    "total_tokens": 4370
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for \"BRCA1/2 testing\" per the provided clinical information; policy pertains to BRCA1, BRCA2, PALB2 testing."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy explicitly states: \"Genetic testing in minors for BRCA1, BRCA2, and PALB2 variants... is considered investigational.\" The patient is 12 years old, a minor, and therefore does not meet the policy's age-related eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing to be performed in a setting with \"suitably trained health care providers\" who can give pre- and post-test counseling. The clinical information states pre-test genetic counseling has been completed and post-test follow-up is planned, satisfying the policy's provider/counseling setting requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific medical indications (personal or family cancer history or >5% prior-probability, etc.). The patient has congenital choanal atresia and a maternal growth abnormality but no documented personal or family history of cancers meeting the policy criteria; thus the patient does not meet a defined medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes some situations where prior limited testing or affected-relative testing strategy is relevant, but it does not specify a required prior test for this clinical scenario; the provided patient information (nondiagnostic FISH) is not identified in the policy as a required prior test for BRCA1/2 testing."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy includes family-history-based eligibility criteria for BRCA1/2 testing. The patient record contains no report of a family history of breast, ovarian, pancreatic, or prostate cancer; only a maternal growth abnormality is reported, which does not meet the policy's family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed and is recommended. The clinical information documents that pre-test genetic counseling has been completed and post-test follow-up is planned, meeting the policy's genetic counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to BRCA1/2 testing; no CPT code selection can be made solely from the policy text and patient information."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy: \"Genetic testing in minors for BRCA1, BRCA2, and PALB2 variants for hereditary breast and ovarian cancer syndrome is considered investigational.\" The patient is a 12-year-old minor; despite counseling being completed, the policy deems such testing investigational in minors and therefore not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18927,
+    "output_tokens": 1823,
+    "total_tokens": 20750
+  }
+}

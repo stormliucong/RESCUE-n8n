@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member be <21 years of age for ES; patient is 8 years old, meeting the age requirement (policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The policy requires an 'appropriate genetic and family history evaluation' and a clinical letter with specific elements be provided for ES. The patient is being evaluated by a general pediatrician and there is no documentation presented of the required clinical evaluation/letter or pre-test counseling; therefore ordering requirements in the policy are not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines explicit phenotype criteria for medical necessity (e.g., global developmental delay in children <5, moderate/severe ID, multiple congenital anomalies, OR meeting TWO listed neurodevelopmental criteria). The patient has hypotonia and motor delay (consistent with neuromuscular symptoms) but does not meet any single listed criterion or TWO of the listed criteria documented in the file; thus the clinical indication in policy is not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires prior testing documentation and that prior ES/WGS not have been performed and that alternate etiologies and first-tier testing be considered and documented. While prior Fragile X testing was nondiagnostic and no prior ES/WGS reported, there is no documentation of the complete required prior evaluation/clinical letter or rule-out of alternate etiologies per policy; therefore required prior evaluation/testing is not documented as completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires inclusion of family history in the clinical evaluation/letter but does not define a specific family-history or consanguinity criterion that alone makes ES eligible. The patient has a sibling with autism, but the policy does not explicitly list this family history as an independent coverage eligibility criterion."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy and cited ACMG guidance require pretest genetic counseling (by a medical geneticist or affiliated genetic counselor) and written informed consent for ES. The patient record states pre-test genetic counseling was not performed, so counseling requirements in the policy are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy specifies CPT 81415 for proband exome sequencing (WES) when analyzing the entire exome; the ordered test is WES for the proband."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the Cigna exome sequencing guideline all listed criteria must be met for ES coverage (including required clinical evaluation/letter, phenotype-based medical indication, documentation of prior testing where applicable, and pretest counseling). Although age (8 years) and prior Fragile X testing are noted, required documentation of the comprehensive genetic/family history evaluation and pretest genetic counseling is absent and the clinical phenotype does not meet the policy's defined indications; therefore the test is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10471,
+    "output_tokens": 2383,
+    "total_tokens": 12854
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient is being considered for whole exome sequencing per the clinical information; policy defines WES as the applicable test."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy coverage is defined for individuals <18 years for evaluation of unexplained congenital/neurodevelopmental disorders; patient is 3 years old, meeting the age criterion (policy Section II.1)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires evaluation by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor and counseling about risks prior to WES (Section II.1.a); the patient was referred by a developmental pediatrician and no genetic counseling has been done, so ordering/provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES meets coverage criteria for evaluation of unexplained congenital or neurodevelopmental disorder in individuals <18 when criteria are met (Section II.1). The patient is a 3-year-old with multiple congenital anomalies and an unexplained condition, which fits this medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The pediatric WES coverage criteria do not explicitly require completion of prior specific tests (e.g., CMA or karyotype) before WES (Section II.1). Although the patient had a nondiagnostic karyotype, the policy does not mandate specific prior testing for the pediatric indication."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The WES pediatric coverage criteria do not make family history or consanguinity a required eligibility criterion (Section II.1). The patient’s family history (mother with long QT) is noted but is not a specified coverage requirement in the policy for this indication."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires pre-test counseling by an ABMGG board-certified medical geneticist or ABGC board-certified genetic counselor (Section II.1.a); the patient has had no genetic counseling to date, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT code mappings for WES. Therefore the policy text does not identify a specific CPT code to use."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age and medical-indication criteria for pediatric WES (Section II.1) and prior karyotype was nondiagnostic, the policy requires evaluation and pre-test counseling by an ABMGG-certified geneticist or an ABGC-certified genetic counselor (Section II.1.a). These provider/counseling requirements have not been met (no genetic counseling done), therefore the policy’s conditions for coverage are not satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22442,
+    "output_tokens": 1872,
+    "total_tokens": 24314
+  }
+}

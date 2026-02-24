@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states 'whole genome sequencing (WGS) has been ordered.' Coverage determination will therefore evaluate WGS. (Patient fact)"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-based criteria for WES/WGS reference features diagnosed by age (e.g., intellectual disability diagnosed by 18 years; global developmental delay onset prior to 5 years). The patient is 2 years old with developmental delay/intellectual disability, meeting the policy's age-related criteria. (Policy: WGS criteria; Patient fact)"
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The patient is being evaluated by and the test was ordered by a medical geneticist. (Policy requirement; Patient fact)"
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists global developmental delay and intellectual disability (diagnosed by 18 years) as qualifying clinical indications for WGS. The patient has developmental delay and intellectual disability without a specific syndrome, which satisfies those clinical criteria. (Policy criteria; Patient fact)"
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy for WGS requires 'Neither CMA nor WES have been performed' prior to WGS. Patient history lists prior Fragile X testing (nondiagnostic) but does not report prior CMA or WES, so the patient's prior-testing status meets the policy requirement. (Policy requirement; Patient fact)"
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists family history of similar features or consanguinity as supportive criteria. While the patient has a paternal history of Long QT syndrome, that is not a first/second-degree family member with similar neurodevelopmental features nor consanguinity; thus the patient does not meet the policy family-history criterion. (Policy criteria; Patient fact)"
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended prior to WES or WGS.' The patient had pre-test counseling with a genetic counselor and plans for post-test counseling, meeting the counseling recommendation in the policy. (Policy guidance; Patient fact)"
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's Applicable Codes list maps whole genome sequence analysis to CPT code 81425 ('Genome; sequence analysis'), which corresponds to the requested WGS. (Policy Applicable Codes)"
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "From an adjudication perspective, all specified WGS coverage criteria in the policy are met: patient is a pediatric case with global developmental delay/intellectual disability (policy clinical indication), test ordered by a medical geneticist (policy ordering-provider requirement), patient is 2 years old (age criteria satisfied), CMA/WES have not been performed (policy prior-test requirement), and pre-test genetic counseling was completed (policy counseling recommendation). Therefore WGS is covered per the policy. (Policy criteria; Patient facts)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36943,
+    "output_tokens": 2240,
+    "total_tokens": 39183
+  }
+}

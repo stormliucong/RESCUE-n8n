@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical information states whole genome sequencing (WGS) has been ordered as the next-tier diagnostic test after a nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Per the policy, whole genome sequencing is only described as medically necessary in the rapid/critically ill infant context; otherwise WGS is considered investigational. The patient is a 13-year-old who is not a critically ill infant, so the age/acuity-specific eligibility for covered WGS is not met."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics; the order was placed by a medical geneticist, which satisfies the clinician/expertise requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy states WGS is investigational for diagnosis in situations other than rapid use in critically ill infants. The patient (13 y/o, not critically ill) does not meet the policy's medical-indication criteria for covered WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior appropriate genetic testing (eg, chromosomal microarray) before escalation to exome/genome testing; the patient had a nondiagnostic CMA, meeting the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies family-history examples relevant to some rapid-sequencing indications, but does not define family-history/consanguinity criteria specific to non-rapid WGS for non-critically ill children. The provided family history (sibling short stature) is not one of the explicit family-history examples for eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy for WES/WGS evaluation requires counseling about risks of genetic testing by someone with genetics expertise. The patient declined genetic counseling prior to testing, so counseling requirements were not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT 81425 corresponds to clinical whole genome sequence analysis/interpretation."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy WGS is considered investigational for diagnosis in situations other than rapid testing of critically ill infants. The patient is a non-critically ill 13-year-old with nondiagnostic CMA; therefore WGS is not covered per the policy (additionally genetic counseling requirement was not met)."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14838,
+    "output_tokens": 3785,
+    "total_tokens": 18623
+  }
+}

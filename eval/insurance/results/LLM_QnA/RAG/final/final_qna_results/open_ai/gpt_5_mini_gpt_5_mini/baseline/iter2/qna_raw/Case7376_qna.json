@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The note explicitly states whole exome sequencing (WES) has been ordered for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC sequencing policies do not impose strict upper/lower age limits for WES; age-based eligibility is not specified for WES and the 73-year age does not conflict with policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires testing be ordered by or in consultation with appropriate clinicians/genetics professionals; the patient was referred by a neurologist and pre-test counseling was completed with a genetic specialist, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC considers WES medically necessary for unexplained major abnormalities or suspected genetic disorders after prior testing; the patient has an unexplained major abnormality involving ≥1 organ system and a suspected genetic etiology."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC requires prior appropriate genetic testing where indicated; the patient had prior FISH testing that was nondiagnostic, and appropriate prior testing has been documented before WES."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient reports a sister with triple-negative breast cancer; this positive family history is relevant to consideration of hereditary predisposition and supports genetic evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre‑test genetic counseling for sequence-based testing; the patient completed pre-test counseling with a genetic specialist, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 is the correct code for whole exome sequencing (proband or singleton exome), which corresponds to the ordered WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets UHC coverage criteria: unexplained major abnormality suggesting genetic etiology, prior targeted testing nondiagnostic, pre-test genetic counseling documented, and appropriate provider involvement; therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1983,
+    "output_tokens": 1971,
+    "total_tokens": 3954
+  }
+}

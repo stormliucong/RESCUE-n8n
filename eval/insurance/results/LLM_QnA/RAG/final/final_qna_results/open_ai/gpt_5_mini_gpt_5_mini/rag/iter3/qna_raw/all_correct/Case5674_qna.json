@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states the team plans whole exome sequencing (WES) to investigate a possible genetic epilepsy syndrome."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria apply to 'children' for standard WES. The patient is a 9-year-old child, which meets the age-related (child) criterion in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling. Patient has had multiple visits with a genetic counselor and arrangements for genetics follow-up, satisfying the policy's provider/counseling requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'persistent seizures' among clinical features suggesting a genetic disease and states WES is medically necessary when prior testing is nondiagnostic. The patient has persistent seizures and a nondiagnostic CMA, meeting the medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing (eg, chromosomal microarray and/or targeted single-gene testing) to be nondiagnostic or that a genetic etiology is still considered likely despite prior testing. The patient had a prior CMA that was nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of sudden unexplained death in first- or second-degree relatives before age 35 as relevant. The patient has an uncle (second-degree relative) with sudden unexplained death before age 35, meeting the family-history criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an individual with experience/expertise. The patient has had multiple visits with a genetic counselor and planned post-test genetics follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP WES/WGS policy text does not specify CPT or billing codes for WES; no CPT code mapping is given in the policy document."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, standard WES may be considered medically necessary for children when all criteria are met: evaluation/counseling by genetics expertise (met), potential to change management (implied by clinical evaluation for genetic epilepsy), and prior genetic testing nondiagnostic (CMA nondiagnostic). Patient facts satisfy these policy requirements; therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14831,
+    "output_tokens": 1922,
+    "total_tokens": 16753
+  }
+}

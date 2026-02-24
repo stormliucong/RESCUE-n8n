@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested to evaluate an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP 2.04.59 policy does not define age-based eligibility limits for WES; it addresses postnatal CMA as first-line but does not specify age criteria for WES."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and that testing should be ordered in the clinical genetics context but does not specify explicit ordering-provider (specialty/type) requirements for WES."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "FEP 2.04.59 defines medical indications for CMA (apparently nonsyndromic developmental delay/ID, ASD, multiple congenital anomalies) and states NGS panels are investigational; it does not define specific medical-indication criteria for WES within this policy (WES is addressed in a separate policy)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes a stepwise approach (first-tier fragile X and CMA) in guidelines but does not state an explicit required prior-test completion rule for WES in this document. The patient did have nondiagnostic CMA, but the policy does not mandate specific prior testing for WES here."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not set family-history or consanguinity criteria specific to WES; although family history is noted in the patient record (affected sibling), the policy does not define family-history–based eligibility for WES in this document."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends genetic counseling generally and that it should be performed by experienced individuals, but it does not state an explicit coverage precondition or formal counseling requirement specific to WES in this policy. The patient did complete pre-test counseling."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The test requested is whole exome sequencing (WES); among the provided CPT options, 81415 corresponds to exome sequence analysis/interpretation and is the best match for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under FEP 2.04.59, chromosomal microarray is the medically necessary first-line test for nonsyndromic developmental delay/ID; the policy states next-generation sequencing panels are considered investigational in all such cases and WES is not authorized by this policy (it is addressed separately). Based solely on this provided policy, WES is not supported/covered here."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15708,
+    "output_tokens": 2047,
+    "total_tokens": 17755
+  }
+}

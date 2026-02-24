@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient info states she is 'undergoing BRCA1/2 testing.' Basis: patient clinical information."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: 'BRCA1/2 gene testing is proven and medically necessary for individuals with a personal history of Breast Cancer diagnosed at age 65 or younger.' Patient is 46 years old with a personal history of breast cancer, meeting the age-based criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy strongly recommends pre-test genetic counseling and genetic expertise but does not mandate a specific ordering provider specialty/type as a coverage requirement. Patient was referred by a nurse practitioner and completed counseling (patient fact)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists BRCA1/2 testing as medically necessary for individuals with a personal history of breast cancer (≤65) and/or with a personal history plus a family history that includes BRCA-related cancers or ≥2 affected relatives on same side. Patient has a personal history of breast cancer and a maternal history of pancreatic cancer plus at least two additional affected relatives on the same side, meeting the medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not require completion of any specific prior test before BRCA1/2 germline testing. (Patient fact: prior CMA was nondiagnostic, but CMA is not a policy prerequisite.)"
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy includes family history criteria (e.g., first-/second-degree relative with pancreatic cancer or ≥2 affected relatives on same side). Patient has a mother with pancreatic cancer and at least two additional affected maternal relatives, which is relevant to eligibility."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'strongly recommends' pre-test genetic counseling but does not state it as a strict coverage requirement. Patient completed pre-test genetic counseling and plans post-test follow-up (patient fact)."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy Applicable Codes list 81162 for 'BRCA1 ... BRCA2 ... gene analysis; full sequence analysis and full duplication/deletion analysis' which corresponds to BRCA1/2 testing requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy coverage rationale BRCA1/2 testing is medically necessary for individuals with personal history of breast cancer diagnosed ≤65 (patient is 46) and the patient also has relevant family history (maternal pancreatic cancer and multiple affected relatives). Pre-test counseling completed. Therefore BRCA1/2 testing is covered per the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 38638,
+    "output_tokens": 2045,
+    "total_tokens": 40683
+  }
+}

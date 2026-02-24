@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-references (e.g., diagnostic criteria referencing onset/diagnosis by 18 years) are specified for pediatric indications; the patient is 1 year old and thus within the pediatric age references in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient was referred by a neurologist, meeting the ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UnitedHealthcare policy requires either (A) the proband to have one of: multiple congenital anomalies, moderate/severe intellectual disability by age 18, global developmental delay, or early epileptic encephalopathy; or (B) two or more listed features (which include autism plus additional features such as congenital anomaly, family members with similar features, consanguinity, etc.). The record documents features concerning for ASD but does not document a second qualifying feature in the proband (e.g., confirmed global developmental delay, congenital anomaly, hypotonia, epilepsy) or clearly similar affected first/second-degree relatives, so the specific medical-indication criteria in the policy are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate prior CMA before WES for postnatal cases (CMA is a prerequisite only in specified prenatal pathways); patient did have prior nondiagnostic CMA, but the policy does not explicitly require prior testing for WES in this outpatient pediatric context."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists family history/affected first- or second-degree relatives as a relevant criterion; the patient has a maternal aunt (a second-degree relative) with multiple congenital anomalies, so a relevant family history is present per the policy's family-history considerations."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make counseling an explicit coverage prerequisite; patient did complete pre-test genetic counseling, but the policy frames counseling as recommendation rather than a required coverage criterion."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for exome (sequence analysis), which corresponds to WES as requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although ordering-provider and age criteria are met and prior CMA was nondiagnostic, UnitedHealthcare coverage requires the proband to meet specific clinical-feature criteria (one of the listed major features or two or more of the secondary features). The patient has suspected ASD but lacks documentation of a second qualifying proband feature (e.g., global developmental delay, congenital anomalies, hypotonia, epilepsy) or clearly similar affected first/second-degree relatives; therefore the policy's defined medical necessity criteria are not satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36944,
+    "output_tokens": 3591,
+    "total_tokens": 40535
+  }
+}

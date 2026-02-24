@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1/2 testing (document states referral for BRCA1/2 testing)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age requirement for BRCA analyses is 'Age 18 years or older' for relevant BRCA tests; the patient is 75, which meets this criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify required ordering provider specialty/type for BRCA testing; it specifies pre/post-test genetic counseling by an appropriate provider but not a required ordering provider specialty."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows predisposition testing when the member has a first-degree relative who meets 'Diagnostic Testing for Symptomatic Individuals' (male breast cancer is listed). The patient has a brother with breast cancer (first-degree relative), meeting the policy clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires no prior full BRCA1/2 sequencing (and no known family mutation) for full sequence testing; the patient has no prior genetic testing. Pre-test counseling was completed, meeting the counseling prerequisite."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria use family history; patient has a first-degree relative (brother) with breast cancer, a relevant family history per the guideline."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider; the patient completed pre-test counseling and post-test follow-up with a genetic counselor is planned."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy lists CPT 81162 for BRCA1/2 full sequencing plus deletion/duplication and states 81162 is likely most appropriate when sequencing and del/dup are performed concurrently; 'BRCA1/2 testing' in this context best corresponds to comprehensive testing (81162)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets policy criteria: age ≥18, relevant family history (first-degree relative with male breast cancer), no prior BRCA testing, and required pre-test counseling completed—therefore BRCA testing is covered per the guideline."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10244,
+    "output_tokens": 2597,
+    "total_tokens": 12841
+  }
+}

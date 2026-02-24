@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states consideration of whole-exome sequencing (WES) after a nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna WES coverage criteria do not impose a strict age cutoff and apply across ages for appropriate indications; no age-based exclusion applies to this 34-year-old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's WES policy requires appropriate documentation of clinical indication and informed consent but does not mandate a specific ordering provider specialty in the information provided; the record shows referral by oncology and multiple genetics visits but policy does not specifically require a particular provider type."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Per Cigna WES criteria, WES is generally covered for individuals with unexplained developmental delay/intellectual disability, progressive neurologic disorder, or multiple congenital anomalies or when prior targeted testing strongly suggests broad sequencing. This patient has a single congenital anomaly (choanal atresia) without reported developmental delay or multiple major anomalies, so she does not meet the defined medical indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Cigna typically requires prior CMA (and targeted testing when a specific disorder is suspected). The patient had a nondiagnostic chromosomal microarray, satisfying the required prior CMA; no specific additional prior single-gene test was documented as clearly indicated by the phenotype."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Cigna's criteria consider a relevant family history (affected relatives with similar phenotype or consanguinity) as supportive. The only family history reported is a mother with breast cancer at 50, which is not relevant to choanal atresia or the indication for WES."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Cigna requires documentation of pre-test genetic counseling/informed consent for broad genomic testing; the patient has seen a genetic counselor multiple times, meeting this counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole-exome sequencing (proband/or single exome), which maps to CPT code 81415."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although prior CMA and genetic counseling are documented and no age/provider exclusions apply, the patient does not meet Cigna's defined medical necessity criteria for WES (no developmental delay, progressive neurologic disorder, or multiple congenital anomalies). Therefore WES would not be covered under the payer's standard medical necessity criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1964,
+    "output_tokens": 1629,
+    "total_tokens": 3593
+  }
+}

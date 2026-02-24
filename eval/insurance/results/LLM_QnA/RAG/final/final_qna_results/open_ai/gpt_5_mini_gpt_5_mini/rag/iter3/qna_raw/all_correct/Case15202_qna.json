@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1 and BRCA2 testing to evaluate hereditary breast/ovarian cancer risk (patient statement)."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "The policy specifies age-based criteria for BRCA testing in individuals with breast cancer (eg, diagnosed ≤45, 46–50 with additional features, ≤60 for triple-negative). The patient is 65 and does not meet any listed age-based criteria in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers who provide pre- and post-test counseling. The patient had pre-test counseling with a genetic specialist and plans for post-test follow-up, satisfying provider/counseling setting requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific clinical indications (personal history of breast cancer meeting age/phenotype criteria, certain family histories, other high-risk cancers). The patient has a malignant phyllodes tumor and is 65 with no reported qualifying family cancer history; these do not meet the policy's listed medical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses prior/limited testing situations (eg, prior limited single-gene testing or testing affected family members first) but does not specify required prior tests for this precise scenario; no required prior test completion is documented."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies relevant family history (close blood relatives with breast/ovarian/pancreatic/prostate cancer, etc.) as qualifying criteria. The only family history reported is a sister with an immunologic/hematologic disorder (not a qualifying cancer), so patient does not have the specified family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy recommends formal genetic counseling by experienced providers for genetic testing. The patient completed pre-test counseling with a genetic specialist and plans post-test follow-up, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not list or map CPT codes to BRCA1/BRCA2 testing; therefore a specific CPT code cannot be determined from the policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy, BRCA1/2 testing is medically necessary only when specific personal cancer features or qualifying family histories are met. The patient (age 65 with a malignant phyllodes tumor and no qualifying family cancer history) does not meet the policy's coverage criteria, so the test is not covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18954,
+    "output_tokens": 2035,
+    "total_tokens": 20989
+  }
+}

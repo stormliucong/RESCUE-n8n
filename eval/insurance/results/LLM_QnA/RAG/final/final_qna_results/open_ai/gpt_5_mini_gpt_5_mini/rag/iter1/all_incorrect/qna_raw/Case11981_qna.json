@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states Whole Genome Sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies age-based criteria for pediatric evaluation (<18 years) for genome/exome sequencing; the patient is 9 years old, meeting the age criterion (policy Section II.1: \"individuals less than 18 years of age\")."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation/counseling by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor (Section II.1.a). The chart states a \"pre-test discussion with a genetic specialist\" but does not document the provider's ABMGG/ABGC certification, so sufficiency cannot be confirmed from the provided information."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy allows WGS only when WES was unable to identify a causative mutation and clinical suspicion remains (Section II.4). The patient has not had WES per the provided information, so the policy-defined medical indication for WGS is not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires WES (and/or prior tests) before WGS when clinical criteria apply (Section II.4 and II.5). The patient has had fragile X testing but has not had WES; therefore the required prior test (WES) before WGS has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not list family history/consanguinity as a specific mandatory eligibility criterion for pediatric WGS in Section II.1; although the patient has a maternal uncle with an immunologic disorder, the policy's core WGS/WES pediatric criteria do not hinge on this family history."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires pre-test counseling by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor (Section II.1.a). The record notes a pre-test discussion with a \"genetic specialist\" but does not document the required ABMGG/ABGC credentialing or that counseling covered the required elements, so this cannot be confirmed."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is Whole Genome Sequencing (WGS); CPT code 81425 corresponds to WGS (best match for the requested whole-genome test)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, WGS MEETS COVERAGE CRITERIA only when WES was performed and unable to identify a causative mutation and clinical suspicion persists (Section II.4). The patient has not had WES (only fragile X testing), and required prior testing/sequence pathway has not been satisfied; therefore WGS is not covered under the policy for this request."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22479,
+    "output_tokens": 2160,
+    "total_tokens": 24639
+  }
+}

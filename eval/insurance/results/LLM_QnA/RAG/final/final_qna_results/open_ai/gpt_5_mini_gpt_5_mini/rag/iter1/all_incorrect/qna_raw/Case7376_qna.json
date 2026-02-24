@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been ordered for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "The policy's Clinical Guideline Coverage Criteria explicitly considers WES/WGS medically necessary for members under 18 in an outpatient setting; the patient is 73 and therefore does not meet the age-based eligibility in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires WES/WGS be ordered by a board-certified medical geneticist or a board-certified physician with specialty in the condition being tested. Patient info only states the order came from a 'neurologist' and does not confirm board certification, so adequacy vs. the policy requirement cannot be determined from provided data."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The policy's overview states WES/WGS may be appropriate when there is no known cause of a patient's symptoms and conventional testing is nondiagnostic or targeted testing is unlikely to provide a diagnosis. The patient has an unexplained major abnormality and prior FISH testing was nondiagnostic, which aligns with those described medical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requests documentation of prior conventional diagnostic testing if performed but does not mandate specific prior tests as an absolute precondition for WES (it even states conventional diagnostic testing is not required prior to WGS). Thus specific required prior testing is not defined; the patient did have nondiagnostic FISH."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy requires submission of the member's family history (three-generation pedigree) as part of the request; the patient reports a sister with triple-negative breast cancer, which is a relevant family history per the policy's documentation requirements."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate genetics professional. The patient information states pre-test counseling was completed with a genetic specialist, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The policy's CPT code table lists 81415 for exome sequence analysis (e.g., unexplained constitutional or heritable disorder), which corresponds to WES ordered for this patient."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient's presentation meets the policy's described medical indications (unexplained symptoms, prior nondiagnostic testing, genetics counseling completed), the policy's formal coverage criteria limit coverage to members under 18 in an outpatient setting. The patient is 73, and the policy states the Plan will not cover WES/WGS for members who do not meet the criteria above, so the test is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 5341,
+    "output_tokens": 2638,
+    "total_tokens": 7979
+  }
+}

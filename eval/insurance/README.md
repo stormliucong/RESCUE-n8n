@@ -1,45 +1,65 @@
-# Insurance Agent Workflows
+# Evaluating LLM Agents for Genetic Testing Insurance Workflows 
 
-📁 This folder contains the source codes, experimental outputs, and evaluation files associated with our study: **Leveraging Web-Search-Powered LLM Agents for Question Answering on Live Genetic Testing Insurance Policies**.
+📁 This folder contains the source codes, experimental outputs, and evaluation files associated with our study: **Evaluating Large Language Model Agents for Genetic Testing Insurance Workflows: An End-to-End Assessment of Retrieval and Reliability**.
+
+---
+
+## Requirements
+- Python 3.10+
+- OpenAI API key
+- Perplexity API key
+
+---
+
+## Installation
+1. Clone the repository
+```bash
+git clone https://github.com/stormliucong/RESCUE-n8n.git 
+cd RESCUE-n8n/eval/insurance
+```
+
+2. Create environment
+```bash
+conda create -n insurance_agent python=3.10 -y
+conda activate insurance_agent
+```
+
+3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+4. Set API Keys
+Create a `.env` file in the project root:
+
+```bash
+touch .env
+```
 
 ---
 
 ## 🧠 Purpose
 
-This project investigates how web-search-capable LLM agents can support three key tasks in insurance policy workflows related to **genetic testing**, specifically for in-network labs like **GeneDx**:
+This study systematically evaluates the reliability of web-search-enabled LLM agents in supporting insurance workflows for **genetic testing**.
+We assess performance across four sequential tasks:
 
-1. **In-Network Insurance Provider Retrieval** & **Policy Document Retrieval**
-2. **LLM Agent for Answering Relevant Questions**
-3. **Pre-Authorization Form Completion**
+1. **In-Network Insurance Provider Retrieval** 
+2. **Policy Document Retrieval**
+3. **Patient-Policy Matching**
+4. **LLM Agent for Answering Relevant Questions**
 
-All workflows aim to reduce administrative burden and improve access to coverage information in real time.
+The goal is to quantify retrieval sensitivity, ranking robustness, and downstream decision accuracy.
 
 ---
 
-## 📂 Folder & File Descriptions
+## 📂 Folder Descriptions
 
 ### `codes/`
-- **Description**: Contains all scripts and notebooks for LLM-based provider and policy retrieval tasks.
-- - `insurance_provider_retrieval.py`, `insurance_provider_retrieval.ipynb`: Scripts for retrieving GeneDx in-network providers using LLM agents.
-- - `perplexity_insurance.ipynb`: Implementation using Perplexity AI for document search.
-- - `policy_retrieval.py`, `LLM_policy_retrieval_modulized.ipynb`: Main driver script for running policy retrieval experiments across providers and prompts.
-
----
-
-### `insurance_policy/`
-- **Description**: Contains 587 **manually collected genetic testing policy documents** from 311 insurance providers.
-- **Usage**: Serves as the ground truth for evaluating **LLM-based Policy Document Retrieval** performance.
-
----
-
+- **Description**: Contains all the scripts and notebooks for this research.
+### `dataset/`
+- **Description**: Contains all data sources except insurance policies utilized for this research.
 ### `results/`
-- **Description**: Stores all experimental outputs including LLM-generated responses and evaluation summaries.
-
----
-
-### `In-Network_providers.csv`
-- **Description**: Cleaned and curated list of GeneDx in-network providers.
-- **Usage**: Used as reference set for evaluating **In-Network Provider Retrieval** performance.
+- **Description**: Contains all the experiment results for this research.
 
 
 ## 🧪 Experimental Tasks
@@ -47,32 +67,33 @@ All workflows aim to reduce administrative burden and improve access to coverage
 1. **In-Network Provider Retrieval**  
    - Task: Identify insurance companies that are in-network with GeneDx.  
    - Input: Prompted queries via ChatGPT and Perplexity.  
-   - Output: JSON list of providers → Compared with `In-Network_providers.csv`.
+   - Output: JSON list of providers → Compared with `In-Network_providers_Update.csv`.
 
 2. **Policy Document Retrieval**  
    - Task: Retrieve official genetic testing policy documents (PDFs or web pages).  
    - Output: Structured JSON with `pdf_links` and `webpage_links`.
 
-3. **LLM Agent for Answering Relevant Questions**  
-   - Task: Given a policy document and patient-specific information, answer key insurance-related questions.  
-   - Examples: Will the test be approved? Is pre-authorization required? What steps are needed for claims?  
-   - Output: Free-text answers grounded in retrieved policy content, manually evaluated for accuracy.
+3. **Patient-Policy Matching**  
+   - Task: Given a patient-specific information, retrieve the best policy utlizing RAG.  
+   - Output: Rank, policy name
 
-4. **Pre-Authorization Form Completion**  
-   - Task: Generate a structured JSON submission based on retrieved policy and patient case.  
-   - Output: Auto-filled form submitted via HTTP POST
+4. **LLM Agent for Answering Relevant Questions**  
+   - Task: Given a policy document and patient-specific information, answer key insurance-related questions.  
+   - Examples: Will the test be approved? Is pre-authorization required? Is the age criteria meet?  
+   - Output: Answer with a brief reasoning.
 ---
 
 ## 📘 Related Manuscript
 
 This project supports the manuscript titled:
 
-**"Leveraging Web-Search-Powered LLM Agents for Question Answering on Live Genetic Testing Insurance Policies"**
+**"Evaluating Large Language Model Agents for Genetic Testing Insurance Workflows An End-to-End Assessment of Retrieval and Reliability"**
 
 Key contributions:
 - Evaluation of real-time LLM-based retrieval
 - Task-specific prompting & evaluation metrics
-- JSON-based automation for clinical workflows
+- Assessing LLM agent performance on End-To-End genetic testing insurance workflow
+- Quantify failure modes: retrieval sensitivity, abstention rate
 
 ---
 

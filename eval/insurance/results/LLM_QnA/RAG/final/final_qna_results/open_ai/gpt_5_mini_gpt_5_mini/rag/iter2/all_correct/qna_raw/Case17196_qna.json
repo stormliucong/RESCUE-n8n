@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient info explicitly states a referral for chromosomal microarray (CMA) testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP policy lists clinical indications but does not impose age-based eligibility limits for CMA (postnatal use is specified but no age cutoff)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and clinical/genetics follow-up but does not specify required ordering-provider specialty or other ordering-provider constraints for CMA."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy authorizes CMA as medically necessary for individuals with developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies. The patient has adult neuropsychiatric diagnoses (bipolar/schizophrenia/OCD features) and does not meet those specified indications per the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy allows CMA as a first-line test in the stated indications and does not mandate completion of specific prior tests before CMA; although guidelines mention fragile X as part of first-tier for ASD, the policy does not require prior testing for CMA in general."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's coverage criteria are phenotype-based (developmental delay/ASD/multiple congenital anomalies) and do not define family history or consanguinity criteria for CMA eligibility; the patient’s sibling history is noted but the policy does not make this a coverage criterion."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends formal genetic counseling and states it should be performed by experienced personnel, but it does not state counseling is an explicit precondition for coverage of CMA; the patient has no pre-test counseling, but the policy does not make this an absolute eligibility requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy document does not list or map specific CPT codes to CMA testing; no CPT code is specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the FEP policy, CMA is covered only for developmental delay/intellectual disability, ASD, or multiple congenital anomalies. The patient's indication is adult neuropsychiatric illness (bipolar/schizophrenia/OCD features), which does not meet the policy's defined medically necessary indications; therefore the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15705,
+    "output_tokens": 1809,
+    "total_tokens": 17514
+  }
+}

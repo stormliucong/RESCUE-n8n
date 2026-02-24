@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states consideration of whole-exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna WES criteria are not age-limited in general; no specific age-based exclusion or requirement applies to this adult patient in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Cigna typically requires ordering/consultation by a genetics provider or documentation of genetics involvement for WES. The record states referral by oncology and multiple genetic counselor visits but does not specify who will actually place the WES order, so whether the ordering provider meets payer-specific requirements cannot be determined from the provided information."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Cigna’s WES coverage is generally limited to individuals with features such as developmental delay/intellectual disability, autism with DD/ID, or multiple congenital/anomalous findings or a high suspicion of a Mendelian disorder after prior testing. This patient has a single congenital anomaly (choanal atresia) and no documented DD/ID or additional anomalies, so she does not meet the defined medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Cigna requires prior appropriate testing (e.g., nondiagnostic chromosomal microarray) before WES in many indications. The patient had a nondiagnostic CMA as stated."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family-history/consanguinity criteria for WES would be met by relatives with similar congenital findings or a known Mendelian condition. The only family history noted is a mother with breast cancer at age 50, which is not relevant to the patient’s choanal atresia or WES eligibility here."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Cigna requires documentation of genetic counseling for complex molecular testing; the patient has seen a genetic counselor multiple times, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole-exome sequencing, which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although prior CMA was nondiagnostic and genetic counseling occurred, Cigna’s coverage criteria require specific clinical indications (e.g., multiple congenital anomalies, DD/ID, or strong suspicion of a Mendelian disorder). The patient has an isolated choanal atresia without additional syndromic features or DD/ID, so WES does not meet medical necessity per the payer policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1964,
+    "output_tokens": 2208,
+    "total_tokens": 4172
+  }
+}

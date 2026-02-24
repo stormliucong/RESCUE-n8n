@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The chart states whole exome sequencing (WES) is being requested for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna WES medical policy does not impose a specific age cutoff for coverage; pediatric patients (including neonates/infants) may be eligible, so no age-based exclusion applies."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Cigna requires tests be ordered by a qualified clinician; the request was placed by the infant’s general pediatrician (a licensed ordering physician), which satisfies ordering-provider requirements in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Cigna criteria consider WES medically appropriate for individuals with congenital anomalies and/or an evolving complex neurodevelopmental disorder suggestive of a genetic etiology; this 6‑week‑old has a congenital abnormality and concern for evolving neurodevelopmental disorder."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Cigna policy generally requires first‑line testing (e.g., chromosomal microarray) for multiple congenital anomalies/developmental delay prior to WES unless there is a documented reason to proceed directly; the patient has had no prior genetic testing and no justification for bypassing CMA is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a positive family history (a sibling with dysmorphic features), which is relevant and supports genetic evaluation per Cigna criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna requires documentation of pre‑test (and often post‑test) genetic counseling by a qualified provider; the family declined genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) and is the appropriate CPT code for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication and ordering provider are consistent with Cigna coverage criteria, required prerequisites (documentation of prior first‑line testing such as CMA or a justified reason to omit it, and documented genetic counseling) are not met; therefore under Cigna policy the WES request is not covered as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 1958,
+    "total_tokens": 3933
+  }
+}

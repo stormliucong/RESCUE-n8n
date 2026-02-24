@@ -1,0 +1,1 @@
+{"Providers": ["All commercial insurance plans", "Medicaid plans", "Medicare", "TRICARE", "Numerous state- and region-specific commercial and government health plans (varies by U.S. state)"], "source_url": "https://www.genedx.com/commercial-insurance-in-network-contracts/"}

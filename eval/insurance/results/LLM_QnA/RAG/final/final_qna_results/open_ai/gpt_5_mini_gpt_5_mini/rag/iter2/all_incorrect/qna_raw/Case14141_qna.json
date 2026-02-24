@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states 'whole exome sequencing (WES) is planned.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: standard WES/WGS medically necessary for pediatrics under 21. Patient is 7 years old, meeting the <21 age criterion (Policy I)."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires the individual be 'evaluated by a clinician with expertise in clinical genetics' (Policy I). The patient data notes referral by an oncologist and that pre-test genetic counseling was completed, but does not explicitly state the ordering/evaluating provider is a clinician with expertise in clinical genetics, so insufficient information to determine compliance."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy I: WES is indicated for unexplained congenital or neurodevelopmental disorder when prior genetic testing is non-diagnostic or presentation fits the policy examples. Patient has multiple congenital anomalies and prior CMA was nondiagnostic—meets a listed medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy I lists 'previous genetic testing is non-diagnostic' as an acceptable criterion. Patient had prior chromosomal microarray (CMA) reported as nondiagnostic, satisfying the prior testing requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy Guidelines list family history of developmental delay as a relevant clinical feature. Patient has a sibling with global developmental delay, which is a specified relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling be provided by an individual with expertise in genetic medicine. Patient information states pre-test genetic counseling has been completed with arrangements for post-test counseling, satisfying the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Coding section lists 81415 among 'Covered when medically necessary' procedure codes for WES/WGS; 81415 corresponds to exome sequencing and matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy I and patient facts: patient is pediatric (<21), has multiple congenital anomalies, prior CMA nondiagnostic (meets the 'previous testing non-diagnostic' criterion), pre-test genetic counseling completed, and CPT 81415 (WES) is listed as covered when medically necessary. These elements satisfy the policy coverage criteria for standard WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14866,
+    "output_tokens": 3272,
+    "total_tokens": 18138
+  }
+}

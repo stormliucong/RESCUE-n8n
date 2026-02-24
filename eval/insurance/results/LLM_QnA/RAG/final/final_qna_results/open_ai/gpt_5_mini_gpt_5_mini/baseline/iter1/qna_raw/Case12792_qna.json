@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The referral explicitly requested BRCA1/2 testing for this 12-year-old."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP coverage for BRCA testing is based on personal/family cancer history or known familial pathogenic variant rather than a strict age cutoff; no payer-specific age exclusion is noted in the provided context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The case states the test was ordered by a family medicine physician; BCBS FEP policies typically do not mandate a specific specialist for ordering BRCA testing beyond documentation of appropriate indication, and no explicit ordering-provider restriction is provided here."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS FEP criteria require personal or family history of BRCA-related cancers or testing for a known familial pathogenic variant. The patient has congenital choanal atresia and a maternal growth abnormality—neither meets BRCA testing clinical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "There are no payer-specified prior testing requirements for BRCA1/2 sequencing in this scenario; the prior nondiagnostic FISH is unrelated to BRCA sequencing requirements."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "BRCA coverage criteria hinge on relevant family history of breast/ovarian (or related) cancers; the provided family history cites only a maternal growth abnormality, which is not a BRCA-relevant cancer history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP commonly requires documentation of genetic counseling for hereditary cancer testing. The record states pre-test genetic counseling was completed and post-test follow-up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Among the provided CPT choices, 81277 is the option in the single-gene molecular sequencing code range consistent with BRCA1/2 single-gene testing; other listed codes correspond to exome/genome or different assays."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although counseling is documented, BCBS FEP coverage requires appropriate personal or family history of BRCA-associated cancers or a known familial pathogenic variant. The patient lacks BRCA-relevant personal or family cancer history, so the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1963,
+    "output_tokens": 2039,
+    "total_tokens": 4002
+  }
+}

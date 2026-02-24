@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states 'whole genome sequencing (WGS)' was ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP coverage for genomic sequencing is applied by clinical indication rather than strict age cutoffs in typical policy language; no payer-imposed age restriction is specified for WGS in this context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Typical BCBS_FEP policy does not mandate a specific ordering provider specialty for WGS beyond a qualified clinician/genetics team; the provided information does not state a required specialty, so ordering-provider requirement is not specified."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP criteria consider WES/WGS medically necessary for unexplained multiple congenital anomalies or multisystem congenital findings. The infant has multiple congenital anomalies affecting multiple organ systems, which meets that indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP commonly requires first‑tier testing (e.g., chromosomal microarray) prior to WES/WGS; only Fragile X testing (nondiagnostic) is documented and chromosomal microarray is not reported, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The family history includes an older sibling with autism spectrum disorder. While not required, BCBS_FEP recognizes relevant family history as supportive for genetic evaluation and it is present here."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP policies generally require documentation of pre-test genetic counseling for genomic sequencing; the record documents pre-test counseling and planned post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT options, 81425 corresponds to large-scale clinical genomic sequencing (exome/genome level) and is the best match for a WGS request in the absence of a specific WGS-only code in the choices."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications and counseling requirements are met, BCBS_FEP coverage requires appropriate prior testing (notably chromosomal microarray) before WGS; because CMA is not documented as completed, the request does not satisfy all coverage prerequisites and would not be approved as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1965,
+    "output_tokens": 2359,
+    "total_tokens": 4324
+  }
+}

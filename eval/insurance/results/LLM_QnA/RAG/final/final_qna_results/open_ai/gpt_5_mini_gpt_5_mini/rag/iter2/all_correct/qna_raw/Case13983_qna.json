@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient statement: \"whole genome sequencing (WGS) is being pursued\" — test explicitly requested is WGS."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes infants/children (rapid WGS/WES for critically ill infants; WES/WGS guidance applies to pediatric patients). Patient is a 7-week-old infant which meets the age category in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion for standard testing requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics. The ordering provider here is a gynecologist; there is no documentation the infant was evaluated by a clinician with expertise in clinical genetics (only pre-test counseling by a genetic counselor)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines explicitly list \"Infant with high risk stratification on evaluation for a Brief Resolved Unexplained Event (BRUE) ...\" and \"Significantly abnormal electrocardiogram (ECG) ... possible channelopathies, arrhythmias, cardiomyopathies\" as clinical features suggesting a genetic disease. Patient has a high‑risk BRUE and a significantly abnormal ECG."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "For standard WES/WGS the policy expects prior genetic testing (eg, CMA and/or targeted single‑gene testing) or prior testing failure. The record shows only prior FISH (nondiagnostic); there is no documentation of CMA or targeted single‑gene testing required by the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as relevant. Patient has a maternal uncle with unexplained developmental regression, which meets the family‑history criterion in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling; patient had pre‑test counseling completed with a genetic counselor, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT codes for WGS/WES; no CPT mapping is given in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical features (high‑risk BRUE with abnormal ECG and relevant family history) meet medical‑indication examples, the policy limits WGS coverage to rapid WGS for critically ill infants in NICU/PICU or WGS in specific pediatric contexts. There is no documentation the infant is critically ill/in NICU (required for rapid WGS), prior recommended genetic testing (eg, CMA) is not documented, and the genetic evaluation requirement by a clinician with genetics expertise is not documented. Based on the policy criteria, the requested WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14898,
+    "output_tokens": 3280,
+    "total_tokens": 18178
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: standard WES/WGS may be medically necessary for evaluation in pediatrics under 21 years. Patient is an 8‑week‑old infant (<21 years), so age criterion is satisfied."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual to have been evaluated by a clinician with expertise in clinical genetics. Patient was referred by a neurologist; there is no documentation that the patient was evaluated by a clinician with expertise in clinical genetics, so the provider requirement is not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists significant hypotonia as a clinical feature suggesting genetic disease and allows WES/WGS when previous genetic testing is non‑diagnostic. Patient has significant hypotonia and prior nondiagnostic FISH, meeting the medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy allows WES/WGS when one of several criteria is met (including prior genetic testing non‑diagnostic) and also permits WES/WGS as first‑line testing in some situations; it does not universally mandate completion of a specific prior test. (Patient did have nondiagnostic FISH.)"
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history (including developmental delay) as relevant. Patient has an older sibling with unexplained developmental regression, which is relevant to eligibility per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling about potential risks of genetic testing by someone with genetic expertise. Patient had pre‑test counseling completed with a genetic counselor on multiple occasions and post‑test follow‑up planned, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding lists 81415 among the procedure codes covered when medically necessary for WES/WGS. 81425/81426/81427 were noted in policy history as codes added for rapid testing; the patient requests non‑rapid WGS, so 81415 is the best corresponding covered code listed."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, medical indication (hypotonia, prior nondiagnostic FISH), family history, and genetic counseling meet policy criteria, the policy requires evaluation by a clinician with expertise in clinical genetics as an AND condition for standard WGS. That evaluation is not documented, so the policy's required criteria are not all met and the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14876,
+    "output_tokens": 2931,
+    "total_tokens": 17807
+  }
+}

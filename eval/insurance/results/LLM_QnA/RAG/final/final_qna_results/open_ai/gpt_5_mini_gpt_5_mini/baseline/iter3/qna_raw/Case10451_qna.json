@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states neurology referred the patient for whole exome sequencing (WES) to evaluate an unexplained neurodevelopmental disorder."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose a strict age cutoff for exome sequencing; pediatric onset neurodevelopmental disorders are routinely covered but a specific numeric age criterion is not defined."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policy requires an appropriate ordering clinician, but it does not narrowly restrict orders to only geneticists in all cases; a treating specialist (neurology) commonly meets ordering-provider expectations and the record shows a neurologist placed the order."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage for WES includes unexplained moderate-to-severe intellectual disability/neurodevelopmental disorder; the patient is a child with moderate–severe intellectual disability and an unexplained neurodevelopmental condition, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "Not Answerable",
+      "reasoning": "UHC requires prior relevant testing (notably chromosomal microarray) before WES; CMA was performed and nondiagnostic. However some criteria also require targeted testing such as FMR1 (Fragile X) in males with ID — the patient’s sex is not provided, so completion of all condition-dependent prior tests cannot be determined from the record."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES criteria do not require a specific positive family history or consanguinity for coverage of WES; the sibling’s brief resolved unexplained event is noted but not a specified family-history requirement in the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC generally requires documentation of pre- and/or post-test genetic counseling for clinical WES; there is no documentation of genetic counseling in the record, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (WES) and is the appropriate code for the ordered test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical indication for WES and prior CMA was nondiagnostic, required pre-test genetic counseling is not documented (and some sex-dependent prior testing such as FMR1 may be required). Per UHC policy, lack of required counseling (and any missing condition-dependent prior tests) would prevent approval until documentation is provided."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1999,
+    "output_tokens": 2659,
+    "total_tokens": 4658
+  }
+}

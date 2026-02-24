@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The record explicitly states whole exome sequencing (WES) was requested for the fetus at 22 weeks for evaluation of multiple structural anomalies."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WES coverage criteria are applied and do not impose a strict chronological age cutoff for prenatal/fetal testing; the patient is a 22‑week fetus which falls within prenatal indications but payer age limits are not specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC WES policies require ordering/consultation by or documentation of discussion with an appropriate specialist (e.g., geneticist/genetic counselor). The case documents a referral by neurology and a pre‑test discussion with a genetic specialist, satisfying provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for unexplained multiple congenital/structural anomalies detected on prenatal imaging; the fetus has multiple structural anomalies on ultrasound meeting that clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC prenatal WES typically requires prior standard diagnostic testing (e.g., chromosomal microarray/karyotype) to be non‑diagnostic before WES. Only fragile X testing is documented (nondiagnostic); no CMA/karyotype is documented, so required prior testing is not complete."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for genetic evaluation; the record notes a maternal aunt with dysmorphic features, which is pertinent to the WES indication."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre‑test genetic counseling for WES. The record documents a pre‑test discussion with a genetic specialist, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (proband/fetal exome), which corresponds to CPT 81415 for exome sequencing (proband)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, specialist involvement, counseling, and family history support WES, UnitedHealthcare requires prior standard cytogenomic testing (e.g., chromosomal microarray/karyotype) be non‑diagnostic before WES; those prior tests are not documented, so coverage would be denied until required prior testing is completed/documented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1792,
+    "total_tokens": 3770
+  }
+}

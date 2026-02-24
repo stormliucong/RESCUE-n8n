@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: standard WES/WGS medically necessary for pediatrics under 21; patient is 17, meeting the age criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling; patient was referred to a medical geneticist who is coordinating testing and had pre-test genetic counseling."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy: medically necessary for unexplained neurodevelopmental disorder following standard workup or previous non-diagnostic testing. Patient has lifelong global developmental delay (neurodevelopmental disorder) with strong suspicion of genetic etiology."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES when previous genetic testing is non-diagnostic; patient had prior FISH testing that was nondiagnostic, satisfying the prior-test criterion."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history (e.g., developmental delay, early-onset epilepsy) as relevant; patient has a sibling with epileptic encephalopathy with onset before age 3."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by experienced provider; patient received pre-test counseling from a genetic counselor and will return for post-test counseling."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding lists 81415 among covered procedure codes for WES/WGS; 81415 corresponds to exome sequencing (standard WES) which the patient is pursuing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All policy-required elements for standard WES are met (age <21, evaluated by genetics, counseling provided, prior testing nondiagnostic, relevant clinical/family history); per policy WES may be considered medically necessary."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14886,
+    "output_tokens": 1510,
+    "total_tokens": 16396
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info states 'whole exome sequencing (WES) is planned' — explicitly requests WES."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria apply to 'children' with unexplained congenital or neurodevelopmental disorders; patient is 7 years old, meeting the pediatric ('children') age criterion in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires 'documentation that the individual has been evaluated by a clinician with expertise in clinical genetics' (Policy Statement #1). Patient info documents referral by an oncologist and that pre-test genetic counseling was completed, but does not state the patient was evaluated by a clinician with expertise in clinical genetics; insufficient information to determine if ordering/provider requirement is met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy deems WES medically necessary for children with unexplained congenital anomalies or neurodevelopmental disorders following standard workup. Patient has multiple congenital anomalies and suspected genetic etiology, matching that medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy expects prior genetic testing (eg, chromosomal microarray) to have been performed or failed. Patient had prior CMA testing reported as nondiagnostic, satisfying the prior-test requirement described in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as relevant. Patient has a sibling with global developmental delay, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling as part of the evaluation. Patient information states pre-test genetic counseling was completed and arrangements for post-test counseling/follow-up were made, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not specify CPT/billing codes for WES; no CPT mapping is given in the document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical indications (multiple congenital anomalies), has nondiagnostic CMA, is pediatric, has relevant family history, and has had pre-test genetic counseling, the policy requires documentation that the individual 'has been evaluated by a clinician with expertise in clinical genetics' as part of the ALL criteria for WES. The patient record supplied does not document evaluation by a clinician with expertise in clinical genetics; therefore not all required policy criteria are documented and coverage cannot be confirmed under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14836,
+    "output_tokens": 2130,
+    "total_tokens": 16966
+  }
+}

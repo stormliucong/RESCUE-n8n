@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1/2 testing to evaluate hereditary breast/ovarian cancer predisposition (clinical note explicitly requests BRCA1/2 testing)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age requirement for BRCA testing is ≥18 years for full sequence/other BRCA analyses; patient is 38, which meets the age criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires pre- and post-test genetic counseling and a qualified rendering laboratory but does not specify a required ordering provider specialty; the ordering provider (neurologist) is not addressed explicitly in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under 'Full Sequence Analysis' the policy lists 'Diagnosed with two or more primary breast cancers at any age' as an indication; the patient has two separate primary breast cancers and therefore meets a defined medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires no previous full sequencing of BRCA1/2 for full sequence analysis; the record only notes prior nondiagnostic FISH (not BRCA sequencing), so the patient has no prior BRCA full sequencing and meets the prior-testing requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy includes 'metastatic ... prostate cancer in at least 1 close blood relative' as a qualifying family-history criterion; the patient reports a father with metastatic prostate cancer, which is a relevant family history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate provider; the patient completed pre-test counseling with a genetic specialist but post-test counseling is not documented, so the policy-stated counseling requirement is not fully met."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy maps BRCA1/2 full sequencing and duplication/deletion analysis (when performed concurrently) to CPT 81162; patient meets criteria for full sequence analysis and deletion/duplication may be performed concurrently."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets policy criteria for BRCA full sequence testing: age ≥18, documented pre-test genetic counseling, no prior BRCA full sequencing, medical indication of two separate primary breast cancers, and relevant family history (father with metastatic prostate cancer). Therefore testing is covered per the BRCA Analysis criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10259,
+    "output_tokens": 2125,
+    "total_tokens": 12384
+  }
+}

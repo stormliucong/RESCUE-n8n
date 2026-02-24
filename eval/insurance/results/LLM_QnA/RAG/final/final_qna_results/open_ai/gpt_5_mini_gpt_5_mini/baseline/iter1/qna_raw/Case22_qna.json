@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information explicitly states he is undergoing BRCA1/2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA testing policy is applied (payer-specific). There is no specific minimum/maximum age restriction cited for BRCA1/2 testing in this clinical context (adult testing is typical); the patient is 18 (an adult), and age-based limits are not specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP coverage does not mandate a specific ordering specialty for BRCA1/2 in usual practice (physician or authorized provider order acceptable). The record lists a neurologist as the ordering provider; no payer-specific ordering-specialty restriction is specified in the applied policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP follows guideline-based indications: germline BRCA1/2 testing is indicated for men with metastatic high-risk prostate cancer and for tumors with intraductal/cribriform histology, particularly with a first‑degree relative (father) with similar metastatic prostate cancer. The patient meets these clinical criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "There are no BCBS_FEP requirements that specific prior genetic tests (e.g., CMA) must be completed before BRCA1/2 testing; the provided prior CMA was nondiagnostic but not required for BRCA1/2 coverage."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are relevant for BRCA1/2 coverage; the patient has a first-degree relative (father) with metastatic high-risk prostate cancer with intraductal/cribriform features, which supports testing per payer criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP commonly requires documented pre-test genetic counseling for germline testing; the patient completed pre-test counseling and plans post-test follow-up with a genetic counselor, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Among the provided CPT choices, 81277 is the most appropriate gene-specific code representing BRCA1/BRCA2 testing relative to the other listed codes (81415/81425 correspond to exome/genome sequencing)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on BCBS_FEP coverage applied to the patient's facts: metastatic high-risk prostate cancer with intraductal/cribriform histology, relevant family history, documented pre-test counseling, and no disqualifying age or prior-test requirements — BRCA1/2 testing is medically necessary and covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2011,
+    "output_tokens": 1856,
+    "total_tokens": 3867
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info states 'whole genome sequencing (WGS) has been ordered.' Basis: patient clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WGS policy does not impose a general age cutoff for WGS; it references age-limited features (e.g., ID diagnosed by 18 yrs) but no rule that the proband's age must meet a specific numeric threshold. The infant is 3 weeks old and the policy does not disallow WGS by age."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. Patient testing was ordered by a medical geneticist (patient info), meeting the provider requirement per policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage for WGS requires clinical criteria be met (either one of the listed major features such as multiple congenital anomalies, moderate/severe ID by 18, global DD, or epileptic encephalopathy; or two or more of a specified list including 'congenital anomaly' and 'other first- or second-degree family member(s) with similar clinical features'). The infant has a single congenital anomaly (Hirschsprung disease) and a sibling with severe intellectual disability (family history), but the policy requires either a major listed feature in the proband or two or more listed features — the documentation does not demonstrate the required combination per the policy; therefore medical indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy states WGS is indicated when 'Neither CMA nor WES have been performed.' Patient has only Fragile X testing (nondiagnostic) and there is no documentation of prior CMA or WES, so the prior-test condition for WGS in the policy is satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists relevant family history (e.g., 'other first- or second-degree family member(s) with similar clinical features') as a criterion. Patient has a first-degree sibling with severe intellectual disability diagnosed by age 18, which is relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is 'strongly recommended' prior to WGS/WES but does not make pre-test genetic counseling an explicit mandatory coverage requirement. Patient information documents no pre-test genetic counseling, and the policy does not require it as a hard coverage criterion."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' which corresponds to WGS ordered for this patient."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although ordering provider and prior-test conditions meet policy requirements and family history is present, UnitedHealthcare's WGS coverage requires the patient to meet the specified clinical indication criteria (major feature or two or more listed features). The infant documents only one qualifying feature (a congenital anomaly) and does not meet the policy's defined clinical indications for WGS; therefore the test is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36931,
+    "output_tokens": 3956,
+    "total_tokens": 40887
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states the 17-year-old is undergoing whole exome sequencing (WES) at the request of a medical geneticist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to 'children' with unexplained congenital or neurodevelopmental disorders; the patient is 17 years old (a child/adolescent) and therefore meets the age-based scope of the WES policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics; the test was requested by a medical geneticist and pre-test counseling was completed, meeting the ordering-provider requirement in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists neurodevelopmental disorders and examples including persistent seizures as indications. The patient has epileptic encephalopathy with onset before age 3, which matches the policy's defined clinical indications for WES."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior standard genetic workup (eg, chromosomal microarray) or that prior testing failed to yield a diagnosis. The patient had CMA previously performed and it was nondiagnostic, satisfying the prior testing requirement."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies certain family-history features (eg, developmental delay, inborn errors of metabolism, sudden unexplained death). The provided family history notes a maternal immunologic/hematologic disorder but does not state a listed genetic disorder or that it is a relevant inherited condition; therefore it does not meet the policy's specified family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling by an individual with expertise in genetic medicine. The patient completed pre-test counseling and will have post-test follow-up with a genetic counselor, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing; the requested test is whole exome sequencing (WES)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the FEP WES policy, standard WES is medically necessary for children with unexplained neurodevelopmental disorders when all criteria are met: evaluation by a genetics expert (met), prior CMA was nondiagnostic (met), and the presentation (early-onset epileptic encephalopathy/persistent seizures) is a neurodevelopmental phenotype consistent with a genetic etiology (met). Pre-test counseling completed and plans for genetic counselor follow-up further support coverage per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14851,
+    "output_tokens": 2592,
+    "total_tokens": 17443
+  }
+}

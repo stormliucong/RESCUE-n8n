@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) is being requested for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES may be medically necessary for evaluation of unexplained congenital or neurodevelopmental disorders in children; the patient is a six-week-old infant (a child), meeting the age-related requirement."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling; the record only notes referral by a general pediatrician and does not document evaluation by a clinical genetics expert."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy defines the medical indication as unexplained congenital anomalies or neurodevelopmental disorder in children; the infant has a congenital abnormality and concern for evolving complex neurodevelopmental disorder, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy criterion 3 references prior genetic testing (eg, chromosomal microarray and/or targeted single-gene testing) or prior testing having failed; the patient has had no prior genetic testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history (eg, developmental delay, genetic disease); the patient has a sibling with dysmorphic features, which is a relevant family history per policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires counseling about potential risks of genetic testing by a clinician experienced in genetics; the family declined genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT 81415 corresponds to exome sequencing and is the appropriate code per the request."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the infant meets the clinical indication and age criteria, the policy requires ALL listed criteria (evaluation by a clinician with expertise in clinical genetics including counseling, potential for management change, and prior genetic testing or failed prior testing). The record lacks documented genetics specialist evaluation and counseling and shows no prior genetic testing, so policy conditions are not met and WES is not covered as requested."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14828,
+    "output_tokens": 2395,
+    "total_tokens": 17223
+  }
+}

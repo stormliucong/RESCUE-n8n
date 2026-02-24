@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient clinical information explicitly states he is undergoing BRCA1/2 testing to evaluate hereditary predisposition."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP policy text addresses CHEK2/ATM/BARD1 and references a related BRCA1/2 policy but does not include age-based eligibility criteria for BRCA1/2 testing in the supplied document."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The supplied policy discusses genetic counseling but does not specify ordering-provider (specialty/type) requirements for BRCA1/2 testing in the provided text."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy text provided defines medical indications for CHEK2/ATM/BARD1 testing (investigational) and references related BRCA1/2 guidance, but does not include explicit medical indication/coverage criteria for BRCA1/2 in the supplied document."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy does not define any required prior tests (e.g., prior gene testing or other diagnostics) that must be completed before BRCA1/2 testing."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a relevant family history (father with metastatic high-risk prostate cancer), the supplied policy does not state explicit family-history or consanguinity eligibility criteria for BRCA1/2 testing in this document."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The provided policy states formal genetic counseling is recommended and should be performed by an individual with expertise; the patient completed pre-test counseling and will return for post-test genetic-counselor follow-up, meeting the policy's counseling expectations."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The supplied policy document does not list or map CPT codes to BRCA1/2 testing; therefore no specific CPT code can be determined from the provided text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The provided BCBS_FEP policy text does not include coverage criteria or a coverage determination for BRCA1/2 testing (it addresses CHEK2/ATM/BARD1 and labels those as investigational). Because BRCA1/2 coverage criteria are not present in the supplied document, coverage cannot be established from this policy text alone."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11042,
+    "output_tokens": 3017,
+    "total_tokens": 14059
+  }
+}

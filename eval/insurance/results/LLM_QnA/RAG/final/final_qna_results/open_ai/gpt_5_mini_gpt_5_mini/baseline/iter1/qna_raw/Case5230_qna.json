@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) was ordered to evaluate a congenital anomaly after nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC genomic sequencing policy does not impose a strict single age cutoff for WES; no age-based exclusion applies in the provided clinical scenario (patient is 15)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Typical UHC criteria do not mandate a narrowly defined ordering provider specialty for WES (order by an appropriate clinician is sufficient); the record shows referral from neurology but no disqualifying provider issue is present."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for individuals with unexplained congenital anomalies or suspected single-gene disorders when prior targeted testing/CMA is nondiagnostic; the patient has a congenital anomaly and nondiagnostic CMA, meeting that indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC requires prior chromosome microarray or other appropriate targeted testing before WES where indicated; the patient had a nondiagnostic CMA as stated."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of a sibling with an inborn error of metabolism is relevant and supportive per UHC criteria that consider family history of a genetic disorder as supporting evidence for sequencing."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies require documentation of pre- and/or post-test genetic counseling for genomic sequencing; the patient declined genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (proband-only), which best matches the ordered WES for this patient."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications and prior CMA was nondiagnostic (supporting medical necessity under UHC), required genetic counseling was declined and not documented; failure to meet the counseling requirement means coverage criteria are not fully satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1953,
+    "output_tokens": 1599,
+    "total_tokens": 3552
+  }
+}

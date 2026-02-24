@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient record explicitly states consideration of chromosomal microarray (CMA) testing; prior CMA testing is also mentioned. Basis: patient clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP WES/WGS policy addresses ‘‘children’’ and infants for WES/WGS but does not specify numeric age-based eligibility criteria for CMA. Basis: policy text does not define age criteria for CMA."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy specifies evaluator requirements for WES/WGS (evaluation by clinician with genetics expertise) but does not state ordering-provider requirements specific to CMA. Basis: policy text lacks CMA-specific ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy defines medical indications for exome/genome testing (eg, unexplained congenital anomalies such as meconium ileus) but does not provide explicit coverage/clinical criteria for CMA. Basis: policy addresses WES/WGS indications, not CMA."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy references prior testing (eg, CMA) as part of WES/WGS criteria but does not state required prior-test protocols for CMA itself. Basis: policy text does not define prior-test requirements for CMA."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy lists family-history items relevant to exome/genome sequencing (including inborn errors of metabolism), but it does not specify family-history criteria for CMA. Basis: policy addresses family history for WES/WGS, not CMA-specific criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states formal genetic counseling is recommended for most cases when genetic testing is considered and should be performed by an individual with experience. The patient had pre-test counseling with a genetic specialist and arrangements for post-test follow-up. Basis: 'Genetic Counseling' section of policy and patient facts."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The supplied BCBS_FEP WES/WGS policy document does not list or map CPT codes for CMA. Basis: policy text contains no CMA CPT code information."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The only insurance policy provided is specific to WES/WGS. That policy does not provide explicit coverage criteria for CMA; while the Benefit Application states that specialized diagnostic genetic testing may be covered when medically necessary, there are no CMA-specific criteria in the provided policy to adjudicate medical necessity. On the evidence available (patient info + provided policy text only), coverage for CMA cannot be affirmed. Basis: absence of CMA-specific coverage criteria in provided BCBS_FEP policy document."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14844,
+    "output_tokens": 3865,
+    "total_tokens": 18709
+  }
+}

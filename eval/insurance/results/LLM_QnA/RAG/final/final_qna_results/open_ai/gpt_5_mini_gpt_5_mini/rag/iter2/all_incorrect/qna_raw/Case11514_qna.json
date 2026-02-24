@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been requested to investigate cholestatic liver disease."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies standard WES/WGS may be medically necessary for pediatrics under 21; patient is 10 years old, meeting the age criterion."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual to have been evaluated by a clinician with expertise in clinical genetics and that counseling was provided; the test was ordered by the patient's oncologist and there is no documentation of pre-test genetic counseling, so provider/counseling requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy limits standard WES/WGS coverage to unexplained congenital or neurodevelopmental disorders in pediatrics; rapid WES/WGS examples include conjugated hyperbilirubinemia but only for critically ill neonates/infants in ICU. This 10-year-old with cholestatic liver disease is not within those specified indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy lists prior genetic testing (e.g., CMA) being nondiagnostic as a qualifying criterion; patient had a CMA previously performed and it was nondiagnostic, satisfying the prior test element."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of an inborn error of metabolism/genetic disease as a relevant criterion; patient has a cousin with an inborn error of metabolism."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires genetic counseling by someone with genetics expertise prior to testing; there is no documentation of pre-test genetic counseling for this patient."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding lists 81415 among covered procedure codes for exome/genome sequencing; 81415 best corresponds to WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy WES/WGS coverage is limited to (1) unexplained congenital or neurodevelopmental disorders in pediatrics <21 with required genetics evaluation/counseling or (2) rapid testing for critically ill infants in ICU. This 10-year-old with cholestatic liver disease is not within those specified covered indications, and required genetics evaluation/counseling was not documented; the policy states WES/WGS is investigational in other situations."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14890,
+    "output_tokens": 3338,
+    "total_tokens": 18228
+  }
+}

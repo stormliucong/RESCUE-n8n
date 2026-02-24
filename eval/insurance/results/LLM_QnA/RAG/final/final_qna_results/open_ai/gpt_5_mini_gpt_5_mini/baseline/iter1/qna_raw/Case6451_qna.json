@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WGS/WES policies apply pediatric criteria (no minimum age prohibiting testing); the patient is a 7‑week‑old infant and therefore meets age-based pediatric eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC medical policies require an ordering clinician but do not universally restrict ordering to a specific single specialty in all situations; the record shows a developmental pediatrician is ordering, which is an appropriate treating specialist, but the policy language about a required specialty is not explicit here."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria list unexplained severe neonatal/infant hypotonia or suspected genetic neurodevelopmental disorder as appropriate indications for comprehensive genomic testing; the infant has significant hypotonia meeting a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior standard cytogenomic testing (typically chromosomal microarray and/or other first‑line tests) to be nondiagnostic before WGS; only a karyotype (nondiagnostic) was performed — CMA was not documented, so required prior testing was not completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While family history (affected relatives) can support genetic testing, UHC WGS criteria do not make a maternal hematologic/immunologic history a formal required criterion here; the record notes the mother’s disorder but the policy does not explicitly hinge coverage on this detail."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre‑test genetic counseling for comprehensive genomic testing; the record states pre‑test counseling was completed and post‑test genetics follow‑up is planned."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequence analysis (WGS), which matches the ordered test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, clinical indication (infant hypotonia), counseling, and test type match UHC criteria, a required prior cytogenomic test (chromosomal microarray) was not documented (only a nondiagnostic karyotype), so per UHC coverage rules the WGS request would not meet prior‑test requirements and is not covered as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 2250,
+    "total_tokens": 4225
+  }
+}

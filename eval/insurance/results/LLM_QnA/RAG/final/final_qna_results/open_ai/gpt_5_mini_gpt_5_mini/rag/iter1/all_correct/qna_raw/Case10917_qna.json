@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UHC WES policy does not impose a specific minimum or maximum age restriction for outpatient WES; pediatric/infant use is discussed but no explicit age-based eligibility cutoff is stated in the coverage criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient was evaluated and WES ordered by a medical geneticist, meeting the provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage requires the clinical presentation plus defined features (e.g., multiple congenital anomalies or two-or-more listed features such as IEM‑suggestive labs plus another feature). The infant has a laboratory abnormality (conjugated hyperbilirubinemia) but lacks documentation of a second listed feature (or clearly ‘similar’ affected family members), so the specific WES medical-indication criteria are not met per the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate prior testing (e.g., CMA) before outpatient/post‑discharge WES in the general non‑prenatal scenario; it only specifies prior testing requirements for certain prenatal contexts or when a specific syndrome is suspected (targeted testing). No universal prior-test requirement is specified for this case."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists ‘other first‑ or second‑degree family member(s) with similar clinical features’ and consanguinity as relevant criteria. The patient has a family history (older sibling with multiple congenital anomalies), which constitutes relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES/WGS. The patient had pre‑test counseling with a genetic specialist, which meets the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable codes list 81415 for exome (sequence analysis) which corresponds to WES ordered for the proband."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying the UHC WES coverage rationale: WES is medically necessary only when the clinical history plus required qualifying features are met. Although the infant has an abnormal laboratory finding suggestive of possible IEM and a sibling with congenital anomalies, the documentation does not demonstrate the specific combination of features required by the policy (e.g., multiple congenital anomalies or two or more listed features or clearly similar affected family members). Therefore, under the policy criteria the test is not supported as covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36946,
+    "output_tokens": 3409,
+    "total_tokens": 40355
+  }
+}

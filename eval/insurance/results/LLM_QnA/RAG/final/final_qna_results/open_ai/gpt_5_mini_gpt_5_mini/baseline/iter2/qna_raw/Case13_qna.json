@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Clinical note explicitly states the patient was referred for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES policy does not impose an age restriction for diagnostic WES; the patient is a newborn but age-based eligibility is not specified as a limiting criterion."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP WES coverage typically requires ordering/authorization by a genetics professional or specialist with documented genetics expertise; the ordering provider is a general pediatrician and does not meet the specified provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP criteria cover WES for individuals with multiple congenital anomalies not fitting a well-delineated syndrome and for unexplained neurodevelopmental/regressive disorders; the newborn has multiple congenital anomalies and a sibling with unexplained developmental regression, meeting medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP generally requires prior appropriate cytogenomic testing (chromosomal microarray) before WES; only a nondiagnostic karyotype was performed and CMA was not documented, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of a sibling with unexplained developmental regression is relevant and meets family-history–based supportive criteria in BCBS_FEP WES policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre-test genetic counseling was completed and post-test follow-up is planned, satisfying BCBS_FEP counseling requirements for WES."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (WES) interpretation/report for a proband and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although medical indication, family history, and counseling requirements are met, BCBS_FEP requires prior cytogenomic testing (CMA) and appropriate ordering by a genetics professional; those requirements are not satisfied, so the test would not be covered as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1976,
+    "output_tokens": 1743,
+    "total_tokens": 3719
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states the general pediatrician ordered whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria are applied to pediatric and adult patients and do not impose a strict age cutoff; the patient is 11 years old but the policy does not specify an age-based exclusion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC typically requires an appropriate ordering clinician but does not universally restrict WES orders to medical geneticists only; the record shows a general pediatrician ordered testing, and the policy does not explicitly prohibit this."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria for WES include unexplained neurodevelopmental disorders/ASD and developmental delay/intellectual disability. The patient has a complex neurodevelopmental disorder and autism spectrum disorder, fulfilling a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior first‑line testing for developmental disorders (commonly chromosomal microarray and Fragile X when indicated). Fragile X was nondiagnostic, but there is no documentation that chromosomal microarray (CMA) was completed, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While family history (here a maternal aunt with severe immunologic disorder) may be relevant clinically, UHC WES eligibility criteria do not make a specific family history or consanguinity requirement for coverage; therefore family history is not a specified eligibility criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC WES policies typically require pre‑test genetic counseling and documentation. The family met with a genetic counselor before testing and planned post‑test follow‑up, meeting that counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (WES) for the proband with sequence analysis and interpretation and is the appropriate code for the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications and has pre‑test genetic counseling and Fragile X testing, UHC requires completion of specified prior testing (e.g., CMA) before WES for developmental/neurodevelopmental indications; CMA is not documented, so coverage would not be approved at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1983,
+    "output_tokens": 1674,
+    "total_tokens": 3657
+  }
+}

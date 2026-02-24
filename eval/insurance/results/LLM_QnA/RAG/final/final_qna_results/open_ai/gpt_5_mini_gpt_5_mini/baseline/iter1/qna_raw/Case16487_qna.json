@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WES coverage criteria are indication-driven rather than strictly age-limited; no age restriction is specified in the provided clinical context and the newborn status does not conflict with typical UHC policies for diagnostic WES in critically/clinically affected infants."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally require an appropriate ordering clinician but do not uniformly mandate a specific specialty for WES (orders from treating specialists are typically acceptable). The record shows an oncologist ordered testing, which would usually be an acceptable treating specialist; the policy does not strictly specify specialty in this case."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Per UHC diagnostic WES criteria, WES is indicated for unexplained, potentially genetic conditions after prior focused testing is nondiagnostic. The infant has recurrent high-risk BRUE events with nondiagnostic FISH testing, meeting a criterion of an unexplained, recurrent neonatal event where WES is clinically indicated."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC may require prior targeted testing depending on the clinical presentation (e.g., gene panel, CMA) but requirements vary by indication. The chart documents nondiagnostic FISH only; whether additional specific prior tests (e.g., CMA or specific panels) were required by policy for this indication is not specified in the provided information."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant to eligibility under UHC criteria when present; this infant has a maternal aunt with a severe immunologic/hematologic disorder, which supports a possible hereditary etiology and is relevant to the decision to pursue WES."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC commonly requires documentation of pre-test genetic counseling for complex genomic testing. The record states pre-test counseling was completed with plans for post-test genetic follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES), which matches the ordered test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under UHC coverage principles for diagnostic WES, the infant has an appropriate clinical indication (recurrent unexplained neonatal BRUE), prior targeted testing was nondiagnostic (FISH), pre-test counseling completed, and supportive family history—together meeting coverage criteria for WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1985,
+    "output_tokens": 1767,
+    "total_tokens": 3752
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states 'whole exome sequencing (WES) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES policy does not impose a strict age cutoff for exome sequencing; the patient is 3 years old and age-based exclusion/limit is not specified in coverage criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires testing be ordered by or in consultation with an appropriate genetics provider; pre-test counseling was completed with a genetic specialist and follow-up is planned, satisfying ordering/provider consultation requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for individuals with unexplained multiple congenital anomalies affecting multiple organ systems after standard workup. The 3-year-old has multiple congenital anomalies across organ systems, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC policies typically require prior chromosomal microarray (CMA) as first‑tier testing for multiple congenital anomalies. The record notes a nondiagnostic karyotype but does not document a prior CMA, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "While family history of similarly affected relatives can be relevant per coverage guidance, the only family history reported is a maternal aunt with ovarian cancer which is not directly relevant to the child’s congenital anomaly indication; no consanguinity or affected relatives relevant to the child’s presentation are documented."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre‑test genetic counseling for WES. The family completed pre‑test counseling with a genetic specialist and plans post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) with interpretation and analysis, which matches the test requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets medical indication and counseling/provider requirements for WES, UHC requires completion/documentation of prior chromosomal microarray (CMA) for multiple congenital anomalies; only a nondiagnostic karyotype is documented and no CMA result is provided, so coverage is not met at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1997,
+    "output_tokens": 1842,
+    "total_tokens": 3839
+  }
+}

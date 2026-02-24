@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) was ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses pediatric testing considerations but does not define explicit age cutoffs or age-based eligibility criteria for WES or channelopathy testing; no specific age-based requirement is specified in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy Guidelines state genetic testing \"should be performed by an expert in genetic testing and/or cardiac ion channelopathies.\" The ordering provider is a family medicine physician (not documented as such an expert), so provider requirements in the policy are not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications for genetic testing limited to suspected channelopathies (eg, LQTS, CPVT, BrS, SQTS) with specific clinical signs/symptoms or family history. The patient has a major congenital cardiac anomaly (structural) but no documented signs/symptoms or ECG/stress-test findings consistent with a channelopathy, so the patient does not meet the policy's specified clinical indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy states evaluation for channelopathies should include history/physical and ECG, exercise stress test, transthoracic echocardiography, etc., before or as part of the diagnostic strategy. The record only documents a nondiagnostic FISH; required prior cardiac/channelopathy evaluations are not documented as completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family-history criteria for testing (eg, close relative with known variant or clinical diagnosis). The patient’s history notes a mother with short stature (concern for growth-related condition) but no family history of a cardiac channelopathy or known pathogenic variant; thus the policy's family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy recommends genetic counseling performed by someone with expertise. The patient/family completed pre-test genetic counseling and will follow up after results, meeting the policy's counseling expectation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to tests (WES/WGS/panels); therefore a specific CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on policy: testing is covered when directed at suspected cardiac ion channelopathies with specified clinical criteria and performed by experts; WES here is broad, ordered by a non-expert, lacks documented channelopathy indications or required prior cardiac testing, and policy excludes panels/tests when included tests are not covered or are investigational. Therefore WES as requested is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15895,
+    "output_tokens": 8821,
+    "total_tokens": 24716
+  }
+}

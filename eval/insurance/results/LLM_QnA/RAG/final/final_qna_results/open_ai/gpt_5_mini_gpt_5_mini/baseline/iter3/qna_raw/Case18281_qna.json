@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The cardiologist explicitly ordered whole genome sequencing (WGS) for this child with multiple congenital anomalies."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC genomic-sequencing coverage is directed at pediatric patients with congenital anomalies/developmental concerns; the patient is 6 years old and therefore meets age-based pediatric criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies focus on clinical indications and requirements for genetic counseling/prior testing; they generally allow treating specialists to order testing, but a strict single-provider-type requirement is not specified in the provided patient data."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WGS/WES for children with multiple congenital anomalies or unexplained syndromic presentations; the patient has multiple congenital anomalies that do not fit a well-delineated syndrome, which meets medical-necessity criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior relevant testing (commonly chromosomal microarray and other targeted testing) before WGS/WES; only Fragile X testing is documented (nondiagnostic) and chromosomal microarray is not documented as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a documented family history of an inborn error of metabolism in a sibling, which is relevant family-history information for genomic testing eligibility/interpretation."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies require documentation of pre-test genetic counseling or informed consent by a qualified provider for WGS/WES; the record states no genetic counseling was conducted prior to testing."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing; this best matches the ordered test (WGS)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and clinical indication are met, required prior testing (e.g., chromosomal microarray) is not documented and pre-test genetic counseling was not done—UHC coverage typically requires those elements, so coverage would be denied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1982,
+    "output_tokens": 1741,
+    "total_tokens": 3723
+  }
+}

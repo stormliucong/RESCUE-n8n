@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare pediatric genomic testing criteria cover sequencing for children/adolescents with unexplained global developmental delay/intellectual disability; the patient is 13 years old, which meets pediatric age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC medical necessity policies commonly require an appropriate ordering clinician and documentation but do not universally mandate a specific specialty (e.g., must be a geneticist). The record shows a developmental pediatrician ordered the test, but the payer policy does not explicitly restrict ordering to a particular specialty in this scenario."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria consider genomic sequencing medically necessary for pediatric patients with unexplained global developmental delay/ID after appropriate first‑tier testing; the patient has global developmental delay, which meets the clinical indication for sequencing."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior first‑tier testing (chromosomal microarray and other appropriate targeted tests) before approving WES/WGS. The record notes prior FISH was nondiagnostic but does not document chromosomal microarray (CMA) or other required prior testing, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a family history of an aunt with dysmorphic features; while not a first‑degree relative, this is relevant family history that supports a genetic etiology per payer criteria for consideration."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of genetic counseling for genomic sequencing; the family completed pre‑test genetic counseling with plans for post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (genomic sequencing procedure, whole genome), which matches the ordered WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, clinical indication (global developmental delay), documented pre‑test genetic counseling, and supporting family history meet UHC criteria, coverage is not supported because required prior testing (notably chromosomal microarray) is not documented. Per UHC policy, WGS would typically be denied/held until first‑tier testing requirements are completed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 1863,
+    "total_tokens": 3838
+  }
+}

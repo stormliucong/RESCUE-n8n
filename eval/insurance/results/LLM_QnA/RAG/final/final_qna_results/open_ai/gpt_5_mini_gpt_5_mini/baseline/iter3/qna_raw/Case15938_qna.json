@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "WGS (whole-genome sequencing) is explicitly being considered per the patient information."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare WGS/WES criteria include coverage for neonatal/pediatric patients with suspected genetic disorders; the patient is a 1‑week‑old infant, meeting the age-based pediatric/neonatal indication."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies typically require an ordering clinician responsible for care, but the provided information does not state a payer requirement that only a specific specialty (e.g., board‑certified clinical geneticist) must order WGS; neonatologist ordering is not explicitly disallowed in the provided criteria."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Coverage criteria support WGS when a genetic/metabolic etiology is suspected for an unexplained neonatal presentation (conjugated hyperbilirubinemia/cholestasis); the clinical presentation and family history increase suspicion and meet medical necessity criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior appropriate testing (e.g., chromosomal microarray or targeted testing) to be nondiagnostic before WGS except in certain critically ill/rapidly progressive cases; only karyotype (nondiagnostic) is documented and no CMA or other required prior testing is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a relevant family history: a sibling with unexplained developmental regression, which is pertinent to genetic testing eligibility under payer criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC coverage for WGS typically requires documentation of pretest genetic counseling; no pretest genetic counseling is documented for this patient."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing, which matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and medical indication are supportive, coverage criteria are not met because required prior testing (e.g., chromosomal microarray/other targeted testing) is not documented as completed and pretest genetic counseling is not documented; therefore coverage criteria are unmet per UHC policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1987,
+    "output_tokens": 1829,
+    "total_tokens": 3816
+  }
+}

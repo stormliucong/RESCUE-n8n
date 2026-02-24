@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) was requested for the infant."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age criterion for genome-wide testing is specified via the WES criteria for individuals <18 years; the patient is 7 weeks old (<18), so the age criterion is met (policy I.2 and I.1)."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor for WES/WGS pathways (II.1.a). Patient record notes pre-test genetic counseling but does not specify the counselor's ABGC/ABMGG credentials, so adequacy cannot be confirmed from provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy defines as an indication unexplained congenital or neurodevelopmental disorder in persons <18 (II.1). The infant has multiple congenital anomalies affecting multiple organ systems identified at birth, which meets the defined clinical indication for genome-wide testing."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy states WGS MEETS COVERAGE CRITERIA only when WES has been performed and was unable to identify a causative mutation (II.4). The patient has not had WES (only Fragile X testing nondiagnostic), so the required prior testing (WES) has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy references family history in certain prenatal/recurrence contexts but does not list family history or consanguinity as a required criterion for WGS in this non‑prenatal infant scenario (II). The provided family history (sibling with ASD) is not a stated explicit requirement for coverage here."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires pre-test counseling by an ABMGG medical geneticist or ABGC board‑certified genetic counselor for WES/WGS pathways (II.1.a). Patient notes pre-test genetic counseling was completed but does not state the counselor's certification, so compliance with the policy's counseling/provider credential requirement cannot be confirmed."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing (WGS); among the provided CPT options, 81425 corresponds to whole genome sequencing (WGS)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, WGS is covered only when WES has been performed and failed to identify a causative mutation and all WES criteria are met (II.4). The patient has not had WES; therefore the requested WGS does not meet the policy's coverage pathway and is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22452,
+    "output_tokens": 2705,
+    "total_tokens": 25157
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is requested to investigate a possible genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies do not impose a strict single age cutoff for WGS; coverage criteria are clinical (pediatric presentations are commonly considered) rather than age-limited in the documentation provided."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "There is no payer-specific requirement in typical UHC WES/WGS policy that the ordering clinician must be a genetics specialist; the referral from the child's neurologist meets usual ordering norms and no specialty restriction is specified."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UHC WES/WGS criteria generally require documented clinical indications such as unexplained developmental delay/intellectual disability, multiple congenital anomalies, progressive neurodegenerative disorder, or a highly heterogeneous condition after appropriate prior testing. This patient has isolated significant childhood hearing/visual impairment (with a family history of epileptic encephalopathy) but does not clearly meet those specific listed indications as documented, and required prior targeted testing is not documented."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC guidance commonly requires prior appropriate testing (for example chromosomal microarray and disorder-specific/gene-panel testing for isolated hearing loss) before WES/WGS. Only Fragile X testing (nondiagnostic) is documented; CMA and appropriate targeted gene-panel testing for hearing/vision loss are not documented as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "A sibling had early-onset epileptic encephalopathy (<3 years), which is a relevant family history that payers' criteria consider when assessing genetic testing necessity for a proband."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC and most payers require documented pre-test genetic counseling for WES/WGS or documentation why it was not possible. Counseling was offered but explicitly declined pre-test, so the requirement for documented pre-test counseling is not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "81425 corresponds to whole genome sequencing (WGS) analysis and interpretation and is the CPT most appropriate for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under UHC WES/WGS coverage criteria the clinical indication and required prior testing (e.g., CMA and appropriate targeted panels) and documented pre-test genetic counseling are not met; therefore WGS is not covered as requested at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2001,
+    "output_tokens": 2081,
+    "total_tokens": 4082
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states Whole Exome Sequencing (WES) is being requested to evaluate an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES criteria specify pediatric patients with unexplained developmental delay/intellectual disability as eligible; the patient is a 4-year-old child, which meets pediatric age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires ordering by an appropriate specialist or in consultation with genetics; the request is from a developmental pediatrician and pre-test counseling was performed by a genetic counselor, meeting provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical-necessity criteria include significant unexplained developmental delay/hypotonia and nondiagnostic CMA—this patient has significant hypotonia, ongoing developmental concerns, and prior nondiagnostic CMA, satisfying clinical indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires prior CMA for developmental delay before WES; the record states chromosomal microarray was previously performed and nondiagnostic, satisfying prior test requirements."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria (affected first-degree relative with developmental delay) are relevant to WES eligibility; the patient has a sibling with developmental delay, which is relevant."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documented pre-test genetic counseling for WES; the patient had multiple pre-test counseling sessions with a genetic counselor and post-test follow-up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (proband or exome testing) and best matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All applicable UHC coverage criteria are met: appropriate pediatric age, qualifying clinical indications (developmental delay/hypotonia), prior nondiagnostic CMA completed, relevant family history, appropriate ordering provider and documented genetic counseling—therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1993,
+    "output_tokens": 1669,
+    "total_tokens": 3662
+  }
+}

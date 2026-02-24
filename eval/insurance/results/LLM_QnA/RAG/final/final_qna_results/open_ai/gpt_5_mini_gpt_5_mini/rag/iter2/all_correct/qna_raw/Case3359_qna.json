@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'Whole exome sequencing (WES) is being requested to evaluate for an underlying genetic etiology.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria include features diagnosed by childhood (e.g., global developmental delay onset prior to 5 years, intellectual disability by 18). The patient is 4 years old with developmental concerns (meets age‑related presentation such as GDD onset <5 yrs). (Policy: definitions and WES criteria referencing GDD and pediatric onset.)"
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The patient was referred by a developmental pediatrician, meeting the ordering‑provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history suggesting a genetic cause plus specific features. The patient has significant hypotonia and ongoing developmental concerns (hypotonia and likely GDD) and a first‑degree relative (sibling) with developmental delay—meeting policy listed features for WES coverage (hypotonia; other first‑degree family member with similar features)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate prior testing (e.g., CMA) before WES except that targeted testing is preferred if a specific syndrome is suspected. Although the patient had a nondiagnostic CMA, no specific prior test is required by policy for WES."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Other first‑ or second‑degree family member(s) with similar clinical features' as a relevant criterion. The patient has a sibling with developmental delay (first‑degree)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES but does not list counseling as a strict coverage requirement. The patient did receive pre‑test counseling, but counseling is not specified as a mandatory coverage criterion."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for exome sequence analysis (WES)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All policy coverage criteria for WES are met: ordered by a developmental pediatrician; clinical history suggests a genetic cause with qualifying features (hypotonia and affected sibling / developmental concerns consistent with GDD); presentation is nonspecific and prior CMA was nondiagnostic. Therefore per policy WES is proven and medically necessary."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36955,
+    "output_tokens": 2477,
+    "total_tokens": 39432
+  }
+}

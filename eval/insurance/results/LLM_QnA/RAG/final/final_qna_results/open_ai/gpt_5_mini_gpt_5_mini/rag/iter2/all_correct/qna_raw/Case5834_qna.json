@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient record explicitly states referral for chromosomal microarray (CMA) testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes CMA for individuals with developmental delay/ID but does not specify age-based eligibility limits; no age restriction in the policy text."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state specific ordering-provider specialty or credential requirements for CMA; no provider-type requirement is specified in the policy text."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy states CMA may be medically necessary as first-line testing for 'apparent nonsyndromic developmental delay/intellectual disability'; the patient has lifelong severe intellectual disability consistent with this indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy supports CMA as a first-line test and does not mandate completion of specific prior genetic tests (e.g., fragile X) before CMA as a coverage prerequisite."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require family history or consanguinity for CMA eligibility; the patient's maternal history of ovarian cancer is not cited as a criterion in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy recommends formal genetic counseling when testing is considered and states counseling should be performed by experienced individuals; the patient had pre-test counseling by a genetic counselor and plans for post-test follow-up."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy document does not list or map CPT codes to CMA testing; no CPT code is specified in the provided policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, CMA is medically necessary as first-line testing for individuals with apparent nonsyndromic intellectual disability; the patient meets this indication, has counseling, and no policy exclusion applies."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15715,
+    "output_tokens": 1695,
+    "total_tokens": 17410
+  }
+}

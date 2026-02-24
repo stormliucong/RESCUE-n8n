@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states that whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES/WGS policies do not impose a strict single age cutoff; pediatric WGS is commonly evaluated on clinical indications rather than age alone, and the 11-year-old patient does not conflict with typical payer age language."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Typical UHC policy requires an ordering clinician (physician or qualified provider) but does not universally mandate that the test be ordered only by a genetics specialist; the record shows neurology referral and genetic specialist counseling but it is not specified whether an ordering-provider specialty requirement applies."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The patient has a major abnormality affecting at least one organ system with neurologic referral and a nondiagnostic Fragile X test; under UHC criteria WGS/WES is indicated for unexplained major congenital/structural abnormalities or neurologic disorders when prior targeted testing is unrevealing."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC commonly requires prior appropriate targeted testing (e.g., chromosomal microarray) for developmental/structural anomalies before WES/WGS; only Fragile X testing is documented as completed (nondiagnostic) and no chromosomal microarray or other required prior testing is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a reported family history of long QT syndrome in the mother; this is relevant family history for genetic evaluation and may support broader genomic testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre-test counseling was discussed with a genetic specialist and post-test follow-up plans are in place, satisfying UHC requirements for documented genetic counseling when required for WES/WGS."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "81425 corresponds to clinical whole genome sequencing (WGS), which matches the test requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although medical indication and counseling are met, UHC coverage typically requires completion/documentation of prior required testing (e.g., chromosomal microarray) before approving WGS; because required prior testing beyond Fragile X is not documented, the request would not meet coverage requirements as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 2172,
+    "total_tokens": 4147
+  }
+}

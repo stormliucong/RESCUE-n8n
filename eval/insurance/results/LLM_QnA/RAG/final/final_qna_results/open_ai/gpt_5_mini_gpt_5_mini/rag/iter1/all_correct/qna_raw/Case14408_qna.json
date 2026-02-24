@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1/2 testing per the clinical information; policy is the Cigna BRCA Analysis guideline, so the requested test is BRCA1/2."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires age ≥18 for BRCA testing (Known familial, AJ founder, Full sequence sections). Patient is 75, which meets the age criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies genetic counseling and that the rendering laboratory be qualified but does not specify ordering provider specialty/type requirements; thus ordering provider requirements are not specified in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under Full Sequence Analysis predisposition testing, the member may be tested if they have a first-degree relative who meets Diagnostic Testing criteria. The patient has a first-degree relative (brother) with breast cancer, which qualifies per the policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires no prior full sequencing/known familial mutation for Full Sequence or KFM pathways. Patient has no prior genetic testing, satisfying the prior-testing requirements."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria use family history; patient has a relevant family history (brother with breast cancer — a first-degree relative), which is directly relevant to eligibility per the guideline."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider. The patient completed pre-test counseling and post-test follow-up with a genetic counselor is planned, meeting the counseling requirement per the policy."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy lists CPT 81162 for BRCA1/2 full sequencing and deletion/duplication analysis combined; since patient meets full sequence criteria and deletion/duplication analysis is often performed concurrently, 81162 is most appropriate per the guideline."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the BRCA policy, the patient meets coverage criteria: age ≥18, pre-test counseling completed, no prior BRCA testing, and has a first-degree relative (brother) with breast cancer qualifying the member for predisposition/full-sequence BRCA testing. Therefore the test is covered under the guideline."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10244,
+    "output_tokens": 2167,
+    "total_tokens": 12411
+  }
+}

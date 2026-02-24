@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient information explicitly states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES policies do not impose a strict age cutoff for WES; the child is 8 years old but age-based eligibility is not specified in the payer criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies typically do not mandate a narrowly defined ordering provider specialty for WES beyond an appropriate clinician; the test was ordered by a developmental pediatrician (an appropriate specialist), and the policy does not explicitly restrict ordering to a genetics provider."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for individuals with unexplained multiple congenital anomalies or multisystem involvement suggestive of a genetic disorder; this 8‑year‑old has multiple congenital anomalies affecting several organ systems, which meets that clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC’s WES coverage generally requires prior first‑tier testing (e.g., chromosomal microarray) or documentation of nondiagnostic appropriate prior testing. The record notes only nondiagnostic FISH; no CMA or equivalent prior testing is documented, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While a positive family history (mother with long QT) is noted and may be clinically relevant, UHC WES coverage criteria do not generally require specific family history/consanguinity criteria for WES eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC expects documentation of informed consent/genetic counseling for WES; the family declined pre‑test genetic counseling (only agreed to post‑test counseling), so the documented counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (proband only), which matches the requested WES for this single affected child."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication (multisystem congenital anomalies) supports WES, coverage prerequisites are not met: required prior testing (e.g., chromosomal microarray) is not documented and pre‑test genetic counseling/documentation was declined. Under UHC WES policy these deficiencies would render the request non‑covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1734,
+    "total_tokens": 3712
+  }
+}

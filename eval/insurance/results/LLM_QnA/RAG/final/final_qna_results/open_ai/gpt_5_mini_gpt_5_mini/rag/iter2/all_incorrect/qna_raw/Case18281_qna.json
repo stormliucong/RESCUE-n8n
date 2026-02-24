@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical info explicitly states the cardiologist ordered whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare cardiac genetic policy does not provide age-based eligibility specific to whole genome sequencing; age-based recommendations in the policy apply to specific tests/conditions (e.g., predictive testing for LQTS/CPVT/HCM) but not to WGS."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify ordering-provider specialty or type requirements for WGS or for cardiac genetic testing in general."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Coverage rationale limits medically necessary testing to specific cardiac diagnoses (arrhythmias, cardiomyopathies, HTAD) or relatives of affected individuals. This patient has undifferentiated multiple congenital anomalies and no documented specific cardiac diagnosis meeting the policy's listed indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define required prior tests for whole genome sequencing in this context; although it strongly recommends pre-test genetic counseling, no explicit prior diagnostic test requirement for WGS is specified."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history-based indications for cardiac panel testing (first- or second-degree relatives with defined cardiac disorders). The patient's family history (sibling with an inborn error of metabolism) is not a listed relevant family history for the cardiac testing indications."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states pre-test genetic counseling is 'strongly recommended' but does not mandate counseling as a formal required condition for coverage of WGS; the patient had no pre-test counseling."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's Applicable Codes list includes multiple cardiac panel CPT/HCPCS codes but does not list a CPT code corresponding to whole genome sequencing (WGS); none of the provided answer codes are explicitly associated with WGS in the policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the UnitedHealthcare policy, genetic testing is considered medically necessary for specified cardiac diagnoses or affected relatives. The requested WGS for a child with nonspecific congenital anomalies (no documented qualifying cardiac diagnosis or relevant family cardiac history) does not meet the policy's coverage criteria; WGS is not listed as an approved/test-specific covered service in this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 39572,
+    "output_tokens": 2512,
+    "total_tokens": 42084
+  }
+}

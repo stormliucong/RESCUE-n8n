@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Requisition and ordering note specify chromosomal microarray testing (CMA) despite tumor-type assay being selected; patient was referred for evaluation of a complex neurodevelopmental disorder and CMA was ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's CMA coverage criteria are indication-based (developmental delay/intellectual disability/ASD/multiple congenital anomalies) rather than age-limited; the 16-year-old falls within typical pediatric/adolescent scope but no explicit age cutoff is specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's CMA policy does not mandate a specific ordering provider specialty; the test was ordered by a developmental pediatrician which is appropriate, but the policy does not impose explicit provider-type requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Cigna considers CMA medically necessary as a first-line test for individuals with unexplained developmental delay/intellectual disability/ASD or multiple congenital anomalies. The patient has a complex neurodevelopmental disorder affecting at least one organ system, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's CMA coverage is indication-driven and does not universally require specific prior genetic tests; Fragile X testing was already nondiagnostic (documented) but the policy does not mandate prior testing as a prerequisite for CMA."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "CMA coverage is based on the patient's clinical presentation; although there is a maternal uncle with dystonia/ataxia, Cigna's CMA criteria do not hinge on family history/consanguinity as a requirement."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's coverage criteria for CMA do not explicitly require documented genetic counseling as a condition of coverage; genetic counseling is not documented in the record but policy does not make this a coverage prerequisite."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to chromosomal microarray (copy number analysis), which matches the requested CMA test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per Cigna coverage policy, CMA is medically necessary for individuals with unexplained developmental delay/intellectual disability/ASD or multiple congenital anomalies. The 16-year-old has a complex neurodevelopmental disorder and prior Fragile X testing was nondiagnostic, so CMA meets coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 1745,
+    "total_tokens": 3736
+  }
+}

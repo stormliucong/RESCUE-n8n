@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient is explicitly being considered for whole‑exome sequencing (WES) per the clinical note."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna WES coverage is indication‑based rather than age‑restricted; no age‑based exclusion or specific age criteria are applicable to this adult (34 y/o) in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna policy requires appropriate clinical documentation and genetic counseling but does not mandate a single specific ordering specialty in this case; the record shows referral by oncology and multiple genetic counseling visits, but no explicit ordering‑provider restriction is documented."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Cigna covers WES for suspected genetic disorders presenting with congenital anomalies after prior testing is nondiagnostic. The patient has congenital choanal atresia and a nondiagnostic CMA, meeting the medical‑necessity indication for WES."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Cigna generally requires prior chromosomal microarray (CMA) for congenital anomalies before WES; the patient had a nondiagnostic CMA, satisfying the prior‑test requirement."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While family history can be relevant, Cigna's primary WES criteria focus on the proband's phenotype and prior testing; the provided family history (mother with breast cancer at 50) is not a specified criterion for WES for choanal atresia in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Cigna requires documentation of pre‑test genetic counseling for WES; the patient has seen a genetic counselor multiple times, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole‑exome sequencing (proband or trio reporting); this best matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on Cigna criteria: patient has a congenital anomaly (choanal atresia), prior nondiagnostic CMA, documented genetic counseling, and clinical suspicion of a genetic etiology — together these meet Cigna's coverage requirements for WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1964,
+    "output_tokens": 1829,
+    "total_tokens": 3793
+  }
+}

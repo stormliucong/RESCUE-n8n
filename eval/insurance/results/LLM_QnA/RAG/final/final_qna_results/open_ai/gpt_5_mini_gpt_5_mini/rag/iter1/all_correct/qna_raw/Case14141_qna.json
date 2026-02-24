@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is planned to investigate an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy coverage is framed for 'children' with unexplained congenital or neurodevelopmental disorders; the patient is a 7-year-old child, so age meets the policy's child-based eligibility."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled. The record shows referral by an oncologist and that pre-test counseling was completed, but it does not explicitly document evaluation by a clinician with expertise in clinical genetics."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication: WES medically necessary for evaluation of unexplained congenital anomalies in children. The patient has multiple congenital anomalies and prior workup was nondiagnostic, meeting the indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior testing (eg, chromosomal microarray) to have failed to yield a diagnosis. The patient had chromosomal microarray analysis (CMA) reported as nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list family history of developmental delay as relevant. The patient has a sibling with global developmental delay, which is a specified relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling about potential risks and recommends genetic counseling by experienced personnel; the patient completed pre-test genetic counseling and arrangements for post-test counseling/follow-up are documented."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT 81415 corresponds to exome sequencing (clinical interpretation/report). The policy document does not specify CPT codes, so this mapping is based on the test requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL criteria: (1) documentation of evaluation by a clinician with expertise in clinical genetics (including family history and phenotype) and counseling, (2) potential for change in management, and (3) prior testing failed to yield diagnosis. While criteria 3 and counseling/family-history elements are met (nondiagnostic CMA, pre-test counseling, sibling with developmental delay), the record does not explicitly document evaluation by a clinician with expertise in clinical genetics nor explicit documentation that testing has potential to change management. Therefore not all required policy criteria are documented, and coverage cannot be confirmed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14836,
+    "output_tokens": 2207,
+    "total_tokens": 17043
+  }
+}

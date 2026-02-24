@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being referred for germline BRCA1 and BRCA2 testing (explicit in the clinical information)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy specifies age criteria for BRCA1/2 testing in the context of breast cancer (≤65), but does not set an age limit for BRCA testing when the indication is metastatic prostate cancer; the patient is 52, but no age-based exclusion/applicability is specified for this indication."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends genetic counseling and involvement of providers familiar with hereditary cancer but does not state a specific required ordering provider specialty/type for BRCA1/2 germline testing."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'metastatic prostate cancer' as a qualifying personal history for medically necessary hereditary cancer testing (including genes such as BRCA1/2); the patient has metastatic prostate cancer, satisfying a defined clinical criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy strongly recommends pre-test genetic counseling but does not mandate completion of specific prior tests before germline BRCA1/2 testing in the setting of metastatic prostate cancer; no required prior testing is specified."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy coverage criteria include individuals with prostate cancer who have at least one first- or second-degree relative with a BRCA-related cancer (pancreatic cancer is listed as BRCA-related); the patient’s father had pancreatic cancer (first-degree)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states pre-test genetic counseling is 'strongly recommended' but does not make counseling an absolute coverage requirement; the patient did not have pre-test counseling, but the policy does not make that a coverage disqualifier."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Requested test is germline BRCA1/2 full analysis; CPT 81162 corresponds to BRCA1/BRCA2 full sequence analysis plus duplication/deletion analysis as listed in the policy."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, individuals with a personal history of metastatic prostate cancer meet clinical criteria for medically necessary hereditary cancer testing and BRCA1/2 are included among prostate cancer susceptibility genes; the patient’s metastatic disease and first-degree relative with pancreatic cancer further align with listed criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 38617,
+    "output_tokens": 2069,
+    "total_tokens": 40686
+  }
+}

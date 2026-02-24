@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient was explicitly referred for BRCA1/2 testing in the clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage is based on personal/family cancer history and clinical criteria rather than a strict age cutoff; no payer age-based exclusion for BRCA testing is specified in this case."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policy does not typically restrict BRCA testing to a specific ordering specialty (physicians or genetic counselors can order) and no provider-type limitation was provided in the patient data."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP BRCA coverage requires personal history of relevant cancers or a family history meeting defined high-risk criteria (e.g., multiple relatives with breast/ovarian cancer, early-onset disease). The 12-year-old has congenital choanal atresia and a non-specific maternal growth abnormality, which do not meet BCBS_FEP BRCA medical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA testing does not require prior cytogenetic tests such as FISH; the provided prior FISH result (nondiagnostic) is not a required antecedent test per the coverage criteria."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP BRCA eligibility depends on family history of breast/ovarian (or related) cancers; the only family history noted is a maternal 'growth abnormality,' which is not a qualifying family cancer history, so relevant family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of pre-test counseling for BRCA testing; the record states pre-test genetic counseling was completed and post-test follow-up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Among the provided CPT options, 81277 is the molecular pathology-type code most consistent with BRCA1/2 gene testing (large rearrangement/diagnostic BRCA testing) — the exact BRCA sequencing CPTs (e.g., 81211/81213) are not listed in the choices."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying BCBS_FEP BRCA coverage criteria, the patient lacks a qualifying personal or family cancer history despite having counseling; therefore BRCA1/2 testing is not covered for this clinical presentation."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1963,
+    "output_tokens": 2210,
+    "total_tokens": 4173
+  }
+}

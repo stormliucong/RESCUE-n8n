@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states 'whole genome sequencing (WGS) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WGS/WES coverage is specified for pediatric patients with congenital anomalies or early-onset neurodevelopmental concerns; the patient is a 3‑week‑old infant (pediatric), so age-based eligibility (pediatric) is met."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require ordering by an appropriate qualified provider (geneticist/genetics specialist) for complex genomic testing; the ordering provider is a medical geneticist, which meets the provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC defines medical indications including unexplained congenital anomalies and suspicion of a genetic disorder (family history of severe intellectual disability); Hirschsprung disease in an infant plus an affected sibling constitutes a clinical indication for genomic evaluation."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior first‑line testing (e.g., chromosomal microarray) to be performed and nondiagnostic before WES/WGS except in specific exceptions (e.g., critically ill NICU cases); only Fragile X testing was done and CMA is not documented, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a relevant family history: an older sibling with severe intellectual disability diagnosed by age 18, which is pertinent to eligibility criteria that consider family history of neurodevelopmental disorders."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC typically requires documentation of pre‑test genetic counseling by an appropriate professional for comprehensive genomic testing; the record states there is no documented pre‑test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT options, 81425 corresponds to whole genome sequencing (WGS) analysis and reporting, matching the ordered test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, ordering provider, clinical indication, and family history support WGS, UHC coverage requires prior first‑line testing (notably chromosomal microarray) and documentation of pre‑test genetic counseling except in narrow exceptions (e.g., critically ill neonates). Those prior testing and counseling requirements are not satisfied in the provided information, so the test would not meet UHC coverage criteria as documented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1969,
+    "output_tokens": 1941,
+    "total_tokens": 3910
+  }
+}

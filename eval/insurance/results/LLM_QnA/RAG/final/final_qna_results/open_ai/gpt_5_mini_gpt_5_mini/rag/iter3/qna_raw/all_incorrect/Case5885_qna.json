@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years for GS; patient is 11 years old, meeting the age-based eligibility (MOL.TS.306.C: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline does not mandate a specific ordering provider specialty; it requires an 'appropriate genetic and family history evaluation' and documentation but does not specify an ordering provider type or specialty in the coverage criteria."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires the phenotype meet one of specified indications (e.g., global developmental delay, multiple congenital anomalies, or TWO of a specified list including a major abnormality plus another criterion). The patient has a single 'major abnormality affecting at least one organ system' but no second qualifying feature is documented, so does not meet the specified medical indication (MOL.TS.306.C criteria)."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy requires that the member has NOT had previous exome or genome sequencing. Patient history notes prior Fragile X testing (nondiagnostic) and no prior exome/genome is reported, satisfying the 'no prior ES/GS' requirement in the policy."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has a family history of long QT in the mother, the GS coverage criteria do not list family history/consanguinity as a standalone general eligibility criterion (family history is specifically cited only for certain rWGS infant criteria); the policy requires an appropriate family history evaluation but does not make this specific family history explicitly determinative for coverage."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy (GS criteria and ACMG recommendations cited) requires pretest counseling and written documentation/clinical letter detailing the genetic/family history evaluation. Patient info states counseling was discussed with a genetic specialist but does not document the required clinical letter or written consent elements required by the guideline, so counseling/documentation requirements are not shown to be met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy specifies 81425 should be billed for the proband for whole genome sequence analysis ('81425 should be billed for the proband...')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although patient meets age and has no prior ES/WGS, the policy requires specific clinical indications (e.g., global developmental delay, multiple congenital anomalies, or TWO-of criteria) and documentation (clinical letter detailing evaluation) which are not met/documented. Therefore, under the policy the requested WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9147,
+    "output_tokens": 3090,
+    "total_tokens": 12237
+  }
+}

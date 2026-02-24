@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member be <21 years of age for ES; patient is 8 years old, which meets the age criterion (policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The Cigna ES policy requires an appropriate genetic/family history evaluation and a clinical letter but does not specify a required ordering provider specialty/type; no explicit ordering-provider specialty requirement is stated."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires specific clinical indications (e.g., global developmental delay onset <5, moderate/severe ID after formal assessment, multiple congenital anomalies, or other defined criteria). The patient has hypotonia and motor delay but does not meet any of the policy's explicit listed indications or documented formal assessments; thus the defined medical-necessity criteria are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires documentation of previous tests and that prior ES/WGS not have been performed; it does not universally require specific prior testing (e.g., CMA) for all presentations. The patient had Fragile X testing (nondiagnostic) and has no prior ES/WGS, but the policy does not define a specific mandatory prior-test set for this presentation."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Patient has a sibling with autism (family history present), but the policy does not define family history/consanguinity as a standalone explicit eligibility criterion for ES in this context; family history is part of the required genetic/family history evaluation but no specific family-history threshold is specified."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "ACMG recommendations for pretest counseling by a medical geneticist/genetic counselor are cited in the policy, but the ES 'medically necessary' criteria do not explicitly mandate documented genetic counseling as a required element; the patient's lack of pretest counseling is noted but the policy does not state it as an absolute coverage requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy lists CPT 81415 as the appropriate code to bill for proband exome sequencing ('81415 should be billed for the proband')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage requires ALL policy criteria be met (including documented appropriate genetic/family history evaluation with clinical letter and meeting one of the specified clinical indications). The patient lacks documentation of the required clinical evaluation/letter, does not clearly meet the policy's specified clinical indication criteria, and pretest counseling was not performed; therefore ES does not meet the policy's medical necessity requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10471,
+    "output_tokens": 2581,
+    "total_tokens": 13052
+  }
+}

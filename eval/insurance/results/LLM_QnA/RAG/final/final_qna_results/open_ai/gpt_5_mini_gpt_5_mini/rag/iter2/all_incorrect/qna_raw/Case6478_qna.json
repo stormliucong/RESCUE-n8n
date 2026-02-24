@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being referred for germline BRCA1 and BRCA2 testing per the clinical information; policy addresses BRCA1/BRCA2/PALB2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not set an upper age limit for BRCA1/2 testing in adults (only states testing in minors is investigational); no specific age-based exclusion applies to this 52-year-old in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained health care providers able to give appropriate pre- and post-test counseling. The ordering situation states pre-test genetic counseling was not completed, so ordering/provider requirements in the policy are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'personal history of metastatic ... prostate cancer at any age' and individuals with prostate cancer and a relative with pancreatic cancer as indications; the patient has metastatic prostate cancer and a father with pancreatic cancer, so he meets medical criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of any specific prior genetic test before germline BRCA1/2 testing in cancer-affected individuals meeting criteria; no required prior laboratory test is specified for this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy considers a close blood relative with pancreatic cancer as a relevant family-history criterion; the patient’s father had pancreatic cancer, which is relevant to eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy specifies that testing should be done in a setting that provides appropriate pre- and post-test genetic counseling by experienced providers. The patient did not receive pre-test genetic counseling (only plans for post-test counseling), so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing codes for BRCA1/2 testing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the policy's medical indication for germline BRCA1/2 testing (metastatic prostate cancer and family history of pancreatic cancer), the policy requires testing be performed in a setting with appropriate pre- and post-test genetic counseling. Pre-test counseling was not completed, so policy provider/counseling requirements are not met and coverage is not supported."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18940,
+    "output_tokens": 1936,
+    "total_tokens": 20876
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information explicitly states BRCA1 and BRCA2 testing was ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly disallows testing of minors; the patient is a 69‑year‑old adult (not a minor), so the age restriction in the policy is satisfied."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires testing be done in a setting with suitably trained providers who can give pre/post‑test counseling but does not specify a required ordering provider specialty; the ordering cardiologist is not precluded by a specific specialty requirement in the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy lists specific indications for BRCA testing (personal history of breast/ovarian/pancreatic/prostate cancer, affected relatives, known familial pathogenic variant, therapy decision‑making, >5% risk by model). The patient has no personal history of those cancers and no relevant family cancer history, so none of the policy's medical‑necessity criteria are met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends testing an affected family member first when possible and describes prior limited testing considerations, but it does not mandate completion of a specific prior test before BRCA1/2 testing in all cases."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family history criteria for eligibility (first/second/third‑degree relatives with relevant cancers). The patient’s family history (a sibling with a brief unexplained event) is not a cancer family history meeting the policy criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires testing be performed in a setting that can provide appropriate pre‑ and post‑test genetic counseling and states experts recommend formal genetic counseling in most cases; the patient had no pre‑test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "81162 is listed in the policy's 'Covered when medically necessary' procedure code list for germline BRCA testing and is the best match among the provided options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy germline BRCA testing is medically necessary only under specific cancer‑related indications (personal cancer history, relevant family cancer history, known familial pathogenic variant, tumor result guiding germline testing, or therapy decision-making). The patient lacks these indications and testing is being pursued for non‑covered reasons (hearing/visual impairment), so the test is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 20208,
+    "output_tokens": 2667,
+    "total_tokens": 22875
+  }
+}

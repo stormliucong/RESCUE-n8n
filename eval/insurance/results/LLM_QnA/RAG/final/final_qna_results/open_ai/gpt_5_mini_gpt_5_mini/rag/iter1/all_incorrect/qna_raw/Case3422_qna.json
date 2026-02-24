@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states consideration of whole-exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose a general age cutoff for standard exome sequencing; age-specific limits are given only for rapid exome (infants ≤12 months) or for developmental-delay onset <18 yrs. The patient is 34 and no policy age exclusion for standard WES is specified."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires evaluation by a Board-Certified or Board-Eligible Medical Geneticist or an Advanced Practice Nurse in Genetics for standard ES (criteria I.G). Patient info documents multiple visits with a genetic counselor but does not state evaluation by a Medical Geneticist or APGN, so ordering/provider requirements are not met per the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Standard ES is covered when etiology unknown and genetics likely based on (a) developmental delay with onset <18, OR (b) multiple congenital abnormalities affecting unrelated organ systems, OR (c) TWO listed features (e.g., single-organ abnormality plus another). Patient has a single congenital choanal atresia (one organ system) and no additional qualifying features documented, so she does not meet the defined medical indications in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy advises consideration of ES after unrevealing testing (e.g., CMA) but does not mandate a specific prior test as a universal requirement in the formal criteria. Although the patient had a nondiagnostic CMA, the policy does not explicitly require CMA completion as a prerequisite."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists 'family history strongly suggestive of a genetic etiology, including consanguinity' as a qualifying feature. The patient’s only documented family history is a mother with breast cancer at age 50, which the record does not document as 'strongly suggestive' per the policy; therefore the family-history criterion is not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test counseling by an appropriate provider (e.g., Certified Genetic Counselor). Patient has seen a genetic counselor multiple times, satisfying the counseling requirement described in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy examples list standard exome sequencing proband testing with CPT code 81415 (e.g., 'XomeDx - Proband' / Exome - Proband). The requested WES corresponds to 81415 per the policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, standard exome sequencing is medically necessary only when specific clinical criteria are met (multiple congenital anomalies OR developmental delay onset <18 OR TWO qualifying features) and the patient/family have been evaluated by a Board-Certified/Eligible Medical Geneticist or APGN. Although the patient had nondiagnostic CMA and has received genetic counseling, she only has a single congenital anomaly (choanal atresia), lacks a second qualifying clinical feature or multiple unrelated anomalies, and there is no documentation of evaluation by a Medical Geneticist/APGN. Therefore coverage criteria are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12213,
+    "output_tokens": 2930,
+    "total_tokens": 15143
+  }
+}

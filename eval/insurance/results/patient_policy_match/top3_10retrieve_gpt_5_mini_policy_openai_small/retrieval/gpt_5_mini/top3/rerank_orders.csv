@@ -1,0 +1,1061 @@
+case_id,rank,name,score,rerank_success
+Case14017,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6434081792831421,True
+Case14017,2,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6536436080932617,True
+Case14017,3,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6101058125495911,True
+Case14017,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6283214688301086,True
+Case14017,5,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6236929893493652,True
+Case14017,6,Asuris_Northwest_Health_Genetic Testing for Epilepsy.pdf,0.6379494667053223,True
+Case14017,7,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6234232187271118,True
+Case14017,8,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6171143054962158,True
+Case14017,9,Cigna_MOL.TS_.257.A_Epilepsy_Genetic_Testing_eff01.01.2025_09.12.2024_0.pdf,0.6244142055511475,True
+Case14017,10,BCBS_HW_GTM Genetic Testing for Epilepsy AHS-M2075 2025-0201.pdf,0.6321716904640198,True
+Case1778,1,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5714939832687378,True
+Case1778,2,BCBS_NE_V36.pdf,0.5486758947372437,True
+Case1778,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.588365912437439,True
+Case1778,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6100356578826904,True
+Case1778,5,BCBS_FEP_204102 Whole Exome and.pdf,0.5784237384796143,True
+Case1778,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6205864548683167,True
+Case1778,7,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.608244001865387,True
+Case1778,8,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6269394159317017,True
+Case1778,9,Cigna_MOL.CU_.246.A_Germline_Test_After_Somatic_Testing_eff01.01.2025_pub09.10.2024_upd11.18.24_1.pdf,0.5563004016876221,True
+Case1778,10,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.5512165427207947,True
+Case4604,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6519548296928406,True
+Case4604,2,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6471312642097473,True
+Case4604,3,CapitalBC_Developmental delay.pdf,0.6515835523605347,True
+Case4604,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6669105291366577,True
+Case4604,5,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6463236808776855,True
+Case4604,6,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.645789384841919,True
+Case4604,7,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6422998905181885,True
+Case4604,8,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6439993977546692,True
+Case4604,9,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.643898069858551,True
+Case4604,10,Vermont_Chromosomal Microarray for web_0.pdf,0.664792001247406,True
+Case3422,1,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.555615246295929,True
+Case3422,2,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.5513520836830139,True
+Case3422,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5616121292114258,True
+Case3422,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.558861255645752,True
+Case3422,5,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.5526015162467957,True
+Case3422,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5534392595291138,True
+Case3422,7,Cigna_MOL.CU_.246.A_Germline_Test_After_Somatic_Testing_eff01.01.2025_pub09.10.2024_upd11.18.24_1.pdf,0.5652865767478943,True
+Case3422,8,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.5513768196105957,True
+Case3422,9,Carelon_Amerigroup_BCBSAlabama_Hereditary_Cancer.pdf,0.5490931272506714,True
+Case3422,10,BCBS_NE_V59.pdf,0.5493972301483154,True
+Case10917,1,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6232856512069702,False
+Case10917,2,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6222026348114014,False
+Case10917,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6187374591827393,False
+Case10917,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6157270669937134,False
+Case10917,5,BCBS_FEP_204102 Whole Exome and.pdf,0.61564701795578,False
+Case10917,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6150590181350708,False
+Case10917,7,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6017695665359497,False
+Case10917,8,Asuris_Northwest_Health_Reproductive Carrier Screening for Genetic Diseases.pdf,0.5945138931274414,False
+Case10917,9,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5860821008682251,False
+Case10917,10,Capital Health Plan_genetic_testing.pdf,0.5784505605697632,False
+Case18821,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6585656404495239,True
+Case18821,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6636117696762085,True
+Case18821,3,BCBS_NE_V30.pdf,0.6208580732345581,True
+Case18821,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6642565131187439,True
+Case18821,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.660308837890625,True
+Case18821,6,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.6445217132568359,True
+Case18821,7,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6916535496711731,True
+Case18821,8,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6444119215011597,True
+Case18821,9,HealthParners_prenatal diagnosis and pregnancy loss.pdf,0.6250636577606201,True
+Case18821,10,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6226125359535217,True
+Case13,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6718968152999878,True
+Case13,2,BCBS_NE_V36.pdf,0.6408417224884033,True
+Case13,3,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6365731954574585,True
+Case13,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.654155433177948,True
+Case13,5,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6876924633979797,True
+Case13,6,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6628018617630005,True
+Case13,7,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6573349833488464,True
+Case13,8,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6672277450561523,True
+Case13,9,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.6413649320602417,True
+Case13,10,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6563699245452881,True
+Case8621,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6696578860282898,True
+Case8621,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6661908626556396,True
+Case8621,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6714752912521362,True
+Case8621,4,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6410678625106812,True
+Case8621,5,BCBS_FEP_204102 Whole Exome and.pdf,0.6417914032936096,True
+Case8621,6,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.627292275428772,True
+Case8621,7,CapitalBC_Developmental delay.pdf,0.6265802979469299,True
+Case8621,8,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6594904065132141,True
+Case8621,9,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6503837704658508,True
+Case8621,10,Vermont_Chromosomal Microarray for web_0.pdf,0.63108891248703,True
+Case8051,1,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.646824836730957,False
+Case8051,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6384773850440979,False
+Case8051,3,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6365981101989746,False
+Case8051,4,BCBS_FEP_204102 Whole Exome and.pdf,0.6335262060165405,False
+Case8051,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6333052515983582,False
+Case8051,6,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6318761706352234,False
+Case8051,7,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6068358421325684,False
+Case8051,8,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6021203398704529,False
+Case8051,9,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.5925706624984741,False
+Case8051,10,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.5905530452728271,False
+Case13517,1,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6183000802993774,False
+Case13517,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6173139214515686,False
+Case13517,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6170860528945923,False
+Case13517,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6162581443786621,False
+Case13517,5,BCBS_FEP_204102 Whole Exome and.pdf,0.6146724820137024,False
+Case13517,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6053633689880371,False
+Case13517,7,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.5993295907974243,False
+Case13517,8,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.587333083152771,False
+Case13517,9,Asuris_Northwest_Health_Reproductive Carrier Screening for Genetic Diseases.pdf,0.5850509405136108,False
+Case13517,10,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.5823493003845215,False
+Case3359,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6716858148574829,True
+Case3359,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6715981960296631,True
+Case3359,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.674759030342102,True
+Case3359,4,BCBS_FEP_204102 Whole Exome and.pdf,0.6522430181503296,True
+Case3359,5,CapitalBC_Developmental delay.pdf,0.6418688297271729,True
+Case3359,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6616734266281128,True
+Case3359,7,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6646890640258789,True
+Case3359,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6366456151008606,True
+Case3359,9,Vermont_Chromosomal Microarray for web_0.pdf,0.6583907604217529,True
+Case3359,10,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6464331150054932,True
+Case2496,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6696765422821045,True
+Case2496,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.670362114906311,True
+Case2496,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6916211843490601,True
+Case2496,4,BCBS_FEP_204102 Whole Exome and.pdf,0.6386960744857788,True
+Case2496,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.667281448841095,True
+Case2496,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6584104299545288,True
+Case2496,7,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.6237833499908447,True
+Case2496,8,United Healthcare_cell-free-fetal-dna-testing.pdf,0.6188592910766602,True
+Case2496,9,HealthParners_prenatal diagnosis and pregnancy loss.pdf,0.6228988170623779,True
+Case2496,10,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6374339461326599,True
+Case8485,1,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.574569582939148,True
+Case8485,2,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.5806593894958496,True
+Case8485,3,BCBS_FEP_204102 Whole Exome and.pdf,0.570562481880188,True
+Case8485,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5631629228591919,True
+Case8485,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5640091300010681,True
+Case8485,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.5597526431083679,True
+Case8485,7,BCBS_NE_V65.pdf,0.556707501411438,True
+Case8485,8,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.5663694143295288,True
+Case8485,9,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.5604263544082642,True
+Case8485,10,Vermont_Fragile X FMR1_050523.pdf,0.5918114185333252,True
+Case5674,1,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6699731349945068,True
+Case5674,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6141539812088013,True
+Case5674,3,Blue Cross Idaho_02.04.109_03-27-25.pdf,0.6215754151344299,True
+Case5674,4,BCBS_HW_GTM Genetic Testing for Epilepsy AHS-M2075 2025-0201.pdf,0.6334879994392395,True
+Case5674,5,Asuris_Northwest_Health_Genetic Testing for Epilepsy.pdf,0.665117621421814,True
+Case5674,6,Cigna_MOL.TS_.257.A_Epilepsy_Genetic_Testing_eff01.01.2025_09.12.2024_0.pdf,0.6465316414833069,True
+Case5674,7,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.5944535136222839,True
+Case5674,8,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.593532145023346,True
+Case5674,9,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.605530858039856,True
+Case5674,10,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.591498851776123,True
+Case3494,1,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6581432819366455,True
+Case3494,2,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6375685930252075,True
+Case3494,3,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6379886269569397,True
+Case3494,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6324892640113831,True
+Case3494,5,BCBS_FEP_204102 Whole Exome and.pdf,0.6265031099319458,True
+Case3494,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6248388290405273,True
+Case3494,7,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.6214747428894043,True
+Case3494,8,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6067367792129517,True
+Case3494,9,BCBS_NE_V36.pdf,0.6055423617362976,True
+Case3494,10,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6053329706192017,True
+Case7297,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6713076829910278,True
+Case7297,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6780679225921631,True
+Case7297,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6785613298416138,True
+Case7297,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6698223948478699,True
+Case7297,5,BCBS_FEP_204102 Whole Exome and.pdf,0.6459858417510986,True
+Case7297,6,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.6321041584014893,True
+Case7297,7,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6778121590614319,True
+Case7297,8,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.642819881439209,True
+Case7297,9,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6325759291648865,True
+Case7297,10,Cigna_MOL.CU_.246.A_Germline_Test_After_Somatic_Testing_eff01.01.2025_pub09.10.2024_upd11.18.24_1.pdf,0.6475905776023865,True
+Case9978,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.588657021522522,True
+Case9978,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5847645401954651,True
+Case9978,3,Asuris_Northwest_Health_Genetic Testing for Epilepsy.pdf,0.5715843439102173,True
+Case9978,4,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.5845860242843628,True
+Case9978,5,BCBS_FEP_204102 Whole Exome and.pdf,0.6029214859008789,True
+Case9978,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.5762618780136108,True
+Case9978,7,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.5828222036361694,True
+Case9978,8,Vermont_Fragile X FMR1_050523.pdf,0.6215850114822388,True
+Case9978,9,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.5910107493400574,True
+Case9978,10,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5772340893745422,True
+Case4196,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6612883806228638,True
+Case4196,2,BCBS_NE_V36.pdf,0.6186414957046509,True
+Case4196,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6270352602005005,True
+Case4196,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.639261782169342,True
+Case4196,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.656495988368988,True
+Case4196,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6513141393661499,True
+Case4196,7,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6380487680435181,True
+Case4196,8,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.6355292797088623,True
+Case4196,9,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.66921067237854,True
+Case4196,10,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6281997561454773,True
+Case14141,1,BCBS_FEP_204102 Whole Exome and.pdf,0.673565149307251,True
+Case14141,2,CapitalBC_Developmental delay.pdf,0.6390993595123291,True
+Case14141,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6746283769607544,True
+Case14141,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6436926126480103,True
+Case14141,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.675437331199646,True
+Case14141,6,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6755911111831665,True
+Case14141,7,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6666795611381531,True
+Case14141,8,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.688178539276123,True
+Case14141,9,BCBS_NE_V36.pdf,0.6427067518234253,True
+Case14141,10,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6349883079528809,True
+Case18882,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6884806156158447,True
+Case18882,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6893894672393799,True
+Case18882,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6960108280181885,True
+Case18882,4,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6292750835418701,True
+Case18882,5,BCBS_NE_V36.pdf,0.6285327672958374,True
+Case18882,6,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6498527526855469,True
+Case18882,7,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6896944642066956,True
+Case18882,8,BCBS_FEP_204102 Whole Exome and.pdf,0.671280026435852,True
+Case18882,9,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6844922304153442,True
+Case18882,10,Sentara_Genetic Testing - Preconceptional-Prenatal-Preimplantation Medicaid - Medical 34D.pdf,0.6307252049446106,True
+Case5230,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6629689335823059,True
+Case5230,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6580938100814819,True
+Case5230,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6697384715080261,True
+Case5230,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6493529081344604,True
+Case5230,5,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6516181230545044,True
+Case5230,6,BCBS_FEP_204102 Whole Exome and.pdf,0.6459540724754333,True
+Case5230,7,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6089799404144287,True
+Case5230,8,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6073042154312134,True
+Case5230,9,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.610474705696106,True
+Case5230,10,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.6098359823226929,True
+Case11124,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6773291826248169,True
+Case11124,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6791030168533325,True
+Case11124,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6966865062713623,True
+Case11124,4,BCBS_FEP_204102 Whole Exome and.pdf,0.649649977684021,True
+Case11124,5,BCBS_NE_V36.pdf,0.6170434355735779,True
+Case11124,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6705751419067383,True
+Case11124,7,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6390445828437805,True
+Case11124,8,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6617727279663086,True
+Case11124,9,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6140854954719543,True
+Case11124,10,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6131448745727539,True
+Case8288,1,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.647689938545227,True
+Case8288,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6346325278282166,True
+Case8288,3,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6325875520706177,True
+Case8288,4,United Healthcare_chromosome-microarray-testing.pdf,0.6594433784484863,True
+Case8288,5,oxford_chromosome-microarray-testing-ohp.pdf,0.644892156124115,True
+Case8288,6,United Healthcare_cell-free-fetal-dna-testing.pdf,0.6361467838287354,True
+Case8288,7,HealthParners_prenatal diagnosis and pregnancy loss.pdf,0.633504331111908,True
+Case8288,8,Asuris_Northwest_Health_Invasive_Prenatal_Fetal_Diagnostic.pdf,0.6383882761001587,True
+Case8288,9,Blue Cross Idaho_02.04.116_08-29-24.pdf,0.633939802646637,True
+Case8288,10,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.6959692239761353,True
+Case7376,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6458190679550171,True
+Case7376,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.63991379737854,True
+Case7376,3,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6172589063644409,True
+Case7376,4,Carelon_Amerigroup_BCBSAlabama_Hereditary_Cancer.pdf,0.6184828281402588,True
+Case7376,5,BCBS_NE_V59.pdf,0.620051920413971,True
+Case7376,6,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.619747519493103,True
+Case7376,7,Cigna_MOL.CU_.246.A_Germline_Test_After_Somatic_Testing_eff01.01.2025_pub09.10.2024_upd11.18.24_1.pdf,0.6311326026916504,True
+Case7376,8,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6251704692840576,True
+Case7376,9,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6398622393608093,True
+Case7376,10,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6308249831199646,True
+Case7682,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6682450771331787,True
+Case7682,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6644030213356018,True
+Case7682,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6798999309539795,True
+Case7682,4,BCBS_FEP_204102 Whole Exome and.pdf,0.6490005254745483,True
+Case7682,5,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6256208419799805,True
+Case7682,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6621782779693604,True
+Case7682,7,BCBS_NE_V36.pdf,0.6184003353118896,True
+Case7682,8,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.655995786190033,True
+Case7682,9,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.629021167755127,True
+Case7682,10,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6303837895393372,True
+Case19905,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6723030805587769,True
+Case19905,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6678068041801453,True
+Case19905,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.685894250869751,True
+Case19905,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6779645681381226,True
+Case19905,5,BCBS_FEP_204102 Whole Exome and.pdf,0.656682550907135,True
+Case19905,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6713581681251526,True
+Case19905,7,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6115756034851074,True
+Case19905,8,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.6092039346694946,True
+Case19905,9,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6398036479949951,True
+Case19905,10,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6134674549102783,True
+Case2847,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6629259586334229,False
+Case2847,2,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6627962589263916,False
+Case2847,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.657444953918457,False
+Case2847,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6552384495735168,False
+Case2847,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6527024507522583,False
+Case2847,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6491649150848389,False
+Case2847,7,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6340627670288086,False
+Case2847,8,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.627480149269104,False
+Case2847,9,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6241734623908997,False
+Case2847,10,BCBS_NE_V36.pdf,0.6241125464439392,False
+Case10529,1,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5934091210365295,True
+Case10529,2,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.5992109775543213,True
+Case10529,3,Dean_HealthPlan_Genetic-Testing-Inherited-Intell-Develop-9587.pdf,0.602949857711792,True
+Case10529,4,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.609145998954773,True
+Case10529,5,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6290310621261597,True
+Case10529,6,Blue Cross Idaho_02.04.083_01-30-25.pdf,0.6007600426673889,True
+Case10529,7,Humana_Genetic Testing for Diagnosis of Inherited Conditions - Commercial.pdf,0.5956396460533142,True
+Case10529,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5980886220932007,True
+Case10529,9,Vermont_Fragile X FMR1_050523.pdf,0.6657198071479797,True
+Case10529,10,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.5956035852432251,True
+Case16487,1,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6137512922286987,False
+Case16487,2,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6125627160072327,False
+Case16487,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.610261082649231,False
+Case16487,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6038853526115417,False
+Case16487,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5997017621994019,False
+Case16487,6,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5979686975479126,False
+Case16487,7,BCBS_FEP_204102 Whole Exome and.pdf,0.5923727750778198,False
+Case16487,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5875310897827148,False
+Case16487,9,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.5809146761894226,False
+Case16487,10,Cigna_MOL.CU_.246.A_Germline_Test_After_Somatic_Testing_eff01.01.2025_pub09.10.2024_upd11.18.24_1.pdf,0.5790969133377075,False
+Case811,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6684799194335938,True
+Case811,2,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Epilepsy-Neurodegen-Neuromuscular-Disorders.pdf,0.6385306119918823,True
+Case811,3,BCBS_NE_V65.pdf,0.6707025766372681,True
+Case811,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.657629668712616,True
+Case811,5,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6501467227935791,True
+Case811,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.653573215007782,True
+Case811,7,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6495901942253113,True
+Case811,8,Dean_HealthPlan_Genetic-Testing-Epilepsy-Neuro-DX-9591.pdf,0.6488838195800781,True
+Case811,9,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.662678599357605,True
+Case811,10,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.6456127762794495,True
+Case9408,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6702486276626587,True
+Case9408,2,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6556965112686157,True
+Case9408,3,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6391713619232178,True
+Case9408,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6579257845878601,True
+Case9408,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6490273475646973,True
+Case9408,6,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6600506901741028,True
+Case9408,7,Asuris_Northwest_Health_Genetic Testing for Epilepsy.pdf,0.627778947353363,True
+Case9408,8,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6419674158096313,True
+Case9408,9,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6394354104995728,True
+Case9408,10,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6258524656295776,True
+Case4067,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6146219968795776,False
+Case4067,2,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.614530086517334,False
+Case4067,3,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6105616092681885,False
+Case4067,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.609807550907135,False
+Case4067,5,BCBS_FEP_204102 Whole Exome and.pdf,0.6063621640205383,False
+Case4067,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6028316617012024,False
+Case4067,7,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.58818119764328,False
+Case4067,8,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5855046510696411,False
+Case4067,9,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.5739275813102722,False
+Case4067,10,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.5693387985229492,False
+Case4982,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6670729517936707,True
+Case4982,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6610934734344482,True
+Case4982,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6569333076477051,True
+Case4982,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6521672010421753,True
+Case4982,5,BCBS_FEP_204102 Whole Exome and.pdf,0.6517506837844849,True
+Case4982,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6495401859283447,True
+Case4982,7,Asuris_Northwest_Health_Genetic Testing for Epilepsy.pdf,0.6286194920539856,True
+Case4982,8,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6296959519386292,True
+Case4982,9,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6346579790115356,True
+Case4982,10,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6321982741355896,True
+Case8710,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6797134876251221,True
+Case8710,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6754863262176514,True
+Case8710,3,BCBS_FEP_204102 Whole Exome and.pdf,0.658461332321167,True
+Case8710,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6830329895019531,True
+Case8710,5,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.683120846748352,True
+Case8710,6,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.6273626089096069,True
+Case8710,7,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6673250198364258,True
+Case8710,8,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6549066305160522,True
+Case8710,9,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6326664090156555,True
+Case8710,10,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6269213557243347,True
+Case13613,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6068705320358276,True
+Case13613,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6142545938491821,True
+Case13613,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6233665943145752,True
+Case13613,4,BCBS_FEP_204102 Whole Exome and.pdf,0.5966138243675232,True
+Case13613,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6023671627044678,True
+Case13613,6,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.6088281869888306,True
+Case13613,7,Vermont_Fragile X FMR1_050523.pdf,0.6666882038116455,True
+Case13613,8,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6215142607688904,True
+Case13613,9,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6284691095352173,True
+Case13613,10,Blue Cross Idaho_02.04.083_01-30-25.pdf,0.6044961214065552,True
+Case1501,1,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6832382678985596,False
+Case1501,2,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6783212423324585,False
+Case1501,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6740464568138123,False
+Case1501,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.673385500907898,False
+Case1501,5,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6716486215591431,False
+Case1501,6,BCBS_FEP_204102 Whole Exome and.pdf,0.6634922027587891,False
+Case1501,7,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6409668922424316,False
+Case1501,8,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6268336176872253,False
+Case1501,9,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.6263745427131653,False
+Case1501,10,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6263560652732849,False
+Case10451,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6773566007614136,True
+Case10451,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6710097789764404,True
+Case10451,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.667445957660675,True
+Case10451,4,BCBS_FEP_204102 Whole Exome and.pdf,0.6637279987335205,True
+Case10451,5,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6300264596939087,True
+Case10451,6,BCBS_NE_V36.pdf,0.6318862438201904,True
+Case10451,7,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.6361201405525208,True
+Case10451,8,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.656259298324585,True
+Case10451,9,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6457394957542419,True
+Case10451,10,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.6418860554695129,True
+Case4262,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6547526121139526,True
+Case4262,2,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.624451756477356,True
+Case4262,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6447584629058838,True
+Case4262,4,BCBS_NE_V36.pdf,0.6250522136688232,True
+Case4262,5,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6221117973327637,True
+Case4262,6,BCBS_NE_V30.pdf,0.6198970079421997,True
+Case4262,7,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6665301322937012,True
+Case4262,8,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.639313817024231,True
+Case4262,9,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6394852995872498,True
+Case4262,10,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6532101631164551,True
+Case19321,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6746523380279541,True
+Case19321,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6716245412826538,True
+Case19321,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6764644980430603,True
+Case19321,4,CapitalBC_Developmental delay.pdf,0.6412537693977356,True
+Case19321,5,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6569343209266663,True
+Case19321,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6621910333633423,True
+Case19321,7,BCBS_FEP_204102 Whole Exome and.pdf,0.6461709141731262,True
+Case19321,8,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6319312453269958,True
+Case19321,9,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6584861278533936,True
+Case19321,10,Vermont_Chromosomal Microarray for web_0.pdf,0.637712836265564,True
+Case11795,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6614840030670166,True
+Case11795,2,BCBS_NE_V36.pdf,0.633204460144043,True
+Case11795,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6460793614387512,True
+Case11795,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.647587776184082,True
+Case11795,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6432484984397888,True
+Case11795,6,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6571334004402161,True
+Case11795,7,CapitalBC_whole-exome-and-whole-genome-sequencing-for-diagnosis-of-genetic-disorders.pdf,0.628844141960144,True
+Case11795,8,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6414405107498169,True
+Case11795,9,Vermont_Chromosomal Microarray for web_0.pdf,0.6263465881347656,True
+Case11795,10,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.6280023455619812,True
+Case9349,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6335889101028442,False
+Case9349,2,BCBS_FEP_204114 Genetic Testing for Idiopathic.pdf,0.6255791187286377,False
+Case9349,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.622663140296936,False
+Case9349,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6217694878578186,False
+Case9349,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6209428310394287,False
+Case9349,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6199425458908081,False
+Case9349,7,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6185208559036255,False
+Case9349,8,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6174434423446655,False
+Case9349,9,Dean_HealthPlan_Genetic-Testing-Cardiac-DX-9589.pdf,0.6080118417739868,False
+Case9349,10,BCBS_NE_V66.pdf,0.6074414253234863,False
+Case14127,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6788703799247742,True
+Case14127,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6707323789596558,True
+Case14127,3,Health Partners Plan_mn011d-whole-genome-whole-exome-sequencing.pdf,0.6378053426742554,True
+Case14127,4,BCBS_FEP_204102 Whole Exome and.pdf,0.6594451665878296,True
+Case14127,5,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6690213680267334,True
+Case14127,6,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6459174156188965,True
+Case14127,7,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6508716344833374,True
+Case14127,8,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.665546178817749,True
+Case14127,9,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6400691270828247,True
+Case14127,10,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.653811514377594,True
+Case950,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6252015233039856,True
+Case950,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6158045530319214,True
+Case950,3,Cigna_MOL.TS_.257.A_Epilepsy_Genetic_Testing_eff01.01.2025_09.12.2024_0.pdf,0.6406993269920349,True
+Case950,4,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6297920942306519,True
+Case950,5,Asuris_Northwest_Health_Genetic Testing for Epilepsy.pdf,0.6337867975234985,True
+Case950,6,BCBS_HW_GTM Genetic Testing for Epilepsy AHS-M2075 2025-0201.pdf,0.6007890105247498,True
+Case950,7,BCBS_FEP_204102 Whole Exome and.pdf,0.6118544340133667,True
+Case950,8,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6160755753517151,True
+Case950,9,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5990954637527466,True
+Case950,10,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6119215488433838,True
+Case15834,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6065259575843811,True
+Case15834,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6083744764328003,True
+Case15834,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6165497303009033,True
+Case15834,4,BCBS_FEP_204102 Whole Exome and.pdf,0.6022798418998718,True
+Case15834,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5977950096130371,True
+Case15834,6,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.620680570602417,True
+Case15834,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.5900319814682007,True
+Case15834,8,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6136853694915771,True
+Case15834,9,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.5895878076553345,True
+Case15834,10,Vermont_Fragile X FMR1_050523.pdf,0.6395699977874756,True
+Case14371,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6427533626556396,True
+Case14371,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6393423676490784,True
+Case14371,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6554229259490967,True
+Case14371,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.628553032875061,True
+Case14371,5,BCBS_FEP_204102 Whole Exome and.pdf,0.639473021030426,True
+Case14371,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6274412274360657,True
+Case14371,7,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6056084036827087,True
+Case14371,8,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6481631994247437,True
+Case14371,9,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6103612184524536,True
+Case14371,10,Vermont_Fragile X FMR1_050523.pdf,0.6355465054512024,True
+Case1130,1,Cigna_MOL.CU_.246.A_Germline_Test_After_Somatic_Testing_eff01.01.2025_pub09.10.2024_upd11.18.24_1.pdf,0.6335110068321228,False
+Case1130,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6299399733543396,False
+Case1130,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6235039234161377,False
+Case1130,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6184536218643188,False
+Case1130,5,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6121634244918823,False
+Case1130,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6091461181640625,False
+Case1130,7,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6054489016532898,False
+Case1130,8,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6026899814605713,False
+Case1130,9,BCBS_FEP_204102 Whole Exome and.pdf,0.6024320125579834,False
+Case1130,10,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.5987106561660767,False
+Case11514,1,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.629285454750061,False
+Case11514,2,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6279779672622681,False
+Case11514,3,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6255916357040405,False
+Case11514,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6210238933563232,False
+Case11514,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.613609790802002,False
+Case11514,6,Capital Health Plan_genetic_testing.pdf,0.6092445254325867,False
+Case11514,7,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6088852286338806,False
+Case11514,8,BCBS_FEP_204102 Whole Exome and.pdf,0.606667697429657,False
+Case11514,9,United Healthcare_genetic-testing-neuromuscular-disorders.pdf,0.6007675528526306,False
+Case11514,10,oxford_genetic-testing-neuromuscular-disorders-ohp.pdf,0.5973617434501648,False
+Case13675,1,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.659665584564209,False
+Case13675,2,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6545639038085938,False
+Case13675,3,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6510779857635498,False
+Case13675,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6416435241699219,False
+Case13675,5,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6391399502754211,False
+Case13675,6,BCBS_HW_GTM Genetic Testing for Hereditary Hearing Loss AHS-G2148 2025-0201.pdf,0.6351417303085327,False
+Case13675,7,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6257526874542236,False
+Case13675,8,CapitalBC_medical-policy-genetic-testing-for-hereditary-hearing-loss.pdf,0.6173180341720581,False
+Case13675,9,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6168872117996216,False
+Case13675,10,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6143685579299927,False
+Case3474,1,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6151755452156067,False
+Case3474,2,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6122900247573853,False
+Case3474,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6096546053886414,False
+Case3474,4,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6041618585586548,False
+Case3474,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5939618349075317,False
+Case3474,6,Asuris_Northwest_Health_Reproductive Carrier Screening for Genetic Diseases.pdf,0.5917116403579712,False
+Case3474,7,BCBS_HW_GTM Genetic Testing for CHARGE Syndrome AHS–M2070 2023-0601_v2.pdf,0.5892287492752075,False
+Case3474,8,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.5839552879333496,False
+Case3474,9,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.5826740264892578,False
+Case3474,10,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.579321026802063,False
+Case13983,1,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6446903347969055,False
+Case13983,2,BCBS_FEP_204102 Whole Exome and.pdf,0.6412585973739624,False
+Case13983,3,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.641182005405426,False
+Case13983,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6409761309623718,False
+Case13983,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6408733129501343,False
+Case13983,6,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.63212651014328,False
+Case13983,7,BCBS_FEP_20443 Genetic Testing for Cardiac.pdf,0.6317086815834045,False
+Case13983,8,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.629631519317627,False
+Case13983,9,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6247701644897461,False
+Case13983,10,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Cardiac-Disorders.pdf,0.6239151954650879,False
+Case11981,1,Vermont_Fragile X FMR1_050523.pdf,0.6488175392150879,False
+Case11981,2,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6422904133796692,False
+Case11981,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6340938210487366,False
+Case11981,4,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6318390369415283,False
+Case11981,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.630771815776825,False
+Case11981,6,BCBS_NE_V65.pdf,0.625431478023529,False
+Case11981,7,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6243630647659302,False
+Case11981,8,Dean_HealthPlan_Genetic-Testing-Epilepsy-Neuro-DX-9591.pdf,0.6227964162826538,False
+Case11981,9,BCBS_FEP_204102 Whole Exome and.pdf,0.621275007724762,False
+Case11981,10,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6203517913818359,False
+Case10427,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6509192585945129,True
+Case10427,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6551293730735779,True
+Case10427,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6323257684707642,True
+Case10427,4,BCBS_FEP_204102 Whole Exome and.pdf,0.619976282119751,True
+Case10427,5,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.624916672706604,True
+Case10427,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6283124685287476,True
+Case10427,7,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.622782826423645,True
+Case10427,8,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6485486030578613,True
+Case10427,9,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.629565954208374,True
+Case10427,10,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6397959589958191,True
+Case17822,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6738390326499939,True
+Case17822,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6735224723815918,True
+Case17822,3,CapitalBC_Developmental delay.pdf,0.6328088641166687,True
+Case17822,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6503499746322632,True
+Case17822,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6590223908424377,True
+Case17822,6,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6764904260635376,True
+Case17822,7,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6731747984886169,True
+Case17822,8,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6366096138954163,True
+Case17822,9,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6350915431976318,True
+Case17822,10,Asuris_Northwest_Health_Reproductive Carrier Screening for Genetic Diseases.pdf,0.6327434182167053,True
+Case6747,1,CapitalBC_Developmental delay.pdf,0.670169472694397,True
+Case6747,2,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6754986643791199,True
+Case6747,3,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.661186695098877,True
+Case6747,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6644781827926636,True
+Case6747,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.662198007106781,True
+Case6747,6,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.660065770149231,True
+Case6747,7,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6656467914581299,True
+Case6747,8,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6791356801986694,True
+Case6747,9,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6587121486663818,True
+Case6747,10,Vermont_Chromosomal Microarray for web_0.pdf,0.6632963418960571,True
+Case15938,1,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6393893957138062,False
+Case15938,2,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6382319331169128,False
+Case15938,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6370266675949097,False
+Case15938,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6155385971069336,False
+Case15938,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6151058673858643,False
+Case15938,6,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6128028035163879,False
+Case15938,7,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6112221479415894,False
+Case15938,8,BCBS_FEP_204102 Whole Exome and.pdf,0.5992108583450317,False
+Case15938,9,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.5916497707366943,False
+Case15938,10,United Healthcare_chromosome-microarray-testing.pdf,0.5882829427719116,False
+Case18868,1,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6345696449279785,False
+Case18868,2,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.6329197883605957,False
+Case18868,3,Cigna_MOL.CU_.246.A_Germline_Test_After_Somatic_Testing_eff01.01.2025_pub09.10.2024_upd11.18.24_1.pdf,0.6296766996383667,False
+Case18868,4,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6286425590515137,False
+Case18868,5,Carelon_Amerigroup_BCBSAlabama_Hereditary_Cancer.pdf,0.6244697570800781,False
+Case18868,6,BCBS_NE_V59.pdf,0.6118800640106201,False
+Case18868,7,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.6116135120391846,False
+Case18868,8,Medica_Genetic-Testing-Hereditary-Cancer-Susceptibility.pdf,0.6078466176986694,False
+Case18868,9,V2.2023 Concert Genetic Testing - Hereditary Cancer Susceptibility.pdf,0.6076069474220276,False
+Case18868,10,Dean_HealthPlan_Genetic-Testing-Cancer-Suscept-9596.pdf,0.6047424077987671,False
+Case2162,1,BCBS_FEP_204102 Whole Exome and.pdf,0.6368443965911865,True
+Case2162,2,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6473455429077148,True
+Case2162,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6443073749542236,True
+Case2162,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6374624371528625,True
+Case2162,5,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6539730429649353,True
+Case2162,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6457371711730957,True
+Case2162,7,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.627267062664032,True
+Case2162,8,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6478263139724731,True
+Case2162,9,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.656359851360321,True
+Case2162,10,Vermont_Fragile X FMR1_050523.pdf,0.6565333008766174,True
+Case7447,1,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5985060334205627,True
+Case7447,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.5923656225204468,True
+Case7447,3,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.5889890193939209,True
+Case7447,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6069841384887695,True
+Case7447,5,BCBS_HW_GTM Prenatal Screening (Genetic) AHS-M2179 2025-0301.pdf,0.5871865749359131,True
+Case7447,6,BCBS_HW_GTM Prenatal Testing for Fetal Aneuploidy AHS-G2055 2025-0201.pdf,0.5913934707641602,True
+Case7447,7,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.6270159482955933,True
+Case7447,8,United Healthcare_chromosome-microarray-testing.pdf,0.5859084725379944,True
+Case7447,9,United Healthcare_cell-free-fetal-dna-testing.pdf,0.602674663066864,True
+Case7447,10,Asuris_Northwest_Health_Noninvasive Prenatal Testing to Determine Fetal Aneuploidies- Microdeletions- Single-Gene Disorders- and Twin Zygosity.pdf,0.5888543725013733,True
+Case5380,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6426063776016235,True
+Case5380,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6419528722763062,True
+Case5380,3,BCBS_FEP_204102 Whole Exome and.pdf,0.6131193041801453,True
+Case5380,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6219940185546875,True
+Case5380,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6200860738754272,True
+Case5380,6,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6213125586509705,True
+Case5380,7,BCBS_NE_V36.pdf,0.6118205785751343,True
+Case5380,8,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6382741928100586,True
+Case5380,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6131813526153564,True
+Case5380,10,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.6063520312309265,True
+Case3465,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.664738655090332,True
+Case3465,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6660029888153076,True
+Case3465,3,BCBS_FEP_204102 Whole Exome and.pdf,0.6333253979682922,True
+Case3465,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6474053859710693,True
+Case3465,5,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6555991172790527,True
+Case3465,6,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6398599147796631,True
+Case3465,7,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6503348350524902,True
+Case3465,8,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6391522288322449,True
+Case3465,9,Vermont_Fragile X FMR1_050523.pdf,0.6491239070892334,True
+Case3465,10,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.6276389360427856,True
+Case5885,1,Vermont_Fragile X FMR1_050523.pdf,0.6604373455047607,False
+Case5885,2,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6421381831169128,False
+Case5885,3,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6397488117218018,False
+Case5885,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6277371644973755,False
+Case5885,5,Blue Cross Idaho_02.04.083_01-30-25.pdf,0.6244553327560425,False
+Case5885,6,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6229372620582581,False
+Case5885,7,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6208975315093994,False
+Case5885,8,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.618868350982666,False
+Case5885,9,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6144074201583862,False
+Case5885,10,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.6116522550582886,False
+Case19162,1,Vermont_Fragile X FMR1_050523.pdf,0.6460884213447571,False
+Case19162,2,BCBS_NE_V65.pdf,0.6393051743507385,False
+Case19162,3,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6271935105323792,False
+Case19162,4,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6178721189498901,False
+Case19162,5,Dean_HealthPlan_Genetic-Testing-Epilepsy-Neuro-DX-9591.pdf,0.6123518943786621,False
+Case19162,6,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Epilepsy-Neurodegen-Neuromuscular-Disorders.pdf,0.6085342168807983,False
+Case19162,7,BCBS_FEP_204102 Whole Exome and.pdf,0.6062941551208496,False
+Case19162,8,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6050588488578796,False
+Case19162,9,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.601365327835083,False
+Case19162,10,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.6008496284484863,False
+Case7604,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6417555809020996,True
+Case7604,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6448241472244263,True
+Case7604,3,United Healthcare_chromosome-microarray-testing.pdf,0.6252650022506714,True
+Case7604,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.631770133972168,True
+Case7604,5,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6334542036056519,True
+Case7604,6,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6376844644546509,True
+Case7604,7,BCBS_NE_V62.pdf,0.6156654953956604,True
+Case7604,8,United Healthcare_cell-free-fetal-dna-testing.pdf,0.6181764006614685,True
+Case7604,9,Asuris_Northwest_Health_Noninvasive Prenatal Testing to Determine Fetal Aneuploidies- Microdeletions- Single-Gene Disorders- and Twin Zygosity.pdf,0.6321466565132141,True
+Case7604,10,BCBS_HW_GTM Prenatal Testing for Fetal Aneuploidy AHS-G2055 2025-0201.pdf,0.6236647367477417,True
+Case8661,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.610564649105072,True
+Case8661,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6132767200469971,True
+Case8661,3,Asuris_Northwest_Health_Genetic Testing for Epilepsy.pdf,0.6066609621047974,True
+Case8661,4,Cigna_MOL.TS_.257.A_Epilepsy_Genetic_Testing_eff01.01.2025_09.12.2024_0.pdf,0.6161694526672363,True
+Case8661,5,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6150413751602173,True
+Case8661,6,Humana_Genetic Testing for Diagnosis of Inherited Conditions - Commercial.pdf,0.6069424152374268,True
+Case8661,7,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6262935400009155,True
+Case8661,8,Blue Cross Idaho_02.04.083_01-30-25.pdf,0.6164881587028503,True
+Case8661,9,Vermont_Fragile X FMR1_050523.pdf,0.6549371480941772,True
+Case8661,10,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6156558990478516,True
+Case10850,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6704124212265015,True
+Case10850,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6741476655006409,True
+Case10850,3,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.643408477306366,True
+Case10850,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6668366193771362,True
+Case10850,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6529550552368164,True
+Case10850,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6689881086349487,True
+Case10850,7,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.6327877044677734,True
+Case10850,8,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6334612369537354,True
+Case10850,9,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6283754706382751,True
+Case10850,10,Asuris_Northwest_Health_Reproductive Carrier Screening for Genetic Diseases.pdf,0.6280982494354248,True
+Case13406,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6297340393066406,True
+Case13406,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6304287910461426,True
+Case13406,3,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6143307685852051,True
+Case13406,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6170580387115479,True
+Case13406,5,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6142361164093018,True
+Case13406,6,United Healthcare_chromosome-microarray-testing.pdf,0.6225312352180481,True
+Case13406,7,oxford_chromosome-microarray-testing-ohp.pdf,0.6168085336685181,True
+Case13406,8,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.616990327835083,True
+Case13406,9,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.623954176902771,True
+Case13406,10,Vermont_Chromosomal Microarray for web_0.pdf,0.618842363357544,True
+Case7014,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6593546271324158,True
+Case7014,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6566846370697021,True
+Case7014,3,United Healthcare_chromosome-microarray-testing.pdf,0.6225728988647461,True
+Case7014,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6430677771568298,True
+Case7014,5,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.631182074546814,True
+Case7014,6,BCBS_FEP_204102 Whole Exome and.pdf,0.6155751943588257,True
+Case7014,7,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6621583700180054,True
+Case7014,8,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6529688835144043,True
+Case7014,9,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6269587278366089,True
+Case7014,10,Humana_Genetic Testing for Diagnosis of Inherited Conditions - Commercial.pdf,0.6163215041160583,True
+Case6451,1,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6098814010620117,False
+Case6451,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6081396341323853,False
+Case6451,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6079791188240051,False
+Case6451,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.5958782434463501,False
+Case6451,5,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.5926380753517151,False
+Case6451,6,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.5881242156028748,False
+Case6451,7,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5877327919006348,False
+Case6451,8,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.5765435695648193,False
+Case6451,9,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.5763425827026367,False
+Case6451,10,BCBS_FEP_204102 Whole Exome and.pdf,0.5740182399749756,False
+Case18281,1,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6520208120346069,False
+Case18281,2,Vermont_Fragile X FMR1_050523.pdf,0.6481970548629761,False
+Case18281,3,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6471637487411499,False
+Case18281,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6440962553024292,False
+Case18281,5,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6398956775665283,False
+Case18281,6,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6371430158615112,False
+Case18281,7,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6308862566947937,False
+Case18281,8,BCBS_FEP_204102 Whole Exome and.pdf,0.6295154094696045,False
+Case18281,9,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6285035610198975,False
+Case18281,10,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6268478035926819,False
+Case10363,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6568470001220703,True
+Case10363,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6620988249778748,True
+Case10363,3,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6443266272544861,True
+Case10363,4,BCBS_HW_GTM General Genetic Testing - Germline Disorders AHS-M2145 2025-0201.pdf,0.6308084726333618,True
+Case10363,5,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6358463168144226,True
+Case10363,6,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6559566855430603,True
+Case10363,7,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6524986028671265,True
+Case10363,8,BCBS_HW_GTM Genetic Cancer Susceptibility Using Next Generation Sequencing AHS-M2066 2025-0201.pdf,0.6304800510406494,True
+Case10363,9,Cigna_MOL.CU_.246.A_Germline_Test_After_Somatic_Testing_eff01.01.2025_pub09.10.2024_upd11.18.24_1.pdf,0.6327791213989258,True
+Case10363,10,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.6348820924758911,True
+Case15557,1,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6622400283813477,False
+Case15557,2,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6610116958618164,False
+Case15557,3,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6561335921287537,False
+Case15557,4,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6431280374526978,False
+Case15557,5,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6426465511322021,False
+Case15557,6,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6378430128097534,False
+Case15557,7,Asuris_Northwest_Health_Reproductive Carrier Screening for Genetic Diseases.pdf,0.6279934644699097,False
+Case15557,8,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6229525804519653,False
+Case15557,9,Blue Cross Idaho_02.04.102_03-27-25.pdf,0.6220275163650513,False
+Case15557,10,Humana_Genetic Testing for Diagnosis of Inherited Conditions - Commercial.pdf,0.6176624298095703,False
+Case4512,1,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6438701152801514,False
+Case4512,2,BCBS_FEP_204114 Genetic Testing for Idiopathic.pdf,0.6417781114578247,False
+Case4512,3,BCBS_FEP_204102 Whole Exome and.pdf,0.6416491270065308,False
+Case4512,4,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6401216983795166,False
+Case4512,5,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6397006511688232,False
+Case4512,6,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6386396884918213,False
+Case4512,7,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.6329904794692993,False
+Case4512,8,Blue Shield of California_Blue Shield of California Promise Health Plan_Genetic-Test-Cardiac-Disorders.pdf,0.6320597529411316,False
+Case4512,9,Dean_HealthPlan_Genetic-Testing-Cardiac-DX-9589.pdf,0.6309377551078796,False
+Case4512,10,United Healthcare_genetic-testing-cardiac-disease.pdf,0.6296615600585938,False
+Case1428,1,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6094937324523926,True
+Case1428,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6065718531608582,True
+Case1428,3,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.5949795842170715,True
+Case1428,4,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.5886441469192505,True
+Case1428,5,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.6110581755638123,True
+Case1428,6,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.5903966426849365,True
+Case1428,7,Dean_HealthPlan_Genetic-Testing-Inherited-Intell-Develop-9587.pdf,0.5901473760604858,True
+Case1428,8,Vermont_Fragile X FMR1_050523.pdf,0.6130900382995605,True
+Case1428,9,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6049321293830872,True
+Case1428,10,Asuris_Northwest_Health_Genetic Testing for Rett Syndrome.pdf,0.5870543718338013,True
+Case5605,1,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.643549919128418,False
+Case5605,2,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6404843926429749,False
+Case5605,3,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6386756300926208,False
+Case5605,4,BCBS_HW_GTM Whole Genome and Whole Exome Sequencing AHS-M2032 2025-0201.pdf,0.637736439704895,False
+Case5605,5,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6366772651672363,False
+Case5605,6,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6355604529380798,False
+Case5605,7,United Healthcare_chromosome-microarray-testing.pdf,0.6310131549835205,False
+Case5605,8,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6278135776519775,False
+Case5605,9,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.6259087324142456,False
+Case5605,10,Asuris_Northwest_Health_Reproductive Carrier Screening for Genetic Diseases.pdf,0.6232801079750061,False
+Case14155,1,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,0.6034641265869141,True
+Case14155,2,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6554473638534546,True
+Case14155,3,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,0.6154510974884033,True
+Case14155,4,Oxford_whole-exome-whole-genome-sequencing-ohp.pdf,0.6120853424072266,True
+Case14155,5,Parkland_8-21-2024_genetic-services-biomarker-testing-whole-geno_sabrina-lowery.pdf,0.5980686545372009,True
+Case14155,6,CapitalBC_Developmental delay.pdf,0.5914420485496521,True
+Case14155,7,Blue Cross Idaho_02.04.059_10-31-24.pdf,0.5913431644439697,True
+Case14155,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6035574078559875,True
+Case14155,9,Humana_Genetic Testing for Diagnosis of Inherited Conditions - Commercial.pdf,0.5950775146484375,True
+Case14155,10,Asuris_Northwest_Health_Whole Exome and Whole Genome Sequencing.pdf,0.6024075150489807,True
+Case3223,1,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6853094100952148,False
+Case3223,2,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6829286217689514,False
+Case3223,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6779416799545288,False
+Case3223,4,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6761164665222168,False
+Case3223,5,CapitalBC_BRCA.pdf,0.6706627607345581,False
+Case3223,6,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.664179265499115,False
+Case3223,7,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6614381670951843,False
+Case3223,8,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.660079300403595,False
+Case3223,9,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6583832502365112,False
+Case3223,10,BCBS_NE_V59.pdf,0.6506298780441284,False
+Case14195,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6612614393234253,False
+Case14195,2,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6538220047950745,False
+Case14195,3,BCBS_NE_V59.pdf,0.6523014903068542,False
+Case14195,4,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6506906747817993,False
+Case14195,5,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6495715379714966,False
+Case14195,6,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6453165411949158,False
+Case14195,7,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6452253460884094,False
+Case14195,8,CapitalBC_BRCA.pdf,0.639748752117157,False
+Case14195,9,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6340633630752563,False
+Case14195,10,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6257631778717041,False
+Case22,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6785569190979004,False
+Case22,2,BCBS_NE_V59.pdf,0.6586459875106812,False
+Case22,3,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6503353118896484,False
+Case22,4,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.649770200252533,False
+Case22,5,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6395485401153564,False
+Case22,6,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.6380112767219543,False
+Case22,7,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6367940306663513,False
+Case22,8,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.6365271806716919,False
+Case22,9,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6331184506416321,False
+Case22,10,Carelon_Amerigroup_BCBSAlabama_Hereditary_Cancer.pdf,0.6292018890380859,False
+Case19255,1,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6817867755889893,False
+Case19255,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6717274188995361,False
+Case19255,3,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6702728271484375,False
+Case19255,4,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6685435175895691,False
+Case19255,5,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6682796478271484,False
+Case19255,6,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.6618629693984985,False
+Case19255,7,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6602931022644043,False
+Case19255,8,BCBS_NE_V59.pdf,0.658025860786438,False
+Case19255,9,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.6553038954734802,False
+Case19255,10,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6545097827911377,False
+Case15458,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6961050033569336,False
+Case15458,2,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6772292852401733,False
+Case15458,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6726261377334595,False
+Case15458,4,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6685024499893188,False
+Case15458,5,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6659338474273682,False
+Case15458,6,CapitalBC_BRCA.pdf,0.6574625372886658,False
+Case15458,7,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6559512615203857,False
+Case15458,8,BCBS_NE_V59.pdf,0.6521831750869751,False
+Case15458,9,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6504939794540405,False
+Case15458,10,BCBS_FEP_204148 Germline Genetic Testing for Pancreatic.pdf,0.6453984975814819,False
+Case6867,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6530499458312988,False
+Case6867,2,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6406707763671875,False
+Case6867,3,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6313159465789795,False
+Case6867,4,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6281067132949829,False
+Case6867,5,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6256355047225952,False
+Case6867,6,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6227930188179016,False
+Case6867,7,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6155424118041992,False
+Case6867,8,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.6126894950866699,False
+Case6867,9,CapitalBC_BRCA.pdf,0.6125049591064453,False
+Case6867,10,BCBS_NE_V59.pdf,0.6091219782829285,False
+Case16126,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6367518901824951,True
+Case16126,2,BCBS_FEP_204148 Germline Genetic Testing for Pancreatic.pdf,0.6077107191085815,True
+Case16126,3,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6138533353805542,True
+Case16126,4,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6188802719116211,True
+Case16126,5,BCBS_NE_V59.pdf,0.6216950416564941,True
+Case16126,6,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6212155818939209,True
+Case16126,7,CapitalBC_BRCA.pdf,0.612208366394043,True
+Case16126,8,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.61250239610672,True
+Case16126,9,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6100082397460938,True
+Case16126,10,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6336072683334351,True
+Case2211,1,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.7110894918441772,False
+Case2211,2,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.7087391018867493,False
+Case2211,3,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.7053993940353394,False
+Case2211,4,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.7024240493774414,False
+Case2211,5,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.689390242099762,False
+Case2211,6,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6869428157806396,False
+Case2211,7,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6852098107337952,False
+Case2211,8,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6844503879547119,False
+Case2211,9,BCBS_NE_V59.pdf,0.6841672658920288,False
+Case2211,10,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.683462381362915,False
+Case14408,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6372944116592407,False
+Case14408,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6322450637817383,False
+Case14408,3,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6195318698883057,False
+Case14408,4,CapitalBC_BRCA.pdf,0.6182104349136353,False
+Case14408,5,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6172435879707336,False
+Case14408,6,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6161720752716064,False
+Case14408,7,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6157677173614502,False
+Case14408,8,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.6119937896728516,False
+Case14408,9,BCBS_NE_V59.pdf,0.6116265654563904,False
+Case14408,10,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6112439036369324,False
+Case16246,1,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6814863681793213,True
+Case16246,2,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6667117476463318,True
+Case16246,3,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.6658034324645996,True
+Case16246,4,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6579765677452087,True
+Case16246,5,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6787445545196533,True
+Case16246,6,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6607053279876709,True
+Case16246,7,BCBS_NE_V59.pdf,0.6550379991531372,True
+Case16246,8,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6534394025802612,True
+Case16246,9,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.6522302627563477,True
+Case16246,10,Vermont_Hereditary Breast and Ovarian Cancer criteria for web.pdf,0.6491161584854126,True
+Case2007,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6699058413505554,True
+Case2007,2,CapitalBC_BRCA.pdf,0.6458989381790161,True
+Case2007,3,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6479396820068359,True
+Case2007,4,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6551376581192017,True
+Case2007,5,BCBS_NE_V59.pdf,0.6470987796783447,True
+Case2007,6,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.644802451133728,True
+Case2007,7,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6558417081832886,True
+Case2007,8,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6406955122947693,True
+Case2007,9,BCBS_FEP_204148 Germline Genetic Testing for Pancreatic.pdf,0.647519588470459,True
+Case2007,10,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6445455551147461,True
+Case15570,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6831058859825134,True
+Case15570,2,BCBS_FEP_204148 Germline Genetic Testing for Pancreatic.pdf,0.6584039926528931,True
+Case15570,3,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6636516451835632,True
+Case15570,4,CapitalBC_BRCA.pdf,0.6614795327186584,True
+Case15570,5,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6692786812782288,True
+Case15570,6,BCBS_NE_V59.pdf,0.6738733649253845,True
+Case15570,7,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6741527318954468,True
+Case15570,8,Carelon_Amerigroup_BCBSAlabama_Hereditary_Cancer.pdf,0.6616529226303101,True
+Case15570,9,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6734122037887573,True
+Case15570,10,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6720662117004395,True
+Case6478,1,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6977085471153259,True
+Case6478,2,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6896745562553406,True
+Case6478,3,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.691277027130127,True
+Case6478,4,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.7063291072845459,True
+Case6478,5,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6795110702514648,True
+Case6478,6,CapitalBC_BRCA.pdf,0.6643017530441284,True
+Case6478,7,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.6681094765663147,True
+Case6478,8,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6759973764419556,True
+Case6478,9,Carelon_Amerigroup_BCBSAlabama_Hereditary_Cancer.pdf,0.6704354882240295,True
+Case6478,10,BCBS_NE_V59.pdf,0.6605194807052612,True
+Case3677,1,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6802890300750732,False
+Case3677,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6772438287734985,False
+Case3677,3,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.6705916523933411,False
+Case3677,4,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6651301383972168,False
+Case3677,5,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.6622363328933716,False
+Case3677,6,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6579248905181885,False
+Case3677,7,CapitalBC_BRCA.pdf,0.6572434902191162,False
+Case3677,8,Carelon_Amerigroup_BCBSAlabama_Hereditary_Cancer.pdf,0.652198314666748,False
+Case3677,9,BCBS_NE_V59.pdf,0.6506001949310303,False
+Case3677,10,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6462802886962891,False
+Case3581,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6249228119850159,False
+Case3581,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6219949722290039,False
+Case3581,3,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6202486157417297,False
+Case3581,4,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6149259805679321,False
+Case3581,5,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6102877855300903,False
+Case3581,6,CapitalBC_BRCA.pdf,0.6096913814544678,False
+Case3581,7,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6071374416351318,False
+Case3581,8,BCBS_NE_V59.pdf,0.6040352582931519,False
+Case3581,9,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6014931201934814,False
+Case3581,10,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.599056601524353,False
+Case15202,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6336585879325867,True
+Case15202,2,BCBS_FEP_204148 Germline Genetic Testing for Pancreatic.pdf,0.5944216847419739,True
+Case15202,3,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.5967129468917847,True
+Case15202,4,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6092766523361206,True
+Case15202,5,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6141918897628784,True
+Case15202,6,BCBS_NE_V59.pdf,0.6020815372467041,True
+Case15202,7,CapitalBC_BRCA.pdf,0.5997925400733948,True
+Case15202,8,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6140118837356567,True
+Case15202,9,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.598088264465332,True
+Case15202,10,Vermont_Fragile X FMR1_050523.pdf,0.61114501953125,True
+Case18257,1,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6292359232902527,False
+Case18257,2,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.623698353767395,False
+Case18257,3,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6174453496932983,False
+Case18257,4,CapitalBC_BRCA.pdf,0.6174029111862183,False
+Case18257,5,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6164460778236389,False
+Case18257,6,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6134188771247864,False
+Case18257,7,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6111451387405396,False
+Case18257,8,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.6096851825714111,False
+Case18257,9,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.6055278778076172,False
+Case18257,10,Carelon_Amerigroup_BCBSAlabama_Hereditary_Cancer.pdf,0.601540207862854,False
+Case12792,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6271934509277344,True
+Case12792,2,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6095076203346252,True
+Case12792,3,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6062490940093994,True
+Case12792,4,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6002672910690308,True
+Case12792,5,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6058847308158875,True
+Case12792,6,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.604896068572998,True
+Case12792,7,BCBS_NE_V59.pdf,0.6228516101837158,True
+Case12792,8,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6015390157699585,True
+Case12792,9,CapitalBC_BRCA.pdf,0.598905086517334,True
+Case12792,10,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.598882794380188,True
+Case14226,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.7128477096557617,False
+Case14226,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.7045249938964844,False
+Case14226,3,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6991308927536011,False
+Case14226,4,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6984171867370605,False
+Case14226,5,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.693152904510498,False
+Case14226,6,CapitalBC_BRCA.pdf,0.6854912042617798,False
+Case14226,7,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6853396892547607,False
+Case14226,8,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6808996200561523,False
+Case14226,9,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6792446374893188,False
+Case14226,10,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.6758444905281067,False
+Case5303,1,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6554456949234009,False
+Case5303,2,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6461164355278015,False
+Case5303,3,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6439906358718872,False
+Case5303,4,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6396533846855164,False
+Case5303,5,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.6361703872680664,False
+Case5303,6,RockyMountain_genetic-testing-hereditary-cancer-rmhp.pdf,0.635840117931366,False
+Case5303,7,BCBS_NE_V59.pdf,0.6357710957527161,False
+Case5303,8,Oxford_genetic-testing-hereditary-cancer-ohp.pdf,0.6350753307342529,False
+Case5303,9,CapitalBC_BRCA.pdf,0.6330661773681641,False
+Case5303,10,Blue Cross Idaho_02.04.002_08-29-24.pdf,0.631382942199707,False
+Case2666,1,BCBS_FEP_20402 Germline Genetic Testing for.pdf,0.683679461479187,True
+Case2666,2,BCBS_HW_GTM Genetic Testing for Breast, Ovarian, Pancreatic, and Prostate Cancers AHS–M2003 2025-0201.pdf,0.6643442511558533,True
+Case2666,3,BCBS_FEP_204126 Germline Genetic Testing for Gene.pdf,0.6580461859703064,True
+Case2666,4,CapitalBC_BRCA.pdf,0.6600790023803711,True
+Case2666,5,BCBS_NE_V59.pdf,0.6679346561431885,True
+Case2666,6,BCBS_Kansas_germline-genetic-testing-hereditary-breastovarian-cancer-syndrome-and-other-high.pdf,0.6590587496757507,True
+Case2666,7,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.6774471998214722,True
+Case2666,8,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6638811230659485,True
+Case2666,9,Aetna_Breast and Ovarian Cancer Susceptibility Gene Testing, Prophylactic Mastectomy, and Prophylactic Oophorectomy - Medical Clinical Policy Bulletins.pdf,0.6556903719902039,True
+Case2666,10,Humana_Genetic Testing for Hereditary Breast, Ovarian, Pancreatic and Prostate Cancer - Commercial.pdf,0.6532483100891113,True
+Case3592,1,Cigna_MOL.TS_.269.A_Autism_eff01.01.2025_pub09.12.2024_0.pdf,0.6134841442108154,True
+Case3592,2,Cigna_MOL.TS_.257.A_Epilepsy_Genetic_Testing_eff01.01.2025_09.12.2024_0.pdf,0.6242699027061462,True
+Case3592,3,United Healthcare_chromosome-microarray-testing.pdf,0.6160938143730164,True
+Case3592,4,oxford_chromosome-microarray-testing-ohp.pdf,0.6140621900558472,True
+Case3592,5,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6355805397033691,True
+Case3592,6,Vermont_Chromosomal Microarray for web_0.pdf,0.6437087059020996,True
+Case3592,7,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6218045353889465,True
+Case3592,8,Asuris_Northwest_Health_Genetic Testing for Epilepsy.pdf,0.6236566305160522,True
+Case3592,9,BCBS_HW_GTM Genetic Testing for Epilepsy AHS-M2075 2025-0201.pdf,0.6345435380935669,True
+Case3592,10,BCBS_FEP_204109 Genetic Testing for Epilepsy.pdf,0.6303722858428955,True
+Case17595,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6380190849304199,True
+Case17595,2,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6395949125289917,True
+Case17595,3,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6701749563217163,True
+Case17595,4,Blue Cross Idaho_02.04.059_10-31-24.pdf,0.6539268493652344,True
+Case17595,5,CapitalBC_Developmental delay.pdf,0.6338070034980774,True
+Case17595,6,oxford_chromosome-microarray-testing-ohp.pdf,0.6440671682357788,True
+Case17595,7,United Healthcare_chromosome-microarray-testing.pdf,0.6425367593765259,True
+Case17595,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6573269367218018,True
+Case17595,9,Humana_Genetic Testing for Diagnosis of Inherited Conditions - Commercial.pdf,0.6337738037109375,True
+Case17595,10,Vermont_Chromosomal Microarray for web_0.pdf,0.6792210936546326,True
+Case5834,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6658942699432373,True
+Case5834,2,Blue Cross Idaho_02.04.059_10-31-24.pdf,0.6570760011672974,True
+Case5834,3,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6782525777816772,True
+Case5834,4,United Healthcare_chromosome-microarray-testing.pdf,0.656640887260437,True
+Case5834,5,oxford_chromosome-microarray-testing-ohp.pdf,0.665315568447113,True
+Case5834,6,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6568206548690796,True
+Case5834,7,CapitalBC_Developmental delay.pdf,0.6612309217453003,True
+Case5834,8,Humana_Genetic Testing for Diagnosis of Inherited Conditions - Commercial.pdf,0.6531975269317627,True
+Case5834,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6794787645339966,True
+Case5834,10,Vermont_Chromosomal Microarray for web_0.pdf,0.6831393837928772,True
+Case15820,1,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.6187984943389893,True
+Case15820,2,United Healthcare_chromosome-microarray-testing.pdf,0.6406291127204895,True
+Case15820,3,oxford_chromosome-microarray-testing-ohp.pdf,0.6413974761962891,True
+Case15820,4,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6372640132904053,True
+Case15820,5,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.703681230545044,True
+Case15820,6,CapitalBC_Developmental delay.pdf,0.6377592086791992,True
+Case15820,7,Blue Cross Idaho_02.04.059_10-31-24.pdf,0.6390119791030884,True
+Case15820,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6632540822029114,True
+Case15820,9,Vermont_Chromosomal Microarray for web_0.pdf,0.670917809009552,True
+Case15820,10,Asuris_Northwest_Health_Invasive_Prenatal_Fetal_Diagnostic.pdf,0.6183388829231262,True
+Case17929,1,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6350225210189819,False
+Case17929,2,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6290027499198914,False
+Case17929,3,Vermont_Chromosomal Microarray for web_0.pdf,0.6285980939865112,False
+Case17929,4,United Healthcare_chromosome-microarray-testing.pdf,0.619899570941925,False
+Case17929,5,oxford_chromosome-microarray-testing-ohp.pdf,0.6168855428695679,False
+Case17929,6,BCBS_NE_V59.pdf,0.6101680994033813,False
+Case17929,7,United Healthcare_genetic-testing-hereditary-cancer.pdf,0.6025158762931824,False
+Case17929,8,BCBS_NE_V62.pdf,0.5990657806396484,False
+Case17929,9,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.5953437685966492,False
+Case17929,10,Aetna_Genetic Testing - Medical Clinical Policy Bulletins.pdf,0.5930293798446655,False
+Case17196,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6230449080467224,True
+Case17196,2,Blue Cross Idaho_02.04.059_10-31-24.pdf,0.6031011343002319,True
+Case17196,3,CapitalBC_Developmental delay.pdf,0.6097532510757446,True
+Case17196,4,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6135079860687256,True
+Case17196,5,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6305615901947021,True
+Case17196,6,United Healthcare_chromosome-microarray-testing.pdf,0.6062766313552856,True
+Case17196,7,oxford_chromosome-microarray-testing-ohp.pdf,0.6120889186859131,True
+Case17196,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6142392158508301,True
+Case17196,9,Vermont_Chromosomal Microarray for web_0.pdf,0.6359297037124634,True
+Case17196,10,Humana_Genetic Testing for Diagnosis of Inherited Conditions - Commercial.pdf,0.6011190414428711,True
+Case11855,1,United Healthcare_chromosome-microarray-testing.pdf,0.6767432689666748,True
+Case11855,2,oxford_chromosome-microarray-testing-ohp.pdf,0.6741321086883545,True
+Case11855,3,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6606814861297607,True
+Case11855,4,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6723086833953857,True
+Case11855,5,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.690432071685791,True
+Case11855,6,Vermont_Chromosomal Microarray for web_0.pdf,0.6653220653533936,True
+Case11855,7,Vermont_Fragile X FMR1_050523.pdf,0.688755989074707,True
+Case11855,8,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6690069437026978,True
+Case11855,9,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.6619985103607178,True
+Case11855,10,Blue Cross Idaho_02.04.083_01-30-25.pdf,0.6608279347419739,True
+Case12834,1,Vermont_Chromosomal Microarray for web_0.pdf,0.6467597484588623,True
+Case12834,2,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6560107469558716,True
+Case12834,3,United Healthcare_chromosome-microarray-testing.pdf,0.6262776255607605,True
+Case12834,4,oxford_chromosome-microarray-testing-ohp.pdf,0.6294947266578674,True
+Case12834,5,Dean_HealthPlan_Genetic-Testing-Inherited-Intell-Develop-9587.pdf,0.6300677061080933,True
+Case12834,6,Asuris_Northwest_Health_FMR1 AFF2.pdf,0.6503769159317017,True
+Case12834,7,BCBS_HW_GTM Genetic Testing for FMR1 Mutations AHS-M2028 2023-0601_v2.pdf,0.631505012512207,True
+Case12834,8,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6411162614822388,True
+Case12834,9,Blue Cross Idaho_02.04.083_01-30-25.pdf,0.6190282702445984,True
+Case12834,10,Vermont_Fragile X FMR1_050523.pdf,0.6695561408996582,True
+Case10075,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6127339601516724,True
+Case10075,2,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6259638667106628,True
+Case10075,3,United Healthcare_chromosome-microarray-testing.pdf,0.6356878876686096,True
+Case10075,4,oxford_chromosome-microarray-testing-ohp.pdf,0.6284804344177246,True
+Case10075,5,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6344349980354309,True
+Case10075,6,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,0.6448309421539307,True
+Case10075,7,Vermont_Chromosomal Microarray for web_0.pdf,0.6598283648490906,True
+Case10075,8,Blue Cross Idaho_02.04.059_10-31-24.pdf,0.6065948009490967,True
+Case10075,9,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6095466613769531,True
+Case10075,10,Blue Cross Idaho_02.04.116_08-29-24.pdf,0.6171480417251587,True
+Case9773,1,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.6689391136169434,True
+Case9773,2,Blue Cross Idaho_02.04.059_10-31-24.pdf,0.6669110655784607,True
+Case9773,3,Vermont_Chromosomal Microarray for web_0.pdf,0.698623776435852,True
+Case9773,4,Asuris_Northwest_Health_Chromosomal Microarray Analysis CMA or Copy Number Analysis for the Genetic Evaluation of Patients with Developmental Delay Intellectual Disability Autism Spectrum Disorder or Congenital Anomalies.pdf,0.6891038417816162,True
+Case9773,5,United Healthcare_chromosome-microarray-testing.pdf,0.6518555879592896,True
+Case9773,6,oxford_chromosome-microarray-testing-ohp.pdf,0.6487830877304077,True
+Case9773,7,CapitalBC_Developmental delay.pdf,0.66635662317276,True
+Case9773,8,Dean_HealthPlan_Genetic-Testing-Inherited-Intell-Develop-9587.pdf,0.6376256346702576,True
+Case9773,9,BCBS_HW_GTM Chromosomal Microarray AHS–M2033 2025-0201.pdf,0.6434376239776611,True
+Case9773,10,Neighborhood Health Plan of Rhode island_GeneticTesting.pdf,0.6791391372680664,True

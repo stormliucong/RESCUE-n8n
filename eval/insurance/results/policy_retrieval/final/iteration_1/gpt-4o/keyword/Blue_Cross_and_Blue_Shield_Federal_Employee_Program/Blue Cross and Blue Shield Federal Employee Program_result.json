@@ -1,0 +1,21 @@
+{
+  "payer": "Blue Cross and Blue Shield Federal Employee Program",
+  "prompt_type": "keyword",
+  "model": "openai",
+  "iteration": 1,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\": [], \"webpage_links\": [\"https://www.fepblue.org/policies?policyNumber=2.04.02\", \"https://www.fepblue.org/policies?policyNumber=2.04.08\", \"https://www.fepblue.org/policies?policyNumber=2.04.19\", \"https://www.fepblue.org/policies?policyNumber=2.04.86\", \"https://www.fepblue.org/policies?policyNumber=2.04.93\", \"https://www.fepblue.org/policies?policyNumber=2.04.102\", \"https://www.fepblue.org/policies?policyNumber=2.04.131\"]}",
+  "parsed_data": {
+    "pdf_links": [],
+    "webpage_links": [
+      "https://www.fepblue.org/policies?policyNumber=2.04.02",
+      "https://www.fepblue.org/policies?policyNumber=2.04.08",
+      "https://www.fepblue.org/policies?policyNumber=2.04.19",
+      "https://www.fepblue.org/policies?policyNumber=2.04.86",
+      "https://www.fepblue.org/policies?policyNumber=2.04.93",
+      "https://www.fepblue.org/policies?policyNumber=2.04.102",
+      "https://www.fepblue.org/policies?policyNumber=2.04.131"
+    ]
+  }
+}

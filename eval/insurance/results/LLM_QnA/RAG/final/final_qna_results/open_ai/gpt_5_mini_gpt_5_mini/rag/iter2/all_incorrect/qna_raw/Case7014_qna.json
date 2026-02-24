@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being requested to identify an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to children/infants with congenital anomalies; the patient is a 7-week-old infant. The policy covers pediatric patients with congenital anomalies (policy statement and guidelines referencing children/infants and ACMG recommendation prior to one year)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling. The record states pre-test genetic counseling was completed with a genetic specialist and family/phenotype were documented, meeting the provider/counseling requirement in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The policy specifically lists multiple congenital anomalies as a qualifying clinical scenario for WES/WGS. The patient has multiple congenital anomalies not fitting a well-delineated syndrome, satisfying the medical indication criterion."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy criterion 3 expects prior genetic testing (eg, chromosomal microarray analysis and/or targeted single-gene testing) or previous testing failed and next step would be invasive testing. The patient had a nondiagnostic karyotype only; chromosomal microarray (CMA) or targeted testing is not documented, so required prior testing has not been completed per policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy requires documentation of at minimum a family history. The patient has a reported family history (maternal aunt with a congenital anomaly), which fulfills the policy's family history documentation requirement."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy emphasizes that genetic counseling should be performed by someone with expertise. The record states pre-test genetic counseling was completed with a genetic specialist, meeting the policy counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy document does not specify CPT or billing codes for WGS; no CPT codes are listed in the policy text given."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient is an infant with multiple congenital anomalies and has had genetic counseling (meeting several policy elements), the policy requires ALL criteria be met for standard WES/WGS. Required prior genetic testing (eg, CMA or targeted testing) is not documented (only karyotype was done), so the request does not meet all policy criteria and is not covered per the policy statement."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14836,
+    "output_tokens": 3870,
+    "total_tokens": 18706
+  }
+}

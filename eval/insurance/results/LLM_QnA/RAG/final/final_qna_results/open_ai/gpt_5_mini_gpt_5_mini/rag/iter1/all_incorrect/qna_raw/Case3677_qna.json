@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is undergoing BRCA1/2 testing per clinical information; the provided policy (AHS–M2003) specifically addresses BRCA1/2 testing and related multi-gene panels."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires individuals be ≥18 and lists meeting criteria for breast-cancer cases diagnosed before 51 years (II.2.a.i). Patient is 46 and thus meets the age-based criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires precertification and genetic counseling but does not define specific ordering-provider specialty requirements; the note that testing must follow counseling is present but no ordering-provider restrictions are specified."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical-necessity coverage criteria include individuals with personal history of breast cancer diagnosed before age 51 and/or with ≥1 close blood relative with pancreatic cancer (II.2.a.i and II.2.a.i(g)(iv)). The patient has a personal history of breast cancer at age 46 and a close relative with pancreatic cancer, meeting coverage criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate completion of specific prior tests before BRCA1/2 testing; it notes prior limited testing may affect approach but does not require particular prior tests. Patient's prior nondiagnostic CMA is not specified as a required prior test."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy coverage criteria explicitly consider family history (close blood relative with pancreatic cancer qualifies — Note 1 and II.2.a.i(g)(iv)). The patient has a mother with pancreatic cancer and multiple affected maternal relatives."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires individuals have received genetic counseling prior to testing (II.1 and multiple sections). Patient completed pre-test genetic counseling and plans post-test follow-up, satisfying counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes for BRCA1/2 testing; therefore a specific CPT from the given options cannot be determined from policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy AHS–M2003 (II.2.a.i), the patient (age 46 with personal history of breast cancer diagnosed <51 and a close relative with pancreatic cancer) meets coverage criteria for BRCA testing; genetic counseling was completed, so testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18254,
+    "output_tokens": 1827,
+    "total_tokens": 20081
+  }
+}

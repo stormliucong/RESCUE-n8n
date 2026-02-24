@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states 'whole genome sequencing (WGS) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WGS/WES policy bases eligibility on clinical indication rather than a strict age cutoff; no age-based exclusion or specific minimum/maximum age is stated for WGS in the clinical context provided."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC molecular testing policies generally require an ordering clinician but do not mandate a single specialty for WGS in all circumstances; the record shows a developmental pediatrician is ordering the test, and the payer policy does not explicitly restrict ordering to a geneticist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WGS/WES for individuals with unexplained, significant neurodevelopmental findings (e.g., early infant hypotonia/possible genetic etiology, multiple congenital anomalies, or global developmental delay). The 7-week-old has significant hypotonia and evaluation by a developmental pediatrician, meeting clinical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior standard testing (such as chromosomal microarray) to be nondiagnostic before WGS/WES for developmental indications. The record states a prior karyotype was nondiagnostic but does not document a CMA; therefore required prior testing (CMA) has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Payer criteria may consider family history when relevant, but UHC WGS/WES coverage is driven primarily by the proband's clinical presentation; the maternal history of an immunologic/hematologic disorder is noted but does not correspond to a specified family-history requirement in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre-test genetic counseling/documentation for high-complexity genomic testing; the record documents pre-test counseling was completed and post-test genetics follow-up is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT code 81425 corresponds to whole genome sequencing with analysis and interpretation, which matches the requested WGS test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication (infant with significant hypotonia) meets UHC medical necessity criteria for WGS, UHC policy requires completion of specified prior testing (typically chromosomal microarray) before WGS in non-critically ill infants. A CMA is not documented (only a nondiagnostic karyotype), so coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 1775,
+    "total_tokens": 3750
+  }
+}

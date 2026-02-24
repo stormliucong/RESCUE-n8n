@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) was ordered for the infant."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP policy (Genetic Testing for Cardiac Ion Channelopathies) does not set explicit age-based eligibility limits for testing; pediatric guidance is discussed but no concrete age cutoffs for WES are specified."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy Guidelines state 'Genetic testing should be performed by an expert in genetic testing and/or cardiac ion channelopathies.' The ordering provider is a family medicine physician, which does not meet the policy's specified requirement that testing be performed by an expert."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy defines medical indications for genetic testing focused on cardiac ion channelopathies (e.g., suspected LQTS, CPVT, BrS, SQTS with supporting signs/symptoms, arrhythmia, prolonged QT, resuscitated arrest, or family member with known variant). The infant has a major congenital cardiac anomaly (structural defect) with no documented clinical features of a channelopathy or family member with a known channelopathy variant, so the patient does not meet the specific channelopathy indications outlined in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends clinical evaluation (ECG, exercise testing, echo) and starting with a known familial variant when available, but it does not list a specific mandatory prior test (e.g., FISH) that must be completed before initiating genetic testing such as WES. Therefore specific prior-test requirements for WES are not specified in the policy."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history criteria relevant to channelopathy testing (close relative with known variant or diagnosed channelopathy). The provided family history (mother with short stature) does not meet the policy's specified family-history criteria for cardiac ion channelopathy testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states formal genetic counseling is recommended in most cases and should be performed by someone with expertise. The patient/family completed pre-test genetic counseling and will follow up, satisfying the policy's counseling expectation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP policy document does not list or map specific CPT codes (such as for WES or panels). Therefore a specific CPT code cannot be selected from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy, coverage is limited to testing that meets defined indications for cardiac ion channelopathies and should be performed by experts; WES for an infant with a structural congenital cardiac anomaly (without clinical/ECG evidence of a channelopathy or a familial known variant) is not supported by the policy. Additionally, the ordering provider is not an expert per policy guidelines. Therefore the requested WES is not covered per the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15895,
+    "output_tokens": 1857,
+    "total_tokens": 17752
+  }
+}

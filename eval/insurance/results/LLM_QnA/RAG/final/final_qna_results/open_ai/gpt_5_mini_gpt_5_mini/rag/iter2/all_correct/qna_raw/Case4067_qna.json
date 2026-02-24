@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient narrative explicitly states 'whole exome sequencing (WES) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose a strict single age cutoff for outpatient WES; criteria reference features diagnosed by certain ages (e.g., ID by 18, global developmental delay onset <5) but there is no absolute age exclusion and the patient (age 5) falls within pediatric range—policy therefore provides no explicit age-based disqualification."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a developmental pediatrician, which meets the policy requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage requires specific clinical indications (e.g., global developmental delay, ID by 18, or two-or-more listed features). The record documents significant hypotonia only (hypotonia appears in the policy's 'two-or-more' list) with no additional qualifying features (no documented global developmental delay, ID, multiple congenital anomalies, etc.), so the patient does not meet the defined medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate a specific prior test for outpatient WES in this scenario (it only advises targeted testing if a specific syndrome is suspected, and prenatal WES has CMA/karyotype requirements). The patient had nondiagnostic karyotype, but no specific prior-test requirement is defined for this indication."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists family history (other first- or second-degree family members with similar clinical features) as a relevant criterion. The patient has a notable family history (paternal uncle with sudden unexplained death before 35) raising concern for a heritable disorder, which is a relevant family-history fact per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS but does not make counseling a strict coverage prerequisite; the patient record does not document counseling, and the policy therefore does not specify counseling as a mandatory eligibility criterion."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT list shows 81415 is the code for 'Exome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' — corresponding to the ordered proband WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the ordering provider meets policy requirements and a concerning family history and prior karyotype nondiagnostic exist, the policy requires specific clinical features (e.g., global developmental delay, ID by 18, or two or more listed features). The documentation shows only hypotonia without additional qualifying features, so the medical necessity criteria in the policy are not met and WES is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36932,
+    "output_tokens": 2816,
+    "total_tokens": 39748
+  }
+}

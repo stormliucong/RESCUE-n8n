@@ -1,0 +1,18 @@
+{
+  "qna_result": {
+    "Q0": "CMA",
+    "Q1": "Yes",
+    "Q2": "Not Specified",
+    "Q3": "Not Specified",
+    "Q4": "No",
+    "Q5": "Not Specified",
+    "Q6": "No",
+    "Q7": "81228",
+    "Q8": "No"
+  },
+  "token_usage": {
+    "input_tokens": 22858,
+    "output_tokens": 3096,
+    "total_tokens": 25954
+  }
+}

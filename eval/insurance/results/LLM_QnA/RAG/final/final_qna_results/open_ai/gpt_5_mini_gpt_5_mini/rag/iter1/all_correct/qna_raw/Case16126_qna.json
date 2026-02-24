@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information states BRCA1 and BRCA2 testing has been ordered. Basis: patient clinical info."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy explicitly states \"Genetic testing in minors for BRCA1, BRCA2, and PALB2 ... is considered investigational.\" The patient is a 6-week-old infant, so age-based criteria are not met."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers who provide pre/post-test counseling but does not specify required ordering provider specialty. Patient's ordering provider is a gynecologist but policy does not mandate a specific specialty."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications (personal history of relevant cancers or family history meeting criteria). The infant has congenital anomalies, no personal or qualifying family history of BRCA-related cancers documented, so does not meet the policy's medical indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy strongly recommends testing an affected family member first when testing an unaffected individual. The patient (unaffected infant) has no documentation of an affected family member having been tested, so recommended prior testing was not completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy's family-history criteria relate to cancers in 1st–3rd degree relatives or known familial BRCA/PALB2 variants. Although parents are reported consanguineous, no qualifying family cancer history or known familial BRCA/PALB2 variant is documented, so family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires appropriate pre- and post-test genetic counseling by experienced providers. Patient info states pre-test counseling was completed and post-test follow-up with a genetic counselor is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT codes for BRCA1/BRCA2 testing. No CPT mapping appears in the policy text, so a specific CPT from the list cannot be determined from the policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, genetic testing for BRCA1/BRCA2 in minors is considered investigational. The patient is a 6-week-old infant; despite counseling being performed, the age-based policy contraindicates coverage, so the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18931,
+    "output_tokens": 2260,
+    "total_tokens": 21191
+  }
+}

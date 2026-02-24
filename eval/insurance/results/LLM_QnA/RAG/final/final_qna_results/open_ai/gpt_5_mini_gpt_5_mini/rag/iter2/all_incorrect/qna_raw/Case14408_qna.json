@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1/2 testing (patient information states BRCA1/2 testing is ordered)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies age-related guidance only to restrict testing in minors (testing in minors is investigational) and provides no upper-age exclusion; the patient is an adult (75), so age does not preclude testing (policy basis: 'Genetic testing in minors ... is considered investigational' and no upper-age limit)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers able to provide pre- and post-test counseling but does not specify a required ordering provider specialty; patient was referred by a family medicine physician and pre-test counseling was completed."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows testing in an unaffected individual who has a 1st- or 2nd-degree blood relative meeting Patients With Cancer criteria; the patient has a brother (1st-degree) with breast cancer and policy explicitly lists 'Diagnosed at any age with male breast cancer' among cancer-affected criteria, so the patient meets a medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy strongly recommends testing an affected family member first when possible but does not state it as a required prior test for coverage of an unaffected individual; patient has no prior genetic testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy defines close relatives and includes first-degree relatives; patient has a first-degree relative (brother) with breast cancer, which is an explicit family-history criterion in the policy ('male breast cancer' included)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing to be performed in a setting with appropriate pre- and post-test counseling and recommends genetic counseling by experienced providers; patient completed pre-test counseling and has post-test follow-up planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not reference or map any CPT codes to BRCA1/2 testing, so a specific CPT code is not specified in the policy."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, genetic testing for BRCA1/2 in an unaffected individual is medically necessary if they have a 1st- or 2nd-degree relative meeting Patients With Cancer criteria; the patient has a brother with breast cancer (male breast cancer meets the listed criterion), pre-test counseling was completed, and testing is therefore covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18921,
+    "output_tokens": 2297,
+    "total_tokens": 21218
+  }
+}

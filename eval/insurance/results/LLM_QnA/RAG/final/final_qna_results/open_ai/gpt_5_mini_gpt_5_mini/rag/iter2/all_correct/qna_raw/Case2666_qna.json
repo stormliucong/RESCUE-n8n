@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information states she is undergoing BRCA1/2 testing at the request of her obstetrician. Basis: patient clinical info."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies testing in minors is investigational; the patient is 21 (an adult). Basis: FEP policy statement that testing minors is investigational and patient age = 21."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires testing in a setting with suitably trained providers and that genetic counseling be performed by experienced personnel, but it does not mandate a specific ordering provider specialty. Basis: policy language on setting and counseling requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy permits testing for an unaffected individual who has a 1st-degree blood relative meeting any criterion in the 'Individuals With Cancer' section; the patient’s father has metastatic prostate cancer, which is explicitly listed. Basis: FEP policy criteria for unaffected individuals and patient family history."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends testing an affected family member first when possible but does not state that prior testing of the affected relative is a required prerequisite. Basis: 'Testing Unaffected Individuals' and 'Recommended Testing Strategies' guidance."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies family history criteria; patient has a relevant 1st-degree relative (father) with metastatic prostate cancer, a qualifying family history. Basis: patient facts and policy listing metastatic prostate cancer as a qualifying cancer in relatives."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by experienced providers; patient reports pre-test counseling with a genetic specialist and plans for post-test follow-up. Basis: policy's genetic counseling requirement and patient report."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy text does not list or map specific CPT codes to BRCA1/2 testing. Basis: absence of CPT code information in the policy document."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, genetic testing for BRCA1/2 is medically necessary for an unaffected individual who has a 1st-degree relative meeting any criterion for 'Individuals With Cancer'—the patient's father has metastatic prostate cancer (explicitly listed). Counseling requirement is met. Basis: FEP policy statements for unaffected individuals and the patient's family/counseling facts."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18944,
+    "output_tokens": 2139,
+    "total_tokens": 21083
+  }
+}

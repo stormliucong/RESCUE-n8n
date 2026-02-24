@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) is being pursued to evaluate the fetal cardiac anomaly."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose an age limit for prenatal WES; prenatal criteria are phenotype- and testing-based rather than age-based."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires prenatal WES to be ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist; the record only documents referral by a developmental pediatrician and does not document ordering by/consultation with the required specialists."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Per policy prenatal WES is indicated when CMA/karyotype is uninformative and the fetus has a congenital anomaly affecting a single organ system plus family history suggesting a genetic etiology — the patient has a nondiagnostic CMA, a major fetal cardiac anomaly (single organ system), and a sibling with an inborn error of metabolism."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires CMA and/or karyotyping to have been performed and uninformative prior to prenatal WES; the patient had a CMA previously that was nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history as a relevant criterion for prenatal WES; the patient has a family history of an inborn error of metabolism in an older sibling."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy strongly recommends genetic counseling prior to WES/WGS and the parents have had multiple sessions with a genetic counselor, meeting the counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable CPT codes list 81415 for exome (sequence analysis) which corresponds to WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical criteria are met (nondiagnostic CMA, fetal congenital anomaly, supportive family history, and genetic counseling), prenatal WES coverage requires the test be ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist and an appropriate fetal sample be obtained; the provided record does not document that ordering/consultation or sample type, so not all policy-required conditions for coverage are satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36980,
+    "output_tokens": 1965,
+    "total_tokens": 38945
+  }
+}

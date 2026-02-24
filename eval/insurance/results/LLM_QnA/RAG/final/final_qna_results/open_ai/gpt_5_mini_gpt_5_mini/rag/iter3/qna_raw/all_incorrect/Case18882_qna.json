@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy states WES may be medically necessary for evaluation of unexplained congenital or neurodevelopmental disorders in children. The patient is an 8-year-old child, which meets the policy's pediatric (child) age applicability."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion #1 requires the individual be evaluated by a clinician with expertise in clinical genetics and counseled about risks. The patient was referred by a developmental pediatrician and the family declined pre-test genetic counseling, so the required genetics evaluation/counseling documentation is not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists multiple congenital anomalies in children as an indication for WES. The patient has multiple congenital anomalies affecting several organ systems, meeting the policy's medical indication requirement (assessed regardless of other eligibility criteria)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy expects prior genetic testing (eg, chromosomal microarray and/or targeted single-gene testing) or previous genetic testing that failed to yield a diagnosis. The only prior test noted is nondiagnostic FISH; the record does not document completion of the CMA/targeted testing examples cited by the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of long QT syndrome as relevant. The family reports the mother has long QT syndrome, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires counseling by someone experienced in genetic medicine prior to testing (criterion #1 and the Genetic Counseling section). The family declined pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT codes for WES or map the requested test to any CPT; therefore a CPT code is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient is a child with multiple congenital anomalies (meeting the medical indication and age), the policy requires ALL listed criteria be met (including documented evaluation by a clinician with expertise in clinical genetics and pre-test counseling, and appropriate prior testing). Those required elements (genetics evaluation/counseling and prior CMA/targeted testing) are not documented, so the policy criteria for coverage are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14831,
+    "output_tokens": 2010,
+    "total_tokens": 16841
+  }
+}

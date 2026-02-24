@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient was referred by neurology for whole exome sequencing (WES) to evaluate an unexplained neurodevelopmental disorder (patient info)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility for WES includes 'Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age.' The patient is 10 years old with moderate–severe ID diagnosed in childhood, meeting the age-based criterion (policy Coverage Rationale)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The ordering provider is a neurologist (patient info), meeting policy requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication requires nonspecific clinical presentation and one qualifying feature (e.g., moderate–severe intellectual disability diagnosed by 18). Patient has unexplained neurodevelopmental disorder with moderate–severe ID diagnosed in childhood and nondiagnostic prior CMA, satisfying the clinical indication (policy Coverage Rationale)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate prior testing (CMA) before WES generally; it only advises targeted testing if a specific syndrome is suspected. Patient had prior CMA nondiagnostic, but policy does not specify mandatory prior tests for WES (policy Coverage Rationale)."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' or consanguinity as supporting criteria. The sibling history describes a brief resolved unexplained event (altered responsiveness), not clearly 'similar clinical features' to the proband's ID, so relevant family-history criteria are not met (policy Coverage Rationale / Definitions)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not state it as a hard coverage prerequisite. There is no documentation of counseling (patient info), but counseling is recommended, not required per policy (policy Description of Services)."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy lists CPT 81415 for 'Exome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis,' which corresponds to WES (policy Applicable Codes)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy WES is proven and medically necessary when all criteria are met: nonspecific/unexplained presentation, ordering provider specialty (neurologist), and a qualifying feature such as moderate–severe intellectual disability diagnosed by 18. The patient is a 10‑year‑old with moderate–severe ID, an unexplained neurodevelopmental disorder, neurologist ordered WES, and prior CMA was nondiagnostic — therefore coverage criteria are met (policy Coverage Rationale; patient info)."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36961,
+    "output_tokens": 1854,
+    "total_tokens": 38815
+  }
+}

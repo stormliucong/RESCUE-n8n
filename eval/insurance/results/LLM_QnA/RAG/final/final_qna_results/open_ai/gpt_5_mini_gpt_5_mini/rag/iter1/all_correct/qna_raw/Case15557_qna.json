@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical information states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related criteria are specified for some features (e.g., intellectual disability diagnosed by 18); patient is 15 years old, which meets the policy's age-related thresholds applicable to pediatric indications."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient was referred by/being evaluated by neurology (neurologist)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history suggesting a genetic cause plus either one major feature or two+ listed features. The patient has a congenital anomaly and another first-degree family member (sibling) with similar features (two listed features), satisfying medical indication for WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy states WGS is appropriate when neither CMA nor WES have been performed. Patient had prior FISH (nondiagnostic) but no CMA or WES, so prior-test requirement is satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' as an eligibility feature; patient has a sibling with a similar congenital anomaly."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WES/WGS; patient has been seen by a genetic counselor multiple times with plans for post-test counseling, meeting the counseling expectation."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy applicable CPT codes list 81425 for genome (sequence analysis) which corresponds to clinical WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare WES/WGS policy, the patient meets required clinical indications (congenital anomaly + affected sibling), age context, ordering provider specialty (neurologist), and prior-test conditions (no CMA/WES), and counseling expectations—therefore WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36940,
+    "output_tokens": 1877,
+    "total_tokens": 38817
+  }
+}

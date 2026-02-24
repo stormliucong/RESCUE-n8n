@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The clinical note explicitly states chromosomal microarray (CMA) is being ordered to assess for copy number variants."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA criteria do not impose an age limit; age (14) is not a specified eligibility restriction for CMA in payer policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA coverage does not mandate a specific ordering provider specialty in the policy text; no provider-type restriction is specified for this test."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UHC policy covers CMA for individuals with developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies. This patient has a single‑organ congenital anomaly without documentation of developmental delay/ID/ASD or multiple anomalies, so documented indications do not meet payer medical-necessity criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA policy does not require prior testing (e.g., karyotype or Fragile X) as a universal precondition; although Fragile X was done, the policy does not list specific required prior tests."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family history noted (maternal aunt with triple‑negative breast cancer) is relevant to hereditary breast cancer testing but is not a family history criterion that supports CMA eligibility per UHC (no family history of CNV/chromosomal abnormalities reported)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA policy does not explicitly mandate pre‑test genetic counseling as a strict coverage criterion; however, the patient did receive counseling from a genetics specialist per the record."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to chromosomal microarray/molecular cytogenetic microarray testing for genome‑wide copy number variants (CMA), which is the test ordered."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per UHC coverage criteria, CMA is medically indicated for developmental delay/ID, ASD, or multiple congenital anomalies; this patient has a single‑organ congenital anomaly without documented neurodevelopmental disorder or multiple anomalies, so the test does not meet payer medical‑necessity criteria and would not be covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2011,
+    "output_tokens": 2037,
+    "total_tokens": 4048
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) has been requested for diagnostic clarification of an ocular coloboma."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES may be medically necessary for evaluation of unexplained congenital or neurodevelopmental disorders in children; the patient is a 14-year-old child, which meets the age-related scope in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires the individual be evaluated by a clinician with expertise in clinical genetics and counseled (Policy Statement #1). The patient record only notes referral by a PCP and request for WES; it does not document a genetics evaluation or counseling, so provider requirement compliance cannot be determined from the supplied information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication includes unexplained congenital anomalies in children as an indication for WES, and the Policy Guidelines list 'coloboma' as an example of a malformation highly suggestive of a genetic etiology; the patient has an ocular coloboma."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion requires previous genetic testing failed to yield a diagnosis (eg, CMA and/or targeted testing) as part of eligibility. The patient had prior fluorescence in situ hybridization testing that was nondiagnostic, which meets the 'previous genetic testing failed to yield a diagnosis' clause."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists family history examples as relevant, but the provided patient information includes no family history or consanguinity; therefore no relevant family history is documented."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy explicitly requires genetic counseling by an individual experienced in genetic medicine (Policy Statement #1 and 'Genetic Counseling' section). The patient data do not state whether counseling occurred, so compliance cannot be determined."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Of the listed CPT options, 81415 corresponds to clinical exome (whole exome) sequencing and best matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age and clinical-indication criteria (unexplained congenital anomaly/coloboma) and prior genetic testing was nondiagnostic, the policy requires ALL criteria be met including documentation of evaluation by a clinician with expertise in clinical genetics and genetic counseling and demonstration of potential for change in management. Those required elements are not documented in the provided information, so coverage cannot be confirmed under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14788,
+    "output_tokens": 2665,
+    "total_tokens": 17453
+  }
+}

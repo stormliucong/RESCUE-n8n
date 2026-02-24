@@ -1,0 +1,35 @@
+{
+  "payer": "Cigna",
+  "prompt_type": "verified",
+  "model": "openai",
+  "iteration": 3,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\":[{\"link\":\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0052.pdf\"},{\"link\":\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0514.pdf\"},{\"link\":\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0520.pdf\"},{\"link\":\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0500.pdf\"},{\"link\":\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0519.pdf\"},{\"link\":\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0518.pdf\"},{\"link\":\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0517.pdf\"}],\"webpage_links\":[]}",
+  "parsed_data": {
+    "pdf_links": [
+      {
+        "link": "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0052.pdf"
+      },
+      {
+        "link": "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0514.pdf"
+      },
+      {
+        "link": "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0520.pdf"
+      },
+      {
+        "link": "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0500.pdf"
+      },
+      {
+        "link": "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0519.pdf"
+      },
+      {
+        "link": "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0518.pdf"
+      },
+      {
+        "link": "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics/0517.pdf"
+      }
+    ],
+    "webpage_links": []
+  }
+}

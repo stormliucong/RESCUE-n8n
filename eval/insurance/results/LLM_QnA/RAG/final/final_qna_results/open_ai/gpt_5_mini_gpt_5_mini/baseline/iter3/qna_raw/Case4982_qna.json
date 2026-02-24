@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states the patient is being considered for whole exome sequencing (WES) to evaluate for an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria are typically indication-based rather than strictly age-limited; the provided information (11-year-old) does not conflict with any specific age restriction in UHC WES policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The record does not state any payer-imposed specialty requirement for the ordering provider; UHC policies generally require an appropriate ordering clinician but do not rigidly specify a single specialty in most WES criteria."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The patient has congenital Hirschsprung disease, is referred by a developmental pediatrician for genetic evaluation, and there is a sibling with early-onset (before age 3) epileptic encephalopathy — these features meet UHC medical-necessity indications for WES (suspected heritable syndromic/neurodevelopmental condition)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC WES criteria commonly require prior appropriate testing (e.g., chromosomal microarray) for developmental anomalies; only nondiagnostic FISH was done and no CMA or other required prior testing is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a first-degree sibling with epileptic encephalopathy before age three, which is a relevant family history supporting evaluation for a heritable genetic syndrome per UHC criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC WES coverage typically requires documented pre-test genetic counseling; the family has met with a genetic counselor multiple times for pre-test counseling and plans post-test disclosure, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband/exome sequencing interpretation and report), which best aligns with the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indications, family history, and genetic counseling meet UHC WES medical-necessity and counseling criteria, required prior testing (notably chromosomal microarray) is not documented; per UHC coverage rules, lack of required prior testing makes WES not covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2007,
+    "output_tokens": 1864,
+    "total_tokens": 3871
+  }
+}

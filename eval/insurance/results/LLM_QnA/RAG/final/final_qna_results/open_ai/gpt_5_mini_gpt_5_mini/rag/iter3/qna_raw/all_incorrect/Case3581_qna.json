@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient info states BRCA1 and BRCA2 testing was ordered. Policy: BRCA testing is addressed via hereditary breast cancer / BRCA Analysis (referenced in guideline). Decision based solely on patient clinical info."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The Cigna hereditary cancer panel policy does not state any explicit age-based eligibility for BRCA1/2 testing in the provided text; it references meeting BRCA Analysis criteria but no age limits are specified in this document."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider as part of criteria for hereditary cancer testing. Patient info states no pre-test genetic counseling was conducted, so ordering/provider-related counseling requirement is unmet."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy requires meeting criteria for BRCA Analysis or a personal diagnosis of cancer consistent with the syndrome. The patient has no personal history of cancer and the referral is for hearing/visual impairment; thus the patient does not meet the medical indications stated in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline does not define any specific required prior diagnostic genetic tests that must be completed before BRCA1/2 testing in the provided text (it only states panels/genes should not have been previously tested). The prior FISH noted in the patient record is not specified by the policy as a required prior test."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family history of relevant cancers is part of criteria (e.g., BRCA-related family history). The patient’s family history (sibling with a brief resolved unexplained event) is not a cancer history relevant to BRCA criteria per the policy, so relevant family history is absent."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires pre- and post-test genetic counseling by an appropriate provider as part of eligibility. Patient info confirms no pre-test genetic counseling was conducted, so counseling requirement is unmet."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists panel and certain procedure codes (e.g., 81432, 81479, U-codes) and lists 81228 for chromosomal microarray. The provided answer options do not include the BRCA-specific CPT/HCPCS codes referenced in the policy; therefore no provided CPT option directly corresponds to BRCA1/2 in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the Cigna policy, BRCA testing requires meeting BRCA Analysis criteria and pre-/post-test genetic counseling. The patient lacks a personal cancer diagnosis or documented BRCA criteria, has no relevant family cancer history, and did not have pre-test counseling — therefore the coverage criteria in the policy are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11890,
+    "output_tokens": 2537,
+    "total_tokens": 14427
+  }
+}

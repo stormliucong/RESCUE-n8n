@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly requests chromosomal microarray (CMA) testing. Basis: patient note and policy target test is CMA."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The CMA guideline addresses prenatal and postnatal use but does not impose age-based eligibility limits. Basis: policy criteria do not specify age restrictions."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires pre- and post-test genetic counseling and that the rendering lab be qualified, but it does not specify ordering provider specialty/credentials. Basis: policy text lacks explicit ordering-provider specialty requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific symptomatic indications (postnatal: no prior CMA, testing on living child/adult, diagnosis not by clinical exam alone, and one of DD/ID, ASD, major cardiac anomaly, or multiple congenital anomalies). The neonate's primary indication (neonatal epileptic encephalopathy) is not among the listed presentations. Basis: CMA criteria list in policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires 'No previous CMA testing' for diagnostic postnatal CMA. Patient had a prior chromosomal microarray (nondiagnostic), so the required prior-test condition is not met. Basis: 'No previous CMA testing' criterion and billing: 'CMA is only reimbursable once per lifetime.'"
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies an exclusion related to family history of a chromosome rearrangement in phenotypically normal individuals. The patient has a sibling with developmental regression, but no family history of a known chromosome rearrangement is reported, so the specific family-history criterion/exclusion does not apply. Basis: CMA exclusions in policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider. Patient information states pre-test counseling was discussed with a genetic specialist and post-test follow-up is planned, satisfying this requirement. Basis: 'Genetic Counseling' requirement in policy."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Policy lists CPT 81228 for chromosomal microarray (constitutional BAC/array) as the relevant procedure code. Basis: procedure codes table in policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage criteria require no prior CMA and the billing section states CMA is reimbursable only once per lifetime. The patient had a prior CMA (nondiagnostic), so the request does not meet the policy's required criteria for coverage. Basis: 'No previous CMA testing' and 'CMA is only reimbursable once per lifetime' in the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10103,
+    "output_tokens": 1929,
+    "total_tokens": 12032
+  }
+}

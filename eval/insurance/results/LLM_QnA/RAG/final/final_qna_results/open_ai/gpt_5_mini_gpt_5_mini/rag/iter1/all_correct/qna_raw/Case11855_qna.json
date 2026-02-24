@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states chromosomal microarray (CMA) is being ordered to assess for copy number variants."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare CMA policy does not impose an age cutoff for testing; it describes indications across prenatal, pediatric and adult settings but does not specify age-based eligibility criteria that would exclude a 14-year-old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends pre/post-test genetic counseling by qualified genetics personnel but does not mandate a specific provider specialty to place the CMA order; no explicit ordering-provider restriction is stated."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage rationale lists specific covered indications (ASD, isolated severe congenital heart disease, multiple anomalies not specific to a well-delineated syndrome, developmental delay/intellectual disability). The patient has a congenital anomaly affecting a single organ system without documentation of DD/ID, ASD, multiple anomalies, or isolated severe CHD, so the defined medical indications are not met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The AAN/other guidance in the policy states targeted testing (e.g., Fragile X/FMR1) when indicated should be negative prior to CMA; the patient had prior Fragile X testing that was nondiagnostic, satisfying this prior-test expectation."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy only specifies family-related indications such as testing a parent/sibling of a child with an abnormal/equivocal CMA; the patient's family history (maternal aunt with breast cancer) does not match the family-history criteria for CMA eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy strongly recommends pre-test genetic counseling and AAN guidance requires face-to-face counseling/consent; the patient received pre-test counseling with a genetic specialist and plans for post-test follow-up were made, meeting counseling expectations."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "The policy lists CPT 81228 for genome-wide cytogenomic analysis (CGH microarray) for constitutional copy number variant detection, which corresponds to the requested CMA."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the UnitedHealthcare CMA coverage rationale the test is medically necessary only for the listed indications (ASD, isolated severe CHD, multiple anomalies not specific to a well-delineated syndrome, developmental delay/ID, etc.). The patient has a single-organ congenital anomaly without documented DD/ID, ASD, multiple anomalies, or isolated severe CHD, so the coverage criteria are not met and the test is not covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 30417,
+    "output_tokens": 2494,
+    "total_tokens": 32911
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "payer": "Cigna",
+  "prompt_type": "keyword",
+  "model": "openai",
+  "iteration": 2,
+  "attempt": 1,
+  "success": true,
+  "raw_response": "{\"pdf_links\":[\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html\",\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html\",\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html\",\"https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html\"],\"webpage_links\":[]}",
+  "parsed_data": {
+    "pdf_links": [
+      "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html",
+      "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html",
+      "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html",
+      "https://static.cigna.com/assets/chcp/resourceLibrary/coveragePolicies/categories/genetics.html"
+    ],
+    "webpage_links": []
+  }
+}

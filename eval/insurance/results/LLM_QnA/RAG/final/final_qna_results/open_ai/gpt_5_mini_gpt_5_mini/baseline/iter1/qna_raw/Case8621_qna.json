@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient is explicitly described as undergoing whole exome sequencing (WES) to seek a unifying diagnosis."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES criteria are driven by clinical indication (neurodevelopmental disorder) rather than a strict numeric age cutoff; the record documents a pediatric patient (2 years) but the policy does not specify an absolute age limit."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC coverage generally requires an appropriate ordering clinician but does not mandate a specific specialty in all cases; the information gives the ordering provider (oncologist) but the policy does not explicitly restrict orders to a geneticist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC permits WES for individuals with unexplained complex neurodevelopmental disorders/autism spectrum disorder when a unifying genetic diagnosis is sought; the patient has a complex neurodevelopmental disorder with autism, meeting that clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires prior standard testing such as chromosomal microarray before WES for developmental disorders; the patient had prior CMA testing that was nondiagnostic, satisfying this requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria (having a relative with congenital anomaly or similar phenotype) can support genetic testing eligibility; the family reports an uncle with a congenital anomaly, which is relevant."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of genetic counseling for WES; the family has met with a genetic counselor multiple times with pre-test counseling completed and plans for post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (WES), which is the test requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per UHC criteria the patient has an appropriate clinical indication (complex neurodevelopmental disorder/autism), required prior testing (nondiagnostic CMA) is documented, genetic counseling is completed, and relevant family history is present — together these meet coverage criteria for WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1988,
+    "output_tokens": 1693,
+    "total_tokens": 3681
+  }
+}

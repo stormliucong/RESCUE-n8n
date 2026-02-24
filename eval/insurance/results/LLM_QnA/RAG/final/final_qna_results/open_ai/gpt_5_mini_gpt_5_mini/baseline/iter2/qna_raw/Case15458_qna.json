@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being evaluated explicitly for BRCA1 and BRCA2 testing per the clinical note."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP BRCA coverage includes individuals with a personal history of breast cancer at a young age; patient is 19 years old which meets age-related criteria for germline BRCA testing."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP permits ordering by licensed treating clinicians; the test was ordered by a nurse practitioner, which meets typical ordering provider requirements when documentation and counseling are provided."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has a qualifying medical indication under BCBS_FEP BRCA criteria: personal history of breast cancer at a very young age and a family history of ovarian cancer and prostate cancer (suggestive of hereditary breast/ovarian cancer syndrome)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage does not mandate prior diagnostic tests such as FISH before germline BRCA testing; the nondiagnostic FISH is not a required prior test for BRCA germline analysis."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP criteria consider family history of ovarian cancer and relevant male cancers (prostate) as qualifying; the patient has such family history (maternal aunt with ovarian cancer and a relative with metastatic/ductal prostate cancer)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of pre-test genetic counseling for hereditary cancer testing; the patient completed pre-test counseling with plans for post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "The requested test is germline BRCA1/2 analysis by sequencing; CPT 81277 corresponds to BRCA1/BRCA2 sequence analysis (primary code for BRCA sequencing), while 81162 would represent separate large rearrangement/duplication analysis if ordered in addition."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on BCBS_FEP coverage criteria the patient meets age, clinical indication, family-history, counseling, and ordering-provider requirements for BRCA1/2 germline testing, so the test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 2228,
+    "total_tokens": 4219
+  }
+}

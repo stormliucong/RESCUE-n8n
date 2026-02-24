@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1 and BRCA2 testing (patient info). The policy FEP 2.04.02 addresses germline BRCA1 and BRCA2 testing (policy)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy specifies age-related criteria for affected individuals (eg, breast cancer diagnosed ≤45, etc.) but does not impose an age limit for testing an unaffected first-degree relative; the patient is an unaffected 75-year-old and no policy upper-age exclusion for unaffected relatives is specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states testing should be performed in a setting with suitably trained providers who can give pre- and post-test counseling, but it does not specify required ordering provider specialty or that a general practitioner cannot order testing; the patient was referred by a general practitioner but the policy does not define explicit ordering-provider credentials."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists that testing of an unaffected individual is medically necessary if they have a 1st- or 2nd-degree blood relative meeting any Patients With Cancer criterion; the patient's sister (a 1st-degree relative) had epithelial ovarian carcinoma, which meets the 'personal history of epithelial ovarian carcinoma at any age' criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy strongly recommends testing an affected family member first whenever possible to aid interpretation, but it does not state that such prior testing is an absolute prerequisite for coverage of testing an unaffected relative; the patient’s documentation does not indicate whether affected-relative testing was done."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy family-history criteria are central to eligibility; the patient has a first-degree relative (sister) with epithelial ovarian cancer, which is a specified qualifying family history in the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires testing be performed in a setting that can provide appropriate pre- and post-test genetic counseling and states formal genetic counseling is recommended; there is no documentation of pre-test genetic counseling for this patient (patient info)."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to BRCA1/2 testing; no CPT code is specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "From an adjudication perspective: the patient meets the policy's medical-necessity criterion for an unaffected individual with a first-degree relative with epithelial ovarian cancer. However, the policy explicitly states testing should be performed in a setting that provides appropriate pre- and post-test genetic counseling. There is no documentation of pre-test genetic counseling in the patient information, so the policy's counseling/setting requirement is not met as documented; therefore coverage is not approved based on the available information."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18927,
+    "output_tokens": 2477,
+    "total_tokens": 21404
+  }
+}

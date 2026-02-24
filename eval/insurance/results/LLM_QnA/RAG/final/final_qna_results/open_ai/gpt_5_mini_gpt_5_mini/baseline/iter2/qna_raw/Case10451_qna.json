@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states the neurologist referred the patient for whole exome sequencing (WES) to evaluate an unexplained neurodevelopmental disorder."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage for WES includes pediatric patients with unexplained moderate-to-severe intellectual disability diagnosed in childhood; the patient is 10 years old and therefore meets age‑based pediatric criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally require an appropriately qualified ordering clinician but do not strictly limit orders to a specific specialty in all cases; the neurologist placed the order, which is typically acceptable, and no explicit payer-only-specialty restriction is documented in the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical necessity criteria for WES include unexplained moderate-to-severe intellectual disability / neurodevelopmental disorder; the patient has moderate-to-severe intellectual disability of childhood onset and an unexplained neurodevelopmental disorder, meeting the indication."
+    },
+    "Q4": {
+      "answer": "Not Answerable",
+      "reasoning": "The record documents prior CMA testing was nondiagnostic (which satisfies one common prerequisite), but UHC often also requires Fragile X testing in males prior to WES. Patient sex is not provided, so it cannot be determined whether all required prior tests were completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage is based primarily on the proband's clinical features and prior testing; while a sibling had a brief resolved unexplained event, family history/consanguinity criteria relevant to WES eligibility are not specified in the provided policy context."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies for WES typically require documentation of pre-test genetic counseling/informed consent by a qualified provider. The record states there is no documentation of prior genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT code 81415 corresponds to clinical exome sequencing (WES) and is the appropriate billing code among the listed options for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age and clinical indication and has a nondiagnostic CMA, UHC coverage requires completion/documentation of all prerequisite testing (e.g., Fragile X when applicable) and documented pre-test genetic counseling. Because counseling is not documented and prior-test completeness cannot be confirmed (sex not provided for Fragile X requirement), coverage criteria are not fully met and the test would be denied pending completion/documentation of those requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1999,
+    "output_tokens": 2041,
+    "total_tokens": 4040
+  }
+}

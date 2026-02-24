@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical information explicitly states testing was referred for whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy applies to neonates/children but does not impose an explicit age cutoff or age-based exclusion for WGS/WES eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling; the patient was referred by a medical geneticist and received pre-test counseling by a genetic counselor, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy allows WGS only as rapid WGS for critically ill infants in NICU/PICU meeting specific criteria. The patient is a neonate with neurologic findings but is not documented as critically ill or in an intensive care unit, so the specific medical indications for WGS coverage are not met (policy: 'Whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations')."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies prior testing criteria for standard WES (eg, CMA and/or targeted testing) but does not specify required prior tests for WGS in non-rapid situations; the document does not state a definitive prior-test requirement for the requested WGS."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list family history of an inborn error of metabolism as relevant. The patient has a sibling with an inborn error of metabolism, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires counseling about potential risks of genetic testing by someone with expertise; pre-test counseling was completed with a genetic counselor and post-test follow-up is planned, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing codes for WGS; therefore a best-fit CPT code is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, whole genome sequencing is only considered medically necessary as rapid WGS for critically ill infants in NICU/PICU meeting specific criteria. The patient is not documented as critically ill or in intensive care, and the policy states 'Whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations,' so the requested WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14852,
+    "output_tokens": 2715,
+    "total_tokens": 17567
+  }
+}

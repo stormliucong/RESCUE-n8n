@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case text explicitly states 'whole exome sequencing (WES) has been requested.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage is driven by clinical indication rather than strict age cutoffs; no age-based exclusion is specified and a 10‑year‑old is an appropriate pediatric candidate."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC medical policy requires an appropriate ordering clinician but does not mandate a specific specialty (e.g., only geneticist); the record lists an oncologist as the ordering provider, which is not explicitly disallowed by policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical criteria for WES are met: unexplained early-onset cholestatic liver disease with suspicion of an inherited/metabolic disorder and nondiagnostic prior targeted testing (CMA), which fits UHC indications for WES to evaluate a suspected monogenic disorder."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC commonly requires prior standard testing (e.g., CMA) before WES in many pediatric genetic evaluations; the patient had a nondiagnostic chromosomal microarray, satisfying that prior test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant: an inborn error of metabolism in a cousin increases pretest probability of an inherited metabolic disorder, which is a listed supporting criterion for WES."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies expect documentation of pre‑test genetic counseling/consent for genomic testing; the chart states there is no documentation of pre‑test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband or single‑sample exome) which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Clinical indications (early‑onset cholestasis, suspected metabolic/genetic etiology, nondiagnostic CMA, relevant family history) meet UHC medical necessity criteria for WES. The only policy deficiency is absent documented pre‑test counseling, which may require remediation but does not negate medical necessity for coverage if counseling is documented or completed per payer process."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2007,
+    "output_tokens": 1654,
+    "total_tokens": 3661
+  }
+}

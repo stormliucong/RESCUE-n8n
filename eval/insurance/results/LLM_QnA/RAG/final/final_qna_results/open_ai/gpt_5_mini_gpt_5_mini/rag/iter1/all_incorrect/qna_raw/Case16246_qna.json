@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1 and BRCA2 testing (stated explicitly). Policy MOL.TS.238.A addresses germline BRCA analysis."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires age >=18 for full sequence analysis. Patient is 35 years old, which meets the policy age requirement for BRCA testing (Full Sequence Analysis: 'Age 18 years or older')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires 'pre- and post-test genetic counseling by an appropriate provider (as deemed by the Health Plan policy)' but does not explicitly restrict which ordering provider specialties may order BRCA testing; the patient’s ordering provider is a gynecologist, and the policy does not specify ordering-provider specialty requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'Female with breast cancer diagnosis 50 years of age or younger' as a diagnostic indication for full sequence BRCA testing. Patient had breast cancer before age 50 (age 35), so she meets a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Full sequence analysis criteria require 'No previous full sequencing of BRCA1/2' and no known family mutation. Patient had prior karyotype testing only (nondiagnostic) and no prior BRCA sequencing or known familial BRCA mutation, so prior-test requirements are satisfied per policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy counts pancreatic cancer in a close blood relative as relevant family history ('Pancreatic cancer in at least 1 close blood relative (first-, second-, or third-degree)'). The patient reports an uncle (second-degree) with pancreatic cancer, which is a relevant family history per policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires pre- and post-test genetic counseling for BRCA testing ('Genetic Counseling: Pre- and post-test genetic counseling...'). The patient has had no pre-test genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Policy procedure codes include BRCA1/2 full sequencing and deletion/duplication combined as 81162 and states 'If BRCA1/2 deletion/duplication analysis will be performed concurrently with BRCA1/2 gene sequencing, CPT code 81162 is likely most appropriate.' The request is for BRCA1/2 testing and the combined code is the appropriate code when both sequencing and del/dup are performed."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age, clinical indication (breast cancer <50), and prior-test requirements, the policy explicitly requires pre- and post-test genetic counseling for BRCA testing. The patient has not had pre-test genetic counseling, so a required coverage criterion is unmet and the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10261,
+    "output_tokens": 1973,
+    "total_tokens": 12234
+  }
+}

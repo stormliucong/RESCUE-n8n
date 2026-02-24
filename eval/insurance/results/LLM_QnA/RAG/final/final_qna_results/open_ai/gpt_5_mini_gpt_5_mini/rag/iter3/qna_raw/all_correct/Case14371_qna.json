@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record states the general pediatrician ordered whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists age-related phrasing (e.g., features diagnosed by age 18) and the member is 11 years old; the patient meets the age-related timing (under 18) for pediatric neurodevelopmental indications."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "UnitedHealthcare policy requires WES to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a general pediatrician and does not meet the listed provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires either (A) one of a specific single-feature list (e.g., global developmental delay, moderate/severe ID by 18) or (B) two or more features from a specified list (which includes autism). The patient has autism/complex NDD but only one qualifying feature is documented, so the specified medical indication criteria are not met per policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior testing (e.g., CMA) for postnatal WES in NDD/ASD cases except when a specific syndrome is suspected; Fragile X testing was performed but the policy does not require this as a prerequisite."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history/consanguinity among qualifying considerations. The patient has a maternal aunt with a persistent severe immunologic disorder (a second-degree relative), which is relevant family history per policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is \"strongly recommended\" prior to WES/WGS but does not make counseling a formal coverage requirement; the family did meet with a genetic counselor, but counseling is not required for coverage per the policy text."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable codes list CPT 81415 for exome (sequence analysis), which corresponds to WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under UnitedHealthcare policy, WES coverage requires both meeting the clinical feature criteria and being ordered by an approved specialist. Although the patient is age-eligible and has relevant family history and pre-test genetic counseling, the clinical criteria (only one documented qualifying feature: ASD) and the ordering provider requirement (general pediatrician vs required specialist) are not met; therefore the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36945,
+    "output_tokens": 3311,
+    "total_tokens": 40256
+  }
+}

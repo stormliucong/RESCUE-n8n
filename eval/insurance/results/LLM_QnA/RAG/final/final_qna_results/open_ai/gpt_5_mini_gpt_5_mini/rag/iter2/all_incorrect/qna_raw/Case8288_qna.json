@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info states 'whole exome sequencing (WES) is being pursued.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's standard exome criteria do not set a prenatal/fetal age limit; rapid exome has an infant (≤12 months) age requirement but standard exome criteria do not explicitly specify age limits for prenatal cases."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by a Board-Certified/Board-Eligible Medical Geneticist or APGN for standard ES (Criteria I.G). Patient data show referral by a developmental pediatrician but do not state that a Board-Certified/Board-Eligible Medical Geneticist or APGN performed the required evaluation, so insufficient information to determine compliance."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy standard exome is indicated when etiology unknown and genetic etiology likely: patient has a major congenital cardiac anomaly (meets 'abnormality significantly affecting a single organ system') AND a family history of an inborn error of metabolism (meets 'family history strongly suggestive of a genetic etiology'), satisfying the 'TWO of the following' criterion (Policy I.A.2.b). CMA was nondiagnostic, supporting further testing."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate completion of a specific prior test (e.g., CMA) as an absolute requirement in the criteria, though it notes exome may be considered after CMA or focused testing are uninformative. The patient did have a nondiagnostic CMA, but the policy does not explicitly require CMA prior."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'family history strongly suggestive of a genetic etiology, including consanguinity' as a qualifying criterion. Patient has family history of an inborn error of metabolism affecting an older sibling."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test counseling by an appropriate provider (e.g., Certified Genetic Counselor). Patient info documents that the parents 'have had multiple sessions with a genetic counselor,' satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy maps standard exome sequencing (proband) to CPT code 81415 (Policy 'Coverage Criteria' and 'Policy Reference Table')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "While clinical indications, nondiagnostic CMA, family history, and documented genetic counseling satisfy many policy requirements (Standard ES I.A, B, C, E, F), the policy also requires that the patient and family history be evaluated by a Board-Certified/Board-Eligible Medical Geneticist or an APGN (I.G). The patient record does not document such an evaluation, so a required criterion is not met per the policy; therefore coverage cannot be confirmed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12267,
+    "output_tokens": 2930,
+    "total_tokens": 15197
+  }
+}

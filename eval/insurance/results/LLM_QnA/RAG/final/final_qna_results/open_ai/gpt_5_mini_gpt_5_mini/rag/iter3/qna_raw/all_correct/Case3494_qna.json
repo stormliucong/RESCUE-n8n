@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'whole exome sequencing (WES) is being requested.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion: member must be <21 years of age for ES. Patient is a six‑week‑old infant, which meets the <21 years requirement."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists requirements for a 'qualified' rendering laboratory and recommends pretest counseling by genetics professionals, but does not explicitly specify ordering‑provider specialty/type required for coverage (no explicit ordering provider requirement stated)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL listed criteria for medical necessity (e.g., detailed genetic/family history evaluation with a clinical letter, alternate etiologies considered/ruled out, specific phenotype criteria). Patient has a single noted congenital abnormality and 'concern for an evolving complex neurodevelopmental disorder' but does not meet the policy's defined phenotype thresholds (e.g., multiple congenital anomalies or TWO listed neurodevelopmental criteria), nor is the required clinical evaluation/documentation provided."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires no prior ES/GS (patient has none) and that the clinical presentation not fit a syndrome for which first‑tier testing (e.g., CMA) is available, but it does not mandate specific prior tests (postnatal) to have been completed before ES; prenatal ES does require prior CMA, but this is not a prenatal case."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires a family history be documented in the clinical evaluation, and prenatal ES lists family history as a specific criterion in some contexts, but for routine pediatric ES family history/consanguinity is not presented as a standalone coverage criterion. Patient has a sibling with dysmorphic features, but the policy does not make family history alone sufficient or explicitly required for coverage in this scenario."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy cites ACMG recommendations that pretest counseling by a medical geneticist or genetic counselor (with consent) should occur, and the coverage criteria require an appropriate genetic/family history evaluation and clinical letter, but the policy's formal ES coverage criteria do not explicitly state that documented genetic counseling is a hard requirement for coverage. Patient declined counseling; the policy does not clearly state this alone disqualifies coverage."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Billing section: '81415 should be billed for the proband' when analyzing the entire exome sequence (proband WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy ES is medically necessary only when ALL listed criteria are met. Although patient meets age and has no prior ES/GS, multiple required elements are missing (no documented clinical letter detailing genetic/family history and testing algorithm, alternate etiologies not documented as considered/ruled out, phenotype criteria per policy are not clearly met). Therefore coverage is not supported under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10475,
+    "output_tokens": 2770,
+    "total_tokens": 13245
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note states the patient was referred specifically for BRCA1/2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna BRCA coverage criteria do not impose a strict upper or lower age cutoff for BRCA testing in adults; no age-based exclusion applies to this 75-year-old in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna policies require documented genetic counseling but do not restrict ordering to a specific medical specialty; the ordering family medicine physician with documented pre-test counseling meets typical provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Cigna covers BRCA testing when there is a close relative with male breast cancer (first‑degree relative); the patient's brother with breast cancer meets a defined medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "While Cigna often prefers testing an affected relative first when available, the policy also specifies family-history patterns (including a male breast cancer in a first‑degree relative) that allow testing of the proband without prior genetic testing—no specific prior test completion is required here."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is directly relevant: a brother (first‑degree relative) with breast cancer — i.e., male breast cancer — is a criterion supporting BRCA testing under Cigna policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Cigna requires documentation of pre‑test genetic counseling for BRCA testing; the record states pre‑test counseling was completed and post‑test follow-up is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Among the provided CPT options, 81277 most closely corresponds to gene‑specific BRCA testing (the listed choices do not include CPT 81211/81213 which are BRCA1/2 codes), so 81277 is the best match from the supplied set."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on Cigna coverage criteria the patient meets a covered family‑history indication (first‑degree relative with male breast cancer), has documented pre‑test counseling, and no disqualifying age/provider/prior‑test barriers are present; therefore BRCA1/2 testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1957,
+    "output_tokens": 2554,
+    "total_tokens": 4511
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued to investigate an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists Global Developmental Delay and Intellectual Disability diagnosed by 18 years as qualifying features for WES. Patient is 17 with lifelong global developmental delay, meeting the age-related criteria in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The medical geneticist is coordinating the testing per the patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy defines Global Developmental Delay as an explicit indication for WES. The patient has GDD and a family history of early-onset epileptic encephalopathy (also listed in policy), so they meet the clinical indication(s)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate prior testing (e.g., CMA) before WES for this outpatient diagnostic scenario; it only directs targeted testing if a specific syndrome is suspected. Patient had nondiagnostic FISH, but the policy does not specify required prior tests for WES in this context."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists other first- or second-degree family members with similar clinical features and consanguinity as relevant features. Patient has a sibling with epileptic encephalopathy with onset before three years, which is relevant per policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES but does not state it as a mandatory coverage requirement. Patient received pre-test counseling and plans post-test counseling; counseling is noted but the policy does not require it as a strict coverage criterion."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for Exome (sequence analysis), which corresponds to WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare policy, WES is proven and medically necessary when specified criteria are met: ordered by an approved specialist (medical geneticist), and the proband has Global Developmental Delay (a listed qualifying feature). Patient is 17, has GDD, has relevant family history, prior FISH nondiagnostic, and testing is coordinated by a medical geneticist with genetic counseling—therefore coverage criteria in the policy are satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36965,
+    "output_tokens": 2403,
+    "total_tokens": 39368
+  }
+}

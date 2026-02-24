@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The referral specifically requests BRCA1 and BRCA2 testing for hereditary breast/ovarian cancer risk; patient and family history and a known BRCA2 pathogenic variant in the mother are described."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA/familial-variant policies do not impose a strict age cutoff for predictive testing when a known familial pathogenic variant exists; the record shows the patient is 21 but policy does not specify an age restriction for this scenario."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC generally requires an appropriate ordering clinician but does not usually restrict BRCA orders to a single specialty in its coverage criteria; the case notes the order was placed after genetics specialist counseling but the policy does not state a restrictive provider-type requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria are met: patient has a personal history of a primary solid tumor plus a strong family history and a first-degree relative (mother) with a known BRCA2 pathogenic variant, which satisfies UHC indications for BRCA testing (diagnostic or predictive)."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "When a known familial pathogenic BRCA variant exists, prior testing of an affected relative (here, the mother with a known BRCA2 pathogenic variant) satisfies the requirement to pursue targeted testing in the proband; no additional prior testing of the proband was required."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is clearly relevant: mother is reported to carry a BRCA2 pathogenic variant and there are ≥2 additional affected blood relatives on the same side, meeting family-history criteria in the payer policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria require appropriate pre-test genetic counseling for hereditary cancer testing; the record documents pre-test counseling by a genetic specialist and plans for post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Because a known familial BRCA2 pathogenic variant is reported, the appropriate billing code is for targeted analysis of a known familial variant (CPT 81162) rather than full-sequence BRCA panel or exome/genome codes."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC coverage rules, the presence of a known BRCA2 pathogenic variant in a first-degree relative plus the patient's personal cancer history and completed pre-test genetic counseling meets medical necessity for targeted BRCA testing; therefore the test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2000,
+    "output_tokens": 2028,
+    "total_tokens": 4028
+  }
+}

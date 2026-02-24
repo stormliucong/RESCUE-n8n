@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case explicitly states 'whole exome sequencing (WES)' is being requested for prenatal evaluation."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose a strict patient age cutoff; this is a prenatal/fetal request at 32 weeks and policy language does not specify an age restriction for WES."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "UHC typically requires WES be ordered by or in consultation with an appropriate genetics provider and documented pre‑test genetics involvement; the ordering provider is a neonatologist and no genetics consult or documented counseling is reported, so ordering/provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC permits WES when there is a suspected single‑gene disorder or unexplained fetal findings not resolved by targeted testing; this fetus has parental consanguinity, family history of sudden unexplained death, prior nondiagnostic targeted testing (FISH), and concern from fetal imaging → meets a clinical indication for WES."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC prenatal WES policies generally require prior standard cytogenomic testing (e.g., chromosomal microarray/karyotype) to be non‑diagnostic before WES; only FISH (nondiagnostic) was performed, and no CMA result is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "UHC considers family history and consanguinity relevant to WES eligibility; the case documents parental consanguinity and a sibling with sudden unexplained death <35, both relevant."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies require documented pre‑test genetic counseling for WES; the record states no genetic counseling has been completed, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband/exome sequencing) and is the appropriate code for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indications (consanguinity, family history, nondiagnostic targeted testing and fetal concern) support WES, UHC coverage requires prior cytogenomic testing (e.g., CMA) and documented pre‑test genetics involvement/order by appropriate genetics provider. Those required elements are not present, so the test would not meet coverage criteria as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1995,
+    "output_tokens": 1874,
+    "total_tokens": 3869
+  }
+}

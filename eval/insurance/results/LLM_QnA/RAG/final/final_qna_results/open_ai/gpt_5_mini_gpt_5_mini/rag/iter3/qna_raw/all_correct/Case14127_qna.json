@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record states 'whole exome sequencing (WES) is being pursued.' (Patient information)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists Global Developmental Delay and/or ID diagnosed by age 18 as qualifying features for WES. Patient is 17 with lifelong GDD (onset prior to 5 years), meeting the age-related clinical criteria (Policy: Coverage Rationale)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The patient’s testing is being coordinated and ordered by a medical geneticist (Patient information; Policy: Coverage Rationale)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication includes Global Developmental Delay and/or family history of early-onset epileptic encephalopathy as qualifying features. Patient has GDD and a sibling with epileptic encephalopathy onset <3 years (Patient information; Policy: Coverage Rationale)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not require specific prior tests before WES in the non‑prenatal setting (it only advises targeted testing if a specific syndrome is suspected). Patient had prior FISH nondiagnostic, but policy does not mandate CMA/karyotype prior to postnatal WES (Policy: Coverage Rationale; Description)."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy counts other first‑degree family members with similar clinical features as a qualifying feature for WES. Patient has a sibling with epileptic encephalopathy (Patient information; Policy: Coverage Rationale)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not list counseling as a strict coverage requirement. Patient did receive pre-test counseling and plans post-test counseling, but the policy frames counseling as recommendation rather than mandatory (Policy: Description)."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy lists CPT 81415 for exome (sequence analysis) which corresponds to WES (Policy: Applicable Codes)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets all stated WES coverage criteria: nonspecific neurodevelopmental presentation (GDD), WES ordered by a medical geneticist, and qualifying clinical features (GDD and relevant family history including sibling with early-onset epileptic encephalopathy). Therefore WES is covered per the policy (Policy: Coverage Rationale; Patient information)."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36965,
+    "output_tokens": 1657,
+    "total_tokens": 38622
+  }
+}

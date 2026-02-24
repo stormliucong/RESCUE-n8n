@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested to evaluate an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP 2.04.59 policy describes testing for individuals with developmental delay/intellectual disability but does not specify age-based eligibility criteria for WES."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and clinical genetic evaluation but does not specify ordering-provider (specialty/type) requirements for WES."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for CMA and states NGS panels are investigational; it does not define medical-necessity criteria for WES (WES is addressed in a separate policy 2.04.102)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends a stepwise approach (CMA and fragile X as first tier) but does not explicitly require completion of specific prior tests before WES; patient has a nondiagnostic CMA, but the policy does not state that prior testing is a mandatory prerequisite for WES."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify family history or consanguinity criteria for eligibility for WES; although family history is provided in the patient record, the policy contains no explicit coverage criteria tied to family history for WES."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states formal genetic counseling is recommended for cases when genetic testing for an inherited condition is considered and should be performed by someone with relevant expertise. The patient had pre-test counseling with a genetic counselor and plans for post-test follow-up, meeting the policy's counseling expectations."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP 2.04.59 policy text does not list or map CPT codes to WES or other genetic tests, so no CPT code can be determined from the provided policy document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "FEP 2.04.59 does not provide coverage approval criteria for WES (it refers to a separate policy 2.04.102). The policy explicitly approves CMA as first-line and deems NGS panel testing investigational. Because WES is not addressed or approved in this policy document and NGS panels are considered investigational here, coverage for the requested WES cannot be supported based on the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15708,
+    "output_tokens": 2403,
+    "total_tokens": 18111
+  }
+}

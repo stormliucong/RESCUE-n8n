@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) is being pursued to look for an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses age and that testing should not be limited by age (NSGC/ILAE statements) but does not specify an explicit age-based eligibility requirement for WES in the coverage criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires the rendering laboratory be a qualified provider per the Health Plan but does not specify ordering-provider specialty or other ordering-provider requirements for WES."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy defines medical indications for genetic epilepsy testing and specifically supports testing in individuals with early-onset epileptic encephalopathy; the patient has unexplained epileptic encephalopathy with onset before age 3 and no known underlying cause, meeting that clinical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not list specific prior diagnostic genetic tests that must be completed before performing WES; it only notes some limits (e.g., single gene/panel reimbursable once) and that the member has no known cause for seizures."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy includes family history criteria for some panel indications (e.g., focal epilepsy with positive family history suggestive of monogenic inheritance). The patient's family history (an uncle with prostate cancer) is not suggestive of monogenic epilepsy per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "While the policy cites professional guidelines (NSGC) and discusses counseling recommendations, it does not state a formal coverage requirement that genetic counseling must have been completed prior to testing for WES."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT 81415 corresponds to exome (WES) sequencing and is the best match among the listed CPT options."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy the patient has unexplained early-onset epileptic encephalopathy (onset <3 years), no known underlying cause, and has not had prior epilepsy panel testing — criteria supported by the guideline for genetic NGS-based testing (and the guideline references ES/GS as appropriate). Therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12786,
+    "output_tokens": 2827,
+    "total_tokens": 15613
+  }
+}

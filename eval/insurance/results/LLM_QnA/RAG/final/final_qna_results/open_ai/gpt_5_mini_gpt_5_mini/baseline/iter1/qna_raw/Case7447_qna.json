@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states the cardiologist has ordered whole genome sequencing (WGS) for the fetus."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP prenatal/diagnostic sequencing policies do not impose an age/gestational‑age exclusion for fetal WES/WGS; gestational age (33 weeks) does not conflict with any standard age limits."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Typical BCBS_FEP guidance does not mandate a specific ordering specialty for WES/WGS beyond an appropriate clinician; the ordering cardiologist is an appropriate prenatal specialist and no payer‑specific ordering provider restriction is documented in the record."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP considers prenatal genomic sequencing medically indicated for fetuses with major structural anomalies when a genetic etiology is suspected and results may affect management. An isolated severe congenital heart defect on fetal imaging meets the 'major structural anomaly' clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP coverage for prenatal WES/WGS typically requires prior standard cytogenetic testing (eg, karyotype and/or chromosomal microarray). The record notes prior fragile X testing (nondiagnostic) but does not document prior CMA/karyotype; thus required prior testing appears incomplete."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history criteria are not generally required or specified for prenatal WGS eligibility under BCBS_FEP; the maternal aunt with triple‑negative breast cancer is noted but is not a specified requirement for fetal WGS coverage in this context."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP and usual genomic testing policies require documented pre‑test genetic counseling for complex genomic tests. There is no documentation of pre‑test genetic counseling in the record, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (WGS) and best matches the ordered test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the fetal indication (severe structural heart defect) supports medical necessity, BCBS_FEP requires completion of prior cytogenetic testing (eg, CMA/karyotype) and documented pre‑test genetic counseling for prenatal WGS. Required prior tests and counseling are not documented, so coverage is not supported at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1972,
+    "output_tokens": 2008,
+    "total_tokens": 3980
+  }
+}

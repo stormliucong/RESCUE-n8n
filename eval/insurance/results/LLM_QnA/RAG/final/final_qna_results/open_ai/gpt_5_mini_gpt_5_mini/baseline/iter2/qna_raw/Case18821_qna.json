@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The obstetrician explicitly requests fetal whole exome sequencing (WES) at 22 weeks' gestation."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES policies do not impose a strict age cutoff that would exclude prenatal/fetal testing; the patient is a fetus at 22 weeks and no age-based exclusion is applicable or specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policies typically require an appropriate ordering clinician but do not universally restrict ordering to a single specialty in the documentation provided; the obstetrician (MFM/OB) ordering prenatal WES is commonly acceptable but no specific ordering-provider specialty requirement is documented here."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Payer coverage criteria for WES include evaluation of multiple congenital anomalies/multisystem fetal anomalies to identify a genetic etiology; prenatal imaging shows multiple congenital anomalies affecting different organ systems, meeting a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP typically requires prior standard testing (eg, chromosomal microarray and/or targeted chromosomal testing) before WES in the prenatal setting; the patient has no prior genetic testing documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant under coverage considerations; a maternal aunt reported to have dysmorphic features is present and is pertinent to genetic etiologic evaluation."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS FEP WES coverage commonly requires documentation of pre-test genetic counseling for informed consent and appropriate test selection; there is no documentation of pre-test genetic counseling for this patient."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband/exome sequencing), which best matches the requested fetal WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication (multisystem fetal anomalies) supports WES, BCBS FEP coverage requires completion of prior recommended testing (eg, chromosomal microarray) and documentation of pre-test genetic counseling; those prerequisites are not met, so the test is not covered as requested."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 1642,
+    "total_tokens": 3633
+  }
+}

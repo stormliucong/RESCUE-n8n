@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states the patient was referred for whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES/WGS policy does not impose a strict age cutoff in typical coverage criteria; the patient is 11 (pediatric), which is appropriate for testing, but the policy does not specify an age-based eligibility limit."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies generally require appropriate ordering clinicians and documentation of counseling, but do not universally restrict ordering to a single specialty in the published criteria. The record documents pre‑test counseling by a genetics specialist, but the ordering clinician is not explicitly restricted by the provided patient data."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES/WGS coverage criteria include patients with major congenital anomalies or suspected genetic disorder after prior testing; this 11‑year‑old has a major congenital cardiac anomaly consistent with a covered indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP typically requires prior chromosomal microarray for congenital anomaly evaluation; the patient had a nondiagnostic CMA as documented, satisfying the prior test requirement."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history/consanguinity is not a required element for routine WGS coverage in the applicable BCBS_FEP criteria, and the reported maternal aunt with pancreatic cancer is not relevant to the congenital cardiac indication."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP coverage for WES/WGS requires documentation of genetic counseling; the record states pre‑test counseling was completed with a genetic specialist, meeting that requirement."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT options, 81425 corresponds to comprehensive clinical genomic sequencing (whole exome/whole genome level testing) and is the best match for the requested WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP WES/WGS criteria the patient meets medical necessity: pediatric major congenital anomaly, nondiagnostic CMA, and documented pre‑test genetic counseling; therefore WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1969,
+    "output_tokens": 2473,
+    "total_tokens": 4442
+  }
+}

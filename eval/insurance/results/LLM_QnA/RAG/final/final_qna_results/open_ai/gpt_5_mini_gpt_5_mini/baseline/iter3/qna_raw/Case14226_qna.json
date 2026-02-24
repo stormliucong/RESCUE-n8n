@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states germline BRCA1 and BRCA2 (BRCA1/2) testing is being ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's BRCA testing policy does not impose a specific age cutoff for testing; the patient is 55 but no age-based exclusion or requirement is specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna policy does not mandate a specific ordering provider specialty (e.g., only geneticist); while counseling documentation may be required, a specific ordering-provider type is not specified in the policy information provided."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Cigna's BRCA coverage requires either a qualifying personal cancer history (e.g., breast, ovarian, pancreatic, metastatic prostate, etc.) or an elevated calculated mutation probability per accepted models. This patient has a nonspecific primary solid tumor (not a listed BRCA-associated tumor) and a calculated BRCA pathogenic-variant likelihood of 2.5%, which does not meet Cigna's calculator threshold (policy requires a higher probability—e.g., ≥3% or other stated threshold). Therefore the medical indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's BRCA policy does not require prior genetic testing (other than documentation of family/personal history or risk calculation); no specific prior test completion is mandated in the provided policy context."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Cigna's eligibility includes relevant family history of BRCA-associated cancers. The only family history reported is a mother with a severe hematologic/immunologic disorder, which is not a BRCA-associated cancer, so family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna requires documentation of informed pre-test genetic counseling for BRCA testing; the record states no pre-test genetic counseling was completed, so counseling requirements are not satisfied."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Of the provided CPT options, 81228 is the code that corresponds to BRCA1/BRCA2 sequence analysis (best match for BRCA1/2 germline testing among the listed choices)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per Cigna coverage criteria, the patient does not meet medical indication (personal cancer type not clearly BRCA-associated and calculated mutation probability 2.5% below policy threshold) and pre-test genetic counseling is not documented. Based on these unmet criteria, BRCA1/2 testing is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2026,
+    "output_tokens": 2302,
+    "total_tokens": 4328
+  }
+}

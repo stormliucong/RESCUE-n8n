@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1/2 testing to evaluate hereditary breast/ovarian cancer predisposition."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC-style hereditary cancer criteria specify age-based indications (e.g., breast cancer diagnosed <50 or multiple primary breast cancers). The patient is 38 and has two separate primary breast cancers, meeting age-related/diagnosis-based criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires ordering by an authorized physician or qualified provider; the order originates from a neurologist (physician) and pre-test counseling occurred with a genetics specialist, satisfying provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria for BRCA testing include individuals with multiple primary breast cancers and/or early-onset breast cancer. The patient has two separate primary breast cancers and is age 38, meeting those clinical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC hereditary BRCA criteria do not typically mandate completion of specific prior genetic tests before BRCA1/2 testing in a proband with qualifying personal history; the provided prior FISH result is unrelated and nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are part of BRCA coverage rules; the patient reports a first‑degree relative (father) with metastatic prostate cancer, which is relevant to BRCA-associated cancer spectrum and supports testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC commonly requires documentation of genetic counseling for hereditary cancer testing. The record states pre-test counseling was completed with a genetic specialist, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "Typical CPTs for single‑gene BRCA1/BRCA2 sequencing (e.g., 81211/81213) are not among the provided options; therefore a best-match CPT cannot be selected from the given list."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC-style coverage criteria: the patient meets clinical indications (two primary breast cancers and age <50), has relevant family history, pre-test counseling is documented, and an appropriate ordering provider is involved — therefore BRCA1/2 testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1972,
+    "output_tokens": 2613,
+    "total_tokens": 4585
+  }
+}

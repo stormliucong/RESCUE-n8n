@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states 'whole exome sequencing (WES) is being requested.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria are driven by clinical indication rather than a strict age cut‑off; no age‑based exclusion for an 8‑year‑old is specified, so age criteria are not specifically limiting here."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies commonly require appropriate ordering clinician and documentation of counseling, but they do not universally mandate a single specific specialty for ordering WES. The referral is from a developmental pediatrician (an appropriate specialist), but payer policy does not strictly limit ordering to one named specialty in a way that can be confirmed from the provided data."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC authorizes WES for patients with an unexplained, multisystem/congenital anomaly phenotype or complex neurodevelopmental disorders after standard testing. This 8‑year‑old has multiple congenital anomalies affecting several organ systems and thus meets medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC WES criteria typically require prior standard cytogenomic testing (e.g., chromosomal microarray) or other indicated targeted testing before WES. The record notes prior FISH was nondiagnostic but does not document a CMA or other required prior testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history/affected first‑degree relative (mother with long QT syndrome) is present. While not necessary to approve WES, payer criteria list relevant family history as supportive; here a relevant genetic family history exists."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC commonly requires documentation of pre‑test genetic counseling/informed consent for clinical WES. The family declined pre‑test counseling and the plan is to coordinate post‑test counseling, so counseling requirements are not met at the time of ordering."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT code 81415 corresponds to clinical exome sequencing (WES), which is the test requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indication for WES, required prior testing (e.g., chromosomal microarray) and required pre‑test genetic counseling/documentation are not completed; per UHC coverage rules these unmet prerequisites make the request not covered as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 2073,
+    "total_tokens": 4051
+  }
+}

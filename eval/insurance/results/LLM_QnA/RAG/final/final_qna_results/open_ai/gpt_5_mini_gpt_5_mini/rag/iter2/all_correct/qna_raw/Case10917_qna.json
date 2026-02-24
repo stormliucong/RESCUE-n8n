@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'whole exome sequencing (WES) has been ordered.' Basis: patient clinical note."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare WES policy does not impose a specific age limit for outpatient WES (criteria reference uses age only for features like diagnosis of ID by 18 years). Basis: policy Coverage Rationale does not specify an age cutoff for WES."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient was evaluated by a medical geneticist who ordered WES. Basis: policy 'WES is ordered by a medical geneticist…' and patient info."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history strongly suggestive of genetic cause plus specified features. The infant has persistent conjugated hyperbilirubinemia (a laboratory abnormality potentially suggestive of an IEM) and a first-degree family history (older sibling with multiple congenital anomalies) — meeting two listed features. Also presentation is nonspecific and WES was ordered by a medical geneticist. Basis: policy lists 'laboratory abnormalities suggestive of an inborn error of metabolism' and 'other first- or second-degree family member(s) with similar clinical features' as qualifying features."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior tests for outpatient WES in this scenario (it only states targeted/single gene testing if a specific syndrome is suspected or specific prenatal CMA/karyotype requirements). No required prior testing is specified for this indication. Basis: policy Coverage Rationale."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly includes family history (other first- or second-degree family member(s) with similar clinical features) as a qualifying feature; patient has an older sibling with multiple congenital anomalies. Basis: policy features list and patient family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy 'Genetic counseling is strongly recommended prior to WES or WGS.' Patient had pre-test counseling with a genetic specialist, meeting the counseling recommendation. Basis: policy Description of Services and patient info."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's Applicable Codes list maps exome sequence analysis to CPT 81415 for primary WES. Basis: policy Applicable Codes (81415 Exome; sequence analysis)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All coverage criteria are met per policy: WES ordered by an authorized provider (medical geneticist), clinical presentation is nonspecific and suggests genetic etiology, and the patient has qualifying features (laboratory abnormality suggestive of IEM and relevant family history). Therefore WES is 'proven and medically necessary' per the policy Coverage Rationale. Basis: UnitedHealthcare WES Coverage Rationale and patient facts."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36946,
+    "output_tokens": 2818,
+    "total_tokens": 39764
+  }
+}

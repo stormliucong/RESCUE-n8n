@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical info explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-based criteria apply to individuals <18 for evaluation of unexplained neurodevelopmental disorders; patient is 13, which meets the <18 requirement (see Policy II.1)."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy (II.1.a) requires evaluation by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor; the record notes evaluation by a developmental pediatrician and pre-test counseling but does not specify the counselor’s ABGC/ABMGG credentials, so provider requirement compliance cannot be confirmed from available info."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy limits coverage of WGS to situations where WES was performed and unable to identify a causative mutation and the WES criteria are met (II.4). The patient has not had prior WES documented, so the medical indication for WGS per policy is not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires WES (and comparator analysis) prior to WGS when WES is nondiagnostic (II.4). The patient has only had nondiagnostic FISH; no prior WES is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a relevant family history (an aunt with dysmorphic features). The policy recognizes family history as relevant to assessing a likely genomic etiology in genetic testing contexts (multiple sections discussing family history and inherited phenotypes)."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires pre-test counseling by an ABMGG geneticist or ABGC genetic counselor for WES/WGS indications (II.1.a). The record states pre-test genetic counseling was completed but does not document the counselor’s ABGC credential, so compliance cannot be confirmed."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to WGS/WES testing; no CPT guidance is present in the text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy WGS MEETS COVERAGE CRITERIA only when WES has been performed and failed to identify a causative mutation and all relevant WES criteria are met (II.4). Because no prior WES is documented for this patient, the requested WGS is not covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22462,
+    "output_tokens": 2659,
+    "total_tokens": 25121
+  }
+}

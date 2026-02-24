@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information states the medical geneticist referred the neonate for whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "The policy specifies rapid WGS/WES eligibility for infants/neonates in the NICU/PICU; the patient is a neonate, so the age criterion (infant/neonate) is met. (Note: other non-age conditions also apply.)"
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling; the patient was referred by a medical geneticist and pre-test counseling was completed with a genetic counselor, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indications include abnormal clinical features suggesting a genetic disease or complex metabolic phenotype and family history of an inborn error of metabolism; the neonate has complex neurologic abnormalities suggestive of a genetic/metabolic cause and a sibling with an inborn error of metabolism, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "For standard WES/WGS policy expects prior genetic testing (eg, CMA and/or targeted testing) or failed prior testing; the record documents only nondiagnostic Fragile X testing and does not document prior CMA or other required prior genetic testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of an inborn error of metabolism as a relevant criterion; the patient has a sibling with an inborn error of metabolism."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced individual; the patient had pre-test counseling with a genetic counselor and post-test follow-up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP policy text does not specify CPT or billing codes for WGS/WES, so a specific CPT code cannot be selected from the policy document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The policy permits rapid WGS only for critically ill infants in the NICU/PICU meeting specified criteria. While the patient is a neonate with suggestive features and family history, there is no documentation the infant is critically ill or in NICU/PICU; the policy also states WGS is investigational for diagnosis in other situations. Therefore WGS as requested is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14852,
+    "output_tokens": 44324,
+    "total_tokens": 59176
+  }
+}

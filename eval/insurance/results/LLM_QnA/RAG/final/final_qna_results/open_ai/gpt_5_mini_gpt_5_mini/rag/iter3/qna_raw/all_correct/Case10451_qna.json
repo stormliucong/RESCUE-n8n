@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical note explicitly states neurologist referred the 10-year-old for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria list 'Moderate, severe, or profound Intellectual Disability diagnosed by 18 years of age' as an indication for WES; patient is 10 with moderate-severe ID diagnosed in childhood, meeting the age-related criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a neurologist, satisfying this requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires a clinical history strongly suggesting a genetic cause plus one or more features such as moderate/severe intellectual disability by age 18; patient has unexplained moderate-severe ID diagnosed in childhood and nonspecific neurodevelopmental presentation, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES coverage criteria do not mandate prior testing (CMA) as a prerequisite; although the patient had nondiagnostic CMA, the policy does not require specific prior tests before WES."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' or consanguinity as supportive criteria; the documented sibling event (brief resolved unexplained event) does not constitute a similar neurodevelopmental phenotype or consanguinity, so relevant family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES but does not list counseling as an explicit coverage requirement; the record shows no documented counseling but counseling is not required for coverage per the policy text."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable CPT codes list 81415 for exome (proband) sequence analysis; the requested test is WES for the proband, corresponding to 81415."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare WES policy, coverage requires (1) nonspecific presentation (no well-defined syndrome), (2) ordering by an approved specialty (neurologist), and (3) presence of qualifying features such as moderate/severe ID by age 18. The patient meets these criteria and prior CMA was nondiagnostic—WES is therefore medically necessary under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36961,
+    "output_tokens": 1508,
+    "total_tokens": 38469
+  }
+}

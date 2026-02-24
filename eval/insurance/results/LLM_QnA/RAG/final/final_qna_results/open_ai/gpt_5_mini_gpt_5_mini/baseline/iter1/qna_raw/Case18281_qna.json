@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states the cardiologist has ordered whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES/WGS criteria are indication-based and do not impose a strict age cutoff; the patient is 6 but policy does not specify age-based exclusion/requirements."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC medical necessity policy requires documentation of clinical indication but does not rigidly restrict ordering to a specific named specialty in all cases; the record shows a treating specialist (cardiologist) placed the order, and the policy does not specifically require a genetics provider."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC considers WGS medically necessary for individuals with unexplained multiple congenital anomalies or an undiagnosed condition after prior evaluation; this 6‑year‑old has multiple congenital anomalies that do not fit a well‑delineated syndrome, which meets that indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior appropriate testing (e.g., chromosomal microarray and other targeted tests) before WES/WGS; only Fragile X was reported (nondiagnostic) and no CMA result is documented, so required prior testing appears incomplete."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a family history (sibling) of an inborn error of metabolism; UHC criteria consider relevant family history as supportive for genomic testing eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies require documentation of pre‑test genetic counseling for WES/WGS; the record states no genetic counseling was conducted prior to testing."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT options, 81425 corresponds to whole genome sequencing and is the appropriate code for the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the indication (multiple congenital anomalies) and positive family history support medical necessity under UHC policy, required prior testing (notably chromosomal microarray) and documented pre‑test genetic counseling are not present; failure to meet these payer prerequisites supports denial/not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1982,
+    "output_tokens": 1703,
+    "total_tokens": 3685
+  }
+}

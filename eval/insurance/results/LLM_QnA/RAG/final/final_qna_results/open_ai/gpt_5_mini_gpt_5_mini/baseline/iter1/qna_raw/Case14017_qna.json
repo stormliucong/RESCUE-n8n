@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES coverage criteria do not impose a strict age cutoff; pediatric patients (including infants) are routinely considered, so no age-based exclusion applies."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS FEP coverage criteria do not mandate a specific ordering provider specialty in all cases; the chart shows a general pediatrician ordered testing and there is documented genetic counseling, which meets typical practice requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical indication meets common BCBS FEP WES indications: early infancy with recurrent seizure-like events/possible epileptic disorder and concern for an underlying genetic etiology."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP WES policy typically requires prior appropriate cytogenomic testing (chromosomal microarray) or targeted testing when indicated. Only a nondiagnostic karyotype is documented; no CMA or other required prior testing is reported."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a relevant family history: a maternal uncle with a movement disorder (dystonia and ataxia), which supports a possible inherited neurologic etiology per coverage considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre-test genetic counseling was completed with plans for post-test follow-up, satisfying BCBS FEP counseling requirements for WES."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing, which is the test ordered."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although medical indication, counseling, and family history support WES, BCBS FEP coverage requirements commonly mandate prior appropriate cytogenomic testing (chromosomal microarray) or equivalent targeted testing before approving WES; only a nondiagnostic karyotype is documented and CMA was not completed, so coverage would be denied pending required prior testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2004,
+    "output_tokens": 1609,
+    "total_tokens": 3613
+  }
+}

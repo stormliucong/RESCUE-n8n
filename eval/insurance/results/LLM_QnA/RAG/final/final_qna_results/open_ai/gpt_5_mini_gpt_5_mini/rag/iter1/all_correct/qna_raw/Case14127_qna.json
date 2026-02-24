@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists Global Developmental Delay and intellectual disability diagnosed by age 18 as qualifying features for WES; the patient is 17 with lifelong GDD, meeting the age-related criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the medical geneticist is coordinating/ordering testing."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Coverage criteria require nonspecific presentation plus one qualifying feature such as Global Developmental Delay or epileptic encephalopathy onset <3 years. The patient has GDD and a sibling with early-onset epileptic encephalopathy, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES coverage criteria do not mandate prior specific tests for postnatal WES in this scenario; patient had nondiagnostic FISH but policy does not require specific prior testing before WES."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists other first- or second-degree family members with similar clinical features and consanguinity as qualifying factors; the patient has a sibling with epileptic encephalopathy (relevant family history)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WES but does not state counseling as a strict coverage requirement; patient has had pre-test counseling and will return for post-test counseling."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for exome (sequence analysis) corresponding to WES (proband) testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, WES is medically necessary when ordered by an authorized specialist for nonspecific presentations and qualifying features (e.g., Global Developmental Delay); the 17-year-old patient with lifelong GDD, family history of early-onset epileptic encephalopathy, medical geneticist order, and pre-test counseling meets the coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36965,
+    "output_tokens": 1574,
+    "total_tokens": 38539
+  }
+}

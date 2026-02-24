@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) has been requested to investigate a genetic cause of the patient's cholestatic liver disease."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UnitedHealthcare WES coverage criteria include pediatric patients with suspected genetic disorders; the patient is 10 years old, which meets pediatric age-based eligibility for diagnostic WES."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "UHC policy specifies that WES should be ordered by or in consultation with a clinical genetics provider (or documented genetics consult) or meet equivalent provider requirements; the ordering provider is the patient's oncologist and there is no documentation of a genetics consult, so ordering-provider requirements are not satisfied."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical necessity criteria support WES for unexplained, suspected genetic conditions after first-tier testing when phenotype is consistent with a genetically heterogeneous disorder. The patient has unexplained conjugated hyperbilirubinemia/cholestatic liver disease and a nondiagnostic CMA, consistent with a medical indication for WES."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The record documents a prior nondiagnostic chromosomal microarray (CMA), but payer-specific required prior testing (e.g., targeted gene panel or metabolic testing) for WES in this hepatic presentation is not specified in the provided information."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a relevant family history: a cousin with an inborn error of metabolism, which supports inherited metabolic disorder consideration and is pertinent to WES eligibility per payer criteria emphasizing family history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC requires documentation of pre-test genetic counseling for WES; the record explicitly states there is no documentation of pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The CPT code that corresponds to clinical whole exome sequencing (proband) is 81415."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and clinical indication are met and CMA was nondiagnostic, UnitedHealthcare requires appropriate ordering/provider documentation (genetics consult or qualified ordering provider) and documented pre-test genetic counseling for WES; those requirements are not fulfilled, so the test is not covered as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2007,
+    "output_tokens": 1919,
+    "total_tokens": 3926
+  }
+}

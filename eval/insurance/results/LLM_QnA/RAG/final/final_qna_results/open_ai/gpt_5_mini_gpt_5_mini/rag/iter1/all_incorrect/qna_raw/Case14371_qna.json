@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states the general pediatrician ordered whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years for ES; the patient is 11 years old and therefore meets the age criterion (MOL.TS.235.C)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires an appropriate genetic and family history evaluation and a clinical letter but does not specify a required ordering provider specialty or type for ordering ES."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows ES when TWO of listed criteria are met (e.g., formal diagnosis of autism AND symptoms of a complex neurodevelopmental disorder). The patient has a formal autism diagnosis and a complex neurodevelopmental disorder, meeting the medical indication portion of the policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy explicitly requires that the member has not had prior ES or genome sequencing; patient has no prior ES/WGS documented and prior Fragile X testing was nondiagnostic (prior testing documented)."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the policy requires a family history evaluation be performed and documented, it does not establish specific family-history or consanguinity criteria as standalone eligibility requirements for ES; patient does have a relevant family history but the policy does not use this as an isolated approval criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy/ACMG guidance requires pretest counseling by a genetic professional and documentation; the patient met with a genetic counselor before testing with plans for post-test follow-up, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Billing section states 81415 should be billed for the proband when analyzing the entire exome sequence; this is the appropriate CPT for proband WES per policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, medical indication (autism + complex NDD), absence of prior ES/WGS, and pretest genetic counseling are met, the policy requires an accompanying clinical letter documenting differential diagnoses, testing algorithm, prior tests/results, statement that a genetic etiology is most likely, recommendation that ES is most appropriate, and predicted impact on care. The provided patient information does not document that this required clinical letter and other required documentation (e.g., that alternate etiologies were considered/ruled out or that first-tier testing is not appropriate) have been submitted, so coverage criteria are not fully met per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10483,
+    "output_tokens": 3180,
+    "total_tokens": 13663
+  }
+}

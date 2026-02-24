@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient is explicitly undergoing BRCA1/2 testing per the clinical information (ordered by her obstetrician)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP BRCA policies apply to adults; the patient is 21 years old and thus meets age-based eligibility (adult) for germline BRCA testing."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided payer-level requirements do not strictly require a particular ordering specialty; although genetic counseling was completed (which supports appropriateness), the policy does not mandate a specific provider specialty for ordering."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical indication criteria for BRCA testing include a first‑degree relative with metastatic prostate cancer (strong family history). The patient’s father has metastatic prostate cancer, satisfying a covered family-history indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "There are no required prior diagnostic genetic tests for germline BRCA testing in this context; the prior nondiagnostic FISH is irrelevant to BRCA germline testing and the policy does not mandate other prior tests."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are specified for BRCA testing and the patient has a relevant family history (father with metastatic prostate cancer, a first‑degree relative)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP BRCA testing generally expects documented pre-test genetic counseling; the record states pre-test counseling was completed with a genetic specialist and post-test follow-up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "None of the provided CPT options clearly correspond to standard BRCA1/2 germline testing CPT codes (BRCA1/2 are typically reported with 81211–81217 or gene-specific codes not listed), so a best-match code is not available among the choices."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on FEP BRCA coverage criteria the patient is an adult with a first-degree relative with metastatic prostate cancer and has documented pre-test genetic counseling; these elements meet policy criteria for coverage of germline BRCA1/2 testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1980,
+    "output_tokens": 2090,
+    "total_tokens": 4070
+  }
+}

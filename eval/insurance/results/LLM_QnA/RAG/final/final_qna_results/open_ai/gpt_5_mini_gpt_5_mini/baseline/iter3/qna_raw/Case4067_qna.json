@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The note explicitly states \"whole exome sequencing (WES) has been ordered.\""
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose an absolute age cutoff for diagnostic WES; the 5-year-old age is within the range of patients for whom WES is considered, and no age-based exclusion is documented in the provided payer criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The documentation shows referral by a developmental pediatrician; UHC policies typically do not require a specific ordering specialty for WES or do not specify a single required provider type in the provided criteria."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has significant hypotonia with developmental concern (referred by developmental pediatrician). UHC medical necessity criteria for WES include unexplained developmental delay/neurologic phenotypes (including hypotonia) suggesting a genetic etiology."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC coverage requires prior standard first‑tier testing (commonly chromosomal microarray for unexplained developmental delay/ID) before WES. Only a chromosomal karyotype (nondiagnostic) is documented — CMA is not documented, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a relevant family history (paternal uncle with sudden unexplained death <35), which is considered relevant family history supporting a hereditary etiology in payer criteria for expanded genetic testing."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "UHC typically expects documentation of pre‑test counseling/consent for WES, but no information about genetic counseling or consent is provided in the patient information, so compliance cannot be determined."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband or single‑exome) and is the appropriate code for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient has a qualifying clinical indication (hypotonia/developmental concern) and relevant family history, UHC requires appropriate prior testing (e.g., chromosomal microarray as first‑tier) and documentation of counseling/consent before approving WES. Only a nondiagnostic karyotype is documented and counseling is not documented; therefore coverage criteria are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1970,
+    "output_tokens": 2004,
+    "total_tokens": 3974
+  }
+}

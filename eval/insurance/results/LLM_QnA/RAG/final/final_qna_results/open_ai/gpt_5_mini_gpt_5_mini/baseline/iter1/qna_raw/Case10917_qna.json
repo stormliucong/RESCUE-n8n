@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case statement explicitly says whole exome sequencing (WES) has been ordered to evaluate for an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES policy does not impose a strict age cutoff for WES; pediatric/infant testing is routinely considered. No age-based exclusion is specified for WES in the payer criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Payer criteria require appropriate ordering by a genetics provider or specialist for WES; the patient was evaluated by a medical geneticist and pre-test counseling was completed by a genetic specialist, meeting provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC considers WES medically indicated for infants with unexplained congenital/ multisystem anomalies or suspected monogenic disorders. The infant has persistent conjugated hyperbilirubinemia (not explained by TPN) and a sibling with multiple congenital anomalies, supporting a suspected genetic etiology."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior appropriate testing (commonly chromosomal microarray or other targeted testing) before WES for congenital anomalies. The record documents Fragile X testing (nondiagnostic) but does not document completion of CMA or other required prior tests."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant under payer criteria. The patient has an older sibling with multiple congenital anomalies, which supports genetic testing per UHC indications."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre-test genetic counseling for WES; the record states pre-test counseling was completed with a genetic specialist."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband only), which matches the ordered WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications, provider type, and counseling meet UHC criteria, required prior testing (e.g., documented CMA or other specified prior diagnostic testing) is not documented. Per UHC policy, absence of required prior testing renders WES not covered in this case."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1984,
+    "output_tokens": 1565,
+    "total_tokens": 3549
+  }
+}

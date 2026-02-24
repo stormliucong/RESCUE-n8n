@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states diagnostic whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES coverage criteria do not impose a strict age cutoff for diagnostic WES in infants with congenital anomalies; the patient is 5 weeks old which is compatible but age-specific criteria are not specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policies typically require an appropriate ordering physician and documentation (and often genetic counseling) but do not universally restrict ordering to a genetics specialist; the record shows an oncologist referral and genetics involvement planned, but no explicit payer specialty requirement is stated."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP considers WES medically indicated for patients with multiple congenital anomalies not fitting a well-delineated genetic syndrome or when a suspected monogenic disorder is present; the infant has multiple congenital anomalies meeting that indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP generally requires prior appropriate cytogenomic testing (chromosomal microarray) or other indicated prior tests to be nondiagnostic before WES; the record shows only a nondiagnostic karyotype (not CMA), so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family history reported (sibling with a brief resolved unexplained event) is not a clear relevant family history or consanguinity that meets WES-specific family-history eligibility criteria; no qualifying family history is documented."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP requires documentation of pre-test genetic counseling for diagnostic WES; the record states pre-test genetic counseling was completed and post-test follow-up with genetics is planned."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband-only or single exome) which matches the requested diagnostic WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the indication and counseling meet BCBS FEP coverage intent for WES, required prior cytogenomic testing (chromosomal microarray) has not been documented as nondiagnostic (only karyotype was nondiagnostic); per payer criteria lack of required prior testing means coverage is not supported at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1990,
+    "output_tokens": 1860,
+    "total_tokens": 3850
+  }
+}

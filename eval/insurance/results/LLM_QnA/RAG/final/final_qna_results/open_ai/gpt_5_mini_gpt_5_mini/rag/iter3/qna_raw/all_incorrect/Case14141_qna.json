@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is planned. (Patient fact: 'whole exome sequencing (WES) is planned')."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria apply to 'children' with unexplained congenital or neurodevelopmental disorders; patient is 7 years old (a child), so age meets the policy population. (Policy: '...for the evaluation of unexplained congenital or neurodevelopmental disorders in children'; Patient age: 7 years.)"
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual 'has been evaluated by a clinician with expertise in clinical genetics' (including family history and phenotype) prior to WES. The ordering/referring provider is an oncologist and the record does not document evaluation by a clinician with expertise in clinical genetics; therefore ordering provider requirements are not met. (Policy criterion #1; Patient fact: referred by an oncologist, no explicit genetics clinician evaluation documented.)"
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL listed criteria for medical necessity (including evaluation by a clinician with expertise in clinical genetics). Although prior CMA was nondiagnostic (meets the 'previous testing failed to yield a diagnosis' criterion), there is no documentation that a clinician with expertise in clinical genetics evaluated and documented phenotype as required; thus not all medical indication criteria are satisfied. (Policy criteria #1 and #3; Patient facts: CMA nondiagnostic, but no explicit genetics clinician evaluation documented.)"
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES when 'previous genetic testing has failed to yield a diagnosis (e.g., chromosomal microarray analysis...)'. Patient had prior CMA reported as nondiagnostic, satisfying the prior testing requirement. (Policy criterion #3; Patient fact: 'prior chromosomal microarray (CMA) testing reported as nondiagnostic')."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy notes family history (e.g., developmental delay in a sibling) as relevant to the evaluation and examples include family history of developmental delay. Patient has a family history of global developmental delay in a sibling, which is relevant per policy. (Policy 'Examples...Family history of: Developmental delay'; Patient fact: sibling with global developmental delay.)"
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states 'Documentation of individualized genetic counseling is required before any genetic testing.' Patient information documents pre-test genetic counseling completed with arrangements for post-test counseling, meeting the counseling requirement. (Policy 'Genetic Counseling... Documentation of individualized genetic counseling is required'; Patient fact: 'pre-test genetic counseling has been completed with arrangements for post-test counseling')."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 is the code listed in the policy for exome sequence analysis (WES). (Policy Codes table: CPT 81415 'Exome ... sequence analysis')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy WES may be medically necessary only when ALL criteria are met (including evaluation by a clinician with expertise in clinical genetics). Although the patient meets several criteria (child; multiple congenital anomalies; prior CMA nondiagnostic; genetic counseling completed; relevant family history), there is no documentation that a clinician with expertise in clinical genetics evaluated the patient (policy criterion #1). Additionally, the policy notes it 'may not apply to all lines of business such as the Federal Employee Program (FEP)', which further requires member-specific benefit plan verification. Based on the policy AND lack of documented genetics evaluation (and the FEP exception), coverage cannot be approved per the policy. (Policy criteria #1 and Benefit Exceptions; Patient facts as above.)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 56577,
+    "output_tokens": 2337,
+    "total_tokens": 58914
+  }
+}

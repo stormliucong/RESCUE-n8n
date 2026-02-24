@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states the patient is being evaluated with whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC policies limit WGS/WES indications to pediatric patients in many clinical situations; the patient is 15 years old (pediatric) and therefore meets age-based eligibility for WGS."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires ordering clinician involvement plus documented genetics involvement; the patient was referred by neurology and has been seen multiple times by a genetic counselor, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WGS/WES for unexplained congenital anomalies/multiple congenital anomalies or suspected genetic disorder. This patient has a congenital anomaly present since birth and a sibling with a similar anomaly, meeting a medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior appropriate first‑tier testing (e.g., chromosomal microarray) before WGS; the record notes prior FISH was nondiagnostic but does not document completion of CMA or other required prior testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant: the patient has a sibling with a similar congenital anomaly, which is a documented family history that supports genetic testing per coverage criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documented pre‑/post‑test genetic counseling for WGS in many cases; the patient has had multiple genetic counseling visits and plans for post‑test counseling, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "81425 corresponds to whole genome sequencing (germline) and is the CPT that best matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, indication, provider involvement, family history, and counseling are met, UHC requires completion of specified prior testing (e.g., chromosomal microarray) before WGS; only FISH was done and CMA is not documented, so coverage is not met at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1978,
+    "output_tokens": 1681,
+    "total_tokens": 3659
+  }
+}

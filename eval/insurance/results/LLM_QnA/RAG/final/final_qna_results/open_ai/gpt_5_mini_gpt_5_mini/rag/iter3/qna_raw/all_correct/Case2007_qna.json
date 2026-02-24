@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1 and BRCA2 testing (patient clinical information states BRCA1 and BRCA2 testing)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies testing in minors is investigational; the patient is 18 (an adult). The policy contains age-related criteria but does not exclude adults aged 18, so the patient's age satisfies the policy age requirements."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires testing be performed in a setting with suitably trained providers and that genetic counseling be provided, but it does not specify a required ordering provider specialty/type; the ordering provider is a family medicine physician (patient info)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under Individuals With Cancer, the policy lists 'Diagnosed at any age with ≥1 close blood relative with breast cancer diagnosed at age ≤50 years' as a criterion. Patient has metastatic breast cancer and a mother with breast cancer ≤50, so criterion is met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate prior specific tests before BRCA1/2 testing (it discusses prior limited testing scenarios and recommends testing an affected relative when available), and CMA (performed and nondiagnostic) is not identified as a required prior test."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are specified in the policy (eg, ≥1 close blood relative with breast cancer diagnosed ≤50). Patient's mother had breast cancer at age 50 or younger, meeting the specified family-history criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by qualified personnel. Patient completed pre-test counseling and will return for post-test counseling, satisfying the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes for BRCA1/2 testing; no CPT guidance is given in the text provided."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets medical necessity criteria in the policy (personal history of breast cancer plus a close blood relative with breast cancer diagnosed ≤50). Pre-test counseling completed. Therefore germline BRCA1/2 testing is considered medically necessary and covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18944,
+    "output_tokens": 2245,
+    "total_tokens": 21189
+  }
+}

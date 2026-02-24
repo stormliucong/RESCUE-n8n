@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record states 'whole exome sequencing (WES) was ordered.' Basis: patient clinical information."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related items (e.g., ID or sensory impairment diagnosed by age 18) apply when relevant; patient is 16 which satisfies any policy age thresholds. Basis: UnitedHealthcare WES coverage criteria referencing diagnoses by age 18."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the order was placed by a developmental pediatrician. Basis: UnitedHealthcare WES ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'laboratory abnormalities suggestive of an inborn error of metabolism (IEM)' as an indication supporting WES; the patient has conjugated hyperbilirubinemia with a sibling having lab abnormalities suggestive of an IEM. Basis: UnitedHealthcare WES medical necessity criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate specific prior tests for a proband with laboratory abnormalities suggestive of IEM (only notes targeted single-gene/panel first if a specific syndrome is suspected). No required prior testing is specified for this scenario. Basis: UnitedHealthcare WES coverage rationale."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy includes 'other first- or second-degree family member(s) with similar clinical features' as a supporting feature; patient has a sibling with laboratory abnormalities suggestive of an IEM. Basis: UnitedHealthcare WES criteria listing family history as supportive."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy 'genetic counseling is strongly recommended prior to WES' and patient completed pre-test counseling with a genetic counselor (post-test counseling planned). Basis: UnitedHealthcare description of services and counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 = Exome; sequence analysis (proband) aligns with the ordered Whole Exome Sequencing. Basis: UnitedHealthcare 'Applicable Codes' listing 81415 for exome sequence analysis."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All applicable policy criteria for medically necessary WES are met: (1) clinical presentation with laboratory abnormalities suggestive of an IEM, (2) ordered by an approved specialty (developmental pediatrician), (3) relevant family history (affected sibling), (4) age is within policy thresholds, and (5) pre-test genetic counseling performed. Basis: UnitedHealthcare WES coverage rationale and ordering/provider/counseling statements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36953,
+    "output_tokens": 1864,
+    "total_tokens": 38817
+  }
+}

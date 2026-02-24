@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient was referred for diagnostic whole exome sequencing (WES) per the clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy uses the term 'children' and references infants but does not state a specific numeric age cutoff; thus no explicit age-based criterion is specified in the policy text."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled; the patient had pre-test genetic counseling and phenotype/family history documented, satisfying the provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy supports WES for children with unexplained congenital anomalies when prior testing failed to yield a diagnosis or a genetic etiology is most likely. The five-week-old has multiple unexplained congenital anomalies and a nondiagnostic prior karyotype, meeting the medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy gives examples (eg, CMA and/or targeted single-gene testing) but does not mandate specific prior tests as absolute prerequisites; it requires either prior testing failed or genetic etiology is likely despite prior testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of BRUE in a sibling as a relevant family-history criterion; the patient has a sibling with a BRUE, which is relevant per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced clinician; the clinical information states pre-test genetic counseling was completed and post-test genetics follow-up is planned."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT 81415 corresponds to exome sequencing services and is the best match among provided codes."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, standard WES is medically necessary for children with unexplained congenital anomalies when criteria are met. The patient has unexplained multiple congenital anomalies, prior diagnostic testing was nondiagnostic, genetics evaluation/counseling completed, and family history is relevant, so the test is covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14843,
+    "output_tokens": 1952,
+    "total_tokens": 16795
+  }
+}

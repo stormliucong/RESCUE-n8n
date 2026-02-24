@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Clinical note explicitly states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WGS/WES policy defines pediatric/early-onset neurodevelopmental presentations as eligible; the patient is an 8-week-old infant and thus meets the age-based (pediatric) eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policy requires an ordering clinician and documentation but does not strictly limit ordering to a specific named specialty in routine language; the neurologist referral is appropriate but a specific specialty requirement is not explicitly specified in the provided policy context."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria include unexplained hypotonia/early-onset neurodevelopmental disorder or progressive neurologic presentations as indications for WGS/WES; the infant has significant hypotonia and a family history of regression, meeting an indicated clinical criterion."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior appropriate first‑line testing (eg, chromosomal microarray and other targeted testing such as Fragile X when indicated) before WGS/WES; only FISH was performed and CMA (and other required prior tests) are not documented as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant: an older sibling had unexplained developmental regression, which is pertinent to genetic testing eligibility per payer criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre‑test genetic counseling and informed consent for WGS/WES; the record documents pre‑test counseling with a genetic counselor and planned post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (WGS) analysis and interpretation."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, clinical indication, family history, and counseling meet UHC criteria, required prior testing (eg, chromosomal microarray) is not documented; per UHC policy this unmet prior‑testing requirement means WGS would not be covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1993,
+    "output_tokens": 1886,
+    "total_tokens": 3879
+  }
+}

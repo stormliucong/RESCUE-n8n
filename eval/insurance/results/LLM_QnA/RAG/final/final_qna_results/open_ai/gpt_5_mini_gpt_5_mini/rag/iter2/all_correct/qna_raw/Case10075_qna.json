@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient info explicitly states consideration of chromosomal microarray (CMA) testing; policy document is CMA-focused for developmental delay/congenital anomalies. Basis: patient clinical note ('consideration of chromosomal microarray (CMA) testing')."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not define explicit age-based inclusion/exclusion criteria or age limits for CMA; it addresses postnatal individuals generally. Basis: FEP 2.04.59 policy statements and guidelines do not specify age cutoffs."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends genetic counseling by an experienced provider but does not specify required ordering provider specialties or explicit ordering-provider requirements for CMA coverage. Basis: 'Genetic counseling ... should be performed by an individual with experience...' without ordering-provider mandates."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy limits medically necessary CMA to (1) apparent nonsyndromic developmental delay/ID, (2) autism spectrum disorder, or (3) multiple congenital anomalies not specific to a well-delineated syndrome. The 4-week-old has meconium ileus (a single congenital finding) and no stated developmental delay/ASD or multiple congenital anomalies; prior CMA was nondiagnostic. Basis: FEP 2.04.59 policy statement listing covered indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not require completion of specific prior tests before CMA in the documented policy language (it recommends a stepwise approach for ASD but does not mandate prior tests as a general coverage prerequisite). Basis: Policy Guidelines and Benefit Application lack explicit prior-test prerequisites for CMA."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not list family history or consanguinity as a defined coverage criterion for CMA in the provided policy statements. Although the patient has a sibling with an inborn error of metabolism, the policy's coverage indications do not hinge on family history. Basis: Covered indications are developmental delay/ID, ASD, or multiple congenital anomalies."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy strongly recommends formal genetic counseling and states it should be performed by experienced personnel, but it does not state counseling as an explicit mandatory coverage criterion. The patient did have pre-test counseling, but the policy does not require counseling as a condition for coverage. Basis: 'experts recommend formal genetic counseling...' language in policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify or list CPT codes corresponding to CMA or other tests. Basis: no CPT code information in FEP 2.04.59 text provided."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, CMA is medically necessary only for (1) nonsyndromic developmental delay/ID, (2) ASD, or (3) multiple congenital anomalies. The infant has a single congenital issue (meconium ileus) and no documented developmental delay/ASD or multiple anomalies; prior CMA was nondiagnostic and policy does not address repeat CMA. Therefore the request does not meet the policy-defined medical indication for coverage. Basis: FEP 2.04.59 policy statement of covered indications."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15704,
+    "output_tokens": 1983,
+    "total_tokens": 17687
+  }
+}

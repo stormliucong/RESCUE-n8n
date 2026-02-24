@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is specified for 'children' with unexplained congenital anomalies or neurodevelopmental disorders; the patient is a 5-year-old child, meeting the age-based criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling; the patient was evaluated by a medical geneticist and has had pre-test genetic counseling, meeting ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists unexplained congenital anomalies (choanal atresia is explicitly listed in Policy Guidelines) or neurodevelopmental disorders as indications; the patient has congenital choanal atresia and a sibling with developmental delay, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing that failed to yield a diagnosis (eg, CMA or targeted testing). The patient had prior karyotype testing that was nondiagnostic, which satisfies the policy's requirement that previous genetic testing failed to yield a diagnosis."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines specify relevant family history (including developmental delay) as supportive; the patient has an older sibling with developmental delay, meeting family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling prior to testing; the patient has completed pre-test genetic counseling on multiple occasions with plans for post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing codes for WGS or related tests."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, WGS/WES may be considered medically necessary for children with unexplained congenital anomalies when ALL criteria are met. The patient (5 y/o) was evaluated by a genetics specialist, counseled, has a nondiagnostic prior genetic test, has a listed anomaly (choanal atresia) and relevant family history—therefore coverage criteria are met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14835,
+    "output_tokens": 2455,
+    "total_tokens": 17290
+  }
+}

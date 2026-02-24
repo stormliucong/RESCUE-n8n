@@ -1,0 +1,18 @@
+{
+  "qna_result": {
+    "Q0": "WGS",
+    "Q1": "Yes",
+    "Q2": "Yes",
+    "Q3": "No",
+    "Q4": "No",
+    "Q5": "Yes",
+    "Q6": "Yes",
+    "Q7": "81425",
+    "Q8": "No"
+  },
+  "token_usage": {
+    "input_tokens": 755,
+    "output_tokens": 2130,
+    "total_tokens": 2885
+  }
+}

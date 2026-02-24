@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) has been requested to assess genetic contributors to the child’s neurodevelopmental presentation."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Cigna’s coverage criteria for genomic sequencing specify use for pediatric-onset neurodevelopmental disorders (e.g., ASD, global developmental delay). The patient is 7 years old, which meets pediatric age-related eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Cigna allows ordering by an appropriate treating physician/specialist (e.g., neurologist) provided they can document the clinical indication and follow-up; the test was ordered by neurology, which meets typical provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Cigna’s medical necessity criteria include unexplained autism spectrum disorder/neurodevelopmental disorder as an indication for WGS/WES when seeking a genetic diagnosis. The child has ASD/neurodevelopmental concerns, meeting that clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Cigna’s policy generally requires prior standard testing (at minimum chromosomal microarray and appropriate single-gene or Fragile X testing where indicated) before WES/WGS in non-critically ill pediatric patients; the record states no prior genetic testing has been performed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a family history (maternal uncle with a severe immunologic disorder) raising concern for an inherited predisposition. This family history is relevant to the genetic evaluation and supportive of pursuing genetic testing per policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna’s policy requires documentation that pre-test genetic counseling was offered/occurred; the family explicitly declined pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT 81425 corresponds to whole genome sequencing (proband) and is the appropriate billing code for WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider type and clinical indication are met, Cigna requires prior standard testing (e.g., chromosomal microarray and Fragile X as applicable) and documentation of pre-test genetic counseling; neither prior testing nor counseling were completed, so the request does not meet Cigna coverage criteria and would not be approved as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1989,
+    "output_tokens": 2314,
+    "total_tokens": 4303
+  }
+}

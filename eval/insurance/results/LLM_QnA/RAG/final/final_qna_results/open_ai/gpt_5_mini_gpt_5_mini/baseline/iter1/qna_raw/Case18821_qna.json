@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The obstetrician explicitly requests fetal whole exome sequencing (WES) at 22 weeks to evaluate a suspected genetic etiology for multiple congenital anomalies."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES policy does not impose specific age or gestational‑age cutoffs for WES eligibility; the request concerns a fetus at 22 weeks and age-based criteria are not specified."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "BCBS FEP WES coverage typically requires ordering/oversight by or documentation of consultation with a clinical genetics provider (geneticist or genetic counselor). The request is from an obstetrician with no documented genetics consultation, so ordering provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP allows WES for suspected monogenic disorders or fetuses with multiple congenital anomalies affecting different organ systems; the fetus has multiple anomalies on prenatal imaging, meeting a defined medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP WES usually requires prior standard chromosomal evaluation (e.g., chromosomal microarray and/or karyotype) before WES in the prenatal setting; no prior genetic testing (CMA/karyotype) has been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history can be relevant to WES eligibility; the report of a maternal aunt with dysmorphic features is a positive family history that is potentially relevant to the fetal phenotype."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS FEP policy requires documentation of pre‑test genetic counseling for WES; there is no documentation of pre‑test genetic counseling in the provided information."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband/exome sequencing) and best matches the requested fetal WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the fetal phenotype (multiple anomalies) meets a medical indication for WES per BCBS FEP, coverage prerequisites (documentation of prior chromosomal testing such as CMA/karyotype, documented pre‑test genetic counseling, and genetics ordering/consultation) are not met; therefore the test is not covered as requested."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 1982,
+    "total_tokens": 3973
+  }
+}

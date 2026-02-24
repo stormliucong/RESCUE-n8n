@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been requested by neurology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is for 'children' with unexplained neurodevelopmental disorders; the patient is a 7-year-old child, meeting the age-group referenced in the policy statement and ACMG guidance cited in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion #1 requires evaluation by a clinician with expertise in clinical genetics and counseling. The referral is from neurology with no documented genetics evaluation and pre-test genetic counseling was declined, so ordering/provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The patient has an unexplained neurodevelopmental disorder (autism spectrum disorder), which is an indication listed in the policy for use of genomic sequencing in children."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy criterion #3 expects prior genetic testing (eg, CMA and/or targeted single-gene testing) to have been performed and unrevealing or other specified circumstances; the patient has had no prior genetic testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists relevant family history (eg, inborn error of metabolism or genetic disease) as pertinent; the patient has a maternal uncle with a severe immunologic disorder suggesting a family history potentially relevant to genetic evaluation."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy criterion #1 requires counseling about potential risks of genetic testing by a genetics-experienced clinician; the family declined pre-test genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing codes for WGS or WES mapping to the listed CPT options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient has a qualifying neurodevelopmental indication and is in the pediatric age group, the requested test is WGS and policy distinguishes WES as medically necessary when ALL criteria are met; WGS is described as investigational in other situations and, critically, the patient does not meet required criteria (no genetics evaluation/counseling and no prior genetic testing). Based on the policy statements, coverage is not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14842,
+    "output_tokens": 2678,
+    "total_tokens": 17520
+  }
+}

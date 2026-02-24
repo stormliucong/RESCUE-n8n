@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case states that whole exome sequencing is being pursued to evaluate an underlying genetic etiology after a nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose a strict numeric age cutoff; they address clinical scenario (prenatal/major anomaly) rather than a specific patient age, so age-based criteria are not specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC coverage policies typically require appropriate clinical ordering but do not mandate a single specific ordering specialty in all cases; the record shows referral by a developmental pediatrician and genetic counseling involvement, but no payer-specific ordering-provider restriction is stated."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC allows WES for prenatal patients with a major structural fetal anomaly when results could affect perinatal/postnatal management; this fetus has a major cardiac malformation and WES is being requested for management guidance, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires prior chromosomal microarray (and/or karyotype) to be nondiagnostic before WES; the patient had a prior CMA that was nondiagnostic, satisfying prior test requirements."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for coverage and this case reports an older sibling with an inborn error of metabolism, which is pertinent family history supportive of testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage for WES requires genetic counseling/appropriate pre-test counseling; the parents have had multiple sessions with a genetic counselor, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband or single exome), which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under UHC criteria, prenatal WES is covered for major structural fetal anomalies when prior CMA is nondiagnostic, counseling has occurred, and results may impact management; all these conditions are met in this case."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2018,
+    "output_tokens": 1364,
+    "total_tokens": 3382
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Clinical note explicitly states whole genome sequencing (WGS) is being ordered by the medical geneticist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WGS criteria apply to pediatric patients with congenital anomalies/developmental concerns; patient is 12 years old, which meets pediatric age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires that WGS be ordered by an appropriate genetics provider for complex pediatric cases; the ordering provider is a medical geneticist, which satisfies this requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria include multiple congenital anomalies and suspected genetic etiology/developmental concerns—patient has multiple congenital anomalies and a suspected genetic cause, meeting indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP generally requires prior chromosomal microarray for developmental/congenital anomaly evaluation; CMA was previously performed and was nondiagnostic, satisfying prior-testing requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of a sibling with developmental delay is relevant and supports testing per BCBS_FEP criteria that consider family history when evaluating genetic testing necessity."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires genetic counseling pre- and post-testing for WGS; pre-test counseling completed and post-test counseling is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (proband) and best matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All BCBS_FEP coverage criteria are met: appropriate age, qualifying clinical indication (multiple congenital anomalies), nondiagnostic prior CMA, ordering by a medical geneticist, relevant family history, and completed pre-test counseling — therefore WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1966,
+    "output_tokens": 929,
+    "total_tokens": 2895
+  }
+}

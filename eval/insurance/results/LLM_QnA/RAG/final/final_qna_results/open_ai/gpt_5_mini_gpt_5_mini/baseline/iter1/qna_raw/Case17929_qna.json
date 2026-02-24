@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The patient information explicitly states that 'tumor chromosomal microarray (CMA) testing has been requested' to assess for genomic imbalance."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare CMA coverage criteria are indication-based (congenital anomalies, developmental delay, etc.) and do not impose a specific age cutoff; no age-based restriction is specified for this CMA request and the child is 7 years old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Payer criteria do not mandate a narrowly defined ordering provider specialty for CMA (ordering by a treating physician or genetics/neurology is acceptable). The referral is from a neurologist, which is appropriate, but explicit specialty requirements are not specified in the provided criteria."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers CMA for evaluation of unexplained major congenital anomalies/structural abnormalities or multisystem findings; this 7-year-old is being evaluated for a major abnormality affecting at least one organ system and thus meets the medical indication for CMA. Prior karyotype was nondiagnostic, supporting further genomic imbalance testing."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Payer guidance typically allows CMA as first‑tier testing for congenital anomalies and does not universally require prior karyotype; although a karyotype was done and nondiagnostic in this case, specific prior‑test requirements are not specified for coverage in the provided criteria."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history of a hereditary breast/ovarian cancer BRCA1/2 variant is documented, but CMA eligibility criteria do not rely on BRCA family history or consanguinity; family history criteria relevant to CMA are not specified in the provided payer criteria."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "While genetic counseling is documented (multiple pretest sessions and planned post-test follow-up), payer policy does not explicitly require a specific documented counseling process as a hard coverage criterion for CMA in the provided criteria."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to chromosomal microarray analysis (constitutional) and is the appropriate billing code for CMA testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under UHC coverage criteria CMA is covered for evaluation of unexplained major congenital/structural abnormalities or multisystem findings; this patient has a major organ system abnormality and a nondiagnostic karyotype, meets medical necessity, and therefore the requested CMA is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1994,
+    "output_tokens": 2221,
+    "total_tokens": 4215
+  }
+}

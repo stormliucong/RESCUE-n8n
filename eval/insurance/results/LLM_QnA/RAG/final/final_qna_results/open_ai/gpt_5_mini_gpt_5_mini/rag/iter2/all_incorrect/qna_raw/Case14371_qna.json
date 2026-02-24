@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states the general pediatrician ordered whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to 'children' with unexplained neurodevelopmental disorders; the patient is 11 years old (a child), meeting the age-related eligibility in the policy statement."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires the individual be 'evaluated by a clinician with expertise in clinical genetics'; the record documents evaluation by a general pediatrician and pre-test meeting with a genetic counselor, but does not document evaluation by a clinician with expertise in clinical genetics, so ordering/provider requirement is not met per the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL criteria be met. Although the patient has an unexplained neurodevelopmental disorder and Fragile X testing was nondiagnostic, criterion 1 (evaluation by a clinician with expertise in clinical genetics including family history and phenotype description) is not documented, so the medical indication criteria in the policy are not fully satisfied."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The policy's criteria reference prior genetic testing (eg, chromosomal microarray analysis and/or targeted single-gene testing) as part of determining medical necessity. The record shows only nondiagnostic Fragile X testing and no documentation of CMA or other targeted testing, so required prior testing per the policy is not completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history items relevant to eligibility (examples include developmental delay, inborn errors of metabolism, etc.). The patient has a maternal aunt with a severe immunologic disorder, which is not one of the specified example family-history items in the policy, so the documented family history does not match the policy's listed family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires counseling about risks of genetic testing. The record states the family met with a genetic counselor before testing with plans for post-test follow-up, satisfying the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Whole exome sequencing (WES) most closely corresponds to CPT code 81415 (exome sequencing) among the provided options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy WES is medically necessary only when ALL listed criteria are met. Although age and counseling are satisfied, the record lacks documentation of evaluation by a clinician with expertise in clinical genetics and lacks expected prior testing (eg, CMA/targeted testing). Because the policy's required criteria are not all met, the test is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14836,
+    "output_tokens": 2630,
+    "total_tokens": 17466
+  }
+}

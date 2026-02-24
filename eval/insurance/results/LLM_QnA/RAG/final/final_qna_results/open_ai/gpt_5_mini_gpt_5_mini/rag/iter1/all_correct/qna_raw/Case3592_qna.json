@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states chromosomal microarray (CMA) testing for developmental disorders is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related criterion specifies testing be performed on a living child or adult; the patient is a neonate (a living child), so age criterion is met per the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify required ordering provider specialty/type for CMA; it requires pre- and post-test genetic counseling by an appropriate provider but does not mandate a specific ordering provider role."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy-defined postnatal indications include DD/ID, ASD, major congenital cardiac anomaly, or multiple congenital anomalies. Neonatal epileptic encephalopathy is not listed as an accepted indication in the policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires 'No previous CMA testing' for diagnostic postnatal CMA; patient has a prior (nondiagnostic) CMA, so the required prior-test condition is not met."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy only addresses specific family-history scenarios (e.g., family history of chromosome rearrangement as an exclusion). The patient's family history (sibling with developmental regression) is not a policy-specified family-history criterion for CMA eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider. Patient info documents pre-test counseling with a genetic specialist and planned post-test follow-up, satisfying this requirement."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Policy procedure code list identifies chromosomal microarray (constitutional) as CPT 81228; this best corresponds to the requested CMA and the policy limits reimbursement to one type of microarray (e.g., 81228)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, postnatal CMA requires no prior CMA and CMA is reimbursable only once per lifetime. The patient had a prior CMA (nondiagnostic), so the request does not meet the policy's coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10103,
+    "output_tokens": 2463,
+    "total_tokens": 12566
+  }
+}

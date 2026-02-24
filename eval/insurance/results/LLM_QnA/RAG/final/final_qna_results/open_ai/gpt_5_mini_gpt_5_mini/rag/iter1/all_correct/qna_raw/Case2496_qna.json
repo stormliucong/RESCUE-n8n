@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) is being requested for a prenatal evaluation."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose an age limit for prenatal WES; gestational age (32 weeks) is provided but the policy’s prenatal WES coverage criteria are not age-based."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy prenatal WES requires the test be ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist; the ordering provider in the record is a neonatologist with no documented consultation, so provider requirement is not met (Policy: \"WES is ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist\")."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Prenatal WES coverage requires the fetus to have one or more specific findings (multiple congenital anomalies, fetal hydrops of unknown etiology, or a single-system congenital anomaly with supportive family history) and other criteria; the record does not document these required fetal findings or other required prenatal criteria, so the patient does not meet the specified prenatal indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires chromosome microarray analysis (CMA) and/or karyotyping to have been performed and uninformative prior to prenatal WES; the patient had prior FISH testing only (nondiagnostic) and no CMA/karyotype is documented, so the required prior testing was not completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has parental consanguinity and a family history (sibling with sudden unexplained death); the policy lists consanguinity as a relevant criterion for WES/WGS (Policy lists \"Consanguinity\" among features that support WES/WGS)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is \"strongly recommended\" prior to WES/WGS but does not make counseling an absolute required coverage criterion for prenatal WES, and the record documents no counseling—the policy guidance is recommendation rather than a strict coverage requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable codes list 81415 for exome (sequence analysis); WES corresponds to CPT code 81415 (Policy Applicable Codes: \"81415 Exome ... sequence analysis\")."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy prenatal WES is covered only when all prenatal-specific criteria are met (CMA/karyotype uninformative; ordered by or in consultation with a medical geneticist or MFM; appropriate fetal findings and sample source). The patient record lacks documented CMA/karyotype, shows the order from a neonatologist without documented genetics/MFM consultation, and does not document the required fetal anomaly criteria, therefore coverage criteria are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36957,
+    "output_tokens": 3126,
+    "total_tokens": 40083
+  }
+}

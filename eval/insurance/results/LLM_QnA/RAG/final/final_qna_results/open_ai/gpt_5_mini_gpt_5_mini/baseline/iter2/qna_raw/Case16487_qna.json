@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient information explicitly states that whole exome sequencing (WES) was ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose a strict age cutoff in typical policy language; the record documents a newborn but the payer policy does not specify an age-based exclusion or special age threshold for WES."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare policy does not uniformly restrict ordering to a specific specialty (e.g., only geneticists) for WES in this clinical context; the documentation shows an oncologist ordered testing which is not explicitly disallowed by payer rules."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC allows WES for patients with an unexplained, presumably genetic condition when prior targeted testing is nondiagnostic and a molecular diagnosis may affect management; this newborn has recurrent high‑risk BRUE (unexplained), nondiagnostic FISH, and a relevant family history, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC commonly requires prior appropriate cytogenetic testing such as chromosomal microarray (CMA) or other first‑tier tests before WES for non‑critically ill infants; only nondiagnostic FISH is documented and no CMA is reported, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The family history includes a maternal aunt with a persistent severe immunologic/hematologic disorder, which is relevant and supportive per UHC criteria that consider family history in assessing need for WES."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The record documents that pre‑test genetic counseling was completed with plans for post‑test genetic follow‑up, satisfying UHC requirements for counseling when specified for genomic testing."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "81415 is the CPT code that corresponds to clinical exome sequencing (WES), which is the test requested."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, family history, and counseling are documented, coverage is not supported because required prior cytogenetic testing (e.g., CMA) is not documented and the case is not clearly a critically ill inpatient scenario that would permit bypassing prior test requirements under UHC policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1985,
+    "output_tokens": 2114,
+    "total_tokens": 4099
+  }
+}

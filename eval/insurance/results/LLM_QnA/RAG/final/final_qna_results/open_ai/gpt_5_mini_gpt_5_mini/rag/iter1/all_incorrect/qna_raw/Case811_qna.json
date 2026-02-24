@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP 2.04.59 policy does not state any explicit age-based eligibility limits for WES; it generally addresses children/postnatal testing but gives no age criteria for WES."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and specialists for interpretation but does not specify explicit ordering-provider specialty or credential requirements for WES."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "FEP 2.04.59 defines clinical indications for CMA and states NGS panels are investigational; WES is referenced as addressed in a separate policy (2.04.102) and this document does not provide explicit medical-necessity criteria for WES."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy notes CMA is first-line for developmental delay/ congenital anomalies and guidelines mention further testing (including WES) when initial testing is nondiagnostic, but the policy does not state a required prior-test sequence as a formal coverage prerequisite for WES in this document."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not set specific family-history or consanguinity criteria for WES; although the patient has a positive sibling history, the document does not define this as an explicit criterion for WES coverage."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends formal genetic counseling and states it should be performed by experienced personnel, but it does not define genetic counseling as an explicit, stated coverage requirement for WES within this policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP 2.04.59 policy text does not reference or map specific CPT codes to WES; no CPT guidance is provided in the supplied document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under FEP 2.04.59, whole-exome sequencing is not addressed in this policy (it is referred to a separate policy 2.04.102). The document states next-generation sequencing panel testing is considered investigational for these indications and that experimental/investigational procedures are not covered. Because WES coverage criteria are not provided in this policy and NGS testing is labeled investigational here, the requested WES is not covered per the provided policy text."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15731,
+    "output_tokens": 2465,
+    "total_tokens": 18196
+  }
+}

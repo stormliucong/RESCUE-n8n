@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states the patient is undergoing BRCA1/2 testing at the request of her obstetrician."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP BRCA policies do not impose a specific age cutoff for BRCA testing in adults; the patient is 21 (an adult), but the policy does not state an explicit age-based eligibility threshold."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "FEP policies generally allow ordering by the treating physician and do not narrowly restrict ordering to a specific specialty; the record shows an obstetrician ordered testing and pre-test counseling was completed, but the policy does not specify a unique ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical indication: policy permits BRCA testing for unaffected individuals with a first-degree relative with a BRCA-associated cancer. A father with metastatic prostate cancer is a qualifying family history per FEP/NCCN-based criteria linking metastatic prostate cancer to hereditary BRCA-related risk."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP BRCA coverage does not mandate prior diagnostic genetic tests (e.g., FISH) before BRCA1/2 sequencing; the prior nondiagnostic FISH is not listed as a required prior test."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant and present: a first-degree relative (father) with metastatic prostate cancer meets FEP criteria for familial indication for BRCA1/2 testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "FEP BRCA policies require pre-test genetic counseling; the patient completed pre-test counseling with a genetic specialist and has plans for post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Among the provided CPT options, 81277 corresponds to BRCA large rearrangement/duplication-deletion testing and is the closest code related to BRCA1/2 testing; full BRCA workup commonly includes sequencing plus rearrangement analysis."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on FEP coverage criteria the patient is an unaffected adult with a first-degree relative (father) who has metastatic prostate cancer (a BRCA-associated cancer), pre-test genetic counseling was completed, and no disqualifying prior-test or provider issues exist — therefore BRCA1/2 testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1980,
+    "output_tokens": 2710,
+    "total_tokens": 4690
+  }
+}

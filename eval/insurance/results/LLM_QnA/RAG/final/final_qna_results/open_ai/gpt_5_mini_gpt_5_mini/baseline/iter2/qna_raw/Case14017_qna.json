@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case states 'whole exome sequencing (WES) has been ordered' explicitly."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES coverage criteria are not typically age‑restricted for infants with suspected genetic neurologic disease; no specific age cutoff is provided in the information given."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided patient information does not state any payer requirement limiting which specialty may order WES; BCBS FEP policies generally do not mandate a single specific ordering provider type in the supplied facts."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP considers WES medically reasonable for infants with early‑onset, unexplained seizure‑like events or suspected genetic neurologic disorders; this 7‑week‑old has recurrent seizure‑like events/BRUE and a family history of neurologic disease, meeting a clinical indication for WES."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP commonly requires prior standard cytogenetic/microarray testing (chromosomal microarray) or other indicated prior testing to be nondiagnostic before WES for many neurodevelopmental/genetic indications. Only a karyotype (not CMA) is reported as nondiagnostic, so required prior testing (CMA) has not been documented as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant per payer criteria for genetic testing: a maternal uncle with a movement disorder (dystonia and ataxia) is a positive family neurologic history that supports genetic evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP typically requires documentation of pre‑test genetic counseling for WES; the record states pre‑test genetic counseling was completed with plans for post‑test follow‑up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (whole exome sequencing) and is the appropriate code for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications, family history, and pre‑test counseling are present, BCBS FEP criteria generally require prior appropriate cytogenomic testing (chromosomal microarray) to be nondiagnostic before approving WES for many neurologic/genetic indications. Only a karyotype (not CMA) is documented; because the required prior test (CMA) has not been completed, coverage would not be approved as submitted."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2004,
+    "output_tokens": 2089,
+    "total_tokens": 4093
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient record explicitly states 'whole genome sequencing (WGS) is requested.' (Patient information)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies age-based applicability: onset of seizures in early childhood (before age 5) (Policy Guidelines). Patient is an 8-week-old infant, which meets the <5 years criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The epilepsy policy does not specify a required ordering provider specialty or credential for genetic testing; it only states genetic counseling should be performed by an experienced individual (Genetic Counseling section)."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy Guidelines define medical necessity requiring: (1) onset <5 yrs AND (2) clinically severe seizures affecting daily functioning and/or interictal EEG abnormalities AND (3) no other clinical syndrome better explaining symptoms. Patient meets onset criterion but the record lacks documentation of clinically severe seizures affecting daily functioning or documented interictal EEG abnormalities and does not state that no other syndrome explains symptoms, so the defined clinical criteria are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state that specific prior tests (e.g., CMA or targeted panel) are required before WGS; it references testing strategies and cross-references MP 2.324 for WES/WGS criteria but does not mandate prior testing in this document."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not set family history or consanguinity as explicit eligibility criteria for genetic testing for epilepsy. The patient’s maternal short stature is noted but the policy does not tie this to eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy states formal genetic counseling should be performed by someone experienced and experts recommend counseling in most cases (Genetic Counseling section). The family declined pre-test genetic counseling, so the patient does not meet the policy's stated counseling expectation."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT options, 81425 corresponds to whole genome sequencing (81415 corresponds to whole exome sequencing). The test requested is WGS, so 81425 is the best match."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, medically necessary testing requires defined clinical criteria (onset <5 yrs, clinically severe seizures affecting daily functioning and/or interictal EEG abnormalities, and no other syndrome better explaining symptoms). Although the patient’s age meets the criterion, documentation does not demonstrate clinically severe seizures or EEG findings, and the family declined the recommended pre-test genetic counseling. Based on the policy's medical necessity and counseling requirements, coverage is not supported."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 16916,
+    "output_tokens": 2442,
+    "total_tokens": 19358
+  }
+}

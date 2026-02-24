@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case text explicitly states 'whole exome sequencing (WES) is being pursued to look for an underlying genetic cause.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria are applied based on clinical presentation rather than strict age cutoffs; no payer-specific age exclusion is stated and the patient (38 y) with onset before age 3 meets clinical-age context but the policy does not set a numeric age requirement."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires an appropriate ordering clinician (e.g., geneticist or neurologist); the patient is being evaluated by a medical geneticist, which satisfies ordering-provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC allows WES for unexplained early-onset epileptic encephalopathy or refractory/undiagnosed epileptic encephalopathies; the patient has unexplained epileptic encephalopathy with onset before age 3, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC commonly requires prior appropriate testing (e.g., chromosomal microarray and/or targeted epilepsy multigene panel) before WES; this patient has a nondiagnostic karyotype and has not had an epilepsy multigene panel or CMA, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family history noted (uncle with prostate cancer) is not relevant to eligibility for WES for epileptic encephalopathy, and no consanguinity or relevant family neurologic history is reported."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre- and post-test genetic counseling for complex genomic testing; the patient has seen a genetic counselor multiple times and has plans for post-test counseling, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT code 81415 corresponds to whole exome sequencing (clinical exome sequencing) and is the appropriate code for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, provider, and counseling requirements are met, UHC coverage requires completion/documentation of required prior testing (e.g., CMA and/or epilepsy multigene panel) before approval of WES; those prior tests have not been completed, so WES is not covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2012,
+    "output_tokens": 1676,
+    "total_tokens": 3688
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy includes age references for specific features (e.g., ID diagnosed by 18 years, onset criteria) but does not impose a general age exclusion or a single explicit age threshold that determines WES eligibility for this infant."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The provided clinical information notes a referral and pre-test counseling by a 'genetic specialist' but does not explicitly state who ordered the WES, so ordering-provider qualification cannot be confirmed."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage rationale requires either (A) one of specified major features (e.g., multiple congenital anomalies, global developmental delay, moderate–severe ID) OR (B) two or more listed features (one of which is autism spectrum disorder). The patient has suspected autism spectrum disorder only (and a family history of an aunt with a congenital anomaly), and there is no documented second qualifying feature or explicit statement that the clinical history 'strongly suggests a genetic cause.' Therefore the patient does not meet the defined medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify mandatory prior testing for WES in a child being evaluated for ASD (prenatal WES does require prior CMA/karyotype). Although Fragile X testing was done and nondiagnostic, the policy does not require specific prior tests for this indication."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists 'other first- or second-degree family member(s) with similar clinical features' as a qualifying feature. The record documents a maternal aunt with a congenital anomaly but does not document that the aunt had clinical features similar to the infant's suspected ASD; therefore the patient does not meet the policy's family-history criterion as written."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS. The patient had pre-test counseling completed with a genetic specialist, which meets the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "WES corresponds to CPT code 81415 (Exome; sequence analysis) per the policy's Applicable Codes section."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy WES is medically necessary only when defined clinical criteria are met (e.g., specific major features or ≥2 listed features including autism). The infant has only suspected ASD and no documented second qualifying feature or unequivocal 'clinical history strongly suggests a genetic cause.' Ordering-provider qualification is also not confirmed. Therefore coverage criteria are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36936,
+    "output_tokens": 3433,
+    "total_tokens": 40369
+  }
+}

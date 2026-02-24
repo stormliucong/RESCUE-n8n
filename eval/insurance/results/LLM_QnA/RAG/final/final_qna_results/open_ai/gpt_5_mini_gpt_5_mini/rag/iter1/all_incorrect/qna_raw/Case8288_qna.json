@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) is being pursued to evaluate the fetal congenital cardiac anomaly; WES is explicitly requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's WES age-based criteria apply to children/infants; the policy explicitly states it does not address prenatal (fetal) testing, so age-based eligibility for this fetal case is not specified in the policy."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires evaluation by a clinician with expertise in clinical genetics (documentation required). The record notes referral and genetic counseling sessions but does not explicitly document evaluation by a clinician with expertise in clinical genetics, so adequacy of the ordering provider cannot be confirmed from the provided information."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for WES in children with unexplained congenital anomalies, but it explicitly does not address prenatal (fetal) testing; therefore applicable clinical indications for this fetal scenario are not specified in the policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion requires prior relevant genetic testing (eg, chromosomal microarray) or that prior testing failed to yield a diagnosis. The patient had a chromosomal microarray (CMA) previously performed and nondiagnostic, meeting the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists family history of an inborn error of metabolism as relevant; the patient has family history of an inborn error of metabolism affecting an older sibling, which is a specified relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires counseling about potential risks by someone with genetics expertise. The record states the parents have had multiple sessions with a genetic counselor, satisfying the counseling requirement documented in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT code 81415 corresponds to clinical exome (whole exome) sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although WES is covered for children with unexplained congenital anomalies per the policy, the policy explicitly states it does not address prenatal (fetal) testing. Because the request is for a fetus (prenatal), the policy does not provide medical necessity criteria for coverage of prenatal WES, so it is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14871,
+    "output_tokens": 2195,
+    "total_tokens": 17066
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient clinical information explicitly states the referral is for BRCA1/2 testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy text does not specify age-based eligibility criteria for BRCA1/2 testing (BRCA testing strategy is referenced to a different policy not provided)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy does not specify ordering-provider (specialty/type) requirements for BRCA1/2 testing."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The supplied policy text addresses CHEK2/ATM/BARD1 and references BRCA1/2 testing guidance in a separate policy (2.04.02) that is not included; specific medical indications for BRCA1/2 are not defined in the provided document."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy does not list prerequisite or prior test requirements for BRCA1/2 testing; prior FISH is noted in the patient facts but no policy requirement for prior testing is given."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy emphasizes family history as relevant (NCCN criteria and multiple references to family history in the provided text), and the patient’s history includes only a maternal growth abnormality with no reported family history of breast/ovarian cancer—thus the patient does not have the relevant family history per the policy context."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states formal genetic counseling is recommended/expected for inherited-condition testing and should be performed by experienced personnel; the patient completed pre-test genetic counseling and post-test follow-up is planned, meeting the policy's counseling expectations."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not list or map CPT codes for BRCA1/2 testing, so no CPT code can be determined from the document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based solely on the provided policy text: BRCA1/2 coverage criteria are not included in this document, there is no documentation in the provided policy that BRCA testing is medically necessary for a 12‑year‑old with congenital choanal atresia and no relevant family history of breast/ovarian cancer, and benefits apply when testing is medically necessary to diagnose/manage an existing condition—criteria not met here; therefore the test is not covered per the provided policy context."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10994,
+    "output_tokens": 2721,
+    "total_tokens": 13715
+  }
+}

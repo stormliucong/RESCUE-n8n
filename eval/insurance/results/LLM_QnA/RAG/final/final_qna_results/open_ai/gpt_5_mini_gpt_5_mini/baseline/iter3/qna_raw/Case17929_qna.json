@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The referral states 'tumor chromosomal microarray (CMA) testing has been requested' explicitly."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA coverage policies are not age-restrictive for pediatric patients with congenital anomalies or neurodevelopmental disorders; the policy applies across ages and does not impose a specific age cutoff."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA policies do not mandate a specific ordering provider specialty (neurology referral is acceptable); no specialty restriction is specified in the coverage criteria."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The patient is a child with a major abnormality affecting at least one organ system (congenital/major anomaly). UHC covers CMA for unexplained congenital anomalies/major structural abnormalities, so the medical indication is met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC policy for CMA in the setting of major congenital anomalies often requires prior karyotype to be nondiagnostic; the case states prior karyotype testing was nondiagnostic, satisfying that prerequisite."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family-history criteria are not a determinant for CMA eligibility in UHC policy; the reported maternal BRCA1/2 pathogenic variants are unrelated to CMA coverage rules."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA coverage does not generally require documented genetic counseling as a formal eligibility criterion; although counseling was performed, counseling is not a specified coverage requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "None of the listed CPT codes explicitly correspond to chromosomal microarray in standard coding; a CMA-specific code is not provided among the options, so the best choice is 'Not Specified.'"
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC coverage criteria: pediatric patient with a major congenital/structural abnormality, prior nondiagnostic karyotype, and neurologist/genetics involvement — CMA meets medical necessity and is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1994,
+    "output_tokens": 1929,
+    "total_tokens": 3923
+  }
+}

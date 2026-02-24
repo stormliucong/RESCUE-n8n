@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case text explicitly states whole exome sequencing (WES) has been ordered to evaluate for an underlying genetic cause."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose a strict age cutoff; policies apply to pediatric and adult indications but do not specify a disqualifying age for an 8‑week infant, so age-specific criteria are not specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires that WES be ordered by an appropriate clinician and accompanied by specialist evaluation/counseling; this infant was evaluated and pre‑test counseling was completed by a medical geneticist/genetics specialist, meeting ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical necessity criteria support WES for suspected monogenic disorders and unexplained congenital anomalies; the patient has persistent conjugated hyperbilirubinemia, an affected sibling with multiple congenital anomalies, and WES was ordered to evaluate an underlying genetic cause, meeting clinical indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior standard testing (e.g., chromosomal microarray for multiple congenital anomalies) before WES unless exceptions apply; Fragile X testing was done but chromosomal microarray or documentation of prior cytogenetic testing is not provided, so required prior testing is not documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for WES; the patient has an older sibling with multiple congenital anomalies, which supports testing under UHC familial/phenotypic criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documented pre‑test genetic counseling for WES; the record states pre‑test counseling was completed with a genetic specialist, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT code 81415 corresponds to clinical exome sequencing (WES) with data analysis and interpretation, which matches the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications, ordering provider, family history, and pre‑test counseling meet UHC criteria, a required prior test (chromosomal microarray/cytogenetic testing) is not documented. Because UHC generally requires prior CMA for multiple congenital anomalies before WES, coverage would likely be denied absent documentation of prior CMA or an allowed exception."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1984,
+    "output_tokens": 1744,
+    "total_tokens": 3728
+  }
+}

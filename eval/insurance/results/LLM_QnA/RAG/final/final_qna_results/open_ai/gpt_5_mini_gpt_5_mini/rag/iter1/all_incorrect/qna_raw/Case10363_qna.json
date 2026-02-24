@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states whole genome sequencing (WGS) is being pursued after nondiagnostic FISH and targeted testing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is framed for 'children' with unexplained congenital anomalies; the patient is a 7-year-old child, which meets the age-based 'children' criteria in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual be evaluated by a clinician with expertise in clinical genetics (documentation of evaluation including family history and phenotype). Patient data show referral by a general practitioner and genetic counseling visits, but do not document evaluation by a clinician with clinical genetics expertise."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication includes unexplained congenital anomalies after prior genetic testing; the patient has a congenital anomaly since birth and prior nondiagnostic targeted testing (FISH), meeting the policy's clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES/WGS when previous genetic testing failed to yield a diagnosis. Patient had prior targeted testing (FISH) that was nondiagnostic, satisfying the 'previous genetic testing failed to yield a diagnosis' requirement."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists relevant family-history examples (eg, developmental delay, inborn errors, sudden unexplained death). The patient's family history (maternal aunt with pancreatic cancer) is not among the policy's specified relevant family history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced individual; patient has been seen multiple times by a genetic counselor for pre-test counseling and has plans for post-test follow-up, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing (WGS); among the provided CPT options, 81425 best corresponds to genome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although patient is a child with unexplained congenital anomaly and prior nondiagnostic testing (criteria that support WES), the policy's explicit 'POLICY STATEMENT' indicates that whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations (except rapid WGS for critically ill infants). The requested test is WGS in a non-critically ill child, so per the policy WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14852,
+    "output_tokens": 3080,
+    "total_tokens": 17932
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is explicitly stated to be 'undergoing BRCA1/2 testing.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC BRCA coverage policies include age-based criteria (e.g., breast cancer diagnosed ≤50 years); the patient is 46, which meets typical age-based eligibility thresholds for BRCA testing under UHC criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA policies generally do not restrict ordering to a narrow provider specialty in the documentation provided here; the record shows a nurse practitioner referral but the payer policy does not specify an ordering-provider exclusion in this context."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical indications in UHC BRCA criteria include a personal history of breast cancer plus a family history of BRCA-associated cancers (mother with pancreatic cancer and multiple affected maternal relatives). The patient meets these medical-necessity criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA coverage does not require prior diagnostic testing (other than documenting family history or known familial variant) in this scenario; the prior CMA being nondiagnostic is noted but not a required prior test for BRCA."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria consider family history of pancreatic cancer and multiple affected first-/second-degree relatives as relevant for BRCA testing; the patient has a mother with pancreatic cancer and at least two additional affected maternal relatives."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC BRCA testing policies require genetic counseling (pre- and/or post-test) or documentation thereof. The patient completed pre-test genetic counseling and plans post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The typical CPT codes for BRCA1/BRCA2 full-gene testing (e.g., gene-specific codes) are not among the listed options; therefore no provided code clearly matches the ordered BRCA1/2 test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Applying UHC BRCA coverage criteria: the patient has a personal history of breast cancer, is age 46 (within common age-based thresholds), has a strong family history including pancreatic cancer, and has completed pre-test genetic counseling — together these satisfy UHC medical-necessity and counseling requirements for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1997,
+    "output_tokens": 3018,
+    "total_tokens": 5015
+  }
+}

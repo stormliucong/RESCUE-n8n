@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The referral explicitly requests chromosomal microarray (CMA) testing to evaluate a genomic etiology for the patient's developmental disorder."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP CMA coverage is based on clinical indication (unexplained developmental delay/intellectual disability) and does not impose a strict age cutoff; the policy does not specify age-based exclusion for CMA."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP CMA policy does not mandate a specific ordering provider specialty in the documentation provided; no specialty requirement is indicated in the patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has lifelong severe intellectual disability (diagnosed by age 18) consistent with unexplained intellectual disability/developmental disorder—an indicated clinical reason for CMA per BCBS FEP medical policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP considers CMA a first‑tier test for unexplained ID/DD and does not require completion of other specific genetic tests beforehand; the patient has no prior testing but none is mandated."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP CMA coverage is driven by the proband's clinical presentation (ID/DD); family history/consanguinity criteria are not specified for CMA eligibility here (mother's ovarian cancer is not relevant)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "When required/expected by payer policy, documentation of pre‑test genetic counseling is requested; the patient completed pre‑test counseling with a genetic counselor and post‑test follow‑up plans were discussed, meeting counseling expectations."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to chromosomal microarray analysis (CMA), which is the test requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets clinical indication for CMA (unexplained severe intellectual disability), counseling was completed, no disqualifying age or prior‑test requirements apply under BCBS FEP policy; therefore CMA is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2002,
+    "output_tokens": 1746,
+    "total_tokens": 3748
+  }
+}

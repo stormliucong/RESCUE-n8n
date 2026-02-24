@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states chromosomal microarray (CMA) testing for developmental disorders is being requested. Policy also addresses CMA (e.g., CPT 81228)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria state testing must be performed on a living child or adult; the patient is a neonate (living child) and thus meets the policy's age-related requirement."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate provider but does not specify ordering-provider specialty or exact ordering-provider requirements for CMA; the ordering provider requirements are therefore not specified."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy defines specific postnatal presentations for CMA coverage (e.g., developmental delay/intellectual disability, autism spectrum disorder, major congenital cardiac anomaly, multiple congenital anomalies). The patient has neonatal-onset epileptic encephalopathy, which is not one of the explicitly listed presentations."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires 'No previous CMA testing' for diagnostic postnatal CMA. Patient had a prior chromosomal microarray that was nondiagnostic, so the policy's prior-test requirement is not met."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not make family history of unexplained developmental regression a defined eligibility criterion for CMA (it only calls out specific exclusions such as family history of chromosome rearrangement in phenotypically normal individuals). The patient's family history is therefore not a specified criterion in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider. The patient had pre-test counseling with a genetic specialist and post-test follow-up is planned, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "The policy lists CPT 81228 as a chromosomal microarray procedure code for constitutional CMA; this best corresponds to the requested CMA."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, CMA is reimbursable only if no previous CMA testing has been performed and specific clinical presentations are met. The patient had a prior CMA (nondiagnostic), violating the 'no previous CMA' requirement; additionally the patient's indication (neonatal epileptic encephalopathy) is not one of the policy's explicitly listed postnatal presentations. Therefore the test is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10103,
+    "output_tokens": 1948,
+    "total_tokens": 12051
+  }
+}

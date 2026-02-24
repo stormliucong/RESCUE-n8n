@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states 'Whole genome sequencing (WGS) has been ordered by a medical geneticist.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-based criterion for genome testing applies to rapid genome sequencing which requires an infant ≤12 months; patient is 6 weeks old, so age meets the policy's age requirement for rGS (though other rGS requirements also apply). (Policy: Rapid genome sequencing I.A)"
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies evaluation/ordering by a Board-Certified/Board-Eligible Medical Geneticist or APGN for rapid genome sequencing; the test was ordered by a medical geneticist, meeting ordering provider requirements. (Policy: Rapid genome sequencing I.B)"
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires the infant be 'acutely-ill' with complex phenotype or meet specified clinical criteria for rapid genome sequencing; the patient is a 6-week-old being evaluated for global developmental delay with no documentation of acute illness or the other required clinical criteria. Standard genome sequencing is listed as investigational. (Policy: Standard genome sequencing — investigational; Rapid genome sequencing I.A, I.C)"
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate a specific prior test as an absolute requirement before genome sequencing (it notes exome/genome are appropriate after CMA if unrevealing but does not require prior tests). Patient has a nondiagnostic CMA, but the policy does not establish a mandatory prior-test prerequisite for WGS. (Policy: Background and Clinical Considerations)"
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy includes 'family history strongly suggestive of a genetic etiology, including consanguinity' as one qualifying criterion. The provided family history (a sibling with a brief resolved unexplained event) is not documented as 'strongly suggestive' of a genetic etiology per the policy. (Policy: Rapid genome sequencing I.C.2.d / Standard exome I.A.2.b)"
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test counseling by an appropriate provider. Patient had pre-test counseling completed by appropriate genetics provider and family will follow up post-results, satisfying the counseling requirement. (Policy: Rapid genome sequencing I.I and Standard exome I.F)"
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy lists CPT 81425/81426 for genome sequencing (GenomeSeqDx/Whole Genome Sequencing) and 81425 is the genome sequencing code among provided options. (Policy: Policy reference table and Rapid/Standard genome sequencing sections)"
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Standard genome sequencing is considered investigational per the policy. Rapid genome sequencing is medically necessary only for an acutely-ill infant meeting additional clinical criteria; the patient is not documented as acutely-ill or meeting those criteria. Therefore WGS as requested is not covered. (Policy: 'STANDARD GENOME SEQUENCING ... is considered investigational' and Rapid genome criteria I.A–I.J)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12253,
+    "output_tokens": 2400,
+    "total_tokens": 14653
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The patient note explicitly mentions consideration of chromosomal microarray (CMA) testing; CMA is the only test named directly in the patient information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document defines age criteria for WES/WGS (pediatrics <21) but does not specify any age-based eligibility criteria for CMA, the test requested."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies ordering/provider requirements for WES/WGS (evaluation by clinician with genetics expertise) but does not state ordering provider requirements for CMA; therefore requirements for the requested CMA are not specified in the policy."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for WES/WGS (including examples like meconium ileus) but does not define specific medical indications or coverage criteria for CMA itself in the provided text."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy describes prior testing scenarios relevant to exome/genome sequencing, but the document does not state required prior tests before performing CMA; thus prior-test requirements for CMA are not specified."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists family-history examples relevant to WES/WGS (including inborn errors of metabolism), but it does not specify family history or consanguinity criteria for CMA specifically; therefore not specified for the requested test."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires genetic counseling for WES/WGS and notes counseling should be by an experienced provider, but it does not specify counseling requirements for CMA in the provided text, so counseling criteria for the requested CMA are not specified."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's coding section lists CPT/HCPCS codes for WES/WGS and rapid testing (e.g., 81415, 81425) but does not list a CPT code corresponding to chromosomal microarray (CMA) in the provided coding table; therefore a matching CPT from the options cannot be determined from this policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based solely on the provided WES/WGS policy text, CMA is not addressed with explicit coverage criteria or listed as a covered procedure; the policy governs WES/WGS and does not establish CMA coverage—therefore, under this policy document alone the requested CMA is not shown as covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14874,
+    "output_tokens": 2724,
+    "total_tokens": 17598
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states \"whole genome sequencing (WGS) is being pursued.\""
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists qualifying features including \"Hypotonia or hypertonia in infancy\" for WGS; the patient is a 7‑week‑old infant with significant hypotonia, meeting the age‑related (infancy) feature."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the test is ordered by a developmental pediatrician."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical‑necessity criteria for WGS include clinical history suggesting a genetic cause with features such as \"Hypotonia or hypertonia in infancy.\" The infant has significant hypotonia, meeting a listed clinical criterion."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that neither CMA nor WES have been performed prior to WGS. The record indicates a prior karyotype was nondiagnostic but does not indicate CMA or WES were performed, so the prior‑test requirement is satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history/consanguinity among qualifying features. The family reports the mother has a persistent, severe immunologic or hematologic disorder, i.e., relevant family history is present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy \"strongly recommends\" genetic counseling prior to WES/WGS. The patient record documents pre‑test counseling was completed and post‑test genetics follow‑up is planned."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's Applicable Codes lists 81425 as the CPT code for \"Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis,\" corresponding to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on the policy WGS is medically necessary when criteria are met: ordered by an approved specialist (developmental pediatrician), the infant has a listed qualifying feature (hypotonia in infancy), neither CMA nor WES were performed, and pre‑test counseling occurred. These facts meet the policy coverage criteria for WGS."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36937,
+    "output_tokens": 3316,
+    "total_tokens": 40253
+  }
+}

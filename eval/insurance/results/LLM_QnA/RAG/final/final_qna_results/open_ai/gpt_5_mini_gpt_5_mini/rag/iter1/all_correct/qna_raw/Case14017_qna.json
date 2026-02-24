@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) has been ordered to evaluate a possible genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to children and BRUE is defined for infants <1 year; the patient is 7 weeks old (<1 year), satisfying age-related applicability in the policy (infant BRUE example)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics; the record states evaluation by a general pediatrician (no documentation of evaluation by a clinician with genetics expertise), so ordering/provider requirement is not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy limits WES as medically necessary to (a) unexplained congenital or neurodevelopmental disorders in children when ALL criteria met or (b) rapid WES for critically ill NICU/PICU infants meeting specific criteria. Although BRUE with recurrent witnessed seizure-like events is listed as a clinical feature suggesting genetic disease, the infant is not documented as critically ill/in intensive care nor as having an unexplained congenital or neurodevelopmental disorder; therefore the specific medical-indication criteria in the policy are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy expects prior genetic testing such as chromosomal microarray analysis (CMA) and/or targeted single-gene testing before standard WES; the patient had only a nondiagnostic karyotype (no CMA or targeted testing documented), so required prior testing was not completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy specifies family history criteria as relevant (eg, family history of genetic disease/neurologic conditions); the patient has a maternal uncle with a movement disorder (dystonia/ataxia), which meets the policy's family-history relevance."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling prior to testing; patient information documents that pre-test genetic counseling was completed with plans for post-test follow-up, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); among the provided CPT options, 81415 corresponds to clinical exome sequencing and best matches the ordered WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the FEP policy WES is covered only when all criteria are met (evaluation by genetics expert, appropriate prior testing, and appropriate medical indication or critical illness criteria). Although age, family history, and counseling are favorable, required prior testing (eg, CMA) and documented evaluation by a clinician with genetics expertise and the policy-defined medical-indication (or critical-illness/ICU status for rapid WES) are not met; therefore the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14857,
+    "output_tokens": 3303,
+    "total_tokens": 18160
+  }
+}

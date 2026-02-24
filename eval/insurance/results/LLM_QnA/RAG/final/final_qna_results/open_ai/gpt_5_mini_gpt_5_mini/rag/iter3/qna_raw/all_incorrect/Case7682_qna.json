@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy refers to 'children' but does not give a specific numeric age cutoff for WES eligibility; no explicit age-based requirement is specified that would disqualify or confirm eligibility for a 9-year-old."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling. Patient had pre-test counseling completed with a genetic specialist and plans for post-test follow-up, satisfying the provider/counseling requirement in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES is medically necessary for children with unexplained congenital or neurodevelopmental disorders when criteria met. The patient has multiple congenital anomalies, a family history of developmental delay, and prior genetic testing (karyotype) was nondiagnostic, consistent with the policy's indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy cites prior testing (eg, CMA and/or targeted single-gene testing) as examples but does not mandate specific prior tests universally; it allows WES when previous genetic testing has failed to yield a diagnosis. The provided patient info lists a nondiagnostic karyotype but not CMA, and the policy does not strictly require CMA first."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists family history of developmental delay as relevant. The patient has a sibling with developmental delay, meeting the family-history criterion noted in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires genetic counseling by an experienced clinician. The patient received pre-test counseling from a genetic specialist and plans post-test follow-up, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to WES; therefore a CPT code cannot be determined from the policy text alone."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on the policy, WES (with trio testing when possible) is medically necessary for children with unexplained congenital anomalies when criteria are met. The patient is a child with multiple congenital anomalies, prior genetic testing was nondiagnostic, a genetic specialist evaluated/counseled the family, and family history supports a genetic etiology—together satisfying the policy's required criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14826,
+    "output_tokens": 2200,
+    "total_tokens": 17026
+  }
+}

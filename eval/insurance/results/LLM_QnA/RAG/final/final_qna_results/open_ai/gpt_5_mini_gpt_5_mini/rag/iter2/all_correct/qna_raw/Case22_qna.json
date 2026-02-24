@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information states he is undergoing BRCA1/2 testing to evaluate hereditary predisposition."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies testing in minors is investigational; patient is 18 (an adult) and policy criteria for prostate cancer apply 'at any age,' so age meets eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers and genetic counseling but does not specify required ordering provider specialty; therefore provider-specific requirements are not specified."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'personal history of metastatic or intraductal/cribriform histology prostate cancer at any age' as medically necessary indication; patient has metastatic prostate cancer with intraductal/cribriform histology."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate completion of any specific prior diagnostic genetic tests before BRCA1/2 germline testing in this clinical scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy includes family-history criteria (eg, close blood relative with metastatic or intraductal/cribriform prostate cancer); patient's father had metastatic intraductal/cribriform prostate cancer."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires appropriate pre- and post-test counseling in a setting with trained providers; patient completed pre-test counseling and will return for post-test follow-up with a genetic counselor."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text does not list or map specific CPT codes to BRCA1/2 testing, so a CPT code cannot be determined from the policy."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, germline BRCA1/2 testing is medically necessary for individuals with metastatic or intraductal/cribriform prostate cancer at any age; patient meets this criterion and counseling requirements, so test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18975,
+    "output_tokens": 1859,
+    "total_tokens": 20834
+  }
+}

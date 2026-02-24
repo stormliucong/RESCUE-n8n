@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Provider explicitly referred patient for germline BRCA1 and BRCA2 testing to inform therapy and cascade testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare BRCA coverage is driven by clinical indications (e.g., personal history of relevant cancers) rather than a specific age cutoff; the 52-year-old patient's age does not conflict with typical policy age limits."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally allow ordering by a treating physician or qualified genetics provider; no specialty restriction for ordering BRCA testing is specified in the provided patient information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has metastatic prostate cancer, which is an accepted medical indication for germline BRCA1/2 testing per UHC/NCCN-aligned coverage (and the family history of pancreatic cancer further supports testing)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA coverage does not require prior genetic testing (e.g., tumor-only testing) as a universal prerequisite in this clinical scenario; no specific prior test completion is documented or required in the provided criteria."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are part of BRCA coverage rules and the patient reports a first-degree relative (father) with pancreatic cancer, a BRCA-associated malignancy that supports testing eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC coverage for germline BRCA testing requires documentation of genetic counseling and informed consent; the patient did not receive pre-test genetic counseling (only plans for post-test counseling), so counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "The requested test is germline BRCA1/2 sequencing; 81228 is the CPT listed here that corresponds to BRCA gene testing (selecting the BRCA-related CPT provided in the answer options)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications (metastatic prostate cancer and relevant family history), coverage requires documented pre-test genetic counseling; because pre-test counseling was not completed/documented, the request does not meet UHC's coverage procedural requirements and would be denied until counseling is documented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1976,
+    "output_tokens": 2229,
+    "total_tokens": 4205
+  }
+}

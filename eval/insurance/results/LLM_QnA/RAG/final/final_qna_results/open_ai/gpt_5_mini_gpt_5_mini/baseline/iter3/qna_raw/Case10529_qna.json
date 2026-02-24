@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is being pursued with UHC coverage."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES criteria specify pediatric patients with unexplained developmental delay/intellectual disability are eligible; the patient is 6 years old, meeting pediatric age criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC requires ordering by an appropriate treating physician with documentation of genetics involvement; this case was referred by neurology and the family completed multiple sessions with a genetic counselor, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC defines unexplained developmental delay/intellectual disability as a medical indication for WES; the child has nonsyndromic developmental delay and intellectual disability."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC policy generally requires prior first‑tier testing (chromosomal microarray and Fragile X testing) before WES; Fragile X was nondiagnostic but there is no documentation that CMA was performed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of neurologic disease (maternal uncle with dystonia and ataxia) is present and is a relevant family-history element considered by UHC in evaluating genetic testing appropriateness."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre‑test genetic counseling for WES; the family has seen a genetic counselor multiple times and pre‑test counseling is complete with plans for post‑test follow‑up."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband or single‑sample exome) which matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, indication, counseling, and ordering/provider involvement meet UHC criteria, required prior testing (chromosomal microarray) is not documented; UHC typically requires CMA prior to WES, so coverage would be denied pending completion/documentation of CMA."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1987,
+    "output_tokens": 1288,
+    "total_tokens": 3275
+  }
+}

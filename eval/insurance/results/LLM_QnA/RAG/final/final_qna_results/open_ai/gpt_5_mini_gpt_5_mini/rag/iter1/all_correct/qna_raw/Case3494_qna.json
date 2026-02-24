@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) is being requested for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years for ES; the patient is a six-week-old infant, which meets the <21 years age criterion (Cigna Exome Sequencing criteria)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify ordering-provider specialty or type requirements for ES; it only requires the rendering laboratory be a qualified provider per Health Plan policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires a genetic etiology likely based on listed presentations. The patient has a congenital abnormality affecting at least one organ system (meets 'major abnormality affecting at minimum a single organ system') and concern for an evolving complex neurodevelopmental disorder (meets 'symptoms of a complex neurodevelopmental disorder'), satisfying TWO of the listed clinical features in the guideline."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires documentation of prior testing in the clinical letter but does not mandate specific prior tests (except prior ES/GS must not have been performed). The patient has had no prior genetic testing, but the policy does not explicitly require a particular prior test (e.g., CMA) in all non-prenatal cases."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a family history of dysmorphic features in a sibling. The guideline requires an appropriate genetic and family history evaluation and documentation; the presence of a sibling with dysmorphic features is relevant to eligibility per the policy's emphasis on family history."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "ACMG recommendations for pretest genetic counseling are cited in the guideline, but the Cigna ES coverage criteria do not explicitly require genetic counseling as a mandatory coverage criterion. The patient declined genetic counseling, and the policy does not state denial is automatic for declined counseling."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The policy specifies CPT 81415 should be billed for the proband when analyzing the entire exome sequence."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and clinical features potentially meet the policy's clinical criteria and no prior ES/GS was performed, the Cigna guideline requires that the member 'has had appropriate genetic and family history evaluation, and a clinical letter detailing the evaluation' including differential diagnoses, testing algorithm, previous tests/results, recommendation that ES is most appropriate, and predicted impact on plan of care. The provided patient information does not include this required clinical documentation (and the family declined genetic counseling). Therefore, based strictly on the policy text and available patient information, the required documentation/conditions for coverage are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10475,
+    "output_tokens": 2650,
+    "total_tokens": 13125
+  }
+}

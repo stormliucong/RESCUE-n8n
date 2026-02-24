@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose a specific age limit for WES for multiple congenital anomalies; age-related criteria in the policy (e.g., ID diagnosed by 18 years) are not applicable to this patient’s indication."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a developmental pediatrician, meeting the requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital anomalies (must affect different organ systems)' as a specific indication for WES; the patient has multiple congenital anomalies affecting several organ systems."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES coverage criteria do not mandate specific prior tests for postnatal multisystem congenital anomalies (prenatal CMA/karyotype is required only for prenatal WES); prior FISH was nondiagnostic but no required prior test is specified for this indication."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy includes family history/consanguinity as supportive criteria, but the patient does not have reported consanguinity or a first/second-degree relative with similar clinical features (mother has long QT, which is not described as similar to the child's multisystem congenital anomalies)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make pre-test counseling a stated coverage requirement; the family declined pre-test counseling, which the policy recommends but does not require."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable codes list 81415 for exome (sequence analysis) which corresponds to WES for the proband."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Coverage criteria are met: WES ordered by a developmental pediatrician and the patient has multiple congenital anomalies affecting different organ systems—an explicit covered indication in the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36940,
+    "output_tokens": 1629,
+    "total_tokens": 38569
+  }
+}

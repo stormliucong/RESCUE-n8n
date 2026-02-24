@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient statement: \"chromosomal microarray (CMA) is being ordered to assess for copy number variants\" — the requested test is CMA per the clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UHC CMA policy lists clinical indications but does not impose age-based eligibility limits for CMA; no age restriction is specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends pre-test genetic counseling and counseling by genetics experts but does not restrict ordering to a specific provider specialty or explicitly require a particular ordering provider type."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy-defined covered indications include ASD, developmental delay/intellectual disability, multiple congenital anomalies, or isolated severe congenital heart disease. The patient has a single-organ congenital anomaly (organ not specified) and no documented DD/ID or ASD in the provided information, so the patient does not meet the policy's specific medical indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy/AAN model states targeted testing (e.g., Fragile X) should be negative if indicated prior to CMA; the patient had Fragile X testing previously and it was nondiagnostic, meeting that prior test requirement."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy references family testing in the context of evaluating biological relatives of a child/fetus with abnormal CMA, but it does not define family-history criteria (e.g., cancer in a relative) as an indication for CMA; the patient's family history (aunt with breast cancer) is not specified as relevant in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy strongly recommends pre-test genetic counseling and AAN model coverage requires face-to-face counseling; the patient received pre-test counseling with a genetic specialist and planned post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Policy lists CPT 81228 for genome-wide cytogenomic analysis (CGH microarray), which corresponds to the requested CMA."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although counseling and prior Fragile X testing requirements are met, UnitedHealthcare policy limits CMA coverage to specified indications (ASD, DD/ID, multiple congenital anomalies not part of a well-delineated syndrome, or isolated severe CHD). The provided facts describe a single-organ congenital anomaly without documentation of DD/ID, ASD, multiple anomalies, or severe CHD; therefore the request does not meet the policy's listed medical necessity criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 30417,
+    "output_tokens": 2541,
+    "total_tokens": 32958
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states 'whole exome sequencing (WES) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy states standard WES may be medically necessary 'for the evaluation of unexplained congenital or neurodevelopmental disorders in children'; the patient is a 5-year-old child, so age category in policy is met."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires evaluation by 'a clinician with expertise in clinical genetics' (including family history and phenotype) and counseling. The ordering provider is a developmental pediatrician and there is no documentation provided that a clinician with expertise in clinical genetics evaluated or counseled the patient."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'significant hypotonia' as an example of clinical features suggesting a genetic disease; the patient has significant hypotonia and prior genetic testing was nondiagnostic, so the clinical indication for WES (evaluation of an unexplained neurodevelopmental disorder) is met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy indicates WES is appropriate when a genetic etiology is likely 'despite previous genetic testing (eg, chromosomal microarray analysis and/or targeted single-gene testing)' or when previous genetic testing has failed. The record shows a nondiagnostic chromosomal karyotype but does not document prior chromosomal microarray analysis (CMA) or targeted testing required by the policy, so required prior testing is not documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'sudden unexplained death ... in first- or second-degree family members before age 35' as relevant family history. The patient has a paternal uncle with sudden unexplained death before age 35, which meets the policy's family-history criterion."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires that the individual be 'counseled about the potential risks of genetic testing' by a clinician with genetics expertise. The provided patient information does not document that formal genetic counseling occurred."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); among the CPT options provided, 81415 corresponds to WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL listed criteria for standard WES to be met (evaluation by a clinician with genetics expertise and counseling, prior appropriate genetic testing or failure of such testing, and potential to change management). Although the patient meets pediatric age, clinical indication (significant hypotonia), and relevant family history, the record does not document evaluation/counseling by a genetics clinician nor completion of recommended prior genetic testing (eg, CMA). Because required policy criteria are not all satisfied, the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14823,
+    "output_tokens": 2342,
+    "total_tokens": 17165
+  }
+}

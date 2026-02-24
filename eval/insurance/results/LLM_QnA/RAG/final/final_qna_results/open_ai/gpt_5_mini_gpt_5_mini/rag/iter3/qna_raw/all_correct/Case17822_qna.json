@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered as the next-tier diagnostic test."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-related provisions for some features (e.g., features diagnosed by age 18) and the patient is 13; additionally the qualifying feature (multiple congenital anomalies affecting different organ systems) has no age restriction, so the patient's age meets policy age-related criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the order was placed by a medical geneticist."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical phenotype (multiple congenital anomalies affecting different organ systems) and ordering-provider requirement, the policy’s WGS criteria explicitly require that 'Neither CMA nor WES have been performed.' The patient has already had a nondiagnostic CMA, so the WGS medical-necessity criteria are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires for WGS that 'Neither CMA nor WES have been performed.' The patient completed a CMA (nondiagnostic), so the prior-test requirement for WGS is not satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' and 'growth abnormality (e.g., ... short stature)' among qualifying features; the patient has a sibling with short stature, a relevant family history."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS but does not list pretest genetic counseling as an explicit coverage requirement; the patient declined counseling, but counseling is not stated as mandatory for coverage."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy applicable CPT codes list 81425 for 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis,' which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the UnitedHealthcare WGS coverage criteria, WGS is medically necessary only when 'Neither CMA nor WES have been performed.' The patient already underwent a CMA (nondiagnostic), therefore WGS does not meet the policy's required prior-test criterion and is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36947,
+    "output_tokens": 2386,
+    "total_tokens": 39333
+  }
+}

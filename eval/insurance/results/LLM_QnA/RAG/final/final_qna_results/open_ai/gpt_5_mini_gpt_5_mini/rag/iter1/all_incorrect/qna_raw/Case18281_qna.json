@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical info states the cardiologist has ordered whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy M2032 specifies age <18 for evaluation of unexplained congenital disorders (WES/WGS pathway); patient is 6 years old, meeting the age criterion."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy II.1(a) requires evaluation by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor prior to WES (and WGS is only covered after WES per II.4). The ordering provider is a cardiologist and no genetics evaluation/counseling was done, so provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES/WGS is indicated for unexplained congenital anomalies in <18 yo when a genomic etiology is likely and presentation does not fit a well-described syndrome; the patient has multiple congenital anomalies not fitting a defined syndrome and a sibling with an inborn error of metabolism, meeting the clinical indication component."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy II.4 states WGS MEETS COVERAGE CRITERIA only when WES is unable to identify a causative mutation (i.e., prior WES required). The patient has had Fragile X testing only and no WES performed, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy supports use of sequencing when a genomic etiology/family history suggests genetic disease; the patient has a sibling with an inborn error of metabolism, which is relevant to eligibility under the policy's genomic-etiology considerations."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy II.1(a) requires pre-test counseling by an ABMGG geneticist or an ABGC genetic counselor for pediatric WES (and WGS coverage is contingent on WES pathway). The patient had no genetic counseling prior to testing, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy text (M2032) does not list or map CPT codes to WES/WGS; therefore a specific CPT code cannot be determined from the document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under Policy M2032 WGS is covered only when WES has been performed and failed to identify a causative mutation and all WES criteria are met (including genetics evaluation and counseling). The patient has not had WES, has no pre-test genetics counseling, and the order is directly for WGS by a cardiologist; therefore WGS does not meet the policy's coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22469,
+    "output_tokens": 2575,
+    "total_tokens": 25044
+  }
+}

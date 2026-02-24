@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) has been ordered by a medical geneticist."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC comprehensive genomic sequencing policies do not impose a strict single age cutoff; indications (e.g., developmental delay, congenital anomalies, critically ill neonate) are clinical rather than age-limited, so no discrete age-based eligibility criterion is specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require ordering by a qualified provider (e.g., medical geneticist or other appropriate specialist). The test was ordered by a medical geneticist, so ordering-provider requirements are met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC considers comprehensive genomic sequencing medically necessary for individuals with global developmental delay or neurodevelopmental disorders when prior testing is nondiagnostic. The infant presents with global developmental delay, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires prior standard testing (e.g., chromosomal microarray) before WES/WGS for developmental delay. Chromosomal microarray was previously performed and was nondiagnostic, satisfying the prior test requirement."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WGS criteria do not generally require family history or consanguinity as a mandatory eligibility element; the provided family history (sibling BRUE-like event) is noted but family-history criteria are not specifically required in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of genetic counseling (pre-test). Pre-test counseling was completed and post-test follow-up with a genetic counselor is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The ordered test is whole genome sequencing; CPT 81425 corresponds to whole genome sequence analysis/interpretation and is the appropriate code."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under UHC comprehensive genomic sequencing policy the criteria are met: appropriate clinical indication (GDD), required prior testing (nondiagnostic CMA) completed, ordered by a medical geneticist, and pre-test genetic counseling documented — therefore WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2004,
+    "output_tokens": 2021,
+    "total_tokens": 4025
+  }
+}

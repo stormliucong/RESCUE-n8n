@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states the family was referred for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES policy is driven by clinical phenotype (e.g., multisystem congenital anomalies, developmental delay) rather than a strict numeric age cutoff; no explicit age restriction is specified and the patient is pediatric (5 y) but age alone is not a defined gating criterion in policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies typically require appropriate genetics involvement (documentation of counseling/consult) but do not universally mandate a specific ordering specialty; the record shows cardiology referral and documented pre‑test genetic counseling, so provider requirements are not explicitly unmet but the policy does not strictly specify an ordering‑provider specialty."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP WES coverage is limited to specific clinical indications (e.g., unexplained global developmental delay/intellectual disability, multiple congenital anomalies, progressive or complex multisystem disorders). This patient has an isolated congenital cardiac anomaly affecting a single organ system without multisystem involvement or neurodevelopmental disorder, so she does not meet the policy's defined medical‑necessity indications for WES."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy generally expects prior appropriate targeted testing (e.g., relevant gene panel or chromosomal microarray when indicated) before WES for single‑system presentations. Only FISH (nondiagnostic) was done; no CMA or targeted cardiac/channelopathy panel is documented, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has a relevant family history (paternal uncle with sudden unexplained death <35), BCBS_FEP WES policy does not set family history/consanguinity as a standalone eligibility requirement; family history may be supportive but it is not a clearly specified sufficient criterion for WES in isolation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP expects documentation of pre‑test genetic counseling for complex genomic testing. The record documents pre‑test counseling with a genetic counselor and plans for post‑test follow‑up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (proband or trio exome test reporting) and best maps to the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying BCBS_FEP coverage criteria: although counseling is documented and CPT mapping is 81415, the patient does not meet the policy's medical‑necessity indications for WES (isolated single‑organ congenital heart anomaly without multisystem involvement or developmental delay) and required prior targeted testing (e.g., CMA or relevant cardiac gene panel) is not documented; therefore WES is not covered in this case."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1990,
+    "output_tokens": 2430,
+    "total_tokens": 4420
+  }
+}

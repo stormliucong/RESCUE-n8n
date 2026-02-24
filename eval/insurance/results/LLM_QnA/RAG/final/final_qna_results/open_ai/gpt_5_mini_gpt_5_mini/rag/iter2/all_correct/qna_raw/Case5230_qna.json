@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states 'whole exome sequencing (WES)' was referred/ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-based criteria for some features (e.g., ID or impairments diagnosed by 18 years). The patient is 15 years old, which meets the policy's age thresholds where specified and presents no age-based exclusion for postnatal WES."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the referral was from neurology, meeting the ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history that strongly suggests a genetic cause plus specific features. The patient has a congenital anomaly and a first‑degree family history of an inborn error of metabolism (two policy-listed features), and WES is being used to evaluate an unexplained congenital anomaly—meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES policy does not mandate specific prior tests in the non‑prenatal/postnatal setting (except targeted testing if a specific syndrome is suspected). Although CMA was done and nondiagnostic, the policy does not require a particular prior test universally for WES."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history/other affected first‑ or second‑degree relatives as a qualifying feature. The patient has a sibling with an inborn error of metabolism, which is relevant per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state counseling is a required coverage criterion; the patient declined counseling, which the policy does not make a coverage exclusion."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT list maps WES (exome sequence analysis, proband) to CPT 81415 for primary exome sequencing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per UnitedHealthcare WES coverage rationale, WES is medically necessary when ordered by an approved specialist and the clinical history suggests a genetic cause with qualifying features. The patient (age 15) was referred by a neurologist, has a congenital anomaly and relevant family history, and CMA was nondiagnostic — meeting policy coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36915,
+    "output_tokens": 2579,
+    "total_tokens": 39494
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'whole exome sequencing (WES) has been ordered' — the requested test is WES."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy covers WES for children with unexplained congenital or neurodevelopmental disorders. The patient is an 8-week-old infant (a child), so the age criterion in the policy is met."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling. Patient was 'evaluated by a medical geneticist' and received pre-test counseling from a genetic specialist, satisfying the ordering/provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list 'conjugated hyperbilirubinemia not due to total parental nutrition (TPN) cholestasis' as an example of an abnormal laboratory test suggesting a genetic disease. The patient has persistent conjugated hyperbilirubinemia not due to TPN, meeting a policy-defined clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "For standard WES the policy expects prior genetic workup (eg, CMA and/or targeted single-gene testing) or prior testing that failed to yield diagnosis. Only Fragile X testing (nondiagnostic) is documented; no chromosomal microarray or broader prior testing is documented, so required prior tests are not fully documented as completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history (eg, developmental delay, inborn errors of metabolism, multiple congenital anomalies). The patient has an older sibling with multiple congenital anomalies, which is relevant per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced provider. Patient had pre-test counseling completed with a genetic specialist, meeting the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT 81415 corresponds to exome sequencing (whole exome) and best matches the ordered test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Applying the policy: the patient is a child evaluated by a genetics expert and counseled (policy criterion 1); has a policy-recognized clinical indicator (conjugated hyperbilirubinemia not due to TPN) and relevant family history (policy guidelines); prior targeted testing (Fragile X) was nondiagnostic. Although a CMA is not documented, the combination of documented genetics evaluation, counseling, a policy-listed abnormal laboratory finding, and nondiagnostic prior targeted testing supports that WES may be considered medically necessary per the policy statements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14837,
+    "output_tokens": 3076,
+    "total_tokens": 17913
+  }
+}

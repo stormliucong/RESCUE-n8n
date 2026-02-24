@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The patient information explicitly states whole exome sequencing (WES) is being ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC coverage criteria for WES do not impose a strict age cutoff; pediatric patients with unexplained neurodevelopmental disorders are commonly eligible, so no specific age-based exclusion is specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies for WES generally require an ordering clinician (licensed physician or qualified provider) but do not universally restrict ordering to a specific specialty; the record shows an MD (oncologist) ordered testing, and payer rules do not explicitly require a genetics specialist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for unexplained complex neurodevelopmental disorders/autism spectrum disorder with additional features or when seeking a unifying diagnosis; this 2-year-old has complex neurodevelopmental disorder with autism, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires prior chromosomal microarray (CMA) testing before WES for developmental disorders; the record states prior CMA was completed and nondiagnostic, satisfying the prior test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history/consanguinity can support testing eligibility. The family reports an uncle with a congenital anomaly, which is relevant family history per payer criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC often requires pre-test genetic counseling for WES; the family has met with a genetic counselor multiple times with pre-test counseling completed and plans for post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The test requested is whole exome sequencing (proband), which corresponds to CPT code 81415 (exome sequencing, interpretation and report for an individual)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under UHC WES coverage criteria the patient meets key requirements: appropriate medical indication (complex neurodevelopmental disorder/autism), prior CMA nondiagnostic, relevant family history, and documented pre-test genetic counseling. Therefore the test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1988,
+    "output_tokens": 1567,
+    "total_tokens": 3555
+  }
+}

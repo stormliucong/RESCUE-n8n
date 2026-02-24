@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP WES criteria are based on clinical indications (congenital anomalies/early neurologic disorder) rather than a strict age cutoff; no specific age limitation is specified that would exclude a 7‑week‑old."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP allows ordering by the treating/ordering physician; the case was referred by a general pediatrician and testing is being ordered through the treating team, which meets payer ordering provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has early‑onset movement disorder (dystonia, ataxia, intermittent hemiplegia) and a positive family history plus nondiagnostic CMA — these are BCBS_FEP‑recognized indications for WES to evaluate an underlying genetic etiology."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires prior chromosomal microarray for many presentations; CMA was previously performed and reported as nondiagnostic, satisfying required prior testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a relevant family history: an older sibling with multiple congenital anomalies, which supports testing per BCBS_FEP family‑history considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre‑test counseling was completed with a genetic counselor, meeting BCBS_FEP counseling requirements for WES."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome (WES) sequence analysis and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP criteria the infant meets medical‑necessity indications (early severe neurologic/movement disorder), had required prior CMA testing nondiagnostic, has relevant family history, and completed genetic counseling — therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2018,
+    "output_tokens": 1981,
+    "total_tokens": 3999
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient is being referred for chromosomal microarray (CMA) testing to evaluate a genomic etiology for developmental disorder; the requested test is explicitly CMA."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy (BCBS_FEP_204102) addresses WES/WGS age-based criteria for children but does not specify age-based eligibility criteria for CMA."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided WES/WGS policy specifies ordering-provider requirements for WES (evaluation by clinician with genetics expertise) but does not specify ordering-provider requirements for CMA."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for WES/WGS (eg, unexplained congenital or neurodevelopmental disorders in children) but does not define explicit medical-indication criteria for CMA; although CMA is mentioned as CNV analysis in rWGS context, explicit CMA coverage criteria are not provided."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy indicates prior testing (eg, CMA) is expected before WES in some situations, but the policy does not state specific prior-test requirements that must be completed before ordering CMA itself."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists family-history items relevant to WES/WGS (eg, family history of developmental delay) but does not specify family-history or consanguinity criteria relevant to CMA; the patient's family history (mother with ovarian cancer) is not referenced in the policy as relevant."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy emphasizes genetic counseling for WES/WGS and requires counseling for WES eligibility, but it does not state counseling requirements specific to CMA; although the patient had pre-test counseling, CMA-specific counseling criteria are not specified in the provided policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not include or map CPT codes to chromosomal microarray (CMA); therefore a specific CPT code for the requested CMA is not specified in the supplied policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based solely on the provided policy (BCBS_FEP_204102), coverage criteria for CMA are not specified. The WES/WGS policy does not establish CMA coverage rules for adults; therefore, under the supplied policy document there is no explicit basis to consider this CMA test covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14855,
+    "output_tokens": 2527,
+    "total_tokens": 17382
+  }
+}

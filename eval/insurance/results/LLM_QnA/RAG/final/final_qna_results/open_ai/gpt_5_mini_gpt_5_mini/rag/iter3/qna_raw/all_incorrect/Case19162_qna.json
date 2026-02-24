@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical information explicitly states whole genome sequencing (WGS) was ordered by the medical geneticist."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP_20459 policy discusses CMA and NGS panels and references a separate policy for WES/WGS (2.04.102) but does not specify age-based eligibility criteria for WGS within this document."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses the role of genetics professionals and counseling but does not define ordering-provider (specialty/type) requirements for WGS in this document; WES/WGS ordering requirements would be in the separate related policy (2.04.102) which is not provided."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines medical indications for CMA (developmental delay/ID, ASD, multiple congenital anomalies) and states NGS panels are investigational; it does not define specific clinical indication criteria for WGS in this document (those are in the separate WES/WGS policy)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy references a stepwise approach (first-tier fragile X and CMA) for developmental presentations, and the patient had fragile X testing nondiagnostic, but the document does not state explicit prior-test requirements for WGS itself (WGS criteria are in the separate policy)."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a family history of an inborn error of metabolism in a sibling, the provided policy does not specify family-history or consanguinity criteria for WGS within this document."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy endorses formal genetic counseling in most cases and describes recommended counseling practice, but it does not state explicit counseling requirements for WGS coverage in this document; the patient did receive pre-test counseling per chart."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing (WGS); among the given CPT options 81425 corresponds to whole genome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Within the provided BCBS_FEP_20459 policy, NGS panel testing is considered investigational and WGS/WES are not addressed as covered in this document (they are referenced to a separate policy 2.04.102). The Benefit Application also states experimental/investigational procedures are not covered. Because WGS is not supported as covered in this policy and is handled in a separate, not-provided policy, the test is not covered per the provided document."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15712,
+    "output_tokens": 2372,
+    "total_tokens": 18084
+  }
+}

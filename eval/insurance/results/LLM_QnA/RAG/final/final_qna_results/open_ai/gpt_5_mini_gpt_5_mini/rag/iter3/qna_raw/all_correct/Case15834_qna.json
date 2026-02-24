@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states \"whole exome sequencing (WES) has been ordered.\""
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy includes age references for some diagnoses (e.g., ID diagnosed by 18 years, GDD onset <5 years) but does not impose a specific minimum/maximum age cutoff for WES in an infant with suspected ASD; no age-based exclusion applicable to this infant is specified."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires WES to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The clinical information states WES \"has been ordered\" and that pre-test counseling was done by a \"genetic specialist,\" but it does not explicitly state the specialty of the ordering provider, so available information is insufficient to determine whether ordering-provider requirements are met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage for WES requires (among other criteria) that clinical history strongly suggests a genetic cause and either (A) one or more specific major features (e.g., multiple congenital anomalies, moderate/severe ID, global developmental delay, early epileptic encephalopathy) or (B) two or more listed features (the list that includes autism spectrum disorder). The infant has concern for ASD but lacks other documented qualifying features (no congenital anomalies, no diagnosed GDD/ID, no epilepsy, consanguinity not present), so the documented clinical criteria in the policy are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies certain prior testing for some scenarios (e.g., prenatal CMA/karyotype prior to prenatal WES; targeted single-gene or panel testing if a specific syndrome is suspected) but does not mandate a specific prior test for outpatient WES for suspected ASD; although Fragile X testing was done and nondiagnostic, the policy does not explicitly require it as a prerequisite in this situation."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists \"other first- or second-degree family member(s) with similar clinical features\" and consanguinity as relevant features. The patient has a maternal aunt (a second-degree relative) with a congenital anomaly, which constitutes a family history that is relevant to genetic evaluation per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states genetic counseling is strongly recommended prior to WES/WGS. The patient had pre-test counseling completed with a genetic specialist, satisfying the counseling requirement as documented."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy list of applicable CPT codes maps exome sequence analysis to 81415 (\"Exome; sequence analysis\"), which corresponds to the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the UnitedHealthcare WES policy, WES is covered only when all required criteria are met (nonspecific presentation not fitting a targeted test, appropriate ordering provider, and qualifying clinical features). Although WES was ordered and pre-test counseling performed, the documented clinical information does not demonstrate the required medical-necessity features (patient has concern for ASD but lacks other required major features or two-or-more qualifying features per the policy) and the ordering-provider specialty is not confirmed; therefore coverage criteria are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36936,
+    "output_tokens": 3148,
+    "total_tokens": 40084
+  }
+}

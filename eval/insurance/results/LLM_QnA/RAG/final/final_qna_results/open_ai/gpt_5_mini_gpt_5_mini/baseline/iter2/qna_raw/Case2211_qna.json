@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The referral explicitly requests BRCA1 and BRCA2 (breast cancer susceptibility) testing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Payer criteria permit BRCA testing for adults and include scenarios with a known familial pathogenic BRCA variant; the patient is a 21‑year‑old adult, meeting age requirements under UHC familial/clinical BRCA criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires an ordering clinician and documentation of genetic counseling; the test was ordered by a clinician with pre‑test counseling completed by a genetics specialist, satisfying provider/counseling requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Clinical indications in the payer policy include a known familial BRCA pathogenic variant and multiple affected relatives; the patient’s mother is a known BRCA2 pathogenic variant carrier and there are ≥2 affected relatives, so the patient meets medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "When a familial BRCA pathogenic variant exists, prior testing of the affected relative is the required prior test; the patient reports the mother carries a known BRCA2 pathogenic variant, so prior testing requirement is met."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are relevant for BRCA testing; patient reports ≥2 additional affected blood relatives on same side and a mother with a known BRCA2 pathogenic variant, which is directly relevant to eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre‑test genetic counseling for BRCA testing; the patient had pre‑test counseling with a genetic specialist and plans post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "The most appropriate CPT among the provided options for BRCA targeted/familial BRCA testing is 81162 (targeted familial variant analysis for BRCA1/2) given the known family BRCA2 pathogenic variant."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under UHC BRCA coverage criteria the combination of a known familial BRCA2 pathogenic variant, the patient’s personal/family cancer history, adult age, and documented pre‑test counseling satisfies coverage requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2000,
+    "output_tokens": 2032,
+    "total_tokens": 4032
+  }
+}

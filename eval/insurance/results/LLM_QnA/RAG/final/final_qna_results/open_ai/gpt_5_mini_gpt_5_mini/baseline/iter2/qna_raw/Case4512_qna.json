@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is being pursued to identify a potential genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WGS/WES policies do not impose a strict age cutoff for diagnostic sequencing in suspected genetic disorders; no age-based exclusion is specified and the patient (21 y) does not raise an age-based eligibility issue."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policies typically do not mandate a specific ordering provider specialty (they require appropriate documentation and usually recommend genetics involvement). The record does note genetic counselor pre-test counseling, but the policy does not explicitly require a particular ordering provider type."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP coverage criteria support diagnostic WGS/WES for patients with a suspected genetic etiology for congenital anomalies or major congenital malformations; the patient has a major congenital cardiac anomaly present since birth, which meets a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP medical policy generally requires prior appropriate targeted testing (for example chromosomal microarray and/or targeted gene(s) or panel testing) before WGS/WES for many indications; the record states no prior genetic testing has been performed, so required prior tests are not completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant to eligibility — record documents a sibling with a concerning brief resolved unexplained event suggesting a possible heritable predisposition, which is pertinent to genetic evaluation per BCBS FEP criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP policies require documentation of pre-test counseling for genomic sequencing; the record documents pre-test counseling with a genetic counselor and a planned post-test visit, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT 81425 is the appropriate code for comprehensive genome sequencing/interpretation (WGS) per coding guidelines."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication and counseling meet BCBS FEP criteria for genomic sequencing, the policy requires prior appropriate testing (e.g., chromosomal microarray and/or targeted gene/panel testing) before authorization of WGS in this scenario; those prior tests have not been completed, so coverage would be denied pending required prior testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2006,
+    "output_tokens": 1877,
+    "total_tokens": 3883
+  }
+}

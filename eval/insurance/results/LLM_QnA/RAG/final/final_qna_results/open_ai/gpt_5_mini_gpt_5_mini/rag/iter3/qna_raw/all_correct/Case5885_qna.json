@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related items reference criteria diagnosed by age 18; the patient is 11 years old, which falls within the age-based thresholds cited in the WGS/WES policy (e.g., features diagnosed by 18 years)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the test was requested by/through neurology per the patient information, meeting the ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific clinical indications for WGS (e.g., multiple congenital anomalies affecting different organ systems, moderate/severe ID by 18, global developmental delay, epileptic encephalopathy <3, or two or more listed features). The provided facts note a 'major abnormality affecting at least one organ system' but do not document any of the policy-specified qualifying features (multiple-system congenital anomalies, DD/ID, epilepsy, or two or more listed features), so the patient does not clearly meet a defined medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy prerequisite for WGS includes that neither CMA nor WES have been performed. Patient has had Fragile X testing only (no CMA or WES), satisfying the policy prior-test condition for WGS."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists relevant family-history criteria (e.g., first-/second-degree family members with similar clinical features or consanguinity). The patient has a maternal history of long QT syndrome, but no information links that to the patient's presenting abnormality or documents a family member with similar clinical features—so the family-history criteria are not met."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WGS/WES. Patient information reports pre-test counseling was discussed with a genetic specialist and plans for post-test follow-up are in place, meeting the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis', which corresponds to clinical WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although ordering provider, age, and prior-test (no CMA/WES) and counseling aspects align with policy, the policy requires specific clinical features (e.g., multiple-system congenital anomalies, DD/ID, epileptic encephalopathy, or two or more listed features) that are not documented in the provided clinical information. Because the patient does not clearly meet the medical-indication criteria in the WGS coverage rationale, the WGS request is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36937,
+    "output_tokens": 3443,
+    "total_tokens": 40380
+  }
+}

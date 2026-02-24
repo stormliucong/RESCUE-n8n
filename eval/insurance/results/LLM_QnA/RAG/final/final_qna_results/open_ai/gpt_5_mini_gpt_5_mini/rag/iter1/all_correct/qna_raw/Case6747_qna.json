@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states the child is 'undergoing whole genome sequencing (WGS)' ordered by a medical geneticist; therefore WGS is the test requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related language addresses 'children' with congenital anomalies or neurodevelopmental disorders; patient is 12 years old and therefore meets the pediatric (child) age criteria in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling; the test was ordered by a medical geneticist and pre-test counseling was completed, satisfying ordering/provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy defines medical indications as children with unexplained multiple congenital anomalies or a neurodevelopmental disorder following standard workup; the patient has multiple congenital anomalies and a suspected genetic etiology, meeting the policy's specified medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior standard genetic testing (eg, chromosomal microarray) to have been performed or failed to yield a diagnosis; the record states CMA testing was previously performed and was nondiagnostic, meeting the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as relevant; the family reports a sibling with developmental delay, which aligns with the policy's family-history considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling by someone experienced in genetic medicine; patient had pre-test counseling completed and post-test counseling planned, meeting the policy's genetic counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to WGS or WES; no CPT coding guidance is specified in the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy the evaluation of unexplained congenital anomalies in children may be covered when ALL criteria are met (evaluation by genetics expert and counseling; prior testing nondiagnostic; indication of genetic etiology). The patient is a 12-year-old with multiple congenital anomalies, was evaluated by a medical geneticist, had nondiagnostic CMA, has relevant family history, and counseling was completed — therefore the request meets the policy's stated coverage criteria for pediatric genome/exome testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14819,
+    "output_tokens": 3071,
+    "total_tokens": 17890
+  }
+}

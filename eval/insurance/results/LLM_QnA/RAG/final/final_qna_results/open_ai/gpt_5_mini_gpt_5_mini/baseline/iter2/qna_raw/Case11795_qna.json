@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states that whole exome sequencing (WES) is being ordered after a nondiagnostic chromosomal microarray."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES coverage specifies pediatric/infant indications (e.g., neonates/infants with suspected genetic disorders, congenital/early-onset disease). The patient is a 3‑week‑old infant, which meets the payer's age‑based pediatric eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policy requires ordering by an appropriate treating clinician but does not rigidly restrict to a single specialty; the record shows referral by a cardiologist but the policy does not mandate a specific specialty credential, so explicit specialty requirement is not specified."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria for WES under BCBS_FEP include infants with suspected genetic conditions (e.g., channelopathies, cardiomyopathy, significant arrhythmia) and nondiagnostic prior testing; the infant has an abnormal ECG concerning for channelopathy/arrhythmia/cardiomyopathy, meeting a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP generally requires prior standard testing (chromosomal microarray) for pediatric neurodevelopmental/ congenital indications before WES; CMA was previously performed and was nondiagnostic, satisfying the required prior test criterion."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history can be a supporting criterion in BCBS_FEP WES decisions. The patient has a sibling with moderate–severe intellectual disability diagnosed in childhood, which is relevant and supportive of testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES policy requires documented pre‑test genetic counseling and post‑test follow‑up plans. The record documents pre‑test genetic counseling with plans for post‑test follow‑up, meeting this requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (proband only) and is the correct code for whole exome sequencing as ordered."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under BCBS_FEP criteria, WES is covered for pediatric patients with suspected genetic conditions when prior CMA is nondiagnostic, clinical indications (suspected channelopathy/arrhythmia/cardiomyopathy) are present, pre‑test counseling is documented, and family history supports a genetic etiology. All these coverage criteria are met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2021,
+    "output_tokens": 1775,
+    "total_tokens": 3796
+  }
+}

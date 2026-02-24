@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information states whole exome sequencing (WES) has been requested for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria require the member to be <21 years of age for ES; the patient is 14, meeting the age criterion (Policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires an 'appropriate genetic and family history evaluation' and a clinical letter but does not specify a mandatory ordering provider specialty or explicit ordering-provider credential in the criteria; the patient was referred by a primary care physician but provider-type requirements are not explicitly defined in the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires that a genetic etiology is the most likely explanation based on specific clinical criteria (e.g., multiple congenital anomalies affecting different organ systems OR TWO listed criteria such as a major abnormality plus another criterion). The patient has a single ocular coloboma (one organ/system affected) with no additional listed neurodevelopmental criteria documented, so the defined medical-indication criteria for ES are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires prior elements including: no prior ES/WGS (met), and an 'appropriate genetic and family history evaluation' with a clinical letter detailing prior tests and results. Only prior nondiagnostic FISH is documented; there is no documentation of the required genetic evaluation/clinical letter or other prior testing per the policy, so required prior evaluation/documentation is not complete."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires appropriate genetic and family history evaluation, but the patient record provided does not include any family history or consanguinity information; thus relevant family-history criteria cannot be assessed from the provided information."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy and cited guidelines recommend pretest counseling by a medical geneticist or affiliated genetic counselor and written documentation/consent. The patient information does not document any pretest genetic counseling or consent, so the counseling requirement is not shown to be met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy states CPT 81415 should be billed for the proband when analyzing the entire exome sequence (Policy: '81415 should be billed for the proband... analyzing the entire exome sequence')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and proband-level CPT alignment are met, the policy requires (among other items) an appropriate genetic/family history evaluation with clinical documentation and that the phenotype meet defined clinical criteria (e.g., multiple congenital anomalies or two qualifying criteria). The record only documents a single ocular coloboma and a nondiagnostic FISH; required clinical documentation and specified medical-indication criteria are not met per the policy, so ES is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10435,
+    "output_tokens": 2477,
+    "total_tokens": 12912
+  }
+}

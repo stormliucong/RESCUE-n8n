@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states 'whole exome sequencing (WES) is being pursued' to investigate a possible genetic etiology for a complex neurodevelopmental disorder."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage for WES specifies pediatric eligibility for unexplained neurodevelopmental disorders; the patient is 1 year old, meeting the pediatric age-based criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires ordering by a specialist or provider experienced in genetics (e.g., geneticist, neurologist); the test was referred/ordered by a neurologist, satisfying provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical necessity criteria support WES for pediatric patients with complex neurodevelopmental disorder/autism features when a genetic etiology is suspected; the patient has these indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires prior chromosomal microarray (CMA) for unexplained developmental delay/ASD before WES; the record documents a nondiagnostic CMA was completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history relevant to genetic evaluation is considered supportive by UHC; a maternal aunt with multiple congenital anomalies is documented and is relevant to eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre-test genetic counseling for WES; the record states pre-test genetic counseling was completed and post-test follow-up is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (proband-level) and best matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All applicable UHC coverage criteria are met: pediatric age, appropriate clinical indication (complex NDD/ASD), prior nondiagnostic CMA, specialist ordering provider (neurologist), and pre-test genetic counseling — therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1982,
+    "output_tokens": 1655,
+    "total_tokens": 3637
+  }
+}

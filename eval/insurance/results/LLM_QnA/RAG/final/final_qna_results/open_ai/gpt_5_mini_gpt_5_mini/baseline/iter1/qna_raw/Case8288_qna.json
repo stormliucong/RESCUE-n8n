@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient/family are pursuing whole exome sequencing (WES) after a nondiagnostic chromosomal microarray to evaluate a fetal major congenital cardiac anomaly; the note explicitly states WES is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES criteria are applied by clinical presentation (prenatal/fetal structural anomaly) rather than strict chronological age limits; fetal gestational age (36 weeks) does not conflict with prenatal WES coverage criteria."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "UHC typically requires ordering by an appropriate qualified provider (genetics specialist, genetic counselor involvement documented). The record shows referral by a developmental pediatrician and genetic counseling sessions but does not explicitly name the ordering provider or their specialty, so provider-eligibility cannot be confirmed from provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical-necessity criteria support WES for a fetus with a major structural congenital anomaly (cardiac malformation) when prior CMA is nondiagnostic; patient meets this indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC requires prior chromosome microarray before WES in many prenatal indications; the patient had a CMA that was nondiagnostic, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient/fetus has relevant family history—an older sibling with an inborn error of metabolism—which is a pertinent family-history criterion in genetic testing eligibility and supports broader testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC commonly requires documented genetic counseling for WES; the parents have had multiple sessions with a genetic counselor, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) with interpretation and report, which matches the requested test."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Clinical indication (prenatal major cardiac anomaly), nondiagnostic prior CMA, documented genetic counseling, and relevant family history meet UHC WES coverage criteria. (Final approval would be contingent on verification of the ordering provider per UHC policy.)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2018,
+    "output_tokens": 1570,
+    "total_tokens": 3588
+  }
+}

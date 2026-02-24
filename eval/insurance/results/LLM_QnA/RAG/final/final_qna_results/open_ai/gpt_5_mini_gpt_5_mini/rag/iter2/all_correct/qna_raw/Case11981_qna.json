@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states 'Whole genome sequencing (WGS) is being requested.' Basis: patient clinical note."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-related features (e.g., 'hypotonia or hypertonia in infancy', conditions diagnosed by 18 years). Patient is 9 years old and had abnormal muscle tone noted in infancy, meeting the age-related feature 'hypotonia or hypertonia in infancy.' Basis: UnitedHealthcare WGS criteria and patient facts."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. Patient was referred by neurology and had pre-test discussion with a genetic specialist, satisfying the ordering-provider requirement per policy. Basis: UnitedHealthcare WGS ordering-provider list and patient facts."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires either one of the first set of features (e.g., global developmental delay, ID by 18) OR two or more features from the second list (e.g., hypotonia in infancy plus another). Patient has abnormal muscle tone in infancy (one qualifying second-list feature) and ongoing motor concerns, but no clear second qualifying feature documented (no documented global DD/ID, epilepsy, multisystem congenital anomalies, etc.). Therefore the documented clinical facts do not meet the policy's defined medical indication for WGS. Basis: UnitedHealthcare WGS clinical criteria and patient facts."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy for WGS requires that 'Neither CMA nor WES have been performed.' Patient history documents only fragile X testing (nondiagnostic) and does not report prior CMA or WES, consistent with that WGS prerequisite. Basis: UnitedHealthcare WGS prerequisite and patient facts."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family-history features such as 'other first- or second-degree family member(s) with similar clinical features' or consanguinity. Patient has a maternal uncle with a severe immunologic disorder (second-degree), but this is not documented as 'similar clinical features' to the proband's motor/developmental findings. Thus the documented family history does not meet the policy's specified family-history eligibility criteria. Basis: UnitedHealthcare criteria and patient facts."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended prior to WES or WGS' but does not state it as a strict coverage requirement. Patient had pre-test discussion with a genetic specialist, but counseling is recommended (not a mandatory coverage criterion) per policy. Basis: UnitedHealthcare counseling language and patient facts."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponding to clinical WGS. Basis: UnitedHealthcare Applicable Codes table."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although ordering-provider and age-related items are satisfied and no prior CMA/WES is documented, the policy requires specific clinical indications (either one of the primary features or two or more secondary features). The patient only documents hypotonia/abnormal muscle tone in infancy (one secondary feature) and lacks a second clearly documented qualifying feature; therefore the patient does not meet the policy's medical necessity criteria for WGS. Basis: UnitedHealthcare WGS coverage criteria and patient facts."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36954,
+    "output_tokens": 4206,
+    "total_tokens": 41160
+  }
+}

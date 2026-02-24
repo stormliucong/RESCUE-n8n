@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) has been requested for diagnostic clarification of an ocular coloboma."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES may be medically necessary for children with unexplained congenital anomalies; the patient is a 14-year-old adolescent (child), so age meets policy criteria."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling about risks. The patient was referred by a primary care physician but there is no documentation that a clinical genetics evaluation or counseling has occurred, so ordering/provider requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists coloboma as an example of a malformation highly suggestive of a genetic etiology and allows WES for unexplained congenital anomalies. The patient has an ocular coloboma with prior nondiagnostic testing, meeting the medical indication in the policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy examples of previous genetic testing include chromosomal microarray analysis (CMA) and/or targeted single-gene testing as part of the standard workup. Patient history documents prior FISH only (nondiagnostic) and no CMA/targeted testing is documented, so required prior testing per policy is not shown to be completed."
+    },
+    "Q5": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy notes family history criteria in guidance, but the provided patient information does not include any family history or consanguinity details, so presence of relevant family history cannot be determined from the available facts."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires that the individual be counseled about risks of genetic testing by someone with genetics expertise. The patient record does not document that genetic counseling occurred, so the counseling requirement is not met per policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to WES; therefore a corresponding CPT code is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age and clinical-indication criteria (unexplained congenital coloboma), the policy requires ALL criteria be met including evaluation/counseling by a clinician with expertise in clinical genetics and appropriate prior genetic testing (e.g., CMA/targeted testing). Those required elements are not documented in the patient information, so under the policy the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14788,
+    "output_tokens": 2221,
+    "total_tokens": 17009
+  }
+}

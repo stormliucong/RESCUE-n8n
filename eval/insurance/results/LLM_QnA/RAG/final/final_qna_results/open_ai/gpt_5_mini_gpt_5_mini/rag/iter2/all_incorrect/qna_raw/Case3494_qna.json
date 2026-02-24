@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states 'whole exome sequencing (WES) is being requested'. Decision based strictly on the provided patient clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy document defines explicit age limits for genome sequencing (member <21 years and rWGS ≤12 months) but does not provide explicit coverage age-based eligibility criteria specific to whole exome sequencing (WES)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires an appropriate genetic and family history evaluation and a clinical letter for genome sequencing but does not specify ordering-provider specialty/credential requirements for WES specifically."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under the policy's genome sequencing clinical criteria, a genetic etiology is considered likely when TWO qualifying findings are present (e.g., a major abnormality affecting at least a single organ system AND symptoms of a complex neurodevelopmental disorder and/or supportive family history). The infant has a congenital abnormality affecting at least one organ system, concern for evolving complex neurodevelopmental disorder, and a sibling with dysmorphic features—meeting the policy's medical-indication criteria (per the 'TWO of the following' pathway)."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy requires that the member has not had prior exome or genome sequencing. The patient has had no prior genetic testing, satisfying the policy's prior-test requirement (no previous ES/WGS)."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists family history (including features in relatives or consanguinity) as a relevant criterion. The patient has a sibling with dysmorphic features, which is a relevant family-history criterion per the guideline."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy cites ACMG recommendations that pretest counseling and informed consent should occur, and it requires an 'appropriate genetic and family history evaluation' with documentation for genome sequencing, but it does not state an explicit coverage requirement that counseling must have occurred for WES. The patient declined genetic counseling, and the policy does not explicitly make counseling a coverage gate for WES."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Whole exome sequencing corresponds to CPT 81415 (exome sequencing, proband). This matches the test requested (WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The provided Cigna/eviCore guideline contains explicit criteria and CPT guidance for genome sequencing (WGS; CPT 81425) and rapid WGS but does not provide explicit coverage criteria or CPT reimbursement rules for whole exome sequencing (WES, CPT 81415). Although the patient's clinical presentation would meet the guideline's medical-indication elements for genome sequencing, the document does not establish WES-specific coverage; therefore, based strictly on this policy text, the requested WES is not covered under the genome-sequencing guideline."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9147,
+    "output_tokens": 3902,
+    "total_tokens": 13049
+  }
+}

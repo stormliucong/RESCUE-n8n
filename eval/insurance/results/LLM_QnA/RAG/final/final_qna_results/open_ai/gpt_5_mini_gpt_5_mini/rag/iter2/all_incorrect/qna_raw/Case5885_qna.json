@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy limits WGS coverage to rapid WGS for critically ill infants in NICU/PICU; the patient is an 11-year-old not an infant and not critically ill, so age/acuity criteria for covered WGS are not met (policy statement: rapid WGS medically necessary for critically ill infants; WGS investigational in all other situations)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation and counseling by a clinician with expertise in clinical genetics; patient had pre-test counseling discussed with a genetic specialist and plans for follow-up, satisfying ordering/provider documentation requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications for WGS (rapid WGS for critically ill infants) and WES for children with unexplained congenital or neurodevelopmental disorders after standard workup. This 11-year-old is not critically ill and prior standard testing (eg, CMA) is not documented; therefore the patient does not meet the policy's specified medical indications for WGS/WES coverage."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy criteria for non-rapid sequencing require prior standard genetic workup (eg, chromosomal microarray and/or targeted single-gene testing). Only Fragile X testing (nondiagnostic) is documented; no CMA or broader prior testing is documented, so required prior tests are not completed per policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of long QT syndrome (LQTS) as a relevant family-history criterion; the patient has a maternal history of LQTS, which matches a specified family-history item."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced clinician; patient had pre-test counseling discussed with a genetic specialist and post-test follow-up plans, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing codes for WGS/WES; no CPT mappings are given in the text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, WGS is considered investigational for diagnosis in all situations except rapid WGS for critically ill infants. This patient is an 11-year-old not critically ill; therefore WGS is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14828,
+    "output_tokens": 2648,
+    "total_tokens": 17476
+  }
+}

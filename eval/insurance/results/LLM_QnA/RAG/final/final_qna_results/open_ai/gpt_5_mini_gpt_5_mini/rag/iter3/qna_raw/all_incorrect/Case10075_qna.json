@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient note explicitly states consideration of chromosomal microarray (CMA) testing; prior CMA was nondiagnostic. (Patient clinical information)"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP WES/WGS policy addresses age criteria for WES/WGS (children, neonates) but does not specify age-based eligibility criteria for CMA. (Policy text does not address CMA age criteria.)"
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy specifies that WES/WGS requires evaluation by a clinician with genetics expertise for those tests; the policy does not state ordering/provider requirements for CMA. (Policy text lacks CMA ordering-provider requirements; patient did have pre-test counseling.)"
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy defines clinical indications (eg, meconium ileus listed as a malformation highly suggestive of genetic etiology), but the policy does not define medical-indication criteria specifically for CMA. (Policy addresses WES/WGS indications but not CMA.)"
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy indicates prior genetic testing (eg, CMA) is often required before WES, but it does not specify prior-test requirements for CMA itself. (Patient already had a nondiagnostic CMA.)"
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The WES/WGS policy lists family-history items relevant to WES/WGS (including inborn errors of metabolism), but the policy does not specify family-history criteria for CMA. (Patient has family history of an inborn error of metabolism.)"
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires genetic counseling/documentation for WES/WGS; it does not state counseling requirements specific to CMA. (Patient had pre-test counseling by a genetic specialist.)"
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document (WES/WGS) does not map CPT codes to CMA or otherwise specify CPT coding for CMA in the text supplied. (No CPT mapping for CMA in policy text.)"
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The requested test is CMA but the policy provided governs WES/WGS. Policy guidance: meconium ileus is listed as a malformation highly suggestive of genetic etiology and prior genetic testing (eg, CMA) was nondiagnostic — the policy states WES (standard or rapid as appropriate) may be medically necessary in this scenario. The policy does not provide coverage criteria supporting repeat or new CMA in this context; therefore, based on the provided policy text and the fact prior CMA was nondiagnostic, coverage for the requested CMA is not supported. (Patient facts + BCBS_FEP WES/WGS policy statements.)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14844,
+    "output_tokens": 3187,
+    "total_tokens": 18031
+  }
+}

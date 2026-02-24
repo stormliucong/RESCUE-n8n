@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case text explicitly states 'Whole exome sequencing (WES) is being ordered.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Payer criteria (UHC) permit WES for pediatric patients with unexplained developmental delay and multiple congenital anomalies; the patient is 2 years old and meets pediatric age indication."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The record says the child was referred by a developmental pediatrician and WES is being ordered, but it does not state whether the order is by a clinical geneticist or otherwise meets any explicit ordering-provider requirement in UHC policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES when there is unexplained developmental delay/intellectual disability or multiple congenital anomalies after prior testing; the patient has multiple congenital anomalies and ongoing developmental concerns, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior recommended cytogenomic testing such as chromosomal microarray (CMA) (and other condition-appropriate targeted tests) before WES; only a nondiagnostic karyotype is documented, not CMA."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While a maternal history of Long QT syndrome is noted, UHC WES criteria do not require specific family history/consanguinity for coverage of WES in this clinical scenario, and no family-criteria requirement is specified here."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre- and post-test genetic counseling for WES; pre-test counseling was completed and post-test follow-up is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband/standard exome) and is the appropriate code for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets age, clinical indication, and counseling requirements, required prior testing (notably chromosomal microarray) has not been documented; under UHC coverage rules WES would therefore not be approved until prior testing requirements are met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 2015,
+    "total_tokens": 3990
+  }
+}

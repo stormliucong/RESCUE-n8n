@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires seizure onset in early childhood (before age 5). The patient is 7 weeks old, which meets the policy's age-based criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify restrictive ordering-provider specialty or credential requirements for genetic testing in epilepsy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy's medical-necessity application requires (among other things) 'clinically severe seizures that affect daily functioning and/or interictal EEG abnormalities.' The record documents recurrent seizure-like events/BRUE but does not document clinically severe seizures affecting daily functioning or interictal EEG abnormalities, so the explicit clinical criteria in this policy are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses testing strategies (targeted testing or multigene panels; WES criteria in a related policy) but does not specify required prior tests that must be completed before WES in this document."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a maternal uncle with neurologic disease, the policy does not define family-history or consanguinity criteria as explicit eligibility requirements for genetic testing for epilepsy in this document."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends formal genetic counseling and states it should be performed by experienced personnel, but it does not state counseling is an explicit coverage prerequisite; the record notes pre-test counseling was completed."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT code 81415 corresponds to exome sequencing (whole exome)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the BCBS_FEP policy, genetic testing is medically necessary for infantile/early-childhood-onset epilepsies when criteria are met (onset <5 years AND clinically severe seizures affecting daily functioning and/or interictal EEG abnormalities, etc.). While the patient meets the age requirement and WES was ordered, the record does not document the policy-required 'clinically severe' seizure features or EEG abnormalities; therefore the policy's explicit clinical criteria are not satisfied and the test is not covered per this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15098,
+    "output_tokens": 2122,
+    "total_tokens": 17220
+  }
+}

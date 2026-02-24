@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC sequencing criteria apply to pediatric patients with unexplained developmental delay/intellectual disability; the patient is age 2 and therefore meets age-based (pediatric) eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Payer criteria generally require ordering/oversight by a genetics professional for genome sequencing; the test was ordered while the patient is being evaluated by a medical geneticist and pre-test counseling was completed by a genetic counselor, meeting provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers genomic sequencing for unexplained developmental delay/intellectual disability without a specific syndrome suspected; the patient has developmental delay/ID meeting that indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior first‑tier testing such as chromosomal microarray for unexplained developmental delay/ID; only Fragile X testing is reported (nondiagnostic) and CMA is not documented as completed."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "UHC sequencing criteria do not generally require a family history or consanguinity for coverage of WGS in DD/ID; while a paternal Long QT history is present, it is not specified as relevant to this WGS indication."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC expects documented pre‑test genetic counseling for genomic sequencing; pre-test counseling was completed with a genetic counselor and plans exist for post‑test counseling, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Among the provided CPT options, 81425 corresponds to whole genome sequencing (clinical genome sequencing) and best matches the ordered WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, indication, and counseling requirements are met, required prior testing (chromosomal microarray) is not documented; per UHC coverage rules WGS would not be approved until prior/CMA testing requirements are satisfied (or an exception documented)."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1981,
+    "output_tokens": 1939,
+    "total_tokens": 3920
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient is being considered for whole exome sequencing (WES) per the clinical information. Basis: patient note explicitly: 'being considered for whole exome sequencing (WES)'."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare WES policy does not impose a general age cutoff for WES; it references age for specific features (e.g., ID or sensory impairment diagnosed by age 18, epileptic encephalopathy onset <3 years). The policy therefore does not specify a single age-based eligibility requirement that would exclude or require this 11-year-old."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requirement: WES must be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. Basis: patient was referred by a developmental pediatrician for genetic evaluation, satisfying the ordering-provider requirement in the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical presentation nonspecific and ordering by an approved specialist plus presence of listed features. Basis: patient has a nonspecific concern for an underlying genetic etiology, prior targeted test (FISH) nondiagnostic, and features meeting policy: a congenital anomaly (Hirschsprung disease) and a first-degree family history of early-onset epileptic encephalopathy (sibling), consistent with 'clinical history strongly suggests a genetic cause' and two or more listed features, supporting medical indication for WES per policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate specific prior testing for outpatient WES except that if a specific syndrome is suspected targeted testing should be done first. Patient had prior FISH testing nondiagnostic; however the policy does not require additional specific prior tests in this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' and consanguinity as relevant features. Basis: patient has a sibling with epileptic encephalopathy before age three, which is relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy: 'Genetic counseling is strongly recommended prior to WES or WGS' and recommends pre-/post-test counseling. Basis: family has met with a genetic counselor multiple times for pre-test counseling and plans post-test disclosure, meeting the counseling expectations in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable CPT codes list 81415 for exome (sequence analysis) for unexplained constitutional/heritable disorder — code corresponds to WES requested for this patient."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UnitedHealthcare WES coverage rationale: WES is medically necessary when presentation is nonspecific, ordered by an approved specialist, and clinical history strongly suggests a genetic cause with supporting features. Basis: patient is 11, referred/managed by a developmental pediatrician (approved ordering provider), has nonspecific presentation with prior nondiagnostic FISH, a congenital anomaly (Hirschsprung disease) and strong family history (sibling with early epileptic encephalopathy). These facts meet the policy's medical necessity criteria for WES."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36969,
+    "output_tokens": 3192,
+    "total_tokens": 40161
+  }
+}

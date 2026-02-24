@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) has been requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy defines pediatrics <21 years as eligible for standard WES/WGS; patient is 12, meeting the age requirement (policy: 'pediatrics under 21 years of age')."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual 'has been evaluated by a clinician with expertise in clinical genetics and counseling was provided.' The patient was referred by a developmental pediatrician and no genetics evaluation or pre-test counseling is documented, so ordering/provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires an unexplained neurodevelopmental disorder in a pediatric patient plus one of listed criteria; the patient has autism spectrum disorder with an additional organ-system abnormality and prior karyotype was nondiagnostic, satisfying the 'previous genetic testing is non-diagnostic' medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES when 'previous genetic testing is non-diagnostic.' Patient had prior nondiagnostic karyotype, which meets the 'previous genetic testing non-diagnostic' prior-test criterion in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a family history of neurologic disease in a paternal uncle (dystonia/ataxia). The policy lists family history of neurologic/genetic disease as a relevant clinical feature for genetic evaluation, so a relevant family history is present."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires genetic counseling by an individual with genetic expertise before testing. The record states no pre-test genetic counseling was documented, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The policy's coding section lists 81415 among codes covered when medically necessary and 81415 corresponds to exome sequencing (standard WES)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, diagnosis, and prior nondiagnostic genetic testing meet policy clinical criteria, the policy requires evaluation by a clinician with expertise in clinical genetics and documented pre-test genetic counseling as part of ALL criteria for medical necessity; those provider/counseling requirements are not met in the patient information, so WES is not covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14874,
+    "output_tokens": 2369,
+    "total_tokens": 17243
+  }
+}

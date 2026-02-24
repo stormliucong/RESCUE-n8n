@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The clinical note explicitly states chromosomal microarray (CMA) has been ordered to evaluate for copy number variants in a patient with developmental delay and intellectual disability."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's CMA coverage is driven by the clinical indication (unexplained developmental delay/intellectual disability) rather than an age cutoff; no age-based exclusion is specified and the patient is 31 years old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna's CMA policy does not impose a specific ordering-provider specialty requirement in routine practice; the record does not indicate any specialty-based restriction is applicable."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The patient has unexplained developmental delay and intellectual disability without a suspected specific syndrome — a stated medical necessity indication in Cigna's CMA coverage criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna allows CMA as a first‑line test for unexplained DD/ID; there are no required prior genetic tests that must be completed before CMA in this clinical scenario, and the record reports no prior testing."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history criteria relevant to CMA (e.g., close relatives with CNV-associated conditions) are not documented; the noted family history (mother with early breast cancer) is relevant to hereditary breast cancer testing (BRCA) but not to CMA eligibility per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Cigna expects documentation of genetic counseling for genomic testing; the record documents multiple pre‑test counseling sessions with a genetic counselor and planned post‑test follow‑up, meeting that requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "None of the provided CPT options clearly correspond to chromosomal microarray reporting; CMA is typically reported with microarray-specific molecular cytogenetic codes that are not listed among the choices."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per Cigna coverage for CMA, the patient meets medical necessity (unexplained DD/ID), has documented pre‑test genetic counseling, no age restriction applies, and therefore CMA is covered for this presentation."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1984,
+    "output_tokens": 2919,
+    "total_tokens": 4903
+  }
+}

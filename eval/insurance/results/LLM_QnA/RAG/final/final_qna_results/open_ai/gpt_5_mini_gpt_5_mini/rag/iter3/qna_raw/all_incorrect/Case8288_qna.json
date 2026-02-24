@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued to evaluate the fetal congenital cardiac anomaly."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "The policy defines WES indications for children (and rapid WES for critically ill neonates/infants) and explicitly states the policy does not address prenatal (fetal) testing; the patient is fetal at 36 weeks, so the patient’s age/status does not meet the policy's age-related scope/eligibility."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "The policy requires evaluation by a clinician with expertise in clinical genetics prior to WES, but the patient data do not state that such a clinician performed the evaluation (only that a developmental pediatrician referred and parents had genetic counseling), so insufficient information to determine if ordering provider requirements are met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The policy lists unexplained congenital anomalies as a defined medical indication for WES; the fetus has a major congenital cardiac anomaly and a nondiagnostic CMA, which meets the policy's clinical indication criterion (regardless of age/other eligibility)."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy's criteria reference prior standard workup (eg, chromosomal microarray and/or targeted testing) before WES; the patient had a chromosomal microarray previously performed and it was nondiagnostic, satisfying the prior testing requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy lists family history of an inborn error of metabolism as relevant; the patient has a family history of an inborn error of metabolism in an older sibling, which is a relevant family-history criterion per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires counseling about risks of genetic testing by someone experienced in genetics; the patient’s parents have had multiple sessions with a genetic counselor, meeting the counseling requirement as documented."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list specific CPT codes for WES; no CPT mapping is specified in the supplied text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indications (congenital anomaly and nondiagnostic CMA) align with the policy's medical-necessity criteria, the policy explicitly does not address prenatal (fetal) testing. Because the patient is fetal (prenatal), the policy's WES coverage criteria do not apply to this situation, and the test is not covered under this policy scope."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14871,
+    "output_tokens": 2600,
+    "total_tokens": 17471
+  }
+}

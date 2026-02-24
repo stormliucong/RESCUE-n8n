@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP policy does not set explicit age-based eligibility limits for genetic testing; pediatric guidance is discussed but no firm age criterion is given."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses that genetic counseling and referral to expert centers are recommended but does not specify mandatory ordering-provider specialty or type requirements for test ordering."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy medical-necessity is for individuals with signs/symptoms of idiopathic dilated cardiomyopathy (DCM) or targeted testing for relatives of probands with a known familial DCM variant. The patient has a congenital cardiac anomaly (no DCM diagnosis) so does not meet the DCM-specific medical indication in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes a standard DCM workup (ECG, echocardiography, etc.) but does not list specific prior tests that must be completed before WES; thus no explicit prior-test requirement is specified for WES in this policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The policy identifies family history (including premature unexpected sudden death) as a relevant criterion for genetic evaluation in cardiomyopathy. The patient has a paternal uncle with sudden unexplained death before age 35, so a relevant family history is present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states genetic counseling is recommended/should be performed for genetic testing in cardiomyopathy. The patient completed pre-test counseling with a genetic counselor and post-test follow-up is planned, meeting the counseling expectation in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Whole exome sequencing (WES) corresponds to CPT code 81415 (exome sequencing)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy: comprehensive genetic testing is medically necessary for individuals with signs/symptoms of idiopathic DCM; testing is investigational in all other situations. This patient has a congenital cardiac anomaly without a DCM diagnosis and no known familial DCM variant, so WES does not meet the policy's medical-necessity criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10951,
+    "output_tokens": 2241,
+    "total_tokens": 13192
+  }
+}

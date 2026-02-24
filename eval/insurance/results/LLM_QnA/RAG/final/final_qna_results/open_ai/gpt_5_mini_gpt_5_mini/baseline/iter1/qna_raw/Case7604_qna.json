@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states \"whole genome sequencing (WGS) has been ordered.\""
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC genomic testing policies permit WGS for pediatric/neonatal patients with unexplained multiple congenital anomalies; the patient is a neonate with multisystem congenital anomalies and therefore meets age-related eligibility."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The record shows a neurologist referred/ordered testing; UHC policies typically require an appropriate treating/provider but do not universally mandate a single specialty in all cases. The provided information does not state a payer-imposed mandatory ordering specialty."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WGS when there is an unexplained, suspected genetic etiology such as multiple congenital anomalies affecting several organ systems; the neonate meets this clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC clinical policies generally require prior first‑tier cytogenetic testing such as chromosomal microarray (CMA) before WGS for congenital anomalies. The patient had FISH (nondiagnostic) but there is no documentation of prior CMA, so required prior testing was not completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has an affected older sibling with multiple congenital anomalies; family history is relevant and supportive under UHC criteria for pursuing genomic testing."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC typically requires documentation of pre‑test genetic counseling for clinical genomic testing. The family declined genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (germline) and is the appropriate code for WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets medical indication, age, and has supportive family history, UHC requires prior appropriate cytogenetic testing (e.g., CMA) and documentation of genetic counseling; neither CMA nor counseling is documented, so coverage would be denied per payer criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1973,
+    "output_tokens": 1551,
+    "total_tokens": 3524
+  }
+}

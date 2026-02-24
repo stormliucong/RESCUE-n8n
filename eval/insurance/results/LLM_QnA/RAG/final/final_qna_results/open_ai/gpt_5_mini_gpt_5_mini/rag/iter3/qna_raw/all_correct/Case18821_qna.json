@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info states the obstetrician requests fetal whole exome sequencing (WES) at 22 weeks gestation."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy age-based eligibility is specified for children/critically ill infants and the policy explicitly states it does not address prenatal (fetal) testing; the patient is a fetus (22 weeks) and therefore does not meet the policy's age-related criteria."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling prior to WES; the ordering clinician is an obstetrician and there is no documentation the patient was evaluated by a genetics clinician or received pre-test genetic counseling."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Although the fetus has multiple congenital anomalies, the policy's defined medical indications apply to children or critically ill neonates/infants; the policy explicitly excludes prenatal (fetal) testing from its scope, so the patient's presentation does not meet the policy's clinical indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy criteria for standard WES refer to previous genetic testing (eg, chromosomal microarray and/or targeted single-gene testing) or prior testing failing to yield a diagnosis; the patient has no prior genetic testing documented."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses family history as part of a genetics evaluation and gives examples (eg, developmental delay, inborn errors), but it does not specify that a report of an aunt with dysmorphic features meets an eligibility criterion for WES; thus family-history eligibility in this prenatal context is not specified."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires that the individual be counseled about risks of genetic testing by someone with genetics expertise; there is no documentation of pre-test genetic counseling for this patient."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); among the provided CPT options, 81415 corresponds to exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the BCBS FEP policy the use of WES/WGS for prenatal (fetal) testing is not addressed and the policy's medical-necessity statements apply to postnatal children/critically ill infants. Age/setting exclusions, lack of required genetics evaluation/counseling, and absence of prior testing mean the request does not meet the policy's coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14844,
+    "output_tokens": 2151,
+    "total_tokens": 16995
+  }
+}

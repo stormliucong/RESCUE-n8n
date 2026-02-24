@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient information explicitly states he is undergoing BRCA1/2 testing to evaluate for hereditary predisposition."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies testing in minors is investigational; the patient is 18 (an adult). Policy age restriction for minors does not apply, so age-based criteria are satisfied (policy: \"Genetic testing in minors ... is considered investigational\")."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires testing be performed in a setting with suitably trained providers and access to CLIA labs and recommends genetic counseling, but it does not specify a required ordering provider specialty. Therefore explicit ordering-provider specialty requirements are not specified."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists \"Personal history of metastatic or intraductal/cribriform histology prostate cancer at any age\" as a medical indication for BRCA1/2 testing; the patient has metastatic, intraductal/cribriform high-risk prostate cancer, so he meets the clinical criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate completion of specific prior tests before BRCA1/2 testing in this scenario. Prior chromosomal microarray (CMA) is noted in the patient record but the policy does not require CMA or other prior tests."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy considers family history of metastatic or intraductal/cribriform prostate cancer in close relatives relevant. The patient’s father had metastatic high-risk prostate cancer with intraductal/cribriform features, which is a relevant family history per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires appropriate pre- and post-test genetic counseling by experienced providers. The patient completed pre-test counseling and will return for post-test follow-up with a genetic counselor, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP policy text does not specify CPT or billing codes for BRCA1/2 testing, so no specific CPT code can be determined from the policy."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the BCBS_FEP policy, germline BRCA1/2 testing \"may be considered medically necessary\" for individuals with a personal history of metastatic or intraductal/cribriform prostate cancer at any age. The patient meets that indication, is an adult, has required counseling, and therefore the test is covered per policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18975,
+    "output_tokens": 2161,
+    "total_tokens": 21136
+  }
+}

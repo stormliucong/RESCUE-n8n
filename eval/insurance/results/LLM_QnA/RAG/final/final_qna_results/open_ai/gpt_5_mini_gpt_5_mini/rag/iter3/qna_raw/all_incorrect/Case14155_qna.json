@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been requested to assess genetic contributors to the neurodevelopmental presentation."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related language addresses 'children' for WES/WGS indications; the patient is a 7-year-old child and thus meets the policy's age category for pediatric sequencing considerations."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics (Policy Statement item 1). The record shows referral by neurology only and no documentation of a genetics evaluation, so provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy Statement requires ALL criteria for medically necessary testing, including prior evaluation by genetics and either prior genetic testing (eg, CMA or targeted testing) with negative result or other specific circumstances. The patient has ASD but has had no prior genetic testing and no documented genetics evaluation, so the defined medical indications are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The policy expects prior genetic testing (eg, chromosomal microarray analysis and/or targeted single-gene testing) or prior negative testing as part of criteria. The patient has had no prior genetic testing, so required prior tests have not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy Guidelines list relevant family history (eg, inborn error of metabolism or genetic disease) as pertinent. The patient has a maternal uncle with a persistent severe immunologic disorder, which the family raised as concern for inherited predisposition, meeting the policy's family-history relevance."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy Statement item 1 and the Genetic Counseling section require counseling about risks of genetic testing by someone with genetics expertise. The family declined pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing (WGS); CPT code 81425 corresponds to genome sequence analysis and is the code that best aligns with WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, WGS is considered investigational for diagnosis of genetic disorders in non-critically ill children in most situations and the Policy Statement requires genetics evaluation, counseling, and prior testing criteria which are not met here. Therefore the requested WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14842,
+    "output_tokens": 2838,
+    "total_tokens": 17680
+  }
+}

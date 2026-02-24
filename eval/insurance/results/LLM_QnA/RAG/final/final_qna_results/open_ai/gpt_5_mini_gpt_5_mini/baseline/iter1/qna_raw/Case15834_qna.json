@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare WES policy does not place specific age cutoffs for exome sequencing; age-based eligibility is not specified in the payer criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires ordering/consultation by a qualified genetics provider for WES; the record states pre-test counseling was completed with a genetic specialist, satisfying provider requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UHC coverage for WES generally requires documented moderate–severe developmental delay/intellectual disability, multiple congenital anomalies, or similar defined neurodevelopmental disorder. The infant has only early concern for ASD (no documented DD/ID or multiple congenital anomalies), so medical-necessity criteria are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC commonly requires prior targeted testing (e.g., Fragile X and chromosomal microarray) before WES for ASD/DD. Fragile X testing was nondiagnostic, but no prior chromosomal microarray is documented, so required prior testing is incomplete."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Payer criteria that consider family history relevant generally require affected first‑degree relatives or a clear pattern; a maternal aunt with a congenital anomaly (second‑degree, nonspecific) does not meet those specified family‑history eligibility criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documented pre‑test genetic counseling for WES; the record documents pre‑test counseling by a genetic specialist, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (WES) with interpretation and report and best matches the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under UnitedHealthcare policy, coverage is not supported because the clinical indication (only early concern for ASD without documented DD/ID or multiple congenital anomalies) does not meet medical‑necessity criteria and a required prior test (chromosomal microarray) is not documented, despite Fragile X testing and genetic counseling being completed."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1974,
+    "output_tokens": 1834,
+    "total_tokens": 3808
+  }
+}

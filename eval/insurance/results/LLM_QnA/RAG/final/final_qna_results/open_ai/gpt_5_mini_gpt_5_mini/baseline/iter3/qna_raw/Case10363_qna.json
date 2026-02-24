@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES/WGS coverage criteria do not impose a strict age cutoff for pediatric congenital anomaly evaluations; no age-based exclusion applies to this 7‑year‑old in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires ordering by or in consultation with a genetics professional. The patient was referred by a GP but has had multiple pre‑test visits with a genetic counselor, satisfying the requirement for genetics involvement per UHC policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria support WGS for unexplained congenital anomalies / longstanding multisystem congenital findings after prior targeted testing is nondiagnostic; this patient has a congenital anomaly since birth and nondiagnostic targeted testing (FISH)."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior chromosomal microarray (and/or other standard cytogenetic testing) before WES/WGS for congenital anomaly workup; only nondiagnostic FISH is documented and no CMA result is provided."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family history for hereditary cancer panels is noted (maternal aunt with pancreatic cancer) but UHC WGS eligibility for congenital anomalies does not specify family history/consanguinity as a required criterion in this context."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre‑ and post‑test genetic counseling for high‑complexity genomic testing; the patient has had multiple pre‑test genetic counseling visits and planned post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT code 81425 corresponds to whole genome sequencing (WGS) with analysis/interpretation and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although indication, genetics involvement, and counseling are satisfied, UHC requires prior standard cytogenetic testing (e.g., chromosomal microarray) before WGS for congenital anomalies; CMA is not documented, so the coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1999,
+    "output_tokens": 1898,
+    "total_tokens": 3897
+  }
+}

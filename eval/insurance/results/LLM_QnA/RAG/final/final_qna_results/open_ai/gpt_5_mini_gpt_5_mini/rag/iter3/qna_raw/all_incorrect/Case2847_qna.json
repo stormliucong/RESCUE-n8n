@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical info explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP 2.04.59 policy does not specify age-based eligibility criteria for whole exome sequencing; WES is noted as addressed separately in policy 2.04.102."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy does not define ordering provider/specialty requirements for WES; WES is referenced as handled in a separate policy (2.04.102)."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "FEP 2.04.59 defines indications for CMA and states NGS panels are investigational for developmental delay/ASD/congenital anomalies, but it does not define medical necessity criteria for WES (addressed separately)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not state explicit prior-test requirements for WES; although the patient had prior CMA nondiagnostic (a fact), the policy only notes CMA as first-line for developmental/ASD indications and refers to WES in a separate policy."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify family history or consanguinity criteria relevant to WES; the patient does have a maternal history of an immunologic/hematologic disorder, but the policy provides no WES-specific family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy explicitly recommends formal genetic counseling for most cases when genetic testing for an inherited condition is considered; the patient had pre-test counseling with a genetic counselor and plans for post-test follow-up, meeting this requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The test requested is whole exome sequencing (WES); CPT code 81415 corresponds to whole exome sequencing and is the best match among the provided options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage cannot be confirmed under the provided policy: FEP 2.04.59 does not provide coverage criteria for WES (it states WES/WGS are addressed separately in policy 2.04.102). Because WES criteria are not included in this policy document, the policy does not authorize coverage for WES based on the information provided."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15712,
+    "output_tokens": 2636,
+    "total_tokens": 18348
+  }
+}

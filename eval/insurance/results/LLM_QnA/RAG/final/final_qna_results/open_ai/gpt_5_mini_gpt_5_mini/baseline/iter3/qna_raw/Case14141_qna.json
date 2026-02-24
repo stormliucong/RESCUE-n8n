@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is planned to investigate an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "FEP WES coverage criteria do not impose an absolute age cutoff; eligibility is based on clinical presentation (e.g., multiple congenital anomalies/developmental disorder) rather than age, so no age-based exclusion applies."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The patient data show referral by an oncologist but do not state the specific ordering provider credentials; FEP policies generally require an appropriate ordering clinician but do not always restrict to a single specialty in the policy language provided here, so ordering-provider specifics are not determinable from the supplied information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Under FEP WES coverage, testing is medically indicated for unexplained multiple congenital anomalies and neurodevelopmental disorders. The patient has multiple congenital anomalies and a neurodevelopmental context (sibling with global developmental delay), meeting those clinical criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "FEP policies typically require prior chromosomal microarray (CMA) for unexplained developmental delay/MCAs; the record states CMA was performed and was nondiagnostic, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a relevant family history (sibling with global developmental delay). FEP criteria consider family history/affected relatives relevant for genetic evaluation and may support WES (including consideration of trio testing)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "FEP WES coverage expects genetic counseling; the record documents pre-test genetic counseling completed and arrangements for post-test counseling, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) with interpretation and report and is the appropriate code for the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per FEP coverage rules, WES is covered for patients with unexplained multiple congenital anomalies/developmental disorders after nondiagnostic CMA; prior CMA was nondiagnostic, counseling is documented, and family history supports testing, so the request meets coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1983,
+    "output_tokens": 1587,
+    "total_tokens": 3570
+  }
+}

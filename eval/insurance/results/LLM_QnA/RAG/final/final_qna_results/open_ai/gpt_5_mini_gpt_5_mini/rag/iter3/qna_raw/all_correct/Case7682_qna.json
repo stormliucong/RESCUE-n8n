@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related criteria reference features diagnosed by age 18; the patient is 9 years old (<18) and therefore meets age-based criteria where specified (e.g., features diagnosed by 18 years)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the request was made by a developmental pediatrician."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Coverage criteria include multiple congenital anomalies affecting different organ systems as an indication for WES; the patient has multiple congenital abnormalities affecting different organ systems."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not universally mandate prior specific tests for postnatal WES (it only advises targeted testing if a specific syndrome is suspected); although the patient had a nondiagnostic karyotype, the policy does not require completion of particular prior tests before WES in this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' as a relevant criterion; the patient has a sibling with developmental delay."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES but does not state counseling as a mandatory coverage requirement; the patient did receive pre-test counseling and plans post-test follow-up, but counseling is not specified as a coverage prerequisite."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy applicable codes list CPT 81415 for exome (sequence analysis), which corresponds to WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare policy WES is proven and medically necessary when ordered by an allowed provider and when criteria are met; here WES is ordered by a developmental pediatrician and the patient meets a listed indication (multiple congenital anomalies affecting different organ systems), so the test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36935,
+    "output_tokens": 1944,
+    "total_tokens": 38879
+  }
+}

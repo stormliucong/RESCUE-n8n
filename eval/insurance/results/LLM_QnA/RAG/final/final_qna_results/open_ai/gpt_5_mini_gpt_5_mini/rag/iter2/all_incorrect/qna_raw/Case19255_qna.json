@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1/2 testing to evaluate hereditary breast/ovarian cancer predisposition (clinical information)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists personal history of breast cancer diagnosed ≤45 years as meeting age-based criteria; patient is 38, so her age meets the policy's age-related eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers and appropriate pre-/post-test counseling; patient completed pre-test counseling with a genetic specialist, satisfying provider/counseling requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication: personal history of breast cancer diagnosed ≤45 years (and/or additional primary breast cancer) qualifies for BRCA1/2 testing; patient has two separate primary breast cancers and was diagnosed at age 38."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate completion of any specific prior diagnostic tests before BRCA1/2 germline testing; no required prior testing is specified in the policy text."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy considers a close blood relative with metastatic prostate cancer as a relevant family history for BRCA testing; the patient reports a father with metastatic prostate cancer."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre-test genetic counseling by an experienced provider; patient completed pre-test counseling with a genetic specialist, meeting the policy requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT code(s) corresponding to BRCA1/2 testing; no CPT mapping is given in the text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy, germline BRCA1/2 testing is medically necessary for individuals with a personal history of breast cancer meeting listed criteria (diagnosed ≤45 and/or multiple primaries). The patient is 38 with two primary breast cancers, has relevant family history, and completed genetic counseling, therefore coverage is supported by the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18936,
+    "output_tokens": 1683,
+    "total_tokens": 20619
+  }
+}

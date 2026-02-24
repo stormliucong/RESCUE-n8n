@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is explicitly being evaluated for BRCA1/2 testing (history of breast cancer and statement that BRCA1/2 testing was ordered)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided Cigna hereditary cancer panel guideline does not state explicit age cutoffs for BRCA1/2 within the excerpt; it instead refers to a separate 'BRCA Analysis' guideline for BRCA-specific criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate provider and that the rendering laboratory is qualified, but it does not specify an ordering-provider specialty requirement in the provided text (no prohibition of a general practitioner)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The guideline defines a medical indication as 'Member has a personal diagnosis of cancer consistent with the hereditary cancer syndrome that is suspected' and the patient has a personal history of breast cancer (diagnosed ≤50), which is consistent with hereditary breast/ovarian cancer."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate provider as part of eligibility; there is no documentation of prior genetic counseling for this patient, so the counseling requirement has not been met."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family-history criteria are specified in the policy for certain scenarios, but the patient's documented family history (a sibling with short stature) does not include relevant cancers required by the guideline."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The guideline explicitly requires pre- and post-test genetic counseling by an appropriate provider for hereditary cancer testing and there is no documentation that counseling occurred."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy maps hereditary breast cancer multigene panels to CPT 81432 (not listed among the offered options) and lists 81228 for chromosomal microarray; the excerpt does not map a single-gene BRCA1/2 CPT to any of the specific option codes provided, so none of the given codes can be confirmed from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient has a medical indication (personal breast cancer), the policy requires pre- and post-test genetic counseling and adherence to the BRCA Analysis criteria; counseling is not documented and BRCA-specific coverage is governed by a separate EviCore 'BRCA Analysis' guideline referenced but not provided, therefore coverage criteria are not met as documented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11877,
+    "output_tokens": 3821,
+    "total_tokens": 15698
+  }
+}

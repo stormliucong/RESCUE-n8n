@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states the 12-year-old was referred for BRCA1/2 testing."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP BRCA coverage criteria are age-sensitive: testing is for individuals with personal or strong family histories of hereditary breast/ovarian cancer and predictive testing for adult-onset conditions is generally deferred until adulthood; the patient is 12 years old and does not meet age-related criteria."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided payer criteria do not explicitly restrict BRCA ordering to a specific specialty; a family medicine physician referred the patient and pre-test counseling was completed, but no BCBS_FEP-specific ordering-provider specialty requirement is documented in the case information."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP BRCA medical indications require a personal history of relevant cancers or a family history meeting high-risk criteria. The patient has congenital choanal atresia and an unspecified maternal growth abnormality, which do not meet BRCA indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage does not mandate prior diagnostic tests (FISH is unrelated to BRCA) and no specific prior-testing prerequisite for BRCA1/2 was documented in the patient information."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Coverage criteria rely on family history of breast/ovarian cancer or known familial BRCA pathogenic variant; the only family detail provided is a maternal growth abnormality, which is not a qualifying family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP typically requires documentation of pre-test genetic counseling for BRCA testing; the record states pre-test genetic counseling was completed and post-test follow-up is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Of the provided CPT options, 81277 corresponds to BRCA-related gene testing (represents BRCA1/2 targeted testing/large rearrangement analysis) and is the best match for a BRCA1/2 test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per BCBS_FEP criteria, BRCA1/2 testing is not covered for an asymptomatic child without a qualifying personal or family history of hereditary breast/ovarian cancer; the patient is 12 years old with no relevant family history, so coverage is not met despite documented counseling."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1963,
+    "output_tokens": 1821,
+    "total_tokens": 3784
+  }
+}

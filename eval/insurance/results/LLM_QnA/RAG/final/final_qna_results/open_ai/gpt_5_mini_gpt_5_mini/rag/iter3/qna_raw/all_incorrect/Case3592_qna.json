@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The patient information explicitly states chromosomal microarray (CMA) testing is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines clinical indications (e.g., neonatal seizures, early infantile epileptic encephalopathy) but does not provide explicit numeric age-based eligibility criteria for CMA specifically."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires the rendering laboratory be a qualified provider per the Health Plan, but it does not specify ordering-provider specialty or other ordering-provider requirements for CMA."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy provides specific medical necessity criteria for epilepsy single-gene and multi-gene panel testing (e.g., early infantile epileptic encephalopathy, intractable neonatal seizures) but does not define explicit clinical/medical-necessity criteria for CMA in the guideline text provided."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not list required prior tests that must be completed before CMA. It does note limits on repeat testing for individual genes or panels, but it does not specify prior-test prerequisites for CMA."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the policy references family history as relevant for panel testing (e.g., positive family history suggestive of monogenic inheritance), it does not define family-history or consanguinity criteria specific to CMA; the patient does have a family history but the policy does not specify how that applies to CMA eligibility."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses professional guidelines and the value of genetic counseling but does not state an insurance coverage requirement that pre- or post-test genetic counseling must be documented for CMA reimbursement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's procedure lists and tables do not include a specific CPT code corresponding to chromosomal microarray (CMA) in the provided text, so a best-corresponding CPT from the given options cannot be identified from the policy alone."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The guideline provides explicit coverage criteria for epilepsy single-gene and multi-gene panels but does not define CMA-specific coverage criteria. The patient already had a prior CMA that was nondiagnostic and the policy restricts repeat testing for the same test (retesting generally not reimbursed except for explicit technical-advance exceptions). Based on the policy text provided, CMA coverage is not supported for repeat testing and CMA-specific coverage criteria are not specified, so the requested CMA is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12764,
+    "output_tokens": 2868,
+    "total_tokens": 15632
+  }
+}

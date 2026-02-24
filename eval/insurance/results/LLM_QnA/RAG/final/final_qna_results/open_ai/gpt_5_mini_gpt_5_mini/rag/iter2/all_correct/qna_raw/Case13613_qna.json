@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested for prenatal evaluation of fetal anomalies."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare policy specifies age-related criteria for some postnatal indications (e.g., ID diagnosed by 18 years) but the prenatal WES coverage criteria do not include an age/gestational-age cutoff; therefore age-based eligibility is not specified for this prenatal WES request."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prenatal WES to be ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist; the record documents a pre-test discussion with a genetic specialist, satisfying the ordering/provider requirement per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital anomalies (must affect different organ systems)' as an accepted prenatal indication for WES. The fetus has multiple structural anomalies on imaging, meeting this clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UnitedHealthcare prenatal WES coverage requires CMA and/or karyotyping have been performed and were uninformative; the patient record documents only Fragile X testing (nondiagnostic) and does not document prior CMA or karyotype, so the required prior testing is not completed per policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history (other first- or second-degree family member(s) with similar clinical features) as relevant. The patient has a maternal aunt with dysmorphic features, which is relevant per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy strongly recommends genetic counseling and for prenatal WES requires ordering by or in consultation with a medical geneticist/MFM. The record documents pre-test discussion with a genetic specialist, meeting the counseling/provider requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "UnitedHealthcare policy's applicable codes list CPT 81415 as the code for exome (sequence analysis), corresponding to WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication (multiple fetal anomalies) and consultation with a genetic specialist are present, the policy requires prior CMA and/or karyotype to have been performed and uninformative and specific fetal sample sources to be used for prenatal WES. The record does not document prior CMA/karyotype or the required sample source, so full prenatal WES coverage criteria are not met per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36940,
+    "output_tokens": 2012,
+    "total_tokens": 38952
+  }
+}

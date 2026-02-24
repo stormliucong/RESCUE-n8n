@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years of age for exome sequencing; patient is 1 year old, meeting the age criterion (policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires an appropriate genetic and family history evaluation and a clinical letter but does not specify a mandatory ordering provider specialty for coverage; no explicit ordering-provider restriction is stated."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL listed indication elements (including that a genetic etiology is the most likely explanation and meeting one of the specific phenotype pathways such as formal global developmental delay or TWO specified criteria). The record documents 'features concerning for autism' and 'complex neurodevelopmental disorder' but does not document the formal diagnostic criteria (e.g., formal GDD assessment in ≥2 domains or two items from the 'TWO of the following' list) or an explicit clinical letter stating genetic etiology is most likely, so the specific medical-indication criteria are not met per policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior testing information and that initial testing be unrevealing before ES; patient had prior chromosomal microarray (CMA) testing that was nondiagnostic, which satisfies the documented prior testing requirement in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy requires an appropriate genetic and family history evaluation. The patient has a relevant family history (maternal aunt with multiple congenital anomalies), which is supportive and relevant to eligibility under the policy's requirement for family history evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy and ACMG guidance recommend pretest genetic counseling by genetics professionals; the patient had pre-test genetic counseling completed and plans for post-test follow-up, meeting the counseling expectation in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy maps exome sequencing for the proband to CPT 81415 ('81415 should be billed for the proband')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, prior CMA nondiagnostic, pre-test counseling, and family history are consistent with policy expectations, the exome guideline requires ALL specified criteria (including documentation that a genetic etiology is the most likely explanation and meeting one of the detailed phenotype pathways with required formal assessments/documentation). The provided clinical information does not document those required clinical-letter elements or that the patient meets the specific phenotype criteria per policy, so coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10482,
+    "output_tokens": 3074,
+    "total_tokens": 13556
+  }
+}

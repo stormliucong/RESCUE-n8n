@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states whole exome sequencing (WES) is being pursued to identify an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy criteria for WES list clinical features (e.g., multiple congenital anomalies) but do not impose an age cutoff for WES in this indication; no age-based exclusion/requirement is specified for this scenario."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient information does not state which provider actually placed the WES order."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital anomalies (must affect different organ systems)' as an explicit criterion for WES and the 3‑year‑old has multiple congenital anomalies affecting different organ systems."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior tests for postnatal WES in cases of multiple congenital anomalies; although the patient had a nondiagnostic karyotype, the policy does not require CMA/karyotype prior to postnatal WES in this indication."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy family history criteria refer to first/second‑degree relatives with similar clinical features or consanguinity; the only family history noted is a maternal aunt with ovarian cancer, which does not meet the policy's specified family/consanguinity criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES and the patient had pre‑test counseling with a genetic specialist and planned post‑test follow‑up, meeting the counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for exome (sequence analysis) consistent with WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Medically necessary criteria are met (multiple congenital anomalies, counseling performed), but the policy explicitly requires WES be ordered by certain specialists and the record does not document that the ordering provider meets those specialty requirements; coverage cannot be confirmed under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36959,
+    "output_tokens": 2603,
+    "total_tokens": 39562
+  }
+}

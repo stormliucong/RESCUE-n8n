@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states a chromosomal microarray (CMA) is being requested to evaluate a longstanding neuropsychiatric presentation."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy includes an age clause for asymptomatic adult‑onset risk testing (≥18) but does not specify age limits for diagnostic testing in symptomatic adults; the patient is a symptomatic 63‑year‑old, and no age restriction for symptomatic CMA is specified."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires genetic counseling prior to testing unless the test is ordered by a specialist in the disease process. The test was referred by an oncologist for a neuropsychiatric indication (not a neuro/psychiatric specialist) and no pre‑test counseling was done, so ordering/provider requirements are not met."
+    },
+    "Q3": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy coverage for germline testing requires the individual be symptomatic with suspicion of a known genetic disease AND multiple b) conditions (e.g., demonstrated gene‑disease association and clinical actionability). The provided clinical information documents neuropsychiatric symptoms but does not provide evidence that the specific policy b) criteria (documented gene‑disease association with clinical utility and impact on management) are met, so adequacy of medical indication cannot be confirmed from the supplied information."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that 'other testing for the disease is equivocal or does not exist' as part of coverage. The patient had prior karyotype testing that was nondiagnostic, satisfying the 'other testing equivocal' requirement noted in policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy includes family history as an eligibility consideration for asymptomatic/risk testing; the patient has a sibling with early‑onset (by age 18) significant hearing or visual impairment, which is a documented relevant family history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy states genetic counseling meets coverage criteria and is required prior to testing unless ordered by a disease‑process specialist. The patient has had no pre‑test genetic counseling and the ordering provider is not a neuro/psychiatric specialist, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Chromosomal microarray testing corresponds to CPT 81228 (chromosomal microarray analysis / constitutional copy number analysis) and best matches the requested CMA."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient is symptomatic and prior karyotype was nondiagnostic (supporting further CNV testing), the policy mandates pre‑test genetic counseling unless ordered by a disease‑process specialist. No pre‑test counseling was performed and the ordering provider (oncologist) does not qualify as a neuro/psychiatric specialist for waiving counseling; therefore coverage criteria are not met per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10242,
+    "output_tokens": 3254,
+    "total_tokens": 13496
+  }
+}

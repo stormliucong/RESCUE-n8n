@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested for a prenatal evaluation at 32 weeks."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy provides age-based criteria for individuals <18 years and separate fetal (prenatal) WES criteria; it does not specify a gestational-age or other age cutoff for prenatal WES. Therefore age-related eligibility for this fetal WES request is not specifically limited in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requirement for fetal WES (II.2.a) requires pre-test counseling by an ABMGG board-certified medical geneticist or an ABGC board-certified genetic counselor. The patient information states no genetic counseling has been completed, so ordering/provider counseling requirements are not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy's fetal WES coverage (II.2) requires a fetus with ultrasound anomalies and prior standard CMA and karyotype nondiagnostic, a likely genomic etiology, etc. The patient record only documents prior nondiagnostic FISH (not CMA/karyotype) and only references 'fetal imaging' (not explicit ultrasound anomalies). Thus the defined fetal WES clinical indications in the policy are not clearly met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy II.2.b requires that standard chromosomal microarray (CMA) and karyotype analysis have failed to yield a diagnosis prior to fetal WES. The patient has only prior fluorescence in situ hybridization (FISH) testing documented as nondiagnostic; CMA and karyotype are not documented as completed and nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has parental consanguinity and a family history of sudden unexplained death in a sibling. The policy and guideline sections acknowledge consanguinity and relevant family history as relevant to consideration of genomic testing (e.g., discussions of autosomal-recessive risk and ISPD scenarios), so relevant family/consanguinity information is present."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy explicitly requires pre-test counseling by an ABMGG medical geneticist or ABGC genetic counselor for fetal WES (II.2.a). The patient information states no genetic counseling has been completed, so counseling requirements are unmet."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT or billing codes for WES; therefore the appropriate CPT code is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy fetal WES coverage requires all fetal-specific criteria (II.2) be met, including pre-test counseling by an ABMGG/ABGC and prior nondiagnostic CMA and karyotype. The record documents no genetic counseling and only prior nondiagnostic FISH (not CMA/karyotype), so required coverage criteria are not satisfied and the test is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22482,
+    "output_tokens": 2182,
+    "total_tokens": 24664
+  }
+}

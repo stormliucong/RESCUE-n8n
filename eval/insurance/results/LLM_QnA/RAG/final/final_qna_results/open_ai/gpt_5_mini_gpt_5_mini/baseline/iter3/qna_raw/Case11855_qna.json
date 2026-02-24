@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The patient information states chromosomal microarray (CMA) is being ordered to assess for copy number variants; CMA is explicitly requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA coverage criteria are indication-based (developmental delay/ID/autism or congenital anomalies) and do not set a strict age cutoff; the patient is 14 but no age-based exclusion or requirement is specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC coverage criteria for CMA focus on clinical indications rather than specifying a required ordering provider specialty; the record shows a developmental pediatrician ordered testing and a genetic specialist provided counseling, which is acceptable but no payer-mandated ordering-provider restriction is specified."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UHC medical necessity criteria for CMA require unexplained developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies. The patient has a congenital anomaly affecting a single organ system without documentation of developmental delay/ID/autism or multiple anomalies, so the specific coverage indications are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA criteria do not require specific prior genetic tests as a universal prerequisite. Although Fragile X testing was performed (nondiagnostic), prior-test requirements for CMA are not defined in the policy."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Family-history/consanguinity criteria are not part of standard CMA coverage requirements. The noted maternal aunt with triple-negative breast cancer is more relevant to hereditary breast cancer testing, not CMA; payer CMA criteria do not specify family-history requirements here."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC expects documentation of informed genetic counseling when genetic testing is pursued. The patient completed pre-test counseling with a genetic specialist and plans for post-test follow-up were made, which satisfies counseling requirements."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "The requested test is chromosomal microarray; CPT code 81228 corresponds to chromosomal microarray analysis for copy-number variation."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying UHC coverage criteria: although counseling is documented and age/provider are not exclusionary, the test is covered only for defined indications (unexplained developmental delay/ID/autism or multiple congenital anomalies). The patient has a single-organ congenital anomaly without documentation of developmental delay/ID/autism or multiple anomalies, so medical-necessity criteria are not met and CMA would not be covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2011,
+    "output_tokens": 2345,
+    "total_tokens": 4356
+  }
+}

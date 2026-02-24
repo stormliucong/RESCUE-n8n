@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient case explicitly states 'whole genome sequencing (WGS) is requested to investigate a possible genetic cause.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is defined for 'children' with unexplained congenital or neurodevelopmental disorders; the patient is 7 years old (a child) and thus meets the age-related designation in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires 'documentation that the individual has been evaluated by a clinician with expertise in clinical genetics ... and counseled.' The ordering/referring provider is the child's neurologist and there is no documentation that a clinician with expertise in clinical genetics evaluated the patient, so the provider requirement is not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL criteria for medical necessity (genetics evaluation and counseling, potential for change in management, and prior appropriate genetic testing or failed testing). The record lacks documentation of evaluation by a genetics clinician/counseling and does not document prior standard testing (eg, CMA and/or targeted single‑gene testing) beyond nondiagnostic Fragile X, so the required medical-indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy specifies prior genetic testing (eg, chromosomal microarray and/or targeted single-gene testing) or failed prior testing as part of criteria. Only nondiagnostic Fragile X testing is documented; CMA/targeted testing or an otherwise adequate standard workup is not documented, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list relevant family history examples (eg, developmental delay, inborn error, early severe neurologic disease). The patient has a sibling with early-onset epileptic encephalopathy, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual be '...evaluated by a clinician with expertise in clinical genetics, including at minimum ... and counseled about the potential risks of genetic testing.' Pre-test genetic counseling was offered but declined; thus the policy's counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or specify CPT codes for WGS; therefore a specific CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage (medical necessity) for WGS requires ALL policy criteria (including evaluation by a genetics clinician with counseling and prior appropriate testing) for children with unexplained congenital or neurodevelopmental disorders. The record lacks documentation of genetics evaluation/counseling and prior standard genetic testing (eg, CMA or targeted testing), so the policy criteria are not met and the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14854,
+    "output_tokens": 2017,
+    "total_tokens": 16871
+  }
+}

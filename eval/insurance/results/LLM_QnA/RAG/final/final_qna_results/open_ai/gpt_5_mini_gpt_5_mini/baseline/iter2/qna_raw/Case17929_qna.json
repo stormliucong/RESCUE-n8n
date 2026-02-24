@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The referral explicitly states 'tumor chromosomal microarray (CMA) testing has been requested' to assess for genomic imbalance."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC CMA coverage criteria focus on clinical presentation (congenital/major anomalies, developmental delay, autism) rather than strict age cutoffs; the record shows a 7-year-old but no age-based exclusion or specific age requirement is stated."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policy does not mandate a specific ordering provider specialty for CMA (orders may come from treating specialists/genetics); the case was referred by a neurologist which is acceptable but no payer-specific specialty requirement is documented."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers CMA for individuals with major congenital anomalies or abnormalities affecting organ systems; the child has a major abnormality affecting at least one organ system, meeting a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Payer criteria often require prior karyotype when indicated or note CMA after nondiagnostic karyotype; the record documents a prior nondiagnostic karyotype, satisfying prior test requirements."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family history noted is BRCA1/2 pathogenic variants in mother/aunt, which is not relevant to CMA eligibility (CMA assesses copy-number/genomic imbalance), so no relevant family/consanguinity criterion is present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC commonly expects documentation of pre-test genetic counseling for genomic testing; the record documents multiple pretest counseling sessions with a genetic counselor and planned post-test follow-up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to chromosomal microarray/genome-wide copy-number analysis commonly billed for CMA testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC coverage criteria: the child meets a covered clinical indication (major congenital/organ system abnormality), prior karyotype was nondiagnostic, counseling documented, and no disqualifying factors are present; therefore CMA is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1994,
+    "output_tokens": 1763,
+    "total_tokens": 3757
+  }
+}

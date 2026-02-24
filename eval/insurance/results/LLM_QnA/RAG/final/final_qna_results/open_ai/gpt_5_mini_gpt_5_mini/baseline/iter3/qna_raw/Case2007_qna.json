@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred specifically for BRCA1 and BRCA2 testing (statement: 'referred ... for BRCA1 and BRCA2 testing')."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP BRCA coverage includes age-based clinical indications (eg, personal history of breast cancer at a young age such as ≤50); the patient is 18 with breast cancer, which meets age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP allows ordering by the treating physician when appropriate documentation and genetic counseling are provided; the test was ordered by the family medicine physician and pre-test counseling was completed."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical-necessity criteria for BRCA testing include personal history of breast cancer at a young age and/or first-degree relative with breast cancer ≤50; the patient has early-onset breast cancer and a mother with breast cancer ≤50, meeting criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA criteria do not require completion of specific prior diagnostic genetic tests (beyond documenting family history or known familial mutation); the prior CMA is noted but is not a required prior test for BRCA testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criteria are relevant for BRCA testing and the patient has a first-degree relative (mother) with breast cancer at age 50 or younger, which is a specified relevant family-history criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP generally requires documentation of genetic counseling for BRCA testing; the patient completed pre-test counseling and will return for post-test counseling, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The standard CPT codes for full BRCA1/2 sequencing (eg, legacy codes such as 81211/81213) are not listed among the provided options, so no direct mapping to the supplied CPT choices can be made with confidence."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on BCBS_FEP coverage criteria: patient has personal early-onset breast cancer, relevant first-degree family history, documented pre-test counseling, and no unmet prior-test requirements — BRCA1/2 testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1980,
+    "output_tokens": 2368,
+    "total_tokens": 4348
+  }
+}

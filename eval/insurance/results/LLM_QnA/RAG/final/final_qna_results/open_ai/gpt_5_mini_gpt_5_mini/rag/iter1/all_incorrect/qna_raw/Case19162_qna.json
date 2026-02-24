@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient clinical information explicitly states the medical geneticist referred the neonate for whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP_20459 policy discusses age-related use of CMA in infants/children but does not specify age-based eligibility criteria for whole genome sequencing; WES/WGS are addressed in a separate policy (2.04.102)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses genetic counseling and clinical genetic evaluation generally but does not specify ordering-provider (specialty/type) requirements for WGS; WES/WGS are referenced to a different policy."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "This policy defines clinical indications for CMA and states NGS panels are investigational; it does not define medical necessity criteria for whole genome sequencing (WGS), which is addressed in a separate policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy outlines a stepwise approach (eg, fragile X and CMA as first-tier) for evaluation of developmental disorders but does not state explicit prerequisite testing requirements for WGS; WES/WGS are covered in another policy."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a family history of an inborn error of metabolism in a sibling, the provided policy does not specify family-history or consanguinity criteria specific to WGS eligibility in this document."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends formal genetic counseling generally and states it should be performed by experienced personnel, but it does not specify counseling as a formal coverage requirement for WGS in this document; patient has completed pre-test counseling per clinical info."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy text provided does not map tests to CPT codes and does not specify which CPT corresponds to whole genome sequencing; CPT options are not referenced in this document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The BCBS_FEP_20459 policy does not provide coverage criteria for whole genome sequencing (it refers WES/WGS to a separate policy 2.04.102). Because coverage criteria for WGS are not addressed in this provided policy document, coverage cannot be affirmed under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15712,
+    "output_tokens": 2374,
+    "total_tokens": 18086
+  }
+}

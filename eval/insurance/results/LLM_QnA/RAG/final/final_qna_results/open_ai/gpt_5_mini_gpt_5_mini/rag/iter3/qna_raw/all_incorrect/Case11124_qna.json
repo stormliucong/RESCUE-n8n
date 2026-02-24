@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole-exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy standard exome criteria allow testing for developmental delay/intellectual disability with onset prior to age 18; the patient is an infant with developmental delay, meeting the age/onset criterion (Policy: STANDARD EXOME SEQUENCING I.A.2.a)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the patient and family history be evaluated by a Board-Certified or Board-Eligible Medical Geneticist or an APGN (STANDARD EXOME SEQUENCING I.F–G). The patient was referred by an oncologist and there is no documentation that a Board-Certified/Eligible Medical Geneticist or APGN evaluated the patient, so ordering/provider requirements are not met per the policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'apparently nonsyndromic developmental delay with onset prior to age 18' as an indication for exome sequencing (STANDARD EXOME SEQUENCING I.A.2.a). The infant has developmental delay and prior targeted FISH testing was nondiagnostic, supporting a likely genetic etiology."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy discusses that exome sequencing may be considered after CMA or focused testing are unrevealing but does not state a strict, universal prior-test requirement (criteria emphasize ruling out alternate etiologies and that presentation not fit a syndrome with available single-gene/panel testing). Patient has prior nondiagnostic FISH, but policy does not mandate specific prior tests as an absolute requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy includes 'family history strongly suggestive of a genetic etiology' as one of the criteria supporting exome sequencing (STANDARD and RAPID EXOME SEQUENCING I.A.2.b and RAPID I.C.2.f). The patient has an older sibling with childhood hearing impairment, relevant to this criterion."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires pre- and post-test counseling by an appropriate provider (e.g., Board-Certified Medical Geneticist, Certified Genetic Counselor, or APGN) (STANDARD EXOME SEQUENCING I.F). The record states pre-test counseling was completed and post-test counseling is planned but does not specify the credential of the counselor, so it cannot be determined whether the counseling met the policy's provider requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy associates standard exome sequencing (proband) with CPT code 81415 in the Coverage Criteria / Policy Reference Table (see 'Standard Exome Sequencing' examples and coding)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and clinical indication (developmental delay, nondiagnostic prior testing, relevant family history) meet policy medical-necessity criteria, the policy explicitly requires evaluation by a Board-Certified/Board-Eligible Medical Geneticist or an APGN (STANDARD EXOME SEQUENCING I.F–G) and specified pre-/post-test counseling by an appropriate provider. The documentation does not show a geneticist/APGN evaluation nor the credentials of the counselor, therefore the policy requirements are not met and the test is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12227,
+    "output_tokens": 2191,
+    "total_tokens": 14418
+  }
+}

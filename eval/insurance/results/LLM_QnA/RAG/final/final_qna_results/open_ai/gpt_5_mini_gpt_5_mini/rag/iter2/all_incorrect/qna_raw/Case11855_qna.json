@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states chromosomal microarray (CMA) is being ordered to assess for copy number variants."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy outlines clinical indications for CMA but does not specify age-based eligibility limits for postnatal CMA testing; the patient's age (14) is not restricted by the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define specific ordering-provider specialty or provider-type requirements for CMA; no ordering-provider restrictions are stated."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy states CMA is medically necessary for nonsyndromic developmental delay/ID, ASD, or multiple congenital anomalies. The patient has a congenital anomaly limited to a single organ system and no documented developmental delay/ID or ASD, so does not meet the policy's defined clinical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate completion of specific prior tests as a coverage prerequisite for CMA (it notes fragile X and CMA are first-tier in guidelines), so there is no explicit required prior-test sequence defined; note the patient did have nondiagnostic fragile X testing."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's coverage criteria do not require specific family-history or consanguinity criteria for CMA; the patient's maternal aunt with breast cancer is not addressed as a criterion in this policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy recommends formal genetic counseling by an experienced specialist for genetic testing; the patient had pre-test counseling with a genetic specialist and plans for post-test follow-up, meeting the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT/billing codes to CMA or other genetic tests, so a CPT code cannot be determined from the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy CMA is medically necessary only for nonsyndromic developmental delay/ID, ASD, or multiple congenital anomalies. The patient has a single-organ congenital anomaly without documented DD/ID or ASD, so CMA is not covered per the policy indications."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15724,
+    "output_tokens": 2089,
+    "total_tokens": 17813
+  }
+}

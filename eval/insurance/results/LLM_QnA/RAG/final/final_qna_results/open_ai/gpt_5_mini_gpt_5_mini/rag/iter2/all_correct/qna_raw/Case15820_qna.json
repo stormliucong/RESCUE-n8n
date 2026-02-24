@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information states chromosomal microarray (CMA) has been ordered; policy addresses CMA for developmental disorders."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing to be performed on a living child or adult; patient is a 31-year-old adult, meeting this age-related criterion."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires pre- and post-test genetic counseling and that the rendering laboratory be qualified, but it does not specify required ordering provider specialty or type for CMA."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists developmental delay/intellectual disability as an accepted presentation; patient has DD/ID, no prior CMA, and diagnosis not made clinically alone, meeting the diagnostic criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires no previous CMA testing as a condition; patient has no prior genetic testing reported, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy only excludes CMA for family history of chromosome rearrangement in phenotypically normal individuals; patient has maternal early breast cancer (not a chromosome rearrangement), so relevant family-history exclusion is not present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling; patient completed multiple pre-test counseling sessions with a genetic counselor and plans post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "Policy lists CPT 81228 for constitutional chromosomal microarray (array CGH); this corresponds to the requested CMA."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets policy coverage criteria: living adult with unexplained DD/ID, no prior CMA, appropriate pre-test counseling, and no exclusionary family history; therefore CMA is covered per the guideline."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10097,
+    "output_tokens": 1435,
+    "total_tokens": 11532
+  }
+}

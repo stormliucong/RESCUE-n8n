@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient clinical information explicitly states germline BRCA1 and BRCA2 (BRCA1/2) testing is being ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided Cigna Hereditary Cancer Syndrome policy does not state any age-based eligibility criteria for BRCA1/2 single-gene testing; no age threshold is specified in this document."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The policy requires pre- and post-test genetic counseling by an appropriate provider for hereditary cancer testing (criteria section). The patient record states no pre-test genetic counseling was completed, so ordering provider requirements (counseling provision) are not met per the policy."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline provided applies to multi‑syndrome panels and refers to a separate 'BRCA Analysis' guideline for BRCA-specific criteria; the BRCA-specific medical indication criteria are not present in the provided document, so medical-necessity criteria for BRCA1/2 single-gene testing cannot be confirmed from this policy text."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy requires no previous hereditary cancer multigene panel or testing for genes on the panel as a condition (i.e., testing only reimbursable once per lifetime). The patient has no prior genetic testing, satisfying the 'no previous testing' requirement in the policy."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy emphasizes family cancer history for eligibility (examples given). The patient’s family history notes a mother with a hematologic/immunologic disorder, not a cancer history specified in the policy; thus relevant family cancer criteria are not present."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy explicitly requires pre- and post-test genetic counseling by an appropriate provider for hereditary cancer testing. The patient did not complete pre-test genetic counseling, so counseling requirements are not met per the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy lists panel procedure codes (e.g., 81432, 81479) and other lab-specific codes but does not map any of the answer-option CPT codes explicitly to single-gene BRCA1/2 testing; therefore the best corresponding code from the provided policy cannot be determined."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based solely on the provided policy: required pre-test genetic counseling is an explicit requirement for hereditary cancer testing pathways in this document and was not completed; additionally, BRCA-specific medical-necessity criteria are referenced in a separate guideline not included here and thus cannot be confirmed. Because counseling requirements are unmet and the policy does not permit confirmation of medical necessity from the supplied text, coverage cannot be supported under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 11927,
+    "output_tokens": 3936,
+    "total_tokens": 15863
+  }
+}

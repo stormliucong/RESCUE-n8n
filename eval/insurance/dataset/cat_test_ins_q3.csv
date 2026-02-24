@@ -1,0 +1,67 @@
+﻿Category,Test,Insurance
+Congenital anomalies & structural malformations,WES,BCBS_FEP
+Metabolic / laboratory abnormalities,WES,BCBS_FEP
+Neurological / seizure-related disorders,WES,BCBS_FEP
+Cardiac / cardiorespiratory episode,WES,BCBS_FEP
+Hearing / vision impairments,WES,BCBS_FEP
+Congenital anomalies & structural malformations,WGS,BCBS_FEP
+Metabolic / laboratory abnormalities,WGS,BCBS_FEP
+Neurological / seizure-related disorders,WGS,BCBS_FEP
+Cardiac / cardiorespiratory episode,WGS,BCBS_FEP
+Hearing / vision impairments,WGS,BCBS_FEP
+Breast Cancer,BRCA1/2,BCBS_FEP
+Ovarian Cancer ,BRCA1/2,BCBS_FEP
+Pancreatic Cancer,BRCA1/2,BCBS_FEP
+Prostate Cancer,BRCA1/2,BCBS_FEP
+Neurodevelopmental disorders,CMA,BCBS_FEP
+Congenital anomalies & structural malformations,CMA,BCBS_FEP
+Neurological / seizure-related disorders,WES,Cigna
+Neurodevelopmental disorders,WES,Cigna
+Congenital anomalies & structural malformations,WES,Cigna
+Complex Presentation,WES,Cigna
+Prenatal findings,WES,Cigna
+Neurological / seizure-related disorders,WGS,Cigna
+Neurodevelopmental disorders,WGS,Cigna
+Congenital anomalies & structural malformations,WGS,Cigna
+Complex Presentation,WGS,Cigna
+Breast Cancer,BRCA1/2,Cigna
+Ovarian Cancer ,BRCA1/2,Cigna
+Prostate Cancer,BRCA1/2,Cigna
+Pancreatic Cancer,BRCA1/2,Cigna
+Congenital anomalies & structural malformations,CMA_developmental_disorder,Cigna
+Neurodevelopmental disorders,CMA_developmental_disorder,Cigna
+Other Cancer,CMA_tumor,Cigna
+Neurodevelopmental disorders,WES,UHC
+Congenital anomalies & structural malformations,WES,UHC
+Neurological / seizure-related disorders,WES,UHC
+Hearing / vision impairments,WES,UHC
+Metabolic / laboratory abnormalities,WES,UHC
+Psychiatric / neuropsychiatric disorders,WES,UHC
+Developmental regression,WES,UHC
+Growth and dysmorphology,WES,UHC
+Immunologic / hematologic disorders,WES,UHC
+Growth and dysmorphology,WES,UHC
+Family / consanguinity,WES,UHC
+Prenatal findings,WES,UHC
+Neurodevelopmental disorders,WGS,UHC
+Congenital anomalies & structural malformations,WGS,UHC
+Neurological / seizure-related disorders,WGS,UHC
+Hearing / vision impairments,WGS,UHC
+Metabolic / laboratory abnormalities,WGS,UHC
+Psychiatric / neuropsychiatric disorders,WGS,UHC
+Developmental regression,WGS,UHC
+Growth and dysmorphology,WGS,UHC
+Immunologic / hematologic disorders,WGS,UHC
+Family / consanguinity,WGS,UHC
+Breast Cancer,BRCA1/2,UHC
+Ovarian Cancer,BRCA1/2,UHC
+Pancreatic Cancer,BRCA1/2,UHC
+Composite Cancer,BRCA1/2,UHC
+Other Cancer,BRCA1/2,UHC
+Lynch syndrome Cancer,BRCA1/2,UHC
+Complex Presentation,BRCA1/2,UHC
+Colorectal polyposis,BRCA1/2,UHC
+Prostate Cancer,BRCA1/2,UHC
+Congenital anomalies & structural malformations,CMA,UHC
+Neurodevelopmental disorders,CMA,UHC
+Prenatal findings,CMA,UHC

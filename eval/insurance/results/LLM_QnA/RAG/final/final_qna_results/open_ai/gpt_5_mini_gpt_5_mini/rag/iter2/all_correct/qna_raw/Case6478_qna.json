@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being referred for germline BRCA1 and BRCA2 testing per the clinical information. Basis: patient referral information (requested test) and policy groups BRCA1/2 testing under hereditary cancer testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies age criteria for BRCA1/2 testing in the context of breast cancer (e.g., ≤65) but does not impose an age limit for BRCA1/2 testing when the indication is metastatic prostate cancer. Basis: UnitedHealthcare policy coverage rationale listing 'metastatic prostate cancer' as an indication without age restriction."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends genetic counseling and involving providers with genetics expertise but does not state a specific mandatory ordering provider specialty for BRCA1/2 testing. Basis: 'Pre-test genetic counseling is strongly recommended' and guidance that providers familiar with hereditary cancer should conduct evaluations, without a strict ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has metastatic prostate cancer, which the policy explicitly lists as a clinical indication for germline hereditary cancer testing (including BRCA1/2). Basis: Coverage Rationale: 'Metastatic prostate cancer' included among personal history criteria for testing."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of specific prior tests (e.g., tumor testing) before germline BRCA1/2 testing for metastatic prostate cancer; no prior-test prerequisite is specified. Basis: Coverage Rationale lists indications but does not mandate prior testing for this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy recognizes pancreatic cancer as a BRCA-related cancer; the patient’s father had pancreatic cancer (a first‑degree relative), which is relevant to eligibility. Basis: Definitions and coverage rationale list pancreatic cancer as a BRCA-related cancer and family history criteria."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' pre-test genetic counseling but does not make counseling an absolute coverage requirement; the patient did not have pre-test counseling, but counseling is not mandated for coverage per the policy text. Basis: 'Pre-test genetic counseling is strongly recommended...' in Coverage Rationale."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "CPT 81162 corresponds to BRCA1/BRCA2 full sequence analysis plus full duplication/deletion analysis, which matches the requested germline BRCA1/2 testing. Basis: Applicable Codes section lists 81162 for BRCA1 and BRCA2 full sequence and duplication/deletion analysis."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets policy coverage criteria: personal history of metastatic prostate cancer (explicitly listed) and relevant family history (father with pancreatic cancer). Counseling is recommended but not required. Basis: UnitedHealthcare Coverage Rationale and Prostate Cancer testing criteria listing metastatic prostate cancer and BRCA-related family history as indications for germline testing."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 38617,
+    "output_tokens": 1810,
+    "total_tokens": 40427
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Request was specifically for BRCA1 and BRCA2 testing for hereditary breast/ovarian cancer risk given a sister with epithelial ovarian cancer."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage criteria are based on personal/family cancer history rather than strict age limits; no age-based exclusion applies to this request."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP policies specify requirements around genetic counseling and appropriate documentation rather than a narrow ordering-provider specialty requirement; the patient information does not state any provider-specialty restriction."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical indication met: an unaffected individual with a first-degree relative (sister) diagnosed with epithelial ovarian cancer meets BCBS_FEP clinical criteria for BRCA testing."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP BRCA coverage does not require completion of prior diagnostic genetic tests (the prior nondiagnostic CMA is unrelated); no specific prior-test prerequisite is documented for BRCA testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family-history criterion met: patient has a first-degree relative with ovarian cancer, which is a specified qualifying family history for BRCA testing under the payer policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS_FEP requires documentation of pre-test genetic counseling/informed consent for hereditary cancer testing; the record states no documentation of pre-test genetic counseling."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "Standard CPT codes for BRCA1/BRCA2 (e.g., 81211, 81213) are not among the provided options, so none of the listed codes clearly correspond to BRCA1/2 full testing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical/family-history indications for BRCA testing under BCBS_FEP, coverage requires documented pre-test genetic counseling; absence of that documentation means the request does not meet all payer coverage/counseling requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1963,
+    "output_tokens": 2382,
+    "total_tokens": 4345
+  }
+}

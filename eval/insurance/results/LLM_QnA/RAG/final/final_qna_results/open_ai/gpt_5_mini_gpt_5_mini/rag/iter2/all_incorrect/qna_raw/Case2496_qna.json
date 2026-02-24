@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states 'whole exome sequencing (WES)' is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy defines age-based criteria for standard and rapid exome (e.g., infancy, developmental onset <18) but does not provide explicit prenatal/fetal age eligibility for WES in this document and instead refers to a separate prenatal policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criteria (Standard Exome I.F and PLUGS) require evaluation and pre/post counseling by a Board‑Certified/Board‑Eligible Medical Geneticist or APGN; the ordering provider here is a neonatologist and no geneticist/APGN evaluation is documented."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Standard exome criteria require either specific presentations (e.g., developmental delay <18, multiple congenital anomalies) or TWO of listed features (one is 'family history including consanguinity'). The case documents consanguinity but lacks a second listed feature clearly meeting the policy's two‑feature requirement, so defined medical indications in this policy are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy suggests exome may be considered after chromosome microarray or focused testing is uninformative, but it does not mandate specific prior tests for all situations; patient had nondiagnostic FISH but the policy does not explicitly require FISH/CMA prior to WES in prenatal cases within this document."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly lists 'family history strongly suggestive of a genetic etiology, including consanguinity' as a qualifying criterion; the patient has parental consanguinity and a sibling with sudden unexplained death."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider (Board‑Certified Medical Geneticist, Certified Genetic Counselor, or APGN); the patient has no genetic counseling documented."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The policy lists CPT 81415 as the common code for standard exome sequencing (proband), which corresponds to the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy, all listed criteria (clinical indication, alternate etiologies considered, lack of a well-described syndrome, predicted impact on management, pre/post-test counseling, and evaluation by a medical geneticist/APGN) must be met for coverage. The case lacks documented geneticist/APGN evaluation and required genetic counseling and does not meet the policy's defined clinical indication thresholds, so coverage is not supported per the provided policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12244,
+    "output_tokens": 2242,
+    "total_tokens": 14486
+  }
+}

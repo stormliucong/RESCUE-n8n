@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The case states 'BRCA1 and BRCA2 testing has been ordered' — therefore BRCA1/2 testing is explicitly requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna BRCA coverage is driven by personal/family cancer history and not by a strict age cutoff; no payer age-based eligibility criterion is applicable here."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna policies specify clinical indications for BRCA testing but do not limit ordering to a particular provider specialty in the policy language provided; the record only notes a cardiologist ordered testing, which is not itself a stated disqualifier."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Cigna covers BRCA testing for individuals with personal or family histories suggestive of hereditary breast/ovarian (and related) cancer syndromes. This patient’s indication is congenital hearing/visual impairment and a sibling with an unexplained respiratory/altered responsiveness event — none meet Cigna’s BRCA medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna BRCA coverage generally requires documentation of relevant personal/family cancer history; there is no payer requirement that specific prior genetic tests (beyond e.g., known familial mutation testing when applicable) must precede full BRCA sequencing in this scenario, and the provided prior FISH result is unrelated."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Cigna’s BRCA family-history criteria require relatives with breast, ovarian, pancreatic, or related cancers. The provided family history (sibling with a brief resolved unexplained event) does not meet those specified family-history criteria."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "While genetic counseling is recommended in Cigna guidance for hereditary cancer testing, the policy's coverage decision is based on clinical indications; the provided information documents no pre-test counseling, but the policy language does not explicitly make documented pre-test counseling an absolute prerequisite for coverage in all cases."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "None of the listed CPT options correspond to the usual BRCA1/BRCA2 sequencing CPT codes (which are typically in the 81211–81217 range). Therefore no provided code accurately maps to BRCA1/2 testing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Applying Cigna BRCA coverage criteria: the patient lacks a personal or qualifying family history of BRCA‑related cancers and the clinical reason (hearing/visual impairment) is unrelated to hereditary breast/ovarian cancer — thus the test does not meet medical necessity criteria and is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1989,
+    "output_tokens": 2309,
+    "total_tokens": 4298
+  }
+}

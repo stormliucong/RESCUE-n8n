@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states 'whole genome sequencing (WGS) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes tests for 'children' and for 'infants' but does not give a specific numeric age cutoff for WGS eligibility; age alone is not a clearly defined numeric criterion in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requirement #1: individual must be evaluated by a clinician with expertise in clinical genetics. Patient is being evaluated by a medical geneticist, which meets this provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy: Whole genome sequencing is considered investigational for diagnosis in all other situations; rapid WGS is medically necessary only for critically ill infants in NICU/PICU meeting specific criteria. This infant is not described as critically ill or in intensive care, so the medical-indication criteria for WGS are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy for standard sequencing requires prior standard workup (eg, CMA and/or targeted single-gene testing) or previous testing failure. Patient only had nondiagnostic Fragile X testing; there is no documentation of prior CMA or targeted testing required by the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of developmental delay as relevant. Patient has an older sibling with severe intellectual disability, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy criterion #1 requires counseling about risks of genetic testing by a clinician experienced in genetics. The patient record states there is no documented pre-test genetic counseling."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing (WGS); among the provided CPT options, 81425 corresponds to whole genome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, WGS is investigational for diagnosis except as rapid WGS for critically ill infants in NICU/PICU. The infant is not described as critically ill or in intensive care, required prior testing (eg, CMA) and pre-test genetic counseling are not documented; therefore WGS is not covered under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14822,
+    "output_tokens": 2672,
+    "total_tokens": 17494
+  }
+}

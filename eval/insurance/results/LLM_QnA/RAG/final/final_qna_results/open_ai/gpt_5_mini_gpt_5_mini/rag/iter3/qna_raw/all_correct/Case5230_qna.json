@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states the neurology referral is for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists age-related items (e.g., features diagnosed by age 18) for WES eligibility and the patient is 15. The patient’s age meets the policy age-related thresholds (e.g., criteria that reference diagnosis by 18 years)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician. The referral/order is from neurology, which satisfies the provider requirement per the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage requires either (a) clinical history strongly suggesting a genetic cause plus one of a specific list (e.g., multiple congenital anomalies) or (b) clinical history strongly suggesting a genetic cause plus two or more listed features (e.g., congenital anomaly plus additional features). The patient has a single congenital anomaly and a sibling with an inborn error of metabolism, but the documentation does not show the required combination (multiple congenital anomalies or two or more listed features) explicitly required by the policy, so medical indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate a specific prior test before outpatient postnatal WES (except that targeted single-gene/panel testing should be done if a specific syndrome is suspected). The patient has already had a nondiagnostic CMA, but the policy does not require CMA prior to WES in this setting."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history (other first- or second-degree family members with similar clinical features) and consanguinity as relevant features. The patient has a sibling with an inborn error of metabolism, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make counseling a required coverage criterion. The patient declined counseling; counseling is recommended but not a stated coverage requirement in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for exome (sequence analysis) which corresponds to clinical WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient’s age and ordering provider meet policy requirements and the patient has a relevant family history and prior nondiagnostic CMA, UnitedHealthcare’s WES coverage criteria require either multiple congenital anomalies (different organ systems) or the presence of two or more listed features (or other listed single-feature criteria). The clinical information documents a single congenital anomaly and a sibling with an IEM but does not document the required combination of features in the policy; therefore the request does not meet the policy’s defined medical necessity criteria for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36915,
+    "output_tokens": 3326,
+    "total_tokens": 40241
+  }
+}

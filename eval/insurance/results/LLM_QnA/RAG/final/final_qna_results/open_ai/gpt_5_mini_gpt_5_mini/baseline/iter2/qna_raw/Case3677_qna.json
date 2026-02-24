@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The note states she is \"undergoing BRCA1/2 testing.\""
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA coverage is based on clinical/family indications rather than strict age cutoffs; no age-based exclusion is specified for BRCA1/2 testing in this clinical context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies require an authorized/licensed ordering clinician and documentation of counseling but do not narrowly restrict ordering to a single specialty; the NP referral and completed counseling meet typical provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Per UHC/NCCN-based criteria, testing is indicated for individuals with a personal history of breast cancer and a strong family history of BRCA-related cancers (mother with pancreatic cancer and multiple additional affected maternal relatives)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA testing does not require prior genetic tests (CMA was done and nondiagnostic but is not a prerequisite). No specific prior test completion is required for BRCA1/2 testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a relevant family history (mother with pancreatic cancer and at least two additional affected maternal relatives), which is a stated eligibility criterion for BRCA testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires documentation of pre-test genetic counseling for BRCA testing; the patient completed pre-test counseling and plans post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Of the provided CPT choices, 81277 best corresponds to comprehensive BRCA1/BRCA2 gene testing (full gene analysis) used for BRCA1/2 diagnostic testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "The patient meets UHC clinical coverage criteria (personal breast cancer plus strong family history of BRCA-related cancers), has documented pre-test counseling, and ordering clinician is within typical authorized providers, so BRCA1/2 testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1997,
+    "output_tokens": 1809,
+    "total_tokens": 3806
+  }
+}

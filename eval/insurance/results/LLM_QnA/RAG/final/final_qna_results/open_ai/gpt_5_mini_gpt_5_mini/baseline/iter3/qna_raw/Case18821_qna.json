@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The obstetrician explicitly requests fetal whole exome sequencing (WES) at 22 weeks to evaluate multiple congenital anomalies."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP genomic sequencing policies do not impose age limits for prenatal/fetal testing; no age-based exclusion applies to a 22‑week fetus."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The record shows an obstetrician ordered the test. BCBS FEP policies typically require a qualified ordering clinician but do not universally mandate a specific specialty in all cases; the case file does not state a payer-specific required ordering specialty."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP medical-necessity criteria for prenatal WES support testing when fetal imaging shows multiple congenital anomalies across organ systems and a genetic etiology is suspected to inform perinatal management—criteria met here."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP generally requires prior standard cytogenetic testing (karyotype/CMA) and/or targeted testing to be non-diagnostic before fetal WES; the patient has no prior genetic testing documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a reported maternal aunt with dysmorphic features — a family history suggestive of a possible heritable syndrome, which is relevant to eligibility under BCBS FEP criteria that consider family history supportive of genetic testing."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "BCBS FEP typically requires documentation of pre-test genetic counseling for genomic sequencing tests; there is no documentation of pre-test genetic counseling in the record."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (WES), which best matches the requested fetal whole exome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication (multiple fetal anomalies) meets BCBS FEP medical-necessity criteria for prenatal WES, required prerequisites (documented pre-test genetic counseling and prior standard cytogenetic testing such as CMA/karyotype or targeted testing) are not documented; therefore coverage would be denied per BCBS FEP conditions."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1991,
+    "output_tokens": 1771,
+    "total_tokens": 3762
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states 'diagnostic whole exome sequencing (WES)' is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose a general age limit for standard WES; age limits are specified for rapid exome (≤12 months) but the order is for WES (not specified as rapid). Patient is 5 weeks old but the request doesn't state rapid sequencing, so no age-based requirement is explicitly applicable."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criteria (Standard and Rapid Exome sections, criteria F and G) require pre-/post-test counseling and that the patient/family history be evaluated by a Board-Certified/Board-Eligible Medical Geneticist or an APN in Genetics. Patient info documents pre-test genetic counseling and planned post-test genetics follow-up but does not state the patient/family history was evaluated by a Board-Certified/Board-Eligible Medical Geneticist or APGN, so ordering/provider-specific requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy Standard Exome criterion A.2.b lists 'Multiple congenital abnormalities affecting unrelated organ systems' as an indication. Patient is a five-week-old with multiple congenital anomalies that do not fit a well-delineated syndrome, matching this criterion."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires alternate etiologies to be considered (criterion B) and notes that ES is often considered after nondiagnostic chromosome microarray or focused testing, but it does not mandate a specific prior test as an absolute prerequisite in the stated criteria. Patient had nondiagnostic karyotype; no mandatory prior-test requirement is explicitly defined."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family history 'strongly suggestive of a genetic etiology, including consanguinity' as a relevant criterion. Although the patient has a sibling with a brief resolved unexplained event, the record does not document a family history that meets the policy's threshold of 'strongly suggestive' or consanguinity."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires pre- and post-test genetic counseling by an appropriate provider (criteria F). The patient record states pre-test genetic counseling has been completed and post-test follow-up with genetics is planned, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The policy lists CPT 81415 as the common code for standard (and rapid) exome sequencing proband testing; the requested test is WES for the proband."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets a medical indication for WES (multiple congenital anomalies) and counseling is documented, the policy also requires that the patient and family history be evaluated by a Board-Certified/Board-Eligible Medical Geneticist or an APGN (criterion G). The record does not document such an evaluation (only that pre-test counseling occurred and post-test genetics follow-up is planned). Because not all policy-required provider/evaluation criteria are met, coverage criteria are not fully satisfied per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12239,
+    "output_tokens": 3240,
+    "total_tokens": 15479
+  }
+}

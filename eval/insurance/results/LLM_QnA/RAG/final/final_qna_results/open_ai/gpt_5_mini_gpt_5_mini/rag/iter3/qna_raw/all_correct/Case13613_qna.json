@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information states whole exome sequencing (WES) was requested for fetal evaluation at 22 weeks; policy differentiates WES/WGS and includes prenatal WES criteria."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose an age cutoff for prenatal WES; age-based criteria in the policy apply to postnatal indications (e.g., diagnosis by 18 years) but prenatal testing has no age requirement specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prenatal WES be ordered by or in consultation with a medical geneticist or maternal-fetal medicine specialist. The record documents a pre-test discussion with a genetic specialist (meets the consultation requirement)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists as an indication for prenatal WES: fetus with one or more findings including multiple congenital anomalies (must affect different organ systems). The patient has fetal imaging identifying multiple structural anomalies, which meets this clinical criterion."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires that chromosome microarray analysis (CMA) and/or karyotyping have been performed and were uninformative prior to prenatal WES. Patient data documents only Fragile X testing (nondiagnostic) and does not state CMA/karyotype were done."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy recognizes family history (other first- or second-degree family members with similar features) as a relevant criterion. Patient has a maternal aunt with dysmorphic features (relevant second-degree family history)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state counseling as an explicit mandatory coverage criterion for prenatal WES; patient did have pre-test discussion with a genetic specialist, but counseling is not defined as required for coverage in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Applicable CPT codes in the policy list 81415 for exome (sequence analysis) which corresponds to WES; 81415 is the primary exome sequencing code."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication (multiple fetal structural anomalies) and consultation with a genetic specialist are met, the policy explicitly requires prior CMA and/or karyotyping to have been performed and uninformative for prenatal WES coverage; those prior test results are not documented, so policy criteria for coverage are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36940,
+    "output_tokens": 1956,
+    "total_tokens": 38896
+  }
+}

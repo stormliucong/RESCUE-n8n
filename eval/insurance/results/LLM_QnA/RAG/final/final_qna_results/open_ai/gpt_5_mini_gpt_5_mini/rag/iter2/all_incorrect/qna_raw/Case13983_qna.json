@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age criterion: WES/WGS medically necessary for pediatrics under 21. Patient is a 7-week-old infant (<21 years), meeting age requirement."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual to have been evaluated by a clinician with expertise in clinical genetics. The record documents the ordering provider as a gynecologist and pre-test counseling by a genetic counselor, but does not document evaluation by a clinician with expertise in clinical genetics."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'infant with high-risk BRUE' and 'significantly abnormal ECG (possible channelopathies, arrhythmias, cardiomyopathies, myocarditis or structural heart disease)' as qualifying clinical features. The patient has a high-risk BRUE and significantly abnormal ECG, satisfying clinical indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "One qualifying pathway in policy is prior genetic testing being non-diagnostic with continued strong suspicion. The patient had prior FISH testing that was nondiagnostic and there remains strong clinical suspicion."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy cites family history of developmental delay (and other genetic conditions) as relevant. The patient has a maternal uncle with unexplained developmental regression, meeting the family-history criterion."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling about risks of genetic testing by someone experienced in genetic medicine. The patient had pre-test counseling completed with a genetic counselor and plans for post-test follow-up."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing (WGS). Policy lists CPT code 81425 among covered codes associated with genome sequencing; 81425 corresponds to WGS in the policy's coding table."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, clinical indications, prior nondiagnostic testing, family history, and pre-test counseling are met, the policy requires evaluation by a clinician with expertise in clinical genetics as an explicit criterion for standard WGS; that evaluation is not documented. Additionally, the policy notes FEP members should be referred to the FEP Medical Policy manual, and the patient is billed through BCBS_FEP — therefore coverage cannot be confirmed under this policy as all required criteria are not documented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14928,
+    "output_tokens": 2775,
+    "total_tokens": 17703
+  }
+}

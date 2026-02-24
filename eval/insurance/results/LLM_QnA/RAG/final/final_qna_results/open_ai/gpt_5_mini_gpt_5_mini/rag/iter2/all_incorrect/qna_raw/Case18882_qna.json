@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient chart states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: WES coverage indication 1 applies to individuals <18 years. Patient is 8 years old, meeting the age criterion."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion II.1.a requires evaluation by an ABMGG board‑certified medical geneticist or an ABGC board‑certified genetic counselor; the referral/ordering provider is a developmental pediatrician and no such genetics evaluation is documented."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indication II.1 covers evaluation of unexplained congenital or neurodevelopmental disorder in <18; the patient has multiple congenital anomalies affecting several organ systems, consistent with that indication."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy II.1 does not explicitly mandate prior testing (e.g., CMA or karyotype) for non‑fetal patients <18; the document only requires specific prior testing for fetal indications."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the family reports maternal long QT syndrome, the WES pediatric coverage criteria in the policy do not specify family history or consanguinity as a required eligibility criterion for this indication."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy II.1.a explicitly requires pre‑test counseling by an ABMGG medical geneticist or an ABGC genetic counselor; the family declined pre‑test genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to WES; therefore a CPT code is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and clinical indication meet Policy II.1, all coverage criteria must be met. Pre‑test counseling/evaluation by an ABMGG or ABGC (II.1.a) was not completed (family declined pre‑test counseling and no genetics evaluation is documented), so WES does not meet all required coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 22465,
+    "output_tokens": 2080,
+    "total_tokens": 24545
+  }
+}

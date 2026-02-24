@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose an absolute age cutoff for WGS; age-related items in the policy refer to features (e.g., ID by 18, seizure onset <3 years) rather than an age eligibility limit, so no explicit age-based exclusion/requirement applies to this 3-week-old."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a medical geneticist."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage for WGS requires clinical presentation nonspecific and one of the defined feature sets (e.g., multiple congenital anomalies or other combinations). The infant has a single-organ congenital anomaly (Hirschsprung) and a sibling with intellectual disability, but does not meet the policy's required feature combinations (e.g., multiple congenital anomalies or ≥2 listed features). Additionally the policy states if a specific/targeted gene test is available for a suspected syndrome, that targeted testing should be done prior to WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "The policy requires that neither CMA nor WES have been performed prior to WGS; the record shows Fragile X testing only and no CMA or WES, so this criterion (no prior CMA/WES) is met."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history among features supporting WGS. The patient has an older sibling with severe intellectual disability (diagnosed by age 18), which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is \"strongly recommended\" prior to WGS but does not make counseling an explicit coverage requirement; the record documents no pre-test counseling but counseling is not mandated as a coverage criterion."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Applicable CPT for whole genome sequence analysis per the policy is 81425 (Genome; sequence analysis)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the ordering provider and absence of prior CMA/WES meet policy requirements, the patient does not meet the policy's medical indication criteria for WGS (policy requires either multiple congenital anomalies or specified combinations of features; this infant has a single-organ congenital anomaly and family history but does not satisfy the required feature set, and policy directs targeted testing when a specific syndrome/test is suspected). Therefore WGS is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36931,
+    "output_tokens": 3655,
+    "total_tokens": 40586
+  }
+}

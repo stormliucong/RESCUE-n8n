@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient specifically was referred for germline BRCA1 and BRCA2 testing per the clinical information."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies age-based BRCA testing criteria for breast cancer (e.g., ≤65) but does not specify an age cutoff for BRCA1/2 testing in individuals with metastatic prostate cancer; the patient's age (52) is not addressed by an explicit age restriction in the policy for this indication."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy strongly recommends genetic counseling and involvement of providers with genetics expertise but does not mandate a specific ordering provider specialty or restrict which provider may order BRCA1/2 testing for coverage."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists metastatic prostate cancer as an indication for germline testing (Prostate Cancer section and Coverage Rationale: 'Metastatic prostate cancer') and includes BRCA1/2 among prostate cancer susceptibility genes; the patient has metastatic prostate cancer and a BRCA-related family history (father with pancreatic cancer)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of specific prior tests (e.g., tumor testing or other genetic tests) as a prerequisite for germline BRCA1/2 testing in a patient with metastatic prostate cancer."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy family-history criteria recognize pancreatic cancer as a BRCA-related cancer; the patient has a first-degree relative (father) with pancreatic cancer, which is relevant to BRCA testing eligibility."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states pre-test genetic counseling is 'strongly recommended' but does not make pre-test counseling a mandatory coverage requirement; the patient did not have pre-test counseling, but the policy does not require it as a condition of coverage."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Applicable codes list 81162 for BRCA1/BRCA2 full sequence analysis plus duplication/deletion analysis, which best corresponds to comprehensive germline BRCA1/2 testing requested."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy Coverage Rationale and Prostate Cancer criteria, germline BRCA1/2 testing (and/or multigene testing including BRCA1/2) is medically necessary for individuals with metastatic prostate cancer and is further supported by the patient's family history of pancreatic cancer (a BRCA-related cancer). Pre-test counseling is recommended but not required for coverage per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 38617,
+    "output_tokens": 2101,
+    "total_tokens": 40718
+  }
+}

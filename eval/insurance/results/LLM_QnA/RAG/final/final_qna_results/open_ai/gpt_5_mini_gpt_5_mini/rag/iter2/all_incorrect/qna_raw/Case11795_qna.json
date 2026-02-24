@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being ordered after nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP cardiomyopathy policy discusses pediatric evaluation but does not set explicit age-based eligibility cutoffs for genetic testing."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends genetic counseling and referral to experts but does not specify a required ordering provider specialty or type for coverage."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy coverage is limited to individuals with signs/symptoms of dilated cardiomyopathy (idiopathic after negative workup). The infant has an abnormal ECG concerning for channelopathy/arrhythmia and possible cardiomyopathy but no documented diagnosis of dilated cardiomyopathy or documentation that DCM is idiopathic after a negative workup; therefore the patient does not meet the policy's specific DCM indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy requires a negative workup for secondary causes before comprehensive genetic testing for idiopathic DCM. The record notes only a nondiagnostic CMA and not completion of the standard DCM workup (eg, echocardiography, evaluation for secondary causes)."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy specifies family-history criteria for targeted testing when there is a first-degree relative with DCM and a known familial variant. The patient has a sibling with intellectual disability, not a family history of DCM or a known familial DCM variant."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy recommends formal genetic counseling by an experienced provider. The patient has documented pre-test genetic counseling with plans for post-test follow-up, which aligns with the policy's counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT 81415 corresponds to clinical exome sequencing reporting and interpretation."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the BCBS_FEP idiopathic dilated cardiomyopathy policy, comprehensive genetic testing is covered for individuals with signs/symptoms of DCM that are idiopathic after a negative workup. This infant lacks a documented diagnosis of DCM, has not completed the required negative workup for idiopathic DCM, and has no family history of DCM/known familial variant; therefore coverage criteria are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10982,
+    "output_tokens": 2584,
+    "total_tokens": 13566
+  }
+}

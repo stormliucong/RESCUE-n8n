@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) was ordered by the medical geneticist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is written for children (pediatric population); the patient is 12 years old, which meets the 'children' age category referenced in the policy and related guidelines."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics; the ordering provider is a medical geneticist, which satisfies this requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy defines medical necessity for standard WES for unexplained congenital/neurodevelopmental disorders and for rapid WGS/WES in critically ill infants; it states 'Whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations.' The patient is a non-critically ill child with multiple congenital anomalies, so WGS is investigational per the policy and does not meet a defined medical indication for WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 3 requires previous genetic testing (e.g., chromosomal microarray) to be nondiagnostic before WES/WGS; the patient had CMA previously performed and reported nondiagnostic, satisfying the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance lists family history of developmental delay as relevant; the family reports a sibling with developmental delay, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires counseling about potential risks of genetic testing by an individual experienced in genetics; the patient had pre-test counseling completed and post-test counseling planned, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to WES or WGS; no CPT guidance is present in the text supplied."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the policy: standard WES may be medically necessary for a child with unexplained congenital anomalies after nondiagnostic CMA, but the policy explicitly states 'Whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations.' The patient is a non-critically ill child and WGS is investigational per the policy; therefore WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14819,
+    "output_tokens": 2569,
+    "total_tokens": 17388
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose an explicit age cutoff for WGS; age-related items in the policy (e.g., diagnoses by 18 years) are feature descriptors rather than strict age exclusions, so no specific age restriction is specified for this neonate."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a neurologist, which meets the policy requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy coverage for WGS requires clinical presentation nonspecific and one of the listed features such as 'multiple congenital anomalies (must affect different organ systems)'. The neonate has multiple congenital anomalies affecting several organ systems and a family member with similar features; WGS was ordered by an approved specialist, so clinical criteria are met."
+    },
+    "Q4": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires that 'Neither CMA nor WES have been performed' for WGS to be covered. Patient record documents prior FISH (nondiagnostic) but does not state whether chromosome microarray (CMA) has or has not been performed, so there is insufficient information to confirm this required prior-test condition."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' as a relevant criterion. The patient has an older sibling with multiple congenital anomalies, which meets this family-history criterion."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is 'strongly recommended' prior to WES/WGS but does not make counseling an explicit coverage requirement. The patient declined counseling, but counseling is not specified as mandatory for coverage in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 as 'Genome ... sequence analysis' (genome/WGS). The requested test is WGS, so 81425 best corresponds."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on policy, WGS is medically necessary when results are expected to influence management, ordered by an approved provider, clinical presentation is nonspecific, and features such as multiple congenital anomalies are present. The neonate meets these clinical criteria and the ordering provider requirement; prior testing shows nondiagnostic FISH and no documented CMA or WES (policy requires neither CMA nor WES performed). Therefore, assuming CMA has not been performed (not documented), the request meets the policy coverage rationale for WGS."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36935,
+    "output_tokens": 2833,
+    "total_tokens": 39768
+  }
+}

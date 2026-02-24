@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case text explicitly states 'whole exome sequencing (WES) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP WES coverage policy does not impose an absolute age cutoff; WES is applied across ages. The patient is a 7‑week‑old infant, which does not conflict with age expectations for WES."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS FEP policies typically require an appropriate ordering clinician and documentation of counseling but do not universally restrict ordering to a single specialty; the record shows a pediatrician ordered testing and pre‑test counseling was completed, and the policy does not specify a prohibitive ordering‑provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP WES coverage supports testing for unexplained early‑onset neurologic presentations (recurrent seizure‑like events/BRUE) when a genetic etiology is suspected. The infant has recurrent witnessed seizure‑like events and a high‑risk BRUE, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "BCBS FEP criteria commonly expect prior appropriate cytogenomic testing (chromosomal microarray) or documentation why such testing is not informative before WES. The patient had a nondiagnostic conventional karyotype, but no CMA is reported, so a required prior test (CMA) has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history of neurologic disease (maternal uncle with movement disorder, dystonia and ataxia) is present and is a relevant supportive family history for a suspected genetic neurologic disorder per BCBS FEP criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS FEP typically requires documentation of pre‑test genetic counseling for WES; the record documents that pre‑test counseling was completed with plans for post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The best corresponding CPT among the options for whole exome sequencing is 81415 (exome sequencing)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the infant meets clinical indications and counseling and family history are documented, BCBS FEP coverage expectations include prior cytogenomic testing (chromosomal microarray) which has not been completed (only nondiagnostic karyotype reported). Because required prior testing is incomplete, coverage would not be approved at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2004,
+    "output_tokens": 1958,
+    "total_tokens": 3962
+  }
+}

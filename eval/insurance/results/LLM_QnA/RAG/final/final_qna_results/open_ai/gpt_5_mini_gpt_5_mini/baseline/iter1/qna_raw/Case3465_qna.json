@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Statement explicitly says whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC pediatric genomic policies apply to children; the patient is 2 years old (meets age-based eligibility for pediatric WGS/WES evaluations)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Ordering clinician is a medical geneticist and testing was done with pre-test genetic counseling — meets UHC requirements that a genetics provider or appropriate specialist order/coordinate testing."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria list unexplained developmental delay/intellectual disability as an indication for comprehensive genomic testing (WGS/WES); the patient has developmental delay and intellectual disability without a specific syndrome."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior first‑line testing (chromosomal microarray and Fragile X for males when indicated) before WGS/WES. Only Fragile X is documented as nondiagnostic; CMA status is not provided, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "UHC policies note family history/consanguinity of similar phenotype can support testing. Although there is a family history of Long QT syndrome in the father, this is unrelated to the child’s developmental phenotype and does not constitute relevant family history for neurodevelopmental testing."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC commonly requires genetic counseling pre- and post-test. Pre-test counseling was completed and post-test counseling is planned, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "81425 corresponds to whole genome sequencing (WGS) interpretation/reporting and is the appropriate CPT among the provided options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indication, age, provider, and counseling requirements, UHC requires prior first‑line testing (notably CMA) before WGS; CMA is not documented as completed, so WGS does not meet coverage criteria at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1981,
+    "output_tokens": 1484,
+    "total_tokens": 3465
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info explicitly states whole genome sequencing (WGS) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy's WGS coverage criteria do not set an age exclusion/limit for outpatient WGS; age-based limits are not specified as a barrier for this indication."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the request was made by neurology (neurologist), meeting the provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires nonspecific presentation and one of specified features. The infant has nonspecific multiple congenital anomalies and a second-degree relative (maternal aunt) with a congenital anomaly, meeting the clinical indication list in the policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires that neither CMA nor WES have been performed prior to WGS. Patient had a nondiagnostic karyotype; there is no record of CMA or WES, so the policy condition (no prior CMA/WES) is satisfied."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' as an indicator; patient has a maternal aunt with a congenital anomaly (a second-degree relative)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy 'strongly recommends' genetic counseling prior to WGS; patient completed pre-test genetic counseling with a genetic specialist, meeting the counseling recommendation."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT codes list 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare policy, WGS is medically necessary when results are expected to influence management and all listed criteria are met. The infant has a nonspecific phenotype (multiple congenital anomalies), a relevant family history (maternal aunt), ordering provider is a neurologist, neither CMA nor WES were performed, and pre-test genetic counseling was completed; results will be reviewed with the neurology team and family. These facts satisfy the policy coverage criteria for WGS."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36945,
+    "output_tokens": 3520,
+    "total_tokens": 40465
+  }
+}

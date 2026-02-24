@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy eligibility is defined for 'children' (WES/WGS for children with unexplained congenital or neurodevelopmental disorders); patient is 7 years old, meeting the 'child' criterion in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics (including counseling) prior to testing. The patient was referred by a neurologist and pre-test genetic counseling was offered but declined, so the specified requirement is not met."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication includes children with unexplained congenital disorders; the patient has significant childhood-onset hearing/visual impairment and a family history (sibling with early epileptic encephalopathy), consistent with a suspected genetic disorder."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES/WGS when previous genetic testing has failed to yield a diagnosis; the patient had prior Fragile X testing that was nondiagnostic, satisfying the 'previous genetic testing failed to yield a diagnosis' clause."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists relevant family history (developmental/neurologic disorders). The patient has a sibling with epileptic encephalopathy before age 3, which is a relevant family history."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly requires counseling by an experienced genetics clinician prior to testing; the family declined pre-test genetic counseling, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT codes for WGS/WES or other genetic tests."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, all criteria must be met (including evaluation by a clinician with expertise in clinical genetics and pre-test counseling). Although age, medical indication, prior testing, and family history are consistent, the required pre-test genetics evaluation/counseling was not completed, so the test does not meet the policy's all-criteria medical necessity requirement."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14854,
+    "output_tokens": 2463,
+    "total_tokens": 17317
+  }
+}

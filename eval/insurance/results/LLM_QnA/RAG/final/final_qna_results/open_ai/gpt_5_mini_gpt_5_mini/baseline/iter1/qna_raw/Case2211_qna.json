@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The referral explicitly requests BRCA1 and BRCA2 (breast cancer susceptibility) testing."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC BRCA coverage is driven by personal/family history and presence of a known familial pathogenic variant rather than strict age cutoffs; no age-based exclusion or specific age requirement is specified for BRCA testing in this clinical context."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies typically permit physician-ordered hereditary cancer testing; no payer-specific ordering-provider specialty limitation is stated in the provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has a known BRCA2 pathogenic variant in the mother and multiple affected relatives plus a personal history of a primary solid tumor — meets UHC medical indication criteria for BRCA testing (known familial mutation and strong family/personal cancer history)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "There are no required prior laboratory tests documented that must be completed before BRCA testing in this scenario; the record states no prior genetic testing, which is acceptable given the clinical indication."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is directly relevant: mother carries a known BRCA2 pathogenic variant and there are at least two additional affected blood relatives on the same side — satisfies family-history/known-familial-variant criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre-test genetic counseling was completed with a genetic specialist and post-test follow-up is planned, meeting UHC counseling expectations for hereditary cancer testing."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Given a known familial BRCA2 pathogenic variant, the appropriate covered test is targeted single-site familial variant analysis (CPT 81162) rather than full BRCA sequencing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Patient meets payer clinical criteria (known familial BRCA2 pathogenic variant, multiple affected relatives, personal cancer history), counseling is documented, and the appropriate targeted familial-variant test (81162) would be covered by UHC."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2000,
+    "output_tokens": 2070,
+    "total_tokens": 4070
+  }
+}

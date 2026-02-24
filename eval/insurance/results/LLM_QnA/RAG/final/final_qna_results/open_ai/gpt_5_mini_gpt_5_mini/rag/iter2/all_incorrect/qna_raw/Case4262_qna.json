@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical info states the infant was referred for diagnostic whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies standard WES/WGS is medically necessary for pediatric patients <21 with unexplained congenital or neurodevelopmental disorders; the patient is a five-week-old infant (under 21)."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires the individual be evaluated by a clinician with expertise in clinical genetics. The chart states referral by an oncologist and that pre-test genetic counseling was completed, but it does not explicitly state who ordered the test or that a clinician with genetics expertise performed the required evaluation; insufficient information to determine whether the ordering provider meets the policy requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indications include unexplained multiple congenital anomalies or presentation not fitting a well-described syndrome and prior genetic testing non-diagnostic. The patient has multiple congenital anomalies that do not fit a well-delineated syndrome and prior karyotype testing was nondiagnostic, meeting the listed indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "One of the policy criteria is previous genetic testing non-diagnostic; the patient had a nondiagnostic karyotype, which satisfies the prior-testing criterion in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of BRUE in a sibling as an example supporting WES/WGS; patient history includes a sibling with a BRUE, so relevant family history is present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling by someone with genetics expertise; patient information documents that pre-test genetic counseling was completed and post-test genetics follow-up is planned, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy coding lists 81415 among covered procedure codes for exome sequencing (WES); 81415 is the appropriate CPT code corresponding to WES in the policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient clinically meets the WES indications in the policy (age, congenital anomalies, nondiagnostic prior testing, BRUE family history, counseling completed), Section II of the policy states FEP PPO products should be referred to the FEP Medical Policy Manual. The patient will proceed through BCBS_FEP, and this policy directs that FEP coverage must be determined by the FEP medical policy (not contained here); therefore coverage cannot be affirmed under this provided policy and is answered as not covered per this policy document."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14873,
+    "output_tokens": 3566,
+    "total_tokens": 18439
+  }
+}

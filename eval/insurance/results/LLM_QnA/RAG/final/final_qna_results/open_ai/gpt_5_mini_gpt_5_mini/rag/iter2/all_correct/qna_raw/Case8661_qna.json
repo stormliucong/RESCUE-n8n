@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states 'whole genome sequencing (WGS) is requested.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy age-related language allows features 'diagnosed by 18 years of age'; patient is 7 years old, which meets the age-related requirement in the WGS criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; patient was referred by the child's neurologist, which meets this provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires either (A) the proband to have epileptic encephalopathy onset <3 years or (B) two or more listed features (e.g., significant hearing/visual impairment plus a second listed feature). The patient has significant hearing/visual impairment (1 feature) and a sibling with epileptic encephalopathy (family history) but does not have two of the second-list features or the proband-level epileptic encephalopathy required by the first-list criterion, so the specified medical indication for WGS is not met per the policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy for WGS requires that neither CMA nor WES have been performed; patient previously had Fragile X testing only and has not had CMA or WES, satisfying the prior-test requirement for WGS."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Patient has a first-degree family history (sibling) of epileptic encephalopathy before age 3; the policy lists 'other first- or second-degree family member(s) with similar clinical features' as a relevant feature, so a pertinent family history is present."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WGS/WES but does not define genetic counseling as a strict coverage requirement; thus counseling requirements for coverage are not specified as mandatory."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy Applicable Codes map genome sequence analysis (whole genome sequencing) to CPT code 81425."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, ordering provider, and prior-test conditions are met (Q1,Q2,Q4), the policy's medical necessity criteria for WGS require either the proband to have epileptic encephalopathy onset <3 years or two or more listed clinical features in the proband. The patient only has one proband feature (significant hearing/visual impairment) and the sibling's epilepsy does not satisfy the proband-level feature requirement; therefore the request does not meet the policy's clinical indication for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36963,
+    "output_tokens": 3728,
+    "total_tokens": 40691
+  }
+}

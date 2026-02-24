@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states testing is being pursued with whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy allows rapid WGS/WES only for critically ill infants in NICU/PICU and otherwise describes WGS as investigational; the patient is a 15-year-old non-critically ill child and does not meet the narrow age/acuity criteria for medically necessary WGS per the policy statement."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies clinician-with-genetics-expertise and counseling requirements for WES but does not provide explicit ordering-provider specialty/type requirements specific to WGS in the policy statement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines medical indications for rapid WGS in critically ill infants only; for non-critically ill children WGS is stated as investigational. Although the patient has congenital anomalies, she is not critically ill and therefore does not meet a medical indication for WGS per the policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing failed to yield diagnosis (eg, CMA and/or targeted testing) or standard workup; the patient had prior FISH testing that was nondiagnostic, which meets the policy's requirement of previous genetic testing failing to yield a diagnosis."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy highlights family history (eg, affected siblings) as relevant to suspected genetic disorders; the patient has a sibling with a similar congenital anomaly, which is relevant to eligibility considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling prior to testing; the patient has been seen multiple times by a genetic counselor with planned post-test counseling, satisfying the counseling requirement described in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document text does not list or map specific CPT codes for WGS/WES, so a best-fit CPT code is not specified in the policy content."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy statement, whole genome sequencing is considered investigational for diagnosis in all other situations outside the rapid-critically-ill-infant indication; the 15-year-old non-critically ill patient requesting WGS therefore does not meet coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14831,
+    "output_tokens": 3199,
+    "total_tokens": 18030
+  }
+}

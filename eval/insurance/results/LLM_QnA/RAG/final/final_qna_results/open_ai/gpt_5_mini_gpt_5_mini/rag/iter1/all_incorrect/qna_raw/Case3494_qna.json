@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES for children with unexplained congenital anomalies or neurodevelopmental disorders; the infant is 6 weeks old (an infant) and thus within the pediatric age range referenced by the policy (including infants)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion #1 requires evaluation by a clinician with expertise in clinical genetics and counseling about risks. Patient facts indicate referral by a general pediatrician and that genetic counseling was declined, so the policy-required genetic evaluation/counseling requirement is not met."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL criteria including prior genetic testing considerations (eg, CMA and/or targeted single-gene testing) or previous testing failure before standard WES in non-critically ill children. The patient has no prior genetic testing documented, so the specified medical indication criteria are not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy lists prior testing (eg, chromosomal microarray and/or targeted single-gene testing) as part of the criteria for standard WES in non-critically ill children; the patient has had no prior genetic testing."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance lists relevant family history items as part of evaluation. The patient has a sibling with dysmorphic features (a positive family history relevant to a suspected genetic disorder)."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy explicitly states genetic counseling should be performed by someone with expertise; the family declined genetic counseling, so the policy-required counseling criterion is not satisfied."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT code 81415 corresponds to clinical exome/exome sequencing and is the best match among the provided code options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, standard WES is medically necessary only when ALL criteria are met (including evaluation by a clinical genetics expert with counseling and prior appropriate genetic testing unless critically ill). The infant is not documented as having been evaluated/counseled by a genetics expert, genetic counseling was declined, and no prior genetic testing (eg, CMA) was performed; therefore coverage criteria are not met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14828,
+    "output_tokens": 2383,
+    "total_tokens": 17211
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states 'whole exome sequencing (WES) has been ordered for diagnostic clarification.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose a strict upper- or lower-age cutoff in typical policy language; age-based eligibility is not specified for WES in this adult patient (73 y/o)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC allows ordering by a treating physician when medical necessity is documented; the test was referred by a neurologist and pre-test counseling was completed by a genetic specialist, meeting provider/counseling expectations."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC considers WES medically necessary for unexplained, significant medical conditions suspected to be genetic when prior targeted testing is nondiagnostic; the patient has a major unexplained organ-system abnormality and prior FISH testing was nondiagnostic."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies typically require prior targeted testing as clinically appropriate (e.g., gene-specific tests, panels, CMA depending on phenotype), but the specific prior-test requirements for this adult single-organ-system presentation are not explicitly defined here; only nondiagnostic FISH is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "UHC guidance notes family history can be relevant to genetic testing decisions; the patient reports a sister with triple-negative breast cancer, which is a pertinent family history for hereditary cancer predisposition and may support testing considerations."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC commonly requires or strongly recommends pre-test genetic counseling for WES; the record states pre-test counseling was completed with a genetic specialist, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome sequencing (whole exome sequencing) diagnostic testing; this best matches the ordered WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Based on UHC criteria applied to this case: adult with unexplained major abnormality suspected to be genetic, prior targeted testing (FISH) nondiagnostic, ordering physician involvement and documented pre-test genetic counseling — WES meets medical necessity and is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1983,
+    "output_tokens": 2094,
+    "total_tokens": 4077
+  }
+}

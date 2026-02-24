@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-related references (e.g., features diagnosed by 18 years) and WES criteria apply to pediatric patients; the patient is 8 years old, which meets the policy age-related criteria for pediatric indications (e.g., congenital anomalies, developmental concerns). (Policy: Coverage Rationale for WES)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering/referring provider is a developmental pediatrician. (Policy: Coverage Rationale for WES)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'multiple congenital anomalies (must affect different organ systems)' as a qualifying clinical indication for WES; the patient has multiple congenital anomalies affecting several organ systems. (Policy: Coverage Rationale for WES)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES coverage criteria do not mandate specific prior tests for postnatal WES in multisystem congenital anomalies (prenatal WES requires prior CMA/karyotype), so no required prior test completion is specified for this indication. (Policy: Coverage Rationale for WES; Prenatal WES section differentiates prenatal requirements)."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists consanguinity or other first-/second-degree family members with similar clinical features as a qualifying feature. The family history provided (mother with long QT syndrome) is a family history of a cardiac condition but is not described as 'similar clinical features' to the proband's multisystem congenital anomalies, and consanguinity is not present. (Policy: Coverage Rationale for WES)."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES but does not make pre-test counseling a stated coverage requirement; patient declined pre-test counseling. The policy therefore does not specify counseling as a mandatory criterion for coverage. (Policy: Description of Services; Coverage Rationale)."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for 'Exome...; sequence analysis', which corresponds to WES for the proband. (Policy: Applicable Codes table)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, WES is medically necessary when ordered by an approved provider type and the patient has qualifying features; the 8-year-old patient has multiple congenital anomalies affecting different organ systems and the test is ordered by a developmental pediatrician, meeting WES coverage criteria. (Policy: Coverage Rationale for WES)."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36940,
+    "output_tokens": 2151,
+    "total_tokens": 39091
+  }
+}

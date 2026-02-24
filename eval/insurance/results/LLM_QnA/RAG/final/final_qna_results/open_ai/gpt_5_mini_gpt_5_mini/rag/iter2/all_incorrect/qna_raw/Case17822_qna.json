@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient record explicitly states whole genome sequencing (WGS) has been ordered as the next-tier diagnostic test after a nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy criteria apply to \"children\" with unexplained congenital anomalies; patient is 13 years old, which meets the age-related description for pediatric testing in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics. The order was placed by a medical geneticist, which satisfies the ordering-provider requirement in the policy."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "The policy's medical indications for WGS are limited to rapid WGS in critically ill neonates/infants. The patient is a 13-year-old who is not critically ill; therefore she does not meet the policy-defined medical indication for WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates prior genetic testing (eg, chromosomal microarray analysis) is expected before exome/genome sequencing. The patient had a nondiagnostic CMA, satisfying the prior testing requirement described in the policy."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "The policy lists specific family-history findings relevant to testing (eg, developmental delay, inborn error of metabolism, BRUE, arrhythmia). The patient's family history (a sibling with short stature) is not among the specified relevant family-history criteria."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires counseling by a clinician experienced in genetic medicine prior to testing. The patient/family declined genetic counseling prior to testing, so the counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT code mappings for WGS; no CPT code is listed in the policy text supplied."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy, WGS is considered investigational for diagnosis in non-critically ill children (only rapid WGS in critically ill infants is listed as medically necessary). The patient is a non-critically ill 13-year-old; hence WGS is not covered under the policy. (Also counseling requirement was not met.)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14838,
+    "output_tokens": 2862,
+    "total_tokens": 17700
+  }
+}

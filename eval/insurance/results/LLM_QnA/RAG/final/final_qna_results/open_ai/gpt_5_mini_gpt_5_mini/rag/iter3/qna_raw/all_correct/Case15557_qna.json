@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states testing being pursued with whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UHC policy does not impose a strict age limit for WGS; age-specific items in the criteria (e.g., ID diagnosed by 18 years) are feature- related rather than an absolute exclusion/inclusion based solely on age."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the patient was referred by/being evaluated by neurology (neurologist), meeting the ordering-provider requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires clinical history suggesting a genetic cause plus either one major feature or two or more listed features. The patient has a congenital anomaly (present since birth) and 'other first- or second-degree family member(s) with similar clinical features' (affected sibling) — two listed features, satisfying the clinical indication for WGS."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy states WGS is appropriate when 'Neither CMA nor WES have been performed.' Patient had nondiagnostic FISH but no CMA or WES reported, satisfying the prior-test requirement for WGS."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' and consanguinity as relevant criteria; the patient has a sibling with a similar congenital anomaly, which is directly relevant."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling prior to WES/WGS but does not state counseling as a formal coverage requirement. Patient has documented genetic counseling visits, but counseling is a recommendation in the policy rather than a strict coverage criterion."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's Applicable Codes list maps 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' to CPT code 81425, which corresponds to WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UHC policy, WGS is medically necessary when (1) neither CMA nor WES have been performed (met), (2) ordered by an approved specialist (neurologist — met), and (3) clinical history suggests a genetic cause with qualifying features (patient has congenital anomaly and an affected sibling — two listed features). Therefore the request meets the policy coverage criteria for WGS."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36940,
+    "output_tokens": 2481,
+    "total_tokens": 39421
+  }
+}

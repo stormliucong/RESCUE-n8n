@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states \"Whole exome sequencing (WES) is being ordered.\""
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy allows standard exome for developmental delay/intellectual disability with onset <18 years and for multiple congenital anomalies; patient is 2 years old, meeting age-related criteria."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by a Board-Certified/Board-Eligible Medical Geneticist or APN in Genetics and counseling by an appropriate provider; patient data notes pre-test counseling but does not specify provider credentials or that a geneticist/APGN evaluated the family history."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has multiple congenital anomalies and ongoing developmental concerns (meets policy criteria: multiple congenital abnormalities and/or developmental delay as a likely genetic etiology)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate a specific prior test (e.g., CMA) as an absolute requirement in the standard exome criteria; patient had nondiagnostic karyotype but the policy does not explicitly require CMA prior to WES."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history strongly suggestive of a genetic etiology as a criterion; patient has maternal Long QT syndrome, which is a relevant family history."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires pre- and post-test counseling by an appropriate provider (e.g., Board-Certified Medical Geneticist, Certified Genetic Counselor, or APGN); patient notes pre-test counseling and planned post-test follow-up but does not specify the counselor's credentials."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy associates CPT 81415 with standard exome sequencing (proband) for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical/age criteria (multiple congenital anomalies, developmental concerns), policy requires evaluation by a Board-Certified/Board-Eligible Medical Geneticist or APGN and counseling by an appropriate credentialed provider. Those provider-credential requirements are not documented in the patient information, so coverage criteria are not fully met per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 12224,
+    "output_tokens": 2472,
+    "total_tokens": 14696
+  }
+}

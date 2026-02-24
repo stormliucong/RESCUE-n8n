@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being requested. (Patient fact)"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES may be medically necessary for children with unexplained neurodevelopmental disorders. The patient is 10 years old, which meets the policy's age/child criteria. (BCBS_FEP policy statement)"
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion 1 requires evaluation by a clinician with expertise in clinical genetics and counseling. Patient has documentation of pre-test genetic counseling and a described phenotype and family history, which satisfy the policy's provider/counseling requirement. (BCBS_FEP policy criterion 1; patient fact: pre-test genetic counseling completed, phenotype and family history provided)"
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires ALL criteria including: (1) genetics evaluation/counseling (met), (2) evidence there is potential for change in management (not documented in the patient information), and (3) genetic etiology considered most likely despite previous genetic testing or prior testing failed to yield diagnosis / next would be invasive testing (prior testing noted was FISH nondiagnostic but the patient record does not document the required potential for a change in management). Because criterion 2 is not documented, the patient does not meet all required medical-indication criteria. (BCBS_FEP policy statement; patient facts)"
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy criterion 3 expects prior genetic testing (examples: CMA and/or targeted single-gene testing) or prior testing that failed to yield a diagnosis. The patient had prior FISH testing that was nondiagnostic, but there is no documentation of standard prior testing such as chromosomal microarray (CMA) or targeted single-gene testing as described in the policy. Therefore required prior testing per policy is not documented as completed. (BCBS_FEP policy criterion 3; patient fact: FISH nondiagnostic only)"
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy notes family history of developmental delay is relevant. Patient has a brother with moderate to severe intellectual disability in childhood, which is relevant to eligibility under the policy. (BCBS_FEP policy guidelines; patient fact)"
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling (evaluation by clinician with genetics expertise and counseling). Patient information documents pre-test genetic counseling completed with plans for post-test follow-up, meeting the policy's counseling requirement. (BCBS_FEP policy criterion 1; patient fact)"
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS_FEP WES/WGS policy document does not specify CPT billing codes for WES; no CPT mapping is included in the policy text. (Policy text lacks CPT code listings)"
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, counseling, and family history criteria are met, the policy requires ALL listed criteria for WES to be considered medically necessary. The patient record does not document (a) the required evidence that WES would lead to a potential change in management and (b) completion of the standard prior genetic testing described in policy (eg, CMA/targeted testing). Because all policy criteria are not met, the test is not covered per the BCBS_FEP policy. (BCBS_FEP policy statement; patient facts)"
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14850,
+    "output_tokens": 2908,
+    "total_tokens": 17758
+  }
+}

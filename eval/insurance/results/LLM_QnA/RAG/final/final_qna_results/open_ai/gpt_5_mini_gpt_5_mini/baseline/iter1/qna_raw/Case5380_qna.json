@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states 'whole genome sequencing (WGS) is requested.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WGS/WES coverage criteria are applied to clinical indications rather than a strict age cutoff; no payer-specific age exclusion for infants is indicated in the policy, so age-based criteria are not specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC allows appropriate specialists (e.g., pediatric neurologists) to order advanced genomic testing; the referral is from neurology which meets typical ordering-provider requirements in UHC policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC medical necessity criteria support WGS/WES for infants with unexplained recurrent seizures/BRUE to identify an underlying genetic etiology; the patient has recurrent seizure‑like events fitting that indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC generally requires prior chromosomal microarray for unexplained neurodevelopmental disorders before WES/WGS when applicable; the patient had a nondiagnostic CMA, satisfying that prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WGS coverage is based on clinical phenotype (e.g., unexplained seizures); specific family-history or consanguinity criteria are not required for coverage in this context, so family history is not a specified criterion."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policy requires documentation of pre-test genetic counseling by a qualified provider for WGS/WES; the family declined pre-test genetic counseling, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT code 81425 corresponds to WGS (interpretation and report)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although indication, prior CMA, ordering provider, and age are appropriate per UHC criteria, the required pre-test genetic counseling was declined and not documented; per UHC coverage policy this missing counseling requirement results in noncoverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1981,
+    "output_tokens": 1418,
+    "total_tokens": 3399
+  }
+}

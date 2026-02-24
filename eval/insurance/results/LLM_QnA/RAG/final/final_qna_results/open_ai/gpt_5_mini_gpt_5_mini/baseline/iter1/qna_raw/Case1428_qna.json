@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES/WGS coverage policy evaluates clinical indications (developmental delay, congenital anomalies, suspected genetic disorder) rather than specifying strict age cutoffs; the infant's age (3 weeks) does not conflict with UHC criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires that WES/WGS be ordered by or in consultation with a genetics specialist; the test is being ordered while the patient is being evaluated by a medical geneticist, satisfying provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage criteria support WES/WGS for suspected genetic disorders such as congenital anomalies and unexplained neurodevelopmental disorders. The patient has Hirschsprung disease and a sibling with severe intellectual disability, meeting medical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC policy expects appropriate prior testing (commonly chromosome microarray and fragile X testing) before WES/WGS for developmental/intellectual concerns. Fragile X testing was done and nondiagnostic, but no chromosomal microarray (CMA) is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria consider family history of similar phenotypes relevant; there is a first‑degree sibling with severe intellectual disability, which is clinically relevant to WGS eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC requires documentation of pre‑test genetic counseling for WES/WGS. The record states there is no documented pre‑test genetic counseling."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to whole genome sequencing (sequence analysis and interpretation), which matches the ordered test (WGS)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the indication and ordering provider meet UHC criteria, required preconditions are lacking: no documented pre‑test genetic counseling and no documented prior chromosomal microarray. Per UHC policy these deficiencies would result in noncoverage until requirements are met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1969,
+    "output_tokens": 1755,
+    "total_tokens": 3724
+  }
+}

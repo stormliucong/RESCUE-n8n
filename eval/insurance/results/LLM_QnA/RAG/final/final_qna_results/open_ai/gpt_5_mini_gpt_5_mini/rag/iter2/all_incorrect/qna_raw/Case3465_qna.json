@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy: standard WES/WGS may be medically necessary for pediatrics under 21. Patient is 2 years old, which meets the age criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling provided. Patient was evaluated by a medical geneticist and pre-test counseling was completed by a genetic counselor, meeting provider/counseling requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy requires (1) evaluation by genetics expert, (2) potential for change in management, and (3) one of: prior genetic testing non-diagnostic OR clinical presentation not fitting a well-described syndrome. Patient has developmental delay/ID without a specific syndrome suspected and prior Fragile X testing was nondiagnostic, satisfying the clinical indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "One acceptable policy pathway is 'previous genetic testing is non-diagnostic' and the patient had prior Fragile X testing that was nondiagnostic, fulfilling that prior-test criterion."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists family history of Long QT syndrome as an example of a relevant family history; the patient’s father has Long QT syndrome."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling by someone with expertise; patient had pre-test counseling with a genetic counselor and plans for post-test counseling, meeting genetic counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy coding list includes 81425 among procedure codes covered when medically necessary; 81425 corresponds to whole-genome sequencing in the policy's covered codes."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per policy, standard WGS may be considered medically necessary for pediatrics <21 when criteria are met. The patient (age 2) was evaluated by a genetics expert, had counseling, prior genetic testing was nondiagnostic, family history supports genetic etiology, and relevant CPT code (81425) is listed as covered when medically necessary."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14864,
+    "output_tokens": 3103,
+    "total_tokens": 17967
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1/2 testing per the clinical information; policy FEP 2.04.02 specifically addresses BRCA1 and BRCA2 testing and is the applicable document."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly states testing of minors for BRCA1/2/PALB2 is considered investigational. The patient is 18 years old (an adult), so age does not preclude testing under the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires testing be performed in a setting with 'suitably trained health care providers' able to give pre- and post-test counseling but does not specify exact ordering-provider specialties or credentials; the ordering provider (oncologist) is noted in the patient info but the policy does not explicitly list allowed ordering provider types."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy medical necessity criteria require a personal history of qualifying cancers or a family history of cancers meeting specific criteria. The patient has no personal cancer history and a family history limited to a maternal uncle with dystonia/ataxia (non-cancer), which does not meet the policy's family/cancer criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy recommends testing an affected family member first when possible and describes testing strategies, but it does not state a specific required prior diagnostic test that must be completed before testing an unaffected individual in all situations; the patient had prior nondiagnostic karyotype (not referenced as a required prior test in this policy)."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family-history criteria (breast, ovarian, pancreatic, prostate, etc.) for eligibility. The provided family history (maternal uncle with dystonia and ataxia) is not a qualifying cancer family history per the policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy states testing should be performed in a setting with appropriate pre- and post-test genetic counseling and that genetic counseling is recommended; the patient information states no pretest genetic counseling has been conducted, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy document (FEP 2.04.02) does not provide or map specific CPT codes for BRCA1/2 testing; therefore an appropriate CPT code cannot be determined from the provided policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Adjudication based on the policy: patient does not meet medical necessity criteria (no personal qualifying cancer history and no family cancer history meeting policy criteria), and required pre-test genetic counseling has not been completed; therefore BRCA1/2 testing is not covered under the policy for this patient."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18924,
+    "output_tokens": 2139,
+    "total_tokens": 21063
+  }
+}

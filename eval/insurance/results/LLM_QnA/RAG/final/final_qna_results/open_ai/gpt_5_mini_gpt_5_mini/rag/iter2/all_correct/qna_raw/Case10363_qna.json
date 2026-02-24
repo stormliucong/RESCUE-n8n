@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not impose a standalone age cutoff for WGS; age-limited items exist for certain features (e.g., ID by 18, seizure onset <3) but no general age exclusion applies to this 7-year-old."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires WGS be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a general practitioner and does not meet the specified provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires either (a) clinical history plus one of: multiple congenital anomalies (multiple systems) or ID/global DD/early epileptic encephalopathy, or (b) clinical history plus two or more listed features. The patient has a single congenital anomaly since birth and no additional listed features; therefore clinical criteria for WGS are not met."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion for WGS states 'Neither CMA nor WES have been performed.' Patient had nondiagnostic FISH and there is no record of prior CMA or WES, satisfying that policy condition."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists consanguinity and first/second-degree relatives with similar clinical features as relevant family-history criteria. Patient’s family history (maternal aunt with pancreatic cancer) does not meet those specified family-history criteria."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy 'strongly recommends' genetic counseling but does not state counseling as a required coverage criterion; although the patient has had pre-test counseling, counseling is not a defined mandatory coverage requirement in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy 'Applicable Codes' lists 81425 as the CPT code for Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis, corresponding to WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage denial: per policy, WGS requires ordering by a specified specialist (medical geneticist, neonatologist, neurologist, or developmental pediatrician) and specific clinical criteria (e.g., multiple congenital anomalies or two or more listed features). The ordering provider is a general practitioner and the patient’s clinical presentation does not meet the policy’s required clinical indication, so WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36961,
+    "output_tokens": 2469,
+    "total_tokens": 39430
+  }
+}

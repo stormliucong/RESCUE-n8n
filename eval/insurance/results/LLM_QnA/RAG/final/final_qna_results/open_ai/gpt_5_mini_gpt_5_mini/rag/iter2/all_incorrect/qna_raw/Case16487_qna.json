@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) was ordered following nondiagnostic FISH."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Patient is a newborn/infant with a high-risk BRUE; the policy explicitly lists infants/children and high-risk BRUE as an eligible clinical scenario for WES/rWES."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires documentation that the individual was evaluated by a clinician with expertise in clinical genetics. Patient info notes an oncologist ordered WES and that pre-test counseling was completed, but does not explicitly document evaluation by a clinician with expertise in clinical genetics, so available information is insufficient to determine compliance."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy Guidelines list 'Infant with high risk stratification on evaluation for a BRUE' (including recurrent events without respiratory infection) as a clinical feature suggesting a genetic disease—patient has recurrent high-risk BRUE events, meeting this medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing (eg, CMA and/or targeted single-gene testing) or failed prior testing; patient had nondiagnostic FISH (prior genetic testing) before WES was ordered, meeting the prior-testing requirement."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies relevant family-history items (eg, BRUE in sibling, developmental delay, inborn error of metabolism, LQTS, sudden unexplained death). The patient’s family history describes a maternal aunt with a severe immunologic/hematologic disorder, which is not one of the listed family-history criteria in the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced individual; patient information indicates pre-test counseling was completed and post-test genetic follow-up is planned, satisfying the counseling requirement as documented."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP WES/WGS policy document does not list or map specific CPT codes to WES; no CPT guidance is included in the policy text."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the policy, WES (or rapid WES) may be considered medically necessary for infants/children with high-risk BRUE when criteria are met. Patient is an infant with recurrent high-risk BRUE (policy-listed clinical feature), prior genetic testing was nondiagnostic (FISH), pre-test counseling was completed, and there is potential to change management—together supporting that WES is covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14838,
+    "output_tokens": 2737,
+    "total_tokens": 17575
+  }
+}

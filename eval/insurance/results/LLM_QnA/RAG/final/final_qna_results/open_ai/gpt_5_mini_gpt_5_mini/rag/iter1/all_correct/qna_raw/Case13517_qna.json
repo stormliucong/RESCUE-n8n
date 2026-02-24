@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient record explicitly states whole exome sequencing (WES) was ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not impose a strict age cutoff for WES; some listed clinical features reference diagnoses by age 18 but no general age exclusion applies to a 16-year-old, so age-based eligibility is not specified as disqualifying."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a developmental pediatrician, which meets the requirement (Coverage Rationale)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Coverage criteria allow WES when clinical history strongly suggests a genetic cause and two or more features (e.g., laboratory abnormalities suggestive of an IEM and other first- or second-degree family members with similar clinical features). The patient has conjugated hyperbilirubinemia (laboratory abnormality suggestive of IEM) and a sibling with lab abnormalities suggestive of an IEM, meeting those criteria (Coverage Rationale)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate specific prior tests before WES in this outpatient, non-prenatal scenario (it only specifies prior testing for certain prenatal situations or when a specific syndrome is suspected)."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'other first- or second-degree family member(s) with similar clinical features' as an applicable criterion; the patient has a sibling with laboratory abnormalities suggestive of an IEM, meeting the family-history criterion (Coverage Rationale)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WES/WGS; the patient completed pre-test counseling with a genetic counselor and has post-test counseling planned, satisfying the counseling recommendation (Description of Services)."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to exome (sequence analysis) for an unexplained constitutional or heritable disorder, which matches the ordered WES (Applicable Codes)."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All applicable policy criteria are met: WES ordered by an approved specialty (developmental pediatrician), clinical history suggests a genetic cause with relevant features (laboratory abnormality suggestive of IEM plus affected sibling), and pre-test genetic counseling completed. Therefore WES is considered medically necessary/covered per the policy's Coverage Rationale."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36953,
+    "output_tokens": 2866,
+    "total_tokens": 39819
+  }
+}

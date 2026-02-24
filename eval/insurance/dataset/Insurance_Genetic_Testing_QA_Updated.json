@@ -1,0 +1,85 @@
+{
+    "questions": [
+        {
+            "id": "Q0",
+            "question": "Based on the patient’s clinical information, which genetic test is explicitly being requested or ordered for this patient?",
+            "options": ["WES", "WGS", "BRCA1/2", "CMA", "Question Unclear", "Not Answerable"]
+        },
+        {
+            "id": "Q1",
+            "question": "Based on the patient’s clinical information and applicable coverage criteria, does the patient’s age satisfy age-related eligibility criteria for the requested genetic test?", 
+            "options": [
+                "Yes – Age-based eligibility criteria are specified for the requested genetic test, and the patient’s age meets those criteria.",
+                "No – Age-based eligibility criteria are specified for the requested genetic test, but the patient’s age does not meet those criteria.",
+                "Not Specified – Age-based eligibility criteria are not specified for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or eligibility criteria do not contain sufficient information to answer it."
+            ]
+        },
+        {
+            "id": "Q2",
+            "question": "Based on the patient’s clinical information and applicable coverage criteria, does the ordering provider satisfy requirements for ordering the requested genetic test?",
+            "options": [
+                "Yes – Ordering provider requirements are specified for this test (e.g., specialty or provider type), and the patient’s ordering provider meets those requirements.",
+                "No – Ordering provider requirements are specified for this test (e.g., specialty or provider type), but the patient’s ordering provider does not meet those requirements.",
+                "Not Specified – Ordering provider requirements are not specified for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or eligibility criteria do not contain sufficient information to answer it."
+            ]
+        },
+        {
+            "id": "Q3",
+            "question": "Based on the patient’s clinical information and applicable coverage criteria, does the patient meet a medical indication or clinical criterion for the requested genetic test (regardless of other eligibility requirements)?",
+            "options": [
+                "Yes – Specific medical indications or clinical criteria are defined for the requested genetic test, and the patient meets at least one of those indications.",
+                "No – Specific medical indications or clinical criteria are defined for the requested genetic test, but the patient does not meet any of those indications.",
+                "Not Specified – Specific medical indications or clinical criteria are not defined for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or eligibility criteria do not contain sufficient information to answer it."
+            ]
+        },
+        {
+            "id": "Q4",
+            "question": "Based on the patient’s clinical information and applicable coverage criteria, has the patient completed required prior tests before the requested genetic test?",
+            "options": [
+                "Yes – Completion of specific prior tests is required, and the patient has completed all such required prior tests.",
+                "No – Completion of specific prior tests is required, but the patient has not completed the required prior tests.",
+                "Not Specified – Specific prior testing requirements are not defined for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or eligibility criteria do not contain sufficient information to answer it."
+            ]
+        },
+        {
+            "id": "Q5",
+            "question": "Based on the patient’s clinical information and applicable coverage criteria, does the patient have a family history or consanguinity relevant to eligibility for the requested genetic test?",
+            "options": [
+                "Yes – Family history or consanguinity criteria are specified for the requested genetic test, and the patient has such a family history or consanguinity.",
+                "No – Family history or consanguinity criteria are specified for the requested genetic test, but the patient does not have such a family history or consanguinity.",
+                "Not Specified – Family history or consanguinity criteria are not specified for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or eligibility criteria do not contain sufficient information to answer it."
+            ]
+        },
+        {
+            "id": "Q6",
+            "question": "Based on the patient’s clinical information and applicable coverage criteria, does the patient’s genetic counseling information meet any counseling requirements for the requested genetic test?",
+            "options": [
+                "Yes – Genetic counseling is required for this test for the requested genetic test, and the patient’s genetic counseling information meets those requirements.",
+                "No – Genetic counseling is required for this test for the requested genetic test, but the patient’s genetic counseling information does not meet those requirements.",
+                "Not Specified – Genetic counseling requirements are not specified for the requested genetic test.",
+                "Question Unclear – The model cannot interpret what the question is asking due to unclear wording, conflicting instructions, or an ill-defined query.",
+                "Not Answerable – The question is well-defined, but the provided patient information and/or eligibility criteria do not contain sufficient information to answer it."
+            ]
+        },
+        {
+            "id": "Q7",
+            "question": "Based on the patient’s clinical information and applicable coverage or billing practices, which CPT code best corresponds to the genetic test requested for this patient?",
+            "options": ["81162", "81277", "81228", "81415", "81425", "Not Specified", "Question Unclear", "Not Answerable"]
+        },
+        {
+            "id": "Q8",
+            "question": "Considering the patient’s clinical information, applicable coverage criteria, and the answers to the previous questions (Q1–Q7), is this genetic test covered?",
+            "options": ["Yes", "No"]
+        }
+    ]
+}

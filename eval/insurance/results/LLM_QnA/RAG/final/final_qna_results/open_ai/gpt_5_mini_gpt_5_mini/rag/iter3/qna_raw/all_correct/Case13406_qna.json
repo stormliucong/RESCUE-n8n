@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient info states Whole Genome Sequencing (WGS) has been ordered by a medical geneticist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists Global Developmental Delay (GDD) as an indication and defines GDD onset prior to 5 years; the infant is 6 weeks old, meeting the age-related definition in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WGS to be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the test was ordered by a medical geneticist."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WGS indications include nonspecific presentation with features such as Global Developmental Delay; the patient is being evaluated for global developmental delay, meeting a defined clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy WGS criteria state 'Neither CMA nor WES have been performed' as a prerequisite; the patient previously had CMA which was nondiagnostic, so the prior-test criterion for WGS is not met."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists consanguinity or other first-/second-degree family members with similar clinical features as relevant criteria; the record notes a sibling with a brief resolved unexplained event (not the same clinical features) and no consanguinity, so the patient does not meet the policy's family/consanguinity criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling is strongly recommended prior to WGS; the patient had pre-test counseling completed and will follow up after results, satisfying the counseling expectation in the policy."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy's applicable CPT mapping lists 81425 as 'Genome (e.g., unexplained constitutional or heritable disorder or syndrome); sequence analysis' corresponding to whole genome sequencing."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although patient meets clinical indication, ordering provider, age, and counseling expectations, the policy requires that neither CMA nor WES have been performed for initial WGS. The patient already had CMA (nondiagnostic), so WGS does not meet the policy's coverage prerequisites."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36966,
+    "output_tokens": 2155,
+    "total_tokens": 39121
+  }
+}

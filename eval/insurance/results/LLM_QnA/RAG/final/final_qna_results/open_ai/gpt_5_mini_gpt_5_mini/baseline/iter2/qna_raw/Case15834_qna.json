@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states 'whole exome sequencing (WES) has been ordered.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC WES criteria apply to pediatric patients with suspected genetic neurodevelopmental disorders; the patient is an infant with early signs of ASD, so age falls within the pediatric population covered by those criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires ordering/authorization by or in consultation with a genetics specialist or appropriate specialist; pre-test counseling was completed with a genetic specialist, indicating appropriate ordering/provider involvement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "UHC medical necessity for WES generally requires unexplained developmental delay/intellectual disability, multiple congenital anomalies, or ASD with additional features (e.g., DD/ID, dysmorphic features). The record documents only early signs of ASD without documented DD/ID or congenital anomalies in the patient, so specific medical indication per policy is not met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC policies require prior first‑line testing (commonly chromosomal microarray and Fragile X testing) before WES. Fragile X testing was nondiagnostic, but no CMA is reported, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a family history of a maternal aunt with a congenital anomaly; UHC considers relevant family history when assessing genetic testing eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documented pre‑test genetic counseling for WES; the record states pre‑test counseling was completed with a genetic specialist, meeting that requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES), which matches the ordered test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, provider, family history, and counseling requirements are met, UHC requires specific clinical indications (e.g., DD/ID or MCA) and completion of prior testing (notably chromosomal microarray) before WES; those criteria are not satisfied, therefore the test would not be covered per UHC policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1974,
+    "output_tokens": 1962,
+    "total_tokens": 3936
+  }
+}

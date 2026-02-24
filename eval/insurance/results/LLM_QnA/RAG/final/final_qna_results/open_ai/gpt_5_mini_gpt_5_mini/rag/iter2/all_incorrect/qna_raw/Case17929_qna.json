@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient info explicitly states that tumor chromosomal microarray (CMA) testing was requested to assess for genomic imbalance after a nondiagnostic karyotype."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes postnatal use of CMA in children but does not set any specific age limits or age-based eligibility criteria for CMA."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify ordering-provider specialty or type requirements for CMA; it discusses genetic counseling but not mandatory ordering-provider criteria."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy states CMA is medically necessary for: apparent nonsyndromic developmental delay/intellectual disability, autism spectrum disorder, or multiple congenital anomalies not specific to a well-delineated syndrome. The record documents a 'major abnormality affecting at least one organ system' but does not document developmental delay/ID, ASD, or multiple congenital anomalies; therefore the patient does not meet the policy-specified indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not require completion of specific prior tests before CMA (in fact CMA is described as a first-line test); although the patient had a nondiagnostic karyotype, the policy does not list prior testing as a coverage prerequisite."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define family history or consanguinity as criteria for CMA eligibility. While the patient has a maternal BRCA1/2 pathogenic variant in the family, the policy does not connect that family history to CMA indication."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends genetic counseling and states it 'should be performed' by experienced personnel, but it does not define genetic counseling as a formal coverage requirement; the patient has documented pretest counseling, but the policy does not make counseling a stated condition of coverage."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy text provided does not reference or map any CPT codes to CMA or other genetic tests, so an applicable CPT code is not specified in the policy document."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based on the policy, CMA is covered only for developmental delay/intellectual disability, ASD, or multiple congenital anomalies not specific to a well-delineated syndrome. The patient's documentation does not meet these policy-defined clinical indications, so under the policy the test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15707,
+    "output_tokens": 2138,
+    "total_tokens": 17845
+  }
+}

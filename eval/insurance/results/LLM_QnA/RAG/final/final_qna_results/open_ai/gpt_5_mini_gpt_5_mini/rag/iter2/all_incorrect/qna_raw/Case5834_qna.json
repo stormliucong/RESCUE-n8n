@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information explicitly states referral for chromosomal microarray (CMA) testing to evaluate a genomic etiology for developmental disorder."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS policy (V.59) covers hereditary cancer genetic testing and does not define age-based eligibility criteria for chromosomal microarray (CMA)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The V.59 policy specifies ordering/provider recommendations for hereditary cancer panels and genetic counseling for panels but does not state ordering provider requirements for CMA."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy text defines medical indications for hereditary cancer panels and specific cancer genes only; it does not provide medical necessity criteria for CMA for intellectual disability."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The hereditary cancer susceptibility policy does not list prior testing requirements (e.g., karyotype, targeted tests) for chromosomal microarray; no CMA-specific prior-test criteria are provided in the document."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has a family history of ovarian cancer (mother), the V.59 policy ties family-history criteria to hereditary cancer testing. The policy does not specify family-history or consanguinity criteria relevant to CMA."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "V.59 discusses genetic counseling requirements for hereditary cancer panels, but the policy does not specify counseling requirements for CMA; although the patient had pre-test counseling, the policy does not address CMA counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The policy lists CPT codes for hereditary cancer gene tests and panels; it does not provide or map a CPT code corresponding to chromosomal microarray (CMA) in the provided text, so a best-fit CPT from the given options cannot be determined from this policy."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Based solely on the provided BCBS policy (V.59) which addresses hereditary cancer susceptibility testing, chromosomal microarray (CMA) for intellectual disability is not addressed and no coverage criteria for CMA appear in this document. Therefore, under this policy text the requested CMA is not supported/covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 41847,
+    "output_tokens": 1587,
+    "total_tokens": 43434
+  }
+}

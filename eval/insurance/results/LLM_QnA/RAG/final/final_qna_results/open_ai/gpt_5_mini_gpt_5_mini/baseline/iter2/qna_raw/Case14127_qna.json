@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The note explicitly states 'whole exome sequencing (WES) is being pursued' for evaluation of the patient."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria are driven by clinical indication rather than a strict age cutoff; no payer-specific age exclusion is stated for this scenario, so age-based eligibility is not specified."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require ordering/coordination by a genetics provider or documentation of genetics involvement; the medical geneticist is coordinating testing and a genetics counselor was involved, meeting ordering provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC covers WES for unexplained global developmental delay/ intellectual disability when workup is unrevealing; the patient has lifelong GDD with cognitive/adaptive deficits, which meets the clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior first‑tier testing such as chromosomal microarray (CMA) (and depending on sex, Fragile X testing) before WES for GDD/ID. Only nondiagnostic FISH was done (not equivalent to CMA), so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Payer criteria recognize a family history of similar early‑onset neurodevelopmental disorders as supportive for WES; there is a sibling with epileptic encephalopathy onset before age 3, which is relevant."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires documentation of pre‑test counseling/consent for WES; the patient saw a genetic counselor for pre‑test counseling and will return for post‑test counseling, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to whole exome sequencing (sequence analysis of the exome) and best matches the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication, genetics provider involvement, family history, and counseling requirements are met, UHC requires prior first‑tier testing (e.g., CMA) before approving WES for GDD/ID; CMA was not completed (only nondiagnostic FISH), so coverage is not supported at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2003,
+    "output_tokens": 1658,
+    "total_tokens": 3661
+  }
+}

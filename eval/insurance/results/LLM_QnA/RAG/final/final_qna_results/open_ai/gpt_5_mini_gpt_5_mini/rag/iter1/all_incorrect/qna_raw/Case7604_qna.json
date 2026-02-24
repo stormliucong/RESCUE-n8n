@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy covers WES/WGS for children/infants with unexplained congenital anomalies. The patient is a neonate with multiple congenital anomalies, which fits the policy's child/infant age group."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled. The record indicates referral and ordering by a neurologist and no genetics evaluation is documented, so ordering provider requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists multiple congenital anomalies as a medical indication for WES/WGS. The neonate has multiple congenital anomalies affecting several organ systems, meeting that clinical criterion."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows WES/WGS when previous genetic testing has failed to yield a diagnosis. The patient had prior FISH testing that was nondiagnostic, satisfying the 'previous testing failed' criterion."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy identifies relevant family history (eg, affected sibling, developmental delay/genetic disease) as supportive. The patient has an older sibling with multiple congenital anomalies, which is relevant per policy."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Policy requires counseling by an experienced genetics provider prior to testing. The family declined genetic counseling, so the policy's counseling requirement is not met."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to WGS/WES; no CPT code for WGS is specified in the text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications (multiple congenital anomalies), the policy requires ALL criteria including evaluation by a clinician with expertise in clinical genetics and counseling. Those documentation/counseling requirements are not met (family declined counseling and no genetics evaluation documented), so coverage criteria are not fully satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14826,
+    "output_tokens": 2573,
+    "total_tokens": 17399
+  }
+}

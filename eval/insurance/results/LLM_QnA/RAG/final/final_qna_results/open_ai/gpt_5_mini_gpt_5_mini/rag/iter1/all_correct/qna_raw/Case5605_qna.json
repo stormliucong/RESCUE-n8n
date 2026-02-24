@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information states the patient was referred for whole genome sequencing (WGS)."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy allows rapid WGS for critically ill infants (NICU/PICU) but states 'whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations.' The patient is an 11-year-old non-critically ill child, so the age/clinical-status criterion for medically necessary WGS is not met (policy basis)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled. The patient had pre-test counseling completed with a genetic specialist, satisfying the policy's provider/evaluation requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy medical indications for medically necessary genomic testing limit WGS to rapid testing in critically ill infants; for standard testing, WES is the covered modality for children with unexplained congenital anomalies. The patient is an 11-year-old non-critically ill child with a congenital cardiac anomaly, which does not meet the policy's narrow medical indication for WGS."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy explicitly cites prior testing (eg, CMA) as part of criteria for medically necessary WES, but does not define specific required prior tests for WGS (which is considered investigational in most situations). The patient did have a nondiagnostic CMA, but the policy does not specify prior-test requirements for WGS."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy lists specific family-history examples relevant to genomic testing (eg, arrhythmia, sudden unexplained death, developmental delay). The patient's only noted family history is a maternal aunt with pancreatic cancer, which is not among the policy-specified relevant family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed by an individual with experience and expertise; the patient had pre-test counseling with a genetic specialist, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "The requested test is whole genome sequencing; CPT 81425 corresponds to whole genome sequencing (genomic sequencing, large-scale/genome). The policy document does not list CPTs, but 81425 best matches WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per the policy statement, 'whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations.' The patient is an 11-year-old non-critically ill child with a congenital cardiac anomaly; therefore WGS is not covered under this policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14822,
+    "output_tokens": 2697,
+    "total_tokens": 17519
+  }
+}

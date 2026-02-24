@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The case explicitly states 'whole-genome sequencing (WGS) is being considered.'"
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WGS/WES policies do not impose a strict age cutoff; age-based eligibility is not specifically restricted for WGS, so no explicit age criterion applies beyond clinical indication."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies generally do not mandate a single specific ordering provider specialty for WGS (orders commonly come from treating specialists), and no provider restriction is documented in the patient facts."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient is a neonate with unexplained conjugated hyperbilirubinemia (possible genetic/metabolic cholestasis) plus a sibling with unexplained developmental regression and prior nondiagnostic karyotype — these fulfill UHC clinical indications for genomic sequencing to evaluate a suspected monogenic/metabolic disorder."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior appropriate testing (e.g., chromosomal microarray or other targeted testing) before WGS unless rapid/acute NICU criteria are met. Only a nondiagnostic karyotype is documented and no CMA or other required prior testing is recorded."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant and supportive: a sibling with unexplained developmental regression meets family-history criteria used by UHC to justify genomic sequencing."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC policies expect documentation of pre-test genetic counseling/consent for genomic sequencing. The record states no pretest genetic counseling is documented, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "CPT 81425 corresponds to genomic-scale sequencing (whole exome/whole genome) interpretation/reporting, which best matches the requested WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indication is present, coverage would be denied under UHC criteria because required prior testing (e.g., CMA or other targeted testing) is not documented and pretest genetic counseling is not documented; rapid/critical-care WGS criteria are not documented to waive prior-test requirements."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1987,
+    "output_tokens": 2280,
+    "total_tokens": 4267
+  }
+}

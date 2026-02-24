@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The patient presentation explicitly states she presents for BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Not Answerable",
+      "reasoning": "BCBS FEP BRCA criteria include age-based thresholds tied to age at cancer diagnosis (e.g., breast cancer diagnosed ≤50). The record gives the patient's current age (50) but does not state her age at breast cancer diagnosis, so age-based eligibility cannot be determined from the provided information."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The provided patient information does not indicate a BCBS_FEP requirement for a specific ordering provider specialty; nurse practitioners commonly may order genetic testing and the case notes an NP referral plus genetics counselor involvement, but the policy does not specify a restricting provider type in the materials given."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP BRCA coverage includes individuals with a first‑degree relative with prostate cancer with aggressive/intraductal features and/or a first‑degree relative with breast cancer at or before age 50. The patient has a brother with metastatic prostate cancer with intraductal features and a mother with breast cancer at age 50, so she meets medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "BCBS_FEP germline BRCA testing typically does not require completion of other prior genetic tests as a prerequisite; no specific prior-test requirement is documented in the provided information."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has relevant family history: a brother with metastatic prostate cancer with intraductal features (first‑degree relative) and a mother with breast cancer at age 50, which are relevant to BRCA test eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP generally expects documentation of pre‑test genetic counseling; the record documents multiple pre‑test counseling visits with a genetic counselor, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The appropriate CPT codes for full BRCA1/BRCA2 sequencing are 81211/81213 (and related deletion/duplication codes), which are not among the provided options (81162, 81277, 81228, 81415, 81425). Therefore none of the listed choices precisely match standard BRCA1/2 full testing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Applying BCBS_FEP BRCA coverage criteria to the facts: the patient has qualifying family history (brother with intraductal metastatic prostate cancer; mother with breast cancer at age 50) and has documented pre‑test genetic counseling. Although age at the patient's breast cancer diagnosis is not provided, the available family and personal history meet BCBS_FEP indications for BRCA testing, so the test is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1986,
+    "output_tokens": 2989,
+    "total_tokens": 4975
+  }
+}

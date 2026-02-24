@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient record states 'whole genome sequencing (WGS) has been ordered' to assess hereditary cancer predisposition."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The Concert Genetics Oncology policy does not specify age-based eligibility for cancer exome/genome sequencing (WGS); no age restriction for this test is given in the policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not list any ordering-provider specialty or credential requirements for cancer exome/genome sequencing (WGS) as a coverage criterion."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Although the patient has primary peritoneal carcinoma (a diagnosis for which BRCA1/2 testing is considered medically necessary per the policy), the specific requested test (cancer exome/genome sequencing/WGS) is listed in the policy as 'considered investigational.' Therefore the patient does not meet a medical-necessity criterion for WGS."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define required prior tests that must be completed before cancer exome/genome sequencing (WGS). (Patient did have a nondiagnostic karyotype, but the policy does not list prior-test prerequisites for WGS.)"
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define family history or consanguinity criteria specifically relevant to coverage of cancer exome/genome sequencing (WGS); while the patient has a concerning maternal hematologic disorder, the policy does not tie that family history to eligibility for WGS."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy recommends informing patients and genetic evaluation/counseling in certain contexts (e.g., ovarian/primary peritoneal cancer) but does not state a genetic-counseling requirement as a coverage criterion for WGS; the patient has no documented pre-test counseling but counseling is not specified as a coverage precondition for WGS in the policy."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The policy groups cancer exome/genome sequencing (which includes WGS/exome tests) under codes including 81415 and 81425; 81415 is listed in the 'Cancer Whole Exome Sequencing with Transcriptome' / cancer exome/genome sequencing section and thus best corresponds to the requested WGS among the provided options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The policy explicitly states 'Cancer exome and genome sequencing in solid tumors and hematologic malignancies ... is considered investigational.' Because the requested WGS falls under that category, it is not covered per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 32983,
+    "output_tokens": 1991,
+    "total_tokens": 34974
+  }
+}

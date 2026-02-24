@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient was referred for BRCA1/2 testing; the clinical info explicitly states BRCA1/2 referral."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies age criteria (testing for individuals without BRCA-related cancer who are at least 18 y), and the patient is 18 y old, meeting the age requirement (AHS–M2003)."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy requires genetic counseling prior to testing but does not specify an ordering provider specialty/type requirement for BRCA testing; provider-type ordering requirements are not specified in the policy text."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Coverage criteria require cancer-related family history or known familial BRCA mutation or other specific indications; the patient’s family history is an uncle with dystonia/ataxia (not a BRCA-related cancer), so the patient does not meet any defined medical indication (AHS–M2003 sections II and V)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not define specific prior laboratory tests required before BRCA1/2 testing (it does require prior genetic counseling and, where applicable, testing of affected relatives), and the provided patient facts only note a nondiagnostic karyotype which the policy does not list as a required prior test."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Family-history criteria are specified in the policy (BRCA-related cancers in close relatives). The patient’s reported family history (maternal uncle with dystonia and ataxia) is not a BRCA-related cancer, so the patient lacks the specified family-history eligibility."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "The policy requires that individuals have received genetic counseling prior to BRCA testing; the patient has had no pretest genetic counseling, so counseling requirements are not met (AHS–M2003 sections II and V)."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map specific CPT codes to BRCA1/2 testing; therefore CPT code selection is not specified in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Per policy, coverage requires appropriate clinical indications and pre-test genetic counseling (e.g., relevant family history of BRCA-related cancers or known familial mutation). The patient lacks a BRCA-related family cancer history and has not had genetic counseling; therefore BRCA1/2 testing does not meet coverage criteria (AHS–M2003 sections II and V)."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18217,
+    "output_tokens": 1846,
+    "total_tokens": 20063
+  }
+}

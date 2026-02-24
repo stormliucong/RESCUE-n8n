@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient summary explicitly states the newborn was referred for whole exome sequencing (WES)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy coverage applies to 'children' with unexplained congenital anomalies; the patient is a newborn (a child), so age meets the policy's age-related eligibility."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The policy explicitly requires documentation that the individual 'has been evaluated by a clinician with expertise in clinical genetics' and counseled. The chart states evaluation was by a general pediatrician; it does not document evaluation by a clinician with expertise in clinical genetics, so ordering/provider requirement is not met based on provided information."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists unexplained multiple congenital anomalies as an indication for WES. The newborn has multiple congenital anomalies not fitting a defined syndrome and prior genetic testing was nondiagnostic, matching the policy's clinical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing failed to yield a diagnosis (eg, CMA or targeted testing). The patient had prior karyotype testing that was nondiagnostic, satisfying the policy's requirement for prior genetic testing that failed to yield a diagnosis."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance lists family history of developmental delay as relevant. The patient has a sibling with unexplained developmental regression, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy requires genetic counseling; the patient record states pre-test genetic counseling was completed and post-test follow-up is planned, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided BCBS FEP WES/WGS policy text does not specify or map CPT codes to WES; no CPT guidance is present in the policy document supplied."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets the clinical indication, prior testing, family-history, age, and counseling criteria, the policy requires evaluation by a clinician with expertise in clinical genetics as an ALL criterion. The provided information documents evaluation by a general pediatrician (no genetics clinician documented), so not all policy criteria are met and coverage cannot be approved under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14829,
+    "output_tokens": 2369,
+    "total_tokens": 17198
+  }
+}

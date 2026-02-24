@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info explicitly states consideration of whole-exome sequencing (WES) after nondiagnostic CMA."
+    },
+    "Q1": {
+      "answer": "No",
+      "reasoning": "Policy Exome Sequencing criteria require the member be <21 years of age. The patient is 34, so does not meet the age-based requirement."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate a specific ordering provider specialty; it requires appropriate genetic/family history evaluation and counseling documentation but does not explicitly restrict who may order ES."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific clinical indications (e.g., multiple congenital anomalies, developmental delay, epilepsy, etc.). The patient has a single congenital anomaly (choanal atresia) with no listed neurodevelopmental criteria, so does not meet the specified medical indications."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy expects prior standard testing (e.g., CMA) and no prior ES/WGS. Patient had a nondiagnostic CMA and no prior ES/WGS, satisfying prior-test requirements."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The guideline requires an appropriate genetic/family history evaluation but does not specify family history/consanguinity criteria that would make this adult proband eligible for ES; the provided maternal breast cancer history is not a policy-specified criterion for ES in this context."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy and ACMG recommend pretest counseling by a medical geneticist or affiliated genetic counselor. Patient has seen a genetic counselor multiple times, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy billing section states CPT 81415 should be billed for proband whole-exome sequencing (analyzing the entire exome)."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although prior CMA and genetic counseling are documented, the policy requires the member to be <21 years old for ES to be medically necessary; the patient is 34, therefore ES is not covered per the policy criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 10464,
+    "output_tokens": 1870,
+    "total_tokens": 12334
+  }
+}

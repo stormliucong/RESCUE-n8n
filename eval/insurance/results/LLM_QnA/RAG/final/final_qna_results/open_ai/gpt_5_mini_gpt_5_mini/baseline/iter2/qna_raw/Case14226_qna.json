@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "The clinical note explicitly states germline BRCA1 and BRCA2 (BRCA1/2) testing is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna BRCA testing policy does not impose a specific age cutoff for adult BRCA1/2 germline testing; the patient is an adult (55) and no age exclusion is cited in policy."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna typically requires an appropriate ordering clinician but does not restrict testing to a narrow specialty in its BRCA policy; the information states oncology is ordering the test but the policy does not specify a single required provider type."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Cigna coverage for BRCA1/2 requires specific clinical indications (personal history of qualifying cancers or family history/validated risk-model threshold per policy/NCCN). The patient has a non-breast/ovarian qualifying solid tumor and a calculated BRCA risk of 2.5%, which is below typical Cigna-required thresholds and does not meet listed medical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Cigna BRCA criteria do not mandate completion of prior diagnostic genetic tests before ordering germline BRCA testing; the patient has no prior germline testing, which is acceptable but no specific prior-test requirement is specified."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Cigna specifies family history of breast, ovarian, pancreatic, or related cancers as relevant for BRCA eligibility; the documented family history (mother with a hematologic/immunologic disorder) is not one of the specified BRCA-relevant conditions."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "Cigna policy expects documentation of pre-test genetic counseling for germline BRCA testing. The record states no pre-test counseling was completed, so counseling requirements are not met."
+    },
+    "Q7": {
+      "answer": "81277",
+      "reasoning": "Of the provided CPT options, 81277 most closely corresponds to BRCA1/BRCA2 gene testing among the choices (single-gene/two-gene hereditary cancer testing) and is the best match for a BRCA1/2 germline assay."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under Cigna BRCA coverage criteria the patient does not meet medical indication thresholds (calculated risk too low and personal/family history not qualifying) and pre-test genetic counseling is not documented; therefore the requested BRCA1/2 test is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2026,
+    "output_tokens": 2095,
+    "total_tokens": 4121
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The policy specifies pediatric indications for WES and rapid WGS for critically ill infants but does not provide an explicit age cutoff or clear routine WGS age-based eligibility; patient is a child (13) but no explicit age criterion for routine WGS is stated in the policy text."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requires the individual be evaluated by a 'clinician with expertise in clinical genetics' (Policy Statement #1). The patient was evaluated by a developmental pediatrician (not documented as a clinical geneticist), so the ordering provider requirement is not met based on provided facts."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy defines neurodevelopmental disorders in children as an indication for sequencing. The patient is a child with global developmental delay and prior genetic testing was nondiagnostic, meeting the clinical indication described in the policy."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy allows prior nondiagnostic genetic testing as meeting prior-test criterion (eg, 'previous genetic testing has failed to yield a diagnosis'). The patient had prior FISH testing that was nondiagnostic."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list family history (including developmental delay/genetic disease) as relevant. The patient has a family history of an aunt with dysmorphic features, which is relevant per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy states genetic counseling should be performed; the family completed pre-test genetic counseling with plans for post-test follow-up, satisfying the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to WGS or other tests, so no CPT code can be determined from the policy text alone."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "While the patient meets clinical indications for genomic testing, the policy explicitly states 'Whole genome sequencing is considered investigational for the diagnosis of genetic disorders in all other situations.' The requested test is WGS (not rapid WGS for a critically ill infant), so per the policy WGS is investigational and not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14828,
+    "output_tokens": 3832,
+    "total_tokens": 18660
+  }
+}

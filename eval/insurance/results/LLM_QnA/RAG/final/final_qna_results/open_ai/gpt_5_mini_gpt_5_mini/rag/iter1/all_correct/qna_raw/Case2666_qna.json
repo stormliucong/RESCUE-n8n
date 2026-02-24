@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient explicitly is 'undergoing BRCA1/2 testing' per the clinical information; policy addresses BRCA1 and BRCA2 germline testing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies testing in minors is investigational; the patient is 21 (an adult). Therefore she meets age-related eligibility per policy (minors excluded)."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed in a setting with suitably trained providers and that genetic counseling be provided. The patient had pre-test counseling with a genetic specialist and plans for post-test follow-up, meeting the provider/counseling setting requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows testing for an unaffected individual who has a 1st-degree relative meeting any criterion listed for Patients With Cancer. The patient's father (a 1st-degree relative) has metastatic prostate cancer, which is a listed criterion for affected individuals."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy 'strongly recommends' testing an affected family member first when possible, but does not make prior testing of an affected relative an absolute coverage prerequisite for an unaffected 1st-degree relative whose relative meets policy cancer criteria. The policy does not specify a mandatory prior-test requirement for this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria are specified in the policy; the patient has a relevant family history (father with metastatic prostate cancer), which is a qualifying first-degree relative per policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies genetic counseling by experienced providers is required/expected. The patient completed pre-test counseling with a genetic specialist and has plans for post-test follow-up, satisfying counseling requirements."
+    },
+    "Q7": {
+      "answer": "81162",
+      "reasoning": "Among provided CPT options, 81415 and 81425 correspond to exome/genome sequencing (WES/WGS). The requested test is BRCA1/2 single-gene germline testing; 81162 is the CPT option listed that best corresponds to BRCA1/2 testing in this selection set."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per policy, germline BRCA1/2 testing is medically necessary for an unaffected individual with a 1st-degree relative meeting cancer-affected criteria; the patient's father has metastatic prostate cancer. Counseling and testing setting requirements are met, so testing is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18944,
+    "output_tokens": 2205,
+    "total_tokens": 21149
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient info: 'whole exome sequencing (WES) has been requested' — the requested test is explicitly WES."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy includes age-referenced criteria (e.g., features diagnosed by 18 years of age). The patient is 10 years old, which meets those age-based thresholds in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy requirement: 'WES is ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician.' The ordering provider is an oncologist, which does not meet the specified provider requirement."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy requires clinical history strongly suggesting a genetic cause plus either one primary feature (e.g., multiple congenital anomalies, moderate/severe ID by 18) or two or more secondary features (e.g., laboratory abnormalities suggestive of an IEM plus another listed feature). The patient has conjugated hyperbilirubinemia (a lab abnormality suggestive of IEM) and family history of a cousin with an IEM, but lacks a primary feature or a second qualifying secondary feature per the policy; cousin is not a first/second-degree relative listed in the policy."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "Policy does not mandate specific prior testing before outpatient WES (prenatal WES has CMA/karyotype requirements). Although CMA was previously performed and nondiagnostic, the policy does not require prior tests for WES in this non-prenatal setting."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy specifies family-history criteria (other first- or second-degree family members with similar features, consanguinity). The patient has a cousin with an IEM (third-degree), which does not meet the policy's specified first- or second-degree family history requirement."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "Policy states genetic counseling is 'strongly recommended' prior to WES but does not list pre-test counseling as a mandatory coverage criterion. No pre-test counseling is documented for this patient."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's Applicable Codes list maps WES (exome sequence analysis) to CPT code 81415 ('Exome ... sequence analysis')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Coverage denial is supported by policy: WES requires (1) ordering by specified provider types (medical geneticist, neonatologist, neurologist, or developmental pediatrician) — not met (oncologist ordered), and (2) meeting defined clinical criteria (either a primary feature or two or more secondary features) — patient only has one secondary feature per policy. Therefore the request does not meet the policy's coverage criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36969,
+    "output_tokens": 2850,
+    "total_tokens": 39819
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is being requested prenatally."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "Payer WES policies do not generally impose an age cutoff for prenatal/fetal testing; the patient is a fetus at 32 weeks but no age-based exclusion is specified in applicable WES coverage rules."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UnitedHealthcare policies typically require an appropriate ordering clinician and documentation but do not universally restrict ordering to one specific specialty in all circumstances; the record lists a neonatologist request but the policy does not explicitly prohibit that ordering provider."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical indications in UHC WES criteria include fetal anomalies or strong suspicion of a genetic disorder (family history of early unexplained death and parental consanguinity increase AR risk) and the note documents fetal imaging concern and consanguinity, meeting clinical indication criteria."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC prenatal WES criteria generally require prior recommended cytogenetic testing (eg, chromosomal microarray or karyotype) to be nondiagnostic before WES; only nondiagnostic FISH is documented, not CMA/karyotype, so required prior testing has not been completed."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has parental consanguinity and a family history of sudden unexplained death in a sibling <35, both relevant family history items that align with coverage considerations for WES."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC typically requires documentation of pre‑test genetic counseling for clinical genomic testing; the record states no genetic counseling has been completed, so counseling requirement is unmet."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT 81415 corresponds to exome sequence analysis (interpretation/reporting) and is the appropriate billing code among the provided options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although medical indication and family history support WES, coverage prerequisites (documented prior recommended cytogenetic testing such as CMA/karyotype and documented pre‑test genetic counseling) are not met in the provided information, so under UHC criteria the test would not be covered as presented."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1995,
+    "output_tokens": 1473,
+    "total_tokens": 3468
+  }
+}

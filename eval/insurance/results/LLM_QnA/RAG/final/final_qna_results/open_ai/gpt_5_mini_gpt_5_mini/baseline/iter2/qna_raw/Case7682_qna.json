@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) is being requested."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage is driven by clinical indications (developmental delay/multiple congenital anomalies) rather than a strict age cutoff; no age-based exclusion applies to this 9‑year‑old in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC typically requires ordering by or in consultation with a genetics specialist; the record documents pre‑test counseling by a genetic specialist with plans for post‑test follow‑up, satisfying ordering/consultation requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC considers WES medically necessary for unexplained multiple congenital anomalies affecting multiple organ systems and developmental delay/intellectual disability; this 9‑year‑old has multiple congenital abnormalities and developmental concerns, meeting those clinical indications."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior chromosomal microarray (CMA) or equivalent high‑resolution cytogenomic testing before WES; the record documents a nondiagnostic karyotype but does not document a prior CMA."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient has a family history of developmental delay in a sibling, which is relevant to eligibility under UHC WES criteria (family history supports genetic evaluation)."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires pre‑test genetic counseling and a plan for post‑test follow‑up; the record documents pre‑test counseling by a genetic specialist and plans for post‑test follow‑up."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing and is the appropriate code for WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although clinical indications, genetic counseling, ordering/consultation and family history meet UHC criteria for WES, the required prior cytogenomic testing (CMA) is not documented (only a nondiagnostic karyotype), so per UHC coverage rules the WES request is not covered at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1973,
+    "output_tokens": 1889,
+    "total_tokens": 3862
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies WES may be medically necessary for children; patient is a 5-year-old child, which meets the policy's age group for pediatric WES."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics. The clinical information documents referral by a cardiologist and pre-test counseling by a genetic counselor but does not explicitly state that a clinician with expertise in clinical genetics evaluated and/or ordered the test."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES may be medically necessary for evaluation of unexplained congenital disorders in children when criteria are met. The patient has an unexplained congenital cardiac anomaly and a family history raising concern for inherited etiology, which meets the policy's clinical indication for consideration of WES."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing to have failed to yield a diagnosis (eg, CMA or targeted testing). The patient had prior fluorescence in situ hybridization testing that was nondiagnostic, satisfying the 'previous genetic testing failed' element."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list sudden unexplained death in a first- or second-degree relative before age 35 as relevant family history. The patient has a paternal uncle with sudden unexplained death before age 35."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires counseling about risks and recommends genetic counseling; the patient completed pre-test counseling with a genetic counselor and has plans for post-test follow-up, meeting the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing; CPT 81415 corresponds to exome sequencing in the provided options."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under the policy WES may be medically necessary for children with unexplained congenital disorders when criteria are met. The patient is a child with an unexplained congenital cardiac anomaly, has prior nondiagnostic genetic testing (FISH), has relevant family history (sudden death <35), and genetic counseling was completed—together these facts align with the policy's medical necessity criteria."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14843,
+    "output_tokens": 3450,
+    "total_tokens": 18293
+  }
+}

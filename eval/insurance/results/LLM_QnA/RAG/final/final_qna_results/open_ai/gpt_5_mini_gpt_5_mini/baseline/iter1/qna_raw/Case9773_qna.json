@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "The clinical note explicitly states a chromosomal microarray (CMA) was ordered to assess for genomic copy number changes."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "FEP/CMA coverage is indication-based (unexplained intellectual disability/developmental delay/autism or multiple congenital anomalies) and does not impose an age cutoff; no age-specific exclusion is specified."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "FEP medical policy does not restrict CMA ordering to a specific specialty — any qualified ordering clinician may request testing; no specialty requirement is specified in the record."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient is a 2-year-old with severe intellectual disability; FEP policy lists unexplained intellectual disability/developmental delay as a covered clinical indication for CMA."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "FEP policy generally allows CMA as a first‑tier test for unexplained ID/DD and does not mandate prior genetic testing (e.g., karyotype) before CMA; no required prior tests are documented."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Although the patient has a maternal aunt with a severe immunologic disorder, FEP CMA coverage is driven by the proband's clinical features (ID) rather than specific family-history requirements; family-history criteria are not specified as required."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "FEP policy expects documentation of genetic counseling for genomic testing; the family completed pre‑test genetic counseling and plans post‑test counseling, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "CPT 81228 corresponds to chromosomal microarray analysis for genome‑wide copy number variants, which matches the ordered CMA."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Under FEP policy the patient meets covered clinical indication (severe intellectual disability), pre‑test counseling is documented, no disqualifying age or prior‑test requirements apply, and the appropriate CPT is 81228 — therefore the CMA is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1994,
+    "output_tokens": 1617,
+    "total_tokens": 3611
+  }
+}

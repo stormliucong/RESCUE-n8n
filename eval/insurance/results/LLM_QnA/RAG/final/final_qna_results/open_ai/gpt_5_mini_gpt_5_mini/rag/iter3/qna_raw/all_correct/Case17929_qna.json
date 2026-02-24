@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "CMA",
+      "reasoning": "Patient information states 'tumor chromosomal microarray (CMA) testing has been requested' — the test explicitly requested is chromosomal microarray analysis (CMA)."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The UnitedHealthcare CMA policy defines clinical indications (e.g., DD/ID, ASD, multiple congenital anomalies) but does not impose explicit age cutoffs for these indications; no age-based exclusion is specified that would disqualify a 7-year-old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy emphasizes pre/post-test genetic counseling and provider expertise but does not mandate a specific ordering provider specialty or restrict ordering to particular provider types."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy states CMA is medically necessary for evaluation of individuals with 'multiple anomalies that are not specific to a Well-Delineated Genetic Syndrome' and for DD/ID and notes CMA when karyotype is nondiagnostic. The patient is a 7-year-old with a major abnormality affecting at least one organ system and a prior nondiagnostic karyotype, meeting the policy’s medical indications."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not universally require completion of specific prior tests before CMA; CMA can be first-tier in many settings and although it notes CMA is useful when karyotype is normal, it does not mandate prior testing — patient did have a prior nondiagnostic karyotype but the policy does not require it."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "The policy’s family-history–related criteria address evaluation of biological parents/siblings of a fetus/child with an abnormal CMA; it does not identify a family history of BRCA1/2 as relevant to CMA eligibility. The patient’s maternal BRCA1/2 pathogenic variant is not a policy-specified criterion for CMA."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy 'strongly recommends' pre-test genetic counseling prior to CMA. The patient had 'multiple pretest counseling sessions with a genetic counselor' and plans post-test follow-up, satisfying the counseling expectations in the policy."
+    },
+    "Q7": {
+      "answer": "81228",
+      "reasoning": "The policy lists CPT 81228 ('Cytogenomic (genome-wide) analysis ... comparative genomic hybridization [CGH] microarray analysis') as a CMA code; 81228 best corresponds to the requested chromosomal microarray."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare CMA policy, CMA is medically necessary for evaluation of individuals with multiple anomalies or DD/ID and when karyotype is nondiagnostic. The patient is a 7-year-old with a major organ-system abnormality and a nondiagnostic prior karyotype, has had pretest genetic counseling, and thus meets the policy criteria for coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 30400,
+    "output_tokens": 2097,
+    "total_tokens": 32497
+  }
+}

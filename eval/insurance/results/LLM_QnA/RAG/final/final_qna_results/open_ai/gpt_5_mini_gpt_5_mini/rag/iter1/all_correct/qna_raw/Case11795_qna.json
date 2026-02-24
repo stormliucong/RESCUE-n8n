@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states chromosomal microarray was nondiagnostic and 'whole exome sequencing (WES) is being ordered.'"
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy addresses infants/children (BRUE defined for infants <1 year) and the patient is a three-week-old infant, so the patient's age falls within the age groups described in the policy (infant/child)."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "The policy requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics (policy statement #1). The patient record does not document an evaluation by a clinician with expertise in clinical genetics (only referral by a cardiologist and completion of pre-test counseling)."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "The policy lists high-risk BRUE with significantly abnormal ECG (possible channelopathies/arrhythmias/cardiomyopathy) as a clinical feature suggesting genetic disease; the patient has a high-risk BRUE and markedly abnormal ECG, meeting the medical indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy indicates WES is appropriate when a genetic etiology is considered despite previous genetic testing (e.g., chromosomal microarray). The patient had a CMA that was nondiagnostic, meeting the prior testing expectation."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy cites family history of developmental delay and BRUE in a sibling as relevant; patient has a sibling with moderate–severe intellectual disability, which is a listed relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling and evaluation by genetics; patient information states pre-test genetic counseling was completed with plans for post-test follow-up, satisfying the counseling requirement portion."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify particular CPT codes for WES; no CPT-to-service mapping is present in the policy text."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications (high-risk BRUE, markedly abnormal ECG) and prior CMA was nondiagnostic and counseling completed, the policy requires documentation of evaluation by a clinician with expertise in clinical genetics as an ALL required criterion for standard WES. That documentation is not present in the patient information, so coverage criteria are not fully met."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14874,
+    "output_tokens": 2372,
+    "total_tokens": 17246
+  }
+}

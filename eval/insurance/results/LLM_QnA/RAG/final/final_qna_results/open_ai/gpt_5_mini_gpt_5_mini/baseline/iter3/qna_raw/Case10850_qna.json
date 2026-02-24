@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The clinical note explicitly states whole genome sequencing (WGS) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "UHC coverage for WES/WGS is defined for pediatric patients with unexplained global developmental delay/intellectual disability; the patient is 13 years old, meeting the pediatric age-based eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "UHC policies require ordering by a qualified clinician; the test was ordered by a developmental pediatrician (a board‑level treating physician/specialist), which satisfies ordering provider requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC lists unexplained global developmental delay/intellectual disability as a covered indication for WES/WGS; the patient has global developmental delay, meeting the clinical indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC generally requires prior first‑tier testing (chromosomal microarray and other directed testing as appropriate) before WES/WGS; only nondiagnostic FISH was performed and no CMA or other required prior tests are documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history is relevant under UHC criteria as supportive evidence; the record documents an aunt with dysmorphic features (second‑degree relative), so relevant family history is present."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "UHC requires/encourages pre‑test genetic counseling for WES/WGS; the family completed pre‑test counseling and plans post‑test follow‑up, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "81425 corresponds to whole genome sequencing (germline) CPT coding and best matches the ordered WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age, clinical indication, provider, counseling, and family history meet UHC criteria, required prior testing (notably chromosomal microarray/first‑tier testing) is not documented; per UHC coverage policy absence of required prior tests makes WGS not eligible for coverage at this time."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1975,
+    "output_tokens": 1609,
+    "total_tokens": 3584
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states the patient was referred for whole exome sequencing (WES) by neurology to evaluate an unexplained neurodevelopmental disorder."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria are indication-driven (unexplained moderate–severe intellectual disability/GDD) and do not impose a firm age cutoff in policy language; the patient is pediatric (10 years) and age is not a disqualifying factor."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies require an appropriate ordering clinician but typically do not restrict ordering to a single specialty; the order is from neurology (an appropriate specialist) and policy does not mandate only geneticists/genetic counselors as orderers."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Coverage criteria specify WES for unexplained moderate to severe intellectual disability/neurodevelopmental disorder; the patient has childhood-onset moderate–severe intellectual disability and an unexplained neurodevelopmental presentation, meeting the medical indication."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC requires prior standard testing such as chromosomal microarray (CMA) before WES for developmental disorders; the record states CMA was performed and nondiagnostic, satisfying the prior test requirement."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "While family history of similar neurodevelopmental phenotypes can support testing, the documented family history is a sibling with a brief resolved unexplained event (BRUE-like) rather than a similar intellectual disability phenotype; this does not meet family-history-based eligibility criteria."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policies recommend pre- and post-test genetic counseling but do not universally require documented genetic counseling as an absolute condition for coverage of diagnostic WES; here there is no documentation, but policy does not explicitly deny coverage solely for absence of documented counseling."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (proband-level clinical exome), which corresponds to CPT code 81415 under current molecular/genetic CPT coding for clinical exome sequencing."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "From a UHC coverage-adjudication perspective the patient meets the clinical indication (unexplained moderate–severe intellectual disability), has required prior CMA testing documented as nondiagnostic, and the order is placed by an appropriate specialist (neurology); therefore WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1999,
+    "output_tokens": 1890,
+    "total_tokens": 3889
+  }
+}

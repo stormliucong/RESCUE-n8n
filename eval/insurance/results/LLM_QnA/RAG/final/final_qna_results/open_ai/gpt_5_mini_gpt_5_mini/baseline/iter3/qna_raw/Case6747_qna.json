@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "The patient info explicitly states whole genome sequencing (WGS) was ordered by the medical geneticist to evaluate a suspected genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP WES/WGS criteria specify pediatric eligibility for unexplained congenital anomalies/developmental concerns; the patient is 12 years old, which meets pediatric age-related eligibility."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires ordering by a qualified clinician (typically a medical geneticist or clinician with genetics expertise) for WES/WGS; the test was ordered by a medical geneticist, meeting this requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Medical necessity criteria include multiple congenital anomalies and suspected genetic etiology after prior testing; the patient has multiple congenital anomalies and a suspected genetic disorder, satisfying indication criteria."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP typically requires prior chromosomal microarray (CMA) before WES/WGS unless contraindicated; the record states CMA was previously performed and nondiagnostic, meeting the prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Family history criteria (affected first-degree relative with developmental delay/related phenotype) are relevant for WES/WGS; the family reports a sibling with developmental delay, which is relevant to eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "BCBS_FEP requires documentation of genetic counseling for WES/WGS; pre-test counseling was completed and post-test counseling is planned, meeting counseling requirements."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Of the provided CPT options, 81425 is the code used in practice for large-scale genomic sequencing (WES/WGS) interpretation and reporting and best corresponds to the requested WGS."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Applying BCBS_FEP coverage rules: patient meets age, specialist ordering, medical indication (multiple congenital anomalies, suspected genetic etiology), prior CMA nondiagnostic, family history, and counseling—therefore WGS is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1966,
+    "output_tokens": 1874,
+    "total_tokens": 3840
+  }
+}

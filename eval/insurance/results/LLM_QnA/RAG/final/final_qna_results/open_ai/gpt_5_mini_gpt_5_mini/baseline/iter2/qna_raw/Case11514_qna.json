@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The clinical note explicitly states whole exome sequencing (WES) has been requested to investigate a genetic cause of cholestatic liver disease."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES coverage criteria do not impose a strict age cutoff for exome testing; pediatric patients are generally eligible so no age-based exclusion applies to this 10-year-old."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "UHC policy does not restrict WES orders to a specific specialty (any qualified ordering clinician may request testing), so there is no specific specialty requirement that the oncologist fails to meet."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Patient has unexplained conjugated hyperbilirubinemia/cholestatic liver disease with a family history suggestive of an inborn error of metabolism and prior nondiagnostic testing; these facts meet UHC criteria for WES when a genetic etiology is suspected and prior testing is non-diagnostic."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "UHC often expects prior targeted testing when a single-gene diagnosis is strongly suspected, but for heterogeneous presentations like pediatric cholestasis WES is appropriate after nondiagnostic CMA; a CMA was performed and was nondiagnostic, satisfying prior-test expectations for this scenario."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "There is a documented family history of an inborn error of metabolism in a cousin, which is relevant to eligibility under UHC criteria that consider family history of genetic disease."
+    },
+    "Q6": {
+      "answer": "No",
+      "reasoning": "UHC WES guidance requires documentation of pre-test genetic counseling or counseling by a qualified provider; the record states there is no documentation of pre-test genetic counseling, so this requirement is unmet."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical whole exome sequencing (proband-only) and is the appropriate code for the requested WES."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the clinical indication, prior nondiagnostic CMA, and family history support medical necessity under UHC WES criteria, lack of documented pre-test genetic counseling (a UHC requirement) prevents meeting all coverage conditions; therefore coverage is not approved."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 2007,
+    "output_tokens": 2228,
+    "total_tokens": 4235
+  }
+}

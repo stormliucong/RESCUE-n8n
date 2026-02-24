@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information explicitly states whole exome sequencing (WES) is being pursued."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The BCBS_FEP_20443 policy discusses indications for cardiac genetic testing and pediatric considerations but does not set an explicit age cutoff or age-based eligibility criteria for testing."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy guidance states testing \"should be performed by an expert in genetic testing and/or cardiac ion channelopathies.\" The ordering/referring provider is a cardiologist and pre-test counseling was completed by a genetic counselor, which meets the policy's provider/counseling expectations."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy allows genetic testing when there is suspicion for a channelopathy (eg, family SCD <45) or a moderate-to-high pretest probability after evaluation. The patient has a family history of sudden unexplained death in a close relative <35 and a cardiology referral, meeting clinical indications for cardiac genetic testing per the policy."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy states testing for relatives of unexplained SCD should be part of a diagnostic strategy that includes comprehensive history/physical, 12‑lead ECG, exercise stress test, echocardiography, etc. The provided patient information does not document completion of these recommended non‑genetic evaluations."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy specifies family history (eg, sudden cardiac death in a family member younger than 45) as a relevant indication. The patient has a paternal uncle with sudden unexplained death before age 35."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy recommends formal genetic counseling by an experienced provider. The patient completed pre-test counseling with a genetic counselor and post-test follow-up plans are confirmed, satisfying the counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT code 81415 corresponds to exome sequencing (interpretation/report) and is the best match among the provided code options."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although the patient meets clinical indications (family SCD, cardiology referral) and counseling/provider expectations are met, the policy requires a prior comprehensive clinical (non‑genetic) evaluation before genetic testing is considered. Additionally, the policy emphasizes targeted/mutation‑specific or condition‑focused testing and discourages broad testing of many genes; WES (a broad test) is not specified as covered. Because required prior evaluations are not documented and WES is broader than the policy's recommended targeted approaches, coverage is not supported per the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15898,
+    "output_tokens": 2312,
+    "total_tokens": 18210
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information states the 53-year-old is undergoing whole exome sequencing (WES) ordered by the neurologist."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'epileptic encephalopathy with onset before three years of age' as a specific WES indication; the patient’s seizures began before age 3, meeting the policy's age-of-onset criterion."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires WES be ordered by a medical geneticist, neonatologist, neurologist, or developmental pediatrician; the ordering provider is a neurologist, satisfying this requirement."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy defines epileptic encephalopathy with onset before age 3 as a defined medical indication for WES; the patient has that condition, so the medical indication is met."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The WES coverage criteria do not mandate prior testing for this indication (they note targeted single-gene/panel first only if a specific syndrome is suspected); no mandatory prior test is specified in policy for this scenario."
+    },
+    "Q5": {
+      "answer": "No",
+      "reasoning": "Policy’s family-history criterion specifies 'other first- or second-degree family member(s) with similar clinical features.' The patient’s brother has an inborn error of metabolism (different phenotype), so the policy-specified family-history criterion is not met."
+    },
+    "Q6": {
+      "answer": "Not Specified",
+      "reasoning": "The policy states genetic counseling is 'strongly recommended' prior to WES but does not list counseling as a formal coverage requirement; thus no mandatory counseling requirement is specified for coverage determination."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "Policy's applicable CPT codes list 81415 for 'Exome ... sequence analysis' which corresponds to WES being ordered."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per the UnitedHealthcare policy, WES is medically necessary for epileptic encephalopathy with onset before age 3 when ordered by an appropriate provider; the patient had onset <3 years, the test is ordered by a neurologist, and the indication matches policy, so WES is covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 36935,
+    "output_tokens": 2156,
+    "total_tokens": 39091
+  }
+}

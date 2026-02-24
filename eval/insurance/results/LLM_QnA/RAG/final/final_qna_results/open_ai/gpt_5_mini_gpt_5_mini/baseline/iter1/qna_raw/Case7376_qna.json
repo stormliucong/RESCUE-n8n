@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "The case states whole exome sequencing (WES) has been ordered for diagnostic clarification."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "UHC WES medical policy is based on diagnostic indications rather than strict age cutoffs; no age-based exclusion is specified and the policy can apply to adults."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires appropriate ordering/consultation and pre‑test genetic counseling; the patient was referred by a neurologist and pre‑test counseling was completed with a genetic specialist, satisfying provider/counseling requirements."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "UHC criteria support WES for an unexplained major structural/functional abnormality involving at least one organ system after prior testing is nondiagnostic; the patient has an unexplained major abnormality meeting that indication."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "UHC typically requires prior appropriate genetic testing (eg, chromosomal microarray/karyotype and/or targeted testing) to be nondiagnostic before WES; only prior FISH (a targeted test) was done and no CMA/karyotype is documented."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "The patient reports a sister with triple‑negative breast cancer, which is a family history suggestive of a heritable cancer predisposition relevant to genetic evaluation."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Pre‑test counseling was completed with a genetic specialist, which meets UHC requirements for genetic counseling prior to WES."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "CPT 81415 corresponds to clinical exome sequencing (WES) and is the appropriate code for the requested test."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although indications, provider involvement, counseling, and family history meet UHC criteria, required prior testing (eg, chromosomal microarray/karyotype or other recommended prior genetic tests) is not documented (only nondiagnostic FISH), so coverage would not be supported until prior testing requirements are met or documented as not applicable."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1983,
+    "output_tokens": 2322,
+    "total_tokens": 4305
+  }
+}

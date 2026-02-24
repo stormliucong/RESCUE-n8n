@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states the team plans whole exome sequencing (WES) to investigate a possible genetic epilepsy syndrome."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to 'children' for standard WES; the patient is a 9-year-old child, meeting the pediatric (child) age applicability in the policy."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires the individual be evaluated by a clinician with expertise in clinical genetics and counseled about testing risks. The record documents multiple visits with a genetic counselor and arrangements for genetics follow-up, satisfying the policy's provider/counseling requirement despite the ordering clinician being a general practitioner."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'persistent seizures' as an example clinical feature suggesting a genetic disease; the patient has persistent seizures and prior nondiagnostic CMA, consistent with the policy's medical indication for WES."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy requires prior genetic testing (eg, CMA and/or targeted testing) to have been performed and nondiagnostic before WES; the patient had a nondiagnostic chromosomal microarray (CMA), meeting this prior-test requirement."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy cites family history such as sudden unexplained death in first- or second-degree relatives before age 35 as relevant. The patient has an uncle with sudden unexplained death before age 35, which is a specified relevant family history."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an experienced individual; the patient had multiple visits with a genetic counselor and documented counseling, meeting the policy's counseling requirement."
+    },
+    "Q7": {
+      "answer": "81415",
+      "reasoning": "The requested test is whole exome sequencing (WES); CPT 81415 corresponds to clinical exome sequencing and best matches the requested WES."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "All mandatory policy criteria for medically necessary standard WES are met per FEP 2.04.102: pediatric patient evaluated/counseled by genetics expertise, prior CMA nondiagnostic, clinical phenotype (persistent seizures) consistent with a suspected genetic etiology, and potential to change management; therefore WES may be considered medically necessary under the policy."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14831,
+    "output_tokens": 2234,
+    "total_tokens": 17065
+  }
+}

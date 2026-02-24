@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) is requested; policy addresses genome sequencing (WGS/GS)."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy requires member <21 years of age for GS; patient is 11 years old, meeting the age criterion (policy: 'Member is <21 years of age')."
+    },
+    "Q2": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires 'appropriate genetic and family history evaluation' and a clinical letter documenting the evaluation (differential, testing algorithm, prior tests/results) and ACMG-recommended pretest counseling by a geneticist/counselor. Patient info documents pre-test counseling discussed with a genetic specialist but does not state whether the required clinical letter/documentation or ordering/provider qualifications are provided, so insufficient information to determine compliance with ordering/provider documentation requirements."
+    },
+    "Q3": {
+      "answer": "No",
+      "reasoning": "Policy defines specific clinical indications (e.g., epileptic encephalopathy, global developmental delay, multiple congenital abnormalities, OR TWO of a listed set including 'major abnormality affecting at minimum a single organ system'). The record documents a 'major abnormality affecting at least one organ system' but no second qualifying criterion is provided, so the patient does not meet the policy's specified medical-indication requirements."
+    },
+    "Q4": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires that the member has not had prior exome or genome sequencing and requires documentation of prior tests in the clinical letter. Patient data lists prior Fragile X testing (nondiagnostic) but does not state prior exome/genome testing status or whether other recommended targeted tests/CMA/panels were performed; insufficient information to confirm required prior testing/documentation."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "Policy requires 'appropriate genetic and family history evaluation' but does not list family history (e.g., maternal long QT) as a standalone qualifying indication for routine GS in the general GS criteria (family history is explicitly listed in rWGS infant criteria). Thus family history is present (maternal long QT) but the policy does not specify that this family history alone meets GS eligibility."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy/ACMG guidance requires pretest counseling by a medical geneticist or affiliated genetic counselor. Patient info states pre-test counseling was discussed with a genetic specialist and plans for post-test follow-up are in place, which meets the policy's counseling requirement (documentation of counseling was discussed though written consent/documentation is not explicitly stated)."
+    },
+    "Q7": {
+      "answer": "81425",
+      "reasoning": "Policy lists CPT 81425 for proband whole-genome sequence analysis (policy: '81425 should be billed for the proband')."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Although age and pre-test counseling meet policy elements and 81425 is the correct CPT, the patient does not meet the policy's defined medical-indication criteria (only one qualifying feature documented, not the required criteria set), and there is insufficient evidence that the required clinical evaluation letter/testing algorithm/prior targeted testing documentation are provided. Per the guideline, these unmet documentation/clinical-criteria requirements make GS not medically necessary/approvable."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 9147,
+    "output_tokens": 3067,
+    "total_tokens": 12214
+  }
+}

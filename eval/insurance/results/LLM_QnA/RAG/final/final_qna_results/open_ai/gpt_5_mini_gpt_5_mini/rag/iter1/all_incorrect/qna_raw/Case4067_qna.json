@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient clinical information explicitly states whole exome sequencing (WES) has been ordered."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to 'children' for evaluation of unexplained congenital or neurodevelopmental disorders. The patient is 5 years old, which meets the pediatric/children criterion in the policy."
+    },
+    "Q2": {
+      "answer": "No",
+      "reasoning": "Policy criterion 1 requires documentation that the individual has been evaluated by a clinician with expertise in clinical genetics and counseled about risks. The record only notes referral by a developmental pediatrician and does not document a genetics evaluation or genetic counseling; therefore ordering/provider requirements are not met per policy."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy lists 'significant hypotonia' as a clinical feature suggesting a genetic disease and allows WES for unexplained neurodevelopmental disorders after standard workup. The patient has significant hypotonia and an unexplained disorder, so the medical indication criterion is met."
+    },
+    "Q4": {
+      "answer": "No",
+      "reasoning": "Policy indicates prior genetic testing such as chromosomal microarray analysis (CMA) and/or targeted single-gene testing is expected as part of the standard workup. The patient had a nondiagnostic chromosomal karyotype but no CMA or targeted testing is documented, so required prior testing has not been demonstrated."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy lists sudden unexplained death in first- or second-degree relatives before age 35 as relevant family history. The patient has a paternal uncle with sudden unexplained death before age 35, which is a relevant family history per policy."
+    },
+    "Q6": {
+      "answer": "Not Answerable",
+      "reasoning": "Policy requires genetic counseling by an experienced clinician, but the clinical information provided does not state whether genetic counseling occurred, so adequacy of counseling cannot be determined from the supplied information."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not list or map CPT codes to WES. The clinical record requests WES, but no CPT code mapping is specified in the policy text supplied."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "Under the policy, standard WES is medically necessary only when ALL criteria are met (including documented genetics evaluation and counseling). The record lacks documentation of evaluation by a clinician with expertise in clinical genetics and genetic counseling (criterion 1) and does not document prior appropriate testing (e.g., CMA) per the standard workup. Therefore not all policy criteria are satisfied and the test is not covered based on the provided information."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14823,
+    "output_tokens": 2869,
+    "total_tokens": 17692
+  }
+}

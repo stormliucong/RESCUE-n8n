@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WES",
+      "reasoning": "Patient information states whole exome sequencing (WES) has been ordered to assess for an underlying genetic etiology."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy applies to 'children' with unexplained congenital or neurodevelopmental disorders; the patient is an infant (a child), therefore age-based eligibility is met per the policy's child-directed criteria."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires evaluation by a clinician with expertise in clinical genetics and counseling. Patient had pre-test counseling with a genetic specialist, satisfying the ordering/provider requirement in policy statement #1."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy medical indication: WES is medically necessary for unexplained neurodevelopmental disorders in children when all criteria met. The infant has early signs of autism (a neurodevelopmental disorder) and prior targeted genetic testing (Fragile X) was nondiagnostic, meeting the policy's indication requirements."
+    },
+    "Q4": {
+      "answer": "Yes",
+      "reasoning": "Policy criterion #3 allows WES when previous genetic testing has failed to yield a diagnosis. The patient had prior Fragile X testing that was nondiagnostic, satisfying the prior testing requirement in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy guidelines list family history of congenital anomalies as relevant. The patient has a maternal aunt with a congenital anomaly, which is a relevant family history per the policy."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires genetic counseling by an individual with expertise in genetic medicine. Patient completed pre-test counseling with a genetic specialist, meeting the policy's counseling/provider requirement."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided policy document does not specify CPT/billing codes for WES; no CPT codes are listed in the policy text supplied."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per policy, standard WES may be considered medically necessary for children with unexplained neurodevelopmental disorders when (1) evaluated and counseled by genetics (met), (2) there is potential for change in management (implied by evaluation for underlying genetic etiology), and (3) prior genetic testing failed to yield a diagnosis (Fragile X nondiagnostic; met). All policy criteria for medical necessity are satisfied."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 14827,
+    "output_tokens": 2425,
+    "total_tokens": 17252
+  }
+}

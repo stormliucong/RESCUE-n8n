@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "BRCA1/2",
+      "reasoning": "Patient is being evaluated specifically for BRCA1 and BRCA2 testing per the clinical information; policy FEP 2.04.02 addresses BRCA1 and BRCA2 testing."
+    },
+    "Q1": {
+      "answer": "Yes",
+      "reasoning": "Policy lists age-based indications for BRCA testing in individuals with personal history of breast cancer (e.g., diagnosed ≤45 years). The patient is 19 with breast cancer, meeting the ≤45-year criterion (Policy: \"Personal history of breast cancer and 1 or more of the following: Diagnosed at age ≤45 years\")."
+    },
+    "Q2": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed in a setting with \"suitably trained health care providers who can give appropriate pre- and post-test counseling.\" The ordering provider is a nurse practitioner and the patient completed pre-test genetic counseling, satisfying the policy's requirement for a suitably trained provider and counseling setting."
+    },
+    "Q3": {
+      "answer": "Yes",
+      "reasoning": "Policy defines medical indications for BRCA testing in cancer-affected individuals including (a) personal history of breast cancer diagnosed ≤45 years and (b) diagnosed at any age with ≥1 close blood relative with ovarian carcinoma or metastatic/intraductal/cribriform prostate cancer. The patient is 19 with breast cancer and has a maternal aunt with ovarian cancer and a close relative with metastatic/intraductal prostate cancer, meeting these criteria."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not mandate completion of any specific prior test before BRCA1/2 germline testing; prior limited testing is discussed but no required antecedent test is specified. The prior nondiagnostic FISH is not specified as a required prior test in the policy."
+    },
+    "Q5": {
+      "answer": "Yes",
+      "reasoning": "Policy explicitly uses family history criteria (close relatives with ovarian cancer or metastatic/intraductal prostate cancer) as indications for testing. The patient has a maternal aunt with ovarian cancer and a close relative with metastatic/intraductal prostate cancer, meeting the family-history criteria."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "Policy requires testing be performed with appropriate pre- and post-test genetic counseling by experienced providers. The patient completed pre-test genetic counseling and plans post-test follow-up, satisfying the counseling requirement in the policy."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP policy document does not list or map specific CPT codes to BRCA1/2 testing; therefore a CPT code cannot be determined from the policy text alone."
+    },
+    "Q8": {
+      "answer": "Yes",
+      "reasoning": "Per FEP policy, BRCA1/2 testing is medically necessary for cancer-affected individuals who meet listed criteria. The patient (19-year-old with breast cancer) meets age-based and family-history criteria (breast cancer diagnosed ≤45; close relatives with ovarian and metastatic/intraductal prostate cancer), testing is ordered in a counseling setting, and pre-test counseling was completed—thus the policy supports coverage."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 18955,
+    "output_tokens": 1876,
+    "total_tokens": 20831
+  }
+}

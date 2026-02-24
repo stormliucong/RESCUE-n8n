@@ -1,0 +1,45 @@
+{
+  "qna_result": {
+    "Q0": {
+      "answer": "WGS",
+      "reasoning": "Patient information explicitly states whole genome sequencing (WGS) was ordered by the medical geneticist."
+    },
+    "Q1": {
+      "answer": "Not Specified",
+      "reasoning": "The provided FEP 2.04.59 policy does not state any age-based eligibility limits for whole genome sequencing; age criteria are not specified in this document."
+    },
+    "Q2": {
+      "answer": "Not Specified",
+      "reasoning": "The policy does not specify ordering-provider (specialty or provider-type) requirements for WGS; it only generally recommends genetic counseling by an experienced individual."
+    },
+    "Q3": {
+      "answer": "Not Specified",
+      "reasoning": "The policy describes indications and coverage for chromosomal microarray and states NGS gene panels are investigational; it does not provide coverage or clinical criteria specific to WGS (WES/WGS are addressed in a separate policy not provided)."
+    },
+    "Q4": {
+      "answer": "Not Specified",
+      "reasoning": "The policy designates CMA as first-line for the listed indications and notes additional testing may follow, but it does not define mandatory prior-test requirements for WGS specifically in this document."
+    },
+    "Q5": {
+      "answer": "Not Specified",
+      "reasoning": "While the patient has a sibling with developmental delay, the provided policy does not specify family-history or consanguinity criteria that would determine eligibility for WGS in this document."
+    },
+    "Q6": {
+      "answer": "Yes",
+      "reasoning": "The policy states formal genetic counseling is recommended/appropriate when genetic testing is considered and should be performed by someone experienced; the patient completed pre-test counseling and post-test counseling is planned, which meets the policy's counseling expectation."
+    },
+    "Q7": {
+      "answer": "Not Specified",
+      "reasoning": "The FEP 2.04.59 policy text provided does not list or map CPT codes to whole genome sequencing; no CPT code is specified in this document for WGS."
+    },
+    "Q8": {
+      "answer": "No",
+      "reasoning": "The provided policy does not authorize coverage for WGS: WES/WGS are noted as addressed in a different policy (2.04.102) not included here, next-generation sequencing panels are stated investigational, and the Benefit Application excludes experimental/investigational procedures. Therefore, based solely on this document, WGS is not covered."
+    }
+  },
+  "token_usage": {
+    "input_tokens": 15679,
+    "output_tokens": 2095,
+    "total_tokens": 17774
+  }
+}
