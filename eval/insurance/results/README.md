@@ -399,8 +399,27 @@ Conducted under two controlled document conditions:
 - `all_incorrect/`  
   Every sample is paired with a **mismatch policy document** (top-ranked by cosine similarity excluding the ground-truth).
 
-Ouput structure and files are same with the Baseline
+Each configuration is repeated:
+- iter1
+- iter2
+- iter3
+
+Each iteration contains:
+- `qna_raw/` – raw JSON responses
+- `batch_id.txt` – OpenAI batch job identifier
+- `batch_qna_requests.jsonl` – submitted requests
+- `results.csv` – structured answer extraction
 ---
+
+### Batch summaries
+
+- `batch_summary_all_correct_openai.json`
+- `batch_summary_all_incorrect_openai.json`
+
+These store metadata for submitted batch jobs across iterations.
+
+---
+
 
 ### Final aggregated outputs
 
@@ -411,9 +430,7 @@ Ouput structure and files are same with the Baseline
   Adds count-based summary statistics derived from the combined file.
 
 - `final_results_with_accuracy_updated.csv`  
-  Includes computed performance metrics:
+  Used for final statistical analysis and manuscript tables. Includes computed performance metrics:
   - Accuracy
   - Adjusted Accuracy  
-  Used for final statistical analysis and manuscript tables.
-
 ---
