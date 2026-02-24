@@ -3,12 +3,12 @@ import json
 from dotenv import load_dotenv
 from openai import OpenAI
 from sentence_transformers import SentenceTransformer
-from load_policy import load_policies, calculate_pdf_md5
+from eval.insurance.codes.patient_policy_matching.load_policy import load_policies, calculate_pdf_md5
 from embedding_policies import embed_policies_from_headers
 from rerank_whole import rerank_whole_policies
-from calculate_match_rate import calculate_match_rate
-from md5_matching import md5_match_by_rerank_order
-from retrieve_candidates import retrieve_candidates
+from eval.insurance.codes.patient_policy_matching.calculate_match_rate import calculate_match_rate
+from eval.insurance.codes.patient_policy_matching.md5_matching import md5_match_by_rerank_order
+from eval.insurance.codes.patient_policy_matching.retrieve_candidates import retrieve_candidates
 
 path = '/home/cptaswadu/new-rescue/RESCUE-n8n'
 load_dotenv(dotenv_path=os.path.join(path, ".env"))

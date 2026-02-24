@@ -1,0 +1,53 @@
+case_id,matched,llm_rank,orig_rank_cand,orig_rank_full,doc_name,rank_change
+Case14017,1,1.0,10.0,10.0,BCBS_FEP_204102 Whole Exome and.pdf,9.0
+Case8051,1,1.0,4.0,4.0,BCBS_FEP_204102 Whole Exome and.pdf,3.0
+Case3359,1,1.0,9.0,9.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,8.0
+Case3494,1,1.0,5.0,5.0,Cigna_MOL.TS_.235.C_Whole_Exome_Sequencing_Cigna_eff01.01.2025_pub09.20.2024.pdf,4.0
+Case7297,1,1.0,3.0,3.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,2.0
+Case4196,1,1.0,2.0,2.0,BCBS_FEP_204102 Whole Exome and.pdf,1.0
+Case14141,1,1.0,5.0,5.0,BCBS_FEP_204102 Whole Exome and.pdf,4.0
+Case18882,1,1.0,9.0,9.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,8.0
+Case5230,1,1.0,5.0,5.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0
+Case11124,1,1.0,7.0,7.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,6.0
+Case7376,1,1.0,3.0,3.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,2.0
+Case7682,1,1.0,3.0,3.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,2.0
+Case19905,1,1.0,7.0,7.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,6.0
+Case2847,1,1.0,9.0,9.0,BCBS_FEP_204102 Whole Exome and.pdf,8.0
+Case16487,1,1.0,2.0,2.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,1.0
+Case811,1,1.0,7.0,7.0,BCBS_FEP_204102 Whole Exome and.pdf,6.0
+Case9408,1,1.0,3.0,3.0,BCBS_FEP_204102 Whole Exome and.pdf,2.0
+Case13613,1,1.0,4.0,4.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0
+Case1501,1,1.0,7.0,7.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,6.0
+Case11795,1,1.0,3.0,3.0,BCBS_FEP_204102 Whole Exome and.pdf,2.0
+Case950,1,1.0,10.0,10.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,9.0
+Case1130,1,1.0,6.0,6.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,5.0
+Case13675,1,1.0,5.0,5.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0
+Case13983,1,1.0,9.0,9.0,BCBS_FEP_204102 Whole Exome and.pdf,8.0
+Case11981,1,1.0,4.0,4.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0
+Case15938,1,1.0,6.0,6.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,5.0
+Case7604,1,1.0,3.0,3.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,2.0
+Case10850,1,1.0,4.0,4.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0
+Case6451,1,1.0,5.0,5.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,4.0
+Case10363,1,1.0,2.0,2.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,1.0
+Case15557,1,1.0,4.0,4.0,United Healthcare_whole-exome-and-whole-genome-sequencing.pdf,3.0
+Case3223,1,1.0,6.0,6.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,5.0
+Case22,1,1.0,5.0,5.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,4.0
+Case15458,1,1.0,5.0,5.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,4.0
+Case6867,1,1.0,3.0,3.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,2.0
+Case16126,1,1.0,5.0,5.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,4.0
+Case14408,1,1.0,1.0,1.0,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.0
+Case2007,1,1.0,2.0,2.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,1.0
+Case15570,1,1.0,8.0,8.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,7.0
+Case6478,1,1.0,9.0,9.0,United Healthcare_genetic-testing-hereditary-cancer.pdf,8.0
+Case3677,1,1.0,8.0,8.0,United Healthcare_genetic-testing-hereditary-cancer.pdf,7.0
+Case3581,1,1.0,1.0,1.0,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.0
+Case15202,1,1.0,6.0,6.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,5.0
+Case18257,1,1.0,1.0,1.0,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.0
+Case14226,1,1.0,1.0,1.0,Cigna_MOL.TS_.238.A_BRCA_Analysis_eff01.01.2025_pub09.10.2024_1.pdf,0.0
+Case2666,1,1.0,4.0,4.0,BCBS_FEP_20402 Germline Genetic Testing for.pdf,3.0
+Case5834,1,1.0,5.0,5.0,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,4.0
+Case15820,1,1.0,3.0,3.0,Cigna_MOL.TS_.150A_CMA_for_Developmental_Disorders_and_Prenatal_Diagnosis_eff01.01.2025_pub09.10.2024_1.pdf,2.0
+Case17196,1,1.0,6.0,6.0,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,5.0
+Case11855,1,1.0,5.0,5.0,United Healthcare_chromosome-microarray-testing.pdf,4.0
+Case9773,1,1.0,1.0,1.0,BCBS_FEP_20459 Genetic Testing for Developmental.pdf,0.0
+Mean,,1.0,4.901960784313726,4.901960784313726,,3.9019607843137254

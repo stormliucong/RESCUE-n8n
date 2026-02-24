@@ -1,16 +1,14 @@
 import os
-import json
 import pandas as pd
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
 os.environ["HF_HUB_OFFLINE"] = "1"
-from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 from openai import OpenAI
-from load_policy import load_policies, calculate_pdf_md5
+from eval.insurance.codes.patient_policy_matching.load_policy import load_policies, calculate_pdf_md5
 from embedding_policies import embed_policies_from_headers
 from retrieve_candidates import retrieve_candidates, cosine_topk
 from rerank_policies import rerank_policies
-from md5_matching import md5_match_by_rerank_order
+from eval.insurance.codes.patient_policy_matching.md5_matching import md5_match_by_rerank_order
 from run_retrieval import run_retrieval_evaluation
 from run_retrieval_whole import run_retrieval_evaluation_whole
 
@@ -31,7 +29,7 @@ def main():
     K_RERANK_LIST = [1, 3]
     RETRIEVAL_MODELS = ["gpt-5-mini"]
     EMBEDDER = "text-embedding-3-small"
-    RESULTS_BASE = "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/LLM_QnA/RAG/final"
+    RESULTS_BASE = "/home/cptaswadu/new-rescue/RESCUE-n8n/eval/insurance/results/patient_policy_match"
 
     print("Loading policies...")
     policies, md5s, headers = load_policies(POLICY_FOLDER)
